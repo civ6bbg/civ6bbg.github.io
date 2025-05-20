@@ -1378,6 +1378,11 @@
    align-items: center;
  }
 
+ .lang-icon {
+  font-size:50px;
+  padding-top:7px
+ }
+
  .lang-icon:hover {
     color: #ff8c33
  }
@@ -2559,7 +2564,18 @@
    padding: 20px;
    background-color: #fff;
  }
- 
+
+ .gov-promotion {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #fff;
+ }
+
+ .gov-promotion-border {
+  border-right: 2px dashed black;
+ }
+
  .chart #myChart {
    max-height: 100% !important;
    max-width: 100% !important;
@@ -2957,6 +2973,14 @@
  .darkmode .chart {
    box-shadow: none;
    background-color: #222235;
+ }
+
+ .darkmode .gov-promotion {
+  background-color: #222235;
+ }
+
+ .darkmode .gov-promotion-border {
+  border-right: 2px dashed #b9b9b9;
  }
  
  .darkmode #myChart {
@@ -3746,6 +3770,13 @@
  
    .customers-wrapper img {
      display: none;
+   }
+
+   .darkmode .gov-promotion-border {
+    border-right: none
+   }
+   .gov-promotion-border {
+    border-right: none
    }
  }
  

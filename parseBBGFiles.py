@@ -1,6 +1,7 @@
 from bs4 import BeautifulSoup
 import sqlite3
 import re
+import numpy as np
 import csv
 
 import dominate
@@ -120,7 +121,7 @@ def get_governors_list(db_path):
     connection.close()
     return rows
 
-def get_governors_promotion_sets_dict(db_path, governor_list):
+def get_governors_promotion_sets_dict(db_path, governor_list, governor_promotion_dict):
     res = {}
     connection = sqlite3.connect(db_path)
 
@@ -128,11 +129,17 @@ def get_governors_promotion_sets_dict(db_path, governor_list):
     for gov in governor_list:
         crsr.execute(f"SELECT * FROM GovernorPromotionSets WHERE GovernorType='{gov[0]}'")
         rows = crsr.fetchall()
-        res[gov[0]] = [item[1] for item in rows]
+        sorted_rows = sorted(rows, key=lambda x: (governor_promotion_dict[x[1]][3], governor_promotion_dict[x[1]][4]))
+        sorted_rows = [governor_promotion_dict[i[1]] for i in sorted_rows]
+        res[gov[0]] = {}
+        for i in np.arange(4):
+            res[gov[0]][i] = {}
+        for item in sorted_rows:
+            res[gov[0]][item[3]][item[4]] = item
     connection.close()
     return res
 
-def get_governors_promotion_dict(db_path, governor_promotion_set_dict):
+def get_governors_promotion_dict(db_path):
     res = {}
     connection = sqlite3.connect(db_path)
 

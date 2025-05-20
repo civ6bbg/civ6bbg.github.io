@@ -120,8 +120,8 @@ religion_follower = get_beliefs("sqlFiles/DebugGameplay.sqlite", 'BELIEF_CLASS_F
 religion_enhancer = get_beliefs("sqlFiles/DebugGameplay.sqlite", 'BELIEF_CLASS_ENHANCER')
 religion_worship = get_beliefs("sqlFiles/DebugGameplay.sqlite", 'BELIEF_CLASS_WORSHIP')
 governors = get_governors_list("sqlFiles/DebugGameplay.sqlite")
-governor_promotion_set_dict = get_governors_promotion_sets_dict("sqlFiles/DebugGameplay.sqlite", governors)
-governor_promotion_dict = get_governors_promotion_dict("sqlFiles/DebugGameplay.sqlite", governor_promotion_set_dict)
+governor_promotion_dict = get_governors_promotion_dict("sqlFiles/DebugGameplay.sqlite")
+governor_promotion_set_dict = get_governors_promotion_sets_dict("sqlFiles/DebugGameplay.sqlite", governors, governor_promotion_dict)
 # for item in governor_promotion_dict:
 #     print(item, governor_promotion_dict[item])
 # print(governor_promotion_dict)
@@ -192,7 +192,7 @@ def add_header(bbg_version, lang, leader_page = False, cs_page = False, pantheon
                                 with a(href="/index.html", style="align-content: center;"):
                                     img(src="/images/BBGLogo.webp", style="width:50px; border-radius:10%", alt="#")
                                 div(cls="mobile-nav")
-                            with div(cls="flex col-xl-7 col-lg-7 col-md-7 col-5"):
+                            with div(cls="flex col-xl-7 col-lg-7 col-md-7 col-7"):
                                 with div(cls="main-menu"):
                                     with nav(cls="navigation"):
                                         with ul(cls="nav menu"):
@@ -237,12 +237,12 @@ def add_header(bbg_version, lang, leader_page = False, cs_page = False, pantheon
                                                                     a(f"Base Game", href=f"/{lang}/governor_base_game.html")
                                                                 else:
                                                                     a(f"BBG v{v}", href=f"/{lang}/governor_{v}.html")
-                            with div(cls="flex center col-xl-1 col-lg-1 col-md-1 col-2"):
+                            with div(cls="flex center col-xl-1 col-lg-1 col-md-1 col-1"):
                                 with div(cls="main-menu"):
                                     with nav(cls="navigation"):
                                         with ul(cls="nav menu"):
                                             with li():
-                                                i(cls="lang-icon fa fa-language", style="font-size:50px; padding-top:7px")
+                                                i(cls="lang-icon fa fa-language")
 
                                                 with ul(cls="dropdown", style="width:80px"):
                                                     add_lang('English  ', 'en_US', bbg_version, 'us', leader_page, cs_page, pantheon_page, religion_page, governor_page)
@@ -251,7 +251,7 @@ def add_header(bbg_version, lang, leader_page = False, cs_page = False, pantheon
                                                     add_lang('German  ', 'de_DE', bbg_version, 'de', leader_page, cs_page, pantheon_page, religion_page, governor_page)
                                                     add_lang('Chinese  ', 'zh_Hans_CN', bbg_version, 'cn', leader_page, cs_page, pantheon_page, religion_page, governor_page)
                                                     add_lang('Korean  ', 'ko_KR', bbg_version, 'kr', leader_page, cs_page, pantheon_page, religion_page, governor_page)
-                            with div(cls="flex center col-xl-1 col-lg-1 col-md-1 col-2"):
+                            with div(cls="flex center col-xl-1 col-lg-1 col-md-1 col-1"):
                                 with div(cls="theme-switcher-wrapper"):
                                     with button(cls="theme-switcher gray-circle-btn", type="button", title="Switch theme"):
                                         span("Switch theme", cls="sr-only")
@@ -581,15 +581,26 @@ def get_governor_html_file(bbg_version, lang):
                                             with div(cls="chart"):
                                                 with h2(get_loc(locs_data, gov[1]), cls='civ-name'):
                                                     img(src=f'/images/governors/{get_loc(en_US_locs_data, gov[1])}.webp', style="vertical-align: middle")
-                                                for promotion in governor_promotion_set_dict[gov[0]]:
-                                                    promotion_name = governor_promotion_dict[promotion][1]
-                                                    # print(promotion, promotion_name)
-                                                    with h3(f'{get_loc(locs_data, promotion_name)}', style="text-align:left", cls='civ-ability-name'):
-                                                        br()
-                                                        br()
-                                                        promotion_desc = governor_promotion_dict[promotion][2]
-                                                        p(f'{get_loc(locs_data, promotion_desc)}', style="text-align:left", cls='civ-ability-desc')
-                                                        br()
+                                                br()
+                                                for level in governor_promotion_set_dict[gov[0]]:
+                                                    column_count = len(governor_promotion_set_dict[gov[0]][level])
+                                                    if column_count == 1:
+                                                        div_cls = "col-lg-12"
+                                                    else:
+                                                        div_cls = "col-lg-6"
+                                                    with div(cls='row'):
+                                                        for column in governor_promotion_set_dict[gov[0]][level]:
+                                                            has_border = 'gov-promotion-border' if column < column_count - 1 else ''
+                                                            with div(cls=f'{div_cls} gov-promotion {has_border}'):
+                                                                promotion = governor_promotion_set_dict[gov[0]][level][column][0]
+                                                                promotion_name = governor_promotion_dict[promotion][1]
+                                                                alignment = 'left' if column == 0 else 'center' if column == 1 else 'right'
+                                                                with h3(f'{get_loc(locs_data, promotion_name)}', style=f"text-align:{alignment}", cls='civ-ability-name'):
+                                                                    br()
+                                                                    br()
+                                                                    promotion_desc = governor_promotion_dict[promotion][2]
+                                                                    p(f'{get_loc(locs_data, promotion_desc)}', style=f"text-align:{alignment}", cls='civ-ability-desc')
+                                                                    br()
 
         add_final_scripts()
         add_scroll_up()
