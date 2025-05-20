@@ -67,8 +67,8 @@ for bbg_ver in bbg_versions:
         generate_pantheon_html_file(bbg_ver, l)
         generate_religion_html_file(bbg_ver, l)
         generate_governor_html_file(bbg_ver, l)
-print('Generating HTML files for beta version')
 # Uncomment the following lines to generate HTML files for the beta version
+# print('Generating HTML files for beta version')
 # generate_leader_html_file('Beta', 'en_US')
 # generate_city_state_html_file('Beta', 'en_US')
 # generate_pantheon_html_file('Beta', 'en_US')

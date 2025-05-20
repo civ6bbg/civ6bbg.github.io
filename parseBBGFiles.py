@@ -37,6 +37,18 @@ def get_locs_data(db_path, bbg_version, lang):
         else:
             print(f'unsual element in xml file for {bbg_version} lang {lang}!!')
             print(x)
+    b_unique = Bs_data.find_all('Row')
+    for x in b_unique:
+        if hasattr(x, 'Text') and hasattr(x.Text, 'contents'):
+            # print(x)
+            if len(x.Text.contents) > 0:
+                locs[x['Tag']] = x.Text.contents[0]
+        elif hasattr(x, 'text') and hasattr(x.text, 'contents'):
+            if len(x.text.contents) > 0:
+                locs[x['Tag']] = x.text.contents[0]
+        else:
+            print(f'unsual element in xml file for {bbg_version} lang {lang}!!')
+            print(x)
     
     return locs
 
@@ -107,7 +119,32 @@ def get_governors_list(db_path):
     rows = crsr.fetchall()
     connection.close()
     return rows
-    
+
+def get_governors_promotion_sets_dict(db_path, governor_list):
+    res = {}
+    connection = sqlite3.connect(db_path)
+
+    crsr = connection.cursor()
+    for gov in governor_list:
+        crsr.execute(f"SELECT * FROM GovernorPromotionSets WHERE GovernorType='{gov[0]}'")
+        rows = crsr.fetchall()
+        res[gov[0]] = [item[1] for item in rows]
+    connection.close()
+    return res
+
+def get_governors_promotion_dict(db_path, governor_promotion_set_dict):
+    res = {}
+    connection = sqlite3.connect(db_path)
+
+    crsr = connection.cursor()
+    crsr.execute(f"SELECT * FROM GovernorPromotions")
+    rows = crsr.fetchall()
+    promotion_to_row = {}
+    for r in rows:
+        promotion_to_row[r[0]] = r
+    connection.close()
+    return promotion_to_row
+
 def get_start_biases(db_path):
     writer = csv.writer()
     writer.writerow(['CivilizationType', 'BiasType', 'TerrainType', 'FeatureType', 'ResourceType', 'Tier', 'Extra', 'CustomPlacement'])

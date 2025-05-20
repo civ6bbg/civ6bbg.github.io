@@ -946,7 +946,7 @@
 			<Text>+10 [ICON_STRENGTH] Kampfstärke bei der Belagerung von [ICON_DISTRICT] Bezirken.[NEWLINE][ICON_Bullet] +50% Unterstützungsbonus.</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_HYPASPIST_SIEGE_BONUS_DESCRIPTION" Language="de_DE">
-			<Text>+10 [ICON_STRENGTH] bei der [ICON_UnderSiege] Belagerung eines [ICON_DISTRICT] Bezirks</Text>
+			<Text>+10 [ICON_STRENGTH] bei der Belagerung eines [ICON_DISTRICT] Bezirks</Text>
 		</Replace>
 		<!-- = einzigartige Einheit = -->
 		<Replace Tag="LOC_UNIT_MACEDONIAN_HETAIROI_DESCRIPTION" Language="de_DE">
@@ -1653,7 +1653,7 @@
 			<Text>Verhandler</Text>
 		</Row>
 		<Row Tag="LOC_GOVERNOR_PROMOTION_AMBASSADOR_NEGOTIATOR_DESCRIPTION" Language="de_DE">
-			<Text>Die [ICON_DISTRICT_CITY_CENTER] Stadt kann nicht [ICON_UnderSiege] belagert werden und erhält +5 [ICON_STRENGTH] Stadtverteidigungsstärke.</Text>
+			<Text>Die [ICON_DISTRICT_CITY_CENTER] Stadt kann nicht belagert werden und erhält +5 [ICON_STRENGTH] Stadtverteidigungsstärke.</Text>
 		</Row>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_LOCAL_INFORMANTS_DESCRIPTION" Language="de_DE">
 			<Text>Alle [ICON_DISTRICT_CITY_CENTER] Städte innerhalb von 9 Feldern erhalten +4 [ICON_PRESSUREUP] Loyalität pro [ICON_TURN] Runde gegenüber deiner Zivilisation. Feindliche Spione arbeiten in dieser [ICON_DISTRICT_CITY_CENTER] Stadt auf 3 Stufen unterhalb des Normalwerts.</Text>
@@ -1674,7 +1674,7 @@
 
 		<!-- == Ibrahim == -->
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_PASHA_DESCRIPTION" Language="de_DE">
-			<Text>Wenn er in deiner [ICON_DISTRICT_CITY_CENTER] Stadt etabliert ist, erhältst du +25% [ICON_PRODUCTION] Produktion für alle Militär-Einheiten in dieser [ICON_DISTRICT_CITY_CENTER] Stadt. Wenn er in einer [ICON_Team] verbündeten ausländischen [ICON_CAPITAL] Hauptstadt etabliert ist, wird die Allianzstufen-Steigerungsrate mit dem Besitzer erhöht. Wird in 3 [ICON_TURN] Runden etabliert.</Text>
+			<Text>Wenn er in deiner [ICON_DISTRICT_CITY_CENTER] Stadt etabliert ist, erhältst du +25% [ICON_PRODUCTION] Produktion für alle Militär-Einheiten in dieser [ICON_DISTRICT_CITY_CENTER] Stadt. Wenn er in einer verbündeten ausländischen [ICON_CAPITAL] Hauptstadt etabliert ist, wird die Allianzstufen-Steigerungsrate mit dem Besitzer erhöht. Wird in 3 [ICON_TURN] Runden etabliert.</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_HEAD_FALCONER_DESCRIPTION" Language="de_DE">
 			<Text>Gewährt +1 [ICON_SCIENCE] Wissenschaft pro [ICON_CITIZEN] Bürger in dieser [ICON_DISTRICT_CITY_CENTER] Stadt.</Text>
@@ -1818,7 +1818,7 @@
 			<Text>Einheiten, die innerhalb des Stadtgebiets verteidigen, erhalten +3 [ICON_STRENGTH] Kampfstärke. Deine anderen [ICON_DISTRICT_CITY_CENTER] Städte innerhalb von 9 Feldern erhalten +4 [ICON_PRESSUREUP] Loyalität pro [ICON_TURN] Runde gegenüber deiner Zivilisation.</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_EMBRASURE_DESCRIPTION" Language="de_DE">
-			<Text>Die [ICON_DISTRICT_CITY_CENTER] Stadt erhält einen zusätzlichen [ICON_RANGED] Fernangriff pro [ICON_TURN] Runde. Die [ICON_DISTRICT_CITY_CENTER] Stadt kann nicht [ICON_UnderSiege] belagert werden.</Text>
+			<Text>Die [ICON_DISTRICT_CITY_CENTER] Stadt erhält einen zusätzlichen [ICON_RANGED] Fernangriff pro [ICON_TURN] Runde. Die [ICON_DISTRICT_CITY_CENTER] Stadt kann nicht belagert werden.</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_DEFENSE_LOGISTICS_DESCRIPTION" Language="de_DE">
 			<Text>+25% [ICON_PRODUCTION] Produktion für militärische Einheiten in dieser [ICON_DISTRICT_CITY_CENTER] Stadt.</Text>
@@ -3107,7 +3107,7 @@
 		</Row>
 		<!-- = Wisselbanken = -->
 		<Replace Tag="LOC_POLICY_WISSELBANKEN_DESCRIPTION" Language="de_DE">
-			<Text>Deine [ICON_TradeRoute] Handelswege, zu der [ICON_DISTRICT_CITY_CENTER] Stadt eines [ICON_Team] Verbündeten oder Vasallenstadtstaats, bieten +2 [ICON_FOOD] Nahrung und +2 [ICON_PRODUCTION] Produktion für beide [ICON_DISTRICT_CITY_CENTER] Städte. +0,25 Allianz-Punkte pro [ICON_TURN] Runde für alle Allianzen.</Text>
+			<Text>Deine [ICON_TradeRoute] Handelswege, zu der [ICON_DISTRICT_CITY_CENTER] Stadt eines Verbündeten oder Vasallenstadtstaats, bieten +2 [ICON_FOOD] Nahrung und +2 [ICON_PRODUCTION] Produktion für beide [ICON_DISTRICT_CITY_CENTER] Städte. +0,25 Allianz-Punkte pro [ICON_TURN] Runde für alle Allianzen.</Text>
 		</Replace>
 		
 		<!-- === WILD POLICIES === -->
@@ -3225,25 +3225,25 @@
 		
 		<!-- === ALLIANCES === -->
 		<Replace Tag="LOC_ALLIANCE_LV1_RESEARCH_EFFECT_2" Language="de_DE">
-			<Text>+2 [ICON_SCIENCE] Wissenschaft für eingehende [ICON_TradeRoute] Handelswege von deinem [ICON_Team] Verbündeten</Text>
+			<Text>+2 [ICON_SCIENCE] Wissenschaft für eingehende [ICON_TradeRoute] Handelswege von deinem Verbündeten</Text>
 		</Replace>
 		<Replace Tag="LOC_ALLIANCE_LV1_CULTURAL_EFFECT_2" Language="de_DE">
-			<Text>+2 [ICON_CULTURE] Kultur für eingehende [ICON_TradeRoute] Handelswege von deinem [ICON_Team] Verbündeten</Text>
+			<Text>+2 [ICON_CULTURE] Kultur für eingehende [ICON_TradeRoute] Handelswege von deinem Verbündeten</Text>
 		</Replace>
 		<Replace Tag="LOC_ALLIANCE_LV1_ECONOMIC_EFFECT_1" Language="de_DE">
-			<Text>+6 [ICON_GOLD] Gold und +1 [ICON_PRODUCTION] Produktion für ausgehende [ICON_TradeRoute] Handelswege zu deinem [ICON_Team] Verbündeten</Text>
+			<Text>+6 [ICON_GOLD] Gold und +1 [ICON_PRODUCTION] Produktion für ausgehende [ICON_TradeRoute] Handelswege zu deinem Verbündeten</Text>
 		</Replace>
 		<Replace Tag="LOC_ALLIANCE_LV1_ECONOMIC_EFFECT_2" Language="de_DE">
-			<Text>+6 [ICON_GOLD] Gold und +1 [ICON_PRODUCTION] Produktion für eingehende [ICON_TradeRoute] Handelswege von deinem [ICON_Team] Verbündeten</Text>
+			<Text>+6 [ICON_GOLD] Gold und +1 [ICON_PRODUCTION] Produktion für eingehende [ICON_TradeRoute] Handelswege von deinem Verbündeten</Text>
 		</Replace>
 		<Replace Tag="LOC_ALLIANCE_LV2_ECONOMIC_EFFECT_1" Language="de_DE">
-			<Text>+1 [ICON_InfluencePerTurn] Einfluss-Punkte pro [ICON_TURN] Runde für jeden Stadtstaat, dessen Suzerän dein [ICON_Team] Verbündeter ist</Text>
+			<Text>+1 [ICON_InfluencePerTurn] Einfluss-Punkte pro [ICON_TURN] Runde für jeden Stadtstaat, dessen Suzerän dein Verbündeter ist</Text>
 		</Replace>
 		<Replace Tag="LOC_ALLIANCE_LV1_RELIGIOUS_EFFECT_1" Language="de_DE">
-			<Text>+1 [ICON_FOOD] Nahrung und +4 [ICON_FAITH] Glauben für ausgehende [ICON_TradeRoute] Handelswege zu deinem [ICON_Team] Verbündeten</Text>
+			<Text>+1 [ICON_FOOD] Nahrung und +4 [ICON_FAITH] Glauben für ausgehende [ICON_TradeRoute] Handelswege zu deinem Verbündeten</Text>
 		</Replace>
 		<Replace Tag="LOC_ALLIANCE_LV1_RELIGIOUS_EFFECT_2" Language="de_DE">
-			<Text>+1 [ICON_FOOD] Nahrung und +4 [ICON_FAITH] Glauben für eingehende [ICON_TradeRoute] Handelswege von deinem [ICON_Team] Verbündeten</Text>
+			<Text>+1 [ICON_FOOD] Nahrung und +4 [ICON_FAITH] Glauben für eingehende [ICON_TradeRoute] Handelswege von deinem Verbündeten</Text>
 		</Replace>
 		<Replace Tag="LOC_ALLIANCE_LV2_RELIGIOUS_EFFECT_1" Language="de_DE">
 			<Text>+10 [ICON_RELIGION] Religiöse Kampfstärke gegen nicht-verbündete [ICON_RELIGION] Religionen</Text>

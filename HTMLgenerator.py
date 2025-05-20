@@ -10,6 +10,7 @@ from parseBBGFiles import *
 
 replacements = [
     '[ICON_AMENITIES]',
+    '[ICON_ANTIAIR_LARGE]',
     '[ICON_ARMY]',
     '[ICON_BARBARIAN]',
     '[ICON_CAPITAL]',
@@ -18,6 +19,7 @@ replacements = [
     '[ICON_CIVICBOOSTED]',
     '[ICON_CORPS]',
     '[ICON_CULTURE]',
+    '[ICON_DAMAGED]',
     '[ICON_DISTRICT]',
     '[ICON_DISTRICT_AERODROME]',
     '[ICON_DISTRICT_AQUEDUCT]',
@@ -73,12 +75,11 @@ replacements = [
     '[ICON_GREATWORK_WRITING]',
     '[ICON_GREATWORK_RELIGIOUS]',
     '[ICON_GREATWRITER]',
-    '[ICON_STAT_GRIEVANCE]',
     '[ICON_HOUSING]',
     '[ICON_MOVEMENT]',
     '[ICON_FORTIFIED]',
+    '[ICON_NUCLEAR]',
     '[ICON_PILLAGED]',
-    '[ICON_DAMAGED]',
     # '[ICON_POPULATION]',
     '[ICON_POWER]',
     '[ICON_PRODUCTION]',
@@ -100,8 +101,10 @@ replacements = [
     '[ICON_RESOURCE_RICE]',
     '[ICON_RESOURCE_WHEAT]',
     '[ICON_SCIENCE]',
+    '[ICON_STAT_GRIEVANCE]',
     '[ICON_STRENGTH]',
     '[ICON_TECHBOOSTED]',
+    '[ICON_THERMONUCLEAR]',
     '[ICON_TOURISM]',
     '[ICON_TRADEROUTE]',
     '[ICON_TRADINGPOST]',
@@ -117,6 +120,12 @@ religion_follower = get_beliefs("sqlFiles/DebugGameplay.sqlite", 'BELIEF_CLASS_F
 religion_enhancer = get_beliefs("sqlFiles/DebugGameplay.sqlite", 'BELIEF_CLASS_ENHANCER')
 religion_worship = get_beliefs("sqlFiles/DebugGameplay.sqlite", 'BELIEF_CLASS_WORSHIP')
 governors = get_governors_list("sqlFiles/DebugGameplay.sqlite")
+governor_promotion_set_dict = get_governors_promotion_sets_dict("sqlFiles/DebugGameplay.sqlite", governors)
+governor_promotion_dict = get_governors_promotion_dict("sqlFiles/DebugGameplay.sqlite", governor_promotion_set_dict)
+# for item in governor_promotion_dict:
+#     print(item, governor_promotion_dict[item])
+# print(governor_promotion_dict)
+# exit(-1)
 
 def refactorCivSpecialSyntax(bbg_version, lang, docStr):
     docStr = docStr.replace('[NEWLINE]', '<br>')
@@ -269,11 +278,15 @@ def add_final_scripts():
     script(src="https://kit.fontawesome.com/bd91c323e3.js", crossorigin="anonymous")
     
 def get_loc(locs_data, s):
-    res = locs_data[s]
-    if res.find('|') == -1:
-        return res
-    else:
-        return res[:res.find('|')]
+    try:
+        res = locs_data[s]
+        if res.find('|') == -1:
+            return res
+        else:
+            return res[:res.find('|')]
+    except KeyError:
+        print(f'KeyError: {s} not found in locs_data')
+        return s
     
 def get_html_lang(lang):
     if lang == 'de_DE':
@@ -568,7 +581,15 @@ def get_governor_html_file(bbg_version, lang):
                                             with div(cls="chart"):
                                                 with h2(get_loc(locs_data, gov[1]), cls='civ-name'):
                                                     img(src=f'/images/governors/{get_loc(en_US_locs_data, gov[1])}.webp', style="vertical-align: middle")
-                                                # p(get_loc(locs_data, cs[5]), style="text-align:left", cls='civ-ability-desc')
+                                                for promotion in governor_promotion_set_dict[gov[0]]:
+                                                    promotion_name = governor_promotion_dict[promotion][1]
+                                                    # print(promotion, promotion_name)
+                                                    with h3(f'{get_loc(locs_data, promotion_name)}', style="text-align:left", cls='civ-ability-name'):
+                                                        br()
+                                                        br()
+                                                        promotion_desc = governor_promotion_dict[promotion][2]
+                                                        p(f'{get_loc(locs_data, promotion_desc)}', style="text-align:left", cls='civ-ability-desc')
+                                                        br()
 
         add_final_scripts()
         add_scroll_up()
