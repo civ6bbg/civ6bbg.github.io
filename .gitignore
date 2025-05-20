@@ -1,3 +1,5 @@
 sqlFiles/CivVILocalization.sqlite
 sqlFiles/DebugConfiguration.sqlite
 sqlFiles/DebugGameplay.sqlite
+.vscode/
+__pycache__/

@@ -116,6 +116,7 @@ religion_founder = get_beliefs("sqlFiles/DebugGameplay.sqlite", 'BELIEF_CLASS_FO
 religion_follower = get_beliefs("sqlFiles/DebugGameplay.sqlite", 'BELIEF_CLASS_FOLLOWER')
 religion_enhancer = get_beliefs("sqlFiles/DebugGameplay.sqlite", 'BELIEF_CLASS_ENHANCER')
 religion_worship = get_beliefs("sqlFiles/DebugGameplay.sqlite", 'BELIEF_CLASS_WORSHIP')
+governors = get_governors_list("sqlFiles/DebugGameplay.sqlite")
 
 def refactorCivSpecialSyntax(bbg_version, lang, docStr):
     docStr = docStr.replace('[NEWLINE]', '<br>')
@@ -144,12 +145,12 @@ def add_preloader():
                     polyline(id="front", points="1 6 4 6 6 11 10 1 12 6 15 6")
 
 bbg_versions = [None, '6.4', '6.3', '6.2', '6.1', '6.0', '5.8', '5.7', '5.6']
-# bbg_versions = ['5.7']
+# bbg_versions = ['6.4']
 
 def get_version_name(bbg_version):
     return bbg_version if bbg_version != None else 'base_game'
 
-def add_lang(text_name, link_name, bbg_version, flag, leader_page, cs_page, pantheon_page, religion_page):
+def add_lang(text_name, link_name, bbg_version, flag, leader_page, cs_page, pantheon_page, religion_page, governor_page):
     with li():
         if leader_page:
             with a(href=f"/{link_name}/leaders_{get_version_name(bbg_version)}.html", style="align-content: center;"):
@@ -157,14 +158,17 @@ def add_lang(text_name, link_name, bbg_version, flag, leader_page, cs_page, pant
         elif cs_page:
             with a(href=f"/{link_name}/city_states_{get_version_name(bbg_version)}.html", style="align-content: center;"):
                 img(src=f"/assets/flags/4x3/{flag}.svg", style="height:20px")
-        if pantheon_page:
+        elif pantheon_page:
             with a(href=f"/{link_name}/pantheons_{get_version_name(bbg_version)}.html", style="align-content: center;"):
                 img(src=f"/assets/flags/4x3/{flag}.svg", style="height:20px")
-        if religion_page:
+        elif religion_page:
             with a(href=f"/{link_name}/religion_{get_version_name(bbg_version)}.html", style="align-content: center;"):
                 img(src=f"/assets/flags/4x3/{flag}.svg", style="height:20px")
+        elif governor_page:
+            with a(href=f"/{link_name}/governor_{get_version_name(bbg_version)}.html", style="align-content: center;"):
+                img(src=f"/assets/flags/4x3/{flag}.svg", style="height:20px")
 
-def add_header(bbg_version, lang, leader_page = False, cs_page = False, pantheon_page = False, religion_page = False):
+def add_header(bbg_version, lang, leader_page = False, cs_page = False, pantheon_page = False, religion_page = False, governor_page = False):
     with nav(cls="main-nav--bg"):
         with div(cls="main-nav"):
             with div(cls="header"):
@@ -191,6 +195,8 @@ def add_header(bbg_version, lang, leader_page = False, cs_page = False, pantheon
                                                 a('Pantheons', href=f"/{lang}/pantheons_{get_version_name(bbg_version)}.html", onclick=f'civClicked(null)')
                                             with li(cls="active" if religion_page else ""):
                                                 a('Religion', href=f"/{lang}/religion_{get_version_name(bbg_version)}.html", onclick=f'civClicked(null)')
+                                            with li(cls="active" if governor_page else ""):
+                                                a('Governors', href=f"/{lang}/governor_{get_version_name(bbg_version)}.html", onclick=f'civClicked(null)')
                                             with li():
                                                 with a('BBG Version'):
                                                     i(cls="icofont-rounded-down")
@@ -217,6 +223,11 @@ def add_header(bbg_version, lang, leader_page = False, cs_page = False, pantheon
                                                                     a(f"Base Game", href=f"/{lang}/religion_base_game.html")
                                                                 else:
                                                                     a(f"BBG v{v}", href=f"/{lang}/religion_{v}.html")
+                                                            elif governor_page:
+                                                                if v is None:
+                                                                    a(f"Base Game", href=f"/{lang}/governor_base_game.html")
+                                                                else:
+                                                                    a(f"BBG v{v}", href=f"/{lang}/governor_{v}.html")
                             with div(cls="flex center col-xl-1 col-lg-1 col-md-1 col-2"):
                                 with div(cls="main-menu"):
                                     with nav(cls="navigation"):
@@ -225,12 +236,12 @@ def add_header(bbg_version, lang, leader_page = False, cs_page = False, pantheon
                                                 i(cls="lang-icon fa fa-language", style="font-size:50px; padding-top:7px")
 
                                                 with ul(cls="dropdown", style="width:80px"):
-                                                    add_lang('English  ', 'en_US', bbg_version, 'us', leader_page, cs_page, pantheon_page, religion_page)
-                                                    add_lang('French  ', 'fr_FR', bbg_version, 'fr', leader_page, cs_page, pantheon_page, religion_page)
-                                                    add_lang('Russian  ', 'ru_RU', bbg_version, 'ru', leader_page, cs_page, pantheon_page, religion_page)
-                                                    add_lang('German  ', 'de_DE', bbg_version, 'de', leader_page, cs_page, pantheon_page, religion_page)
-                                                    add_lang('Chinese  ', 'zh_Hans_CN', bbg_version, 'cn', leader_page, cs_page, pantheon_page, religion_page)
-                                                    add_lang('Korean  ', 'ko_KR', bbg_version, 'kr', leader_page, cs_page, pantheon_page, religion_page)
+                                                    add_lang('English  ', 'en_US', bbg_version, 'us', leader_page, cs_page, pantheon_page, religion_page, governor_page)
+                                                    add_lang('French  ', 'fr_FR', bbg_version, 'fr', leader_page, cs_page, pantheon_page, religion_page, governor_page)
+                                                    add_lang('Russian  ', 'ru_RU', bbg_version, 'ru', leader_page, cs_page, pantheon_page, religion_page, governor_page)
+                                                    add_lang('German  ', 'de_DE', bbg_version, 'de', leader_page, cs_page, pantheon_page, religion_page, governor_page)
+                                                    add_lang('Chinese  ', 'zh_Hans_CN', bbg_version, 'cn', leader_page, cs_page, pantheon_page, religion_page, governor_page)
+                                                    add_lang('Korean  ', 'ko_KR', bbg_version, 'kr', leader_page, cs_page, pantheon_page, religion_page, governor_page)
                             with div(cls="flex center col-xl-1 col-lg-1 col-md-1 col-2"):
                                 with div(cls="theme-switcher-wrapper"):
                                     with button(cls="theme-switcher gray-circle-btn", type="button", title="Switch theme"):
@@ -524,3 +535,43 @@ def get_religion_html_file(bbg_version, lang):
     docStr = str(doc)
     return refactorCivSpecialSyntax(bbg_version, lang, docStr)
 
+def get_governor_html_file(bbg_version, lang):
+    en_US_locs_data = get_locs_data("sqlFiles/CivVILocalization.sqlite", bbg_version, 'en_US')
+    locs_data = get_locs_data("sqlFiles/CivVILocalization.sqlite", bbg_version, lang)
+
+    doc = dominate.document(title=None, lang=get_html_lang(lang))
+    if bbg_version != None:
+        add_html_header(doc, f'BBG {bbg_version} Governors')
+    else :
+        add_html_header(doc, f'Civ VI GS RF Governors')
+
+    menu_items = []
+    menu_icons = []
+    for gov in governors:
+        menu_items.append(get_loc(locs_data, gov[1]))
+        menu_icons.append(get_loc(en_US_locs_data, gov[1]))
+    with doc:
+        add_preloader()
+        div(cls="layer")
+        with div(cls="page-flex"):
+            with div(cls="main-wrapper"):
+                add_header(bbg_version, lang, governor_page=True)
+                with div(cls=""):
+                    with div(cls="fixed left-0 right-auto h-screen w-[253px] bg-white border-r border-neutral-300 overflow-scroll", style="z-index: 5;"):
+                        add_sidebar(menu_items, menu_icons, 'images/governors')
+                    with div(cls="leaders-data min-w-full main-pl"):
+                        with main(cls="main users chart-page"):
+                            with div(cls="container"):
+                                for gov in governors:
+                                    with div(cls="row", id=get_loc(locs_data, gov[1])):
+                                        with div(cls="col-lg-12"):
+                                            with div(cls="chart"):
+                                                with h2(get_loc(locs_data, gov[1]), cls='civ-name'):
+                                                    img(src=f'/images/governors/{get_loc(en_US_locs_data, gov[1])}.webp', style="vertical-align: middle")
+                                                # p(get_loc(locs_data, cs[5]), style="text-align:left", cls='civ-ability-desc')
+
+        add_final_scripts()
+        add_scroll_up()
+
+    docStr = str(doc)
+    return refactorCivSpecialSyntax(bbg_version, lang, docStr)

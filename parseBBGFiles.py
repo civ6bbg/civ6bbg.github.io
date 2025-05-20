@@ -98,6 +98,15 @@ def get_beliefs(db_path, belief_type):
     rows = crsr.fetchall()
     connection.close()
     return rows
+
+def get_governors_list(db_path):
+    connection = sqlite3.connect(db_path)
+
+    crsr = connection.cursor()
+    crsr.execute("SELECT GovernorType, Name, Description, Title, ShortTitle, TransitionStrength, AssignCityState FROM Governors")
+    rows = crsr.fetchall()
+    connection.close()
+    return rows
     
 def get_start_biases(db_path):
     writer = csv.writer()
