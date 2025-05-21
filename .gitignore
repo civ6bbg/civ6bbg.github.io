@@ -1,5 +1,4 @@
-sqlFiles/CivVILocalization.sqlite
-sqlFiles/DebugConfiguration.sqlite
-sqlFiles/DebugGameplay.sqlite
+sqlFiles/
 .vscode/
 __pycache__/
+.DS_Store

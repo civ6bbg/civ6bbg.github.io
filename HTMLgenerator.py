@@ -112,21 +112,6 @@ replacements = [
     '[ICON_VISLIMITED]'
 ]
 
-civ_leaders_items = get_civs_tables("sqlFiles/DebugConfiguration.sqlite")
-city_states = get_city_states("sqlFiles/DebugConfiguration.sqlite")
-pantheons = get_beliefs("sqlFiles/DebugGameplay.sqlite", 'BELIEF_CLASS_PANTHEON')
-religion_founder = get_beliefs("sqlFiles/DebugGameplay.sqlite", 'BELIEF_CLASS_FOUNDER')
-religion_follower = get_beliefs("sqlFiles/DebugGameplay.sqlite", 'BELIEF_CLASS_FOLLOWER')
-religion_enhancer = get_beliefs("sqlFiles/DebugGameplay.sqlite", 'BELIEF_CLASS_ENHANCER')
-religion_worship = get_beliefs("sqlFiles/DebugGameplay.sqlite", 'BELIEF_CLASS_WORSHIP')
-governors = get_governors_list("sqlFiles/DebugGameplay.sqlite")
-governor_promotion_dict = get_governors_promotion_dict("sqlFiles/DebugGameplay.sqlite")
-governor_promotion_set_dict = get_governors_promotion_sets_dict("sqlFiles/DebugGameplay.sqlite", governors, governor_promotion_dict)
-# for item in governor_promotion_dict:
-#     print(item, governor_promotion_dict[item])
-# print(governor_promotion_dict)
-# exit(-1)
-
 def refactorCivSpecialSyntax(bbg_version, lang, docStr):
     docStr = docStr.replace('[NEWLINE]', '<br>')
 
@@ -331,7 +316,7 @@ def add_html_header(doc, page_title):
         link(rel='stylesheet', href=f"/css/preloader.css")
         link(rel='stylesheet', href=f"/css/animate.min.css")
         link(rel='stylesheet', href=f"/css/header.css")
-        
+
 def add_scroll_up():
     with a(id="scrollUp", cls="scroll-up displayNone", href="#top", onclick=f'civClicked(null)', style="position: fixed; z-index: 2147483647;"):
         with span():
@@ -349,6 +334,7 @@ def get_leader_html_file(bbg_version, lang):
 
     menu_items = []
     menu_icons = []
+    civ_leaders_items = get_civs_tables(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugConfiguration.sqlite")
     for leader in civ_leaders_items:
         menu_items.append(get_loc(locs_data, leader[2]) + ' ' + get_loc(locs_data, leader[5]))
         menu_icons.append(get_loc(en_US_locs_data, leader[2]) + ' ' + get_loc(en_US_locs_data, leader[5]))
@@ -402,6 +388,7 @@ def get_city_state_html_file(bbg_version, lang):
 
     menu_items = []
     menu_icons = []
+    city_states = get_city_states(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugConfiguration.sqlite")
     for cs in city_states:
         menu_items.append(get_loc(locs_data, cs[2]))
         menu_icons.append(get_loc(en_US_locs_data, cs[2]))
@@ -443,6 +430,7 @@ def get_pantheon_html_file(bbg_version, lang):
 
     menu_items = []
     menu_icons = []
+    pantheons = get_beliefs(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite", 'BELIEF_CLASS_PANTHEON')
     for pan in pantheons:
         menu_items.append(get_loc(locs_data, pan[1]))
         menu_icons.append(get_loc(en_US_locs_data, pan[1]))
@@ -493,6 +481,11 @@ def get_religion_html_file(bbg_version, lang):
     for t in types:
         menu_items.append(get_loc(locs_data, t))
         menu_icons.append(get_loc(en_US_locs_data, t))
+    religion_founder = get_beliefs(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite", 'BELIEF_CLASS_FOUNDER')
+    religion_follower = get_beliefs(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite", 'BELIEF_CLASS_FOLLOWER')
+    religion_enhancer = get_beliefs(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite", 'BELIEF_CLASS_ENHANCER')
+    religion_worship = get_beliefs(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite", 'BELIEF_CLASS_WORSHIP')
+
     with doc:
         add_preloader()
         div(cls="layer")
@@ -560,6 +553,9 @@ def get_governor_html_file(bbg_version, lang):
 
     menu_items = []
     menu_icons = []
+    governors = get_governors_list(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite")
+    governor_promotion_dict = get_governors_promotion_dict(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite")
+    governor_promotion_set_dict = get_governors_promotion_sets_dict(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite", governors, governor_promotion_dict)
     for gov in governors:
         menu_items.append(get_loc(locs_data, gov[1]))
         menu_icons.append(get_loc(en_US_locs_data, gov[1]))
