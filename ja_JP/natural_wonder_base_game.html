@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-Z2ESCT7CR0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-Z2ESCT7CR0');
+    </script>
+    <title>Civ VI GS RF Natural Wonders</title>
+    <meta charset="utf-8">
+    <meta contents="IE=edge" httpequiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="/images/civVI.webp" rel="icon" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap" rel="stylesheet">
+    <link href="/css/style.min.css" rel="stylesheet">
+    <link href="/css/preloader.css" rel="stylesheet">
+    <link href="/css/animate.min.css" rel="stylesheet">
+    <link href="/css/header.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="loader">
+        <div class="loader-outter"></div>
+        <div class="loader-inner"></div>
+        <div class="indicator">
+          <svg height="12px" width="16px">
+            <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+            <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="layer"></div>
+    <div class="page-flex">
+      <div class="main-wrapper">
+        <nav class="main-nav--bg">
+          <div class="main-nav">
+            <div class="header">
+              <div class="header-inner">
+                <div class="inner">
+                  <div class="row">
+                    <div class="flex center sidebar-toggle col-xl-1 col-lg-1 col-md-1 col-1">
+                      <button class="transparent-btn" title="Menu" type="button">
+                        <span class="sr-only">Toggle menu</span>
+                        <span aria-hidden="true" class="icon menu-toggle"></span>
+                      </button>
+                    </div>
+                    <div class="flex center col-xl-1 col-lg-1 col-md-1 col-1">
+                      <a href="/index.html" style="align-content: center;">
+                        <img alt="#" src="/images/BBGLogo.webp" style="width:50px; border-radius:10%">
+                      </a>
+                      <div class="mobile-nav"></div>
+                    </div>
+                    <div class="flex col-xl-8 col-lg-8 col-md-8 col-8">
+                      <div class="main-menu">
+                        <nav class="navigation">
+                          <ul class="nav menu">
+                            <li class="">
+                              <a href="/ja_JP/leaders_base_game.html" onclick="civClicked(null)">Leaders</a>
+                            </li>
+                            <li class="">
+                              <a href="/ja_JP/city_states_base_game.html" onclick="civClicked(null)">City States</a>
+                            </li>
+                            <li class="">
+                              <a href="/ja_JP/pantheons_base_game.html" onclick="civClicked(null)">Pantheons</a>
+                            </li>
+                            <li class="">
+                              <a href="/ja_JP/religion_base_game.html" onclick="civClicked(null)">Religion</a>
+                            </li>
+                            <li class="">
+                              <a href="/ja_JP/governor_base_game.html" onclick="civClicked(null)">Governors</a>
+                            </li>
+                            <li class="active">
+                              <a href="/ja_JP/natural_wonder_base_game.html" onclick="civClicked(null)">Natural Wonders</a>
+                            </li>
+                            <li>
+                              <a>BBG Version<i class="icofont-rounded-down"></i></a>
+                              <ul class="dropdown">
+                                <li>
+                                  <a href="/ja_JP/natural_wonder_base_game.html">Base Game</a>
+                                </li>
+                                <li>
+                                  <a href="/ja_JP/natural_wonder_6.4.html">BBG v6.4</a>
+                                </li>
+                                <li>
+                                  <a href="/ja_JP/natural_wonder_6.3.html">BBG v6.3</a>
+                                </li>
+                                <li>
+                                  <a href="/ja_JP/natural_wonder_6.2.html">BBG v6.2</a>
+                                </li>
+                                <li>
+                                  <a href="/ja_JP/natural_wonder_6.1.html">BBG v6.1</a>
+                                </li>
+                                <li>
+                                  <a href="/ja_JP/natural_wonder_6.0.html">BBG v6.0</a>
+                                </li>
+                                <li>
+                                  <a href="/ja_JP/natural_wonder_5.8.html">BBG v5.8</a>
+                                </li>
+                                <li>
+                                  <a href="/ja_JP/natural_wonder_5.7.html">BBG v5.7</a>
+                                </li>
+                                <li>
+                                  <a href="/ja_JP/natural_wonder_5.6.html">BBG v5.6</a>
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="">
+                              <a href="https://ko-fi.com/calcalciffer" target="_blank">Donate!</a>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+                    <div class="flex center col-xl-1 col-lg-1 col-md-1 col-1">
+                      <div class="main-menu">
+                        <nav class="navigation">
+                          <ul class="nav menu">
+                            <li><i class="lang-icon fa fa-language"></i>
+                              <ul class="dropdown" style="width:80px">
+                                <li>
+                                  <a href="/en_US/natural_wonder_base_game.html" style="align-content: center;">
+                                    <img src="/assets/flags/4x3/us.svg" style="height:20px">
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="/fr_FR/natural_wonder_base_game.html" style="align-content: center;">
+                                    <img src="/assets/flags/4x3/fr.svg" style="height:20px">
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="/ru_RU/natural_wonder_base_game.html" style="align-content: center;">
+                                    <img src="/assets/flags/4x3/ru.svg" style="height:20px">
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="/de_DE/natural_wonder_base_game.html" style="align-content: center;">
+                                    <img src="/assets/flags/4x3/de.svg" style="height:20px">
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="/zh_Hans_CN/natural_wonder_base_game.html" style="align-content: center;">
+                                    <img src="/assets/flags/4x3/cn.svg" style="height:20px">
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="/ko_KR/natural_wonder_base_game.html" style="align-content: center;">
+                                    <img src="/assets/flags/4x3/kr.svg" style="height:20px">
+                                  </a>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+                    <div class="flex center col-xl-1 col-lg-1 col-md-1 col-1">
+                      <div class="theme-switcher-wrapper">
+                        <button class="theme-switcher gray-circle-btn" title="Switch theme" type="button">
+                          <span class="sr-only">Switch theme</span><i aria-hidden="true" class="sun-icon" data-feather="sun"></i><i aria-hidden="true" class="moon-icon" data-feather="moon"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="">
+          <div class="fixed left-0 right-auto h-screen w-[253px] bg-white border-r border-neutral-300 overflow-scroll" style="z-index: 5;">
+            <aside class="sidebar">
+              <div class="sidebar-start">
+                <div class="sidebar-body">
+                  <ul class="sidebar-body-menu">
+                    <li>
+                      <a href="#グレートバリアリーフ" onclick="civClicked(&quot;グレートバリアリーフ&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Great Barrier Reef.webp">
+                        </span>
+                        <p>グレートバリアリーフ</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#バミューダトライアングル" onclick="civClicked(&quot;バミューダトライアングル&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Bermuda Triangle.webp">
+                        </span>
+                        <p>バミューダトライアングル</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#チョコレート・ヒル" onclick="civClicked(&quot;チョコレート・ヒル&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Chocolate Hills.webp">
+                        </span>
+                        <p>チョコレート・ヒル</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#ドーバーの崖" onclick="civClicked(&quot;ドーバーの崖&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Cliffs of Dover.webp">
+                        </span>
+                        <p>ドーバーの崖</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#クレーターレイク" onclick="civClicked(&quot;クレーターレイク&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Crater Lake.webp">
+                        </span>
+                        <p>クレーターレイク</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#死海" onclick="civClicked(&quot;死海&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Dead Sea.webp">
+                        </span>
+                        <p>死海</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#デリケート・アーチ" onclick="civClicked(&quot;デリケート・アーチ&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Delicate Arch.webp">
+                        </span>
+                        <p>デリケート・アーチ</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#マト・ティピラ" onclick="civClicked(&quot;マト・ティピラ&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Mato Tipila.webp">
+                        </span>
+                        <p>マト・ティピラ</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#エベレスト山" onclick="civClicked(&quot;エベレスト山&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Mount Everest.webp">
+                        </span>
+                        <p>エベレスト山</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#サハラの目" onclick="civClicked(&quot;サハラの目&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Eye of the Sahara.webp">
+                        </span>
+                        <p>サハラの目</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#エイヤフィヤトラヨークトル" onclick="civClicked(&quot;エイヤフィヤトラヨークトル&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Eyjafjallajökull.webp">
+                        </span>
+                        <p>エイヤフィヤトラヨークトル</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#若返りの泉" onclick="civClicked(&quot;若返りの泉&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Fountain of Youth.webp">
+                        </span>
+                        <p>若返りの泉</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#ガラパゴス諸島" onclick="civClicked(&quot;ガラパゴス諸島&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Galápagos Islands.webp">
+                        </span>
+                        <p>ガラパゴス諸島</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#ジャイアンツ・コーズウェー" onclick="civClicked(&quot;ジャイアンツ・コーズウェー&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Giant's Causeway.webp">
+                        </span>
+                        <p>ジャイアンツ・コーズウェー</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#ゴブスタン" onclick="civClicked(&quot;ゴブスタン&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Gobustan .webp">
+                        </span>
+                        <p>ゴブスタン</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#ハロン湾" onclick="civClicked(&quot;ハロン湾&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Hạ Long Bay.webp">
+                        </span>
+                        <p>ハロン湾</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#イキル" onclick="civClicked(&quot;イキル&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Ik-Kil.webp">
+                        </span>
+                        <p>イキル</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#キリマンジャロ山" onclick="civClicked(&quot;キリマンジャロ山&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Mount Kilimanjaro.webp">
+                        </span>
+                        <p>キリマンジャロ山</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#レトバ湖" onclick="civClicked(&quot;レトバ湖&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Lake Retba.webp">
+                        </span>
+                        <p>レトバ湖</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#リースフィヨルド" onclick="civClicked(&quot;リースフィヨルド&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Lysefjord.webp">
+                        </span>
+                        <p>リースフィヨルド</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#マッターホルン" onclick="civClicked(&quot;マッターホルン&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Matterhorn.webp">
+                        </span>
+                        <p>マッターホルン</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#パイティティ" onclick="civClicked(&quot;パイティティ&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Païtiti.webp">
+                        </span>
+                        <p>パイティティ</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#パムッカレ" onclick="civClicked(&quot;パムッカレ&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Pamukkale.webp">
+                        </span>
+                        <p>パムッカレ</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#パンタナル" onclick="civClicked(&quot;パンタナル&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Pantanal.webp">
+                        </span>
+                        <p>パンタナル</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#ピオピオタヒ" onclick="civClicked(&quot;ピオピオタヒ&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Piopiotahi.webp">
+                        </span>
+                        <p>ピオピオタヒ</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#ロライマ山" onclick="civClicked(&quot;ロライマ山&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Mount Roraima.webp">
+                        </span>
+                        <p>ロライマ山</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#トーレス・デル・パイネ" onclick="civClicked(&quot;トーレス・デル・パイネ&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Torres del Paine.webp">
+                        </span>
+                        <p>トーレス・デル・パイネ</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#ツィンギ・デ・ベマラ" onclick="civClicked(&quot;ツィンギ・デ・ベマラ&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Tsingy de Bemaraha.webp">
+                        </span>
+                        <p>ツィンギ・デ・ベマラ</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#ウヴス・ヌール盆地" onclick="civClicked(&quot;ウヴス・ヌール盆地&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Ubsunur Hollow.webp">
+                        </span>
+                        <p>ウヴス・ヌール盆地</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#ウルル" onclick="civClicked(&quot;ウルル&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Uluru.webp">
+                        </span>
+                        <p>ウルル</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#ヴェスヴィオ山" onclick="civClicked(&quot;ヴェスヴィオ山&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Mount Vesuvius.webp">
+                        </span>
+                        <p>ヴェスヴィオ山</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#サハラ・エル・ベイダ" onclick="civClicked(&quot;サハラ・エル・ベイダ&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Sahara el Beyda.webp">
+                        </span>
+                        <p>サハラ・エル・ベイダ</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#ヨセミテ" onclick="civClicked(&quot;ヨセミテ&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Yosemite.webp">
+                        </span>
+                        <p>ヨセミテ</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#張掖丹霞" onclick="civClicked(&quot;張掖丹霞&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Zhangye Danxia.webp">
+                        </span>
+                        <p>張掖丹霞</p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </aside>
+          </div>
+          <div class="leaders-data min-w-full main-pl">
+            <main class="main users chart-page">
+              <div class="container">
+                <div class="row" id="グレートバリアリーフ">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">グレートバリアリーフ
+                        <img src="/images/natural_wonders/Great Barrier Reef.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">2タイルの自然遺産。沿岸地形に見られる。 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食料+3、 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科学力+2。キャンパスに大規模な隣接ボーナス</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="バミューダトライアングル">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">バミューダトライアングル
+                        <img src="/images/natural_wonders/Bermuda Triangle.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">3タイルの自然遺産。隣接するタイルの <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科学力+5。このタイルに入った海洋ユニットは遠くの外洋タイルに飛ばされるが、「神秘の海流」( <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動力+1) の能力を得る。</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="チョコレート・ヒル">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">チョコレート・ヒル
+                        <img src="/images/natural_wonders/Chocolate Hills.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">4タイルの自然遺産。 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食料+1、 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力+2、 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科学力+1。</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="ドーバーの崖">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">ドーバーの崖
+                        <img src="/images/natural_wonders/Cliffs of Dover.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">2タイルの自然遺産。水域に隣接する崖がある。 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力+3、 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食料+2、  <img src="/images/ICON_GOLD.webp" style="height:1em"/> ゴールド+3。隣接タイルに与える自然遺産のアピールが+2ではなく+4になる。この上に施設は築けない。</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="クレーターレイク">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">クレーターレイク
+                        <img src="/images/natural_wonders/Crater Lake.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">1タイルの自然遺産。湖。真水をもたらす。 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰力+5、 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科学力+1。</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="死海">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">死海
+                        <img src="/images/natural_wonders/Dead Sea.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">2タイルの自然遺産。湖。死海に隣接した場所で回復をおこなったユニットは、1ターンで全快する。 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰力+2、 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力+2。真水が得られない。</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="デリケート・アーチ">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">デリケート・アーチ
+                        <img src="/images/natural_wonders/Delicate Arch.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">1タイルの自然遺産。通行不可。隣接するタイルは <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰力+1、 <img src="/images/ICON_GOLD.webp" style="height:1em"/> ゴールド+1。</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="マト・ティピラ">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">マト・ティピラ
+                        <img src="/images/natural_wonders/Mato Tipila.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">1タイルの自然遺産。通行不可。隣接するタイルは <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰力+1、 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力+1。</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="エベレスト山">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">エベレスト山
+                        <img src="/images/natural_wonders/Mount Everest.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">3タイルの自然遺産。隣接するタイルは <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰力+1。一度エベレストに隣接した宗教ユニットは、丘陵の影響を受けなくなる。</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="サハラの目">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">サハラの目
+                        <img src="/images/natural_wonders/Eye of the Sahara.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">3タイルの自然遺産。 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力+2、 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科学力+1。原子力時代に到達すると、以降はさらに <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力+1、<img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科学力+3。</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="エイヤフィヤトラヨークトル">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">エイヤフィヤトラヨークトル
+                        <img src="/images/natural_wonders/Eyjafjallajökull.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">隣接する土地の <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力+1、 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食料+2。</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="若返りの泉">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">若返りの泉
+                        <img src="/images/natural_wonders/Fountain of Youth.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">1タイルの自然遺産。 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科学力+4、 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰力+4、真水をもたらす。陸上戦闘ユニットがこのタイルに入ると、「命の水」(どの領土でも回復時のHP+10) の能力を得る。</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="ガラパゴス諸島">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">ガラパゴス諸島
+                        <img src="/images/natural_wonders/Galápagos Islands.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">2タイルの自然遺産。通行不可。沿岸地形。隣接するタイルは <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科学力+2。</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="ジャイアンツ・コーズウェー">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">ジャイアンツ・コーズウェー
+                        <img src="/images/natural_wonders/Giant's Causeway.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">隣接する土地に入る陸上戦闘ユニットが「フィオンの槍」(戦闘力+5) の能力を得る。隣接する土地の <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力+1。</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="ゴブスタン">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">ゴブスタン
+                        <img src="/images/natural_wonders/Gobustan .webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">3タイルの自然遺産。 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力+3、 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力+1。</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="ハロン湾">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">ハロン湾
+                        <img src="/images/natural_wonders/Hạ Long Bay.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">2タイルの自然遺産。沿岸地形に見られる。 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食料+3、 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力+1、 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力+1。このタイルでの防衛時は <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 戦闘力+15。</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="イキル">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">イキル
+                        <img src="/images/natural_wonders/Ik-Kil.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">1タイルの自然遺産。通行不可。隣接タイルに遺産や区域を建設する場合、 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力+50%。真水が得られる。</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="キリマンジャロ山">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">キリマンジャロ山
+                        <img src="/images/natural_wonders/Mount Kilimanjaro.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">1タイルの自然遺産。通行不可。火山。隣接タイルの <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食料+2。噴火すると産出量がやや増える。高い確率で建造物と区域が被害を受ける。滅多に噴火しないが、常に活動している。</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="レトバ湖">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">レトバ湖
+                        <img src="/images/natural_wonders/Lake Retba.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">2タイルの自然遺産。湖のように見え <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力+2、 <img src="/images/ICON_GOLD.webp" style="height:1em"/> ゴールド+2、 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力+1。真水が得られない。</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="リースフィヨルド">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">リースフィヨルド
+                        <img src="/images/natural_wonders/Lysefjord.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">隣接する土地に入る海洋戦闘ユニットが次のレベルアップを得る。隣接する土地の <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力+1。</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="マッターホルン">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">マッターホルン
+                        <img src="/images/natural_wonders/Matterhorn.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">1タイルの自然遺産。隣接するタイルは <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力+1。一度マッターホルンに隣接した陸上戦闘ユニットは、丘陵の影響を受けずに移動できるほか、丘陵での戦闘時に <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 戦闘力+3。</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="パイティティ">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">パイティティ
+                        <img src="/images/natural_wonders/Païtiti.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">3タイルの自然遺産。隣接するタイルの <img src="/images/ICON_GOLD.webp" style="height:1em"/> ゴールド+3、 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力+2。このタイルがある都市は、他文明に向かう <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> 交易路からの <img src="/images/ICON_GOLD.webp" style="height:1em"/> +4。  </p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="パムッカレ">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">パムッカレ
+                        <img src="/images/natural_wonders/Pamukkale.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">2タイルの自然遺産。通行不可。 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> 快適性+1。総合娯楽施設に隣接している場合、さらに <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> 快適性+1。劇場広場、キャンパス、商業ハブの各区域に大規模な隣接ボーナス。聖地区域に接している場合、通常の隣接ボーナス。真水が得られる。</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="パンタナル">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">パンタナル
+                        <img src="/images/natural_wonders/Pantanal.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">4タイルの自然遺産。 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食料+2、 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力+2。</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="ピオピオタヒ">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">ピオピオタヒ
+                        <img src="/images/natural_wonders/Piopiotahi.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">3タイルの自然遺産。通行不可。隣接するタイルは <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力+1、 <img src="/images/ICON_GOLD.webp" style="height:1em"/> ゴールド+1。</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="ロライマ山">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">ロライマ山
+                        <img src="/images/natural_wonders/Mount Roraima.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">1タイルの自然遺産。隣接タイルに <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰力+1、 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科学力+1。</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="トーレス・デル・パイネ">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">トーレス・デル・パイネ
+                        <img src="/images/natural_wonders/Torres del Paine.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">2タイルの自然遺産。通行不可。隣接するすべてのタイルは産出量が2倍になる。</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="ツィンギ・デ・ベマラ">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">ツィンギ・デ・ベマラ
+                        <img src="/images/natural_wonders/Tsingy de Bemaraha.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">1タイルの自然遺産。通行不可。隣接するタイルは <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力+1、 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科学力+1。</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="ウヴス・ヌール盆地">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">ウヴス・ヌール盆地
+                        <img src="/images/natural_wonders/Ubsunur Hollow.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">4タイルの自然遺産。 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰力+2、 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食料+1、 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力+1。</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="ウルル">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">ウルル
+                        <img src="/images/natural_wonders/Uluru.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">1タイルの自然遺産。通行不可。隣接するタイルは <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力+2、 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰力+2。隣接するタイルのアピールが通常の+2ではなく+4。</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="ヴェスヴィオ山">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">ヴェスヴィオ山
+                        <img src="/images/natural_wonders/Mount Vesuvius.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">1タイルの自然遺産。通行不可。火山。隣接タイルの <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力+1。噴火すると隣接タイルの産出量が大きく増えるが、 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 人口が激減する。常に活動している。</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="サハラ・エル・ベイダ">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">サハラ・エル・ベイダ
+                        <img src="/images/natural_wonders/Sahara el Beyda.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">4タイルの自然遺産。 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科学力+1、 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力+1、 <img src="/images/ICON_GOLD.webp" style="height:1em"/> ゴールド+4。</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="ヨセミテ">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">ヨセミテ
+                        <img src="/images/natural_wonders/Yosemite.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">2タイルの自然遺産。通行不可。隣接するタイルは <img src="/images/ICON_GOLD.webp" style="height:1em"/> ゴールド+1、 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食料+1、 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科学力+1。</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="張掖丹霞">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">張掖丹霞
+                        <img src="/images/natural_wonders/Zhangye Danxia.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">3タイルの自然遺産。3タイルのうちいずれか1つ以上のタイルを所有している場合、 <img src="/images/ICON_GREATGENERAL.webp" style="height:1em"/> 大将軍ポイント+2、 <img src="/images/ICON_GREATMERCHANT.webp" style="height:1em"/> 大商人ポイント+2。</p><br>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </main>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/plugins/feather.min.js"></script>
+    <script src="/plugins/chart.min.js"></script>
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/bd91c323e3.js"></script>
+    <a class="scroll-up displayNone" href="#top" id="scrollUp" onclick="civClicked(null)" style="position: fixed; z-index: 2147483647;">
+      <span><i class="fa fa-angle-up"></i></span>
+    </a>
+  </body>
+</html>

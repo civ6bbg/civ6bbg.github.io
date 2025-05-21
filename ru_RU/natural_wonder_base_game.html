@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-Z2ESCT7CR0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-Z2ESCT7CR0');
+    </script>
+    <title>Civ VI GS RF Natural Wonders</title>
+    <meta charset="utf-8">
+    <meta contents="IE=edge" httpequiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="/images/civVI.webp" rel="icon" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap" rel="stylesheet">
+    <link href="/css/style.min.css" rel="stylesheet">
+    <link href="/css/preloader.css" rel="stylesheet">
+    <link href="/css/animate.min.css" rel="stylesheet">
+    <link href="/css/header.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="loader">
+        <div class="loader-outter"></div>
+        <div class="loader-inner"></div>
+        <div class="indicator">
+          <svg height="12px" width="16px">
+            <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+            <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="layer"></div>
+    <div class="page-flex">
+      <div class="main-wrapper">
+        <nav class="main-nav--bg">
+          <div class="main-nav">
+            <div class="header">
+              <div class="header-inner">
+                <div class="inner">
+                  <div class="row">
+                    <div class="flex center sidebar-toggle col-xl-1 col-lg-1 col-md-1 col-1">
+                      <button class="transparent-btn" title="Menu" type="button">
+                        <span class="sr-only">Toggle menu</span>
+                        <span aria-hidden="true" class="icon menu-toggle"></span>
+                      </button>
+                    </div>
+                    <div class="flex center col-xl-1 col-lg-1 col-md-1 col-1">
+                      <a href="/index.html" style="align-content: center;">
+                        <img alt="#" src="/images/BBGLogo.webp" style="width:50px; border-radius:10%">
+                      </a>
+                      <div class="mobile-nav"></div>
+                    </div>
+                    <div class="flex col-xl-8 col-lg-8 col-md-8 col-8">
+                      <div class="main-menu">
+                        <nav class="navigation">
+                          <ul class="nav menu">
+                            <li class="">
+                              <a href="/ru_RU/leaders_base_game.html" onclick="civClicked(null)">Leaders</a>
+                            </li>
+                            <li class="">
+                              <a href="/ru_RU/city_states_base_game.html" onclick="civClicked(null)">City States</a>
+                            </li>
+                            <li class="">
+                              <a href="/ru_RU/pantheons_base_game.html" onclick="civClicked(null)">Pantheons</a>
+                            </li>
+                            <li class="">
+                              <a href="/ru_RU/religion_base_game.html" onclick="civClicked(null)">Religion</a>
+                            </li>
+                            <li class="">
+                              <a href="/ru_RU/governor_base_game.html" onclick="civClicked(null)">Governors</a>
+                            </li>
+                            <li class="active">
+                              <a href="/ru_RU/natural_wonder_base_game.html" onclick="civClicked(null)">Natural Wonders</a>
+                            </li>
+                            <li>
+                              <a>BBG Version<i class="icofont-rounded-down"></i></a>
+                              <ul class="dropdown">
+                                <li>
+                                  <a href="/ru_RU/natural_wonder_base_game.html">Base Game</a>
+                                </li>
+                                <li>
+                                  <a href="/ru_RU/natural_wonder_6.4.html">BBG v6.4</a>
+                                </li>
+                                <li>
+                                  <a href="/ru_RU/natural_wonder_6.3.html">BBG v6.3</a>
+                                </li>
+                                <li>
+                                  <a href="/ru_RU/natural_wonder_6.2.html">BBG v6.2</a>
+                                </li>
+                                <li>
+                                  <a href="/ru_RU/natural_wonder_6.1.html">BBG v6.1</a>
+                                </li>
+                                <li>
+                                  <a href="/ru_RU/natural_wonder_6.0.html">BBG v6.0</a>
+                                </li>
+                                <li>
+                                  <a href="/ru_RU/natural_wonder_5.8.html">BBG v5.8</a>
+                                </li>
+                                <li>
+                                  <a href="/ru_RU/natural_wonder_5.7.html">BBG v5.7</a>
+                                </li>
+                                <li>
+                                  <a href="/ru_RU/natural_wonder_5.6.html">BBG v5.6</a>
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="">
+                              <a href="https://ko-fi.com/calcalciffer" target="_blank">Donate!</a>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+                    <div class="flex center col-xl-1 col-lg-1 col-md-1 col-1">
+                      <div class="main-menu">
+                        <nav class="navigation">
+                          <ul class="nav menu">
+                            <li><i class="lang-icon fa fa-language"></i>
+                              <ul class="dropdown" style="width:80px">
+                                <li>
+                                  <a href="/en_US/natural_wonder_base_game.html" style="align-content: center;">
+                                    <img src="/assets/flags/4x3/us.svg" style="height:20px">
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="/fr_FR/natural_wonder_base_game.html" style="align-content: center;">
+                                    <img src="/assets/flags/4x3/fr.svg" style="height:20px">
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="/ru_RU/natural_wonder_base_game.html" style="align-content: center;">
+                                    <img src="/assets/flags/4x3/ru.svg" style="height:20px">
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="/de_DE/natural_wonder_base_game.html" style="align-content: center;">
+                                    <img src="/assets/flags/4x3/de.svg" style="height:20px">
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="/zh_Hans_CN/natural_wonder_base_game.html" style="align-content: center;">
+                                    <img src="/assets/flags/4x3/cn.svg" style="height:20px">
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="/ko_KR/natural_wonder_base_game.html" style="align-content: center;">
+                                    <img src="/assets/flags/4x3/kr.svg" style="height:20px">
+                                  </a>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+                    <div class="flex center col-xl-1 col-lg-1 col-md-1 col-1">
+                      <div class="theme-switcher-wrapper">
+                        <button class="theme-switcher gray-circle-btn" title="Switch theme" type="button">
+                          <span class="sr-only">Switch theme</span><i aria-hidden="true" class="sun-icon" data-feather="sun"></i><i aria-hidden="true" class="moon-icon" data-feather="moon"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="">
+          <div class="fixed left-0 right-auto h-screen w-[253px] bg-white border-r border-neutral-300 overflow-scroll" style="z-index: 5;">
+            <aside class="sidebar">
+              <div class="sidebar-start">
+                <div class="sidebar-body">
+                  <ul class="sidebar-body-menu">
+                    <li>
+                      <a href="#Большой Барьерный риф" onclick="civClicked(&quot;Большой Барьерный риф&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Great Barrier Reef.webp">
+                        </span>
+                        <p>Большой Барьерный риф</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Бермудский треугольник" onclick="civClicked(&quot;Бермудский треугольник&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Bermuda Triangle.webp">
+                        </span>
+                        <p>Бермудский треугольник</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Шоколадные холмы" onclick="civClicked(&quot;Шоколадные холмы&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Chocolate Hills.webp">
+                        </span>
+                        <p>Шоколадные холмы</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Белые скалы Дувра" onclick="civClicked(&quot;Белые скалы Дувра&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Cliffs of Dover.webp">
+                        </span>
+                        <p>Белые скалы Дувра</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Озеро Крейтер" onclick="civClicked(&quot;Озеро Крейтер&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Crater Lake.webp">
+                        </span>
+                        <p>Озеро Крейтер</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Мертвое море" onclick="civClicked(&quot;Мертвое море&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Dead Sea.webp">
+                        </span>
+                        <p>Мертвое море</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Изящная арка" onclick="civClicked(&quot;Изящная арка&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Delicate Arch.webp">
+                        </span>
+                        <p>Изящная арка</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Мато-Типила" onclick="civClicked(&quot;Мато-Типила&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Mato Tipila.webp">
+                        </span>
+                        <p>Мато-Типила</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Гора Эверест" onclick="civClicked(&quot;Гора Эверест&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Mount Everest.webp">
+                        </span>
+                        <p>Гора Эверест</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Глаз Сахары" onclick="civClicked(&quot;Глаз Сахары&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Eye of the Sahara.webp">
+                        </span>
+                        <p>Глаз Сахары</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Эйяфьядлайекюдль" onclick="civClicked(&quot;Эйяфьядлайекюдль&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Eyjafjallajökull.webp">
+                        </span>
+                        <p>Эйяфьядлайекюдль</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Источник вечной молодости" onclick="civClicked(&quot;Источник вечной молодости&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Fountain of Youth.webp">
+                        </span>
+                        <p>Источник вечной молодости</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Галапагосские острова" onclick="civClicked(&quot;Галапагосские острова&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Galápagos Islands.webp">
+                        </span>
+                        <p>Галапагосские острова</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Дорога гигантов" onclick="civClicked(&quot;Дорога гигантов&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Giant's Causeway.webp">
+                        </span>
+                        <p>Дорога гигантов</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Гобустан" onclick="civClicked(&quot;Гобустан&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Gobustan .webp">
+                        </span>
+                        <p>Гобустан</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Бухта Халонг" onclick="civClicked(&quot;Бухта Халонг&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Hạ Long Bay.webp">
+                        </span>
+                        <p>Бухта Халонг</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Ик-Киль" onclick="civClicked(&quot;Ик-Киль&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Ik-Kil.webp">
+                        </span>
+                        <p>Ик-Киль</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Гора Килиманджаро" onclick="civClicked(&quot;Гора Килиманджаро&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Mount Kilimanjaro.webp">
+                        </span>
+                        <p>Гора Килиманджаро</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Озеро Ретба" onclick="civClicked(&quot;Озеро Ретба&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Lake Retba.webp">
+                        </span>
+                        <p>Озеро Ретба</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Люсе-фьорд" onclick="civClicked(&quot;Люсе-фьорд&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Lysefjord.webp">
+                        </span>
+                        <p>Люсе-фьорд</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Маттерхорн" onclick="civClicked(&quot;Маттерхорн&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Matterhorn.webp">
+                        </span>
+                        <p>Маттерхорн</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Пайтити" onclick="civClicked(&quot;Пайтити&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Païtiti.webp">
+                        </span>
+                        <p>Пайтити</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Памуккале" onclick="civClicked(&quot;Памуккале&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Pamukkale.webp">
+                        </span>
+                        <p>Памуккале</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Пантанал" onclick="civClicked(&quot;Пантанал&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Pantanal.webp">
+                        </span>
+                        <p>Пантанал</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Пиопитахи" onclick="civClicked(&quot;Пиопитахи&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Piopiotahi.webp">
+                        </span>
+                        <p>Пиопитахи</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Гора Рорайма" onclick="civClicked(&quot;Гора Рорайма&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Mount Roraima.webp">
+                        </span>
+                        <p>Гора Рорайма</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Торрес-дель-Пайне" onclick="civClicked(&quot;Торрес-дель-Пайне&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Torres del Paine.webp">
+                        </span>
+                        <p>Торрес-дель-Пайне</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Цинжи-дю-Бемараха" onclick="civClicked(&quot;Цинжи-дю-Бемараха&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Tsingy de Bemaraha.webp">
+                        </span>
+                        <p>Цинжи-дю-Бемараха</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Убсунурская котловина" onclick="civClicked(&quot;Убсунурская котловина&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Ubsunur Hollow.webp">
+                        </span>
+                        <p>Убсунурская котловина</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Улуру" onclick="civClicked(&quot;Улуру&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Uluru.webp">
+                        </span>
+                        <p>Улуру</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Везувий" onclick="civClicked(&quot;Везувий&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Mount Vesuvius.webp">
+                        </span>
+                        <p>Везувий</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Белая пустыня" onclick="civClicked(&quot;Белая пустыня&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Sahara el Beyda.webp">
+                        </span>
+                        <p>Белая пустыня</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Йосемити" onclick="civClicked(&quot;Йосемити&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Yosemite.webp">
+                        </span>
+                        <p>Йосемити</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Чжанъе Данься" onclick="civClicked(&quot;Чжанъе Данься&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Zhangye Danxia.webp">
+                        </span>
+                        <p>Чжанъе Данься</p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </aside>
+          </div>
+          <div class="leaders-data min-w-full main-pl">
+            <main class="main users chart-page">
+              <div class="container">
+                <div class="row" id="Большой Барьерный риф">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Большой Барьерный риф
+                        <img src="/images/natural_wonders/Great Barrier Reef.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Чудо природы на две клетки. Встречается на побережье, дает +3 <img src="/images/ICON_FOOD.webp" style="height:1em"/> пищи и +2 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> науки. Повышенный бонус за соседство с кампусом.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Бермудский треугольник">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Бермудский треугольник
+                        <img src="/images/natural_wonders/Bermuda Triangle.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Чудо природы на три клетки. Дает +5 ед. <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> науки соседним клеткам. Входящие юниты переносятся к далекому океану. Если это морские юниты, они получают способность «Загадочные течения» (+1 к <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> перемещению).</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Шоколадные холмы">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Шоколадные холмы
+                        <img src="/images/natural_wonders/Chocolate Hills.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Чудо природы. Занимает четыре клетки. Дает +1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> к пище, +2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> к производству и +1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> к науке.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Белые скалы Дувра">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Белые скалы Дувра
+                        <img src="/images/natural_wonders/Cliffs of Dover.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Чудо природы на две клетки. Встречается вместе со скалами рядом с водой, дает +3 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> культуры, +2 <img src="/images/ICON_FOOD.webp" style="height:1em"/> пищи и +3 <img src="/images/ICON_GOLD.webp" style="height:1em"/> золота. Поднимает престиж в соседних клетках на +4, а не на +2, как другие чудеса света. На этом чуде нельзя строить улучшения.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Озеро Крейтер">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Озеро Крейтер
+                        <img src="/images/natural_wonders/Crater Lake.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Чудо природы на одну клетку. Выглядит как озеро и дает +5 <img src="/images/ICON_FAITH.webp" style="height:1em"/> веры и +1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> науки. Источник пресной воды.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Мертвое море">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Мертвое море
+                        <img src="/images/natural_wonders/Dead Sea.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Чудо природы. Занимает две клетки. Выглядит как озеро, дает +2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> веры и +2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> культуры. Юниты, которые проводят один ход рядом с Мертвым морем, полностью исцеляются. Не является источником пресной воды.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Изящная арка">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Изящная арка
+                        <img src="/images/natural_wonders/Delicate Arch.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Чудо природы. Занимает одну непроходимую клетку. Дает +2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> веры и +1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> золота соседним клеткам.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Мато-Типила">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Мато-Типила
+                        <img src="/images/natural_wonders/Mato Tipila.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Чудо природы. Занимает одну непроходимую клетку. Дает +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> к вере и +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> к производству на соседних клетках.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Гора Эверест">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Гора Эверест
+                        <img src="/images/natural_wonders/Mount Everest.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Чудо природы из трех непроходимых клеток. Дает +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> веры соседним клеткам. Религиозные юниты, прошедшие рядом с горой Эверест, игнорируют холмы до конца игры.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Глаз Сахары">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Глаз Сахары
+                        <img src="/images/natural_wonders/Eye of the Sahara.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Чудо природы. Занимает три клетки. Дает +2 ед. <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> производства и +1 ед. <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> науки. После перехода в Эпоху атома дает дополнительно +1 ед. <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> производства и +3 ед. <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> науки.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Эйяфьядлайекюдль">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Эйяфьядлайекюдль
+                        <img src="/images/natural_wonders/Eyjafjallajökull.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Соседние клетки дают +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> культуры и +2 <img src="/images/ICON_FOOD.webp" style="height:1em"/> пищи.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Источник вечной молодости">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Источник вечной молодости
+                        <img src="/images/natural_wonders/Fountain of Youth.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Чудо природы на одну клетку. Дает +4 ед. <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> науки, +4 ед. <img src="/images/ICON_FAITH.webp" style="height:1em"/> веры и пресную воду. Наземные боевые юниты, вошедшие в данную клетку, получают способность «Живая вода» (+10 ОЗ к исцелению на любой территории).</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Галапагосские острова">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Галапагосские острова
+                        <img src="/images/natural_wonders/Galápagos Islands.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Чудо природы на две непроходимые клетки. Появляется на побережье и дает +2 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> науки соседним клеткам.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Дорога гигантов">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Дорога гигантов
+                        <img src="/images/natural_wonders/Giant's Causeway.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Наземные боевые юниты, оказавшиеся на соседних клетках, получают способность «Копье Финна» (+5 к боевой мощи). Соседние клетки дают +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> культуры.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Гобустан">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Гобустан
+                        <img src="/images/natural_wonders/Gobustan .webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Чудо природы. Занимает три клетки. Дает +3 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> к культуре и +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> к производству.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Бухта Халонг">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Бухта Халонг
+                        <img src="/images/natural_wonders/Hạ Long Bay.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Чудо природы на две клетки. Встречается на побережье, дает +3 <img src="/images/ICON_FOOD.webp" style="height:1em"/> пищи, +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> производства и +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> культуры. +15 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> боевой мощи в обороне на этой клетке.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Ик-Киль">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Ик-Киль
+                        <img src="/images/natural_wonders/Ik-Kil.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Чудо природы. Занимает одну непроходимую клетку. +50% <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> производства при строительстве чудес света и районов на соседних клетках. Источник пресной воды.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Гора Килиманджаро">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Гора Килиманджаро
+                        <img src="/images/natural_wonders/Mount Kilimanjaro.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Чудо природы. Занимает одну непроходимую клетку. Представляет собой вулкан. Дает соседним клеткам +2 <img src="/images/ICON_FOOD.webp" style="height:1em"/> к пище. Извержение незначительно обогащает соседние клетки; высока вероятность повреждения соседних улучшений и зданий. Редко извергается, но всегда активен.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Озеро Ретба">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Озеро Ретба
+                        <img src="/images/natural_wonders/Lake Retba.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Чудо природы. Занимает две клетки. Выглядит как озеро и дает +2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> культуры, +2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> золота и +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> производства. Не является источником пресной воды.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Люсе-фьорд">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Люсе-фьорд
+                        <img src="/images/natural_wonders/Lysefjord.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Морские боевые юниты, оказавшиеся на соседних клетках, получают повышение. +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> производства на соседних клетках.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Маттерхорн">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Маттерхорн
+                        <img src="/images/natural_wonders/Matterhorn.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Чудо природы. Занимает одну непроходимую клетку. Дает +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> культуры соседним клеткам. Наземные боевые юниты, прошедшие рядом с горой Маттерхорн, игнорируют холмы до конца игры и получают +3 к <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> боевой мощи на холмах.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Пайтити">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Пайтити
+                        <img src="/images/natural_wonders/Païtiti.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Чудо природы на три непроходимые клетки. Дает +3 <img src="/images/ICON_GOLD.webp" style="height:1em"/> золота и +2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> культуры соседним клеткам. Город, владеющий клеткой Пайтити, получает +4 <img src="/images/ICON_GOLD.webp" style="height:1em"/> золота на исходящих международных <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> торговых путях.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Памуккале">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Памуккале
+                        <img src="/images/natural_wonders/Pamukkale.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Чудо природы. Занимает две непроходимых клетки. +1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> к довольству. Дает дополнительное <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> довольство, если рядом находится развлекательный комплекс. Повышенный бонус за соседство с театральной площадью, кампусом и центром коммерции. Стандартный бонус за соседство со священным местом. Источник пресной воды.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Пантанал">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Пантанал
+                        <img src="/images/natural_wonders/Pantanal.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Чудо природы на четыре клетки. Дает +2 <img src="/images/ICON_FOOD.webp" style="height:1em"/> пищи и +2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> культуры.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Пиопитахи">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Пиопитахи
+                        <img src="/images/natural_wonders/Piopiotahi.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Чудо природы на три непроходимых клетки. Дает +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> культуры и +1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> золота соседним клеткам.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Гора Рорайма">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Гора Рорайма
+                        <img src="/images/natural_wonders/Mount Roraima.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Чудо природы. Занимает четыре непроходимые клети. Дает +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> веры и +1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> науки соседним клеткам.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Торрес-дель-Пайне">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Торрес-дель-Пайне
+                        <img src="/images/natural_wonders/Torres del Paine.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Чудо природы на две непроходимых клетки. Удваивает базовую продукцию всех соседних клеток.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Цинжи-дю-Бемараха">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Цинжи-дю-Бемараха
+                        <img src="/images/natural_wonders/Tsingy de Bemaraha.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Чудо природы на одну непроходимую клетку. Дает +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> культуры и +1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> науки соседним клеткам.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Убсунурская котловина">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Убсунурская котловина
+                        <img src="/images/natural_wonders/Ubsunur Hollow.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Чудо природы. Занимает четыре клетки. Дает +2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> веры, +1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> пищи и +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> производства.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Улуру">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Улуру
+                        <img src="/images/natural_wonders/Uluru.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Чудо природы на одну непроходимую клетку. Дает +2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> культуры и +2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> веры соседним клеткам. Дает +4 ед. престижа соседним клеткам вместо обычных двух.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Везувий">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Везувий
+                        <img src="/images/natural_wonders/Mount Vesuvius.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Чудо природы. Занимает одну непроходимую клетку. Представляет собой вулкан. Дает соседним клеткам +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> к производству. Извержение значительно обогащает соседние клетки, но сопровождается большими потерями среди <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> населения. Всегда активен.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Белая пустыня">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Белая пустыня
+                        <img src="/images/natural_wonders/Sahara el Beyda.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Чудо природы. Занимает четыре клетки. Дает +1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> к науке, +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> к культуре и +4 <img src="/images/ICON_GOLD.webp" style="height:1em"/> золота.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Йосемити">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Йосемити
+                        <img src="/images/natural_wonders/Yosemite.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Чудо природы на две непроходимых клетки. Дает +1 ед. <img src="/images/ICON_GOLD.webp" style="height:1em"/> золота, +1 ед. <img src="/images/ICON_FOOD.webp" style="height:1em"/> пищи и +1 ед. <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> науки соседним клеткам.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Чжанъе Данься">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Чжанъе Данься
+                        <img src="/images/natural_wonders/Zhangye Danxia.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Чудо природы. Занимает три непроходимые клетки. Дает +2 <img src="/images/ICON_GREATGENERAL.webp" style="height:1em"/> очка великого полководца и 2 <img src="/images/ICON_GREATMERCHANT.webp" style="height:1em"/> очка великого торговца, если вам принадлежит хотя бы одна из этих трех клеток.</p><br>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </main>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/plugins/feather.min.js"></script>
+    <script src="/plugins/chart.min.js"></script>
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/bd91c323e3.js"></script>
+    <a class="scroll-up displayNone" href="#top" id="scrollUp" onclick="civClicked(null)" style="position: fixed; z-index: 2147483647;">
+      <span><i class="fa fa-angle-up"></i></span>
+    </a>
+  </body>
+</html>

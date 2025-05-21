@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-Z2ESCT7CR0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-Z2ESCT7CR0');
+    </script>
+    <title>Civ VI GS RF Natural Wonders</title>
+    <meta charset="utf-8">
+    <meta contents="IE=edge" httpequiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="/images/civVI.webp" rel="icon" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap" rel="stylesheet">
+    <link href="/css/style.min.css" rel="stylesheet">
+    <link href="/css/preloader.css" rel="stylesheet">
+    <link href="/css/animate.min.css" rel="stylesheet">
+    <link href="/css/header.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="loader">
+        <div class="loader-outter"></div>
+        <div class="loader-inner"></div>
+        <div class="indicator">
+          <svg height="12px" width="16px">
+            <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+            <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="layer"></div>
+    <div class="page-flex">
+      <div class="main-wrapper">
+        <nav class="main-nav--bg">
+          <div class="main-nav">
+            <div class="header">
+              <div class="header-inner">
+                <div class="inner">
+                  <div class="row">
+                    <div class="flex center sidebar-toggle col-xl-1 col-lg-1 col-md-1 col-1">
+                      <button class="transparent-btn" title="Menu" type="button">
+                        <span class="sr-only">Toggle menu</span>
+                        <span aria-hidden="true" class="icon menu-toggle"></span>
+                      </button>
+                    </div>
+                    <div class="flex center col-xl-1 col-lg-1 col-md-1 col-1">
+                      <a href="/index.html" style="align-content: center;">
+                        <img alt="#" src="/images/BBGLogo.webp" style="width:50px; border-radius:10%">
+                      </a>
+                      <div class="mobile-nav"></div>
+                    </div>
+                    <div class="flex col-xl-8 col-lg-8 col-md-8 col-8">
+                      <div class="main-menu">
+                        <nav class="navigation">
+                          <ul class="nav menu">
+                            <li class="">
+                              <a href="/pt_BR/leaders_base_game.html" onclick="civClicked(null)">Leaders</a>
+                            </li>
+                            <li class="">
+                              <a href="/pt_BR/city_states_base_game.html" onclick="civClicked(null)">City States</a>
+                            </li>
+                            <li class="">
+                              <a href="/pt_BR/pantheons_base_game.html" onclick="civClicked(null)">Pantheons</a>
+                            </li>
+                            <li class="">
+                              <a href="/pt_BR/religion_base_game.html" onclick="civClicked(null)">Religion</a>
+                            </li>
+                            <li class="">
+                              <a href="/pt_BR/governor_base_game.html" onclick="civClicked(null)">Governors</a>
+                            </li>
+                            <li class="active">
+                              <a href="/pt_BR/natural_wonder_base_game.html" onclick="civClicked(null)">Natural Wonders</a>
+                            </li>
+                            <li>
+                              <a>BBG Version<i class="icofont-rounded-down"></i></a>
+                              <ul class="dropdown">
+                                <li>
+                                  <a href="/pt_BR/natural_wonder_base_game.html">Base Game</a>
+                                </li>
+                                <li>
+                                  <a href="/pt_BR/natural_wonder_6.4.html">BBG v6.4</a>
+                                </li>
+                                <li>
+                                  <a href="/pt_BR/natural_wonder_6.3.html">BBG v6.3</a>
+                                </li>
+                                <li>
+                                  <a href="/pt_BR/natural_wonder_6.2.html">BBG v6.2</a>
+                                </li>
+                                <li>
+                                  <a href="/pt_BR/natural_wonder_6.1.html">BBG v6.1</a>
+                                </li>
+                                <li>
+                                  <a href="/pt_BR/natural_wonder_6.0.html">BBG v6.0</a>
+                                </li>
+                                <li>
+                                  <a href="/pt_BR/natural_wonder_5.8.html">BBG v5.8</a>
+                                </li>
+                                <li>
+                                  <a href="/pt_BR/natural_wonder_5.7.html">BBG v5.7</a>
+                                </li>
+                                <li>
+                                  <a href="/pt_BR/natural_wonder_5.6.html">BBG v5.6</a>
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="">
+                              <a href="https://ko-fi.com/calcalciffer" target="_blank">Donate!</a>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+                    <div class="flex center col-xl-1 col-lg-1 col-md-1 col-1">
+                      <div class="main-menu">
+                        <nav class="navigation">
+                          <ul class="nav menu">
+                            <li><i class="lang-icon fa fa-language"></i>
+                              <ul class="dropdown" style="width:80px">
+                                <li>
+                                  <a href="/en_US/natural_wonder_base_game.html" style="align-content: center;">
+                                    <img src="/assets/flags/4x3/us.svg" style="height:20px">
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="/fr_FR/natural_wonder_base_game.html" style="align-content: center;">
+                                    <img src="/assets/flags/4x3/fr.svg" style="height:20px">
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="/ru_RU/natural_wonder_base_game.html" style="align-content: center;">
+                                    <img src="/assets/flags/4x3/ru.svg" style="height:20px">
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="/de_DE/natural_wonder_base_game.html" style="align-content: center;">
+                                    <img src="/assets/flags/4x3/de.svg" style="height:20px">
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="/zh_Hans_CN/natural_wonder_base_game.html" style="align-content: center;">
+                                    <img src="/assets/flags/4x3/cn.svg" style="height:20px">
+                                  </a>
+                                </li>
+                                <li>
+                                  <a href="/ko_KR/natural_wonder_base_game.html" style="align-content: center;">
+                                    <img src="/assets/flags/4x3/kr.svg" style="height:20px">
+                                  </a>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+                    <div class="flex center col-xl-1 col-lg-1 col-md-1 col-1">
+                      <div class="theme-switcher-wrapper">
+                        <button class="theme-switcher gray-circle-btn" title="Switch theme" type="button">
+                          <span class="sr-only">Switch theme</span><i aria-hidden="true" class="sun-icon" data-feather="sun"></i><i aria-hidden="true" class="moon-icon" data-feather="moon"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="">
+          <div class="fixed left-0 right-auto h-screen w-[253px] bg-white border-r border-neutral-300 overflow-scroll" style="z-index: 5;">
+            <aside class="sidebar">
+              <div class="sidebar-start">
+                <div class="sidebar-body">
+                  <ul class="sidebar-body-menu">
+                    <li>
+                      <a href="#Grande Barreira de Coral" onclick="civClicked(&quot;Grande Barreira de Coral&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Great Barrier Reef.webp">
+                        </span>
+                        <p>Grande Barreira de Coral</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Triângulo das Bermudas" onclick="civClicked(&quot;Triângulo das Bermudas&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Bermuda Triangle.webp">
+                        </span>
+                        <p>Triângulo das Bermudas</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Colinas de Chocolate" onclick="civClicked(&quot;Colinas de Chocolate&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Chocolate Hills.webp">
+                        </span>
+                        <p>Colinas de Chocolate</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Penhasco de Dover" onclick="civClicked(&quot;Penhasco de Dover&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Cliffs of Dover.webp">
+                        </span>
+                        <p>Penhasco de Dover</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Lago Crater" onclick="civClicked(&quot;Lago Crater&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Crater Lake.webp">
+                        </span>
+                        <p>Lago Crater</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Mar Morto" onclick="civClicked(&quot;Mar Morto&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Dead Sea.webp">
+                        </span>
+                        <p>Mar Morto</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Arco Delicado" onclick="civClicked(&quot;Arco Delicado&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Delicate Arch.webp">
+                        </span>
+                        <p>Arco Delicado</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Mato Tipila" onclick="civClicked(&quot;Mato Tipila&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Mato Tipila.webp">
+                        </span>
+                        <p>Mato Tipila</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Monte Everest" onclick="civClicked(&quot;Monte Everest&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Mount Everest.webp">
+                        </span>
+                        <p>Monte Everest</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Olho do Saara" onclick="civClicked(&quot;Olho do Saara&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Eye of the Sahara.webp">
+                        </span>
+                        <p>Olho do Saara</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Eyjafjallajökull" onclick="civClicked(&quot;Eyjafjallajökull&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Eyjafjallajökull.webp">
+                        </span>
+                        <p>Eyjafjallajökull</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Fonte da Juventude" onclick="civClicked(&quot;Fonte da Juventude&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Fountain of Youth.webp">
+                        </span>
+                        <p>Fonte da Juventude</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Ilhas Galápagos" onclick="civClicked(&quot;Ilhas Galápagos&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Galápagos Islands.webp">
+                        </span>
+                        <p>Ilhas Galápagos</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Calçada dos Gigantes" onclick="civClicked(&quot;Calçada dos Gigantes&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Giant's Causeway.webp">
+                        </span>
+                        <p>Calçada dos Gigantes</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Gobustão " onclick="civClicked(&quot;Gobustão &quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Gobustan .webp">
+                        </span>
+                        <p>Gobustão </p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Baía de Ha Long" onclick="civClicked(&quot;Baía de Ha Long&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Hạ Long Bay.webp">
+                        </span>
+                        <p>Baía de Ha Long</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Ik-Kil" onclick="civClicked(&quot;Ik-Kil&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Ik-Kil.webp">
+                        </span>
+                        <p>Ik-Kil</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Monte Kilimanjaro" onclick="civClicked(&quot;Monte Kilimanjaro&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Mount Kilimanjaro.webp">
+                        </span>
+                        <p>Monte Kilimanjaro</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Lago Retba" onclick="civClicked(&quot;Lago Retba&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Lake Retba.webp">
+                        </span>
+                        <p>Lago Retba</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Fiorde de Lyse" onclick="civClicked(&quot;Fiorde de Lyse&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Lysefjord.webp">
+                        </span>
+                        <p>Fiorde de Lyse</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Matterhorn" onclick="civClicked(&quot;Matterhorn&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Matterhorn.webp">
+                        </span>
+                        <p>Matterhorn</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Paititi" onclick="civClicked(&quot;Paititi&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Païtiti.webp">
+                        </span>
+                        <p>Paititi</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Pamukkale" onclick="civClicked(&quot;Pamukkale&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Pamukkale.webp">
+                        </span>
+                        <p>Pamukkale</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Pantanal" onclick="civClicked(&quot;Pantanal&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Pantanal.webp">
+                        </span>
+                        <p>Pantanal</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Piopiotahi" onclick="civClicked(&quot;Piopiotahi&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Piopiotahi.webp">
+                        </span>
+                        <p>Piopiotahi</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Monte Roraima" onclick="civClicked(&quot;Monte Roraima&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Mount Roraima.webp">
+                        </span>
+                        <p>Monte Roraima</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Torres del Paine" onclick="civClicked(&quot;Torres del Paine&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Torres del Paine.webp">
+                        </span>
+                        <p>Torres del Paine</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Tsingy de Bemaraha" onclick="civClicked(&quot;Tsingy de Bemaraha&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Tsingy de Bemaraha.webp">
+                        </span>
+                        <p>Tsingy de Bemaraha</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Bacia de Uvs Nuur" onclick="civClicked(&quot;Bacia de Uvs Nuur&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Ubsunur Hollow.webp">
+                        </span>
+                        <p>Bacia de Uvs Nuur</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Uluru" onclick="civClicked(&quot;Uluru&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Uluru.webp">
+                        </span>
+                        <p>Uluru</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Monte Vesúvio" onclick="civClicked(&quot;Monte Vesúvio&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Mount Vesuvius.webp">
+                        </span>
+                        <p>Monte Vesúvio</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Deserto Branco" onclick="civClicked(&quot;Deserto Branco&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Sahara el Beyda.webp">
+                        </span>
+                        <p>Deserto Branco</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Yosemite" onclick="civClicked(&quot;Yosemite&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Yosemite.webp">
+                        </span>
+                        <p>Yosemite</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Zhangye Danxia" onclick="civClicked(&quot;Zhangye Danxia&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img src="/images/natural_wonders/Zhangye Danxia.webp">
+                        </span>
+                        <p>Zhangye Danxia</p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </aside>
+          </div>
+          <div class="leaders-data min-w-full main-pl">
+            <main class="main users chart-page">
+              <div class="container">
+                <div class="row" id="Grande Barreira de Coral">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Grande Barreira de Coral
+                        <img src="/images/natural_wonders/Great Barrier Reef.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Maravilha da Natureza de dois painéis que pode ser encontrada no terreno costeiro e concede +3 de <img src="/images/ICON_FOOD.webp" style="height:1em"/> alimento e +2 de <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> ciência. Grande bônus de adjacência para o distrito de Campus.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Triângulo das Bermudas">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Triângulo das Bermudas
+                        <img src="/images/natural_wonders/Bermuda Triangle.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Maravilha da natureza de três painéis. Concede +5 de <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> ciência para painéis adjacentes. Unidades que entram lá são teletransportadas para um oceano ao longe, enquanto unidades navais recebem a habilidade 'Correntes Misteriosas' (+1 de <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> movimento).</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Colinas de Chocolate">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Colinas de Chocolate
+                        <img src="/images/natural_wonders/Chocolate Hills.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Maravilha da natureza de quatro painéis. Concede +1 de <img src="/images/ICON_FOOD.webp" style="height:1em"/> alimento, +2 de <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produção e +1 de <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> ciência.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Penhasco de Dover">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Penhasco de Dover
+                        <img src="/images/natural_wonders/Cliffs of Dover.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Maravilha da Natureza de dois painéis. Aparece em penhascos adjacentes à água e concede +3 de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> cultura, +2 de <img src="/images/ICON_FOOD.webp" style="height:1em"/> alimento e +3 de <img src="/images/ICON_GOLD.webp" style="height:1em"/> ouro. Concede +4 de apelo aos painéis adjacentes, em vez dos +2 de apelo padrão de maravilhas da natureza. Não é possível posicionar melhorias nela.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Lago Crater">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Lago Crater
+                        <img src="/images/natural_wonders/Crater Lake.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Maravilha da Natureza de um painel. Aparece como um lago e concede +5 de <img src="/images/ICON_FAITH.webp" style="height:1em"/> fé, +1 de <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> ciência e água doce.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Mar Morto">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Mar Morto
+                        <img src="/images/natural_wonders/Dead Sea.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Maravilha da natureza de dois painéis. Aparece como um lago e concede +2 de <img src="/images/ICON_FAITH.webp" style="height:1em"/> fé e +2 de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> cultura naqueles painéis. Unidades se curam completamente quando se curam por um turno adjacente ao Mar Morto. Não fornece água doce.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Arco Delicado">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Arco Delicado
+                        <img src="/images/natural_wonders/Delicate Arch.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Maravilha da natureza intransponível de um painel. Concede +2 de <img src="/images/ICON_FAITH.webp" style="height:1em"/> fé e +1 de <img src="/images/ICON_GOLD.webp" style="height:1em"/> ouro para painéis adjacentes.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Mato Tipila">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Mato Tipila
+                        <img src="/images/natural_wonders/Mato Tipila.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Maravilha da natureza intransponível de um painel. Concede +1 de <img src="/images/ICON_FAITH.webp" style="height:1em"/> fé e +1 de <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produção para painéis adjacentes.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Monte Everest">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Monte Everest
+                        <img src="/images/natural_wonders/Mount Everest.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Maravilha da Natureza intransponível de três painéis. Concede +1 de <img src="/images/ICON_FAITH.webp" style="height:1em"/> fé para painéis adjacentes. Unidades religiosas que se movam próximo do Monte Everest ignoram colinas pelo restante da partida.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Olho do Saara">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Olho do Saara
+                        <img src="/images/natural_wonders/Eye of the Sahara.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Maravilha da natureza de três painéis. Concede +2 de <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produção e +1 de <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> ciência. Depois que o jogo alcançar a Era Atômica, concede um adicional de +1 de <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produção e +3 de <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> ciência.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Eyjafjallajökull">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Eyjafjallajökull
+                        <img src="/images/natural_wonders/Eyjafjallajökull.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Terrenos adjacentes produzem +1 de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> cultura e +2 de <img src="/images/ICON_FOOD.webp" style="height:1em"/> alimento.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Fonte da Juventude">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Fonte da Juventude
+                        <img src="/images/natural_wonders/Fountain of Youth.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Maravilha da natureza de um painel. Concede +4 de <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> ciência, +4 de <img src="/images/ICON_FAITH.webp" style="height:1em"/> fé e água doce. Unidades de combate terrestre que entram nela recebem a habilidade Água da Vida (+10 de cura de PS em qualquer território).</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Ilhas Galápagos">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Ilhas Galápagos
+                        <img src="/images/natural_wonders/Galápagos Islands.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Maravilha da natureza intransponível de dois painéis. Aparece em terreno costeiro e concede +2 de <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> ciência para painéis adjacentes.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Calçada dos Gigantes">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Calçada dos Gigantes
+                        <img src="/images/natural_wonders/Giant's Causeway.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Unidades terrestres de combate que entram em terrenos adjacentes recebem a habilidade &quot;Lança de Fionn&quot; (+5 de força de combate). Terrenos adjacentes produzem +1 de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> cultura.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Gobustão ">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Gobustão 
+                        <img src="/images/natural_wonders/Gobustan .webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Maravilha da natureza de três painéis. Concede +3 de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> cultura e +1 de <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produção.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Baía de Ha Long">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Baía de Ha Long
+                        <img src="/images/natural_wonders/Hạ Long Bay.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Maravilha da natureza de dois painéis que pode ser encontrada no terreno costeiro e concede +3 de <img src="/images/ICON_FOOD.webp" style="height:1em"/> alimento, +1 de <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produção e +1 de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> cultura. +15 de <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> força de combate ao defender nesse painel.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Ik-Kil">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Ik-Kil
+                        <img src="/images/natural_wonders/Ik-Kil.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Maravilha da natureza intransponível de um painel. +50% de <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produção quando produzir maravilhas e distritos em painéis adjacentes. Fornece água doce.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Monte Kilimanjaro">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Monte Kilimanjaro
+                        <img src="/images/natural_wonders/Mount Kilimanjaro.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Maravilha da natureza intransponível de um painel. Aparece como um Vulcão e dá +2 de <img src="/images/ICON_FOOD.webp" style="height:1em"/> alimento para painéis adjacentes. Quando entrar em erupção dá um rendimento baixo e é mais provável de danificar edificações e distritos. Entra em erupção com pouca frequência, mas está sempre ativo.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Lago Retba">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Lago Retba
+                        <img src="/images/natural_wonders/Lake Retba.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Maravilha da natureza de dois painéis. Aparece como um lago e concede +2 de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> cultura, +2 de <img src="/images/ICON_GOLD.webp" style="height:1em"/> ouro e +1 de <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produção. Não fornece água doce.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Fiorde de Lyse">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Fiorde de Lyse
+                        <img src="/images/natural_wonders/Lysefjord.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Unidades navais de combate que entram em terrenos adjacentes recebem sua próxima promoção. Terrenos adjacentes concedem +1 de <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produção.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Matterhorn">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Matterhorn
+                        <img src="/images/natural_wonders/Matterhorn.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Maravilha da Natureza intransponível de um painel. Concede +1 de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> cultura para painéis adjacentes. Unidades de combate terrestre que se movam próximo do Matterhorn ignoram colinas pelo restante da partida e recebem +3 de<img src="/images/ICON_STRENGTH.webp" style="height:1em"/> força de combate ao lutar em colinas.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Paititi">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Paititi
+                        <img src="/images/natural_wonders/Païtiti.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Maravilha da Natureza intransponível de três painéis. Concede +3 de <img src="/images/ICON_GOLD.webp" style="height:1em"/> ouro e +2 de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> cultura para painéis adjacentes. A cidade que contém o painel recebe +4 de <img src="/images/ICON_GOLD.webp" style="height:1em"/> ouro em suas <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> rotas comerciais internacionais de exportação.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Pamukkale">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Pamukkale
+                        <img src="/images/natural_wonders/Pamukkale.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Maravilha da natureza intransponível de dois painéis. +1 de <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> serviço. Dá <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> serviço adicional se adjacente a um Complexo de Entretenimento. Um grande bônus de adjacência para Teatro, Campus e distritos de Centro Comercial. Bônus de adjacência padrão para o distrito de Local Sagrado. Fornece água doce.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Pantanal">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Pantanal
+                        <img src="/images/natural_wonders/Pantanal.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Maravilha da Natureza de quatro painéis. Concede +2 de <img src="/images/ICON_FOOD.webp" style="height:1em"/> alimento e +2 de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> cultura.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Piopiotahi">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Piopiotahi
+                        <img src="/images/natural_wonders/Piopiotahi.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Maravilha da natureza intransponível de três painéis. Concede +1 de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> cultura e +1 de <img src="/images/ICON_GOLD.webp" style="height:1em"/> ouro para painéis adjacentes.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Monte Roraima">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Monte Roraima
+                        <img src="/images/natural_wonders/Mount Roraima.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Maravilha da Natureza intransponível de quatro painéis. Concede +1 de <img src="/images/ICON_FAITH.webp" style="height:1em"/> fé e +1 de <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> ciência para painéis adjacentes.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Torres del Paine">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Torres del Paine
+                        <img src="/images/natural_wonders/Torres del Paine.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Maravilha da natureza intransponível de dois painéis. Dobra a produção de terrenos de todos os painéis adjacentes.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Tsingy de Bemaraha">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Tsingy de Bemaraha
+                        <img src="/images/natural_wonders/Tsingy de Bemaraha.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Maravilha da natureza intransponível de um painel. Concede +1 de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> cultura e +1 de <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> ciência para painéis adjacentes.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Bacia de Uvs Nuur">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Bacia de Uvs Nuur
+                        <img src="/images/natural_wonders/Ubsunur Hollow.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Maravilha da Natureza de quatro painéis. Concede +2 de <img src="/images/ICON_FAITH.webp" style="height:1em"/> fé, +1 de <img src="/images/ICON_FOOD.webp" style="height:1em"/> alimento e +1 de <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produção.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Uluru">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Uluru
+                        <img src="/images/natural_wonders/Uluru.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Maravilha da natureza intransponível de um painel. Concede +2 de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> cultura e +2 de <img src="/images/ICON_FAITH.webp" style="height:1em"/> fé para painéis adjacentes. Concede +4 de apelo para painéis adjacentes em vez de +2.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Monte Vesúvio">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Monte Vesúvio
+                        <img src="/images/natural_wonders/Mount Vesuvius.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Maravilha da natureza intransponível de um painel. Aparece como um Vulcão e dá +1 de <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produção para painéis adjacentes. Quando entrar em erupção dá um rendimento alto a painéis adjacentes, mas causa grande perda de <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> população. Está sempre ativo.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Deserto Branco">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Deserto Branco
+                        <img src="/images/natural_wonders/Sahara el Beyda.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Maravilha da natureza de quatro painéis. Concede +1 de <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> ciência, +1 de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> cultura e +4 de <img src="/images/ICON_GOLD.webp" style="height:1em"/> ouro.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Yosemite">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Yosemite
+                        <img src="/images/natural_wonders/Yosemite.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Maravilha da natureza intransponível de dois painéis. Concede +1 de <img src="/images/ICON_GOLD.webp" style="height:1em"/> ouro, +1 de <img src="/images/ICON_FOOD.webp" style="height:1em"/> alimento e +1 de <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> ciência para painéis adjacentes.</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="Zhangye Danxia">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Zhangye Danxia
+                        <img src="/images/natural_wonders/Zhangye Danxia.webp" style="vertical-align: middle">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Maravilha da Natureza intransponível de três painéis. Concede 2 pontos de <img src="/images/ICON_GREATGENERAL.webp" style="height:1em"/> Grande General e 2 pontos de <img src="/images/ICON_GREATMERCHANT.webp" style="height:1em"/> Grande Mercador se você for dono de, pelo menos, um desses painéis.</p><br>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </main>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/plugins/feather.min.js"></script>
+    <script src="/plugins/chart.min.js"></script>
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/bd91c323e3.js"></script>
+    <a class="scroll-up displayNone" href="#top" id="scrollUp" onclick="civClicked(null)" style="position: fixed; z-index: 2147483647;">
+      <span><i class="fa fa-angle-up"></i></span>
+    </a>
+  </body>
+</html>

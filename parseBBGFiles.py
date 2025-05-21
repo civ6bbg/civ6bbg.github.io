@@ -20,7 +20,27 @@ def get_locs_data(db_path, bbg_version, lang):
         
     if bbg_version == None:
         return locs
+    
+    # Reading BBM XML files
+    with open(f'bbm_xml/{lang}.xml', 'r') as f:
+        data = f.read()
 
+    Bs_data = BeautifulSoup(data, "xml")
+
+    b_unique = Bs_data.find_all('Replace')
+    for x in b_unique:
+        if hasattr(x, 'Text') and hasattr(x.Text, 'contents'):
+            # print(x)
+            if len(x.Text.contents) > 0:
+                locs[x['Tag']] = x.Text.contents[0]
+        elif hasattr(x, 'text') and hasattr(x.text, 'contents'):
+            if len(x.text.contents) > 0:
+                locs[x['Tag']] = x.text.contents[0]
+        else:
+            print(f'unsual element in xml file for BBM lang {lang}!!')
+            print(x)
+    
+    #Reading BBG XML files
     with open(f'bbg_xml/{bbg_version}/{lang}.xml', 'r') as f:
         data = f.read()
 
@@ -151,6 +171,15 @@ def get_governors_promotion_dict(db_path):
         promotion_to_row[r[0]] = r
     connection.close()
     return promotion_to_row
+
+def get_natural_wonders_list(db_path):
+    connection = sqlite3.connect(db_path)
+
+    crsr = connection.cursor()
+    crsr.execute("SELECT FeatureType, Name, Description FROM NaturalWonders WHERE Domain = 'Expansion2NaturalWonders'")
+    rows = crsr.fetchall()
+    connection.close()
+    return rows
 
 def get_start_biases(db_path):
     writer = csv.writer()

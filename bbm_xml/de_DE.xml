@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<LocalizedText>
+		<!-- === KARTENGRÖßEN === -->
+		<Replace Tag="LOC_MAPSIZE_ENORMOUS_NAME" Language="de_DE">
+			<Text>Enorm</Text>
+		</Replace>
+		<Replace Tag="LOC_MAPSIZE_ENORMOUS_DESCRIPTION" Language="de_DE">
+			<Text>Enorme Kartengröße für 16 Spieler</Text>
+		</Replace>
+
+
+
+		<!-- === SETUP === -->
+		<!-- == Karteneigenschaften == -->
+		<Replace Tag="LOC_GAME_SPAWN_RECALCULATION" Language="de_DE">
+			<Text>Neuberechnung des Startplatzes</Text>
+		</Replace>
+		<Replace Tag="LOC_GAME_SPAWN_RECALCULATION_DESC" Language="de_DE">
+			<Text>Versucht, die Zivilisation an einem besseren Startplatz zu platzieren</Text>
+		</Replace>
+		<!-- = Höhenzüge-Definition = -->
+		<Replace Tag="LOC_GAME_BBS_RIDGE_NAME" Language="de_DE">
+			<Text>Gebirge-Definition</Text>
+		</Replace>
+		<Replace Tag="LOC_GAME_BBS_RIDGE_DESC" Language="de_DE">
+			<Text>Steuert, wie herausfordernd die Gebirgsketten im Spiel sind</Text>
+		</Replace>
+		<Replace Tag="BBS_RIDGE_NORMAL_NAME" Language="de_DE">
+			<Text>Standard</Text>
+		</Replace>
+		<Replace Tag="BBS_RIDGE_NORMAL_DESC" Language="de_DE">
+			<Text>Originalspiel-Einstellung</Text>
+		</Replace>
+		<Replace Tag="BBS_RIDGE_LESS_NAME" Language="de_DE">
+			<Text>Kleine Engpässe</Text>
+		</Replace>
+		<Replace Tag="BBS_RIDGE_LESS_DESC" Language="de_DE">
+			<Text>Fügt kleine zusätzliche Engpässe in den Gebirgsketten hinzu</Text>
+		</Replace>
+		<Replace Tag="BBS_RIDGE_VLESS_NAME" Language="de_DE">
+			<Text>Große Öffnungen</Text>
+		</Replace>
+		<Replace Tag="BBS_RIDGE_VLESS_DESC" Language="de_DE">
+			<Text>Fügt breitere Engpässe in den Gebirgsketten hinzu, die mehrere Wege für angreifende Einheiten ermöglichen</Text>
+		</Replace>
+		<Replace Tag="BBS_RIDGE_NONE_NAME" Language="de_DE">
+			<Text>"Flache Erde"</Text>
+		</Replace>
+		<Replace Tag="BBS_RIDGE_NONE_DESC" Language="de_DE">
+			<Text>Gebirgsketten werden aggressiv abgetragen, um eine viel flachere Karte mit vielen Hügeln zu schaffen</Text>
+		</Replace>
+		<Replace Tag="BBS_RIDGE_MORE_NAME" Language="de_DE">
+			<Text>Undurchdringlich</Text>
+		</Replace>
+		<Replace Tag="BBS_RIDGE_MORE_DESC" Language="de_DE">
+			<Text>Erweitert die Gebirgskämme mit weniger Durchgängen</Text>
+		</Replace>
+		<Replace Tag="BBS_RIDGE_RF_NAME" Language="de_DE">
+			<Text>Klassisch</Text>
+		</Replace>
+		<Replace Tag="BBS_RIDGE_RF_DESC" Language="de_DE">
+			<Text>Vor "Gathering Storm", nicht kontinentbasierte Platzierung.</Text>
+		</Replace>
+		<!-- = Strategische Ressourcen = -->
+		<Replace Tag="LOC_GAME_BBS_SRESOURCES_NAME" Language="de_DE">
+			<Text>Strategische Ressourcen</Text>
+		</Replace>
+		<Replace Tag="LOC_GAME_BBS_SRESOURCES_DESC" Language="de_DE">
+			<Text>Moduliert die Menge an strategischen Ressourcen in den "Balanced Start"-Einstellungen</Text>
+		</Replace>
+		<Replace Tag="BBS_SRESOURCES_NORMAL_NAME" Language="de_DE">
+			<Text>Standard</Text>
+		</Replace>
+		<Replace Tag="BBS_SRESOURCES_NORMAL_DESC" Language="de_DE">
+			<Text>Standard-Einstellung des Firaxis-Ressourcengenerators</Text>
+		</Replace>
+		<Replace Tag="BBS_SRESOURCES_MORE_NAME" Language="de_DE">
+			<Text>Überfluss</Text>
+		</Replace>
+		<Replace Tag="BBS_SRESOURCES_MORE_DESC" Language="de_DE">
+			<Text>20% mehr strategische Ressourcen</Text>
+		</Replace>
+		<Replace Tag="BBS_SRESOURCES_MUCHMORE_NAME" Language="de_DE">
+			<Text>Episch</Text>
+		</Replace>
+		<Replace Tag="BBS_SRESOURCES_MUCHMORE_DESC" Language="de_DE">
+			<Text>50% mehr strategische Ressourcen</Text>
+		</Replace>
+		<Replace Tag="BBS_SRESOURCES_GARANTEED_NAME" Language="de_DE">
+			<Text>Garantierte strategische Ressourcen</Text>
+		</Replace>
+		<Replace Tag="BBS_SRESOURCES_GARANTEED_DESC" Language="de_DE">
+			<Text>Fast sicher, dass Sie alle strategischen Ressourcen innerhalb von 5 Feldern um Ihren Spawn haben</Text>
+		</Replace>
+		<!-- = Dichte der Naturwunder = -->
+		<Replace Tag="LOC_GAME_BBS_NATURAL_NAME" Language="de_DE">
+			<Text>Dichte der Naturwunder</Text>
+		</Replace>
+		<Replace Tag="LOC_GAME_BBS_NATURAL_DESC" Language="de_DE">
+			<Text>Steuert die maximale Anzahl an Naturwundern, die auf der Karte erscheinen können.</Text>
+		</Replace>
+		<Replace Tag="BBS_NATURAL_NORMAL_NAME" Language="de_DE">
+			<Text>Standard</Text>
+		</Replace>
+		<Replace Tag="BBS_NATURAL_NORMAL_DESC" Language="de_DE">
+			<Text>Duell: 2[NEWLINE]Winzig: 3[NEWLINE]Klein: 4[NEWLINE]Standard: 5[NEWLINE]Groß: 6[NEWLINE]Riesig: 7[NEWLINE]Enorm: 8</Text>
+		</Replace>
+		<Replace Tag="BBS_NATURAL_LESS_NAME" Language="de_DE">
+			<Text>Selten</Text>
+		</Replace>
+		<Replace Tag="BBS_NATURAL_LESS_DESC" Language="de_DE">
+			<Text>Duel: 1[NEWLINE]Winzig: 1[NEWLINE]Klein: 3[NEWLINE]Standard: 3[NEWLINE]Groß: 4[NEWLINE]Riesig: 4[NEWLINE]Enorm: 5</Text>
+		</Replace>
+		<Replace Tag="BBS_NATURAL_MORE_NAME" Language="de_DE">
+			<Text>Überfluss</Text>
+		</Replace>
+		<Replace Tag="BBS_NATURAL_MORE_DESC" Language="de_DE">
+			<Text>Duel: 3[NEWLINE]Winzig: 4[NEWLINE]Klein: 6[NEWLINE]Standard: 8[NEWLINE]Groß: 10[NEWLINE]Riesig: 12[NEWLINE]Enorm: 14</Text>
+		</Replace>
+	
+		<!-- == Mindestabstand == -->
+		<Replace Tag="LOC_GAME_BBM_MIN_DISTANCE_NAME" Language="de_DE">
+			<Text>Mindestabstand Abstand zwischen Spielern</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_DISTANCE_AUTO_NAME" Language="de_DE">
+			<Text>Standard</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_DISTANCE_AUTO_DESC" Language="de_DE">
+			<Text>Standardabstand, abhängig vom Kartentyp</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_DISTANCE_SIX_NAME" Language="de_DE">
+			<Text>6</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_DISTANCE_SIX_DESC" Language="de_DE">
+			<Text>6 Felder</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_DISTANCE_SEVEN_NAME" Language="de_DE">
+			<Text>7</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_DISTANCE_SEVEN_DESC" Language="de_DE">
+			<Text>7 Felder</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_DISTANCE_EIGHT_NAME" Language="de_DE">
+			<Text>8</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_DISTANCE_EIGHT_DESC" Language="de_DE">
+			<Text>8 Felder</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_DISTANCE_NINE_NAME" Language="de_DE">
+			<Text>9</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_DISTANCE_NINE_DESC" Language="de_DE">
+			<Text>9 Felder</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_DISTANCE_TEN_NAME" Language="de_DE">
+			<Text>10</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_DISTANCE_TEN_DESC" Language="de_DE">
+			<Text>10 Felder</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_DISTANCE_ELEVEN_NAME" Language="de_DE">
+			<Text>11</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_DISTANCE_ELEVEN_DESC" Language="de_DE">
+			<Text>11 Felder</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_DISTANCE_TWELVE_NAME" Language="de_DE">
+			<Text>12</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_DISTANCE_TWELVE_DESC" Language="de_DE">
+			<Text>12 Felder</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_DISTANCE_THIRTEEN_NAME" Language="de_DE">
+			<Text>13</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_DISTANCE_THIRTEEN_DESC" Language="de_DE">
+			<Text>13 Felder</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_DISTANCE_FOURTEEN_NAME" Language="de_DE">
+			<Text>14</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_DISTANCE_FOURTEEN_DESC" Language="de_DE">
+			<Text>14 Felder</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_DISTANCE_FIFTEEN_NAME" Language="de_DE">
+			<Text>15</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_DISTANCE_FIFTEEN_DESC" Language="de_DE">
+			<Text>15 Felder</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_DISTANCE_SIXTEEN_NAME" Language="de_DE">
+			<Text>16</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_DISTANCE_SIXTEEN_DESC" Language="de_DE">
+			<Text>16 Felder</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_DISTANCE_SEVENTEEN_NAME" Language="de_DE">
+			<Text>17</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_DISTANCE_SEVENTEEN_DESC" Language="de_DE">
+			<Text>17 Felder</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_DISTANCE_EIGHTEEN_NAME" Language="de_DE">
+			<Text>18</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_DISTANCE_EIGHTEEN_DESC" Language="de_DE">
+			<Text>18 Felder</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_DISTANCE_NINETEEN_NAME" Language="de_DE">
+			<Text>19</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_DISTANCE_NINETEEN_DESC" Language="de_DE">
+			<Text>19 Felder</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_DISTANCE_TWENTY_NAME" Language="de_DE">
+			<Text>20</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_DISTANCE_TWENTY_DESC" Language="de_DE">
+			<Text>20 Felder</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_DISTANCE_TWENTYONE_NAME" Language="de_DE">
+			<Text>21</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_DISTANCE_TWENTYONE_DESC" Language="de_DE">
+			<Text>21 Felder</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_DISTANCE_TWENTYTWO_NAME" Language="de_DE">
+			<Text>22</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_DISTANCE_TWENTYTWO_DESC" Language="de_DE">
+			<Text>22 Felder</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_DISTANCE_TWENTYTHREE_NAME" Language="de_DE">
+			<Text>23</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_DISTANCE_TWENTYTHREE_DESC" Language="de_DE">
+			<Text>23 Felder</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_DISTANCE_TWENTYFOUR_NAME" Language="de_DE">
+			<Text>24</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_DISTANCE_TWENTYFOUR_DESC" Language="de_DE">
+			<Text>24 Felder</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_DISTANCE_TWENTYFIVE_NAME" Language="de_DE">
+			<Text>25</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_DISTANCE_TWENTYFIVE_DESC" Language="de_DE">
+			<Text>25 Felder</Text>
+		</Replace>
+
+		<Replace Tag="LOC_BBM_MAXFLOODPLAINS_SIZE" Language="de_DE">
+			<Text>Maximale Größe für Schwemmlandfelder.</Text>
+		</Replace>
+		<Replace Tag="LOC_BBM_MAXFLOODPLAINS_SIZE_4_DESCRIPTION" Language="de_DE">
+			<Text>4 Schwemmlandfelder pro Fluss. Beachte, dass sie sich an Flusskreuzungen sammeln können.</Text>
+		</Replace>
+		<Replace Tag="LOC_BBM_MAXFLOODPLAINS_SIZE_5_DESCRIPTION" Language="de_DE">
+			<Text>5 Schwemmlandfelder pro Fluss. Beachte, dass sie sich an Flusskreuzungen sammeln können.</Text>
+		</Replace>
+		<Replace Tag="LOC_BBM_MAXFLOODPLAINS_SIZE_6_DESCRIPTION" Language="de_DE">
+			<Text>6 Schwemmlandfelder pro Fluss. Beachte, dass sie sich an Flusskreuzungen sammeln können.</Text>
+		</Replace>
+		<Replace Tag="LOC_BBM_MAXFLOODPLAINS_SIZE_7_DESCRIPTION" Language="de_DE">
+			<Text>7 Schwemmlandfelder pro Fluss. Beachte, dass sie sich an Flusskreuzungen sammeln können.</Text>
+		</Replace>
+		<Replace Tag="LOC_BBM_MAXFLOODPLAINS_SIZE_8_DESCRIPTION" Language="de_DE">
+			<Text>8 Schwemmlandfelder pro Fluss. Beachte, dass sie sich an Flusskreuzungen sammeln können.</Text>
+		</Replace>
+		<Replace Tag="LOC_BBM_MAXFLOODPLAINS_SIZE_9_DESCRIPTION" Language="de_DE">
+			<Text>9 Schwemmlandfelder pro Fluss. Beachte, dass sie sich an Flusskreuzungen sammeln können.</Text>
+		</Replace>
+		<Replace Tag="LOC_BBM_MAXFLOODPLAINS_SIZE_10_DESCRIPTION" Language="de_DE">
+			<Text>10 Schwemmlandfelder pro Fluss. Beachte, dass sie sich an Flusskreuzungen sammeln können.</Text>
+		</Replace>
+		<Replace Tag="LOC_BBM_MAXFLOODPLAINS_SIZE_11_DESCRIPTION" Language="de_DE">
+			<Text>11 Schwemmlandfelder pro Fluss. Beachte, dass sie sich an Flusskreuzungen sammeln können.</Text>
+		</Replace>
+		<Replace Tag="LOC_BBM_MAXFLOODPLAINS_SIZE_12_DESCRIPTION" Language="de_DE">
+			<Text>12 Schwemmlandfelder pro Fluss. Beachte, dass sie sich an Flusskreuzungen sammeln können.</Text>
+		</Replace>
+		
+		<!-- == Spieleroptionen == -->
+		<!-- = Versuche = -->
+		<Replace Tag="LOC_GAME_BBM_MIN_ATTEMPTS_NAME" Language="de_DE">
+			<Text>Minimale Anzahl an BBM-Versuchen</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_ATTEMPTS_ONE_NAME" Language="de_DE">
+			<Text>1</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_ATTEMPTS_ONE_DESC" Language="de_DE">
+			<Text>1 Versuch</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_ATTEMPTS_TWO_NAME" Language="de_DE">
+			<Text>2</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_ATTEMPTS_TWO_DESC" Language="de_DE">
+			<Text>2 Versuche</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_ATTEMPTS_THREE_NAME" Language="de_DE">
+			<Text>3</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_ATTEMPTS_THREE_DESC" Language="de_DE">
+			<Text>3 Versuche</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_ATTEMPTS_FOUR_NAME" Language="de_DE">
+			<Text>4</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_ATTEMPTS_FOUR_DESC" Language="de_DE">
+			<Text>4 Versuche</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_ATTEMPTS_FIVE_NAME" Language="de_DE">
+			<Text>5</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_ATTEMPTS_FIVE_DESC" Language="de_DE">
+			<Text>5 Versuche</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_ATTEMPTS_SIX_NAME" Language="de_DE">
+			<Text>6</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_ATTEMPTS_SIX_DESC" Language="de_DE">
+			<Text>6 Versuche</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_ATTEMPTS_SEVEN_NAME" Language="de_DE">
+			<Text>7</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_ATTEMPTS_SEVEN_DESC" Language="de_DE">
+			<Text>7 Versuche</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_ATTEMPTS_EIGHT_NAME" Language="de_DE">
+			<Text>8</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_ATTEMPTS_EIGHT_DESC" Language="de_DE">
+			<Text>8 Versuche</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_ATTEMPTS_NINE_NAME" Language="de_DE">
+			<Text>9</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_ATTEMPTS_NINE_DESC" Language="de_DE">
+			<Text>9 Versuche</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_ATTEMPTS_TEN_NAME" Language="de_DE">
+			<Text>10</Text>
+		</Replace>
+		<Replace Tag="BBM_MIN_ATTEMPTS_TEN_DESC" Language="de_DE">
+			<Text>10 Versuche</Text>
+		</Replace>
+		<!-- = Teamstartposition = -->
+		<Replace Tag="LOC_BBM_Team_Spawn_NAME" Language="de_DE">
+			<Text>Teamstartposition</Text>
+		</Replace>
+		<Replace Tag="LOC_BBM_Team_Spawn_DESC" Language="de_DE">
+			<Text>Bestimmen, wie die großen Zivilisationen auf der Karte in Teamspielen platziert werden</Text>
+		</Replace>
+		<Replace Tag="BBM_Team_Spawn_NORMAL_NAME" Language="de_DE">
+			<Text>Standard</Text>
+		</Replace>
+		<Replace Tag="BBM_Team_Spawn_NORMAL_DESC" Language="de_DE">
+			<Text>Original Firaxis-Einstellungen: Spieler werden zufällig platziert</Text>
+		</Replace>
+		<Replace Tag="BBM_Team_Spawn_EW_NAME" Language="de_DE">
+			<Text>Ost gegen West</Text>
+		</Replace>
+		<Replace Tag="BBM_Team_Spawn_EW_DESC" Language="de_DE">
+			<Text>Spieler desselben Teams starten mit größerer Wahrscheinlichkeit im Osten oder Westen..</Text>
+		</Replace>
+		<Replace Tag="BBM_Team_Spawn_NS_NAME" Language="de_DE">
+			<Text>Nord gegen Süd</Text>
+		</Replace>
+		<Replace Tag="BBM_Team_Spawn_NS_DESC" Language="de_DE">
+			<Text>Spieler desselben Teams starten mit größerer Wahrscheinlichkeit im Norden oder Süden.</Text>
+		</Replace>
+		
+		
+
+		<!-- === NATÜRLICHE WUNDER === -->
+		<!-- = Barringer Krater = -->
+		<Replace Tag="LOC_FEATURE_BARRINGER_CRATER_NAME" Language="de_DE">
+			<Text>Barringer-Krater</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_BARRINGER_CRATER_DESCRIPTION" Language="de_DE">
+			<Text>Einzelnes Naturwunder. Bietet +3 [ICON_SCIENCE] Wissenschaft, +2 [ICON_FOOD] Nahrung und +3 [ICON_GOLD] Gold. +10% [ICON_PRODUCTION] Produktion auf Raumfahrtprojekte, wenn du dieses Feld besitzt.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_BARRINGER_CRATER_QUOTE" Language="de_DE">
+			<Text>"Tatsächlich können wir jetzt beweisen, dass dieser Krater durch den Zusammenstoß mit der Erde eines extraterrestrischen Körpers, möglicherweise eines kleinen Asteroiden, der vermutlich metallischer Natur war, entstanden ist."[NEWLINE]- Daniel Barringer</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_FEATURES_PAGE_FEATURE_BARRINGER_CRATER_CHAPTER_HISTORY_PARA_1" Language="de_DE">
+			<Text>Der Barringer-Krater ist ein riesiger Meteoritenkrater in Arizona, USA. Der Krater hat einen Durchmesser von 1.200 Metern und Wissenschaftler glauben, dass er vor etwa 50.000 Jahren durch einen großen Nickel-Eisen-Meteoriten entstanden ist, der beim Aufprall 160.000 Tonnen wog und sich möglicherweise mit 44.000 Kilometern pro Stunde bewegte.</Text>
+		</Replace>
+		<!-- = Biolumineszente Bucht = -->
+		<Replace Tag="LOC_FEATURE_BIOLUMINESCENT_BAY_NAME" Language="de_DE">
+			<Text>Biolumineszente Bucht</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_BIOLUMINESCENT_BAY_DESCRIPTION" Language="de_DE">
+			<Text>Einzelnes Naturwunder, das als Rifffeld erscheint und +3 [ICON_SCIENCE] Wissenschaft, +1 [ICON_FOOD] Nahrung und +1 [ICON_GOLD] Gold bietet. +1 [ICON_GOLD] Gold auf Fischereibooten, wenn du dieses Feld besitzt.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_BIOLUMINESCENT_BAY_QUOTE" Language="de_DE">
+			<Text>"Die Lichtemission von Feuer, Blitz, Sternen oder lebenden Wesen zieht die Aufmerksamkeit jedes Menschen auf sich. Im Fall der Biolumineszenz hat das Licht einen seltsamen Glanz, etwas Magisches und Geheimnisvolles."[NEWLINE]- Cassius Stevani</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_FEATURES_PAGE_FEATURE_BIOLUMINESCENT_BAY_CHAPTER_HISTORY_PARA_1" Language="de_DE">
+			<Text>Die Biolumineszente Bucht (auch bekannt als Puerto Mosquito oder Mosquito Bay) gilt als das beste Beispiel für eine biolumineszente Bucht in den Vereinigten Staaten und ist als nationales Naturdenkmal aufgeführt, eines von fünf in Puerto Rico. Die Lumineszenz in der Bucht wird durch einen Mikroorganismus, das Dinoflagellat Pyrodinium bahamense, verursacht, der aufleuchtet, wann immer das Wasser gestört wird und eine neonblaue Spur hinterlässt.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_FEATURES_PAGE_FEATURE_BIOLUMINESCENT_BAY_CHAPTER_HISTORY_PARA_2" Language="de_DE">
+			<Text>Eine Kombination von Faktoren schafft die notwendigen Bedingungen für Biolumineszenz: Rote Mangrovenbäume umgeben das Wasser, es gibt keine moderne Entwicklung rund um die Bucht, das Wasser ist kühl genug und tief genug, und ein kleiner Kanal zum Meer hält die Dinoflagellaten in der Bucht. Dieser kleine Kanal wurde künstlich geschaffen, als Ergebnis von Versuchen spanischer Schiffe, die Bucht vom Meer abzuschotten. Die Spanier glaubten, dass die Biolumineszenz, die sie dort bei der Erkundung des Gebiets erlebten, das Werk des Teufels war und versuchten, das Meerwasser daran zu hindern, in die Bucht zu gelangen, indem sie riesige Felsen in den Kanal kippten. Die Spanier schafften es nur, die Lumineszenz in der jetzt isolierten Bucht zu erhalten und zu erhöhen.</Text>
+		</Replace>
+		<!-- = Cerro de Potosí = -->
+		<Replace Tag="LOC_FEATURE_CERRO_DE_POTOSI_NAME" Language="de_DE">
+			<Text>Cerro de Potosí</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_CERRO_DE_POTOSI_DESCRIPTION" Language="de_DE">
+			<Text>Einzelnes unpassierbares Naturwunder, das als Bergfeld erscheint und +1 [ICON_PRODUCTION] Produktion und +3 [ICON_GOLD] Gold auf benachbarten Feldern bietet.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_CERRO_DE_POTOSI_QUOTE" Language="de_DE">
+			<Text>"Ich bin reich Potosí, Schatz der Welt, König aller Berge und Neid der Könige."[NEWLINE]- Erstes Wappen von Potosí</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_FEATURES_PAGE_FEATURE_CERRO_DE_POTOSI_CHAPTER_HISTORY_PARA_1" Language="de_DE">
+			<Text>Der Berg Potosí im Süden Boliviens hat nahezu das gesamte Silber produziert, das die Spanier während ihrer imperialen Zeit abgebaut haben. Nachdem das Silber aus dem Berg entfernt wurde, wurde es mit Lamas und Maultieren zur Küste transportiert, wo es dann auf Schatzschiffe verladen wurde, die nach Europa segelten. Fast 41.000 Tonnen reines Silber wurden im Laufe von 200 Jahren abgebaut, davon 8.200 Tonnen direkt an die spanische Krone. Nach 1800 wurden die Hauptsilberminen erschöpft, aber der Abbau in Potosí dauert bis heute an - teilweise für Silber, aber jetzt hauptsächlich für Zinn.</Text>
+		</Replace>
+		<!-- = Dallol = -->
+		<Replace Tag="LOC_FEATURE_DALLOL_NAME" Language="de_DE">
+			<Text>Dallol</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_DALLOL_DESCRIPTION" Language="de_DE">
+			<Text>Einzelnes Naturwunder. Bietet +2 [ICON_SCIENCE] Wissenschaft, +2 [ICON_PRODUCTION] Produktion, +2 [ICON_FOOD] Nahrung und +1 [ICON_GOLD] Gold.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_DALLOL_QUOTE" Language="de_DE">
+			<Text>"Es gibt die Hölle, es gibt Dunkelheit, es gibt die schwefelige Grube – brennend, kochend, Gestank, Verzehr!"[NEWLINE]- William Shakespeare, König Lear</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_FEATURES_PAGE_FEATURE_DALLOL_CHAPTER_HISTORY_PARA_1" Language="de_DE">
+			<Text>Dallol ist ein Aschenkegelvulkan in der Danakil-Senke, nordöstlich des Erta-Ale-Gebirges in Äthiopien. Er entstand durch das Eindringen basaltischen Magmas in Miozän-Salzlagerstätten und anschließende hydrothermale Aktivitäten. Phreatische Eruptionen fanden 1926 statt, wodurch der Dallol-Vulkan entstand, während zahlreiche andere Eruptionskrater die Salzebenen in der Nähe markieren. Diese Krater sind die tiefsten bekannten subaerialen vulkanischen Öffnungen der Welt, 45 m (150 ft) oder mehr unter dem Meeresspiegel.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_FEATURES_PAGE_FEATURE_DALLOL_CHAPTER_HISTORY_PARA_2" Language="de_DE">
+			<Text>Zahlreiche heiße Quellen geben Sole und saure Flüssigkeiten ab. Kleine, weit verbreitete, vorübergehende Geysire produzieren Salzkonen. Die Dallol-Ablagerungen umfassen bedeutende Vorkommen von Kaliumsalzen, die direkt an der Oberfläche gefunden werden. Der Begriff 'Dallol' wurde von den Afar-Völkern geprägt und bedeutet 'Auflösung' oder 'Zerfall', was eine Landschaft aus grünen Säureteichen (pH-Werte unter 1) und Eisenoxid-, Schwefel- und Salzwüstenebenen beschreibt.</Text>
+		</Replace>
+		<!-- = Grand Mesa = -->
+		<Replace Tag="LOC_FEATURE_GRAND_MESA_NAME" Language="de_DE">
+			<Text>Grand Mesa</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GRAND_MESA_DESCRIPTION" Language="de_DE">
+			<Text>Einzelnes unpassierbares Naturwunder. Bietet +1 [ICON_FOOD] Nahrung und +1 [ICON_CULTURE] Kultur auf benachbarten Feldern.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GRAND_MESA_QUOTE" Language="de_DE">
+			<Text>"Naturschutz bedeutet den weisen Umgang mit der Erde und ihren Ressourcen zum langfristigen Wohl der Menschen."[NEWLINE]- Gifford Pinchot</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_FEATURES_PAGE_FEATURE_GRAND_MESA_CHAPTER_HISTORY_PARA_1" Language="de_DE">
+			<Text>Die Grand Mesa ist eine große geologische Formation in Colorado, USA. Sie erhebt sich etwa 1.500 Meter (5.000 Fuß) über das umliegende Gelände und hat eine Fläche von 1.300 Quadratkilometern (500 Quadratmeilen), was sie zur größten Mesa der Welt macht. Die Grand Mesa hat eine Schicht aus vulkanischem Basalt obenauf, die der Erosion widersteht. Sie stieg nicht so sehr in die Höhe, sondern blieb auf ihrer ursprünglichen Höhe, während das umliegende Gelände durch die Action der Colorado- und Gunnison-Flüsse erodiert wurde. Der Grand Mesa National Forest (ursprünglich als Battlement Mesa Forest Reserve bezeichnet) wurde am 24. Dezember 1892 von Benjamin Harrison gegründet. Es war das dritte Waldreservat, das in den Vereinigten Staaten geschaffen wurde.</Text>
+		</Replace>
+		<!-- = Mount Kailash = -->
+		<Replace Tag="LOC_FEATURE_KAILASH_NAME" Language="de_DE">
+			<Text>Mount Kailash</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_KAILASH_DESCRIPTION" Language="de_DE">
+			<Text>Einzelnes unpassierbares Naturwunder. Erscheint als Bergfeld und bietet +1 [ICON_Faith] Glauben und +1 [ICON_CULTURE] Kultur auf benachbarten Feldern. +1 [ICON_CULTURE] Kultur von fremden Städten, die deinem [ICON_RELIGION] Glauben folgen, wenn du dieses Feld besitzt.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_KAILASH_QUOTE" Language="de_DE">
+			<Text>"Nachdem er so die Frommen unterrichtet hatte, ging Herr Brahma mit den Vorfahren und den Führern des Volkes, die er von seinem eigenen Ort zum Aufenthaltsort von Herr Shiva, Kailash, dem besten aller Berge, der dem Meister so teuer ist, mitnahm."[NEWLINE]- Das Bhagavata Purana</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_FEATURES_PAGE_FEATURE_KAILASH_CHAPTER_HISTORY_PARA_1" Language="de_DE">
+			<Text>Der heilige Gipfel des Mount Kailash, der sich im Himalaya in Tibet befindet, wird von zahlreichen Religionen geschätzt, insbesondere von den Anhängern des Hinduismus. Es wird geglaubt, dass es das Zuhause von Lord Shiva ist, der in einem Zustand ewiger Glückseligkeit auf dem Berg verweilt. Der Mount Kailash gilt als eine der schwierigsten religiösen Pilgerreisen, da die rauen Bedingungen viele Pilger abschrecken und der Berg mit keinen modernen Transportmitteln erreichbar ist.</Text>
+		</Replace>
+		<!-- = Victoria-See = -->
+		<Replace Tag="LOC_FEATURE_LAKE_VICTORIA_NAME" Language="de_DE">
+			<Text>Victoria-See</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_LAKE_VICTORIA_DESCRIPTION" Language="de_DE">
+			<Text>Vierfelden-Naturwunder. Erscheint als Seefeld und bietet +2 [ICON_FOOD] Nahrung, +1 [ICON_CULTURE] Kultur, +1 [ICON_PRODUCTION] Produktion und +1 [ICON_GOLD] Gold.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_LAKE_VICTORIA_QUOTE" Language="de_DE">
+			<Text>"Ich sah, dass der alte Vater Nil ohne Zweifel im Victoria-Nyanza entspringt, und wie ich prophezeit hatte, ist dieser See die große Quelle des heiligen Flusses, der den ersten Erklärer unseres Glaubens wiegt."[NEWLINE]- John Hanning Speke</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_FEATURES_PAGE_FEATURE_LAKE_VICTORIA_CHAPTER_HISTORY_PARA_1" Language="de_DE">
+			<Text>Mit einer Fläche von über 26.000 Quadratmeilen (68.800 km²) ist der Victoria-See der größte See in Afrika, der zweitgrößte Süßwassersee der Erde und der größte tropische See der Welt. Zwei große Flüsse verlassen den See, der Weiße Nil und der Katonga. Die ersten historischen Aufzeichnungen des Sees stammen von arabischen Händlern, die Gold, Elfenbein und andere Waren von den Einheimischen suchten, während sie von der Küste ins Inland vordrangen. Die Suche europäischer Entdecker nach der Quelle des Nils führte zur Entdeckung des Sees durch den Engländer John Speke im Jahr 1858 n. Chr., der ihn nach der damaligen britischen Monarchin benannte.</Text>
+		</Replace>
+		<!-- = Lençóis Maranhenses = -->
+		<Replace Tag="LOC_FEATURE_LENCOIS_MARANHENSES_NAME" Language="de_DE">
+			<Text>Lençóis Maranhenses</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_LENCOIS_MARANHENSES_DESCRIPTION" Language="de_DE">
+			<Text>Zwei-Felder-Naturwunder. Bietet +2 [ICON_FOOD] Nahrung, +2 [ICON_CULTURE] Kultur und +2 [ICON_GOLD] Gold. +1 [ICON_CULTURE] Kultur auf Wüsten- und Ebenen-Schwemmlandfeldern, wenn du mindestens eines dieser Felder besitzt. Bietet Süßwasser.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_LENCOIS_MARANHENSES_QUOTE" Language="de_DE">
+			<Text>"Ich sah Wiesen aus weißen und goldenen Sanden, die sich ständig nach Laune und Stimmung der Winde veränderten."[NEWLINE]- Geert Mauricio Bas</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_FEATURES_PAGE_FEATURE_LENCOIS_MARANHENSES_CHAPTER_HISTORY_PARA_1" Language="de_DE">
+			<Text>Der Nationalpark Lençóis Maranhenses im Bundesstaat Maranhão im Nordosten Brasiliens besteht aus 380.000 Acres sanfter Sanddünen, die während der Regenzeit mit Süßwasser überschwemmt werden. Der Park ist die Heimat einer Reihe von Arten, von denen vier bedroht sind, und aufgrund seiner einzigartigen physikalischen Eigenschaften ist er zu einem beliebten Ziel für Ökotouristen geworden.</Text>
+		</Replace>
+		<!-- = Krakatoa = -->
+		<Replace Tag="LOC_FEATURE_KRAKATOA_NAME" Language="de_DE">
+			<Text>Krakatoa</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_KRAKATOA_DESCRIPTION" Language="de_DE">
+			<Text>Einzelnes unpassierbares Naturwunder. Erscheint als Vulkan und bietet +2 [ICON_SCIENCE] Wissenschaft auf benachbarten Feldern. Bietet zusätzliche Erträge bei einer Eruption auf Kosten von [ICON_Citizen] Bevölkerung und Schäden an der Infrastruktur. Immer aktiv.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_KRAKATOA_QUOTE" Language="de_DE">
+			<Text>"Ich sah mit Erstaunen, dass die Insel Krakatoa völlig verbrannt und kahl vor unseren Augen lag und an vier Stellen große Feuerbrocken ausspie."[NEWLINE]- Johann Wilhelm Vogel</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_FEATURES_PAGE_FEATURE_KRAKATOA_CHAPTER_HISTORY_PARA_1" Language="de_DE">
+			<Text>Krakatoa ist eine Vulkaninsel in Indonesien, zwischen den Inseln Java und Sumatra gelegen. Der Vulkan explodierte im August 1883 gewaltig mit einer Kraft, die 13.000-mal so stark war wie die Hiroshima-Atombombe. Die Explosion wird weithin als der lauteste je aufgezeichnete Ton angesehen. Der Ausbruch zerstörte mehr als die Hälfte der Insel und war in Teilen Australiens, etwa 3.200 Kilometer (2.000 Meilen) entfernt, zu hören. Etwa 37.000 Menschen kamen durch den Ausbruch und die anschließenden Tsunamis ums Leben. Der Vulkan stößt seit den letzten achtzig Jahren kontinuierlich Lava aus und baut den Kegel mit etwa 5 Metern pro Jahr (15 Fuß pro Jahr) wieder auf.</Text>
+		</Replace>
+		<Replace Tag="LOC_RANDOM_EVENT_KRAKATOA_GENTLE_NAME" Language="de_DE">
+			<Text>Sanfte Eruption</Text>
+		</Replace>
+		<Replace Tag="LOC_RANDOM_EVENT_KRAKATOA_GENTLE_DESCRIPTION" Language="de_DE">
+			<Text>Rauch steigt aus dem Feuermountain auf, den die Menschen Krakatoa nennen. Könnte dies ein Vorzeichen für kommende Ereignisse sein?</Text>
+		</Replace>
+		<Replace Tag="LOC_RANDOM_EVENT_KRAKATOA_CATASTROPHIC_NAME" Language="de_DE">
+			<Text>Katarstrophale Eruption</Text>
+		</Replace>
+		<Replace Tag="LOC_RANDOM_EVENT_KRAKATOA_CATASTROPHIC_DESCRIPTION" Language="de_DE">
+			<Text>Müssen wir unsere Götter verlassen haben, denn als wir zum blauen Himmel schauten und um Regen baten, war es Krakatoa, das mit Feuer antwortete.</Text>
+		</Replace>
+		<Replace Tag="LOC_RANDOM_EVENT_KRAKATOA_MEGACOLOSSAL_NAME" Language="de_DE">
+			<Text>Megakollossale Eruption</Text>
+		</Replace>
+		<Replace Tag="LOC_RANDOM_EVENT_KRAKATOA_MEGACOLOSSAL_DESCRIPTION" Language="de_DE">
+			<Text>Verflucht sei der Boden, auf dem Krakatoa seinen mächtigen Schatten wirft. Sowohl Feuer als auch Felsen brachte er über uns. Denn aus dem Boden wurden wir genommen für die Asche, die wir sind... und zur Asche sind wir zurückgekehrt.</Text>
+		</Replace>
+		<!-- = Mosi-oa-Tunya = -->
+		<Replace Tag="LOC_FEATURE_MOSI_OA_TUNYA_NAME" Language="de_DE">
+			<Text>Mosi-oa-Tunya</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MOSI_OA_TUNYA_DESCRIPTION" Language="de_DE">
+			<Text>Einzelnes unpassierbares Naturwunder. Bietet +2 [ICON_FOOD] Nahrung auf benachbarten Feldern. Bietet +4 Anziehungskraft auf benachbarte Felder statt der üblichen +2. Bietet Süßwasser.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MOSI_OA_TUNYA_QUOTE" Language="de_DE">
+			<Text>"Mit Ehrfurcht zum Rand kriechend, schaute ich in einen großen Riss hinab und sah, dass ein Strom von tausend Yards Breite hundert Fuß hinabstürzte und sich dann plötzlich auf einen Raum von fünfzehn oder zwanzig Yards zusammendrängte, der wunderbarste Anblick, den ich in Afrika gesehen hatte."[NEWLINE]- David Livingstone</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_FEATURES_PAGE_FEATURE_MOSI_OA_TUNYA_CHAPTER_HISTORY_PARA_1" Language="de_DE">
+			<Text>Der Mosi-oa-Tunya, besser bekannt als Victoriafälle, gehört zu den spektakulärsten Wasserfällen der Welt. Der Zambezi-Fluss, der an dieser Stelle mehr als 2 Kilometer breit ist, stürzt lärmend durch eine Reihe von Basalt-Schluchten und erhebt einen schillernden Nebel, der mehr als 50 km entfernt sichtbar ist. Sein Name, der 'Der Rauch, der donnert' bedeutet, stammt aus der Kololo- oder Lozi-Sprache, die in ganz Sambia und in Teilen von Simbabwe verwendet wird. Weltweit ist er jedoch eher als Victoriafälle bekannt, nach dem schottischen Missionar und Entdecker David Livingstone, der vielleicht am bekanntesten dafür ist, einen Wasserfall benannt zu haben, der bereits einen Namen hatte.</Text>
+		</Replace>
+		<!-- = Motlatse Canyon = -->
+		<Replace Tag="LOC_FEATURE_MOTLATSE_CANYON_NAME" Language="de_DE">
+			<Text>Motlatse-Canyon</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MOTLATSE_CANYON_DESCRIPTION" Language="de_DE">
+			<Text>Vier-Felder-unpassierbares Naturwunder. Bietet +1 [ICON_CULTURE] Kultur und +1 [ICON_FAITH] Glauben auf benachbarten Feldern.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_MOTLATSE_CANYON_QUOTE" Language="de_DE">
+			<Text>"Ich glaube, dass Südafrika der schönste Ort auf Erden ist. Zugegeben, ich bin voreingenommen, aber ich denke, dass selbst der kritischste Beobachter zustimmen würde, dass wir mit einem wirklich wunderbaren Land gesegnet sind."[NEWLINE]- Nelson Mandela</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_FEATURES_PAGE_FEATURE_MOTLATSE_CANYON_CHAPTER_HISTORY_PARA_1" Language="de_DE">
+			<Text>Der Motlatse-Canyon ist ein bedeutendes Naturmerkmal Südafrikas, gelegen in Mpumalanga und bildend den nördlichen Teil des Drakensberg-Schorfs. Im Blyde River Canyon Naturreservat gelegen, ist er 25 Kilometer lang und im Durchschnitt etwa 750 Meter tief, mit einigen der tiefsten steilen Klippen eines Canyons auf dem Planeten.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_FEATURES_PAGE_FEATURE_MOTLATSE_CANYON_CHAPTER_HISTORY_PARA_2" Language="de_DE">
+			<Text>Obwohl es schwierig ist, Canyons weltweit zu vergleichen, ist der Blyde River Canyon einer der größten Canyons auf der Erde und könnte der größte grüne Canyon aufgrund seiner üppigen subtropischen Vegetation sein. Er unterstützt eine große Vielfalt an Flora und Fauna, einschließlich zahlreicher Fisch- und Antilopenarten sowie Flusspferde, Krokodile und aller Primatenarten, die in Südafrika zu sehen sind, was ihn zu einer sehr beliebten Region für den Tourismus macht.</Text>
+		</Replace>
+		<!-- = Namib Sand Sea = -->
+		<Replace Tag="LOC_FEATURE_NAMIB_NAME" Language="de_DE">
+			<Text>Namib-Sandmeer</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_NAMIB_DESCRIPTION" Language="de_DE">
+			<Text>Drei-Felder-Naturwunder. Bietet +2 [ICON_CULTURE] Kultur, +2 [ICON_PRODUCTION] Produktion und +2 [ICON_GOLD] Gold. Erkundungs-Einheiten, die Namib-Sandmeer-Felder betreten, erhalten die Fähigkeit 'Wüsten-Nomaden' (+1 [ICON_Movement] Bewegung).</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_NAMIB_QUOTE" Language="de_DE">
+			<Text>"Ich liebe es, das Geräusch der Sanddünen zu hören. Ich bin einer von denen, die den Rhythmus einer Landschaft in vielen Gemälden erkennen, ich bin einer von Tausenden, die wissen, dass ich endlich zu Hause bin."[NEWLINE]- Mvula Ya Nangolo</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_FEATURES_PAGE_FEATURE_NAMIB_CHAPTER_HISTORY_PARA_1" Language="de_DE">
+			<Text>Die Namib ist eine Küstendüne im Süden Afrikas, deren Name von den Nama stammt und 'weiter Ort' bedeutet. Die Namib erstreckt sich über mehr als 2.000 km entlang der Atlantikküsten von Angola, Namibia und Südafrika. Seit etwa 55-80 Millionen Jahren unter ariden oder halb-ariden Bedingungen lebend, könnte die Namib die älteste Wüste der Welt sein und einige der trockensten Regionen der Welt enthalten. Aufgrund ihrer Trockenheit ist die Namib fast vollständig unbewohnt, abgesehen von einer kleinen Anzahl verstreuter Siedlungen, die historisch als Handelsstationen für die Routen von Händlern und Missionaren dienten, die die Wüste durchqueren.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_NAMIB_BUFF_NAME" Language="de_DE">
+			<Text>Wüsten-Nomaden</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_NAMIB_BUFF_DESCRIPTION" Language="de_DE">
+			<Text>Wüsten-Nomaden: +1 [ICON_Movement] Bewegung</Text>
+		</Replace>
+		<!-- = Rock of Gibraltar = -->
+		<Replace Tag="LOC_FEATURE_GIBRALTAR_NAME" Language="de_DE">
+			<Text>Felsen von Gibraltar</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GIBRALTAR_DESCRIPTION" Language="de_DE">
+			<Text>Einzelnes unpassierbares Naturwunder. Bietet +1 [ICON_FOOD] Nahrung und +1 [ICON_GOLD] Gold auf benachbarten Feldern.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_GIBRALTAR_QUOTE" Language="de_DE">
+			<Text>"Schaut euch um, meine Jungs, und betrachtet, wie schön der Felsen im Licht des glorreichen Feuers erscheint."[NEWLINE]- George Augustus Eliott</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_FEATURES_PAGE_FEATURE_GIBRALTAR_CHAPTER_HISTORY_PARA_1" Language="de_DE">
+			<Text>Gibraltar ist eine Halbinsel mit einer bemerkenswerten Felsformation am Eingang zum Mittelmeer. 1704 von den Engländern und Holländern von Spanien erobert und 1713 an England abgetreten, ist Gibraltar seitdem britischer Besitz (sehr zum Ärger Spaniens, das es zurückhaben möchte). Als Wächter des Zugangs zum Atlantik vom Mittelmeer aus ist Gibraltar seit dreihundert Jahren eine bedeutende britische Marinebasis. Der Großteil Gibraltars ist vom 'Felsen' bedeckt, einer riesigen Formation aus Schiefer, Sandstein und Kalkstein, die durch die unvorstellbare Kraft der Plattentektonik aufgeschoben wurde. Der Felsen erhebt sich etwa 430 Meter (1400 Fuß) hoch. Einst war Gibraltar eine massive Festung, die es Großbritannien ermöglichte, den schmalen Mittelmeer-Atlantik-Passage zu dominieren, aber heute ist die Insel mehr ein Naturreservat und Touristenziel als eine Militärbasis.</Text>
+		</Replace>
+		<!-- = Old Faithful = -->
+		<Replace Tag="LOC_FEATURE_OLD_FAITHFUL_NAME" Language="de_DE">
+			<Text>Old Faithful</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_OLD_FAITHFUL_DESCRIPTION" Language="de_DE">
+			<Text>Einzelnes Naturwunder. Bietet +3 [ICON_SCIENCE] Wissenschaft, +2 [ICON_FOOD] Nahrung, +1 [ICON_FAITH] Glauben und +1 [ICON_GOLD] Gold. Großer Bonus durch Nähe zu Campus-Bezirken.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_OLD_FAITHFUL_QUOTE" Language="de_DE">
+			<Text>"Es spritzte in regelmäßigen Abständen neun Mal während unseres Aufenthalts, die Säulen kochenden Wassers wurden bei jeder Entladung von neunzig bis einhundertfünfundzwanzig Fuß hoch geschleudert, die Entladung dauerte fünfzehn bis zwanzig Minuten. Wir gaben ihm den Namen Old Faithful."[NEWLINE]- Nathaniel P. Langford</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_FEATURES_PAGE_FEATURE_OLD_FAITHFUL_CHAPTER_HISTORY_PARA_1" Language="de_DE">
+			<Text>Old Faithful ist ein Geysir im Yellowstone-Nationalpark in Wyoming, USA. Erstmals von Europäern im Jahr 1870 gesehen (und von Einheimischen etwa 10.000 Jahre vorher), wurde Old Faithful so genannt wegen der Regelmäßigkeit seiner Eruptionen. Der Geysir schleudert alle 60-90 Minuten (das Intervall hängt von der Heftigkeit des vorherigen Ausbruchs ab) eine Säule kochenden Wassers auf eine Höhe von etwa 30-50 Metern (100-175 Fuß). Geysire entstehen, wenn unterirdisches Wasser auf Magma (geschmolzenes Gestein) trifft. Das Wasser wird sofort in Dampf verwandelt, der durch die nächstgelegene Öffnung mit enormem Druck austritt. Old Faithful und die anderen 250 Geysire in Yellowstone werden von etwa drei Millionen Besuchern jedes Jahr genossen.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_OLD_FAITHFUL_SCIENCE" Language="de_DE">
+			<Text>+{1_num} [ICON_SCIENCE] Wissenschaft von dem benachbarten Naturwunder Old Faithful.</Text>
+		</Replace>
+		<!-- = Lakes of Ounianga = -->
+		<Replace Tag="LOC_FEATURE_OUNIANGA_NAME" Language="de_DE">
+			<Text>Seen von Ounianga</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_OUNIANGA_DESCRIPTION" Language="de_DE">
+			<Text>Zwei-Felder-Naturwunder. Bietet +2 [ICON_FOOD] Nahrung, +2 [ICON_CULTURE] Kultur und +2 [ICON_GOLD] Gold. Bietet +1 [ICON_FOOD] Nahrung auf benachbarten Feldern. Bietet Süßwasser.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_OUNIANGA_QUOTE" Language="de_DE">
+			<Text>"Am Anfang war die Sprache der Wüste Gras, das gegen die Wand des Windes blühte, hohe Palmen, die in der Saison der Aussaat schwankten, und Glut, die von der Luft zum blauen Empfang des warmen Sands getragen wurde. Sie war unser erster Brunnen, unsere Mutter, die uns hielt und uns dann dem Zeitalter der wartenden Städte übergab."[NEWLINE]- Al-Munsif al-Wahaybi</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_FEATURES_PAGE_FEATURE_OUNIANGA_CHAPTER_HISTORY_PARA_1" Language="de_DE">
+			<Text>Die Seen von Ounianga sind eine Serie von achtzehn miteinander verbundenen Seen in der hyperariden Ennedi-Region der Sahara, die ein Becken in den Bergen von West-Tibesti und Ennedi Ost einnehmen. Sie bilden eine außergewöhnliche Naturlandschaft von großer Schönheit mit auffälligen Farben und Formen. Die salinen, hyper-salinen und Süßwasserseen werden durch Grundwasser gespeist und sind in zwei Gruppen 40 km voneinander entfernt zu finden. Ounianga Kebir umfasst vier Seen, von denen der größte, Yoan, eine Fläche von 358 ha bedeckt und 27 m tief ist. Sein hochsalines Wasser unterstützt nur Algen und einige Mikroorganismen. Die zweite Gruppe, Ounianga Serir, umfasst vierzehn Seen, die durch Sanddünen getrennt sind. Schwimmende Reeds bedecken fast die Hälfte der Oberfläche dieser Seen und reduzieren die Verdunstung. Der See Teli hat die größte Oberfläche, ist jedoch weniger als 10 m tief. Mit ihrem hochwertigen Süßwasser sind einige dieser Seen Heimat aquatischer Fauna, insbesondere von Fischen.</Text>
+		</Replace>
+		<!-- = Salar de Uyuni = -->
+		<Replace Tag="LOC_FEATURE_SALAR_DE_UYUNI_NAME" Language="de_DE">
+			<Text>Salar de Uyuni</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_SALAR_DE_UYUNI_DESCRIPTION" Language="de_DE">
+			<Text>Vier-Felder-Naturwunder. Bietet +2 [ICON_SCIENCE] Wissenschaft, +2 [ICON_PRODUCTION] Produktion und +4 [ICON_GOLD] Gold. Großer Bonus durch Nähe zu Handelszentrum-Bezirken.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_SALAR_DE_UYUNI_QUOTE" Language="de_DE">
+			<Text>"Ich schauerte in diesen Einsamkeiten, als ich die Stimme des Salzes in der Wüste hörte."[NEWLINE]- Pablo Neruda</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_FEATURES_PAGE_FEATURE_SALAR_DE_UYUNI_CHAPTER_HISTORY_PARA_1" Language="de_DE">
+			<Text>Im Südwesten Boliviens, nahe der chilenischen Grenze und der Atacama-Wüste, liegt der Salar de Uyuni; die größte Salzwüste der Erde mit 10.582 Quadratkilometern, etwa 100 Mal so groß wie die Bonneville-Salzebenen in den Vereinigten Staaten. Der Salar entstand durch Umwandlungen mehrerer prähistorischer Seen. Überzogen von einigen Metern Salzkruste, zeichnet er sich durch eine außergewöhnliche Flachheit aus, wobei die durchschnittlichen Höhenunterschiede innerhalb eines Meters über die gesamte Fläche des Salar liegen. Die große Fläche, der klare Himmel und die außergewöhnliche Flachheit der Oberfläche machen ihn zu einem idealen Objekt zur Kalibrierung der Höhenmesser von Erdbeobachtungssatelliten.</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_SALAR_DE_UYUNI_GOLD" Language="de_DE">
+			<Text>+{1_num} [ICON_GOLD] Gold vom benachbarten Naturwunder Salar de Uyuni.</Text>
+		</Replace>
+		<!-- = Mount Sinai = -->
+		<Replace Tag="LOC_FEATURE_SINAI_NAME" Language="de_DE">
+			<Text>Berg Sinai</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_SINAI_DESCRIPTION" Language="de_DE">
+			<Text>Einzelnes unpassierbares Naturwunder. Erscheint als Bergfeld und bietet +2 [ICON_FAITH] Glauben auf benachbarten Feldern. Religiöse Einheiten, die sich neben den Berg Sinai bewegen, erhalten die Fähigkeit 'Zehn Gebote' (+15 [ICON_RELIGION] Religiöse Stärke).</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_SINAI_QUOTE" Language="de_DE">
+			<Text>"Als der Herr mit Mose auf dem Berg Sinai zu Ende sprach, gab er ihm die beiden Tafeln des Gesetzes, die Steintafeln, die mit dem Finger Gottes beschrieben waren."[NEWLINE]- Exodus 31:18</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_FEATURES_PAGE_FEATURE_SINAI_CHAPTER_HISTORY_PARA_1" Language="de_DE">
+			<Text>Auf der Sinai-Halbinsel in Ägypten gelegen, ist der Berg Sinai einer der am meisten verehrten heiligen Stätten, die von den Anhängern des Judentums, Christentums und Islams anerkannt werden. Der Berg Sinai wird als der Ort angesehen, an dem Mose die Zehn Gebote von Gott erhielt, während des Auszugs der Israeliten aus Ägypten, was den Gipfel zu einem wichtigen Ort für religiöse Pilger aus der ganzen Welt macht.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_SINAI_BUFF_NAME" Language="de_DE">
+			<Text>Zehn Gebote</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_SINAI_BUFF_DESCRIPTION" Language="de_DE">
+			<Text>Zehn Gebote: +15 [ICON_RELIGION] Religiöse Stärke.</Text>
+		</Replace>
+		<!-- = Sri Pada = -->
+		<Replace Tag="LOC_FEATURE_SRI_PADA_NAME" Language="de_DE">
+			<Text>Sri Pada</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_SRI_PADA_DESCRIPTION" Language="de_DE">
+			<Text>Einzelnes unpassierbares Naturwunder. Erscheint als Bergfeld und bietet +1 [ICON_FOOD] Nahrung und +1 [ICON_FAITH] Glauben auf benachbarten Feldern.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_SRI_PADA_QUOTE" Language="de_DE">
+			<Text>"Ein überaus wundersamer Anblick, der mit höchster Pracht ausgestattet ist."[NEWLINE]- Das Mahabharata</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_FEATURES_PAGE_FEATURE_SRI_PADA_CHAPTER_HISTORY_PARA_1" Language="de_DE">
+			<Text>Der Sri Pada, der über Sri Lanka thront, ist ein großer Berggipfel mit einer ungewöhnlich konischen Form, der von mehreren Religionen als heilig angesehen wird, aufgrund des Fußabdrucks, der sich an seinem Gipfel befindet. Der Fußabdruck, eine große Vertiefung in einem Felsen auf dem Gipfel, wird Buddha, Shiva und der biblischen Figur Adam zugeschrieben, was zu einer Verehrung unter Anhängern des Buddhismus, Hinduismus und Islam geführt hat. Jedes Jahr wandern Tausende von Pilgern stundenlang den Berg hinauf, um ihre Ehrerbietung an diesem heiligen Ort zu erweisen.</Text>
+		</Replace>
+		<!-- = Vredefort Dome = -->
+		<Replace Tag="LOC_FEATURE_VREDEFORT_DOME_NAME" Language="de_DE">
+			<Text>Vredefort-Dom</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VREDEFORT_DOME_DESCRIPTION" Language="de_DE">
+			<Text>Zwei-Felder-Naturwunder. Bietet +2 [ICON_FOOD] Nahrung, +1 [ICON_PRODUCTION] Produktion, +2 [ICON_SCIENCE] Wissenschaft und +1 [ICON_CULTURE] Kultur.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_VREDEFORT_DOME_QUOTE" Language="de_DE">
+			<Text>"Als Geologen vor fast 150 Jahren zum ersten Mal den spektakulären Ring von Hügeln nordwestlich des Vaalflusses bei Vredefort durchwanderten, erkannten sie sofort, dass die ungewöhnlich zerschlagenen und aufgerichteten Gesteine Zeugnis eines außergewöhnlich gewalttätigen Ereignisses in der fernen Vergangenheit ablegten."[NEWLINE]- Wolf Uwe Reimold</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_FEATURES_PAGE_FEATURE_VREDEFORT_DOME_CHAPTER_HISTORY_PARA_1" Language="de_DE">
+			<Text>Der Vredefort-Dom ist der größte verifizierte Einschlagkrater auf der Erde, der bei seiner Entstehung mehr als 300 km groß war. Was davon übrig geblieben ist, liegt in der heutigen Provinz Freistaat in Südafrika, wo landwirtschaftliche Nutzflächen die Landschaft dominieren. Der Krater wird auf über 2 Milliarden Jahre geschätzt und entstand im Paläoproterozoikum, was ihn zum zweitältesten bekannten Krater der Erde macht.</Text>
+		</Replace>
+		<!-- = Wulingyuan = -->
+		<Replace Tag="LOC_FEATURE_WULINGYUAN_NAME" Language="de_DE">
+			<Text>Wulingyuan</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_WULINGYUAN_DESCRIPTION" Language="de_DE">
+			<Text>Zwei-Felder-Naturwunder. Bietet +1 [ICON_CULTURE] Kultur auf benachbarten Feldern.</Text>
+		</Replace>
+		<Replace Tag="LOC_FEATURE_WULINGYUAN_QUOTE" Language="de_DE">
+			<Text>"Aus zehntausend Tälern berühren die Bäume den Himmel, auf tausend Gipfeln rufen Kuckucke, und nach einer Nacht im Bergregen kommen von jedem Gipfel Hunderte von seidigen Kaskaden."[NEWLINE]- Wang Wei</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_FEATURES_PAGE_FEATURE_WULINGYUAN_CHAPTER_HISTORY_PARA_1" Language="de_DE">
+			<Text>Wulingyuan ist eine malerische und historische Stätte in Süd-Zentral-China. Sie ist bekannt für mehr als 3.000 Quarzitsandstein-Säulen und -Gipfel, viele davon über 200 Meter hoch, sowie Schluchten, Täler, Teiche, Seen, Flüsse und Wasserfälle. Sie umfasst 40 Höhlen und zwei natürliche Brücken, Xianrenqiao (Brücke der Unsterblichen) und Tianqiashengkong (Brücke über den Himmel).</Text>
+		</Replace>
+	</LocalizedText>
+</GameData>
