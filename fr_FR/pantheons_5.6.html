@@ -49,7 +49,7 @@
                     </div>
                     <div class="flex center col-xl-1 col-lg-1 col-md-1 col-1">
                       <a href="/index.html" style="align-content: center;">
-                        <img alt="#" src="/images/BBGLogo.webp" style="width:50px; border-radius:10%">
+                        <img alt="#" src="/images/BBGLogo.webp" style="width:3em; border-radius:10%">
                       </a>
                       <div class="mobile-nav"></div>
                     </div>
@@ -114,53 +114,58 @@
                         </nav>
                       </div>
                     </div>
-                    <div class="flex center col-xl-1 col-lg-1 col-md-1 col-1">
-                      <div class="main-menu">
-                        <nav class="navigation">
-                          <ul class="nav menu">
-                            <li><i class="lang-icon fa fa-language"></i>
-                              <ul class="dropdown" style="width:80px">
-                                <li>
-                                  <a href="/en_US/pantheons_5.6.html" style="align-content: center;">
-                                    <img src="/assets/flags/4x3/us.svg" style="height:20px">
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="/fr_FR/pantheons_5.6.html" style="align-content: center;">
-                                    <img src="/assets/flags/4x3/fr.svg" style="height:20px">
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="/ru_RU/pantheons_5.6.html" style="align-content: center;">
-                                    <img src="/assets/flags/4x3/ru.svg" style="height:20px">
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="/de_DE/pantheons_5.6.html" style="align-content: center;">
-                                    <img src="/assets/flags/4x3/de.svg" style="height:20px">
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="/zh_Hans_CN/pantheons_5.6.html" style="align-content: center;">
-                                    <img src="/assets/flags/4x3/cn.svg" style="height:20px">
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="/ko_KR/pantheons_5.6.html" style="align-content: center;">
-                                    <img src="/assets/flags/4x3/kr.svg" style="height:20px">
-                                  </a>
+                    <div class="flex center col-xl-2 col-lg-2 col-md-2 col-2">
+                      <div class="flex row justify-content-around">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-6">
+                          <div class="main-menu">
+                            <nav class="navigation">
+                              <ul class="nav menu">
+                                <li><i class="fa fa-language lang-icon"></i>
+                                  <ul class="dropdown" style="width:80px">
+                                    <li>
+                                      <a href="/en_US/pantheons_5.6.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/us.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/fr_FR/pantheons_5.6.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/fr.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/ru_RU/pantheons_5.6.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/ru.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/de_DE/pantheons_5.6.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/de.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/zh_Hans_CN/pantheons_5.6.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/cn.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/ko_KR/pantheons_5.6.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/kr.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                  </ul>
                                 </li>
                               </ul>
-                            </li>
-                          </ul>
-                        </nav>
-                      </div>
-                    </div>
-                    <div class="flex center col-xl-1 col-lg-1 col-md-1 col-1">
-                      <div class="theme-switcher-wrapper">
-                        <button class="theme-switcher gray-circle-btn" title="Switch theme" type="button">
-                          <span class="sr-only">Switch theme</span><i aria-hidden="true" class="sun-icon" data-feather="sun"></i><i aria-hidden="true" class="moon-icon" data-feather="moon"></i>
-                        </button>
+                            </nav>
+                          </div>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-6">
+                          <div class="theme-switcher-wrapper">
+                            <button class="theme-switcher gray-circle-btn" title="Switch theme" type="button">
+                              <span class="sr-only">Switch theme</span><i aria-hidden="true" class="sun-icon" data-feather="sun"></i><i aria-hidden="true" class="moon-icon" data-feather="moon"></i>
+                            </button>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -178,7 +183,7 @@
                     <li>
                       <a href="#Danse de l'aurore" onclick="civClicked(&quot;Danse de l'aurore&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/pantheons/Dance of the Aurora.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Dance of the Aurora.webp">
                         </span>
                         <p>Danse de l'aurore</p>
                       </a>
@@ -186,7 +191,7 @@
                     <li>
                       <a href="#Traditions du désert" onclick="civClicked(&quot;Traditions du désert&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/pantheons/Desert Folklore.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Desert Folklore.webp">
                         </span>
                         <p>Traditions du désert</p>
                       </a>
@@ -194,7 +199,7 @@
                     <li>
                       <a href="#Chemin sacré" onclick="civClicked(&quot;Chemin sacré&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/pantheons/Sacred Path.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Sacred Path.webp">
                         </span>
                         <p>Chemin sacré</p>
                       </a>
@@ -202,7 +207,7 @@
                     <li>
                       <a href="#Déesse des rivières" onclick="civClicked(&quot;Déesse des rivières&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/pantheons/River Goddess.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/River Goddess.webp">
                         </span>
                         <p>Déesse des rivières</p>
                       </a>
@@ -210,7 +215,7 @@
                     <li>
                       <a href="#Monument aux dieux" onclick="civClicked(&quot;Monument aux dieux&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/pantheons/Monument to the Gods.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Monument to the Gods.webp">
                         </span>
                         <p>Monument aux dieux</p>
                       </a>
@@ -218,7 +223,7 @@
                     <li>
                       <a href="#Étincelle divine" onclick="civClicked(&quot;Étincelle divine&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/pantheons/Divine Spark.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Divine Spark.webp">
                         </span>
                         <p>Étincelle divine</p>
                       </a>
@@ -226,7 +231,7 @@
                     <li>
                       <a href="#Dame des roseaux et des marais" onclick="civClicked(&quot;Dame des roseaux et des marais&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/pantheons/Lady of the Reeds and Marshes.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Lady of the Reeds and Marshes.webp">
                         </span>
                         <p>Dame des roseaux et des marais</p>
                       </a>
@@ -234,7 +239,7 @@
                     <li>
                       <a href="#Dieu de la mer" onclick="civClicked(&quot;Dieu de la mer&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/pantheons/God of the Sea.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/God of the Sea.webp">
                         </span>
                         <p>Dieu de la mer</p>
                       </a>
@@ -242,7 +247,7 @@
                     <li>
                       <a href="#Dieu du ciel ouvert" onclick="civClicked(&quot;Dieu du ciel ouvert&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/pantheons/God of the Open Sky.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/God of the Open Sky.webp">
                         </span>
                         <p>Dieu du ciel ouvert</p>
                       </a>
@@ -250,7 +255,7 @@
                     <li>
                       <a href="#Déesse de la chasse" onclick="civClicked(&quot;Déesse de la chasse&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/pantheons/Goddess of the Hunt.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Goddess of the Hunt.webp">
                         </span>
                         <p>Déesse de la chasse</p>
                       </a>
@@ -258,7 +263,7 @@
                     <li>
                       <a href="#Cercles de pierres" onclick="civClicked(&quot;Cercles de pierres&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/pantheons/Stone Circles.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Stone Circles.webp">
                         </span>
                         <p>Cercles de pierres</p>
                       </a>
@@ -266,7 +271,7 @@
                     <li>
                       <a href="#Idoles religieuses" onclick="civClicked(&quot;Idoles religieuses&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/pantheons/Religious Idols.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Religious Idols.webp">
                         </span>
                         <p>Idoles religieuses</p>
                       </a>
@@ -274,7 +279,7 @@
                     <li>
                       <a href="#Dieu des artisans" onclick="civClicked(&quot;Dieu des artisans&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/pantheons/God of Craftsmen.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/God of Craftsmen.webp">
                         </span>
                         <p>Dieu des artisans</p>
                       </a>
@@ -282,7 +287,7 @@
                     <li>
                       <a href="#Déesse des festivals" onclick="civClicked(&quot;Déesse des festivals&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/pantheons/Goddess of Festivals.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Goddess of Festivals.webp">
                         </span>
                         <p>Déesse des festivals</p>
                       </a>
@@ -290,7 +295,7 @@
                     <li>
                       <a href="#Dieu de la forge" onclick="civClicked(&quot;Dieu de la forge&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/pantheons/God of the Forge.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/God of the Forge.webp">
                         </span>
                         <p>Dieu de la forge</p>
                       </a>
@@ -298,7 +303,7 @@
                     <li>
                       <a href="#Rites initiatiques" onclick="civClicked(&quot;Rites initiatiques&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/pantheons/Initiation Rites.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Initiation Rites.webp">
                         </span>
                         <p>Rites initiatiques</p>
                       </a>
@@ -306,7 +311,7 @@
                     <li>
                       <a href="#Déesse de l'écume" onclick="civClicked(&quot;Déesse de l'écume&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/pantheons/Goddess of Tides.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Goddess of Tides.webp">
                         </span>
                         <p>Déesse de l'écume</p>
                       </a>
@@ -314,7 +319,7 @@
                     <li>
                       <a href="#Dieu de la guerre et du pillage" onclick="civClicked(&quot;Dieu de la guerre et du pillage&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/pantheons/God of War and Plunder.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/God of War and Plunder.webp">
                         </span>
                         <p>Dieu de la guerre et du pillage</p>
                       </a>
@@ -322,7 +327,7 @@
                     <li>
                       <a href="#Rites de fertilité" onclick="civClicked(&quot;Rites de fertilité&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/pantheons/Fertility Rites.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Fertility Rites.webp">
                         </span>
                         <p>Rites de fertilité</p>
                       </a>
@@ -330,7 +335,7 @@
                     <li>
                       <a href="#Colonies religieuses" onclick="civClicked(&quot;Colonies religieuses&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/pantheons/Religious Settlements.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Religious Settlements.webp">
                         </span>
                         <p>Colonies religieuses</p>
                       </a>
@@ -338,7 +343,7 @@
                     <li>
                       <a href="#Déesse de la ville" onclick="civClicked(&quot;Déesse de la ville&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/pantheons/City Patron Goddess.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/City Patron Goddess.webp">
                         </span>
                         <p>Déesse de la ville</p>
                       </a>
@@ -346,7 +351,7 @@
                     <li>
                       <a href="#Déesse de la terre" onclick="civClicked(&quot;Déesse de la terre&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/pantheons/Earth Goddess.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Earth Goddess.webp">
                         </span>
                         <p>Déesse de la terre</p>
                       </a>
@@ -354,7 +359,7 @@
                     <li>
                       <a href="#Déesse du Feu" onclick="civClicked(&quot;Déesse du Feu&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/pantheons/Fire Goddess.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Fire Goddess.webp">
                         </span>
                         <p>Déesse du Feu</p>
                       </a>
@@ -371,7 +376,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Danse de l'aurore
-                        <img src="/images/pantheons/Dance of the Aurora.webp" style="vertical-align: middle; height:5em">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Dance of the Aurora.webp" style="vertical-align: middle; height:5em">
                       </h2>
                       <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi +1 pour les Lieux saints pour chaque case de toundra plate adjacente.</p>
                     </div>
@@ -381,7 +386,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Traditions du désert
-                        <img src="/images/pantheons/Desert Folklore.webp" style="vertical-align: middle; height:5em">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Desert Folklore.webp" style="vertical-align: middle; height:5em">
                       </h2>
                       <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi +1 pour les lieux saints adjacents à des cases de désert.</p>
                     </div>
@@ -391,7 +396,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Chemin sacré
-                        <img src="/images/pantheons/Sacred Path.webp" style="vertical-align: middle; height:5em">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Sacred Path.webp" style="vertical-align: middle; height:5em">
                       </h2>
                       <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi +1 pour les Lieux saints pour chaque case de forêt et de forêt tropicale adjacente.</p>
                     </div>
@@ -401,7 +406,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Déesse des rivières
-                        <img src="/images/pantheons/River Goddess.webp" style="vertical-align: middle; height:5em">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/River Goddess.webp" style="vertical-align: middle; height:5em">
                       </h2>
                       <p class="civ-ability-desc" style="text-align:left">Bonus de proximité +1 pour les Lieux saints adjacents à une rivière. <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitations +1 et <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> Activités +1 dans les villes possédant un Lieu saint adjacent à une rivière.</p>
                     </div>
@@ -411,7 +416,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Monument aux dieux
-                        <img src="/images/pantheons/Monument to the Gods.webp" style="vertical-align: middle; height:5em">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Monument to the Gods.webp" style="vertical-align: middle; height:5em">
                       </h2>
                       <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +20% pour toutes les merveilles.</p>
                     </div>
@@ -421,7 +426,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Étincelle divine
-                        <img src="/images/pantheons/Divine Spark.webp" style="vertical-align: middle; height:5em">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Divine Spark.webp" style="vertical-align: middle; height:5em">
                       </h2>
                       <p class="civ-ability-desc" style="text-align:left">+1 point <img src="/images/ICON_GREATENGINEER.webp" style="height:1em"/> d'Ingénieur illustre les Zones industrielles, de <img src="/images/ICON_GREATPROPHET.webp" style="height:1em"/> Prophète illustre pour les Lieux saints, de <img src="/images/ICON_GREATSCIENTIST.webp" style="height:1em"/> Scientifique illustre pour les Campus et <img src="/images/ICON_GREATWRITER.webp" style="height:1em"/> d'Écrivain illustre pour les Places du théâtre.</p>
                     </div>
@@ -431,7 +436,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Dame des roseaux et des marais
-                        <img src="/images/pantheons/Lady of the Reeds and Marshes.webp" style="vertical-align: middle; height:5em">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Lady of the Reeds and Marshes.webp" style="vertical-align: middle; height:5em">
                       </h2>
                       <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +1 pour les cases de marais, d'oasis et de plaines inondables.</p>
                     </div>
@@ -441,7 +446,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Dieu de la mer
-                        <img src="/images/pantheons/God of the Sea.webp" style="vertical-align: middle; height:5em">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/God of the Sea.webp" style="vertical-align: middle; height:5em">
                       </h2>
                       <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +1 pour les bateaux de pêche.</p>
                     </div>
@@ -451,7 +456,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Dieu du ciel ouvert
-                        <img src="/images/pantheons/God of the Open Sky.webp" style="vertical-align: middle; height:5em">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/God of the Open Sky.webp" style="vertical-align: middle; height:5em">
                       </h2>
                       <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture +1 pour les pâturages.</p>
                     </div>
@@ -461,7 +466,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Déesse de la chasse
-                        <img src="/images/pantheons/Goddess of the Hunt.webp" style="vertical-align: middle; height:5em">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Goddess of the Hunt.webp" style="vertical-align: middle; height:5em">
                       </h2>
                       <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture +1 et <img src="/images/ICON_GOLD.webp" style="height:1em"/> Or +2 pour les camps.</p>
                     </div>
@@ -471,7 +476,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Cercles de pierres
-                        <img src="/images/pantheons/Stone Circles.webp" style="vertical-align: middle; height:5em">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Stone Circles.webp" style="vertical-align: middle; height:5em">
                       </h2>
                       <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +1 et <img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi +1 pour les carrières.</p>
                     </div>
@@ -481,7 +486,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Idoles religieuses
-                        <img src="/images/pantheons/Religious Idols.webp" style="vertical-align: middle; height:5em">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Religious Idols.webp" style="vertical-align: middle; height:5em">
                       </h2>
                       <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_GOLD.webp" style="height:1em"/> Or +3 et <img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi +3 pour les mines construites sur des ressources de luxe et bonus.</p>
                     </div>
@@ -491,7 +496,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Dieu des artisans
-                        <img src="/images/pantheons/God of Craftsmen.webp" style="vertical-align: middle; height:5em">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/God of Craftsmen.webp" style="vertical-align: middle; height:5em">
                       </h2>
                       <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +1 et <img src="/images/ICON_FAITH.webp" style="height:1em"/> foi +1 pour les ressources stratégiques aménagées.</p>
                     </div>
@@ -501,7 +506,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Déesse des festivals
-                        <img src="/images/pantheons/Goddess of Festivals.webp" style="vertical-align: middle; height:5em">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Goddess of Festivals.webp" style="vertical-align: middle; height:5em">
                       </h2>
                       <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture +1 pour les plantations.</p>
                     </div>
@@ -511,7 +516,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Dieu de la forge
-                        <img src="/images/pantheons/God of the Forge.webp" style="vertical-align: middle; height:5em">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/God of the Forge.webp" style="vertical-align: middle; height:5em">
                       </h2>
                       <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +30% pour les unités militaires antiques et de l'ère classique.</p>
                     </div>
@@ -521,7 +526,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Rites initiatiques
-                        <img src="/images/pantheons/Initiation Rites.webp" style="vertical-align: middle; height:5em">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Initiation Rites.webp" style="vertical-align: middle; height:5em">
                       </h2>
                       <p class="civ-ability-desc" style="text-align:left">Produire une unité militaire octroie 30% de son coût en <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production en <img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi.<br>Un Guerrier apparaît dans votre <img src="/images/ICON_CAPITAL.webp" style="height:1em"/> Capitale.</p>
                     </div>
@@ -531,7 +536,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Déesse de l'écume
-                        <img src="/images/pantheons/Goddess of Tides.webp" style="vertical-align: middle; height:5em">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Goddess of Tides.webp" style="vertical-align: middle; height:5em">
                       </h2>
                       <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture +1 pour les bâteaux de pêche.</p>
                     </div>
@@ -541,7 +546,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Dieu de la guerre et du pillage
-                        <img src="/images/pantheons/God of War and Plunder.webp" style="vertical-align: middle; height:5em">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/God of War and Plunder.webp" style="vertical-align: middle; height:5em">
                       </h2>
                       <p class="civ-ability-desc" style="text-align:left">+1 point de <img src="/images/ICON_GREATGENERAL.webp" style="height:1em"/> Général illustre pour les Campements, <img src="/images/ICON_GREATADMIRAL.webp" style="height:1em"/> d'Amiral illustre pour les Ports et de <img src="/images/ICON_GREATMERCHANT.webp" style="height:1em"/> Marchand illustre pour les Plateformes commerciales.</p>
                     </div>
@@ -551,7 +556,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Rites de fertilité
-                        <img src="/images/pantheons/Fertility Rites.webp" style="vertical-align: middle; height:5em">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Fertility Rites.webp" style="vertical-align: middle; height:5em">
                       </h2>
                       <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture +1 pour les ressources de <img src="/images/ICON_RESOURCE_CATTLE.webp" style="height:1em"/> Bétail, de <img src="/images/ICON_RESOURCE_RICE.webp" style="height:1em"/> Riz, de <img src="/images/ICON_RESOURCE_WHEAT.webp" style="height:1em"/> Blé et de <img src="/images/ICON_RESOURCE_MAIZE.webp" style="height:1em"/> Maïs.</p>
                     </div>
@@ -561,7 +566,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Colonies religieuses
-                        <img src="/images/pantheons/Religious Settlements.webp" style="vertical-align: middle; height:5em">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Religious Settlements.webp" style="vertical-align: middle; height:5em">
                       </h2>
                       <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +20% pour les colons.<br>Vos villes reçoivent 2 cases gratuites quand elles sont fondées et voient la vitesse d'expansion de leurs frontières augmenter de 50%.</p>
                     </div>
@@ -571,7 +576,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Déesse de la ville
-                        <img src="/images/pantheons/City Patron Goddess.webp" style="vertical-align: middle; height:5em">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/City Patron Goddess.webp" style="vertical-align: middle; height:5em">
                       </h2>
                       <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +40% pour la construction de <img src="/images/ICON_DISTRICT.webp" style="height:1em"/> quartiers dans les villes ne possédant pas de <img src="/images/ICON_DISTRICT.webp" style="height:1em"/> quartier spécialisé.</p>
                     </div>
@@ -581,7 +586,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Déesse de la terre
-                        <img src="/images/pantheons/Earth Goddess.webp" style="vertical-align: middle; height:5em">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Earth Goddess.webp" style="vertical-align: middle; height:5em">
                       </h2>
                       <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi +1 pour les cases d'Attrait charmant ou supérieur.</p>
                     </div>
@@ -591,7 +596,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Déesse du Feu
-                        <img src="/images/pantheons/Fire Goddess.webp" style="vertical-align: middle; height:5em">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Fire Goddess.webp" style="vertical-align: middle; height:5em">
                       </h2>
                       <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi +3 pour les fissures géothermiques et les sols volcaniques.</p>
                     </div>

@@ -49,7 +49,7 @@
                     </div>
                     <div class="flex center col-xl-1 col-lg-1 col-md-1 col-1">
                       <a href="/index.html" style="align-content: center;">
-                        <img alt="#" src="/images/BBGLogo.webp" style="width:50px; border-radius:10%">
+                        <img alt="#" src="/images/BBGLogo.webp" style="width:3em; border-radius:10%">
                       </a>
                       <div class="mobile-nav"></div>
                     </div>
@@ -114,53 +114,58 @@
                         </nav>
                       </div>
                     </div>
-                    <div class="flex center col-xl-1 col-lg-1 col-md-1 col-1">
-                      <div class="main-menu">
-                        <nav class="navigation">
-                          <ul class="nav menu">
-                            <li><i class="lang-icon fa fa-language"></i>
-                              <ul class="dropdown" style="width:80px">
-                                <li>
-                                  <a href="/en_US/religion_6.2.html" style="align-content: center;">
-                                    <img src="/assets/flags/4x3/us.svg" style="height:20px">
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="/fr_FR/religion_6.2.html" style="align-content: center;">
-                                    <img src="/assets/flags/4x3/fr.svg" style="height:20px">
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="/ru_RU/religion_6.2.html" style="align-content: center;">
-                                    <img src="/assets/flags/4x3/ru.svg" style="height:20px">
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="/de_DE/religion_6.2.html" style="align-content: center;">
-                                    <img src="/assets/flags/4x3/de.svg" style="height:20px">
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="/zh_Hans_CN/religion_6.2.html" style="align-content: center;">
-                                    <img src="/assets/flags/4x3/cn.svg" style="height:20px">
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="/ko_KR/religion_6.2.html" style="align-content: center;">
-                                    <img src="/assets/flags/4x3/kr.svg" style="height:20px">
-                                  </a>
+                    <div class="flex center col-xl-2 col-lg-2 col-md-2 col-2">
+                      <div class="flex row justify-content-around">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-6">
+                          <div class="main-menu">
+                            <nav class="navigation">
+                              <ul class="nav menu">
+                                <li><i class="fa fa-language lang-icon"></i>
+                                  <ul class="dropdown" style="width:80px">
+                                    <li>
+                                      <a href="/en_US/religion_6.2.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/us.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/fr_FR/religion_6.2.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/fr.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/ru_RU/religion_6.2.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/ru.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/de_DE/religion_6.2.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/de.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/zh_Hans_CN/religion_6.2.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/cn.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/ko_KR/religion_6.2.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/kr.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                  </ul>
                                 </li>
                               </ul>
-                            </li>
-                          </ul>
-                        </nav>
-                      </div>
-                    </div>
-                    <div class="flex center col-xl-1 col-lg-1 col-md-1 col-1">
-                      <div class="theme-switcher-wrapper">
-                        <button class="theme-switcher gray-circle-btn" title="Switch theme" type="button">
-                          <span class="sr-only">Switch theme</span><i aria-hidden="true" class="sun-icon" data-feather="sun"></i><i aria-hidden="true" class="moon-icon" data-feather="moon"></i>
-                        </button>
+                            </nav>
+                          </div>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-6">
+                          <div class="theme-switcher-wrapper">
+                            <button class="theme-switcher gray-circle-btn" title="Switch theme" type="button">
+                              <span class="sr-only">Switch theme</span><i aria-hidden="true" class="sun-icon" data-feather="sun"></i><i aria-hidden="true" class="moon-icon" data-feather="moon"></i>
+                            </button>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -178,7 +183,7 @@
                     <li>
                       <a href="#Seguace" onclick="civClicked(&quot;Seguace&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/religion/Follower.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/religion/Follower.webp">
                         </span>
                         <p>Seguace</p>
                       </a>
@@ -186,7 +191,7 @@
                     <li>
                       <a href="#Fondatore" onclick="civClicked(&quot;Fondatore&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/religion/Founder.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/religion/Founder.webp">
                         </span>
                         <p>Fondatore</p>
                       </a>
@@ -194,7 +199,7 @@
                     <li>
                       <a href="#Miglioratore" onclick="civClicked(&quot;Miglioratore&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/religion/Enhancer.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/religion/Enhancer.webp">
                         </span>
                         <p>Miglioratore</p>
                       </a>
@@ -202,7 +207,7 @@
                     <li>
                       <a href="#Adorazione" onclick="civClicked(&quot;Adorazione&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/religion/Worship.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/religion/Worship.webp">
                         </span>
                         <p>Adorazione</p>
                       </a>

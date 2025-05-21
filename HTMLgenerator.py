@@ -178,7 +178,7 @@ def add_header(bbg_version, lang, leader_page = False, cs_page = False, pantheon
                                     span(cls="icon menu-toggle", aria_hidden="true")
                             with div(cls="flex center col-xl-1 col-lg-1 col-md-1 col-1"):
                                 with a(href="/index.html", style="align-content: center;"):
-                                    img(src="/images/BBGLogo.webp", style="width:50px; border-radius:10%", alt="#")
+                                    img(src="/images/BBGLogo.webp", style="width:3em; border-radius:10%", alt="#")
                                 div(cls="mobile-nav")
                             with div(cls="flex col-xl-8 col-lg-8 col-md-8 col-8"):
                                 with div(cls="main-menu"):
@@ -234,26 +234,29 @@ def add_header(bbg_version, lang, leader_page = False, cs_page = False, pantheon
                                                                     a(f"BBG v{v}", href=f"/{lang}/natural_wonder_{v}.html")
                                             with li(cls=""):
                                                 a('Donate!', href=f"https://ko-fi.com/calcalciffer", target="_blank")
-                            with div(cls="flex center col-xl-1 col-lg-1 col-md-1 col-1"):
-                                with div(cls="main-menu"):
-                                    with nav(cls="navigation"):
-                                        with ul(cls="nav menu"):
-                                            with li():
-                                                i(cls="lang-icon fa fa-language")
+                            with div(cls="flex center col-xl-2 col-lg-2 col-md-2 col-2"):
+                                with div(cls='flex row justify-content-around'):
+                                    with div(cls="col-xl-6 col-lg-6 col-md-6 col-6"):
+                                        with div(cls="main-menu"):
+                                            with nav(cls="navigation"):
+                                                with ul(cls="nav menu"):
+                                                    with li():
+                                                        i(cls="fa fa-language lang-icon")
 
-                                                with ul(cls="dropdown", style="width:80px"):
-                                                    add_lang('English  ', 'en_US', bbg_version, 'us', leader_page, cs_page, pantheon_page, religion_page, governor_page, natural_wonder_page)
-                                                    add_lang('French  ', 'fr_FR', bbg_version, 'fr', leader_page, cs_page, pantheon_page, religion_page, governor_page, natural_wonder_page)
-                                                    add_lang('Russian  ', 'ru_RU', bbg_version, 'ru', leader_page, cs_page, pantheon_page, religion_page, governor_page, natural_wonder_page)
-                                                    add_lang('German  ', 'de_DE', bbg_version, 'de', leader_page, cs_page, pantheon_page, religion_page, governor_page, natural_wonder_page)
-                                                    add_lang('Chinese  ', 'zh_Hans_CN', bbg_version, 'cn', leader_page, cs_page, pantheon_page, religion_page, governor_page, natural_wonder_page)
-                                                    add_lang('Korean  ', 'ko_KR', bbg_version, 'kr', leader_page, cs_page, pantheon_page, religion_page, governor_page, natural_wonder_page)
-                            with div(cls="flex center col-xl-1 col-lg-1 col-md-1 col-1"):
-                                with div(cls="theme-switcher-wrapper"):
-                                    with button(cls="theme-switcher gray-circle-btn", type="button", title="Switch theme"):
-                                        span("Switch theme", cls="sr-only")
-                                        i(cls="sun-icon", data_feather="sun", aria_hidden="true")
-                                        i(cls="moon-icon", data_feather="moon", aria_hidden="true")
+                                                        with ul(cls="dropdown", style="width:80px"):
+                                                            add_lang('English  ', 'en_US', bbg_version, 'us', leader_page, cs_page, pantheon_page, religion_page, governor_page, natural_wonder_page)
+                                                            add_lang('French  ', 'fr_FR', bbg_version, 'fr', leader_page, cs_page, pantheon_page, religion_page, governor_page, natural_wonder_page)
+                                                            add_lang('Russian  ', 'ru_RU', bbg_version, 'ru', leader_page, cs_page, pantheon_page, religion_page, governor_page, natural_wonder_page)
+                                                            add_lang('German  ', 'de_DE', bbg_version, 'de', leader_page, cs_page, pantheon_page, religion_page, governor_page, natural_wonder_page)
+                                                            add_lang('Chinese  ', 'zh_Hans_CN', bbg_version, 'cn', leader_page, cs_page, pantheon_page, religion_page, governor_page, natural_wonder_page)
+                                                            add_lang('Korean  ', 'ko_KR', bbg_version, 'kr', leader_page, cs_page, pantheon_page, religion_page, governor_page, natural_wonder_page)
+                                    div(cls="w-100")
+                                    with div(cls="col-xl-6 col-lg-6 col-md-6 col-6"):
+                                        with div(cls="theme-switcher-wrapper"):
+                                            with button(cls="theme-switcher gray-circle-btn", type="button", title="Switch theme"):
+                                                span("Switch theme", cls="sr-only")
+                                                i(cls="sun-icon", data_feather="sun", aria_hidden="true")
+                                                i(cls="moon-icon", data_feather="moon", aria_hidden="true")
     
 def add_sidebar(menu_items, menu_icons, images_dir):
     with aside(cls="sidebar"):
@@ -264,7 +267,7 @@ def add_sidebar(menu_items, menu_icons, images_dir):
                         with li():
                             with a(href=f'#{item}', onclick=f'civClicked("{item}")'):
                                 with span(cls="icon", aria_hidden="true"):
-                                    img(src=f'/{images_dir}/{menu_icons[i]}.webp')
+                                    img(src=f'/{images_dir}/{menu_icons[i]}.webp', onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
                                 p(item)
 
 def add_final_scripts():
@@ -274,7 +277,7 @@ def add_final_scripts():
     script(src="/plugins/chart.min.js")
     script(src="https://kit.fontawesome.com/bd91c323e3.js", crossorigin="anonymous")
     
-def get_loc(locs_data, s):
+def get_loc(locs_data, s, en_US_locs_data):
     try:
         res = locs_data[s]
         if res.find('|') == -1:
@@ -283,7 +286,7 @@ def get_loc(locs_data, s):
             return res[:res.find('|')]
     except KeyError:
         print(f'KeyError: {s} not found in locs_data')
-        return s
+        return get_loc(en_US_locs_data, s, en_US_locs_data)
     
 def get_html_lang(lang):
     if lang == 'de_DE':
@@ -348,8 +351,8 @@ def get_leader_html_file(bbg_version, lang):
     menu_icons = []
     civ_leaders_items = get_civs_tables(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugConfiguration.sqlite")
     for leader in civ_leaders_items:
-        menu_items.append(get_loc(locs_data, leader[2]) + ' ' + get_loc(locs_data, leader[5]))
-        menu_icons.append(get_loc(en_US_locs_data, leader[2]) + ' ' + get_loc(en_US_locs_data, leader[5]))
+        menu_items.append(get_loc(locs_data, leader[2], en_US_locs_data) + ' ' + get_loc(locs_data, leader[5], en_US_locs_data))
+        menu_icons.append(get_loc(en_US_locs_data, leader[2], en_US_locs_data) + ' ' + get_loc(en_US_locs_data, leader[5], en_US_locs_data))
     with doc:
         add_preloader()
         div(cls="layer")
@@ -363,23 +366,23 @@ def get_leader_html_file(bbg_version, lang):
                         with main(cls="main users chart-page"):
                             with div(cls="container"):
                                 for leader in civ_leaders_items:
-                                    with div(cls="row", id=get_loc(locs_data, leader[2]) + ' ' + get_loc(locs_data, leader[5])):
+                                    with div(cls="row", id=get_loc(locs_data, leader[2], en_US_locs_data) + ' ' + get_loc(locs_data, leader[5], en_US_locs_data)):
                                         with div(cls="col-lg-12"):
                                             with div(cls="chart"):
-                                                with h2(get_loc(locs_data, leader[2]) + ' ' + get_loc(locs_data, leader[5]), cls='civ-name'):
-                                                    img(src=f'/images/leaders/{get_loc(en_US_locs_data, leader[2]) + ' ' + get_loc(en_US_locs_data, leader[5])}.webp', style="vertical-align: middle")
-                                                h3(get_loc(locs_data, leader[3]), style="text-align:left", cls='civ-ability-name')
+                                                with h2(get_loc(locs_data, leader[2], en_US_locs_data) + ' ' + get_loc(locs_data, leader[5], en_US_locs_data), cls='civ-name'):
+                                                    img(src=f'/images/leaders/{get_loc(en_US_locs_data, leader[2], en_US_locs_data) + ' ' + get_loc(en_US_locs_data, leader[5], en_US_locs_data)}.webp', style="vertical-align: middle", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
+                                                h3(get_loc(locs_data, leader[3], en_US_locs_data), style="text-align:left", cls='civ-ability-name')
                                                 br()
-                                                p(get_loc(locs_data, leader[4]), style="text-align:left", cls='civ-ability-desc')
+                                                p(get_loc(locs_data, leader[4], en_US_locs_data), style="text-align:left", cls='civ-ability-desc')
                                                 br()
-                                                h3(get_loc(locs_data, leader[6]), style="text-align:left", cls='civ-ability-name')
+                                                h3(get_loc(locs_data, leader[6], en_US_locs_data), style="text-align:left", cls='civ-ability-name')
                                                 br()
-                                                p(f'{get_loc(locs_data, leader[7])}', style="text-align:left", cls='civ-ability-desc')
+                                                p(f'{get_loc(locs_data, leader[7], en_US_locs_data)}', style="text-align:left", cls='civ-ability-desc')
                                                 br()
                                                 for item in civ_leaders_items[leader]:
-                                                    with h3(f'{get_loc(locs_data, item[4])}', style="text-align:left", cls='civ-ability-name'):
-                                                        img(src=f'/images/items/{get_loc(en_US_locs_data, item[4])}.webp', style="vertical-align: middle; width:2em; text-align:left")
-                                                    p(f'{get_loc(locs_data, item[5])}', style="text-align:left", cls='civ-ability-desc')
+                                                    with h3(f'{get_loc(locs_data, item[4], en_US_locs_data)}', style="text-align:left", cls='civ-ability-name'):
+                                                        img(src=f'/images/items/{get_loc(en_US_locs_data, item[4], en_US_locs_data)}.webp', style="vertical-align: middle; width:2em; text-align:left", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
+                                                    p(f'{get_loc(locs_data, item[5], en_US_locs_data)}', style="text-align:left", cls='civ-ability-desc')
                                                     br()
 
         add_final_scripts()
@@ -402,8 +405,8 @@ def get_city_state_html_file(bbg_version, lang):
     menu_icons = []
     city_states = get_city_states(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugConfiguration.sqlite")
     for cs in city_states:
-        menu_items.append(get_loc(locs_data, cs[2]))
-        menu_icons.append(get_loc(en_US_locs_data, cs[2]))
+        menu_items.append(get_loc(locs_data, cs[2], en_US_locs_data))
+        menu_icons.append(get_loc(en_US_locs_data, cs[2], en_US_locs_data))
     with doc:
         add_preloader()
         div(cls="layer")
@@ -417,12 +420,12 @@ def get_city_state_html_file(bbg_version, lang):
                         with main(cls="main users chart-page"):
                             with div(cls="container"):
                                 for cs in city_states:
-                                    with div(cls="row", id=get_loc(locs_data, cs[2])):
+                                    with div(cls="row", id=get_loc(locs_data, cs[2], en_US_locs_data)):
                                         with div(cls="col-lg-12"):
                                             with div(cls="chart"):
-                                                with h2(get_loc(locs_data, cs[2]), cls='civ-name'):
-                                                    img(src=f'/images/city_states/{get_loc(en_US_locs_data, cs[2])}.webp', style="vertical-align: middle")
-                                                p(get_loc(locs_data, cs[5]), style="text-align:left", cls='civ-ability-desc')
+                                                with h2(get_loc(locs_data, cs[2], en_US_locs_data), cls='civ-name'):
+                                                    img(src=f'/images/city_states/{get_loc(en_US_locs_data, cs[2], en_US_locs_data)}.webp', style="vertical-align: middle", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
+                                                p(get_loc(locs_data, cs[5], en_US_locs_data), style="text-align:left", cls='civ-ability-desc')
 
         add_final_scripts()
         add_scroll_up()
@@ -444,8 +447,8 @@ def get_pantheon_html_file(bbg_version, lang):
     menu_icons = []
     pantheons = get_beliefs(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite", 'BELIEF_CLASS_PANTHEON')
     for pan in pantheons:
-        menu_items.append(get_loc(locs_data, pan[1]))
-        menu_icons.append(get_loc(en_US_locs_data, pan[1]))
+        menu_items.append(get_loc(locs_data, pan[1], en_US_locs_data))
+        menu_icons.append(get_loc(en_US_locs_data, pan[1], en_US_locs_data))
     with doc:
         add_preloader()
         div(cls="layer")
@@ -459,12 +462,12 @@ def get_pantheon_html_file(bbg_version, lang):
                         with main(cls="main users chart-page"):
                             with div(cls="container"):
                                 for pan in pantheons:
-                                    with div(cls="row", id=get_loc(locs_data, pan[1])):
+                                    with div(cls="row", id=get_loc(locs_data, pan[1], en_US_locs_data)):
                                         with div(cls="col-lg-12"):
                                             with div(cls="chart"):
-                                                with h2(get_loc(locs_data, pan[1]), cls='civ-name'):
-                                                    img(src=f'/images/pantheons/{get_loc(en_US_locs_data, pan[1])}.webp', style="vertical-align: middle; height:5em")
-                                                p(get_loc(locs_data, pan[2]), style="text-align:left", cls='civ-ability-desc')
+                                                with h2(get_loc(locs_data, pan[1], en_US_locs_data), cls='civ-name'):
+                                                    img(src=f'/images/pantheons/{get_loc(en_US_locs_data, pan[1], en_US_locs_data)}.webp', style="vertical-align: middle; height:5em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
+                                                p(get_loc(locs_data, pan[2], en_US_locs_data), style="text-align:left", cls='civ-ability-desc')
 
         add_final_scripts()
         add_scroll_up()
@@ -491,8 +494,8 @@ def get_religion_html_file(bbg_version, lang):
     menu_items = []
     menu_icons = []
     for t in types:
-        menu_items.append(get_loc(locs_data, t))
-        menu_icons.append(get_loc(en_US_locs_data, t))
+        menu_items.append(get_loc(locs_data, t, en_US_locs_data))
+        menu_icons.append(get_loc(en_US_locs_data, t, en_US_locs_data))
     religion_founder = get_beliefs(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite", 'BELIEF_CLASS_FOUNDER')
     religion_follower = get_beliefs(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite", 'BELIEF_CLASS_FOLLOWER')
     religion_enhancer = get_beliefs(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite", 'BELIEF_CLASS_ENHANCER')
@@ -517,8 +520,8 @@ def get_religion_html_file(bbg_version, lang):
                                     for belief in religion_follower:
                                         with div(cls="col-lg-6"):
                                             with div(cls="chart"):
-                                                h2(get_loc(locs_data, belief[1]), cls='civ-name')
-                                                p(get_loc(locs_data, belief[2]), style="text-align:left", cls='civ-ability-desc')
+                                                h2(get_loc(locs_data, belief[1], en_US_locs_data), cls='civ-name')
+                                                p(get_loc(locs_data, belief[2], en_US_locs_data), style="text-align:left", cls='civ-ability-desc')
                                 with div(cls="row", id=menu_items[1]):
                                     with div(cls="col-lg-12"):
                                         with div(cls="chart"):
@@ -526,8 +529,8 @@ def get_religion_html_file(bbg_version, lang):
                                     for belief in religion_founder:
                                         with div(cls="col-lg-6"):
                                             with div(cls="chart"):
-                                                h2(get_loc(locs_data, belief[1]), cls='civ-name')
-                                                p(get_loc(locs_data, belief[2]), style="text-align:left", cls='civ-ability-desc')
+                                                h2(get_loc(locs_data, belief[1], en_US_locs_data), cls='civ-name')
+                                                p(get_loc(locs_data, belief[2], en_US_locs_data), style="text-align:left", cls='civ-ability-desc')
                                 with div(cls="row", id=menu_items[2]):
                                     with div(cls="col-lg-12"):
                                         with div(cls="chart"):
@@ -535,8 +538,8 @@ def get_religion_html_file(bbg_version, lang):
                                     for belief in religion_enhancer:
                                         with div(cls="col-lg-6"):
                                             with div(cls="chart"):
-                                                h2(get_loc(locs_data, belief[1]), cls='civ-name')
-                                                p(get_loc(locs_data, belief[2]), style="text-align:left", cls='civ-ability-desc')
+                                                h2(get_loc(locs_data, belief[1], en_US_locs_data), cls='civ-name')
+                                                p(get_loc(locs_data, belief[2], en_US_locs_data), style="text-align:left", cls='civ-ability-desc')
                                 with div(cls="row", id=menu_items[3]):
                                     with div(cls="col-lg-12"):
                                         with div(cls="chart"):
@@ -544,8 +547,8 @@ def get_religion_html_file(bbg_version, lang):
                                     for belief in religion_worship:
                                         with div(cls="col-lg-6"):
                                             with div(cls="chart"):
-                                                h2(get_loc(locs_data, belief[1]), cls='civ-name')
-                                                p(get_loc(locs_data, belief[2]), style="text-align:left", cls='civ-ability-desc')
+                                                h2(get_loc(locs_data, belief[1], en_US_locs_data), cls='civ-name')
+                                                p(get_loc(locs_data, belief[2], en_US_locs_data), style="text-align:left", cls='civ-ability-desc')
 
         add_final_scripts()
         add_scroll_up()
@@ -569,8 +572,8 @@ def get_governor_html_file(bbg_version, lang):
     governor_promotion_dict = get_governors_promotion_dict(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite")
     governor_promotion_set_dict = get_governors_promotion_sets_dict(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite", governors, governor_promotion_dict)
     for gov in governors:
-        menu_items.append(get_loc(locs_data, gov[1]))
-        menu_icons.append(get_loc(en_US_locs_data, gov[1]))
+        menu_items.append(get_loc(locs_data, gov[1], en_US_locs_data))
+        menu_icons.append(get_loc(en_US_locs_data, gov[1], en_US_locs_data))
     with doc:
         add_preloader()
         div(cls="layer")
@@ -584,11 +587,11 @@ def get_governor_html_file(bbg_version, lang):
                         with main(cls="main users chart-page"):
                             with div(cls="container"):
                                 for gov in governors:
-                                    with div(cls="row", id=get_loc(locs_data, gov[1])):
+                                    with div(cls="row", id=get_loc(locs_data, gov[1], en_US_locs_data)):
                                         with div(cls="col-lg-12"):
                                             with div(cls="chart"):
-                                                with h2(get_loc(locs_data, gov[1]), cls='civ-name'):
-                                                    img(src=f'/images/governors/{get_loc(en_US_locs_data, gov[1])}.webp', style="vertical-align: middle")
+                                                with h2(get_loc(locs_data, gov[1], en_US_locs_data), cls='civ-name'):
+                                                    img(src=f'/images/governors/{get_loc(en_US_locs_data, gov[1], en_US_locs_data)}.webp', style="vertical-align: middle", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
                                                 br()
                                                 for level in governor_promotion_set_dict[gov[0]]:
                                                     column_count = len(governor_promotion_set_dict[gov[0]][level])
@@ -603,11 +606,11 @@ def get_governor_html_file(bbg_version, lang):
                                                                 promotion = governor_promotion_set_dict[gov[0]][level][column][0]
                                                                 promotion_name = governor_promotion_dict[promotion][1]
                                                                 alignment = 'left' if column == 0 else 'center' if column == 1 else 'right'
-                                                                with h3(f'{get_loc(locs_data, promotion_name)}', style=f"text-align:{alignment}", cls='civ-ability-name'):
+                                                                with h3(f'{get_loc(locs_data, promotion_name, en_US_locs_data)}', style=f"text-align:{alignment}", cls='civ-ability-name'):
                                                                     br()
                                                                     br()
                                                                     promotion_desc = governor_promotion_dict[promotion][2]
-                                                                    p(f'{get_loc(locs_data, promotion_desc)}', style=f"text-align:{alignment}", cls='civ-ability-desc')
+                                                                    p(f'{get_loc(locs_data, promotion_desc, en_US_locs_data)}', style=f"text-align:{alignment}", cls='civ-ability-desc')
                                                                     br()
 
         add_final_scripts()
@@ -630,8 +633,8 @@ def get_natural_wonder_html_file(bbg_version, lang):
     menu_icons = []
     natural_wonders = get_natural_wonders_list(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugConfiguration.sqlite")
     for wonder in natural_wonders:
-        menu_items.append(get_loc(locs_data, wonder[1]))
-        menu_icons.append(get_loc(en_US_locs_data, wonder[1]))
+        menu_items.append(get_loc(locs_data, wonder[1], en_US_locs_data))
+        menu_icons.append(get_loc(en_US_locs_data, wonder[1], en_US_locs_data))
     with doc:
         add_preloader()
         div(cls="layer")
@@ -645,13 +648,13 @@ def get_natural_wonder_html_file(bbg_version, lang):
                         with main(cls="main users chart-page"):
                             with div(cls="container"):
                                 for wonder in natural_wonders:
-                                    with div(cls="row", id=get_loc(locs_data, wonder[1])):
+                                    with div(cls="row", id=get_loc(locs_data, wonder[1], en_US_locs_data)):
                                         with div(cls="col-lg-12"):
                                             with div(cls="chart"):
-                                                with h2(get_loc(locs_data, wonder[1]), cls='civ-name'):
-                                                    img(src=f'/images/natural_wonders/{get_loc(en_US_locs_data, wonder[1])}.webp', style="vertical-align: middle")
+                                                with h2(get_loc(locs_data, wonder[1], en_US_locs_data), cls='civ-name'):
+                                                    img(src=f'/images/natural_wonders/{get_loc(en_US_locs_data, wonder[1], en_US_locs_data)}.webp', style="vertical-align: middle", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
                                                 br()
-                                                p(get_loc(locs_data, wonder[2]), style="text-align:left", cls='civ-ability-desc')
+                                                p(get_loc(locs_data, wonder[2], en_US_locs_data), style="text-align:left", cls='civ-ability-desc')
                                                 br()
         add_final_scripts()
         add_scroll_up()

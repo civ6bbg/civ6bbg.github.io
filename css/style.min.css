@@ -1344,6 +1344,12 @@
    top: 13px;
    z-index: 1;
  }
+
+ @media (max-width: 768px) {
+   .w-100{
+     width: 100%;
+    }
+  }
  
  .gray-circle-btn {
    display: flex;
@@ -1351,8 +1357,8 @@
    justify-content: center;
    background-color: #eff0f6;
    margin-top: 12px;
-   width: 40px;
-   height: 40px;
+   width: 30px;
+   height: 30px;
    border-radius: 50%;
    border-width: 0;
  }
@@ -1379,8 +1385,9 @@
  }
 
  .lang-icon {
-  font-size:50px;
-  padding-top:7px
+  font-size:2em;
+  /* padding-top:7px; */
+  /* line-height:0; */
  }
 
  .lang-icon:hover {
@@ -2023,8 +2030,8 @@
  }
  
  .main-nav {
-   padding-top: 20px;
-   padding-bottom: 20px;
+   padding-top: 5px;
+   padding-bottom: 5px;
    display: flex;
    align-items: center;
    justify-content: space-between;

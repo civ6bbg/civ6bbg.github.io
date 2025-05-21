@@ -49,7 +49,7 @@
                     </div>
                     <div class="flex center col-xl-1 col-lg-1 col-md-1 col-1">
                       <a href="/index.html" style="align-content: center;">
-                        <img alt="#" src="/images/BBGLogo.webp" style="width:50px; border-radius:10%">
+                        <img alt="#" src="/images/BBGLogo.webp" style="width:3em; border-radius:10%">
                       </a>
                       <div class="mobile-nav"></div>
                     </div>
@@ -114,53 +114,58 @@
                         </nav>
                       </div>
                     </div>
-                    <div class="flex center col-xl-1 col-lg-1 col-md-1 col-1">
-                      <div class="main-menu">
-                        <nav class="navigation">
-                          <ul class="nav menu">
-                            <li><i class="lang-icon fa fa-language"></i>
-                              <ul class="dropdown" style="width:80px">
-                                <li>
-                                  <a href="/en_US/governor_5.6.html" style="align-content: center;">
-                                    <img src="/assets/flags/4x3/us.svg" style="height:20px">
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="/fr_FR/governor_5.6.html" style="align-content: center;">
-                                    <img src="/assets/flags/4x3/fr.svg" style="height:20px">
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="/ru_RU/governor_5.6.html" style="align-content: center;">
-                                    <img src="/assets/flags/4x3/ru.svg" style="height:20px">
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="/de_DE/governor_5.6.html" style="align-content: center;">
-                                    <img src="/assets/flags/4x3/de.svg" style="height:20px">
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="/zh_Hans_CN/governor_5.6.html" style="align-content: center;">
-                                    <img src="/assets/flags/4x3/cn.svg" style="height:20px">
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="/ko_KR/governor_5.6.html" style="align-content: center;">
-                                    <img src="/assets/flags/4x3/kr.svg" style="height:20px">
-                                  </a>
+                    <div class="flex center col-xl-2 col-lg-2 col-md-2 col-2">
+                      <div class="flex row justify-content-around">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-6">
+                          <div class="main-menu">
+                            <nav class="navigation">
+                              <ul class="nav menu">
+                                <li><i class="fa fa-language lang-icon"></i>
+                                  <ul class="dropdown" style="width:80px">
+                                    <li>
+                                      <a href="/en_US/governor_5.6.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/us.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/fr_FR/governor_5.6.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/fr.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/ru_RU/governor_5.6.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/ru.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/de_DE/governor_5.6.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/de.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/zh_Hans_CN/governor_5.6.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/cn.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/ko_KR/governor_5.6.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/kr.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                  </ul>
                                 </li>
                               </ul>
-                            </li>
-                          </ul>
-                        </nav>
-                      </div>
-                    </div>
-                    <div class="flex center col-xl-1 col-lg-1 col-md-1 col-1">
-                      <div class="theme-switcher-wrapper">
-                        <button class="theme-switcher gray-circle-btn" title="Switch theme" type="button">
-                          <span class="sr-only">Switch theme</span><i aria-hidden="true" class="sun-icon" data-feather="sun"></i><i aria-hidden="true" class="moon-icon" data-feather="moon"></i>
-                        </button>
+                            </nav>
+                          </div>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-6">
+                          <div class="theme-switcher-wrapper">
+                            <button class="theme-switcher gray-circle-btn" title="Switch theme" type="button">
+                              <span class="sr-only">Switch theme</span><i aria-hidden="true" class="sun-icon" data-feather="sun"></i><i aria-hidden="true" class="moon-icon" data-feather="moon"></i>
+                            </button>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -178,7 +183,7 @@
                     <li>
                       <a href="#Victor" onclick="civClicked(&quot;Victor&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/governors/Victor.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/governors/Victor.webp">
                         </span>
                         <p>Victor</p>
                       </a>
@@ -186,7 +191,7 @@
                     <li>
                       <a href="#Amani" onclick="civClicked(&quot;Amani&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/governors/Amani.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/governors/Amani.webp">
                         </span>
                         <p>Amani</p>
                       </a>
@@ -194,7 +199,7 @@
                     <li>
                       <a href="#Moksha" onclick="civClicked(&quot;Moksha&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/governors/Moksha.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/governors/Moksha.webp">
                         </span>
                         <p>Moksha</p>
                       </a>
@@ -202,7 +207,7 @@
                     <li>
                       <a href="#Magnus" onclick="civClicked(&quot;Magnus&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/governors/Magnus.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/governors/Magnus.webp">
                         </span>
                         <p>Magnus</p>
                       </a>
@@ -210,7 +215,7 @@
                     <li>
                       <a href="#Liang" onclick="civClicked(&quot;Liang&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/governors/Liang.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/governors/Liang.webp">
                         </span>
                         <p>Liang</p>
                       </a>
@@ -218,7 +223,7 @@
                     <li>
                       <a href="#Pingala" onclick="civClicked(&quot;Pingala&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/governors/Pingala.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/governors/Pingala.webp">
                         </span>
                         <p>Pingala</p>
                       </a>
@@ -226,7 +231,7 @@
                     <li>
                       <a href="#Reyna" onclick="civClicked(&quot;Reyna&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/governors/Reyna.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/governors/Reyna.webp">
                         </span>
                         <p>Reyna</p>
                       </a>
@@ -234,7 +239,7 @@
                     <li>
                       <a href="#Ibrahim" onclick="civClicked(&quot;Ibrahim&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/governors/Ibrahim.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/governors/Ibrahim.webp">
                         </span>
                         <p>Ibrahim</p>
                       </a>
@@ -251,7 +256,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Victor
-                        <img src="/images/governors/Victor.webp" style="vertical-align: middle">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/governors/Victor.webp" style="vertical-align: middle">
                       </h2><br>
                       <div class="row">
                         <div class="col-lg-12 gov-promotion ">
@@ -298,7 +303,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Amani
-                        <img src="/images/governors/Amani.webp" style="vertical-align: middle">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/governors/Amani.webp" style="vertical-align: middle">
                       </h2><br>
                       <div class="row">
                         <div class="col-lg-12 gov-promotion ">
@@ -345,7 +350,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Moksha
-                        <img src="/images/governors/Moksha.webp" style="vertical-align: middle">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/governors/Moksha.webp" style="vertical-align: middle">
                       </h2><br>
                       <div class="row">
                         <div class="col-lg-12 gov-promotion ">
@@ -392,7 +397,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Magnus
-                        <img src="/images/governors/Magnus.webp" style="vertical-align: middle">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/governors/Magnus.webp" style="vertical-align: middle">
                       </h2><br>
                       <div class="row">
                         <div class="col-lg-12 gov-promotion ">
@@ -439,7 +444,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Liang
-                        <img src="/images/governors/Liang.webp" style="vertical-align: middle">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/governors/Liang.webp" style="vertical-align: middle">
                       </h2><br>
                       <div class="row">
                         <div class="col-lg-12 gov-promotion ">
@@ -486,7 +491,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Pingala
-                        <img src="/images/governors/Pingala.webp" style="vertical-align: middle">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/governors/Pingala.webp" style="vertical-align: middle">
                       </h2><br>
                       <div class="row">
                         <div class="col-lg-12 gov-promotion ">
@@ -533,7 +538,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Reyna
-                        <img src="/images/governors/Reyna.webp" style="vertical-align: middle">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/governors/Reyna.webp" style="vertical-align: middle">
                       </h2><br>
                       <div class="row">
                         <div class="col-lg-12 gov-promotion ">
@@ -580,7 +585,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Ibrahim
-                        <img src="/images/governors/Ibrahim.webp" style="vertical-align: middle">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/governors/Ibrahim.webp" style="vertical-align: middle">
                       </h2><br>
                       <div class="row">
                         <div class="col-lg-12 gov-promotion ">

@@ -49,7 +49,7 @@
                     </div>
                     <div class="flex center col-xl-1 col-lg-1 col-md-1 col-1">
                       <a href="/index.html" style="align-content: center;">
-                        <img alt="#" src="/images/BBGLogo.webp" style="width:50px; border-radius:10%">
+                        <img alt="#" src="/images/BBGLogo.webp" style="width:3em; border-radius:10%">
                       </a>
                       <div class="mobile-nav"></div>
                     </div>
@@ -114,53 +114,58 @@
                         </nav>
                       </div>
                     </div>
-                    <div class="flex center col-xl-1 col-lg-1 col-md-1 col-1">
-                      <div class="main-menu">
-                        <nav class="navigation">
-                          <ul class="nav menu">
-                            <li><i class="lang-icon fa fa-language"></i>
-                              <ul class="dropdown" style="width:80px">
-                                <li>
-                                  <a href="/en_US/natural_wonder_base_game.html" style="align-content: center;">
-                                    <img src="/assets/flags/4x3/us.svg" style="height:20px">
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="/fr_FR/natural_wonder_base_game.html" style="align-content: center;">
-                                    <img src="/assets/flags/4x3/fr.svg" style="height:20px">
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="/ru_RU/natural_wonder_base_game.html" style="align-content: center;">
-                                    <img src="/assets/flags/4x3/ru.svg" style="height:20px">
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="/de_DE/natural_wonder_base_game.html" style="align-content: center;">
-                                    <img src="/assets/flags/4x3/de.svg" style="height:20px">
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="/zh_Hans_CN/natural_wonder_base_game.html" style="align-content: center;">
-                                    <img src="/assets/flags/4x3/cn.svg" style="height:20px">
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="/ko_KR/natural_wonder_base_game.html" style="align-content: center;">
-                                    <img src="/assets/flags/4x3/kr.svg" style="height:20px">
-                                  </a>
+                    <div class="flex center col-xl-2 col-lg-2 col-md-2 col-2">
+                      <div class="flex row justify-content-around">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-6">
+                          <div class="main-menu">
+                            <nav class="navigation">
+                              <ul class="nav menu">
+                                <li><i class="fa fa-language lang-icon"></i>
+                                  <ul class="dropdown" style="width:80px">
+                                    <li>
+                                      <a href="/en_US/natural_wonder_base_game.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/us.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/fr_FR/natural_wonder_base_game.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/fr.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/ru_RU/natural_wonder_base_game.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/ru.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/de_DE/natural_wonder_base_game.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/de.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/zh_Hans_CN/natural_wonder_base_game.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/cn.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/ko_KR/natural_wonder_base_game.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/kr.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                  </ul>
                                 </li>
                               </ul>
-                            </li>
-                          </ul>
-                        </nav>
-                      </div>
-                    </div>
-                    <div class="flex center col-xl-1 col-lg-1 col-md-1 col-1">
-                      <div class="theme-switcher-wrapper">
-                        <button class="theme-switcher gray-circle-btn" title="Switch theme" type="button">
-                          <span class="sr-only">Switch theme</span><i aria-hidden="true" class="sun-icon" data-feather="sun"></i><i aria-hidden="true" class="moon-icon" data-feather="moon"></i>
-                        </button>
+                            </nav>
+                          </div>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-6">
+                          <div class="theme-switcher-wrapper">
+                            <button class="theme-switcher gray-circle-btn" title="Switch theme" type="button">
+                              <span class="sr-only">Switch theme</span><i aria-hidden="true" class="sun-icon" data-feather="sun"></i><i aria-hidden="true" class="moon-icon" data-feather="moon"></i>
+                            </button>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -178,7 +183,7 @@
                     <li>
                       <a href="#Grande barrière de corail" onclick="civClicked(&quot;Grande barrière de corail&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/natural_wonders/Great Barrier Reef.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Great Barrier Reef.webp">
                         </span>
                         <p>Grande barrière de corail</p>
                       </a>
@@ -186,7 +191,7 @@
                     <li>
                       <a href="#Triangle des Bermudes" onclick="civClicked(&quot;Triangle des Bermudes&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/natural_wonders/Bermuda Triangle.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Bermuda Triangle.webp">
                         </span>
                         <p>Triangle des Bermudes</p>
                       </a>
@@ -194,7 +199,7 @@
                     <li>
                       <a href="#Chocolate Hills" onclick="civClicked(&quot;Chocolate Hills&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/natural_wonders/Chocolate Hills.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Chocolate Hills.webp">
                         </span>
                         <p>Chocolate Hills</p>
                       </a>
@@ -202,7 +207,7 @@
                     <li>
                       <a href="#Falaises de Douvres" onclick="civClicked(&quot;Falaises de Douvres&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/natural_wonders/Cliffs of Dover.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Cliffs of Dover.webp">
                         </span>
                         <p>Falaises de Douvres</p>
                       </a>
@@ -210,7 +215,7 @@
                     <li>
                       <a href="#Crater Lake" onclick="civClicked(&quot;Crater Lake&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/natural_wonders/Crater Lake.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Crater Lake.webp">
                         </span>
                         <p>Crater Lake</p>
                       </a>
@@ -218,7 +223,7 @@
                     <li>
                       <a href="#Mer Morte" onclick="civClicked(&quot;Mer Morte&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/natural_wonders/Dead Sea.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Dead Sea.webp">
                         </span>
                         <p>Mer Morte</p>
                       </a>
@@ -226,7 +231,7 @@
                     <li>
                       <a href="#Delicate Arch" onclick="civClicked(&quot;Delicate Arch&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/natural_wonders/Delicate Arch.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Delicate Arch.webp">
                         </span>
                         <p>Delicate Arch</p>
                       </a>
@@ -234,7 +239,7 @@
                     <li>
                       <a href="#Mato Tipila" onclick="civClicked(&quot;Mato Tipila&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/natural_wonders/Mato Tipila.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Mato Tipila.webp">
                         </span>
                         <p>Mato Tipila</p>
                       </a>
@@ -242,7 +247,7 @@
                     <li>
                       <a href="#Mont Everest" onclick="civClicked(&quot;Mont Everest&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/natural_wonders/Mount Everest.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Mount Everest.webp">
                         </span>
                         <p>Mont Everest</p>
                       </a>
@@ -250,7 +255,7 @@
                     <li>
                       <a href="#Œil de l'Afrique" onclick="civClicked(&quot;Œil de l'Afrique&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/natural_wonders/Eye of the Sahara.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Eye of the Sahara.webp">
                         </span>
                         <p>Œil de l'Afrique</p>
                       </a>
@@ -258,7 +263,7 @@
                     <li>
                       <a href="#Eyjafjallajökull" onclick="civClicked(&quot;Eyjafjallajökull&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/natural_wonders/Eyjafjallajökull.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Eyjafjallajökull.webp">
                         </span>
                         <p>Eyjafjallajökull</p>
                       </a>
@@ -266,7 +271,7 @@
                     <li>
                       <a href="#Fontaine de Jouvence" onclick="civClicked(&quot;Fontaine de Jouvence&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/natural_wonders/Fountain of Youth.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Fountain of Youth.webp">
                         </span>
                         <p>Fontaine de Jouvence</p>
                       </a>
@@ -274,7 +279,7 @@
                     <li>
                       <a href="#Îles Galápagos" onclick="civClicked(&quot;Îles Galápagos&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/natural_wonders/Galápagos Islands.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Galápagos Islands.webp">
                         </span>
                         <p>Îles Galápagos</p>
                       </a>
@@ -282,7 +287,7 @@
                     <li>
                       <a href="#Chaussée des Géants" onclick="civClicked(&quot;Chaussée des Géants&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/natural_wonders/Giant's Causeway.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Giant's Causeway.webp">
                         </span>
                         <p>Chaussée des Géants</p>
                       </a>
@@ -290,7 +295,7 @@
                     <li>
                       <a href="#Gobustan " onclick="civClicked(&quot;Gobustan &quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/natural_wonders/Gobustan .webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Gobustan .webp">
                         </span>
                         <p>Gobustan </p>
                       </a>
@@ -298,7 +303,7 @@
                     <li>
                       <a href="#Baie de Hạ Long" onclick="civClicked(&quot;Baie de Hạ Long&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/natural_wonders/Hạ Long Bay.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Hạ Long Bay.webp">
                         </span>
                         <p>Baie de Hạ Long</p>
                       </a>
@@ -306,7 +311,7 @@
                     <li>
                       <a href="#Ik Kil" onclick="civClicked(&quot;Ik Kil&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/natural_wonders/Ik-Kil.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Ik-Kil.webp">
                         </span>
                         <p>Ik Kil</p>
                       </a>
@@ -314,7 +319,7 @@
                     <li>
                       <a href="#Kilimandjaro" onclick="civClicked(&quot;Kilimandjaro&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/natural_wonders/Mount Kilimanjaro.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Mount Kilimanjaro.webp">
                         </span>
                         <p>Kilimandjaro</p>
                       </a>
@@ -322,7 +327,7 @@
                     <li>
                       <a href="#Lac Retba" onclick="civClicked(&quot;Lac Retba&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/natural_wonders/Lake Retba.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Lake Retba.webp">
                         </span>
                         <p>Lac Retba</p>
                       </a>
@@ -330,7 +335,7 @@
                     <li>
                       <a href="#Lysefjord" onclick="civClicked(&quot;Lysefjord&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/natural_wonders/Lysefjord.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Lysefjord.webp">
                         </span>
                         <p>Lysefjord</p>
                       </a>
@@ -338,7 +343,7 @@
                     <li>
                       <a href="#Mont Cervin" onclick="civClicked(&quot;Mont Cervin&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/natural_wonders/Matterhorn.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Matterhorn.webp">
                         </span>
                         <p>Mont Cervin</p>
                       </a>
@@ -346,7 +351,7 @@
                     <li>
                       <a href="#Païtiti" onclick="civClicked(&quot;Païtiti&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/natural_wonders/Païtiti.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Païtiti.webp">
                         </span>
                         <p>Païtiti</p>
                       </a>
@@ -354,7 +359,7 @@
                     <li>
                       <a href="#Pamukkale" onclick="civClicked(&quot;Pamukkale&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/natural_wonders/Pamukkale.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Pamukkale.webp">
                         </span>
                         <p>Pamukkale</p>
                       </a>
@@ -362,7 +367,7 @@
                     <li>
                       <a href="#Pantanal" onclick="civClicked(&quot;Pantanal&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/natural_wonders/Pantanal.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Pantanal.webp">
                         </span>
                         <p>Pantanal</p>
                       </a>
@@ -370,7 +375,7 @@
                     <li>
                       <a href="#Piopiotahi" onclick="civClicked(&quot;Piopiotahi&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/natural_wonders/Piopiotahi.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Piopiotahi.webp">
                         </span>
                         <p>Piopiotahi</p>
                       </a>
@@ -378,7 +383,7 @@
                     <li>
                       <a href="#Mont Roraima " onclick="civClicked(&quot;Mont Roraima &quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/natural_wonders/Mount Roraima.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Mount Roraima.webp">
                         </span>
                         <p>Mont Roraima </p>
                       </a>
@@ -386,7 +391,7 @@
                     <li>
                       <a href="#Torres del Paine" onclick="civClicked(&quot;Torres del Paine&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/natural_wonders/Torres del Paine.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Torres del Paine.webp">
                         </span>
                         <p>Torres del Paine</p>
                       </a>
@@ -394,7 +399,7 @@
                     <li>
                       <a href="#Tsingy de Bemaraha" onclick="civClicked(&quot;Tsingy de Bemaraha&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/natural_wonders/Tsingy de Bemaraha.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Tsingy de Bemaraha.webp">
                         </span>
                         <p>Tsingy de Bemaraha</p>
                       </a>
@@ -402,7 +407,7 @@
                     <li>
                       <a href="#Bassin de l'Oubsou-Nour" onclick="civClicked(&quot;Bassin de l'Oubsou-Nour&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/natural_wonders/Ubsunur Hollow.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Ubsunur Hollow.webp">
                         </span>
                         <p>Bassin de l'Oubsou-Nour</p>
                       </a>
@@ -410,7 +415,7 @@
                     <li>
                       <a href="#Uluru" onclick="civClicked(&quot;Uluru&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/natural_wonders/Uluru.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Uluru.webp">
                         </span>
                         <p>Uluru</p>
                       </a>
@@ -418,7 +423,7 @@
                     <li>
                       <a href="#Vésuve" onclick="civClicked(&quot;Vésuve&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/natural_wonders/Mount Vesuvius.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Mount Vesuvius.webp">
                         </span>
                         <p>Vésuve</p>
                       </a>
@@ -426,7 +431,7 @@
                     <li>
                       <a href="#Désert blanc" onclick="civClicked(&quot;Désert blanc&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/natural_wonders/Sahara el Beyda.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Sahara el Beyda.webp">
                         </span>
                         <p>Désert blanc</p>
                       </a>
@@ -434,7 +439,7 @@
                     <li>
                       <a href="#Yosemite" onclick="civClicked(&quot;Yosemite&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/natural_wonders/Yosemite.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Yosemite.webp">
                         </span>
                         <p>Yosemite</p>
                       </a>
@@ -442,7 +447,7 @@
                     <li>
                       <a href="#Zhangye Danxia" onclick="civClicked(&quot;Zhangye Danxia&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/natural_wonders/Zhangye Danxia.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Zhangye Danxia.webp">
                         </span>
                         <p>Zhangye Danxia</p>
                       </a>
@@ -459,7 +464,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Grande barrière de corail
-                        <img src="/images/natural_wonders/Great Barrier Reef.webp" style="vertical-align: middle">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Great Barrier Reef.webp" style="vertical-align: middle">
                       </h2><br>
                       <p class="civ-ability-desc" style="text-align:left">Merveille naturelle de deux cases se trouvant sur les côtes. <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture +3 et <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> science +2. Bonus de proximité important pour les campus.</p><br>
                     </div>
@@ -469,7 +474,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Triangle des Bermudes
-                        <img src="/images/natural_wonders/Bermuda Triangle.webp" style="vertical-align: middle">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Bermuda Triangle.webp" style="vertical-align: middle">
                       </h2><br>
                       <p class="civ-ability-desc" style="text-align:left">Merveille naturelle occupant 3 cases. <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Science +5 pour les cases adjacentes. Les unités qui y pénètrent sont téléportées dans un océan lointain, mais les unités navales y gagnent la capacité &quot;Courants mystérieux&quot; (<img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> PM +1).</p><br>
                     </div>
@@ -479,7 +484,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Chocolate Hills
-                        <img src="/images/natural_wonders/Chocolate Hills.webp" style="vertical-align: middle">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Chocolate Hills.webp" style="vertical-align: middle">
                       </h2><br>
                       <p class="civ-ability-desc" style="text-align:left">Merveille naturelle de quatre cases. <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture +1, <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> production +2 et <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> science +1.</p><br>
                     </div>
@@ -489,7 +494,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Falaises de Douvres
-                        <img src="/images/natural_wonders/Cliffs of Dover.webp" style="vertical-align: middle">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Cliffs of Dover.webp" style="vertical-align: middle">
                       </h2><br>
                       <p class="civ-ability-desc" style="text-align:left">Merveille naturelle de deux cases pouvant apparaître sur des falaises adjacentes à de l'eau. <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture +3, <img src="/images/ICON_FOOD.webp" style="height:1em"/> nourriture +2 et <img src="/images/ICON_GOLD.webp" style="height:1em"/> Or +3. Attrait +4 pour les cases adjacentes, au lieu des +2 habituels pour les merveilles naturelles. Cette case ne peut pas être aménagée.</p><br>
                     </div>
@@ -499,7 +504,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Crater Lake
-                        <img src="/images/natural_wonders/Crater Lake.webp" style="vertical-align: middle">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Crater Lake.webp" style="vertical-align: middle">
                       </h2><br>
                       <p class="civ-ability-desc" style="text-align:left">Merveille naturelle d'une case prenant la forme d'un lac. <img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi +5, <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> science +1 et source d'eau douce.</p><br>
                     </div>
@@ -509,7 +514,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Mer Morte
-                        <img src="/images/natural_wonders/Dead Sea.webp" style="vertical-align: middle">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Dead Sea.webp" style="vertical-align: middle">
                       </h2><br>
                       <p class="civ-ability-desc" style="text-align:left">Merveille naturelle de deux cases prenant la forme d'un lac. <img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi et <img src="/images/ICON_CULTURE.webp" style="height:1em"/> culture +2. Les unités qui se soignent sur une case adjacente à la mer Morte récupèrent tous leurs PV. Ne fournit pas d'eau potable.</p><br>
                     </div>
@@ -519,7 +524,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Delicate Arch
-                        <img src="/images/natural_wonders/Delicate Arch.webp" style="vertical-align: middle">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Delicate Arch.webp" style="vertical-align: middle">
                       </h2><br>
                       <p class="civ-ability-desc" style="text-align:left">Merveille naturelle infranchissable d'une case. <img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi +2 et <img src="/images/ICON_GOLD.webp" style="height:1em"/> or +1 pour toutes les cases adjacentes.</p><br>
                     </div>
@@ -529,7 +534,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Mato Tipila
-                        <img src="/images/natural_wonders/Mato Tipila.webp" style="vertical-align: middle">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Mato Tipila.webp" style="vertical-align: middle">
                       </h2><br>
                       <p class="civ-ability-desc" style="text-align:left">Merveille naturelle infranchissable d'une case. <img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi +1 et <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> production +1 pour les cases adjacentes.</p><br>
                     </div>
@@ -539,7 +544,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Mont Everest
-                        <img src="/images/natural_wonders/Mount Everest.webp" style="vertical-align: middle">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Mount Everest.webp" style="vertical-align: middle">
                       </h2><br>
                       <p class="civ-ability-desc" style="text-align:left">Merveille naturelle infranchissable de trois cases. <img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi +1 pour les cases adjacentes. Les unités religieuses se trouvant sur une case adjacente au mont Everest se déplacent gratuitement sur les collines pour le restant de la partie.</p><br>
                     </div>
@@ -549,7 +554,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Œil de l'Afrique
-                        <img src="/images/natural_wonders/Eye of the Sahara.webp" style="vertical-align: middle">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Eye of the Sahara.webp" style="vertical-align: middle">
                       </h2><br>
                       <p class="civ-ability-desc" style="text-align:left">Merveille naturelle de trois cases. <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +2 et <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Science +1. Une fois que vous entrez dans l'ère atomique, confère un bonus supplémentaire de <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +1 et <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Science +3.</p><br>
                     </div>
@@ -559,7 +564,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Eyjafjallajökull
-                        <img src="/images/natural_wonders/Eyjafjallajökull.webp" style="vertical-align: middle">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Eyjafjallajökull.webp" style="vertical-align: middle">
                       </h2><br>
                       <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture +1 et <img src="/images/ICON_FOOD.webp" style="height:1em"/> nourriture +2 pour les cases adjacentes.</p><br>
                     </div>
@@ -569,7 +574,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Fontaine de Jouvence
-                        <img src="/images/natural_wonders/Fountain of Youth.webp" style="vertical-align: middle">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Fountain of Youth.webp" style="vertical-align: middle">
                       </h2><br>
                       <p class="civ-ability-desc" style="text-align:left">Merveille naturelle occupant une case. <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Science +4, <img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi +4 et octroie de l'eau douce. Les unités militaires terrestres qui pénètrent sur la case gagnent la capacité &quot;Eau de la vie&quot; (guérison +10 PV sur n'importe quel territoire).</p><br>
                     </div>
@@ -579,7 +584,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Îles Galápagos
-                        <img src="/images/natural_wonders/Galápagos Islands.webp" style="vertical-align: middle">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Galápagos Islands.webp" style="vertical-align: middle">
                       </h2><br>
                       <p class="civ-ability-desc" style="text-align:left">Merveille naturelle infranchissable de deux cases pouvant apparaître sur les côtes. <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Science +2 pour les cases adjacentes.</p><br>
                     </div>
@@ -589,7 +594,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Chaussée des Géants
-                        <img src="/images/natural_wonders/Giant's Causeway.webp" style="vertical-align: middle">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Giant's Causeway.webp" style="vertical-align: middle">
                       </h2><br>
                       <p class="civ-ability-desc" style="text-align:left">Les unités militaires terrestres qui pénètrent sur une case adjacente reçoivent la compétence &quot;Lance de Fionn&quot; (<img src="/images/ICON_STRENGTH.webp" style="height:1em"/> puissance de combat +5). <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture +1 pour les cases adjacentes.</p><br>
                     </div>
@@ -599,7 +604,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Gobustan 
-                        <img src="/images/natural_wonders/Gobustan .webp" style="vertical-align: middle">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Gobustan .webp" style="vertical-align: middle">
                       </h2><br>
                       <p class="civ-ability-desc" style="text-align:left">Merveille naturelle de trois cases. <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture +3 et <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> production +1.</p><br>
                     </div>
@@ -609,7 +614,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Baie de Hạ Long
-                        <img src="/images/natural_wonders/Hạ Long Bay.webp" style="vertical-align: middle">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Hạ Long Bay.webp" style="vertical-align: middle">
                       </h2><br>
                       <p class="civ-ability-desc" style="text-align:left">Merveille naturelle de deux cases se trouvant sur les côtes. <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture +3, <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> production +1, et <img src="/images/ICON_CULTURE.webp" style="height:1em"/> culture +1. <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Puissance de combat +15 en défense sur cette case.</p><br>
                     </div>
@@ -619,7 +624,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Ik Kil
-                        <img src="/images/natural_wonders/Ik-Kil.webp" style="vertical-align: middle">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Ik-Kil.webp" style="vertical-align: middle">
                       </h2><br>
                       <p class="civ-ability-desc" style="text-align:left">Merveille naturelle infranchissable d'une case. <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +50 % lors de la construction de merveilles et de quartiers sur les cases adjacentes. Fournit de l'eau douce.</p><br>
                     </div>
@@ -629,7 +634,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Kilimandjaro
-                        <img src="/images/natural_wonders/Mount Kilimanjaro.webp" style="vertical-align: middle">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Mount Kilimanjaro.webp" style="vertical-align: middle">
                       </h2><br>
                       <p class="civ-ability-desc" style="text-align:left">Merveille naturelle infranchissable d'une case, prenant la forme d'un volcan. <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture +2 pour les cases adjacentes. En cas d'éruption, octroie un rendement faible, avec une forte probabilité d'endommager les bâtiments et les quartiers. Éruptions peu fréquentes, mais toujours en activité.</p><br>
                     </div>
@@ -639,7 +644,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Lac Retba
-                        <img src="/images/natural_wonders/Lake Retba.webp" style="vertical-align: middle">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Lake Retba.webp" style="vertical-align: middle">
                       </h2><br>
                       <p class="civ-ability-desc" style="text-align:left">Merveille naturelle de deux cases prenant la forme d'un lac. <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture et <img src="/images/ICON_GOLD.webp" style="height:1em"/> or +2 et <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> production +1. Ne fournit pas d'eau potable.</p><br>
                     </div>
@@ -649,7 +654,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Lysefjord
-                        <img src="/images/natural_wonders/Lysefjord.webp" style="vertical-align: middle">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Lysefjord.webp" style="vertical-align: middle">
                       </h2><br>
                       <p class="civ-ability-desc" style="text-align:left">Les unités militaires navales qui pénètrent sur une case adjacente reçoivent immédiatement leur promotion suivante. <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +1 pour les cases adjacentes.</p><br>
                     </div>
@@ -659,7 +664,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Mont Cervin
-                        <img src="/images/natural_wonders/Matterhorn.webp" style="vertical-align: middle">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Matterhorn.webp" style="vertical-align: middle">
                       </h2><br>
                       <p class="civ-ability-desc" style="text-align:left">Merveille infranchissable d'une case. <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture +1 pour les cases adjacentes. <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Puissance de combat +3 pour les unités militaires terrestres combattant dans les collines, qui ignorent celles-ci lorsqu'elles se déplacent près du Cervin jusqu'à la fin de la partie.</p><br>
                     </div>
@@ -669,7 +674,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Païtiti
-                        <img src="/images/natural_wonders/Païtiti.webp" style="vertical-align: middle">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Païtiti.webp" style="vertical-align: middle">
                       </h2><br>
                       <p class="civ-ability-desc" style="text-align:left">Merveille naturelle infranchissable de 3 cases. <img src="/images/ICON_GOLD.webp" style="height:1em"/> Or +3 et <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture +2 pour les cases adjacentes. <img src="/images/ICON_GOLD.webp" style="height:1em"/> Or +4 pour les <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> routes commerciales internationales extérieures de la ville propriétaire de cette case.</p><br>
                     </div>
@@ -679,7 +684,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Pamukkale
-                        <img src="/images/natural_wonders/Pamukkale.webp" style="vertical-align: middle">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Pamukkale.webp" style="vertical-align: middle">
                       </h2><br>
                       <p class="civ-ability-desc" style="text-align:left">Merveille naturelle infranchissable de deux cases. <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> Activités +1. Octroie une <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> activité supplémentaire si adjacent à un complexe de loisirs. Bonus de proximité important pour les places du théâtre, les campus et les plateformes commerciales. Bonus de proximité standard pour les lieux saints. Fournit de l'eau douce.</p><br>
                     </div>
@@ -689,7 +694,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Pantanal
-                        <img src="/images/natural_wonders/Pantanal.webp" style="vertical-align: middle">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Pantanal.webp" style="vertical-align: middle">
                       </h2><br>
                       <p class="civ-ability-desc" style="text-align:left">Merveille naturelle de quatre cases. <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture +2 et <img src="/images/ICON_CULTURE.webp" style="height:1em"/> culture +2.</p><br>
                     </div>
@@ -699,7 +704,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Piopiotahi
-                        <img src="/images/natural_wonders/Piopiotahi.webp" style="vertical-align: middle">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Piopiotahi.webp" style="vertical-align: middle">
                       </h2><br>
                       <p class="civ-ability-desc" style="text-align:left">Merveille naturelle infranchissable de trois cases. <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture +1 et <img src="/images/ICON_GOLD.webp" style="height:1em"/> or +1 pour les cases adjacentes.</p><br>
                     </div>
@@ -709,7 +714,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Mont Roraima 
-                        <img src="/images/natural_wonders/Mount Roraima.webp" style="vertical-align: middle">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Mount Roraima.webp" style="vertical-align: middle">
                       </h2><br>
                       <p class="civ-ability-desc" style="text-align:left">Merveille infranchissable de quatre cases. <img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi et <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> science +1 pour les cases adjacentes.</p><br>
                     </div>
@@ -719,7 +724,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Torres del Paine
-                        <img src="/images/natural_wonders/Torres del Paine.webp" style="vertical-align: middle">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Torres del Paine.webp" style="vertical-align: middle">
                       </h2><br>
                       <p class="civ-ability-desc" style="text-align:left">Merveille naturelle infranchissable de deux cases. Rendement de toutes les cases adjacentes multiplié par deux.</p><br>
                     </div>
@@ -729,7 +734,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Tsingy de Bemaraha
-                        <img src="/images/natural_wonders/Tsingy de Bemaraha.webp" style="vertical-align: middle">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Tsingy de Bemaraha.webp" style="vertical-align: middle">
                       </h2><br>
                       <p class="civ-ability-desc" style="text-align:left">Merveille naturelle infranchissable d'une case. <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture +1 et <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> science +1 pour les cases adjacentes.</p><br>
                     </div>
@@ -739,7 +744,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Bassin de l'Oubsou-Nour
-                        <img src="/images/natural_wonders/Ubsunur Hollow.webp" style="vertical-align: middle">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Ubsunur Hollow.webp" style="vertical-align: middle">
                       </h2><br>
                       <p class="civ-ability-desc" style="text-align:left">Merveille naturelle de quatre cases. <img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi +2, <img src="/images/ICON_FOOD.webp" style="height:1em"/> nourriture et <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> production +1.</p><br>
                     </div>
@@ -749,7 +754,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Uluru
-                        <img src="/images/natural_wonders/Uluru.webp" style="vertical-align: middle">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Uluru.webp" style="vertical-align: middle">
                       </h2><br>
                       <p class="civ-ability-desc" style="text-align:left">Merveille naturelle infranchissable d'une case. <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture +2 et <img src="/images/ICON_FAITH.webp" style="height:1em"/> foi +2 pour les cases adjacentes. Attrait +4 pour les cases adjacentes, au lieu des +2 habituels.</p><br>
                     </div>
@@ -759,7 +764,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Vésuve
-                        <img src="/images/natural_wonders/Mount Vesuvius.webp" style="vertical-align: middle">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Mount Vesuvius.webp" style="vertical-align: middle">
                       </h2><br>
                       <p class="civ-ability-desc" style="text-align:left">Merveille naturelle infranchissable d'une case, prenant la forme d'un volcan. <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +1 pour les cases adjacentes. En cas d'éruption, octroie un rendement élevé aux cases adjacentes, mais entraîne des pertes conséquentes de <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> population. Il est toujours en activité.</p><br>
                     </div>
@@ -769,7 +774,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Désert blanc
-                        <img src="/images/natural_wonders/Sahara el Beyda.webp" style="vertical-align: middle">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Sahara el Beyda.webp" style="vertical-align: middle">
                       </h2><br>
                       <p class="civ-ability-desc" style="text-align:left">Merveille naturelle de quatre cases. <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Science +1, <img src="/images/ICON_CULTURE.webp" style="height:1em"/> culture +1 et <img src="/images/ICON_GOLD.webp" style="height:1em"/> or +4.</p><br>
                     </div>
@@ -779,7 +784,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Yosemite
-                        <img src="/images/natural_wonders/Yosemite.webp" style="vertical-align: middle">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Yosemite.webp" style="vertical-align: middle">
                       </h2><br>
                       <p class="civ-ability-desc" style="text-align:left">Merveille naturelle infranchissable de deux cases. <img src="/images/ICON_GOLD.webp" style="height:1em"/> Or +1, <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture +1 et <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Science +1 pour les cases adjacentes.</p><br>
                     </div>
@@ -789,7 +794,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">Zhangye Danxia
-                        <img src="/images/natural_wonders/Zhangye Danxia.webp" style="vertical-align: middle">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/natural_wonders/Zhangye Danxia.webp" style="vertical-align: middle">
                       </h2><br>
                       <p class="civ-ability-desc" style="text-align:left">Merveille naturelle infranchissable de trois cases. Points de <img src="/images/ICON_GREATGENERAL.webp" style="height:1em"/> général illustre et points de <img src="/images/ICON_GREATMERCHANT.webp" style="height:1em"/> marchand illustre +2 si vous possédez au moins l'une de ces cases.</p><br>
                     </div>

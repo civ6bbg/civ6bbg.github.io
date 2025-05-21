@@ -49,7 +49,7 @@
                     </div>
                     <div class="flex center col-xl-1 col-lg-1 col-md-1 col-1">
                       <a href="/index.html" style="align-content: center;">
-                        <img alt="#" src="/images/BBGLogo.webp" style="width:50px; border-radius:10%">
+                        <img alt="#" src="/images/BBGLogo.webp" style="width:3em; border-radius:10%">
                       </a>
                       <div class="mobile-nav"></div>
                     </div>
@@ -114,53 +114,58 @@
                         </nav>
                       </div>
                     </div>
-                    <div class="flex center col-xl-1 col-lg-1 col-md-1 col-1">
-                      <div class="main-menu">
-                        <nav class="navigation">
-                          <ul class="nav menu">
-                            <li><i class="lang-icon fa fa-language"></i>
-                              <ul class="dropdown" style="width:80px">
-                                <li>
-                                  <a href="/en_US/pantheons_6.0.html" style="align-content: center;">
-                                    <img src="/assets/flags/4x3/us.svg" style="height:20px">
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="/fr_FR/pantheons_6.0.html" style="align-content: center;">
-                                    <img src="/assets/flags/4x3/fr.svg" style="height:20px">
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="/ru_RU/pantheons_6.0.html" style="align-content: center;">
-                                    <img src="/assets/flags/4x3/ru.svg" style="height:20px">
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="/de_DE/pantheons_6.0.html" style="align-content: center;">
-                                    <img src="/assets/flags/4x3/de.svg" style="height:20px">
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="/zh_Hans_CN/pantheons_6.0.html" style="align-content: center;">
-                                    <img src="/assets/flags/4x3/cn.svg" style="height:20px">
-                                  </a>
-                                </li>
-                                <li>
-                                  <a href="/ko_KR/pantheons_6.0.html" style="align-content: center;">
-                                    <img src="/assets/flags/4x3/kr.svg" style="height:20px">
-                                  </a>
+                    <div class="flex center col-xl-2 col-lg-2 col-md-2 col-2">
+                      <div class="flex row justify-content-around">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-6">
+                          <div class="main-menu">
+                            <nav class="navigation">
+                              <ul class="nav menu">
+                                <li><i class="fa fa-language lang-icon"></i>
+                                  <ul class="dropdown" style="width:80px">
+                                    <li>
+                                      <a href="/en_US/pantheons_6.0.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/us.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/fr_FR/pantheons_6.0.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/fr.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/ru_RU/pantheons_6.0.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/ru.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/de_DE/pantheons_6.0.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/de.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/zh_Hans_CN/pantheons_6.0.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/cn.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/ko_KR/pantheons_6.0.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/kr.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                  </ul>
                                 </li>
                               </ul>
-                            </li>
-                          </ul>
-                        </nav>
-                      </div>
-                    </div>
-                    <div class="flex center col-xl-1 col-lg-1 col-md-1 col-1">
-                      <div class="theme-switcher-wrapper">
-                        <button class="theme-switcher gray-circle-btn" title="Switch theme" type="button">
-                          <span class="sr-only">Switch theme</span><i aria-hidden="true" class="sun-icon" data-feather="sun"></i><i aria-hidden="true" class="moon-icon" data-feather="moon"></i>
-                        </button>
+                            </nav>
+                          </div>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-6">
+                          <div class="theme-switcher-wrapper">
+                            <button class="theme-switcher gray-circle-btn" title="Switch theme" type="button">
+                              <span class="sr-only">Switch theme</span><i aria-hidden="true" class="sun-icon" data-feather="sun"></i><i aria-hidden="true" class="moon-icon" data-feather="moon"></i>
+                            </button>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -178,7 +183,7 @@
                     <li>
                       <a href="#오로라의 춤" onclick="civClicked(&quot;오로라의 춤&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/pantheons/Dance of the Aurora.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Dance of the Aurora.webp">
                         </span>
                         <p>오로라의 춤</p>
                       </a>
@@ -186,7 +191,7 @@
                     <li>
                       <a href="#사막의 전설" onclick="civClicked(&quot;사막의 전설&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/pantheons/Desert Folklore.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Desert Folklore.webp">
                         </span>
                         <p>사막의 전설</p>
                       </a>
@@ -194,7 +199,7 @@
                     <li>
                       <a href="#신성한 길" onclick="civClicked(&quot;신성한 길&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/pantheons/Sacred Path.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Sacred Path.webp">
                         </span>
                         <p>신성한 길</p>
                       </a>
@@ -202,7 +207,7 @@
                     <li>
                       <a href="#강의 여신" onclick="civClicked(&quot;강의 여신&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/pantheons/River Goddess.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/River Goddess.webp">
                         </span>
                         <p>강의 여신</p>
                       </a>
@@ -210,7 +215,7 @@
                     <li>
                       <a href="#신에게 바치는 기념비" onclick="civClicked(&quot;신에게 바치는 기념비&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/pantheons/Monument to the Gods.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Monument to the Gods.webp">
                         </span>
                         <p>신에게 바치는 기념비</p>
                       </a>
@@ -218,7 +223,7 @@
                     <li>
                       <a href="#신성의 반짝임" onclick="civClicked(&quot;신성의 반짝임&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/pantheons/Divine Spark.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Divine Spark.webp">
                         </span>
                         <p>신성의 반짝임</p>
                       </a>
@@ -226,7 +231,7 @@
                     <li>
                       <a href="#갈대와 습지의 여인" onclick="civClicked(&quot;갈대와 습지의 여인&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/pantheons/Lady of the Reeds and Marshes.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Lady of the Reeds and Marshes.webp">
                         </span>
                         <p>갈대와 습지의 여인</p>
                       </a>
@@ -234,7 +239,7 @@
                     <li>
                       <a href="#바다의 신" onclick="civClicked(&quot;바다의 신&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/pantheons/God of the Sea.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/God of the Sea.webp">
                         </span>
                         <p>바다의 신</p>
                       </a>
@@ -242,7 +247,7 @@
                     <li>
                       <a href="#창공의 신" onclick="civClicked(&quot;창공의 신&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/pantheons/God of the Open Sky.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/God of the Open Sky.webp">
                         </span>
                         <p>창공의 신</p>
                       </a>
@@ -250,7 +255,7 @@
                     <li>
                       <a href="#사냥의 여신" onclick="civClicked(&quot;사냥의 여신&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/pantheons/Goddess of the Hunt.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Goddess of the Hunt.webp">
                         </span>
                         <p>사냥의 여신</p>
                       </a>
@@ -258,7 +263,7 @@
                     <li>
                       <a href="#환상열석" onclick="civClicked(&quot;환상열석&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/pantheons/Stone Circles.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Stone Circles.webp">
                         </span>
                         <p>환상열석</p>
                       </a>
@@ -266,7 +271,7 @@
                     <li>
                       <a href="#우상 숭배" onclick="civClicked(&quot;우상 숭배&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/pantheons/Religious Idols.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Religious Idols.webp">
                         </span>
                         <p>우상 숭배</p>
                       </a>
@@ -274,7 +279,7 @@
                     <li>
                       <a href="#장인의 신" onclick="civClicked(&quot;장인의 신&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/pantheons/God of Craftsmen.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/God of Craftsmen.webp">
                         </span>
                         <p>장인의 신</p>
                       </a>
@@ -282,7 +287,7 @@
                     <li>
                       <a href="#축제의 여신" onclick="civClicked(&quot;축제의 여신&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/pantheons/Goddess of Festivals.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Goddess of Festivals.webp">
                         </span>
                         <p>축제의 여신</p>
                       </a>
@@ -290,7 +295,7 @@
                     <li>
                       <a href="#대장간의 신" onclick="civClicked(&quot;대장간의 신&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/pantheons/God of the Forge.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/God of the Forge.webp">
                         </span>
                         <p>대장간의 신</p>
                       </a>
@@ -298,7 +303,7 @@
                     <li>
                       <a href="#통과 의례" onclick="civClicked(&quot;통과 의례&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/pantheons/Initiation Rites.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Initiation Rites.webp">
                         </span>
                         <p>통과 의례</p>
                       </a>
@@ -306,7 +311,7 @@
                     <li>
                       <a href="#파도의 여신" onclick="civClicked(&quot;파도의 여신&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/pantheons/Goddess of Tides.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Goddess of Tides.webp">
                         </span>
                         <p>파도의 여신</p>
                       </a>
@@ -314,7 +319,7 @@
                     <li>
                       <a href="#전쟁과 약탈의 신" onclick="civClicked(&quot;전쟁과 약탈의 신&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/pantheons/God of War and Plunder.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/God of War and Plunder.webp">
                         </span>
                         <p>전쟁과 약탈의 신</p>
                       </a>
@@ -322,7 +327,7 @@
                     <li>
                       <a href="#다산 제의" onclick="civClicked(&quot;다산 제의&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/pantheons/Fertility Rites.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Fertility Rites.webp">
                         </span>
                         <p>다산 제의</p>
                       </a>
@@ -330,7 +335,7 @@
                     <li>
                       <a href="#신자 이주 정책" onclick="civClicked(&quot;신자 이주 정책&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/pantheons/Religious Settlements.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Religious Settlements.webp">
                         </span>
                         <p>신자 이주 정책</p>
                       </a>
@@ -338,7 +343,7 @@
                     <li>
                       <a href="#도시의 수호 여신" onclick="civClicked(&quot;도시의 수호 여신&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/pantheons/City Patron Goddess.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/City Patron Goddess.webp">
                         </span>
                         <p>도시의 수호 여신</p>
                       </a>
@@ -346,7 +351,7 @@
                     <li>
                       <a href="#대지의 여신" onclick="civClicked(&quot;대지의 여신&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/pantheons/Earth Goddess.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Earth Goddess.webp">
                         </span>
                         <p>대지의 여신</p>
                       </a>
@@ -354,7 +359,7 @@
                     <li>
                       <a href="#불의 여신" onclick="civClicked(&quot;불의 여신&quot;)">
                         <span aria-hidden="true" class="icon">
-                          <img src="/images/pantheons/Fire Goddess.webp">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Fire Goddess.webp">
                         </span>
                         <p>불의 여신</p>
                       </a>
@@ -371,7 +376,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">오로라의 춤
-                        <img src="/images/pantheons/Dance of the Aurora.webp" style="vertical-align: middle; height:5em">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Dance of the Aurora.webp" style="vertical-align: middle; height:5em">
                       </h2>
                       <p class="civ-ability-desc" style="text-align:left">성지 특수지구는 인접한 툰드라 평지 타일에서 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 신앙 +1을 획득합니다.</p>
                     </div>
@@ -381,7 +386,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">사막의 전설
-                        <img src="/images/pantheons/Desert Folklore.webp" style="vertical-align: middle; height:5em">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Desert Folklore.webp" style="vertical-align: middle; height:5em">
                       </h2>
                       <p class="civ-ability-desc" style="text-align:left">성지 특수지구는 인접한 사막 타일에서 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 신앙 +1을 획득합니다.</p>
                     </div>
@@ -391,7 +396,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">신성한 길
-                        <img src="/images/pantheons/Sacred Path.webp" style="vertical-align: middle; height:5em">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Sacred Path.webp" style="vertical-align: middle; height:5em">
                       </h2>
                       <p class="civ-ability-desc" style="text-align:left">성지 특수지구는 인접한 숲 및 열대우림 타일에서 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 신앙 +1을 획득합니다.</p>
                     </div>
@@ -401,7 +406,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">강의 여신
-                        <img src="/images/pantheons/River Goddess.webp" style="vertical-align: middle; height:5em">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/River Goddess.webp" style="vertical-align: middle; height:5em">
                       </h2>
                       <p class="civ-ability-desc" style="text-align:left">강에 인접한 성지 특수지구에서 +1의 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 신앙 인접 보너스를 제공합니다. 강에 인접한 성지 특수지구가 있는 도시에 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> 쾌적도 +1 및 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 주거공간 +1을 제공합니다.</p>
                     </div>
@@ -411,7 +416,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">신에게 바치는 기념비
-                        <img src="/images/pantheons/Monument to the Gods.webp" style="vertical-align: middle; height:5em">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Monument to the Gods.webp" style="vertical-align: middle; height:5em">
                       </h2>
                       <p class="civ-ability-desc" style="text-align:left">불가사의 건설에 대한 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력 +20%를 제공합니다.</p>
                     </div>
@@ -421,7 +426,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">신성의 반짝임
-                        <img src="/images/pantheons/Divine Spark.webp" style="vertical-align: middle; height:5em">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Divine Spark.webp" style="vertical-align: middle; height:5em">
                       </h2>
                       <p class="civ-ability-desc" style="text-align:left">성지(<img src="/images/ICON_GREATPROPHET.webp" style="height:1em"/> 선지자), 캠퍼스(<img src="/images/ICON_GREATSCIENTIST.webp" style="height:1em"/> 과학자), 원형 극장이 있는 극장가(<img src="/images/ICON_GREATWRITER.webp" style="height:1em"/> 작가) 및 산업구역(<img src="/images/ICON_GREATENGINEER.webp" style="height:1em"/> 기술자)에서 해당 <img src="/images/ICON_GREATPERSON.webp" style="height:1em"/> 위인 점수 +1을 획득합니다.</p>
                     </div>
@@ -431,7 +436,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">갈대와 습지의 여인
-                        <img src="/images/pantheons/Lady of the Reeds and Marshes.webp" style="vertical-align: middle; height:5em">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Lady of the Reeds and Marshes.webp" style="vertical-align: middle; height:5em">
                       </h2>
                       <p class="civ-ability-desc" style="text-align:left">습지, 오아시스 및 범람원에서 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력 +1.</p>
                     </div>
@@ -441,7 +446,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">바다의 신
-                        <img src="/images/pantheons/God of the Sea.webp" style="vertical-align: middle; height:5em">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/God of the Sea.webp" style="vertical-align: middle; height:5em">
                       </h2>
                       <p class="civ-ability-desc" style="text-align:left">어선에서 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력 +1을 제공합니다.</p>
                     </div>
@@ -451,7 +456,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">창공의 신
-                        <img src="/images/pantheons/God of the Open Sky.webp" style="vertical-align: middle; height:5em">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/God of the Open Sky.webp" style="vertical-align: middle; height:5em">
                       </h2>
                       <p class="civ-ability-desc" style="text-align:left">목장에서 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화 +1을 제공합니다.</p>
                     </div>
@@ -461,7 +466,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">사냥의 여신
-                        <img src="/images/pantheons/Goddess of the Hunt.webp" style="vertical-align: middle; height:5em">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Goddess of the Hunt.webp" style="vertical-align: middle; height:5em">
                       </h2>
                       <p class="civ-ability-desc" style="text-align:left">야영지에서 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 식량 +1, <img src="/images/ICON_GOLD.webp" style="height:1em"/> 금 +2를 제공합니다.</p>
                     </div>
@@ -471,7 +476,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">환상열석
-                        <img src="/images/pantheons/Stone Circles.webp" style="vertical-align: middle; height:5em">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Stone Circles.webp" style="vertical-align: middle; height:5em">
                       </h2>
                       <p class="civ-ability-desc" style="text-align:left">채석장에서 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력 +1, <img src="/images/ICON_FAITH.webp" style="height:1em"/> 신앙 +1을 획득합니다.</p>
                     </div>
@@ -481,7 +486,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">우상 숭배
-                        <img src="/images/pantheons/Religious Idols.webp" style="vertical-align: middle; height:5em">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Religious Idols.webp" style="vertical-align: middle; height:5em">
                       </h2>
                       <p class="civ-ability-desc" style="text-align:left">사치 자원과 보너스 자원 위에 건설된 광산에서 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 신앙 +3, <img src="/images/ICON_GOLD.webp" style="height:1em"/> 금 +3을 획득합니다.</p>
                     </div>
@@ -491,7 +496,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">장인의 신
-                        <img src="/images/pantheons/God of Craftsmen.webp" style="vertical-align: middle; height:5em">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/God of Craftsmen.webp" style="vertical-align: middle; height:5em">
                       </h2>
                       <p class="civ-ability-desc" style="text-align:left">개발된 전략 자원에서 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력 +1 및 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 신앙 +1을 제공합니다.</p>
                     </div>
@@ -501,7 +506,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">축제의 여신
-                        <img src="/images/pantheons/Goddess of Festivals.webp" style="vertical-align: middle; height:5em">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Goddess of Festivals.webp" style="vertical-align: middle; height:5em">
                       </h2>
                       <p class="civ-ability-desc" style="text-align:left">재배지에서 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화 +1을 제공합니다.</p>
                     </div>
@@ -511,7 +516,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">대장간의 신
-                        <img src="/images/pantheons/God of the Forge.webp" style="vertical-align: middle; height:5em">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/God of the Forge.webp" style="vertical-align: middle; height:5em">
                       </h2>
                       <p class="civ-ability-desc" style="text-align:left">고대 및 고전 시대 군사 유닛 생성에 대한 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력 +30%를 제공합니다.</p>
                     </div>
@@ -521,7 +526,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">통과 의례
-                        <img src="/images/pantheons/Initiation Rites.webp" style="vertical-align: middle; height:5em">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Initiation Rites.webp" style="vertical-align: middle; height:5em">
                       </h2>
                       <p class="civ-ability-desc" style="text-align:left">군사 유닛이 생산되면 해당 유닛 비용의 30%에 준하는 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 신앙이 제공됩니다. 이 교리를 채택하면 수도에 전사 유닛 1기를 제공합니다.</p>
                     </div>
@@ -531,7 +536,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">파도의 여신
-                        <img src="/images/pantheons/Goddess of Tides.webp" style="vertical-align: middle; height:5em">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Goddess of Tides.webp" style="vertical-align: middle; height:5em">
                       </h2>
                       <p class="civ-ability-desc" style="text-align:left">어선에서 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화 +1을 제공합니다.</p>
                     </div>
@@ -541,7 +546,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">전쟁과 약탈의 신
-                        <img src="/images/pantheons/God of War and Plunder.webp" style="vertical-align: middle; height:5em">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/God of War and Plunder.webp" style="vertical-align: middle; height:5em">
                       </h2>
                       <p class="civ-ability-desc" style="text-align:left">주둔지(<img src="/images/ICON_GREATGENERAL.webp" style="height:1em"/> 장군), 항만(<img src="/images/ICON_GREATADMIRAL.webp" style="height:1em"/> 제독) 및 상업 중심지(<img src="/images/ICON_GREATMERCHANT.webp" style="height:1em"/> 상인) 특수지구로부터 해당 <img src="/images/ICON_GREATPERSON.webp" style="height:1em"/> 위인 점수 +1을 획득합니다.</p>
                     </div>
@@ -551,7 +556,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">다산 제의
-                        <img src="/images/pantheons/Fertility Rites.webp" style="vertical-align: middle; height:5em">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Fertility Rites.webp" style="vertical-align: middle; height:5em">
                       </h2>
                       <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_RESOURCE_CATTLE.webp" style="height:1em"/> 소, <img src="/images/ICON_RESOURCE_RICE.webp" style="height:1em"/> 쌀, <img src="/images/ICON_RESOURCE_WHEAT.webp" style="height:1em"/> 밀 및 <img src="/images/ICON_RESOURCE_MAIZE.webp" style="height:1em"/> 옥수수 자원에서 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 식량 +1을 제공합니다.</p>
                     </div>
@@ -561,7 +566,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">신자 이주 정책
-                        <img src="/images/pantheons/Religious Settlements.webp" style="vertical-align: middle; height:5em">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Religious Settlements.webp" style="vertical-align: middle; height:5em">
                       </h2>
                       <p class="civ-ability-desc" style="text-align:left">개척자 생산 시 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력 +20%를 부여합니다. 영토 확장 속도가 50% 증가하며, 도시를 세울 때 추가 영토를 2타일 얻습니다.</p>
                     </div>
@@ -571,7 +576,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">도시의 수호 여신
-                        <img src="/images/pantheons/City Patron Goddess.webp" style="vertical-align: middle; height:5em">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/City Patron Goddess.webp" style="vertical-align: middle; height:5em">
                       </h2>
                       <p class="civ-ability-desc" style="text-align:left">전문 <img src="/images/ICON_DISTRICT.webp" style="height:1em"/> 특수지구가 없는 도시의 <img src="/images/ICON_DISTRICT.webp" style="height:1em"/> 특수지구 건설에 대한 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력 +40%를 제공합니다.</p>
                     </div>
@@ -581,7 +586,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">대지의 여신
-                        <img src="/images/pantheons/Earth Goddess.webp" style="vertical-align: middle; height:5em">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Earth Goddess.webp" style="vertical-align: middle; height:5em">
                       </h2>
                       <p class="civ-ability-desc" style="text-align:left">멋진 혹은 놀라운 매력도의 타일에서 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 신앙 +1을 획득합니다.</p>
                     </div>
@@ -591,7 +596,7 @@
                   <div class="col-lg-12">
                     <div class="chart">
                       <h2 class="civ-name">불의 여신
-                        <img src="/images/pantheons/Fire Goddess.webp" style="vertical-align: middle; height:5em">
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/pantheons/Fire Goddess.webp" style="vertical-align: middle; height:5em">
                       </h2>
                       <p class="civ-ability-desc" style="text-align:left">지열 열하 및 화산토에서 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 신앙 +3을 획득합니다.</p>
                     </div>
