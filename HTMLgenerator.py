@@ -49,7 +49,7 @@ replacements = [
     '[ICON_FAITH]',
     '[ICON_FAVOR]',
     '[ICON_FOOD]',
-    '[ICON_INFLUENCEPERTURN]',
+    '[ICON_FORTIFIED]',
     '[ICON_GLORY_DARK_AGE]',
     '[ICON_GLORY_NORMAL_AGE]',
     '[ICON_GLORY_GOLDEN_AGE]',
@@ -76,8 +76,9 @@ replacements = [
     '[ICON_GREATWORK_RELIGIOUS]',
     '[ICON_GREATWRITER]',
     '[ICON_HOUSING]',
+    '[ICON_INFLUENCEPERTURN]',
+    '[ICON_LIFESPAN]',
     '[ICON_MOVEMENT]',
-    '[ICON_FORTIFIED]',
     '[ICON_NUCLEAR]',
     '[ICON_PILLAGED]',
     # '[ICON_POPULATION]',
@@ -98,6 +99,7 @@ replacements = [
     '[ICON_RESOURCE_CLOVES]',
     '[ICON_RESOURCE_MAIZE]',
     '[ICON_RESOURCE_SHEEP]',
+    '[ICON_RESOURCE_STONE]',
     '[ICON_RESOURCE_RICE]',
     '[ICON_RESOURCE_WHEAT]',
     '[ICON_SCIENCE]',
@@ -144,7 +146,7 @@ bbg_versions = [None, '6.4', '6.3', '6.2', '6.1', '6.0', '5.8', '5.7', '5.6']
 def get_version_name(bbg_version):
     return bbg_version if bbg_version != None else 'base_game'
 
-def add_lang(text_name, link_name, bbg_version, flag, leader_page, cs_page, pantheon_page, religion_page, governor_page, natural_wonder_page):
+def add_lang(text_name, link_name, bbg_version, flag, leader_page, cs_page, pantheon_page, religion_page, governor_page, natural_wonder_page, world_wonder_page):
     with li():
         if leader_page:
             with a(href=f"/{link_name}/leaders_{get_version_name(bbg_version)}.html", style="align-content: center;"):
@@ -164,8 +166,11 @@ def add_lang(text_name, link_name, bbg_version, flag, leader_page, cs_page, pant
         elif natural_wonder_page:
             with a(href=f"/{link_name}/natural_wonder_{get_version_name(bbg_version)}.html", style="align-content: center;"):
                 img(src=f"/assets/flags/4x3/{flag}.svg", style="height:20px")
+        elif world_wonder_page:
+            with a(href=f"/{link_name}/world_wonder_{get_version_name(bbg_version)}.html", style="align-content: center;"):
+                img(src=f"/assets/flags/4x3/{flag}.svg", style="height:20px")
 
-def add_header(bbg_version, lang, leader_page = False, cs_page = False, pantheon_page = False, religion_page = False, governor_page = False, natural_wonder_page = False):
+def add_header(bbg_version, lang, leader_page = False, cs_page = False, pantheon_page = False, religion_page = False, governor_page = False, natural_wonder_page = False, world_wonder_page = False):
     with nav(cls="main-nav--bg"):
         with div(cls="main-nav"):
             with div(cls="header"):
@@ -196,6 +201,8 @@ def add_header(bbg_version, lang, leader_page = False, cs_page = False, pantheon
                                                 a('Governors', href=f"/{lang}/governor_{get_version_name(bbg_version)}.html", onclick=f'civClicked(null)')
                                             with li(cls="active" if natural_wonder_page else ""):
                                                 a('Natural Wonders', href=f"/{lang}/natural_wonder_{get_version_name(bbg_version)}.html", onclick=f'civClicked(null)')
+                                            with li(cls="active" if world_wonder_page else ""):
+                                                a('World Wonders', href=f"/{lang}/world_wonder_{get_version_name(bbg_version)}.html", onclick=f'civClicked(null)')
                                             with li():
                                                 with a('BBG Version'):
                                                     i(cls="icofont-rounded-down")
@@ -232,6 +239,11 @@ def add_header(bbg_version, lang, leader_page = False, cs_page = False, pantheon
                                                                     a(f"Base Game", href=f"/{lang}/natural_wonder_base_game.html")
                                                                 else:
                                                                     a(f"BBG v{v}", href=f"/{lang}/natural_wonder_{v}.html")
+                                                            elif world_wonder_page:
+                                                                if v is None:
+                                                                    a(f"Base Game", href=f"/{lang}/world_wonder_base_game.html")
+                                                                else:
+                                                                    a(f"BBG v{v}", href=f"/{lang}/world_wonder_{v}.html")
                                             with li(cls=""):
                                                 a('Donate!', href=f"https://ko-fi.com/calcalciffer", target="_blank")
                             with div(cls="flex center col-xl-2 col-lg-2 col-md-2 col-2"):
@@ -244,12 +256,12 @@ def add_header(bbg_version, lang, leader_page = False, cs_page = False, pantheon
                                                         i(cls="fa fa-language lang-icon")
 
                                                         with ul(cls="dropdown", style="width:80px"):
-                                                            add_lang('English  ', 'en_US', bbg_version, 'us', leader_page, cs_page, pantheon_page, religion_page, governor_page, natural_wonder_page)
-                                                            add_lang('French  ', 'fr_FR', bbg_version, 'fr', leader_page, cs_page, pantheon_page, religion_page, governor_page, natural_wonder_page)
-                                                            add_lang('Russian  ', 'ru_RU', bbg_version, 'ru', leader_page, cs_page, pantheon_page, religion_page, governor_page, natural_wonder_page)
-                                                            add_lang('German  ', 'de_DE', bbg_version, 'de', leader_page, cs_page, pantheon_page, religion_page, governor_page, natural_wonder_page)
-                                                            add_lang('Chinese  ', 'zh_Hans_CN', bbg_version, 'cn', leader_page, cs_page, pantheon_page, religion_page, governor_page, natural_wonder_page)
-                                                            add_lang('Korean  ', 'ko_KR', bbg_version, 'kr', leader_page, cs_page, pantheon_page, religion_page, governor_page, natural_wonder_page)
+                                                            add_lang('English  ', 'en_US', bbg_version, 'us', leader_page, cs_page, pantheon_page, religion_page, governor_page, natural_wonder_page, world_wonder_page)
+                                                            add_lang('French  ', 'fr_FR', bbg_version, 'fr', leader_page, cs_page, pantheon_page, religion_page, governor_page, natural_wonder_page, world_wonder_page)
+                                                            add_lang('Russian  ', 'ru_RU', bbg_version, 'ru', leader_page, cs_page, pantheon_page, religion_page, governor_page, natural_wonder_page, world_wonder_page)
+                                                            add_lang('German  ', 'de_DE', bbg_version, 'de', leader_page, cs_page, pantheon_page, religion_page, governor_page, natural_wonder_page, world_wonder_page)
+                                                            add_lang('Chinese  ', 'zh_Hans_CN', bbg_version, 'cn', leader_page, cs_page, pantheon_page, religion_page, governor_page, natural_wonder_page, world_wonder_page)
+                                                            add_lang('Korean  ', 'ko_KR', bbg_version, 'kr', leader_page, cs_page, pantheon_page, religion_page, governor_page, natural_wonder_page, world_wonder_page)
                                     div(cls="w-100")
                                     with div(cls="col-xl-6 col-lg-6 col-md-6 col-6"):
                                         with div(cls="theme-switcher-wrapper"):
@@ -370,7 +382,7 @@ def get_leader_html_file(bbg_version, lang):
                                         with div(cls="col-lg-12"):
                                             with div(cls="chart"):
                                                 with h2(get_loc(locs_data, leader[2], en_US_locs_data) + ' ' + get_loc(locs_data, leader[5], en_US_locs_data), cls='civ-name'):
-                                                    img(src=f'/images/leaders/{get_loc(en_US_locs_data, leader[2], en_US_locs_data) + ' ' + get_loc(en_US_locs_data, leader[5], en_US_locs_data)}.webp', style="vertical-align: middle", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
+                                                    img(src=f'/images/leaders/{get_loc(en_US_locs_data, leader[2], en_US_locs_data) + ' ' + get_loc(en_US_locs_data, leader[5], en_US_locs_data)}.webp', style="vertical-align: middle; width:7em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
                                                 h3(get_loc(locs_data, leader[3], en_US_locs_data), style="text-align:left", cls='civ-ability-name')
                                                 br()
                                                 p(get_loc(locs_data, leader[4], en_US_locs_data), style="text-align:left", cls='civ-ability-desc')
@@ -424,7 +436,7 @@ def get_city_state_html_file(bbg_version, lang):
                                         with div(cls="col-lg-12"):
                                             with div(cls="chart"):
                                                 with h2(get_loc(locs_data, cs[2], en_US_locs_data), cls='civ-name'):
-                                                    img(src=f'/images/city_states/{get_loc(en_US_locs_data, cs[2], en_US_locs_data)}.webp', style="vertical-align: middle", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
+                                                    img(src=f'/images/city_states/{get_loc(en_US_locs_data, cs[2], en_US_locs_data)}.webp', style="vertical-align: middle; width:5em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
                                                 p(get_loc(locs_data, cs[5], en_US_locs_data), style="text-align:left", cls='civ-ability-desc')
 
         add_final_scripts()
@@ -591,7 +603,7 @@ def get_governor_html_file(bbg_version, lang):
                                         with div(cls="col-lg-12"):
                                             with div(cls="chart"):
                                                 with h2(get_loc(locs_data, gov[1], en_US_locs_data), cls='civ-name'):
-                                                    img(src=f'/images/governors/{get_loc(en_US_locs_data, gov[1], en_US_locs_data)}.webp', style="vertical-align: middle", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
+                                                    img(src=f'/images/governors/{get_loc(en_US_locs_data, gov[1], en_US_locs_data)}.webp', style="vertical-align: middle; width:7em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
                                                 br()
                                                 for level in governor_promotion_set_dict[gov[0]]:
                                                     column_count = len(governor_promotion_set_dict[gov[0]][level])
@@ -652,7 +664,50 @@ def get_natural_wonder_html_file(bbg_version, lang):
                                         with div(cls="col-lg-12"):
                                             with div(cls="chart"):
                                                 with h2(get_loc(locs_data, wonder[1], en_US_locs_data), cls='civ-name'):
-                                                    img(src=f'/images/natural_wonders/{get_loc(en_US_locs_data, wonder[1], en_US_locs_data)}.webp', style="vertical-align: middle", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
+                                                    img(src=f'/images/natural_wonders/{get_loc(en_US_locs_data, wonder[1], en_US_locs_data)}.webp', style="vertical-align: middle; width:5em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
+                                                br()
+                                                p(get_loc(locs_data, wonder[2], en_US_locs_data), style="text-align:left", cls='civ-ability-desc')
+                                                br()
+        add_final_scripts()
+        add_scroll_up()
+
+    docStr = str(doc)
+    return refactorCivSpecialSyntax(bbg_version, lang, docStr)
+    
+def get_world_wonder_html_file(bbg_version, lang):
+    en_US_locs_data = get_locs_data("sqlFiles/CivVILocalization.sqlite", bbg_version, 'en_US')
+    locs_data = get_locs_data("sqlFiles/CivVILocalization.sqlite", bbg_version, lang)
+
+    doc = dominate.document(title=None, lang=get_html_lang(lang))
+    if bbg_version != None:
+        add_html_header(doc, f'BBG {bbg_version} World Wonders')
+    else :
+        add_html_header(doc, f'Civ VI GS RF World Wonders')
+
+    menu_items = []
+    menu_icons = []
+    world_wonders = get_world_wonders_list(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite")
+    for wonder in world_wonders:
+        menu_items.append(get_loc(locs_data, wonder[1], en_US_locs_data))
+        menu_icons.append(get_loc(en_US_locs_data, wonder[1], en_US_locs_data))
+    with doc:
+        add_preloader()
+        div(cls="layer")
+        with div(cls="page-flex"):
+            with div(cls="main-wrapper"):
+                add_header(bbg_version, lang, world_wonder_page=True)
+                with div(cls=""):
+                    with div(cls="fixed left-0 right-auto h-screen w-[253px] bg-white border-r border-neutral-300 overflow-scroll", style="z-index: 5;"):
+                        add_sidebar(menu_items, menu_icons, 'images/world_wonders')
+                    with div(cls="leaders-data min-w-full main-pl"):
+                        with main(cls="main users chart-page"):
+                            with div(cls="container"):
+                                for wonder in world_wonders:
+                                    with div(cls="row", id=get_loc(locs_data, wonder[1], en_US_locs_data)):
+                                        with div(cls="col-lg-12"):
+                                            with div(cls="chart"):
+                                                with h2(get_loc(locs_data, wonder[1], en_US_locs_data), cls='civ-name'):
+                                                    img(src=f'/images/world_wonders/{get_loc(en_US_locs_data, wonder[1], en_US_locs_data)}.webp', style="vertical-align: middle; width:5em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
                                                 br()
                                                 p(get_loc(locs_data, wonder[2], en_US_locs_data), style="text-align:left", cls='civ-ability-desc')
                                                 br()

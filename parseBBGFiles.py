@@ -181,6 +181,15 @@ def get_natural_wonders_list(db_path):
     connection.close()
     return rows
 
+def get_world_wonders_list(db_path):
+    connection = sqlite3.connect(db_path)
+
+    crsr = connection.cursor()
+    crsr.execute("SELECT BuildingType,Name,Description FROM Buildings WHERE IsWonder=1 ORDER BY Cost")
+    rows = crsr.fetchall()
+    connection.close()
+    return rows
+
 def get_start_biases(db_path):
     writer = csv.writer()
     writer.writerow(['CivilizationType', 'BiasType', 'TerrainType', 'FeatureType', 'ResourceType', 'Tier', 'Extra', 'CustomPlacement'])
