@@ -578,6 +578,17 @@ document.addEventListener("scroll", (event) => {
   }
 });
 
+let lastScrollTop = 0;
+document.addEventListener("scroll", (event) => {
+  let scrollTop = document.pageYOffset || document.documentElement.scrollTop;
+  if (scrollTop > lastScrollTop) {
+    $('.main-nav').addClass('displayNone');
+  } else {
+    $('.main-nav').removeClass('displayNone');
+  }
+  lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
+});
+
 function civClicked(civName) {
   localStorage.setItem('lastCivClicked', civName);
 }

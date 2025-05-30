@@ -1827,12 +1827,8 @@
    padding-top: 20px;
  }
 
- .sidebar-body.sticky {
-    padding-top: 100px;
- }
-
  .sidebar-body-menu.sticky {
-    height: 85%;
+    height: 95%;
  }
 
  .sidebar-body-menu {
@@ -2039,6 +2035,10 @@
    z-index:999;
    width: 100%;
  }
+
+ .main-nav.displayNone {
+  display: none;
+}
 
  .main-nav.sticky {
     position:fixed;
