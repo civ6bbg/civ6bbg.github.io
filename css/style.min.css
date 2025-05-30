@@ -2038,8 +2038,6 @@
    flex-wrap: wrap;
    z-index:999;
    width: 100%;
-   padding-left: 25px;
-   padding-right: 25px;
  }
 
  .main-nav.sticky {

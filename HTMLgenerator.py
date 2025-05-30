@@ -181,7 +181,7 @@ def add_header(bbg_version, lang, leader_page = False, cs_page = False, pantheon
                                 with button(cls="transparent-btn", title="Menu", type="button"):
                                     span("Toggle menu", cls="sr-only")
                                     span(cls="icon menu-toggle", aria_hidden="true")
-                            with div(cls="flex center col-xl-1 col-lg-1 col-md-1 col-1"):
+                            with div(cls="flex center col-xl-1 col-lg-1 col-md-1 col-2"):
                                 with a(href="/index.html", style="align-content: center;"):
                                     img(src="/images/BBGLogo.webp", style="width:3em; border-radius:10%", alt="#")
                                 div(cls="mobile-nav")
@@ -246,7 +246,7 @@ def add_header(bbg_version, lang, leader_page = False, cs_page = False, pantheon
                                                                     a(f"BBG v{v}", href=f"/{lang}/world_wonder_{v}.html")
                                             with li(cls=""):
                                                 a('Donate!', href=f"https://ko-fi.com/calcalciffer", target="_blank")
-                            with div(cls="flex center col-xl-2 col-lg-2 col-md-2 col-2"):
+                            with div(cls="flex center col-xl-2 col-lg-2 col-md-2 col-1"):
                                 with div(cls='flex row justify-content-around'):
                                     with div(cls="col-xl-6 col-lg-6 col-md-6 col-6"):
                                         with div(cls="main-menu"):
