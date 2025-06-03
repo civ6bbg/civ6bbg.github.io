@@ -445,48 +445,6 @@ def get_city_state_html_file(bbg_version, lang):
     docStr = str(doc)
     return refactorCivSpecialSyntax(bbg_version, lang, docStr)
 
-def get_pantheon_html_file(bbg_version, lang):
-    en_US_locs_data = get_locs_data("sqlFiles/CivVILocalization.sqlite", bbg_version, 'en_US')
-    locs_data = get_locs_data("sqlFiles/CivVILocalization.sqlite", bbg_version, lang)
-
-    doc = dominate.document(title=None, lang=get_html_lang(lang))
-    if bbg_version != None:
-        add_html_header(doc, f'BBG {bbg_version} Pantheons Description')
-    else :
-        add_html_header(doc, f'Civ VI GS RF Pantheons Description')
-
-    menu_items = []
-    menu_icons = []
-    pantheons = get_beliefs(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite", 'BELIEF_CLASS_PANTHEON')
-    for pan in pantheons:
-        menu_items.append(get_loc(locs_data, pan[1], en_US_locs_data))
-        menu_icons.append(get_loc(en_US_locs_data, pan[1], en_US_locs_data))
-    with doc:
-        add_preloader()
-        div(cls="layer")
-        with div(cls="page-flex"):
-            with div(cls="main-wrapper"):
-                add_header(bbg_version, lang, pantheon_page=True)
-                with div(cls=""):
-                    with div(cls="fixed left-0 right-auto h-screen w-[253px] bg-white border-r border-neutral-300 overflow-scroll", style="z-index: 5;"):
-                        add_sidebar(menu_items, menu_icons, 'images/pantheons')
-                    with div(cls="leaders-data min-w-full main-pl"):
-                        with main(cls="main users chart-page"):
-                            with div(cls="container"):
-                                for pan in pantheons:
-                                    with div(cls="row", id=get_loc(locs_data, pan[1], en_US_locs_data)):
-                                        with div(cls="col-lg-12"):
-                                            with div(cls="chart"):
-                                                with h2(get_loc(locs_data, pan[1], en_US_locs_data), cls='civ-name'):
-                                                    img(src=f'/images/pantheons/{get_loc(en_US_locs_data, pan[1], en_US_locs_data)}.webp', style="vertical-align: middle; height:5em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
-                                                p(get_loc(locs_data, pan[2], en_US_locs_data), style="text-align:left", cls='civ-ability-desc')
-
-        add_final_scripts()
-        add_scroll_up()
-
-    docStr = str(doc)
-    return refactorCivSpecialSyntax(bbg_version, lang, docStr)
-
 def get_religion_html_file(bbg_version, lang):
     en_US_locs_data = get_locs_data("sqlFiles/CivVILocalization.sqlite", bbg_version, 'en_US')
     locs_data = get_locs_data("sqlFiles/CivVILocalization.sqlite", bbg_version, lang)
@@ -529,29 +487,23 @@ def get_religion_html_file(bbg_version, lang):
                     with div(cls="leaders-data min-w-full main-pl"):
                         with main(cls="main users chart-page"):
                             with div(cls="container"):
-                                with div(cls="row", id = get_loc(locs_data, 'LOC_BELIEF_CLASS_PANTHEON_NAME', en_US_locs_data)):
+                                with div(cls="row"):
+                                    with div(cls="col-lg-12"):
+                                        with div(cls="chart"):
+                                            with h1(menu_items[0], cls='civ-name', id = get_loc(locs_data, 'LOC_BELIEF_CLASS_PANTHEON_NAME', en_US_locs_data)):
+                                                img(src=f'/images/religion/{menu_icons[0]}.webp', style="vertical-align: middle; height:4em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
                                     for pan in pantheons:
                                         with div(cls="col-lg-6"):
                                             with div(cls="chart"):
                                                 with h2(get_loc(locs_data, pan[1], en_US_locs_data), cls='civ-name'):
                                                     img(src=f'/images/religion/{get_loc(en_US_locs_data, pan[1], en_US_locs_data)}.webp', style="vertical-align: middle; height:3em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
                                                 p(get_loc(locs_data, pan[2], en_US_locs_data), style="text-align:left", cls='civ-ability-desc')
-                                with div(cls="row", id=menu_items[0]):
-                                    with div(cls="col-lg-12"):
-                                        with div(cls="chart"):
-                                            with h1(menu_items[0], cls='civ-name'):
-                                                img(src=f'/images/religion/{menu_icons[0]}.webp', style="vertical-align: middle; height:4em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
-                                    for belief in religion_follower:
-                                        with div(cls="col-lg-6"):
-                                            with div(cls="chart"):
-                                                h2(get_loc(locs_data, belief[1], en_US_locs_data), cls='civ-name')
-                                                p(get_loc(locs_data, belief[2], en_US_locs_data), style="text-align:left", cls='civ-ability-desc')
                                 with div(cls="row", id=menu_items[1]):
                                     with div(cls="col-lg-12"):
                                         with div(cls="chart"):
                                             with h1(menu_items[1], cls='civ-name'):
                                                 img(src=f'/images/religion/{menu_icons[1]}.webp', style="vertical-align: middle; height:4em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
-                                    for belief in religion_founder:
+                                    for belief in religion_follower:
                                         with div(cls="col-lg-6"):
                                             with div(cls="chart"):
                                                 h2(get_loc(locs_data, belief[1], en_US_locs_data), cls='civ-name')
@@ -561,7 +513,7 @@ def get_religion_html_file(bbg_version, lang):
                                         with div(cls="chart"):
                                             with h1(menu_items[2], cls='civ-name'):
                                                 img(src=f'/images/religion/{menu_icons[2]}.webp', style="vertical-align: middle; height:4em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
-                                    for belief in religion_enhancer:
+                                    for belief in religion_founder:
                                         with div(cls="col-lg-6"):
                                             with div(cls="chart"):
                                                 h2(get_loc(locs_data, belief[1], en_US_locs_data), cls='civ-name')
@@ -571,6 +523,16 @@ def get_religion_html_file(bbg_version, lang):
                                         with div(cls="chart"):
                                             with h1(menu_items[3], cls='civ-name'):
                                                 img(src=f'/images/religion/{menu_icons[3]}.webp', style="vertical-align: middle; height:4em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
+                                    for belief in religion_enhancer:
+                                        with div(cls="col-lg-6"):
+                                            with div(cls="chart"):
+                                                h2(get_loc(locs_data, belief[1], en_US_locs_data), cls='civ-name')
+                                                p(get_loc(locs_data, belief[2], en_US_locs_data), style="text-align:left", cls='civ-ability-desc')
+                                with div(cls="row", id=menu_items[4]):
+                                    with div(cls="col-lg-12"):
+                                        with div(cls="chart"):
+                                            with h1(menu_items[4], cls='civ-name'):
+                                                img(src=f'/images/religion/{menu_icons[4]}.webp', style="vertical-align: middle; height:4em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
                                     for belief in religion_worship:
                                         with div(cls="col-lg-6"):
                                             with div(cls="chart"):
@@ -786,7 +748,9 @@ def get_misc_html_file(bbg_version, lang):
                                         with div(cls="chart"):
                                             with div(cls="row"):
                                                 for dedication in dedication_list_per_era[era]:
+                                                    # print(dedication[0])
                                                     with div(cls="col-lg-3"):
+                                                        img(src=f'/images/ICON_{dedication[0]}.webp', style="vertical-align: middle; width:5em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
                                                         p(get_loc(locs_data, dedication[2], en_US_locs_data), style="text-align:left", cls='civ-ability-desc')
                                                         br()
                                                 br()
