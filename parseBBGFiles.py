@@ -190,6 +190,99 @@ def get_world_wonders_list(db_path):
     connection.close()
     return rows
 
+def get_dark_age_card_list(db_path):
+    connection = sqlite3.connect(db_path)
+
+    crsr = connection.cursor()
+    crsr.execute("SELECT * FROM Policies WHERE PrereqCivic is NULL AND RequiresGovernmentUnlock is NULL")
+    rows = crsr.fetchall()
+    connection.close()
+    return rows
+
+def get_eras_name_dict(eras, db_path):
+    connection = sqlite3.connect(db_path)
+
+    crsr = connection.cursor()
+    crsr.execute("SELECT EraType, Name FROM Eras")
+    rows = crsr.fetchall()
+    connection.close()
+
+    eras_translation = {}
+    for row in rows:
+        if row[0] in eras:
+            eras_translation[row[0]] = row[1]
+    
+    return eras_translation
+
+def get_dark_age_card_list_eras(db_path):
+    connection = sqlite3.connect(db_path)
+
+    crsr = connection.cursor()
+    crsr.execute("SELECT * FROM Policies_XP1")
+    rows = crsr.fetchall()
+    connection.close()
+    
+    eras = [
+        'ERA_CLASSICAL',
+        'ERA_MEDIEVAL',
+        'ERA_RENAISSANCE',
+        'ERA_INDUSTRIAL',
+        'ERA_MODERN',
+        'ERA_ATOMIC',
+        'ERA_INFORMATION',
+        'ERA_FUTURE'
+    ]
+    eras_name = get_eras_name_dict(eras, db_path)
+    card_to_era_dict = {}
+    for i in range(len(rows)):
+        start = False
+        end = False
+        for j in range(len(eras)):
+            if rows[i][1] == eras[j]:
+                start = True
+                card_to_era_dict[rows[i][0]] = []
+            if start and not end:
+                card_to_era_dict[rows[i][0]].append(eras_name[eras[j]])
+            if rows[i][2] == eras[j]:
+                end = True
+                break
+    return card_to_era_dict
+
+def get_dedication_list_per_era(db_path):
+    connection = sqlite3.connect(db_path)
+
+    crsr = connection.cursor()
+    crsr.execute("SELECT * FROM CommemorationTypes")
+    rows = crsr.fetchall()
+    connection.close()
+    
+    eras = [
+        'ERA_CLASSICAL',
+        'ERA_MEDIEVAL',
+        'ERA_RENAISSANCE',
+        'ERA_INDUSTRIAL',
+        'ERA_MODERN',
+        'ERA_ATOMIC',
+        'ERA_INFORMATION',
+        'ERA_FUTURE'
+    ]
+    eras_name = get_eras_name_dict(eras, db_path)
+    
+    era_to_dedication_dict = {era: [] for era in eras_name.values()}
+    for i in range(len(rows)):
+        start = rows[i][5]
+        end = rows[i][6]
+        after_start = False
+        for j in range(len(eras)):
+            if start == eras[j]:
+                after_start = True
+            if after_start == True:
+                era_to_dedication_dict[eras_name[eras[j]]].append(rows[i])
+            if end == eras[j]:
+                break
+    
+    return era_to_dedication_dict
+
 def get_start_biases(db_path):
     writer = csv.writer()
     writer.writerow(['CivilizationType', 'BiasType', 'TerrainType', 'FeatureType', 'ResourceType', 'Tier', 'Extra', 'CustomPlacement'])

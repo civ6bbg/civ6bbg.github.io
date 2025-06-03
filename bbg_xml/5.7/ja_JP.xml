@@ -1907,7 +1907,7 @@
 			<Text>ペン・筆・声: [ICON_CivicBoosted]天啓を得るごとに時代スコア+1。傑作スロットを持つ建造物を建設するごとに時代スコア+1。黄金時代の開始時に選択された場合、[ICON_CivicBoosted]天啓による社会制度解禁へのボーナス+10%。すべての都市は専門区域1つごとに[ICON_Culture]文化力+2と[ICON_Gold]ゴールド+1を得る。</Text>
 		</Replace>
     <Replace Tag="LOC_MOMENT_CATEGORY_RELIGIOUS_BONUS_GOLDEN_AGE" Language="ja_JP">
-      <Text>戦争の鼓動:毎ターン[ICON_RESOURCE_HORSES]馬+2、[ICON_RESOURCE_IRON]鉄+2。軍事ユニットに対する[ICON_PRODUCTION]生産力+15%。軍事ユニットの[ICON_Gold]維持費-1。兵営と兵営の建造物から[ICON_PRODUCITON]生産力+1、[ICON_Culture]文化力+1。</Text>
+      <Text>戦争の鼓動:毎ターン[ICON_RESOURCE_HORSES]馬+2、[ICON_RESOURCE_IRON]鉄+2。軍事ユニットに対する[ICON_PRODUCTION]生産力+15%。軍事ユニットの[ICON_Gold]維持費-1。兵営と兵営の建造物から[ICON_PRODUCTION]生産力+1、[ICON_Culture]文化力+1。</Text>
     </Replace>
 
 

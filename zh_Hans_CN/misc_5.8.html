@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-Z2ESCT7CR0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-Z2ESCT7CR0');
+    </script>
+    <title>BBG 5.8 Miscellaneous</title>
+    <meta charset="utf-8">
+    <meta contents="IE=edge" httpequiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="/images/civVI.webp" rel="icon" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap" rel="stylesheet">
+    <link href="/css/style.min.css" rel="stylesheet">
+    <link href="/css/preloader.css" rel="stylesheet">
+    <link href="/css/animate.min.css" rel="stylesheet">
+    <link href="/css/header.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="loader">
+        <div class="loader-outter"></div>
+        <div class="loader-inner"></div>
+        <div class="indicator">
+          <svg height="12px" width="16px">
+            <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+            <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="layer"></div>
+    <div class="page-flex">
+      <div class="main-wrapper">
+        <nav class="main-nav--bg">
+          <div class="main-nav">
+            <div class="header">
+              <div class="header-inner">
+                <div class="inner">
+                  <div class="row">
+                    <div class="flex center sidebar-toggle col-xl-1 col-lg-1 col-md-1 col-1">
+                      <button class="transparent-btn" title="Menu" type="button">
+                        <span class="sr-only">Toggle menu</span>
+                        <span aria-hidden="true" class="icon menu-toggle"></span>
+                      </button>
+                    </div>
+                    <div class="flex center col-xl-1 col-lg-1 col-md-1 col-2">
+                      <a href="/index.html" style="align-content: center;">
+                        <img alt="#" src="/images/BBGLogo.webp" style="width:3em; border-radius:10%">
+                      </a>
+                      <div class="mobile-nav"></div>
+                    </div>
+                    <div class="flex col-xl-8 col-lg-8 col-md-8 col-8">
+                      <div class="main-menu">
+                        <nav class="navigation">
+                          <ul class="nav menu">
+                            <li class="">
+                              <a href="/zh_Hans_CN/leaders_5.8.html" onclick="civClicked(null)">Leaders</a>
+                            </li>
+                            <li class="">
+                              <a href="/zh_Hans_CN/city_states_5.8.html" onclick="civClicked(null)">City States</a>
+                            </li>
+                            <li class="">
+                              <a href="/zh_Hans_CN/religion_5.8.html" onclick="civClicked(null)">Religion</a>
+                            </li>
+                            <li class="">
+                              <a href="/zh_Hans_CN/governor_5.8.html" onclick="civClicked(null)">Governors</a>
+                            </li>
+                            <li class="">
+                              <a href="/zh_Hans_CN/natural_wonder_5.8.html" onclick="civClicked(null)">Natural Wonders</a>
+                            </li>
+                            <li class="">
+                              <a href="/zh_Hans_CN/world_wonder_5.8.html" onclick="civClicked(null)">World Wonders</a>
+                            </li>
+                            <li class="active">
+                              <a href="/zh_Hans_CN/misc_5.8.html" onclick="civClicked(null)">Misc</a>
+                            </li>
+                            <li>
+                              <a>BBG Version<i class="icofont-rounded-down"></i></a>
+                              <ul class="dropdown">
+                                <li>
+                                  <a href="/zh_Hans_CN/misc_base_game.html">Base Game</a>
+                                </li>
+                                <li>
+                                  <a href="/zh_Hans_CN/misc_6.4.html">BBG v6.4</a>
+                                </li>
+                                <li>
+                                  <a href="/zh_Hans_CN/misc_6.3.html">BBG v6.3</a>
+                                </li>
+                                <li>
+                                  <a href="/zh_Hans_CN/misc_6.2.html">BBG v6.2</a>
+                                </li>
+                                <li>
+                                  <a href="/zh_Hans_CN/misc_6.1.html">BBG v6.1</a>
+                                </li>
+                                <li>
+                                  <a href="/zh_Hans_CN/misc_6.0.html">BBG v6.0</a>
+                                </li>
+                                <li>
+                                  <a href="/zh_Hans_CN/misc_5.8.html">BBG v5.8</a>
+                                </li>
+                                <li>
+                                  <a href="/zh_Hans_CN/misc_5.7.html">BBG v5.7</a>
+                                </li>
+                                <li>
+                                  <a href="/zh_Hans_CN/misc_5.6.html">BBG v5.6</a>
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="">
+                              <a href="https://ko-fi.com/calcalciffer" target="_blank">Donate!</a>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+                    <div class="flex center col-xl-2 col-lg-2 col-md-2 col-1">
+                      <div class="flex row justify-content-around">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-6">
+                          <div class="main-menu">
+                            <nav class="navigation">
+                              <ul class="nav menu">
+                                <li><i class="fa fa-language lang-icon"></i>
+                                  <ul class="dropdown" style="width:80px">
+                                    <li>
+                                      <a href="/en_US/misc_5.8.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/us.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/fr_FR/misc_5.8.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/fr.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/ru_RU/misc_5.8.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/ru.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/de_DE/misc_5.8.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/de.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/zh_Hans_CN/misc_5.8.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/cn.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/ko_KR/misc_5.8.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/kr.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </nav>
+                          </div>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-6">
+                          <div class="theme-switcher-wrapper">
+                            <button class="theme-switcher gray-circle-btn" title="Switch theme" type="button">
+                              <span class="sr-only">Switch theme</span><i aria-hidden="true" class="sun-icon" data-feather="sun"></i><i aria-hidden="true" class="moon-icon" data-feather="moon"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="">
+          <div class="fixed left-0 right-auto h-screen w-[253px] bg-white border-r border-neutral-300 overflow-scroll" style="z-index: 5;">
+            <aside class="sidebar">
+              <div class="sidebar-start">
+                <div class="sidebar-body">
+                  <ul class="sidebar-body-menu">
+                    <li>
+                      <a href="#古典时期" onclick="civClicked(&quot;古典时期&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/Classical Era.webp">
+                        </span>
+                        <p>古典时期</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#中世纪" onclick="civClicked(&quot;中世纪&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/Medieval Era.webp">
+                        </span>
+                        <p>中世纪</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#文艺复兴时期" onclick="civClicked(&quot;文艺复兴时期&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/Renaissance Era.webp">
+                        </span>
+                        <p>文艺复兴时期</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#工业时代" onclick="civClicked(&quot;工业时代&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/Industrial Era.webp">
+                        </span>
+                        <p>工业时代</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#现代" onclick="civClicked(&quot;现代&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/Modern Era.webp">
+                        </span>
+                        <p>现代</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#原子能时代" onclick="civClicked(&quot;原子能时代&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/Atomic Era.webp">
+                        </span>
+                        <p>原子能时代</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#信息时代" onclick="civClicked(&quot;信息时代&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/Information Era.webp">
+                        </span>
+                        <p>信息时代</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#未来时代" onclick="civClicked(&quot;未来时代&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/Future Era.webp">
+                        </span>
+                        <p>未来时代</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Dark Age Policies" onclick="civClicked(&quot;Dark Age Policies&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/Dark Age Policies.webp">
+                        </span>
+                        <p>Dark Age Policies</p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </aside>
+          </div>
+          <div class="leaders-data min-w-full main-pl">
+            <main class="main users chart-page">
+              <div class="container">
+                <div class="row" id="古典时期">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">古典时期</h2><br>
+                      <div class="row">
+                        <div class="col-lg-3">
+                          <p class="civ-ability-desc" style="text-align:left">“自由探索”黄金时代：<br><img src="/images/ICON_TECHBOOSTED.webp" style="height:1em"/>尤里卡额外提供5%科技开销。商业中心和港口区域的 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币相邻加成也提供 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科技值。</p><br>
+                        </div>
+                        <div class="col-lg-3">
+                          <p class="civ-ability-desc" style="text-align:left">“百花齐放”黄金时代：<br><img src="/images/ICON_CIVICBOOSTED.webp" style="height:1em"/>鼓舞提供额外10%市政开销。城市每拥有1处特色区域，则+2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化值、+1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币。</p><br>
+                        </div>
+                        <div class="col-lg-3">
+                          <p class="civ-ability-desc" style="text-align:left">“雄伟壮丽”黄金时代：<br>所有建造者+2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移动力。可用 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰值购买平民单位。用 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰值和 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币购买建造者和开拓者的费用降低10%。</p><br>
+                        </div>
+                        <div class="col-lg-3">
+                          <p class="civ-ability-desc" style="text-align:left">“鼓噪而进”黄金时代：<br>每回合额外获得2点 <img src="/images/ICON_RESOURCE_HORSES.webp" style="height:1em"/> 马与 <img src="/images/ICON_RESOURCE_IRON.webp" style="height:1em"/> 铁资源。生产军事单位时+15% <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。每回合、每单位的单位维护费用减少1点 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币。军营建筑+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力、+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化值。</p><br>
+                        </div><br>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="中世纪">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">中世纪</h2><br>
+                      <div class="row">
+                        <div class="col-lg-3">
+                          <p class="civ-ability-desc" style="text-align:left">“自由探索”黄金时代：<br><img src="/images/ICON_TECHBOOSTED.webp" style="height:1em"/>尤里卡额外提供5%科技开销。商业中心和港口区域的 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币相邻加成也提供 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科技值。</p><br>
+                        </div>
+                        <div class="col-lg-3">
+                          <p class="civ-ability-desc" style="text-align:left">“百花齐放”黄金时代：<br><img src="/images/ICON_CIVICBOOSTED.webp" style="height:1em"/>鼓舞提供额外10%市政开销。城市每拥有1处特色区域，则+2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化值、+1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币。</p><br>
+                        </div>
+                        <div class="col-lg-3">
+                          <p class="civ-ability-desc" style="text-align:left">“雄伟壮丽”黄金时代：<br>所有建造者+2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移动力。可用 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰值购买平民单位。用 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰值和 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币购买建造者和开拓者的费用降低10%。</p><br>
+                        </div>
+                        <div class="col-lg-3">
+                          <p class="civ-ability-desc" style="text-align:left">“鼓噪而进”黄金时代：<br>每回合额外获得2点 <img src="/images/ICON_RESOURCE_HORSES.webp" style="height:1em"/> 马与 <img src="/images/ICON_RESOURCE_IRON.webp" style="height:1em"/> 铁资源。生产军事单位时+15% <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。每回合、每单位的单位维护费用减少1点 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币。军营建筑+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力、+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化值。</p><br>
+                        </div><br>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="文艺复兴时期">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">文艺复兴时期</h2><br>
+                      <div class="row">
+                        <div class="col-lg-3">
+                          <p class="civ-ability-desc" style="text-align:left">“雄伟壮丽”黄金时代：<br>所有建造者+2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移动力。可用 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰值购买平民单位。用 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰值和 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币购买建造者和开拓者的费用降低10%。</p><br>
+                        </div>
+                        <div class="col-lg-3">
+                          <p class="civ-ability-desc" style="text-align:left">“鼓噪而进”黄金时代：<br>每回合额外获得2点 <img src="/images/ICON_RESOURCE_HORSES.webp" style="height:1em"/> 马与 <img src="/images/ICON_RESOURCE_IRON.webp" style="height:1em"/> 铁资源。生产军事单位时+15% <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。每回合、每单位的单位维护费用减少1点 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币。军营建筑+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力、+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化值。</p><br>
+                        </div>
+                        <div class="col-lg-3">
+                          <p class="civ-ability-desc" style="text-align:left">“此处有龙”黄金时代：<br>新城市+3初始 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 人口。海军和水运单位+2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移动力。和原始 <img src="/images/ICON_CAPITAL.webp" style="height:1em"/> 首都不在同一个大陆的城市每回合+2忠诚度。</p><br>
+                        </div>
+                        <div class="col-lg-3">
+                          <p class="civ-ability-desc" style="text-align:left">“货币改革”黄金时代：<br>商人无法被掠夺。外国城市中每拥有1个特色区域，国际 <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> 贸易路线提供的 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币+3。</p><br>
+                        </div><br>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="工业时代">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">工业时代</h2><br>
+                      <div class="row">
+                        <div class="col-lg-3">
+                          <p class="civ-ability-desc" style="text-align:left">“此处有龙”黄金时代：<br>新城市+3初始 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 人口。海军和水运单位+2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移动力。和原始 <img src="/images/ICON_CAPITAL.webp" style="height:1em"/> 首都不在同一个大陆的城市每回合+2忠诚度。</p><br>
+                        </div>
+                        <div class="col-lg-3">
+                          <p class="civ-ability-desc" style="text-align:left">“货币改革”黄金时代：<br>商人无法被掠夺。外国城市中每拥有1个特色区域，国际 <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> 贸易路线提供的 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币+3。</p><br>
+                        </div>
+                        <div class="col-lg-3">
+                          <p class="civ-ability-desc" style="text-align:left">“滚滚蒸汽”黄金时代：<br>建造后工业时代的奇观时+10% <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。学院区域的 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科技值相邻加成也可提供 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。</p><br>
+                        </div>
+                        <div class="col-lg-3">
+                          <p class="civ-ability-desc" style="text-align:left">“全民皆兵”黄金时代：<br>解锁特殊战争借口，谴责之后可立刻宣战，且好战程度-75%。生产军事单位+15% <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力，军事单位对阵区域防御时+10 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 战斗力。</p><br>
+                        </div><br>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="现代">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">现代</h2><br>
+                      <div class="row">
+                        <div class="col-lg-3">
+                          <p class="civ-ability-desc" style="text-align:left">“此处有龙”黄金时代：<br>新城市+3初始 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 人口。海军和水运单位+2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移动力。和原始 <img src="/images/ICON_CAPITAL.webp" style="height:1em"/> 首都不在同一个大陆的城市每回合+2忠诚度。</p><br>
+                        </div>
+                        <div class="col-lg-3">
+                          <p class="civ-ability-desc" style="text-align:left">“货币改革”黄金时代：<br>商人无法被掠夺。外国城市中每拥有1个特色区域，国际 <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> 贸易路线提供的 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币+3。</p><br>
+                        </div>
+                        <div class="col-lg-3">
+                          <p class="civ-ability-desc" style="text-align:left">“滚滚蒸汽”黄金时代：<br>建造后工业时代的奇观时+10% <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。学院区域的 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科技值相邻加成也可提供 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。</p><br>
+                        </div>
+                        <div class="col-lg-3">
+                          <p class="civ-ability-desc" style="text-align:left">“全民皆兵”黄金时代：<br>解锁特殊战争借口，谴责之后可立刻宣战，且好战程度-75%。生产军事单位+15% <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力，军事单位对阵区域防御时+10 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 战斗力。</p><br>
+                        </div><br>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="原子能时代">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">原子能时代</h2><br>
+                      <div class="row">
+                        <div class="col-lg-3">
+                          <p class="civ-ability-desc" style="text-align:left">“滚滚蒸汽”黄金时代：<br>建造后工业时代的奇观时+10% <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。学院区域的 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科技值相邻加成也可提供 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。</p><br>
+                        </div>
+                        <div class="col-lg-3">
+                          <p class="civ-ability-desc" style="text-align:left">“全民皆兵”黄金时代：<br>解锁特殊战争借口，谴责之后可立刻宣战，且好战程度-75%。生产军事单位+15% <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力，军事单位对阵区域防御时+10 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 战斗力。</p><br>
+                        </div>
+                        <div class="col-lg-3">
+                          <p class="civ-ability-desc" style="text-align:left">“愿你在此”黄金时代：<br>在拥有 <img src="/images/ICON_GOVERNOR.webp" style="height:1em"/> 总督的城市中，世界奇观产出的 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 旅游业绩+50%。国家公园产出的 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 旅游业绩+100%。</p><br>
+                        </div>
+                        <div class="col-lg-3">
+                          <p class="civ-ability-desc" style="text-align:left">“兵不厌诈”黄金时代：<br>间谍部署到另一文明的城市无需时间。完成攻击性任务的时间缩短25%。</p><br>
+                        </div><br>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="信息时代">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">信息时代</h2><br>
+                      <div class="row">
+                        <div class="col-lg-3">
+                          <p class="civ-ability-desc" style="text-align:left">“愿你在此”黄金时代：<br>在拥有 <img src="/images/ICON_GOVERNOR.webp" style="height:1em"/> 总督的城市中，世界奇观产出的 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 旅游业绩+50%。国家公园产出的 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 旅游业绩+100%。</p><br>
+                        </div>
+                        <div class="col-lg-3">
+                          <p class="civ-ability-desc" style="text-align:left">“漫天繁星”黄金时代：<br>如处于信息时代，将解锁卫星、核聚变和纳米技术的 <img src="/images/ICON_TECHBOOSTED.webp" style="height:1em"/> 尤里卡。如在未来时代中选择，则解锁智能材料、预报系统和宇宙探索任务的 <img src="/images/ICON_TECHBOOSTED.webp" style="height:1em"/> 尤里卡。所有空中单位获得的经验值+100%。每回合收集的铝矿资源+2。可在信息时代和未来时代中选择。</p><br>
+                        </div>
+                        <div class="col-lg-3">
+                          <p class="civ-ability-desc" style="text-align:left">“兵不厌诈”黄金时代：<br>间谍部署到另一文明的城市无需时间。完成攻击性任务的时间缩短25%。</p><br>
+                        </div>
+                        <div class="col-lg-3">
+                          <p class="civ-ability-desc" style="text-align:left">“机器人大战”黄金时代：<br>首都中将出现1个末日机甲。每回合获得3点 <img src="/images/ICON_RESOURCE_URANIUM.webp" style="height:1em"/> 铀。每回合收集的 <img src="/images/ICON_RESOURCE_URANIUM.webp" style="height:1em"/> 铀矿资源+1。</p><br>
+                        </div><br>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="未来时代">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <h2 class="civ-name">未来时代</h2><br>
+                      <div class="row">
+                        <div class="col-lg-3">
+                          <p class="civ-ability-desc" style="text-align:left">“愿你在此”黄金时代：<br>在拥有 <img src="/images/ICON_GOVERNOR.webp" style="height:1em"/> 总督的城市中，世界奇观产出的 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 旅游业绩+50%。国家公园产出的 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 旅游业绩+100%。</p><br>
+                        </div>
+                        <div class="col-lg-3">
+                          <p class="civ-ability-desc" style="text-align:left">“漫天繁星”黄金时代：<br>如处于信息时代，将解锁卫星、核聚变和纳米技术的 <img src="/images/ICON_TECHBOOSTED.webp" style="height:1em"/> 尤里卡。如在未来时代中选择，则解锁智能材料、预报系统和宇宙探索任务的 <img src="/images/ICON_TECHBOOSTED.webp" style="height:1em"/> 尤里卡。所有空中单位获得的经验值+100%。每回合收集的铝矿资源+2。可在信息时代和未来时代中选择。</p><br>
+                        </div>
+                        <div class="col-lg-3">
+                          <p class="civ-ability-desc" style="text-align:left">“兵不厌诈”黄金时代：<br>间谍部署到另一文明的城市无需时间。完成攻击性任务的时间缩短25%。</p><br>
+                        </div>
+                        <div class="col-lg-3">
+                          <p class="civ-ability-desc" style="text-align:left">“机器人大战”黄金时代：<br>首都中将出现1个末日机甲。每回合获得3点 <img src="/images/ICON_RESOURCE_URANIUM.webp" style="height:1em"/> 铀。每回合收集的 <img src="/images/ICON_RESOURCE_URANIUM.webp" style="height:1em"/> 铀矿资源+1。</p><br>
+                        </div><br>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="Dark Age Policies">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="chart">
+                        <h2 class="civ-name">修行制度</h2><br>
+                        <p class="civ-ability-desc" style="text-align:left">拥有圣地的城市 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科技值+75%。<br>但所有城市的 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化值-25%。</p><br>
+                        <div class="row">
+                          <div class="col-lg-6">
+                            <p class="civ-ability-desc" style="text-align:center">古典时期</p>
+                          </div>
+                          <div class="col-lg-6">
+                            <p class="civ-ability-desc" style="text-align:center">中世纪</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="chart">
+                        <h2 class="civ-name">迟暮勇武</h2><br>
+                        <p class="civ-ability-desc" style="text-align:left">所有近战攻击单位+5 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 战斗力。<br>但无法在本国领土外进行治疗。</p><br>
+                        <div class="row">
+                          <div class="col-lg-4">
+                            <p class="civ-ability-desc" style="text-align:center">古典时期</p>
+                          </div>
+                          <div class="col-lg-4">
+                            <p class="civ-ability-desc" style="text-align:center">中世纪</p>
+                          </div>
+                          <div class="col-lg-4">
+                            <p class="civ-ability-desc" style="text-align:center">文艺复兴时期</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="chart">
+                        <h2 class="civ-name">宗教审讯</h2><br>
+                        <p class="civ-ability-desc" style="text-align:left">消耗1次使徒使用次数开始宗教审讯。友方领土中的所有宗教单位+15 <img src="/images/ICON_RELIGION.webp" style="height:1em"/> 宗教战斗力。<br>但所有城市的 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科技值-25%。</p><br>
+                        <div class="row">
+                          <div class="col-lg-4">
+                            <p class="civ-ability-desc" style="text-align:center">古典时期</p>
+                          </div>
+                          <div class="col-lg-4">
+                            <p class="civ-ability-desc" style="text-align:center">中世纪</p>
+                          </div>
+                          <div class="col-lg-4">
+                            <p class="civ-ability-desc" style="text-align:center">文艺复兴时期</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="chart">
+                        <h2 class="civ-name">孤立主义</h2><br>
+                        <p class="civ-ability-desc" style="text-align:left">国内贸易路线提供+2 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食物、+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。<br>但无法生产或购买开拓者，也无法建立新城市。</p><br>
+                        <div class="row">
+                          <div class="col-lg-3">
+                            <p class="civ-ability-desc" style="text-align:center">古典时期</p>
+                          </div>
+                          <div class="col-lg-3">
+                            <p class="civ-ability-desc" style="text-align:center">中世纪</p>
+                          </div>
+                          <div class="col-lg-3">
+                            <p class="civ-ability-desc" style="text-align:center">文艺复兴时期</p>
+                          </div>
+                          <div class="col-lg-3">
+                            <p class="civ-ability-desc" style="text-align:center">工业时代</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="chart">
+                        <h2 class="civ-name">私掠许可证</h2><br>
+                        <p class="civ-ability-desc" style="text-align:left">生产海军袭击者：+100% <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力、+2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移动力。掠夺贸易路线的收益加倍。<br>但 <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> 贸易路线产量-50%。</p><br>
+                        <div class="row">
+                          <div class="col-lg-4">
+                            <p class="civ-ability-desc" style="text-align:center">文艺复兴时期</p>
+                          </div>
+                          <div class="col-lg-4">
+                            <p class="civ-ability-desc" style="text-align:center">工业时代</p>
+                          </div>
+                          <div class="col-lg-4">
+                            <p class="civ-ability-desc" style="text-align:center">现代</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="chart">
+                        <h2 class="civ-name">敛财大亨</h2><br>
+                        <p class="civ-ability-desc" style="text-align:left">拥有证券交易所的城市+50% <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币。拥有工厂的城市+25% <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。<br>但所有城市-2 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> 宜居度。</p><br>
+                        <div class="row">
+                          <div class="col-lg-4">
+                            <p class="civ-ability-desc" style="text-align:center">工业时代</p>
+                          </div>
+                          <div class="col-lg-4">
+                            <p class="civ-ability-desc" style="text-align:center">现代</p>
+                          </div>
+                          <div class="col-lg-4">
+                            <p class="civ-ability-desc" style="text-align:center">原子能时代</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="chart">
+                        <h2 class="civ-name">精兵政策</h2><br>
+                        <p class="civ-ability-desc" style="text-align:left">所有单位的战斗经验值+100%。<br>但每个战斗和间谍单位的维护费用+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币。</p><br>
+                        <div class="row">
+                          <div class="col-lg-2">
+                            <p class="civ-ability-desc" style="text-align:center">工业时代</p>
+                          </div>
+                          <div class="col-lg-2">
+                            <p class="civ-ability-desc" style="text-align:center">现代</p>
+                          </div>
+                          <div class="col-lg-2">
+                            <p class="civ-ability-desc" style="text-align:center">原子能时代</p>
+                          </div>
+                          <div class="col-lg-2">
+                            <p class="civ-ability-desc" style="text-align:center">信息时代</p>
+                          </div>
+                          <div class="col-lg-2">
+                            <p class="civ-ability-desc" style="text-align:center">未来时代</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="chart">
+                        <h2 class="civ-name">集体主义</h2><br>
+                        <p class="civ-ability-desc" style="text-align:left">农场+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食物。所有城市+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住房。工业区相邻加成+100%。<br>但 <img src="/images/ICON_GREATPERSON.webp" style="height:1em"/> 伟人点数的获取速度减缓50%。</p><br>
+                        <div class="row">
+                          <div class="col-lg-6">
+                            <p class="civ-ability-desc" style="text-align:center">现代</p>
+                          </div>
+                          <div class="col-lg-6">
+                            <p class="civ-ability-desc" style="text-align:center">原子能时代</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="chart">
+                        <h2 class="civ-name">无赖国家</h2><br>
+                        <p class="civ-ability-desc" style="text-align:left">核计划项目和核装置的 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力+50%。<br>但每回合无法获得 <img src="/images/ICON_INFLUENCEPERTURN.webp" style="height:1em"/> 影响力。</p><br>
+                        <div class="row">
+                          <div class="col-lg-4">
+                            <p class="civ-ability-desc" style="text-align:center">原子能时代</p>
+                          </div>
+                          <div class="col-lg-4">
+                            <p class="civ-ability-desc" style="text-align:center">信息时代</p>
+                          </div>
+                          <div class="col-lg-4">
+                            <p class="civ-ability-desc" style="text-align:center">未来时代</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="chart">
+                        <h2 class="civ-name">权力归花儿</h2><br>
+                        <p class="civ-ability-desc" style="text-align:left">在当前未交战的文明中举办音乐会获得的 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 旅游业绩+100%。<br>减益：生产摇滚乐队之外的所有单位时生产力-100%、购买时则费用+100%。</p><br>
+                        <div class="row">
+                          <div class="col-lg-4">
+                            <p class="civ-ability-desc" style="text-align:center">原子能时代</p>
+                          </div>
+                          <div class="col-lg-4">
+                            <p class="civ-ability-desc" style="text-align:center">信息时代</p>
+                          </div>
+                          <div class="col-lg-4">
+                            <p class="civ-ability-desc" style="text-align:center">未来时代</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="chart">
+                        <h2 class="civ-name">网络战</h2><br>
+                        <p class="civ-ability-desc" style="text-align:left">信息和未来时代的单位+10 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 战斗力。<br>减益：对您的 <img src="/images/ICON_STAT_GRIEVANCE.webp" style="height:1em"/> 不满不会下降。</p><br>
+                        <div class="row">
+                          <div class="col-lg-6">
+                            <p class="civ-ability-desc" style="text-align:center">信息时代</p>
+                          </div>
+                          <div class="col-lg-6">
+                            <p class="civ-ability-desc" style="text-align:center">未来时代</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="chart">
+                        <h2 class="civ-name">自动化劳动力</h2><br>
+                        <p class="civ-ability-desc" style="text-align:left">进行城市项目时，您城市的 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力+20%。<br>减益：城市每回合-1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> 宜居度、-5忠诚度。</p><br>
+                        <div class="row">
+                          <div class="col-lg-6">
+                            <p class="civ-ability-desc" style="text-align:center">信息时代</p>
+                          </div>
+                          <div class="col-lg-6">
+                            <p class="civ-ability-desc" style="text-align:center">未来时代</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <div class="chart">
+                        <h2 class="civ-name">抹黑行动</h2><br>
+                        <p class="civ-ability-desc" style="text-align:left">每拥有1个广播中心，每回合获得的 <img src="/images/ICON_FAVOR.webp" style="height:1em"/> 外交支持便+3。<br>减益：所有城市中的 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科技值和 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化值-10%。</p><br>
+                        <div class="row">
+                          <div class="col-lg-6">
+                            <p class="civ-ability-desc" style="text-align:center">信息时代</p>
+                          </div>
+                          <div class="col-lg-6">
+                            <p class="civ-ability-desc" style="text-align:center">未来时代</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </main>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/plugins/feather.min.js"></script>
+    <script src="/plugins/chart.min.js"></script>
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/bd91c323e3.js"></script>
+    <a class="scroll-up displayNone" href="#top" id="scrollUp" onclick="civClicked(null)" style="position: fixed; z-index: 2147483647;">
+      <span><i class="fa fa-angle-up"></i></span>
+    </a>
+  </body>
+</html>

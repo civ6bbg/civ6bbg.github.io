@@ -37,7 +37,7 @@
 } */
 .header .nav li a {
 	color: #2C2D3F;
-	font-size: 1em;
+	font-size: 0.7em;
 	font-weight: 500;
 	/* text-transform: capitalize; */
 	padding: 10px 10px;
@@ -307,7 +307,6 @@
 
 @media (max-width: 999.9px) {
     .header .nav li a {
-        font-size: 0.7em;
         padding: 4px 4px;
     }   
 }

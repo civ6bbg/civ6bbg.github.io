@@ -74,6 +74,15 @@ def generate_world_wonder_html_file(bbg_ver, l):
         with open(f'{l}/world_wonder_{bbg_ver}.html', 'w') as f:
             f.write(docStr)
             
+def generate_misc_html_file(bbg_ver, l):
+    docStr = get_misc_html_file(bbg_ver, l)
+    if bbg_ver == None:
+        with open(f'{l}/misc_base_game.html', 'w') as f:
+            f.write(docStr)
+    else:
+        with open(f'{l}/misc_{bbg_ver}.html', 'w') as f:
+            f.write(docStr)
+            
 for l in langs:
     # Create directory if it does not exist
     os.makedirs(l, exist_ok=True)
@@ -82,11 +91,12 @@ for bbg_ver in bbg_versions:
     for l in langs:
         generate_leader_html_file(bbg_ver, l)
         generate_city_state_html_file(bbg_ver, l)
-        generate_pantheon_html_file(bbg_ver, l)
+        # generate_pantheon_html_file(bbg_ver, l)
         generate_religion_html_file(bbg_ver, l)
         generate_governor_html_file(bbg_ver, l)
         generate_natural_wonder_html_file(bbg_ver, l)
         generate_world_wonder_html_file(bbg_ver, l)
+        generate_misc_html_file(bbg_ver, l)
 # Uncomment the following lines to generate HTML files for the beta version
 # print('Generating HTML files for beta version')
 # generate_leader_html_file('Beta', 'en_US')
