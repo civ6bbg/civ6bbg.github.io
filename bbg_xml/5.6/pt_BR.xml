@@ -1717,7 +1717,7 @@
 			<Text>0 [ICON_Strength] força de combate ao lutar em colinas.</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_PANTANAL_DESCRIPTION" Language="pt_BR">
-			<Text>Maravilha da Natureza de quatro painéis . Aparece como um pântano e concede +2 [ICON_FOOD] Alimento, +1 [ICON_PRODUCTION) de Produção, +2 [ICON_CULTURE] Cultura, and +2 [ICON_SCIENCE] Ciência.</Text>
+			<Text>Maravilha da Natureza de quatro painéis . Aparece como um pântano e concede +2 [ICON_FOOD] Alimento, +1 [ICON_PRODUCTION] de Produção, +2 [ICON_CULTURE] Cultura, and +2 [ICON_SCIENCE] Ciência.</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_EYE_OF_THE_SAHARA_DESCRIPTION" Language="pt_BR">
 			<Text>Maravilha da Natureza de três painéis. Concende +2 [ICON_FOOD] Alimento, +2 [ICON_PRODUCTION] de Produção, and +2 [ICON_SCIENCE] Ciência.</Text>
