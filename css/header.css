@@ -284,7 +284,7 @@
 }
 
 .darkmode .header .nav li a {
-    color: #7679a8;
+    color: #b9b9b9;
 }
 
 .darkmode .header .nav li.active a{
@@ -299,7 +299,7 @@
     border-left:3px solid #ff8c33;
 }
 .darkmode .header .nav li .dropdown li a {
-	color: #7679a8;
+	color: #b9b9b9;
 }
 .darkmode .header .nav li .dropdown li:hover a{
 	color:#ff8c33;
