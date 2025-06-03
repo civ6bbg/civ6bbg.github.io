@@ -753,8 +753,20 @@ def get_misc_html_file(bbg_version, lang):
 
     dark_age_policy = get_dark_age_card_list(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite")
     dark_age_policy_era = get_dark_age_card_list_eras(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite")
-    menu_items.append("Dark Age Policies")
-    menu_icons.append("Dark Age Policies")
+    dark_age_policy_per_era = get_dark_age_card_list_per_era(dark_age_policy, dark_age_policy_era)
+    # menu_items.append("Dark Age Policies")
+    # menu_icons.append("Dark Age Policies")
+    
+    eras_reverse_map = {
+        'LOC_ERA_CLASSICAL_NAME':'ERA_CLASSICAL',
+        'LOC_ERA_MEDIEVAL_NAME':'ERA_MEDIEVAL',
+        'LOC_ERA_RENAISSANCE_NAME':'ERA_RENAISSANCE',
+        'LOC_ERA_INDUSTRIAL_NAME':'ERA_INDUSTRIAL',
+        'LOC_ERA_MODERN_NAME':'ERA_MODERN',
+        'LOC_ERA_ATOMIC_NAME':'ERA_ATOMIC',
+        'LOC_ERA_INFORMATION_NAME':'ERA_INFORMATION',
+        'LOC_ERA_FUTURE_NAME':'ERA_FUTURE'
+    }
     
     with doc:
         add_preloader()
@@ -773,38 +785,24 @@ def get_misc_html_file(bbg_version, lang):
                                         with div(cls="col-lg-12"):
                                             with div(cls="chart"):
                                                 h2(get_loc(locs_data, era, en_US_locs_data), cls='civ-name')
+                                    with div(cls="row"):
+                                        with div(cls="chart"):
+                                            with div(cls="row"):
+                                                for dedication in dedication_list_per_era[era]:
+                                                    with div(cls="col-lg-3"):
+                                                        # h3(get_loc(locs_data, dedication[1], en_US_locs_data), cls='civ-name')
+                                                        p(get_loc(locs_data, dedication[2], en_US_locs_data), style="text-align:left", cls='civ-ability-desc')
+                                                        br()
                                                 br()
-                                                with div(cls="row"):
-                                                    for dedication in dedication_list_per_era[era]:
-                                                        with div(cls="col-lg-3"):
-                                                            # h3(get_loc(locs_data, dedication[1], en_US_locs_data), cls='civ-name')
-                                                            p(get_loc(locs_data, dedication[2], en_US_locs_data), style="text-align:left", cls='civ-ability-desc')
-                                                            br()
-                                                    br()
-                                with div(id="Dark Age Policies"):
-                                    for policy in dark_age_policy:
-                                        with div(cls="row"):
-                                            with div(cls="col-lg-12"):
+                                    with div(cls="row"):
+                                        for policy in dark_age_policy_per_era[eras_reverse_map[era]]:
+                                            with div(cls="col-lg-3"):
                                                 with div(cls="chart"):
                                                     h2(get_loc(locs_data, policy[4], en_US_locs_data), cls='civ-name')
                                                         # img(src=f'/images/natural_wonders/{get_loc(en_US_locs_data, wonder[1], en_US_locs_data)}.webp', style="vertical-align: middle; width:5em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
                                                     br()
                                                     p(get_loc(locs_data, policy[1], en_US_locs_data), style="text-align:left", cls='civ-ability-desc')
                                                     br()
-                                                    with div(cls="row"):
-                                                        for era in dark_age_policy_era[policy[0]]:
-                                                            if len(dark_age_policy_era[policy[0]]) == 2:
-                                                                with div(cls="col-lg-6"):
-                                                                    p(get_loc(locs_data, era, en_US_locs_data), style="text-align:center", cls='civ-ability-desc')
-                                                            elif len(dark_age_policy_era[policy[0]]) == 3:
-                                                                with div(cls="col-lg-4"):
-                                                                    p(get_loc(locs_data, era, en_US_locs_data), style="text-align:center", cls='civ-ability-desc')
-                                                            elif len(dark_age_policy_era[policy[0]]) == 4:
-                                                                with div(cls="col-lg-3"):
-                                                                    p(get_loc(locs_data, era, en_US_locs_data), style="text-align:center", cls='civ-ability-desc')
-                                                            elif len(dark_age_policy_era[policy[0]]) == 5:
-                                                                with div(cls="col-lg-2"):
-                                                                    p(get_loc(locs_data, era, en_US_locs_data), style="text-align:center", cls='civ-ability-desc')
         add_final_scripts()
         add_scroll_up()
 

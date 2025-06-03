@@ -232,7 +232,6 @@ def get_dark_age_card_list_eras(db_path):
         'ERA_INFORMATION',
         'ERA_FUTURE'
     ]
-    eras_name = get_eras_name_dict(eras, db_path)
     card_to_era_dict = {}
     for i in range(len(rows)):
         start = False
@@ -242,11 +241,28 @@ def get_dark_age_card_list_eras(db_path):
                 start = True
                 card_to_era_dict[rows[i][0]] = []
             if start and not end:
-                card_to_era_dict[rows[i][0]].append(eras_name[eras[j]])
+                card_to_era_dict[rows[i][0]].append(eras[j])
             if rows[i][2] == eras[j]:
                 end = True
                 break
     return card_to_era_dict
+
+def get_dark_age_card_list_per_era(dark_age_policy, dark_age_policy_era):
+    eras = [
+        'ERA_CLASSICAL',
+        'ERA_MEDIEVAL',
+        'ERA_RENAISSANCE',
+        'ERA_INDUSTRIAL',
+        'ERA_MODERN',
+        'ERA_ATOMIC',
+        'ERA_INFORMATION',
+        'ERA_FUTURE'
+    ]
+    era_to_card_dict = {era: [] for era in eras}
+    for card in dark_age_policy:
+        for era in dark_age_policy_era[card[0]]:
+            era_to_card_dict[era].append(card)
+    return era_to_card_dict
 
 def get_dedication_list_per_era(db_path):
     connection = sqlite3.connect(db_path)
