@@ -91,7 +91,6 @@ for bbg_ver in bbg_versions:
     for l in langs:
         generate_leader_html_file(bbg_ver, l)
         generate_city_state_html_file(bbg_ver, l)
-        # generate_pantheon_html_file(bbg_ver, l)
         generate_religion_html_file(bbg_ver, l)
         generate_governor_html_file(bbg_ver, l)
         generate_natural_wonder_html_file(bbg_ver, l)

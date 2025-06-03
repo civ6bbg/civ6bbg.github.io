@@ -30,7 +30,6 @@ def get_locs_data(db_path, bbg_version, lang):
     b_unique = Bs_data.find_all('Replace')
     for x in b_unique:
         if hasattr(x, 'Text') and hasattr(x.Text, 'contents'):
-            # print(x)
             if len(x.Text.contents) > 0:
                 locs[x['Tag']] = x.Text.contents[0]
         elif hasattr(x, 'text') and hasattr(x.text, 'contents'):
@@ -40,7 +39,7 @@ def get_locs_data(db_path, bbg_version, lang):
             print(f'unsual element in xml file for BBM lang {lang}!!')
             print(x)
     
-    #Reading BBG XML files
+    # Reading BBG XML files
     with open(f'bbg_xml/{bbg_version}/{lang}.xml', 'r') as f:
         data = f.read()
 
@@ -49,7 +48,6 @@ def get_locs_data(db_path, bbg_version, lang):
     b_unique = Bs_data.find_all('Replace')
     for x in b_unique:
         if hasattr(x, 'Text') and hasattr(x.Text, 'contents'):
-            # print(x)
             if len(x.Text.contents) > 0:
                 locs[x['Tag']] = x.Text.contents[0]
         elif hasattr(x, 'text') and hasattr(x.text, 'contents'):
@@ -61,7 +59,6 @@ def get_locs_data(db_path, bbg_version, lang):
     b_unique = Bs_data.find_all('Row')
     for x in b_unique:
         if hasattr(x, 'Text') and hasattr(x.Text, 'contents'):
-            # print(x)
             if len(x.Text.contents) > 0:
                 locs[x['Tag']] = x.Text.contents[0]
         elif hasattr(x, 'text') and hasattr(x.text, 'contents'):
@@ -115,7 +112,6 @@ def get_city_states(db_path):
     uniques = []
 
     for val in rows:
-        # print(val)
         if val[0] + val[1] not in uniques:
             cityStates.append(val)
             uniques.append(val[0] + val[1])
@@ -314,7 +310,6 @@ def get_start_biases(db_path):
     startBiasTerrainsQuery = "SELECT CivilizationType, 'Terrains', TerrainType, Null AS FeatureType, Null AS ResourceType, Tier, Null AS Extra, Null AS CustomPlacement FROM StartBiasTerrains"
     
     crsr.execute(f'{startBiasCustomQuery} UNION {startBiasFeaturesQuery} UNION {startBiasNegativesQuery} UNION {startBiasResourcesQuery} UNION {startBiasRiversQuery} UNION {startBiasTerrainsQuery}')
-    # crsr.execute(f'{startBiasCustomQuery}')s
     rows = crsr.fetchall()
     writer.writerows(rows)
     connection.close()

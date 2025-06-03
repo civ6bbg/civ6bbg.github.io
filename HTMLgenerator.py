@@ -81,7 +81,6 @@ replacements = [
     '[ICON_MOVEMENT]',
     '[ICON_NUCLEAR]',
     '[ICON_PILLAGED]',
-    # '[ICON_POPULATION]',
     '[ICON_POWER]',
     '[ICON_PRODUCTION]',
     '[ICON_PROMOTION]',
@@ -754,8 +753,6 @@ def get_misc_html_file(bbg_version, lang):
     dark_age_policy = get_dark_age_card_list(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite")
     dark_age_policy_era = get_dark_age_card_list_eras(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite")
     dark_age_policy_per_era = get_dark_age_card_list_per_era(dark_age_policy, dark_age_policy_era)
-    # menu_items.append("Dark Age Policies")
-    # menu_icons.append("Dark Age Policies")
     
     eras_reverse_map = {
         'LOC_ERA_CLASSICAL_NAME':'ERA_CLASSICAL',
@@ -790,7 +787,6 @@ def get_misc_html_file(bbg_version, lang):
                                             with div(cls="row"):
                                                 for dedication in dedication_list_per_era[era]:
                                                     with div(cls="col-lg-3"):
-                                                        # h3(get_loc(locs_data, dedication[1], en_US_locs_data), cls='civ-name')
                                                         p(get_loc(locs_data, dedication[2], en_US_locs_data), style="text-align:left", cls='civ-ability-desc')
                                                         br()
                                                 br()
@@ -799,7 +795,6 @@ def get_misc_html_file(bbg_version, lang):
                                             with div(cls="col-lg-3"):
                                                 with div(cls="chart"):
                                                     h2(get_loc(locs_data, policy[4], en_US_locs_data), cls='civ-name')
-                                                        # img(src=f'/images/natural_wonders/{get_loc(en_US_locs_data, wonder[1], en_US_locs_data)}.webp', style="vertical-align: middle; width:5em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
                                                     br()
                                                     p(get_loc(locs_data, policy[1], en_US_locs_data), style="text-align:left", cls='civ-ability-desc')
                                                     br()
