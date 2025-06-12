@@ -141,12 +141,12 @@ def add_preloader():
                     polyline(id="front", points="1 6 4 6 6 11 10 1 12 6 15 6")
 
 bbg_versions = [None, '6.4', '6.3', '6.2', '6.1', '6.0', '5.8', '5.7', '5.6']
-# bbg_versions = ['6.4']
+bbg_versions_tmp = ['6.4']
 
 def get_version_name(bbg_version):
     return bbg_version if bbg_version != None else 'base_game'
 
-def add_lang(text_name, link_name, bbg_version, flag, leader_page, cs_page, religion_page, governor_page, natural_wonder_page, world_wonder_page, misc_page):
+def add_lang(text_name, link_name, bbg_version, flag, leader_page, cs_page, religion_page, governor_page, natural_wonder_page, world_wonder_page, misc_page, name_page):
     with li():
         if leader_page:
             with a(href=f"/{link_name}/leaders_{get_version_name(bbg_version)}.html", style="align-content: center;"):
@@ -169,8 +169,11 @@ def add_lang(text_name, link_name, bbg_version, flag, leader_page, cs_page, reli
         elif misc_page:
             with a(href=f"/{link_name}/misc_{get_version_name(bbg_version)}.html", style="align-content: center;"):
                 img(src=f"/assets/flags/4x3/{flag}.svg", style="height:20px")
+        elif name_page:
+            with a(href=f"/{link_name}/names_{get_version_name(bbg_version)}.html", style="align-content: center;"):
+                img(src=f"/assets/flags/4x3/{flag}.svg", style="height:20px")
 
-def add_header(bbg_version, lang, leader_page = False, cs_page = False, religion_page = False, governor_page = False, natural_wonder_page = False, world_wonder_page = False, misc_page = False):
+def add_header(bbg_version, lang, leader_page = False, cs_page = False, religion_page = False, governor_page = False, natural_wonder_page = False, world_wonder_page = False, misc_page = False, name_page = False):
     with nav(cls="main-nav--bg"):
         with div(cls="main-nav"):
             with div(cls="header"):
@@ -201,6 +204,8 @@ def add_header(bbg_version, lang, leader_page = False, cs_page = False, religion
                                                 a('Natural Wonders', href=f"/{lang}/natural_wonder_{get_version_name(bbg_version)}.html", onclick=f'civClicked(null)')
                                             with li(cls="active" if world_wonder_page else ""):
                                                 a('World Wonders', href=f"/{lang}/world_wonder_{get_version_name(bbg_version)}.html", onclick=f'civClicked(null)')
+                                            with li(cls="active" if name_page else ""):
+                                                a('Names', href=f"/{lang}/names_{get_version_name(bbg_version)}.html", onclick=f'civClicked(null)')
                                             with li(cls="active" if misc_page else ""):
                                                 a('Misc', href=f"/{lang}/misc_{get_version_name(bbg_version)}.html", onclick=f'civClicked(null)')
                                             with li():
@@ -244,6 +249,11 @@ def add_header(bbg_version, lang, leader_page = False, cs_page = False, religion
                                                                     a(f"Base Game", href=f"/{lang}/misc_base_game.html")
                                                                 else:
                                                                     a(f"BBG v{v}", href=f"/{lang}/misc_{v}.html")
+                                                            elif name_page:
+                                                                if v is None:
+                                                                    a(f"Base Game", href=f"/{lang}/names_base_game.html")
+                                                                else:
+                                                                    a(f"BBG v{v}", href=f"/{lang}/names_{v}.html")
                                             with li(cls=""):
                                                 a('Donate!', href=f"https://ko-fi.com/calcalciffer", target="_blank")
                             with div(cls="flex center col-xl-2 col-lg-2 col-md-2 col-1"):
@@ -256,12 +266,12 @@ def add_header(bbg_version, lang, leader_page = False, cs_page = False, religion
                                                         i(cls="fa fa-language lang-icon")
 
                                                         with ul(cls="dropdown", style="width:80px"):
-                                                            add_lang('English  ', 'en_US', bbg_version, 'us', leader_page, cs_page, religion_page, governor_page, natural_wonder_page, world_wonder_page, misc_page)
-                                                            add_lang('French  ', 'fr_FR', bbg_version, 'fr', leader_page, cs_page, religion_page, governor_page, natural_wonder_page, world_wonder_page, misc_page)
-                                                            add_lang('Russian  ', 'ru_RU', bbg_version, 'ru', leader_page, cs_page, religion_page, governor_page, natural_wonder_page, world_wonder_page, misc_page)
-                                                            add_lang('German  ', 'de_DE', bbg_version, 'de', leader_page, cs_page, religion_page, governor_page, natural_wonder_page, world_wonder_page, misc_page)
-                                                            add_lang('Chinese  ', 'zh_Hans_CN', bbg_version, 'cn', leader_page, cs_page, religion_page, governor_page, natural_wonder_page, world_wonder_page, misc_page)
-                                                            add_lang('Korean  ', 'ko_KR', bbg_version, 'kr', leader_page, cs_page, religion_page, governor_page, natural_wonder_page, world_wonder_page, misc_page)
+                                                            add_lang('English  ', 'en_US', bbg_version, 'us', leader_page, cs_page, religion_page, governor_page, natural_wonder_page, world_wonder_page, misc_page, name_page)
+                                                            add_lang('French  ', 'fr_FR', bbg_version, 'fr', leader_page, cs_page, religion_page, governor_page, natural_wonder_page, world_wonder_page, misc_page, name_page)
+                                                            add_lang('Russian  ', 'ru_RU', bbg_version, 'ru', leader_page, cs_page, religion_page, governor_page, natural_wonder_page, world_wonder_page, misc_page, name_page)
+                                                            add_lang('German  ', 'de_DE', bbg_version, 'de', leader_page, cs_page, religion_page, governor_page, natural_wonder_page, world_wonder_page, misc_page, name_page)
+                                                            add_lang('Chinese  ', 'zh_Hans_CN', bbg_version, 'cn', leader_page, cs_page, religion_page, governor_page, natural_wonder_page, world_wonder_page, misc_page, name_page)
+                                                            add_lang('Korean  ', 'ko_KR', bbg_version, 'kr', leader_page, cs_page, religion_page, governor_page, natural_wonder_page, world_wonder_page, misc_page, name_page)
                                     div(cls="w-100")
                                     with div(cls="col-xl-6 col-lg-6 col-md-6 col-6"):
                                         with div(cls="theme-switcher-wrapper"):
@@ -762,6 +772,104 @@ def get_misc_html_file(bbg_version, lang):
                                                     br()
                                                     p(get_loc(locs_data, policy[1], en_US_locs_data), style="text-align:left", cls='civ-ability-desc')
                                                     br()
+        add_final_scripts()
+        add_scroll_up()
+
+    docStr = str(doc)
+    return refactorCivSpecialSyntax(bbg_version, lang, docStr)
+    
+def get_names_html_file(bbg_version, lang):
+    en_US_locs_data = get_locs_data("sqlFiles/CivVILocalization.sqlite", bbg_version, 'en_US')
+    locs_data = get_locs_data("sqlFiles/CivVILocalization.sqlite", bbg_version, lang)
+
+    doc = dominate.document(title=None, lang=get_html_lang(lang))
+    if bbg_version != None:
+        add_html_header(doc, f'BBG {bbg_version} Names')
+    else :
+        add_html_header(doc, f'Civ VI GS RF Names')
+
+    menu_items = []
+    menu_icons = []
+    desert_names = get_property_names(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite", 'Desert', 'Deserts')
+    lakes_names = get_property_names(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite", 'Lake', 'Lakes')
+    mountain_names = get_property_names(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite", 'Mountain', 'Mountains')
+    river_names = get_property_names(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite", 'River', 'Rivers')
+    sea_names = get_property_names(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite", 'Sea', 'Seas')
+    volcano_names = get_property_names(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite", 'Volcano', 'Volcanoes')
+    
+    menu_items.append('Desert')
+    menu_icons.append('Desert')
+    menu_items.append('Lake')
+    menu_icons.append('Lake')
+    menu_items.append('Mountain')
+    menu_icons.append('Mountain')
+    menu_items.append('River')
+    menu_icons.append('River')
+    menu_items.append('Sea')
+    menu_icons.append('Sea')
+    menu_items.append('Volcano')
+    menu_icons.append('Volcano')
+    
+    name_classes = {
+        'Desert': desert_names,
+        'Lakes': lakes_names,
+        'Mountain': mountain_names,
+        'River': river_names,
+        'Sea': sea_names,
+        'Volcano': volcano_names
+    }
+    
+    # for name_cls in name_classes.keys():
+    #     print(name_classes[name_cls])
+    
+    with doc:
+        add_preloader()
+        div(cls="layer")
+        with div(cls="page-flex"):
+            with div(cls="main-wrapper"):
+                add_header(bbg_version, lang, name_page=True)
+                with div(cls=""):
+                    with div(cls="fixed left-0 right-auto h-screen w-[253px] bg-white border-r border-neutral-300 overflow-scroll", style="z-index: 5;"):
+                        add_sidebar(menu_items, menu_icons, 'images')
+                    with div(cls="leaders-data min-w-full main-pl"):
+                        with main(cls="main users chart-page"):
+                            with div(cls="container"):
+                                for name_cls in name_classes.keys():
+                                    with div(cls="row", id=name_cls):
+                                        with div(cls="col-lg-12"):
+                                            with div(cls="chart"):
+                                                h2(name_cls, cls='civ-name')
+                                    with div(cls="row"):
+                                        # with div(cls="chart"):
+                                        with div(cls="row"):
+                                            for property_name in name_classes[name_cls]:
+                                                if len(name_classes[name_cls][property_name]) == 1:
+                                                    div_cls = 'col-md-3 col-lg-3'
+                                                elif len(name_classes[name_cls][property_name]) <= 3:
+                                                    div_cls = 'col-md-6 col-lg-6'
+                                                else:
+                                                    div_cls = 'col-md-12 col-lg-12'
+                                                with div(cls=div_cls):
+                                                    with div(cls="chart"):
+                                                        h2(get_loc(locs_data, f'{property_name}', en_US_locs_data), style="text-align:center", cls='civ-ability-desc')
+                                                        with div(cls='row'):
+                                                            if len(name_classes[name_cls][property_name]) == 1:
+                                                                curr_div_cls = 'col-md-12 col-lg-12'
+                                                            elif len(name_classes[name_cls][property_name]) == 2:
+                                                                curr_div_cls = 'col-md-6 col-lg-6'
+                                                            elif len(name_classes[name_cls][property_name]) == 3:
+                                                                curr_div_cls = 'col-md-4 col-lg-4'
+                                                            elif len(name_classes[name_cls][property_name]) == 4:
+                                                                curr_div_cls = 'col-md-3 col-lg-3'
+                                                            elif len(name_classes[name_cls][property_name]) <= 6:
+                                                                curr_div_cls = 'col-md-2 col-lg-2'
+                                                            else:
+                                                                curr_div_cls = 'col-md-1 col-lg-1'
+                                                            for name in name_classes[name_cls][property_name]:
+                                                                with div(cls=curr_div_cls):
+                                                                    p(get_loc(locs_data, f'{name}', en_US_locs_data), style="text-align:center", cls='civ-ability-desc')
+                                                                # br()
+                                            br()
         add_final_scripts()
         add_scroll_up()
 

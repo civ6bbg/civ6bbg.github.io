@@ -313,3 +313,30 @@ def get_start_biases(db_path):
     rows = crsr.fetchall()
     writer.writerows(rows)
     connection.close()
+
+def get_property_names(db_path, property_type, name_db):
+    connection = sqlite3.connect(db_path)
+
+    crsr = connection.cursor()
+    crsr.execute(f"SELECT * FROM Named{property_type}Civilizations ORDER BY Named{property_type}Type")
+    rows = crsr.fetchall()
+    crsr.execute(f"SELECT * FROM Named{name_db}")
+    property_names = crsr.fetchall()
+    property_to_loc_dict = {}
+    for name in property_names:
+        property_to_loc_dict[name[0]] = name[1]
+
+    crsr.execute(f'SELECT * FROM Civilizations')
+    civ_names = crsr.fetchall()
+    civ_to_loc_dict = {}
+    for name in civ_names:
+        civ_to_loc_dict[name[0]] = name[1]
+
+    property_dict = {}
+    for val in rows:
+        if property_to_loc_dict[val[0]] not in property_dict:
+            property_dict[property_to_loc_dict[val[0]]] = []
+        property_dict[property_to_loc_dict[val[0]]].append(civ_to_loc_dict[val[1]])
+    
+    connection.close()
+    return property_dict
