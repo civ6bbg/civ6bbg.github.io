@@ -372,6 +372,9 @@ def get_leader_html_file(bbg_version, lang):
     menu_items = []
     menu_icons = []
     civ_leaders_items = get_civs_tables(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugConfiguration.sqlite")
+    units_dict = get_units_dict(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite")
+    tech_to_loc_dict = get_tech_to_loc_dict(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite")
+    civic_to_loc_dict = get_civic_to_loc_dict(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite")
     for leader in civ_leaders_items:
         menu_items.append(get_loc(locs_data, leader[2], en_US_locs_data) + ' ' + get_loc(locs_data, leader[5], en_US_locs_data))
         menu_icons.append(get_loc(en_US_locs_data, leader[2], en_US_locs_data) + ' ' + get_loc(en_US_locs_data, leader[5], en_US_locs_data))
@@ -405,6 +408,14 @@ def get_leader_html_file(bbg_version, lang):
                                                     with h3(f'{get_loc(locs_data, item[4], en_US_locs_data)}', style="text-align:left", cls='civ-ability-name'):
                                                         img(src=f'/images/items/{get_loc(en_US_locs_data, item[4], en_US_locs_data)}.webp', style="vertical-align: middle; width:2em; text-align:left", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
                                                     p(f'{get_loc(locs_data, item[5], en_US_locs_data)}', style="text-align:left", cls='civ-ability-desc')
+                                                    if item[3].startswith('UNIT_'):
+                                                        unlock_tech = units_dict[item[3]][35]
+                                                        unlock_civic = units_dict[item[3]][36]
+                                                        if unlock_tech:
+                                                            p(f'Unlocks at {get_loc(locs_data, tech_to_loc_dict[unlock_tech], en_US_locs_data)} Tech', style="text-align:left", cls='civ-ability-desc')
+                                                        if unlock_civic:
+                                                            p(f'Unlocks at {get_loc(locs_data, civic_to_loc_dict[unlock_civic], en_US_locs_data)} Civic', style="text-align:left", cls='civ-ability-desc')
+                                                        # print(item[3], unlock_tech, unlock_civic)
                                                     br()
 
         add_final_scripts()

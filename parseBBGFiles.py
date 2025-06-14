@@ -101,6 +101,42 @@ def get_civs_tables(db_path):
     connection.close()
     return civLeaderItems
 
+def get_units_dict(db_path):
+    res = {}
+    connection = sqlite3.connect(db_path)
+
+    crsr = connection.cursor()
+    crsr.execute(f"SELECT * FROM Units")
+    rows = crsr.fetchall()
+    for r in rows:
+        res[r[0]] = r
+    connection.close()
+    return res
+
+def get_tech_to_loc_dict(db_path):
+    res = {}
+    connection = sqlite3.connect(db_path)
+
+    crsr = connection.cursor()
+    crsr.execute(f"SELECT * FROM Technologies")
+    rows = crsr.fetchall()
+    for r in rows:
+        res[r[0]] = r[1]
+    connection.close()
+    return res
+
+def get_civic_to_loc_dict(db_path):
+    res = {}
+    connection = sqlite3.connect(db_path)
+
+    crsr = connection.cursor()
+    crsr.execute(f"SELECT * FROM Civics")
+    rows = crsr.fetchall()
+    for r in rows:
+        res[r[0]] = r[1]
+    connection.close()
+    return res
+
 def get_city_states(db_path):
     connection = sqlite3.connect(db_path)
 
