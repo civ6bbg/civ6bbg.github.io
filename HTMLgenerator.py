@@ -152,7 +152,7 @@ bbg_versions_tmp = ['6.4']
 def get_version_name(bbg_version):
     return bbg_version if bbg_version != None else 'base_game'
 
-def add_lang(text_name, link_name, bbg_version, flag, leader_page, cs_page, religion_page, governor_page, natural_wonder_page, world_wonder_page, misc_page, name_page):
+def add_lang(text_name, link_name, bbg_version, flag, leader_page, cs_page, religion_page, governor_page, natural_wonder_page, world_wonder_page, misc_page, name_page, great_people_page):
     with li():
         if leader_page:
             with a(href=f"/{link_name}/leaders_{get_version_name(bbg_version)}.html", style="align-content: center;"):
@@ -178,8 +178,11 @@ def add_lang(text_name, link_name, bbg_version, flag, leader_page, cs_page, reli
         elif name_page:
             with a(href=f"/{link_name}/names_{get_version_name(bbg_version)}.html", style="align-content: center;"):
                 img(src=f"/assets/flags/4x3/{flag}.svg", style="height:20px")
+        elif great_people_page:
+            with a(href=f"/{link_name}/great_people_{get_version_name(bbg_version)}.html", style="align-content: center;"):
+                img(src=f"/assets/flags/4x3/{flag}.svg", style="height:20px")
 
-def add_header(bbg_version, lang, leader_page = False, cs_page = False, religion_page = False, governor_page = False, natural_wonder_page = False, world_wonder_page = False, misc_page = False, name_page = False):
+def add_header(bbg_version, lang, leader_page = False, cs_page = False, religion_page = False, governor_page = False, natural_wonder_page = False, world_wonder_page = False, misc_page = False, name_page = False, great_people_page = False):
     with nav(cls="main-nav--bg"):
         with div(cls="main-nav"):
             with div(cls="header"):
@@ -206,6 +209,8 @@ def add_header(bbg_version, lang, leader_page = False, cs_page = False, religion
                                                 a('Religion', href=f"/{lang}/religion_{get_version_name(bbg_version)}.html", onclick=f'civClicked(null)')
                                             with li(cls="active" if governor_page else ""):
                                                 a('Governors', href=f"/{lang}/governor_{get_version_name(bbg_version)}.html", onclick=f'civClicked(null)')
+                                            with li(cls="active" if great_people_page else ""):
+                                                a('Great People', href=f"/{lang}/great_people_{get_version_name(bbg_version)}.html", onclick=f'civClicked(null)')
                                             with li(cls="active" if natural_wonder_page else ""):
                                                 a('Natural Wonders', href=f"/{lang}/natural_wonder_{get_version_name(bbg_version)}.html", onclick=f'civClicked(null)')
                                             with li(cls="active" if world_wonder_page else ""):
@@ -260,6 +265,11 @@ def add_header(bbg_version, lang, leader_page = False, cs_page = False, religion
                                                                     a(f"Base Game", href=f"/{lang}/names_base_game.html")
                                                                 else:
                                                                     a(f"BBG v{v}", href=f"/{lang}/names_{v}.html")
+                                                            elif great_people_page:
+                                                                if v is None:
+                                                                    a(f"Base Game", href=f"/{lang}/great_people_base_game.html")
+                                                                else:
+                                                                    a(f"BBG v{v}", href=f"/{lang}/great_people_{v}.html")
                                             with li(cls=""):
                                                 a('Donate!', href=f"https://ko-fi.com/calcalciffer", target="_blank")
                             with div(cls="flex center col-xl-2 col-lg-2 col-md-2 col-1"):
@@ -272,12 +282,12 @@ def add_header(bbg_version, lang, leader_page = False, cs_page = False, religion
                                                         i(cls="fa fa-language lang-icon")
 
                                                         with ul(cls="dropdown", style="width:80px"):
-                                                            add_lang('English  ', 'en_US', bbg_version, 'us', leader_page, cs_page, religion_page, governor_page, natural_wonder_page, world_wonder_page, misc_page, name_page)
-                                                            add_lang('French  ', 'fr_FR', bbg_version, 'fr', leader_page, cs_page, religion_page, governor_page, natural_wonder_page, world_wonder_page, misc_page, name_page)
-                                                            add_lang('Russian  ', 'ru_RU', bbg_version, 'ru', leader_page, cs_page, religion_page, governor_page, natural_wonder_page, world_wonder_page, misc_page, name_page)
-                                                            add_lang('German  ', 'de_DE', bbg_version, 'de', leader_page, cs_page, religion_page, governor_page, natural_wonder_page, world_wonder_page, misc_page, name_page)
-                                                            add_lang('Chinese  ', 'zh_Hans_CN', bbg_version, 'cn', leader_page, cs_page, religion_page, governor_page, natural_wonder_page, world_wonder_page, misc_page, name_page)
-                                                            add_lang('Korean  ', 'ko_KR', bbg_version, 'kr', leader_page, cs_page, religion_page, governor_page, natural_wonder_page, world_wonder_page, misc_page, name_page)
+                                                            add_lang('English  ', 'en_US', bbg_version, 'us', leader_page, cs_page, religion_page, governor_page, natural_wonder_page, world_wonder_page, misc_page, name_page, great_people_page)
+                                                            add_lang('French  ', 'fr_FR', bbg_version, 'fr', leader_page, cs_page, religion_page, governor_page, natural_wonder_page, world_wonder_page, misc_page, name_page, great_people_page)
+                                                            add_lang('Russian  ', 'ru_RU', bbg_version, 'ru', leader_page, cs_page, religion_page, governor_page, natural_wonder_page, world_wonder_page, misc_page, name_page, great_people_page)
+                                                            add_lang('German  ', 'de_DE', bbg_version, 'de', leader_page, cs_page, religion_page, governor_page, natural_wonder_page, world_wonder_page, misc_page, name_page, great_people_page)
+                                                            add_lang('Chinese  ', 'zh_Hans_CN', bbg_version, 'cn', leader_page, cs_page, religion_page, governor_page, natural_wonder_page, world_wonder_page, misc_page, name_page, great_people_page)
+                                                            add_lang('Korean  ', 'ko_KR', bbg_version, 'kr', leader_page, cs_page, religion_page, governor_page, natural_wonder_page, world_wonder_page, misc_page, name_page, great_people_page)
                                     div(cls="w-100")
                                     with div(cls="col-xl-6 col-lg-6 col-md-6 col-6"):
                                         with div(cls="theme-switcher-wrapper"):
@@ -887,6 +897,110 @@ def get_names_html_file(bbg_version, lang):
                                                                     p(get_loc(locs_data, f'{name}', en_US_locs_data), style="text-align:center", cls='civ-ability-desc')
                                                                 # br()
                                             br()
+        add_final_scripts()
+        add_scroll_up()
+
+    docStr = str(doc)
+    return refactorCivSpecialSyntax(bbg_version, lang, docStr)
+    
+def get_great_people_html_file(bbg_version, lang):
+    en_US_locs_data = get_locs_data("sqlFiles/CivVILocalization.sqlite", bbg_version, 'en_US')
+    locs_data = get_locs_data("sqlFiles/CivVILocalization.sqlite", bbg_version, lang)
+
+    doc = dominate.document(title=None, lang=get_html_lang(lang))
+    if bbg_version != None:
+        add_html_header(doc, f'BBG {bbg_version} Great People')
+    else :
+        add_html_header(doc, f'Civ VI GS RF Great People')
+        
+    eras_loc = [
+        'LOC_ERA_ANCIENT_NAME',
+        'LOC_ERA_CLASSICAL_NAME',
+        'LOC_ERA_MEDIEVAL_NAME',
+        'LOC_ERA_RENAISSANCE_NAME',
+        'LOC_ERA_INDUSTRIAL_NAME',
+        'LOC_ERA_MODERN_NAME',
+        'LOC_ERA_ATOMIC_NAME',
+        'LOC_ERA_INFORMATION_NAME',
+        'LOC_ERA_FUTURE_NAME'
+    ]
+
+    menu_items = []
+    menu_icons = []
+    great_people = get_great_people_list(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite")
+    great_people_modifier_dict = get_great_people_modifier_dict(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite")
+    
+    great_people_list = [
+        'LOC_GREAT_PERSON_CLASS_GENERAL_NAME',
+        'LOC_GREAT_PERSON_CLASS_ADMIRAL_NAME',
+        'LOC_GREAT_PERSON_CLASS_ENGINEER_NAME',
+        'LOC_GREAT_PERSON_CLASS_MERCHANT_NAME',
+        'LOC_GREAT_PERSON_CLASS_PROPHET_NAME',
+        'LOC_GREAT_PERSON_CLASS_SCIENTIST_NAME',
+        'LOC_GREAT_PERSON_CLASS_WRITER_NAME',
+        'LOC_GREAT_PERSON_CLASS_ARTIST_NAME',
+        'LOC_GREAT_PERSON_CLASS_MUSICIAN_NAME',
+        'LOC_GREAT_PERSON_CLASS_COMANDANTE_GENERAL_NAME',
+    ]
+    
+    for gp_type in great_people_list:
+        menu_items.append(get_loc(locs_data, gp_type, en_US_locs_data))
+        menu_icons.append(get_loc(en_US_locs_data, gp_type, en_US_locs_data))
+    with doc:
+        add_preloader()
+        div(cls="layer")
+        with div(cls="page-flex"):
+            with div(cls="main-wrapper"):
+                add_header(bbg_version, lang, great_people_page=True)
+                with div(cls=""):
+                    with div(cls="fixed left-0 right-auto h-screen w-[253px] bg-white border-r border-neutral-300 overflow-scroll", style="z-index: 5;"):
+                        add_sidebar(menu_items, menu_icons, 'images')
+                    with div(cls="leaders-data min-w-full main-pl"):
+                        with main(cls="main users chart-page"):
+                            with div(cls="container"):
+                                for gp_type in great_people_list:
+                                    with div(cls="row", id=get_loc(locs_data, gp_type, en_US_locs_data)):
+                                        with div(cls="col-lg-12"):
+                                            with div(cls="chart"):
+                                                with h2(get_loc(locs_data, gp_type, en_US_locs_data), cls='civ-name'):
+                                                    img(src=f'/images/{get_loc(en_US_locs_data, gp_type, en_US_locs_data)}.webp', style="vertical-align: middle; width:5em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
+                                                    br()
+                                    for era in eras_loc:
+                                        if era not in great_people[gp_type].keys():
+                                            continue
+                                        if len(great_people[gp_type]) > 1:
+                                            with div(cls="row", id=get_loc(locs_data, gp_type, en_US_locs_data)):
+                                                with div(cls="col-lg-12"):
+                                                    with div(cls="chart"):
+                                                        h3(get_loc(locs_data, era, en_US_locs_data), cls='civ-name')
+                                    # with div(cls="col-lg-12"):
+                                        # with div(cls="chart"):
+                                        with div(cls='row'):
+                                            if len(great_people[gp_type][era]) == 1:
+                                                div_cls = 'col-md-12 col-lg-12'
+                                            elif len(great_people[gp_type][era]) == 2:
+                                                div_cls = 'col-md-6 col-lg-6'
+                                            elif len(great_people[gp_type][era]) == 3:
+                                                div_cls = 'col-md-4 col-lg-4'
+                                            elif len(great_people[gp_type][era]) == 4:
+                                                div_cls = 'col-md-3 col-lg-3'
+                                            elif len(great_people[gp_type][era]) == 5:
+                                                div_cls = 'col-md-3 col-lg-3'
+                                            elif len(great_people[gp_type][era]) <= 6:
+                                                div_cls = 'col-md-2 col-lg-2'
+                                            for gp in great_people[gp_type][era]:
+                                                with div(cls=div_cls):
+                                                    with div(cls="chart"):
+                                                        p(get_loc(locs_data, gp[1], en_US_locs_data), cls='civ-ability-name')
+                                                        br()
+                                                        if gp[0] in great_people_modifier_dict.keys():
+                                                            for mod in great_people_modifier_dict[gp[0]]:
+                                                                p(get_loc(locs_data, mod, en_US_locs_data), style="text-align:left", cls='civ-ability-desc')
+                                                                br()
+                                                        # p(get_loc(locs_data, gp[3], en_US_locs_data), style="text-align:left", cls='civ-ability-desc')
+                                                        # br()
+                                                # p(get_loc(locs_data, gp_type, en_US_locs_data), style="text-align:left", cls='civ-ability-desc')
+                                                # br()
         add_final_scripts()
         add_scroll_up()
 

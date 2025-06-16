@@ -376,3 +376,66 @@ def get_property_names(db_path, property_type, name_db):
     
     connection.close()
     return property_dict
+
+def get_great_people_list(db_path):
+    connection = sqlite3.connect(db_path)
+
+    crsr = connection.cursor()
+    crsr.execute("SELECT GreatPersonIndividualType, Name, GreatPersonClassType, EraType FROM GreatPersonIndividuals ORDER BY GreatPersonClassType, EraType, Name")
+    rows = crsr.fetchall()
+    
+    crsr.execute("SELECT GreatPersonClassType, Name FROM GreatPersonClasses")
+    gp_classes = crsr.fetchall()
+    class_to_loc_dict = {}
+    for row in gp_classes:
+        class_to_loc_dict[row[0]] = row[1]
+        
+    eras = [
+        'ERA_ANCIENT',
+        'ERA_CLASSICAL',
+        'ERA_MEDIEVAL',
+        'ERA_RENAISSANCE',
+        'ERA_INDUSTRIAL',
+        'ERA_MODERN',
+        'ERA_ATOMIC',
+        'ERA_INFORMATION',
+        'ERA_FUTURE'
+    ]
+    eras_name = get_eras_name_dict(eras, db_path)
+    
+    great_people_dict = {}
+    for row in rows:
+        gp_type_loc = class_to_loc_dict[row[2]]
+        if gp_type_loc not in great_people_dict:
+            great_people_dict[gp_type_loc] = {}
+        gp_era = eras_name[row[3]]
+        if gp_era not in great_people_dict[gp_type_loc]:
+            great_people_dict[gp_type_loc][gp_era] = []
+        great_people_dict[gp_type_loc][gp_era].append(row)
+    
+    connection.close()
+    return great_people_dict
+
+def get_great_people_modifier_dict(db_path):
+    res = {}
+    connection = sqlite3.connect(db_path)
+
+    crsr = connection.cursor()
+    crsr.execute(f"SELECT * FROM GreatPersonIndividualActionModifiers")
+    rows = crsr.fetchall()
+    
+    crsr.execute(f"SELECT * FROM ModifierStrings")
+    modifier_strings = crsr.fetchall()
+    modifier_to_loc_dict = {}
+    for row in modifier_strings:
+        modifier_to_loc_dict[row[0]] = row[2]
+
+    for row in rows:
+        gp = row[0]
+        if gp not in res:
+            res[gp] = []
+        if row[1] in modifier_to_loc_dict:
+            res[gp].append(modifier_to_loc_dict[row[1]])
+
+    connection.close()
+    return res
