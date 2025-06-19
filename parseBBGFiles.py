@@ -217,7 +217,7 @@ def get_world_wonders_list(db_path):
     connection = sqlite3.connect(db_path)
 
     crsr = connection.cursor()
-    crsr.execute("SELECT BuildingType,Name,Description FROM Buildings WHERE IsWonder=1 ORDER BY Cost")
+    crsr.execute("SELECT BuildingType,Name,Description,Cost FROM Buildings WHERE IsWonder=1 ORDER BY Cost")
     rows = crsr.fetchall()
     connection.close()
     return rows

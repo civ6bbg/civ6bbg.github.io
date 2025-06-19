@@ -724,6 +724,9 @@ def get_world_wonder_html_file(bbg_version, lang):
                                                     img(src=f'/images/world_wonders/{get_loc(en_US_locs_data, wonder[1], en_US_locs_data)}.webp', style="vertical-align: middle; width:5em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
                                                 br()
                                                 p(get_loc(locs_data, wonder[2], en_US_locs_data), style="text-align:left", cls='civ-ability-desc')
+                                                wonder_cost = int(int(wonder[3]) / 2)
+                                                with p(f'{get_loc(locs_data, 'LOC_UI_PEDIA_PRODUCTION_COST', en_US_locs_data)} = {wonder_cost}', style="text-align:left", cls='civ-ability-desc'):
+                                                    img(src=f'/images/ICON_PRODUCTION.webp', style="vertical-align: middle", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
                                                 br()
         add_final_scripts()
         add_scroll_up()
