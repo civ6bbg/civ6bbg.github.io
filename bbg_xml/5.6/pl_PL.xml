@@ -1268,7 +1268,7 @@
 			<Text>Zapewnia 2 dodatkowe zasoby [ICON_RESOURCE_NITER] saletry i [ICON_RESOURCE_COAL] węgla na turę. Ulepszenie tego zasobu zapewnia go o +1 więcej</Text>
 		</Replace>
 		<Replace Tag="LOC_POLICY_RESOURCE_MANAGEMENT_DESCRIPTION_XP2" Language="pl_PL">
-			<Text>Zapewnia 2 dodatkowe zasoby [ICON_RESOURCE_ALUMINIUM] aluminium i [ICON_RESOURCE_OIL] ropy na turę. Ulepszenie tego zasobu zapewnia go o +1 więcej</Text>
+			<Text>Zapewnia 2 dodatkowe zasoby [ICON_RESOURCE_ALUMINUM] aluminium i [ICON_RESOURCE_OIL] ropy na turę. Ulepszenie tego zasobu zapewnia go o +1 więcej</Text>
 		</Replace>
 		<Replace Tag="LOC_PROMOTION_SENTRY_DESCRIPTION" Language="pl_PL">
 			<Text>+1 zasięgu widzenia. Możliwość widzenia przez las i las deszczowy</Text>

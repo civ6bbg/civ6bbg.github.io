@@ -1992,7 +1992,7 @@
 			<Text>+15% [ICON_PRODUCTION] Produktion für Militäreinheiten.</Text>
 		</Replace>
 		<Replace Tag="LOC_GREATPERSON_SUDIRMAN_ACTIVE" Language="de_DE">
-			<Text>Erstellt einen Kampfflieger mit einer [ICON_PROMOTION] Beförderungsstufe. Gewährt 2 [ICON_RESOURCE_ALUMINIUM] Aluminium pro [ICON_TURN] Zug.</Text>
+			<Text>Erstellt einen Kampfflieger mit einer [ICON_PROMOTION] Beförderungsstufe. Gewährt 2 [ICON_RESOURCE_ALUMINUM] Aluminium pro [ICON_TURN] Zug.</Text>
 		</Replace>
 
 		<!-- == Merchants == -->
