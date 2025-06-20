@@ -217,10 +217,42 @@ def get_world_wonders_list(db_path):
     connection = sqlite3.connect(db_path)
 
     crsr = connection.cursor()
-    crsr.execute("SELECT BuildingType,Name,Description,Cost FROM Buildings WHERE IsWonder=1 ORDER BY Cost")
-    rows = crsr.fetchall()
+    crsr.execute("SELECT BuildingType,Name,Description,Cost,PrereqTech,PrereqCivic FROM Buildings WHERE IsWonder=1 ORDER BY Name")
+    wonder_rows = crsr.fetchall()
+    crsr.execute("SELECT TechnologyType, EraType FROM Technologies")
+    tech_rows = crsr.fetchall()
+    tech_to_era_dict = {}
+    for tech in tech_rows:
+        tech_to_era_dict[tech[0]] = tech[1]
+    crsr.execute("SELECT CivicType, EraType FROM Civics")
+    civic_rows = crsr.fetchall()
+    civic_to_era_dict = {}
+    for civic in civic_rows:
+        civic_to_era_dict[civic[0]] = civic[1]
+        
+    eras = [
+        'ERA_ANCIENT',
+        'ERA_CLASSICAL',
+        'ERA_MEDIEVAL',
+        'ERA_RENAISSANCE',
+        'ERA_INDUSTRIAL',
+        'ERA_MODERN',
+        'ERA_ATOMIC',
+    ]
+    era_to_loc = lambda x: f'LOC_{x}_NAME'
+    result = {era_to_loc(era): [] for era in eras}
+
+    for wonder in wonder_rows:
+        wonder_tech = wonder[4]
+        wonder_civic = wonder[5]
+        if wonder_tech is not None:
+            result[era_to_loc(tech_to_era_dict[wonder_tech])].append(wonder)
+        elif wonder_civic is not None:
+            result[era_to_loc(civic_to_era_dict[wonder_civic])].append(wonder)
+        else:
+            print(f'Wonder {wonder[0]} has no tech or civic prerequisites!')
     connection.close()
-    return rows
+    return result
 
 def get_dark_age_card_list(db_path):
     connection = sqlite3.connect(db_path)

@@ -701,9 +701,9 @@ def get_world_wonder_html_file(bbg_version, lang):
     menu_items = []
     menu_icons = []
     world_wonders = get_world_wonders_list(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite")
-    for wonder in world_wonders:
-        menu_items.append(get_loc(locs_data, wonder[1], en_US_locs_data))
-        menu_icons.append(get_loc(en_US_locs_data, wonder[1], en_US_locs_data))
+    for era in world_wonders.keys():
+        menu_items.append(get_loc(locs_data, era, en_US_locs_data))
+        menu_icons.append(get_loc(en_US_locs_data, era, en_US_locs_data))
     with doc:
         add_preloader()
         div(cls="layer")
@@ -716,18 +716,22 @@ def get_world_wonder_html_file(bbg_version, lang):
                     with div(cls="leaders-data min-w-full main-pl"):
                         with main(cls="main users chart-page"):
                             with div(cls="container"):
-                                for wonder in world_wonders:
-                                    with div(cls="row", id=get_loc(locs_data, wonder[1], en_US_locs_data)):
-                                        with div(cls="col-lg-12"):
-                                            with div(cls="chart"):
-                                                with h2(get_loc(locs_data, wonder[1], en_US_locs_data), cls='civ-name'):
-                                                    img(src=f'/images/world_wonders/{get_loc(en_US_locs_data, wonder[1], en_US_locs_data)}.webp', style="vertical-align: middle; width:5em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
-                                                br()
-                                                p(get_loc(locs_data, wonder[2], en_US_locs_data), style="text-align:left", cls='civ-ability-desc')
-                                                wonder_cost = int(int(wonder[3]) / 2)
-                                                with p(f'{get_loc(locs_data, 'LOC_UI_PEDIA_PRODUCTION_COST', en_US_locs_data)} = {wonder_cost}', style="text-align:left", cls='civ-ability-desc'):
-                                                    img(src=f'/images/ICON_PRODUCTION.webp', style="vertical-align: middle", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
-                                                br()
+                                for era in world_wonders.keys():
+                                    with div(cls='col-lg-12', id=get_loc(locs_data, era, en_US_locs_data)):
+                                        with div(cls="chart"):
+                                            h2(get_loc(locs_data, era, en_US_locs_data), cls='civ-name')
+                                    with div(cls="row"):
+                                        for wonder in world_wonders[era]:
+                                            with div(cls="col-lg-6 col-md-12"):
+                                                with div(cls="chart"):
+                                                    with h2(get_loc(locs_data, wonder[1], en_US_locs_data), cls='civ-name'):
+                                                        img(src=f'/images/world_wonders/{get_loc(en_US_locs_data, wonder[1], en_US_locs_data)}.webp', style="vertical-align: middle; width:5em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
+                                                    br()
+                                                    p(get_loc(locs_data, wonder[2], en_US_locs_data), style="text-align:left", cls='civ-ability-desc')
+                                                    wonder_cost = int(int(wonder[3]) / 2)
+                                                    with p(f'{get_loc(locs_data, 'LOC_UI_PEDIA_PRODUCTION_COST', en_US_locs_data)} = {wonder_cost}', style="text-align:left", cls='civ-ability-desc'):
+                                                        img(src=f'/images/ICON_PRODUCTION.webp', style="vertical-align: middle", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
+                                                    br()
         add_final_scripts()
         add_scroll_up()
 
