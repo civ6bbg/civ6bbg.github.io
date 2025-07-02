@@ -392,13 +392,13 @@
 			<Text>Sumeria jako pierwsza cywilizacja w znanej historii świata już na początku rozgrywki cieszy się wieloma premiami. Sumerowie mogą budować wozy bojowe i zigguraty od pierwszej tury, a i specjalna umiejętność Gilgamesza (bazująca na walce we wspólnych wojnach) pojawia się w grze wcześnie, odblokowywana dzięki idei handlu zagranicznego. Gilgamesz będzie wcześnie budował wozy bojowe i atakował obozy barbarzyńców, by wykorzystać swoją umiejętność epickich zadań, a także wznosił zigguraty nad brzegami pobliskich rzek, aby jak najwcześniej rozwijać [ICON_SCIENCE] naukę i [ICON_CULTURE] kulturę. Wiele cywilizacji będzie chciało zawiązać sojusz z Gilgameszem, by zyskać premię „Przygody Enkidu” podczas walki we wspólnych wojnach. Szybki start i kilka zakończonych sukcesem wspólnych wojen powinny dać Sumerii dominującą pozycję, którą będzie w stanie utrzymać aż do końcowego zwycięstwa w grze.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_DESCRIPTION" Language="pl_PL">
-			<text>Może wypowiedzieć wojne każdemu, kto jest w stanie wojny z ich sojusznikiem bez generowania uraz. Podczas plądrowania, doświadczenie jest przyznawane jednostkom w odległości 5 pól.[NEWLINE]Dodatkowa nagroda w postaci wioski plemiennej (oprócz standardowych punktów doświadczenia) za rozpędzenie obozu barbarzyńców. Płać połowę domyślnych kosztów poboru jednostek miast-państw.  </text>
+			<Text>Może wypowiedzieć wojne każdemu, kto jest w stanie wojny z ich sojusznikiem bez generowania uraz. Podczas plądrowania, doświadczenie jest przyznawane jednostkom w odległości 5 pól.[NEWLINE]Dodatkowa nagroda w postaci wioski plemiennej (oprócz standardowych punktów doświadczenia) za rozpędzenie obozu barbarzyńców. Płać połowę domyślnych kosztów poboru jednostek miast-państw.  </Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION1_DESCRIPTION" Language="pl_PL">
-			<text>Może wypowiedzieć wojne każdemu, kto jest w stanie wojny z ich sojusznikiem bez generowania uraz. Podczas plądrowania, doświadczenie jest przyznawane jednostkom w odległości 5 pól.[NEWLINE]Dodatkowa nagroda w postaci wioski plemiennej (oprócz standardowych punktów doświadczenia) za rozpędzenie obozu barbarzyńców. Płać połowę domyślnych kosztów poboru jednostek miast-państw.  </text>
+			<Text>Może wypowiedzieć wojne każdemu, kto jest w stanie wojny z ich sojusznikiem bez generowania uraz. Podczas plądrowania, doświadczenie jest przyznawane jednostkom w odległości 5 pól.[NEWLINE]Dodatkowa nagroda w postaci wioski plemiennej (oprócz standardowych punktów doświadczenia) za rozpędzenie obozu barbarzyńców. Płać połowę domyślnych kosztów poboru jednostek miast-państw.  </Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_EXPANSION2_DESCRIPTION" Language="pl_PL">
-			<text>Jednostki wojskowe otrzymują premię do [ICON_STRENGTH] siły bojowej równej największemu poziomowi sojuszu(maks. 3). Podczas plądrowania, doświadczenie jest przyznawane jednostkom w odległości 5 pól.[NEWLINE]Dodatkowa nagroda w postaci wioski plemiennej (oprócz standardowych punktów doświadczenia) za rozpędzenie obozu barbarzyńców. Płać połowę domyślnych kosztów poboru jednostek miast-państw.  </text>
+			<Text>Jednostki wojskowe otrzymują premię do [ICON_STRENGTH] siły bojowej równej największemu poziomowi sojuszu(maks. 3). Podczas plądrowania, doświadczenie jest przyznawane jednostkom w odległości 5 pól.[NEWLINE]Dodatkowa nagroda w postaci wioski plemiennej (oprócz standardowych punktów doświadczenia) za rozpędzenie obozu barbarzyńców. Płać połowę domyślnych kosztów poboru jednostek miast-państw.  </Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_NOBEL_PRIZE_DESCRIPTION" Language="pl_PL">
 			<Text>Szwecja zyskuje 50 [ICON_Favor] względów dyplomatycznych, gdy zdobywa wielką osobę. Szwecja zyskuje +1 punkt [ICON_GreatEngineer] wielkiego inżyniera dzięki fabrykom i +1 punkt [ICON_GreatScientist] wielkiego naukowca dzięki uniwersytetom. +50% do [ICON_PRODUCTION] produkcji przy wznoszeniu warsztatów, fabryk, bibliotek i uniwersytetów. Udział Szwecji w rozgrywce dodaje trzy unikalne rywalizacje Kongresu Światowego dostępne od epoki przemysłowej. +50% [ICON_PRODUCTION] produkcji podczas budowy budynków dzielnicy dyplomatycznej. </Text>
@@ -1292,7 +1292,7 @@
 			<Text>Daje możliwość zakupu jednostek lądowych za [ICON_FAITH] wiarę w każdym mieście.[NEWLINE]Plądrowanie ulepszeń i dzielnic zapewnia dodatkową [ICON_FAITH] wiarę.[NEWLINE]Nagradza 1 [ICON_GOVERNOR] tytułem gubernatora.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_PAGODA_EXPANSION2_DESCRIPTION" Language="pl_PL">
-			<text>Umożliwia budowę Pagód (+3 [ICON_FAITH] wiary, +1 względów dyplomatycznych na turę)</text>
+			<Text>Umożliwia budowę Pagód (+3 [ICON_FAITH] wiary, +1 względów dyplomatycznych na turę)</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_PAGODA_EXPANSION2_DESCRIPTION" Language="pl_PL">
 			<Text>+1 względów dyplomatycznych na turę.</Text>
