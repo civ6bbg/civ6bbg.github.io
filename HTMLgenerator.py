@@ -922,7 +922,7 @@ def get_names_html_file(bbg_version, lang):
                                         # with div(cls="chart"):
                                         with div(cls="row"):
                                             for property_name in name_classes[name_cls]:
-                                                if len(name_classes[name_cls][property_name]) == 1:
+                                                if len(name_classes[name_cls][property_name]) <= 1:
                                                     div_cls = 'col-md-3 col-lg-3'
                                                 elif len(name_classes[name_cls][property_name]) <= 3:
                                                     div_cls = 'col-md-6 col-lg-6'
@@ -932,7 +932,7 @@ def get_names_html_file(bbg_version, lang):
                                                     with div(cls="chart"):
                                                         h2(get_loc(locs_data, f'{property_name}', en_US_locs_data), style="text-align:center", cls='civ-ability-desc')
                                                         with div(cls='row'):
-                                                            if len(name_classes[name_cls][property_name]) == 1:
+                                                            if len(name_classes[name_cls][property_name]) <= 1:
                                                                 curr_div_cls = 'col-md-12 col-lg-12'
                                                             elif len(name_classes[name_cls][property_name]) == 2:
                                                                 curr_div_cls = 'col-md-6 col-lg-6'
