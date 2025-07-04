@@ -496,17 +496,20 @@ def get_great_people_modifier_dict(db_path):
 
     crsr = connection.cursor()
     crsr.execute(
-        """SELECT ga.GreatPersonIndividualType, ga.ModifierId, Text, ActionCharges, ActionEffectTextOverride FROM GreatPersonIndividualActionModifiers ga LEFT JOIN ModifierStrings USING(ModifierId)
-         RIGHT JOIN GreatPersonIndividuals USING(GreatPersonIndividualType) where ga.GreatPersonIndividualType NOT NULL"""
+        """SELECT ga.GreatPersonIndividualType, ga.ModifierId, Text, ActionEffectTextOverride, Value FROM GreatPersonIndividualActionModifiers ga LEFT JOIN ModifierStrings USING(ModifierId)
+         LEFT JOIN GreatPersonIndividuals USING(GreatPersonIndividualType) LEFT JOIN (SELECT ModifierId, Value FROM ModifierArguments where Name='Amount') USING(ModifierId)"""
     )
     rows = crsr.fetchall()
-    for gp, modifier, loc, charges, action_override in rows:
+    overridden = set()
+    for gp, modifier, loc, action_override, amount in rows:
+        amount = float(amount) if amount else 0
         res.setdefault(gp, [])
         if action_override:
-            if action_override not in res[gp]:
-                res[gp].append(action_override)
+            if action_override not in overridden:
+                res[gp].append((action_override, amount))
+                overridden.add(action_override)
         elif loc:
-            res[gp].append(loc)
+            res[gp].append((loc, amount))
 
     connection.close()
     return res
