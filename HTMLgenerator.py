@@ -1056,3 +1056,7 @@ def get_great_people_html_file(bbg_version, lang):
 
     docStr = str(doc)
     return refactorCivSpecialSyntax(bbg_version, lang, docStr)
+
+
+def loc_amount_parameter(localized_text):
+   pass

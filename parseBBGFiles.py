@@ -1,82 +1,83 @@
 from bs4 import BeautifulSoup
 import sqlite3
-import re
 import numpy as np
 import csv
 
-import dominate
-from dominate.tags import *
 
 def get_locs_data(db_path, bbg_version, lang):
     connection = sqlite3.connect(db_path)
 
     crsr = connection.cursor()
-    crsr.execute(f'SELECT * FROM LocalizedText_{lang}')
+    crsr.execute(f"SELECT * FROM LocalizedText_{lang}")
     rows = crsr.fetchall()
-    
+
     locs = dict()
     for r in rows:
         locs[r[1]] = r[2]
-        
+
     if bbg_version == None:
         return locs
-    
+
     # Reading BBM XML files
-    with open(f'bbm_xml/{lang}.xml', 'r') as f:
+    with open(f"bbm_xml/{lang}.xml", "r") as f:
         data = f.read()
 
     Bs_data = BeautifulSoup(data, "xml")
 
-    b_unique = Bs_data.find_all('Replace')
+    b_unique = Bs_data.find_all("Replace")
     for x in b_unique:
-        if hasattr(x, 'Text') and hasattr(x.Text, 'contents'):
+        if hasattr(x, "Text") and hasattr(x.Text, "contents"):
             if len(x.Text.contents) > 0:
-                locs[x['Tag']] = x.Text.contents[0]
-        elif hasattr(x, 'text') and hasattr(x.text, 'contents'):
+                locs[x["Tag"]] = x.Text.contents[0]
+        elif hasattr(x, "text") and hasattr(x.text, "contents"):
             if len(x.text.contents) > 0:
-                locs[x['Tag']] = x.text.contents[0]
+                locs[x["Tag"]] = x.text.contents[0]
         else:
-            print(f'unsual element in xml file for BBM lang {lang}!!')
+            print(f"unsual element in xml file for BBM lang {lang}!!")
             print(x)
-    
+
     # Reading BBG XML files
-    with open(f'bbg_xml/{bbg_version}/{lang}.xml', 'r') as f:
+    with open(f"bbg_xml/{bbg_version}/{lang}.xml", "r") as f:
         data = f.read()
 
     Bs_data = BeautifulSoup(data, "xml")
 
-    b_unique = Bs_data.find_all('Replace')
+    b_unique = Bs_data.find_all("Replace")
     for x in b_unique:
-        if hasattr(x, 'Text') and hasattr(x.Text, 'contents'):
+        if hasattr(x, "Text") and hasattr(x.Text, "contents"):
             if len(x.Text.contents) > 0:
-                locs[x['Tag']] = x.Text.contents[0]
-        elif hasattr(x, 'text') and hasattr(x.text, 'contents'):
+                locs[x["Tag"]] = x.Text.contents[0]
+        elif hasattr(x, "text") and hasattr(x.text, "contents"):
             if len(x.text.contents) > 0:
-                locs[x['Tag']] = x.text.contents[0]
+                locs[x["Tag"]] = x.text.contents[0]
         else:
-            print(f'unsual element in xml file for {bbg_version} lang {lang}!!')
+            print(f"unsual element in xml file for {bbg_version} lang {lang}!!")
             print(x)
-    b_unique = Bs_data.find_all('Row')
+    b_unique = Bs_data.find_all("Row")
     for x in b_unique:
-        if hasattr(x, 'Text') and hasattr(x.Text, 'contents'):
+        if hasattr(x, "Text") and hasattr(x.Text, "contents"):
             if len(x.Text.contents) > 0:
-                locs[x['Tag']] = x.Text.contents[0]
-        elif hasattr(x, 'text') and hasattr(x.text, 'contents'):
+                locs[x["Tag"]] = x.Text.contents[0]
+        elif hasattr(x, "text") and hasattr(x.text, "contents"):
             if len(x.text.contents) > 0:
-                locs[x['Tag']] = x.text.contents[0]
+                locs[x["Tag"]] = x.text.contents[0]
         else:
-            print(f'unsual element in xml file for {bbg_version} lang {lang}!!')
+            print(f"unsual element in xml file for {bbg_version} lang {lang}!!")
             print(x)
-    
+
     return locs
+
 
 def get_civs_tables(db_path):
     connection = sqlite3.connect(db_path)
 
     crsr = connection.cursor()
-    crsr.execute("SELECT CivilizationType, LeaderType, CivilizationName, CivilizationAbilityName, CivilizationAbilityDescription, LeaderName, LeaderAbilityName, LeaderAbilityDescription FROM Players WHERE Domain = 'Players:Expansion2_Players'")
+    crsr.execute(
+        """SELECT CivilizationType, LeaderType, CivilizationName, CivilizationAbilityName, CivilizationAbilityDescription, LeaderName, LeaderAbilityName, LeaderAbilityDescription
+         FROM Players WHERE Domain = 'Players:Expansion2_Players'"""
+    )
     rows = crsr.fetchall()
-    
+
     rows = sorted(rows)
     civLeaders = []
     civLeaderItems = dict()
@@ -86,7 +87,7 @@ def get_civs_tables(db_path):
         if val[0] + val[1] not in uniques:
             civLeaders.append(val)
             uniques.append(val[0] + val[1])
-    
+
     for row in civLeaders:
         crsr.execute(f"SELECT * FROM PlayerItems WHERE CivilizationType = '{row[0]}' AND LeaderType = '{row[1]}' AND Domain = 'Players:Expansion2_Players'")
         items = crsr.fetchall()
@@ -97,45 +98,49 @@ def get_civs_tables(db_path):
                 unique_items.append(val)
                 unique_items_names.append(val[3])
         civLeaderItems[row] = unique_items
-    
+
     connection.close()
     return civLeaderItems
+
 
 def get_units_dict(db_path):
     res = {}
     connection = sqlite3.connect(db_path)
 
     crsr = connection.cursor()
-    crsr.execute(f"SELECT * FROM Units")
+    crsr.execute("SELECT * FROM Units")
     rows = crsr.fetchall()
     for r in rows:
         res[r[0]] = r
     connection.close()
     return res
 
+
 def get_tech_to_loc_dict(db_path):
     res = {}
     connection = sqlite3.connect(db_path)
 
     crsr = connection.cursor()
-    crsr.execute(f"SELECT * FROM Technologies")
+    crsr.execute("SELECT * FROM Technologies")
     rows = crsr.fetchall()
     for r in rows:
         res[r[0]] = r[1]
     connection.close()
     return res
+
 
 def get_civic_to_loc_dict(db_path):
     res = {}
     connection = sqlite3.connect(db_path)
 
     crsr = connection.cursor()
-    crsr.execute(f"SELECT * FROM Civics")
+    crsr.execute("SELECT * FROM Civics")
     rows = crsr.fetchall()
     for r in rows:
         res[r[0]] = r[1]
     connection.close()
     return res
+
 
 def get_city_states(db_path):
     connection = sqlite3.connect(db_path)
@@ -143,7 +148,7 @@ def get_city_states(db_path):
     crsr = connection.cursor()
     crsr.execute("SELECT * FROM CityStates WHERE Domain = 'Expansion2CityStates' ORDER BY CityStateCategory, CivilizationType")
     rows = crsr.fetchall()
-    
+
     cityStates = []
     uniques = []
 
@@ -151,9 +156,10 @@ def get_city_states(db_path):
         if val[0] + val[1] not in uniques:
             cityStates.append(val)
             uniques.append(val[0] + val[1])
-    
+
     connection.close()
     return cityStates
+
 
 def get_beliefs(db_path, belief_type):
     connection = sqlite3.connect(db_path)
@@ -164,6 +170,7 @@ def get_beliefs(db_path, belief_type):
     connection.close()
     return rows
 
+
 def get_governors_list(db_path):
     connection = sqlite3.connect(db_path)
 
@@ -173,6 +180,7 @@ def get_governors_list(db_path):
     connection.close()
     return rows
 
+
 def get_governors_promotion_sets_dict(db_path, governor_list, governor_promotion_dict):
     res = {}
     connection = sqlite3.connect(db_path)
@@ -181,7 +189,13 @@ def get_governors_promotion_sets_dict(db_path, governor_list, governor_promotion
     for gov in governor_list:
         crsr.execute(f"SELECT * FROM GovernorPromotionSets WHERE GovernorType='{gov[0]}'")
         rows = crsr.fetchall()
-        sorted_rows = sorted(rows, key=lambda x: (governor_promotion_dict[x[1]][3], governor_promotion_dict[x[1]][4]))
+        sorted_rows = sorted(
+            rows,
+            key=lambda x: (
+                governor_promotion_dict[x[1]][3],
+                governor_promotion_dict[x[1]][4],
+            ),
+        )
         sorted_rows = [governor_promotion_dict[i[1]] for i in sorted_rows]
         res[gov[0]] = {}
         for i in np.arange(4):
@@ -191,18 +205,20 @@ def get_governors_promotion_sets_dict(db_path, governor_list, governor_promotion
     connection.close()
     return res
 
+
 def get_governors_promotion_dict(db_path):
     res = {}
     connection = sqlite3.connect(db_path)
 
     crsr = connection.cursor()
-    crsr.execute(f"SELECT * FROM GovernorPromotions")
+    crsr.execute("SELECT * FROM GovernorPromotions")
     rows = crsr.fetchall()
     promotion_to_row = {}
     for r in rows:
         promotion_to_row[r[0]] = r
     connection.close()
     return promotion_to_row
+
 
 def get_natural_wonders_list(db_path):
     connection = sqlite3.connect(db_path)
@@ -212,6 +228,7 @@ def get_natural_wonders_list(db_path):
     rows = crsr.fetchall()
     connection.close()
     return rows
+
 
 def get_world_wonders_list(db_path):
     connection = sqlite3.connect(db_path)
@@ -229,17 +246,17 @@ def get_world_wonders_list(db_path):
     civic_to_era_dict = {}
     for civic in civic_rows:
         civic_to_era_dict[civic[0]] = civic[1]
-        
+
     eras = [
-        'ERA_ANCIENT',
-        'ERA_CLASSICAL',
-        'ERA_MEDIEVAL',
-        'ERA_RENAISSANCE',
-        'ERA_INDUSTRIAL',
-        'ERA_MODERN',
-        'ERA_ATOMIC',
+        "ERA_ANCIENT",
+        "ERA_CLASSICAL",
+        "ERA_MEDIEVAL",
+        "ERA_RENAISSANCE",
+        "ERA_INDUSTRIAL",
+        "ERA_MODERN",
+        "ERA_ATOMIC",
     ]
-    era_to_loc = lambda x: f'LOC_{x}_NAME'
+    era_to_loc = lambda x: f"LOC_{x}_NAME"
     result = {era_to_loc(era): [] for era in eras}
 
     for wonder in wonder_rows:
@@ -250,9 +267,10 @@ def get_world_wonders_list(db_path):
         elif wonder_civic is not None:
             result[era_to_loc(civic_to_era_dict[wonder_civic])].append(wonder)
         else:
-            print(f'Wonder {wonder[0]} has no tech or civic prerequisites!')
+            print(f"Wonder {wonder[0]} has no tech or civic prerequisites!")
     connection.close()
     return result
+
 
 def get_dark_age_card_list(db_path):
     connection = sqlite3.connect(db_path)
@@ -262,6 +280,7 @@ def get_dark_age_card_list(db_path):
     rows = crsr.fetchall()
     connection.close()
     return rows
+
 
 def get_eras_name_dict(eras, db_path):
     connection = sqlite3.connect(db_path)
@@ -275,8 +294,9 @@ def get_eras_name_dict(eras, db_path):
     for row in rows:
         if row[0] in eras:
             eras_translation[row[0]] = row[1]
-    
+
     return eras_translation
+
 
 def get_dark_age_card_list_eras(db_path):
     connection = sqlite3.connect(db_path)
@@ -285,16 +305,16 @@ def get_dark_age_card_list_eras(db_path):
     crsr.execute("SELECT * FROM Policies_XP1")
     rows = crsr.fetchall()
     connection.close()
-    
+
     eras = [
-        'ERA_CLASSICAL',
-        'ERA_MEDIEVAL',
-        'ERA_RENAISSANCE',
-        'ERA_INDUSTRIAL',
-        'ERA_MODERN',
-        'ERA_ATOMIC',
-        'ERA_INFORMATION',
-        'ERA_FUTURE'
+        "ERA_CLASSICAL",
+        "ERA_MEDIEVAL",
+        "ERA_RENAISSANCE",
+        "ERA_INDUSTRIAL",
+        "ERA_MODERN",
+        "ERA_ATOMIC",
+        "ERA_INFORMATION",
+        "ERA_FUTURE",
     ]
     card_to_era_dict = {}
     for i in range(len(rows)):
@@ -311,22 +331,24 @@ def get_dark_age_card_list_eras(db_path):
                 break
     return card_to_era_dict
 
+
 def get_dark_age_card_list_per_era(dark_age_policy, dark_age_policy_era):
     eras = [
-        'ERA_CLASSICAL',
-        'ERA_MEDIEVAL',
-        'ERA_RENAISSANCE',
-        'ERA_INDUSTRIAL',
-        'ERA_MODERN',
-        'ERA_ATOMIC',
-        'ERA_INFORMATION',
-        'ERA_FUTURE'
+        "ERA_CLASSICAL",
+        "ERA_MEDIEVAL",
+        "ERA_RENAISSANCE",
+        "ERA_INDUSTRIAL",
+        "ERA_MODERN",
+        "ERA_ATOMIC",
+        "ERA_INFORMATION",
+        "ERA_FUTURE",
     ]
     era_to_card_dict = {era: [] for era in eras}
     for card in dark_age_policy:
         for era in dark_age_policy_era[card[0]]:
             era_to_card_dict[era].append(card)
     return era_to_card_dict
+
 
 def get_dedication_list_per_era(db_path):
     connection = sqlite3.connect(db_path)
@@ -335,19 +357,19 @@ def get_dedication_list_per_era(db_path):
     crsr.execute("SELECT * FROM CommemorationTypes")
     rows = crsr.fetchall()
     connection.close()
-    
+
     eras = [
-        'ERA_CLASSICAL',
-        'ERA_MEDIEVAL',
-        'ERA_RENAISSANCE',
-        'ERA_INDUSTRIAL',
-        'ERA_MODERN',
-        'ERA_ATOMIC',
-        'ERA_INFORMATION',
-        'ERA_FUTURE'
+        "ERA_CLASSICAL",
+        "ERA_MEDIEVAL",
+        "ERA_RENAISSANCE",
+        "ERA_INDUSTRIAL",
+        "ERA_MODERN",
+        "ERA_ATOMIC",
+        "ERA_INFORMATION",
+        "ERA_FUTURE",
     ]
     eras_name = get_eras_name_dict(eras, db_path)
-    
+
     era_to_dedication_dict = {era: [] for era in eras_name.values()}
     for i in range(len(rows)):
         start = rows[i][5]
@@ -356,37 +378,54 @@ def get_dedication_list_per_era(db_path):
         for j in range(len(eras)):
             if start == eras[j]:
                 after_start = True
-            if after_start == True:
+            if after_start:
                 era_to_dedication_dict[eras_name[eras[j]]].append(rows[i])
             if end == eras[j]:
                 break
-    
+
     return era_to_dedication_dict
+
 
 def get_start_biases(db_path):
     writer = csv.writer()
-    writer.writerow(['CivilizationType', 'BiasType', 'TerrainType', 'FeatureType', 'ResourceType', 'Tier', 'Extra', 'CustomPlacement'])
+    writer.writerow(
+        [
+            "CivilizationType",
+            "BiasType",
+            "TerrainType",
+            "FeatureType",
+            "ResourceType",
+            "Tier",
+            "Extra",
+            "CustomPlacement",
+        ]
+    )
 
     connection = sqlite3.connect(db_path)
     crsr = connection.cursor()
-    
+
     startBiasCustomQuery = "SELECT CivilizationType, 'Custom', Null AS TerrainType, Null AS FeatureType, Null AS ResourceType, Null AS Tier, Null AS Extra, CustomPlacement FROM StartBiasCustom"
     startBiasFeaturesQuery = "SELECT CivilizationType, 'Feature', Null AS TerrainType, FeatureType, Null AS ResourceType, Tier, Null AS Extra, Null AS CustomPlacement FROM StartBiasFeatures"
     startBiasNegativesQuery = "SELECT CivilizationType, 'Negative', TerrainType, FeatureType, ResourceType, Tier, Extra, Null AS CustomPlacement FROM StartBiasNegatives"
     startBiasResourcesQuery = "SELECT CivilizationType, 'Resources', Null AS TerrainType, Null AS FeatureType, ResourceType, Tier, Null AS Extra, Null AS CustomPlacement FROM StartBiasResources"
     startBiasRiversQuery = "SELECT CivilizationType, 'Rivers', Null AS TerrainType, Null AS FeatureType, NULL AS ResourceType, Tier, Null AS Extra, Null AS CustomPlacement FROM StartBiasRivers"
     startBiasTerrainsQuery = "SELECT CivilizationType, 'Terrains', TerrainType, Null AS FeatureType, Null AS ResourceType, Tier, Null AS Extra, Null AS CustomPlacement FROM StartBiasTerrains"
-    
-    crsr.execute(f'{startBiasCustomQuery} UNION {startBiasFeaturesQuery} UNION {startBiasNegativesQuery} UNION {startBiasResourcesQuery} UNION {startBiasRiversQuery} UNION {startBiasTerrainsQuery}')
+
+    crsr.execute(
+        f"{startBiasCustomQuery} UNION {startBiasFeaturesQuery} UNION {startBiasNegativesQuery} UNION {startBiasResourcesQuery} UNION {startBiasRiversQuery} UNION {startBiasTerrainsQuery}"
+    )
     rows = crsr.fetchall()
     writer.writerows(rows)
     connection.close()
+
 
 def get_property_names(db_path, property_type, name_db):
     connection = sqlite3.connect(db_path)
 
     crsr = connection.cursor()
-    crsr.execute(f"SELECT * FROM Named{property_type}Civilizations ORDER BY Named{property_type}Type")
+    crsr.execute(
+        f"SELECT * FROM Named{property_type}Civilizations ORDER BY Named{property_type}Type"
+    )
     rows = crsr.fetchall()
     crsr.execute(f"SELECT * FROM Named{name_db}")
     property_names = crsr.fetchall()
@@ -394,7 +433,7 @@ def get_property_names(db_path, property_type, name_db):
     for name in property_names:
         property_to_loc_dict[name[0]] = name[1]
 
-    crsr.execute(f'SELECT * FROM Civilizations')
+    crsr.execute("SELECT * FROM Civilizations")
     civ_names = crsr.fetchall()
     civ_to_loc_dict = {}
     for name in civ_names:
@@ -405,9 +444,10 @@ def get_property_names(db_path, property_type, name_db):
         if property_to_loc_dict[val[0]] not in property_dict:
             property_dict[property_to_loc_dict[val[0]]] = []
         property_dict[property_to_loc_dict[val[0]]].append(civ_to_loc_dict[val[1]])
-    
+
     connection.close()
     return property_dict
+
 
 def get_great_people_list(db_path):
     connection = sqlite3.connect(db_path)
@@ -415,59 +455,61 @@ def get_great_people_list(db_path):
     crsr = connection.cursor()
     crsr.execute("SELECT GreatPersonIndividualType, Name, GreatPersonClassType, EraType FROM GreatPersonIndividuals ORDER BY GreatPersonClassType, EraType, Name")
     rows = crsr.fetchall()
-    
+
     crsr.execute("SELECT GreatPersonClassType, Name FROM GreatPersonClasses")
     gp_classes = crsr.fetchall()
     class_to_loc_dict = {}
     for row in gp_classes:
         class_to_loc_dict[row[0]] = row[1]
-        
+
     eras = [
-        'ERA_ANCIENT',
-        'ERA_CLASSICAL',
-        'ERA_MEDIEVAL',
-        'ERA_RENAISSANCE',
-        'ERA_INDUSTRIAL',
-        'ERA_MODERN',
-        'ERA_ATOMIC',
-        'ERA_INFORMATION',
-        'ERA_FUTURE'
+        "ERA_ANCIENT",
+        "ERA_CLASSICAL",
+        "ERA_MEDIEVAL",
+        "ERA_RENAISSANCE",
+        "ERA_INDUSTRIAL",
+        "ERA_MODERN",
+        "ERA_ATOMIC",
+        "ERA_INFORMATION",
+        "ERA_FUTURE",
     ]
     eras_name = get_eras_name_dict(eras, db_path)
-    
+
     great_people_dict = {}
     for row in rows:
         gp_type_loc = class_to_loc_dict[row[2]]
+
         if gp_type_loc not in great_people_dict:
             great_people_dict[gp_type_loc] = {}
         gp_era = eras_name[row[3]]
         if gp_era not in great_people_dict[gp_type_loc]:
             great_people_dict[gp_type_loc][gp_era] = []
         great_people_dict[gp_type_loc][gp_era].append(row)
-    
+
     connection.close()
     return great_people_dict
+
 
 def get_great_people_modifier_dict(db_path):
     res = {}
     connection = sqlite3.connect(db_path)
 
     crsr = connection.cursor()
-    crsr.execute(f"SELECT * FROM GreatPersonIndividualActionModifiers")
+    crsr.execute(
+        """SELECT ga.GreatPersonIndividualType, ga.ModifierId, Text, ActionCharges, ActionEffectTextOverride FROM GreatPersonIndividualActionModifiers ga LEFT JOIN ModifierStrings USING(ModifierId)
+         RIGHT JOIN GreatPersonIndividuals USING(GreatPersonIndividualType) where ga.GreatPersonIndividualType NOT NULL"""
+    )
     rows = crsr.fetchall()
-    
-    crsr.execute(f"SELECT * FROM ModifierStrings")
-    modifier_strings = crsr.fetchall()
-    modifier_to_loc_dict = {}
-    for row in modifier_strings:
-        modifier_to_loc_dict[row[0]] = row[2]
-
-    for row in rows:
-        gp = row[0]
-        if gp not in res:
-            res[gp] = []
-        if row[1] in modifier_to_loc_dict:
-            res[gp].append(modifier_to_loc_dict[row[1]])
+    for gp, modifier, loc, charges, action_override in rows:
+        res.setdefault(gp, [])
+        if action_override:
+            if action_override not in res[gp]:
+                res[gp].append(action_override)
+        elif loc:
+            res[gp].append(loc)
 
     connection.close()
     return res
+
+if __name__ == '__main__':
+    print(get_great_people_modifier_dict('sqlFiles/Beta/DebugGameplay.sqlite'))
