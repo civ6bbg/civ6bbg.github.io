@@ -453,7 +453,7 @@ def get_great_people_list(db_path):
     connection = sqlite3.connect(db_path)
 
     crsr = connection.cursor()
-    crsr.execute("SELECT GreatPersonIndividualType, Name, GreatPersonClassType, EraType FROM GreatPersonIndividuals ORDER BY GreatPersonClassType, EraType, Name")
+    crsr.execute("SELECT GreatPersonIndividualType, Name, GreatPersonClassType, EraType, ActionCharges FROM GreatPersonIndividuals ORDER BY GreatPersonClassType, EraType, Name")
     rows = crsr.fetchall()
 
     crsr.execute("SELECT GreatPersonClassType, Name FROM GreatPersonClasses")
@@ -514,5 +514,3 @@ def get_great_people_modifier_dict(db_path):
     connection.close()
     return res
 
-if __name__ == '__main__':
-    print(get_great_people_modifier_dict('sqlFiles/Beta/DebugGameplay.sqlite'))
