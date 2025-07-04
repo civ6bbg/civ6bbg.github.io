@@ -1,6 +1,7 @@
 from bs4 import BeautifulSoup
 import sqlite3
 import re
+import math
 
 import dominate
 from dominate.svg import *
@@ -1025,36 +1026,31 @@ def get_great_people_html_file(bbg_version, lang):
                                                 with div(cls="col-lg-12"):
                                                     with div(cls="chart"):
                                                         h3(get_loc(locs_data, era, en_US_locs_data), cls='civ-name')
-                                    # with div(cls="col-lg-12"):
-                                        # with div(cls="chart"):
                                         with div(cls='row'):
-                                            if len(great_people[gp_type][era]) == 1:
-                                                div_cls = 'col-md-12 col-lg-12'
-                                            elif len(great_people[gp_type][era]) == 2:
-                                                div_cls = 'col-md-6 col-lg-6'
-                                            elif len(great_people[gp_type][era]) == 3:
-                                                div_cls = 'col-md-4 col-lg-4'
-                                            elif len(great_people[gp_type][era]) == 4:
-                                                div_cls = 'col-md-3 col-lg-3'
-                                            elif len(great_people[gp_type][era]) == 5:
-                                                div_cls = 'col-md-3 col-lg-3'
-                                            elif len(great_people[gp_type][era]) <= 6:
-                                                div_cls = 'col-md-2 col-lg-2'
+                                            cls_len = math.ceil(12 / len(great_people[gp_type][era]))
+                                            div_cls = f'col-md-{cls_len} col-lg-{cls_len}'
                                             for gp in great_people[gp_type][era]:
                                                 with div(cls=div_cls):
                                                     with div(cls="chart"):
                                                         p(get_loc(locs_data, gp[1], en_US_locs_data), cls='civ-ability-name')
                                                         br()
+                                                        with p(gp[4], cls='civ-ability-name'):
+                                                            img(src=f'/images/ICON_CHARGES.webp', style="height:1em")
+                                                        br()
                                                         if gp[0] in great_people_modifier_dict.keys():
-                                                            for mod in great_people_modifier_dict[gp[0]]:
-                                                                p(get_loc(locs_data, mod, en_US_locs_data), style="text-align:left", cls='civ-ability-desc')
+                                                            for mod, amount in great_people_modifier_dict[gp[0]]:
+                                                                processed = loc_amount_parameter(get_loc(locs_data, mod, en_US_locs_data), amount)
+                                                                p(processed, style="text-align:left", cls='civ-ability-desc')
                                                                 br()
-                                                        # p(get_loc(locs_data, gp[3], en_US_locs_data), style="text-align:left", cls='civ-ability-desc')
-                                                        # br()
-                                                # p(get_loc(locs_data, gp_type, en_US_locs_data), style="text-align:left", cls='civ-ability-desc')
-                                                # br()
         add_final_scripts()
         add_scroll_up()
 
     docStr = str(doc)
     return refactorCivSpecialSyntax(bbg_version, lang, docStr)
+
+
+def loc_amount_parameter(localized_text: str, amount: float) -> str:
+    def fix_amount(matchobj):
+        return matchobj.group(2) if amount > 1 else matchobj.group(1)
+    localized_text = re.sub(r'{Amount ?: ?plural 1\?(.*?); ?other\?(.*?);}', fix_amount, localized_text)
+    return localized_text.replace('{Amount}', f'{amount}').replace('{Amount : number #}', f'{amount}')
