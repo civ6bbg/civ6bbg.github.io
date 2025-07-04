@@ -171,6 +171,8 @@ def refactorCivSpecialSyntax(bbg_version, lang, docStr):
         docStr = reg.sub(f'<img src="/images/{replace[1:-1]}.webp" style="height:1em"/>', docStr)
     reg = re.compile(re.escape('[ICON_BULLET]'), re.IGNORECASE)
     docStr = reg.sub(f'<span>&#8226;</span> ', docStr)
+    reg = re.compile(re.escape('[ICON_BULLETGLOW]'), re.IGNORECASE)
+    docStr = reg.sub(f'<span>&#8226;</span> ', docStr)
     docStr = docStr.replace('[ICON_THEMEBONUS_ACTIVE]', '')
     docStr = docStr.replace('[ICON_PRESSUREUP]', '')
     docStr = docStr.replace('[ICON_PRESSUREDOWN]', '')
