@@ -1034,8 +1034,9 @@ def get_great_people_html_file(bbg_version, lang):
                                                     with div(cls="chart"):
                                                         p(get_loc(locs_data, gp[1], en_US_locs_data), cls='civ-ability-name')
                                                         br()
-                                                        with p(gp[4], cls='civ-ability-name'):
-                                                            img(src=f'/images/ICON_CHARGES.webp', style="height:1em")
+                                                        if gp[4] > 0:
+                                                            with p(gp[4], cls='civ-ability-name'):
+                                                                img(src=f'/images/ICON_CHARGES.webp', style="height:1em")
                                                         br()
                                                         if gp[0] in great_people_modifier_dict.keys():
                                                             for mod, amount in great_people_modifier_dict[gp[0]]:
