@@ -422,8 +422,8 @@ def add_scroll_up():
             i(cls='fa fa-angle-up')
 
 def get_leader_html_file(bbg_version, lang):
-    en_US_locs_data = get_locs_data("sqlFiles/CivVILocalization.sqlite", bbg_version, 'en_US')
-    locs_data = get_locs_data("sqlFiles/CivVILocalization.sqlite", bbg_version, lang)
+    en_US_locs_data = get_locs_data(bbg_version, 'en_US')
+    locs_data = get_locs_data(bbg_version, lang)
 
     doc = dominate.document(title=None, lang=get_html_lang(lang))
     if bbg_version != None:
@@ -487,8 +487,8 @@ def get_leader_html_file(bbg_version, lang):
     return refactorCivSpecialSyntax(bbg_version, lang, docStr)
 
 def get_city_state_html_file(bbg_version, lang):
-    en_US_locs_data = get_locs_data("sqlFiles/CivVILocalization.sqlite", bbg_version, 'en_US')
-    locs_data = get_locs_data("sqlFiles/CivVILocalization.sqlite", bbg_version, lang)
+    en_US_locs_data = get_locs_data(bbg_version, 'en_US')
+    locs_data = get_locs_data(bbg_version, lang)
 
     doc = dominate.document(title=None, lang=get_html_lang(lang))
     if bbg_version != None:
@@ -529,8 +529,8 @@ def get_city_state_html_file(bbg_version, lang):
     return refactorCivSpecialSyntax(bbg_version, lang, docStr)
 
 def get_religion_html_file(bbg_version, lang):
-    en_US_locs_data = get_locs_data("sqlFiles/CivVILocalization.sqlite", bbg_version, 'en_US')
-    locs_data = get_locs_data("sqlFiles/CivVILocalization.sqlite", bbg_version, lang)
+    en_US_locs_data = get_locs_data(bbg_version, 'en_US')
+    locs_data = get_locs_data(bbg_version, lang)
 
     doc = dominate.document(title=None, lang=get_html_lang(lang))
     if bbg_version != None:
@@ -629,8 +629,8 @@ def get_religion_html_file(bbg_version, lang):
     return refactorCivSpecialSyntax(bbg_version, lang, docStr)
 
 def get_governor_html_file(bbg_version, lang):
-    en_US_locs_data = get_locs_data("sqlFiles/CivVILocalization.sqlite", bbg_version, 'en_US')
-    locs_data = get_locs_data("sqlFiles/CivVILocalization.sqlite", bbg_version, lang)
+    en_US_locs_data = get_locs_data(bbg_version, 'en_US')
+    locs_data = get_locs_data(bbg_version, lang)
 
     doc = dominate.document(title=None, lang=get_html_lang(lang))
     if bbg_version != None:
@@ -692,8 +692,8 @@ def get_governor_html_file(bbg_version, lang):
     return refactorCivSpecialSyntax(bbg_version, lang, docStr)
     
 def get_natural_wonder_html_file(bbg_version, lang):
-    en_US_locs_data = get_locs_data("sqlFiles/CivVILocalization.sqlite", bbg_version, 'en_US')
-    locs_data = get_locs_data("sqlFiles/CivVILocalization.sqlite", bbg_version, lang)
+    en_US_locs_data = get_locs_data(bbg_version, 'en_US')
+    locs_data = get_locs_data(bbg_version, lang)
 
     doc = dominate.document(title=None, lang=get_html_lang(lang))
     if bbg_version != None:
@@ -735,8 +735,8 @@ def get_natural_wonder_html_file(bbg_version, lang):
     return refactorCivSpecialSyntax(bbg_version, lang, docStr)
     
 def get_world_wonder_html_file(bbg_version, lang):
-    en_US_locs_data = get_locs_data("sqlFiles/CivVILocalization.sqlite", bbg_version, 'en_US')
-    locs_data = get_locs_data("sqlFiles/CivVILocalization.sqlite", bbg_version, lang)
+    en_US_locs_data = get_locs_data(bbg_version, 'en_US')
+    locs_data = get_locs_data(bbg_version, lang)
 
     doc = dominate.document(title=None, lang=get_html_lang(lang))
     if bbg_version != None:
@@ -785,8 +785,8 @@ def get_world_wonder_html_file(bbg_version, lang):
     return refactorCivSpecialSyntax(bbg_version, lang, docStr)
     
 def get_misc_html_file(bbg_version, lang):
-    en_US_locs_data = get_locs_data("sqlFiles/CivVILocalization.sqlite", bbg_version, 'en_US')
-    locs_data = get_locs_data("sqlFiles/CivVILocalization.sqlite", bbg_version, lang)
+    en_US_locs_data = get_locs_data(bbg_version, 'en_US')
+    locs_data = get_locs_data(bbg_version, lang)
 
     doc = dominate.document(title=None, lang=get_html_lang(lang))
     if bbg_version != None:
@@ -859,8 +859,8 @@ def get_misc_html_file(bbg_version, lang):
     return refactorCivSpecialSyntax(bbg_version, lang, docStr)
     
 def get_names_html_file(bbg_version, lang):
-    en_US_locs_data = get_locs_data("sqlFiles/CivVILocalization.sqlite", bbg_version, 'en_US')
-    locs_data = get_locs_data("sqlFiles/CivVILocalization.sqlite", bbg_version, lang)
+    en_US_locs_data = get_locs_data(bbg_version, 'en_US')
+    locs_data = get_locs_data(bbg_version, lang)
 
     doc = dominate.document(title=None, lang=get_html_lang(lang))
     if bbg_version != None:
@@ -957,8 +957,8 @@ def get_names_html_file(bbg_version, lang):
     return refactorCivSpecialSyntax(bbg_version, lang, docStr)
     
 def get_great_people_html_file(bbg_version, lang):
-    en_US_locs_data = get_locs_data("sqlFiles/CivVILocalization.sqlite", bbg_version, 'en_US')
-    locs_data = get_locs_data("sqlFiles/CivVILocalization.sqlite", bbg_version, lang)
+    en_US_locs_data = get_locs_data(bbg_version, 'en_US')
+    locs_data = get_locs_data(bbg_version, lang)
 
     doc = dominate.document(title=None, lang=get_html_lang(lang))
     if bbg_version != None:

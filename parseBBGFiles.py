@@ -4,7 +4,8 @@ import numpy as np
 import csv
 
 
-def get_locs_data(db_path, bbg_version, lang):
+def get_locs_data(bbg_version, lang):
+    db_path = "sqlFiles/CivVILocalization.sqlite"
     connection = sqlite3.connect(db_path)
 
     crsr = connection.cursor()
