@@ -43,7 +43,7 @@
 		<!-- == AMERICA - AMERIKA == -->
 		<!-- Civilization ability - Zivilisationsfähigkeit (Gründerväter) -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_FOUNDING_FATHERS_EXPANSION2_DESCRIPTION" Language="de_DE">
-			<Text>Alle Diplomatiepolitik-Plätze in der aktuellen [ICON_GOVERNMENT] Regierung werden in Jokerpolitik-Plätze umgewandelt.[NEWLINE][NEWLINE]+1 [ICON_FAVOR] Diplomatische Gunst-Punkte pro [ICON_TURN] Runde, für jeden Jokerpolitik-Platz in ihrer [ICON_GOVERNMENT] Regierung.[NEWLINE][NEWLINE][ICON_BULLET] Startbedingungen: T4 Graslandbergfelder, Ebenenbergfelder.</Text>
+			<Text>Alle Diplomatiepolitik-Plätze in der aktuellen [ICON_GOVERNMENT] Regierung werden in Jokerpolitik-Plätze umgewandelt.[NEWLINE][NEWLINE]+1 [ICON_FAVOR] Diplomatische Gunst-Punkte pro [ICON_TURN] Runde, für jeden Jokerpolitik-Platz in ihrer [ICON_GOVERNMENT] Regierung.[NEWLINE][NEWLINE][ICON_BULLETGLOW] Startbedingungen: T4 Graslandbergfelder, Ebenenbergfelder.</Text>
 		</Replace>
 		<!-- = Leader ability - Führerfähigkeit (Theodore Roosevelt - base game)= -->
 		<Replace Tag="LOC_TRAIT_LEADER_ROOSEVELT_COROLLARY_DESCRIPTION" Language="de_DE">
@@ -57,11 +57,11 @@
 		</Row>
 		<!-- = Leader ability - Führerfähigkeit (Teddy Roosevelt, Bull Moose - Antikes und Parks)= -->
 		<Replace Tag="LOC_TRAIT_LEADER_ANTIQUES_AND_PARKS_DESCRIPTION" Language="de_DE">
-			<Text>Nach Erforschung der Ausrichtung "Gesetzgebung", erhalten Felder mit atemberaubender Anziehungskraft folgende Boni:[NEWLINE][NEWLINE]• +1 [ICON_SCIENCE] Wissenschaft (erhöht auf +2 [ICON_SCIENCE] Wissenschaft, nach Erforschung der Technologie "Astronomie"), wenn sie an ein Naturwunder oder ein Gebirge angrenzen.[NEWLINE]• +1 [ICON_CULTURE] Kultur (erhöht auf +2 [ICON_CULTURE] Kultur, nach Erforschung der Ausrichtung "Aufklärung"), wenn sie an ein Naturwunder oder ein Waldfeld angrenzen.[NEWLINE][NEWLINE]+1 Anziehungskraft für alle Felder einer [ICON_DISTRICT_CITY_CENTER] Stadt die einen "Nationalpark" besitzen.[NEWLINE][NEWLINE]Waldfelder können, nach Erforschung der Ausrichtung "Mittelaltermärkte", gepflanzt werden.</Text>
+			<Text>Nach Erforschung der Ausrichtung "Gesetzgebung", erhalten Felder mit atemberaubender Anziehungskraft folgende Boni:[NEWLINE][NEWLINE]• +1 [ICON_SCIENCE] Wissenschaft (erhöht auf +2 [ICON_SCIENCE] Wissenschaft, nach Erforschung der Technologie "Astronomie"), wenn sie an ein Naturwunder oder ein Gebirge angrenzen.[NEWLINE]• +1 [ICON_CULTURE] Kultur (erhöht auf +2 [ICON_CULTURE] Kultur, nach Erforschung der Ausrichtung "Aufklärung"), wenn sie an ein Naturwunder oder ein Waldfeld angrenzen.[NEWLINE][NEWLINE]Waldfelder können, nach Erforschung der Ausrichtung "Mittelaltermärkte", gepflanzt werden.</Text>
 		</Replace>
 		<!-- = Leader ability - Führerfähigkeit (Teddy Roosevelt, Rough Rider - Roosevelt-Folgesatz) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_ROOSEVELT_COROLLARY_ROUGH_RIDER_DESCRIPTION" Language="de_DE">
-			<Text>Alle Einheiten erhalten +1 [ICON_STRENGTH] Kampfstärke für jedes erreichte Zeitalter, das im Bereich Technologie oder Ausrichtung erreicht wurde (maximal +5, von der Klassik bis zur Moderne).[NEWLINE][NEWLINE][ICON_ENVOY] Gesandte, die zu Stadtstaaten geschickt werden, zu denen du einen bestehenden [ICON_TradeRoute] Handelsweg hast, zählen als 2 [ICON_ENVOY] Gesandte.[NEWLINE][NEWLINE]Erhalte die einzigartige Einheit "Rough Rider", nach Erforschung der Technologie "Ballistik".</Text>
+			<Text>Alle Einheiten erhalten +1 [ICON_STRENGTH] Kampfstärke für jedes erreichte Zeitalter, das im Bereich Technologie oder Ausrichtung erreicht wurde (maximal +6, von der Klassik bis zum Atomzeitalter).[NEWLINE][NEWLINE][ICON_ENVOY] Gesandte, die zu Stadtstaaten geschickt werden, zu denen du einen bestehenden [ICON_TradeRoute] Handelsweg hast, zählen als 2 [ICON_ENVOY] Gesandte.[NEWLINE][NEWLINE]Erhalte die einzigartige Einheit "Rough Rider", nach Erforschung der Technologie "Ballistik".</Text>
 		</Replace>
 		<Row Tag="LOC_BBG_TEDDY_COMBAT_BONUS_IN_CLASSICAL" Language="de_DE">
 			<Text>+1 [ICON_STRENGTH] Kampfstärke für das Erreichen der Klassik (Roosevelt-Korollar).</Text>
@@ -104,7 +104,7 @@
 		<!-- == ARABIA - ARABIEN == -->
 		<!-- = Civilization ability - Zivilisationsfähigkeit (Der letzte Prophet) = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_LAST_PROPHET_DESCRIPTION" Language="de_DE">
-			<Text>+1 [ICON_GreatProphet] Großer Prophet-Punkte pro [ICON_TURN] Runde, nach Erforschung der Technologie "Astrologie".[NEWLINE][NEWLINE]Der letzte verfügbare [ICON_GreatProphet] Große Prophet wird automatisch rekrutiert, falls Arabien nicht bereits einen hatte.[NEWLINE][NEWLINE]+1 [ICON_SCIENCE] Wissenschaft durch jede fremde [ICON_DISTRICT_CITY_CENTER] Stadt, die der [ICON_RELIGION] Religion von Arabien folgt.[NEWLINE][NEWLINE][ICON_DISTRICT_CAMPUS] Campus- und [ICON_DISTRICT_HOLYSITE] Heilige Stätte-Bezirke erhalten einen Standard-Nachbarschaftsbonus (+1).[NEWLINE][NEWLINE][ICON_BULLET] Startbedingungen: Keine.</Text>
+			<Text>+1 [ICON_GreatProphet] Großer Prophet-Punkte pro [ICON_TURN] Runde, nach Erforschung der Technologie "Astrologie".[NEWLINE][NEWLINE]Der letzte verfügbare [ICON_GreatProphet] Große Prophet wird automatisch rekrutiert, falls Arabien nicht bereits einen hatte.[NEWLINE][NEWLINE]+1 [ICON_SCIENCE] Wissenschaft durch jede fremde [ICON_DISTRICT_CITY_CENTER] Stadt, die der [ICON_RELIGION] Religion von Arabien folgt.[NEWLINE][NEWLINE][ICON_DISTRICT_CAMPUS] Campus- und [ICON_DISTRICT_HOLYSITE] Heilige Stätte-Bezirke erhalten einen Standard-Nachbarschaftsbonus (+1).[NEWLINE][NEWLINE][ICON_BULLETGLOW] Startbedingungen: Keine.</Text>
 		</Replace>
 		<Row Tag="BBG_LOC_HS_ARABIA_CAMPUS" Language="de_DE">
 			<Text>+{1_num} [ICON_FAITH] Glauben von einem angrenzenden [ICON_DISTRICT_CAMPUS] Campus-Bezirk.</Text>
@@ -138,7 +138,7 @@
 		<!-- == AUSTRALIA - AUSTRALIEN == -->
 		<!-- = Civilization ability - Zivilisationsfähigkeit (Land Down Under) = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_LAND_DOWN_UNDER_DESCRIPTION" Language="de_DE">
-			<Text>+1 Nachbarschaftsbonus für [ICON_DISTRICT_CAMPUS] Campus-, [ICON_DISTRICT_COMMERCIAL_HUB] Handelszentrum-, [ICON_DISTRICT_HOLYSITE] Heilige Stätte- und [ICON_DISTRICT_THEATER] Theaterplatz-Bezirke, auf Feldern mit bezaubernder Anziehungskraft (+3 mit atemberaubender Anziehungskraft).[NEWLINE][NEWLINE]+1 [ICON_AMENITIES] Annehmlichkeit für [ICON_DISTRICT_CITY_CENTER] Stadtzentren auf Feldern mit bezaubernder Anziehungskraft (+2 mit atemberaubender Anziehungskraft), nach Erforschung der Ausrichtung "Frühes Reich".[NEWLINE][NEWLINE]+3 [ICON_HOUSING] Wohnraum für Küsten-[ICON_DISTRICT_CITY_CENTER] Städte. [NEWLINE][NEWLINE]Jeder Bau einer "Weide", löst einen Kulturschock für angrenzende Felder aus.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Produktion für "Weiden", nach Erforschung der Ausrichtung "Politische Philosophie".[NEWLINE][NEWLINE][ICON_BULLET] Startbedingungen: T1 Küstenfelder; T4 [ICON_RESOURCE_HORSES] Pferde, [ICON_RESOURCE_CATTLE] Vieh, [ICON_RESOURCE_SHEEP] Schafe; -T2 Schwemmlandfelder; -T4 Regenwaldfelder. Spezial: "Ich bin salzig", kann an Küstenfeldern ohne Süßwasser starten.</Text>
+			<Text>+1 Nachbarschaftsbonus für [ICON_DISTRICT_CAMPUS] Campus-, [ICON_DISTRICT_COMMERCIAL_HUB] Handelszentrum-, [ICON_DISTRICT_HOLYSITE] Heilige Stätte- und [ICON_DISTRICT_THEATER] Theaterplatz-Bezirke, auf Feldern mit bezaubernder Anziehungskraft (+3 mit atemberaubender Anziehungskraft).[NEWLINE][NEWLINE]+1 [ICON_AMENITIES] Annehmlichkeit für [ICON_DISTRICT_CITY_CENTER] Stadtzentren auf Feldern mit bezaubernder Anziehungskraft (+2 mit atemberaubender Anziehungskraft), nach Erforschung der Ausrichtung "Frühes Reich".[NEWLINE][NEWLINE]+3 [ICON_HOUSING] Wohnraum für Küsten-[ICON_DISTRICT_CITY_CENTER] Städte. [NEWLINE][NEWLINE]Jeder Bau einer "Weide", löst einen Kulturschock für angrenzende Felder aus.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Produktion für "Weiden", nach Erforschung der Ausrichtung "Politische Philosophie".[NEWLINE][NEWLINE][ICON_BULLETGLOW] Startbedingungen: T1 Küstenfelder; T4 [ICON_RESOURCE_HORSES] Pferde, [ICON_RESOURCE_CATTLE] Vieh, [ICON_RESOURCE_SHEEP] Schafe; -T2 Schwemmlandfelder; -T4 Regenwaldfelder. Spezial: "Ich bin salzig", kann an Küstenfeldern ohne Süßwasser starten.</Text>
 		</Replace>
 		<!-- = Leader ability - Führerfähigkeit (John Curtin - Festung der Zivilisation) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_CITADEL_CIVILIZATION_EXPANSION2_DESCRIPTION" Language="de_DE">
@@ -156,7 +156,7 @@
 		<!-- == AZTECS - AZTEKENLAND == -->
 		<!-- = Civilization ability - Zivilisationsfähigkeit (Legende der Fünf Sonnen) = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_LEGEND_FIVE_SUNS_DESCRIPTION" Language="de_DE">
-			<Text>Jede [ICON_CHARGES] Ladung des Handwerkers oder Militärpioniers kann dafür genutzt werden, 30% der Grundkosten für die [ICON_PRODUCTION] Produktion eines [ICON_DISTRICT] Bezirks, der benötigten [ICON_PRODUCTION] Produktion hinzuzufügen und somit die Fertigstellung des [ICON_DISTRICT] Bezirks zu beschleunigen.[NEWLINE][NEWLINE]+50% [ICON_PRODUCTION] Produktion für Land-Nahkampf-Einheiten.[NEWLINE][NEWLINE][ICON_BULLET] Startbedingungen: Keine.</Text>
+			<Text>Jede [ICON_CHARGES] Ladung des Handwerkers oder Militärpioniers kann dafür genutzt werden, 30% der Grundkosten für die [ICON_PRODUCTION] Produktion eines [ICON_DISTRICT] Bezirks, der benötigten [ICON_PRODUCTION] Produktion hinzuzufügen und somit die Fertigstellung des [ICON_DISTRICT] Bezirks zu beschleunigen.[NEWLINE][NEWLINE]+50% [ICON_PRODUCTION] Produktion für Land-Nahkampf-Einheiten.[NEWLINE][NEWLINE][ICON_BULLETGLOW] Startbedingungen: Keine.</Text>
 		</Replace>
 		<!-- = Leader ability - Führerfähigkeit (Montezuma - Geschneke für den Tlatoani) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_GIFTS_FOR_TLATOANI_DESCRIPTION" Language="de_DE">
@@ -174,7 +174,7 @@
 		<!-- == BABYLON == -->
 		<!-- = Civilization ability - Zivilisationsfähigkeit (Enuma Anu Enlil) = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_BABYLON_DESCRIPTION" Language="de_DE">
-			<Text>Erhalte jedesmal ein [ICON_TechBoosted] Heureka nachdem eine Bibliothek gebaut wurde.[NEWLINE][NEWLINE][ICON_BULLET] Startbedingungen: T3 Flüsse.</Text>
+			<Text>Erhalte jedesmal ein [ICON_TechBoosted] Heureka nachdem eine Bibliothek gebaut wurde.[NEWLINE][NEWLINE][ICON_BULLETGLOW] Startbedingungen: T3 Flüsse.</Text>
 		</Replace>
 		<!-- = Leader ability - Führerfähigkeit (Hammurabi - Ninu Ilu Sirum) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_HAMMURABI_XP1_DESCRIPTION" Language="de_DE">
@@ -195,7 +195,7 @@
 		<!-- == BRAZIL - BRASILIEN == -->
 		<!-- = Civilization ability - Zivilisationsfähigkeit (Amazonas) = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_AMAZON_DESCRIPTION" Language="de_DE">
-			<Text>+1 Nachbarschaftsbonus für [ICON_DISTRICT_CAMPUS] Campus-, [ICON_DISTRICT_COMMERCIAL_HUB] Handelszentrum-, [ICON_DISTRICT_HOLYSITE] Heilige Stätte- und [ICON_DISTRICT_THEATER] Theaterplatz-Bezirke, die an ein Regenwaldfeld angrenzen.[NEWLINE][NEWLINE]Regenwaldfelder innerhalb deines Gebiets, geben angrenzenden Feldern +1 Anziehungskraft, statt der üblichen -1.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Produktion für unverbesserte Regenwaldfelder, nach Erforschung der Technologie "Bauwesen".[NEWLINE][NEWLINE][ICON_BULLET] Startbedingungen: T2 Regenwaldfelder.</Text>
+			<Text>+1 Nachbarschaftsbonus für [ICON_DISTRICT_CAMPUS] Campus-, [ICON_DISTRICT_COMMERCIAL_HUB] Handelszentrum-, [ICON_DISTRICT_HOLYSITE] Heilige Stätte- und [ICON_DISTRICT_THEATER] Theaterplatz-Bezirke, die an ein Regenwaldfeld angrenzen.[NEWLINE][NEWLINE]Regenwaldfelder innerhalb deines Gebiets, geben angrenzenden Feldern +1 Anziehungskraft, statt der üblichen -1.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Produktion für unverbesserte Regenwaldfelder, nach Erforschung der Technologie "Bauwesen".[NEWLINE][NEWLINE][ICON_BULLETGLOW] Startbedingungen: T2 Regenwaldfelder.</Text>
 		</Replace>
 		<!-- = Leader ability - Führerfähigkeit (Peter II. - Edelmütig)  = -->
 		<Replace Tag="LOC_TRAIT_LEADER_MAGNANIMOUS_DESCRIPTION" Language="de_DE">
@@ -220,7 +220,7 @@
 		<!-- == BYZANTIUM - BYZANZ == -->
 		<!-- = Civilization ability - Zivilisationsfähigkeit (Ordnung) = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_BYZANTIUM_DESCRIPTION" Language="de_DE">
-			<Text>Einheiten erhalten +2 [ICON_STRENGTH] Kampfstärke oder +2 [ICON_RELIGION] Religiöse Stärke durch jede "Heilige Stadt", die zur [ICON_RELIGION] Religion von Byzanz konvertiert wurde (einschließlich der "Heiligen Stadt" von Byzanz).[NEWLINE][NEWLINE]Wenn eine Einheit besiegt wird, verbreitet sich die Mehrheits-[ICON_RELIGION] Religion von Byzanz im Umkreis von 5 Feldern (basierend auf der [ICON_STRENGTH] Nahkampfstärke der besiegten Einheit).[NEWLINE][NEWLINE]+1 [ICON_GreatProphet] Großer Prophet-Punkte von [ICON_DISTRICT_CITY_CENTER] Städten mit einem [ICON_DISTRICT_HOLYSITE] Heilige Stätte-Bezirk.[NEWLINE][NEWLINE][ICON_BULLET] Startbedingungen: Keine.</Text>
+			<Text>Einheiten erhalten +2 [ICON_STRENGTH] Kampfstärke oder +2 [ICON_RELIGION] Religiöse Stärke durch jede "Heilige Stadt", die zur [ICON_RELIGION] Religion von Byzanz konvertiert wurde (einschließlich der "Heiligen Stadt" von Byzanz).[NEWLINE][NEWLINE]Wenn eine Einheit besiegt wird, verbreitet sich die Mehrheits-[ICON_RELIGION] Religion von Byzanz im Umkreis von 5 Feldern (basierend auf der [ICON_STRENGTH] Nahkampfstärke der besiegten Einheit).[NEWLINE][NEWLINE]+1 [ICON_GreatProphet] Großer Prophet-Punkte von [ICON_DISTRICT_CITY_CENTER] Städten mit einem [ICON_DISTRICT_HOLYSITE] Heilige Stätte-Bezirk.[NEWLINE][NEWLINE][ICON_BULLETGLOW] Startbedingungen: Keine.</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_BYZANTIUM_COMBAT_UNITS_DESCRIPTION" Language="de_DE">
 			<Text>Erhalte +2 [ICON_STRENGTH] Kampfstärke durch jede "Heilige Stadt", die zu deiner [ICON_RELIGION] Religion konvertiert wurde, dabei wird die [ICON_RELIGION] Religion von Byzanz auf nahegelegene [ICON_DISTRICT_CITY_CENTER] Städte verbreitet, wenn eine Einheit einer großen Zivilisation besiegt wird (Taxis).</Text>
@@ -267,7 +267,7 @@
 		<!-- == CANADA - KANADA == -->
 		<!-- = Civilization ability - Zivilisationsfähigkeit (Vier Gesichter des Friedens) = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_FACES_OF_PEACE_DESCRIPTION" Language="de_DE">
-			<Text>Kann anderen Zivilisationen keinen Überraschungskrieg erklären.[NEWLINE][NEWLINE]Keine Zivilisation kann Kanada einen Überraschungskrieg erklären.[NEWLINE][NEWLINE]Kann Stadtstaaten keinen Krieg erklären.[NEWLINE][NEWLINE]+1 [ICON_Favor] Diplomatische Gunst-Punkte pro [ICON_TURN] Runde, durch jeweils 100 [ICON_TOURISM] Tourismus pro [ICON_TURN] Runde.[NEWLINE][NEWLINE]+100% [ICON_Favor] Diplomatische Gunst-Punkte, durch jeden erfolgreich abgeschlossenen Notfall oder Wettbewerb.[NEWLINE][NEWLINE][ICON_BULLET] Startbedingungen: T1 Tundrafelder, Tundrahügelfelder.</Text>
+			<Text>Kann anderen Zivilisationen keinen Überraschungskrieg erklären.[NEWLINE][NEWLINE]Keine Zivilisation kann Kanada einen Überraschungskrieg erklären.[NEWLINE][NEWLINE]Kann Stadtstaaten keinen Krieg erklären.[NEWLINE][NEWLINE]+1 [ICON_Favor] Diplomatische Gunst-Punkte pro [ICON_TURN] Runde, durch jeweils 100 [ICON_TOURISM] Tourismus pro [ICON_TURN] Runde.[NEWLINE][NEWLINE]+100% [ICON_Favor] Diplomatische Gunst-Punkte, durch jeden erfolgreich abgeschlossenen Notfall oder Wettbewerb.[NEWLINE][NEWLINE][ICON_BULLETGLOW] Startbedingungen: T1 Tundrafelder, Tundrahügelfelder.</Text>
 		</Replace>
 		<!-- = Leader ability - Führerfähigkeit (Wilfrid Laurier - Letzter bester Westen) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_LAST_BEST_WEST_DESCRIPTION" Language="de_DE">
@@ -291,7 +291,7 @@
 		<!-- == CHINA - CHINA == -->
 		<!-- = Civilization ability - Zivilisationsfähigkeit (Dynastischer Zirkel) = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_DYNASTIC_CYCLE_EXPANSION2_DESCRIPTION" Language="de_DE">
-			<Text>Der Bonus von [ICON_TechBoosted] Heurekas und [ICON_CivicBoosted] Eingebungen wird um weitere 5% erhöht (von 40% auf 45%).[NEWLINE][NEWLINE][ICON_BULLET] Startbedingungen: Keine.</Text>
+			<Text>Der Bonus von [ICON_TechBoosted] Heurekas und [ICON_CivicBoosted] Eingebungen wird um weitere 5% erhöht (von 40% auf 45%).[NEWLINE][NEWLINE][ICON_BULLETGLOW] Startbedingungen: Keine.</Text>
 		</Replace>
 		<!-- = Leader ability - Führerfähigkeit(Qin Shi Huang, Mandate of Heaven - Qin, Mandat des Himmels - Der erste Kaiser) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_FIRST_EMPEROR_EXPANSION2_DESCRIPTION" Language="de_DE">
@@ -316,7 +316,7 @@
 		</Replace>
 		<!-- = Leader ability - Führerfähigkeit (Wu Zetian - Handbuch der Fallen) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_WU_ZETIAN_DESCRIPTION" Language="de_DE">
-			<Text>Alle offensiv agierenden Spione operieren auf einer höheren Stufe (+1).[NEWLINE][NEWLINE]Spione können mit [ICON_FAITH] Glauben gekauft werden.[NEWLINE][NEWLINE]Erhalte einen kostenlosen Spion (+1 Spion-Kapazität), nach Erforschung der Ausrichtung "Öffentliche Verwaltung".[NEWLINE][NEWLINE]Wenn eine offensive Spionagemission erfolgreich war, erhältst du 100% der Erträge von [ICON_FAITH] Glauben,[ICON_CULTURE] Kultur und [ICON_SCIENCE] Wissenschaft, welche die Ziel-[ICON_DISTRICT_CITY_CENTER] Stadt in dieser [ICON_TURN] Runde verdient hat.[NEWLINE][NEWLINE][ICON_TRADEROUTE] Händler-Einheiten und Spione erhalten +2 [ICON_VisSecret] Sicht.[NEWLINE][NEWLINE]Aufklärungs-Einheiten erhalten +1 [ICON_VisSecret]Sicht, nach Erforschung der Technologie "Maschinen".[NEWLINE][NEWLINE]+3 [ICON_STRENGTH] Kampfstärke für Land-Einheiten, die sich innerhalb von 3 Feldern um eine Aufklärungs-Einheit befinden.[NEWLINE][NEWLINE]Beim Abschluss eines Gebäudes im [ICON_DISTRICT_GOVERNMENT] Regierungsplatz-Bezirk oder [ICON_DISTRICT] Diplomatenviertel-Bezirks, erhältst du ein zufälliges [ICON_TechBoosted] Heureka und eine zufällige [ICON_CivicBoosted] Eingebung.[NEWLINE][NEWLINE]+1 [ICON_SCIENCE] Wissenschaft für "Große Mauer", wenn sie an eine andere "Große Mauer" angrenzt.</Text>
+			<Text>Alle offensiv agierenden Spione operieren auf einer höheren Stufe (+1).[NEWLINE][NEWLINE]Spione können mit [ICON_FAITH] Glauben gekauft werden.[NEWLINE][NEWLINE]Erhalte einen kostenlosen Spion (+1 Spion-Kapazität), nach Erforschung der Ausrichtung "Öffentliche Verwaltung".[NEWLINE][NEWLINE]Wenn eine offensive Spionagemission erfolgreich war, erhältst du 100% der Erträge von [ICON_FAITH] Glauben,[ICON_CULTURE] Kultur und [ICON_SCIENCE] Wissenschaft, welche die Ziel-[ICON_DISTRICT_CITY_CENTER] Stadt in dieser [ICON_TURN] Runde verdient hat.[NEWLINE][NEWLINE]+3 [ICON_STRENGTH] Kampfstärke für Land-Einheiten, die sich innerhalb von 3 Feldern um eine Aufklärungs-Einheit befinden.[NEWLINE][NEWLINE]Beim Abschluss eines Gebäudes im [ICON_DISTRICT_GOVERNMENT] Regierungsplatz-Bezirk oder [ICON_DISTRICT] Diplomatenviertel-Bezirks, erhältst du ein zufälliges [ICON_TechBoosted] Heureka und eine zufällige [ICON_CivicBoosted] Eingebung.[NEWLINE][NEWLINE]+1 [ICON_SCIENCE] Wissenschaft für "Große Mauer", wenn sie an eine andere "Große Mauer" angrenzt.</Text>
 		</Replace>
 		<Replace Tag="LOC_BBG_WUZETIAN_COMBAT_FROM_RECON_ABILITY_PREVIEW" Language="de_DE">
 			<Text>Aufklärungs-Einheit in der Nähe: +3</Text>
@@ -351,7 +351,7 @@
 		<!-- == GRAN COLOMBIA - GROßKOLUMBIEN == -->
 		<!-- = Civilization ability - Zivilisationsfähigkeit (Ejército Patriota) = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_EJERCITO_PATRIOTA_DESCRIPTION" Language="de_DE">
-			<Text>+1 [ICON_MOVEMENT] Bewegung für alle Militär-Einheiten nach Erforschung der Ausrichtung "Politische Philosophie".[NEWLINE][NEWLINE]Kavallerie-Einheiten, Luft-Einheiten und Spione können trotz [ICON_PROMOTION] Beförderung, weiterhin Aktionen durchführen.[NEWLINE][NEWLINE][ICON_BULLET] Startbedingungen: T5 Ressourcen-Felder für Plantagen ([ICON_RESOURCE_CITRUS] Zitrusfrüchte, [ICON_RESOURCE_COFFEE] Kaffee, [ICON_RESOURCE_COCOA] Kakao, [ICON_RESOURCE_COTTON] Baumwolle, [ICON_RESOURCE_DYES] Färbemittel, [ICON_RESOURCE_SILK] Seide, [ICON_RESOURCE_SPICES] Gewürze, [ICON_RESOURCE_SUGAR] Zucker, [ICON_RESOURCE_TEA] Tee, [ICON_RESOURCE_TOBACCO] Tabak, [ICON_RESOURCE_WINE] Wein, [ICON_RESOURCE_INCENSE] Räucherwerk, [ICON_RESOURCE_BANANAS] Bananen, [ICON_RESOURCE_OLIVES] Oliven).</Text>
+			<Text>+1 [ICON_MOVEMENT] Bewegung für alle Militär-Einheiten nach Erforschung der Ausrichtung "Politische Philosophie".[NEWLINE][NEWLINE]Kavallerie-Einheiten, Luft-Einheiten und Spione können trotz [ICON_PROMOTION] Beförderung, weiterhin Aktionen durchführen.[NEWLINE][NEWLINE][ICON_BULLETGLOW] Startbedingungen: T5 Ressourcen-Felder für Plantagen ([ICON_RESOURCE_CITRUS] Zitrusfrüchte, [ICON_RESOURCE_COFFEE] Kaffee, [ICON_RESOURCE_COCOA] Kakao, [ICON_RESOURCE_COTTON] Baumwolle, [ICON_RESOURCE_DYES] Färbemittel, [ICON_RESOURCE_SILK] Seide, [ICON_RESOURCE_SPICES] Gewürze, [ICON_RESOURCE_SUGAR] Zucker, [ICON_RESOURCE_TEA] Tee, [ICON_RESOURCE_TOBACCO] Tabak, [ICON_RESOURCE_WINE] Wein, [ICON_RESOURCE_INCENSE] Räucherwerk, [ICON_RESOURCE_BANANAS] Bananen, [ICON_RESOURCE_OLIVES] Oliven).</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_EJERCITO_PATRIOTA_EXTRA_MOVEMENT_DESCRIPTION" Language="de_DE">
 			<Text>+1 [ICON_MOVEMENT] Bewegung für alle Militär-Einheiten (Ejército Patriota)</Text>
@@ -375,7 +375,7 @@
 		<!-- == CREE - CREE == -->
 		<!-- = Civilization ability - Zivilisationsfähigkeit (Nîhithaw) = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_CREE_TRADE_GAIN_TILES_DESCRIPTION" Language="de_DE">
-			<Text>+1 [ICON_TradeRoute] Handelswege-Kapazität nach Erforschung der Technologie "Keramik".[NEWLINE][NEWLINE][ICON_DISTRICT_CITY_CENTER] Städte der Cree kommen in den Besitz neutraler Felder, die von einer [ICON_TRADEROUTE] Händler-Einheit überquert werden (begrenzt auf einen Radius von 3 Feldern um die [ICON_DISTRICT_CITY_CENTER] Stadt).[NEWLINE][NEWLINE][ICON_BULLET] Startbedingungen: T4 [ICON_RESOURCE_DEER] Wild, [ICON_RESOURCE_CATTLE] Vieh, [ICON_RESOURCE_HORSES] Pferde, [ICON_RESOURCE_SHEEP] Schafe.</Text>
+			<Text>+1 [ICON_TradeRoute] Handelswege-Kapazität nach Erforschung der Technologie "Keramik".[NEWLINE][NEWLINE][ICON_DISTRICT_CITY_CENTER] Städte der Cree kommen in den Besitz neutraler Felder, die von einer [ICON_TRADEROUTE] Händler-Einheit überquert werden (begrenzt auf einen Radius von 3 Feldern um die [ICON_DISTRICT_CITY_CENTER] Stadt).[NEWLINE][NEWLINE][ICON_BULLETGLOW] Startbedingungen: T4 [ICON_RESOURCE_DEER] Wild, [ICON_RESOURCE_CATTLE] Vieh, [ICON_RESOURCE_HORSES] Pferde, [ICON_RESOURCE_SHEEP] Schafe.</Text>
 		</Replace>
 		<!-- = Leader ability - Führerfähigkeit (Poundmaker - Günstige Bedingung) = -->
 		<Replace Tag="LOC_LEADER_POUNDMAKER_ABILITY_DESCRIPTION" Language="de_DE">
@@ -399,7 +399,7 @@
 		<!-- == DUTCH / NETHERLANDS - HOLLAND / NIEDERLANDE == -->
 		<!-- = Civilization ability - Zivilisationsfähigkeit (Rhein-Maas-Delta) = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_GROTE_RIVIEREN_EXPANSION2_DESCRIPTION" Language="de_DE">
-			<Text>Großer-Nachbarschaftbonus (+2) für [ICON_DISTRICT_CAMPUS] Campus-, [ICON_DISTRICT_THEATER] Theaterplatz- und [ICON_DISTRICT_INDUSTRIAL_ZONE] Industriegebiet-Bezirke, wenn sie angrenzend an einen Fluss gebaut wurden.[NEWLINE][NEWLINE] Kulturschock für angrenzende Felder, wenn ein [ICON_DISTRICT_HARBOR] Hafen-Bezirk fertiggestellt wurde.[NEWLINE][NEWLINE]+50% [ICON_Production] Produktion für [ICON_DISTRICT_DAM] Damm-Bezirke und Hochwassersperren.[NEWLINE][NEWLINE][ICON_BULLET] Startbedingungen: T2 Flüsse; T3 Küstenfelder.</Text>
+			<Text>Großer-Nachbarschaftbonus (+2) für [ICON_DISTRICT_CAMPUS] Campus-, [ICON_DISTRICT_THEATER] Theaterplatz- und [ICON_DISTRICT_INDUSTRIAL_ZONE] Industriegebiet-Bezirke, wenn sie angrenzend an einen Fluss gebaut wurden.[NEWLINE][NEWLINE] Kulturschock für angrenzende Felder, wenn ein [ICON_DISTRICT_HARBOR] Hafen-Bezirk fertiggestellt wurde.[NEWLINE][NEWLINE]+50% [ICON_Production] Produktion für [ICON_DISTRICT_DAM] Damm-Bezirke und Hochwassersperren.[NEWLINE][NEWLINE][ICON_BULLETGLOW] Startbedingungen: T2 Flüsse; T3 Küstenfelder.</Text>
 		</Replace>
 		<!-- = Leader ability - Führerfähigkeit (Wilhelmina - Radio Oranje)= -->
 		<Replace Tag="LOC_TRAIT_RADIO_ORANJE_DESCRIPTION" Language="de_DE">
@@ -423,7 +423,7 @@
 		<!-- == EGYPT - ÄGYPTEN == -->
 		<!-- = Civilization ability - Zivilisationsfähigkeit (Iteru) = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ITERU_EXPANSION2_DESCRIPTION" Language="de_DE">
-			<Text>+15% [ICON_PRODUCTION] Produktion für [ICON_DISTRICT] Bezirke und [ICON_DISTRICT_WONDER] Weltwunder, wenn sie angrenzend an einen Fluss gebaut werden.[NEWLINE][NEWLINE]Immun gegen Schaden durch Überschwemmungen.[NEWLINE][NEWLINE][ICON_BULLET] Startbedingungen: T2 Gras-Schwemmlandfelder, Ebenen-Schwemmlandfelder; T5 Flüsse, Wüsten-Schwemmlandfelder.</Text>
+			<Text>+15% [ICON_PRODUCTION] Produktion für [ICON_DISTRICT] Bezirke und [ICON_DISTRICT_WONDER] Weltwunder, wenn sie angrenzend an einen Fluss gebaut werden.[NEWLINE][NEWLINE]Immun gegen Schaden durch Überschwemmungen.[NEWLINE][NEWLINE][ICON_BULLETGLOW] Startbedingungen: T2 Gras-Schwemmlandfelder, Ebenen-Schwemmlandfelder; T5 Flüsse, Wüsten-Schwemmlandfelder.</Text>
 		</Replace>
 		<!-- = Leader ability - Führerfähigkeit (Cleopatra Egyptian, Kleopatra Ägyptisch - Braut des Mittelmeers) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_MEDITERRANEAN_EXPANSION2_DESCRIPTION" Language="de_DE">
@@ -461,7 +461,7 @@
 		<!-- == ENGLAND - ENGLAND == -->
 		<!-- = Civilization ability - Zivilisationsfähigkeit (Werkstatt der Welt) = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_INDUSTRIAL_REVOLUTION_DESCRIPTION" Language="de_DE">
-			<Text>+2 [ICON_RESOURCE_IRON] Eisen pro [ICON_TURN] Runde für jede [ICON_RESOURCE_IRON] "Eisenmine".[NEWLINE][NEWLINE]+2 [ICON_RESOURCE_COAL] Kohle pro [ICON_TURN] Runde für jede [ICON_RESOURCE_COAL] "Kohlemine".[NEWLINE][NEWLINE]Jedes Gebäude im [ICON_DISTRICT_HARBOR] "Royal-Navy-Werft"-Bezirk erhöht das Vorratslager für Strategische-Ressourcen um +5 (Online-Geschwindigkeit).[NEWLINE][NEWLINE]+100% [ICON_PRODUCTION] Produktion für Militärpioniere.[NEWLINE][NEWLINE]+2 [ICON_CHARGES] Ladung für Militärpioniere.[NEWLINE][NEWLINE][ICON_BULLET] Startbedingungen: T1 Küstenfelder; T5 [ICON_RESOURCE_IRON] Eisen, [ICON_RESOURCE_COAL] Kohle.</Text>
+			<Text>+2 [ICON_RESOURCE_IRON] Eisen pro [ICON_TURN] Runde für jede [ICON_RESOURCE_IRON] "Eisenmine".[NEWLINE][NEWLINE]+2 [ICON_RESOURCE_COAL] Kohle pro [ICON_TURN] Runde für jede [ICON_RESOURCE_COAL] "Kohlemine".[NEWLINE][NEWLINE]Jedes Gebäude im [ICON_DISTRICT_HARBOR] "Royal-Navy-Werft"-Bezirk erhöht das Vorratslager für Strategische-Ressourcen um +5 (Online-Geschwindigkeit).[NEWLINE][NEWLINE]+100% [ICON_PRODUCTION] Produktion für Militärpioniere.[NEWLINE][NEWLINE]+2 [ICON_CHARGES] Ladung für Militärpioniere.[NEWLINE][NEWLINE][ICON_BULLETGLOW] Startbedingungen: T1 Küstenfelder; T5 [ICON_RESOURCE_IRON] Eisen, [ICON_RESOURCE_COAL] Kohle.</Text>
 		</Replace>
 		<!-- = Leader ability - Führerfähigkeit (Victoria, Age of Empire - Victoria, Imperiales Zeitalter - Pax Britannica) = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_PAX_BRITANNICA_EXPANSION2_DESCRIPTION" Language="de_DE">
@@ -500,7 +500,7 @@
 		<!-- == ETHIOPIA - ÄTHIOPIEN == -->
 		<!-- = Civilization ability - Zivilisationsfähigkeit (Aksumitisches Vermächtnis) = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ETHIOPIA_DESCRIPTION" Language="de_DE">
-			<Text>Ausgehende internationale [ICON_TRADEROUTE] Handelswege gewähren +0,5 [ICON_FAITH] Glauben pro Ressource der Ausgangs-[ICON_DISTRICT_CITY_CENTER] Stadt.[NEWLINE][NEWLINE]Verbesserte Ressourcen gewähren +1 [ICON_FAITH] Glauben.[NEWLINE][NEWLINE]Kann archäologische Museen und Archäologen mit [ICON_FAITH] Glauben kaufen.[NEWLINE][NEWLINE][ICON_BULLET] Startbedingungen: T3 Graslandhügelfelder, Ebenenhügelfelder.</Text>
+			<Text>Ausgehende internationale [ICON_TRADEROUTE] Handelswege gewähren +0,5 [ICON_FAITH] Glauben pro Ressource der Ausgangs-[ICON_DISTRICT_CITY_CENTER] Stadt.[NEWLINE][NEWLINE]Verbesserte Ressourcen gewähren +1 [ICON_FAITH] Glauben.[NEWLINE][NEWLINE]Kann archäologische Museen und Archäologen mit [ICON_FAITH] Glauben kaufen.[NEWLINE][NEWLINE][ICON_BULLETGLOW] Startbedingungen: T3 Graslandhügelfelder, Ebenenhügelfelder.</Text>
 		</Replace>
 		<!-- = Leader ability - Führerfähigkeit (Menelik II. - Ministerrat) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_MENELIK_DESCRIPTION" Language="de_DE">
@@ -521,7 +521,7 @@
 		<!-- == FRANCE - FRANKREICH == -->
 		<!-- = Civilization ability - Zivilisationsfähigkeit (Grand Tour) = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_WONDER_TOURISM_DESCRIPTION" Language="de_DE">
-			<Text>Erhalte einen kostenlosen Spion (+1 Spion-Kapazität), nach Erforschung der Technologie "Burgen".[NEWLINE][NEWLINE]Alle Spione beginnen mit einer freien [ICON_PROMOTION] Beförderung.[NEWLINE][NEWLINE]+20% [ICON_PRODUCTION] Produktion für [ICON_DISTRICT_WONDER] Weltwunder des Mittelalters, Renaissance und des Industriezeitalters.[NEWLINE][NEWLINE]+50% [ICON_TOURISM] Tourismus von [ICON_DISTRICT_WONDER] Weltwundern aller Zeitalter.[NEWLINE][NEWLINE][ICON_BULLET] Startbedingungen: T4 Flüsse.</Text>
+			<Text>Erhalte einen kostenlosen Spion (+1 Spion-Kapazität), nach Erforschung der Technologie "Burgen".[NEWLINE][NEWLINE]Alle Spione beginnen mit einer freien [ICON_PROMOTION] Beförderung.[NEWLINE][NEWLINE]+20% [ICON_PRODUCTION] Produktion für [ICON_DISTRICT_WONDER] Weltwunder des Mittelalters, Renaissance und des Industriezeitalters.[NEWLINE][NEWLINE]+50% [ICON_TOURISM] Tourismus von [ICON_DISTRICT_WONDER] Weltwundern aller Zeitalter.[NEWLINE][NEWLINE][ICON_BULLETGLOW] Startbedingungen: T4 Flüsse.</Text>
 		</Replace>
 		<!-- = Leader ability - Führerfähigkeit (Katharina von Medici, Schwarze Königin - Black Queen - Katharinas Flugschadron) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_FLYING_SQUADRON_DESCRIPTION" Language="de_DE">
@@ -549,7 +549,7 @@
 		<!-- == GAUL - GALLIEN == -->
 		<!-- = Civilization ability - Zivilisationsfähigkeit (Hallstattkultur) = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_GAUL_DESCRIPTION" Language="de_DE">
-			<Text>+1 [ICON_CULTURE] Kultur für "Minen", nach Erforschung der Technologie "Bronzeverarbeitung".[NEWLINE][NEWLINE]"Minen" gewähren einen Kleinen-Nachbarschaftsbonus (+0.5) für alle [ICON_DISTRICT] Bezirke.[NEWLINE][NEWLINE]Spezial-[ICON_DISTRICT] Bezirke erhalten keinen Kleinen-Nachbarschaftsbonus (+0.5), wenn sie an einen [ICON_DISTRICT] Bezirk angrenzen.[NEWLINE][NEWLINE]Spezial-[ICON_DISTRICT] Bezirke können nicht angrenzend an ein [ICON_DISTRICT_CITY_CENTER] Stadtzentrum gebaut werden.[NEWLINE][NEWLINE][ICON_BULLET] Startbedingungen: T3 [ICON_RESOURCE_IRON] Eisen; T5 Bonus- und Luxusressourcen-Felder für Minen und Steinbrüche ([ICON_RESOURCE_COPPER] Kupfer, [ICON_RESOURCE_DIAMONDS] Diamanten, [ICON_RESOURCE_JADE] Jade, [ICON_RESOURCE_MERCURY] Quecksilber, [ICON_RESOURCE_SALT] Salz, [ICON_RESOURCE_SILVER] Silber, [ICON_RESOURCE_STONE] Stein, [ICON_RESOURCE_MARBLE] Marmor, [ICON_RESOURCE_GYPSUM] Gips).</Text>
+			<Text>+1 [ICON_CULTURE] Kultur für "Minen", nach Erforschung der Technologie "Bronzeverarbeitung".[NEWLINE][NEWLINE]"Minen" gewähren einen Kleinen-Nachbarschaftsbonus (+0.5) für alle [ICON_DISTRICT] Bezirke.[NEWLINE][NEWLINE]Spezial-[ICON_DISTRICT] Bezirke erhalten keinen Kleinen-Nachbarschaftsbonus (+0.5), wenn sie an einen [ICON_DISTRICT] Bezirk angrenzen.[NEWLINE][NEWLINE]Spezial-[ICON_DISTRICT] Bezirke können nicht angrenzend an ein [ICON_DISTRICT_CITY_CENTER] Stadtzentrum gebaut werden.[NEWLINE][NEWLINE][ICON_BULLETGLOW] Startbedingungen: T3 [ICON_RESOURCE_IRON] Eisen; T5 Bonus- und Luxusressourcen-Felder für Minen und Steinbrüche ([ICON_RESOURCE_COPPER] Kupfer, [ICON_RESOURCE_DIAMONDS] Diamanten, [ICON_RESOURCE_JADE] Jade, [ICON_RESOURCE_MERCURY] Quecksilber, [ICON_RESOURCE_SALT] Salz, [ICON_RESOURCE_SILVER] Silber, [ICON_RESOURCE_STONE] Stein, [ICON_RESOURCE_MARBLE] Marmor, [ICON_RESOURCE_GYPSUM] Gips).</Text>
 		</Replace>
 		<!-- = Leader ability - Führerfähigkeit (Ambiorix - König der Eburonen) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_AMBIORIX_DESCRIPTION" Language="de_DE">
@@ -576,7 +576,7 @@
 		<!-- == GEORGIA - GEORGIEN == -->
 		<!-- = Civilization ability - Zivilisationsfähigkeit (Stärke durch Einigkeit) = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_GOLDEN_AGE_QUESTS_DESCRIPTION" Language="de_DE">
-			<Text>+50% [ICON_PRODUCTION] Produktion für den Bau von Mauern.[NEWLINE][NEWLINE]Erhalte durch jede ausgewählte Widmung des [ICON_GLORY_GOLDEN_AGE] Goldenen Zeitalters oder [ICON_GLORY_SUPER_GOLDEN_AGE] Heroischen Zeitalters, zusätzlich die Boni der entsprechenden Widmung des [ICON_GLORY_NORMAL_AGE] Normalen Zeitalters.[NEWLINE][NEWLINE][ICON_BULLET] Startbedingungen: T4 Ressourcen-Felder für Steinbrüche ([ICON_RESOURCE_STONE] Stein, [ICON_RESOURCE_MARBLE] Marmor, [ICON_RESOURCE_GYPSUM] Gips).</Text>
+			<Text>+50% [ICON_PRODUCTION] Produktion für den Bau von Mauern.[NEWLINE][NEWLINE]Erhalte durch jede ausgewählte Widmung des [ICON_GLORY_GOLDEN_AGE] Goldenen Zeitalters oder [ICON_GLORY_SUPER_GOLDEN_AGE] Heroischen Zeitalters, zusätzlich die Boni der entsprechenden Widmung des [ICON_GLORY_NORMAL_AGE] Normalen Zeitalters.[NEWLINE][NEWLINE][ICON_BULLETGLOW] Startbedingungen: T4 Ressourcen-Felder für Steinbrüche ([ICON_RESOURCE_STONE] Stein, [ICON_RESOURCE_MARBLE] Marmor, [ICON_RESOURCE_GYPSUM] Gips).</Text>
 		</Replace>
 		<!-- = Leader ability - Führerfähigkeit (Tamar - Ruhm der Welt, Königreich und Glaube) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_RELIGION_CITY_STATES_DESCRIPTION" Language="de_DE">
@@ -597,7 +597,7 @@
 		<!-- == GERMANY - DEUTSCHLAND == -->
 		<!-- = Civilization ability - Zivilisationsfähigkeit (Freie und Reichsstädte) = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_IMPERIAL_FREE_CITIES_DESCRIPTION" Language="de_DE">
-			<Text>Nach Erforschung der Ausrichtung "Gilden" kann jede [ICON_DISTRICT_CITY_CENTER] Stadt einen [ICON_DISTRICT] Bezirk mehr bauen (Überschreitung des normalen Limits basierend auf der Anzahl der [ICON_CITIZEN] Bürger der [ICON_DISTRICT_CITY_CENTER] Stadt).[NEWLINE][NEWLINE]Kulturschock für angrenzende Felder, wenn ein [ICON_DISTRICT_COMMERCIAL_HUB] Handelszentrum-Bezirk fertiggestellt wurde.[NEWLINE][NEWLINE][ICON_BULLET] Startbedingungen: T3 Flüsse.</Text>
+			<Text>Nach Erforschung der Ausrichtung "Gilden" kann jede [ICON_DISTRICT_CITY_CENTER] Stadt einen [ICON_DISTRICT] Bezirk mehr bauen (Überschreitung des normalen Limits basierend auf der Anzahl der [ICON_CITIZEN] Bürger der [ICON_DISTRICT_CITY_CENTER] Stadt).[NEWLINE][NEWLINE]Kulturschock für angrenzende Felder, wenn ein [ICON_DISTRICT_COMMERCIAL_HUB] Handelszentrum-Bezirk fertiggestellt wurde.[NEWLINE][NEWLINE][ICON_BULLETGLOW] Startbedingungen: T3 Flüsse.</Text>
 		</Replace>
 		<!-- = Leader ability - Führerfähigkeit (Friedrich Barbarossa - Kaiser des Heiligen Römischen Reiches) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_HOLY_ROMAN_EMPEROR_DESCRIPTION" Language="de_DE">
@@ -619,7 +619,7 @@
 		<!-- == GREECE - GRIECHENLAND == -->
 		<!-- = Civilization ability - Zivilisationsfähigkeit (Platos Republik) = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_PLATOS_REPUBLIC_DESCRIPTION" Language="de_DE">
-			<Text>Ein zusätzlicher Jokerpolitik-Platz in jeder [ICON_GOVERNMENT] Regierung nach Erforschung der Ausrichtung "Frühes Reich".[NEWLINE][NEWLINE][ICON_BULLET] Startbedingungen: T4 Graslandhügelfelder, Ebenenhügelfelder.</Text>
+			<Text>Ein zusätzlicher Jokerpolitik-Platz in jeder [ICON_GOVERNMENT] Regierung nach Erforschung der Ausrichtung "Frühes Reich".[NEWLINE][NEWLINE][ICON_BULLETGLOW] Startbedingungen: T4 Graslandhügelfelder, Ebenenhügelfelder.</Text>
 		</Replace>
 		<!-- = Leader ability - Führerfähigkeit (Gorgo - Thermopylae) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_THERMOPYLAE_DESCRIPTION" Language="de_DE">
@@ -656,11 +656,11 @@
 		<!-- == HUNGARY - UNGARN == -->
 		<!-- = Civilization ability - Zivilisationsfähigkeit (Donauperle) = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_PEARL_DANUBE_DESCRIPTION" Language="de_DE">
-			<Text>+50% [ICON_PRODUCTION] Produktion für [ICON_DISTRICT] Bezirke und deren Gebäude, die von einem [ICON_DISTRICT_CITY_CENTER] Stadtzentrum aus, über einen Fluss gebaut wurden.[NEWLINE][NEWLINE][ICON_BULLET] Startbedingungen: T4 Flüsse; T5 Geothermischer Riss-Felder.</Text>
+			<Text>+50% [ICON_PRODUCTION] Produktion für [ICON_DISTRICT] Bezirke und deren Gebäude, die von einem [ICON_DISTRICT_CITY_CENTER] Stadtzentrum aus, über einen Fluss gebaut wurden.[NEWLINE][NEWLINE][ICON_BULLETGLOW] Startbedingungen: T4 Flüsse; T5 Geothermischer Riss-Felder.</Text>
 		</Replace>
 		<!-- = Leader ability - Führerfähigkeit (Matthias Corvinus - Rabenkönig) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_RAVEN_KING_DESCRIPTION" Language="de_DE">
-			<Text>+3 [ICON_STRENGTH] Kampfstärke und +1 [ICON_MOVEMENT] Bewegung für ausgehobene Einheiten von Stadtstaaten.[NEWLINE][NEWLINE]-75% [ICON_GOLD] Gold- und Ressourcenkosten, um von Stadtstaaten ausgehobene Einheiten zu verbessern.[NEWLINE][NEWLINE]Wenn du Truppen von einem Stadtstaat aushebst, erhälst du dort jedesmal +1 [ICON_ENVOY] Gesandte.</Text>
+			<Text>+1 [ICON_MOVEMENT] Bewegung für ausgehobene Einheiten von Stadtstaaten.[NEWLINE][NEWLINE]-75% [ICON_GOLD] Gold- und Ressourcenkosten, um von Stadtstaaten ausgehobene Einheiten zu verbessern.[NEWLINE][NEWLINE]Wenn du Truppen von einem Stadtstaat aushebst, erhälst du dort jedesmal +1 [ICON_ENVOY] Gesandte.</Text>
 		</Replace>
 		<!-- = Unique unit - Einzigartige Einheit (Schwarze Armee) = -->
 		<Replace Tag="LOC_UNIT_HUNGARY_BLACK_ARMY_DESCRIPTION" Language="de_DE">
@@ -687,7 +687,7 @@
 		<!-- == INCA - INKA == -->
 		<!-- = Civilization ability - Zivilisationsfähigkeit (Mita) = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_GREAT_MOUNTAINS_DESCRIPTION" Language="de_DE">
-			<Text>[ICON_CITIZEN] Bürger können auf Bergfeldern arbeiten.[NEWLINE][NEWLINE]+2 [ICON_PRODUCTION] Produktion (+3 [ICON_PRODUCTION] Produktion ab dem Industriezeitalter) auf Bergfeldern.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Nahrung auf Bergfeldern, durch jedes angrenzende "Terrassenfeld".[NEWLINE][NEWLINE]Nach Erforschung der Ausrichtung "Außenhandel", können Aufklärungs-Einheiten (+1 [ICON_CHARGES] Ladung) und Handwerker den "Qhapaq Ñan"  bauen.[NEWLINE][NEWLINE][ICON_DISTRICT_CITY_CENTER] Städte erleiden keinen Verlust von Erträgen (außer [ICON_FOOD] Nahrung), wenn sie negative [ICON_AMENITIES] Annehmlichkeiten haben.[NEWLINE][NEWLINE][ICON_BULLET] Startbedingungen: T3 Graslandbergfelder, Ebenenbergfelder. Spezial: "Bergliebhaber".</Text>
+			<Text>[ICON_CITIZEN] Bürger können auf Bergfeldern arbeiten.[NEWLINE][NEWLINE]+2 [ICON_PRODUCTION] Produktion (+3 [ICON_PRODUCTION] Produktion ab dem Industriezeitalter) auf Bergfeldern.[NEWLINE][NEWLINE]+1 [ICON_FOOD] Nahrung auf Bergfeldern, durch jedes angrenzende "Terrassenfeld".[NEWLINE][NEWLINE]Nach Erforschung der Ausrichtung "Außenhandel", können Aufklärungs-Einheiten (+1 [ICON_CHARGES] Ladung) und Handwerker den "Qhapaq Ñan"  bauen.[NEWLINE][NEWLINE][ICON_DISTRICT_CITY_CENTER] Städte erleiden keinen Verlust von Erträgen (außer [ICON_FOOD] Nahrung), wenn sie negative [ICON_AMENITIES] Annehmlichkeiten haben.[NEWLINE][NEWLINE][ICON_BULLETGLOW] Startbedingungen: T3 Graslandbergfelder, Ebenenbergfelder. Spezial: "Bergliebhaber".</Text>
 		</Replace>
 		<!-- = Leader ability - Führerfähigkeit (Pachacútec -  Qhapaq Ñan) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_PACHACUTI_QHAPAQ_NAN_DESCRIPTION" Language="de_DE">
@@ -709,7 +709,7 @@
 		<!-- == INDIA - INDIEN == -->
 		<!-- = Civilization ability - Zivilisationsfähigkeit (Dharma) = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_DHARMA_EXPANSION2_DESCRIPTION" Language="de_DE">
-			<Text>Für jede [ICON_DISTRICT_CITY_CENTER] Stadt im Reich gilt:[NEWLINE][NEWLINE]• Erhält den Bonus des "Anhänger-Glaubenssatzes"(T2) von jeder [ICON_RELIGION] Religion, mit mindestens 1 Anhänger in der [ICON_DISTRICT_CITY_CENTER] Stadt.[NEWLINE]• +1 [ICON_AMENITIES] Annehmlichkeit für jede [ICON_DISTRICT_CITY_CENTER] Stadt mit deiner Mehrheits-[ICON_RELIGION] Religion.[NEWLINE][NEWLINE]+2 [ICON_RELIGION] Streuladungen für Missionare.[NEWLINE][NEWLINE]+100% [ICON_RELIGION] Religiöser Druck durch deine [ICON_TradeRoute] Handelsrouten.[NEWLINE][NEWLINE][ICON_BULLET] Startbedingungen: Keine.</Text>
+			<Text>Für jede [ICON_DISTRICT_CITY_CENTER] Stadt im Reich gilt:[NEWLINE][NEWLINE]• Erhält den Bonus des "Anhänger-Glaubenssatzes"(T2) von jeder [ICON_RELIGION] Religion, mit mindestens 1 Anhänger in der [ICON_DISTRICT_CITY_CENTER] Stadt.[NEWLINE]• +1 [ICON_AMENITIES] Annehmlichkeit für jede [ICON_DISTRICT_CITY_CENTER] Stadt mit deiner Mehrheits-[ICON_RELIGION] Religion.[NEWLINE][NEWLINE]+2 [ICON_RELIGION] Streuladungen für Missionare.[NEWLINE][NEWLINE]+100% [ICON_RELIGION] Religiöser Druck durch deine [ICON_TradeRoute] Handelsrouten.[NEWLINE][NEWLINE][ICON_BULLETGLOW] Startbedingungen: Keine.</Text>
 		</Replace>
 		<!-- = Leader ability - Führerfähigkeit (Chandragupta - Arthashastra) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_ARTHASHASTRA_DESCRIPTION" Language="de_DE">
@@ -758,7 +758,7 @@
 		<!-- == INDONESIA - INDONESIEN == -->
 		<!-- = Civilization ability - Zivilisationsfähigkeit (Großer Nusantara) = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_INDONESIA_NUSANTARA_DESCRIPTION" Language="de_DE">
-			<Text>Küsten- und Seefelder gewähren [ICON_DISTRICT_HOLYSITE] Heilige Stätte-, [ICON_DISTRICT_CAMPUS] Campus-, [ICON_DISTRICT_INDUSTRIAL_ZONE] Industriegebiet- und [ICON_DISTRICT_THEATER] Theaterplatz-Bezirken einen Kleinen-Nachbarschaftsbonus (+0.5).[NEWLINE][NEWLINE]+1 [ICON_AMENITIES] Annehmlichkeit für jeden [ICON_DISTRICT_ENTERTAINMENT] Unterhaltungskomplex-Bezirk, der an ein Küsten- oder Seefeld angrenzt.[NEWLINE][NEWLINE][ICON_BULLET] Startbedingungen: T1 Küstenfelder.</Text>
+			<Text>Küsten- und Seefelder gewähren [ICON_DISTRICT_HOLYSITE] Heilige Stätte-, [ICON_DISTRICT_CAMPUS] Campus-, [ICON_DISTRICT_INDUSTRIAL_ZONE] Industriegebiet- und [ICON_DISTRICT_THEATER] Theaterplatz-Bezirken einen Kleinen-Nachbarschaftsbonus (+0.5).[NEWLINE][NEWLINE]+1 [ICON_AMENITIES] Annehmlichkeit für jeden [ICON_DISTRICT_ENTERTAINMENT] Unterhaltungskomplex-Bezirk, der an ein Küsten- oder Seefeld angrenzt.[NEWLINE][NEWLINE][ICON_BULLETGLOW] Startbedingungen: T1 Küstenfelder.</Text>
 		</Replace>
 		<!-- = Leader ability - Führerfähigkeit (Gitarja - Erhabene Göttin der drei Welten) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_EXALTED_GODDESS_DESCRIPTION" Language="de_DE">
@@ -776,7 +776,7 @@
 		<!-- == JAPAN - JAPAN == -->
 		<!-- = Civilization ability - Zivilisationsfähigkeit (Meiji-Restauration) = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ADJACENT_DISTRICTS_DESCRIPTION" Language="de_DE">
-			<Text>Alle [ICON_DISTRICT] Bezirke erhalten einen zusätzlichen Standard-Nachbarschaftsbonus (+1), wenn sie an einen anderen [ICON_DISTRICT] Bezirk angrenzen.[NEWLINE][NEWLINE][ICON_DISTRICT_COMMERCIAL_HUB] Handelszentrum-Bezirke erhalten keinen Standard-Nachbarschaftsbonus (+1) von angrenzenden Flüssen.[NEWLINE][NEWLINE][ICON_BULLET] Startbedingungen: T1 Küstenfelder.</Text>
+			<Text>Alle [ICON_DISTRICT] Bezirke erhalten einen zusätzlichen Standard-Nachbarschaftsbonus (+1), wenn sie an einen anderen [ICON_DISTRICT] Bezirk angrenzen.[NEWLINE][NEWLINE][ICON_DISTRICT_COMMERCIAL_HUB] Handelszentrum-Bezirke erhalten keinen Standard-Nachbarschaftsbonus (+1) von angrenzenden Flüssen.[NEWLINE][NEWLINE][ICON_BULLETGLOW] Startbedingungen: T1 Küstenfelder.</Text>
 		</Replace>
 		<!-- = Leader ability - Führerfähigkeit (Hojo Tokimune - Götterwind) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_DIVINE_WIND_EXPANSION2_DESCRIPTION" Language="de_DE">
@@ -813,7 +813,7 @@
 		<!-- == KHMER - KHMER == -->
 		<!-- = Civilization ability - Zivilisationsfähigkeit (Große Barays) = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_KHMER_BARAYS_EXPANSION2_DESCRIPTION" Language="de_DE">
-			<Text>+1 [ICON_AMENITIES] Annehmlichkeit für [ICON_DISTRICT_CITY_CENTER] Städte mit einem [ICON_DISTRICT_AQUEDUCT] Aquädukt-Bezirk.[NEWLINE][NEWLINE]Bauernhöfe erhalten:[NEWLINE][NEWLINE]• +2 [ICON_FOOD] Nahrung, wenn sie an ein [ICON_DISTRICT_AQUEDUCT] Aquädukt-Bezirk angrenzen.[NEWLINE]• +1 [ICON_FAITH] Glauben, wenn sie an einen [ICON_DISTRICT_HOLYSITE] Heilige Stätte-Bezirk angrenzen.[NEWLINE][NEWLINE][ICON_BULLET] Startbedingungen: T3 Flüsse.</Text>
+			<Text>+1 [ICON_AMENITIES] Annehmlichkeit für [ICON_DISTRICT_CITY_CENTER] Städte mit einem [ICON_DISTRICT_AQUEDUCT] Aquädukt-Bezirk.[NEWLINE][NEWLINE]Bauernhöfe erhalten:[NEWLINE][NEWLINE]• +2 [ICON_FOOD] Nahrung, wenn sie an ein [ICON_DISTRICT_AQUEDUCT] Aquädukt-Bezirk angrenzen.[NEWLINE]• +1 [ICON_FAITH] Glauben, wenn sie an einen [ICON_DISTRICT_HOLYSITE] Heilige Stätte-Bezirk angrenzen.[NEWLINE][NEWLINE][ICON_BULLETGLOW] Startbedingungen: T3 Flüsse.</Text>
 		</Replace>
 		<!-- = Leader ability - Führerfähigkeit (Jayavarman VII. - Klöster des Königs) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_MONASTERIES_KING_EXPANSION2_DESCRIPTION" Language="de_DE">
@@ -837,7 +837,7 @@
 		<!-- == KONGOLESE - KONGO == -->
 		<!-- = Civilization ability - Zivilisationsfähigkeit (Nkisi) = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_NKISI_DESCRIPTION" Language="de_DE">
-			<Text>[ICON_GREATWORK_RELIC] Reliquien, [ICON_GREATWORK_ARTIFACT] Artefakte und [ICON_GREATWORK_SCULPTURE] Skulpturen erhalten zusätzlich:[NEWLINE][NEWLINE]• +2 [ICON_FOOD] Nahrung.[NEWLINE]• +2 [ICON_PRODUCTION] Produktion.[NEWLINE]• +2 [ICON_FAITH] Glauben.[NEWLINE]• +4 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]Erhält ein [ICON_GREATWORK_RELIC] Relikt, durch jedes Gebäude im [ICON_DISTRICT_GOVERNMENT] Regierungsplatz-Bezirk.[NEWLINE][NEWLINE]Das "Palast"-Gebäude der [ICON_CAPITAL] Hauptstadt erhält +4 (insgesamt 5) Großes Werk-Plätze beliebiger Art([ICON_GreatWork_Artifact], [ICON_GreatWork_Landscape], [ICON_GreatWork_Music], [ICON_GreatWork_Portrait], [ICON_GreatWork_Relic], [ICON_GreatWork_Religious], [ICON_GreatWork_Sculpture], [ICON_GreatWork_Writing]).[NEWLINE][NEWLINE]+50% Punkte für [ICON_GreatMerchant] Große Händler, [ICON_GreatWriter] Große Schriftsteller, [ICON_GreatArtist] Große Künstler, [ICON_GreatMusician] Große Musiker.[NEWLINE][NEWLINE]+100% [ICON_PRODUCTION] Produktion für Archäologen.[NEWLINE][NEWLINE][ICON_BULLET] Startbedingungen: T3 Regenwaldfelder; T5 Waldfelder.</Text>
+			<Text>[ICON_GREATWORK_RELIC] Reliquien, [ICON_GREATWORK_ARTIFACT] Artefakte und [ICON_GREATWORK_SCULPTURE] Skulpturen erhalten zusätzlich:[NEWLINE][NEWLINE]• +2 [ICON_FOOD] Nahrung.[NEWLINE]• +2 [ICON_PRODUCTION] Produktion.[NEWLINE]• +2 [ICON_FAITH] Glauben.[NEWLINE]• +4 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]Erhält ein [ICON_GREATWORK_RELIC] Relikt, durch jedes Gebäude im [ICON_DISTRICT_GOVERNMENT] Regierungsplatz-Bezirk.[NEWLINE][NEWLINE]Das "Palast"-Gebäude der [ICON_CAPITAL] Hauptstadt erhält +4 (insgesamt 5) Großes Werk-Plätze beliebiger Art([ICON_GreatWork_Artifact], [ICON_GreatWork_Landscape], [ICON_GreatWork_Music], [ICON_GreatWork_Portrait], [ICON_GreatWork_Relic], [ICON_GreatWork_Religious], [ICON_GreatWork_Sculpture], [ICON_GreatWork_Writing]).[NEWLINE][NEWLINE]+50% Punkte für [ICON_GreatMerchant] Große Händler, [ICON_GreatWriter] Große Schriftsteller, [ICON_GreatArtist] Große Künstler, [ICON_GreatMusician] Große Musiker.[NEWLINE][NEWLINE]+100% [ICON_PRODUCTION] Produktion für Archäologen.[NEWLINE][NEWLINE][ICON_BULLETGLOW] Startbedingungen: T3 Regenwaldfelder; T5 Waldfelder.</Text>
 		</Replace>
 		<!-- = Leader ability - Führerfähigkeit (Mvemba a Nzinga - Mvemba á Nzinga - Konvertit) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_RELIGIOUS_CONVERT_DESCRIPTION" Language="de_DE">
@@ -871,7 +871,7 @@
 		<!-- == KOREA - KOREA == -->
 		<!-- = Civilization ability - Zivilisationsfähigkeit (Drei Reiche) = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_THREE_KINGDOMS_DESCRIPTION" Language="de_DE">
-			<Text>Durch jeden angrenzenden [ICON_DISTRICT_CAMPUS] "Seowon"-Bezirk erhalten:[NEWLINE][NEWLINE]• "Minen" +1 [ICON_SCIENCE] Wissenschaft.[NEWLINE]• "Bauernhöfe" +1 [ICON_FOOD] Nahrung.[NEWLINE][NEWLINE][ICON_BULLET] Startbedingungen: T4 Graslandhügelfelder, Ebenenhügelfelder.</Text>
+			<Text>Durch jeden angrenzenden [ICON_DISTRICT_CAMPUS] "Seowon"-Bezirk erhalten:[NEWLINE][NEWLINE]• "Minen" +1 [ICON_SCIENCE] Wissenschaft.[NEWLINE]• "Bauernhöfe" +1 [ICON_FOOD] Nahrung.[NEWLINE][NEWLINE][ICON_BULLETGLOW] Startbedingungen: T4 Graslandhügelfelder, Ebenenhügelfelder.</Text>
 		</Replace>
 		<!-- = Leader ability - Führerfähigkeit (Seondeok - Hwarang) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_HWARANG_DESCRIPTION" Language="de_DE">
@@ -914,10 +914,10 @@
 		<!-- == MACEDON - MAKEDONIEN == -->
 		<!-- = Civilization ability - Zivilisationsfähigkeit (Hellenistische Fusion) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_HELLENISTIC_FUSION_DESCRIPTION" Language="de_DE">
-			<Text>Erhalte nach jeder Eroberung einer [ICON_DISTRICT_CITY_CENTER] Stadt:[NEWLINE][NEWLINE]• +20% [ICON_PRODUCTION] Produktion für 10 [ICON_TURN] Runden, in allen [ICON_DISTRICT_CITY_CENTER] Städten des Reiches.[NEWLINE]Ein [ICON_TechBoosted] Heureka durch jedes [ICON_DISTRICT_ENCAMPMENT] Lager- oder [ICON_DISTRICT_CAMPUS] Campus-Bezirk in der eroberten [ICON_DISTRICT_CITY_CENTER] Stadt.[NEWLINE]• Eine [ICON_CivicBoosted] Eingebung durch jedes [ICON_DISTRICT_HOLYSITE] Heilige Stätte- oder [ICON_DISTRICT_THEATER] Theaterplatz-Bezirk in der eroberten [ICON_DISTRICT_CITY_CENTER] Stadt.[NEWLINE][NEWLINE][ICON_BULLET] Startbedingungen: Keine.</Text>
+			<Text>Erhalte nach jeder Eroberung einer [ICON_DISTRICT_CITY_CENTER] Stadt:[NEWLINE][NEWLINE]• +20% [ICON_PRODUCTION] Produktion für 10 [ICON_TURN] Runden, in allen [ICON_DISTRICT_CITY_CENTER] Städten des Reiches.[NEWLINE]Ein [ICON_TechBoosted] Heureka durch jedes [ICON_DISTRICT_ENCAMPMENT] Lager- oder [ICON_DISTRICT_CAMPUS] Campus-Bezirk in der eroberten [ICON_DISTRICT_CITY_CENTER] Stadt.[NEWLINE]• Eine [ICON_CivicBoosted] Eingebung durch jedes [ICON_DISTRICT_HOLYSITE] Heilige Stätte- oder [ICON_DISTRICT_THEATER] Theaterplatz-Bezirk in der eroberten [ICON_DISTRICT_CITY_CENTER] Stadt.[NEWLINE][NEWLINE][ICON_BULLETGLOW] Startbedingungen: Keine.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_HELLENISTIC_FUSION_EXPANSION1_DESCRIPTION" Language="de_DE">
-			<Text>Erhalte nach jeder Eroberung einer [ICON_DISTRICT_CITY_CENTER] Stadt:[NEWLINE][NEWLINE]• +20% [ICON_PRODUCTION] Produktion für 10 [ICON_TURN] Runden, in allen [ICON_DISTRICT_CITY_CENTER] Städten des Reiches.[NEWLINE]• Ein [ICON_TechBoosted] Heureka durch jedes [ICON_DISTRICT_ENCAMPMENT] Lager- oder [ICON_DISTRICT_CAMPUS] Campus-Bezirk in der eroberten [ICON_DISTRICT_CITY_CENTER] Stadt.[NEWLINE]• Eine [ICON_CivicBoosted] Eingebung durch jedes [ICON_DISTRICT_HOLYSITE] Heilige Stätte- oder [ICON_DISTRICT_THEATER] Theaterplatz-Bezirk in der eroberten [ICON_DISTRICT_CITY_CENTER] Stadt.[NEWLINE][NEWLINE][ICON_BULLET] Startbedingungen: Keine.</Text>
+			<Text>Erhalte nach jeder Eroberung einer [ICON_DISTRICT_CITY_CENTER] Stadt:[NEWLINE][NEWLINE]• +20% [ICON_PRODUCTION] Produktion für 10 [ICON_TURN] Runden, in allen [ICON_DISTRICT_CITY_CENTER] Städten des Reiches.[NEWLINE]• Ein [ICON_TechBoosted] Heureka durch jedes [ICON_DISTRICT_ENCAMPMENT] Lager- oder [ICON_DISTRICT_CAMPUS] Campus-Bezirk in der eroberten [ICON_DISTRICT_CITY_CENTER] Stadt.[NEWLINE]• Eine [ICON_CivicBoosted] Eingebung durch jedes [ICON_DISTRICT_HOLYSITE] Heilige Stätte- oder [ICON_DISTRICT_THEATER] Theaterplatz-Bezirk in der eroberten [ICON_DISTRICT_CITY_CENTER] Stadt.[NEWLINE][NEWLINE][ICON_BULLETGLOW] Startbedingungen: Keine.</Text>
 		</Replace>
 		<!-- = Leader ability - Führerfähigkeit (Alexander - Bis zum Ende der Welt) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_TO_WORLDS_END_DESCRIPTION" Language="de_DE">
@@ -945,7 +945,7 @@
 		<!-- == MALIAN - MALI == -->
 		<!-- = Civilization ability - Zivilisationsfähigkeit (Lieder der Jeli) = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_MALI_GOLD_DESERT_DESCRIPTION" Language="de_DE">
-			<Text>+2 [ICON_FAITH] Glauben bei Gründung:[NEWLINE][NEWLINE]• Für [ICON_DISTRICT_CITY_CENTER] Stadtzentren auf einem Wüstenfeld.[NEWLINE]• Für die [ICON_CAPITAL] Hauptstadt auf einem beliebigen Feld.[NEWLINE][NEWLINE]+2 [ICON_FOOD] Nahrung für Wüstenfelder.[NEWLINE][NEWLINE]+2 [ICON_GOLD] Gold für Minen auf Wüstenfeldern.[NEWLINE][NEWLINE]Kann "Bauernhöfe" auf Wüstenfelder bauen.[NEWLINE][NEWLINE]-15% [ICON_PRODUCTION] Produktion in allen [ICON_DISTRICT_CITY_CENTER] Städten.[NEWLINE][NEWLINE]Kann Gebäude im [ICON_DISTRICT_COMMERCIAL_HUB] "Suguba"-Bezirk mit [ICON_FAITH] Glauben kaufen.[NEWLINE][NEWLINE][ICON_BULLET] Startbedingungen: T1 Wüstenfelder, Wüstenhügelfelder; T5 Ressourcen-Felder für Minen ([ICON_RESOURCE_COPPER] Kupfer, [ICON_RESOURCE_DIAMONDS] Diamanten,[ICON_RESOURCE_JADE] Jade, [ICON_RESOURCE_MERCURY] Quecksilber, [ICON_RESOURCE_SALT] Salz, [ICON_RESOURCE_SILVER] Silber, [ICON_RESOURCE_ALUMINUM] Aluminium, [ICON_RESOURCE_COAL] Kohle, [ICON_RESOURCE_IRON] Eisen, [ICON_RESOURCE_NITER] Salpeter; KEIN [ICON_RESOURCE_URANIUM] Uran).</Text>
+			<Text>+2 [ICON_FAITH] Glauben bei Gründung:[NEWLINE][NEWLINE]• Für [ICON_DISTRICT_CITY_CENTER] Stadtzentren auf einem Wüstenfeld.[NEWLINE]• Für die [ICON_CAPITAL] Hauptstadt auf einem beliebigen Feld.[NEWLINE][NEWLINE]+2 [ICON_FOOD] Nahrung für Wüstenfelder.[NEWLINE][NEWLINE]+2 [ICON_GOLD] Gold für Minen auf Wüstenfeldern.[NEWLINE][NEWLINE]Kann "Bauernhöfe" auf Wüstenfelder bauen.[NEWLINE][NEWLINE]-15% [ICON_PRODUCTION] Produktion in allen [ICON_DISTRICT_CITY_CENTER] Städten.[NEWLINE][NEWLINE]Kann Gebäude im [ICON_DISTRICT_COMMERCIAL_HUB] "Suguba"-Bezirk mit [ICON_FAITH] Glauben kaufen.[NEWLINE][NEWLINE][ICON_BULLETGLOW] Startbedingungen: T1 Wüstenfelder, Wüstenhügelfelder; T5 Ressourcen-Felder für Minen ([ICON_RESOURCE_COPPER] Kupfer, [ICON_RESOURCE_DIAMONDS] Diamanten,[ICON_RESOURCE_JADE] Jade, [ICON_RESOURCE_MERCURY] Quecksilber, [ICON_RESOURCE_SALT] Salz, [ICON_RESOURCE_SILVER] Silber, [ICON_RESOURCE_ALUMINUM] Aluminium, [ICON_RESOURCE_COAL] Kohle, [ICON_RESOURCE_IRON] Eisen, [ICON_RESOURCE_NITER] Salpeter; KEIN [ICON_RESOURCE_URANIUM] Uran).</Text>
 		</Replace>
 		<!-- = Leader ability - Führerfähigkeit (Mansa Musa - Sahel-Händler) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_SAHEL_MERCHANTS_DESCRIPTION" Language="de_DE">
@@ -988,7 +988,7 @@
 		<!-- == MAORI - MAORI == -->
 		<!-- = Civilization ability - Zivilisationsfähigkeit (Mana) = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_MAORI_MANA_DESCRIPTION" Language="de_DE">
-			<Text>+1 [ICON_FOOD] Nahrung für "Fischerboote" nach Erforschung der Technologie "Astronomische Navigation".[NEWLINE][NEWLINE]Kulturschock für angrenzende Felder, wenn Fischerboote fertiggestellt wurden.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Produktion für Wald- und Regenwaldfelder, wenn keine Verbesserungen auf ihnen gebaut wurden, nach der Erforschung der Ausrichtung "Frühes Reich" (zusätzlich +1 [ICON_PRODUCTION] Produktion nach Erforschung der Ausrichtung "Merkantilismus" und +2 [ICON_PRODUCTION] Produktion nach Erforschung der Ausrichtung "Naturschutz").[NEWLINE][NEWLINE]Einheiten die "wassern" bzw. eingeschifft sind, erhalten +2 [ICON_MOVEMENT] Bewegung nach Erforschung der Technologie "Schiffsbau".[NEWLINE][NEWLINE]Es ist nicht möglich:[NEWLINE][NEWLINE]• Ressourcen zu ernten.[NEWLINE]• [ICON_GreatWriter] Große Schriftsteller zu erhalten.[NEWLINE][NEWLINE][ICON_BULLET] Startbedingungen: T1 Küstenfelder.</Text>
+			<Text>+1 [ICON_FOOD] Nahrung für "Fischerboote" nach Erforschung der Technologie "Astronomische Navigation".[NEWLINE][NEWLINE]Kulturschock für angrenzende Felder, wenn Fischerboote fertiggestellt wurden.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Produktion für Wald- und Regenwaldfelder, wenn keine Verbesserungen auf ihnen gebaut wurden, nach der Erforschung der Ausrichtung "Frühes Reich" (zusätzlich +1 [ICON_PRODUCTION] Produktion nach Erforschung der Ausrichtung "Merkantilismus" und +2 [ICON_PRODUCTION] Produktion nach Erforschung der Ausrichtung "Naturschutz").[NEWLINE][NEWLINE]Einheiten die "wassern" bzw. eingeschifft sind, erhalten +2 [ICON_MOVEMENT] Bewegung nach Erforschung der Technologie "Schiffsbau".[NEWLINE][NEWLINE]Es ist nicht möglich:[NEWLINE][NEWLINE]• Ressourcen zu ernten.[NEWLINE]• [ICON_GreatWriter] Große Schriftsteller zu erhalten.[NEWLINE][NEWLINE][ICON_BULLETGLOW] Startbedingungen: T1 Küstenfelder.</Text>
 		</Replace>
 		<!-- = Leader ability - Führerfähigkeit (Kupe - Kupes Reise) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_KUPES_VOYAGE_DESCRIPTION" Language="de_DE">
@@ -1010,7 +1010,7 @@
 		<!-- == MAPUCHE - MAPUCHE == -->
 		<!-- = Civilization ability - Zivilisationsfähigkeit (Toki) = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_MAPUCHE_TOQUI_DESCRIPTION" Language="de_DE">
-			<Text>[ICON_DISTRICT_CITY_CENTER] Städte mit einem etablierten [ICON_GOVERNOR] Gouverneur erhalten folgende Boni:[NEWLINE][NEWLINE]• +5% [ICON_PRODUCTION] Produktion, +5% [ICON_CULTURE] Kultur, +10% Kampferfahrung für rekrutierte Einheiten (verdreifacht in [ICON_DISTRICT_CITY_CENTER] Städten, die nicht von den Mapuche gegründet wurden).[NEWLINE]• +4 [ICON_PRESSUREUP] Loyalität pro [ICON_TURN] Runde für [ICON_DISTRICT_CITY_CENTER] Städte im Umkreis von 9 Feldern.[NEWLINE][NEWLINE][ICON_BULLET] Startbedingungen: T4 Graslandbergfelder, Ebenenbergfelder; -T3 Schwemmlandfelder.</Text>
+			<Text>[ICON_DISTRICT_CITY_CENTER] Städte mit einem etablierten [ICON_GOVERNOR] Gouverneur erhalten folgende Boni:[NEWLINE][NEWLINE]• +5% [ICON_PRODUCTION] Produktion, +5% [ICON_CULTURE] Kultur, +10% Kampferfahrung für rekrutierte Einheiten (verdreifacht in [ICON_DISTRICT_CITY_CENTER] Städten, die nicht von den Mapuche gegründet wurden).[NEWLINE]• +4 [ICON_PRESSUREUP] Loyalität pro [ICON_TURN] Runde für [ICON_DISTRICT_CITY_CENTER] Städte im Umkreis von 9 Feldern.[NEWLINE][NEWLINE][ICON_BULLETGLOW] Startbedingungen: T4 Graslandbergfelder, Ebenenbergfelder; -T3 Schwemmlandfelder.</Text>
 		</Replace>
 		<!-- = Leader ability - Führerfähigkeit (Lautaro - Schneller Falke) = -->
 		<Replace Tag="LOC_ABILITY_TRAIT_MAPUCHE_DESCRIPTION" Language="de_DE">
@@ -1037,7 +1037,7 @@
 		<!-- == MAYAS - MAYAREICH == -->
 		<!-- = Civilization ability - Zivilisationsfähigkeit (Mayab) = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_MAYAB_DESCRIPTION" Language="de_DE">
-			<Text>Kein zusätzlicher [ICON_HOUSING] Wohnraum für [ICON_DISTRICT_CITY_CENTER] Städte die an Süßwasser- oder Küstenfelder angrenzen.[NEWLINE][NEWLINE]+1 [ICON_HOUSING] Wohnraum für die [ICON_CAPITAL] Hauptstadt.[NEWLINE][NEWLINE]+1 [ICON_HOUSING] Wohnraum in [ICON_DISTRICT_CITY_CENTER] Städten mit einem [ICON_DISTRICT_CAMPUS]"Observatorium"-Bezirk.[NEWLINE][NEWLINE][ICON_DISTRICT_CITY_CENTER] Stadtzentren erhalten +1 [ICON_AMENITIES] Annehmlichkeit durch jedes angrenzende Luxusgut.[NEWLINE][NEWLINE]"Bauernhöfe" erhalten:[NEWLINE][NEWLINE]• +1 [ICON_GOLD] Gold.[NEWLINE]• +1 [ICON_PRODUCTION] Produktion durch jedes angrenzende [ICON_DISTRICT_CAMPUS]"Observatorium"-Bezirk.[NEWLINE][NEWLINE]• "Plantagen" erhalten +1 [ICON_SCIENCE] Wissenschaft durch jedes angrenzende "Observatorium"-Bezirk (zusätzlich +1 [ICON_SCIENCE] Wissenschaft, nach der Erforschung der Technologie "Bildungswesen").[NEWLINE][NEWLINE][ICON_BULLET] Startbedingungen: T3 Luxusressourcen-Felder für Plantagen ([ICON_RESOURCE_CITRUS] Zitrusfrüchte, [ICON_RESOURCE_COFFEE] Kaffee, [ICON_RESOURCE_COCOA] Kakao, [ICON_RESOURCE_COTTON] Baumwolle, [ICON_RESOURCE_DYES] Färbemittel, [ICON_RESOURCE_SILK] Seide, [ICON_RESOURCE_SPICES] Gewürze, [ICON_RESOURCE_SUGAR] Zucker, [ICON_RESOURCE_TEA] Tee, [ICON_RESOURCE_TOBACCO] Tabak, [ICON_RESOURCE_WINE] Wein, [ICON_RESOURCE_INCENSE] Räucherwerk, [ICON_RESOURCE_OLIVES] Oliven); T4 [ICON_RESOURCE_BANANAS] Bananen. Spezial: "Hydrophobie".</Text>
+			<Text>Kein zusätzlicher [ICON_HOUSING] Wohnraum für [ICON_DISTRICT_CITY_CENTER] Städte die an Süßwasser- oder Küstenfelder angrenzen.[NEWLINE][NEWLINE]+1 [ICON_HOUSING] Wohnraum für die [ICON_CAPITAL] Hauptstadt.[NEWLINE][NEWLINE]+1 [ICON_HOUSING] Wohnraum in [ICON_DISTRICT_CITY_CENTER] Städten mit einem [ICON_DISTRICT_CAMPUS]"Observatorium"-Bezirk.[NEWLINE][NEWLINE][ICON_DISTRICT_CITY_CENTER] Stadtzentren erhalten +1 [ICON_AMENITIES] Annehmlichkeit durch jedes angrenzende Luxusgut.[NEWLINE][NEWLINE]"Bauernhöfe" erhalten:[NEWLINE][NEWLINE]• +1 [ICON_GOLD] Gold.[NEWLINE]• +1 [ICON_PRODUCTION] Produktion durch jedes angrenzende [ICON_DISTRICT_CAMPUS]"Observatorium"-Bezirk.[NEWLINE][NEWLINE]• "Plantagen" erhalten +1 [ICON_SCIENCE] Wissenschaft durch jedes angrenzende "Observatorium"-Bezirk (zusätzlich +1 [ICON_SCIENCE] Wissenschaft, nach der Erforschung der Technologie "Bildungswesen").[NEWLINE][NEWLINE][ICON_BULLETGLOW] Startbedingungen: T3 Luxusressourcen-Felder für Plantagen ([ICON_RESOURCE_CITRUS] Zitrusfrüchte, [ICON_RESOURCE_COFFEE] Kaffee, [ICON_RESOURCE_COCOA] Kakao, [ICON_RESOURCE_COTTON] Baumwolle, [ICON_RESOURCE_DYES] Färbemittel, [ICON_RESOURCE_SILK] Seide, [ICON_RESOURCE_SPICES] Gewürze, [ICON_RESOURCE_SUGAR] Zucker, [ICON_RESOURCE_TEA] Tee, [ICON_RESOURCE_TOBACCO] Tabak, [ICON_RESOURCE_WINE] Wein, [ICON_RESOURCE_INCENSE] Räucherwerk, [ICON_RESOURCE_OLIVES] Oliven); T4 [ICON_RESOURCE_BANANAS] Bananen. Spezial: "Hydrophobie".</Text>
 		</Replace>
 		<!-- = Leader ability - Führerfähigkeit (Wac Chanil Ajaw - Ix Mutal Ajaw) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_MUTAL_DESCRIPTION" Language="de_DE">
@@ -1064,7 +1064,7 @@
 		<!-- == MONGOLIA - MONGOLEI == -->
 		<!-- = Civilization ability - Zivilisationsfähigkeit (Örtöö) = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_MONGOLIAN_ORTOO_DESCRIPTION" Language="de_DE">
-			<Text>[ICON_TradeRoute] Handelswege erzeugen sofort nach dem aussenden, einen [ICON_TradingPost] Handelsposten in der Ziel-[ICON_DISTRICT_CITY_CENTER] Stadt (erhöht die Stufe der [ICON_VisTopSecret] diplomatischen Sichtbarkeit).[NEWLINE][NEWLINE]Der Bonus für [ICON_STRENGTH] Kampfstärke, der mit einer höheren Stufe der [ICON_VisTopSecret] diplomatischen Sichtbarkeit als der Gegner skaliert (+3 pro Stufenunterschied), wird für alle Einheiten verdoppelt.[NEWLINE][NEWLINE][ICON_BULLET] Startbedingungen: T4 [ICON_RESOURCE_HORSES] Pferde.</Text>
+			<Text>[ICON_TradeRoute] Handelswege erzeugen sofort nach dem aussenden, einen [ICON_TradingPost] Handelsposten in der Ziel-[ICON_DISTRICT_CITY_CENTER] Stadt (erhöht die Stufe der [ICON_VisTopSecret] diplomatischen Sichtbarkeit).[NEWLINE][NEWLINE]Der Bonus für [ICON_STRENGTH] Kampfstärke, der mit einer höheren Stufe der [ICON_VisTopSecret] diplomatischen Sichtbarkeit als der Gegner skaliert (+3 pro Stufenunterschied), wird für alle Einheiten verdoppelt.[NEWLINE][NEWLINE][ICON_BULLETGLOW] Startbedingungen: T4 [ICON_RESOURCE_HORSES] Pferde.</Text>
 		</Replace>
 		<!-- = Leader ability - Führerfähigkeit (Dschingis Khan - Mongolische Horde) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_GENGHIS_KHAN_ABILITY_DESCRIPTION" Language="de_DE">
@@ -1085,7 +1085,7 @@
 		<!-- == NORWAY - NORWEGEN == -->
 		<!-- = Civilization ability - Zivilisationsfähigkeit (Knarr) = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_EARLY_OCEAN_NAVIGATION_DESCRIPTION" Language="de_DE">
-			<Text>+50% [ICON_PRODUCTION] Produktion für [ICON_DISTRICT_HOLYSITE] Heilige Stätte-Bezirke.[NEWLINE][NEWLINE][ICON_DISTRICT_HOLYSITE] Heilige Stätte-Bezirke erhalten  [ICON_FAITH] Glauben Standard-Nachbarschaftsbonus (+1) durch angrenzende Küsten- oder Seefelder. [NEWLINE][NEWLINE][ICON_DISTRICT_HARBOR] Hafen-Bezirke erhalten [ICON_GOLD] Gold Großer-Nachbarschaftsbonus (+2) durch angrenzende [ICON_DISTRICT_HOLYSITE] Heilige Stätte-Bezirke.[NEWLINE][NEWLINE]Marine-Nahkampf-Einheiten heilen in neutralem Gebiet, wenn sie sich auf Küstenfeldern befinden.[NEWLINE][NEWLINE]Ein- und Ausschiffen kostet Einheiten keine zusätzliche [ICON_MOVEMENT] Bewegung.[NEWLINE][NEWLINE][ICON_BULLET] Startbedingungen: T1 Küstenfelder; T5 Waldfelder.</Text>
+			<Text>+50% [ICON_PRODUCTION] Produktion für [ICON_DISTRICT_HOLYSITE] Heilige Stätte-Bezirke.[NEWLINE][NEWLINE][ICON_DISTRICT_HOLYSITE] Heilige Stätte-Bezirke erhalten  [ICON_FAITH] Glauben Standard-Nachbarschaftsbonus (+1) durch angrenzende Küsten- oder Seefelder. [NEWLINE][NEWLINE][ICON_DISTRICT_HARBOR] Hafen-Bezirke erhalten [ICON_GOLD] Gold Großer-Nachbarschaftsbonus (+2) durch angrenzende [ICON_DISTRICT_HOLYSITE] Heilige Stätte-Bezirke.[NEWLINE][NEWLINE]Marine-Nahkampf-Einheiten heilen in neutralem Gebiet, wenn sie sich auf Küstenfeldern befinden.[NEWLINE][NEWLINE]Ein- und Ausschiffen kostet Einheiten keine zusätzliche [ICON_MOVEMENT] Bewegung.[NEWLINE][NEWLINE][ICON_BULLETGLOW] Startbedingungen: T1 Küstenfelder; T5 Waldfelder.</Text>
 		</Replace>
 		<Row Tag="LOC_DISTRICT_HOLY_SITE_NORWAY_COAST_FAITH" Language="de_DE">
 			<Text>+{1_num} [ICON_FAITH] Glauben durch angrenzende Küsten- oder Seefelder (Knarr).</Text>
@@ -1132,7 +1132,7 @@
 		<!-- == NUBIAN - NUBIEN == -->
 		<!-- = Civilization ability - Zivilisationsfähigkeit (Ta-Seti) = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_TA_SETI_DESCRIPTION" Language="de_DE">
-			<Text>Für Fernkampf-Einheiten und Marine-Fernkampf-Einheiten gilt:[NEWLINE][NEWLINE]• +30%[ICON_PRODUCTION] Produktion.[NEWLINE]• +50% Kampferfahrung.[NEWLINE][NEWLINE]Für Minen gilt:[NEWLINE]• +1 [ICON_PRODUCTION] Produktion auf Strategischen Ressourcen.[NEWLINE]• +2 [ICON_GOLD] Gold auf Bonus- und Luxusressourcen.[NEWLINE][NEWLINE][ICON_BULLET] Startbedingungen: T2 Ebenenfelder, Ebenenhügelfelder; T5 Ressourcen-Felder für Minen ([ICON_RESOURCE_COPPER] Kupfer, [ICON_RESOURCE_DIAMONDS] Diamanten,[ICON_RESOURCE_JADE] Jade, [ICON_RESOURCE_MERCURY] Quecksilber, [ICON_RESOURCE_SALT] Salz, [ICON_RESOURCE_SILVER] Silber, [ICON_RESOURCE_ALUMINUM] Aluminium, [ICON_RESOURCE_COAL] Kohle, [ICON_RESOURCE_IRON] Eisen, [ICON_RESOURCE_NITER] Salpeter, [ICON_RESOURCE_URANIUM] Uran).</Text>
+			<Text>Für Fernkampf-Einheiten und Marine-Fernkampf-Einheiten gilt:[NEWLINE][NEWLINE]• +30%[ICON_PRODUCTION] Produktion.[NEWLINE]• +50% Kampferfahrung.[NEWLINE][NEWLINE]Für Minen gilt:[NEWLINE]• +1 [ICON_PRODUCTION] Produktion auf Strategischen Ressourcen.[NEWLINE]• +2 [ICON_GOLD] Gold auf Bonus- und Luxusressourcen.[NEWLINE][NEWLINE][ICON_BULLETGLOW] Startbedingungen: T2 Ebenenfelder, Ebenenhügelfelder; T5 Ressourcen-Felder für Minen ([ICON_RESOURCE_COPPER] Kupfer, [ICON_RESOURCE_DIAMONDS] Diamanten,[ICON_RESOURCE_JADE] Jade, [ICON_RESOURCE_MERCURY] Quecksilber, [ICON_RESOURCE_SALT] Salz, [ICON_RESOURCE_SILVER] Silber, [ICON_RESOURCE_ALUMINUM] Aluminium, [ICON_RESOURCE_COAL] Kohle, [ICON_RESOURCE_IRON] Eisen, [ICON_RESOURCE_NITER] Salpeter, [ICON_RESOURCE_URANIUM] Uran).</Text>
 		</Replace>
 		<!-- = Leader ability - Führerfähigkeit (Amanitore - Kandake von Meroë) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_KANDAKE_OF_MEROE_DESCRIPTION" Language="de_DE">
@@ -1150,7 +1150,7 @@
 		<!-- == OTTOMANS - OSMANISCHES REICH == -->
 		<!-- = Civilization ability - Zivilisationsfähigkeit (Urbans Kanone) = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_GREAT_TURKISH_BOMBARD_DESCRIPTION" Language="de_DE">
-			<Text>Für Belagerungs-Einheiten gilt:[NEWLINE][NEWLINE]• +50% [ICON_PRODUCTION] Produktion.[NEWLINE]• +3 [ICON_STRENGTH] Kampfstärke.[NEWLINE][NEWLINE]Eroberte [ICON_DISTRICT_CITY_CENTER] Städte verlieren keine [ICON_CITIZEN] Bürger.[NEWLINE][NEWLINE]+1 [ICON_AMENITIES] Annehmlichkeit und +4 [ICON_PRESSUREUP] Loyalität pro [ICON_TURN] Runde für [ICON_DISTRICT_CITY_CENTER] Städte, die nicht von den Osmanen gegründet wurden.[NEWLINE][NEWLINE][ICON_BULLET] Startbedingungen: T3 Flüsse; T5 [ICON_RESOURCE_NITER] Salpeter.</Text>
+			<Text>Für Belagerungs-Einheiten gilt:[NEWLINE][NEWLINE]• +50% [ICON_PRODUCTION] Produktion.[NEWLINE]• +3 [ICON_STRENGTH] Kampfstärke.[NEWLINE][NEWLINE]Eroberte [ICON_DISTRICT_CITY_CENTER] Städte verlieren keine [ICON_CITIZEN] Bürger.[NEWLINE][NEWLINE]+1 [ICON_AMENITIES] Annehmlichkeit und +4 [ICON_PRESSUREUP] Loyalität pro [ICON_TURN] Runde für [ICON_DISTRICT_CITY_CENTER] Städte, die nicht von den Osmanen gegründet wurden.[NEWLINE][NEWLINE][ICON_BULLETGLOW] Startbedingungen: T3 Flüsse; T5 [ICON_RESOURCE_NITER] Salpeter.</Text>
 		</Replace>
 		<!-- = Leader ability - Führerfähigkeit (Suleiman, Kanuni - Süleyman, Kanuni - Großwesir) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_SULEIMAN_GOVERNOR_DESCRIPTION" Language="de_DE">
@@ -1191,7 +1191,7 @@
 		<!-- == PERSIA - PERSIEN == -->
 		<!-- = Civilization ability - Zivilisationsfähigkeit (Satrapien)= -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_SATRAPIES_DESCRIPTION" Language="de_DE">
-			<Text>+1 [ICON_TradeRoute] Handelswege-Kapazität nach Erforschung der Ausrichtung "Politische Philosophie".[NEWLINE][NEWLINE]+2 [ICON_GOLD] Gold von nationalen [ICON_TradeRoute] Handelswegen (zusätzlich +2 [ICON_GOLD] Gold nach Erforschung der Technologie "Bankwesen" und zusätzlich +2 [ICON_GOLD] Gold nach Erforschung der Technologie "Wirtschaftswesen").[NEWLINE][NEWLINE]Straßen, die in deinem Territorium gebaut werden, sind eine Stufe weiter entwickelt als üblich.[NEWLINE][NEWLINE][ICON_BULLET] Startbedingungen: Keine.</Text>
+			<Text>+1 [ICON_TradeRoute] Handelswege-Kapazität nach Erforschung der Ausrichtung "Politische Philosophie".[NEWLINE][NEWLINE]+2 [ICON_GOLD] Gold von nationalen [ICON_TradeRoute] Handelswegen (zusätzlich +2 [ICON_GOLD] Gold nach Erforschung der Technologie "Bankwesen" und zusätzlich +2 [ICON_GOLD] Gold nach Erforschung der Technologie "Wirtschaftswesen").[NEWLINE][NEWLINE]Straßen, die in deinem Territorium gebaut werden, sind eine Stufe weiter entwickelt als üblich.[NEWLINE][NEWLINE][ICON_BULLETGLOW] Startbedingungen: Keine.</Text>
 		</Replace>
 		<!-- = Leader ability - Führerfähigkeit (Kyrus - Kyros - Der Fall Babylons) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_FALL_BABYLON_EXPANSION2_DESCRIPTION" Language="de_DE">
@@ -1222,7 +1222,7 @@
 		<!-- == PHOENICIA - PHÖNIZIEN == -->
 		<!-- = Civilization ability - Zivilisationsfähigkeit (Mittelmeerkolonien) = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_MEDITERRANEAN_COLONIES_DESCRIPTION" Language="de_DE">
-			<Text>Beginnt des Spiel mit dem [ICON_TechBoosted] Heureka für die Technologie "Schrift".[NEWLINE][NEWLINE]Von Phönizien gegründete Küsten-[ICON_DISTRICT_CITY_CENTER] Städte, die sich auf dem selben Kontinent wie die phönizische [ICON_CAPITAL] Hauptstadt befinden, sind zu 100% [ICON_PRESSUREUP] loyal.[NEWLINE][NEWLINE]+ 2 [ICON_MOVEMENT] Bewegung und +2 [ICON_VisSecret] Sicht für eingeschiffte Siedler.[NEWLINE][NEWLINE]Siedler benötigen keine zusätzliche [ICON_MOVEMENT] Bewegung für das Ein- und Ausschiffen.[NEWLINE][NEWLINE][ICON_BULLET] Startbedingungen: T1 Küstenfelder.</Text>
+			<Text>Beginnt des Spiel mit dem [ICON_TechBoosted] Heureka für die Technologie "Schrift".[NEWLINE][NEWLINE]Von Phönizien gegründete Küsten-[ICON_DISTRICT_CITY_CENTER] Städte, die sich auf dem selben Kontinent wie die phönizische [ICON_CAPITAL] Hauptstadt befinden, sind zu 100% [ICON_PRESSUREUP] loyal.[NEWLINE][NEWLINE]+ 2 [ICON_MOVEMENT] Bewegung und +2 [ICON_VisSecret] Sicht für eingeschiffte Siedler.[NEWLINE][NEWLINE]Siedler benötigen keine zusätzliche [ICON_MOVEMENT] Bewegung für das Ein- und Ausschiffen.[NEWLINE][NEWLINE][ICON_BULLETGLOW] Startbedingungen: T1 Küstenfelder.</Text>
 		</Replace>
 		<!-- = Leader ability - Führerfähigkeit (Dido von Karthago - Gründer von Karthago) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_FOUNDER_CARTHAGE_DESCRIPTION" Language="de_DE">
@@ -1240,7 +1240,7 @@
 		<!-- == POLAND - POLEN == -->
 		<!-- = Civilization ability - Zivilisationsfähigkeit (Goldene Freiheit) = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_GOLDEN_LIBERTY_DESCRIPTION" Language="de_DE">
-			<Text>Ein Militärpolitik-Platz in der aktuellen [ICON_GOVERNMENT] Regierung wird in einen Jokerpolitik-Platz umgewandelt.[NEWLINE][NEWLINE]Kulturschock auf angrenzenden Feldern, nachdem ein [ICON_DISTRICT_ENCAMPMENT] Lager-Bezirk oder eine "Festung" fertiggestellt wurde.[NEWLINE][NEWLINE][ICON_BULLET] Startbedingungen: Keine.</Text>	
+			<Text>Ein Militärpolitik-Platz in der aktuellen [ICON_GOVERNMENT] Regierung wird in einen Jokerpolitik-Platz umgewandelt.[NEWLINE][NEWLINE]Kulturschock auf angrenzenden Feldern, nachdem ein [ICON_DISTRICT_ENCAMPMENT] Lager-Bezirk oder eine "Festung" fertiggestellt wurde.[NEWLINE][NEWLINE][ICON_BULLETGLOW] Startbedingungen: Keine.</Text>	
 		</Replace>
 		<!-- = Leader ability - Führerfähigkeit (Hedwig - Polnisch-Litauische Union) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_LITHUANIAN_UNION_DESCRIPTION" Language="de_DE">
@@ -1258,7 +1258,7 @@
 		<!-- == PORTUGAL - PORTUGAL == -->
 		<!-- = Civilization ability - Zivilisationsfähigkeit (Casa da India)= -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_PORTUGAL_DESCRIPTION" Language="de_DE">
-			<Text>Internationale [ICON_TradeRoute] Handelswege müssen von einer [ICON_DISTRICT_CITY_CENTER] Stadt ausgehen, die an ein Küsten- oder Seefeld angrenzt, können nur über Wasser- oder "Kanal"-Felder verlaufen und müssen [ICON_DISTRICT_CITY_CENTER] Städte erreichen, die auch an ein Küsten- oder Seefeld angrenzen, oder einen Hafen besitzen, der maximal 2 Felder von der Stadt entfernt ist.[NEWLINE][NEWLINE]Die Erträge dieser [ICON_TradeRoute] Handelswege werden erhöht:[NEWLINE][NEWLINE]• +50% [ICON_GOLD] Gold nach Erforschung der Technologie "Kartografie".[NEWLINE]• +50% [ICON_SCIENCE] Wissenschaft nach Erforschung der Technologie "Bildungswesen".[NEWLINE]• +50% [ICON_CULTURE] Kultur nach Erforschung der Ausrichtung "Mittelaltermärkte".[NEWLINE][NEWLINE][ICON_TRADEROUTE] Händler-Einheiten haben +50% Reichweite über Wasserfelder und können Ein- und Ausschiffen, nach Erforschung der Ausrichtung "Außenhandel".[NEWLINE][NEWLINE][ICON_BULLET] Startbedingungen: T1 Küstenfelder.</Text>
+			<Text>Internationale [ICON_TradeRoute] Handelswege müssen von einer [ICON_DISTRICT_CITY_CENTER] Stadt ausgehen, die an ein Küsten- oder Seefeld angrenzt, können nur über Wasser- oder "Kanal"-Felder verlaufen und müssen [ICON_DISTRICT_CITY_CENTER] Städte erreichen, die auch an ein Küsten- oder Seefeld angrenzen, oder einen Hafen besitzen, der maximal 2 Felder von der Stadt entfernt ist.[NEWLINE][NEWLINE]Die Erträge dieser [ICON_TradeRoute] Handelswege werden erhöht:[NEWLINE][NEWLINE]• +50% [ICON_GOLD] Gold nach Erforschung der Technologie "Kartografie".[NEWLINE]• +50% [ICON_SCIENCE] Wissenschaft nach Erforschung der Technologie "Bildungswesen".[NEWLINE]• +50% [ICON_CULTURE] Kultur nach Erforschung der Ausrichtung "Mittelaltermärkte".[NEWLINE][NEWLINE][ICON_TRADEROUTE] Händler-Einheiten haben +50% Reichweite über Wasserfelder und können Ein- und Ausschiffen, nach Erforschung der Ausrichtung "Außenhandel".[NEWLINE][NEWLINE][ICON_BULLETGLOW] Startbedingungen: T1 Küstenfelder.</Text>
 		</Replace>
 		<!-- = Leader ability - Führerfähigkeit (Johann III. - Porta do Cerco)= -->
 		<Replace Tag="LOC_TRAIT_LEADER_JOAO_III_DESCRIPTION" Language="de_DE">
@@ -1280,7 +1280,7 @@
 		<!-- == ROME - ROM == -->
 		<!-- = Civilization ability - Zivilisationsfähigkeit (Alle Wege führen nach Rom) = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ALL_ROADS_TO_ROME_DESCRIPTION" Language="de_DE">
-			<Text>Alle [ICON_DISTRICT_CITY_CENTER] Städte, die ihr gründet oder erobert, starten mit einem [ICON_TRADINGPOST] Handelsposten.[NEWLINE][NEWLINE][ICON_DISTRICT_CITY_CENTER] Städte in [ICON_TradeRoute] Handelsweg-Reichweite eurer [ICON_CAPITAL] Hauptstadt, starten mit einer Straße zu eurer [ICON_CAPITAL] Hauptstadt.[NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold von allen deinen [ICON_TRADEROUTE] Handelswegen, die durch deine [ICON_TRADINGPOST] Handelsposten führen.[NEWLINE][NEWLINE][ICON_BULLET] Startbedingungen: Keine.</Text>
+			<Text>Alle [ICON_DISTRICT_CITY_CENTER] Städte, die ihr gründet oder erobert, starten mit einem [ICON_TRADINGPOST] Handelsposten.[NEWLINE][NEWLINE][ICON_DISTRICT_CITY_CENTER] Städte in [ICON_TradeRoute] Handelsweg-Reichweite eurer [ICON_CAPITAL] Hauptstadt, starten mit einer Straße zu eurer [ICON_CAPITAL] Hauptstadt.[NEWLINE][NEWLINE]+1 [ICON_GOLD] Gold von allen deinen [ICON_TRADEROUTE] Handelswegen, die durch deine [ICON_TRADINGPOST] Handelsposten führen.[NEWLINE][NEWLINE][ICON_BULLETGLOW] Startbedingungen: Keine.</Text>
 		</Replace>
 		<!-- = Leader ability - Führerfähigkeit (Trajan - Trajansäule) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_TRAJANS_COLUMN_DESCRIPTION" Language="de_DE">
@@ -1288,7 +1288,7 @@
 		</Replace>
 		<!-- = Leader ability - Führerfähigkeit (Julius Cäsar - Veni, vidi, vici) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_CAESAR_DESCRIPTION" Language="de_DE">
-			<Text>Alle Einheiten erhalten +50% Kampferfahrung (zusätzlich +50% sobald das Mittelalter erreicht wurde).[NEWLINE][NEWLINE]Erhalte nach jeder Gründung einer [ICON_DISTRICT_CITY_CENTER] Stadt, die stärkste verfügbare Nahkampf-Einheit in dieser [ICON_DISTRICT_CITY_CENTER] Stadt (außer der [ICON_Capital] Hauptstadt).[NEWLINE][NEWLINE]Erhalte einen "Krieger" in deiner [ICON_Capital] Hauptstadt, nach Erforschung der Ausrichtung "Gesetzgebung".[NEWLINE][NEWLINE]Wenn es dir gelingt, eine von einer anderen Zivilisation gegründete [ICON_DISTRICT_CITY_CENTER] Stadt zu erobern, und solange du mindestens eine davon kontrollieren, erhältst du einen zusätzlichen Jokerpolitik-Platz (maximal 1 zusätzlicher Jokerpolitik-Platz).[NEWLINE][NEWLINE]+150 [ICON_GOLD] Gold, wenn du eine [ICON_DISTRICT_CITY_CENTER] Stadt zum ersten Mal eroberst und jedesmal, wenn du ein [ICON_BARBARIAN] Barbarenlager zerstörst (steigt auf +250 [ICON_GOLD] Gold nach Erforschung der Technologie "Eisenverarbeitung" und +350 [ICON_GOLD] Gold nach Erforschung der Technologie "Stahl")(Standard-Geschwindigkeit).[NEWLINE][NEWLINE]+5 [ICON_STRENGTH] Kampfstärke gegen [ICON_BARBARIAN] Barbaren und du erhälst volle Erfahrungspunkte von ihnen.</Text>
+			<Text>Alle Einheiten erhalten +50% Kampferfahrung (zusätzlich +50% sobald das Mittelalter erreicht wurde).[NEWLINE][NEWLINE]Erhalte nach jeder Gründung einer [ICON_DISTRICT_CITY_CENTER] Stadt, die stärkste verfügbare Nahkampf-Einheit in dieser [ICON_DISTRICT_CITY_CENTER] Stadt (außer der [ICON_Capital] Hauptstadt).[NEWLINE][NEWLINE]Erhalte einen "Krieger" in deiner [ICON_Capital] Hauptstadt, nach Erforschung der Ausrichtung "Gesetzgebung".[NEWLINE][NEWLINE]Wenn es dir gelingt, eine von einer anderen Zivilisation gegründete [ICON_DISTRICT_CITY_CENTER] Stadt zu erobern, und solange du mindestens eine davon kontrollieren, erhältst du einen zusätzlichen Jokerpolitik-Platz (maximal 1 zusätzlicher Jokerpolitik-Platz).[NEWLINE][NEWLINE]+150 [ICON_GOLD] Gold, wenn du eine [ICON_DISTRICT_CITY_CENTER] Stadt zum ersten Mal eroberst und jedesmal, wenn du ein [ICON_BARBARIAN] Barbarenlager zerstörst (steigt auf +250 [ICON_GOLD] Gold nach Erforschung der Technologie "Eisenverarbeitung" und +350 [ICON_GOLD] Gold nach Erforschung der Technologie "Stahl")(Standard-Geschwindigkeit).[NEWLINE][NEWLINE]+5 [ICON_STRENGTH] Kampfstärke gegen [ICON_BARBARIAN] Barbaren und du erhälst volle Erfahrungspunkte von ihnen.[NEWLINE][NEWLINE]+1 [ICON_AMENITIES] Annehmlichkeit für jedes [ICON_DISTRICT_AQUEDUCT] Bad-Bezirk.</Text>
 		</Replace>
 		<Replace Tag="LOC_BBG_CAESAR_XP_BONUS_BASE_MODIFIER_NAME" Language="de_DE">
 			<Text>+50% Kampferfahrung (Veni, Vidi, Vici)</Text>
@@ -1308,13 +1308,13 @@
 		</Replace>
 		<!-- = Unique district - Einzigartiger Bezirk (Bad) = -->
 		<Replace Tag="LOC_DISTRICT_BATH_EXPANSION2_ALT_DESCRIPTION" Language="de_DE">
-			<Text>Dieser [ICON_DISTRICT_AQUEDUCT] "Bad"-Bezirk der Klassik ist einzigartig für Rom, wird nach Erforschung der Technologie "Maschinenbau" freigeschaltet, ersetzt den [ICON_DISTRICT_AQUEDUCT] "Aquädukt"-Bezirk, gewährt dessen Boni und zusätzlich:[NEWLINE][NEWLINE]• +2 [ICON_HOUSING] Wohnraum.[NEWLINE]• +1 [ICON_AMENITIES] Annehmlichkeit.[NEWLINE]• Versorgt deine [ICON_DISTRICT_CITY_CENTER] Stadt mit Süßwasser von einem angrenzenden Fluss-, See-, Berg- oder Oasen-Feld.[NEWLINE]• Städte ohne Süßwasserquelle erhalten bis zu +6 [ICON_HOUSING] Wohnraum.[NEWLINE]• [ICON_DISTRICT_CITY_CENTER] Städte, die bereits eine Süßwasserquelle haben, erhalten stattdessen +2 [ICON_HOUSING] Wohnraum.[NEWLINE]• +1 Annehmlichkeit beim Bau neben einem geothermischen Riss.[NEWLINE]• Verhindert den Verlust von [ICON_FOOD] Nahrung bei "Dürre".[NEWLINE]• Militärpioniere können eine [ICON_CHARGES] Ladung benutzen, um 20 % der [ICON_PRODUCTION] Produktion des [ICON_DISTRICT_AQUEDUCT] "Bad"-Bezirks fertigzustellen.[NEWLINE][NEWLINE]Kann nur angrenzend an ein [ICON_DISTRICT_CITY_CENTER] Stadtzentrum und zusätzlich an ein Fluss-, See-, Berg- oder Oasen-Feld gebaut werden.[NEWLINE][NEWLINE]Verringerte [ICON_PRODUCTION] [ICON_GOLD] Grundkosten.</Text>
+			<Text>Dieser [ICON_DISTRICT_AQUEDUCT] "Bad"-Bezirk der Klassik ist einzigartig für Rom, wird nach Erforschung der Technologie "Maschinenbau" freigeschaltet, ersetzt den [ICON_DISTRICT_AQUEDUCT] "Aquädukt"-Bezirk, gewährt dessen Boni und zusätzlich:[NEWLINE][NEWLINE]• +2 [ICON_HOUSING] Wohnraum.[NEWLINE]• Gewährt [ICON_CULTURE] Kultur Kleiner-Nachbarschaftsbonus (0.5).[NEWLINE]• Versorgt deine [ICON_DISTRICT_CITY_CENTER] Stadt mit Süßwasser von einem angrenzenden Fluss-, See-, Berg- oder Oasen-Feld.[NEWLINE]• Städte ohne Süßwasserquelle erhalten bis zu +6 [ICON_HOUSING] Wohnraum.[NEWLINE]• [ICON_DISTRICT_CITY_CENTER] Städte, die bereits eine Süßwasserquelle haben, erhalten stattdessen +2 [ICON_HOUSING] Wohnraum.[NEWLINE]• +1 Annehmlichkeit beim Bau neben einem geothermischen Riss.[NEWLINE]• Verhindert den Verlust von [ICON_FOOD] Nahrung bei "Dürre".[NEWLINE]• Militärpioniere können eine [ICON_CHARGES] Ladung benutzen, um 20 % der [ICON_PRODUCTION] Produktion des [ICON_DISTRICT_AQUEDUCT] "Bad"-Bezirks fertigzustellen.[NEWLINE][NEWLINE]Kann nur angrenzend an ein [ICON_DISTRICT_CITY_CENTER] Stadtzentrum und zusätzlich an ein Fluss-, See-, Berg- oder Oasen-Feld gebaut werden.[NEWLINE][NEWLINE]Verringerte [ICON_PRODUCTION] [ICON_GOLD] Grundkosten.</Text>
 		</Replace>
 
 		<!-- == RUSSIA - RUSSLAND == -->
 		<!-- = Civilization ability - Zivilisationsfähigkeit (Mütterchen Russland) = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_MOTHER_RUSSIA_EXPANSION2_DESCRIPTION" Language="de_DE">
-			<Text>Das Gebiet neu gegründeter [ICON_DISTRICT_CITY_CENTER] Städte, ist um 4 Felder erweitert.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Produktion von Tundrafelder.[NEWLINE][NEWLINE]Einheiten erleiden keinen Schaden durch Schneestürme.[NEWLINE][NEWLINE]Zivilisationen, die mit Russland im Krieg sind, erhalten +100% Schaden durch Schneestürme im russischen Gebiet.[NEWLINE][NEWLINE][ICON_BULLET] Startbedingungen: T1 Tundrafelder, Tundrahügelfelder.</Text>
+			<Text>Das Gebiet neu gegründeter [ICON_DISTRICT_CITY_CENTER] Städte, ist um 4 Felder erweitert.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Produktion von Tundrafelder.[NEWLINE][NEWLINE]Einheiten erleiden keinen Schaden durch Schneestürme.[NEWLINE][NEWLINE]Zivilisationen, die mit Russland im Krieg sind, erhalten +100% Schaden durch Schneestürme im russischen Gebiet.[NEWLINE][NEWLINE][ICON_BULLETGLOW] Startbedingungen: T1 Tundrafelder, Tundrahügelfelder.</Text>
 		</Replace>
 		<!-- = Leader ability - Führerfähigkeit (Peter I. - Die Große Gesandtschaft) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_GRAND_EMBASSY_DESCRIPTION" Language="de_DE">
@@ -1332,7 +1332,7 @@
 		<!-- == SCOTLAND - SCHOTTLAND == -->
 		<!-- = Civilization ability - Zivilisationsfähigkeit (Schottische Aufklärung) = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_SCOTTISH_ENLIGHTENMENT_DESCRIPTION" Language="de_DE">
-			<Text>Glückliche [ICON_DISTRICT_CITY_CENTER] Städte erhalten:[NEWLINE][NEWLINE]• +5% [ICON_PRODUCTION] Produktion.[NEWLINE]• +5% [ICON_SCIENCE] Wissenschaft.[NEWLINE]• +1 [ICON_GreatScientist] Großer Wissenschaftler-Punkt für [ICON_DISTRICT_CAMPUS] Campus-Bezirke.[NEWLINE]• +1 [ICON_GreatEngineer] Großer Ingenieur-Punkt für [ICON_DISTRICT_INDUSTRIAL_ZONE] Industriegebiet-Bezirke.[NEWLINE]Begeisterte [ICON_DISTRICT_CITY_CENTER] Städte verdoppeln diese Boni.[NEWLINE][NEWLINE][ICON_BULLET] Startbedingungen: Keine.</Text>
+			<Text>Glückliche [ICON_DISTRICT_CITY_CENTER] Städte erhalten:[NEWLINE][NEWLINE]• +5% [ICON_PRODUCTION] Produktion.[NEWLINE]• +5% [ICON_SCIENCE] Wissenschaft.[NEWLINE]• +1 [ICON_GreatScientist] Großer Wissenschaftler-Punkt für [ICON_DISTRICT_CAMPUS] Campus-Bezirke.[NEWLINE]• +1 [ICON_GreatEngineer] Großer Ingenieur-Punkt für [ICON_DISTRICT_INDUSTRIAL_ZONE] Industriegebiet-Bezirke.[NEWLINE]Begeisterte [ICON_DISTRICT_CITY_CENTER] Städte verdoppeln diese Boni.[NEWLINE][NEWLINE][ICON_BULLETGLOW] Startbedingungen: Keine.</Text>
 		</Replace>
 		<!-- Leader ability - Führerfähigkeit (Robert I. - Bannockburn)-->
 		<Replace Tag="LOC_TRAIT_LEADER_BANNOCKBURN_DESCRIPTION" Language="de_DE">
@@ -1353,7 +1353,7 @@
 		<!-- == SCYTHIA - SKYTHIEN == -->
 		<!-- = Civilization ability - Zivilisationsfähigkeit (Volk der Steppe) = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_EXTRA_LIGHT_CAVALRY_DESCRIPTION" Language="de_DE">
-			<Text>Leichte- und Schwere-, und Fernkampf-Kavallerie-Einheiten können mit [ICON_FAITH] Glauben gekauft werden.[NEWLINE][NEWLINE][ICON_BULLET] Startbedingungen: T3 [ICON_RESOURCE_HORSES] Pferde; T4 [ICON_RESOURCE_CATTLE] Vieh und [ICON_RESOURCE_SHEEP] Schaf; T5 Graslandfelder, Ebenenfelder.</Text>
+			<Text>Leichte- und Schwere-, und Fernkampf-Kavallerie-Einheiten können mit [ICON_FAITH] Glauben gekauft werden.[NEWLINE][NEWLINE][ICON_BULLETGLOW] Startbedingungen: T3 [ICON_RESOURCE_HORSES] Pferde; T4 [ICON_RESOURCE_CATTLE] Vieh und [ICON_RESOURCE_SHEEP] Schaf; T5 Graslandfelder, Ebenenfelder.</Text>
 		</Replace>
 		<!-- = Leader ability - Führerfähigkeit (Tomyris - Schlächter von Kyros) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_KILLER_OF_CYRUS_DESCRIPTION" Language="de_DE">
@@ -1377,7 +1377,7 @@
 		<!-- == SPAIN - SPANIEN == -->
 		<!-- = Civilization ability - Zivilisationsfähigkeit (Schatzflotte )= -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_TREASURE_FLEET_EXPANSION2_DESCRIPTION" Language="de_DE">
-			<Text>Kann [ICON_Corps] Flotten nach Erforschung der Ausrichtungen "Söldner" und [ICON_Army] Armadas nach Erforschung der Ausrichtungen "Nationalismus" bilden (früher als gewöhnlich).[NEWLINE][NEWLINE]+3 [ICON_GOLD] Gold, +2 [ICON_FAITH] Glauben und +1 [ICON_PRODUCTION] Produktion von [ICON_TradeRoute] Handelswegen.[NEWLINE][NEWLINE]+6 [ICON_GOLD] Gold, +4 [ICON_FAITH] Glauben und +2 [ICON_PRODUCTION] Produktion von internationalen [ICON_TradeRoute] Handelswegen zwischen zwei oder mehr Kontinenten.[NEWLINE][NEWLINE][ICON_DISTRICT_CITY_CENTER] Städte, die mindestens 8 Felder von der [ICON_CAPITAL] Hauptstadt entfernt sind, erhalten +25% [ICON_PRODUCTION] Produktion für [ICON_DISTRICT] Bezirke.[NEWLINE][NEWLINE][ICON_BULLET] Startbedingungen: T1 Küstenfelder; T3 Geothermischer Riss-Felder. Spezial: "Kontinentale Aufteilung".</Text>
+			<Text>Kann [ICON_Corps] Flotten nach Erforschung der Ausrichtungen "Söldner" und [ICON_Army] Armadas nach Erforschung der Ausrichtungen "Nationalismus" bilden (früher als gewöhnlich).[NEWLINE][NEWLINE]+3 [ICON_GOLD] Gold, +2 [ICON_FAITH] Glauben und +1 [ICON_PRODUCTION] Produktion von [ICON_TradeRoute] Handelswegen.[NEWLINE][NEWLINE]+6 [ICON_GOLD] Gold, +4 [ICON_FAITH] Glauben und +2 [ICON_PRODUCTION] Produktion von internationalen [ICON_TradeRoute] Handelswegen zwischen zwei oder mehr Kontinenten.[NEWLINE][NEWLINE][ICON_DISTRICT_CITY_CENTER] Städte, die mindestens 8 Felder von der [ICON_CAPITAL] Hauptstadt entfernt sind, erhalten +25% [ICON_PRODUCTION] Produktion für [ICON_DISTRICT] Bezirke.[NEWLINE][NEWLINE][ICON_BULLETGLOW] Startbedingungen: T1 Küstenfelder; T3 Geothermischer Riss-Felder. Spezial: "Kontinentale Aufteilung".</Text>
 		</Replace>
 		<!-- = Leader ability - Führerfähigkeit (Philipp II. - El Escorial) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_EL_ESCORIAL_EXPANSION2_DESCRIPTION" Language="de_DE">
@@ -1407,7 +1407,7 @@
 			<Text>Wiege der Zivilisation</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_FIRST_CIVILIZATION_DESCRIPTION" Language="de_DE">
-			<Text>"Bauernhöfe" erhalten:[NEWLINE][NEWLINE]• +1 [ICON_FOOD] Nahrung, wenn sie an einen Fluss angrenzen.[NEWLINE]• +1 [ICON_PRODUCTION] Produktion wenn sie an ein "Ziggurat" angrenzen, nach der Erforschung der Ausrichtung "Frühes Reich".[NEWLINE][NEWLINE]Immun gegen Schaden durch Überschwemmungen.[NEWLINE][NEWLINE][ICON_BULLET] Startbedingungen: T3 Flüsse; T4 Ebenen-Schwemmlandfelder, Gras-Schwemmlandfelder.</Text>
+			<Text>"Bauernhöfe" erhalten:[NEWLINE][NEWLINE]• +1 [ICON_FOOD] Nahrung, wenn sie an einen Fluss angrenzen.[NEWLINE]• +1 [ICON_PRODUCTION] Produktion wenn sie an ein "Ziggurat" angrenzen, nach der Erforschung der Ausrichtung "Frühes Reich".[NEWLINE][NEWLINE]Immun gegen Schaden durch Überschwemmungen.[NEWLINE][NEWLINE][ICON_BULLETGLOW] Startbedingungen: T3 Flüsse; T4 Ebenen-Schwemmlandfelder, Gras-Schwemmlandfelder.</Text>
 		</Replace>
 		<!-- = Leader ability - Führerfähigkeit (Gilgamesh - Abenteuer des Enkidu) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_ADVENTURES_ENKIDU_NAME" Language="de_DE">
@@ -1452,7 +1452,7 @@
 		<!-- == SWEDEN - SCHWEDEN == -->
 		<!-- = Civilization ability - Zivilisationsfähigkeit (Nobelpreis) = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_NOBEL_PRIZE_DESCRIPTION" Language="de_DE">
-			<Text>+50% [ICON_PRODUCTION] Produktion für "Bibliotheken", "Werkstätten, "Universitäten", "Fabriken" und Gebäude im [ICON_DISTRICT_GOVERNMENT] Regierungsplatz-Bezirk.[NEWLINE][NEWLINE]+1 [ICON_GreatEngineer] Großer Ingenieur-Punkt von "Fabriken".[NEWLINE][NEWLINE]+1 [ICON_GreatScientist] Großer Wissenschaftler-Punkt von "Universitäten".[NEWLINE][NEWLINE]+10 [ICON_Favor] Diplomatische Gunst-Punkte, wenn eine [ICON_GreatPerson] Große Persönlichkeit verdient wird (Online-Geschwindigkeit).[NEWLINE][NEWLINE]Wenn Schweden im Spiel ist, werden drei einzigartige Weltkongress-Wettbewerbe ab dem Renaissance-Zeitalter hinzugefügt.[NEWLINE][NEWLINE][ICON_BULLET] Startbedingungen: Spezial "König des Nordens".</Text>
+			<Text>+50% [ICON_PRODUCTION] Produktion für "Bibliotheken", "Werkstätten, "Universitäten", "Fabriken" und Gebäude im [ICON_DISTRICT_GOVERNMENT] Regierungsplatz-Bezirk.[NEWLINE][NEWLINE]+1 [ICON_GreatEngineer] Großer Ingenieur-Punkt von "Fabriken".[NEWLINE][NEWLINE]+1 [ICON_GreatScientist] Großer Wissenschaftler-Punkt von "Universitäten".[NEWLINE][NEWLINE]+10 [ICON_Favor] Diplomatische Gunst-Punkte, wenn eine [ICON_GreatPerson] Große Persönlichkeit verdient wird (Online-Geschwindigkeit).[NEWLINE][NEWLINE]Wenn Schweden im Spiel ist, werden drei einzigartige Weltkongress-Wettbewerbe ab dem Renaissance-Zeitalter hinzugefügt.[NEWLINE][NEWLINE][ICON_BULLETGLOW] Startbedingungen: Spezial "König des Nordens".</Text>
 		</Replace>
 		<!-- = Leader ability - Führerfähigkeit (Kristina - Pallas des Nordens) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_KRISTINA_AUTO_THEME_DESCRIPTION" Language="de_DE">
@@ -1474,7 +1474,7 @@
 		<!-- == VIETNAM - VIETNAM == -->
 		<!-- = Civilization ability - Zivilisationsfähigkeit (Mekongdelta) = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_VIETNAM_DESCRIPTION" Language="de_DE">
-			<Text>[ICON_DISTRICT] Spezial-Bezirke an Land, können nur auf Sumpf-, Regenwald-, Wald- oder Schwemmlandfeldern gebaut werden und deren Gebäude erhalten zusätzliche Erträge:[NEWLINE][NEWLINE]• +1 [ICON_PRODUCTION] Produktion von Sumpffeldern.[NEWLINE]• +1 [ICON_SCIENCE] Wissenschaft von Regenwaldfeldern.[NEWLINE]• +1 [ICON_CULTURE] Kultur von Waldfeldern.[NEWLINE]• Keine zusätzlichen Erträge von Schwemmlandfeldern.[NEWLINE][NEWLINE]Die Fähigkeit "Wald pflanzen", wird für den Handwerker nach Erforschung der Ausrichtung "Mittelaltermärkte" freigeschaltet.[NEWLINE][NEWLINE][ICON_BULLET] Startbedingungen: T3 Regenwaldfelder, Waldfelder, Sumpffelder.</Text>
+			<Text>[ICON_DISTRICT] Spezial-Bezirke an Land, können nur auf Sumpf-, Regenwald-, Wald- oder Schwemmlandfeldern gebaut werden und deren Gebäude erhalten zusätzliche Erträge:[NEWLINE][NEWLINE]• +1 [ICON_PRODUCTION] Produktion von Sumpffeldern.[NEWLINE]• +1 [ICON_SCIENCE] Wissenschaft von Regenwaldfeldern.[NEWLINE]• +1 [ICON_CULTURE] Kultur von Waldfeldern.[NEWLINE]• Keine zusätzlichen Erträge von Schwemmlandfeldern.[NEWLINE][NEWLINE]Die Fähigkeit "Wald pflanzen", wird für den Handwerker nach Erforschung der Ausrichtung "Mittelaltermärkte" freigeschaltet.[NEWLINE][NEWLINE][ICON_BULLETGLOW] Startbedingungen: T3 Regenwaldfelder, Waldfelder, Sumpffelder.</Text>
 		</Replace>
 		<!-- = Leader ability - Führerfähigkeit (Bà Triệu - Die Aggressoren vertreiben)= -->
 		<Replace Tag="LOC_TRAIT_LEADER_TRIEU_DESCRIPTION" Language="de_DE">
@@ -1495,7 +1495,7 @@
 		<!-- == ZULU - ZULULAND == -->
 		<!-- = Civilization ability - Zivilisationsfähigkeit (Isibongo) = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_ZULU_ISIBONGO_DESCRIPTION" Language="de_DE"> <!-- Icons -->
-			<Text>+3 [ICON_PRESSUREUP] Loyalität pro [ICON_TURN] Runde für [ICON_DISTRICT_CITY_CENTER] Städte mit einer [ICON_Fortified] befestigten Einheit (zusätzlich +2 [ICON_PRESSUREUP] Loyalität pro [ICON_TURN] Runde, wenn die Einheit ein [ICON_Corps] Korps oder eine [ICON_Army] Armee ist).[NEWLINE][NEWLINE]Jede Einheit, die eine [ICON_DISTRICT_CITY_CENTER] Stadt erobert, wird aufgewertet zu [ICON_Corps] Korps/Flotte und [ICON_Corps] Korps/Flotte zu [ICON_Army] Armee/Armada (für die Aufwertungen werden die entsprechenden Ausrichtungen benötigt).[NEWLINE][NEWLINE][ICON_BULLET] Startbedingungen: Keine.</Text>
+			<Text>+3 [ICON_PRESSUREUP] Loyalität pro [ICON_TURN] Runde für [ICON_DISTRICT_CITY_CENTER] Städte mit einer [ICON_Fortified] befestigten Einheit (zusätzlich +2 [ICON_PRESSUREUP] Loyalität pro [ICON_TURN] Runde, wenn die Einheit ein [ICON_Corps] Korps oder eine [ICON_Army] Armee ist).[NEWLINE][NEWLINE]Jede Einheit, die eine [ICON_DISTRICT_CITY_CENTER] Stadt erobert, wird aufgewertet zu [ICON_Corps] Korps/Flotte und [ICON_Corps] Korps/Flotte zu [ICON_Army] Armee/Armada (für die Aufwertungen werden die entsprechenden Ausrichtungen benötigt).[NEWLINE][NEWLINE][ICON_BULLETGLOW] Startbedingungen: Keine.</Text>
 		</Replace>
 		<!-- = Leader ability - Führerfähigkeit (Shaka - Amabutho) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_AMABUTHO_DESCRIPTION" Language="de_DE">
@@ -2204,7 +2204,7 @@
 			<Text>-25% [ICON_FAITH] Glaubenskosten für Missionare und Apostel.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_ITINERANT_PREACHERS_DESCRIPTION" Language="de_DE">
-			<Text>+30% Reichweite von ICON_RELIGION] Religiöser Druck durch Städte (10+3=13 Felder auf Standarteinstellung).</Text>
+			<Text>+30% Reichweite von [ICON_RELIGION] Religiöser Druck durch Städte (10+3=13 Felder auf Standarteinstellung).</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_SCRIPTURE_DESCRIPTION" Language="de_DE">
 			<Text>+25% Stärke von [ICON_RELIGION] Religiöser Druck auf benachbarte Städte; steigt auf 50% nach Erforschung der Technologie "Druck".</Text>
@@ -2255,9 +2255,12 @@
 		<!-- == COMMERCIAL HUB == -->
 		<!-- == HARBOR == -->
 		<Replace Tag="LOC_DISTRICT_HARBOR_DESCRIPTION" Language="de_DE">
-			<Text>Der [ICON_DISTRICT_HARBOR] Hafen-Bezirk wird nach Erforschung der Technologie "Astronomische Navigation" freigeschaltet:[NEWLINE][NEWLINE]• +1 [ICON_HOUSING] Wohnraum.[NEWLINE]• Ein- und Ausschiffen von und zu diesem Feld, kostet keine zusätzliche [ICON_MOVEMENT] Bewegung.[NEWLINE][NEWLINE]Muss an Küsten- oder Seefelder angrenzend an Land gebaut werden.</Text>
+			<Text>Der [ICON_DISTRICT_HARBOR] Hafen-Bezirk wird nach Erforschung der Technologie "Astronomische Navigation" freigeschaltet:[NEWLINE][NEWLINE]• +2 [ICON_HOUSING] Wohnraum.[NEWLINE]• Ein- und Ausschiffen von und zu diesem Feld, kostet keine zusätzliche [ICON_MOVEMENT] Bewegung.[NEWLINE][NEWLINE]Muss an Küsten- oder Seefelder angrenzend an Land gebaut werden.</Text>
 		</Replace>
 		<!-- == CAMPUS == -->
+		<Row Tag="LOC_CAMPUS_MOUNTAIN_WONDER_ADJACENCY_BBG" Language="de_DE">
+			<Text>+{1_num} [ICON_SCIENCE] Wissenschaft von angrenzenden Bergfeld-Naturwunder.</Text>
+		</Row>
 		<!-- == THEATER SQUARE == -->
 		<!-- == HOLY SITE == -->
 		<!-- == ENCAMPMENT == -->
@@ -2409,104 +2412,128 @@
 		
 		<!-- === NATURAL WONDERS - NATURWUNDER === -->
 		<!-- TIP: XP2 tag used for Natural Wonders picker (in game lobby) for specified Natural Wonders -->
-		<!-- <Row Tag="LOC_CAMPUS_MOUNTAIN_WONDER_ADJACENCY_BBG" Language="de_DE">
-			<Text>+{1_num} [ICON_SCIENCE] Wissenschaft pro angrenzendes [ICON_DISTRICT_WONDER] Weltwunder, das als Bergfeld zählt.</Text>
-		</Row> -->
+		
+		<!-- === Bermudadreieck === -->
 		<Replace Tag="LOC_FEATURE_BERMUDA_TRIANGLE_DESCRIPTION" Language="de_DE">
-			<Text>Dreiteiliges Naturwunder. Einheiten, die es betreten, werden in ein weit entferntes Meer teleportiert, aber Marine-Einheiten erhalten die Fähigkeit "Geheime Strömungen“ (+1 [ICON_MOVEMENT] Bewegung).</Text>
+			<Text>Naturwunder auf 3 Feldern. Einheiten die es betreten, werden in einen fernen Ozean teleportiert, aber Marine-Einheiten erhalten die Fähigkeit "Mysteriöse Strömungen“ (+1 [ICON_MOVEMENT] Bewegung). +2 Anziehungskraft für angrenzende Felder.</Text>
 		</Replace>
+		<!-- === Paititi === -->
 		<Replace Tag="LOC_FEATURE_PAITITI_DESCRIPTION" Language="de_DE">
-			<Text>Dreiteiliges unpassierbares Naturwunder. Es bietet +1 [ICON_GOLD] Gold und +1 [ICON_CULTURE] Kultur auf angrenzenden Feldern. Ausgehende internationale [ICON_TRADEROUTE] Handelswege von [ICON_DISTRICT_CITY_CENTER] Städten, die mindestens ein Feld von "Paititi" besitzen, erzeugen +4 [ICON_GOLD] Gold.</Text>
+			<Text>Unpassierbares Naturwunder auf 3 Feldern. +1 [ICON_GOLD] Gold und +1 [ICON_CULTURE] Kultur für angrenzende Felder. +4 [ICON_GOLD] Gold für ausgehende internationale [ICON_TRADEROUTE] Handelswege von [ICON_DISTRICT_CITY_CENTER] Städten, die mindestens ein Feld von "Paititi" besitzen. +2 Anziehungskraft für angrenzende Felder.</Text>
 		</Replace>
+		<!-- === Giants Causeway === -->
 		<Replace Tag="LOC_FEATURE_GIANTS_CAUSEWAY_DESCRIPTION" Language="de_DE">
-			<Text>Zweiteiliges unpassierbares Naturwunder. Es bietet +1 [ICON_CULTURE] Kultur auf angrenzenden Feldern. Landkampf-Einheiten, die angrenzende Felder betreten, erhalten die Fähigkeit "Speer von Fionn“ (+3 [ICON_STRENGTH] Kampfstärke beim Angriff).</Text>
+			<Text>Unpassierbares Naturwunder auf 2 Feldern.  +1 [ICON_CULTURE] Kultur für angrenzende Felder. Landkampf-Einheiten, die ein angrenzendes Feld betreten, erhalten die Fähigkeit "Speer von Fionn“ (+3 [ICON_STRENGTH] Kampfstärke beim Angriff). +2 Anziehungskraft für angrenzende Felder.</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_SPEAR_OF_FIONN_DESCRIPTION" Language="de_DE">
 			<Text>"Speer von Fionn": +3 Kampfstärke beim Angriff</Text>
 		</Replace>
+		<!-- === Matterhorn === -->
 		<Replace Tag="LOC_FEATURE_MATTERHORN_DESCRIPTION" Language="de_DE">
-			<Text>Einseitiges unpassierbares Naturwunder. Es erscheint als Bergfeld und bietet +1 [ICON_CULTURE] Kultur auf angrenzenden Feldern. Landkampf-Einheiten, die sich neben das "Matterhorn" bewegen, ignorieren "Hügelfelder" für den Rest des Spiels.</Text>
+			<Text>Unpassierbares Naturwunder auf einem Feld. Es erscheint als Bergfeld. +1 [ICON_CULTURE] Kultur für angrenzende Felder. Landkampf-Einheiten, die ein angrenzendes Feld betreten, erhalten die Fähigkeit "Alpintraining" (ignorieren die Kosten für [ICON_MOVEMENT] Bewegung auf Hügelfeldern). +2 Anziehungskraft für angrenzende Felder.</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_ALPINE_TRAINING__DESCRIPTION" Language="de_DE">
-			<Text>"Alpines Training": Keine [ICON_MOVEMENT] Bewegungsstrafe auf Hügelfeldern.</Text>
+			<Text>"Alpintraining": Ignoriere die Kosten für [ICON_MOVEMENT] Bewegung auf Hügelfeldern.</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_ALPINE_TRAINING_COMBAT_HILLS_MODIFIER_DESCRIPTION" Language="de_DE">
 			<Text>+0 [ICON_STRENGTH] Kampfstärke im Kampf auf Hügelfeldern</Text>
 		</Replace>
+		<!-- === Pantanal === -->
 		<Replace Tag="LOC_FEATURE_PANTANAL_DESCRIPTION" Language="de_DE">
-			<Text>Viereckiges Naturwunder. Es erscheint als Sumpffeld und bietet +2 [ICON_FOOD] Nahrung, +1 [ICON_PRODUCTION] Produktion, +2 [ICON_SCIENCE] Wissenschaft und +2 [ICON_CULTURE] Kultur.</Text>
+			<Text>Naturwunder auf 4 Feldern. Es erscheint als Sumpffeld. +2 [ICON_FOOD] Nahrung, +1 [ICON_PRODUCTION] Produktion, +2 [ICON_SCIENCE] Wissenschaft und +2 [ICON_CULTURE] Kultur. +2 Anziehungskraft für angrenzende Felder.</Text>
 		</Replace>
+		<!-- === Auge von Afrika === -->
 		<Replace Tag="LOC_FEATURE_EYE_OF_THE_SAHARA_DESCRIPTION" Language="de_DE">
-			<Text>Dreiteiliges Naturwunder. Bietet +2 [ICON_FOOD] Nahrung, +2 [ICON_PRODUCTION] Produktion und +2 [ICON_SCIENCE] Wissenschaft.</Text>
+			<Text>Naturwunder auf 3 Feldern. +2 [ICON_FOOD] Nahrung, +2 [ICON_PRODUCTION] Produktion und +2 [ICON_SCIENCE] Wissenschaft. +2 Anziehungskraft für angrenzende Felder.</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_EYE_OF_THE_SAHARA_XP2_DESCRIPTION" Language="de_DE">
-			<Text>Dreiteiliges Naturwunder. Bietet +2 [ICON_FOOD] Nahrung, +2 [ICON_PRODUCTION] Produktion und +2 [ICON_SCIENCE] Wissenschaft.</Text>
+			<Text>Naturwunder auf 3 Feldern. +2 [ICON_FOOD] Nahrung, +2 [ICON_PRODUCTION] Produktion und +2 [ICON_SCIENCE] Wissenschaft. +2 Anziehungskraft für angrenzende Felder.</Text>
 		</Replace>
+		<!-- === Klippen von Dover === -->
 		<Replace Tag="LOC_FEATURE_CLIFFS_DOVER_DESCRIPTION" Language="de_DE">
-			<Text>Zweiteiliges Naturwunder, das an Küstenfeldern gefunden werden kann. Es erscheint als Klippenfeld und bietet +2 [ICON_FOOD] Nahrung, +3 [ICON_CULTURE] Kultur und +3 [ICON_GOLD] Gold. Bietet +4 Anziehungskraft für angrenzende Felder statt der üblichen +2.</Text>
+			<Text>Naturwunder auf 2 Feldern. Kann an Küstenfeldern gefunden werden. Es erscheint als Klippenfeld. +2 [ICON_FOOD] Nahrung, +3 [ICON_CULTURE] Kultur und +3 [ICON_GOLD] Gold. +4 Anziehungskraft für angrenzende Felder.</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_CLIFFS_DOVER_XP2_DESCRIPTION" Language="de_DE">
-			<Text>Zweiteiliges Naturwunder, das an Küstenfeldern gefunden werden kann. Es erscheint als Klippenfeld und bietet +2 [ICON_FOOD] Nahrung, +3 [ICON_CULTURE] Kultur und +3 [ICON_GOLD] Gold. Bietet +4 Anziehungskraft für angrenzende Felder statt der üblichen +2.</Text>
+			<Text>Naturwunder auf 2 Feldern. Kann an Küstenfeldern gefunden werden. Es erscheint als Klippenfeld. +2 [ICON_FOOD] Nahrung, +3 [ICON_CULTURE] Kultur und +3 [ICON_GOLD] Gold. +4 Anziehungskraft für angrenzende Felder.</Text>
 		</Replace>
+		<!-- === Crater Lake === -->
 		<Replace Tag="LOC_FEATURE_CRATER_LAKE_DESCRIPTION" Language="de_DE">
-			<Text>Einseitiges Naturwunder. Es erscheint als Seefeld und bietet +2 [ICON_FOOD] Nahrung, +2 [ICON_SCIENCE] Wissenschaft und +5 [ICON_FAITH] Glauben.</Text>
+			<Text>Naturwunder auf einem Feld. Es erscheint als Seefeld. +2 [ICON_FOOD] Nahrung, +2 [ICON_SCIENCE] Wissenschaft und +5 [ICON_FAITH] Glauben. +2 Anziehungskraft für angrenzende Felder.</Text>
 		</Replace>
+		<!-- === Uws-Nuur-Becken === -->
 		<Replace Tag="LOC_FEATURE_UBSUNUR_HOLLOW_DESCRIPTION" Language="de_DE">
-			<Text>Viereckiges Naturwunder. Es erscheint als Sumpffeld und bietet +2 [ICON_FAITH] Glauben, +2 [ICON_FOOD] Nahrung und +2 [ICON_PRODUCTION] Produktion.</Text>
+			<Text>Naturwunder auf 4 Feldern. Es erscheint als Sumpffeld. +2 [ICON_FAITH] Glauben, +2 [ICON_FOOD] Nahrung und +2 [ICON_PRODUCTION] Produktion. +2 Anziehungskraft für angrenzende Felder.</Text>
 		</Replace>
+		<!-- === Galapagos-Inseln === -->
 		<Replace Tag="LOC_FEATURE_GALAPAGOS_DESCRIPTION" Language="de_DE">
-			<Text>Zweiteiliges unpassierbares Naturwunder, das an Küstenfeldern gefunden werden kann. Es bietet +2 [ICON_SCIENCE] Wissenschaft und +1 [ICON_FOOD] Nahrung auf angrenzenden Feldern.</Text>
+			<Text>Unpassierbares Naturwunder auf 2 Feldern. Kann an Küstenfeldern gefunden werden. +2 [ICON_SCIENCE] Wissenschaft und +1 [ICON_FOOD] Nahrung für angrenzende Felder. +2 Anziehungskraft für angrenzende Felder.</Text>
 		</Replace>
+		<!-- === Retba-See === -->
 		<Replace Tag="LOC_FEATURE_LAKE_RETBA_DESCRIPTION" Language="de_DE">
-			<Text>Zweiteiliges Naturwunder. Es erscheint als Seefeld und bietet +2 [ICON_FOOD] Nahrung, +1 [ICON_PRODUCTION] Produktion, +2 [ICON_CULTURE] Kultur und +2 [ICON_GOLD] Gold.</Text>
+			<Text>Naturwunder auf 2 Feldern. Es erscheint als Seefeld. +2 [ICON_FOOD] Nahrung, +1 [ICON_PRODUCTION] Produktion, +2 [ICON_CULTURE] Kultur und +2 [ICON_GOLD] Gold. +2 Anziehungskraft für angrenzende Felder.</Text>
 		</Replace>
+		<!-- === Totes Meer === -->
 		<Replace Tag="LOC_FEATURE_DEAD_SEA_DESCRIPTION" Language="de_DE">
-			<Text>Zweiteiliges Naturwunder. Es erscheint als Seefeld und bietet +2 [ICON_FOOD] Nahrung, +2 [ICON_FAITH] Glauben und +2 [ICON_CULTURE] Kultur. Einheiten heilen sich vollständig, wenn sie sich eine [ICON_TURN] Runde lang neben dem "Toten Meer" aufhalten.</Text>
+			<Text>Naturwunder auf 2 Feldern. Es erscheint als Seefeld. +2 [ICON_FOOD] Nahrung, +2 [ICON_FAITH] Glauben und +2 [ICON_CULTURE] Kultur. Einheiten heilen sich vollständig, wenn sie sich eine [ICON_TURN] Runde lang angrenzend an dem "Toten Meer" aufhalten. +2 Anziehungskraft für angrenzende Felder.</Text>
 		</Replace>
+		<!-- === Qobustan === -->
 		<Replace Tag="LOC_FEATURE_GOBUSTAN_DESCRIPTION" Language="de_DE">
-			<Text>Dreiteiliges Naturwunder. Es bietet +4 [ICON_CULTURE] Kultur und +4 [ICON_PRODUCTION] Produktion.</Text>
+			<Text>Naturwunder auf 3 Feldern. Es erscheint als Hügelfeld. +4 [ICON_CULTURE] Kultur und +4 [ICON_PRODUCTION] Produktion. +2 Anziehungskraft für angrenzende Felder.</Text>
 		</Replace>
+		<!-- === Weiße Wüste === -->
 		<Replace Tag="LOC_FEATURE_WHITEDESERT_DESCRIPTION" Language="de_DE">
-			<Text>Viereckiges Naturwunder. Es bietet +2 [ICON_SCIENCE] Wissenschaft, +2 [ICON_CULTURE] Kultur und +6 [ICON_GOLD] Gold.</Text>
+			<Text>Naturwunder auf 4 Feldern. +2 [ICON_SCIENCE] Wissenschaft, +2 [ICON_CULTURE] Kultur und +6 [ICON_GOLD] Gold. +2 Anziehungskraft für angrenzende Felder.</Text>
 		</Replace>
+		<!-- === Chocolate Hills === -->
 		<Replace Tag="LOC_FEATURE_CHOCOLATEHILLS_DESCRIPTION" Language="de_DE">
-			<Text>Viereckiges Naturwunder. Es erscheint als Hügelfeld und bietet +3 [ICON_FOOD] Nahrung, +3 [ICON_PRODUCTION] Produktion und +1 [ICON_SCIENCE] Wissenschaft.</Text>
+			<Text>Naturwunder auf 4 Feldern. Es erscheint als Hügelfeld. +3 [ICON_FOOD] Nahrung, +3 [ICON_PRODUCTION] Produktion und +1 [ICON_SCIENCE] Wissenschaft.</Text>
 		</Replace>
+		<!-- === Devils Tower === -->
 		<Replace Tag="LOC_FEATURE_DEVILSTOWER_DESCRIPTION" Language="de_DE">
-			<Text>Einseitiges unpassierbares Naturwunder. Es bietet +2 [ICON_FAITH] Glauben und +1 [ICON_PRODUCTION] Produktion auf angrenzenden Feldern.</Text>
+			<Text>Unpassierbares Naturwunder auf einem Feld. +2 [ICON_FAITH] Glauben und +1 [ICON_PRODUCTION] Produktion für angrenzende Felder. +2 Anziehungskraft für angrenzende Felder.</Text>
 		</Replace>
+		<!-- === Great Barrier Reef === -->
 		<Replace Tag="LOC_FEATURE_BARRIER_REEF_DESCRIPTION" Language="de_DE">
-			<Text>Zweiteiliges Naturwunder, das an Küstenfeldern gefunden werden kann. Es erscheint als Rifffeld und bietet +3 [ICON_FOOD] Nahrung, +1 [ICON_PRODUCTION] Produktion und +2 [ICON_SCIENCE] Wissenschaft.</Text>
+			<Text>Naturwunder auf 2 Feldern. Kann an Küstenfeldern gefunden werden. Es erscheint als Rifffeld. +3 [ICON_FOOD] Nahrung, +1 [ICON_PRODUCTION] Produktion und +2 [ICON_SCIENCE] Wissenschaft. +2 Anziehungskraft für angrenzende Felder.</Text>
 		</Replace>
 		<Row Tag="LOC_REEF_WONDER_SCIENCE" Language="de_DE">
 			<Text>+{1_num} [ICON_SCIENCE] Wissenschaft vom angrenzenden Naturwunder "Great Barrier Reef".</Text>
 		</Row>
+		<!-- === Delicate Arch === -->
 		<Replace Tag="LOC_FEATURE_DELICATE_ARCH_DESCRIPTION" Language="de_DE">
-			<Text>Einseitiges unpassierbares Naturwunder. Es bietet +2 [ICON_FAITH] Glauben und +3 [ICON_GOLD] Gold auf angrenzenden Feldern.</Text>
+			<Text>Unpassierbares Naturwunder auf einem Feld. +2 [ICON_FAITH] Glauben und +3 [ICON_GOLD] Gold für angrenzende Felder. +2 Anziehungskraft für angrenzende Felder.</Text>
 		</Replace>
+		<!-- === Mount Everest === -->
 		<Replace Tag="LOC_FEATURE_EVEREST_DESCRIPTION" Language="de_DE">
-			<Text>Dreiteiliges unpassierbares Naturwunder. Es erscheint als Bergfeld und bietet +3 [ICON_FAITH] Glauben auf angrenzenden Feldern. Religiöse Einheiten, die sich neben den "Mount Everest" bewegen, ignorieren Hügelfelder für den Rest des Spiels.</Text>
+			<Text>Unpassierbares Naturwunder auf 3 Feldern. Es erscheint als Bergfeld. +3 [ICON_FAITH] Glauben für angrenzende Felder. Religiöse Einheiten, die ein angrenzendes Feld betreten, erhalten die Fähigkeit "Höhentraining" (ignorieren die Kosten für [ICON_MOVEMENT] Bewegung auf Hügelfeldern). +2 Anziehungskraft für angrenzende Felder.</Text>
 		</Replace>
+		<!-- === Tsingy de Bemaraha === -->
 		<Replace Tag="LOC_FEATURE_TSINGY_DESCRIPTION" Language="de_DE">
-			<Text>Einseitiges unpassierbares Naturwunder. Es bietet +1 [ICON_FOOD] Nahrung, +1 [ICON_SCIENCE] Wissenschaft und +1 [ICON_CULTURE] Kultur auf angrenzenden Feldern.</Text>
+			<Text>Unpassierbares Naturwunder auf einem Feld. +1 [ICON_FOOD] Nahrung, +1 [ICON_SCIENCE] Wissenschaft und +1 [ICON_CULTURE] Kultur für angrenzende Felder. +2 Anziehungskraft für angrenzende Felder.</Text>
 		</Replace>
+		<!-- === Kilimandscharo === -->
 		<Replace Tag="LOC_FEATURE_KILIMANJARO_DESCRIPTION" Language="de_DE">
-			<Text>Einseitiges unpassierbares Naturwunder. Es erscheint als Bergfeld und bietet +2 [ICON_FOOD] Nahrung auf angrenzenden Feldern.</Text>
+			<Text>Unpassierbares Naturwunder auf einem Feld. Es erscheint als Vulkanfeld. +2 [ICON_FOOD] Nahrung für angrenzende Felder. Durch einen Ausbruch erzeugt es niedrige Erträge auf betroffenen Feldern. Bricht selten aus, ist aber immer aktiv. +2 Anziehungskraft für angrenzende Felder.</Text>
 		</Replace>
+		<!-- === Roraima-Tepui === -->
 		<Replace Tag="LOC_FEATURE_RORAIMA_DESCRIPTION" Language="de_DE">
-			<Text>Viereckiges unpassierbares Naturwunder. Es erscheint als Bergfeld und bietet +1 [ICON_FAITH] Glauben und +1 [ICON_SCIENCE] Wissenschaft auf angrenzenden Feldern.</Text>
+			<Text>Unpassierbares Naturwunder auf 4 Feldern. Es erscheint als Bergfeld. +1 [ICON_FAITH] Glauben und +1 [ICON_SCIENCE] Wissenschaft für angrenzende Felder. +2 Anziehungskraft für angrenzende Felder.</Text>
 		</Replace>
+		<!-- === Torres del Paine === -->
 		<Replace Tag="LOC_FEATURE_TORRES_DEL_PAINE_DESCRIPTION" Language="de_DE">
-			<Text>Zweiteiliges unpassierbares Naturwunder. Es erscheint als Bergfeld. Verdoppelt die Erträge aller angrenzenden Feldern.</Text>
+			<Text>Unpassierbares Naturwunder auf 2 Feldern. Es erscheint als Bergfeld. Die Grund-Erträge (ohne Ressourcen und Geländeeigenschaften) aller angrenzenden Felder werden verdoppelt. +2 Anziehungskraft für angrenzende Felder.</Text>
 		</Replace>
+		<!-- === Zhangye Danxia === -->
 		<Replace Tag="LOC_FEATURE_ZHANGYE_DANXIA_DESCRIPTION" Language="de_DE">
-			<Text>Dreiteiliges unpassierbares Naturwunder. Es erscheint als Bergfeld und bietet 2 [ICON_GREATGENERAL] Großer General-Punkte und 2 [ICON_GREATMERCHANT] Großer Händler-Punkte, wenn du mindestens eins dieser Felder besitzt.</Text>
+			<Text>Unpassierbares Naturwunder auf 3 Feldern. Es erscheint als Bergfeld. +2 [ICON_GREATGENERAL] Großer General-Punkte und +2 [ICON_GREATMERCHANT] Großer Händler-Punkte pro [ICON_TURN] Runde, wenn du mindestens eines dieser Felder besitzt. +2 Anziehungskraft für angrenzende Felder.</Text>
 		</Replace>
+		<!-- === Jungbrunnen === -->
 		<Replace Tag="LOC_FEATURE_FOUNTAIN_OF_YOUTH_DESCRIPTION" Language="de_DE">
-			<Text>Einseitiges Naturwunder. Es erscheint als Oasefeld und bietet +4 [ICON_SCIENCE] Wissenschaft und +4 [ICON_FAITH] Glauben. Landkampf-Einheiten, die es betreten, erhalten die Fähigkeit „Wasser des Lebens“ (+10 Heilung pro [ICON_TURN] Runde in jedem Gebiet).</Text>
+			<Text>Naturwunder auf einem Feld. Es erscheint als Oasefeld. +4 [ICON_SCIENCE] Wissenschaft und +4 [ICON_FAITH] Glauben. Landkampf-Einheiten, die es betreten, erhalten die Fähigkeit "Wasser des Lebens“ (+10 Heilung pro [ICON_TURN] Runde in jedem Gebiet). +2 Anziehungskraft für angrenzende Felder.</Text>
 		</Replace>
+		<!-- === Lysefjord === -->
 		<Replace Tag="LOC_FEATURE_LYSEFJORDEN_DESCRIPTION" Language="de_DE">
-			<Text>Dreiteiliges unpassierbares Naturwunder. Es bietet +1 [ICON_PRODUCTION] Produktion auf angrenzenden Feldern. Militärische Marine-Einheiten, die angrenzende Felder betreten, erhalten die Fähigkeit „Njord's Segen“ (+2 [ICON_MOVEMENT] Bewegung).</Text>
+			<Text>Unpassierbares Naturwunder auf 3 Feldern. +1 [ICON_PRODUCTION] Produktion für angrenzende Felder. Marine-Einheiten, die angrenzende Felder betreten, erhalten die Fähigkeit "Njord's Segen“ (+2 [ICON_MOVEMENT] Bewegung). +2 Anziehungskraft für angrenzende Felder.</Text>
 		</Replace>
 		<Row Tag="LOC_BBG_LYSEFJORD_GRANT_MOVEMENT_ABILITY_NAME" Language="de_DE">
 			<Text>"Njord's Segen"</Text>
@@ -2514,24 +2541,24 @@
 		<Row Tag="LOC_BBG_LYSEFJORD_GRANT_MOVEMENT_ABILITY_DESC" Language="de_DE">
 			<Text>"Njord's Segen": +2 [ICON_MOVEMENT] Bewegung</Text>
 		</Row>
+		<!-- === Yosemite === -->
 		<Replace Tag="LOC_FEATURE_YOSEMITE_DESCRIPTION" Language="de_DE">
-			<Text>Zweiteiliges unpassierbares Naturwunder. Es erscheint als Bergfeld und bietet +1 [ICON_FOOD] Nahrung, +1 [ICON_GOLD] Gold und +1 [ICON_SCIENCE] Wissenschaft auf angrenzenden Feldern.</Text>
+			<Text>Unpassierbares Naturwunder auf 2 Feldern. Es erscheint als Bergfeld. +1 [ICON_FOOD] Nahrung, +1 [ICON_GOLD] Gold und +1 [ICON_SCIENCE] Wissenschaft für angrenzende Felder. +2 Anziehungskraft für angrenzende Felder.</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_YOSEMITE_XP2_DESCRIPTION" Language="de_DE">
-			<Text>Zweiteiliges unpassierbares Naturwunder. Es erscheint als Bergfeld und bietet +1 [ICON_FOOD] Nahrung, +1 [ICON_GOLD] Gold und +1 [ICON_SCIENCE] Wissenschaft auf angrenzenden Feldern.</Text>
+			<Text>Unpassierbares Naturwunder auf 2 Feldern. Es erscheint als Bergfeld. +1 [ICON_FOOD] Nahrung, +1 [ICON_GOLD] Gold und +1 [ICON_SCIENCE] Wissenschaft für angrenzende Felder. +2 Anziehungskraft für angrenzende Felder.</Text>
 		</Replace>
+		<!-- === Eyjafjallajökull === -->
 		<Replace Tag="LOC_FEATURE_EYJAFJALLAJOKULL_DESCRIPTION" Language="de_DE">
-			<Text>Zweiteiliges unpassierbares Naturwunder. Es erscheint als Vulkanfeld und bietet +1 [ICON_CULTURE] Kultur und +1 [ICON_FOOD] Nahrung. Bei einem Ausbruch gibt es mittlere Erträge und beschädigt wahrscheinlich Gebäude und [ICON_DISTRICT] Bezirke. Bricht selten aus, ist aber immer aktiv.</Text>
+			<Text>Unpassierbares Naturwunder auf 2 Feldern. Es erscheint als Vulkanfeld. +1 [ICON_CULTURE] Kultur und +1 [ICON_FOOD] Nahrung. Durch einen Ausbruch erzeugt es mittlere Erträge auf betroffenen Feldern. Bricht selten aus, ist aber immer aktiv. +2 Anziehungskraft für angrenzende Felder.</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_EYJAFJALLAJOKULL_XP2_DESCRIPTION" Language="de_DE">
-			<Text>Zweiteiliges unpassierbares Naturwunder. Es erscheint als Vulkanfeld und bietet +1 [ICON_CULTURE] Kultur und +1 [ICON_FOOD] Nahrung. Bei einem Ausbruch gibt es mittlere Erträge und beschädigt wahrscheinlich Gebäude und [ICON_DISTRICT] Bezirke. Bricht selten aus, ist aber immer aktiv.</Text>
+			<Text>Unpassierbares Naturwunder auf 2 Feldern. Es erscheint als Vulkanfeld. +1 [ICON_CULTURE] Kultur und +1 [ICON_FOOD] Nahrung. Durch einen Ausbruch erzeugt es mittlere Erträge auf betroffenen Feldern. Bricht selten aus, ist aber immer aktiv. +2 Anziehungskraft für angrenzende Felder.</Text>
 		</Replace>
+		<!-- === Pamukkale === -->
 		<Replace Tag="LOC_FEATURE_PAMUKKALE_DESCRIPTION" Language="de_DE">
-			<Text>Zweiteiliges unpassierbares Naturwunder. Es bietet +1 [ICON_AMENITIES] Annehmlichkeit für die [ICON_DISTRICT_CITY_CENTER] Städte, die mindestens ein Feld von "Pamukkale" besitzen. Großer-Nachbarschaftsbonus für [ICON_DISTRICT_THEATER] Theaterplatz-, [ICON_DISTRICT_CAMPUS] Campus- und [ICON_DISTRICT_COMMERCIAL_HUB] Handelszentrum-Bezirke. Zusätzlicher Standard-Nachbarschaftsbonus für den [ICON_DISTRICT_HOLYSITE] Heilige Stätte-Bezirk. [ICON_DISTRICT_ENTERTAINMENT] Unterhaltungskomplex-Bezirk bietet +1 [ICON_AMENITIES] Annehmlichkeit, wenn er angrenzend zu "Pamukkale" ist. Es bietet Süßwasser.</Text>
+			<Text>Unpassierbares Naturwunder auf 2 Feldern. Es bietet Süßwasser. +1 [ICON_AMENITIES] Annehmlichkeit für [ICON_DISTRICT_CITY_CENTER] Städte, die mindestens ein Feld von "Pamukkale" besitzen. +1 [ICON_AMENITIES] Annehmlichkeit für [ICON_DISTRICT_ENTERTAINMENT] Unterhaltungskomplex-Bezirk, wenn angrenzend an "Pamukkale". Großer-Nachbarschaftsbonus (+2) für [ICON_DISTRICT_THEATER] Theaterplatz-, [ICON_DISTRICT_CAMPUS] Campus- und [ICON_DISTRICT_COMMERCIAL_HUB] Handelszentrum-Bezirke. Zusätzlicher Standard-Nachbarschaftsbonus (+1) für den [ICON_DISTRICT_HOLYSITE] Heilige Stätte-Bezirk. +2 Anziehungskraft für angrenzende Felder.</Text>
 		</Replace>
-		<Row Tag="LOC_CAMPUS_MOUNTAIN_WONDER_ADJACENCY_BBG" Language="de_DE">
-			<Text>+{1_num} [ICON_SCIENCE] Wissenschaft vom angrenzenden Bergfeld-Naturwunder.</Text>
-		</Row>
 
 		
 		<!-- === WORLD WONDERS - WELTWUNDER === -->
@@ -2913,7 +2940,7 @@
 			<Text>Dunkles Zeitalter "Freie Untersuchung":[NEWLINE]+1 Zeitalterpunkt für jedes neu ausgelöste [ICON_TECHBOOSTED] Heureka. +1 Zeitalterpunkt für jedes neu gebaute Gebäude, das [ICON_SCIENCE] Wissenschaft erzeugt.</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_CONCEPTS_PAGE_DEDICATIONS_CHAPTER_CONTENT_PARA_2" Language="de_DE">
-			<Text>"Freie Untersuchung":[NEWLINE]+1 Zeitalterpunkt für jedes neu ausgelöste [ICON_TECHBOOSTED] Heureka; +1 Zeitalterpunkt für jedes neu gebaute Gebäude, das [ICON_SCIENCE] Wissenschaft erzeugt.[NEWLINE]Wenn zu Beginn eines Goldenen Zeitalters gewählt:[NEWLINE]+5% zusätzlicher Bonus für [ICON_TechBoosted] Heurekas zur Verringerung der Technologiekosten; [ICON_DISTRICT_COMMERCIAL_HUB] Handels- und [ICON_DISTRICT_HARBOR] Hafen-Bezirke erhalten zusätzlich [ICON_SCIENCE] Wissenschaft entsprechend ihres [ICON_GOLD] Gold-Nachbarschaftsbonus.[NEWLINE]Klassik bis Mittelalter.</Text>
+			<Text>"Freie Untersuchung":[NEWLINE]+1 Zeitalterpunkt für jedes neu ausgelöste [ICON_TECHBOOSTED] Heureka; +1 Zeitalterpunkt für jedes neu gebaute Gebäude, das [ICON_SCIENCE] Wissenschaft erzeugt.[NEWLINE]Wenn zu Beginn eines Goldenen Zeitalters gewählt:[NEWLINE]+5% zusätzlicher Bonus für [ICON_TechBoosted] Heurekas zur Verringerung der Technologiekosten; [ICON_DISTRICT_COMMERCIAL_HUB] Handels- und [ICON_DISTRICT_HARBOR] Hafen-Bezirke erhalten zusätzlich [ICON_SCIENCE] Wissenschaft entsprechend ihres [ICON_GOLD] Gold-Nachbarschaftsbonus.</Text>
 		</Replace>
 		
 		<!-- == PEN, BRUSH AND VOICE - STIFT, PINSEL UND STIMME == -->
@@ -2930,7 +2957,7 @@
 			<Text>Dunkles Zeitalter "Stift, Pinsel und Stimme":[NEWLINE]+1 Zeitalterpunkte für jede ausgelöste [ICON_CIVICBOOSTED] Eingebung; +1 Zeitalterpunkt für jedes erbaute Gebäude mit einem Großes-Werk-Platz.</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_CONCEPTS_PAGE_DEDICATIONS_CHAPTER_CONTENT_PARA_3" Language="de_DE">
-			<Text>"Stift, Pinsel und Stimme":[NEWLINE]+1 Zeitalterpunkt für jede ausgelöste [ICON_CIVICBOOSTED] Eingebung; +1 Zeitalterpunkt für jedes erbaute Gebäude mit einem Großes-Werk-Platz.[NEWLINE]Wenn zu Beginn eines Goldenen Zeitalters gewählt:[NEWLINE]+10% zusätzlicher Bonus für [ICON_CivicBoosted] Eingebungen zur Verringerung der Ausrichtungskosten; +2 [ICON_CULTURE] Kultur und +1 [ICON_GOLD] Gold für jedes Spezial-[ICON_DISTRICT] Bezirk.[NEWLINE]Klassik bis Mittelalter.</Text>
+			<Text>"Stift, Pinsel und Stimme":[NEWLINE]+1 Zeitalterpunkt für jede ausgelöste [ICON_CIVICBOOSTED] Eingebung; +1 Zeitalterpunkt für jedes erbaute Gebäude mit einem Großes-Werk-Platz.[NEWLINE]Wenn zu Beginn eines Goldenen Zeitalters gewählt:[NEWLINE]+10% zusätzlicher Bonus für [ICON_CivicBoosted] Eingebungen zur Verringerung der Ausrichtungskosten; +2 [ICON_CULTURE] Kultur und +1 [ICON_GOLD] Gold für jedes Spezial-[ICON_DISTRICT] Bezirk.</Text>
 		</Replace>
 		
 		<!-- == DRUMS OF WAR - TROMMELN DES KRIEGES == -->
@@ -2947,7 +2974,7 @@
 			<Text>Dunkles Zeitalter "Trommeln des Krieges":[NEWLINE]+1 Zeitalterpunkt für jede neu rekrutierte [ICON_GreatPerson] Große Persönlichkeit.</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_CONCEPTS_PAGE_DEDICATIONS_CHAPTER_CONTENT_PARA_4" Language="de_DE">
-			<Text>"Trommeln des Krieges":[NEWLINE]+1 Zeitalterpunkt für jede neu rekrutierte [ICON_GreatPerson] Große Persönlichkeit.[NEWLINE]Wenn zu Beginn eines Goldenen Zeitalters gewählt:[NEWLINE]+2 Strategische Ressource pro [ICON_TURN] Runde von jeder entdeckten Art (nach der Erforschung der jeweils benötigten Technologie um sie auf der Karte sehen zu können); +15% [ICON_PRODUCTION] Produktion und -1 [ICON_GOLD] Gold Unterhaltskosten für Militär-Einheiten; +1 [ICON_PRODUCTION] Produktion für [ICON_DISTRICT_ENCAMPMENT] Lager-Bezirke und deren Gebäude; das Vernichten von Einheiten gewährt [ICON_CULTURE] Kultur entsprechend 40% der Grund-[ICON_STRENGTH] Kampfstärke der besiegten Einheit (Online-Geschwindigkeit).[NEWLINE]Klassik bis Renaissance.</Text>
+			<Text>"Trommeln des Krieges":[NEWLINE]+1 Zeitalterpunkt für jede neu rekrutierte [ICON_GreatPerson] Große Persönlichkeit.[NEWLINE]Wenn zu Beginn eines Goldenen Zeitalters gewählt:[NEWLINE]+2 Strategische Ressource pro [ICON_TURN] Runde von jeder entdeckten Art (nach der Erforschung der jeweils benötigten Technologie um sie auf der Karte sehen zu können); +15% [ICON_PRODUCTION] Produktion und -1 [ICON_GOLD] Gold Unterhaltskosten für Militär-Einheiten; +1 [ICON_PRODUCTION] Produktion für [ICON_DISTRICT_ENCAMPMENT] Lager-Bezirke und deren Gebäude; das Vernichten von Einheiten gewährt [ICON_CULTURE] Kultur entsprechend 40% der Grund-[ICON_STRENGTH] Kampfstärke der besiegten Einheit (Online-Geschwindigkeit).</Text>
 		</Replace>
 		
 		<!-- == MONUMENTALITY - MONUMENTALITÄT == -->
@@ -2964,7 +2991,7 @@
 			<Text>Dunkles Zeitalter "Monumentalität":[NEWLINE]+1 Zeitalterpunkt für jeden neu gebauten Spezial-[ICON_DISTRICT] Bezirk.</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_CONCEPTS_PAGE_DEDICATIONS_CHAPTER_CONTENT_PARA_5" Language="de_DE">
-			<Text>"Monumentalität":[NEWLINE]+1 Zeitalterpunkt für jeden neu gebauten Spezial-[ICON_DISTRICT] Bezirk.[NEWLINE]Wenn zu Beginn eines Goldenen Zeitalters gewählt:[NEWLINE]Ermöglicht den Kauf von Zivil-Einheiten mit [ICON_FAITH] Glauben; "Siedler" und "Handwerker" kosten -10% [ICON_FAITH] Glauben und [ICON_GOLD] Gold; +2 [ICON_MOVEMENT] Bewegung für "Handwerker".[NEWLINE]Klassik bis Renaissance.</Text>
+			<Text>"Monumentalität":[NEWLINE]+1 Zeitalterpunkt für jeden neu gebauten Spezial-[ICON_DISTRICT] Bezirk.[NEWLINE]Wenn zu Beginn eines Goldenen Zeitalters gewählt:[NEWLINE]Ermöglicht den Kauf von Zivil-Einheiten mit [ICON_FAITH] Glauben; "Siedler" und "Handwerker" kosten -10% [ICON_FAITH] Glauben und [ICON_GOLD] Gold; +2 [ICON_MOVEMENT] Bewegung für "Handwerker".</Text>
 		</Replace>
 		
 		<!-- == HIC SUNT DRACONES (Hier ist der Drache) == -->
@@ -2981,7 +3008,7 @@
 			<Text>Dunkles Zeitalter "Hic Sunt Dracones":[NEWLINE]+3 Zeitalterpunkte für jedes neu entdeckte Naturwunder; +3 Zeitalterpunkte jeden neu entdeckten Kontinent; +1 Zeitalterpunkt für jede vernichtete nicht-barbarische Marine-Einheit.</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_CONCEPTS_PAGE_DEDICATIONS_CHAPTER_CONTENT_PARA_6" Language="de_DE">
-			<Text>"Hic Sunt Dracones":[NEWLINE]+3 Zeitalterpunkte für jedes neu entdeckte Naturwunder; +3 Zeitalterpunkte jeden neu entdeckten Kontinent; +1 Zeitalterpunkt für jede vernichtete nicht-barbarische Marine-Einheit.[NEWLINE]Wenn zu Beginn eines Goldenen Zeitalters gewählt:[NEWLINE]+3 [ICON_CITIZEN] Bürger in neu gegründeten [ICON_DISTRICT_CITY_CENTER] Städten; +2 [ICON_MOVEMENT] Bewegung für Marine-Einheiten, eingeschiffte Einheiten und "Siedler"; +2 [ICON_PRESSUREUP] Loyalität pro [ICON_TURN] Runde für [ICON_DISTRICT_CITY_CENTER] Städte, die sich nicht auf dem Kontinent deiner ursprünglichen [ICON_Capital] Hauptstadt befinden; +100% [ICON_PRODUCTION] Produktion für die ersten beiden [ICON_DISTRICT] Bezirke von [ICON_DISTRICT_CITY_CENTER] Städten.[NEWLINE]Renaissance bis Moderne.</Text>
+			<Text>"Hic Sunt Dracones":[NEWLINE]+3 Zeitalterpunkte für jedes neu entdeckte Naturwunder; +3 Zeitalterpunkte jeden neu entdeckten Kontinent; +1 Zeitalterpunkt für jede vernichtete nicht-barbarische Marine-Einheit.[NEWLINE]Wenn zu Beginn eines Goldenen Zeitalters gewählt:[NEWLINE]+3 [ICON_CITIZEN] Bürger in neu gegründeten [ICON_DISTRICT_CITY_CENTER] Städten; +2 [ICON_MOVEMENT] Bewegung für Marine-Einheiten, eingeschiffte Einheiten und "Siedler"; +2 [ICON_PRESSUREUP] Loyalität pro [ICON_TURN] Runde für [ICON_DISTRICT_CITY_CENTER] Städte, die sich nicht auf dem Kontinent deiner ursprünglichen [ICON_Capital] Hauptstadt befinden; +100% [ICON_PRODUCTION] Produktion für die ersten beiden [ICON_DISTRICT] Bezirke von [ICON_DISTRICT_CITY_CENTER] Städten.</Text>
 		</Replace>
 		
 		<!-- == REFORM THE COINAGE - MÜNZREFORM == -->
@@ -2998,7 +3025,7 @@
 			<Text>Dunkles Zeitalter "Münzreform":[NEWLINE]+1 Zeitalterpunkt für jeden erfolgreich abgeschlossenen [ICON_TRADEROUTE] Handelsweg.</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_CONCEPTS_PAGE_DEDICATIONS_CHAPTER_CONTENT_PARA_7" Language="de_DE">
-			<Text>"Münzreform":[NEWLINE]+1 Zeitalterpunkt für jeden erfolgreich abgeschlossenen [ICON_TRADEROUTE] Handelsweg.[NEWLINE]Wenn zu Beginn eines Goldenen Zeitalters gewählt:[NEWLINE]Deine [ICON_TRADEROUTE] Handelswege können nicht [ICON_PILLAGED] geplündert werden; eingehende und ausgehende internationale [ICON_TRADEROUTE] Handelswege bringen +3 [ICON_GOLD] Gold pro Spezial-[ICON_DISTRICT] Bezirk der Ziel-[ICON_DISTRICT_CITY_CENTER] Stadt.[NEWLINE]Renaissance bis Moderne.</Text>
+			<Text>"Münzreform":[NEWLINE]+1 Zeitalterpunkt für jeden erfolgreich abgeschlossenen [ICON_TRADEROUTE] Handelsweg.[NEWLINE]Wenn zu Beginn eines Goldenen Zeitalters gewählt:[NEWLINE]Deine [ICON_TRADEROUTE] Handelswege können nicht [ICON_PILLAGED] geplündert werden; eingehende und ausgehende internationale [ICON_TRADEROUTE] Handelswege bringen +3 [ICON_GOLD] Gold pro Spezial-[ICON_DISTRICT] Bezirk der Ziel-[ICON_DISTRICT_CITY_CENTER] Stadt.</Text>
 		</Replace>
 		
 		<!-- == HEARTBEAT OF STEAM - HERZSCHLAG DES DAMPFES == -->
@@ -3015,7 +3042,7 @@
 			<Text>Dunkles Zeitalter "Herzschlag des Dampfes“:[NEWLINE]+1 Zeitalterpunkt für jedes Gebäude, das im Industriezeitalter oder später gebaute wurde.</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_CONCEPTS_PAGE_DEDICATIONS_CHAPTER_CONTENT_PARA_8" Language="de_DE">
-			<Text>"Herzschlag des Dampfes“:[NEWLINE]+1 Zeitalterpunkt für jedes Gebäude, das im Industriezeitalter oder später gebaute wurde.[NEWLINE]Wenn zu Beginn eines Goldenen Zeitalters gewählt:[NEWLINE]+10% [ICON_PRODUCTION] Produktion für den Bau von [ICON_DISTRICT_WONDER] Weltwundern des Industriezeitalters oder spätere Zeitalter; erhalte [ICON_PRODUCTION] Produktion entsprechend dem Nachbarschaftsbonus von [ICON_DISTRICT_CAMPUS] Campus-Bezirken; +25% [ICON_PRODUCTION] Produktion für Projekte.[NEWLINE]Industriezeitalter bis Atomzeitalter.</Text>
+			<Text>"Herzschlag des Dampfes“:[NEWLINE]+1 Zeitalterpunkt für jedes Gebäude, das im Industriezeitalter oder später gebaute wurde.[NEWLINE]Wenn zu Beginn eines Goldenen Zeitalters gewählt:[NEWLINE]+10% [ICON_PRODUCTION] Produktion für den Bau von [ICON_DISTRICT_WONDER] Weltwundern des Industriezeitalters oder spätere Zeitalter; erhalte [ICON_PRODUCTION] Produktion entsprechend dem Nachbarschaftsbonus von [ICON_DISTRICT_CAMPUS] Campus-Bezirken; +25% [ICON_PRODUCTION] Produktion für Projekte.</Text>
 		</Replace>
 		
 		<!-- == TO ARMS! - ZU DEN WAFFEN! == -->
@@ -3032,7 +3059,7 @@
 			<Text>Dunkles Zeitalter "Zu den Waffen!":[NEWLINE]+1 Zeitalterpunkt für jedes vernichtete nicht-barbarische [ICON_CORPS] Korps; +2 Zeitalterpunkte für jede vernichtete nicht-barbarische [ICON_Army] Armee.</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_CONCEPTS_PAGE_DEDICATIONS_CHAPTER_CONTENT_PARA_9" Language="de_DE">
-			<Text>"Zu den Waffen!":[NEWLINE]+1 Zeitalterpunkt für jedes vernichtete nicht-barbarische [ICON_CORPS] Korps; +2 Zeitalterpunkte für jede vernichtete nicht-barbarische [ICON_Army] Armee.[NEWLINE]Wenn zu Beginn eines Goldenen Zeitalters gewählt:[NEWLINE]+15% [ICON_PRODUCTION] Produktion für Militär-Einheiten; +10 [ICON_STRENGTH] Kampfstärke gegen verteidigungsfähige [ICON_DISTRICT] Bezirke (die [ICON_STRENGTH] Kampfstärke besitzen) für Militär-Einheiten.[NEWLINE]Industriezeitalter bis Atomzeitalter.</Text>
+			<Text>"Zu den Waffen!":[NEWLINE]+1 Zeitalterpunkt für jedes vernichtete nicht-barbarische [ICON_CORPS] Korps; +2 Zeitalterpunkte für jede vernichtete nicht-barbarische [ICON_Army] Armee.[NEWLINE]Wenn zu Beginn eines Goldenen Zeitalters gewählt:[NEWLINE]+15% [ICON_PRODUCTION] Produktion für Militär-Einheiten; +10 [ICON_STRENGTH] Kampfstärke gegen verteidigungsfähige [ICON_DISTRICT] Bezirke (die [ICON_STRENGTH] Kampfstärke besitzen) für Militär-Einheiten.</Text>
 		</Replace>
 		<Row Tag="LOC_MILITARY_GA_BUFF_DESCRIPTION" Language="de_DE">
 			<Text>+10 [ICON_STRENGTH] Kampfstärke gegen verteidigungsfähige [ICON_DISTRICT] Bezirke (die [ICON_STRENGTH] Kampfstärke besitzen)("Zu den Waffen!" Goldenes Zeitalter Widmung).</Text>
@@ -3055,7 +3082,7 @@
 			<Text>Dunkles Zeitalter „Leibwächter der Lügen“:[NEWLINE]+1 Zeitalterpunkt für jede erfolgreich abgeschlossene Spionageoperation.</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_CONCEPTS_PAGE_DEDICATIONS_CHAPTER_CONTENT_PARA_10" Language="de_DE">
-			<Text>„Leibwächter der Lügen“:[NEWLINE]+1 Zeitalterpunkt für jede erfolgreich abgeschlossene Spionageoperation.[NEWLINE]Wenn zu Beginn eines Goldenen Zeitalters gewählt:[NEWLINE]Keine Verzögerung bei der Etablierung von Spionen in [ICON_DISTRICT_CITY_CENTER] Städten anderer Zivilisationen; -25% Dauer von offensiven Spionageoperationen.[NEWLINE]Atomzeitalter und spätere.</Text>
+			<Text>„Leibwächter der Lügen“:[NEWLINE]+1 Zeitalterpunkt für jede erfolgreich abgeschlossene Spionageoperation.[NEWLINE]Wenn zu Beginn eines Goldenen Zeitalters gewählt:[NEWLINE]Keine Verzögerung bei der Etablierung von Spionen in [ICON_DISTRICT_CITY_CENTER] Städten anderer Zivilisationen; -25% Dauer von offensiven Spionageoperationen.</Text>
 		</Replace>
 		
 		<!-- == WISH YOU WERE HERE - ICH WÜNSCHTE, IHR WÄRT HIER == -->
@@ -3063,7 +3090,7 @@
 			<Text>Ich wünschte, ihr wärt hier</Text>
 		</Replace>
 		<Replace Tag="LOC_MOMENT_CATEGORY_TOURISM_BONUS_GOLDEN_AGE" Language="de_DE">
-			<Text>Goldenes Zeitalter "Ich wünschte, ihr wärt hier":[NEWLINE]+50% [ICON_TOURISM] Tourismus für [ICON_DISTRICT_WONDER] Weltwunder in [ICON_DISTRICT_CITY_CENTER] Städten mit einem [ICON_GOVERNOR] Gouverneur; +50% [ICON_TOURISM] Tourismus für "Nationalparks"; +4 [ICON_GREATMUSICIAN] Großer-Musiker-Punkte pro [ICON_TURN] Runde für jede [ICON_DISTRICT_CITY_CENTER] Stadt.</Text>
+			<Text>Goldenes Zeitalter "Ich wünschte, ihr wärt hier":[NEWLINE]+50% [ICON_TOURISM] Tourismus für [ICON_DISTRICT_WONDER] Weltwunder in [ICON_DISTRICT_CITY_CENTER] Städten mit einem [ICON_GOVERNOR] Gouverneur; +2 [ICON_GREATMUSICIAN] Großer-Musiker-Punkte pro [ICON_TURN] Runde für jede [ICON_DISTRICT_CITY_CENTER] Stadt (zusätzlich +2 mit in [ICON_DISTRICT_CITY_CENTER] Städten mit gebautem "Sendezentrum"); +1 {ICON_AMENITIES] Annehmlichkeit für [ICON_DISTRICT_CITY_CENTER] Städte mit einem "Nationalpark".</Text>
 		</Replace>
 		<Replace Tag="LOC_MOMENT_CATEGORY_TOURISM_BONUS_NORMAL_AGE" Language="de_DE">
 			<Text>Normales Zeitalter "Ich wünschte, ihr wärt hier":[NEWLINE]+1 Zeitalterpunkt für jedes ausgegrabene [ICON_GREATWORK_ARTIFACT] Artefakt.</Text>
@@ -3072,15 +3099,15 @@
 			<Text>Dunkles Zeitalter "Ich wünschte, ihr wärt hier":[NEWLINE]+1 Zeitalterpunkt für jedes ausgegrabene [ICON_GREATWORK_ARTIFACT] Artefakt.</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_CONCEPTS_PAGE_DEDICATIONS_CHAPTER_CONTENT_PARA_11" Language="de_DE">
-			<Text>"Ich wünschte, ihr wärt hier":[NEWLINE]+1 Zeitalterpunkt für jedes ausgegrabene [ICON_GREATWORK_ARTIFACT] Artefakt.[NEWLINE]Wenn zu Beginn eines Goldenen Zeitalters gewählt:[NEWLINE]+50% [ICON_TOURISM] Tourismus für [ICON_DISTRICT_WONDER] Weltwunder in [ICON_DISTRICT_CITY_CENTER] Städten mit einem [ICON_GOVERNOR] Gouverneur; +50% [ICON_TOURISM] Tourismus für "Nationalparks"; +4 [ICON_GREATMUSICIAN] Großer-Musiker-Punkte pro [ICON_TURN] Runde für jede [ICON_DISTRICT_CITY_CENTER] Stadt.[NEWLINE]Atomzeitalter und spätere.</Text>
+			<Text>"Ich wünschte, ihr wärt hier":[NEWLINE]+1 Zeitalterpunkt für jedes ausgegrabene [ICON_GREATWORK_ARTIFACT] Artefakt.[NEWLINE]Wenn zu Beginn eines Goldenen Zeitalters gewählt:[NEWLINE]+50% [ICON_TOURISM] Tourismus für [ICON_DISTRICT_WONDER] Weltwunder in [ICON_DISTRICT_CITY_CENTER] Städten mit einem [ICON_GOVERNOR] Gouverneur; +2 [ICON_GREATMUSICIAN] Großer-Musiker-Punkte pro [ICON_TURN] Runde für jede [ICON_DISTRICT_CITY_CENTER] Stadt (zusätzlich +2 mit in [ICON_DISTRICT_CITY_CENTER] Städten mit gebautem "Sendezentrum"); +1 {ICON_AMENITIES] Annehmlichkeit für [ICON_DISTRICT_CITY_CENTER] Städte mit einem "Nationalpark".</Text>
 		</Replace>
 		
 		<!-- == SKY AND STARS - HIMMEL UND STERNE == -->
 		<Replace Tag="LOC_MOMENT_CATEGORY_AERONAUTICAL" Language="de_DE">
 			<Text>Himmel und Sterne</Text>
 		</Replace>
-		<Replace Tag="LOC_MOMENT_CATEGORY_AERONAUTICAL_BONUS_GOLDEN_AGE" Language="de_DE">
-			<Text>Goldenes Zeitalter "Himmel und Sterne":[NEWLINE]Schaltet 4 [ICON_TECHBOOSTED] Heurekas für 4 Technologien aus dem Informationszeitalter und der Zukunft frei; +100 % Erfahrung für alle Luft-Einheiten; +2 [ICON_RESOURCE_ALUMINUM] Aluminium pro [ICON_TURN] Runde zusätzlich für jede [ICON_RESOURCE_ALUMINUM] "Aluminium-Mine".</Text>
+		<Replace Tag="LOC_MOMENT_CATEGORY_AERONAUTICAL_BONUS_EXPANSION2_GOLDEN_AGE" Language="de_DE">
+			<Text>Goldenes Zeitalter "Himmel und Sterne":[NEWLINE]Schaltet die [ICON_TECHBOOSTED] Heurekas für die Technologien "Weltraum-Mission" und "Intelligentes Material" frei; +100 % Erfahrung für alle Luft-Einheiten; +2 [ICON_RESOURCE_ALUMINUM] Aluminium pro [ICON_TURN] Runde zusätzlich für jede [ICON_RESOURCE_ALUMINUM] "Aluminium-Mine".</Text>
 		</Replace>
 		<Replace Tag="LOC_MOMENT_CATEGORY_AERONAUTICAL_BONUS_NORMAL_AGE" Language="de_DE">
 			<Text>Normales Zeitalter "Himmel und Sterne":[NEWLINE]+1 Zeitalterpunkt für den Bau von Gebäuden im [ICON_DISTRICT_AERODROME] Flugplatz-Bezirk; +1 Zeitalterpunkt für jede [ICON_GREATPERSON] Große Persönlichkeit die erhalten oder gekauft wurde.</Text>
@@ -3089,7 +3116,7 @@
 			<Text>Dunkles Zeitalter "Himmel und Sterne":[NEWLINE]+1 Zeitalterpunkt für den Bau von Gebäuden im [ICON_DISTRICT_AERODROME] Flugplatz-Bezirk; +1 Zeitalterpunkt für jede [ICON_GREATPERSON] Große Persönlichkeit die erhalten oder gekauft wurde.</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_CONCEPTS_PAGE_DEDICATIONS_CHAPTER_CONTENT_PARA_12" Language="de_DE">
-			<Text>"Himmel und Sterne":[NEWLINE]+1 Zeitalterpunkt für den Bau von Gebäuden im [ICON_DISTRICT_AERODROME] Flugplatz-Bezirk; +1 Zeitalterpunkt für jede [ICON_GREATPERSON] Große Persönlichkeit die erhalten oder gekauft wurde.[NEWLINE]Wenn zu Beginn eines Goldenen Zeitalters gewählt:[NEWLINE]Schaltet 4 [ICON_TECHBOOSTED] Heurekas für 4 Technologien aus dem Informationszeitalter und der Zukunft frei; +100 % Erfahrung für alle Luft-Einheiten; +2 [ICON_RESOURCE_ALUMINUM] Aluminium pro [ICON_TURN] Runde zusätzlich für jede [ICON_RESOURCE_ALUMINUM] "Aluminium-Mine".</Text>
+			<Text>"Himmel und Sterne":[NEWLINE]+1 Zeitalterpunkt für den Bau von Gebäuden im [ICON_DISTRICT_AERODROME] Flugplatz-Bezirk; +1 Zeitalterpunkt für jede [ICON_GREATPERSON] Große Persönlichkeit die erhalten oder gekauft wurde.[NEWLINE]Wenn zu Beginn eines Goldenen Zeitalters gewählt:[NEWLINE]Schaltet die [ICON_TECHBOOSTED] Heurekas für die Technologien "Weltraum-Mission" und "Intelligentes Material" frei; +100 % Erfahrung für alle Luft-Einheiten; +2 [ICON_RESOURCE_ALUMINUM] Aluminium pro [ICON_TURN] Runde zusätzlich für jede [ICON_RESOURCE_ALUMINUM] "Aluminium-Mine".</Text>
 		</Replace>
 		
 		<!-- == AUTOMATON WARFARE - ROBOTERKRIEGSFÜHRUNG == -->
@@ -3177,7 +3204,7 @@
 		
 		<!-- == EUREKAS - HEUREKAS == -->
 		<Replace Tag="LOC_BOOST_TRIGGER_SAILING" Language="de_DE">
-			<Text>Gründet eine Stadt angrenzend an ein Küstenfeld.</Text>
+			<Text>Gründet eine [ICON_DISTRICT_CITY_CENTER] Stadt angrenzend an ein Küstenfeld.</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_ASTROLOGY" Language="de_DE">
 			<Text>Entdeckt ein Naturwunder.</Text>
@@ -3195,7 +3222,7 @@
 			<Text>Baut einen "Steinbruch".</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_BRONZE_WORKING" Language="de_DE">
-			<Text>Vernichtet 3 "Barbaren"-Einheiten.</Text>
+			<Text>Vernichtet 3 [ICON_BARBARIAN] Barbaren-Einheiten.</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_THE_WHEEL" Language="de_DE">
 			<Text>Baut eine "Mine" auf einem Ressourcen-Feld.</Text>
@@ -3204,19 +3231,19 @@
 			<Text>Baut 2 "Fischerboote" auf Ressourcen-Feldern.</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_CURRENCY" Language="de_DE">
-			<Text>Richtet einen Handelsweg ein.</Text>
+			<Text>Richtet einen [ICON_TRADEROUTE] Handelsweg ein.</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_HORSEBACK_RIDING" Language="de_DE">
 			<Text>Baut eine "Weide".</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_IRON_WORKING" Language="de_DE">
-			<Text>Baut eine "Mine" auf einem Eisen-Feld.</Text>
+			<Text>Baut eine "Mine" auf einem [ICON_RESOURCE_IRON] Eisen-Feld.</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_SHIPBUILDING" Language="de_DE">
 			<Text>Besitzt 2 "Galeeren".</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_MATHEMATICS" Language="de_DE">
-			<Text>Baut 3 verschiedene Spezial-Bezirke.</Text>
+			<Text>Baut 3 verschiedene [ICON_DISTRICT] Spezial-Bezirke.</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_CONSTRUCTION" Language="de_DE">
 			<Text>Baut eine "Wassermühle".</Text>
@@ -3225,7 +3252,7 @@
 			<Text>Baut eine "Stadtmauer".</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_BUTTRESS" Language="de_DE">
-			<Text>Baut ein Weltwunder der Klassik oder eines späteren Zeitalters.</Text>
+			<Text>Baut ein [ICON_DISTRICT_WONDER] Weltwunder der Klassik oder eines späteren Zeitalters.</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_MILITARY_TACTICS" Language="de_DE">
 			<Text>Vernichtet eine Einheit mit einem "Speerkämpfer".</Text>
@@ -3240,16 +3267,16 @@
 			<Text>Besitzt 3 "Bogenschützen".</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_EDUCATION" Language="de_DE">
-			<Text>Rekrutiert einen "Großen Wissenschaftler".</Text>
+			<Text>Rekrutiert einen [ICON_GREATSCIENTIST] Großen Wissenschaftler.</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_MILITARY_ENGINEERING" Language="de_DE">
-			<Text>Baut ein "Aquädukt"-Bezirk.</Text>
+			<Text>Baut ein [ICON_DISTRICT_AQUEDUCT] Aquädukt-Bezirk.</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_CASTLES" Language="de_DE">
-			<Text>Führt eine Stufe 2 Regierung ein (6 Politik-Plätze).</Text>
+			<Text>Führt eine Stufe 2 [ICON_GOVERNMENT] Regierung ein (6 Politik-Plätze).</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_CARTOGRAPHY" Language="de_DE">
-			<Text>Baut 2 "Hafen"-Bezirke.</Text>
+			<Text>Baut 2 [ICON_DISTRICT_HARBOR] Hafen-Bezirke.</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_MASS_PRODUCTION" Language="de_DE">
 			<Text>Baut ein "Sägewerk".</Text>
@@ -3285,22 +3312,22 @@
 			<Text>Besitzt 2 von "Militärpionieren" gebaute "Festungen" innerhalb eures Reichs.</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_MILITARY_SCIENCE" Language="de_DE">
-			<Text>Vernichtt eine Einheit mit einem "Ritter".</Text>
+			<Text>Vernichtet eine Einheit mit einem "Ritter".</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_STEAM_POWER" Language="de_DE">
 			<Text>Baut 2 "Schiffswerften".</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_SANITATION" Language="de_DE">
-			<Text>Baut 2 "Wohnviertel"-Bezirke.</Text>
+			<Text>Baut 2 [ICON_DISTRICT_NEIGHBORHOOD] Wohnviertel-Bezirke.</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_ECONOMICS" Language="de_DE">
 			<Text>Baut 2 "Banken".</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_RIFLING" Language="de_DE">
-			<Text>Baut eine "Mine" auf einem Salpeter-Feld.</Text>
+			<Text>Baut eine "Mine" auf einem [ICON_RESOURCE_NITER] Salpeter-Feld.</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_FLIGHT" Language="de_DE">
-			<Text>Baut ein Weltwunder des Industriezeitalters oder eines späteren Zeitalters.</Text>
+			<Text>Baut ein [ICON_DISTRICT_WONDER] Weltwunder des Industriezeitalters oder eines späteren Zeitalters.</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_REPLACEABLE_PARTS" Language="de_DE">
       		<Text>Besitzt 3 "Linieninfanteristen".</Text>
@@ -3324,7 +3351,7 @@
 			<Text>Baut ein "Ölkraftwerk".</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_COMBUSTION" Language="de_DE">
-			<Text>Grabt ein "Artefakt" aus.</Text>
+			<Text>Grabt ein [ICON_GreatWork_Artifact] Artefakt aus.</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_ADVANCED_FLIGHT_XP2" Language="de_DE">
 			<Text>Besitzt 2 "Doppeldecker".</Text>
@@ -3336,10 +3363,10 @@
 			<Text>Baut eine "Ölquelle".</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_COMPUTERS" Language="de_DE">
-			<Text>Führt eine Stufe 3 Regierung ein (8 Politik-Plätze).</Text>
+			<Text>Führt eine Stufe 3 [ICON_GOVERNMENT] Regierung ein (8 Politik-Plätze).</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_SYNTHETIC_MATERIALS" Language="de_DE">
-			<Text>Baut 2 "Flugplatz"-Bezirke</Text>
+			<Text>Baut 2 [ICON_DISTRICT_AERODROME] Flugplatz-Bezirke</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_TELECOMMUNICATIONS" Language="de_DE">
 			<Text>Baut 2 "Sendezentren"</Text>
@@ -3400,16 +3427,16 @@
 			<Text>Besitzt einen "Späher".</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_MILITARY_TRADITION" Language="de_DE">
-			<Text>Vernichtet einen Barbaren-Außenposten.</Text>
+			<Text>Vernichtet einen [ICON_BARBARIAN] Barbaren-Außenposten.</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_STATE_WORKFORCE" Language="de_DE">
-			<Text>Baut einen beliebigen Spezialbezirk.</Text>
+			<Text>Baut einen beliebigen [ICON_DISTRICT] Spezial-Bezirk.</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_EARLY_EMPIRE" Language="de_DE">
-			<Text>Besitzt 6 Bürger in eurem Reich.</Text>
+			<Text>Besitzt 6 [ICON_CITIZEN] Bürger in eurem Reich.</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_MYSTICISM" Language="de_DE">
-			<Text>Gründet ein Pantheon.</Text>
+			<Text>Gründet ein [ICON_RELIGION] Pantheon.</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_GAMES_RECREATION" Language="de_DE">
 			<Text>Erforscht die Technologie "Bauwesen".</Text>
@@ -3418,19 +3445,19 @@
 			<Text>Begegnet 3 Stadtstaaten.</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_DRAMA_POETRY" Language="de_DE">
-			<Text>Baut ein Weltwunder.</Text>
+			<Text>Baut ein [ICON_DISTRICT_WONDER] Weltwunder.</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_MILITARY_TRAINING" Language="de_DE">
-			<Text>Baut ein Lager-Bezirk.</Text>
+			<Text>Baut ein [ICON_DISTRICT_ENCAMPMENT] Lager-Bezirk.</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_DEFENSIVE_TACTICS" Language="de_DE">
 			<Text>Erhaltet eine Kriegserklärung.</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_RECORDED_HISTORY" Language="de_DE">
-			<Text>Baut 2 Campus-Bezirke.</Text>
+			<Text>Baut 2 [ICON_DISTRICT_CAMPUS] Campus-Bezirke.</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_THEOLOGY" Language="de_DE">
-			<Text>Gründet eine Religion.</Text>
+			<Text>Gründet eine [ICON_RELIGION] Religion.</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_NAVAL_TRADITION" Language="de_DE">
 			<Text>Vernichtet eine Einheit mit einer "Quadrireme".</Text>
@@ -3439,13 +3466,13 @@
 			<Text>Baut 6 "Bauernhöfe".</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_CIVIL_SERVICE" Language="de_DE">
-			<Text>Besitzt 10 Bürgern in einer Stadt.</Text>
+			<Text>Besitzt 10 [ICON_CITIZEN] Bürger in einer [ICON_DISTRICT_CITY_CENTER] Stadt.</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_MERCENARIES" Language="de_DE">
 			<Text>Besitzt 8 Land-Militär-Einheiten.</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_MEDIEVAL_FAIRES" Language="de_DE">
-			<Text>Richtet 4 Handelswege ein.</Text>
+			<Text>Richtet 4 [ICON_TRADEROUTE] Handelswege ein.</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_GUILDS" Language="de_DE">
 			<Text>Baut 2 "Märkte".</Text>
@@ -3463,19 +3490,19 @@
 			<Text>Besitzt eine Allianz mit einer anderen Zivilisation.</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_REFORMED_CHURCH" Language="de_DE">
-			<Text>Bekehrt 6 Städte zu eurer Religion.</Text>
+			<Text>Bekehrt 6 [ICON_DISTRICT_CITY_CENTER] Städte zu eurer [ICON_RELIGION] Religion.</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_MERCANTILISM" Language="de_DE">
-			<Text>Rekrutiert einen "Großen Händler".</Text>
+			<Text>Rekrutiert einen [ICON_GREATMERCHANT] Großen Händler.</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_THE_ENLIGHTENMENT" Language="de_DE">
-			<Text>Rekrutiert 3 "Große Persöhnlichkeiten".</Text>
+			<Text>Rekrutiert 3 [ICON_GREATPERSON] Große Persöhnlichkeiten.</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_COLONIALISM" Language="de_DE">
 			<Text>Erforscht die Technologie "Astronomie"</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_CIVIL_ENGINEERING" Language="de_DE">
-			<Text>Baut 7 verschiedene Spezial-Bezirke.</Text>
+			<Text>Baut 7 verschiedene [ICON_DISTRICT] Spezial-Bezirke.</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_NATIONALISM" Language="de_DE">
 			<Text>Besitzt eine Land-Einheit mit 3 [ICON_PROMOTION] Beförderungen.</Text>
@@ -3487,13 +3514,13 @@
 			<Text>Baut ein "Archäologisches Museum".</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_URBANIZATION" Language="de_DE">
-			<Text>Besitzt 15 Bürgern in einer Stadt.</Text>
+			<Text>Besitzt 15 [ICON_CITIZEN] Bürger in einer [ICON_DISTRICT_CITY_CENTER] Stadt.</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_SCORCHED_EARTH" Language="de_DE">
 			<Text>Besitzt 2 "Feldkanonen".</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_CONSERVATION" Language="de_DE">
-			<Text>Baut ein Wohnviertel-Bezirk mit atemberaubender Anziehungskraft.</Text>
+			<Text>Baut ein [ICON_DISTRICT_NEIGHBORHOOD] Wohnviertel-Bezirk mit atemberaubender Anziehungskraft.</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_MASS_MEDIA" Language="de_DE">
 			<Text>Erforscht die Technologie "Funkwesen"</Text>
@@ -3523,28 +3550,28 @@
 			<Text>Erforscht die Technologie "Kernspaltung".</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_PROFESSIONAL_SPORTS_XP2" Language="de_DE">
-			<Text>Baut 2 Unterhaltungskomplex-Bezirke.</Text>
+			<Text>Baut 2 [ICON_DISTRICT_ENTERTAINMENT] Unterhaltungskomplex-Bezirke.</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_RAPID_DEPLOYMENT" Language="de_DE">
-			<Text>Baut einen Flugplatz-Bezirk oder eine "Landepiste" auf einem fremden Kontinent.</Text>
+			<Text>Baut einen [ICON_DISTRICT_AERODROME] Flugplatz-Bezirk oder eine "Landepiste" auf einem fremden Kontinent.</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_SPACE_RACE" Language="de_DE">
-			<Text>Baut einen Raumhafen-Bezirk.</Text>
+			<Text>Baut einen [ICON_DISTRICT_SPACEPORT] Raumhafen-Bezirk.</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_ENVIRONMENTALISM" Language="de_DE">
 			<Text>Baut 2 "Solarparks".</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_GLOBALIZATION_XP2" Language="de_DE">
-			<Text>Baut 2 Flugplatz-Bezirke</Text>
+			<Text>Baut 2 [ICON_DISTRICT_AERODROME] Flugplatz-Bezirke.</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_SOCIAL_MEDIA" Language="de_DE">
 			<Text>Erforscht die Technologie "Telekommunikation".</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_NEAR_FUTURE_GOVERNANCE" Language="de_DE">
-			<Text>Führt eine Stufe 4 Regierung ein (10 Politik-Plätze).</Text>
+			<Text>Führt eine Stufe 4 [ICON_GOVERNMENT] Regierung ein (10 Politik-Plätze).</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_CORPORATE_LIBERTARIANISM" Language="de_DE">
-			<Text>Baut eine "Uran-Mine".</Text>
+			<Text>Baut eine "Mine" auf einem [ICON_RESOURCE_URANIUM] Uran-Feld.</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_DIGITAL_DEMOCRACY" Language="de_DE">
 			<Text>Besitzt eine "Rockband".</Text>
