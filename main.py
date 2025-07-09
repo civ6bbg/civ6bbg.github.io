@@ -30,15 +30,6 @@ def generate_city_state_html_file(bbg_ver, l):
         with open(f'{l}/city_states_{bbg_ver}.html', 'w') as f:
             f.write(docStr)
 
-def generate_pantheon_html_file(bbg_ver, l):
-    docStr = get_pantheon_html_file(bbg_ver, l)
-    if bbg_ver == None:
-        with open(f'{l}/pantheons_base_game.html', 'w') as f:
-            f.write(docStr)
-    else:
-        with open(f'{l}/pantheons_{bbg_ver}.html', 'w') as f:
-            f.write(docStr)
-
 def generate_religion_html_file(bbg_ver, l):
     docStr = get_religion_html_file(bbg_ver, l)
     if bbg_ver == None:
@@ -117,10 +108,3 @@ for bbg_ver in bbg_versions:
         generate_misc_html_file(bbg_ver, l)
         generate_names_html_file(bbg_ver, l)
         generate_great_people_html_file(bbg_ver, l)
-# Uncomment the following lines to generate HTML files for the beta version
-# print('Generating HTML files for beta version')
-# generate_leader_html_file('Beta', 'en_US')
-# generate_city_state_html_file('Beta', 'en_US')
-# generate_pantheon_html_file('Beta', 'en_US')
-# generate_religion_html_file('Beta', 'en_US')
-# generate_governor_html_file('Beta', 'en_US')
