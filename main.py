@@ -102,7 +102,7 @@ def generate_great_people_html_file(bbg_ver, l):
         with open(f'{l}/great_people_{bbg_ver}.html', 'w') as f:
             f.write(docStr)
 
-for l in langs_tmp:
+for l in langs:
     # Create directory if it does not exist
     os.makedirs(l, exist_ok=True)
 for bbg_ver in bbg_versions:

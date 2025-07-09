@@ -485,10 +485,24 @@ def get_great_people_list(db_path):
         if gp_era not in great_people_dict[gp_type_loc]:
             great_people_dict[gp_type_loc][gp_era] = []
         great_people_dict[gp_type_loc][gp_era].append(row)
-
     connection.close()
     return great_people_dict
 
+def get_great_people_great_works(db_path):
+    res = {}
+    connection = sqlite3.connect(db_path)
+
+    crsr = connection.cursor()
+    crsr.execute("""SELECT ga.GreatPersonIndividualType, gw.Name, gw.GreatWorkObjectType
+	    FROM GreatPersonIndividuals ga
+	    LEFT JOIN GreatWorks gw Using(GreatPersonIndividualType)
+	    WHERE gw.Name Not NULL""")
+    great_works = crsr.fetchall()
+    for row in great_works:
+        if row[0] not in res:
+            res[row[0]] = []
+        res[row[0]].append(row)
+    return res
 
 def get_great_people_modifier_dict(db_path):
     res = {}
@@ -496,8 +510,10 @@ def get_great_people_modifier_dict(db_path):
 
     crsr = connection.cursor()
     crsr.execute(
-        """SELECT ga.GreatPersonIndividualType, ga.ModifierId, Text, ActionEffectTextOverride, Value FROM GreatPersonIndividualActionModifiers ga LEFT JOIN ModifierStrings USING(ModifierId)
-         LEFT JOIN GreatPersonIndividuals USING(GreatPersonIndividualType) LEFT JOIN (SELECT ModifierId, Value FROM ModifierArguments where Name='Amount') USING(ModifierId)"""
+        """SELECT ga.GreatPersonIndividualType, ga.ModifierId, Text, ActionEffectTextOverride, Value FROM GreatPersonIndividualActionModifiers ga 
+         LEFT JOIN ModifierStrings USING(ModifierId)
+         LEFT JOIN GreatPersonIndividuals USING(GreatPersonIndividualType) 
+         LEFT JOIN (SELECT ModifierId, Value FROM ModifierArguments where Name='Amount') USING(ModifierId)"""
     )
     rows = crsr.fetchall()
     overridden = set()

@@ -982,6 +982,7 @@ def get_great_people_html_file(bbg_version, lang):
     menu_icons = []
     great_people = get_great_people_list(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite")
     great_people_modifier_dict = get_great_people_modifier_dict(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite")
+    great_people_works = get_great_people_great_works(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite")
     
     great_people_list = [
         'LOC_GREAT_PERSON_CLASS_GENERAL_NAME',
@@ -1043,6 +1044,9 @@ def get_great_people_html_file(bbg_version, lang):
                                                                 processed = loc_amount_parameter(get_loc(locs_data, mod, en_US_locs_data), amount)
                                                                 p(processed, style="text-align:left", cls='civ-ability-desc')
                                                                 br()
+                                                        if gp[0] in great_people_works.keys():
+                                                            for work in great_people_works[gp[0]]:
+                                                                p(img(src=f'/images/{work[2]}.webp', style="vertical-align: middle; width:2em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';"), f' {get_loc(locs_data, work[1], en_US_locs_data)}', style="text-align:left", cls='civ-ability-desc')
         add_final_scripts()
         add_scroll_up()
 
