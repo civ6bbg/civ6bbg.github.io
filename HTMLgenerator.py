@@ -341,7 +341,7 @@ def add_header(bbg_version, lang, leader_page = False, cs_page = False, religion
                                                 span("Switch theme", cls="sr-only")
                                                 i(cls="sun-icon", data_feather="sun", aria_hidden="true")
                                                 i(cls="moon-icon", data_feather="moon", aria_hidden="true")
-    
+
 def add_sidebar(menu_items, menu_icons, images_dir):
     with aside(cls="sidebar"):
         with div(cls="sidebar-start"):
@@ -360,7 +360,7 @@ def add_final_scripts():
     script(src="/plugins/feather.min.js")
     script(src="/plugins/chart.min.js")
     script(src="https://kit.fontawesome.com/bd91c323e3.js", crossorigin="anonymous")
-    
+
 def get_loc(locs_data, s, en_US_locs_data):
     try:
         res = locs_data[s]
@@ -371,7 +371,7 @@ def get_loc(locs_data, s, en_US_locs_data):
     except KeyError:
         print(f'KeyError: {s} not found in locs_data')
         return get_loc(en_US_locs_data, s, en_US_locs_data)
-    
+
 def get_html_lang(lang):
     if lang == 'de_DE':
         return 'de'
@@ -395,7 +395,7 @@ def get_html_lang(lang):
         return 'ru'
     if lang == 'zh_Hans_CN':
         return 'zh-Hans'
-    
+
 def add_html_header(doc, page_title):
     with doc.head:
         script(_async=True, src="https://www.googletagmanager.com/gtag/js?id=G-Z2ESCT7CR0")
@@ -549,7 +549,7 @@ def get_religion_html_file(bbg_version, lang):
     pantheons = get_beliefs(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite", 'BELIEF_CLASS_PANTHEON')
     menu_items.append(get_loc(locs_data, 'LOC_BELIEF_CLASS_PANTHEON_NAME', en_US_locs_data))
     menu_icons.append(get_loc(en_US_locs_data, 'LOC_BELIEF_CLASS_PANTHEON_NAME', en_US_locs_data))
-    
+
     for t in types:
         menu_items.append(get_loc(locs_data, t, en_US_locs_data))
         menu_icons.append(get_loc(en_US_locs_data, t, en_US_locs_data))
@@ -690,7 +690,7 @@ def get_governor_html_file(bbg_version, lang):
 
     docStr = str(doc)
     return refactorCivSpecialSyntax(bbg_version, lang, docStr)
-    
+
 def get_natural_wonder_html_file(bbg_version, lang):
     en_US_locs_data = get_locs_data(bbg_version, 'en_US')
     locs_data = get_locs_data(bbg_version, lang)
@@ -733,7 +733,7 @@ def get_natural_wonder_html_file(bbg_version, lang):
 
     docStr = str(doc)
     return refactorCivSpecialSyntax(bbg_version, lang, docStr)
-    
+
 def get_world_wonder_html_file(bbg_version, lang):
     en_US_locs_data = get_locs_data(bbg_version, 'en_US')
     locs_data = get_locs_data(bbg_version, lang)
@@ -783,7 +783,7 @@ def get_world_wonder_html_file(bbg_version, lang):
 
     docStr = str(doc)
     return refactorCivSpecialSyntax(bbg_version, lang, docStr)
-    
+
 def get_misc_html_file(bbg_version, lang):
     en_US_locs_data = get_locs_data(bbg_version, 'en_US')
     locs_data = get_locs_data(bbg_version, lang)
@@ -796,12 +796,12 @@ def get_misc_html_file(bbg_version, lang):
 
     menu_items = []
     menu_icons = []
-    
+
     dedication_list_per_era = get_dedication_list_per_era(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite")
     for era in dedication_list_per_era.keys():
         menu_items.append(get_loc(locs_data, era, en_US_locs_data))
         menu_icons.append(get_loc(en_US_locs_data, era, en_US_locs_data))
-        
+
     alliance_list = get_alliance_list(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite")
     for alliance in alliance_list:
         menu_items.append(get_loc(locs_data, alliance[1], en_US_locs_data))
@@ -810,7 +810,7 @@ def get_misc_html_file(bbg_version, lang):
     dark_age_policy = get_dark_age_card_list(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite")
     dark_age_policy_era = get_dark_age_card_list_eras(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite")
     dark_age_policy_per_era = get_dark_age_card_list_per_era(dark_age_policy, dark_age_policy_era)
-    
+
     eras_reverse_map = {
         'LOC_ERA_CLASSICAL_NAME':'ERA_CLASSICAL',
         'LOC_ERA_MEDIEVAL_NAME':'ERA_MEDIEVAL',
@@ -821,7 +821,7 @@ def get_misc_html_file(bbg_version, lang):
         'LOC_ERA_INFORMATION_NAME':'ERA_INFORMATION',
         'LOC_ERA_FUTURE_NAME':'ERA_FUTURE'
     }
-    
+
     with doc:
         add_preloader()
         div(cls="layer")
@@ -883,13 +883,13 @@ def get_misc_html_file(bbg_version, lang):
                                                                 with div(cls="chart"):
                                                                     p(get_loc(locs_data, effect, en_US_locs_data), style="text-align:left", cls='civ-ability-desc')
                                             br()
-                                    
+ 
         add_final_scripts()
         add_scroll_up()
 
     docStr = str(doc)
     return refactorCivSpecialSyntax(bbg_version, lang, docStr)
-    
+
 def get_names_html_file(bbg_version, lang):
     en_US_locs_data = get_locs_data(bbg_version, 'en_US')
     locs_data = get_locs_data(bbg_version, lang)
@@ -908,7 +908,7 @@ def get_names_html_file(bbg_version, lang):
     river_names = get_property_names(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite", 'River', 'Rivers')
     sea_names = get_property_names(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite", 'Sea', 'Seas')
     volcano_names = get_property_names(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite", 'Volcano', 'Volcanoes')
-    
+
     menu_items.append('Desert')
     menu_icons.append('Desert')
     menu_items.append('Lake')
@@ -921,7 +921,7 @@ def get_names_html_file(bbg_version, lang):
     menu_icons.append('Sea')
     menu_items.append('Volcano')
     menu_icons.append('Volcano')
-    
+
     name_classes = {
         'Desert': desert_names,
         'Lakes': lakes_names,
@@ -930,10 +930,10 @@ def get_names_html_file(bbg_version, lang):
         'Sea': sea_names,
         'Volcano': volcano_names
     }
-    
+
     # for name_cls in name_classes.keys():
     #     print(name_classes[name_cls])
-    
+
     with doc:
         add_preloader()
         div(cls="layer")
@@ -987,7 +987,7 @@ def get_names_html_file(bbg_version, lang):
 
     docStr = str(doc)
     return refactorCivSpecialSyntax(bbg_version, lang, docStr)
-    
+
 def get_great_people_html_file(bbg_version, lang):
     en_US_locs_data = get_locs_data(bbg_version, 'en_US')
     locs_data = get_locs_data(bbg_version, lang)
@@ -997,7 +997,7 @@ def get_great_people_html_file(bbg_version, lang):
         add_html_header(doc, f'BBG {bbg_version} Great People')
     else :
         add_html_header(doc, f'Civ VI GS RF Great People')
-        
+
     eras_loc = [
         'LOC_ERA_ANCIENT_NAME',
         'LOC_ERA_CLASSICAL_NAME',
@@ -1015,7 +1015,7 @@ def get_great_people_html_file(bbg_version, lang):
     great_people = get_great_people_list(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite")
     great_people_modifier_dict = get_great_people_modifier_dict(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite")
     great_people_works = get_great_people_great_works(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite")
-    
+
     great_people_list = [
         'LOC_GREAT_PERSON_CLASS_GENERAL_NAME',
         'LOC_GREAT_PERSON_CLASS_ADMIRAL_NAME',
@@ -1028,7 +1028,7 @@ def get_great_people_html_file(bbg_version, lang):
         'LOC_GREAT_PERSON_CLASS_MUSICIAN_NAME',
         'LOC_GREAT_PERSON_CLASS_COMANDANTE_GENERAL_NAME',
     ]
-    
+
     for gp_type in great_people_list:
         menu_items.append(get_loc(locs_data, gp_type, en_US_locs_data))
         menu_icons.append(get_loc(en_US_locs_data, gp_type, en_US_locs_data))

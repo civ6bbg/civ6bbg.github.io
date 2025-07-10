@@ -47,7 +47,7 @@ def generate_governor_html_file(bbg_ver, l):
     else:
         with open(f'{l}/governor_{bbg_ver}.html', 'w') as f:
             f.write(docStr)
-            
+
 def generate_natural_wonder_html_file(bbg_ver, l):
     docStr = get_natural_wonder_html_file(bbg_ver, l)
     if bbg_ver == None:
@@ -56,7 +56,7 @@ def generate_natural_wonder_html_file(bbg_ver, l):
     else:
         with open(f'{l}/natural_wonder_{bbg_ver}.html', 'w') as f:
             f.write(docStr)
-            
+
 def generate_world_wonder_html_file(bbg_ver, l):
     docStr = get_world_wonder_html_file(bbg_ver, l)
     if bbg_ver == None:
@@ -65,7 +65,7 @@ def generate_world_wonder_html_file(bbg_ver, l):
     else:
         with open(f'{l}/world_wonder_{bbg_ver}.html', 'w') as f:
             f.write(docStr)
-            
+
 def generate_misc_html_file(bbg_ver, l):
     docStr = get_misc_html_file(bbg_ver, l)
     if bbg_ver == None:
@@ -83,7 +83,7 @@ def generate_names_html_file(bbg_ver, l):
     else:
         with open(f'{l}/names_{bbg_ver}.html', 'w') as f:
             f.write(docStr)
-            
+
 def generate_great_people_html_file(bbg_ver, l):
     docStr = get_great_people_html_file(bbg_ver, l)
     if bbg_ver == None:
