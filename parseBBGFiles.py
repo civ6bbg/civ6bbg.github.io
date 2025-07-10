@@ -530,3 +530,37 @@ def get_great_people_modifier_dict(db_path):
     connection.close()
     return res
 
+def get_alliance_list(db_path):
+    connection = sqlite3.connect(db_path)
+
+    crsr = connection.cursor()
+    crsr.execute("""
+      SELECT * FROM Alliances
+                 """)
+    rows = crsr.fetchall()
+    connection.close()
+    return rows
+
+def get_alliance_effects(db_path, alliance_type):
+    connection = sqlite3.connect(db_path)
+
+    crsr = connection.cursor()
+    crsr.execute(f"""
+      SELECT AllianceType, ga.Name, LevelRequirement, Text FROM Alliances ga
+		 LEFT JOIN AllianceEffects USING(AllianceType)
+         LEFT JOIN (SELECT ModifierId, Value FROM ModifierArguments where Name='Amount') USING(ModifierId)
+         LEFT JOIN ModifierStrings USING(ModifierId)
+         WHERE ga.AllianceType = '{alliance_type}' 
+         AND Text is not NULL
+         AND Context = 'Summary'
+         ORDER BY LevelRequirement
+                 """)
+    rows = crsr.fetchall()
+    res = {}
+    res[1] = []
+    res[2] = []
+    res[3] = []
+    for effect in rows:
+        res[effect[2]].append((effect[3]))
+    connection.close()
+    return res

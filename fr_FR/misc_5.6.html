@@ -256,6 +256,46 @@
                         <p>Ère future</p>
                       </a>
                     </li>
+                    <li>
+                      <a href="#Alliance scientifique" onclick="civClicked(&quot;Alliance scientifique&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/Research Alliance.webp">
+                        </span>
+                        <p>Alliance scientifique</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Alliance culturelle" onclick="civClicked(&quot;Alliance culturelle&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/Cultural Alliance.webp">
+                        </span>
+                        <p>Alliance culturelle</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Alliance économique" onclick="civClicked(&quot;Alliance économique&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/Economic Alliance.webp">
+                        </span>
+                        <p>Alliance économique</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Alliance militaire" onclick="civClicked(&quot;Alliance militaire&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/Military Alliance.webp">
+                        </span>
+                        <p>Alliance militaire</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Alliance religieuse" onclick="civClicked(&quot;Alliance religieuse&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/Religious Alliance.webp">
+                        </span>
+                        <p>Alliance religieuse</p>
+                      </a>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -732,6 +772,211 @@
                       <h2 class="civ-name">Campagne de désinformation</h2><br>
                       <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_FAVOR.webp" style="height:1em"/> Faveurs diplomatiques +3 par tour pour chaque centre de diffusion. <br>MAIS : <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> science et <img src="/images/ICON_CULTURE.webp" style="height:1em"/> culture -10 % dans toutes les villes.</p><br>
                     </div>
+                  </div>
+                </div>
+                <div class="row" id="Alliance scientifique">
+                  <div class="col-lg-12">
+                    <h2 class="civ-name">Alliance scientifique</h2><br>
+                    <h3 class="civ-ability-name" style="text-align:left">Level 1<br><br>
+                      <div class="row">
+                        <div class="col-md-6 col-lg-6">
+                          <div class="chart">
+                            <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Science +2 des <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> routes commerciales de votre allié.</p>
+                          </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6">
+                          <div class="chart">
+                            <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Science +2 pour les <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> routes commerciales vers les villes de votre allié.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </h3>
+                    <h3 class="civ-ability-name" style="text-align:left">Level 2<br><br>
+                      <div class="row">
+                        <div class="col-md-12 col-lg-12">
+                          <div class="chart">
+                            <p class="civ-ability-desc" style="text-align:left">Tous les 30 tours (en vitesse normale), vous débloquez un <img src="/images/ICON_TECHBOOSTED.webp" style="height:1em"/> Eurêka ! pour une technologie que votre allié a découverte ou améliorée, mais pas vous.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </h3>
+                    <h3 class="civ-ability-name" style="text-align:left">Level 3<br><br>
+                      <div class="row">
+                        <div class="col-md-12 col-lg-12">
+                          <div class="chart">
+                            <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Science +10 % si votre allié ou vous-même étudiez une technologie déjà découverte par l'autre ou que vous étudiez la même technologie.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </h3><br>
+                  </div>
+                </div>
+                <div class="row" id="Alliance culturelle">
+                  <div class="col-lg-12">
+                    <h2 class="civ-name">Alliance culturelle</h2><br>
+                    <h3 class="civ-ability-name" style="text-align:left">Level 1<br><br>
+                      <div class="row">
+                        <div class="col-md-4 col-lg-4">
+                          <div class="chart">
+                            <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture +2 des <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> routes commerciales de votre allié.</p>
+                          </div>
+                        </div>
+                        <div class="col-md-4 col-lg-4">
+                          <div class="chart">
+                            <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture +2 pour les <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> routes commerciales vers les villes de votre allié.</p>
+                          </div>
+                        </div>
+                        <div class="col-md-4 col-lg-4">
+                          <div class="chart">
+                            <p class="civ-ability-desc" style="text-align:left">Les villes de votre allié n'exercent pas de pression de loyauté sur les vôtres, et réciproquement.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </h3>
+                    <h3 class="civ-ability-name" style="text-align:left">Level 2<br><br>
+                      <div class="row">
+                        <div class="col-md-12 col-lg-12">
+                          <div class="chart">
+                            <p class="civ-ability-desc" style="text-align:left">Chacun de vos <img src="/images/ICON_DISTRICT.webp" style="height:1em"/> quartiers octroie un point de <img src="/images/ICON_GREATPERSON.webp" style="height:1em"/> personnage illustre supplémentaire par tour si vous possédez une <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> route commerciale entre cette ville et votre allié.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </h3>
+                    <h3 class="civ-ability-name" style="text-align:left">Level 3<br><br>
+                      <div class="row">
+                        <div class="col-md-6 col-lg-6">
+                          <div class="chart">
+                            <p class="civ-ability-desc" style="text-align:left">Vous bénéficiez de +10 % en <img src="/images/ICON_CULTURE.webp" style="height:1em"/> culture des villes de votre allié.</p>
+                          </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6">
+                          <div class="chart">
+                            <p class="civ-ability-desc" style="text-align:left">Vous bénéficiez de +20 % en <img src="/images/ICON_TOURISM.webp" style="height:1em"/> tourisme des villes de votre allié.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </h3><br>
+                  </div>
+                </div>
+                <div class="row" id="Alliance économique">
+                  <div class="col-lg-12">
+                    <h2 class="civ-name">Alliance économique</h2><br>
+                    <h3 class="civ-ability-name" style="text-align:left">Level 1<br><br>
+                      <div class="row">
+                        <div class="col-md-6 col-lg-6">
+                          <div class="chart">
+                            <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +1 et <img src="/images/ICON_GOLD.webp" style="height:1em"/> Or +6 des <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> routes commerciales de votre allié.</p>
+                          </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6">
+                          <div class="chart">
+                            <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +1 et <img src="/images/ICON_GOLD.webp" style="height:1em"/> Or +6 pour les <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> routes commerciales vers votre allié.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </h3>
+                    <h3 class="civ-ability-name" style="text-align:left">Level 2<br><br>
+                      <div class="row">
+                        <div class="col-md-12 col-lg-12">
+                          <div class="chart">
+                            <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_INFLUENCEPERTURN.webp" style="height:1em"/> Points d'influence +1 par tour par Cité-état dont votre allié est suzerain.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </h3>
+                    <h3 class="civ-ability-name" style="text-align:left">Level 3<br><br>
+                      <div class="row">
+                        <div class="col-md-12 col-lg-12">
+                          <div class="chart">
+                            <p class="civ-ability-desc" style="text-align:left">Partagez des bonus de suzerain uniques avec votre allié.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </h3><br>
+                  </div>
+                </div>
+                <div class="row" id="Alliance militaire">
+                  <div class="col-lg-12">
+                    <h2 class="civ-name">Alliance militaire</h2><br>
+                    <h3 class="civ-ability-name" style="text-align:left">Level 1<br><br>
+                      <div class="row">
+                        <div class="col-md-12 col-lg-12">
+                          <div class="chart">
+                            <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Puissance de combat +5 contre les unités des joueurs en guerre contre votre allié et vous.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </h3>
+                    <h3 class="civ-ability-name" style="text-align:left">Level 2<br><br>
+                      <div class="row">
+                        <div class="col-md-6 col-lg-6">
+                          <div class="chart">
+                            <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +15 % pour les unités militaires lorsque votre allié ou vous êtes en guerre.</p>
+                          </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6">
+                          <div class="chart">
+                            <p class="civ-ability-desc" style="text-align:left">Visibilité partagée</p>
+                          </div>
+                        </div>
+                      </div>
+                    </h3>
+                    <h3 class="civ-ability-name" style="text-align:left">Level 3<br><br>
+                      <div class="row">
+                        <div class="col-md-12 col-lg-12">
+                          <div class="chart">
+                            <p class="civ-ability-desc" style="text-align:left">Les unités commencent avec une <img src="/images/ICON_PROMOTION.webp" style="height:1em"/> promotion gratuite.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </h3><br>
+                  </div>
+                </div>
+                <div class="row" id="Alliance religieuse">
+                  <div class="col-lg-12">
+                    <h2 class="civ-name">Alliance religieuse</h2><br>
+                    <h3 class="civ-ability-name" style="text-align:left">Level 1<br><br>
+                      <div class="row">
+                        <div class="col-md-4 col-lg-4">
+                          <div class="chart">
+                            <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi +4 des <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> routes commerciales de votre allié.</p>
+                          </div>
+                        </div>
+                        <div class="col-md-4 col-lg-4">
+                          <div class="chart">
+                            <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi +4 pour les <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> routes commerciales vers votre allié.</p>
+                          </div>
+                        </div>
+                        <div class="col-md-4 col-lg-4">
+                          <div class="chart">
+                            <p class="civ-ability-desc" style="text-align:left">La religion de votre allié n'exerce pas de pression sur les villes où votre religion est majoritaire, et réciproquement.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </h3>
+                    <h3 class="civ-ability-name" style="text-align:left">Level 2<br><br>
+                      <div class="row">
+                        <div class="col-md-12 col-lg-12">
+                          <div class="chart">
+                            <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_RELIGION.webp" style="height:1em"/> Puissance de combat théologique +10 contre les religions non-aliées.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </h3>
+                    <h3 class="civ-ability-name" style="text-align:left">Level 3<br><br>
+                      <div class="row">
+                        <div class="col-md-6 col-lg-6">
+                          <div class="chart">
+                            <p class="civ-ability-desc" style="text-align:left">Vous recevez un bonus de pression religieuse dans chacune des villes ne comportant aucun fidèle à la religion de votre allié.</p>
+                          </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6">
+                          <div class="chart">
+                            <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi +1 pour chacun de vos <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> citoyens ayant adopté la religion de votre allié.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </h3><br>
                   </div>
                 </div>
               </div>

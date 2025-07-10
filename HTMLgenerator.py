@@ -801,6 +801,11 @@ def get_misc_html_file(bbg_version, lang):
     for era in dedication_list_per_era.keys():
         menu_items.append(get_loc(locs_data, era, en_US_locs_data))
         menu_icons.append(get_loc(en_US_locs_data, era, en_US_locs_data))
+        
+    alliance_list = get_alliance_list(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite")
+    for alliance in alliance_list:
+        menu_items.append(get_loc(locs_data, alliance[1], en_US_locs_data))
+        menu_icons.append(get_loc(en_US_locs_data, alliance[1], en_US_locs_data))
 
     dark_age_policy = get_dark_age_card_list(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite")
     dark_age_policy_era = get_dark_age_card_list_eras(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite")
@@ -852,6 +857,33 @@ def get_misc_html_file(bbg_version, lang):
                                                     br()
                                                     p(get_loc(locs_data, policy[1], en_US_locs_data), style="text-align:left", cls='civ-ability-desc')
                                                     br()
+                                for alliance in alliance_list:
+                                    with div(cls="row", id=get_loc(locs_data, alliance[1], en_US_locs_data)):
+                                        with div(cls="col-lg-12"):
+                                            h2(get_loc(locs_data, alliance[1], en_US_locs_data), cls='civ-name')
+                                            br()
+                                            alliance_effect = get_alliance_effects(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite", alliance[0])
+                                            for lvl in alliance_effect.keys():
+                                                with h3(f'Level {lvl}', style="text-align:left", cls='civ-ability-name'):
+                                                    br()
+                                                    br()
+                                                    with div(cls="row"):
+                                                        if len(alliance_effect[lvl]) <= 1:
+                                                            div_cls = 'col-md-12 col-lg-12'
+                                                        elif len(alliance_effect[lvl]) == 2:
+                                                            div_cls = 'col-md-6 col-lg-6'
+                                                        elif len(alliance_effect[lvl]) == 3:
+                                                            div_cls = 'col-md-4 col-lg-4'
+                                                        elif len(alliance_effect[lvl]) == 4:
+                                                            div_cls = 'col-md-3 col-lg-3'
+                                                        else:
+                                                            div_cls = 'col-md-2 col-lg-2'
+                                                        for effect in alliance_effect[lvl]:
+                                                            with div(cls=div_cls):
+                                                                with div(cls="chart"):
+                                                                    p(get_loc(locs_data, effect, en_US_locs_data), style="text-align:left", cls='civ-ability-desc')
+                                            br()
+                                    
         add_final_scripts()
         add_scroll_up()
 
