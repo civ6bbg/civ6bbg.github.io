@@ -164,6 +164,14 @@ replacements = [
     '[ICON_VISTOPSECRET]',
 ]
 
+notSupportedIcons = [
+    '[ICON_THEMEBONUS_ACTIVE]',
+    '[ICON_PRESSUREUP]',
+    '[ICON_PRESSUREDOWN]',
+    '[ICON_TEAM]',
+    '[ICON_UNDERSEIGE]',
+]
+
 def refactorCivSpecialSyntax(bbg_version, lang, docStr):
     docStr = docStr.replace('[NEWLINE]', '<br>')
 
@@ -174,9 +182,8 @@ def refactorCivSpecialSyntax(bbg_version, lang, docStr):
     docStr = reg.sub(f'<span>&#8226;</span> ', docStr)
     reg = re.compile(re.escape('[ICON_BULLETGLOW]'), re.IGNORECASE)
     docStr = reg.sub(f'<span>&#8226;</span> ', docStr)
-    docStr = docStr.replace('[ICON_THEMEBONUS_ACTIVE]', '')
-    docStr = docStr.replace('[ICON_PRESSUREUP]', '')
-    docStr = docStr.replace('[ICON_PRESSUREDOWN]', '')
+    for icon in notSupportedIcons:
+        docStr = docStr.replace(icon, '')
     if (docStr.find('[ICON_') != -1):
         print(f'missing ICON_ in {bbg_version} lang={lang} {docStr.find('[ICON_')}')
 
@@ -373,28 +380,12 @@ def get_loc(locs_data, s, en_US_locs_data):
         return get_loc(en_US_locs_data, s, en_US_locs_data)
 
 def get_html_lang(lang):
-    if lang == 'de_DE':
-        return 'de'
-    if lang == 'en_US':
-        return 'en'
-    if lang == 'es_ES':
-        return 'es'
-    if lang == 'fr_FR':
-        return 'fr'
-    if lang == 'it_IT':
-        return 'it'
-    if lang == 'ja_JP':
-        return 'ja'
-    if lang == 'ko_KR':
-        return 'ko'
-    if lang == 'pl_PL':
-        return 'pl'
-    if lang == 'pt_BR':
-        return 'pt'
-    if lang == 'ru_RU':
-        return 'ru'
-    if lang == 'zh_Hans_CN':
+    if len(lang) == 5:
+        return lang[0 : -3]
+    elif lang == 'zh_Hans_CN':
         return 'zh-Hans'
+    else:
+        raise ValueError(f'Unknown lang: {lang}')
 
 def add_html_header(doc, page_title):
     with doc.head:

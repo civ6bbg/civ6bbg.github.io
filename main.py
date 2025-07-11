@@ -14,84 +14,48 @@ langs_tmp = ['en_US']
 
 def generate_leader_html_file(bbg_ver, l):
     docStr = get_leader_html_file(bbg_ver, l)
-    if bbg_ver == None:
-        with open(f'{l}/leaders_base_game.html', 'w') as f:
-            f.write(docStr)
-    else:
-        with open(f'{l}/leaders_{bbg_ver}.html', 'w') as f:
-            f.write(docStr)
+    with open(f'{l}/leaders_{'base_game' if bbg_ver == None else bbg_ver}.html', 'w') as f:
+        f.write(docStr)
 
 def generate_city_state_html_file(bbg_ver, l):
     docStr = get_city_state_html_file(bbg_ver, l)
-    if bbg_ver == None:
-        with open(f'{l}/city_states_base_game.html', 'w') as f:
-            f.write(docStr)
-    else:
-        with open(f'{l}/city_states_{bbg_ver}.html', 'w') as f:
-            f.write(docStr)
+    with open(f'{l}/city_states_{'base_game' if bbg_ver == None else bbg_ver}.html', 'w') as f:
+        f.write(docStr)
 
 def generate_religion_html_file(bbg_ver, l):
     docStr = get_religion_html_file(bbg_ver, l)
-    if bbg_ver == None:
-        with open(f'{l}/religion_base_game.html', 'w') as f:
-            f.write(docStr)
-    else:
-        with open(f'{l}/religion_{bbg_ver}.html', 'w') as f:
-            f.write(docStr)
+    with open(f'{l}/religion_{'base_game' if bbg_ver == None else bbg_ver}.html', 'w') as f:
+        f.write(docStr)
 
 def generate_governor_html_file(bbg_ver, l):
     docStr = get_governor_html_file(bbg_ver, l)
-    if bbg_ver == None:
-        with open(f'{l}/governor_base_game.html', 'w') as f:
-            f.write(docStr)
-    else:
-        with open(f'{l}/governor_{bbg_ver}.html', 'w') as f:
-            f.write(docStr)
+    with open(f'{l}/governor_{'base_game' if bbg_ver == None else bbg_ver}.html', 'w') as f:
+        f.write(docStr)
 
 def generate_natural_wonder_html_file(bbg_ver, l):
     docStr = get_natural_wonder_html_file(bbg_ver, l)
-    if bbg_ver == None:
-        with open(f'{l}/natural_wonder_base_game.html', 'w') as f:
-            f.write(docStr)
-    else:
-        with open(f'{l}/natural_wonder_{bbg_ver}.html', 'w') as f:
-            f.write(docStr)
+    with open(f'{l}/natural_wonder_{'base_game' if bbg_ver == None else bbg_ver}.html', 'w') as f:
+        f.write(docStr)
 
 def generate_world_wonder_html_file(bbg_ver, l):
     docStr = get_world_wonder_html_file(bbg_ver, l)
-    if bbg_ver == None:
-        with open(f'{l}/world_wonder_base_game.html', 'w') as f:
-            f.write(docStr)
-    else:
-        with open(f'{l}/world_wonder_{bbg_ver}.html', 'w') as f:
-            f.write(docStr)
+    with open(f'{l}/world_wonder_{'base_game' if bbg_ver == None else bbg_ver}.html', 'w') as f:
+        f.write(docStr)
 
 def generate_misc_html_file(bbg_ver, l):
     docStr = get_misc_html_file(bbg_ver, l)
-    if bbg_ver == None:
-        with open(f'{l}/misc_base_game.html', 'w') as f:
-            f.write(docStr)
-    else:
-        with open(f'{l}/misc_{bbg_ver}.html', 'w') as f:
-            f.write(docStr)
+    with open(f'{l}/misc_{'base_game' if bbg_ver == None else bbg_ver}.html', 'w') as f:
+        f.write(docStr)
 
 def generate_names_html_file(bbg_ver, l):
     docStr = get_names_html_file(bbg_ver, l)
-    if bbg_ver == None:
-        with open(f'{l}/names_base_game.html', 'w') as f:
-            f.write(docStr)
-    else:
-        with open(f'{l}/names_{bbg_ver}.html', 'w') as f:
-            f.write(docStr)
+    with open(f'{l}/names_{'base_game' if bbg_ver == None else bbg_ver}.html', 'w') as f:
+        f.write(docStr)
 
 def generate_great_people_html_file(bbg_ver, l):
     docStr = get_great_people_html_file(bbg_ver, l)
-    if bbg_ver == None:
-        with open(f'{l}/great_people_base_game.html', 'w') as f:
-            f.write(docStr)
-    else:
-        with open(f'{l}/great_people_{bbg_ver}.html', 'w') as f:
-            f.write(docStr)
+    with open(f'{l}/great_people_{'base_game' if bbg_ver == None else bbg_ver}.html', 'w') as f:
+        f.write(docStr)
 
 for l in langs:
     # Create directory if it does not exist

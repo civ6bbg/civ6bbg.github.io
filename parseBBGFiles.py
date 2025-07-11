@@ -425,25 +425,19 @@ def get_property_names(db_path, property_type, name_db):
 
     crsr = connection.cursor()
     crsr.execute(
-        f"SELECT * FROM Named{property_type}Civilizations ORDER BY Named{property_type}Type"
+    f"""SELECT np.Name, c.Name FROM Named{name_db} np
+        	LEFT JOIN Named{property_type}Civilizations npc Using(Named{property_type}Type)
+	        LEFT JOIN Civilizations c Using(CivilizationType)
+    """
     )
     rows = crsr.fetchall()
-    crsr.execute(f"SELECT * FROM Named{name_db}")
-    property_names = crsr.fetchall()
-    property_to_loc_dict = {}
+
     property_dict = {}
-    for name in property_names:
-        property_to_loc_dict[name[0]] = name[1]
-        property_dict[name[1]] = []
-
-    crsr.execute("SELECT * FROM Civilizations")
-    civ_names = crsr.fetchall()
-    civ_to_loc_dict = {}
-    for name in civ_names:
-        civ_to_loc_dict[name[0]] = name[1]
-
     for val in rows:
-        property_dict[property_to_loc_dict[val[0]]].append(civ_to_loc_dict[val[1]])
+        if val[0] not in property_dict:
+            property_dict[val[0]] = []
+        if val[1] != None:
+            property_dict[val[0]].append(val[1])
 
     connection.close()
     return property_dict
