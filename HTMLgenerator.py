@@ -169,7 +169,13 @@ notSupportedIcons = [
     '[ICON_PRESSUREUP]',
     '[ICON_PRESSUREDOWN]',
     '[ICON_TEAM]',
-    '[ICON_UNDERSEIGE]',
+    '[ICON_UNDERSIEGE]',
+    '[ICON_UNIT]',
+    '[ICON_BUILDINGS]',
+    '[ICON_Fortifying]',
+    '[ICON_RAZED]',
+    '[ICON_Occupied]',
+    '[ICON_ABILITY]'
 ]
 
 def refactorCivSpecialSyntax(bbg_version, lang, docStr):
@@ -183,7 +189,8 @@ def refactorCivSpecialSyntax(bbg_version, lang, docStr):
     reg = re.compile(re.escape('[ICON_BULLETGLOW]'), re.IGNORECASE)
     docStr = reg.sub(f'<span>&#8226;</span> ', docStr)
     for icon in notSupportedIcons:
-        docStr = docStr.replace(icon, '')
+        reg = re.compile(re.escape(icon), re.IGNORECASE)
+        docStr = reg.sub(f' ', docStr)
     if (docStr.find('[ICON_') != -1):
         print(f'missing ICON_ in {bbg_version} lang={lang} {docStr.find('[ICON_')}')
 
