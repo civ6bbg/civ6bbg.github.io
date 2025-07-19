@@ -487,8 +487,6 @@ def get_buildings_per_district_list(db_path):
     for row in rows:
         district_name = row[4]
         building_name = row[1]
-        if building_name == 'LOC_BUILDING_STAR_FORT_NAME':
-            continue
         if district_name not in res:
             res[district_name] = {}
         if building_name not in res[district_name]:
