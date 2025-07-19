@@ -207,7 +207,7 @@ def add_preloader():
                     polyline(id="front", points="1 6 4 6 6 11 10 1 12 6 15 6")
 
 bbg_versions = [None, 'Beta', '6.4', '6.3', '6.2', '6.1', '6.0', '5.8', '5.7', '5.6']
-bbg_versions_tmp = ['Beta']
+bbg_versions_tmp = [None, 'Beta']
 
 def get_version_name(bbg_version):
     return bbg_version if bbg_version != None else 'base_game'
@@ -261,7 +261,7 @@ def add_header(bbg_version, lang, page_type):
                                                 a('Donate!', href=f"https://ko-fi.com/calcalciffer", target="_blank")
                             with div(cls="flex center col-xl-2 col-lg-2 col-md-2 col-1"):
                                 with div(cls='flex row justify-content-around'):
-                                    with div(cls="col-xl-6 col-lg-6 col-md-6 col-6"):
+                                    with div(cls="col-xl-4 col-lg-4 col-md-6 col-4"):
                                         with div(cls="main-menu"):
                                             with nav(cls="navigation"):
                                                 with ul(cls="nav menu"):
@@ -275,7 +275,13 @@ def add_header(bbg_version, lang, page_type):
                                                             add_lang('Chinese  ', 'zh_Hans_CN', bbg_version, 'cn', page_type)
                                                             add_lang('Korean  ', 'ko_KR', bbg_version, 'kr', page_type)
                                     div(cls="w-100")
-                                    with div(cls="col-xl-6 col-lg-6 col-md-6 col-6"):
+                                    with div(cls="col-xl-4 col-lg-4 col-md-4 col-4"):
+                                        with div(cls="base-game-switcher-wrapper"):
+                                            with button(cls="base-game-switcher gray-circle-btn", type="button", title="Show Base Game"):
+                                                i(cls="enable-icon", data_feather="toggle-left", aria_hidden="true")
+                                                i(cls="disable-icon", data_feather="toggle-right", aria_hidden="true")
+                                    div(cls="w-100")
+                                    with div(cls="col-xl-4 col-lg-4 col-md-6 col-4"):
                                         with div(cls="theme-switcher-wrapper"):
                                             with button(cls="theme-switcher gray-circle-btn", type="button", title="Switch theme"):
                                                 span("Switch theme", cls="sr-only")
@@ -310,6 +316,8 @@ def get_loc(locs_data, s, en_US_locs_data):
             return res[:res.find('|')]
     except KeyError:
         print(f'KeyError: {s} not found in locs_data')
+        if locs_data == en_US_locs_data:
+            return f'Not found: {s}'
         return get_loc(en_US_locs_data, s, en_US_locs_data)
 
 def get_html_lang(lang):
@@ -344,10 +352,31 @@ def add_scroll_up():
     with a(id="scrollUp", cls="scroll-up displayNone", href="#top", onclick=f'civClicked(null)', style="position: fixed; z-index: 2147483647;"):
         with span():
             i(cls='fa fa-angle-up')
+            
+def show_element_with_base_option(element, lang, locs_data, en_US_locs_data, data_append = '', base_game_data_append = '', alignment = 'left'):
+    p(get_loc(locs_data, element, en_US_locs_data) + f'{data_append}', style=f"text-align:{alignment}", cls='civ-ability-desc actual-text')
+    with div(cls="base-game-text row"):
+        with div(cls='col-lg-6 col-md-6'):
+            with div(cls="chart", style="box-shadow:none"):
+                p(get_loc(locs_data, element, en_US_locs_data) + f'{data_append}', style=f"text-align:{alignment}", cls='civ-ability-desc')
+        with div(cls='col-lg-6 col-md-6'):
+            with div(cls="chart", style="box-shadow:none"):
+                p(get_loc(base_game_locs_data[lang], element, base_game_locs_data['en_US']) + f'\n{base_game_data_append}', style=f"text-align:{alignment}", cls='civ-ability-desc')
+                
+def get_unlock_tech_civic_dialog(unlock_tech, unlock_civic, locs_data, en_US_locs_data, tech_to_loc_dict, civic_to_loc_dict):
+    if unlock_tech:
+        return f'{get_loc(locs_data, "LOC_UI_PEDIA_UNLOCKED_BY", en_US_locs_data)} {get_loc(locs_data, tech_to_loc_dict[unlock_tech], en_US_locs_data)} {get_loc(locs_data, "LOC_TECHNOLOGY_NAME", en_US_locs_data)}'
+    if unlock_civic:
+        return f'{get_loc(locs_data, "LOC_UI_PEDIA_UNLOCKED_BY", en_US_locs_data)} {get_loc(locs_data, civic_to_loc_dict[unlock_civic], en_US_locs_data)} {get_loc(locs_data, "LOC_CIVIC_NAME", en_US_locs_data)}'
+
+base_game_locs_data = {}
+base_game_units_dict = get_units_dict(f"sqlFiles/baseGame/DebugGameplay.sqlite")
 
 def get_leader_html_file(bbg_version, lang):
     en_US_locs_data = get_locs_data(bbg_version, 'en_US')
     locs_data = get_locs_data(bbg_version, lang)
+    if bbg_version == None:
+        base_game_locs_data[lang] = locs_data
 
     doc = dominate.document(title=None, lang=get_html_lang(lang))
     if bbg_version != None:
@@ -384,24 +413,28 @@ def get_leader_html_file(bbg_version, lang):
                                                     img(src=f'/images/leaders/{get_loc(en_US_locs_data, leader[2], en_US_locs_data) + ' ' + get_loc(en_US_locs_data, leader[5], en_US_locs_data)}.webp', style="vertical-align: middle; width:7em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
                                                 h3(get_loc(locs_data, leader[3], en_US_locs_data), style="text-align:left", cls='civ-ability-name')
                                                 br()
-                                                p(get_loc(locs_data, leader[4], en_US_locs_data), style="text-align:left", cls='civ-ability-desc')
+                                                show_element_with_base_option(leader[4], lang, locs_data, en_US_locs_data)
                                                 br()
                                                 h3(get_loc(locs_data, leader[6], en_US_locs_data), style="text-align:left", cls='civ-ability-name')
                                                 br()
-                                                p(f'{get_loc(locs_data, leader[7], en_US_locs_data)}', style="text-align:left", cls='civ-ability-desc')
+                                                show_element_with_base_option(leader[7], lang, locs_data, en_US_locs_data)
                                                 br()
                                                 for item in civ_leaders_items[leader]:
                                                     with h3(f'{get_loc(locs_data, item[4], en_US_locs_data)}', style="text-align:left", cls='civ-ability-name'):
                                                         img(src=f'/images/items/{get_loc(en_US_locs_data, item[4], en_US_locs_data)}.webp', style="vertical-align: middle; width:2em; text-align:left", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
-                                                    p(f'{get_loc(locs_data, item[5], en_US_locs_data)}', style="text-align:left", cls='civ-ability-desc')
+                                                    
                                                     if item[3].startswith('UNIT_'):
                                                         unlock_tech = units_dict[item[3]][35]
                                                         unlock_civic = units_dict[item[3]][36]
-                                                        if unlock_tech:
-                                                            p(f'Unlocks at {get_loc(locs_data, tech_to_loc_dict[unlock_tech], en_US_locs_data)} Tech', style="text-align:left", cls='civ-ability-desc')
-                                                        if unlock_civic:
-                                                            p(f'Unlocks at {get_loc(locs_data, civic_to_loc_dict[unlock_civic], en_US_locs_data)} Civic', style="text-align:left", cls='civ-ability-desc')
-                                                        # print(item[3], unlock_tech, unlock_civic)
+                                                        tech_civic_dialog = get_unlock_tech_civic_dialog(unlock_tech, unlock_civic, locs_data, en_US_locs_data, tech_to_loc_dict, civic_to_loc_dict)
+                                                        unlock_tech = base_game_units_dict[item[3]][35]
+                                                        unlock_civic = base_game_units_dict[item[3]][36]
+                                                        base_game_tech_civic_dialog = get_unlock_tech_civic_dialog(unlock_tech, unlock_civic, locs_data, en_US_locs_data, tech_to_loc_dict, civic_to_loc_dict)
+                                                        show_element_with_base_option(item[5], lang, locs_data, en_US_locs_data, 
+                                                            data_append = (f'[NEWLINE][NEWLINE]{tech_civic_dialog}' if tech_civic_dialog != None else ''), 
+                                                            base_game_data_append = (f'[NEWLINE][NEWLINE]{base_game_tech_civic_dialog}' if tech_civic_dialog != None else ''))
+                                                    else:
+                                                        show_element_with_base_option(item[5], lang, locs_data, en_US_locs_data)
                                                     br()
 
         add_final_scripts()
@@ -444,7 +477,7 @@ def get_city_state_html_file(bbg_version, lang):
                                             with div(cls="chart"):
                                                 with h2(get_loc(locs_data, cs[2], en_US_locs_data), cls='civ-name'):
                                                     img(src=f'/images/city_states/{get_loc(en_US_locs_data, cs[2], en_US_locs_data)}.webp', style="vertical-align: middle; width:5em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
-                                                p(get_loc(locs_data, cs[5], en_US_locs_data), style="text-align:left", cls='civ-ability-desc')
+                                                show_element_with_base_option(cs[5], lang, locs_data, en_US_locs_data)
 
         add_final_scripts()
         add_scroll_up()
@@ -504,7 +537,7 @@ def get_religion_html_file(bbg_version, lang):
                                                             img(src=f'/images/religion/{get_loc(en_US_locs_data, elem[1], en_US_locs_data)}.webp', style="vertical-align: middle; height:3em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
                                                     else:
                                                         h2(get_loc(locs_data, elem[1], en_US_locs_data), cls='civ-name')
-                                                    p(get_loc(locs_data, elem[2], en_US_locs_data), style="text-align:left", cls='civ-ability-desc')
+                                                    show_element_with_base_option(elem[2], lang, locs_data, en_US_locs_data)
 
         add_final_scripts()
         add_scroll_up()
@@ -564,6 +597,7 @@ def get_governor_html_file(bbg_version, lang):
                                                                     br()
                                                                     promotion_desc = governor_promotion_dict[promotion][2]
                                                                     p(f'{get_loc(locs_data, promotion_desc, en_US_locs_data)}', style=f"text-align:{alignment}", cls='civ-ability-desc')
+                                                                    # show_element_with_base_option(promotion_desc, lang, locs_data, en_US_locs_data, alignment = alignment)
                                                                     br()
 
         add_final_scripts()
@@ -607,7 +641,7 @@ def get_natural_wonder_html_file(bbg_version, lang):
                                                 with h2(get_loc(locs_data, wonder[1], en_US_locs_data), cls='civ-name'):
                                                     img(src=f'/images/natural_wonders/{get_loc(en_US_locs_data, wonder[1], en_US_locs_data)}.webp', style="vertical-align: middle; width:5em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
                                                 br()
-                                                p(get_loc(locs_data, wonder[2], en_US_locs_data), style="text-align:left", cls='civ-ability-desc')
+                                                show_element_with_base_option(wonder[2], lang, locs_data, en_US_locs_data)
                                                 br()
         add_final_scripts()
         add_scroll_up()
@@ -654,7 +688,7 @@ def get_world_wonder_html_file(bbg_version, lang):
                                                     with h2(get_loc(locs_data, wonder[1], en_US_locs_data), cls='civ-name'):
                                                         img(src=f'/images/world_wonders/{get_loc(en_US_locs_data, wonder[1], en_US_locs_data)}.webp', style="vertical-align: middle; width:5em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
                                                     br()
-                                                    p(get_loc(locs_data, wonder[2], en_US_locs_data), style="text-align:left", cls='civ-ability-desc')
+                                                    show_element_with_base_option(wonder[2], lang, locs_data, en_US_locs_data)
                                                     wonder_cost = int(int(wonder[3]) / 2)
                                                     with p(f'{get_loc(locs_data, 'LOC_UI_PEDIA_PRODUCTION_COST', en_US_locs_data)} = {wonder_cost}', style="text-align:left", cls='civ-ability-desc'):
                                                         img(src=f'/images/ICON_PRODUCTION.webp', style="vertical-align: middle", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")

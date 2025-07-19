@@ -1224,7 +1224,7 @@
  }
 
  .base-game .base-game-text {
-    display:block
+    display:inline-flex
  }
 
  .base-game .actual-text {
