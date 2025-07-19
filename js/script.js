@@ -216,7 +216,39 @@ document.addEventListener('DOMContentLoaded', function () {
           disableDarkMode();
         }
 
-        addData();
+      });
+    }
+  })();
+
+  (function () {
+    var baseGameMode = localStorage.getItem('baseGameMode');
+    var baseGameModeToggle = document.querySelector('.base-game-switcher');
+
+    var enableBaseGameMode = function enableBaseGameMode() {
+      document.body.classList.add('base-game');
+      localStorage.setItem('baseGameMode', 'enabled');
+    };
+
+    var disableBaseGameMode = function disableBaseGameMode() {
+      document.body.classList.remove('base-game');
+      localStorage.setItem('baseGameMode', null);
+    };
+
+    if (baseGameMode === 'enabled') {
+      enableBaseGameMode();
+    }
+
+    if (baseGameModeToggle) {
+      baseGameModeToggle.addEventListener('click', function () {
+        baseGameMode = localStorage.getItem('baseGameMode');
+
+        if (baseGameMode !== 'enabled') {
+          enableBaseGameMode();
+        } else {
+          disableBaseGameMode();
+        }
+        let scrollTop = document.pageYOffset || document.documentElement.scrollTop;
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
       });
     }
   })();
@@ -510,27 +542,6 @@ document.addEventListener('DOMContentLoaded', function () {
   })();
   /* Change data of all charts */
 
-
-  function addData() {
-    var darkMode = localStorage.getItem('darkMode');
-
-    if (darkMode === 'enabled') {
-      gridLine = '#37374F';
-      titleColor = '#EFF0F6';
-    } else {
-      gridLine = '#EEEEEE';
-      titleColor = '#171717';
-    }
-
-    if (charts.hasOwnProperty('visitors')) {
-      charts.visitors.options.scales.x.grid.color = gridLine;
-      charts.visitors.options.plugins.title.color = titleColor;
-      charts.visitors.options.scales.y.ticks.color = titleColor;
-      charts.visitors.options.scales.x.ticks.color = titleColor;
-      charts.visitors.update();
-    }
-  }
-
   (function($) {
     $(window).on('load', function() {
       adjustStickyHeader(window.scrollY);
@@ -544,8 +555,6 @@ document.addEventListener('DOMContentLoaded', function () {
       }
   	});
   })(jQuery);
-
-  addData();
 });
 
 let lastKnownScrollPosition = 0;

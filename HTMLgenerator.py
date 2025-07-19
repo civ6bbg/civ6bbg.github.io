@@ -212,37 +212,23 @@ bbg_versions_tmp = ['Beta']
 def get_version_name(bbg_version):
     return bbg_version if bbg_version != None else 'base_game'
 
-def add_lang(text_name, link_name, bbg_version, flag, leader_page, cs_page, religion_page, governor_page, natural_wonder_page, world_wonder_page, misc_page, name_page, great_people_page):
+def add_lang(text_name, link_name, bbg_version, flag, page_type):
     with li():
-        if leader_page:
-            with a(href=f"/{link_name}/leaders_{get_version_name(bbg_version)}.html", style="align-content: center;"):
-                img(src=f"/assets/flags/4x3/{flag}.svg", style="height:20px")
-        elif cs_page:
-            with a(href=f"/{link_name}/city_states_{get_version_name(bbg_version)}.html", style="align-content: center;"):
-                img(src=f"/assets/flags/4x3/{flag}.svg", style="height:20px")
-        elif religion_page:
-            with a(href=f"/{link_name}/religion_{get_version_name(bbg_version)}.html", style="align-content: center;"):
-                img(src=f"/assets/flags/4x3/{flag}.svg", style="height:20px")
-        elif governor_page:
-            with a(href=f"/{link_name}/governor_{get_version_name(bbg_version)}.html", style="align-content: center;"):
-                img(src=f"/assets/flags/4x3/{flag}.svg", style="height:20px")
-        elif natural_wonder_page:
-            with a(href=f"/{link_name}/natural_wonder_{get_version_name(bbg_version)}.html", style="align-content: center;"):
-                img(src=f"/assets/flags/4x3/{flag}.svg", style="height:20px")
-        elif world_wonder_page:
-            with a(href=f"/{link_name}/world_wonder_{get_version_name(bbg_version)}.html", style="align-content: center;"):
-                img(src=f"/assets/flags/4x3/{flag}.svg", style="height:20px")
-        elif misc_page:
-            with a(href=f"/{link_name}/misc_{get_version_name(bbg_version)}.html", style="align-content: center;"):
-                img(src=f"/assets/flags/4x3/{flag}.svg", style="height:20px")
-        elif name_page:
-            with a(href=f"/{link_name}/names_{get_version_name(bbg_version)}.html", style="align-content: center;"):
-                img(src=f"/assets/flags/4x3/{flag}.svg", style="height:20px")
-        elif great_people_page:
-            with a(href=f"/{link_name}/great_people_{get_version_name(bbg_version)}.html", style="align-content: center;"):
-                img(src=f"/assets/flags/4x3/{flag}.svg", style="height:20px")
+        with a(href=f"/{link_name}/{page_type}_{get_version_name(bbg_version)}.html", style="align-content: center;"):
+            img(src=f"/assets/flags/4x3/{flag}.svg", style="height:20px")
 
-def add_header(bbg_version, lang, leader_page = False, cs_page = False, religion_page = False, governor_page = False, natural_wonder_page = False, world_wonder_page = False, misc_page = False, name_page = False, great_people_page = False):
+def add_header(bbg_version, lang, page_type):
+    pages_list = [
+        ('leaders','Leaders'),
+        ('city_states','City States'),
+        ('religion','Religion'),
+        ('governor','Governors'),
+        ('great_people','Great People'),
+        ('natural_wonder','Natural Wonders'),
+        ('world_wonder','World Wonders'),
+        ('names','Names'),
+        ('misc','Misc'),
+    ]
     with nav(cls="main-nav--bg"):
         with div(cls="main-nav"):
             with div(cls="header"):
@@ -261,75 +247,16 @@ def add_header(bbg_version, lang, leader_page = False, cs_page = False, religion
                                 with div(cls="main-menu"):
                                     with nav(cls="navigation"):
                                         with ul(cls="nav menu"):
-                                            with li(cls="active" if leader_page else ""):
-                                                a('Leaders', href=f"/{lang}/leaders_{get_version_name(bbg_version)}.html", onclick=f'civClicked(null)')
-                                            with li(cls="active" if cs_page else ""):
-                                                a('City States', href=f"/{lang}/city_states_{get_version_name(bbg_version)}.html", onclick=f'civClicked(null)')
-                                            with li(cls="active" if religion_page else ""):
-                                                a('Religion', href=f"/{lang}/religion_{get_version_name(bbg_version)}.html", onclick=f'civClicked(null)')
-                                            with li(cls="active" if governor_page else ""):
-                                                a('Governors', href=f"/{lang}/governor_{get_version_name(bbg_version)}.html", onclick=f'civClicked(null)')
-                                            with li(cls="active" if great_people_page else ""):
-                                                a('Great People', href=f"/{lang}/great_people_{get_version_name(bbg_version)}.html", onclick=f'civClicked(null)')
-                                            with li(cls="active" if natural_wonder_page else ""):
-                                                a('Natural Wonders', href=f"/{lang}/natural_wonder_{get_version_name(bbg_version)}.html", onclick=f'civClicked(null)')
-                                            with li(cls="active" if world_wonder_page else ""):
-                                                a('World Wonders', href=f"/{lang}/world_wonder_{get_version_name(bbg_version)}.html", onclick=f'civClicked(null)')
-                                            with li(cls="active" if name_page else ""):
-                                                a('Names', href=f"/{lang}/names_{get_version_name(bbg_version)}.html", onclick=f'civClicked(null)')
-                                            with li(cls="active" if misc_page else ""):
-                                                a('Misc', href=f"/{lang}/misc_{get_version_name(bbg_version)}.html", onclick=f'civClicked(null)')
+                                            for t, page_name in pages_list:
+                                                with li(cls="active" if t == page_type else ""):
+                                                    a(page_name, href=f"/{lang}/{t}_{get_version_name(bbg_version)}.html", onclick=f'civClicked(null)')
                                             with li():
                                                 with a('BBG Version'):
                                                     i(cls="icofont-rounded-down")
                                                 with ul(cls="dropdown"):
                                                     for v in bbg_versions:
                                                         with li():
-                                                            if leader_page:
-                                                                if v is None:
-                                                                    a(f"Base Game", href=f"/{lang}/leaders_base_game.html")
-                                                                else:
-                                                                    a(f"BBG v{v}", href=f"/{lang}/leaders_{v}.html")
-                                                            elif cs_page:
-                                                                if v is None:
-                                                                    a(f"Base Game", href=f"/{lang}/city_states_base_game.html")
-                                                                else:
-                                                                    a(f"BBG v{v}", href=f"/{lang}/city_states_{v}.html")
-                                                            elif religion_page:
-                                                                if v is None:
-                                                                    a(f"Base Game", href=f"/{lang}/religion_base_game.html")
-                                                                else:
-                                                                    a(f"BBG v{v}", href=f"/{lang}/religion_{v}.html")
-                                                            elif governor_page:
-                                                                if v is None:
-                                                                    a(f"Base Game", href=f"/{lang}/governor_base_game.html")
-                                                                else:
-                                                                    a(f"BBG v{v}", href=f"/{lang}/governor_{v}.html")
-                                                            elif natural_wonder_page:
-                                                                if v is None:
-                                                                    a(f"Base Game", href=f"/{lang}/natural_wonder_base_game.html")
-                                                                else:
-                                                                    a(f"BBG v{v}", href=f"/{lang}/natural_wonder_{v}.html")
-                                                            elif world_wonder_page:
-                                                                if v is None:
-                                                                    a(f"Base Game", href=f"/{lang}/world_wonder_base_game.html")
-                                                                else:
-                                                                    a(f"BBG v{v}", href=f"/{lang}/world_wonder_{v}.html")
-                                                            elif misc_page:
-                                                                if v is None:
-                                                                    a(f"Base Game", href=f"/{lang}/misc_base_game.html")
-                                                                else:
-                                                                    a(f"BBG v{v}", href=f"/{lang}/misc_{v}.html")
-                                                            elif name_page:
-                                                                if v is None:
-                                                                    a(f"Base Game", href=f"/{lang}/names_base_game.html")
-                                                                else:
-                                                                    a(f"BBG v{v}", href=f"/{lang}/names_{v}.html")
-                                                            elif great_people_page:
-                                                                if v is None:
-                                                                    a(f"Base Game", href=f"/{lang}/great_people_base_game.html")
-                                                                else:
-                                                                    a(f"BBG v{v}", href=f"/{lang}/great_people_{v}.html")
+                                                            a(f"Base Game" if v is None else f"BBG v{v}", href=f"/{lang}/{page_type}_{'base_game' if v is None else v}.html")
                                             with li(cls=""):
                                                 a('Donate!', href=f"https://ko-fi.com/calcalciffer", target="_blank")
                             with div(cls="flex center col-xl-2 col-lg-2 col-md-2 col-1"):
@@ -340,14 +267,13 @@ def add_header(bbg_version, lang, leader_page = False, cs_page = False, religion
                                                 with ul(cls="nav menu"):
                                                     with li():
                                                         i(cls="fa fa-language lang-icon")
-
                                                         with ul(cls="dropdown", style="width:80px"):
-                                                            add_lang('English  ', 'en_US', bbg_version, 'us', leader_page, cs_page, religion_page, governor_page, natural_wonder_page, world_wonder_page, misc_page, name_page, great_people_page)
-                                                            add_lang('French  ', 'fr_FR', bbg_version, 'fr', leader_page, cs_page, religion_page, governor_page, natural_wonder_page, world_wonder_page, misc_page, name_page, great_people_page)
-                                                            add_lang('Russian  ', 'ru_RU', bbg_version, 'ru', leader_page, cs_page, religion_page, governor_page, natural_wonder_page, world_wonder_page, misc_page, name_page, great_people_page)
-                                                            add_lang('German  ', 'de_DE', bbg_version, 'de', leader_page, cs_page, religion_page, governor_page, natural_wonder_page, world_wonder_page, misc_page, name_page, great_people_page)
-                                                            add_lang('Chinese  ', 'zh_Hans_CN', bbg_version, 'cn', leader_page, cs_page, religion_page, governor_page, natural_wonder_page, world_wonder_page, misc_page, name_page, great_people_page)
-                                                            add_lang('Korean  ', 'ko_KR', bbg_version, 'kr', leader_page, cs_page, religion_page, governor_page, natural_wonder_page, world_wonder_page, misc_page, name_page, great_people_page)
+                                                            add_lang('English  ', 'en_US', bbg_version, 'us', page_type)
+                                                            add_lang('French  ', 'fr_FR', bbg_version, 'fr', page_type)
+                                                            add_lang('Russian  ', 'ru_RU', bbg_version, 'ru', page_type)
+                                                            add_lang('German  ', 'de_DE', bbg_version, 'de', page_type)
+                                                            add_lang('Chinese  ', 'zh_Hans_CN', bbg_version, 'cn', page_type)
+                                                            add_lang('Korean  ', 'ko_KR', bbg_version, 'kr', page_type)
                                     div(cls="w-100")
                                     with div(cls="col-xl-6 col-lg-6 col-md-6 col-6"):
                                         with div(cls="theme-switcher-wrapper"):
@@ -443,7 +369,7 @@ def get_leader_html_file(bbg_version, lang):
         div(cls="layer")
         with div(cls="page-flex"):
             with div(cls="main-wrapper"):
-                add_header(bbg_version, lang, leader_page=True)
+                add_header(bbg_version, lang, 'leaders')
                 with div(cls=""):
                     with div(cls="fixed left-0 right-auto h-screen w-[253px] bg-white border-r border-neutral-300 overflow-scroll", style="z-index: 5;"):
                         add_sidebar(menu_items, menu_icons, 'images/leaders')
@@ -505,7 +431,7 @@ def get_city_state_html_file(bbg_version, lang):
         div(cls="layer")
         with div(cls="page-flex"):
             with div(cls="main-wrapper"):
-                add_header(bbg_version, lang, cs_page=True)
+                add_header(bbg_version, lang, 'city_states')
                 with div(cls=""):
                     with div(cls="fixed left-0 right-auto h-screen w-[253px] bg-white border-r border-neutral-300 overflow-scroll", style="z-index: 5;"):
                         add_sidebar(menu_items, menu_icons, 'images/city_states')
@@ -537,6 +463,7 @@ def get_religion_html_file(bbg_version, lang):
         add_html_header(doc, f'Civ VI GS RF Religion Description')
 
     types = [
+        'LOC_BELIEF_CLASS_PANTHEON_NAME',
         'LOC_BELIEF_CLASS_FOLLOWER_NAME',
         'LOC_BELIEF_CLASS_FOUNDER_NAME',
         'LOC_BELIEF_CLASS_ENHANCER_NAME',
@@ -544,81 +471,40 @@ def get_religion_html_file(bbg_version, lang):
     ]
     menu_items = []
     menu_icons = []
-    pantheons = get_beliefs(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite", 'BELIEF_CLASS_PANTHEON')
-    menu_items.append(get_loc(locs_data, 'LOC_BELIEF_CLASS_PANTHEON_NAME', en_US_locs_data))
-    menu_icons.append(get_loc(en_US_locs_data, 'LOC_BELIEF_CLASS_PANTHEON_NAME', en_US_locs_data))
 
+    religion_cls_elements = {}
     for t in types:
         menu_items.append(get_loc(locs_data, t, en_US_locs_data))
         menu_icons.append(get_loc(en_US_locs_data, t, en_US_locs_data))
-    religion_founder = get_beliefs(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite", 'BELIEF_CLASS_FOUNDER')
-    religion_follower = get_beliefs(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite", 'BELIEF_CLASS_FOLLOWER')
-    religion_enhancer = get_beliefs(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite", 'BELIEF_CLASS_ENHANCER')
-    religion_worship = get_beliefs(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite", 'BELIEF_CLASS_WORSHIP')
-
+        religion_cls_elements[t] = get_beliefs(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite", t[4:-5])
+    
     with doc:
         add_preloader()
         div(cls="layer")
         with div(cls="page-flex"):
             with div(cls="main-wrapper"):
-                add_header(bbg_version, lang, religion_page=True)
+                add_header(bbg_version, lang, 'religion')
                 with div(cls=""):
                     with div(cls="fixed left-0 right-auto h-screen w-[253px] bg-white border-r border-neutral-300 overflow-scroll", style="z-index: 5;"):
                         add_sidebar(menu_items, menu_icons, 'images/religion')
                     with div(cls="leaders-data min-w-full main-pl"):
                         with main(cls="main users chart-page"):
                             with div(cls="container"):
-                                with div(cls="row"):
-                                    with div(cls="col-lg-12"):
-                                        with div(cls="chart"):
-                                            with h1(menu_items[0], cls='civ-name', id = get_loc(locs_data, 'LOC_BELIEF_CLASS_PANTHEON_NAME', en_US_locs_data)):
-                                                img(src=f'/images/religion/{menu_icons[0]}.webp', style="vertical-align: middle; height:4em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
-                                    for pan in pantheons:
-                                        with div(cls="col-lg-6"):
+                                for religion_cls in religion_cls_elements.keys():
+                                    with div(cls="row", id=get_loc(locs_data, religion_cls, en_US_locs_data)):
+                                        with div(cls="col-lg-12"):
                                             with div(cls="chart"):
-                                                with h2(get_loc(locs_data, pan[1], en_US_locs_data), cls='civ-name'):
-                                                    img(src=f'/images/religion/{get_loc(en_US_locs_data, pan[1], en_US_locs_data)}.webp', style="vertical-align: middle; height:3em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
-                                                p(get_loc(locs_data, pan[2], en_US_locs_data), style="text-align:left", cls='civ-ability-desc')
-                                with div(cls="row", id=menu_items[1]):
-                                    with div(cls="col-lg-12"):
-                                        with div(cls="chart"):
-                                            with h1(menu_items[1], cls='civ-name'):
-                                                img(src=f'/images/religion/{menu_icons[1]}.webp', style="vertical-align: middle; height:4em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
-                                    for belief in religion_follower:
-                                        with div(cls="col-lg-6"):
-                                            with div(cls="chart"):
-                                                h2(get_loc(locs_data, belief[1], en_US_locs_data), cls='civ-name')
-                                                p(get_loc(locs_data, belief[2], en_US_locs_data), style="text-align:left", cls='civ-ability-desc')
-                                with div(cls="row", id=menu_items[2]):
-                                    with div(cls="col-lg-12"):
-                                        with div(cls="chart"):
-                                            with h1(menu_items[2], cls='civ-name'):
-                                                img(src=f'/images/religion/{menu_icons[2]}.webp', style="vertical-align: middle; height:4em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
-                                    for belief in religion_founder:
-                                        with div(cls="col-lg-6"):
-                                            with div(cls="chart"):
-                                                h2(get_loc(locs_data, belief[1], en_US_locs_data), cls='civ-name')
-                                                p(get_loc(locs_data, belief[2], en_US_locs_data), style="text-align:left", cls='civ-ability-desc')
-                                with div(cls="row", id=menu_items[3]):
-                                    with div(cls="col-lg-12"):
-                                        with div(cls="chart"):
-                                            with h1(menu_items[3], cls='civ-name'):
-                                                img(src=f'/images/religion/{menu_icons[3]}.webp', style="vertical-align: middle; height:4em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
-                                    for belief in religion_enhancer:
-                                        with div(cls="col-lg-6"):
-                                            with div(cls="chart"):
-                                                h2(get_loc(locs_data, belief[1], en_US_locs_data), cls='civ-name')
-                                                p(get_loc(locs_data, belief[2], en_US_locs_data), style="text-align:left", cls='civ-ability-desc')
-                                with div(cls="row", id=menu_items[4]):
-                                    with div(cls="col-lg-12"):
-                                        with div(cls="chart"):
-                                            with h1(menu_items[4], cls='civ-name'):
-                                                img(src=f'/images/religion/{menu_icons[4]}.webp', style="vertical-align: middle; height:4em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
-                                    for belief in religion_worship:
-                                        with div(cls="col-lg-6"):
-                                            with div(cls="chart"):
-                                                h2(get_loc(locs_data, belief[1], en_US_locs_data), cls='civ-name')
-                                                p(get_loc(locs_data, belief[2], en_US_locs_data), style="text-align:left", cls='civ-ability-desc')
+                                                with h1(get_loc(locs_data, religion_cls, en_US_locs_data), cls='civ-name'):
+                                                    img(src=f'/images/religion/{get_loc(en_US_locs_data, religion_cls, en_US_locs_data)}.webp', style="vertical-align: middle; height:4em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
+                                        for elem in religion_cls_elements[religion_cls]:
+                                            with div(cls="col-lg-6"):
+                                                with div(cls="chart"):
+                                                    if religion_cls == 'LOC_BELIEF_CLASS_PANTHEON_NAME':
+                                                        with h2(get_loc(locs_data, elem[1], en_US_locs_data), cls='civ-name'):
+                                                            img(src=f'/images/religion/{get_loc(en_US_locs_data, elem[1], en_US_locs_data)}.webp', style="vertical-align: middle; height:3em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
+                                                    else:
+                                                        h2(get_loc(locs_data, elem[1], en_US_locs_data), cls='civ-name')
+                                                    p(get_loc(locs_data, elem[2], en_US_locs_data), style="text-align:left", cls='civ-ability-desc')
 
         add_final_scripts()
         add_scroll_up()
@@ -649,7 +535,7 @@ def get_governor_html_file(bbg_version, lang):
         div(cls="layer")
         with div(cls="page-flex"):
             with div(cls="main-wrapper"):
-                add_header(bbg_version, lang, governor_page=True)
+                add_header(bbg_version, lang, 'governor')
                 with div(cls=""):
                     with div(cls="fixed left-0 right-auto h-screen w-[253px] bg-white border-r border-neutral-300 overflow-scroll", style="z-index: 5;"):
                         add_sidebar(menu_items, menu_icons, 'images/governors')
@@ -665,10 +551,7 @@ def get_governor_html_file(bbg_version, lang):
                                                 br()
                                                 for level in governor_promotion_set_dict[gov[0]]:
                                                     column_count = len(governor_promotion_set_dict[gov[0]][level])
-                                                    if column_count == 1:
-                                                        div_cls = "col-lg-12"
-                                                    else:
-                                                        div_cls = "col-lg-6"
+                                                    div_cls = f'col-lg-{math.floor(12 / column_count)}'
                                                     with div(cls='row'):
                                                         for column in governor_promotion_set_dict[gov[0]][level]:
                                                             has_border = 'gov-promotion-border' if column < column_count - 1 else ''
@@ -710,7 +593,7 @@ def get_natural_wonder_html_file(bbg_version, lang):
         div(cls="layer")
         with div(cls="page-flex"):
             with div(cls="main-wrapper"):
-                add_header(bbg_version, lang, natural_wonder_page=True)
+                add_header(bbg_version, lang, 'natural_wonder')
                 with div(cls=""):
                     with div(cls="fixed left-0 right-auto h-screen w-[253px] bg-white border-r border-neutral-300 overflow-scroll", style="z-index: 5;"):
                         add_sidebar(menu_items, menu_icons, 'images/natural_wonders')
@@ -753,7 +636,7 @@ def get_world_wonder_html_file(bbg_version, lang):
         div(cls="layer")
         with div(cls="page-flex"):
             with div(cls="main-wrapper"):
-                add_header(bbg_version, lang, world_wonder_page=True)
+                add_header(bbg_version, lang, 'world_wonder')
                 with div(cls=""):
                     with div(cls="fixed left-0 right-auto h-screen w-[253px] bg-white border-r border-neutral-300 overflow-scroll", style="z-index: 5;"):
                         add_sidebar(menu_items, menu_icons, 'images/world_wonders')
@@ -825,7 +708,7 @@ def get_misc_html_file(bbg_version, lang):
         div(cls="layer")
         with div(cls="page-flex"):
             with div(cls="main-wrapper"):
-                add_header(bbg_version, lang, misc_page=True)
+                add_header(bbg_version, lang, 'misc')
                 with div(cls=""):
                     with div(cls="fixed left-0 right-auto h-screen w-[253px] bg-white border-r border-neutral-300 overflow-scroll", style="z-index: 5;"):
                         add_sidebar(menu_items, menu_icons, 'images')
@@ -866,16 +749,8 @@ def get_misc_html_file(bbg_version, lang):
                                                     br()
                                                     br()
                                                     with div(cls="row"):
-                                                        if len(alliance_effect[lvl]) <= 1:
-                                                            div_cls = 'col-md-12 col-lg-12'
-                                                        elif len(alliance_effect[lvl]) == 2:
-                                                            div_cls = 'col-md-6 col-lg-6'
-                                                        elif len(alliance_effect[lvl]) == 3:
-                                                            div_cls = 'col-md-4 col-lg-4'
-                                                        elif len(alliance_effect[lvl]) == 4:
-                                                            div_cls = 'col-md-3 col-lg-3'
-                                                        else:
-                                                            div_cls = 'col-md-2 col-lg-2'
+                                                        div_cls_sz = math.floor(12 / len(alliance_effect[lvl]))
+                                                        div_cls = f'col-md-{div_cls_sz} col-lg-{div_cls_sz}'
                                                         for effect in alliance_effect[lvl]:
                                                             with div(cls=div_cls):
                                                                 with div(cls="chart"):
@@ -937,7 +812,7 @@ def get_names_html_file(bbg_version, lang):
         div(cls="layer")
         with div(cls="page-flex"):
             with div(cls="main-wrapper"):
-                add_header(bbg_version, lang, name_page=True)
+                add_header(bbg_version, lang, 'names')
                 with div(cls=""):
                     with div(cls="fixed left-0 right-auto h-screen w-[253px] bg-white border-r border-neutral-300 overflow-scroll", style="z-index: 5;"):
                         add_sidebar(menu_items, menu_icons, 'images')
@@ -963,18 +838,8 @@ def get_names_html_file(bbg_version, lang):
                                                     with div(cls="chart"):
                                                         h2(get_loc(locs_data, f'{property_name}', en_US_locs_data), style="text-align:center", cls='civ-ability-desc')
                                                         with div(cls='row'):
-                                                            if len(name_classes[name_cls][property_name]) <= 1:
-                                                                curr_div_cls = 'col-md-12 col-lg-12'
-                                                            elif len(name_classes[name_cls][property_name]) == 2:
-                                                                curr_div_cls = 'col-md-6 col-lg-6'
-                                                            elif len(name_classes[name_cls][property_name]) == 3:
-                                                                curr_div_cls = 'col-md-4 col-lg-4'
-                                                            elif len(name_classes[name_cls][property_name]) == 4:
-                                                                curr_div_cls = 'col-md-3 col-lg-3'
-                                                            elif len(name_classes[name_cls][property_name]) <= 6:
-                                                                curr_div_cls = 'col-md-2 col-lg-2'
-                                                            else:
-                                                                curr_div_cls = 'col-md-1 col-lg-1'
+                                                            cls_len = math.floor(12 / (1 if len(name_classes[name_cls][property_name]) == 0 else len(name_classes[name_cls][property_name])))
+                                                            curr_div_cls = f'col-md-{cls_len} col-lg-{cls_len}'
                                                             for name in name_classes[name_cls][property_name]:
                                                                 with div(cls=curr_div_cls):
                                                                     p(get_loc(locs_data, f'{name}', en_US_locs_data), style="text-align:center", cls='civ-ability-desc')
@@ -1035,7 +900,7 @@ def get_great_people_html_file(bbg_version, lang):
         div(cls="layer")
         with div(cls="page-flex"):
             with div(cls="main-wrapper"):
-                add_header(bbg_version, lang, great_people_page=True)
+                add_header(bbg_version, lang, 'great_people')
                 with div(cls=""):
                     with div(cls="fixed left-0 right-auto h-screen w-[253px] bg-white border-r border-neutral-300 overflow-scroll", style="z-index: 5;"):
                         add_sidebar(menu_items, menu_icons, 'images')

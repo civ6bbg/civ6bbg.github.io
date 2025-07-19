@@ -1107,6 +1107,40 @@
  .theme-switcher line {
    stroke: #D6D7E3;
  }
+
+ .base-game-switcher-wrapper {
+    justify-content: center;
+}
+ 
+ .base-game-switcher svg {
+   width: 24px;
+   height: 24px;
+ }
+ 
+ .base-game-switcher circle {
+   fill: #D6D7E3;
+   stroke: #D6D7E3;
+ }
+ 
+ .base-game-switcher line {
+   stroke: #D6D7E3;
+ }
+
+ .disable-icon {
+  display: none
+ }
+
+ .base-game .enable-icon {
+   display: none;
+ }
+ 
+ .base-game .disable-icon {
+   display: block;
+ }
+
+ .disable-icon {
+  fill: #fff
+ }
  
  .users .primary-white-btn svg {
    margin-right: 5px;
@@ -1183,6 +1217,18 @@
     font-weight: 400;
     padding-bottom: 1em;
     line-height: 2;
+ }
+
+ .base-game-text {
+    display:none
+ }
+
+ .base-game .base-game-text {
+    display:block
+ }
+
+ .base-game .actual-text {
+    display:none
  }
 
  h1,
