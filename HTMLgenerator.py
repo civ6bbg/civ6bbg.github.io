@@ -1072,6 +1072,11 @@ def show_building_yields(yields, locs_data, en_US_locs_data):
 
     if tmp_yields[5] != None:
         p(f'{get_loc(locs_data, tmp_yields[5], en_US_locs_data)}', style="text-align:left", cls='civ-ability-desc')
+        
+    building_cost = int(int(tmp_yields[2]) / 2)
+    if building_cost > 0:
+        with p(f'{get_loc(locs_data, 'LOC_UI_PEDIA_PRODUCTION_COST', en_US_locs_data)} = {building_cost}', style="text-align:left", cls='civ-ability-desc'):
+            img(src=f'/images/ICON_PRODUCTION.webp', style="vertical-align: middle", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
 
 def get_buildings_html_file(bbg_version, lang):
     en_US_locs_data = get_locs_data(bbg_version, 'en_US')
@@ -1113,11 +1118,6 @@ def get_buildings_html_file(bbg_version, lang):
                                                         img(src=f'/images/buildings/{get_loc(en_US_locs_data, building, en_US_locs_data)}.webp', style="vertical-align: middle; width:5em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
                                                     br()
                                                     show_building_yields(buildings_per_district[district][building], locs_data, en_US_locs_data)
-                                                    # show_element_with_base_option(wonder[2], lang, locs_data, en_US_locs_data)
-                                                    # wonder_cost = int(int(wonder[3]) / 2)
-                                                    # with p(f'{get_loc(locs_data, 'LOC_UI_PEDIA_PRODUCTION_COST', en_US_locs_data)} = {wonder_cost}', style="text-align:left", cls='civ-ability-desc'):
-                                                    #     img(src=f'/images/ICON_PRODUCTION.webp', style="vertical-align: middle", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
-                                                    # br()
         add_final_scripts()
         add_scroll_up()
 
