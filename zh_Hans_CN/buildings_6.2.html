@@ -1,0 +1,1328 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-Z2ESCT7CR0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-Z2ESCT7CR0');
+    </script>
+    <title>BBG 6.2 Buildings</title>
+    <meta charset="utf-8">
+    <meta contents="IE=edge" httpequiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="/images/civVI.webp" rel="icon" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap" rel="stylesheet">
+    <link href="/css/style.min.css" rel="stylesheet">
+    <link href="/css/preloader.css" rel="stylesheet">
+    <link href="/css/animate.min.css" rel="stylesheet">
+    <link href="/css/header.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="loader">
+        <div class="loader-outter"></div>
+        <div class="loader-inner"></div>
+        <div class="indicator">
+          <svg height="12px" width="16px">
+            <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+            <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="layer"></div>
+    <div class="page-flex">
+      <div class="main-wrapper">
+        <nav class="main-nav--bg">
+          <div class="main-nav">
+            <div class="header">
+              <div class="header-inner">
+                <div class="inner">
+                  <div class="row">
+                    <div class="flex center sidebar-toggle col-xl-1 col-lg-1 col-md-1 col-1">
+                      <button class="transparent-btn" title="Menu" type="button">
+                        <span class="sr-only">Toggle menu</span>
+                        <span aria-hidden="true" class="icon menu-toggle"></span>
+                      </button>
+                    </div>
+                    <div class="flex center col-xl-1 col-lg-1 col-md-1 col-2">
+                      <a href="/index.html" style="align-content: center;">
+                        <img alt="#" src="/images/BBGLogo.webp" style="width:3em; border-radius:10%">
+                      </a>
+                      <div class="mobile-nav"></div>
+                    </div>
+                    <div class="flex col-xl-8 col-lg-8 col-md-8 col-8">
+                      <div class="main-menu">
+                        <nav class="navigation">
+                          <ul class="nav menu">
+                            <li class="">
+                              <a href="/zh_Hans_CN/leaders_6.2.html" onclick="civClicked(null)">Leaders</a>
+                            </li>
+                            <li class="">
+                              <a href="/zh_Hans_CN/city_states_6.2.html" onclick="civClicked(null)">City States</a>
+                            </li>
+                            <li class="">
+                              <a href="/zh_Hans_CN/religion_6.2.html" onclick="civClicked(null)">Religion</a>
+                            </li>
+                            <li class="">
+                              <a href="/zh_Hans_CN/governor_6.2.html" onclick="civClicked(null)">Governors</a>
+                            </li>
+                            <li class="">
+                              <a href="/zh_Hans_CN/great_people_6.2.html" onclick="civClicked(null)">Great People</a>
+                            </li>
+                            <li class="">
+                              <a href="/zh_Hans_CN/natural_wonder_6.2.html" onclick="civClicked(null)">Natural Wonders</a>
+                            </li>
+                            <li class="">
+                              <a href="/zh_Hans_CN/world_wonder_6.2.html" onclick="civClicked(null)">World Wonders</a>
+                            </li>
+                            <li class="active">
+                              <a href="/zh_Hans_CN/buildings_6.2.html" onclick="civClicked(null)">Buildings</a>
+                            </li>
+                            <li class="">
+                              <a href="/zh_Hans_CN/names_6.2.html" onclick="civClicked(null)">Names</a>
+                            </li>
+                            <li class="">
+                              <a href="/zh_Hans_CN/misc_6.2.html" onclick="civClicked(null)">Misc</a>
+                            </li>
+                            <li>
+                              <a>BBG Version<i class="icofont-rounded-down"></i></a>
+                              <ul class="dropdown">
+                                <li>
+                                  <a href="/zh_Hans_CN/buildings_base_game.html">Base Game</a>
+                                </li>
+                                <li>
+                                  <a href="/zh_Hans_CN/buildings_Beta.html">BBG vBeta</a>
+                                </li>
+                                <li>
+                                  <a href="/zh_Hans_CN/buildings_6.4.html">BBG v6.4</a>
+                                </li>
+                                <li>
+                                  <a href="/zh_Hans_CN/buildings_6.3.html">BBG v6.3</a>
+                                </li>
+                                <li>
+                                  <a href="/zh_Hans_CN/buildings_6.2.html">BBG v6.2</a>
+                                </li>
+                                <li>
+                                  <a href="/zh_Hans_CN/buildings_6.1.html">BBG v6.1</a>
+                                </li>
+                                <li>
+                                  <a href="/zh_Hans_CN/buildings_6.0.html">BBG v6.0</a>
+                                </li>
+                                <li>
+                                  <a href="/zh_Hans_CN/buildings_5.8.html">BBG v5.8</a>
+                                </li>
+                                <li>
+                                  <a href="/zh_Hans_CN/buildings_5.7.html">BBG v5.7</a>
+                                </li>
+                                <li>
+                                  <a href="/zh_Hans_CN/buildings_5.6.html">BBG v5.6</a>
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="">
+                              <a href="https://ko-fi.com/calcalciffer" target="_blank">Donate!</a>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+                    <div class="flex center col-xl-2 col-lg-2 col-md-2 col-1">
+                      <div class="flex row justify-content-around">
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-4">
+                          <div class="main-menu">
+                            <nav class="navigation">
+                              <ul class="nav menu">
+                                <li><i class="fa fa-language lang-icon"></i>
+                                  <ul class="dropdown" style="width:80px">
+                                    <li>
+                                      <a href="/en_US/buildings_6.2.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/us.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/fr_FR/buildings_6.2.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/fr.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/ru_RU/buildings_6.2.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/ru.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/de_DE/buildings_6.2.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/de.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/zh_Hans_CN/buildings_6.2.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/cn.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/ko_KR/buildings_6.2.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/kr.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </nav>
+                          </div>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-4">
+                          <div class="base-game-switcher-wrapper">
+                            <button class="base-game-switcher gray-circle-btn" title="Show Base Game" type="button"><i aria-hidden="true" class="enable-icon" data-feather="toggle-left"></i><i aria-hidden="true" class="disable-icon" data-feather="toggle-right"></i></button>
+                          </div>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-4">
+                          <div class="theme-switcher-wrapper">
+                            <button class="theme-switcher gray-circle-btn" title="Switch theme" type="button">
+                              <span class="sr-only">Switch theme</span><i aria-hidden="true" class="sun-icon" data-feather="sun"></i><i aria-hidden="true" class="moon-icon" data-feather="moon"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="">
+          <div class="fixed left-0 right-auto h-screen w-[253px] bg-white border-r border-neutral-300 overflow-scroll" style="z-index: 5;">
+            <aside class="sidebar">
+              <div class="sidebar-start">
+                <div class="sidebar-body">
+                  <ul class="sidebar-body-menu">
+                    <li>
+                      <a href="#市中心" onclick="civClicked(&quot;市中心&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/City Center.webp">
+                        </span>
+                        <p>市中心</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#圣地" onclick="civClicked(&quot;圣地&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Holy Site.webp">
+                        </span>
+                        <p>圣地</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#军营" onclick="civClicked(&quot;军营&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Encampment.webp">
+                        </span>
+                        <p>军营</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#学院" onclick="civClicked(&quot;学院&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Campus.webp">
+                        </span>
+                        <p>学院</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#娱乐中心" onclick="civClicked(&quot;娱乐中心&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Entertainment Complex.webp">
+                        </span>
+                        <p>娱乐中心</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#港口" onclick="civClicked(&quot;港口&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Harbor.webp">
+                        </span>
+                        <p>港口</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#商业中心" onclick="civClicked(&quot;商业中心&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Commercial Hub.webp">
+                        </span>
+                        <p>商业中心</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#剧院广场" onclick="civClicked(&quot;剧院广场&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Theater Square.webp">
+                        </span>
+                        <p>剧院广场</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#市政广场" onclick="civClicked(&quot;市政广场&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Government Plaza.webp">
+                        </span>
+                        <p>市政广场</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#保护区" onclick="civClicked(&quot;保护区&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Preserve.webp">
+                        </span>
+                        <p>保护区</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#外交区" onclick="civClicked(&quot;外交区&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Diplomatic Quarter.webp">
+                        </span>
+                        <p>外交区</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#工业区" onclick="civClicked(&quot;工业区&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Industrial Zone.webp">
+                        </span>
+                        <p>工业区</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#水上乐园" onclick="civClicked(&quot;水上乐园&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Water Park.webp">
+                        </span>
+                        <p>水上乐园</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#航空港" onclick="civClicked(&quot;航空港&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Aerodrome.webp">
+                        </span>
+                        <p>航空港</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#社区" onclick="civClicked(&quot;社区&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Neighborhood.webp">
+                        </span>
+                        <p>社区</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#堤坝" onclick="civClicked(&quot;堤坝&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Dam.webp">
+                        </span>
+                        <p>堤坝</p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </aside>
+          </div>
+          <div class="leaders-data min-w-full main-pl">
+            <main class="main users chart-page">
+              <div class="container">
+                <div class="col-lg-12" id="市中心">
+                  <div class="chart">
+                    <h2 class="civ-name">市中心</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">宫殿
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Palace.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化值</p>
+                      <p class="civ-ability-desc" style="text-align:left">+5 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科技值</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住房</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> 宜居度</p>
+                      <p class="civ-ability-desc" style="text-align:left">1巨作槽位（可保存任意类型）</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">纪念碑
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Monument.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化值</p>
+                      <p class="civ-ability-desc" style="text-align:left">使此城每回合的忠诚度+1。如城市忠诚度已达最高，则额外+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化值。</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">粮仓
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Granary.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食物</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住房</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">水磨
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Water Mill.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食物</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力</p>
+                      <p class="civ-ability-desc" style="text-align:left">农场改良设施+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">拦洪坝
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Flood Barrier.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">能保护该城市的海岸低地单元格不受洪水侵袭。初次修建与每回合维护的成本将根据城中海岸低地数量和当前海平面高度而定。如在城市单元格受到洪水侵袭后修建，则可将这些单元格完全修复。但沉入海底的单元格无法复原。<br><br>必须修建在拥有1个或以上海岸低地单元格的城市中。城市被占领时不会遭到掠夺。军事工程师可消耗1次使用次数来完成拦洪坝50%的修建进度。</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">沟渠
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Palgum.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住房</p>
+                      <p class="civ-ability-desc" style="text-align:left">巴比伦特色建筑。+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住房、+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。除农场外，改良后的淡水单元格+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食物。所有农场改良设施+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">远古城墙
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Ancient Walls.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">提供环绕市中心和军营的城墙。城墙使市中心和军营能发起 <img src="/images/ICON_RANGED.webp" style="height:1em"/> 远程攻击。必须先击毁城墙方能进攻城市。获得“保护地球”市政后提供1点 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 旅游业绩。</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">堡垒
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Tsikhe.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化值</p>
+                      <p class="civ-ability-desc" style="text-align:left">+4 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰值</p>
+                      <p class="civ-ability-desc" style="text-align:left">格鲁吉亚特色建筑，取代远古城墙，并拥有更强的外部防御力。获得“保护地球”市政后提供+1点 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 旅游业绩。提供+4 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰值、+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化值。进入 <img src="/images/ICON_GLORY_GOLDEN_AGE.webp" style="height:1em"/> 黄金或 <img src="/images/ICON_GLORY_SUPER_GOLDEN_AGE.webp" style="height:1em"/> 英雄时代后额外+3 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰值、+100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 旅游业绩。</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">中世纪城墙
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Medieval Walls.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">提升外部防御力。获得“保护地球”市政以后提供2点 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 旅游业绩。此城不受“破城槌”特效影响。</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">下水道
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Sewer.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住房</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> 宜居度</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12" id="圣地">
+                  <div class="chart">
+                    <h2 class="civ-name">圣地</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">神社
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Shrine.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰值</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 公民槽位</p>
+                      <p class="civ-ability-desc" style="text-align:left">每回合1 <img src="/images/ICON_GREATPROPHET.webp" style="height:1em"/> 大预言家点数</p>
+                      <p class="civ-ability-desc" style="text-align:left">允许购买传教士，拥有特定信仰还可购买武僧。只能使用 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰值进行购买。</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">寺庙
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Temple.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+4 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰值</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 公民槽位</p>
+                      <p class="civ-ability-desc" style="text-align:left">每回合1 <img src="/images/ICON_GREATPROPHET.webp" style="height:1em"/> 大预言家点数</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 <img src="/images/ICON_GREATWORK_RELIC.webp" style="height:1em"/> 遗物槽位</p>
+                      <p class="civ-ability-desc" style="text-align:left">可购买使徒、上师、审判官。这些宗教单位只能通过 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰值购买。</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">木板教堂
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Stave Church.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+4 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰值</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 公民槽位</p>
+                      <p class="civ-ability-desc" style="text-align:left">每回合1 <img src="/images/ICON_GREATPROPHET.webp" style="height:1em"/> 大预言家点数</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 <img src="/images/ICON_GREATWORK_RELIC.webp" style="height:1em"/> 遗物槽位</p>
+                      <p class="civ-ability-desc" style="text-align:left">挪威特色建筑，替代寺庙。建成后可使用 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰值购买使徒和审判官。城市中每个资源单元格+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰值，每个海岸资源单元格额外+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">高棉庙堂
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Prasat.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+6 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰值</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 公民槽位</p>
+                      <p class="civ-ability-desc" style="text-align:left">每回合1 <img src="/images/ICON_GREATPROPHET.webp" style="height:1em"/> 大预言家点数</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 <img src="/images/ICON_GREATWORK_RELIC.webp" style="height:1em"/> 遗物槽位</p>
+                      <p class="civ-ability-desc" style="text-align:left">+6 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰值。高棉特色建筑。替代寺庙。拥有此建筑后才能用 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰值购买使徒和审判官。此城中每有1点 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 人口，便+0.3 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化值。研究完“飞行”之后，如城市拥有10点或以上的 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 人口，则+10 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 旅游业绩； 如城市拥有20点或以上的 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 人口，则+20 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 旅游业绩。</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">大教堂
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Cathedral.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰值</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 公民槽位</p>
+                      <p class="civ-ability-desc" style="text-align:left">1巨作槽位（可保存任意类型）</p>
+                      <p class="civ-ability-desc" style="text-align:left">公民产出（此区域中的每位公民）：<br><span>&#8226;</span> +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰值</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">谒师所
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Gurdwara.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰值</p>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食物</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住房</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 公民槽位</p>
+                      <p class="civ-ability-desc" style="text-align:left">公民产出（此区域中的每位公民）：<br><span>&#8226;</span> +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰值</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">礼拜堂
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Meeting House.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰值</p>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 公民槽位</p>
+                      <p class="civ-ability-desc" style="text-align:left">公民产出（此区域中的每位公民）：<br><span>&#8226;</span> +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰值</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">清真寺
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Mosque.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰值</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 公民槽位</p>
+                      <p class="civ-ability-desc" style="text-align:left">公民产出（此区域中的每位公民）：<br><span>&#8226;</span> +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰值</p>
+                      <p class="civ-ability-desc" style="text-align:left">建成时获得一个该城市主流宗教的传教士，此处创建的传教士和使徒+2传教次数。</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">宝塔
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Pagoda.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰值</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 公民槽位</p>
+                      <p class="civ-ability-desc" style="text-align:left">公民产出（此区域中的每位公民）：<br><span>&#8226;</span> +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰值</p>
+                      <p class="civ-ability-desc" style="text-align:left">每回合 <img src="/images/ICON_INFLUENCEPERTURN.webp" style="height:1em"/> 影响力点数+1。</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">犹太教堂
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Synagogue.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+9 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰值</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 公民槽位</p>
+                      <p class="civ-ability-desc" style="text-align:left">公民产出（此区域中的每位公民）：<br><span>&#8226;</span> +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰值</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">佛寺
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Wat.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰值</p>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科技值</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 公民槽位</p>
+                      <p class="civ-ability-desc" style="text-align:left">公民产出（此区域中的每位公民）：<br><span>&#8226;</span> +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰值</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">窣堵波
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Stupa.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰值</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> 宜居度</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 公民槽位</p>
+                      <p class="civ-ability-desc" style="text-align:left">公民产出（此区域中的每位公民）：<br><span>&#8226;</span> +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰值</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">拜火神庙
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Dar-e Mehr.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化值</p>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰值</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 公民槽位</p>
+                      <p class="civ-ability-desc" style="text-align:left">公民产出（此区域中的每位公民）：<br><span>&#8226;</span> +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰值</p>
+                      <p class="civ-ability-desc" style="text-align:left">无法被自然灾害掠夺。</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12" id="军营">
+                  <div class="chart">
+                    <h2 class="civ-name">军营</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">兵营
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Barracks.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住房</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 公民槽位</p>
+                      <p class="civ-ability-desc" style="text-align:left">每回合1 <img src="/images/ICON_GREATGENERAL.webp" style="height:1em"/> 大将军点数</p>
+                      <p class="civ-ability-desc" style="text-align:left">该城市中训练的所有近战和远程陆地单位+25%战斗经验值。<br>战略资源储备+10（标准速度下）。<br><br>无法建造在已有马厩的军营区域中。</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">皇家学堂
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Basilikoi Paides.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住房</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 公民槽位</p>
+                      <p class="civ-ability-desc" style="text-align:left">每回合1 <img src="/images/ICON_GREATGENERAL.webp" style="height:1em"/> 大将军点数</p>
+                      <p class="civ-ability-desc" style="text-align:left">马其顿特色建筑。该城中训练的陆地近战、远程单位和伙友骑兵+25%战斗经验值。非平民单位在此城中创建时，获得等同于单位 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力花费20%的 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科技值。<br><br>无法建造在已拥有马厩的军营区域中。</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">斡耳朵
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Ordu.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住房</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 公民槽位</p>
+                      <p class="civ-ability-desc" style="text-align:left">每回合1 <img src="/images/ICON_GREATGENERAL.webp" style="height:1em"/> 大将军点数</p>
+                      <p class="civ-ability-desc" style="text-align:left">蒙古特色建筑。其所在城市生产的轻重骑兵单位+1 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移动力。其所在城市生产的所有骑兵类和攻城类单位+25%战斗经验值。<br>战略资源储备+10（标准速度下）。<br><br>无法建造在已拥有兵营的军营区域中。</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">马厩
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Stable.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住房</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 公民槽位</p>
+                      <p class="civ-ability-desc" style="text-align:left">每回合1 <img src="/images/ICON_GREATGENERAL.webp" style="height:1em"/> 大将军点数</p>
+                      <p class="civ-ability-desc" style="text-align:left">此城市生产的所有骑兵类和攻城类单位+25%战斗经验值。<br>战略资源储备+10（标准速度下）。<br><br>不能建造在已拥有兵营的军营区域中。</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">兵工厂
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Armory.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 公民槽位</p>
+                      <p class="civ-ability-desc" style="text-align:left">每回合2 <img src="/images/ICON_GREATGENERAL.webp" style="height:1em"/> 大将军点数</p>
+                      <p class="civ-ability-desc" style="text-align:left">该城市中训练的所有陆地单位+25%战斗经验值获取。<br>战略资源储备+10（标准速度下）。<br>解锁后每回合+1 <img src="/images/ICON_RESOURCE_NITER.webp" style="height:1em"/> 硝石。</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">军事学院
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Military Academy.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+4 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住房</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 公民槽位</p>
+                      <p class="civ-ability-desc" style="text-align:left">每回合2 <img src="/images/ICON_GREATGENERAL.webp" style="height:1em"/> 大将军点数</p>
+                      <p class="civ-ability-desc" style="text-align:left">公民产出（此区域中的每位公民）：<br><span>&#8226;</span> +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力</p>
+                      <p class="civ-ability-desc" style="text-align:left">此城中训练的所有陆地单位+25%战斗经验值获取。<br>战略资源储备+10（标准速度下）。<br>解锁后每回合+2 <img src="/images/ICON_RESOURCE_OIL.webp" style="height:1em"/> 石油。<br>解锁相应的市政后即可直接生产 <img src="/images/ICON_CORPS.webp" style="height:1em"/> 军团和 <img src="/images/ICON_ARMY.webp" style="height:1em"/> 军队，并使 <img src="/images/ICON_CORPS.webp" style="height:1em"/> 军团和 <img src="/images/ICON_ARMY.webp" style="height:1em"/> 军队生产费用降低25%。</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12" id="学院">
+                  <div class="chart">
+                    <h2 class="civ-name">学院</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">图书馆
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Library.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科技值</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 公民槽位</p>
+                      <p class="civ-ability-desc" style="text-align:left">每回合1 <img src="/images/ICON_GREATSCIENTIST.webp" style="height:1em"/> 大科学家点数</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">大学
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/University.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+4 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科技值</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住房</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 公民槽位</p>
+                      <p class="civ-ability-desc" style="text-align:left">每回合1 <img src="/images/ICON_GREATSCIENTIST.webp" style="height:1em"/> 大科学家点数</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">伊斯兰学校
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Madrasa.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+5 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科技值</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住房</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 公民槽位</p>
+                      <p class="civ-ability-desc" style="text-align:left">每回合1 <img src="/images/ICON_GREATSCIENTIST.webp" style="height:1em"/> 大科学家点数</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰值加成等于该区域相邻<img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科技值加成。</p>
+                      <p class="civ-ability-desc" style="text-align:left">阿拉伯特色建筑。提供与学院区的相邻加成等量的 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰值。</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">航海学校
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Navigation School.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+4 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科技值</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住房</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 公民槽位</p>
+                      <p class="civ-ability-desc" style="text-align:left">每回合1 <img src="/images/ICON_GREATADMIRAL.webp" style="height:1em"/> 海军统帅点数</p>
+                      <p class="civ-ability-desc" style="text-align:left">每回合1 <img src="/images/ICON_GREATSCIENTIST.webp" style="height:1em"/> 大科学家点数</p>
+                      <p class="civ-ability-desc" style="text-align:left">葡萄牙特色建筑。在此城中生产海军单位时+25%生产力。此城中每拥有2个海岸或湖泊单元格，则+1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科技值。每回合+1 <img src="/images/ICON_GREATADMIRAL.webp" style="height:1em"/> 海军统帅点数、+1 <img src="/images/ICON_GREATSCIENTIST.webp" style="height:1em"/> 大科学家点数。</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">研究实验室
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Research Lab.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科技值</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 公民槽位</p>
+                      <p class="civ-ability-desc" style="text-align:left">每回合1 <img src="/images/ICON_GREATSCIENTIST.webp" style="height:1em"/> 大科学家点数</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_POWER.webp" style="height:1em"/> 供电充足时，额外5 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科技值</p>
+                      <p class="civ-ability-desc" style="text-align:left">公民产出（此区域中的每位公民）：<br><span>&#8226;</span> +1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科技值</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12" id="娱乐中心">
+                  <div class="chart">
+                    <h2 class="civ-name">娱乐中心</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">蹴球场
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Tlachtli.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化值</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> 宜居度</p>
+                      <p class="civ-ability-desc" style="text-align:left">每回合1 <img src="/images/ICON_GREATGENERAL.webp" style="height:1em"/> 大将军点数</p>
+                      <p class="civ-ability-desc" style="text-align:left">阿兹特克特色建筑。为周围六格内的市中心提供+1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> 宜居度和+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化值。此加成1座城市仅能应用1次，因此市中心6个单元格以内相同的此建筑不会再额外提供加成。<br>提供+1 <img src="/images/ICON_GREATGENERAL.webp" style="height:1em"/> 大将军点数和+3 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 旅游业绩。</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">竞技场
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Arena.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化值</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> 宜居度</p>
+                      <p class="civ-ability-desc" style="text-align:left">提供3点 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 旅游业绩。</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">动物园
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Zoo.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> 宜居度</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_AMENITIES.webp" style="height:1em"/> 宜居度加成延伸到6个单元格中的每个市中心。此加成1座城市仅能应用1次，因此市中心6个单元格以内相同的此建筑不会再额外提供加成。此城中的每处雨林和沼泽单元格+1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科技值。</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">温泉浴场
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Thermal Bath.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> 宜居度</p>
+                      <p class="civ-ability-desc" style="text-align:left">匈牙利特色建筑。+2点 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> 宜居度与+2点 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力，可扩展到6个单元格内的每个市中心。城市仅能应用1次此类加成，因此市中心6个单元格以内相同的此建筑不会再额外提供加成。此城中若包含至少1处地热裂缝，则该城市的 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 旅游业绩+3，同时 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> 宜居度额外+2。</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">体育场
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Stadium.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> 宜居度</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_POWER.webp" style="height:1em"/> 供电充足时，娱乐区域额外2 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> 宜居度</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_AMENITIES.webp" style="height:1em"/> 宜居度加成延伸到6个单元格中的每个市中心。此加成每座城市仅能应用1次，因此市中心6个单元格以内相同的此建筑不会再额外提供加成。如城市 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 人口大于等于10，则+6 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 旅游业绩；如城市 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 人口大于等于20，则+15 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 旅游业绩。</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12" id="港口">
+                  <div class="chart">
+                    <h2 class="civ-name">港口</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">灯塔
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Lighthouse.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住房</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 公民槽位</p>
+                      <p class="civ-ability-desc" style="text-align:left">每回合1 <img src="/images/ICON_GREATADMIRAL.webp" style="height:1em"/> 海军统帅点数</p>
+                      <p class="civ-ability-desc" style="text-align:left">此城生产的所有海军单位+25%战斗经验值。此城的所有海岸单元格+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食物。如此城与海岸相邻，则+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住房。如此城尚无市场，则+1 <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> 贸易路线容量。</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">造船厂
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Shipyard.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食物</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 公民槽位</p>
+                      <p class="civ-ability-desc" style="text-align:left">每回合1 <img src="/images/ICON_GREATADMIRAL.webp" style="height:1em"/> 海军统帅点数</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力加成等于该区域相邻<img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币加成。</p>
+                      <p class="civ-ability-desc" style="text-align:left">此城中生产的所有海军单位+25%战斗经验值。<img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力加成等于港口区域的相邻加成。此城所有未改良的海岸和湖泊单元格提供的 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力+1。解锁后每回合+1 <img src="/images/ICON_RESOURCE_COAL.webp" style="height:1em"/> 煤。</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">码头
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Seaport.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食物</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住房</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 公民槽位</p>
+                      <p class="civ-ability-desc" style="text-align:left">每回合3 <img src="/images/ICON_GREATADMIRAL.webp" style="height:1em"/> 海军统帅点数</p>
+                      <p class="civ-ability-desc" style="text-align:left">公民产出（此区域中的每位公民）：<br><span>&#8226;</span> +1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食物</p>
+                      <p class="civ-ability-desc" style="text-align:left">此城中生产的所有海军单位+25%战斗经验值获取。解锁相应的市政后即可直接生产 <img src="/images/ICON_CORPS.webp" style="height:1em"/> 舰队和 <img src="/images/ICON_ARMY.webp" style="height:1em"/> 无敌舰队。<img src="/images/ICON_CORPS.webp" style="height:1em"/> 舰队和 <img src="/images/ICON_ARMY.webp" style="height:1em"/> 无敌舰队的生产费用降低25%。此城所有的海岸单元格+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币。</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12" id="商业中心">
+                  <div class="chart">
+                    <h2 class="civ-name">商业中心</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">市场
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Market.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 公民槽位</p>
+                      <p class="civ-ability-desc" style="text-align:left">每回合1 <img src="/images/ICON_GREATMERCHANT.webp" style="height:1em"/> 大商人点数</p>
+                      <p class="civ-ability-desc" style="text-align:left">如此城尚未建有灯塔，则+1 <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> 贸易路线容量。</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">纺织会馆
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Sukiennice.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 公民槽位</p>
+                      <p class="civ-ability-desc" style="text-align:left">每回合1 <img src="/images/ICON_GREATMERCHANT.webp" style="height:1em"/> 大商人点数</p>
+                      <p class="civ-ability-desc" style="text-align:left">波兰特色建筑。从此城开始的国际 <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> 贸易路线+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力；国内 <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> 贸易路线+4 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币。如此城尚未建有灯塔，则+1 <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> 贸易路线容量。</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">大巴扎
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Grand Bazaar.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+6 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 公民槽位</p>
+                      <p class="civ-ability-desc" style="text-align:left">每回合2 <img src="/images/ICON_GREATMERCHANT.webp" style="height:1em"/> 大商人点数</p>
+                      <p class="civ-ability-desc" style="text-align:left">奥斯曼特色建筑。城市中改良的每种不同战略资源均可额外增加一点。城市改良的每个奢侈品资源均可提供一点 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> 宜居度。首次建造完成后奖励一个 <img src="/images/ICON_GOVERNOR.webp" style="height:1em"/> 总督头衔。<br><br>+1 <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> 贸易路线容量。<br>为该城市出发的 <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> 贸易路线提供+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币。<br>为通往该城市的 <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> 贸易路线提供+1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币。</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">银行
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Bank.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+6 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 公民槽位</p>
+                      <p class="civ-ability-desc" style="text-align:left">每回合2 <img src="/images/ICON_GREATMERCHANT.webp" style="height:1em"/> 大商人点数</p>
+                      <p class="civ-ability-desc" style="text-align:left">为该城市出发的 <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> 贸易路线提供+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币。<br>为通往该城市的 <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> 贸易路线提供+1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币。</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">证券交易所
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Stock Exchange.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+8 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 公民槽位</p>
+                      <p class="civ-ability-desc" style="text-align:left">每回合3 <img src="/images/ICON_GREATMERCHANT.webp" style="height:1em"/> 大商人点数</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_POWER.webp" style="height:1em"/> 供电充足时，额外12 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币</p>
+                      <p class="civ-ability-desc" style="text-align:left">公民产出（此区域中的每位公民）：<br><span>&#8226;</span> +2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币</p>
+                      <p class="civ-ability-desc" style="text-align:left">为该城市出发的 <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> 贸易路线提供+4 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币。<br>为通往该城市的 <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> 贸易路线提供+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币。</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12" id="剧院广场">
+                  <div class="chart">
+                    <h2 class="civ-name">剧院广场</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">古罗马剧场
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Amphitheater.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化值</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 公民槽位</p>
+                      <p class="civ-ability-desc" style="text-align:left">每回合1 <img src="/images/ICON_GREATWRITER.webp" style="height:1em"/> 大作家点数</p>
+                      <p class="civ-ability-desc" style="text-align:left">2 <img src="/images/ICON_GREATWORK_WRITING.webp" style="height:1em"/> 著作巨作槽位</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">毛利会堂
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Marae.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">1 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 公民槽位</p>
+                      <p class="civ-ability-desc" style="text-align:left">毛利特色建筑。城市中所有包含可通行地貌或自然奇观的单元格+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化值与 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰值。研究“飞行”科技后，城市中所有包含地貌或自然奇观的单元格+1 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 旅游业绩。维护免费；无巨作槽位。</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">艺术博物馆
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Art Museum.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化值</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 公民槽位</p>
+                      <p class="civ-ability-desc" style="text-align:left">每回合2 <img src="/images/ICON_GREATARTIST.webp" style="height:1em"/> 大艺术家点数</p>
+                      <p class="civ-ability-desc" style="text-align:left">3 <img src="/images/ICON_GREATWORK_LANDSCAPE.webp" style="height:1em"/>  艺术巨作槽位</p>
+                      <p class="civ-ability-desc" style="text-align:left">每回合1 <img src="/images/ICON_GREATWRITER.webp" style="height:1em"/> 大作家点数</p>
+                      <p class="civ-ability-desc" style="text-align:left">可存放 <img src="/images/ICON_GREATWORK_LANDSCAPE.webp" style="height:1em"/> 艺术巨作。如果在剧院广场区域已经有一座考古博物馆则无法修建。</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">考古博物馆
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Archaeological Museum.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化值</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 公民槽位</p>
+                      <p class="civ-ability-desc" style="text-align:left">每回合2 <img src="/images/ICON_GREATARTIST.webp" style="height:1em"/> 大艺术家点数</p>
+                      <p class="civ-ability-desc" style="text-align:left">3 <img src="/images/ICON_GREATWORK_ARTIFACT.webp" style="height:1em"/> 文物槽位</p>
+                      <p class="civ-ability-desc" style="text-align:left">每回合1 <img src="/images/ICON_GREATWRITER.webp" style="height:1em"/> 大作家点数</p>
+                      <p class="civ-ability-desc" style="text-align:left">可存放 <img src="/images/ICON_GREATWORK_ARTIFACT.webp" style="height:1em"/> 文物。如果在剧院广场区域已经有一座艺术博物馆则无法修建。</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">广播中心
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Broadcast Center.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化值</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 公民槽位</p>
+                      <p class="civ-ability-desc" style="text-align:left">每回合1 <img src="/images/ICON_GREATARTIST.webp" style="height:1em"/> 大艺术家点数</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 <img src="/images/ICON_GREATWORK_MUSIC.webp" style="height:1em"/> 音乐巨作槽位</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_POWER.webp" style="height:1em"/> 供电充足时，额外4 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化值</p>
+                      <p class="civ-ability-desc" style="text-align:left">公民产出（此区域中的每位公民）：<br><span>&#8226;</span> +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化值</p>
+                      <p class="civ-ability-desc" style="text-align:left">每回合2 <img src="/images/ICON_GREATMUSICIAN.webp" style="height:1em"/> 大音乐家点数</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">电影制片厂
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Film Studio.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化值</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 公民槽位</p>
+                      <p class="civ-ability-desc" style="text-align:left">每回合1 <img src="/images/ICON_GREATARTIST.webp" style="height:1em"/> 大艺术家点数</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 <img src="/images/ICON_GREATWORK_MUSIC.webp" style="height:1em"/> 音乐巨作槽位</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_POWER.webp" style="height:1em"/> 供电充足时，额外4 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化值</p>
+                      <p class="civ-ability-desc" style="text-align:left">公民产出（此区域中的每位公民）：<br><span>&#8226;</span> +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化值</p>
+                      <p class="civ-ability-desc" style="text-align:left">每回合2 <img src="/images/ICON_GREATMUSICIAN.webp" style="height:1em"/> 大音乐家点数</p>
+                      <p class="civ-ability-desc" style="text-align:left">美国特色剧院广场建筑。替代广播中心。所在城市对其他进入现代的文明+30% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 旅游业绩。</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12" id="市政广场">
+                  <div class="chart">
+                    <h2 class="civ-name">市政广场</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">谒见厅
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Audience Chamber.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">有 <img src="/images/ICON_GOVERNOR.webp" style="height:1em"/> 总督的城市+1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> 宜居度、+3 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食物和+3 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住房。<br>无 <img src="/images/ICON_GOVERNOR.webp" style="height:1em"/> 总督的城市-2忠诚度。<br>奖励1个 <img src="/images/ICON_GOVERNOR.webp" style="height:1em"/> 总督头衔。</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">祠堂
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Ancestral Hall.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">在此城中生产开拓者时 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力+50%。<br>新城市获得1个免费的建造者。<br>奖励1个 <img src="/images/ICON_GOVERNOR.webp" style="height:1em"/> 总督头衔。</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">军阀宝座
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Warlord's Throne.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">所有城市生产海军和陆地战斗单位时+25% <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。单位维护费用减少1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币。战略资源储存上限增加15（联机速度下）。每回合提供2点已解锁的战略资源。<br> 奖励1个 <img src="/images/ICON_GOVERNOR.webp" style="height:1em"/> 总督头衔。</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">女王图书馆
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Queen's Bibliotheque.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">每回合2 <img src="/images/ICON_GREATARTIST.webp" style="height:1em"/> 大艺术家点数</p>
+                      <p class="civ-ability-desc" style="text-align:left">2 <img src="/images/ICON_GREATWORK_LANDSCAPE.webp" style="height:1em"/>  艺术巨作槽位</p>
+                      <p class="civ-ability-desc" style="text-align:left">2 <img src="/images/ICON_GREATWORK_MUSIC.webp" style="height:1em"/> 音乐巨作槽位</p>
+                      <p class="civ-ability-desc" style="text-align:left">2 <img src="/images/ICON_GREATWORK_WRITING.webp" style="height:1em"/> 著作巨作槽位</p>
+                      <p class="civ-ability-desc" style="text-align:left">每回合2 <img src="/images/ICON_GREATMUSICIAN.webp" style="height:1em"/> 大音乐家点数</p>
+                      <p class="civ-ability-desc" style="text-align:left">每回合2 <img src="/images/ICON_GREATWRITER.webp" style="height:1em"/> 大作家点数</p>
+                      <p class="civ-ability-desc" style="text-align:left">瑞典特色建筑。该建筑包含2个 <img src="/images/ICON_GREATWORK_WRITING.webp" style="height:1em"/> 著作槽位，2个 <img src="/images/ICON_GREATWORK_LANDSCAPE.webp" style="height:1em"/> 艺术槽位，2个 <img src="/images/ICON_GREATWORK_MUSIC.webp" style="height:1em"/> 音乐槽位。该建筑不与其他市政广场建筑冲突。<br>奖励1个 <img src="/images/ICON_GOVERNOR.webp" style="height:1em"/> 总督头衔。</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">外交部
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Foreign Ministry.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">每回合+3 <img src="/images/ICON_FAVOR.webp" style="height:1em"/> 外交支持，+2 <img src="/images/ICON_INFLUENCEPERTURN.webp" style="height:1em"/> 影响力点数。征召城邦单位消耗的 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币减半。如果你是城邦的宗主国，则城邦单位+4 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 战斗力（征召单位包含在内）。<br>奖励1个 <img src="/images/ICON_GOVERNOR.webp" style="height:1em"/> 总督头衔。奖励2个 <img src="/images/ICON_ENVOY.webp" style="height:1em"/> 使者。</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">情报局
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Intelligence Agency.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">为间谍+50% <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。<br>所有间谍行动的成功率上升。<br>奖励1个 <img src="/images/ICON_GOVERNOR.webp" style="height:1em"/> 总督头衔，2间谍容量和1个免费间谍。</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">骑士团长礼拜堂
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Grand Master's Chapel.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+5 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰值</p>
+                      <p class="civ-ability-desc" style="text-align:left">获得在自己建立的城市用 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰值购买陆地单位的能力。<br>掠夺改良设施和区域可提供 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰值加成。<br>奖励1个 <img src="/images/ICON_GOVERNOR.webp" style="height:1em"/> 总督头衔。</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">作战部
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/War Department.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">所有单位消灭敌方单位均可恢复生命值（上限20点）。<br>奖励1个 <img src="/images/ICON_GOVERNOR.webp" style="height:1em"/> 总督头衔。</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">国家历史博物馆
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/National History Museum.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">4巨作槽位（可保存任意类型）</p>
+                      <p class="civ-ability-desc" style="text-align:left">提供任意4个巨作槽位。<br>奖励1个 <img src="/images/ICON_GOVERNOR.webp" style="height:1em"/> 总督头衔。</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">皇家学会
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Royal Society.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">建造者和军事工程师能使用所有次数为一个区域项目提供 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力加成。每个剩余次数为项目提供2% <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。一次只能用于一座城市，每回合仅限使用一次。<br>奖励1个 <img src="/images/ICON_GOVERNOR.webp" style="height:1em"/> 总督头衔。</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12" id="保护区">
+                  <div class="chart">
+                    <h2 class="civ-name">保护区</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">古树林
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Grove.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">相邻未改良单元格根据魅力获得额外产出：<br> • 普通的及以下：+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食物、+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰值。<br> • 迷人的：+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食物、+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰值、+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化值。<br> • 惊艳的：+2 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食物、+2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰值、+2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化值。</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">避难所
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Sanctuary.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">相邻未改良单元格根据魅力获得额外产出：<br> • 普通的及以下：+1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科技值、+1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币。<br> • 迷人的：+1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科技值、+1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币、+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。<br> • 惊艳的：+2 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科技值、+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币、+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12" id="外交区">
+                  <div class="chart">
+                    <h2 class="civ-name">外交区</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">领事馆
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Consulate.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">每回合 <img src="/images/ICON_INFLUENCEPERTURN.webp" style="height:1em"/> 影响力点数+2。敌方间谍以此城市或拥有军营的城市为目标时，其效力降低一级。</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">外交办
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Chancery.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">每回合 <img src="/images/ICON_INFLUENCEPERTURN.webp" style="height:1em"/> 影响力点数+3。俘获或杀死间谍时，该间谍每有一级升级则提供200 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科技（标准速度下）。</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12" id="工业区">
+                  <div class="chart">
+                    <h2 class="civ-name">工业区</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">工作坊
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Workshop.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+4 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 公民槽位</p>
+                      <p class="civ-ability-desc" style="text-align:left">每回合1 <img src="/images/ICON_GREATENGINEER.webp" style="height:1em"/> 大工程师点数</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">工厂
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Factory.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 公民槽位</p>
+                      <p class="civ-ability-desc" style="text-align:left">每回合1 <img src="/images/ICON_GREATENGINEER.webp" style="height:1em"/> 大工程师点数</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_POWER.webp" style="height:1em"/> 供电充足时，额外3 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力</p>
+                      <p class="civ-ability-desc" style="text-align:left">其 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力加成延伸到6单元格内的所有市中心（前提是其尚未从其他的此建筑获得加成）。</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">电子厂
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Electronics Factory.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 公民槽位</p>
+                      <p class="civ-ability-desc" style="text-align:left">每回合1 <img src="/images/ICON_GREATENGINEER.webp" style="height:1em"/> 大工程师点数</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_POWER.webp" style="height:1em"/> 供电充足时，额外5 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力</p>
+                      <p class="civ-ability-desc" style="text-align:left">日本特色建筑。研究“电力”科技后为此城市提供+4 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化值。其 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力加成延伸到6单元格内的所有市中心（前提是其尚未从其他的此建筑获得加成）。</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">燃煤发电厂
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Coal Power Plant.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">1 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 公民槽位</p>
+                      <p class="civ-ability-desc" style="text-align:left">每回合1 <img src="/images/ICON_GREATENGINEER.webp" style="height:1em"/> 大工程师点数</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力加成等于该区域相邻<img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力加成。</p>
+                      <p class="civ-ability-desc" style="text-align:left">公民产出（此区域中的每位公民）：<br><span>&#8226;</span> +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力</p>
+                      <p class="civ-ability-desc" style="text-align:left">将任意数额的 <img src="/images/ICON_RESOURCE_COAL.webp" style="height:1em"/> 煤自动转换为 <img src="/images/ICON_POWER.webp" style="height:1em"/> 电力，每回合可为周围6个单元格内的城市提供其所需电力：<br><span>&#8226;</span> 1点 <img src="/images/ICON_RESOURCE_COAL.webp" style="height:1em"/> 煤   4点 <img src="/images/ICON_POWER.webp" style="height:1em"/> 电力<br><span>&#8226;</span> 会向大气层排放大量二氧化碳</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">燃油发电厂
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Oil Power Plant.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+6 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 公民槽位</p>
+                      <p class="civ-ability-desc" style="text-align:left">每回合1 <img src="/images/ICON_GREATENGINEER.webp" style="height:1em"/> 大工程师点数</p>
+                      <p class="civ-ability-desc" style="text-align:left">公民产出（此区域中的每位公民）：<br><span>&#8226;</span> +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力</p>
+                      <p class="civ-ability-desc" style="text-align:left">将任意数额的 <img src="/images/ICON_RESOURCE_OIL.webp" style="height:1em"/> 石油自动转换为 <img src="/images/ICON_POWER.webp" style="height:1em"/> 电力，每回合可为周围6个单元格内的城市提供其所需电力：<br><span>&#8226;</span> 1点 <img src="/images/ICON_RESOURCE_OIL.webp" style="height:1em"/> 石油   4点 <img src="/images/ICON_POWER.webp" style="height:1em"/> 电力<br><span>&#8226;</span> 会向大气层排放中量二氧化碳<br>其 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力加成延伸到6单元格内的所有市中心（前提是其尚未从其他的“发电厂”建筑获得加成）。</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">核电站
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Nuclear Power Plant.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+8 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力</p>
+                      <p class="civ-ability-desc" style="text-align:left">+6 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科技值</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 公民槽位</p>
+                      <p class="civ-ability-desc" style="text-align:left">每回合1 <img src="/images/ICON_GREATENGINEER.webp" style="height:1em"/> 大工程师点数</p>
+                      <p class="civ-ability-desc" style="text-align:left">公民产出（此区域中的每位公民）：<br><span>&#8226;</span> +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力</p>
+                      <p class="civ-ability-desc" style="text-align:left">将任意数额的 <img src="/images/ICON_RESOURCE_URANIUM.webp" style="height:1em"/> 铀自动转换为 <img src="/images/ICON_POWER.webp" style="height:1em"/> 电力，每回合可为周围6个单元格内的城市提供其所需电力：<br><span>&#8226;</span> 1点 <img src="/images/ICON_RESOURCE_URANIUM.webp" style="height:1em"/> 铀   16点 <img src="/images/ICON_POWER.webp" style="height:1em"/> 电力<br><span>&#8226;</span> 会向大气层排放少量二氧化碳<br>建成后发生核事故的概率会随着核电站老化而增加。其 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力和 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科技值加成延伸到6单元格内的所有市中心（前提是其尚未从其他的“发电厂”建筑获得加成。）</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12" id="水上乐园">
+                  <div class="chart">
+                    <h2 class="civ-name">水上乐园</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">摩天轮
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Ferris Wheel.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化值</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> 宜居度</p>
+                      <p class="civ-ability-desc" style="text-align:left">+6 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 旅游业绩。</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">水族馆
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Aquarium.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> 宜居度</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_AMENITIES.webp" style="height:1em"/> 宜居度加成延伸到9个单元格中的每个市中心。此加成1座城市仅能应用1次，因此市中心9个单元格以内相同的此建筑不会再额外提供加成。此城中的每处海岸资源、海难遗址和礁石单元格+1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科技值。</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">水上运动中心
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Aquatics Center.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> 宜居度</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_POWER.webp" style="height:1em"/> 供电充足时，娱乐区域额外2 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> 宜居度</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_AMENITIES.webp" style="height:1em"/> 宜居度加成延伸到9个单元格中的每个市中心。此加成每座城市仅能应用1次，因此市中心9个单元格以内相同的此建筑不会再额外提供加成。此城中建在海岸单元格之上或周围的每座奇观+6 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 旅游业绩。</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12" id="航空港">
+                  <div class="chart">
+                    <h2 class="civ-name">航空港</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">机库
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Hangar.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力</p>
+                      <p class="civ-ability-desc" style="text-align:left">当前城市训练的空中单位+25%战斗经验值。航空港区域+1空中单位槽位。解锁后每回合+2 <img src="/images/ICON_RESOURCE_ALUMINUM.webp" style="height:1em"/> 铝。</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">机场
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Airport.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+4 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_POWER.webp" style="height:1em"/> 供电充足时，额外2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力</p>
+                      <p class="civ-ability-desc" style="text-align:left">该城市训练的空中单位+50%战斗经验值获取。航空港+2空中单位槽位。紧急部署市政解锁后，可以在带有机场的航空港之间空运陆地单位。解锁后每回合+1 <img src="/images/ICON_RESOURCE_ALUMINUM.webp" style="height:1em"/> 铝、+1 <img src="/images/ICON_RESOURCE_URANIUM.webp" style="height:1em"/> 铀。</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12" id="社区">
+                  <div class="chart">
+                    <h2 class="civ-name">社区</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">食品市场
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Food Market.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+4 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食物</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_POWER.webp" style="height:1em"/> 供电充足时，额外2 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食物</p>
+                      <p class="civ-ability-desc" style="text-align:left">只能在城市中建造一个，即使城市拥有多个社区也同样如此。</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">购物商场
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Shopping Mall.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+10 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> 宜居度</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_POWER.webp" style="height:1em"/> 供电充足时，额外10 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_POWER.webp" style="height:1em"/> 供电充足时，娱乐区域额外1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> 宜居度</p>
+                      <p class="civ-ability-desc" style="text-align:left">+20 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 旅游业绩。只能在城市中建造一个，即使城市拥有多个社区也同样如此。</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12" id="堤坝">
+                  <div class="chart">
+                    <h2 class="civ-name">堤坝</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">水电站坝
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Hydroelectric Dam.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">可再生水源向城市提供+6点 <img src="/images/ICON_POWER.webp" style="height:1em"/> 电力。</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </main>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/plugins/feather.min.js"></script>
+    <script src="/plugins/chart.min.js"></script>
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/bd91c323e3.js"></script>
+    <a class="scroll-up displayNone" href="#top" id="scrollUp" onclick="civClicked(null)" style="position: fixed; z-index: 2147483647;">
+      <span><i class="fa fa-angle-up"></i></span>
+    </a>
+  </body>
+</html>

@@ -1580,7 +1580,7 @@
       <Text>この都市で生産された航空ユニットの経験値+25%。飛行場の航空ユニット格納スロット+1。発見されていれば、毎ターン [ICON_RESOURCE_ALUMINUM] アルミニウム+1を供給する。</Text>
     </Replace>
     <Replace Tag="LOC_BUILDING_AIRPORT_DESCRIPTION" Language="ja_JP">
-      <Text>この都市で生産された航空ユニットの経験値+50%。飛行場の航空ユニット格納スロット+2。早期展開を発明後、空港を持つ飛行場間で陸上ユニットを空輸できるようになる。発見されていれば、毎ターン [ICON_RESOURCE_ALUMINUM ] アルミニウム+1、 [ICON_RESOURCE_URANIUM] ウラン+1を供給する。</Text>
+      <Text>この都市で生産された航空ユニットの経験値+50%。飛行場の航空ユニット格納スロット+2。早期展開を発明後、空港を持つ飛行場間で陸上ユニットを空輸できるようになる。発見されていれば、毎ターン [ICON_RESOURCE_ALUMINUM] アルミニウム+1、 [ICON_RESOURCE_URANIUM] ウラン+1を供給する。</Text>
     </Replace>
     
 		<Replace Tag="LOC_BUILDING_CHANCERY_DESCRIPTION" Language="ja_JP">

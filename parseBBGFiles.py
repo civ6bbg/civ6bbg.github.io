@@ -442,6 +442,59 @@ def get_property_names(db_path, property_type, name_db):
     connection.close()
     return property_dict
 
+def get_buildings_per_district_list(db_path):
+    res = {}
+    connection = sqlite3.connect(db_path)
+
+    crsr = connection.cursor()
+    crsr.execute("""SELECT b.BuildingType, 
+            b.Name, 
+            b.Cost, 
+            b.PrereqDistrict, 
+            ds.Name,
+            b.Description,
+            b.Housing,
+            b.Entertainment,
+            b.Maintenance,
+            b.CitizenSlots,
+            byc.YieldType,
+            byc.YieldChange,
+            bcyc.YieldType,
+	        bcyc.YieldChange,
+         	gpc.Name,
+	        bgpp.PointsPerTurn,
+         	bgw.GreatWorkSlotType,
+	        bgw.NumSlots,
+         	bydc.OldYieldType,
+	        bydc.NewYieldType,
+         	bycbwp.YieldType,
+	        bycbwp.YieldChange,
+         	bxp2.EntertainmentBonusWithPower
+        FROM BUILDINGS b
+        LEFT JOIN Building_YieldChanges byc Using(BuildingType)
+        LEFT JOIN Building_CitizenYieldChanges bcyc Using(BuildingType)
+        LEFT JOIN Building_GreatPersonPoints bgpp Using(BuildingType)
+        LEFT JOIN GreatPersonClasses gpc Using(GreatPersonClassType)
+        LEFT JOIN Building_GreatWorks bgw Using(BuildingType)
+        LEFT JOIN Building_YieldDistrictCopies bydc Using(BuildingType)
+        LEFT JOIN Building_YieldChangesBonusWithPower bycbwp Using(BuildingType)
+        LEFT JOIN Buildings_XP2 bxp2 Using(BuildingType)
+        LEFT JOIN Districts ds On b.PrereqDistrict = ds.DistrictType
+        WHERE b.IsWonder = 0 AND b.InternalOnly = 0
+        Order BY b.COST
+    """)
+    rows = crsr.fetchall()
+    for row in rows:
+        district_name = row[4]
+        building_name = row[1]
+        if building_name == 'LOC_BUILDING_STAR_FORT_NAME':
+            continue
+        if district_name not in res:
+            res[district_name] = {}
+        if building_name not in res[district_name]:
+            res[district_name][building_name] = []
+        res[district_name][building_name].append(row)
+    return res
 
 def get_great_people_list(db_path):
     connection = sqlite3.connect(db_path)

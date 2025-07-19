@@ -1,0 +1,1328 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-Z2ESCT7CR0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-Z2ESCT7CR0');
+    </script>
+    <title>BBG 5.6 Buildings</title>
+    <meta charset="utf-8">
+    <meta contents="IE=edge" httpequiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="/images/civVI.webp" rel="icon" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap" rel="stylesheet">
+    <link href="/css/style.min.css" rel="stylesheet">
+    <link href="/css/preloader.css" rel="stylesheet">
+    <link href="/css/animate.min.css" rel="stylesheet">
+    <link href="/css/header.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="loader">
+        <div class="loader-outter"></div>
+        <div class="loader-inner"></div>
+        <div class="indicator">
+          <svg height="12px" width="16px">
+            <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+            <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="layer"></div>
+    <div class="page-flex">
+      <div class="main-wrapper">
+        <nav class="main-nav--bg">
+          <div class="main-nav">
+            <div class="header">
+              <div class="header-inner">
+                <div class="inner">
+                  <div class="row">
+                    <div class="flex center sidebar-toggle col-xl-1 col-lg-1 col-md-1 col-1">
+                      <button class="transparent-btn" title="Menu" type="button">
+                        <span class="sr-only">Toggle menu</span>
+                        <span aria-hidden="true" class="icon menu-toggle"></span>
+                      </button>
+                    </div>
+                    <div class="flex center col-xl-1 col-lg-1 col-md-1 col-2">
+                      <a href="/index.html" style="align-content: center;">
+                        <img alt="#" src="/images/BBGLogo.webp" style="width:3em; border-radius:10%">
+                      </a>
+                      <div class="mobile-nav"></div>
+                    </div>
+                    <div class="flex col-xl-8 col-lg-8 col-md-8 col-8">
+                      <div class="main-menu">
+                        <nav class="navigation">
+                          <ul class="nav menu">
+                            <li class="">
+                              <a href="/pt_BR/leaders_5.6.html" onclick="civClicked(null)">Leaders</a>
+                            </li>
+                            <li class="">
+                              <a href="/pt_BR/city_states_5.6.html" onclick="civClicked(null)">City States</a>
+                            </li>
+                            <li class="">
+                              <a href="/pt_BR/religion_5.6.html" onclick="civClicked(null)">Religion</a>
+                            </li>
+                            <li class="">
+                              <a href="/pt_BR/governor_5.6.html" onclick="civClicked(null)">Governors</a>
+                            </li>
+                            <li class="">
+                              <a href="/pt_BR/great_people_5.6.html" onclick="civClicked(null)">Great People</a>
+                            </li>
+                            <li class="">
+                              <a href="/pt_BR/natural_wonder_5.6.html" onclick="civClicked(null)">Natural Wonders</a>
+                            </li>
+                            <li class="">
+                              <a href="/pt_BR/world_wonder_5.6.html" onclick="civClicked(null)">World Wonders</a>
+                            </li>
+                            <li class="active">
+                              <a href="/pt_BR/buildings_5.6.html" onclick="civClicked(null)">Buildings</a>
+                            </li>
+                            <li class="">
+                              <a href="/pt_BR/names_5.6.html" onclick="civClicked(null)">Names</a>
+                            </li>
+                            <li class="">
+                              <a href="/pt_BR/misc_5.6.html" onclick="civClicked(null)">Misc</a>
+                            </li>
+                            <li>
+                              <a>BBG Version<i class="icofont-rounded-down"></i></a>
+                              <ul class="dropdown">
+                                <li>
+                                  <a href="/pt_BR/buildings_base_game.html">Base Game</a>
+                                </li>
+                                <li>
+                                  <a href="/pt_BR/buildings_Beta.html">BBG vBeta</a>
+                                </li>
+                                <li>
+                                  <a href="/pt_BR/buildings_6.4.html">BBG v6.4</a>
+                                </li>
+                                <li>
+                                  <a href="/pt_BR/buildings_6.3.html">BBG v6.3</a>
+                                </li>
+                                <li>
+                                  <a href="/pt_BR/buildings_6.2.html">BBG v6.2</a>
+                                </li>
+                                <li>
+                                  <a href="/pt_BR/buildings_6.1.html">BBG v6.1</a>
+                                </li>
+                                <li>
+                                  <a href="/pt_BR/buildings_6.0.html">BBG v6.0</a>
+                                </li>
+                                <li>
+                                  <a href="/pt_BR/buildings_5.8.html">BBG v5.8</a>
+                                </li>
+                                <li>
+                                  <a href="/pt_BR/buildings_5.7.html">BBG v5.7</a>
+                                </li>
+                                <li>
+                                  <a href="/pt_BR/buildings_5.6.html">BBG v5.6</a>
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="">
+                              <a href="https://ko-fi.com/calcalciffer" target="_blank">Donate!</a>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+                    <div class="flex center col-xl-2 col-lg-2 col-md-2 col-1">
+                      <div class="flex row justify-content-around">
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-4">
+                          <div class="main-menu">
+                            <nav class="navigation">
+                              <ul class="nav menu">
+                                <li><i class="fa fa-language lang-icon"></i>
+                                  <ul class="dropdown" style="width:80px">
+                                    <li>
+                                      <a href="/en_US/buildings_5.6.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/us.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/fr_FR/buildings_5.6.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/fr.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/ru_RU/buildings_5.6.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/ru.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/de_DE/buildings_5.6.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/de.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/zh_Hans_CN/buildings_5.6.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/cn.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/ko_KR/buildings_5.6.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/kr.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </nav>
+                          </div>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-4">
+                          <div class="base-game-switcher-wrapper">
+                            <button class="base-game-switcher gray-circle-btn" title="Show Base Game" type="button"><i aria-hidden="true" class="enable-icon" data-feather="toggle-left"></i><i aria-hidden="true" class="disable-icon" data-feather="toggle-right"></i></button>
+                          </div>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-4">
+                          <div class="theme-switcher-wrapper">
+                            <button class="theme-switcher gray-circle-btn" title="Switch theme" type="button">
+                              <span class="sr-only">Switch theme</span><i aria-hidden="true" class="sun-icon" data-feather="sun"></i><i aria-hidden="true" class="moon-icon" data-feather="moon"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="">
+          <div class="fixed left-0 right-auto h-screen w-[253px] bg-white border-r border-neutral-300 overflow-scroll" style="z-index: 5;">
+            <aside class="sidebar">
+              <div class="sidebar-start">
+                <div class="sidebar-body">
+                  <ul class="sidebar-body-menu">
+                    <li>
+                      <a href="#Centro da Cidade" onclick="civClicked(&quot;Centro da Cidade&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/City Center.webp">
+                        </span>
+                        <p>Centro da Cidade</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Acampamento" onclick="civClicked(&quot;Acampamento&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Encampment.webp">
+                        </span>
+                        <p>Acampamento</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Local Sagrado" onclick="civClicked(&quot;Local Sagrado&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Holy Site.webp">
+                        </span>
+                        <p>Local Sagrado</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Campus" onclick="civClicked(&quot;Campus&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Campus.webp">
+                        </span>
+                        <p>Campus</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Complexo de Entretenimento" onclick="civClicked(&quot;Complexo de Entretenimento&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Entertainment Complex.webp">
+                        </span>
+                        <p>Complexo de Entretenimento</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Porto" onclick="civClicked(&quot;Porto&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Harbor.webp">
+                        </span>
+                        <p>Porto</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Centro Comercial" onclick="civClicked(&quot;Centro Comercial&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Commercial Hub.webp">
+                        </span>
+                        <p>Centro Comercial</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Teatro" onclick="civClicked(&quot;Teatro&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Theater Square.webp">
+                        </span>
+                        <p>Teatro</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Edifício Administrativo" onclick="civClicked(&quot;Edifício Administrativo&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Government Plaza.webp">
+                        </span>
+                        <p>Edifício Administrativo</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Área de Preservação" onclick="civClicked(&quot;Área de Preservação&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Preserve.webp">
+                        </span>
+                        <p>Área de Preservação</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Área Diplomática" onclick="civClicked(&quot;Área Diplomática&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Diplomatic Quarter.webp">
+                        </span>
+                        <p>Área Diplomática</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Zona Industrial" onclick="civClicked(&quot;Zona Industrial&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Industrial Zone.webp">
+                        </span>
+                        <p>Zona Industrial</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Parque Aquático" onclick="civClicked(&quot;Parque Aquático&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Water Park.webp">
+                        </span>
+                        <p>Parque Aquático</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Aeródromo" onclick="civClicked(&quot;Aeródromo&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Aerodrome.webp">
+                        </span>
+                        <p>Aeródromo</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Bairro Residencial" onclick="civClicked(&quot;Bairro Residencial&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Neighborhood.webp">
+                        </span>
+                        <p>Bairro Residencial</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Represa" onclick="civClicked(&quot;Represa&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Dam.webp">
+                        </span>
+                        <p>Represa</p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </aside>
+          </div>
+          <div class="leaders-data min-w-full main-pl">
+            <main class="main users chart-page">
+              <div class="container">
+                <div class="col-lg-12" id="Centro da Cidade">
+                  <div class="chart">
+                    <h2 class="civ-name">Centro da Cidade</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Palácio
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Palace.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura</p>
+                      <p class="civ-ability-desc" style="text-align:left">+5 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Ouro</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Ciência</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitações</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> Serviços</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 espaço para grandes obras (pode ser usado para qualquer tipo)</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Monumento
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Monument.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura</p>
+                      <p class="civ-ability-desc" style="text-align:left">Concede +1 de lealdade por turno nesta cidade. Se a cidade já tem o máximo de lealdade, também concede um adicional de +1 de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> cultura.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Celeiro
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Granary.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Alimento</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitações</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Moinho de Água
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Water Mill.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Alimento</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção</p>
+                      <p class="civ-ability-desc" style="text-align:left">Fazendas ganham +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> de Produção. Se a cidade estiver adjacente a um rio.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Barreira contra enchentes
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Flood Barrier.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Protege os painéis de Planície Costeira desta cidade contra inundações. Custo de construção inicial e de manutenção por turno são variáveis de acordo com o número de Planícies Costeiras nesta cidade e com o atual nível do mar. Se for construída após alguns painéis de uma cidade terem sido inundados, esses painéis podem ser completamente reformados. Contudo, painéis submersos nunca são recuperáveis.<br><br>Deve ser construída em uma cidade com um ou mais painéis de Planície Costeira. Não será pilhada se a cidade for capturada.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Palgum
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Palgum.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitações</p>
+                      <p class="civ-ability-desc" style="text-align:left">Uma construção única da Babilonia. +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> de habitação e +2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> de produção. Todas as fazendas ganham +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> de produção. os paineis melhorados de agua doce, exceto fazendas, ganham +1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> de comida. A cidade deve estar adjacente a um rio.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Muralha Antiga
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Ancient Walls.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Concede Muralhas ao redor do centro da cidade e distrito de Acampamento. Muralhas permitem ataques <img src="/images/ICON_RANGED.webp" style="height:1em"/> a distância a partir do centro da cidade e distrito de Acampamento, e deve ser derrotada antes que uma cidade possa ser atacada. Concede +1 de <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turismo após avançar para o cívico Conservacionismo.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Tsikhe
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Tsikhe.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura</p>
+                      <p class="civ-ability-desc" style="text-align:left">+4 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fé</p>
+                      <p class="civ-ability-desc" style="text-align:left">Um edifício exclusivo da Geórgia que substitui e é mais forte do que as Muralhas Antigas. +4 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fé e +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura. Fornece +1 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> de Turismo após avançar para o Cívico de Conservação. +3 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fé e +100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo quando estiver numa <img src="/images/ICON_GLORY_GOLDEN_AGE.webp" style="height:1em"/> Idade de Ouro ou <img src="/images/ICON_GLORY_SUPER_GOLDEN_AGE.webp" style="height:1em"/> Idade Heróica.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Muralha Medieval
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Medieval Walls.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Aumenta a força de suas defesas externas. Concede +2 de <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turismo após avançar para o cívico Conservacionismo. Esta cidade não é afetada pelos aríetes.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Esgoto
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Sewer.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitações</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> Serviços</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12" id="Acampamento">
+                  <div class="chart">
+                    <h2 class="civ-name">Acampamento</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Ordu
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Ordu.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitações</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 espaço para <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> cidadãos.</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 ponto de <img src="/images/ICON_GREATGENERAL.webp" style="height:1em"/> Grande General por turno.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Edificação exclusiva da Mongólia. Dá uma habilidade que concede +1 de <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> movimento às cavalarias pesada e leve treinadas nesta cidade. +25% de experiência de combate para todas as unidades de cavalaria e de cerco treinadas nesta cidade.<br>Estoques de recurso estratégico aumentados em +10 (na velocidade padrão).<br><br>Não pode ser construída em um distrito de Acampamento que já tenha uma Caserna.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Caserna
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Barracks.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitações</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 espaço para <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> cidadãos.</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 ponto de <img src="/images/ICON_GREATGENERAL.webp" style="height:1em"/> Grande General por turno.</p>
+                      <p class="civ-ability-desc" style="text-align:left">+25% de experiência de combate para todas as unidades terrestres corpo a corpo e a distância treinadas nesta cidade.<br>Estoques de recurso estratégico aumentados em +10 (na velocidade padrão).<br><br>Não pode ser construída em um distrito de Acampamento que já tenha um Estábulo.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Academia dos Basilikoi Paides
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Basilikoi Paides.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitações</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 espaço para <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> cidadãos.</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 ponto de <img src="/images/ICON_GREATGENERAL.webp" style="height:1em"/> Grande General por turno.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construção única da Macedônia. 25% de experiência para todas as unidades terrestres corpo-a-corpo, à distância, e Hetaroi treinados nesta cidade.<br><br> Estoque de recursos estratégicos aumentam em +10 (na velocidade padrão).<br><br> Não pode ser construído em um distrito de Acampamento que contenha um estábulo. </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Estábulo
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Stable.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitações</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 espaço para <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> cidadãos.</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 ponto de <img src="/images/ICON_GREATGENERAL.webp" style="height:1em"/> Grande General por turno.</p>
+                      <p class="civ-ability-desc" style="text-align:left">+25% de experiência de combate para todas as unidades de cavalaria e de cerco treinadas nesta cidade.<br>Estoques de recurso estratégico aumentados em +10 (na velocidade padrão).<br><br>Não pode ser construída em um distrito de Acampamento que já tenha uma Caserna.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Arsenal
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Armory.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 espaço para <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> cidadãos.</p>
+                      <p class="civ-ability-desc" style="text-align:left">2 pontos de <img src="/images/ICON_GREATGENERAL.webp" style="height:1em"/> Grande General por turno.</p>
+                      <p class="civ-ability-desc" style="text-align:left">+25% de experiência de combate para todas as unidades terrestres treinadas nesta cidade.<br>Estoque máximo de recurso estratégico aumentados em +10 (na velocidade padrão).<br>+1 de <img src="/images/ICON_RESOURCE_NITER.webp" style="height:1em"/> nitro por turno, uma vez descoberto.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Academia Militar
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Military Academy.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+4 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitações</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 espaço para <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> cidadãos.</p>
+                      <p class="civ-ability-desc" style="text-align:left">2 pontos de <img src="/images/ICON_GREATGENERAL.webp" style="height:1em"/> Grande General por turno.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Produção de cidadãos (por cidadão neste distrito):<br><span>&#8226;</span> +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção</p>
+                      <p class="civ-ability-desc" style="text-align:left">+25% de experiência de combate para todas as unidades terrestres treinadas nesta cidade.<br>Estoques de recurso estratégico aumentados em +10 (na velocidade padrão).<br>Permite o treinamento direto de Corporações e Exércitos. Custo de treinamento de Corporações e Exércitos reduzido em 25%. +2 de <img src="/images/ICON_RESOURCE_OIL.webp" style="height:1em"/> petróleo, uma vez descoberto.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12" id="Local Sagrado">
+                  <div class="chart">
+                    <h2 class="civ-name">Local Sagrado</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Santuário
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Shrine.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fé</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 espaço para <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> cidadãos.</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 ponto de <img src="/images/ICON_GREATPROPHET.webp" style="height:1em"/> Grande Profeta por turno.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Permite comprar Missionarios e, dependendo da religiao, Guerreiros Monges. Essas unidades somente podem ser compradas com <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fé.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Templo
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Temple.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+4 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fé</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 espaço para <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> cidadãos.</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 ponto de <img src="/images/ICON_GREATPROPHET.webp" style="height:1em"/> Grande Profeta por turno.</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 espaço para <img src="/images/ICON_GREATWORK_RELIC.webp" style="height:1em"/> relíquias.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Permite a compra de Apostolos, Gurus e Inquisitores. Essas unidades somente podem ser compradas com <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fé.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Igreja de Madeira
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Stave Church.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+4 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fé</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 espaço para <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> cidadãos.</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 ponto de <img src="/images/ICON_GREATPROPHET.webp" style="height:1em"/> Grande Profeta por turno.</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 espaço para <img src="/images/ICON_GREATWORK_RELIC.webp" style="height:1em"/> relíquias.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Uma edificação única da Noruega que substitui o Templo. +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> para cada painel de recurso nesta cidade e +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> de Produção para cada painel de recurso costeiro nesta cidade. Necessário para se comprar Apóstolos e Inquisidores com <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fé.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Prasat
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Prasat.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+6 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fé</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 espaço para <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> cidadãos.</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 ponto de <img src="/images/ICON_GREATPROPHET.webp" style="height:1em"/> Grande Profeta por turno.</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 espaço para <img src="/images/ICON_GREATWORK_RELIC.webp" style="height:1em"/> relíquias.</p>
+                      <p class="civ-ability-desc" style="text-align:left">+6 <img src="/images/ICON_FAITH.webp" style="height:1em"/> de fé. Uma construção única do Khmer. Substitui o templo,Necessário para comprar Apóstolos e Inquisidores com <img src="/images/ICON_FAITH.webp" style="height:1em"/> fé. </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Catedral
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Cathedral.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fé</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 espaço para <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> cidadãos.</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 espaço para grandes obras (pode ser usado para qualquer tipo)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Produção de cidadãos (por cidadão neste distrito):<br><span>&#8226;</span> +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fé</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Gurdwara
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Gurdwara.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fé</p>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Alimento</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitações</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 espaço para <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> cidadãos.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Produção de cidadãos (por cidadão neste distrito):<br><span>&#8226;</span> +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fé</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Casa de Reunião
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Meeting House.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fé</p>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 espaço para <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> cidadãos.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Produção de cidadãos (por cidadão neste distrito):<br><span>&#8226;</span> +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fé</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Mesquita
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Mosque.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fé</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 espaço para <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> cidadãos.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Produção de cidadãos (por cidadão neste distrito):<br><span>&#8226;</span> +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fé</p>
+                      <p class="civ-ability-desc" style="text-align:left">Ganhe um missionario gratuito, seguidor da religiao majoritaria da cidade no qual o Mosque e construido. Missionarios e Apostolos ganham +2 cargas.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Pagode
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Pagoda.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fé</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 espaço para <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> cidadãos.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Produção de cidadãos (por cidadão neste distrito):<br><span>&#8226;</span> +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fé</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_INFLUENCEPERTURN.webp" style="height:1em"/> ponto influência por turno).</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Sinagoga
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Synagogue.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+9 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fé</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 espaço para <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> cidadãos.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Produção de cidadãos (por cidadão neste distrito):<br><span>&#8226;</span> +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fé</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Wat
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Wat.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fé</p>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Ciência</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 espaço para <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> cidadãos.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Produção de cidadãos (por cidadão neste distrito):<br><span>&#8226;</span> +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fé</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Estupa
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Stupa.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fé</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> Serviços</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 espaço para <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> cidadãos.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Produção de cidadãos (por cidadão neste distrito):<br><span>&#8226;</span> +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fé</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Dar-e Mehr
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Dar-e Mehr.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura</p>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fé</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 espaço para <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> cidadãos.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Produção de cidadãos (por cidadão neste distrito):<br><span>&#8226;</span> +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fé</p>
+                      <p class="civ-ability-desc" style="text-align:left">Não pode ser danificado por desastres naturais.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12" id="Campus">
+                  <div class="chart">
+                    <h2 class="civ-name">Campus</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Biblioteca
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Library.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Ciência</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 espaço para <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> cidadãos.</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 ponto de <img src="/images/ICON_GREATSCIENTIST.webp" style="height:1em"/> Grande Cientista por turno.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Universidade
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/University.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+4 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Ciência</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitações</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 espaço para <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> cidadãos.</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 ponto de <img src="/images/ICON_GREATSCIENTIST.webp" style="height:1em"/> Grande Cientista por turno.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Madraçal
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Madrasa.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+5 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Ciência</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitações</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 espaço para <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> cidadãos.</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 ponto de <img src="/images/ICON_GREATSCIENTIST.webp" style="height:1em"/> Grande Cientista por turno.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Bônus de <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fé igual ao bônus de adjacência de <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Ciência do seu distrito.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Uma edificação exclusiva da Arábia. Bônus de <img src="/images/ICON_FAITH.webp" style="height:1em"/> fé igual ao bônus de adjacência do distrito de Campus.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Escola de Navegação
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Navigation School.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+4 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Ciência</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitações</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 espaço para <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> cidadãos.</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 ponto de <img src="/images/ICON_GREATADMIRAL.webp" style="height:1em"/> Grande Almirante por turno.</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 ponto de <img src="/images/ICON_GREATSCIENTIST.webp" style="height:1em"/> Grande Cientista por turno.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Edificação exclusiva de Portugal. +25% de <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produção para unidades navais nesta cidade. +1 de <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> ciência para cada dois painéis de costa ou de lago nesta cidade. +1 ponto de <img src="/images/ICON_GREATADMIRAL.webp" style="height:1em"/> Grande Almirante e +1 ponto de <img src="/images/ICON_GREATSCIENTIST.webp" style="height:1em"/> Grande Cientista por turno.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Laboratório de Pesquisa
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Research Lab.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Ciência</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 espaço para <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> cidadãos.</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 ponto de <img src="/images/ICON_GREATSCIENTIST.webp" style="height:1em"/> Grande Cientista por turno.</p>
+                      <p class="civ-ability-desc" style="text-align:left">5 de <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Ciência adicional quando <img src="/images/ICON_POWER.webp" style="height:1em"/> energizado</p>
+                      <p class="civ-ability-desc" style="text-align:left">Produção de cidadãos (por cidadão neste distrito):<br><span>&#8226;</span> +1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Ciência</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12" id="Complexo de Entretenimento">
+                  <div class="chart">
+                    <h2 class="civ-name">Complexo de Entretenimento</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Tlachtli
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Tlachtli.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> Serviços</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 ponto de <img src="/images/ICON_GREATGENERAL.webp" style="height:1em"/> Grande General por turno.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Uma construção única dos Astecas. Concede +1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> Serviços e +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura para cada centro das cidades em 6 painéis, esse bônus se aplica uma vez para cada cidades e múltiplas cópias do mesmo distrito em 6 painéis não se aplicam esse bônus adicional.<br> +1 <img src="/images/ICON_GREATGENERAL.webp" style="height:1em"/> ponto de Grande General por turno e + 3 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> de Turismo.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Arena
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Arena.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> Serviços</p>
+                      <p class="civ-ability-desc" style="text-align:left">Fornece +3 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Zoológico
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Zoo.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> Serviços</p>
+                      <p class="civ-ability-desc" style="text-align:left">Bônus de <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> serviço é estendido para cada centro da cidade dentro de 6 painéis de distância. Este bônus é aplicado uma vez em uma cidade, e várias cópias desta edificação dentro de 6 painéis de distância do centro de uma cidade não oferecem bônus adicional. +1 de <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> ciência para cada painel de floresta tropical e pântano nesta cidade.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Banho termal
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Thermal Bath.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> Serviços</p>
+                      <p class="civ-ability-desc" style="text-align:left">Uma construção exclusiva da Hungria. +2 de <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> Serviços e +2 de <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção se estende para cada Centro da cidade dentro de 6 painéis de distância. Estes bônus são aplicados uma vez em uma cidade, e várias cópias desta edificação dentro de 6 painéis de distância do Centro da cidade não oferecem bônus adicionais.<br><br>Esta cidade recebe +3 de <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo e +2 adicionais de <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> Serviços se tiver pelo menos uma Fissura Geotérmica nas fronteiras desta cidade.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Estádio
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Stadium.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> Serviços</p>
+                      <p class="civ-ability-desc" style="text-align:left">2 de <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> serviços do entretenimento adicional quando <img src="/images/ICON_POWER.webp" style="height:1em"/> energizado</p>
+                      <p class="civ-ability-desc" style="text-align:left">Bônus <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> de serviços estendem-se a cada centro de cidade num raio de 6 painéis. Este bônus aplica-se uma vez a uma cidade, e múltiplas cópias deste edifício num raio de 6 painéis de um centro de cidade não fornecem bônus adicionais. +6 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo se a população da cidade <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> for 10 ou superior e +15 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo se a população da cidade <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> for 20 ou superior.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12" id="Porto">
+                  <div class="chart">
+                    <h2 class="civ-name">Porto</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Farol
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Lighthouse.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitações</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 espaço para <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> cidadãos.</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 ponto de <img src="/images/ICON_GREATADMIRAL.webp" style="height:1em"/> Grande Almirante por turno.</p>
+                      <p class="civ-ability-desc" style="text-align:left">+25% de experiência de combate para todas as unidades navais treinadas nesta cidade. +1 de <img src="/images/ICON_FOOD.webp" style="height:1em"/> alimento em todos os painéis na costa para esta cidade. +2 de <img src="/images/ICON_HOUSING.webp" style="height:1em"/> habitação se esta cidade for adjacente à costa. +1 de capacidade de <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> rota comercial se esta cidade ainda não tiver uma edificação Mercado.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Estaleiro
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Shipyard.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Alimento</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 espaço para <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> cidadãos.</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 ponto de <img src="/images/ICON_GREATADMIRAL.webp" style="height:1em"/> Grande Almirante por turno.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Bônus de <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção igual ao bônus de adjacência de <img src="/images/ICON_GOLD.webp" style="height:1em"/> Ouro do seu distrito.</p>
+                      <p class="civ-ability-desc" style="text-align:left">25% de Experiência de Combate para todas as unidades navais treinadas nesta cidade. Bônus de <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção igual a adjacência bônus do distrito de Porto.+1 de <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção para paíneis não trabalhados em Costas ou Lagos nesta cidade.+1 de <img src="/images/ICON_RESOURCE_COAL.webp" style="height:1em"/> Carvão por turno.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Porto Marítimo
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Seaport.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Alimento</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Ouro</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitações</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 espaço para <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> cidadãos.</p>
+                      <p class="civ-ability-desc" style="text-align:left">3 pontos de <img src="/images/ICON_GREATADMIRAL.webp" style="height:1em"/> Grande Almirante por turno.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Produção de cidadãos (por cidadão neste distrito):<br><span>&#8226;</span> +1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Alimento</p>
+                      <p class="civ-ability-desc" style="text-align:left">+25% de experiência de combate para todas as unidades navais treinadas nessa cidade. Permite o treinamento direto de Frotas e Armadas. Custo de treinamento de Frotas e Armadas reduzido em 25%. +2 de <img src="/images/ICON_GOLD.webp" style="height:1em"/> Ouro em todos os painéis costeiros dessa cidade.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12" id="Centro Comercial">
+                  <div class="chart">
+                    <h2 class="civ-name">Centro Comercial</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Mercado
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Market.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Ouro</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 espaço para <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> cidadãos.</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 ponto de <img src="/images/ICON_GREATMERCHANT.webp" style="height:1em"/> Grande Mercador por turno.</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 de capacidade de <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> rota comercial se esta cidade ainda não tiver um Farol.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Sukiennice
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Sukiennice.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Ouro</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 espaço para <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> cidadãos.</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 ponto de <img src="/images/ICON_GREATMERCHANT.webp" style="height:1em"/> Grande Mercador por turno.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Uma construção exclusiva da Polônia. <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> Rotas comerciais internacionais desta cidade recebem +2 de <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produção; <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> rotas comerciais domésticas recebem +4 de <img src="/images/ICON_GOLD.webp" style="height:1em"/> ouro. +1 de capacidade de <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> rota comercial se esta cidade ainda não tiver um Farol.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Grande Bazar
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Grand Bazaar.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+6 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Ouro</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 espaço para <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> cidadãos.</p>
+                      <p class="civ-ability-desc" style="text-align:left">2 pontos de <img src="/images/ICON_GREATMERCHANT.webp" style="height:1em"/> Grande Mercador por turno.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Um edifício exclusivo dos otomanos. Acumula 1 recurso estratégico extra por cada tipo diferente de recurso estratégico que esta cidade tenha melhorado. Recebe 1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> de serviço por cada recurso de Luxo que esta cidade tenha melhorado. Concede um Título de Governador <img src="/images/ICON_GOVERNOR.webp" style="height:1em"/> quando construída pela primeira vez.<br><br>+1 <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> Capacidade de rotas comerciais.<br>+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Ouro por cada <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> rotas comerciais desta cidade.<br>+1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Ouro por cada <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> rotas comerciais para esta cidade.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Banco
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Bank.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+6 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Ouro</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 espaço para <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> cidadãos.</p>
+                      <p class="civ-ability-desc" style="text-align:left">2 pontos de <img src="/images/ICON_GREATMERCHANT.webp" style="height:1em"/> Grande Mercador por turno.</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> de Ouro para cada <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> rota comercial dessa cidade. <br>+1 de Ouro para cada <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> rota comercial para essa cidade. </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Bolsa de Valores
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Stock Exchange.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+8 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Ouro</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 espaço para <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> cidadãos.</p>
+                      <p class="civ-ability-desc" style="text-align:left">3 pontos de <img src="/images/ICON_GREATMERCHANT.webp" style="height:1em"/> Grande Mercador por turno.</p>
+                      <p class="civ-ability-desc" style="text-align:left">12 de <img src="/images/ICON_GOLD.webp" style="height:1em"/> Ouro adicional quando <img src="/images/ICON_POWER.webp" style="height:1em"/> energizado</p>
+                      <p class="civ-ability-desc" style="text-align:left">Produção de cidadãos (por cidadão neste distrito):<br><span>&#8226;</span> +2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Ouro</p>
+                      <p class="civ-ability-desc" style="text-align:left">+4 <img src="/images/ICON_GOLD.webp" style="height:1em"/> de Ouro para cada <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> rota comercial dessa cidade. <br>+2 de Ouro para cada <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> rota comercial para essa cidade.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12" id="Teatro">
+                  <div class="chart">
+                    <h2 class="civ-name">Teatro</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Anfiteatro
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Amphitheater.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 espaço para <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> cidadãos.</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 ponto de <img src="/images/ICON_GREATWRITER.webp" style="height:1em"/> Grande Escritor por turno.</p>
+                      <p class="civ-ability-desc" style="text-align:left">2 espaços de <img src="/images/ICON_GREATWORK_WRITING.webp" style="height:1em"/> grande obras de Escrita</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Marae
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Marae.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">1 espaço para <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> cidadãos.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Uma construção exclusiva dos Maori. +1 de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura e de <img src="/images/ICON_FAITH.webp" style="height:1em"/> fé para todos os painéis desta cidade com uma característica aceitável ou maravilha da natureza. Após o Voo ser pesquisado, recebe +1 de <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turismo para todas os painéis desta cidade com uma característica ou maravilha da natureza. Não tem custo de manutenção. Não tem espaços de Grandes Obras.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Museu de Arte
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Art Museum.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 espaço para <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> cidadãos.</p>
+                      <p class="civ-ability-desc" style="text-align:left">2 pontos de <img src="/images/ICON_GREATARTIST.webp" style="height:1em"/> Grande Artista por turno.</p>
+                      <p class="civ-ability-desc" style="text-align:left">3 espaços de <img src="/images/ICON_GREATWORK_LANDSCAPE.webp" style="height:1em"/> grande obras de Arte</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 ponto de <img src="/images/ICON_GREATWRITER.webp" style="height:1em"/> Grande Escritor por turno.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Contém <img src="/images/ICON_GREATWORK_LANDSCAPE.webp" style="height:1em"/> grandes obras de Arte. Não pode ser construído em um distrito de Teatro que já tenha um Museu de Arqueologia.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Museu Arqueológico
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Archaeological Museum.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 espaço para <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> cidadãos.</p>
+                      <p class="civ-ability-desc" style="text-align:left">2 pontos de <img src="/images/ICON_GREATARTIST.webp" style="height:1em"/> Grande Artista por turno.</p>
+                      <p class="civ-ability-desc" style="text-align:left">3 espaços para <img src="/images/ICON_GREATWORK_ARTIFACT.webp" style="height:1em"/> artefatos.</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 ponto de <img src="/images/ICON_GREATWRITER.webp" style="height:1em"/> Grande Escritor por turno.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Contém <img src="/images/ICON_GREATWORK_ARTIFACT.webp" style="height:1em"/> artefatos. Não pode ser construído em um distrito de Teatro que já tenha um Museu de Arte.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Centro de Transmissão
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Broadcast Center.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 espaço para <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> cidadãos.</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 ponto de <img src="/images/ICON_GREATARTIST.webp" style="height:1em"/> Grande Artista por turno.</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 espaço de <img src="/images/ICON_GREATWORK_MUSIC.webp" style="height:1em"/> grande obra de Música</p>
+                      <p class="civ-ability-desc" style="text-align:left">4 de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura adicional quando <img src="/images/ICON_POWER.webp" style="height:1em"/> energizado</p>
+                      <p class="civ-ability-desc" style="text-align:left">Produção de cidadãos (por cidadão neste distrito):<br><span>&#8226;</span> +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura</p>
+                      <p class="civ-ability-desc" style="text-align:left">2 pontos de <img src="/images/ICON_GREATMUSICIAN.webp" style="height:1em"/> Grande Músico por turno.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Estúdio de cinema
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Film Studio.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 espaço para <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> cidadãos.</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 ponto de <img src="/images/ICON_GREATARTIST.webp" style="height:1em"/> Grande Artista por turno.</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 espaço de <img src="/images/ICON_GREATWORK_MUSIC.webp" style="height:1em"/> grande obra de Música</p>
+                      <p class="civ-ability-desc" style="text-align:left">4 de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura adicional quando <img src="/images/ICON_POWER.webp" style="height:1em"/> energizado</p>
+                      <p class="civ-ability-desc" style="text-align:left">Produção de cidadãos (por cidadão neste distrito):<br><span>&#8226;</span> +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura</p>
+                      <p class="civ-ability-desc" style="text-align:left">2 pontos de <img src="/images/ICON_GREATMUSICIAN.webp" style="height:1em"/> Grande Músico por turno.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Um edifício único na América. +30% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Pressão turística desta cidade para outras civilizações que chegaram à era moderna.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12" id="Edifício Administrativo">
+                  <div class="chart">
+                    <h2 class="civ-name">Edifício Administrativo</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Câmara de Audiência
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Audience Chamber.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+1 de <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> serviço, +2 de <img src="/images/ICON_FOOD.webp" style="height:1em"/> alimento e +3 de <img src="/images/ICON_HOUSING.webp" style="height:1em"/> de Habitação em cidades com <img src="/images/ICON_GOVERNOR.webp" style="height:1em"/> governadores.<br>-2 de lealdade em cidades sem <img src="/images/ICON_GOVERNOR.webp" style="height:1em"/> governadores.<br>Concede +1 título de <img src="/images/ICON_GOVERNOR.webp" style="height:1em"/> governador.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Santuário Ancenstral
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Ancestral Hall.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Aumento de 50% na <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produção de colonos nesta cidade.<br>Cidades novas recebem um Construtor grátis.<br>Concede +1 título de <img src="/images/ICON_GOVERNOR.webp" style="height:1em"/> governador.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Trono do Senhor da Guerra
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Warlord's Throne.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+25% <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> de Produção para unidades militares terrestres e navais, em todas cidades. Reduz o custo de manutenção em 1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> de Ouro.Aumenta a capacidade de armazenagem de recursos estrategicos em +15 (Na velocidade online) e +2 de cada recurso estrategico revelado. Concede +1 título de <img src="/images/ICON_GOVERNOR.webp" style="height:1em"/> governador.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Biblioteca da Rainha
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Queen's Bibliotheque.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">2 pontos de <img src="/images/ICON_GREATARTIST.webp" style="height:1em"/> Grande Artista por turno.</p>
+                      <p class="civ-ability-desc" style="text-align:left">2 espaços de <img src="/images/ICON_GREATWORK_LANDSCAPE.webp" style="height:1em"/> grande obras de Arte</p>
+                      <p class="civ-ability-desc" style="text-align:left">2 espaços de <img src="/images/ICON_GREATWORK_MUSIC.webp" style="height:1em"/> grande obras de Música</p>
+                      <p class="civ-ability-desc" style="text-align:left">2 espaços de <img src="/images/ICON_GREATWORK_WRITING.webp" style="height:1em"/> grande obras de Escrita</p>
+                      <p class="civ-ability-desc" style="text-align:left">2 pontos de <img src="/images/ICON_GREATMUSICIAN.webp" style="height:1em"/> Grande Músico por turno.</p>
+                      <p class="civ-ability-desc" style="text-align:left">2 pontos de <img src="/images/ICON_GREATWRITER.webp" style="height:1em"/> Grande Escritor por turno.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construção única da Suécia. Recebe 2 espaços de <img src="/images/ICON_GREATWORK_WRITING.webp" style="height:1em"/> escrita, <img src="/images/ICON_GREATWORK_MUSIC.webp" style="height:1em"/> música e qualquer tipo de <img src="/images/ICON_GREATWORK_LANDSCAPE.webp" style="height:1em"/> arte. Esta construção não substitui outras construções do Edifício Administrativo. <br> Ganha +1 <img src="/images/ICON_GOVERNOR.webp" style="height:1em"/> Título de Governado.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Ministério do Exterior
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Foreign Ministry.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+3 de <img src="/images/ICON_FAVOR.webp" style="height:1em"/> Favor diplomático por turno. Alavancar unidades de Cidades Estado custa metade do <img src="/images/ICON_GOLD.webp" style="height:1em"/> Ouro.<br>Unidades de Cidades Estado gaham +4 de <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Força de Combate se você é o Suzerano (inclui unidades alavancadas).<br>Concede +1 <img src="/images/ICON_GOVERNOR.webp" style="height:1em"/> Título de Governador e +2 emissários.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Agência de Inteligência
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Intelligence Agency.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+50% de <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção para espiões. Todos  espiões operam com chance de sucesso mais alta. Concede +1 <img src="/images/ICON_GOVERNOR.webp" style="height:1em"/> Título de Governador, +2 espaços para espiões e um espião grátis.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Capela do Grande Mestre
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Grand Master's Chapel.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+5 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fé</p>
+                      <p class="civ-ability-desc" style="text-align:left">Garante a habilidade de comprar unidades terrestres com <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fé nas cidades fundadas pelo jogador.<br> Pilhar paíneis trabalhados e distritos concedem um bônus de <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fé.<br> Concede +1 <img src="/images/ICON_GOVERNOR.webp" style="height:1em"/> Título de Governador.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Departamento de Guerra
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/War Department.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Todas as unidades curam até 20 pontos de saúde quando eliminam uma unidade.<br>Concede +1 título de <img src="/images/ICON_GOVERNOR.webp" style="height:1em"/> Governador.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Museu de História Nacional
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/National History Museum.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">4 espaços para grandes obras (pode ser usado para qualquer tipo)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Fornece 4 espaços para qualquer grande obra.<br>Concede +1 título de <img src="/images/ICON_GOVERNOR.webp" style="height:1em"/> Governador.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Real Sociedade
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Royal Society.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Contrutores e Engenheiros Militares ganham a habilidade de usar todas as <img src="/images/ICON_CHARGES.webp" style="height:1em"/> cargas para acelerar a Produção <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> de Projetos de Distritos. Cada <img src="/images/ICON_CHARGES.webp" style="height:1em"/> carga garante 2% da <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção do Projeto. Uma vez por turno.<br> Ganha um <img src="/images/ICON_GOVERNOR.webp" style="height:1em"/> Título de Governador.   </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12" id="Área de Preservação">
+                  <div class="chart">
+                    <h2 class="civ-name">Área de Preservação</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Bosque
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Grove.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Concede +1 de <img src="/images/ICON_FOOD.webp" style="height:1em"/> alimento e +1 de <img src="/images/ICON_FAITH.webp" style="height:1em"/> fé para painéis adjacentes encantadores não melhorados. Aumentado para +2 de <img src="/images/ICON_FOOD.webp" style="height:1em"/> alimento, +2 de <img src="/images/ICON_FAITH.webp" style="height:1em"/> fé e +2 de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> cultura para painéis adjacentes de tirar o fôlego não melhorados.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Santuário
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Sanctuary.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Concede +1 de <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> ciência e +1 de <img src="/images/ICON_GOLD.webp" style="height:1em"/> ouro para painéis adjacentes encantadores não melhorados. Aumentado para +2 de <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> ciência, +2 de <img src="/images/ICON_GOLD.webp" style="height:1em"/> ouro e +2 de <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produção para painéis adjacentes de tirar o fôlego não melhorados.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12" id="Área Diplomática">
+                  <div class="chart">
+                    <h2 class="civ-name">Área Diplomática</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Consulado
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Consulate.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_INFLUENCEPERTURN.webp" style="height:1em"/> pontos de Influência por turno. Espiões inimigos tem uma reduçção de 1 nível quando operando nesta cidade ou em cidades com distrito de Acampamento.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Chancelaria
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Chancery.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+3 Pontos de Influência por turno. Quando essa civilização captura ou mata um espião inimigo, receba 200 de <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Ciência (na velocidade padrão) para cada nível do espião inimigo.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12" id="Zona Industrial">
+                  <div class="chart">
+                    <h2 class="civ-name">Zona Industrial</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Oficina
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Workshop.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+4 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 espaço para <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> cidadãos.</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 ponto de <img src="/images/ICON_GREATENGINEER.webp" style="height:1em"/> Grande Engenheiro por turno.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Fábrica
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Factory.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 espaço para <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> cidadãos.</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 ponto de <img src="/images/ICON_GREATENGINEER.webp" style="height:1em"/> Grande Engenheiro por turno.</p>
+                      <p class="civ-ability-desc" style="text-align:left">3 de <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção adicional quando <img src="/images/ICON_POWER.webp" style="height:1em"/> energizado</p>
+                      <p class="civ-ability-desc" style="text-align:left">Seu bônus de <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produção é estendido para todos os centros de cidades dentro de 6 painéis de distância que não tenham bônus deste tipo de edificação.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Fábrica de Eletrônicos
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Electronics Factory.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 espaço para <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> cidadãos.</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 ponto de <img src="/images/ICON_GREATENGINEER.webp" style="height:1em"/> Grande Engenheiro por turno.</p>
+                      <p class="civ-ability-desc" style="text-align:left">5 de <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção adicional quando <img src="/images/ICON_POWER.webp" style="height:1em"/> energizado</p>
+                      <p class="civ-ability-desc" style="text-align:left">Uma edificação exclusiva do Japão. Oferece +4 de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> cultura para esta cidade após pesquisar a tecnologia Eletricidade. Seu bônus de <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produção é estendido para todos os centros de cidades dentro de 6 painéis que não tenham bônus deste tipo de edificação.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Usina Termoelétrica a Carvão
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Coal Power Plant.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">1 espaço para <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> cidadãos.</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 ponto de <img src="/images/ICON_GREATENGINEER.webp" style="height:1em"/> Grande Engenheiro por turno.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Bônus de <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção igual ao bônus de adjacência de <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção do seu distrito.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Produção de cidadãos (por cidadão neste distrito):<br><span>&#8226;</span> +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção</p>
+                      <p class="civ-ability-desc" style="text-align:left">Converte automaticamente qualquer quantidade de <img src="/images/ICON_RESOURCE_COAL.webp" style="height:1em"/> carvão em <img src="/images/ICON_POWER.webp" style="height:1em"/> energia para cidades que precisem dentro de 6 painéis por turno, a uma taxa de:<br><span>&#8226;</span> 1 de <img src="/images/ICON_RESOURCE_COAL.webp" style="height:1em"/> carvão   4 de <img src="/images/ICON_POWER.webp" style="height:1em"/> energia<br><span>&#8226;</span> CO2 pesado na atmosfera</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Usina Termoelétrica a Petróleo
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Oil Power Plant.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+6 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 espaço para <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> cidadãos.</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 ponto de <img src="/images/ICON_GREATENGINEER.webp" style="height:1em"/> Grande Engenheiro por turno.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Produção de cidadãos (por cidadão neste distrito):<br><span>&#8226;</span> +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção</p>
+                      <p class="civ-ability-desc" style="text-align:left">Converte automaticamente qualquer quantidade de <img src="/images/ICON_RESOURCE_OIL.webp" style="height:1em"/> petróleo em <img src="/images/ICON_POWER.webp" style="height:1em"/> energia para cidades dentro de 6 painéis por turno, a uma taxa de:<br><span>&#8226;</span> 1 de <img src="/images/ICON_RESOURCE_OIL.webp" style="height:1em"/> petróleo   4 de <img src="/images/ICON_POWER.webp" style="height:1em"/> energia<br><span>&#8226;</span> CO2 moderado na atmosfera<br>Seu bônus de <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produção é estendido para todos os centros de cidades dentro de 6 painéis de distância que não tenham bônus de Usina de Energia.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Usina Nuclear
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Nuclear Power Plant.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+8 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção</p>
+                      <p class="civ-ability-desc" style="text-align:left">+6 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Ciência</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 espaço para <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> cidadãos.</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 ponto de <img src="/images/ICON_GREATENGINEER.webp" style="height:1em"/> Grande Engenheiro por turno.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Produção de cidadãos (por cidadão neste distrito):<br><span>&#8226;</span> +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção</p>
+                      <p class="civ-ability-desc" style="text-align:left">Converte automaticamente qualquer quantidade de <img src="/images/ICON_RESOURCE_URANIUM.webp" style="height:1em"/> urânio em <img src="/images/ICON_POWER.webp" style="height:1em"/> energia para cidades dentro de 6 painéis de distância por turno, a uma taxa de:<br><span>&#8226;</span> 1 de <img src="/images/ICON_RESOURCE_URANIUM.webp" style="height:1em"/> urânio   16 de <img src="/images/ICON_POWER.webp" style="height:1em"/> energia<img src="/images/ICON_POWER.webp" style="height:1em"/> Power<br><span>&#8226;</span> Pouquíssimo CO2 na atmosfera<br>Após construída, conforme a Usina Nuclear envelhece, há uma chance maior de ocorrer um acidente nuclear. Seu bônus de <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produção e de <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> ciência é estendido para todos os centros de cidades em até 6 painéis de distância que não tenham bônus de Usina de Energia.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12" id="Parque Aquático">
+                  <div class="chart">
+                    <h2 class="civ-name">Parque Aquático</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Roda Gigante
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Ferris Wheel.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> Serviços</p>
+                      <p class="civ-ability-desc" style="text-align:left">+6 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Aquário
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Aquarium.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> Serviços</p>
+                      <p class="civ-ability-desc" style="text-align:left">Bônus de <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> serviço é estendido para cada centro da cidade dentro de 9 painéis de distância. Este bônus é aplicado uma vez em uma cidade, e várias cópias desta edificação dentro de 9 painéis de distância do centro de uma cidade não oferecem bônus adicional. +1 de <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> ciência para cada painel de recurso litorâneo, naufrágio e recife nesta cidade.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Centro Aquático
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Aquatics Center.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> Serviços</p>
+                      <p class="civ-ability-desc" style="text-align:left">2 de <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> serviços do entretenimento adicional quando <img src="/images/ICON_POWER.webp" style="height:1em"/> energizado</p>
+                      <p class="civ-ability-desc" style="text-align:left">Bônus <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> de serviço estendem-se a cada centro de cidade num raio de 9 painéis. Este bônus aplica-se uma vez a uma cidade, e múltiplas cópias deste edifício num raio de 9 painéis de um centro de cidade não fornecem bônus adicionais. +6 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo para cada Maravilha construída nesta cidade em ou adjacente a um painel de Costa.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12" id="Aeródromo">
+                  <div class="chart">
+                    <h2 class="civ-name">Aeródromo</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Hangar
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Hangar.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção</p>
+                      <p class="civ-ability-desc" style="text-align:left">+25% de experiência de combate para unidades aéreas treinadas nesta cidade. +1 espaço para unidades aéreas no Aeródromo.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Aeroporto
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Airport.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+4 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção</p>
+                      <p class="civ-ability-desc" style="text-align:left">2 de <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção adicional quando <img src="/images/ICON_POWER.webp" style="height:1em"/> energizado</p>
+                      <p class="civ-ability-desc" style="text-align:left">+50% de experiência de combate para unidades aéreas treinadas nesta cidade. +2 de capacidade de guarnição para unidades aéreas no distrito de Aeródromo. Permite a habilidade de transportar unidades entre Aeródromos uma vez pesquisada a cívica Mobilização Rápida. +2 de <img src="/images/ICON_RESOURCE_ALUMINUM.webp" style="height:1em"/> alumínio por turno, uma vez descoberto.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12" id="Bairro Residencial">
+                  <div class="chart">
+                    <h2 class="civ-name">Bairro Residencial</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Mercadão
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Food Market.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+4 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Alimento</p>
+                      <p class="civ-ability-desc" style="text-align:left">2 de <img src="/images/ICON_FOOD.webp" style="height:1em"/> Alimento adicional quando <img src="/images/ICON_POWER.webp" style="height:1em"/> energizado</p>
+                      <p class="civ-ability-desc" style="text-align:left">Só pode ser construído uma vez em uma cidade, mesmo que a cidade tenha vários Bairros Residenciais.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Shopping
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Shopping Mall.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+10 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Ouro</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> Serviços</p>
+                      <p class="civ-ability-desc" style="text-align:left">10 de <img src="/images/ICON_GOLD.webp" style="height:1em"/> Ouro adicional quando <img src="/images/ICON_POWER.webp" style="height:1em"/> energizado</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 de <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> serviço do entretenimento adicional quando <img src="/images/ICON_POWER.webp" style="height:1em"/> energizado</p>
+                      <p class="civ-ability-desc" style="text-align:left">+6 de <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turismo. Apenas uma cópia desta construção pode ser construída por cidade, mesmo se a cidade possuir vários Bairros Residenciais.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12" id="Represa">
+                  <div class="chart">
+                    <h2 class="civ-name">Represa</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <h2 class="civ-name">Represa hidrelétrica
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Hydroelectric Dam.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">Dá à cidade +6 de <img src="/images/ICON_POWER.webp" style="height:1em"/> energia de fontes de água renováveis.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </main>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/plugins/feather.min.js"></script>
+    <script src="/plugins/chart.min.js"></script>
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/bd91c323e3.js"></script>
+    <a class="scroll-up displayNone" href="#top" id="scrollUp" onclick="civClicked(null)" style="position: fixed; z-index: 2147483647;">
+      <span><i class="fa fa-angle-up"></i></span>
+    </a>
+  </body>
+</html>
