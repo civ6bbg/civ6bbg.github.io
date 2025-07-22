@@ -185,6 +185,9 @@ notSupportedIcons = [
     '[ICON_POWERRight]'
 ]
 
+base_game_locs_data = {}
+base_game_units_dict = get_units_dict(f"sqlFiles/baseGame/DebugGameplay.sqlite")
+
 def refactorCivSpecialSyntax(bbg_version, lang, docStr):
     docStr = docStr.replace('[NEWLINE]', '<br>')
 
@@ -377,13 +380,10 @@ def get_unlock_tech_civic_dialog(unlock_tech, unlock_civic, locs_data, en_US_loc
     if unlock_civic:
         return f'{get_loc(locs_data, "LOC_UI_PEDIA_UNLOCKED_BY", en_US_locs_data)} {get_loc(locs_data, civic_to_loc_dict[unlock_civic], en_US_locs_data)} {get_loc(locs_data, "LOC_CIVIC_NAME", en_US_locs_data)}'
 
-base_game_locs_data = {}
-base_game_units_dict = get_units_dict(f"sqlFiles/baseGame/DebugGameplay.sqlite")
-
 def get_leader_html_file(bbg_version, lang):
     en_US_locs_data = get_locs_data(bbg_version, 'en_US')
     locs_data = get_locs_data(bbg_version, lang)
-    if bbg_version == None:
+    if bbg_version == None and lang not in base_game_locs_data:
         base_game_locs_data[lang] = locs_data
 
     doc = dominate.document(title=None, lang=get_html_lang(lang))
@@ -454,6 +454,8 @@ def get_leader_html_file(bbg_version, lang):
 def get_city_state_html_file(bbg_version, lang):
     en_US_locs_data = get_locs_data(bbg_version, 'en_US')
     locs_data = get_locs_data(bbg_version, lang)
+    if bbg_version == None and lang not in base_game_locs_data:
+        base_game_locs_data[lang] = locs_data
 
     doc = dominate.document(title=None, lang=get_html_lang(lang))
     if bbg_version != None:
@@ -496,6 +498,8 @@ def get_city_state_html_file(bbg_version, lang):
 def get_religion_html_file(bbg_version, lang):
     en_US_locs_data = get_locs_data(bbg_version, 'en_US')
     locs_data = get_locs_data(bbg_version, lang)
+    if bbg_version == None and lang not in base_game_locs_data:
+        base_game_locs_data[lang] = locs_data
 
     doc = dominate.document(title=None, lang=get_html_lang(lang))
     if bbg_version != None:
@@ -556,6 +560,8 @@ def get_religion_html_file(bbg_version, lang):
 def get_governor_html_file(bbg_version, lang):
     en_US_locs_data = get_locs_data(bbg_version, 'en_US')
     locs_data = get_locs_data(bbg_version, lang)
+    if bbg_version == None and lang not in base_game_locs_data:
+        base_game_locs_data[lang] = locs_data
 
     doc = dominate.document(title=None, lang=get_html_lang(lang))
     if bbg_version != None:
@@ -617,6 +623,8 @@ def get_governor_html_file(bbg_version, lang):
 def get_natural_wonder_html_file(bbg_version, lang):
     en_US_locs_data = get_locs_data(bbg_version, 'en_US')
     locs_data = get_locs_data(bbg_version, lang)
+    if bbg_version == None and lang not in base_game_locs_data:
+        base_game_locs_data[lang] = locs_data
 
     doc = dominate.document(title=None, lang=get_html_lang(lang))
     if bbg_version != None:
@@ -660,6 +668,8 @@ def get_natural_wonder_html_file(bbg_version, lang):
 def get_world_wonder_html_file(bbg_version, lang):
     en_US_locs_data = get_locs_data(bbg_version, 'en_US')
     locs_data = get_locs_data(bbg_version, lang)
+    if bbg_version == None and lang not in base_game_locs_data:
+        base_game_locs_data[lang] = locs_data
 
     doc = dominate.document(title=None, lang=get_html_lang(lang))
     if bbg_version != None:
@@ -690,16 +700,18 @@ def get_world_wonder_html_file(bbg_version, lang):
                                         with div(cls="chart"):
                                             h2(get_loc(locs_data, era, en_US_locs_data), cls='civ-name')
                                     with div(cls="row"):
-                                        for wonder in world_wonders[era]:
+                                        for wonder_name in world_wonders[era]:
+                                            wonder = world_wonders[era][wonder_name]
                                             with div(cls="col-lg-6 col-md-12"):
                                                 with div(cls="chart"):
-                                                    with h2(get_loc(locs_data, wonder[1], en_US_locs_data), cls='civ-name'):
-                                                        img(src=f'/images/world_wonders/{get_loc(en_US_locs_data, wonder[1], en_US_locs_data)}.webp', style="vertical-align: middle; width:5em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
+                                                    with h2(get_loc(locs_data, wonder[0][1], en_US_locs_data), cls='civ-name'):
+                                                        img(src=f'/images/world_wonders/{get_loc(en_US_locs_data, wonder[0][1], en_US_locs_data)}.webp', style="vertical-align: middle; width:5em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
                                                     br()
-                                                    show_element_with_base_option(wonder[2], lang, locs_data, en_US_locs_data)
-                                                    wonder_cost = int(int(wonder[3]) / 2)
-                                                    with p(f'{get_loc(locs_data, 'LOC_UI_PEDIA_PRODUCTION_COST', en_US_locs_data)} = {wonder_cost}', style="text-align:left", cls='civ-ability-desc'):
-                                                        img(src=f'/images/ICON_PRODUCTION.webp', style="vertical-align: middle", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
+                                                    # show_element_with_base_option(wonder[0][5], lang, locs_data, en_US_locs_data)
+                                                    show_building_yields(wonder, locs_data, en_US_locs_data)
+                                                    # wonder_cost = int(int(wonder[0][2]) / 2)
+                                                    # with p(f'{get_loc(locs_data, 'LOC_UI_PEDIA_PRODUCTION_COST', en_US_locs_data)} = {wonder_cost}', style="text-align:left", cls='civ-ability-desc'):
+                                                    #     img(src=f'/images/ICON_PRODUCTION.webp', style="vertical-align: middle", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
                                                     br()
         add_final_scripts()
         add_scroll_up()
@@ -710,6 +722,8 @@ def get_world_wonder_html_file(bbg_version, lang):
 def get_misc_html_file(bbg_version, lang):
     en_US_locs_data = get_locs_data(bbg_version, 'en_US')
     locs_data = get_locs_data(bbg_version, lang)
+    if bbg_version == None and lang not in base_game_locs_data:
+        base_game_locs_data[lang] = locs_data
 
     doc = dominate.document(title=None, lang=get_html_lang(lang))
     if bbg_version != None:
@@ -808,6 +822,8 @@ def get_misc_html_file(bbg_version, lang):
 def get_names_html_file(bbg_version, lang):
     en_US_locs_data = get_locs_data(bbg_version, 'en_US')
     locs_data = get_locs_data(bbg_version, lang)
+    if bbg_version == None and lang not in base_game_locs_data:
+        base_game_locs_data[lang] = locs_data
 
     doc = dominate.document(title=None, lang=get_html_lang(lang))
     if bbg_version != None:
@@ -896,6 +912,8 @@ def get_names_html_file(bbg_version, lang):
 def get_great_people_html_file(bbg_version, lang):
     en_US_locs_data = get_locs_data(bbg_version, 'en_US')
     locs_data = get_locs_data(bbg_version, lang)
+    if bbg_version == None and lang not in base_game_locs_data:
+        base_game_locs_data[lang] = locs_data
 
     doc = dominate.document(title=None, lang=get_html_lang(lang))
     if bbg_version != None:
@@ -1081,6 +1099,8 @@ def show_building_yields(yields, locs_data, en_US_locs_data):
 def get_buildings_html_file(bbg_version, lang):
     en_US_locs_data = get_locs_data(bbg_version, 'en_US')
     locs_data = get_locs_data(bbg_version, lang)
+    if bbg_version == None and lang not in base_game_locs_data:
+        base_game_locs_data[lang] = locs_data
 
     doc = dominate.document(title=None, lang=get_html_lang(lang))
     if bbg_version != None:

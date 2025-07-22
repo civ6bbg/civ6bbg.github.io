@@ -235,7 +235,46 @@ def get_world_wonders_list(db_path):
     connection = sqlite3.connect(db_path)
 
     crsr = connection.cursor()
-    crsr.execute("SELECT BuildingType,Name,Description,Cost,PrereqTech,PrereqCivic FROM Buildings WHERE IsWonder=1 ORDER BY Name")
+    # crsr.execute("SELECT BuildingType,Name,Description,Cost,PrereqTech,PrereqCivic FROM Buildings WHERE IsWonder=1 ORDER BY Name")
+    crsr.execute('''SELECT
+            b.BuildingType, 
+            b.Name, 
+            b.Cost, 
+            b.PrereqDistrict, 
+            ds.Name,
+            b.Description,
+            b.Housing,
+            b.Entertainment,
+            b.Maintenance,
+            b.CitizenSlots,
+            byc.YieldType,
+            byc.YieldChange,
+            bcyc.YieldType,
+	        bcyc.YieldChange,
+         	gpc.Name,
+	        bgpp.PointsPerTurn,
+         	bgw.GreatWorkSlotType,
+	        bgw.NumSlots,
+         	bydc.OldYieldType,
+	        bydc.NewYieldType,
+         	bycbwp.YieldType,
+	        bycbwp.YieldChange,
+         	bxp2.EntertainmentBonusWithPower,
+            b.PrereqTech,
+            b.PrereqCivic
+        FROM BUILDINGS b
+        LEFT JOIN Building_YieldChanges byc Using(BuildingType)
+        LEFT JOIN Building_CitizenYieldChanges bcyc Using(BuildingType)
+        LEFT JOIN Building_GreatPersonPoints bgpp Using(BuildingType)
+        LEFT JOIN GreatPersonClasses gpc Using(GreatPersonClassType)
+        LEFT JOIN Building_GreatWorks bgw Using(BuildingType)
+        LEFT JOIN Building_YieldDistrictCopies bydc Using(BuildingType)
+        LEFT JOIN Building_YieldChangesBonusWithPower bycbwp Using(BuildingType)
+        LEFT JOIN Buildings_XP2 bxp2 Using(BuildingType)
+        LEFT JOIN Districts ds On b.PrereqDistrict = ds.DistrictType
+        WHERE b.IsWonder = 1
+        Order BY b.Name
+    ''')
     wonder_rows = crsr.fetchall()
     crsr.execute("SELECT TechnologyType, EraType FROM Technologies")
     tech_rows = crsr.fetchall()
@@ -258,17 +297,22 @@ def get_world_wonders_list(db_path):
         "ERA_ATOMIC",
     ]
     era_to_loc = lambda x: f"LOC_{x}_NAME"
-    result = {era_to_loc(era): [] for era in eras}
+    result = {era_to_loc(era): {} for era in eras}
 
     for wonder in wonder_rows:
-        wonder_tech = wonder[4]
-        wonder_civic = wonder[5]
+        wonder_tech = wonder[23]
+        wonder_civic = wonder[24]
+        wonder_tech_civic_era = None
         if wonder_tech is not None:
-            result[era_to_loc(tech_to_era_dict[wonder_tech])].append(wonder)
+            wonder_tech_civic_era = era_to_loc(tech_to_era_dict[wonder_tech])
         elif wonder_civic is not None:
-            result[era_to_loc(civic_to_era_dict[wonder_civic])].append(wonder)
+            wonder_tech_civic_era = era_to_loc(civic_to_era_dict[wonder_civic])
         else:
             print(f"Wonder {wonder[0]} has no tech or civic prerequisites!")
+            continue
+        if wonder[0] not in result[wonder_tech_civic_era]:
+            result[wonder_tech_civic_era][wonder[0]] = []
+        result[wonder_tech_civic_era][wonder[0]].append(wonder)
     connection.close()
     return result
 
