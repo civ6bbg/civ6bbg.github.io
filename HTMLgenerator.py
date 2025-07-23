@@ -707,11 +707,7 @@ def get_world_wonder_html_file(bbg_version, lang):
                                                     with h2(get_loc(locs_data, wonder[0][1], en_US_locs_data), cls='civ-name'):
                                                         img(src=f'/images/world_wonders/{get_loc(en_US_locs_data, wonder[0][1], en_US_locs_data)}.webp', style="vertical-align: middle; width:5em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
                                                     br()
-                                                    # show_element_with_base_option(wonder[0][5], lang, locs_data, en_US_locs_data)
                                                     show_building_yields(wonder, locs_data, en_US_locs_data)
-                                                    # wonder_cost = int(int(wonder[0][2]) / 2)
-                                                    # with p(f'{get_loc(locs_data, 'LOC_UI_PEDIA_PRODUCTION_COST', en_US_locs_data)} = {wonder_cost}', style="text-align:left", cls='civ-ability-desc'):
-                                                    #     img(src=f'/images/ICON_PRODUCTION.webp', style="vertical-align: middle", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
                                                     br()
         add_final_scripts()
         add_scroll_up()
