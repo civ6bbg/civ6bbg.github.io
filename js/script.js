@@ -553,7 +553,7 @@ document.addEventListener('DOMContentLoaded', function () {
           element.scrollIntoView();
         }
       }
-  	});
+    });
   })(jQuery);
 });
 
@@ -604,10 +604,16 @@ function civClicked(civName) {
 
 function newDonateText() {
   var options = [
-    'Love this project? Your support helps keep it alive!',
-    'Enjoy the site? A small donation keeps it running.',
-    'Like what you see? Help me keep the lights on.',
-    'Your support keeps this project going strong.'
+    'Help our civilization thrive—support us with a donation!',
+    'Your gold keeps this project advancing to the next era.',
+    'Like what you see? Help us build wonders with your support.',
+    'Support our empire’s growth—donate today!',
+    'Your contribution is as valuable as a great person!',
+    'Keep our science and culture strong—consider donating.',
+    'Help us expand our borders—support with a donation.',
+    'Your support is the best policy card we could ask for.',
+    'Donations help us avoid a dark age—thank you!',
+    'If you enjoy this project, help us reach a golden age with your donation.',
   ];
   var randOption = Math.floor(Math.random() * options.length);
   document.getElementById('donateText').innerHTML = options[randOption];
