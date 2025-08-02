@@ -614,6 +614,25 @@ function newDonateText() {
     'Your support is the best policy card we could ask for.',
     'Donations help us avoid a dark age—thank you!',
     'If you enjoy this project, help us reach a golden age with your donation.',
+    'Your donation is the boost we need for a Eureka moment!',
+    'Support us like a true ally—send some gold our way!',
+    'Help us unlock a new civic with your support!',
+    'Your generosity is as powerful as a relic!',
+    'Keep our city-states happy—donate today!',
+    'Lets avoid a barbarian invasion—support the project!',
+    'Your donation is a wonder in itself!',
+    'Help us settle new a god city—contribute now!',
+    'Your support is the best trade route we could have!',
+    'Be the great leader this project needs—support us!',
+    'Your gold helps us research new technologies!',
+    'Help us build a legacy—donate to the project!',
+    'Your support is the best tile improvement we could ask for!',
+    'Keep our empire out of an emergency—donate now!',
+    'Your donation is as rare as a natural wonder!',
+    'Help us reach a new era—support with a donation!',
+    'Your support is the best alliance bonus!',
+    'Let’s achieve a science victory together—donate today!',
+    'Your generosity is legendary—thank you!'
   ];
   var randOption = Math.floor(Math.random() * options.length);
   document.getElementById('donateText').innerHTML = options[randOption];
