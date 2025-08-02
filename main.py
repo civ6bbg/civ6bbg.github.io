@@ -68,6 +68,7 @@ for l in langs:
 for bbg_ver in bbg_versions:
     print(f'Generating HTML files for BBG version {bbg_ver}')
     for l in langs:
+        print(f'language: {l}')
         generate_leader_html_file(bbg_ver, l)
         generate_city_state_html_file(bbg_ver, l)
         generate_religion_html_file(bbg_ver, l)

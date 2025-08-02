@@ -268,8 +268,6 @@ def add_header(bbg_version, lang, page_type):
                                                     for v in bbg_versions:
                                                         with li():
                                                             a(f"Base Game" if v is None else f"BBG v{v}", href=f"/{lang}/{page_type}_{'base_game' if v is None else v}.html")
-                                            with li(cls=""):
-                                                a('Donate!', href=f"https://ko-fi.com/calcalciffer", target="_blank")
                             with div(cls="flex center col-xl-2 col-lg-2 col-md-2 col-1"):
                                 with div(cls='flex row justify-content-around'):
                                     with div(cls="col-xl-4 col-lg-4 col-md-6 col-4"):
@@ -298,6 +296,7 @@ def add_header(bbg_version, lang, page_type):
                                                 span("Switch theme", cls="sr-only")
                                                 i(cls="sun-icon", data_feather="sun", aria_hidden="true")
                                                 i(cls="moon-icon", data_feather="moon", aria_hidden="true")
+    add_footer()
 
 def add_sidebar(menu_items, menu_icons, images_dir):
     with aside(cls="sidebar"):
@@ -360,11 +359,6 @@ def add_html_header(doc, page_title):
         link(rel='stylesheet', href=f"/css/header.css")
         link(rel='stylesheet', href=f"/css/footer.css")
 
-def add_scroll_up():
-    with a(id="scrollUp", cls="scroll-up displayNone", href="#top", onclick=f'civClicked(null)', style="position: fixed; z-index: 2147483647;"):
-        with span():
-            i(cls='fa fa-angle-up')
-            
 def show_element_with_base_option(element, lang, locs_data, en_US_locs_data, data_append = '', base_game_data_append = '', alignment = 'left'):
     p(get_loc(locs_data, element, en_US_locs_data) + f'{data_append}', style=f"text-align:{alignment}", cls='civ-ability-desc actual-text')
     with div(cls="base-game-text row"):
@@ -381,12 +375,12 @@ def get_unlock_tech_civic_dialog(unlock_tech, unlock_civic, locs_data, en_US_loc
     if unlock_civic:
         return f'{get_loc(locs_data, "LOC_UI_PEDIA_UNLOCKED_BY", en_US_locs_data)} {get_loc(locs_data, civic_to_loc_dict[unlock_civic], en_US_locs_data)} {get_loc(locs_data, "LOC_CIVIC_NAME", en_US_locs_data)}'
 
-def add_footer(bbg_version, lang):
+def add_footer():
     with div(cls="scroll-up footer-popup", id="footer-popup"):
         with div(cls="footer-popup-inner"):
             with div(cls="row"):
                 with div(cls="col-sm-8 col-1 footer-popup-body"):
-                    p("If you like this project, any donation would be extremely helpful for me in maintaining the website.")
+                    p("If you like this project, any donation would be extremely helpful for me in maintaining the website.", id="donateText")
                     # p("Your support helps to keep the project alive and allows for further development.")
                 with div(cls="col-sm-2 col-6 footer-popup-donate"):
                     a("Donate", href="https://ko-fi.com/calcalciffer", target="_blank", cls="btn btn-primary")
@@ -421,7 +415,6 @@ def get_leader_html_file(bbg_version, lang):
         with div(cls="page-flex"):
             with div(cls="main-wrapper"):
                 add_header(bbg_version, lang, 'leaders')
-                add_footer(bbg_version, lang)
                 with div(cls=""):
                     with div(cls="fixed left-0 right-auto h-screen w-[253px] bg-white border-r border-neutral-300 overflow-scroll", style="z-index: 5;"):
                         add_sidebar(menu_items, menu_icons, 'images/leaders')
@@ -461,7 +454,6 @@ def get_leader_html_file(bbg_version, lang):
                                                     br()
 
         add_final_scripts()
-        # add_scroll_up()
 
     docStr = str(doc)
     return refactorCivSpecialSyntax(bbg_version, lang, docStr)
@@ -505,7 +497,6 @@ def get_city_state_html_file(bbg_version, lang):
                                                 show_element_with_base_option(cs[5], lang, locs_data, en_US_locs_data)
 
         add_final_scripts()
-        add_scroll_up()
 
     docStr = str(doc)
     return refactorCivSpecialSyntax(bbg_version, lang, docStr)
@@ -567,7 +558,6 @@ def get_religion_html_file(bbg_version, lang):
                                                     show_element_with_base_option(elem[2], lang, locs_data, en_US_locs_data)
 
         add_final_scripts()
-        add_scroll_up()
 
     docStr = str(doc)
     return refactorCivSpecialSyntax(bbg_version, lang, docStr)
@@ -630,7 +620,6 @@ def get_governor_html_file(bbg_version, lang):
                                                                     br()
 
         add_final_scripts()
-        add_scroll_up()
 
     docStr = str(doc)
     return refactorCivSpecialSyntax(bbg_version, lang, docStr)
@@ -675,7 +664,6 @@ def get_natural_wonder_html_file(bbg_version, lang):
                                                 show_element_with_base_option(wonder[2], lang, locs_data, en_US_locs_data)
                                                 br()
         add_final_scripts()
-        add_scroll_up()
 
     docStr = str(doc)
     return refactorCivSpecialSyntax(bbg_version, lang, docStr)
@@ -725,7 +713,6 @@ def get_world_wonder_html_file(bbg_version, lang):
                                                     show_building_yields(wonder, locs_data, en_US_locs_data)
                                                     br()
         add_final_scripts()
-        add_scroll_up()
 
     docStr = str(doc)
     return refactorCivSpecialSyntax(bbg_version, lang, docStr)
@@ -825,7 +812,6 @@ def get_misc_html_file(bbg_version, lang):
                                             br()
  
         add_final_scripts()
-        add_scroll_up()
 
     docStr = str(doc)
     return refactorCivSpecialSyntax(bbg_version, lang, docStr)
@@ -915,7 +901,6 @@ def get_names_html_file(bbg_version, lang):
                                                                 # br()
                                             br()
         add_final_scripts()
-        add_scroll_up()
 
     docStr = str(doc)
     return refactorCivSpecialSyntax(bbg_version, lang, docStr)
@@ -1014,7 +999,6 @@ def get_great_people_html_file(bbg_version, lang):
                                                             for work in great_people_works[gp[0]]:
                                                                 p(img(src=f'/images/{work[2]}.webp', style="vertical-align: middle; width:2em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';"), f' {get_loc(locs_data, work[1], en_US_locs_data)}', style="text-align:left", cls='civ-ability-desc')
         add_final_scripts()
-        add_scroll_up()
 
     docStr = str(doc)
     return refactorCivSpecialSyntax(bbg_version, lang, docStr)
@@ -1150,7 +1134,6 @@ def get_buildings_html_file(bbg_version, lang):
                                                     br()
                                                     show_building_yields(buildings_per_district[district][building], locs_data, en_US_locs_data)
         add_final_scripts()
-        add_scroll_up()
 
     docStr = str(doc)
     return refactorCivSpecialSyntax(bbg_version, lang, docStr)

@@ -601,3 +601,15 @@ document.addEventListener("scroll", (event) => {
 function civClicked(civName) {
   localStorage.setItem('lastCivClicked', civName);
 }
+
+function newDonateText() {
+  var options = [
+    'Love this project? Your support helps keep it alive!',
+    'Enjoy the site? A small donation keeps it running.',
+    'Like what you see? Help me keep the lights on.',
+    'Your support keeps this project going strong.'
+  ];
+  var randOption = Math.floor(Math.random() * options.length);
+  document.getElementById('donateText').innerHTML = options[randOption];
+};
+newDonateText();
