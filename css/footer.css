@@ -1,0 +1,87 @@
+/*===================
+	Start footer CSS 
+=====================*/
+.footer {
+	background-color: #161624;
+}
+.footer-popup {
+	position: fixed;
+	top: 90%;
+	left: 0;
+	width: 100%;
+	height: 10%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+}
+.footer-popup-inner {
+	background-color: #161624;
+	padding: 20px;
+	border-radius: 8px;
+	width: 100%;
+}
+.footer-popup-body p {
+	font-size: 1em;
+	color: #b9b9b9;
+}
+.footer-popup-donate {
+	text-align: right;
+}
+.footer-popup-donate .btn {
+	bottom: 15px;
+	right: 15px;
+	padding: 10px 20px;
+	background: #ff8c33;
+	color: #fff;
+	font-size: 1em;
+	text-align: center;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px #00000026;
+	cursor: pointer;
+}
+.footer-popup-donate .btn:hover {
+	background:#2C2D3F;
+}
+.footer-popup-scroll-up {
+	text-align: right;
+}
+#scrollUp {
+	bottom: 15px;
+	right: 15px;
+	padding: 10px 20px;
+	background: #ff8c33;
+	color: #fff;
+	font-size: 1em;
+	text-align: center;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px #00000026;
+}
+#scrollUp:hover{
+	background:#2C2D3F;
+}
+.scroll-up {
+	position: fixed; 
+	z-index: 1000;
+	animation: fadeInUp 0.5s both 0.1s;
+}
+.scroll-up.displayNone {
+	animation: fadeOutDown 0.5s both 0.1s;
+}
+.darkmode .footer-popup-inner {
+	background-color: #f8f9fa;
+}
+.darkmode .footer-popup-body p {
+	color: #555;
+}
+@media (max-width: 575.98px) {
+	.footer-popup-body {
+		display:none;
+	}
+	.footer-popup-donate {
+		text-align: left;
+	}
+}
+/*===================
+	End Donate CSS 
+=====================*/

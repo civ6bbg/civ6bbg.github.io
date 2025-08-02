@@ -2,7 +2,6 @@
 	Start Header CSS 
 =====================*/
 .header{
-	background-color:#fff;
 	position:relative;
     width:100%;
 }
@@ -10,7 +9,6 @@
 	padding:0;
 }
 .header .header-inner {
-	/* background:#fff; */
 	z-index:999;
 	width:100%;
 }
@@ -278,10 +276,6 @@
 /*=========================
 	End Header CSS
 ===========================*/
-
-.darkmode .header {
-    background-color:#161624;
-}
 
 .darkmode .header .nav li a {
     color: #b9b9b9;

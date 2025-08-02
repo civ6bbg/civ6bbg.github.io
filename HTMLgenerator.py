@@ -358,6 +358,7 @@ def add_html_header(doc, page_title):
         link(rel='stylesheet', href=f"/css/preloader.css")
         link(rel='stylesheet', href=f"/css/animate.min.css")
         link(rel='stylesheet', href=f"/css/header.css")
+        link(rel='stylesheet', href=f"/css/footer.css")
 
 def add_scroll_up():
     with a(id="scrollUp", cls="scroll-up displayNone", href="#top", onclick=f'civClicked(null)', style="position: fixed; z-index: 2147483647;"):
@@ -379,6 +380,19 @@ def get_unlock_tech_civic_dialog(unlock_tech, unlock_civic, locs_data, en_US_loc
         return f'{get_loc(locs_data, "LOC_UI_PEDIA_UNLOCKED_BY", en_US_locs_data)} {get_loc(locs_data, tech_to_loc_dict[unlock_tech], en_US_locs_data)} {get_loc(locs_data, "LOC_TECHNOLOGY_NAME", en_US_locs_data)}'
     if unlock_civic:
         return f'{get_loc(locs_data, "LOC_UI_PEDIA_UNLOCKED_BY", en_US_locs_data)} {get_loc(locs_data, civic_to_loc_dict[unlock_civic], en_US_locs_data)} {get_loc(locs_data, "LOC_CIVIC_NAME", en_US_locs_data)}'
+
+def add_footer(bbg_version, lang):
+    with div(cls="scroll-up footer-popup", id="footer-popup"):
+        with div(cls="footer-popup-inner"):
+            with div(cls="row"):
+                with div(cls="col-sm-8 col-1 footer-popup-body"):
+                    p("If you like this project, any donation would be extremely helpful for me in maintaining the website.")
+                    # p("Your support helps to keep the project alive and allows for further development.")
+                with div(cls="col-sm-2 col-6 footer-popup-donate"):
+                    a("Donate", href="https://ko-fi.com/calcalciffer", target="_blank", cls="btn btn-primary")
+                with div(cls="col-sm-2 col-6 footer-popup-scroll-up"):
+                    with a(id="scrollUp", cls="displayNone", href="#top", onclick=f'civClicked(null)'):
+                        i(cls='fa fa-angle-up')
 
 def get_leader_html_file(bbg_version, lang):
     en_US_locs_data = get_locs_data(bbg_version, 'en_US')
@@ -407,6 +421,7 @@ def get_leader_html_file(bbg_version, lang):
         with div(cls="page-flex"):
             with div(cls="main-wrapper"):
                 add_header(bbg_version, lang, 'leaders')
+                add_footer(bbg_version, lang)
                 with div(cls=""):
                     with div(cls="fixed left-0 right-auto h-screen w-[253px] bg-white border-r border-neutral-300 overflow-scroll", style="z-index: 5;"):
                         add_sidebar(menu_items, menu_icons, 'images/leaders')
@@ -446,7 +461,7 @@ def get_leader_html_file(bbg_version, lang):
                                                     br()
 
         add_final_scripts()
-        add_scroll_up()
+        # add_scroll_up()
 
     docStr = str(doc)
     return refactorCivSpecialSyntax(bbg_version, lang, docStr)
