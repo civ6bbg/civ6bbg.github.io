@@ -276,7 +276,7 @@ def add_header(bbg_version, lang, page_type):
                                                 with ul(cls="nav menu"):
                                                     with li():
                                                         i(cls="fa fa-language lang-icon")
-                                                        with ul(cls="dropdown", style="width:80px"):
+                                                        with ul(cls="dropdown"):
                                                             add_lang('English  ', 'en_US', bbg_version, 'us', page_type)
                                                             add_lang('French  ', 'fr_FR', bbg_version, 'fr', page_type)
                                                             add_lang('Russian  ', 'ru_RU', bbg_version, 'ru', page_type)
