@@ -439,7 +439,7 @@ def get_leader_html_file(bbg_version, lang):
                                                 for item in civ_leaders_items[leader]:
                                                     with h3(f'{get_loc(locs_data, item[4], en_US_locs_data)}', style="text-align:left", cls='civ-ability-name'):
                                                         img(src=f'/images/items/{get_loc(en_US_locs_data, item[4], en_US_locs_data)}.webp', style="vertical-align: middle; width:2em; text-align:left", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
-                                                    
+
                                                     if item[3].startswith('UNIT_'):
                                                         unlock_tech = units_dict[item[3]][35]
                                                         unlock_civic = units_dict[item[3]][36]
@@ -532,7 +532,7 @@ def get_religion_html_file(bbg_version, lang):
         menu_items.append(get_loc(locs_data, t, en_US_locs_data))
         menu_icons.append(get_loc(en_US_locs_data, t, en_US_locs_data))
         religion_cls_elements[t] = get_beliefs(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite", t[4:-5])
-    
+
     with doc:
         add_preloader()
         div(cls="layer")
@@ -1006,7 +1006,7 @@ def get_great_people_html_file(bbg_version, lang):
 
     docStr = str(doc)
     return refactorCivSpecialSyntax(bbg_version, lang, docStr)
-    
+
 def show_building_yields(yields, locs_data, en_US_locs_data):
     yield_dict = {}
     for element in yields:
@@ -1016,7 +1016,7 @@ def show_building_yields(yields, locs_data, en_US_locs_data):
                 yield_type = element[10][6:]
                 p(f'+{element[11]} [ICON_{yield_type}] {get_loc(locs_data, yield_loc, en_US_locs_data)}', style="text-align:left", cls='civ-ability-desc')
                 yield_dict[element[10]] = 1
-        
+
 
     tmp_yields = yields[0]
     if tmp_yields[6] > 0:
@@ -1026,7 +1026,7 @@ def show_building_yields(yields, locs_data, en_US_locs_data):
     if tmp_yields[9] != None:
         processed = loc_amount_parameter(get_loc(locs_data, 'LOC_TYPE_TRAIT_CITIZENS', en_US_locs_data), tmp_yields[9])
         p(f'{processed}', style="text-align:left", cls='civ-ability-desc')
-    
+
     for element in yields:
         if element[14] != None:
             gp_type = get_loc(locs_data, element[14], en_US_locs_data)
@@ -1058,7 +1058,7 @@ def show_building_yields(yields, locs_data, en_US_locs_data):
                 loc = loc.replace('{2_ToYieldName}', get_loc(locs_data, f'LOC_YIELD_{to_yield_type}_NAME', en_US_locs_data))
                 loc = loc.replace('{3_FromYieldIcon}', f'[ICON_{from_yield_type}]')
                 loc = loc.replace('{4_FromYieldName}', get_loc(locs_data, f'LOC_YIELD_{from_yield_type}_NAME', en_US_locs_data))
-                
+
                 p(f'{loc}', style="text-align:left", cls='civ-ability-desc')
                 yield_dict[key] = 1
         if element[20] != None:
@@ -1089,7 +1089,7 @@ def show_building_yields(yields, locs_data, en_US_locs_data):
 
     if tmp_yields[5] != None:
         p(f'{get_loc(locs_data, tmp_yields[5], en_US_locs_data)}', style="text-align:left", cls='civ-ability-desc')
-        
+
     building_cost = int(int(tmp_yields[2]) / 2)
     if building_cost > 0:
         with p(f'{get_loc(locs_data, 'LOC_UI_PEDIA_PRODUCTION_COST', en_US_locs_data)} = {building_cost}', style="text-align:left", cls='civ-ability-desc'):
@@ -1150,15 +1150,15 @@ def loc_amount_parameter(localized_text: str, amount: float) -> str:
         return matchobj.group(2) if amount > 1 else matchobj.group(1)
     localized_text = re.sub(r'{Amount ?: ?plural 1\?(.*?); ?other\?(.*?);}', fix_amount, localized_text)
     localized_text = localized_text.replace('{Amount}', f'{amount}').replace('{Amount : number #}', f'{amount}')
-    
+
     localized_text = re.sub(r'{1_Amount ?: ?plural 1\?(.*?); ?other\?(.*?);}', fix_amount, localized_text)
     localized_text = localized_text.replace('{Amount}', f'{amount}').replace('{Amount : number #}', f'{amount}')
-    
+
     # 1_Amount: number +#,###;-#,###}
     localized_text = re.sub(r'{1_Amount: number +#,###;-#,###}', fix_amount, localized_text)
     localized_text = localized_text.replace('{1_Amount}', f'{amount}').replace('{1_Amount: number +#,###;-#,###}', f'{amount}')
-    
+
     localized_text = re.sub(r'{ScalingFactor}', fix_scaling_factor, localized_text)
     localized_text = localized_text.replace('{ScalingFactor}', f'{amount}')
-    
+
     return localized_text

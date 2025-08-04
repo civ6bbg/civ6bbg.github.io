@@ -56,7 +56,7 @@ def generate_great_people_html_file(bbg_ver, l):
     docStr = get_great_people_html_file(bbg_ver, l)
     with open(f'{l}/great_people_{'base_game' if bbg_ver == None else bbg_ver}.html', 'w') as f:
         f.write(docStr)
-        
+
 def generate_buildings_html_file(bbg_ver, l):
     docStr = get_buildings_html_file(bbg_ver, l)
     with open(f'{l}/buildings_{'base_game' if bbg_ver == None else bbg_ver}.html', 'w') as f:

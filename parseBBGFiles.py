@@ -20,7 +20,7 @@ def add_xml_file_to_locs(locs, xml_file):
         else:
             print(f"unsual element in xml file: {xml_file}!!")
             print(x)
-            
+
     Bs_data = BeautifulSoup(data, "xml")
 
     b_unique = Bs_data.find_all("Row")
@@ -46,7 +46,7 @@ def get_locs_data(bbg_version, lang):
 
     for r in rows:
         locs[r[1]] = r[2]
-        
+
     if lang == 'en_US' or lang == 'fr_FR':
         add_xml_file_to_locs(locs, f'sqlFiles/expandedBase_{lang}.xml')
 
