@@ -444,9 +444,11 @@ def get_leader_html_file(bbg_version, lang):
                                                         unlock_tech = units_dict[item[3]][35]
                                                         unlock_civic = units_dict[item[3]][36]
                                                         tech_civic_dialog = get_unlock_tech_civic_dialog(unlock_tech, unlock_civic, locs_data, en_US_locs_data, tech_to_loc_dict, civic_to_loc_dict)
-                                                        unlock_tech = base_game_units_dict[item[3]][35]
-                                                        unlock_civic = base_game_units_dict[item[3]][36]
-                                                        base_game_tech_civic_dialog = get_unlock_tech_civic_dialog(unlock_tech, unlock_civic, locs_data, en_US_locs_data, tech_to_loc_dict, civic_to_loc_dict)
+                                                        base_game_tech_civic_dialog = ''
+                                                        if item[3] in base_game_units_dict:
+                                                            unlock_tech = base_game_units_dict[item[3]][35]
+                                                            unlock_civic = base_game_units_dict[item[3]][36]
+                                                            base_game_tech_civic_dialog = get_unlock_tech_civic_dialog(unlock_tech, unlock_civic, locs_data, en_US_locs_data, tech_to_loc_dict, civic_to_loc_dict)
                                                         show_element_with_base_option(item[5], lang, locs_data, en_US_locs_data, 
                                                             data_append = (f'[NEWLINE][NEWLINE]{tech_civic_dialog}' if tech_civic_dialog != None else ''), 
                                                             base_game_data_append = (f'[NEWLINE][NEWLINE]{base_game_tech_civic_dialog}' if tech_civic_dialog != None else ''))

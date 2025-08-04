@@ -5,6 +5,19 @@ import csv
 
 
 def get_locs_data(bbg_version, lang):
+    locs = dict()
+    db_path = "sqlFiles/DebugLocalization.sqlite"
+    connection = sqlite3.connect(db_path)
+
+    crsr = connection.cursor()
+    crsr.execute(f"SELECT * FROM LocalizedText WHERE Language = '{lang}'")
+    rows = crsr.fetchall()
+
+    for r in rows:
+        locs[r[1]] = r[2]
+
+    connection.close()
+
     db_path = "sqlFiles/CivVILocalization.sqlite"
     connection = sqlite3.connect(db_path)
 
@@ -12,9 +25,10 @@ def get_locs_data(bbg_version, lang):
     crsr.execute(f"SELECT * FROM LocalizedText_{lang}")
     rows = crsr.fetchall()
 
-    locs = dict()
     for r in rows:
         locs[r[1]] = r[2]
+
+    connection.close()
 
     if bbg_version == None:
         return locs
