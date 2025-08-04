@@ -2472,7 +2472,7 @@
     </Replace>
     <!-- == Heartbeat of Steam == -->
     <Replace Tag="LOC_MOMENT_CATEGORY_INDUSTRIAL_BONUS_GOLDEN_AGE" Language="ja_JP">
-      <Text>蒸気の鼓動 黄金時代：[NEWLINE]産業時代またはそれ以降の遺産に対する [ICON_Produciton] 生産力+10%。キャンパス区域の [ICON_Science] 科学力隣接ボーナスが同じだけの [ICON_Production] 生産力ももたらすようになる。プロジェクトに対する [ICON_Production] 生産力+25%。</Text>
+      <Text>蒸気の鼓動 黄金時代：[NEWLINE]産業時代またはそれ以降の遺産に対する [ICON_Production] 生産力+10%。キャンパス区域の [ICON_Science] 科学力隣接ボーナスが同じだけの [ICON_Production] 生産力ももたらすようになる。プロジェクトに対する [ICON_Production] 生産力+25%。</Text>
     </Replace>
     <Replace Tag="LOC_MOMENT_CATEGORY_INDUSTRIAL_BONUS_NORMAL_AGE" Language="ja_JP">
       <Text>蒸気の鼓動 通常時代：[NEWLINE]産業時代またはそれ以降の建造物を建設するたび時代スコア+1。</Text>

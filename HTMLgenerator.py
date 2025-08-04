@@ -283,6 +283,7 @@ def add_header(bbg_version, lang, page_type):
                                                             add_lang('German  ', 'de_DE', bbg_version, 'de', page_type)
                                                             add_lang('Chinese  ', 'zh_Hans_CN', bbg_version, 'cn', page_type)
                                                             add_lang('Korean  ', 'ko_KR', bbg_version, 'kr', page_type)
+                                                            add_lang('Japanese  ', 'ja_JP', bbg_version, 'jp', page_type)
                                     div(cls="w-100")
                                     with div(cls="col-xl-4 col-lg-4 col-md-4 col-4"):
                                         with div(cls="base-game-switcher-wrapper"):
@@ -368,7 +369,7 @@ def show_element_with_base_option(element, lang, locs_data, en_US_locs_data, dat
         with div(cls='col-lg-6 col-md-6'):
             with div(cls="chart", style="box-shadow:none"):
                 p(get_loc(base_game_locs_data[lang], element, base_game_locs_data['en_US']) + f'\n{base_game_data_append}', style=f"text-align:{alignment}", cls='civ-ability-desc')
-                
+
 def get_unlock_tech_civic_dialog(unlock_tech, unlock_civic, locs_data, en_US_locs_data, tech_to_loc_dict, civic_to_loc_dict):
     if unlock_tech:
         return f'{get_loc(locs_data, "LOC_UI_PEDIA_UNLOCKED_BY", en_US_locs_data)} {get_loc(locs_data, tech_to_loc_dict[unlock_tech], en_US_locs_data)} {get_loc(locs_data, "LOC_TECHNOLOGY_NAME", en_US_locs_data)}'
