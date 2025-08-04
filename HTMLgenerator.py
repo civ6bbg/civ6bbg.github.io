@@ -495,7 +495,8 @@ def get_city_state_html_file(bbg_version, lang):
                                             with div(cls="chart"):
                                                 with h2(get_loc(locs_data, cs[2], en_US_locs_data), cls='civ-name'):
                                                     img(src=f'/images/city_states/{get_loc(en_US_locs_data, cs[2], en_US_locs_data)}.webp', style="vertical-align: middle; width:5em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
-                                                show_element_with_base_option(cs[5], lang, locs_data, en_US_locs_data)
+                                                cs_desc = cs[7] if cs[7] != None else (cs[6] if cs[6] != None else cs[5])
+                                                show_element_with_base_option(cs_desc, lang, locs_data, en_US_locs_data)
 
         add_final_scripts()
 
