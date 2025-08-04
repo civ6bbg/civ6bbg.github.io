@@ -1158,7 +1158,7 @@ def loc_amount_parameter(localized_text: str, amount: float) -> str:
     localized_text = re.sub(r'{1_Amount: number +#,###;-#,###}', fix_amount, localized_text)
     localized_text = localized_text.replace('{1_Amount}', f'{amount}').replace('{1_Amount: number +#,###;-#,###}', f'{amount}')
     
-    # localized_text = re.sub(r'{ScalingFactor}', fix_scaling_factor, localized_text)
-    # localized_text = localized_text.replace('{ScalingFactor}', f'{amount}')
+    localized_text = re.sub(r'{ScalingFactor}', fix_scaling_factor, localized_text)
+    localized_text = localized_text.replace('{ScalingFactor}', f'{amount}')
     
     return localized_text

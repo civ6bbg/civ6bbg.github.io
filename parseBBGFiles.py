@@ -608,7 +608,7 @@ def get_great_people_modifier_dict(db_path):
         """SELECT ga.GreatPersonIndividualType, ga.ModifierId, Text, ActionEffectTextOverride, Value FROM GreatPersonIndividualActionModifiers ga 
          LEFT JOIN ModifierStrings USING(ModifierId)
          LEFT JOIN GreatPersonIndividuals USING(GreatPersonIndividualType) 
-         LEFT JOIN (SELECT ModifierId, Value FROM ModifierArguments where Name='Amount') USING(ModifierId)"""
+         LEFT JOIN (SELECT ModifierId, Value FROM ModifierArguments where Name='Amount' or Name='ScalingFactor') USING(ModifierId)"""
     )
     rows = crsr.fetchall()
     overridden = set()
