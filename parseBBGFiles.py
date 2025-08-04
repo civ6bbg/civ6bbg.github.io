@@ -614,6 +614,8 @@ def get_great_people_modifier_dict(db_path):
     overridden = set()
     for gp, modifier, loc, action_override, amount in rows:
         amount = float(amount) if amount else 0
+        if int(amount) == amount:
+            amount = int(amount)
         res.setdefault(gp, [])
         if action_override:
             if action_override not in overridden:
