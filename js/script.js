@@ -588,8 +588,12 @@ document.addEventListener("scroll", (event) => {
 });
 
 let lastScrollTop = 0;
+let delta = 10; // Minimum scroll distance to trigger hide/show
 document.addEventListener("scroll", (event) => {
   let scrollTop = document.pageYOffset || document.documentElement.scrollTop;
+  if (Math.abs(lastScrollTop - scrollTop) <= delta) {
+    return;
+  }
   if (scrollTop > lastScrollTop) {
     $('.main-nav').addClass('displayNone');
   } else {
