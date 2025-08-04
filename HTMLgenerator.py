@@ -217,7 +217,7 @@ def add_preloader():
                     polyline(id="front", points="1 6 4 6 6 11 10 1 12 6 15 6")
 
 bbg_versions = [None, 'Beta', '6.4', '6.3', '6.2', '6.1', '6.0', '5.8', '5.7', '5.6']
-bbg_versions_tmp = [None, 'Beta']
+bbg_versions_tmp = [None, 'expanded']
 
 def get_version_name(bbg_version):
     return bbg_version if bbg_version != None else 'base_game'
@@ -326,9 +326,9 @@ def get_loc(locs_data, s, en_US_locs_data):
         else:
             return res[:res.find('|')]
     except KeyError:
-        print(f'KeyError: {s} not found in locs_data')
         if locs_data == en_US_locs_data:
             return f'Not found: {s}'
+        print(f'KeyError: {s} not found in locs_data')
         return get_loc(en_US_locs_data, s, en_US_locs_data)
 
 def get_html_lang(lang):
