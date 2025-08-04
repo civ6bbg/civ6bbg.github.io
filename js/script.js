@@ -621,7 +621,6 @@ function newDonateText() {
     'Keep our city-states happy—donate today!',
     'Lets avoid a barbarian invasion—support the project!',
     'Your donation is a wonder in itself!',
-    'Help us settle new a god city—contribute now!',
     'Your support is the best trade route we could have!',
     'Be the great leader this project needs—support us!',
     'Your gold helps us research new technologies!',
