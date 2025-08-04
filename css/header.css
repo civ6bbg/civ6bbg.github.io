@@ -151,6 +151,10 @@
 	top: 2.5em;
 	border-left:3px solid #ff8c33;
 }
+.header .nav li .bbg-version-dropdown {
+	width: 7.7em;
+	left: 0em;
+}
 .header .nav li:hover .dropdown{
 	opacity:1;
 	visibility:visible;
@@ -317,7 +321,15 @@
 		left: -5px;
     }
 	.header .nav li .dropdown li {
-        flex: 0 1 100%;
+		flex: 0 1 100%;
 		width: 100%;
     }
+	.header .nav li .bbg-version-dropdown {
+		width: 7.7em;
+		left: 0em;
+	}
+	.header .nav li .bbg-version-dropdown li {
+		width: 25%;
+		flex: 0 1 50%;
+	}
 }

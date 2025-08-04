@@ -264,10 +264,10 @@ def add_header(bbg_version, lang, page_type):
                                             with li():
                                                 with a('BBG Version'):
                                                     i(cls="icofont-rounded-down")
-                                                with ul(cls="dropdown"):
+                                                with ul(cls="dropdown bbg-version-dropdown"):
                                                     for v in bbg_versions:
                                                         with li():
-                                                            a(f"Base Game" if v is None else f"BBG v{v}", href=f"/{lang}/{page_type}_{'base_game' if v is None else v}.html")
+                                                            a(f"Base" if v is None else f"{v}", href=f"/{lang}/{page_type}_{'base_game' if v is None else v}.html")
                             with div(cls="flex center col-xl-2 col-lg-2 col-md-2 col-1"):
                                 with div(cls='flex row justify-content-around'):
                                     with div(cls="col-xl-4 col-lg-4 col-md-6 col-4"):
@@ -1144,6 +1144,8 @@ def get_buildings_html_file(bbg_version, lang):
 
 
 def loc_amount_parameter(localized_text: str, amount: float) -> str:
+    def fix_scaling_factor(matchobj):
+        return matchobj.group(0)
     def fix_amount(matchobj):
         return matchobj.group(2) if amount > 1 else matchobj.group(1)
     localized_text = re.sub(r'{Amount ?: ?plural 1\?(.*?); ?other\?(.*?);}', fix_amount, localized_text)
@@ -1155,5 +1157,8 @@ def loc_amount_parameter(localized_text: str, amount: float) -> str:
     # 1_Amount: number +#,###;-#,###}
     localized_text = re.sub(r'{1_Amount: number +#,###;-#,###}', fix_amount, localized_text)
     localized_text = localized_text.replace('{1_Amount}', f'{amount}').replace('{1_Amount: number +#,###;-#,###}', f'{amount}')
+    
+    # localized_text = re.sub(r'{ScalingFactor}', fix_scaling_factor, localized_text)
+    # localized_text = localized_text.replace('{ScalingFactor}', f'{amount}')
     
     return localized_text
