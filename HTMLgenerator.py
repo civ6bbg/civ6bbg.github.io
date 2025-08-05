@@ -250,12 +250,8 @@ def add_header(bbg_version, lang, page_type):
                                     span("Toggle menu", cls="sr-only")
                                     span(cls="icon menu-toggle", aria_hidden="true")
                             with div(cls="flex center col-xl-1 col-lg-1 col-md-1 col-2"):
-                                # with ul(cls='logo-menu'):
-                                #     with li(): 
                                 with a(href="/index.html", style="align-content: center;"):
                                     img(src="/images/BBGLogo.webp", style="width:3em; border-radius:10%", alt="#")
-                                    # with li():
-                                    #     i(cls="extended-icon", data_feather="toggle-left", aria_hidden="true")
                                 div(cls="mobile-nav")
                             with div(cls="flex col-xl-8 col-lg-8 col-md-8 col-8"):
                                 with div(cls="main-menu"):
@@ -273,6 +269,13 @@ def add_header(bbg_version, lang, page_type):
                                                             a(f"Base" if v is None else f"{v}", href=f"/{lang}/{page_type}_{'base_game' if v is None else v}.html")
                             with div(cls="flex center col-xl-2 col-lg-2 col-md-2 col-1"):
                                 with div(cls='flex row justify-content-around'):
+                                    # with div(cls="col-xl-3 col-lg-3 col-md-3 col-3"):
+                                    #     with div(cls="extended-bbg-switcher-wrapper"):
+                                    #         with button(cls="extended-bbg-switcher", type="button", title="Only Expanded BBG"):
+                                    #             i(cls="fa-solid fa-star extended-icon")
+                                    #             # i(cls="enable-icon", data_feather="toggle-left", aria_hidden="true")
+                                    #             # i(cls="disable-icon", data_feather="toggle-right", aria_hidden="true")
+                                    # div(cls="w-100")
                                     with div(cls="col-xl-4 col-lg-4 col-md-6 col-4"):
                                         with div(cls="main-menu"):
                                             with nav(cls="navigation"):
@@ -1140,6 +1143,78 @@ def get_buildings_html_file(bbg_version, lang):
                                                         img(src=f'/images/buildings/{get_loc(en_US_locs_data, building, en_US_locs_data)}.webp', style="vertical-align: middle; width:5em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
                                                     br()
                                                     show_building_yields(buildings_per_district[district][building], locs_data, en_US_locs_data)
+        add_final_scripts()
+
+    docStr = str(doc)
+    return refactorCivSpecialSyntax(bbg_version, lang, docStr)
+
+def get_expanded_html_file(bbg_version, lang):
+    en_US_locs_data = get_locs_data(bbg_version, 'en_US')
+    locs_data = get_locs_data(bbg_version, lang)
+    if bbg_version == None and lang not in base_game_locs_data:
+        base_game_locs_data[lang] = locs_data
+
+    doc = dominate.document(title=None, lang=get_html_lang(lang))
+    if bbg_version != None:
+        add_html_header(doc, f'Expanded BBG {bbg_version} Leader Description')
+    else :
+        add_html_header(doc, f'Civ VI GS RF Leaders Description (Expanded BBG)')
+
+    menu_items = []
+    menu_icons = []
+    civ_leaders_items = get_expanded_civs_tables(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugConfiguration.sqlite")
+    units_dict = get_units_dict(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite")
+    tech_to_loc_dict = get_tech_to_loc_dict(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite")
+    civic_to_loc_dict = get_civic_to_loc_dict(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite")
+    for leader in civ_leaders_items:
+        menu_items.append(get_loc(locs_data, leader[2], en_US_locs_data) + ' ' + get_loc(locs_data, leader[5], en_US_locs_data))
+        menu_icons.append(get_loc(en_US_locs_data, leader[2], en_US_locs_data) + ' ' + get_loc(en_US_locs_data, leader[5], en_US_locs_data))
+    with doc:
+        add_preloader()
+        div(cls="layer")
+        with div(cls="page-flex"):
+            with div(cls="main-wrapper"):
+                add_header(bbg_version, lang, 'leaders')
+                with div(cls=""):
+                    with div(cls="fixed left-0 right-auto h-screen w-[253px] bg-white border-r border-neutral-300 overflow-scroll", style="z-index: 5;"):
+                        add_sidebar(menu_items, menu_icons, 'images/leaders')
+                    with div(cls="leaders-data min-w-full main-pl"):
+                        with main(cls="main users chart-page"):
+                            with div(cls="container"):
+                                for leader in civ_leaders_items:
+                                    with div(cls="row", id=get_loc(locs_data, leader[2], en_US_locs_data) + ' ' + get_loc(locs_data, leader[5], en_US_locs_data)):
+                                        with div(cls="col-lg-12"):
+                                            with div(cls="chart"):
+                                                with h2(get_loc(locs_data, leader[2], en_US_locs_data) + ' ' + get_loc(locs_data, leader[5], en_US_locs_data), cls='civ-name'):
+                                                    img(src=f'/images/leaders/{get_loc(en_US_locs_data, leader[2], en_US_locs_data) + ' ' + get_loc(en_US_locs_data, leader[5], en_US_locs_data)}.webp', style="vertical-align: middle; width:7em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
+                                                h3(get_loc(locs_data, leader[3], en_US_locs_data), style="text-align:left", cls='civ-ability-name')
+                                                br()
+                                                show_element_with_base_option(leader[4], lang, locs_data, en_US_locs_data)
+                                                br()
+                                                h3(get_loc(locs_data, leader[6], en_US_locs_data), style="text-align:left", cls='civ-ability-name')
+                                                br()
+                                                show_element_with_base_option(leader[7], lang, locs_data, en_US_locs_data)
+                                                br()
+                                                for item in civ_leaders_items[leader]:
+                                                    with h3(f'{get_loc(locs_data, item[4], en_US_locs_data)}', style="text-align:left", cls='civ-ability-name'):
+                                                        img(src=f'/images/items/{get_loc(en_US_locs_data, item[4], en_US_locs_data)}.webp', style="vertical-align: middle; width:2em; text-align:left", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
+
+                                                    if item[3].startswith('UNIT_'):
+                                                        unlock_tech = units_dict[item[3]][35]
+                                                        unlock_civic = units_dict[item[3]][36]
+                                                        tech_civic_dialog = get_unlock_tech_civic_dialog(unlock_tech, unlock_civic, locs_data, en_US_locs_data, tech_to_loc_dict, civic_to_loc_dict)
+                                                        base_game_tech_civic_dialog = ''
+                                                        if item[3] in base_game_units_dict:
+                                                            unlock_tech = base_game_units_dict[item[3]][35]
+                                                            unlock_civic = base_game_units_dict[item[3]][36]
+                                                            base_game_tech_civic_dialog = get_unlock_tech_civic_dialog(unlock_tech, unlock_civic, locs_data, en_US_locs_data, tech_to_loc_dict, civic_to_loc_dict)
+                                                        show_element_with_base_option(item[5], lang, locs_data, en_US_locs_data, 
+                                                            data_append = (f'[NEWLINE][NEWLINE]{tech_civic_dialog}' if tech_civic_dialog != None else ''), 
+                                                            base_game_data_append = (f'[NEWLINE][NEWLINE]{base_game_tech_civic_dialog}' if tech_civic_dialog != None else ''))
+                                                    else:
+                                                        show_element_with_base_option(item[5], lang, locs_data, en_US_locs_data)
+                                                    br()
+
         add_final_scripts()
 
     docStr = str(doc)

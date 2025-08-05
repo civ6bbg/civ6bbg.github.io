@@ -63,6 +63,11 @@ def generate_buildings_html_file(bbg_ver, l):
     with open(f'{l}/buildings_{'base_game' if bbg_ver == None else bbg_ver}.html', 'w') as f:
         f.write(docStr)
 
+def generate_expanded_html_file(bbg_ver, l):
+    docStr = get_expanded_html_file(bbg_ver, l)
+    with open(f'{l}/bbg_expanded_{'base_game' if bbg_ver == None else bbg_ver}.html', 'w') as f:
+        f.write(docStr)
+
 for l in langs:
     # Create directory if it does not exist
     os.makedirs(l, exist_ok=True)
@@ -80,3 +85,4 @@ for bbg_ver in bbg_versions:
         generate_names_html_file(bbg_ver, l)
         generate_great_people_html_file(bbg_ver, l)
         generate_buildings_html_file(bbg_ver, l)
+        generate_expanded_html_file(bbg_ver, l)

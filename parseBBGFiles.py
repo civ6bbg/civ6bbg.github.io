@@ -109,6 +109,53 @@ def get_civs_tables(db_path):
     connection.close()
     return civLeaderItems
 
+def get_expanded_civs_tables(db_path):
+    connection = sqlite3.connect(db_path)
+
+    expanded_bbg_leaders = [
+        'LEADER_JFD_OLYMPIAS',
+        'LEADER_LIME_TEO_OWL',
+        'LEADER_LL_TEKINICH_II',
+        'LEADER_LIME_PHOE_AHIRAM',
+        'LEADER_SUK_VERCINGETORIX_DLC',
+        'LEADER_SUK_TRISONG_DETSEN',
+        'LEADER_SUK_AL_HASAN',
+        'LEADER_LIME_THULE_DAVE'
+    ]
+    expanded_bbg_condition = " OR ".join([f"LeaderType = '{leader}'" for leader in expanded_bbg_leaders])
+    crsr = connection.cursor()
+    crsr.execute(
+        f"""SELECT CivilizationType, LeaderType, CivilizationName, CivilizationAbilityName, CivilizationAbilityDescription, LeaderName, LeaderAbilityName, LeaderAbilityDescription
+         FROM Players WHERE Domain = 'Players:Expansion2_Players'
+         AND ({expanded_bbg_condition})
+         """
+    )
+    rows = crsr.fetchall()
+
+    rows = sorted(rows)
+    civLeaders = []
+    civLeaderItems = dict()
+    uniques = []
+
+    for val in rows:
+        if val[0] + val[1] not in uniques:
+            civLeaders.append(val)
+            uniques.append(val[0] + val[1])
+
+    for row in civLeaders:
+        crsr.execute(f"SELECT * FROM PlayerItems WHERE CivilizationType = '{row[0]}' AND LeaderType = '{row[1]}' AND Domain = 'Players:Expansion2_Players'")
+        items = crsr.fetchall()
+        unique_items = []
+        unique_items_names = []
+        for val in items:
+            if val[3] not in unique_items_names:
+                unique_items.append(val)
+                unique_items_names.append(val[3])
+        civLeaderItems[row] = unique_items
+
+    connection.close()
+    return civLeaderItems
+
 
 def get_units_dict(db_path):
     res = {}
