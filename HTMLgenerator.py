@@ -1174,7 +1174,7 @@ def get_expanded_html_file(bbg_version, lang):
         div(cls="layer")
         with div(cls="page-flex"):
             with div(cls="main-wrapper"):
-                add_header(bbg_version, lang, 'leaders')
+                add_header(bbg_version, lang, 'bbg_expanded')
                 with div(cls=""):
                     with div(cls="fixed left-0 right-auto h-screen w-[253px] bg-white border-r border-neutral-300 overflow-scroll", style="z-index: 5;"):
                         add_sidebar(menu_items, menu_icons, 'images/leaders')
