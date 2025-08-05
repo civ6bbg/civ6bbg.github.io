@@ -217,7 +217,6 @@ def add_preloader():
                     polyline(id="front", points="1 6 4 6 6 11 10 1 12 6 15 6")
 
 bbg_versions = [None, 'Beta', '6.4', '6.3', '6.2', '6.1', '6.0', '5.8', '5.7', '5.6']
-bbg_versions_tmp = [None, 'expanded']
 
 def get_version_name(bbg_version):
     return bbg_version if bbg_version != None else 'base_game'
@@ -251,8 +250,12 @@ def add_header(bbg_version, lang, page_type):
                                     span("Toggle menu", cls="sr-only")
                                     span(cls="icon menu-toggle", aria_hidden="true")
                             with div(cls="flex center col-xl-1 col-lg-1 col-md-1 col-2"):
+                                # with ul(cls='logo-menu'):
+                                #     with li(): 
                                 with a(href="/index.html", style="align-content: center;"):
                                     img(src="/images/BBGLogo.webp", style="width:3em; border-radius:10%", alt="#")
+                                    # with li():
+                                    #     i(cls="extended-icon", data_feather="toggle-left", aria_hidden="true")
                                 div(cls="mobile-nav")
                             with div(cls="flex col-xl-8 col-lg-8 col-md-8 col-8"):
                                 with div(cls="main-menu"):
@@ -275,7 +278,7 @@ def add_header(bbg_version, lang, page_type):
                                             with nav(cls="navigation"):
                                                 with ul(cls="nav menu"):
                                                     with li():
-                                                        i(cls="fa fa-language lang-icon")
+                                                        i(cls="fa-solid fa-language lang-icon")
                                                         with ul(cls="dropdown"):
                                                             add_lang('English  ', 'en_US', bbg_version, 'us', page_type)
                                                             add_lang('French  ', 'fr_FR', bbg_version, 'fr', page_type)
@@ -316,7 +319,6 @@ def add_final_scripts():
     script(src="/js/script.js")
     script(src="/plugins/feather.min.js")
     script(src="/plugins/chart.min.js")
-    script(src="https://kit.fontawesome.com/bd91c323e3.js", crossorigin="anonymous")
 
 def get_loc(locs_data, s, en_US_locs_data):
     try:
@@ -359,6 +361,7 @@ def add_html_header(doc, page_title):
         link(rel='stylesheet', href=f"/css/animate.min.css")
         link(rel='stylesheet', href=f"/css/header.css")
         link(rel='stylesheet', href=f"/css/footer.css")
+        link(rel='stylesheet', href=f"/fontawesome-free-7.0.0-web/css/all.css")
 
 def show_element_with_base_option(element, lang, locs_data, en_US_locs_data, data_append = '', base_game_data_append = '', alignment = 'left'):
     p(get_loc(locs_data, element, en_US_locs_data) + f'{data_append}', style=f"text-align:{alignment}", cls='civ-ability-desc actual-text')
@@ -387,7 +390,7 @@ def add_footer():
                     a("Donate", href="https://ko-fi.com/calcalciffer", target="_blank", cls="btn btn-primary")
                 with div(cls="col-sm-2 col-6 footer-popup-scroll-up"):
                     with a(id="scrollUp", cls="displayNone", href="#top", onclick=f'civClicked(null)'):
-                        i(cls='fa fa-angle-up')
+                        i(cls='fa-solid fa-up-long')
 
 def get_leader_html_file(bbg_version, lang):
     en_US_locs_data = get_locs_data(bbg_version, 'en_US')
