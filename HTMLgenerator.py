@@ -1163,12 +1163,18 @@ def get_expanded_html_file(bbg_version, lang):
     menu_items = []
     menu_icons = []
     civ_leaders_items = get_expanded_civs_tables(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugConfiguration.sqlite")
+    governors = get_expanded_governors_list(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite")
+    governor_promotion_dict = get_governors_promotion_dict(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite")
+    governor_promotion_set_dict = get_governors_promotion_sets_dict(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite", governors, governor_promotion_dict)
     units_dict = get_units_dict(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite")
     tech_to_loc_dict = get_tech_to_loc_dict(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite")
     civic_to_loc_dict = get_civic_to_loc_dict(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite")
     for leader in civ_leaders_items:
         menu_items.append(get_loc(locs_data, leader[2], en_US_locs_data) + ' ' + get_loc(locs_data, leader[5], en_US_locs_data))
-        menu_icons.append(get_loc(en_US_locs_data, leader[2], en_US_locs_data) + ' ' + get_loc(en_US_locs_data, leader[5], en_US_locs_data))
+        menu_icons.append(f'leaders/{get_loc(en_US_locs_data, leader[2], en_US_locs_data) + ' ' + get_loc(en_US_locs_data, leader[5], en_US_locs_data)}')
+    for gov in governors:
+        menu_items.append(get_loc(locs_data, gov[1], en_US_locs_data))
+        menu_icons.append(f'governors/{get_loc(en_US_locs_data, gov[1], en_US_locs_data)}')
     with doc:
         add_preloader()
         div(cls="layer")
@@ -1177,7 +1183,7 @@ def get_expanded_html_file(bbg_version, lang):
                 add_header(bbg_version, lang, 'bbg_expanded')
                 with div(cls=""):
                     with div(cls="fixed left-0 right-auto h-screen w-[253px] bg-white border-r border-neutral-300 overflow-scroll", style="z-index: 5;"):
-                        add_sidebar(menu_items, menu_icons, 'images/leaders')
+                        add_sidebar(menu_items, menu_icons, 'images')
                     with div(cls="leaders-data min-w-full main-pl"):
                         with main(cls="main users chart-page"):
                             with div(cls="container"):
@@ -1214,6 +1220,30 @@ def get_expanded_html_file(bbg_version, lang):
                                                     else:
                                                         show_element_with_base_option(item[5], lang, locs_data, en_US_locs_data)
                                                     br()
+                                for gov in governors:
+                                    with div(cls="row", id=get_loc(locs_data, gov[1], en_US_locs_data)):
+                                        with div(cls="col-lg-12"):
+                                            with div(cls="chart"):
+                                                with h2(get_loc(locs_data, gov[1], en_US_locs_data), cls='civ-name'):
+                                                    img(src=f'/images/governors/{get_loc(en_US_locs_data, gov[1], en_US_locs_data)}.webp', style="vertical-align: middle; width:7em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
+                                                br()
+                                                for level in governor_promotion_set_dict[gov[0]]:
+                                                    column_count = len(governor_promotion_set_dict[gov[0]][level])
+                                                    div_cls = f'col-lg-{math.floor(12 / column_count)}'
+                                                    with div(cls='row'):
+                                                        for column in governor_promotion_set_dict[gov[0]][level]:
+                                                            has_border = 'gov-promotion-border' if column < column_count - 1 else ''
+                                                            with div(cls=f'{div_cls} gov-promotion {has_border}'):
+                                                                promotion = governor_promotion_set_dict[gov[0]][level][column][0]
+                                                                promotion_name = governor_promotion_dict[promotion][1]
+                                                                alignment = 'left' if column == 0 else 'center' if column == 1 else 'right'
+                                                                with h3(f'{get_loc(locs_data, promotion_name, en_US_locs_data)}', style=f"text-align:{alignment}", cls='civ-ability-name'):
+                                                                    br()
+                                                                    br()
+                                                                    promotion_desc = governor_promotion_dict[promotion][2]
+                                                                    p(f'{get_loc(locs_data, promotion_desc, en_US_locs_data)}', style=f"text-align:{alignment}", cls='civ-ability-desc')
+                                                                    # show_element_with_base_option(promotion_desc, lang, locs_data, en_US_locs_data, alignment = alignment)
+                                                                    br()
 
         add_final_scripts()
 

@@ -234,6 +234,20 @@ def get_governors_list(db_path):
     connection.close()
     return rows
 
+def get_expanded_governors_list(db_path):
+    connection = sqlite3.connect(db_path)
+    
+    expanded_bbg_governors = [
+        'GOVERNOR_LIME_TEO_OWL_EMISSARY'
+    ]
+    expanded_bbg_condition = " OR ".join([f"GovernorType = '{leader}'" for leader in expanded_bbg_governors])
+
+    crsr = connection.cursor()
+    crsr.execute(f"SELECT GovernorType, Name, Description, Title, ShortTitle, TransitionStrength, AssignCityState FROM Governors WHERE {expanded_bbg_condition}")
+    rows = crsr.fetchall()
+    connection.close()
+    return rows
+
 
 def get_governors_promotion_sets_dict(db_path, governor_list, governor_promotion_dict):
     res = {}
