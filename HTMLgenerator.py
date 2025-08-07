@@ -366,15 +366,18 @@ def add_html_header(doc, page_title):
         link(rel='stylesheet', href=f"/css/footer.css")
         link(rel='stylesheet', href=f"/fontawesome-free-7.0.0-web/css/all.css")
 
-def show_element_with_base_option(element, lang, locs_data, en_US_locs_data, data_append = '', base_game_data_append = '', alignment = 'left'):
-    p(get_loc(locs_data, element, en_US_locs_data) + f'{data_append}', style=f"text-align:{alignment}", cls='civ-ability-desc actual-text')
-    with div(cls="base-game-text row"):
-        with div(cls='col-lg-6 col-md-6'):
-            with div(cls="chart", style="box-shadow:none"):
-                p(get_loc(locs_data, element, en_US_locs_data) + f'{data_append}', style=f"text-align:{alignment}", cls='civ-ability-desc')
-        with div(cls='col-lg-6 col-md-6'):
-            with div(cls="chart", style="box-shadow:none"):
-                p(get_loc(base_game_locs_data[lang], element, base_game_locs_data['en_US']) + f'\n{base_game_data_append}', style=f"text-align:{alignment}", cls='civ-ability-desc')
+def show_element_with_base_option(element, lang, locs_data, en_US_locs_data, data_append = '', base_game_data_append = '', alignment = 'left', add_base_game = True):
+    if add_base_game:
+        p(get_loc(locs_data, element, en_US_locs_data) + f'{data_append}', style=f"text-align:{alignment}", cls='civ-ability-desc actual-text')
+        with div(cls="base-game-text row"):
+            with div(cls='col-lg-6 col-md-6'):
+                with div(cls="chart", style="box-shadow:none"):
+                    p(get_loc(locs_data, element, en_US_locs_data) + f'{data_append}', style=f"text-align:{alignment}", cls='civ-ability-desc')
+            with div(cls='col-lg-6 col-md-6'):
+                with div(cls="chart", style="box-shadow:none"):
+                    p(get_loc(base_game_locs_data[lang], element, base_game_locs_data['en_US']) + f'\n{base_game_data_append}', style=f"text-align:{alignment}", cls='civ-ability-desc')
+    else:
+        p(get_loc(locs_data, element, en_US_locs_data) + f'{data_append}', style=f"text-align:{alignment}", cls='civ-ability-desc')
 
 def get_unlock_tech_civic_dialog(unlock_tech, unlock_civic, locs_data, en_US_locs_data, tech_to_loc_dict, civic_to_loc_dict):
     if unlock_tech:
@@ -1195,11 +1198,11 @@ def get_expanded_html_file(bbg_version, lang):
                                                     img(src=f'/images/leaders/{get_loc(en_US_locs_data, leader[2], en_US_locs_data) + ' ' + get_loc(en_US_locs_data, leader[5], en_US_locs_data)}.webp', style="vertical-align: middle; width:7em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
                                                 h3(get_loc(locs_data, leader[3], en_US_locs_data), style="text-align:left", cls='civ-ability-name')
                                                 br()
-                                                show_element_with_base_option(leader[4], lang, locs_data, en_US_locs_data)
+                                                show_element_with_base_option(leader[4], lang, locs_data, en_US_locs_data, add_base_game = False)
                                                 br()
                                                 h3(get_loc(locs_data, leader[6], en_US_locs_data), style="text-align:left", cls='civ-ability-name')
                                                 br()
-                                                show_element_with_base_option(leader[7], lang, locs_data, en_US_locs_data)
+                                                show_element_with_base_option(leader[7], lang, locs_data, en_US_locs_data, add_base_game = False)
                                                 br()
                                                 for item in civ_leaders_items[leader]:
                                                     with h3(f'{get_loc(locs_data, item[4], en_US_locs_data)}', style="text-align:left", cls='civ-ability-name'):
@@ -1216,9 +1219,10 @@ def get_expanded_html_file(bbg_version, lang):
                                                             base_game_tech_civic_dialog = get_unlock_tech_civic_dialog(unlock_tech, unlock_civic, locs_data, en_US_locs_data, tech_to_loc_dict, civic_to_loc_dict)
                                                         show_element_with_base_option(item[5], lang, locs_data, en_US_locs_data, 
                                                             data_append = (f'[NEWLINE][NEWLINE]{tech_civic_dialog}' if tech_civic_dialog != None else ''), 
-                                                            base_game_data_append = (f'[NEWLINE][NEWLINE]{base_game_tech_civic_dialog}' if tech_civic_dialog != None else ''))
+                                                            base_game_data_append = (f'[NEWLINE][NEWLINE]{base_game_tech_civic_dialog}' if tech_civic_dialog != None else ''),
+                                                            add_base_game = False)
                                                     else:
-                                                        show_element_with_base_option(item[5], lang, locs_data, en_US_locs_data)
+                                                        show_element_with_base_option(item[5], lang, locs_data, en_US_locs_data, add_base_game = False)
                                                     br()
                                 for gov in governors:
                                     with div(cls="row", id=get_loc(locs_data, gov[1], en_US_locs_data)):
