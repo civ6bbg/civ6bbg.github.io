@@ -357,7 +357,7 @@ def add_html_header(doc, page_title):
         meta(charset='utf-8')
         meta(httpequiv="X-UA-Compatible", contents="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1")
-        link(rel='icon', href=f'/images/civVI.webp', type='image/x-icon')
+        link(rel='icon', href=f'/images/BBGLogo.webp', type='image/x-icon')
         link(rel='stylesheet', href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap")
         link(rel='stylesheet', href=f"/css/style.min.css")
         link(rel='stylesheet', href=f"/css/preloader.css")
