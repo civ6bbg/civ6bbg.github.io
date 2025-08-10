@@ -378,6 +378,7 @@ def show_element_with_base_option(element, lang, locs_data, en_US_locs_data, dat
                 with div(cls="chart", style="box-shadow:none"):
                     p(get_loc(base_game_locs_data[lang], element, base_game_locs_data['en_US']) + f'\n{base_game_data_append}', style=f"text-align:{alignment}", cls='civ-ability-desc')
     else:
+        comment(element)
         p(get_loc(locs_data, element, en_US_locs_data) + f'{data_append}', style=f"text-align:{alignment}", cls='civ-ability-desc')
 
 def get_unlock_tech_civic_dialog(unlock_tech, unlock_civic, locs_data, en_US_locs_data, tech_to_loc_dict, civic_to_loc_dict):
