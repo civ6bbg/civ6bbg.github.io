@@ -1224,7 +1224,7 @@ def get_expanded_html_file(bbg_version, lang):
                                     with div(cls="row", id=get_loc(locs_data, leader[2], en_US_locs_data) + ' ' + get_loc(locs_data, leader[5], en_US_locs_data)):
                                         with div(cls="col-lg-12"):
                                             with div(cls="chart"):
-                                                comment(leader[2])
+                                                comment(f'{leader[2]} {leader[5]}')
                                                 with h2(get_loc(locs_data, leader[2], en_US_locs_data) + ' ' + get_loc(locs_data, leader[5], en_US_locs_data), cls='civ-name'):
                                                     img(src=f'/images/leaders/{get_loc(en_US_locs_data, leader[2], en_US_locs_data) + ' ' + get_loc(en_US_locs_data, leader[5], en_US_locs_data)}.webp', style="vertical-align: middle; width:7em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
                                                 comment(leader[3])
