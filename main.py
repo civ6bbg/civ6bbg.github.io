@@ -11,7 +11,7 @@ from HTMLgenerator import *
 
 langs = ['en_US', 'de_DE', 'es_ES', 'it_IT', 'ko_KR', 'pt_BR', 'zh_Hans_CN', 'fr_FR', 'ja_JP', 'pl_PL', 'ru_RU']
 langs_tmp = ['en_US']
-bbg_versions_tmp = [None, 'expanded']
+bbg_versions_tmp = [None, '6.5']
 
 def generate_leader_html_file(bbg_ver, l):
     docStr = get_leader_html_file(bbg_ver, l)
