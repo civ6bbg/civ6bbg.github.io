@@ -12,11 +12,15 @@ from HTMLgenerator import *
 langs = ['en_US', 'de_DE', 'es_ES', 'it_IT', 'ko_KR', 'pt_BR', 'zh_Hans_CN', 'fr_FR', 'ja_JP', 'pl_PL', 'ru_RU']
 langs_tmp = ['en_US']
 bbg_versions_tmp = [None, '6.5']
+latest_bbg = '6.5'
 
 def generate_leader_html_file(bbg_ver, l):
     docStr = get_leader_html_file(bbg_ver, l)
     with open(f'{l}/leaders_{'base_game' if bbg_ver == None else bbg_ver}.html', 'w') as f:
         f.write(docStr)
+    if bbg_ver == latest_bbg and l == 'en_US':
+        with open('index.html', 'w') as f:
+            f.write(docStr)
 
 def generate_city_state_html_file(bbg_ver, l):
     docStr = get_city_state_html_file(bbg_ver, l)
