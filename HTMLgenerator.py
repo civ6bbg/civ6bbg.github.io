@@ -368,6 +368,7 @@ def add_html_header(doc, page_title):
 
 def show_element_with_base_option(element, lang, locs_data, en_US_locs_data, data_append = '', base_game_data_append = '', alignment = 'left', add_base_game = True):
     if add_base_game:
+        comment(element)
         p(get_loc(locs_data, element, en_US_locs_data) + f'{data_append}', style=f"text-align:{alignment}", cls='civ-ability-desc actual-text')
         with div(cls="base-game-text row"):
             with div(cls='col-lg-6 col-md-6'):
@@ -435,17 +436,21 @@ def get_leader_html_file(bbg_version, lang):
                                     with div(cls="row", id=get_loc(locs_data, leader[2], en_US_locs_data) + ' ' + get_loc(locs_data, leader[5], en_US_locs_data)):
                                         with div(cls="col-lg-12"):
                                             with div(cls="chart"):
+                                                comment(f'{leader[2]} {leader[5]}')
                                                 with h2(get_loc(locs_data, leader[2], en_US_locs_data) + ' ' + get_loc(locs_data, leader[5], en_US_locs_data), cls='civ-name'):
                                                     img(src=f'/images/leaders/{get_loc(en_US_locs_data, leader[2], en_US_locs_data) + ' ' + get_loc(en_US_locs_data, leader[5], en_US_locs_data)}.webp', style="vertical-align: middle; width:7em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
+                                                comment(leader[3])
                                                 h3(get_loc(locs_data, leader[3], en_US_locs_data), style="text-align:left", cls='civ-ability-name')
                                                 br()
                                                 show_element_with_base_option(leader[4], lang, locs_data, en_US_locs_data)
                                                 br()
+                                                comment(leader[6])
                                                 h3(get_loc(locs_data, leader[6], en_US_locs_data), style="text-align:left", cls='civ-ability-name')
                                                 br()
                                                 show_element_with_base_option(leader[7], lang, locs_data, en_US_locs_data)
                                                 br()
                                                 for item in civ_leaders_items[leader]:
+                                                    comment(item[4])
                                                     with h3(f'{get_loc(locs_data, item[4], en_US_locs_data)}', style="text-align:left", cls='civ-ability-name'):
                                                         img(src=f'/images/items/{get_loc(en_US_locs_data, item[4], en_US_locs_data)}.webp', style="vertical-align: middle; width:2em; text-align:left", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
 
@@ -504,6 +509,7 @@ def get_city_state_html_file(bbg_version, lang):
                                     with div(cls="row", id=get_loc(locs_data, cs[2], en_US_locs_data)):
                                         with div(cls="col-lg-12"):
                                             with div(cls="chart"):
+                                                comment(cs[2])
                                                 with h2(get_loc(locs_data, cs[2], en_US_locs_data), cls='civ-name'):
                                                     img(src=f'/images/city_states/{get_loc(en_US_locs_data, cs[2], en_US_locs_data)}.webp', style="vertical-align: middle; width:5em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
                                                 cs_desc = cs[7] if cs[7] != None else (cs[6] if cs[6] != None else cs[5])
@@ -564,9 +570,11 @@ def get_religion_html_file(bbg_version, lang):
                                             with div(cls="col-lg-6"):
                                                 with div(cls="chart"):
                                                     if religion_cls == 'LOC_BELIEF_CLASS_PANTHEON_NAME':
+                                                        comment(elem[1])
                                                         with h2(get_loc(locs_data, elem[1], en_US_locs_data), cls='civ-name'):
                                                             img(src=f'/images/religion/{get_loc(en_US_locs_data, elem[1], en_US_locs_data)}.webp', style="vertical-align: middle; height:3em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
                                                     else:
+                                                        comment(elem[1])
                                                         h2(get_loc(locs_data, elem[1], en_US_locs_data), cls='civ-name')
                                                     show_element_with_base_option(elem[2], lang, locs_data, en_US_locs_data)
 
@@ -611,6 +619,7 @@ def get_governor_html_file(bbg_version, lang):
                                     with div(cls="row", id=get_loc(locs_data, gov[1], en_US_locs_data)):
                                         with div(cls="col-lg-12"):
                                             with div(cls="chart"):
+                                                comment(gov[1])
                                                 with h2(get_loc(locs_data, gov[1], en_US_locs_data), cls='civ-name'):
                                                     img(src=f'/images/governors/{get_loc(en_US_locs_data, gov[1], en_US_locs_data)}.webp', style="vertical-align: middle; width:7em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
                                                 br()
@@ -624,10 +633,12 @@ def get_governor_html_file(bbg_version, lang):
                                                                 promotion = governor_promotion_set_dict[gov[0]][level][column][0]
                                                                 promotion_name = governor_promotion_dict[promotion][1]
                                                                 alignment = 'left' if column == 0 else 'center' if column == 1 else 'right'
+                                                                comment(promotion_name)
                                                                 with h3(f'{get_loc(locs_data, promotion_name, en_US_locs_data)}', style=f"text-align:{alignment}", cls='civ-ability-name'):
                                                                     br()
                                                                     br()
                                                                     promotion_desc = governor_promotion_dict[promotion][2]
+                                                                    comment(promotion_desc)
                                                                     p(f'{get_loc(locs_data, promotion_desc, en_US_locs_data)}', style=f"text-align:{alignment}", cls='civ-ability-desc')
                                                                     # show_element_with_base_option(promotion_desc, lang, locs_data, en_US_locs_data, alignment = alignment)
                                                                     br()
@@ -671,6 +682,7 @@ def get_natural_wonder_html_file(bbg_version, lang):
                                     with div(cls="row", id=get_loc(locs_data, wonder[1], en_US_locs_data)):
                                         with div(cls="col-lg-12"):
                                             with div(cls="chart"):
+                                                comment(wonder[1])
                                                 with h2(get_loc(locs_data, wonder[1], en_US_locs_data), cls='civ-name'):
                                                     img(src=f'/images/natural_wonders/{get_loc(en_US_locs_data, wonder[1], en_US_locs_data)}.webp', style="vertical-align: middle; width:5em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
                                                 br()
@@ -714,12 +726,14 @@ def get_world_wonder_html_file(bbg_version, lang):
                                 for era in world_wonders.keys():
                                     with div(cls='col-lg-12', id=get_loc(locs_data, era, en_US_locs_data)):
                                         with div(cls="chart"):
+                                            comment(era)
                                             h2(get_loc(locs_data, era, en_US_locs_data), cls='civ-name')
                                     with div(cls="row"):
                                         for wonder_name in world_wonders[era]:
                                             wonder = world_wonders[era][wonder_name]
                                             with div(cls="col-lg-6 col-md-12"):
                                                 with div(cls="chart"):
+                                                    comment(wonder[0][1])
                                                     with h2(get_loc(locs_data, wonder[0][1], en_US_locs_data), cls='civ-name'):
                                                         img(src=f'/images/world_wonders/{get_loc(en_US_locs_data, wonder[0][1], en_US_locs_data)}.webp', style="vertical-align: middle; width:5em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
                                                     br()
@@ -786,6 +800,7 @@ def get_misc_html_file(bbg_version, lang):
                                     with div(cls="row", id=get_loc(locs_data, era, en_US_locs_data)):
                                         with div(cls="col-lg-12"):
                                             with div(cls="chart"):
+                                                comment(era)
                                                 h2(get_loc(locs_data, era, en_US_locs_data), cls='civ-name')
                                     with div(cls="row"):
                                         with div(cls="chart"):
@@ -793,7 +808,9 @@ def get_misc_html_file(bbg_version, lang):
                                                 for dedication in dedication_list_per_era[era]:
                                                     # print(dedication[0])
                                                     with div(cls="col-lg-3"):
+                                                        comment(dedication[0])
                                                         img(src=f'/images/ICON_{dedication[0]}.webp', style="vertical-align: middle; width:5em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
+                                                        comment(dedication[2])
                                                         p(get_loc(locs_data, dedication[2], en_US_locs_data), style="text-align:left", cls='civ-ability-desc')
                                                         br()
                                                 br()
@@ -801,13 +818,16 @@ def get_misc_html_file(bbg_version, lang):
                                         for policy in dark_age_policy_per_era[eras_reverse_map[era]]:
                                             with div(cls="col-lg-3"):
                                                 with div(cls="chart"):
+                                                    comment(policy[4])
                                                     h2(get_loc(locs_data, policy[4], en_US_locs_data), cls='civ-name')
                                                     br()
+                                                    comment(policy[1])
                                                     p(get_loc(locs_data, policy[1], en_US_locs_data), style="text-align:left", cls='civ-ability-desc')
                                                     br()
                                 for alliance in alliance_list:
                                     with div(cls="row", id=get_loc(locs_data, alliance[1], en_US_locs_data)):
                                         with div(cls="col-lg-12"):
+                                            comment(alliance[1])
                                             h2(get_loc(locs_data, alliance[1], en_US_locs_data), cls='civ-name')
                                             br()
                                             alliance_effect = get_alliance_effects(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugGameplay.sqlite", alliance[0])
@@ -821,6 +841,7 @@ def get_misc_html_file(bbg_version, lang):
                                                         for effect in alliance_effect[lvl]:
                                                             with div(cls=div_cls):
                                                                 with div(cls="chart"):
+                                                                    comment(effect)
                                                                     p(get_loc(locs_data, effect, en_US_locs_data), style="text-align:left", cls='civ-ability-desc')
                                             br()
  
@@ -904,12 +925,14 @@ def get_names_html_file(bbg_version, lang):
                                                     div_cls = 'col-md-12 col-lg-12'
                                                 with div(cls=div_cls):
                                                     with div(cls="chart"):
+                                                        comment(property_name)
                                                         h2(get_loc(locs_data, f'{property_name}', en_US_locs_data), style="text-align:center", cls='civ-ability-desc')
                                                         with div(cls='row'):
                                                             cls_len = math.floor(12 / (1 if len(name_classes[name_cls][property_name]) == 0 else len(name_classes[name_cls][property_name])))
                                                             curr_div_cls = f'col-md-{cls_len} col-lg-{cls_len}'
                                                             for name in name_classes[name_cls][property_name]:
                                                                 with div(cls=curr_div_cls):
+                                                                    comment(name)
                                                                     p(get_loc(locs_data, f'{name}', en_US_locs_data), style="text-align:center", cls='civ-ability-desc')
                                                                 # br()
                                             br()
@@ -980,6 +1003,7 @@ def get_great_people_html_file(bbg_version, lang):
                                     with div(cls="row", id=get_loc(locs_data, gp_type, en_US_locs_data)):
                                         with div(cls="col-lg-12"):
                                             with div(cls="chart"):
+                                                comment(gp_type)
                                                 with h2(get_loc(locs_data, gp_type, en_US_locs_data), cls='civ-name'):
                                                     img(src=f'/images/{get_loc(en_US_locs_data, gp_type, en_US_locs_data)}.webp', style="vertical-align: middle; width:5em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
                                                     br()
@@ -990,6 +1014,7 @@ def get_great_people_html_file(bbg_version, lang):
                                             with div(cls="row", id=get_loc(locs_data, gp_type, en_US_locs_data)):
                                                 with div(cls="col-lg-12"):
                                                     with div(cls="chart"):
+                                                        comment(era)
                                                         h3(get_loc(locs_data, era, en_US_locs_data), cls='civ-name')
                                         with div(cls='row'):
                                             cls_len = math.ceil(12 / len(great_people[gp_type][era]))
@@ -997,6 +1022,7 @@ def get_great_people_html_file(bbg_version, lang):
                                             for gp in great_people[gp_type][era]:
                                                 with div(cls=div_cls):
                                                     with div(cls="chart"):
+                                                        comment(gp[1])
                                                         p(get_loc(locs_data, gp[1], en_US_locs_data), cls='civ-ability-name')
                                                         br()
                                                         if gp[4] > 0:
@@ -1005,11 +1031,13 @@ def get_great_people_html_file(bbg_version, lang):
                                                         br()
                                                         if gp[0] in great_people_modifier_dict.keys():
                                                             for mod, amount in great_people_modifier_dict[gp[0]]:
+                                                                comment(mod)
                                                                 processed = loc_amount_parameter(get_loc(locs_data, mod, en_US_locs_data), amount)
                                                                 p(processed, style="text-align:left", cls='civ-ability-desc')
                                                                 br()
                                                         if gp[0] in great_people_works.keys():
                                                             for work in great_people_works[gp[0]]:
+                                                                comment(work[1])
                                                                 p(img(src=f'/images/{work[2]}.webp', style="vertical-align: middle; width:2em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';"), f' {get_loc(locs_data, work[1], en_US_locs_data)}', style="text-align:left", cls='civ-ability-desc')
         add_final_scripts()
 
@@ -1137,11 +1165,13 @@ def get_buildings_html_file(bbg_version, lang):
                                 for district in buildings_per_district.keys():
                                     with div(cls='col-lg-12', id=get_loc(locs_data, district, en_US_locs_data)):
                                         with div(cls="chart"):
+                                            comment(district)
                                             h2(get_loc(locs_data, district, en_US_locs_data), cls='civ-name')
                                     with div(cls="row"):
                                         for building in buildings_per_district[district].keys():
                                             with div(cls="col-lg-6 col-md-12"):
                                                 with div(cls="chart"):
+                                                    comment(building)
                                                     with h2(get_loc(locs_data, building, en_US_locs_data), cls='civ-name'):
                                                         img(src=f'/images/buildings/{get_loc(en_US_locs_data, building, en_US_locs_data)}.webp', style="vertical-align: middle; width:5em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
                                                     br()
@@ -1194,17 +1224,21 @@ def get_expanded_html_file(bbg_version, lang):
                                     with div(cls="row", id=get_loc(locs_data, leader[2], en_US_locs_data) + ' ' + get_loc(locs_data, leader[5], en_US_locs_data)):
                                         with div(cls="col-lg-12"):
                                             with div(cls="chart"):
+                                                comment(leader[2])
                                                 with h2(get_loc(locs_data, leader[2], en_US_locs_data) + ' ' + get_loc(locs_data, leader[5], en_US_locs_data), cls='civ-name'):
                                                     img(src=f'/images/leaders/{get_loc(en_US_locs_data, leader[2], en_US_locs_data) + ' ' + get_loc(en_US_locs_data, leader[5], en_US_locs_data)}.webp', style="vertical-align: middle; width:7em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
+                                                comment(leader[3])
                                                 h3(get_loc(locs_data, leader[3], en_US_locs_data), style="text-align:left", cls='civ-ability-name')
                                                 br()
                                                 show_element_with_base_option(leader[4], lang, locs_data, en_US_locs_data, add_base_game = False)
                                                 br()
+                                                comment(leader[6])
                                                 h3(get_loc(locs_data, leader[6], en_US_locs_data), style="text-align:left", cls='civ-ability-name')
                                                 br()
                                                 show_element_with_base_option(leader[7], lang, locs_data, en_US_locs_data, add_base_game = False)
                                                 br()
                                                 for item in civ_leaders_items[leader]:
+                                                    comment(item[4])
                                                     with h3(f'{get_loc(locs_data, item[4], en_US_locs_data)}', style="text-align:left", cls='civ-ability-name'):
                                                         img(src=f'/images/items/{get_loc(en_US_locs_data, item[4], en_US_locs_data)}.webp', style="vertical-align: middle; width:2em; text-align:left", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
 
@@ -1228,6 +1262,7 @@ def get_expanded_html_file(bbg_version, lang):
                                     with div(cls="row", id=get_loc(locs_data, gov[1], en_US_locs_data)):
                                         with div(cls="col-lg-12"):
                                             with div(cls="chart"):
+                                                comment(gov[1])
                                                 with h2(get_loc(locs_data, gov[1], en_US_locs_data), cls='civ-name'):
                                                     img(src=f'/images/governors/{get_loc(en_US_locs_data, gov[1], en_US_locs_data)}.webp', style="vertical-align: middle; width:7em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
                                                 br()
@@ -1241,10 +1276,12 @@ def get_expanded_html_file(bbg_version, lang):
                                                                 promotion = governor_promotion_set_dict[gov[0]][level][column][0]
                                                                 promotion_name = governor_promotion_dict[promotion][1]
                                                                 alignment = 'left' if column == 0 else 'center' if column == 1 else 'right'
+                                                                comment(promotion_name)
                                                                 with h3(f'{get_loc(locs_data, promotion_name, en_US_locs_data)}', style=f"text-align:{alignment}", cls='civ-ability-name'):
                                                                     br()
                                                                     br()
                                                                     promotion_desc = governor_promotion_dict[promotion][2]
+                                                                    comment(promotion_desc)
                                                                     p(f'{get_loc(locs_data, promotion_desc, en_US_locs_data)}', style=f"text-align:{alignment}", cls='civ-ability-desc')
                                                                     # show_element_with_base_option(promotion_desc, lang, locs_data, en_US_locs_data, alignment = alignment)
                                                                     br()
