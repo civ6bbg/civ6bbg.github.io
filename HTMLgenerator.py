@@ -9,6 +9,8 @@ from dominate.tags import *
 
 from parseBBGFiles import *
 
+bbg_versions = [None, '6.5', '6.4', '6.3', '6.2', '6.1', '6.0', '5.8', '5.7', '5.6']
+
 replacements = [
     '[ICON_AMENITIES]',
     '[ICON_ANTIAIR_LARGE]',
@@ -215,8 +217,6 @@ def add_preloader():
                 with svg(width="16px",height="12px"):
                     polyline(id="back", points="1 6 4 6 6 11 10 1 12 6 15 6")
                     polyline(id="front", points="1 6 4 6 6 11 10 1 12 6 15 6")
-
-bbg_versions = [None, '6.5', '6.4', '6.3', '6.2', '6.1', '6.0', '5.8', '5.7', '5.6']
 
 def get_version_name(bbg_version):
     return bbg_version if bbg_version != None else 'base_game'
