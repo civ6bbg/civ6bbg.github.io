@@ -158,5 +158,5 @@ for bbg_ver in bbg_versions:
         generate_great_people_html_file(bbg_ver, l)
         generate_buildings_html_file(bbg_ver, l)
         generate_expanded_html_file(bbg_ver, l)
-        
+
 generate_sitemap()
