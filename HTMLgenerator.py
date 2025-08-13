@@ -229,6 +229,7 @@ def add_lang(text_name, link_name, bbg_version, flag, page_type):
 def add_header(bbg_version, lang, page_type):
     pages_list = [
         ('leaders','Leaders'),
+        ('bbg_expanded','BBG Expanded'),
         ('city_states','City States'),
         ('religion','Religion'),
         ('governor','Governors'),
