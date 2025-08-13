@@ -349,7 +349,7 @@
 			<Text>Chinese unique builder improvement unlocked with Masonry. Must be built in a line along the borders of your empire. Can only be pillaged (never destroyed) by natural disasters.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production.[NEWLINE]+1 [ICON_GOLD] Gold for each adjacent Great Wall.[NEWLINE]+1 [ICON_CULTURE] Culture for each adjacent Great Wall with Castles.[NEWLINE][NEWLINE]Varied yields when lead by each leader of China, these are doubled if adjacent to another Great Wall:[NEWLINE]+1 [ICON_FAITH] Faith and +1 [ICON_GOLD] Gold when lead by Qin Shi, Mandate of Heaven[NEWLINE]+1 [ICON_PRODUCTION] Prodution when lead by Qin Shi, Unifier[NEWLINE]+1 [ICON_CULTURE] Culture when lead by Kublai Khan[NEWLINE]+1 [ICON_SCIENCE] Science when lead by Wu Zetian[NEWLINE]+1 [ICON_FOOD] Food when lead by Yongle[NEWLINE][NEWLINE]Provides [ICON_TOURISM] Tourism after researching Flight.[NEWLINE]An occupying unit receives +1 Sight and +4 [ICON_STRENGTH] Defense Strength and automatically gains 2 turns of fortification.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_GREAT_WALL_EXPANSION2_DESCRIPTION" Language="en_US">
-			<Text>Chinese unique builder improvement unlocked with Masonry. Must be built in a line along the borders of your empire. Can only be pillaged (never destroyed) by natural disasters.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production.[NEWLINE]+1 [ICON_GOLD] Gold for each adjacent Great Wall.[NEWLINE]+1 [ICON_CULTURE] Culture for each adjacent Great Wall with Castles.	[NEWLINE]+1 [ICON_CULTURE] Culture with Military Science.[NEWLINE][NEWLINE]Provides [ICON_TOURISM] Tourism after researching Flight.[NEWLINE]An occupying unit receives +1 Sight and +4 [ICON_STRENGTH] Defense Strength and automatically gains 2 turns of fortification.</Text>
+			<Text>Chinese unique builder improvement unlocked with Masonry. Must be built in a line along the borders of your empire. Can only be pillaged (never destroyed) by natural disasters.[NEWLINE][NEWLINE]+1 [ICON_PRODUCTION] Production.[NEWLINE]+1 [ICON_GOLD] Gold for each adjacent Great Wall.[NEWLINE]+1 [ICON_CULTURE] Culture for each adjacent Great Wall with Castles.[NEWLINE][NEWLINE]Varied yields when lead by each leader of China, these are doubled if adjacent to another Great Wall:[NEWLINE]+1 [ICON_FAITH] Faith and +1 [ICON_GOLD] Gold when lead by Qin Shi, Mandate of Heaven[NEWLINE]+1 [ICON_PRODUCTION] Prodution when lead by Qin Shi, Unifier[NEWLINE]+1 [ICON_CULTURE] Culture when lead by Kublai Khan[NEWLINE]+1 [ICON_SCIENCE] Science when lead by Wu Zetian[NEWLINE]+1 [ICON_FOOD] Food when lead by Yongle[NEWLINE][NEWLINE]Provides [ICON_TOURISM] Tourism after researching Flight.[NEWLINE]An occupying unit receives +1 Sight and +4 [ICON_STRENGTH] Defense Strength and automatically gains 2 turns of fortification.</Text>
 		</Replace>
 
 		<!-- == COLOMBIA == -->
@@ -583,7 +583,7 @@
 		</Replace>
 		<!-- = leader ability = -->
 		<Replace Tag="LOC_TRAIT_LEADER_AMBIORIX_DESCRIPTION" Language="en_US">
-			<Text>Melee and anti-cavalry units receive +1 [ICON_STRENGTH] Combat Strength on attack for each of your adjacent land military units (does not count air or naval units).</Text>
+			<Text>Receives [ICON_CULTURE] Culture equal to 20% of the [ICON_PRODUCTION] Production cost after training a non-civilian unit. Melee and anti-cavalry units receive +1 [ICON_STRENGTH] Combat Strength for each adjacent military unit.</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_AMBIORIX_NEIGHBOR_COMBAT_BONUS_DESCRIPTION" Language="en_US">
 			<Text>Receive +1 [ICON_STRENGTH] Combat Strength on attack for each adjacent unit (King of the Eburones)</Text>
@@ -917,12 +917,12 @@
 		
 		<!-- == MACEDON == -->
 		<!-- = civilization ability = -->
-		<Replace Tag="LOC_TRAIT_LEADER_HELLENISTIC_FUSION_DESCRIPTION" Language="en_US">
+		<!-- <Replace Tag="LOC_TRAIT_LEADER_HELLENISTIC_FUSION_DESCRIPTION" Language="en_US">
 			<Text>Receive boosts upon city conquest: +20% [ICON_PRODUCTION] Production in all cities for 10 [ICON_TURN] turns, as well as a [ICON_TechBoosted] Eureka for each Encampment or Campus in the conquered city and an [ICON_CivicBoosted] Inspiration for each Holy Site or Theater Square.[NEWLINE][ICON_BULLET]Bias: None.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_HELLENISTIC_FUSION_EXPANSION1_DESCRIPTION" Language="en_US">
 			<Text>Receive boosts upon city conquest: +20% [ICON_PRODUCTION] Production in all cities for 10 [ICON_TURN] turns, as well as a [ICON_TechBoosted] Eureka for each Encampment or Campus in the conquered city and an [ICON_CivicBoosted] Inspiration for each Holy Site or Theater Square.[NEWLINE][ICON_BULLET]Bias: None.</Text>
-		</Replace>
+		</Replace> -->
 		<!-- = leader ability (Alexander) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_TO_WORLDS_END_DESCRIPTION" Language="en_US">
 			<Text>Combat victories provide [ICON_SCIENCE] Science equal to 20% of the [ICON_STRENGTH] Combat Strength of the defeated unit (on Online speed). Cities do not incur war weariness. All military units heal completely when this player captures a city with a world wonder.</Text>
@@ -1039,9 +1039,9 @@
 			<Text>Settling adjacent to Fresh Water and Coast does not provide extra [ICON_HOUSING] Housing. The Palace receives +1 [ICON_HOUSING] Housing. +1 [ICON_AMENITIES] Amenity for every Luxury adjacent to the City Center. +3 [ICON_STRENGTH] Combat Strength for units within 6 tiles of your [ICON_CAPITAL] capital.[NEWLINE][NEWLINE]Farms provides an additional +1 [ICON_HOUSING] Housing, +1 [ICON_PRODUCTION] Production for every adjacent Observatory, and +1 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]Plantations provide +1 [ICON_SCIENCE] Science for each adjacent Observatory and an additional +1 [ICON_SCIENCE] Science with Education.[NEWLINE][NEWLINE][ICON_BULLET]Bias: T3 Plantation Luxuries, T4 Bananas. Special "Hydrophobic".</Text>
 		</Replace>
 		<!-- = leader ability = -->
-		<Replace Tag="LOC_TRAIT_LEADER_MUTAL_DESCRIPTION" Language="en_US">
+		<!-- <Replace Tag="LOC_TRAIT_LEADER_MUTAL_DESCRIPTION" Language="en_US">
 			<Text>Non-capital cities within 6 tiles of the [ICON_CAPITAL] Capital gain +5% to all yields. Other non-capital cities receive -10% to all yields.</Text>
-		</Replace>
+		</Replace> -->
 		<Replace Tag="LOC_ABILITY_MUTAL_COMBAT_STRENGTH_NEAR_CAPITAL_DESCRIPTION" Language="en_US">
 			<Text>+3 [ICON_STRENGTH] Combat Strength to units within 6 tiles of the [ICON_CAPITAL] Capital</Text>
 		</Replace>
@@ -1193,9 +1193,9 @@
 			<Text>Begin the game with the Writing technology [ICON_TechBoosted] Eureka. Coastal cities founded by Phoenicia and located on the same continent as the Phoenician [ICON_CAPITAL] Capital are 100% Loyal. Settlers gain +2 [ICON_MOVEMENT] Movement and +2 sight range while embarked. Settlers ignore additional [ICON_MOVEMENT] Movement costs from embarking and disembarking.[NEWLINE][ICON_BULLET]Bias: T1 Coast.</Text>
 		</Replace>
 		<!-- = leader ability = -->
-		<Replace Tag="LOC_TRAIT_LEADER_FOUNDER_CARTHAGE_DESCRIPTION" Language="en_US">
+		<!-- <Replace Tag="LOC_TRAIT_LEADER_FOUNDER_CARTHAGE_DESCRIPTION" Language="en_US">
 			<Text>Can move their original [ICON_CAPITAL] Capital to any city with a Cothon they founded by completing a unique project in that city. +1 [ICON_TRADEROUTE] Trade Route capacity for each Government Plaza building. +50% [ICON_PRODUCTION] Production toward [ICON_DISTRICT] districts in the city with the Government Plaza.</Text>
-		</Replace>
+		</Replace> -->
 		<!-- = unique district = -->
 		<Replace Tag="LOC_DISTRICT_COTHON_DESCRIPTION" Language="en_US">
 			<Text>A district unique to Phoenicia for naval activity in your city. Replaces the Harbor district and cheaper to build. Must be built on Coast or Lake Terrain adjacent to land.[NEWLINE][NEWLINE]+25% [ICON_PRODUCTION] Production towards naval units and Settlers in this city.</Text>
@@ -3954,7 +3954,7 @@
 		</Replace>
 		<!-- = leader ability = -->
 		<Replace Tag="LOC_TRAIT_LEADER_LL_TEKINICH_II_WRATH_OF_VENUS_DESC" Language="en_US">
-			<Text>Receive -2 combat strength for all units within six tiles of its capital. Units outside of this circle receive +4 combat strength. Units heal 5hp and gain 2 experience points upon completing an eureka.</Text>
+			<Text>Receive -2 [ICON_STRENGTH] combat strength for all units within six tiles of its [ICON_CAPITAL] capital. Units outside of this circle receive +4 [ICON_STRENGTH] combat strength. Units heal 5hp and gain 2 experience points upon completing an [ICON_TechBoosted] eureka.</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_LL_TEKINICH_II_WRATH_OF_VENUS_NAME" Language="en_US">
             <Text>Wrath of Venus</Text>
@@ -4096,13 +4096,13 @@
 			<Text>Waka Outpost</Text>
 		</Replace>
 		<Replace Tag="LOC_GOV_PROMO_LIME_TEO_OWL_EMISSARY_OUTPOST_DESC" Language="en_US"> <!-- L1 -->
-			<Text>While established in a City State, provides a tradeable copy of its Luxury resources.</Text>
+			<Text>If you're sending a [ICON_TRADEROUTE] traderoute to this City-State, [ICON_ENVOY] envoys sent count as two.[NEWLINE][ICON_PRODUCTION] Production +25% for Commercial Hub in your cities within a 15-tile radius.</Text>
 		</Replace>
 		<Replace Tag="LOC_GOV_PROMO_LIME_TEO_OWL_EMISSARY_FALL_NAME" Language="en_US"> <!-- L2 -->
 			<Text>Fall of Jaguar Paw</Text>
 		</Replace>
 		<Replace Tag="LOC_GOV_PROMO_LIME_TEO_OWL_EMISSARY_FALL_DESC" Language="en_US"> <!-- L2 -->
-			<Text>If you're sending a [ICON_TRADEROUTE] traderoute to this City-State, [ICON_ENVOY] envoys sent count as two.[NEWLINE][ICON_PRODUCTION] Production +25% for Commercial Hub buildings in your cities within a 15-tile radius.</Text>
+			<Text>[ICON_PRODUCTION] Production +25% for Commercial Hub and City Center buildings in your cities within a 15-tile radius.</Text>
 		</Replace>
 		<Replace Tag="LOC_GOV_PROMO_LIME_TEO_OWL_EMISSARY_EXPEDITION_NAME" Language="en_US"> <!-- R1 -->
 			<Text>Petén Expedition</Text>
