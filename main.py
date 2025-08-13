@@ -38,9 +38,9 @@ def generate_leader_html_file(bbg_ver, l):
     sitemap[bbg_ver][l].append(file_path)
     with open(file_path, 'w') as f:
         f.write(docStr)
-    if bbg_ver == latest_bbg and l == 'en_US':
-        with open('index.html', 'w') as f:
-            f.write(docStr)
+    # if bbg_ver == latest_bbg and l == 'en_US':
+    #     with open('index.html', 'w') as f:
+    #         f.write(docStr)
 
 def generate_city_state_html_file(bbg_ver, l):
     docStr = get_city_state_html_file(bbg_ver, l)
@@ -111,6 +111,9 @@ def generate_expanded_html_file(bbg_ver, l):
     sitemap[bbg_ver][l].append(file_path)
     with open(file_path, 'w') as f:
         f.write(docStr)
+    if bbg_ver == latest_bbg and l == 'en_US':
+        with open('index.html', 'w') as f:
+            f.write(docStr)
         
 def generate_sitemap():
 
