@@ -408,10 +408,8 @@ def get_leader_html_file(bbg_version, lang):
         base_game_locs_data[lang] = locs_data
 
     doc = dominate.document(title=None, lang=get_html_lang(lang))
-    if bbg_version != None:
-        add_html_header(doc, f'BBG {bbg_version} Leader Description')
-    else :
-        add_html_header(doc, f'Civ VI GS RF Leaders Description')
+    title = f'Civ VI {f"BBG {bbg_version}" if bbg_version != None else "Base Game"} Leaders and their Abilities Description'
+    add_html_header(doc, title)
 
     menu_items = []
     menu_icons = []
@@ -434,6 +432,8 @@ def get_leader_html_file(bbg_version, lang):
                     with div(cls="leaders-data min-w-full main-pl"):
                         with main(cls="main users chart-page"):
                             with div(cls="container"):
+                                h1(title, cls='civ-name')
+                                br()
                                 for leader in civ_leaders_items:
                                     with div(cls="row", id=get_loc(locs_data, leader[2], en_US_locs_data) + ' ' + get_loc(locs_data, leader[5], en_US_locs_data)):
                                         with div(cls="col-lg-12"):
@@ -484,10 +484,8 @@ def get_city_state_html_file(bbg_version, lang):
         base_game_locs_data[lang] = locs_data
 
     doc = dominate.document(title=None, lang=get_html_lang(lang))
-    if bbg_version != None:
-        add_html_header(doc, f'BBG {bbg_version} City State Description')
-    else :
-        add_html_header(doc, f'Civ VI GS RF City State Description')
+    title = f'Civ VI {f"BBG {bbg_version}" if bbg_version != None else "Base Game"} City States Bonuses Description'
+    add_html_header(doc, title)
 
     menu_items = []
     menu_icons = []
@@ -507,6 +505,8 @@ def get_city_state_html_file(bbg_version, lang):
                     with div(cls="leaders-data min-w-full main-pl"):
                         with main(cls="main users chart-page"):
                             with div(cls="container"):
+                                h1(title, cls='civ-name')
+                                br()
                                 for cs in city_states:
                                     with div(cls="row", id=get_loc(locs_data, cs[2], en_US_locs_data)):
                                         with div(cls="col-lg-12"):
@@ -529,10 +529,8 @@ def get_religion_html_file(bbg_version, lang):
         base_game_locs_data[lang] = locs_data
 
     doc = dominate.document(title=None, lang=get_html_lang(lang))
-    if bbg_version != None:
-        add_html_header(doc, f'BBG {bbg_version} Religion Description')
-    else :
-        add_html_header(doc, f'Civ VI GS RF Religion Description')
+    title = f'Civ VI {f"BBG {bbg_version}" if bbg_version != None else "Base Game"} Religions Beliefs Description'
+    add_html_header(doc, title)
 
     types = [
         'LOC_BELIEF_CLASS_PANTHEON_NAME',
@@ -562,6 +560,8 @@ def get_religion_html_file(bbg_version, lang):
                     with div(cls="leaders-data min-w-full main-pl"):
                         with main(cls="main users chart-page"):
                             with div(cls="container"):
+                                h1(title, cls='civ-name')
+                                br()
                                 for religion_cls in religion_cls_elements.keys():
                                     with div(cls="row", id=get_loc(locs_data, religion_cls, en_US_locs_data)):
                                         with div(cls="col-lg-12"):
@@ -592,10 +592,8 @@ def get_governor_html_file(bbg_version, lang):
         base_game_locs_data[lang] = locs_data
 
     doc = dominate.document(title=None, lang=get_html_lang(lang))
-    if bbg_version != None:
-        add_html_header(doc, f'BBG {bbg_version} Governors')
-    else :
-        add_html_header(doc, f'Civ VI GS RF Governors')
+    title = f'Civ VI {f"BBG {bbg_version}" if bbg_version != None else "Base Game"} Governors and their Promotions Description'
+    add_html_header(doc, title)
 
     menu_items = []
     menu_icons = []
@@ -617,6 +615,8 @@ def get_governor_html_file(bbg_version, lang):
                     with div(cls="leaders-data min-w-full main-pl"):
                         with main(cls="main users chart-page"):
                             with div(cls="container"):
+                                h1(title, cls='civ-name')
+                                br()
                                 for gov in governors:
                                     with div(cls="row", id=get_loc(locs_data, gov[1], en_US_locs_data)):
                                         with div(cls="col-lg-12"):
@@ -657,10 +657,8 @@ def get_natural_wonder_html_file(bbg_version, lang):
         base_game_locs_data[lang] = locs_data
 
     doc = dominate.document(title=None, lang=get_html_lang(lang))
-    if bbg_version != None:
-        add_html_header(doc, f'BBG {bbg_version} Natural Wonders')
-    else :
-        add_html_header(doc, f'Civ VI GS RF Natural Wonders')
+    title = f'Civ VI {f"BBG {bbg_version}" if bbg_version != None else "Base Game"} Natural Wonders Bonuses Description'
+    add_html_header(doc, title)
 
     menu_items = []
     menu_icons = []
@@ -680,6 +678,8 @@ def get_natural_wonder_html_file(bbg_version, lang):
                     with div(cls="leaders-data min-w-full main-pl"):
                         with main(cls="main users chart-page"):
                             with div(cls="container"):
+                                h1(title, cls='civ-name')
+                                br()
                                 for wonder in natural_wonders:
                                     with div(cls="row", id=get_loc(locs_data, wonder[1], en_US_locs_data)):
                                         with div(cls="col-lg-12"):
@@ -702,10 +702,8 @@ def get_world_wonder_html_file(bbg_version, lang):
         base_game_locs_data[lang] = locs_data
 
     doc = dominate.document(title=None, lang=get_html_lang(lang))
-    if bbg_version != None:
-        add_html_header(doc, f'BBG {bbg_version} World Wonders')
-    else :
-        add_html_header(doc, f'Civ VI GS RF World Wonders')
+    title = f'Civ VI {f"BBG {bbg_version}" if bbg_version != None else "Base Game"} World Wonders Bonuses Description'
+    add_html_header(doc, title)
 
     menu_items = []
     menu_icons = []
@@ -725,6 +723,8 @@ def get_world_wonder_html_file(bbg_version, lang):
                     with div(cls="leaders-data min-w-full main-pl"):
                         with main(cls="main users chart-page"):
                             with div(cls="container"):
+                                h1(title, cls='civ-name')
+                                br()
                                 for era in world_wonders.keys():
                                     with div(cls='col-lg-12', id=get_loc(locs_data, era, en_US_locs_data)):
                                         with div(cls="chart"):
@@ -753,10 +753,8 @@ def get_misc_html_file(bbg_version, lang):
         base_game_locs_data[lang] = locs_data
 
     doc = dominate.document(title=None, lang=get_html_lang(lang))
-    if bbg_version != None:
-        add_html_header(doc, f'BBG {bbg_version} Miscellaneous')
-    else :
-        add_html_header(doc, f'Civ VI GS RF Miscellaneous')
+    title = f'Civ VI {f"BBG {bbg_version}" if bbg_version != None else "Base Game"} Miscellaneous Details on Eras and Alliances'
+    add_html_header(doc, title)
 
     menu_items = []
     menu_icons = []
@@ -798,6 +796,8 @@ def get_misc_html_file(bbg_version, lang):
                     with div(cls="leaders-data min-w-full main-pl"):
                         with main(cls="main users chart-page"):
                             with div(cls="container"):
+                                h1(title, cls='civ-name')
+                                br()
                                 for era in dedication_list_per_era.keys():
                                     with div(cls="row", id=get_loc(locs_data, era, en_US_locs_data)):
                                         with div(cls="col-lg-12"):
@@ -859,10 +859,8 @@ def get_names_html_file(bbg_version, lang):
         base_game_locs_data[lang] = locs_data
 
     doc = dominate.document(title=None, lang=get_html_lang(lang))
-    if bbg_version != None:
-        add_html_header(doc, f'BBG {bbg_version} Names')
-    else :
-        add_html_header(doc, f'Civ VI GS RF Names')
+    title = f'Civ VI {f"BBG {bbg_version}" if bbg_version != None else "Base Game"} Map Elements Naming Information'
+    add_html_header(doc, title)
 
     menu_items = []
     menu_icons = []
@@ -910,6 +908,8 @@ def get_names_html_file(bbg_version, lang):
                     with div(cls="leaders-data min-w-full main-pl"):
                         with main(cls="main users chart-page"):
                             with div(cls="container"):
+                                h1(title, cls='civ-name')
+                                br()
                                 for name_cls in name_classes.keys():
                                     with div(cls="row", id=name_cls):
                                         with div(cls="col-lg-12"):
@@ -950,10 +950,8 @@ def get_great_people_html_file(bbg_version, lang):
         base_game_locs_data[lang] = locs_data
 
     doc = dominate.document(title=None, lang=get_html_lang(lang))
-    if bbg_version != None:
-        add_html_header(doc, f'BBG {bbg_version} Great People')
-    else :
-        add_html_header(doc, f'Civ VI GS RF Great People')
+    title = f'Civ VI {f"BBG {bbg_version}" if bbg_version != None else "Base Game"} Great People Abilities Description'
+    add_html_header(doc, title)
 
     eras_loc = [
         'LOC_ERA_ANCIENT_NAME',
@@ -1001,6 +999,8 @@ def get_great_people_html_file(bbg_version, lang):
                     with div(cls="leaders-data min-w-full main-pl"):
                         with main(cls="main users chart-page"):
                             with div(cls="container"):
+                                h1(title, cls='civ-name')
+                                br()
                                 for gp_type in great_people_list:
                                     with div(cls="row", id=get_loc(locs_data, gp_type, en_US_locs_data)):
                                         with div(cls="col-lg-12"):
@@ -1141,10 +1141,8 @@ def get_buildings_html_file(bbg_version, lang):
         base_game_locs_data[lang] = locs_data
 
     doc = dominate.document(title=None, lang=get_html_lang(lang))
-    if bbg_version != None:
-        add_html_header(doc, f'BBG {bbg_version} Buildings')
-    else :
-        add_html_header(doc, f'Civ VI GS RF Buildings')
+    title = f'Civ VI {f"BBG {bbg_version}" if bbg_version != None else "Base Game"} Buildings Details per District'
+    add_html_header(doc, title)
 
     menu_items = []
     menu_icons = []
@@ -1164,6 +1162,8 @@ def get_buildings_html_file(bbg_version, lang):
                     with div(cls="leaders-data min-w-full main-pl"):
                         with main(cls="main users chart-page"):
                             with div(cls="container"):
+                                h1(title, cls='civ-name')
+                                br()
                                 for district in buildings_per_district.keys():
                                     with div(cls='col-lg-12', id=get_loc(locs_data, district, en_US_locs_data)):
                                         with div(cls="chart"):
@@ -1190,10 +1190,8 @@ def get_expanded_html_file(bbg_version, lang):
         base_game_locs_data[lang] = locs_data
 
     doc = dominate.document(title=None, lang=get_html_lang(lang))
-    if bbg_version != None:
-        add_html_header(doc, f'Expanded BBG {bbg_version} Leader Description')
-    else :
-        add_html_header(doc, f'Civ VI GS RF Leaders Description (Expanded BBG)')
+    title = f'Civ VI {f"BBG {bbg_version}" if bbg_version != None else "Base Game"} Expanded Leaders Description'
+    add_html_header(doc, title)
 
     menu_items = []
     menu_icons = []
@@ -1222,6 +1220,8 @@ def get_expanded_html_file(bbg_version, lang):
                     with div(cls="leaders-data min-w-full main-pl"):
                         with main(cls="main users chart-page"):
                             with div(cls="container"):
+                                h1(title, cls='civ-name')
+                                br()
                                 for leader in civ_leaders_items:
                                     with div(cls="row", id=get_loc(locs_data, leader[2], en_US_locs_data) + ' ' + get_loc(locs_data, leader[5], en_US_locs_data)):
                                         with div(cls="col-lg-12"):

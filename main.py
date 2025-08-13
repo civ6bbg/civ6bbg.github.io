@@ -13,24 +13,24 @@ import datetime
 from HTMLgenerator import *
 
 langs = ['en_US', 'de_DE', 'es_ES', 'it_IT', 'ko_KR', 'pt_BR', 'zh_Hans_CN', 'fr_FR', 'ja_JP', 'pl_PL', 'ru_RU']
-langs_tmp = ['en_US', 'de_DE']
+langs_tmp = ['en_US']
 bbg_versions_tmp = [None, '7.0']
 latest_bbg = '7.0'
 
 sitemap = {bbg_ver: {l: [] for l in langs} for bbg_ver in bbg_versions}
 
 bbg_version_last_timestamp = {bbg_ver: None for bbg_ver in bbg_versions}
-bbg_version_last_timestamp[None] = datetime.datetime.now()
-bbg_version_last_timestamp['7.0'] = datetime.datetime.now()
-bbg_version_last_timestamp['6.5'] = datetime.datetime.now()
-bbg_version_last_timestamp['6.4'] = datetime.datetime.now()
-bbg_version_last_timestamp['6.3'] = datetime.datetime.now()
-bbg_version_last_timestamp['6.2'] = datetime.datetime.now()
-bbg_version_last_timestamp['6.1'] = datetime.datetime.now()
-bbg_version_last_timestamp['6.0'] = datetime.datetime.now()
-bbg_version_last_timestamp['5.8'] = datetime.datetime.now()
-bbg_version_last_timestamp['5.7'] = datetime.datetime.now()
-bbg_version_last_timestamp['5.6'] = datetime.datetime.now()
+bbg_version_last_timestamp[None] = datetime.date(2025, 8, 12)
+bbg_version_last_timestamp['7.0'] = datetime.date(2025, 8, 12)
+bbg_version_last_timestamp['6.5'] = datetime.date(2025, 8, 12)
+bbg_version_last_timestamp['6.4'] = datetime.date(2025, 8, 12)
+bbg_version_last_timestamp['6.3'] = datetime.date(2025, 8, 12)
+bbg_version_last_timestamp['6.2'] = datetime.date(2025, 8, 12)
+bbg_version_last_timestamp['6.1'] = datetime.date(2025, 8, 12)
+bbg_version_last_timestamp['6.0'] = datetime.date(2025, 8, 12)
+bbg_version_last_timestamp['5.8'] = datetime.date(2025, 8, 12)
+bbg_version_last_timestamp['5.7'] = datetime.date(2025, 8, 12)
+bbg_version_last_timestamp['5.6'] = datetime.date(2025, 8, 12)
 
 def generate_leader_html_file(bbg_ver, l):
     docStr = get_leader_html_file(bbg_ver, l)
