@@ -580,7 +580,8 @@ def get_buildings_per_district_list(db_path):
 	        bydc.NewYieldType,
          	bycbwp.YieldType,
 	        bycbwp.YieldChange,
-         	bxp2.EntertainmentBonusWithPower
+         	bxp2.EntertainmentBonusWithPower,
+            b.Maintenance
         FROM BUILDINGS b
         LEFT JOIN Building_YieldChanges byc Using(BuildingType)
         LEFT JOIN Building_CitizenYieldChanges bcyc Using(BuildingType)

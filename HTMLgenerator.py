@@ -1133,6 +1133,16 @@ def show_building_yields(yields, locs_data, en_US_locs_data):
     if building_cost > 0:
         with p(f'{get_loc(locs_data, 'LOC_UI_PEDIA_PRODUCTION_COST', en_US_locs_data)} = {building_cost}', style="text-align:left", cls='civ-ability-desc'):
             img(src=f'/images/ICON_PRODUCTION.webp', style="vertical-align: middle", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
+    building_maintenance = int(tmp_yields[23])
+    if building_maintenance > 0:
+        maintenance_loc = get_loc(locs_data, 'LOC_TOOLTIP_MAINTENANCE', en_US_locs_data)
+        processed = loc_amount_parameter(maintenance_loc, building_maintenance)
+        processed = processed.replace('{2_YieldIcon}', '[ICON_GOLD]')
+        processed = processed.replace('{3_YieldName}', get_loc(locs_data, 'LOC_YIELD_GOLD_NAME', en_US_locs_data))
+        processed = processed.replace('{3_YieldName[2]}', get_loc(locs_data, 'LOC_YIELD_GOLD_NAME', en_US_locs_data))
+        processed = processed.replace('{3_YieldName[8]}', get_loc(locs_data, 'LOC_YIELD_GOLD_NAME', en_US_locs_data))
+        p(processed, style="text-align:left", cls='civ-ability-desc')
+        # img(src=f'/images/ICON_PRODUCTION.webp', style="vertical-align: middle", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
 
 def get_buildings_html_file(bbg_version, lang):
     en_US_locs_data = get_locs_data(bbg_version, 'en_US')
