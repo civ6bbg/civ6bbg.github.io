@@ -123,16 +123,14 @@ def generate_sitemap():
     LOC = E.loc
     LASTMOD = E.lastmod
 
-    the_doc = URLSET(xmlns="http://www.sitemaps.org/schemas/sitemap/0.9",
-                     xmlns_xsi="http://www.w3.org/2001/XMLSchema-instance",
-                     xsi_schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd")
+    the_doc = URLSET(xmlns="http://www.sitemaps.org/schemas/sitemap/0.9")
     for bbg_ver in sitemap:
         formatted_dt = bbg_version_last_timestamp[bbg_ver].strftime("%Y-%m-%d")
         for lang in sitemap[bbg_ver]:
             for file_path in sitemap[bbg_ver][lang]:
                 the_doc.append(
                     URL(
-                        LOC(file_path),
+                        LOC(f'https://civ6bbg.github.io/{file_path}'),
                         LASTMOD(formatted_dt),
                     )
                 )
