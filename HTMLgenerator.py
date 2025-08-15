@@ -1019,7 +1019,7 @@ def get_great_people_html_file(bbg_version, lang):
                                                         comment(era)
                                                         h3(get_loc(locs_data, era, en_US_locs_data), cls='civ-name')
                                         with div(cls='row'):
-                                            cls_len = math.ceil(12 / len(great_people[gp_type][era]))
+                                            cls_len = max(3, math.ceil(12 / len(great_people[gp_type][era])))
                                             div_cls = f'col-md-{cls_len} col-lg-{cls_len}'
                                             for gp in great_people[gp_type][era]:
                                                 with div(cls=div_cls):
