@@ -237,6 +237,7 @@ def add_header(bbg_version, lang, page_type):
         ('natural_wonder','Natural Wonders'),
         ('world_wonder','World Wonders'),
         ('buildings','Buildings'),
+        ('units', 'Units'),
         ('names','Names'),
         ('misc','Misc'),
     ]
@@ -1324,3 +1325,42 @@ def loc_amount_parameter(localized_text: str, amount: float) -> str:
     localized_text = localized_text.replace('{ScalingFactor}', f'{amount}')
 
     return localized_text
+
+def get_units_html_file(bbg_version, lang):
+    en_US_locs_data = get_locs_data(bbg_version, 'en_US')
+    locs_data = get_locs_data(bbg_version, lang)
+    if bbg_version is None and lang not in base_game_locs_data:
+        base_game_locs_data[lang] = locs_data
+
+    doc = dominate.document(title=None, lang=get_html_lang(lang))
+    title = f'Civ VI {f"BBG {bbg_version}" if bbg_version else "Base Game"} Unit Details'
+    add_html_header(doc, title)
+
+    unit_stats = get_unit_stats(f"sqlFiles/{bbg_version if bbg_version else 'baseGame'}/DebugGameplay.sqlite")
+    with doc:
+        add_preloader()
+        div(cls="layer")
+        with div(cls="page-flex"), div(cls="main-wrapper"):
+            add_header(bbg_version, lang, 'units')
+            with div(cls=""):
+                with div(cls="fixed left-0 right-auto h-screen w-[253px] bg-white border-r border-neutral-300 overflow-scroll", style="z-index: 5;"):
+                    pass # implement some related icons to make this work
+                with div(cls="leaders-data min-w-full main-pl"), main(cls="main users chart-page"), div(cls="container"):
+                    h1(title, cls='civ-name')
+                    br()
+                    for promo_cls in unit_stats.keys():
+                        loc_promo_cls = f'LOC_{promo_cls}_NAME'
+                        with div(cls='col-lg-12', id=get_loc(locs_data, loc_promo_cls, en_US_locs_data)), div(cls="chart"):
+                            comment(loc_promo_cls)
+                            h2(get_loc(locs_data, loc_promo_cls, en_US_locs_data), cls='civ-name')
+                        with div(cls="row"):
+                            for unit_type in unit_stats[promo_cls].keys():
+                                with div(cls="col-lg-6 col-md-12"), div(cls="chart"):
+                                    comment(unit_type)
+                                    with h2(get_loc(locs_data, unit_stats[promo_cls][unit_type][0], en_US_locs_data), cls='civ-name'):
+                                        img(src=f'/images/buildings/{get_loc(en_US_locs_data, unit_type[0], en_US_locs_data)}.webp', style="vertical-align: middle; width:5em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
+                                    br()
+        add_final_scripts()
+
+    docStr = str(doc)
+    return refactorCivSpecialSyntax(bbg_version, lang, docStr)

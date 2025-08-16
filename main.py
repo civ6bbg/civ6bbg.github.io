@@ -138,6 +138,15 @@ def generate_sitemap():
     with open('sitemap.xml', 'wb') as f:
         f.write(lxml.etree.tostring(the_doc, pretty_print=True, xml_declaration=True, encoding='UTF-8'))
 
+
+def generate_units_html_file(bbg_ver, l):
+    docStr = get_units_html_file(bbg_ver, l)
+    file_path = f'{l}/units_{'base_game' if bbg_ver == None else bbg_ver}.html'
+    sitemap[bbg_ver][l].append(file_path)
+    with open(file_path, 'w') as f:
+        f.write(docStr)
+
+
 for l in langs:
     # Create directory if it does not exist
     os.makedirs(l, exist_ok=True)
@@ -156,5 +165,6 @@ for bbg_ver in bbg_versions:
         generate_great_people_html_file(bbg_ver, l)
         generate_buildings_html_file(bbg_ver, l)
         generate_expanded_html_file(bbg_ver, l)
+        generate_units_html_file(bbg_ver, l)
 
 generate_sitemap()

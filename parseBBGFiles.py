@@ -722,3 +722,23 @@ def get_alliance_effects(db_path, alliance_type):
         res[effect[2]].append((effect[3]))
     connection.close()
     return res
+
+def get_unit_stats(db_path):
+    with sqlite3.connect(db_path) as conn:
+        crsr = conn.cursor()
+        crsr.execute('''
+        SELECT UnitType, PromotionClass, Name, BaseSightRange, BaseMoves, Combat, RangedCombat, Range, Bombard,
+        Cost, Description, Maintenance, StrategicResource, ResourceCost,
+        ResourceMaintenanceType, ResourceMaintenanceAmount
+        FROM Units LEFT JOIN Units_XP2 USING(UnitType) WHERE FormationClass <> 'FORMATION_CLASS_CIVILIAN'
+        ''')
+        rows = crsr.fetchall()
+    res = {}
+    for row in rows:
+        unit_type, promo_cls = row[:2]
+        res.setdefault(promo_cls, {})
+        res[promo_cls][unit_type] = row[2:]
+    return res
+
+if __name__ == '__main__':
+    get_unit_stats('sqlFiles/7.0/DebugGameplay.sqlite')
