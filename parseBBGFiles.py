@@ -729,8 +729,9 @@ def get_unit_stats(db_path):
         crsr.execute('''
         SELECT UnitType, PromotionClass, Name, BaseSightRange, BaseMoves, Combat, RangedCombat, Range, Bombard,
         Cost, Description, Maintenance, StrategicResource, ResourceCost,
-        ResourceMaintenanceType, ResourceMaintenanceAmount
-        FROM Units LEFT JOIN Units_XP2 USING(UnitType) WHERE FormationClass <> 'FORMATION_CLASS_CIVILIAN'
+        ResourceMaintenanceType, ResourceMaintenanceAmount, AntiAirCombat
+        FROM Units LEFT JOIN Units_XP2 USING(UnitType) WHERE FormationClass <> 'FORMATION_CLASS_CIVILIAN' 
+        AND (TraitType <> 'TRAIT_BARBARIAN_BUT_SHOWS_UP_IN_PEDIA' OR TraitType IS NULL) ORDER BY Combat
         ''')
         rows = crsr.fetchall()
     res = {}
@@ -739,6 +740,3 @@ def get_unit_stats(db_path):
         res.setdefault(promo_cls, {})
         res[promo_cls][unit_type] = row[2:]
     return res
-
-if __name__ == '__main__':
-    get_unit_stats('sqlFiles/7.0/DebugGameplay.sqlite')
