@@ -366,6 +366,7 @@ def add_html_header(doc, page_title):
         link(rel='stylesheet', href=f"/css/header.css")
         link(rel='stylesheet', href=f"/css/footer.css")
         link(rel='stylesheet', href=f"/fontawesome-free-7.0.0-web/css/all.css")
+        script(_async=True, src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9556735523664127", crossorigin="anonymous")
 
 def show_element_with_base_option(element, lang, locs_data, en_US_locs_data, data_append = '', base_game_data_append = '', alignment = 'left', add_base_game = True):
     if add_base_game:
@@ -1133,7 +1134,7 @@ def show_building_yields(yields, locs_data, en_US_locs_data):
     if building_cost > 0:
         with p(f'{get_loc(locs_data, 'LOC_UI_PEDIA_PRODUCTION_COST', en_US_locs_data)} = {building_cost}', style="text-align:left", cls='civ-ability-desc'):
             img(src=f'/images/ICON_PRODUCTION.webp', style="vertical-align: middle", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
-    building_maintenance = int(tmp_yields[23])
+    building_maintenance = int(tmp_yields[8])
     if building_maintenance > 0:
         maintenance_loc = get_loc(locs_data, 'LOC_TOOLTIP_MAINTENANCE', en_US_locs_data)
         processed = loc_amount_parameter(maintenance_loc, building_maintenance)
