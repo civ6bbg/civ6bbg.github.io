@@ -491,9 +491,25 @@ def get_city_state_html_file(bbg_version, lang):
     menu_items = []
     menu_icons = []
     city_states = get_city_states(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugConfiguration.sqlite")
+    cs_by_type = {}
     for cs in city_states:
-        menu_items.append(get_loc(locs_data, cs[2], en_US_locs_data))
-        menu_icons.append(get_loc(en_US_locs_data, cs[2], en_US_locs_data))
+        cs_type = get_loc(locs_data, f'LOC_CITY_STATES_TYPE_{cs[4]}', en_US_locs_data)
+        cs_by_type.setdefault(cs_type, [])
+        cs_by_type[cs_type].append(cs)
+    category_icon_map = {
+        "Cultural": 'ICON_CULTURE',
+        "Industrial": 'ICON_PRODUCTION',
+        'Militaristic': 'ICON_BARBARIAN',
+        'Religious': 'ICON_FAITH',
+        'Scientific': 'ICON_SCIENCE',
+        'Trade': 'ICON_GOLD',
+    }
+    print(cs_by_type)
+    for cs_type in cs_by_type:
+        menu_items.append(cs_type)
+        menu_icons.append(category_icon_map[
+            get_loc(en_US_locs_data, f'LOC_CITY_STATES_TYPE_{cs_by_type[cs_type][0][4]}', en_US_locs_data)
+        ])
     with doc:
         add_preloader()
         div(cls="layer")
@@ -502,21 +518,25 @@ def get_city_state_html_file(bbg_version, lang):
                 add_header(bbg_version, lang, 'city_states')
                 with div(cls=""):
                     with div(cls="fixed left-0 right-auto h-screen w-[253px] bg-white border-r border-neutral-300 overflow-scroll", style="z-index: 5;"):
-                        add_sidebar(menu_items, menu_icons, 'images/city_states')
+                        add_sidebar(menu_items, menu_icons, 'images')
                     with div(cls="leaders-data min-w-full main-pl"):
                         with main(cls="main users chart-page"):
                             with div(cls="container"):
                                 h1(title, cls='civ-name')
                                 br()
-                                for cs in city_states:
-                                    with div(cls="row", id=get_loc(locs_data, cs[2], en_US_locs_data)):
-                                        with div(cls="col-lg-12"):
-                                            with div(cls="chart"):
+                                for cs_type in cs_by_type:
+                                    with div(cls='col-lg-12', id=cs_type), div(cls="chart"):
+                                        comment(cs_type)
+                                        h2(cs_type, cls='civ-name')
+                                    with div(cls="row"):
+                                        for cs in cs_by_type[cs_type]:
+                                            with div(cls="col-lg-6 col-md-12"), div(cls="chart"):
                                                 comment(cs[2])
                                                 with h2(get_loc(locs_data, cs[2], en_US_locs_data), cls='civ-name'):
                                                     img(src=f'/images/city_states/{get_loc(en_US_locs_data, cs[2], en_US_locs_data)}.webp', style="vertical-align: middle; width:5em", onerror=f"this.onerror=null; this.src='/images/civVI.webp';")
                                                 cs_desc = cs[7] if cs[7] != None else (cs[6] if cs[6] != None else cs[5])
                                                 show_element_with_base_option(cs_desc, lang, locs_data, en_US_locs_data)
+                                                br()
 
         add_final_scripts()
 
