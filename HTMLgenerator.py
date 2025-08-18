@@ -942,7 +942,7 @@ def get_units_html_file(bbg_version, lang):
     if bbg_version == None and lang not in base_game_locs_data:
         base_game_locs_data[lang] = locs_data
 
-    def create_units_html():
+    def create_units_page():
         for promo_cls in unit_stats.keys():
             loc_promo_cls = f'LOC_{promo_cls}_NAME'
             with div(cls='col-lg-12', id=get_loc(locs_data, loc_promo_cls, en_US_locs_data)), div(cls="chart"):
@@ -960,7 +960,7 @@ def get_units_html_file(bbg_version, lang):
                 maint, strategic_type, strategic_amt, strategic_maint_type, strategic_maint_amt, antiair_cs
             ) = unit_stats[promo_cls][unit_type]
             with h2(get_loc(locs_data, unit_name_loc, en_US_locs_data), cls='civ-name'):
-                img(src=f'/images/units/{get_loc(en_US_locs_data, unit_name_loc, en_US_locs_data)}.webp', style="vertical-align: middle; width:5em", onerror=image_onerror)
+                img(src=f'/images/units/{get_loc(en_US_locs_data, unit_name_loc, en_US_locs_data).replace(' ', '_')}_icon_(Civ6).webp', style="vertical-align: middle; width:5em", onerror=image_onerror)
             br()
             p(f'{get_loc(locs_data, 'LOC_UI_PEDIA_PRODUCTION_COST', en_US_locs_data)}: {prod// 2} [ICON_PRODUCTION]', style="display:inline-block;text-align:left", cls='civ-ability-desc')
             br()
@@ -994,7 +994,9 @@ def get_units_html_file(bbg_version, lang):
 
     title = f'Civ VI {f"BBG {bbg_version}" if bbg_version else "Base Game"} Unit Details'
     unit_stats = get_unit_stats(f"sqlFiles/{bbg_version if bbg_version else 'baseGame'}/DebugGameplay.sqlite")
-    return create_page(bbg_version, lang, title, 'units', [], [], 'images', create_units_html)
+    return create_page(bbg_version, lang, title, 'units', [], [], 'images', create_units_page)
+    doc = dominate.document(title=None, lang=get_html_lang(lang))
+    add_html_header(doc, title)
     with doc:
         add_preloader()
         div(cls="layer")
@@ -1006,18 +1008,7 @@ def get_units_html_file(bbg_version, lang):
                 with div(cls="leaders-data min-w-full main-pl"), main(cls="main users chart-page"), div(cls="container"):
                     h1(title, cls='civ-name')
                     br()
-                    for promo_cls in unit_stats.keys():
-                        loc_promo_cls = f'LOC_{promo_cls}_NAME'
-                        with div(cls='col-lg-12', id=get_loc(locs_data, loc_promo_cls, en_US_locs_data)), div(cls="chart"):
-                            comment(loc_promo_cls)
-                            h2(get_loc(locs_data, loc_promo_cls, en_US_locs_data), cls='civ-name')
-                        with div(cls="row"):
-                            for unit_type in unit_stats[promo_cls].keys():
-                                with div(cls="col-lg-6 col-md-12"), div(cls="chart"):
-                                    comment(unit_type)
-                                    with h2(get_loc(locs_data, unit_stats[promo_cls][unit_type][0], en_US_locs_data), cls='civ-name'):
-                                        img(src=f'/images/buildings/{get_loc(en_US_locs_data, unit_type[0], en_US_locs_data)}.webp', style="vertical-align: middle; width:5em", onerror=image_onerror)
-                                    br()
+                    create_units_page()
         add_final_scripts()
 
     docStr = str(doc)
