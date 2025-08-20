@@ -14,8 +14,8 @@ from HTMLgenerator import *
 
 langs = ['en_US', 'de_DE', 'es_ES', 'it_IT', 'ko_KR', 'pt_BR', 'zh_Hans_CN', 'fr_FR', 'ja_JP', 'pl_PL', 'ru_RU']
 langs_tmp = ['en_US']
-bbg_versions_tmp = [None, '7.0']
-latest_bbg = '7.0'
+bbg_versions_tmp = [None, '7.1']
+latest_bbg = '7.1'
 
 sitemap = {bbg_ver: {l: [] for l in langs} for bbg_ver in bbg_versions}
 
