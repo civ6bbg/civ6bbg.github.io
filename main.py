@@ -21,7 +21,7 @@ sitemap = {bbg_ver: {l: [] for l in langs} for bbg_ver in bbg_versions}
 
 bbg_version_last_timestamp = {bbg_ver: None for bbg_ver in bbg_versions}
 bbg_version_last_timestamp[None] = datetime.date(2025, 8, 12)
-bbg_version_last_timestamp['7.0'] = datetime.date(2025, 8, 12)
+bbg_version_last_timestamp['7.1'] = datetime.date(2025, 8, 20)
 bbg_version_last_timestamp['6.5'] = datetime.date(2025, 8, 12)
 bbg_version_last_timestamp['6.4'] = datetime.date(2025, 8, 12)
 bbg_version_last_timestamp['6.3'] = datetime.date(2025, 8, 12)
