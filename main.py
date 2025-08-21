@@ -115,8 +115,14 @@ def generate_expanded_html_file(bbg_ver, l):
         with open('index.html', 'w') as f:
             f.write(docStr)
 
-def generate_sitemap():
+def generate_units_html_file(bbg_ver, l):
+    docStr = get_units_html_file(bbg_ver, l)
+    file_path = f'{l}/units_{'base_game' if bbg_ver == None else bbg_ver}.html'
+    sitemap[bbg_ver][l].append(file_path)
+    with open(file_path, 'w') as f:
+        f.write(docStr)
 
+def generate_sitemap():
     E = lxml.builder.ElementMaker()
     URLSET = E.urlset
     URL = E.url
@@ -137,15 +143,6 @@ def generate_sitemap():
 
     with open('sitemap.xml', 'wb') as f:
         f.write(lxml.etree.tostring(the_doc, pretty_print=True, xml_declaration=True, encoding='UTF-8'))
-
-
-def generate_units_html_file(bbg_ver, l):
-    docStr = get_units_html_file(bbg_ver, l)
-    file_path = f'{l}/units_{'base_game' if bbg_ver == None else bbg_ver}.html'
-    sitemap[bbg_ver][l].append(file_path)
-    with open(file_path, 'w') as f:
-        f.write(docStr)
-
 
 for l in langs:
     # Create directory if it does not exist

@@ -9,7 +9,7 @@ from dominate.tags import *
 
 from parseBBGFiles import *
 
-bbg_versions = [None, '7.0', '6.5', '6.4', '6.3', '6.2', '6.1', '6.0', '5.8', '5.7', '5.6']
+bbg_versions = [None, '7.1', '6.5', '6.4', '6.3', '6.2', '6.1', '6.0', '5.8', '5.7', '5.6']
 
 replacements = [
     '[ICON_AMENITIES]',
@@ -186,6 +186,7 @@ notSupportedIcons = [
     '[ICON_ABILITY]',
     '[ICON_POWERRight]'
 ]
+
 base_game_locs_data = {}
 base_game_units_dict = get_units_dict(f"sqlFiles/baseGame/DebugGameplay.sqlite")
 
