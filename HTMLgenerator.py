@@ -493,23 +493,23 @@ def get_city_state_html_file(bbg_version, lang):
     city_states = get_city_states(f"sqlFiles/{bbg_version if bbg_version != None else 'baseGame'}/DebugConfiguration.sqlite")
     cs_by_type = {}
     for cs in city_states:
-        cs_type = get_loc(locs_data, f'LOC_CITY_STATES_TYPE_{cs[4]}', en_US_locs_data)
+        cs_type = cs[4]
         cs_by_type.setdefault(cs_type, [])
         cs_by_type[cs_type].append(cs)
-    category_icon_map = {
-        "Cultural": 'ICON_CULTURE',
-        "Industrial": 'ICON_PRODUCTION',
-        'Militaristic': 'ICON_BARBARIAN',
-        'Religious': 'ICON_FAITH',
-        'Scientific': 'ICON_SCIENCE',
-        'Trade': 'ICON_GOLD',
-    }
-    print(cs_by_type)
     for cs_type in cs_by_type:
-        menu_items.append(cs_type)
-        menu_icons.append(category_icon_map[
-            get_loc(en_US_locs_data, f'LOC_CITY_STATES_TYPE_{cs_by_type[cs_type][0][4]}', en_US_locs_data)
-        ])
+        cs_by_type[cs_type].sort(key=lambda x: get_loc(locs_data, x[2], en_US_locs_data))
+    category_icon_map = {
+        "CULTURAL": 'ICON_DISTRICT_THEATER',
+        "INDUSTRIAL": 'ICON_DISTRICT_INDUSTRIAL_ZONE',
+        'MILITARISTIC': 'ICON_DISTRICT_ENCAMPMENT',
+        'RELIGIOUS': 'ICON_DISTRICT_HOLY_SITE',
+        'SCIENTIFIC': 'ICON_DISTRICT_CAMPUS',
+        'TRADE': 'ICON_DISTRICT_COMMERCIAL_HUB',
+    }
+    for cs_type in cs_by_type:
+        menu_items.append(get_loc(locs_data, f'LOC_CITY_STATES_TYPE_{cs_type}', en_US_locs_data))
+        menu_icons.append(category_icon_map[cs_type])
+
     with doc:
         add_preloader()
         div(cls="layer")
@@ -525,9 +525,9 @@ def get_city_state_html_file(bbg_version, lang):
                                 h1(title, cls='civ-name')
                                 br()
                                 for cs_type in cs_by_type:
-                                    with div(cls='col-lg-12', id=cs_type), div(cls="chart"):
+                                    with div(cls='col-lg-12', id=get_loc(locs_data, f'LOC_CITY_STATES_TYPE_{cs_type}', en_US_locs_data)), div(cls="chart"):
                                         comment(cs_type)
-                                        h2(cs_type, cls='civ-name')
+                                        h2(get_loc(locs_data, f'LOC_CITY_STATES_TYPE_{cs_type}', en_US_locs_data), cls='civ-name')
                                     with div(cls="row"):
                                         for cs in cs_by_type[cs_type]:
                                             with div(cls="col-lg-6 col-md-12"), div(cls="chart"):

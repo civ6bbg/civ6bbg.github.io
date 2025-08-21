@@ -114,7 +114,7 @@ def generate_expanded_html_file(bbg_ver, l):
     if bbg_ver == latest_bbg and l == 'en_US':
         with open('index.html', 'w') as f:
             f.write(docStr)
-        
+
 def generate_sitemap():
 
     E = lxml.builder.ElementMaker()
