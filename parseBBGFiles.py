@@ -71,6 +71,8 @@ def get_locs_data(bbg_version, lang):
     add_xml_file_to_locs(locs, f"bbm_xml/{lang}.xml")
 
     add_xml_file_to_locs(locs, f"bbg_xml/{bbg_version}/{lang}.xml")
+    
+    add_xml_file_to_locs(locs, f"lang/{lang}.xml")
 
     return locs
 
