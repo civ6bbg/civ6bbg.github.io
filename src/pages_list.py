@@ -85,10 +85,10 @@ pages_list = [
         'title': 'Miscellaneous Description',
         'main_menu_title': 'Misc'
     },
-    # {
-    #     'name': 'changelog',
-    #     'func': get_changelog_html_file,
-    #     'title': 'Changelog',
-    #     'main_menu_title': 'Changelog'
-    # }
+    {
+        'name': 'changelog',
+        'func': get_changelog_html_file,
+        'title': 'Changelog',
+        'main_menu_title': 'Changelog'
+    }
 ]
