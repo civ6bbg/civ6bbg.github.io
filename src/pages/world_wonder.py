@@ -21,7 +21,7 @@ def get_world_wonder_html_file(bbg_version, lang):
     for era in world_wonders.keys():
         menu_items.append(get_loc(locs_data, era, en_US_locs_data))
         menu_icons.append(get_loc(en_US_locs_data, era, en_US_locs_data))
-    
+
     def create_world_wonder_page():
         for era in world_wonders.keys():
             with div(cls='col-lg-12', id=get_loc(locs_data, era, en_US_locs_data)), div(cls="chart"):

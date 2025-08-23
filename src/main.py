@@ -10,7 +10,19 @@ import lxml.etree
 import lxml.builder 
 import datetime
 
-from HTMLgenerator import *
+from pages.bbg_expanded import *
+from pages.buildings import *
+from pages.changelog import *
+from pages.city_states import *
+from pages.governor import *
+from pages.great_people import *
+from pages.leaders import *
+from pages.misc import *
+from pages.names import *
+from pages.natural_wonder import *
+from pages.religion import *
+from pages.units import *
+from pages.world_wonder import *
 
 langs = ['en_US', 'de_DE', 'es_ES', 'it_IT', 'ko_KR', 'pt_BR', 'zh_Hans_CN', 'fr_FR', 'ja_JP', 'pl_PL', 'ru_RU']
 langs_tmp = ['en_US']
@@ -32,95 +44,30 @@ bbg_version_last_timestamp['5.8'] = datetime.date(2025, 8, 21)
 bbg_version_last_timestamp['5.7'] = datetime.date(2025, 8, 21)
 bbg_version_last_timestamp['5.6'] = datetime.date(2025, 8, 21)
 
-def generate_leader_html_file(bbg_ver, l):
-    docStr = get_leader_html_file(bbg_ver, l)
-    file_path = f'{l}/leaders_{'base_game' if bbg_ver == None else bbg_ver}.html'
-    sitemap[bbg_ver][l].append(file_path)
-    with open(file_path, 'w') as f:
-        f.write(docStr)
-    # if bbg_ver == latest_bbg and l == 'en_US':
-    #     with open('index.html', 'w') as f:
-    #         f.write(docStr)
+pages_functions_to_file = {
+    get_leader_html_file: 'leaders',
+    get_city_state_html_file: 'city_states',
+    get_religion_html_file: 'religion',
+    get_governor_html_file: 'governor',
+    get_natural_wonder_html_file: 'natural_wonder',
+    get_world_wonder_html_file: 'world_wonder',
+    get_misc_html_file: 'misc',
+    get_names_html_file: 'names',
+    get_great_people_html_file: 'great_people',
+    get_buildings_html_file: 'buildings',
+    get_expanded_html_file: 'bbg_expanded',
+    get_units_html_file: 'units'
+}
 
-def generate_city_state_html_file(bbg_ver, l):
-    docStr = get_city_state_html_file(bbg_ver, l)
-    file_path = f'{l}/city_states_{'base_game' if bbg_ver == None else bbg_ver}.html'
+def generate_html_file(bbg_ver, l, get_page_function, page_name):
+    docStr = get_page_function(bbg_ver, l)
+    file_path = f'{l}/{page_name}_{'base_game' if bbg_ver == None else bbg_ver}.html'
     sitemap[bbg_ver][l].append(file_path)
     with open(file_path, 'w') as f:
         f.write(docStr)
-
-def generate_religion_html_file(bbg_ver, l):
-    docStr = get_religion_html_file(bbg_ver, l)
-    file_path = f'{l}/religion_{'base_game' if bbg_ver == None else bbg_ver}.html'
-    sitemap[bbg_ver][l].append(file_path)
-    with open(file_path, 'w') as f:
-        f.write(docStr)
-
-def generate_governor_html_file(bbg_ver, l):
-    docStr = get_governor_html_file(bbg_ver, l)
-    file_path = f'{l}/governor_{'base_game' if bbg_ver == None else bbg_ver}.html'
-    sitemap[bbg_ver][l].append(file_path)
-    with open(file_path, 'w') as f:
-        f.write(docStr)
-
-def generate_natural_wonder_html_file(bbg_ver, l):
-    docStr = get_natural_wonder_html_file(bbg_ver, l)
-    file_path = f'{l}/natural_wonder_{'base_game' if bbg_ver == None else bbg_ver}.html'
-    sitemap[bbg_ver][l].append(file_path)
-    with open(file_path, 'w') as f:
-        f.write(docStr)
-
-def generate_world_wonder_html_file(bbg_ver, l):
-    docStr = get_world_wonder_html_file(bbg_ver, l)
-    file_path = f'{l}/world_wonder_{'base_game' if bbg_ver == None else bbg_ver}.html'
-    sitemap[bbg_ver][l].append(file_path)
-    with open(file_path, 'w') as f:
-        f.write(docStr)
-
-def generate_misc_html_file(bbg_ver, l):
-    docStr = get_misc_html_file(bbg_ver, l)
-    file_path = f'{l}/misc_{'base_game' if bbg_ver == None else bbg_ver}.html'
-    sitemap[bbg_ver][l].append(file_path)
-    with open(file_path, 'w') as f:
-        f.write(docStr)
-
-def generate_names_html_file(bbg_ver, l):
-    docStr = get_names_html_file(bbg_ver, l)
-    file_path = f'{l}/names_{'base_game' if bbg_ver == None else bbg_ver}.html'
-    sitemap[bbg_ver][l].append(file_path)
-    with open(file_path, 'w') as f:
-        f.write(docStr)
-
-def generate_great_people_html_file(bbg_ver, l):
-    docStr = get_great_people_html_file(bbg_ver, l)
-    file_path = f'{l}/great_people_{'base_game' if bbg_ver == None else bbg_ver}.html'
-    sitemap[bbg_ver][l].append(file_path)
-    with open(file_path, 'w') as f:
-        f.write(docStr)
-
-def generate_buildings_html_file(bbg_ver, l):
-    docStr = get_buildings_html_file(bbg_ver, l)
-    file_path = f'{l}/buildings_{'base_game' if bbg_ver == None else bbg_ver}.html'
-    sitemap[bbg_ver][l].append(file_path)
-    with open(file_path, 'w') as f:
-        f.write(docStr)
-
-def generate_expanded_html_file(bbg_ver, l):
-    docStr = get_expanded_html_file(bbg_ver, l)
-    file_path = f'{l}/bbg_expanded_{'base_game' if bbg_ver == None else bbg_ver}.html'
-    sitemap[bbg_ver][l].append(file_path)
-    with open(file_path, 'w') as f:
-        f.write(docStr)
-    if bbg_ver == latest_bbg and l == 'en_US':
+    if bbg_ver == latest_bbg and l == 'en_US' and page_name == 'bbg_expanded':
         with open('index.html', 'w') as f:
             f.write(docStr)
-
-def generate_units_html_file(bbg_ver, l):
-    docStr = get_units_html_file(bbg_ver, l)
-    file_path = f'{l}/units_{'base_game' if bbg_ver == None else bbg_ver}.html'
-    sitemap[bbg_ver][l].append(file_path)
-    with open(file_path, 'w') as f:
-        f.write(docStr)
 
 def generate_sitemap():
     E = lxml.builder.ElementMaker()
@@ -150,17 +97,8 @@ for bbg_ver in bbg_versions:
     print(f'Generating HTML files for BBG version {bbg_ver}')
     for l in langs:
         print(f'language: {l}')
-        generate_leader_html_file(bbg_ver, l)
-        generate_city_state_html_file(bbg_ver, l)
-        generate_religion_html_file(bbg_ver, l)
-        generate_governor_html_file(bbg_ver, l)
-        generate_natural_wonder_html_file(bbg_ver, l)
-        generate_world_wonder_html_file(bbg_ver, l)
-        generate_misc_html_file(bbg_ver, l)
-        generate_names_html_file(bbg_ver, l)
-        generate_great_people_html_file(bbg_ver, l)
-        generate_buildings_html_file(bbg_ver, l)
-        generate_expanded_html_file(bbg_ver, l)
-        generate_units_html_file(bbg_ver, l)
+        for get_page_function, page_name in pages_functions_to_file.items():
+            print(f'  page: {page_name}')
+            generate_html_file(bbg_ver, l, get_page_function, page_name)
 
 generate_sitemap()
