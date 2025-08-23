@@ -6,7 +6,7 @@ from parseBBGFiles import *
 
 from dom_generator_helper import *
 
-def get_leader_html_file(bbg_version, lang):
+def get_leader_html_file(bbg_version, lang, pages_list):
     en_US_locs_data = get_locs_data(bbg_version, 'en_US')
     locs_data = get_locs_data(bbg_version, lang)
     if bbg_version == None and lang not in base_game_locs_data:
@@ -67,4 +67,4 @@ def get_leader_html_file(bbg_version, lang):
                     else:
                         show_element_with_base_option(item[5], lang, locs_data, en_US_locs_data)
                     br()
-    return create_page(bbg_version, lang, title, 'leaders', menu_items, menu_icons, 'images/leaders', create_leader_page)
+    return create_page(bbg_version, lang, title, 'leaders', menu_items, menu_icons, 'images/leaders', pages_list, create_leader_page)

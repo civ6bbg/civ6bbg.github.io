@@ -6,7 +6,7 @@ from parseBBGFiles import *
 from dom_generator_helper import *
 from pages.buildings import show_building_yields
 
-def get_world_wonder_html_file(bbg_version, lang):
+def get_world_wonder_html_file(bbg_version, lang, pages_list):
     en_US_locs_data = get_locs_data(bbg_version, 'en_US')
     locs_data = get_locs_data(bbg_version, lang)
     if bbg_version == None and lang not in base_game_locs_data:
@@ -39,4 +39,4 @@ def get_world_wonder_html_file(bbg_version, lang):
                         br()
                         show_building_yields(wonder, locs_data, en_US_locs_data)
                         br()
-    return create_page(bbg_version, lang, title, 'world_wonder', menu_items, menu_icons, 'images/world_wonders', create_world_wonder_page)
+    return create_page(bbg_version, lang, title, 'world_wonder', menu_items, menu_icons, 'images/world_wonders', pages_list, create_world_wonder_page)

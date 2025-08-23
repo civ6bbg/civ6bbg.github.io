@@ -5,7 +5,7 @@ from parseBBGFiles import *
 
 from dom_generator_helper import *
 
-def get_units_html_file(bbg_version, lang):
+def get_units_html_file(bbg_version, lang, pages_list):
     en_US_locs_data = get_locs_data(bbg_version, 'en_US')
     locs_data = get_locs_data(bbg_version, lang)
     if bbg_version == None and lang not in base_game_locs_data:
@@ -110,4 +110,4 @@ def get_units_html_file(bbg_version, lang):
 
     title = f'Civ VI {f"BBG {bbg_version}" if bbg_version else "Base Game"} Unit Details'
     unit_stats = get_unit_stats(f"sqlFiles/{version_name}/DebugGameplay.sqlite")
-    return create_page(bbg_version, lang, title, 'units', menu_items, menu_icons, 'images/units', create_units_page)
+    return create_page(bbg_version, lang, title, 'units', menu_items, menu_icons, 'images/units', pages_list, create_units_page)

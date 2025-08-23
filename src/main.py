@@ -10,19 +10,8 @@ import lxml.etree
 import lxml.builder 
 import datetime
 
-from pages.bbg_expanded import *
-from pages.buildings import *
-from pages.changelog import *
-from pages.city_states import *
-from pages.governor import *
-from pages.great_people import *
-from pages.leaders import *
-from pages.misc import *
-from pages.names import *
-from pages.natural_wonder import *
-from pages.religion import *
-from pages.units import *
-from pages.world_wonder import *
+from pages_list import *
+from dom_generator_helper import *
 
 langs = ['en_US', 'de_DE', 'es_ES', 'it_IT', 'ko_KR', 'pt_BR', 'zh_Hans_CN', 'fr_FR', 'ja_JP', 'pl_PL', 'ru_RU']
 langs_tmp = ['en_US']
@@ -44,23 +33,8 @@ bbg_version_last_timestamp['5.8'] = datetime.date(2025, 8, 21)
 bbg_version_last_timestamp['5.7'] = datetime.date(2025, 8, 21)
 bbg_version_last_timestamp['5.6'] = datetime.date(2025, 8, 21)
 
-pages_functions_to_file = {
-    get_bbg_expanded_html_file: 'bbg_expanded',
-    get_buildings_html_file: 'buildings',
-    get_city_state_html_file: 'city_states',
-    get_governor_html_file: 'governor',
-    get_great_people_html_file: 'great_people',
-    get_leader_html_file: 'leaders',
-    get_misc_html_file: 'misc',
-    get_names_html_file: 'names',
-    get_natural_wonder_html_file: 'natural_wonder',
-    get_religion_html_file: 'religion',
-    get_units_html_file: 'units',
-    get_world_wonder_html_file: 'world_wonder'
-}
-
 def generate_html_file(bbg_ver, l, get_page_function, page_name):
-    docStr = get_page_function(bbg_ver, l)
+    docStr = get_page_function(bbg_ver, l, pages_list)
     file_path = f'{l}/{page_name}_{'base_game' if bbg_ver == None else bbg_ver}.html'
     sitemap[bbg_ver][l].append(file_path)
     with open(file_path, 'w') as f:
@@ -97,7 +71,9 @@ for bbg_ver in bbg_versions:
     print(f'Generating HTML files for BBG version {bbg_ver}')
     for l in langs:
         print(f'language: {l}')
-        for get_page_function, page_name in pages_functions_to_file.items():
+        for page in pages_list:
+            page_name = page['name']
+            get_page_function = page['func']
             print(f'  page: {page_name}')
             generate_html_file(bbg_ver, l, get_page_function, page_name)
 

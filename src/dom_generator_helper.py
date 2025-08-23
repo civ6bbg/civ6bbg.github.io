@@ -226,21 +226,7 @@ def add_lang(text_name, link_name, bbg_version, flag, page_type):
         with a(href=f"/{link_name}/{page_type}_{get_version_name(bbg_version)}.html", style="align-content: center;"):
             img(src=f"/assets/flags/4x3/{flag}.svg", style="height:20px")
 
-def add_header(bbg_version, lang, page_type):
-    pages_list = [
-        ('leaders','Leaders'),
-        ('bbg_expanded','BBG Expanded'),
-        ('city_states','City States'),
-        ('religion','Religion'),
-        ('governor','Governors'),
-        ('great_people','Great People'),
-        ('natural_wonder','Natural Wonders'),
-        ('world_wonder','World Wonders'),
-        ('buildings','Buildings'),
-        ('units', 'Units'),
-        ('names','Names'),
-        ('misc','Misc'),
-    ]
+def add_header(bbg_version, lang, page_type, pages_list):
     with nav(cls="main-nav--bg"), div(cls="main-nav"):
         with div(cls="header"), div(cls="header-inner"), div(cls="inner"):
             with div(cls="row"):
@@ -254,7 +240,9 @@ def add_header(bbg_version, lang, page_type):
                     div(cls="mobile-nav")
                 with div(cls="flex col-xl-8 col-lg-8 col-md-8 col-8"), div(cls="main-menu"), nav(cls="navigation"):
                     with ul(cls="nav menu"):
-                        for t, page_name in pages_list:
+                        for page in pages_list:
+                            page_name = page['main_menu_title']
+                            t = page['name']
                             with li(cls="active" if t == page_type else ""):
                                 a(page_name, href=f"/{lang}/{t}_{get_version_name(bbg_version)}.html", onclick=f'civClicked(null)')
                         with li():
@@ -375,14 +363,13 @@ def add_footer():
         with div(cls="row"):
             with div(cls="col-sm-8 col-1 footer-popup-body"):
                 p("If you like this project, any donation would be extremely helpful for me in maintaining the website.", id="donateText")
-                # p("Your support helps to keep the project alive and allows for further development.")
             with div(cls="col-sm-2 col-6 footer-popup-donate"):
                 a("Donate", href="https://ko-fi.com/calcalciffer", target="_blank", cls="btn btn-primary")
             with div(cls="col-sm-2 col-6 footer-popup-scroll-up"):
                 with a(id="scrollUp", cls="displayNone", href="#top", onclick=f'civClicked(null)'):
                     i(cls='fa-solid fa-up-long')
 
-def create_page(bbg_version, lang, title, header, menu_items, menu_icons, images_dir, page_content_func, *args, **kwargs):
+def create_page(bbg_version, lang, title, header, menu_items, menu_icons, images_dir, pages_list, page_content_func, *args, **kwargs):
     doc = dominate.document(title=None, lang=get_html_lang(lang))
     add_html_header(doc, title)
 
@@ -390,7 +377,7 @@ def create_page(bbg_version, lang, title, header, menu_items, menu_icons, images
         add_preloader()
         div(cls="layer")
         with div(cls="page-flex"), div(cls="main-wrapper"):
-            add_header(bbg_version, lang, header)
+            add_header(bbg_version, lang, header, pages_list)
             with div(cls=""):
                 with div(cls="fixed left-0 right-auto h-screen w-[253px] bg-white border-r border-neutral-300 overflow-scroll", style="z-index: 5;"):
                     add_sidebar(menu_items, menu_icons, images_dir)

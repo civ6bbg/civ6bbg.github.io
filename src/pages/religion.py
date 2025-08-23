@@ -5,7 +5,7 @@ from parseBBGFiles import *
 
 from dom_generator_helper import *
 
-def get_religion_html_file(bbg_version, lang):
+def get_religion_html_file(bbg_version, lang, pages_list):
     en_US_locs_data = get_locs_data(bbg_version, 'en_US')
     locs_data = get_locs_data(bbg_version, lang)
     if bbg_version == None and lang not in base_game_locs_data:
@@ -50,4 +50,4 @@ def get_religion_html_file(bbg_version, lang):
                             comment(elem[1])
                             h2(get_loc(locs_data, elem[1], en_US_locs_data), cls='civ-name')
                         show_element_with_base_option(elem[2], lang, locs_data, en_US_locs_data)
-    return create_page(bbg_version, lang, title, 'religion', menu_items, menu_icons, 'images/religion', create_religion_page)
+    return create_page(bbg_version, lang, title, 'religion', menu_items, menu_icons, 'images/religion', pages_list, create_religion_page)

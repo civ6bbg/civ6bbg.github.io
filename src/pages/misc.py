@@ -5,7 +5,7 @@ from parseBBGFiles import *
 
 from dom_generator_helper import *
 
-def get_misc_html_file(bbg_version, lang):
+def get_misc_html_file(bbg_version, lang, pages_list):
     en_US_locs_data = get_locs_data(bbg_version, 'en_US')
     locs_data = get_locs_data(bbg_version, lang)
     if bbg_version == None and lang not in base_game_locs_data:
@@ -86,4 +86,4 @@ def get_misc_html_file(bbg_version, lang):
                                         comment(effect)
                                         p(get_loc(locs_data, effect, en_US_locs_data), style="text-align:left", cls='civ-ability-desc')
                 br()
-    return create_page(bbg_version, lang, title, 'misc', menu_items, menu_icons, 'images', create_misc_page) 
+    return create_page(bbg_version, lang, title, 'misc', menu_items, menu_icons, 'images', pages_list, create_misc_page) 

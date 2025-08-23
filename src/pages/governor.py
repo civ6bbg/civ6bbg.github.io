@@ -5,7 +5,7 @@ from parseBBGFiles import *
 
 from dom_generator_helper import *
 
-def get_governor_html_file(bbg_version, lang):
+def get_governor_html_file(bbg_version, lang, pages_list):
     en_US_locs_data = get_locs_data(bbg_version, 'en_US')
     locs_data = get_locs_data(bbg_version, lang)
     if bbg_version == None and lang not in base_game_locs_data:
@@ -49,4 +49,4 @@ def get_governor_html_file(bbg_version, lang):
                                     comment(promotion_desc)
                                     p(f'{get_loc(locs_data, promotion_desc, en_US_locs_data)}', style=f"text-align:{alignment}", cls='civ-ability-desc')
                                     br()
-    return create_page(bbg_version, lang, title, 'governor', menu_items, menu_icons, 'images/governors', create_governor_page)
+    return create_page(bbg_version, lang, title, 'governor', menu_items, menu_icons, 'images/governors', pages_list, create_governor_page)
