@@ -10,6 +10,7 @@ from dominate.tags import *
 from parseBBGFiles import *
 
 bbg_versions = [None, '7.1', '6.5', '6.4', '6.3', '6.2', '6.1', '6.0', '5.8', '5.7', '5.6']
+image_onerror = "this.onerror=null; this.src='/images/civVI.webp';"
 
 replacements = [
     '[ICON_AMENITIES]',
@@ -402,3 +403,22 @@ def create_page(bbg_version, lang, title, header, menu_items, menu_icons, images
     docStr = str(doc)
     return refactorCivSpecialSyntax(bbg_version, lang, docStr)
 
+def loc_amount_parameter(localized_text: str, amount: float) -> str:
+    def fix_scaling_factor(matchobj):
+        return matchobj.group(0)
+    def fix_amount(matchobj):
+        return matchobj.group(2) if amount > 1 else matchobj.group(1)
+    localized_text = re.sub(r'{Amount ?: ?plural 1\?(.*?); ?other\?(.*?);}', fix_amount, localized_text)
+    localized_text = localized_text.replace('{Amount}', f'{amount}').replace('{Amount : number #}', f'{amount}')
+
+    localized_text = re.sub(r'{1_Amount ?: ?plural 1\?(.*?); ?other\?(.*?);}', fix_amount, localized_text)
+    localized_text = localized_text.replace('{Amount}', f'{amount}').replace('{Amount : number #}', f'{amount}')
+
+    # 1_Amount: number +#,###;-#,###}
+    localized_text = re.sub(r'{1_Amount: number +#,###;-#,###}', fix_amount, localized_text)
+    localized_text = localized_text.replace('{1_Amount}', f'{amount}').replace('{1_Amount: number +#,###;-#,###}', f'{amount}')
+
+    localized_text = re.sub(r'{ScalingFactor}', fix_scaling_factor, localized_text)
+    localized_text = localized_text.replace('{ScalingFactor}', f'{amount}')
+
+    return localized_text
