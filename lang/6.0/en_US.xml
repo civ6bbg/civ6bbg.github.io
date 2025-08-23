@@ -1,0 +1,989 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<LocalizedText>
+		# Game Mechanics Section
+		<Row Tag="LOC_CHANGELOG_GAME_MECHANICS">
+            <Text>Game Mechanics</Text>
+        </Row>
+		# Amenities / Happiness changes
+        <Row Tag="LOC_CHANGELOG_AMENITIES_HAPPINESS">
+            <Text>
+                Amenities / Happiness
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_AMENITIES_HAPPINESS_DESC">
+            <Text>
+                All cities other than your capital start with +1 amenity bonus.
+				[NEWLINE]
+				[ICON_BULLET] Happy cities receive +8% yields (from +10%)
+				[NEWLINE]
+				[ICON_BULLET] Ecstatic cities receive +16% yields (from +20%)
+            </Text>
+        </Row>
+
+		# Combat changes
+        <Row Tag="LOC_CHANGELOG_COMBAT">
+            <Text>
+                Combat
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_COMBAT_FORTIFICATION_DESC">
+            <Text>
+                +2 Combat Strength per turn of fortification up to a maximum of +4CS (from +3CS per turn up to a maximum of +6CS)
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_COMBAT_DISEMBARKED_UNITS_DESC">
+            <Text>
+                Land units no longer provide support bonus in water
+            </Text>
+        </Row>
+
+		# Congress changes
+        <Row Tag="LOC_CHANGELOG_CONGRESS">
+            <Text>
+                Congress
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_CONGRESS_UNIT_DESC">
+            <Text>
+                 Unit Production Congress modified to +50% cost in production / gold / faith (from +100%) or -25% cost in production / gold / faith (from -50%)
+            </Text>
+        </Row>
+
+		# Dedications changes
+        <Row Tag="LOC_CHANGELOG_DEDICATIONS">
+            <Text>
+                Dedications
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_DEDICATIONS_FREE_INQUIRY_DESC">
+            <Text>
+                [b]Free Inquiry[/b]: Eureka bonus reduced to +5% (from +10%)
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_DEDICATIONS_MONUMENTALITY_DESC">
+            <Text>
+                [b]Monumentality[/b]: faith purchase discount reduced to 10% (from 30%)
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_DEDICATIONS_PEN_BRUSH_DESC">
+            <Text>
+                [b]Pen, Brush, and Voice[/b]: gives +2 Culture and +1 Gold per District
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_DEDICATIONS_EXODUS_DESC">
+            <Text>
+                [b]Exodus of the Evangelis[/b]: removed and replaced with "Drums of War"
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_DEDICATIONS_DRUMS_OF_WAR_DESC">
+            <Text>
+                [b]Drums of War[/b]:
+				[NEWLINE]
+				[ICON_BULLET] When in a Normal/Dark Age: +1 Era score when recruiting a great person.
+				[NEWLINE]
+				[ICON_BULLET] When in a Golden Age: +2 Horses and Iron per turn. +15% Production toward military units, Military Unit maintenance reduced by 1 gold.  Encampments and their Buildings receive +1 Production. Encampment buildings receive +1 Culture. Grants culture equal to 40% of the combat strength of units killed.
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_DEDICATIONS_HIC_SUNT_DESC">
+            <Text>
+                [b]Hic Sunt Dracones[/b]: works on all new cities, not just on different continent
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_DEDICATIONS_TO_ARMS_DESC">
+            <Text>
+                [b]To Arms[/b]: get +10 vs cities
+            </Text>
+        </Row>
+
+		# Diplomatic Favor changes
+        <Row Tag="LOC_CHANGELOG_DIPLOMATIC_FAVOR">
+            <Text>
+                Diplomatic Favor
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_DIPLOMATIC_FAVOR_CONQUER_CAPITAL_DESC">
+            <Text>
+                Conquering a Capital now gives +2 Diplomatic Favor instead of -2
+            </Text>
+        </Row>
+
+		# Disasters changes
+        <Row Tag="LOC_CHANGELOG_DISASTERS">
+            <Text>
+                Disasters
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_DISASTERS_DROUGHT_TORNADO_DESC">
+            <Text>
+                Droughts and Tornados removed entirely
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_DISASTERS_METEOR_DESC">
+            <Text>
+                Meteors removed on all disaster settings except for disaster 4
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_DISASTERS_PILLAGE_DESC">
+            <Text>
+                Reduced odds of completely pillaging a district and improvement on disasters
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_DISASTERS_CIVILIAN_DESC">
+            <Text>
+                Natural disasters won't kill civilian units other than rare circumstances with natural wonders
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_DISASTERS_FLOOD_DESC">
+            <Text>
+                Production yields from floods reduced to compensate the [b]Watermill[/b] change
+            </Text>
+        </Row>
+
+		# Specialists changes
+        <Row Tag="LOC_CHANGELOG_SPECIALISTS">
+            <Text>
+                Specialists
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_SPECIALISTS_DESC">
+            <Text>
+                Working specialist slots are buffed in the following manner:
+				[NEWLINE]
+				[ICON_BULLET] Campus: 3 science | 4 science w/ Research Labs (from 2s | 3s @ Labs)
+				[NEWLINE]
+				[ICON_BULLET] Theater Square: 2 culture | 3 culture w/ Broadcast Center (from 2c | 3c @ Broadcast)
+				[NEWLINE]
+				[ICON_BULLET] Commercial Hub: unchanged
+				[NEWLINE]
+				[ICON_BULLET] Harbor: 1 food + 3 gold | 2 food + 3 gold w/ Seaport (from 1f+2g | 2f+2g @ Seaport)
+				[NEWLINE]
+				[ICON_BULLET] Holy Site: 3 faith | 4 faith w/ Tier 3 building (from 2f | 3f @ Tier 3)
+				[NEWLINE]
+				[ICON_BULLET] Industrial Zone: 4 production always (from 2p | 3p @ Powerplant)
+				[NEWLINE]
+				[ICON_BULLET] Encampment: 2 production + 2 gold | 3 production + 2 gold w/ Military Academy (from 1p+2g | 2p+2g @ Academy)
+            </Text>
+        </Row>
+
+		# Spies changes
+        <Row Tag="LOC_CHANGELOG_SPIES">
+            <Text>
+                Spies
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_SPIES_CAPTURED_DESC">
+            <Text>
+                When a spy is captured, you gain +1 spy capacity.  This is because in multiplayer, especially team games, there is no way of getting your spy back unlike if it is killed.
+            </Text>
+        </Row>
+
+		# Tribal Huts changes
+        <Row Tag="LOC_CHANGELOG_TRIBAL_HUTS">
+            <Text>
+                Tribal Huts
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_TRIBAL_HUTS_RELIC_DESC">
+            <Text>
+                Relic Reward: the possibility of relics are delayed until turn 15 (from start of game)
+            </Text>
+        </Row>
+
+
+		# Techs and Civics Section
+		<Row Tag="LOC_CHANGELOG_TECHNOLOGIES_AND_CIVICS">
+            <Text>Techs and Civics</Text>
+        </Row>
+		# Civics Changes
+		<Row Tag="LOC_CHANGELOG_CIVICS">
+            <Text>
+                Civics
+            </Text>
+        </Row>
+		<Row Tag="LOC_CHANGELOG_CIVICS_DESC">
+            <Text>
+                Civics Tree Changes
+				[NEWLINE]
+				[ICON_BULLET] Nationalism inspiration changed to "Own a Level 3 Land Unit" (from Start a war using a Casus Belli)
+            </Text>
+        </Row>
+
+		# Technologies Changes
+		<Row Tag="LOC_CHANGELOG_TECHNOLOGIES">
+            <Text>
+                Technologies
+            </Text>
+        </Row>
+		<Row Tag="LOC_CHANGELOG_TECHNOLOGIES_DESC">
+            <Text>
+                All technologies after the Classical Era cost 5% more science.
+				[NEWLINE]
+				Era Gate for technologies is increased to 30% (from 20% base game).  This is a mechanic when you are researching technologies of an era ahead of the current game era whereby the cost of those technologies is increased.
+				[NEWLINE]
+				Tech Tree Changes
+				[NEWLINE]
+				[ICON_BULLET] Advanced Ballistics moved to a Modern Era technology, no dependencies changed.
+				[NEWLINE]
+				[ICON_BULLET] Steam Power now requires Scientific Theory
+				[NEWLINE]
+				[ICON_BULLET] Steel eureka changed to "Own a Renaissance Wall" (from Build a Coal Mine and Ironclad)
+            </Text>
+        </Row>
+
+		# Victory Conditions Section
+		<Row Tag="LOC_CHANGELOG_VICTORY_CONDITIONS">
+            <Text>Victory Conditions</Text>
+        </Row>
+		# Empty string for spacing
+        <Row Tag="LOC_CHANGELOG_DUMMY_STR">
+            <Text> </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_VICTORY_CONDITIONS_DESC">
+            <Text>
+				The default "Legacy BBG" setting on game setup changes several victory conditions for viability in multiplayer.  These settings may be adjusted by changing "Legacy BBG" to "Custom" or set to default Firaxis settings by changing this to "Standard"
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_VICTORY_CONDITIONS_LEGACY_BBG_SETTINGS">
+            <Text>
+				Legacy BBG Settings
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_VICTORY_CONDITIONS_LEGACY_BBG_SETTINGS_DESC">
+            <Text>
+				This is the default setting for online competitive multiplayer when using BBG.  This setting changes the below victory conditions as described.
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_VICTORY_CONDITIONS_LEGACY_BBG_SETTINGS_CULTURAL_VICTORY_DESC">
+            <Text>
+				[u][b]Cultural Victory[/b][/u]
+				[NEWLINE]
+				[ICON_BULLET] Base tourism from wonders adjusted to 5 (from 2).
+				[NEWLINE]
+				[ICON_BULLET] Number of tourism needed to gain a tourist lowered to 150 per player (from 200).
+				[NEWLINE]
+				[ICON_BULLET] Computer and Environmentalism boost tourism by 50% (from 25%).
+				[NEWLINE]
+				[u]Great Work Update:[/u]
+				[NEWLINE]
+				Great works of Art are locked to their location for only 2 turns when moved or created.  Art by the same artist no longer receives a penalty when in the same Art Museum.
+				[NEWLINE]
+				[ICON_BULLET] Writing: 4 culture and 2 tourism each (from 2 culture / 2 tourism), additional +2 tourism at Opera and Ballet
+				[NEWLINE]
+				[ICON_BULLET] Art: 4 culture and 4 tourism each (from 3 culture / 3 tourism), additional +50% tourism at Steam Power
+				[NEWLINE]
+				[ICON_BULLET] Music: 12 culture and 8 tourism each (from 4 culture / 4 tourism)
+				[NEWLINE]
+				[ICON_BULLET] Artifact: 6 culture and 8 tourism each (from 3 culture / 3 tourism)
+				[NEWLINE]
+				[ICON_BULLET] Relic: 4 faith and 4 tourism (from 4 faith / 8 tourism)
+				[NEWLINE]
+				[ICON_BULLET] Rock Bands: Potential album sales results reduced by 20% to be 80% of the default value
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_VICTORY_CONDITIONS_LEGACY_BBG_SETTINGS_DIPLOMATIC_VICTORY_DESC">
+            <Text>
+				[u][b]Diplomatic Victory[/b][/u]
+				[NEWLINE]
+				[ICON_BULLET] First world congress is in Medieval Era
+				[NEWLINE]
+				[ICON_BULLET] First vote for Diplomatic Victory points is in Medieval Era
+				[NEWLINE]
+				[ICON_BULLET] Trade Treaty congress vote option B changed to "-4 gold on Trade Routes sent to/from target player" [i](note: this can result in negative gpt trade routes)[/i]
+				[NEWLINE]
+				[ICON_BULLET] Diplomatic point penalty from grievances is removed
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_VICTORY_CONDITIONS_LEGACY_BBG_SETTINGS_SCORE_VICTORY_DESC">
+            <Text>
+				[u][b]Score Victory[/b][/u]
+				Score is often used in determining placement in CPL Free for All (FFA) games.  The following changes have been made to the scoring system:
+				[NEWLINE]
+				[ICON_BULLET] Points for era score are removed
+				[NEWLINE]
+				[ICON_BULLET] Each Civic = 4 points (from 3)
+				[NEWLINE]
+				[ICON_BULLET] Each Technology = 3 points (from 2)
+				[NEWLINE]
+				[ICON_BULLET] Each City = 2 points (from 5)
+				[NEWLINE]
+				[ICON_BULLET] Each Population = 2 points (from 1)
+				[NEWLINE]
+				[ICON_BULLET] Each World Wonder = 4 points (from 15)
+				[NEWLINE]
+				[ICON_BULLET] Each Great Person = 3 points (from 5)
+				[NEWLINE]
+				[ICON_BULLET] Each Foreign city following your religion = 1 point (from 2)
+				[NEWLINE]
+				[ICON_BULLET] Each District = 2 points unchanged
+				[NEWLINE]
+				[ICON_BULLET] Each Unique District = 4 points unchanged
+				[NEWLINE]
+				[ICON_BULLET] Each Building = 1 point unchanged
+				[NEWLINE]
+				[ICON_BULLET] Founding a Religion = 10 points unchanged
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_VICTORY_CONDITIONS_CUSTOM_SETTINGS">
+            <Text>
+				Custom Settings
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_VICTORY_CONDITIONS_CUSTOM_SETTINGS_DESC">
+            <Text>
+				Below are the options available when choosing "Custom" settings for each victory condition.
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_VICTORY_CONDITIONS_CUSTOM_SETTINGS_CULTURAL_VICTORY_DESC">
+            <Text>
+				[u][b]Culture Victory[/b][/u]
+				[NEWLINE]
+				Standard - default Firaxis settings
+				[NEWLINE]
+				Early - great works and Artifacts provide more tourism
+				[NEWLINE]
+				Earliest - default Legacy BBG setting - Great Works and Artifacts provide more tourism and tourism per tourist is reduced by 25%
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_VICTORY_CONDITIONS_CUSTOM_SETTINGS_SCIENCE_VICTORY_DESC">
+            <Text>
+				[u][b]Science Victory[/b][/u]
+				[NEWLINE]
+				Standard - default Firaxis settings, default Legacy BBG setting
+				[NEWLINE]
+				Early - cheaper space projects and lowered cost for future era techs
+				[NEWLINE]
+				Earliest - even cheaper space projects and even lowered cost for future era techs
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_VICTORY_CONDITIONS_CUSTOM_SETTINGS_DIPLOMATIC_VICTORY_DESC">
+            <Text>
+				[u][b]Diplomatic Victory[/b][/u]
+				[NEWLINE]
+				Standard - default Firaxis settings
+				[NEWLINE]
+				Early - first congress in Medieval Era, first vote for diplo points in Renaissance Era
+				[NEWLINE]
+				Earliest - default Legacy BBG setting - first congress and first vote for diplo points in Medieval Era
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_VICTORY_CONDITIONS_CUSTOM_SETTINGS_DOMINATION_VICTORY_DESC">
+            <Text>
+				[u][b]Conquest / Domination Victory[/b][/u]
+				[NEWLINE]
+				Standard - default Firaxis settings, default Legacy BBG setting - can only be on or off, no option for early or earliest due to the nature of domination victories
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_VICTORY_CONDITIONS_CUSTOM_SETTINGS_TERRITORIAL_VICTORY_DESC">
+            <Text>
+				[u][b]Territorial Victory[/b][/u]
+				[NEWLINE]
+				This is a new victory type that may optionally be added to your game when playing with BBG.  The game is won by having a certain percentage of the world's emerged land tiles, in your territory.  This percentage varies based on the setting chosen below.
+				[NEWLINE]
+				**Note** This victory type was bugged at one point by having Rome in the game and/or Torres del Paine.  The bug results in Rome randomly winning the game.  At the time of the writing of these patch notes, it is believed that this bug has been fixed.  You may want to turn Rome off 
+
+				[NEWLINE]
+				Standard - 66% of emerged land tiles
+				[NEWLINE]
+				Early - 60% of emerged land tiles
+				[NEWLINE]
+				Earliest - 50% of emerged land tiles
+				[NEWLINE]
+				Off - default Legacy BBG setting
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_VICTORY_CONDITIONS_CUSTOM_SETTINGS_RELIGIOUS_VICTORY_DESC">
+            <Text>
+				[u][b]Religious Victory[/b][/u]
+				[NEWLINE]
+				Standard - default Firaxis settings, default Legacy BBG setting, religious pressure extends 12 tiles (from 10)
+				[NEWLINE]
+				Early - religious pressure extends 12 tiles
+				[NEWLINE]
+				Earliest - religious pressure extends 13 tiles
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_VICTORY_CONDITIONS_CUSTOM_SETTINGS_SCORE_VICTORY_DESC">
+            <Text>
+				[u][b]Score Victory[/b][/u]
+				[NEWLINE]
+				Standard - default Firaxis settings, default Legacy BBG setting, 250 turns online speed / 500 standard speed
+				[NEWLINE]
+				Early - 175 turns online speed / 350 standard speed
+				[NEWLINE]
+				Earliest - 150 turns online speed / 300 standard speed
+            </Text>
+        </Row>
+
+		# Districts Section
+		<Row Tag="LOC_CHANGELOG_DISTRICTS">
+			<Text>Districts</Text>
+		</Row>
+		<Row Tag="LOC_CHANGELOG_DISTRICTS_DISTRICT_COST_DISCOUNT">
+			<Text>
+				District Cost and Discount Mechanic
+			</Text>
+		</Row>
+		<Row Tag="LOC_CHANGELOG_DISTRICTS_DISTRICT_COST_DISCOUNT_DESC">
+			<Text>
+				[b]Unique District Cost[/b]: Production cost is set to 55% of a standard district cost (from 50%)
+				[NEWLINE]
+				[b]Discount District Costs[/b]:  Production discount on specialty districts via the district discount mechanic is reduced to -35% (from -40%).  Government Plaza and Diplomatic Quarter are reduced to -20% (from -25%).
+			</Text>
+		</Row>
+		<Row Tag="LOC_CHANGELOG_DISTRICTS_CITY_CENTER">
+			<Text>
+				City Center
+			</Text>
+		</Row>
+		<Row Tag="LOC_CHANGELOG_DISTRICTS_CITY_CENTER_DESC">
+			<Text>
+				[ICON_BULLET][b]Watermill[/b]: food on farm resources removed, farms in this city receive +1 production, can be built anywhere (from cities adjacent to a river)
+				[NEWLINE]
+				[ICON_BULLET][b]Sewer[/b]: +1 amenity (from +0 amenity)
+				[NEWLINE]
+				[ICON_BULLET][b]Flood Barrier[/b]: moved to Steam Power (from Computers)
+				[NEWLINE]
+				[ICON_BULLET][b]Ancient Walls[/b]:+1CS (from +3) +75 outer defense (from +100)
+				[NEWLINE]
+				[ICON_BULLET][b]Medieval Walls[/b]:+5CS (from +3) +75 outer defense (from +100)
+				[NEWLINE]
+				[ICON_BULLET][b]Renaissance Walls[/b]: +75 outer defense (from +100)
+				[NEWLINE]
+				[ICON_BULLET][b]Steel Walls[/b]: +300 outer defense (from +400)
+			</Text>
+		</Row>
+		<Row Tag="LOC_CHANGELOG_DISTRICTS_AERODROME">
+			<Text>
+				Aerodrome
+			</Text>
+		</Row>
+		<Row Tag="LOC_CHANGELOG_DISTRICTS_AERODROME_DESC">
+			<Text>
+				Aerodrome yields +1 production to incoming international trade route and +1 production to incoming domestic trade route (like encampment)
+				[NEWLINE]
+				[ICON_BULLET][b]Hanger[/b]: Cost changed to 320 production (from 380, std speed). +1 Aluminum when it is revealed (from +0)
+				[NEWLINE]
+				[ICON_BULLET][b]Airport[/b]: Cost changed to 400 production (from 480, std speed). +1 Aluminum and +1 Uranium when it is revealed (from +0). 
+			</Text>
+		</Row>
+		<Row Tag="LOC_CHANGELOG_DISTRICTS_COMMERCIAL_HUB">
+			<Text>
+				Commercial Hub
+			</Text>
+		</Row>
+		<Row Tag="LOC_CHANGELOG_DISTRICTS_COMMERCIAL_HUB_DESC">
+			<Text>
+				+1 adjacency from city centers (from +0)
+				[NEWLINE]
+				[ICON_BULLET][b]Market[/b]:
+				[NEWLINE][/t]+2 gold (from +3 to balance the adjacency change on comm hub)
+				[NEWLINE]
+				[ICON_BULLET][b]Bank[/b]:
+				[NEWLINE][/t]+6 gold (from +5)
+				[NEWLINE][/t]+2 Great Merchant point (from +1)
+				[NEWLINE][/t]Trade routes from cities with bank yield +2 gold.
+				[NEWLINE][/t]Trade routes to cities with bank yield +1 gold.
+				[NEWLINE]
+				[ICON_BULLET][b]Stock Exchange[/b]:
+				[NEWLINE][/t]+8 gold (from +4)
+				[NEWLINE][/t]Powered yield : +12 gold (from +7)
+				[NEWLINE][/t]+3 Great Merchant point (from +1)
+				[NEWLINE][/t]Trade route from cities with Stock Exchange yield +4 gold.
+				[NEWLINE][/t]Trade route to cities with Stock Exchange yield +2 gold.
+			</Text>
+		</Row>
+		<Row Tag="LOC_CHANGELOG_DISTRICTS_DAM_CANAL">
+			<Text>
+				Dam and Canal
+			</Text>
+		</Row>
+		<Row Tag="LOC_CHANGELOG_DISTRICTS_DAM_CANAL_DESC">
+			<Text>
+				Production cost is now the same as Aqueduct, 36 base. (from 81).
+				[NEWLINE]
+				Canal moved to Buttress (from Steam Power)
+			</Text>
+		</Row>
+		<Row Tag="LOC_CHANGELOG_DISTRICTS_ENCAMPMENT">
+			<Text>
+				Encampment
+			</Text>
+		</Row>
+		<Row Tag="LOC_CHANGELOG_DISTRICTS_ENCAMPMENT_DESC">
+			<Text>
+				[ICON_BULLET][b]Barracks, Stable, and Replacements[/b]: +2 production (from +2 production for units)
+				[NEWLINE]
+				[ICON_BULLET][b]Armory[/b]: +2 Great General points (from +1), and gives +1 niter
+				[NEWLINE]
+				[ICON_BULLET][b]Military Academy[/b]: +2 Great General points (from +1), and +2 oil once revealed
+			</Text>
+		</Row>
+		<Row Tag="LOC_CHANGELOG_DISTRICTS_ENTERTAINMENT_COMPLEX">
+			<Text>
+				Entertainment Complex
+			</Text>
+		</Row>
+		<Row Tag="LOC_CHANGELOG_DISTRICTS_ENTERTAINMENT_COMPLEX_DESC">
+			<Text>
+				[ICON_BULLET][b]Entertainment Complex[/b]: +2 amenities (from +1)
+				[NEWLINE]
+				[ICON_BULLET][b]Arena[/b]: +3 tourism and no longer requires conservation (from +1)
+				[NEWLINE]
+				[ICON_BULLET][b]Stadium[/b]: +6 tourism / +15 when powered (from +2/+5)
+			</Text>
+		</Row>
+		<Row Tag="LOC_CHANGELOG_DISTRICTS_GOVERNMENT_PLAZA">
+			<Text>
+				Government Plaza
+			</Text>
+		</Row>
+		<Row Tag="LOC_CHANGELOG_DISTRICTS_GOVERNMENT_PLAZA_DESC">
+			<Text>
+				[ICON_BULLET][b]Audience Chamber[/b]: +3 food (from +0), +1 amenity (from +2), +3 housing (from +4) in all cities with a governor.
+				[NEWLINE]
+				[ICON_BULLET][b]Warlord's Throne[/b]: completely replaced with - gives +25% production to naval and land military units, +2 of each unlocked strategic per turn, reduces unit maintenance by -1 gold and increases strategics stockpile by 30 (in normal speed)
+				[NEWLINE]
+				[ICON_BULLET][b]Foreign Ministry[/b]: receive +2 influence per turn and 2 envoys
+				[NEWLINE]
+				[ICON_BULLET][b]Grand Master's Chapel[/b]: can buy units with faith, only in the player's founded cities
+				[NEWLINE]
+				[ICON_BULLET][b]Intelligence Agency[/b]: +2 spy capacity (from +1) and +50% production toward spies
+			</Text>
+		</Row>
+		<Row Tag="LOC_CHANGELOG_DISTRICTS_HARBOR">
+			<Text>
+				Harbor
+			</Text>
+		</Row>
+		<Row Tag="LOC_CHANGELOG_DISTRICTS_HARBOR_DESC">
+			<Text>
+				[ICON_BULLET][b]Shipyard[/b]: +1 coal once revealed (from +0)
+				[NEWLINE]
+				[ICON_BULLET][b]Seaport[/b]: +3 great admiral points (from +1)
+			</Text>
+		</Row>
+		<Row Tag="LOC_CHANGELOG_DISTRICTS_INDUSTRIAL_ZONE">
+			<Text>
+				Industrial Zone
+			</Text>
+		</Row>
+		<Row Tag="LOC_CHANGELOG_DISTRICTS_INDUSTRIAL_ZONE_DESC">
+			<Text>
+				[ICON_BULLET][b]Workshop[/b]: cost = 160 production (from 195) and +4 production (from +3)
+				[NEWLINE]
+				[ICON_BULLET][b]Factory[/b]: cost = 290 production (from 330)
+				[NEWLINE]
+				[ICON_BULLET][b]Coal Power Plant[/b]: cost = 330 production (from 300)
+				[NEWLINE]
+				[ICON_BULLET][b]Oil Power Plant[/b]: +6 production (from +3), unlocked at Refining (from Electricity)
+				[NEWLINE]
+				[ICON_BULLET][b]Nuclear Power Plant[/b]: +8 production (from +4) +6 science (from +3)
+			</Text>
+		</Row>
+		<Row Tag="LOC_CHANGELOG_DISTRICTS_NEIGHBORHOOD">
+			<Text>
+				Neighborhood
+			</Text>
+		</Row>
+		<Row Tag="LOC_CHANGELOG_DISTRICTS_NEIGHBORHOOD_DESC">
+			<Text>
+				Production cost reduced to 40 base. (from 54).
+				[NEWLINE]
+				[ICON_BULLET][b]Shopping Mall[/b]: +20 tourism (from +4), +10 gold / +10 additional gold when powered (from +2/+2)
+			</Text>
+		</Row>
+		<Row Tag="LOC_CHANGELOG_DISTRICTS_PRESERVE">
+			<Text>
+				Preserve
+			</Text>
+		</Row>
+		<Row Tag="LOC_CHANGELOG_DISTRICTS_PRESERVE_DESC">
+			<Text>
+				Preserve yield +1 food to incoming domestic trade route and +1 faith to incoming international trade route.
+				[NEWLINE]
+				Fixed a bug that prevented preserves from being discounted like other districts.  
+				[NEWLINE]
+				They can now be discounted.
+				[NEWLINE]
+				[b]Grove[/b]: +1 Food and Faith on tiles with Charming or less appeal, +1 Culture on Tiles with Charming appeal, +2 Food/Faith/Culture on tiles with Breathtaking appeal
+				[NEWLINE]
+				[b]Sanctuary[/b]: +1 Science and Gold if the tile is Charming or less appeal, +1 production if the tile is Charming, +2 Science/Gold/Production if the tile is Breathtaking Appeal
+			</Text>
+		</Row>
+		<Row Tag="LOC_CHANGELOG_DISTRICTS_WATER_PARK">
+			<Text>
+				Water Park
+			</Text>
+		</Row>
+		<Row Tag="LOC_CHANGELOG_DISTRICTS_WATER_PARK_DESC">
+			<Text>
+				[ICON_BULLET][b]Ferris Wheel[/b]: +6 tourism (from +2)
+				[NEWLINE]
+				[ICON_BULLET][b]Aquatics Center[/b]: +6 tourism from each wonder building in this city on or adjacent to the coast (from +2)
+			</Text>
+		</Row>
+
+		# Improvements Section
+		<Row Tag="LOC_CHANGELOG_IMPROVEMENTS">
+			<Text>Improvements</Text>
+		</Row>
+		<Row Tag="LOC_CHANGELOG_IMPROVEMENTS_DESC">
+			<Text>
+				All improvements correctly give tourism at flight equal to their culture value unless stated otherwise, this is a fix to a Firaxis bug.
+				[NEWLINE]
+				[ICON_BULLET][b]Fishing Boats[/b]: give +1 production.
+				[NEWLINE]
+				[ICON_BULLET][b]Fisheries[/b]: moved to Celestial Navigation (from Liang promote). +1 Housing (from +0.5)
+				[NEWLINE]
+				[ICON_BULLET][b]Fort[/b]: Now gives +1 vision and unlocked at Military Engineering (from Siege Tactics).  Vision also includes unique forts (Pa, Great Wall, Alcazar)
+				[NEWLINE]
+				[ICON_BULLET][b]Lumber Mill[/b]: +1 production at Ballistics and Synthetic Materials (from Steel and Cybernetics).
+				[NEWLINE]
+				[ICON_BULLET][b]Plantations[/b]: gives +1 production if built on a flat tile.
+				[NEWLINE]
+				[ICON_BULLET][b]Geothermal Plant[/b]: moved to Chemistry (from Synthetic Materials; +3 power (from +4), additional +3 power and +1 science at Synthetic Materials
+				[NEWLINE]
+				[ICON_BULLET][b]Quarry[/b]: +1 production at Military Engineering (from Gunpowder), +2 production at Rocketry (from +1 Rocketry and +1 Predictive Systems)
+				[NEWLINE]
+				[ICON_BULLET][b]Railroads[/b]: cost 1 iron (from 1 iron 1 coal), unlocked at Scientific Theory (from Steam Power)
+				[NEWLINE]
+				[ICON_BULLET][b]Seaside Resorts[/b]: minimum appeal of charming (from breathtaking), can be built on hills, tourism and gold equal to 200% of appeal (from 100%)
+			</Text>
+		</Row>
+
+		# Resources Section
+		<Row Tag="LOC_CHANGELOG_RESOURCES">
+			<Text>
+				Resources
+			</Text>
+		</Row>
+		<Row Tag="LOC_CHANGELOG_RESOURCES_DESC">
+			<Text>
+				[ICON_BULLET][b]Jade[/b]: +1 production, but can no longer spawn on plains (from +0, plains and grassland)
+				[NEWLINE]
+				[ICON_BULLET][b]Mercury[/b]: +1 food / +1 science (from +0/+1)
+				[b][Pearls][/b]: +1 production / +1 faith (from +0/+1)
+				[NEWLINE]
+				[ICON_BULLET][b]Spices[/b]: +1 food / +1 gold (from +2/+0)
+				[NEWLINE]
+				[ICON_BULLET][b]Tea[/b]: +1 food / +1 science (from +0/+1)
+			</Text>
+		</Row>
+
+		# Units Section
+		<Row Tag="LOC_CHANGELOG_MILITARY_UNITS">
+            <Text>Military Units</Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_UNITS_MILITARY_PREBUILD_SYSTEM">
+            <Text>
+                Prebuild System Nerf
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_UNITS_MILITARY_PREBUILD_SYSTEM_DESC">
+            <Text>
+                Units now become obsolete when the unit +2 is unlocked.  (ex: heavy chariot is obsolete at cuirassiers, warriors obsolete at men at arms, swords obsolete at musketmen, quadriremes obsolete at battleships)
+            </Text>
+        </Row>
+		<Row Tag="LOC_CHANGELOG_UNITS_MILITARY_UNIQUE_UNIT_PREBUILD_SYSTEM">
+			<Text>
+				Unique Unit (UU) Prebuild Nerf
+			</Text>
+		</Row>
+        <Row Tag="LOC_CHANGELOG_UNITS_MILITARY_UNIQUE_UNIT_PREBUILD_SYSTEM_DESC">
+            <Text>
+                To stay consistent with the above change, UU's also obsolete when you unlock unit+2 (for example it was previously possible to build/buy Mandekalu Cavalry even after unlocking tanks)
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_UNITS_MILITARY_ANTI_CAVALRY">
+            <Text>
+                Anti-Cavalry
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_UNITS_MILITARY_ANTI_CAVALRY_DESC">
+            <Text>
+                Thrust promotion is +10 Combat Strength vs Melee (from +5)
+				[NEWLINE]
+				[ICON_BULLET][b]Pikemen[/b]: cost adjusted to 200 standard speed (from 180)
+				[NEWLINE]
+				[ICON_BULLET][b]Pike and Shot[/b]: cost adjusted to 290 standard speed (from 250)
+				[NEWLINE]
+				[ICON_BULLET][b]AT Crew[/b]: 80 combat strength (from 75)
+				[NEWLINE]
+				[ICON_BULLET][b]Modern AT[/b]: 90 combat strength (from 85)
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_UNITS_MILITARY_LIGHT_CAVALRY">
+            <Text>
+                Light Cavalry
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_UNITS_MILITARY_LIGHT_CAVALRY_DESC">
+            <Text>
+			[ICON_BULLET][b]Courser[/b]: cost adjusted to 180 standard speed (from 200)
+			[NEWLINE]
+			[ICON_BULLET][b]Cavalry[/b]: cost adjusted to 310 standard speed (from 330)
+			[NEWLINE]
+			[ICON_BULLET][b]Helicopter[/b]: require 1 oil to maintain (from 1 aluminum), 5 movement (from 4)
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_UNITS_MILITARY_HEAVY_CAVALRY">
+            <Text>
+                Heavy Cavalry
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_UNITS_MILITARY_HEAVY_CAVALRY_DESC">
+            <Text>
+                [b]Knight[/b]: cost adjusted to 200 standard speed (from 220)
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_UNITS_MILITARY_MELEE">
+            <Text>
+                Melee
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_UNITS_MILITARY_MELEE_DESC">
+            <Text>
+                Melee Units receive +10 Combat Strength vs Anti-Cavalry (from +5)
+				[NEWLINE]
+				[ICON_BULLET][b]Swordsmen[/b]: require 7 iron online speed (from 10), Sword replacement UUs require 5 iron.
+				[NEWLINE]
+				[ICON_BULLET][b]Man at Arms[/b]: require 7 iron online speed (from 10)
+				[NEWLINE]
+				[ICON_BULLET][b]Musketmen[/b]: require 7 niter online speed (from 10), production reduced to 220 (from 240)
+				[NEWLINE]
+				[ICON_BULLET][b]Line Infantry[/b]: require 7 niter online speed (from 10), production reduced to 330, same as cuirassier (from 360)
+				[NEWLINE]
+				[ICON_BULLET][b]Infantry[/b]: 80 combat strength (from 75), 3 movement (from 2), require 1 niter to maintain (from 1 oil).
+				[NEWLINE]
+				[ICON_BULLET][b]Mechanized Infantry[/b]: 90 combat strength (from 85)
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_UNITS_MILITARY_RANGED">
+            <Text>
+                Ranged
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_UNITS_MILITARY_RANGED_DESC">
+            <Text>
+                Ranged units no longer receive support bonus.
+				[NEWLINE]
+				[ICON_BULLET][b]Machine Gun[/b]: 3 movement (from 2), now considered a Modern Era unit due to change in Advanced Ballistics location on the Technology Tree.
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_UNITS_MILITARY_RECON">
+            <Text>
+                Recon
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_UNITS_MILITARY_RECON_DESC">
+            <Text>
+				[ICON_BULLET][b]Skirmisher[/b]: Combat Strength adjusted to 25/35 (from 20/30), 3 base vision (Warakaq 25/40)
+				[NEWLINE]
+				[ICON_BULLET][b]Rangers[/b]: Combat Strength adjusted to 55/65 (from 45/60), 3 base vision (Highlander 65/70)
+				[NEWLINE]
+				[ICON_BULLET][b]Spec Ops[/b]:  Combat Strength adjusted to 65/75 (from 55/65), 3 base vision
+				[NEWLINE]
+				Promotion Changes:
+				[NEWLINE][/t]Tier 2 (left, Sentry): see through woods/jungle and +1 sight
+				[NEWLINE][/t]Tier 3 (left, spyglass): now called "Endurance", +2 PM
+				[NEWLINE][/t]Tier 3 (right, ambush): +15 strength (from +20)
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_UNITS_MILITARY_SIEGE">
+            <Text>
+                Siege
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_UNITS_MILITARY_SIEGE_DESC">
+            <Text>
+                Siege units no longer receive support bonus.
+				[NEWLINE]
+				All siege units get +10 in defense against ranged units.
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_UNITS_MILITARY_GDR">
+            <Text>
+                Giant Death Robot
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_UNITS_MILITARY_GDR_DESC">
+            <Text>
+                Uranium maintenance reduced to 2 (from 3).
+				[NEWLINE]Melee 140 strength (from 130)
+				[NEWLINE]Anti-Air 120 strength, +20 with future tech (from 100 + 30)
+				[NEWLINE]Receives bonus from Fascism
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_UNITS_MILITARY_AIR_UNITS">
+            <Text>
+                Air Units
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_UNITS_MILITARY_AIR_UNITS_DESC">
+            <Text>
+                Priority target removed for fighter class air units
+				[NEWLINE]All Air Units reduced by -5 combat strength
+            </Text>
+        </Row>
+		<Row Tag="LOC_CHANGELOG_UNITS_MILITARY_NAVAL_MELEE">
+            <Text>
+                Naval Melee
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_UNITS_MILITARY_NAVAL_MELEE_DESC">
+            <Text>
+                Embolon promotion reduced to +5CS (from +7)
+				[NEWLINE]
+				[ICON_BULLET][b]Destroyer[/b]: 90 combat strength (from 85), 6 movement (from 4).
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_UNITS_MILITARY_NAVAL_RANGED">
+            <Text>
+				Naval Ranged
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_UNITS_MILITARY_NAVAL_RANGED_DESC">
+            <Text>
+				Naval Ranged units no longer receive support bonus.
+				[NEWLINE]
+				Line of Battle promotion reduced to +5CS (from +7)
+				[NEWLINE]
+				[ICON_BULLET][b]Battleship[/b]: 75 ranged combat strength (from 70)
+				[NEWLINE]
+				[ICON_BULLET][b]Missile Cruiser[/b]: 4 range (from 3)
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_UNITS_MILITARY_NAVAL_RAIDER">
+            <Text>
+				Naval Raider
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_UNITS_MILITARY_NAVAL_RAIDER_DESC">
+            <Text>
+				Naval Raider units no longer receive support bonus.
+				[NEWLINE]
+				[ICON_BULLET][b]Privateer[/b]: moved to Exploration (from Mercantilism)
+				[NEWLINE]
+				[ICON_BULLET][b]Submarine[/b]: no resource maintenance (from 1 oil), 4 movement (from 3)
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_UNITS_MILITARY_NAVAL_CARRIER">
+            <Text>
+				Naval Carrier
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_UNITS_MILITARY_NAVAL_CARRIER_DESC">
+            <Text>
+				[b]Aircraft Carrier[/b]:
+				[NEWLINE]
+				[ICON_BULLET] 5 movement (from 3)
+				[NEWLINE]
+				[ICON_BULLET] 80 combat strength (from 65)
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_UNITS_MILITARY_NUCLEAR_DEVICES">
+            <Text>
+				Nuclear Devices
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_UNITS_MILITARY_NUCLEAR_DEVICES_DESC">
+            <Text>
+				[ICON_BULLET][b]Manhattan Project[/b]: cost increased to 750 online speed (from 500), 1500 standard speed (from 1000)
+				[NEWLINE]
+				[ICON_BULLET][b]Operation Ivy[/b]: cost increased to 750 online speed (from 500), 1500 standard speed (from 1000)
+				[NEWLINE]
+				[ICON_BULLET][b]Nuclear Device[/b]: 600 production online speed (from 400), uranium cost = 7 (from 5)
+				[NEWLINE]
+				[ICON_BULLET][b]Thermonuclear Device[/b]: 750 production online speed (from 500), uranium cost = 20 (from 10)
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_UNITS_MILITARY_SUPPORT_UNITS">
+            <Text>
+				Support Units
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_UNITS_MILITARY_SUPPORT_UNITS_DESC">
+            <Text>
+				[ICON_BULLET][b]Battering Ram / Siege Tower[/b]: Obsolete at Military Science (from Civil Engineering)
+				[NEWLINE]
+				[NEWLINE]
+				[ICON_BULLET]
+				[b]Military Engineer[/b]
+				[NEWLINE]
+				[/t][ICON_BULLET] 3 movement (from 2)
+				[NEWLINE]
+				[/t][ICON_BULLET] 3 charges (from 2)
+				[NEWLINE]
+				[/t][ICON_BULLET] Can build roads without using a charge
+				[NEWLINE]
+				[/t][ICON_BULLET] Railroads moved to Scientific Theory (from Steam Power)
+				[NEWLINE]
+				[/t][ICON_BULLET] Tunnels moved to Military Science (from Chemistry)
+				[NEWLINE]
+				[NEWLINE]
+				[ICON_BULLET][b]Medic[/b]: Moved to Military Science (from Sanitation), grants +1 movement to melee, anti-cav, and ranged units (from +0)
+				[NEWLINE]
+				[NEWLINE]
+				[ICON_BULLET][b]Anti-Air Gun[/b]: Unlocked at Steel (from Advanced Ballistics)
+				[NEWLINE]
+				[NEWLINE]
+				[ICON_BULLET][b]Mobile SAM[/b]: +115 Anti-air combat strength (from +100) and -5 Anti-air combat strength vs all planes (total = +110 from +100)
+            </Text>
+        </Row>
+
+		<Row Tag="LOC_CHANGELOG_GOVERNMENTS">
+            <Text>Governments</Text>
+        </Row>
+		<Row Tag="LOC_CHANGELOG_GOVERNMENTS_DESC">
+            <Text>
+				[b]Autocracy[/b]: Additionally, Monuments give +1 Production and +1 Food if the city has a specialty district
+				[NEWLINE][NEWLINE]
+				[b]Merchant Republic[/b]: 1 Military, 2 Economic, 1 Diplomatic, and 2 Wild slots (from 1/2/2/1)
+				[NEWLINE][NEWLINE]
+				[b]Monarchy[/b]: removed +2 Diplo Favor from Renaissance Walls.  Add +2 Culture for each Renaissance Walls.
+				[NEWLINE][NEWLINE]
+				[b]Theocracy[/b]: No change
+				[NEWLINE][NEWLINE]
+				[b]Communism[/b]:
+				[NEWLINE][ICON_BULLET] 2 Military, 4 Economic, 1 Diplomatic, 1 Wild Slots (from 3/3/1/1)
+				[NEWLINE][ICON_BULLET] +1 Production per citizen (from 0.6)
+				[NEWLINE][ICON_BULLET] [b]Collectivization[/b]:+4 production (from +2) and +4 Gold (from +0) per domestic trade route
+				[NEWLINE][NEWLINE]
+				[b]Fascism[/b]: combat bonus works on defense
+				[NEWLINE][NEWLINE]
+				[b]Corporate Libertarianism[/b]: remove -10% science malus, add +5 Aluminum/Oil/Uranium per turn
+				[NEWLINE][NEWLINE]
+				[b]Digital Democracy[/b]: remove -3 combat strength malus, add +2 tourism per specialty district
+				[NEWLINE][NEWLINE]
+				[b]Synthetic Technocracy[/b]: remove -10% tourism malus, add +50% production toward Spaceports, Industrial Zones, Campuses, Harbors, and also buildings inside those districts.
+            </Text>
+        </Row>
+
+		<Row Tag="LOC_CHANGELOG_POLICIES">
+            <Text>Policies</Text>
+        </Row>
+		<Row Tag="LOC_CHANGELOG_POLICIES_DESC">
+            <Text>
+				[ICON_BULLET] [b]Bastions[/b]: +0 city ranged strength (from +5)
+				[NEWLINE][ICON_BULLET] [b]Communications Office[/b]: +2 loyalty per governor promotion (from +1)
+				[NEWLINE][ICON_BULLET] [b]Discipline[/b]: Combat bonus against barbarian buffed to +10 (from +5)
+				[NEWLINE][ICON_BULLET] [b]Limes[/b]: never gets obsolete, +50% production toward walls (from 100%)
+				[NEWLINE][ICON_BULLET] [b]Medina Quarter[/b]: +1 Housing per District (from +2 Housing in cities with 3 specialty districts)
+				[NEWLINE][ICON_BULLET] [b]Military First[/b]: Unlocked at Mobilization (from Rapid Deployment)
+				[NEWLINE][ICON_BULLET] [b]Praetorium[/b]: +4 loyalty for governors (from +2)
+				[NEWLINE][ICON_BULLET] [b]Rationalism[/b], [b]Grand Opera[/b], [b]Simultaneum[/b] and [b]Free Market[/b]: Require 13 pop (from 15), and adjacency bonus of +3 (from +4)
+				[NEWLINE][ICON_BULLET] [b]Retinues[/b] and [b]Force Modernization[/b]: -50% of resource cost to both produce and upgrade units (from upgrade only)
+				[NEWLINE][NEWLINE]
+				All Strategic Resource policy cards now give a base +2 of the resource, in addition to the normal +1 by worked resource.
+				[NEWLINE][NEWLINE]
+				All Melee and Ranged unit production policy cards now also include Recon units.
+				[NEWLINE][NEWLINE]
+				[u]3 new cards to boost Siege Unit production:[/u]
+				[NEWLINE][ICON_BULLET] [b]Siegecraft[/b]: Available at Military Tradition, +50% production towards ancient, classical and medieval era siege units.
+				[NEWLINE][ICON_BULLET] [b]Hard-shell Explosives[/b]: Available at Medieval Faires, +50% production towards siege units from renaissance era and before.
+				[NEWLINE][ICON_BULLET] [b]Trench Warfare[/b]: Available at Scorched Earth, +50% production towards all siege units
+            </Text>
+        </Row>
+	</LocalizedText>
+</GameData>

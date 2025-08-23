@@ -4,6 +4,8 @@ import numpy as np
 import csv
 import os
 
+bbg_versions = [None, '7.1', '6.5', '6.4', '6.3', '6.2', '6.1', '6.0', '5.8', '5.7', '5.6']
+
 def add_xml_file_to_locs(locs, xml_file):
     if not os.path.exists(xml_file):
         return
@@ -75,7 +77,10 @@ def get_locs_data(bbg_version, lang):
 
     add_xml_file_to_locs(locs, f"bbg_xml/{bbg_version}/{lang}.xml")
     
-    add_xml_file_to_locs(locs, f"lang/{bbg_version}/{lang}.xml")
+    for bbg_ver in reversed(bbg_versions):
+        add_xml_file_to_locs(locs, f"lang/{bbg_ver}/{lang}.xml")
+        if bbg_ver == bbg_version:
+            break
 
     return locs
 
