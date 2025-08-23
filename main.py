@@ -145,7 +145,6 @@ def generate_sitemap():
         f.write(lxml.etree.tostring(the_doc, pretty_print=True, xml_declaration=True, encoding='UTF-8'))
 
 for l in langs:
-    # Create directory if it does not exist
     os.makedirs(l, exist_ok=True)
 for bbg_ver in bbg_versions:
     print(f'Generating HTML files for BBG version {bbg_ver}')

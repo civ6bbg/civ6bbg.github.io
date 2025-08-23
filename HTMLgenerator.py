@@ -642,7 +642,6 @@ def show_building_yields(yields, locs_data, en_US_locs_data):
         processed = processed.replace('{3_YieldName[2]}', get_loc(locs_data, 'LOC_YIELD_GOLD_NAME', en_US_locs_data))
         processed = processed.replace('{3_YieldName[8]}', get_loc(locs_data, 'LOC_YIELD_GOLD_NAME', en_US_locs_data))
         p(processed, style="text-align:left", cls='civ-ability-desc')
-        # img(src=f'/images/ICON_PRODUCTION.webp', style="vertical-align: middle", onerror=image_onerror)
 
 def get_buildings_html_file(bbg_version, lang):
     en_US_locs_data = get_locs_data(bbg_version, 'en_US')
