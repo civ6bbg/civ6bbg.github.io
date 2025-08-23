@@ -7,40 +7,26 @@ from dom_generator_helper import *
 
 changelog_items = {
     'LOC_CHANGELOG_GAME_MECHANICS': {
-        'LOC_CHANGELOG_AMENITIES_HAPPINESS': [
-            'LOC_CHANGELOG_AMENITIES_HAPPINESS_DESC',
+        'LOC_CHANGELOG_GAME_MECHANICS_GLOBAL': [
+            'LOC_CHANGELOG_GAME_MECHANICS_GLOBAL_DESC',
         ],
         'LOC_CHANGELOG_COMBAT': [
-            'LOC_CHANGELOG_COMBAT_FORTIFICATION_DESC',
-            'LOC_CHANGELOG_COMBAT_DISEMBARKED_UNITS_DESC'
+            'LOC_CHANGELOG_COMBAT_DESC',
         ],
         'LOC_CHANGELOG_CONGRESS': [
-            'LOC_CHANGELOG_CONGRESS_UNIT_DESC'
-        ],
-        'LOC_CHANGELOG_DEDICATIONS': [
-            'LOC_CHANGELOG_DEDICATIONS_FREE_INQUIRY_DESC',
-            'LOC_CHANGELOG_DEDICATIONS_MONUMENTALITY_DESC',
-            'LOC_CHANGELOG_DEDICATIONS_PEN_BRUSH_DESC',
-            'LOC_CHANGELOG_DEDICATIONS_EXODUS_DESC',
-            'LOC_CHANGELOG_DEDICATIONS_DRUMS_OF_WAR_DESC',
-            'LOC_CHANGELOG_DEDICATIONS_HIC_SUNT_DESC',
-            'LOC_CHANGELOG_DEDICATIONS_TO_ARMS_DESC',
+            'LOC_CHANGELOG_CONGRESS_DESC'
         ],
         'LOC_CHANGELOG_DIPLOMATIC_FAVOR': [
             'LOC_CHANGELOG_DIPLOMATIC_FAVOR_CONQUER_CAPITAL_DESC',
         ],
         'LOC_CHANGELOG_DISASTERS': [
-            'LOC_CHANGELOG_DISASTERS_DROUGHT_TORNADO_DESC',
-            'LOC_CHANGELOG_DISASTERS_METEOR_DESC',
-            'LOC_CHANGELOG_DISASTERS_PILLAGE_DESC',
-            'LOC_CHANGELOG_DISASTERS_CIVILIAN_DESC',
-            'LOC_CHANGELOG_DISASTERS_FLOOD_DESC',
+            'LOC_CHANGELOG_DISASTERS_DESC',
         ],
         'LOC_CHANGELOG_SPECIALISTS': [
             'LOC_CHANGELOG_SPECIALISTS_DESC',
         ],
         'LOC_CHANGELOG_SPIES': [
-            'LOC_CHANGELOG_SPIES_CAPTURED_DESC',
+            'LOC_CHANGELOG_SPIES_DESC',
         ],
         'LOC_CHANGELOG_TRIBAL_HUTS': [
             'LOC_CHANGELOG_TRIBAL_HUTS_RELIC_DESC',
@@ -84,6 +70,9 @@ changelog_items = {
         ],
         'LOC_CHANGELOG_DISTRICTS_AERODROME': [
             'LOC_CHANGELOG_DISTRICTS_AERODROME_DESC',
+        ],
+        'LOC_CHANGELOG_DISTRICTS_CAMPUS': [
+            'LOC_CHANGELOG_DISTRICTS_CAMPUS_DESC',
         ],
         'LOC_CHANGELOG_DISTRICTS_COMMERCIAL_HUB': [
             'LOC_CHANGELOG_DISTRICTS_COMMERCIAL_HUB_DESC',
@@ -204,6 +193,8 @@ def get_changelog_html_file(bbg_version, lang, pages_list):
     menu_icons = [f'ICON_{item}' for item in changelog_items.keys()]
 
     def create_changelog_page():
+        if bbg_version == None:
+            return
         for section in changelog_items.keys():
             with div(cls='col-lg-12'), div(cls="chart"):
                 comment(section)

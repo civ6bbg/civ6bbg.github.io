@@ -1,5 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Row Tag="LOC_CHANGELOG_CONGRESS_DESC">
+			<Text>
+				[ICON_BULLET] Unit Production Congress modified to +50% cost in production / gold / faith (from +100%) or -25% cost in production / gold / faith (from -50%)
+				[NEWLINE]
+				[ICON_BULLET] Border Control Treaty: Vote A - Can purchase tiles at a 50% Gold discount (from culture bomb when completing districts)
+			</Text>
+		</Row>
+		<Row Tag="LOC_CHANGELOG_IMPROVEMENTS_DESC">
+			<Text>
+				All improvements correctly give tourism at flight equal to their culture value unless stated otherwise, this is a fix to a Firaxis bug.
+				[NEWLINE]
+				[ICON_BULLET][b]Fishing Boats[/b]: give +1 production.
+				[NEWLINE]
+				[ICON_BULLET][b]Fisheries[/b]: moved to Celestial Navigation (from Liang promote). +1 Housing (from +0.5)
+				[NEWLINE]
+				[ICON_BULLET][b]Fort[/b]: Now gives +1 vision and unlocked at Military Engineering (from Siege Tactics).  Vision also includes unique forts (Pa, Great Wall, Alcazar)
+				[NEWLINE]
+				[ICON_BULLET][b]Lumber Mill[/b]: +1 production at Ballistics and Synthetic Materials (from Steel and Cybernetics).
+				[NEWLINE]
+				[ICON_BULLET][b]Plantations[/b]: gives +1 production if built on a flat tile.
+				[NEWLINE]
+				[ICON_BULLET][b]Geothermal Plant[/b]: moved to Chemistry (from Synthetic Materials; +3 power (from +4), additional +3 power and +1 science at Synthetic Materials
+				[NEWLINE]
+				[ICON_BULLET][b]Quarry[/b]: +1 production at Military Engineering (from Gunpowder), +2 production at Rocketry (from +1 Rocketry and +1 Predictive Systems)
+				[NEWLINE]
+				[ICON_BULLET][b]Railroads[/b]: cost 1 iron (from 1 iron 1 coal), unlocked at Scientific Theory (from Steam Power)
+				[NEWLINE]
+				[ICON_BULLET][b]Seaside Resorts[/b]: minimum appeal of charming (from breathtaking), can be built on hills, tourism and gold equal to 150% of appeal (from 100%)
+			</Text>
+		</Row>
+		<Row Tag="LOC_CHANGELOG_VICTORY_CONDITIONS_LEGACY_BBG_SETTINGS_CULTURAL_VICTORY_DESC">
+            <Text>
+				[u][b]Cultural Victory[/b][/u]
+				[NEWLINE]
+				[ICON_BULLET] Base tourism from wonders adjusted to 5 (from 2).
+				[NEWLINE]
+				[ICON_BULLET] Number of tourism needed to gain a tourist lowered to 150 per player (from 200).
+				[NEWLINE]
+				[ICON_BULLET] Computer boosts tourism by 50% (from 25%).
+				[NEWLINE]
+				[u]Great Work Update:[/u]
+				[NEWLINE]
+				Great works of Art are locked to their location for only 2 turns when moved or created.  Art by the same artist no longer receives a penalty when in the same Art Museum.
+				[NEWLINE]
+				[ICON_BULLET] Writing: 4 culture and 2 tourism each (from 2 culture / 2 tourism), additional +2 tourism at Opera and Ballet
+				[NEWLINE]
+				[ICON_BULLET] Art: 4 culture and 4 tourism each (from 3 culture / 3 tourism), additional +50% tourism at Steam Power
+				[NEWLINE]
+				[ICON_BULLET] Music: 12 culture and 8 tourism each (from 4 culture / 4 tourism)
+				[NEWLINE]
+				[ICON_BULLET] Artifact: 6 culture and 8 tourism each (from 3 culture / 3 tourism)
+				[NEWLINE]
+				[ICON_BULLET] Relic: 4 faith and 4 tourism (from 4 faith / 8 tourism)
+				[NEWLINE]
+				[ICON_BULLET] Rock Bands: Potential album sales results reduced by 20% to be 80% of the default value
+				[NEWLINE]
+				[ICON_BULLET] Cristo Redentor: Back to +100% tourism for Seaside Resorts (from +75%)
+				[NEWLINE]
+				[ICON_BULLET] Cultural Hegemony: +25% Global Tourism (from +0%) 
+            </Text>
+        </Row>
+		<Row Tag="LOC_CHANGELOG_DISASTERS_DESC">
+            <Text>
+                [ICON_BULLET] Droughts and Tornados removed entirely
+				[NEWLINE]
+                [ICON_BULLET] Meteors removed on all disaster settings except for disaster 4
+                [NEWLINE]
+                [ICON_BULLET] Reduced odds of completely pillaging a district and improvement on disasters
+                [NEWLINE]
+                [ICON_BULLET] Natural disasters won't kill civilian units other than rare circumstances with natural wonders
+                [NEWLINE]
+                [ICON_BULLET] Production yields from floods reduced to compensate the [b]Watermill[/b] change
+				[NEWLINE]
+				[ICON_BULLET] Forest Fire: +1 Food for Woods fires. +1 Production for Rainforest fires (from +1 food and +1 production for all forest fires)
+            </Text>
+        </Row>
 	</LocalizedText>
 </GameData>

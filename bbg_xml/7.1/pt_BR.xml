@@ -726,7 +726,7 @@
 		<!-- == INDIA - INDE == -->
 		<!-- = civilization ability = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_DHARMA_EXPANSION2_DESCRIPTION" Language="pt_BR">
-			<Text>Sua cidade recebe os bônus de crença de cada [ICON_RELIGION] religião que possua pelo menos um fiel.[NEWLINE][NEWLINE][ICON_SERVICES] Serviços +1 para as cidades cuja [ICON_RELIGION] religião dominante é a sua.[NEWLINE][NEWLINE]Cargas de propagação +2 para os Missionários.[NEWLINE]Pressão religiosa +100% nas suas [ICON_TRADEROUTE] rotas comerciais.</Text>
+			<Text>Sua cidade recebe os bônus de crença de cada [ICON_RELIGION] religião que possua pelo menos um fiel.[NEWLINE][NEWLINE][ICON_AMENITIES] Serviços +1 para as cidades cuja [ICON_RELIGION] religião dominante é a sua.[NEWLINE][NEWLINE]Cargas de propagação +2 para os Missionários.[NEWLINE]Pressão religiosa +100% nas suas [ICON_TRADEROUTE] rotas comerciais.</Text>
 		</Replace>
 		<!-- = leader ability (Chandragupta) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_ARTHASHASTRA_DESCRIPTION" Language="pt_BR">
@@ -775,7 +775,7 @@
 		<!-- == INDONESIA - INDONÉSIE == -->
 		<!-- = civilization ability = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_INDONESIA_NUSANTARA_DESCRIPTION" Language="pt_BR">
-			<Text>Bônus de adjacência +0,5 para Distritos Industriais, Campus, Centros Comerciais e Lugares Santos para cada painel de costa ou lago adjacente. [ICON_SERVICES] Serviços +1 para Complexos de Entretenimento adjacentes a uma costa ou lago.[NEWLINE][NEWLINE]Bias: T1 Costa.</Text>
+			<Text>Bônus de adjacência +0,5 para Distritos Industriais, Campus, Centros Comerciais e Lugares Santos para cada painel de costa ou lago adjacente. [ICON_AMENITIES] Serviços +1 para Complexos de Entretenimento adjacentes a uma costa ou lago.[NEWLINE][NEWLINE]Bias: T1 Costa.</Text>
 		</Replace>
 		<!-- = leader ability = -->
 		<Replace Tag="LOC_TRAIT_LEADER_EXALTED_GODDESS_DESCRIPTION" Language="pt_BR">
@@ -1052,7 +1052,7 @@
 		<!-- == MAYA == -->
 		<!-- = civilization ability = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_MAYAB_DESCRIPTION" Language="pt_BR">
-			<Text>As cidades não recebem [ICON_HOUSING] Habitações da água doce e dos painéis costeiros. [ICON_HOUSING] Habitações +1 para a [ICON_CAPITAL] Capital. Os Centros-vilas ganham +1 [ICON_SERVICES] Serviços para cada recurso de luxo adjacente.[NEWLINE][NEWLINE]As fazendas fornecem +1 [ICON_GOLD] Ouro e +1 [ICON_HOUSING] Habitações, assim como +1 [ICON_PRODUCTION] Produção por Observatório adjacente.[NEWLINE][ICON_SCIENCE] Ciência +1 para plantações por Observatório adjacente (passa a +2 na Educação).[NEWLINE][NEWLINE]Viés : T3 Recursos de luxo em plantação / T4 Bananas.</Text>
+			<Text>As cidades não recebem [ICON_HOUSING] Habitações da água doce e dos painéis costeiros. [ICON_HOUSING] Habitações +1 para a [ICON_CAPITAL] Capital. Os Centros-vilas ganham +1 [ICON_AMENITIES] Serviços para cada recurso de luxo adjacente.[NEWLINE][NEWLINE]As fazendas fornecem +1 [ICON_GOLD] Ouro e +1 [ICON_HOUSING] Habitações, assim como +1 [ICON_PRODUCTION] Produção por Observatório adjacente.[NEWLINE][ICON_SCIENCE] Ciência +1 para plantações por Observatório adjacente (passa a +2 na Educação).[NEWLINE][NEWLINE]Viés : T3 Recursos de luxo em plantação / T4 Bananas.</Text>
 		</Replace>
 		<!-- = leader ability = -->
 		<Replace Tag="LOC_TRAIT_LEADER_MUTAL_DESCRIPTION" Language="pt_BR">

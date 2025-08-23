@@ -1,5 +1,154 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Row Tag="LOC_CHANGELOG_DISTRICTS_GOVERNMENT_PLAZA_DESC">
+			<Text>
+				[ICON_BULLET][b]Audience Chamber[/b]: +3 food (from +0), +1 amenity (from +2), +3 housing (from +4) in all cities with a governor.
+				[NEWLINE]
+				[ICON_BULLET][b]Warlord's Throne[/b]: completely replaced with - gives +25% production to naval and land military units, +2 of each unlocked strategic per turn, reduces unit maintenance by -1 gold and increases strategics stockpile by 30 (in normal speed)
+				[NEWLINE]
+				[ICON_BULLET][b]Foreign Ministry[/b]: receive +2 influence per turn and 2 envoys
+				[NEWLINE]
+				[ICON_BULLET][b]Grand Master's Chapel[/b]: can buy units with faith, only in the player's founded cities
+				[NEWLINE]
+				[ICON_BULLET][b]Intelligence Agency[/b]: +50% production toward spies
+			</Text>
+		</Row>
+		<Row Tag="LOC_CHANGELOG_DISTRICTS_HARBOR_DESC">
+			<Text>
+				1 Housing removed from Lighthouse and added to Harbor
+				[NEWLINE]
+				[ICON_BULLET][b]Shipyard[/b]: +1 coal once revealed (from +0). Now grants production to Fishery tiles
+				[NEWLINE]
+				[ICON_BULLET][b]Seaport[/b]: +3 great admiral points (from +1)
+			</Text>
+		</Row>
+		<Row Tag="LOC_CHANGELOG_CIVICS_DESC">
+            <Text>
+                Civics Tree Changes
+				[NEWLINE]
+				[ICON_BULLET] Nationalism inspiration changed to "Own a Level 3 Land Unit" (from Start a war using a Casus Belli)
+				[NEWLINE]
+				[ICON_BULLET] Craftsmanship inspiration: Improve 2 tiles [from 3]
+				[NEWLINE]
+				[ICON_BULLET] Foreign Trade inspiration: Own 1 scout [from discover a new continent]
+				[NEWLINE]
+				[ICON_BULLET] Humanism inspiration: Own 2 amphitheaters [from recruit a Great Artist]
+            </Text>
+        </Row>
+		<Row Tag="LOC_CHANGELOG_TECHNOLOGIES_DESC">
+            <Text>
+                All technologies after the Classical Era cost 5% more science.
+				[NEWLINE]
+				Era Gate for technologies is increased to 30% (from 20% base game).  This is a mechanic when you are researching technologies of an era ahead of the current game era whereby the cost of those technologies is increased.
+				[NEWLINE]
+				Tech Tree Changes
+				[NEWLINE]
+				[ICON_BULLET] Advanced Ballistics moved to a Modern Era technology, no dependencies changed.
+				[NEWLINE]
+				[ICON_BULLET] Steam Power now requires Scientific Theory
+				[NEWLINE]
+				[ICON_BULLET] Steel eureka changed to "Own a Renaissance Wall" (from Build a Coal Mine and Ironclad)
+				[NEWLINE]
+				[ICON_BULLET] Robotics now has Composites and Telecommunications as added tech prerequisites
+				[NEWLINE]
+				[ICON_BULLET] Guidance Systems eureka changed to Kill a unit with a Fighter [from kill a Fighter]
+            </Text>
+        </Row>
+		<Row Tag="LOC_CHANGELOG_UNITS_MILITARY_SUPPORT_UNITS_DESC">
+            <Text>
+				[ICON_BULLET][b]Battering Ram / Siege Tower[/b]: Obsolete at Military Science (from Civil Engineering)
+				[NEWLINE]
+				[NEWLINE]
+				[ICON_BULLET]
+				[b]Military Engineer[/b]
+				[NEWLINE]
+				[/t][ICON_BULLET] 3 movement (from 2)
+				[NEWLINE]
+				[/t][ICON_BULLET] 3 charges (from 2)
+				[NEWLINE]
+				[/t][ICON_BULLET] Can build roads without using a charge
+				[NEWLINE]
+				[/t][ICON_BULLET] Railroads moved to Scientific Theory (from Steam Power)
+				[NEWLINE]
+				[/t][ICON_BULLET] Tunnels moved to Military Science (from Chemistry)
+				[NEWLINE]
+				[/t][ICON_BULLET] Military Engineers can use a charge to complete 50% of a city's flood barrier production (from 20%)
+				[NEWLINE]
+				[NEWLINE]
+				[ICON_BULLET][b]Medic[/b]: Moved to Military Science (from Sanitation), grants +1 movement to melee, anti-cav, and ranged units (from +0)
+				[NEWLINE]
+				[NEWLINE]
+				[ICON_BULLET][b]Anti-Air Gun[/b]: Unlocked at Steel (from Advanced Ballistics)
+				[NEWLINE]
+				[NEWLINE]
+				[ICON_BULLET][b]Mobile SAM[/b]: +125 Anti-air combat strength (from +100). This is enough to defend nuclear missiles. -5 Anti-air combat strength vs all planes (total = +110 from +100). +2 movement (from 2 to 4)
+            </Text>
+        </Row>
+		<Row Tag="LOC_CHANGELOG_UNITS_MILITARY_SIEGE_DESC">
+            <Text>
+                Siege units no longer receive support bonus.
+				[NEWLINE]
+				All siege units get +10 in defense against ranged units.
+				[NEWLINE]
+				[ICON_BULLET] [b]Artillery[/b] and [b]Rocket Artillery[/b]: +5 ranged strength against city centers
+            </Text>
+        </Row>
+		<Row Tag="LOC_CHANGELOG_SPIES_DESC">
+            <Text>
+                [ICON_BULLET] When a spy is captured, you gain +1 spy capacity.  This is because in multiplayer, especially team games, there is no way of getting your spy back unlike if it is killed.
+				[NEWLINE][ICON_BULLET] "Neutralize Governor" and "Sabotage Production" mission duration increased to 6 turns [from 4]
+            </Text>
+        </Row>
+		<Row Tag="LOC_CHANGELOG_POLICIES_DESC">
+            <Text>
+				[ICON_BULLET] +100% prod towards support units card moved from Communism tech to Ideology
+				[ICON_BULLET] [b]Bastions[/b]: +0 city ranged strength (from +5)
+				[NEWLINE][ICON_BULLET] [b]Communications Office[/b]: +2 loyalty per governor promotion (from +1)
+				[NEWLINE][ICON_BULLET] [b]Discipline[/b]: Combat bonus against barbarian buffed to +10 (from +5)
+				[NEWLINE][ICON_BULLET] [b]Limes[/b]: never gets obsolete, +50% production toward walls (from 100%)
+				[NEWLINE][ICON_BULLET] [b]Medina Quarter[/b]: +1 Housing per District (from +2 Housing in cities with 3 specialty districts)
+				[NEWLINE][ICON_BULLET] [b]Military First[/b]: Unlocked at Mobilization (from Rapid Deployment)
+				[NEWLINE][ICON_BULLET] [b]Praetorium[/b]: +20% production on conquered cities with a governor and +4 loyalty for governors (from +2).
+				[NEWLINE][ICON_BULLET] [b]Rationalism[/b], [b]Grand Opera[/b], [b]Simultaneum[/b] and [b]Free Market[/b]: Require 13 pop (from 15), and adjacency bonus of +3 (from +4)
+				[NEWLINE][ICON_BULLET] [b]Retinues[/b] and [b]Force Modernization[/b]: -50% of resource cost to both produce and upgrade units (from upgrade only)
+				[NEWLINE][NEWLINE]
+				All Strategic Resource policy cards now give a base +2 of the resource, in addition to the normal +1 by worked resource.
+				[NEWLINE][NEWLINE]
+				All Melee and Ranged unit production policy cards now also include Recon units.
+				[NEWLINE][NEWLINE]
+				[u]3 new cards to boost Siege Unit production:[/u]
+				[NEWLINE][ICON_BULLET] [b]Siegecraft[/b]: Available at Military Tradition, +50% production towards ancient, classical and medieval era siege units.
+				[NEWLINE][ICON_BULLET] [b]Hard-shell Explosives[/b]: Available at Medieval Faires, +50% production towards siege units from renaissance era and before.
+				[NEWLINE][ICON_BULLET] [b]Trench Warfare[/b]: Available at Scorched Earth, +50% production towards all siege units
+				[NEWLINE][ICON_BULLET] [b]Colonial Offices[/b]: +15% faster growth, +10% Production and 3 Loyalty per turn for cities 8 tiles away from your capital. [Obsolete at Colonialism]
+				[NEWLINE][ICON_BULLET] [b]Sovereign Trade[/b]: Open borders with all city states (obsolete at Ideology, as Ideology gives open borders with all city states), unlocked at Civil Service.
+				[NEWLINE][ICON_BULLET] [b]Gunboat Diplomacy[/b]: +4 points Influence points per turn toward earning Envoys and +1 Gold from each of your Envoys at city-states. (removed the open borders with city states but merged the card with Merchant Confederation). Merchant Confederation is now obsolete at Ideology
+				[NEWLINE][ICON_BULLET] [b]Raj[/b]: +1 Prod, Food and +2 Science, Culture, Faith and Gold for Trade Route to city-states. (old bonus removed)
+				[NEWLINE][ICON_BULLET] New military policy card unlocked at Military Training: Grants +10 regeneration per turn for land units outside of friendly territory
+            </Text>
+        </Row>
+		<Row Tag="LOC_CHANGELOG_VICTORY_CONDITIONS_CUSTOM_SETTINGS_SCIENCE_VICTORY_DESC">
+            <Text>
+				[u][b]Science Victory[/b][/u]
+				[NEWLINE]
+				If a spaceport is pillaged, the booster projects in launched do not grant extra light years per turn towards Exoplanet Expedition
+				[NEWLINE]
+				Settings Options for Science Victory:
+				[NEWLINE]
+				[ICON_BULLET] Standard - default Firaxis settings, default Legacy BBG setting
+				[NEWLINE]
+				[ICON_BULLET] Early - cheaper space projects and lowered cost for future era techs
+				[NEWLINE]
+				[ICON_BULLET] Earliest - even cheaper space projects and even lowered cost for future era techs
+            </Text>
+        </Row>
+		<Row Tag="LOC_CHANGELOG_TRIBAL_HUTS_RELIC_DESC">
+            <Text>
+                [ICON_BULLET] Relic Reward: the possibility of relics are delayed until turn 15 (from start of game)
+				[NEWLINE][ICON_BULLET] Free governor title is now only possible starting turn 25
+				[NEWLINE][ICON_BULLET] Free technology is now only possible starting turn 31
+            </Text>
+        </Row>
 	</LocalizedText>
 </GameData>

@@ -1,5 +1,135 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Row Tag="LOC_CHANGELOG_GOVERNMENTS_DESC">
+            <Text>
+				[b]Autocracy[/b]: Additionally, Monuments give +1 Production and +1 Food if the city has a specialty district
+				[NEWLINE][NEWLINE]
+				[b]Merchant Republic[/b]: 1 Military, 2 Economic, 1 Diplomatic, and 2 Wild slots (from 1/2/2/1)
+				[NEWLINE][NEWLINE]
+				[b]Monarchy[/b]: removed +2 Diplo Favor from Renaissance Walls.  Add +2 Culture for each Renaissance Walls.
+				[NEWLINE][NEWLINE]
+				[b]Communism[/b]:
+				[NEWLINE][ICON_BULLET] 2 Military, 3 Economic, 1 Diplomatic, 2 Wild Slots (from 3/3/1/1)
+				[NEWLINE][ICON_BULLET] +1 Production per citizen (from 0.6)
+				[NEWLINE][ICON_BULLET] [b]Collectivization[/b]:+4 production (from +2) and +4 Gold (from +0) per domestic trade route
+				[NEWLINE][ICON_BULLET] Negative tourism modifier increased to 50% (from 40%)
+				[NEWLINE][NEWLINE]
+				[b]Fascism[/b]: combat bonus works on defense
+				[NEWLINE][NEWLINE]
+				[b]Corporate Libertarianism[/b]: remove -10% science malus, add +5 Aluminum/Oil/Uranium per turn
+				[NEWLINE][NEWLINE]
+				[b]Digital Democracy[/b]: remove -3 combat strength malus, add +2 tourism per specialty district
+				[NEWLINE][NEWLINE]
+				[b]Synthetic Technocracy[/b]: remove -10% tourism malus, add +50% production toward Spaceports, Industrial Zones, Campuses, Harbors, and also buildings inside those districts.
+            </Text>
+        </Row>
+		<Row Tag="LOC_CHANGELOG_POLICIES_DESC">
+            <Text>
+				[ICON_BULLET] [b]Bastions[/b]: +0 city ranged strength (from +5)
+				[NEWLINE][ICON_BULLET] [b]Communications Office[/b]: +2 loyalty per governor promotion (from +1)
+				[NEWLINE][ICON_BULLET] [b]Discipline[/b]: Combat bonus against barbarian buffed to +10 (from +5)
+				[NEWLINE][ICON_BULLET] [b]Limes[/b]: never gets obsolete, +50% production toward walls (from 100%)
+				[NEWLINE][ICON_BULLET] [b]Medina Quarter[/b]: +1 Housing per District (from +2 Housing in cities with 3 specialty districts)
+				[NEWLINE][ICON_BULLET] [b]Military First[/b]: Unlocked at Mobilization (from Rapid Deployment)
+				[NEWLINE][ICON_BULLET] [b]Praetorium[/b]: +20% production on conquered cities with a governor and +4 loyalty for governors (from +2).
+				[NEWLINE][ICON_BULLET] [b]Rationalism[/b], [b]Grand Opera[/b], [b]Simultaneum[/b] and [b]Free Market[/b]: Require 13 pop (from 15), and adjacency bonus of +3 (from +4)
+				[NEWLINE][ICON_BULLET] [b]Retinues[/b] and [b]Force Modernization[/b]: -50% of resource cost to both produce and upgrade units (from upgrade only)
+				[NEWLINE][NEWLINE]
+				All Strategic Resource policy cards now give a base +2 of the resource, in addition to the normal +1 by worked resource.
+				[NEWLINE][NEWLINE]
+				All Melee and Ranged unit production policy cards now also include Recon units.
+				[NEWLINE][NEWLINE]
+				[u]3 new cards to boost Siege Unit production:[/u]
+				[NEWLINE][ICON_BULLET] [b]Siegecraft[/b]: Available at Military Tradition, +50% production towards ancient, classical and medieval era siege units.
+				[NEWLINE][ICON_BULLET] [b]Hard-shell Explosives[/b]: Available at Medieval Faires, +50% production towards siege units from renaissance era and before.
+				[NEWLINE][ICON_BULLET] [b]Trench Warfare[/b]: Available at Scorched Earth, +50% production towards all siege units
+				[NEWLINE][ICON_BULLET] [b]Colonial Offices[/b]: +15% faster growth, +10% Production and 3 Loyalty per turn for cities 8 tiles away from your capital. [Obsolete at Colonialism]
+				[NEWLINE][ICON_BULLET] [b]Sovereign Trade[/b]: Open borders with all city states (obsolete at Ideology, as Ideology gives open borders with all city states), unlocked at Civil Service.
+				[NEWLINE][ICON_BULLET] [b]Gunboat Diplomacy[/b]: +4 points Influence points per turn toward earning Envoys and +1 Gold from each of your Envoys at city-states. (removed the open borders with city states but merged the card with Merchant Confederation). Merchant Confederation is now obsolete at Ideology
+				[NEWLINE][ICON_BULLET] [b]Raj[/b]: +1 Prod, Food and +2 Science, Culture, Faith and Gold for Trade Route to city-states. (old bonus removed)
+            </Text>
+        </Row>
+		<Row Tag="LOC_CHANGELOG_DISASTERS_DESC">
+            <Text>
+                [ICON_BULLET] Droughts and Tornados removed entirely
+				[NEWLINE]
+                [ICON_BULLET] Meteors removed on all disaster settings except for disaster 4
+                [NEWLINE]
+                [ICON_BULLET] Reduced odds of completely pillaging a district and improvement on disasters
+                [NEWLINE]
+                [ICON_BULLET] Natural disasters won't kill civilian units other than rare circumstances with natural wonders
+                [NEWLINE]
+                [ICON_BULLET] Production yields from floods reduced to compensate the [b]Watermill[/b] change
+				[NEWLINE]
+				[ICON_BULLET] Forest Fire: +1 Food for Woods fires. +1 Production for Rainforest fires (from +1 food and +1 production for all forest fires)
+				[NEWLINE]
+				[ICON_BULLET] Disaster level 0 now prevents all disasters from occurring (from just a low percentage)
+				[NEWLINE]
+				[ICON_BULLET] Disaster level 1 now gives the disaster frequency that level 0 used to have
+				[NEWLINE]
+				[ICON_BULLET] Flood yields reduced by 25%.
+				[NEWLINE]
+				[ICON_BULLET] Improvement pillage value reduction changed to -30% (from -40%)
+            </Text>
+        </Row>
+		<Row Tag="LOC_CHANGELOG_UNITS_MILITARY_SUPPORT_UNITS_DESC">
+            <Text>
+				[ICON_BULLET][b]Battering Ram / Siege Tower[/b]: Obsolete at Military Science (from Civil Engineering)
+				[NEWLINE]
+				[NEWLINE]
+				[ICON_BULLET]
+				[b]Military Engineer[/b]
+				[NEWLINE]
+				[/t][ICON_BULLET] 3 movement (from 2)
+				[NEWLINE]
+				[/t][ICON_BULLET] 3 charges (from 2)
+				[NEWLINE]
+				[/t][ICON_BULLET] Can build roads without using a charge
+				[NEWLINE]
+				[/t][ICON_BULLET] Railroads moved to Scientific Theory (from Steam Power)
+				[NEWLINE]
+				[/t][ICON_BULLET] Tunnels moved to Military Science (from Chemistry)
+				[NEWLINE]
+				[/t][ICON_BULLET] Military Engineers can use a charge to complete 50% of a city's flood barrier production (from 20%)
+				[NEWLINE]
+				[NEWLINE]
+				[ICON_BULLET][b]Medic[/b]: Moved to Military Science (from Sanitation), grants +1 movement to melee, anti-cav, and ranged units (from +0)
+				[NEWLINE]
+				[NEWLINE]
+				[ICON_BULLET][b]Anti-Air Gun[/b]: Unlocked at Steel (from Advanced Ballistics)
+				[NEWLINE]
+				[NEWLINE]
+				[ICON_BULLET][b]Mobile SAM[/b]: +115 Anti-air combat strength (from +100) and -5 Anti-air combat strength vs all planes (total = +110 from +100)
+            </Text>
+        </Row>
+		<Row Tag="LOC_CHANGELOG_IMPROVEMENTS_DESC">
+			<Text>
+				All improvements correctly give tourism at flight equal to their culture value unless stated otherwise, this is a fix to a Firaxis bug.
+				[NEWLINE]
+				[ICON_BULLET][b]Fishing Boats[/b]: give +1 production.
+				[NEWLINE]
+				[ICON_BULLET][b]Fisheries[/b]: moved to Celestial Navigation (from Liang promote). +1 Housing (from +0.5)
+				[NEWLINE]
+				[ICON_BULLET][b]Fort[/b]: Now gives +1 vision and unlocked at Military Engineering (from Siege Tactics).  Vision also includes unique forts (Pa, Great Wall, Alcazar)
+				[NEWLINE]
+				[ICON_BULLET][b]Lumber Mill[/b]: +1 production at Ballistics and Synthetic Materials (from Steel and Cybernetics).
+				[NEWLINE]
+				[ICON_BULLET][b]Plantations[/b]: gives +1 production if built on a flat tile. Food bonus delayed to Medieval Faires (from Feudalism)
+				[NEWLINE]
+				[ICON_BULLET][b]Geothermal Plant[/b]: moved to Chemistry (from Synthetic Materials; +3 power (from +4), additional +3 power and +1 science at Synthetic Materials
+				[NEWLINE]
+				[ICON_BULLET][b]Quarry[/b]: +1 production at Military Engineering (from Gunpowder), +2 production at Rocketry (from +1 Rocketry and +1 Predictive Systems)
+				[NEWLINE]
+				[ICON_BULLET][b]Railroads[/b]: cost 1 iron (from 1 iron 1 coal), unlocked at Scientific Theory (from Steam Power)
+				[NEWLINE]
+				[ICON_BULLET][b]Seaside Resorts[/b]: minimum appeal of charming (from breathtaking), can be built on hills, tourism and gold equal to 150% of appeal (from 100%)
+			</Text>
+		</Row>
+		<Row Tag="LOC_CHANGELOG_DISTRICTS_CAMPUS_DESC">
+			<Text>
+				UD campus replacements (Seowon and Observatory) now get +2 adjacency from geothermal fissures
+			</Text>
+		</Row>
 	</LocalizedText>
 </GameData>

@@ -6,12 +6,12 @@
             <Text>Game Mechanics</Text>
         </Row>
 		# Amenities / Happiness changes
-        <Row Tag="LOC_CHANGELOG_AMENITIES_HAPPINESS">
+        <Row Tag="LOC_CHANGELOG_GAME_MECHANICS_GLOBAL">
             <Text>
-                Amenities / Happiness
+                Global Changes
             </Text>
         </Row>
-        <Row Tag="LOC_CHANGELOG_AMENITIES_HAPPINESS_DESC">
+        <Row Tag="LOC_CHANGELOG_GAME_MECHANICS_GLOBAL_DESC">
             <Text>
                 All cities other than your capital start with +1 amenity bonus.
 				[NEWLINE]
@@ -27,14 +27,10 @@
                 Combat
             </Text>
         </Row>
-        <Row Tag="LOC_CHANGELOG_COMBAT_FORTIFICATION_DESC">
+        <Row Tag="LOC_CHANGELOG_COMBAT_DESC">
             <Text>
-                +2 Combat Strength per turn of fortification up to a maximum of +4CS (from +3CS per turn up to a maximum of +6CS)
-            </Text>
-        </Row>
-        <Row Tag="LOC_CHANGELOG_COMBAT_DISEMBARKED_UNITS_DESC">
-            <Text>
-                Land units no longer provide support bonus in water
+                [ICON_BULLET] +2 Combat Strength per turn of fortification up to a maximum of +4CS (from +3CS per turn up to a maximum of +6CS)
+                [NEWLINE][ICON_BULLET] Land units no longer provide support bonus in water
             </Text>
         </Row>
 
@@ -44,55 +40,9 @@
                 Congress
             </Text>
         </Row>
-        <Row Tag="LOC_CHANGELOG_CONGRESS_UNIT_DESC">
+        <Row Tag="LOC_CHANGELOG_CONGRESS_DESC">
             <Text>
-                 Unit Production Congress modified to +50% cost in production / gold / faith (from +100%) or -25% cost in production / gold / faith (from -50%)
-            </Text>
-        </Row>
-
-		# Dedications changes
-        <Row Tag="LOC_CHANGELOG_DEDICATIONS">
-            <Text>
-                Dedications
-            </Text>
-        </Row>
-        <Row Tag="LOC_CHANGELOG_DEDICATIONS_FREE_INQUIRY_DESC">
-            <Text>
-                [b]Free Inquiry[/b]: Eureka bonus reduced to +5% (from +10%)
-            </Text>
-        </Row>
-        <Row Tag="LOC_CHANGELOG_DEDICATIONS_MONUMENTALITY_DESC">
-            <Text>
-                [b]Monumentality[/b]: faith purchase discount reduced to 10% (from 30%)
-            </Text>
-        </Row>
-        <Row Tag="LOC_CHANGELOG_DEDICATIONS_PEN_BRUSH_DESC">
-            <Text>
-                [b]Pen, Brush, and Voice[/b]: gives +2 Culture and +1 Gold per District
-            </Text>
-        </Row>
-        <Row Tag="LOC_CHANGELOG_DEDICATIONS_EXODUS_DESC">
-            <Text>
-                [b]Exodus of the Evangelis[/b]: removed and replaced with "Drums of War"
-            </Text>
-        </Row>
-        <Row Tag="LOC_CHANGELOG_DEDICATIONS_DRUMS_OF_WAR_DESC">
-            <Text>
-                [b]Drums of War[/b]:
-				[NEWLINE]
-				[ICON_BULLET] When in a Normal/Dark Age: +1 Era score when recruiting a great person.
-				[NEWLINE]
-				[ICON_BULLET] When in a Golden Age: +2 Horses and Iron per turn. +15% Production toward military units, Military Unit maintenance reduced by 1 gold.  Encampments and their Buildings receive +1 Production. Encampment buildings receive +1 Culture. Grants culture equal to 40% of the combat strength of units killed.
-            </Text>
-        </Row>
-        <Row Tag="LOC_CHANGELOG_DEDICATIONS_HIC_SUNT_DESC">
-            <Text>
-                [b]Hic Sunt Dracones[/b]: works on all new cities, not just on different continent
-            </Text>
-        </Row>
-        <Row Tag="LOC_CHANGELOG_DEDICATIONS_TO_ARMS_DESC">
-            <Text>
-                [b]To Arms[/b]: get +10 vs cities
+                Unit Production Congress modified to +50% cost in production / gold / faith (from +100%) or -25% cost in production / gold / faith (from -50%)
             </Text>
         </Row>
 
@@ -114,29 +64,17 @@
                 Disasters
             </Text>
         </Row>
-        <Row Tag="LOC_CHANGELOG_DISASTERS_DROUGHT_TORNADO_DESC">
+        <Row Tag="LOC_CHANGELOG_DISASTERS_DESC">
             <Text>
-                Droughts and Tornados removed entirely
-            </Text>
-        </Row>
-        <Row Tag="LOC_CHANGELOG_DISASTERS_METEOR_DESC">
-            <Text>
-                Meteors removed on all disaster settings except for disaster 4
-            </Text>
-        </Row>
-        <Row Tag="LOC_CHANGELOG_DISASTERS_PILLAGE_DESC">
-            <Text>
-                Reduced odds of completely pillaging a district and improvement on disasters
-            </Text>
-        </Row>
-        <Row Tag="LOC_CHANGELOG_DISASTERS_CIVILIAN_DESC">
-            <Text>
-                Natural disasters won't kill civilian units other than rare circumstances with natural wonders
-            </Text>
-        </Row>
-        <Row Tag="LOC_CHANGELOG_DISASTERS_FLOOD_DESC">
-            <Text>
-                Production yields from floods reduced to compensate the [b]Watermill[/b] change
+                [ICON_BULLET] Droughts and Tornados removed entirely
+				[NEWLINE]
+                [ICON_BULLET] Meteors removed on all disaster settings except for disaster 4
+                [NEWLINE]
+                [ICON_BULLET] Reduced odds of completely pillaging a district and improvement on disasters
+                [NEWLINE]
+                [ICON_BULLET] Natural disasters won't kill civilian units other than rare circumstances with natural wonders
+                [NEWLINE]
+                [ICON_BULLET] Production yields from floods reduced to compensate the [b]Watermill[/b] change
             </Text>
         </Row>
 
@@ -172,7 +110,7 @@
                 Spies
             </Text>
         </Row>
-        <Row Tag="LOC_CHANGELOG_SPIES_CAPTURED_DESC">
+        <Row Tag="LOC_CHANGELOG_SPIES_DESC">
             <Text>
                 When a spy is captured, you gain +1 spy capacity.  This is because in multiplayer, especially team games, there is no way of getting your spy back unlike if it is killed.
             </Text>
@@ -453,6 +391,16 @@
 				[ICON_BULLET][b]Steel Walls[/b]: +300 outer defense (from +400)
 			</Text>
 		</Row>
+		<Row Tag="LOC_CHANGELOG_DISTRICTS_CAMPUS">
+			<Text>
+				Campus
+			</Text>
+		</Row>
+		<Row Tag="LOC_CHANGELOG_DISTRICTS_CAMPUS_DESC">
+			<Text>
+				No changes
+			</Text>
+		</Row>
 		<Row Tag="LOC_CHANGELOG_DISTRICTS_AERODROME">
 			<Text>
 				Aerodrome
@@ -660,14 +608,15 @@
 		</Row>
 		<Row Tag="LOC_CHANGELOG_RESOURCES_DESC">
 			<Text>
-				[ICON_BULLET][b]Jade[/b]: +1 production, but can no longer spawn on plains (from +0, plains and grassland)
+				[ICON_BULLET] [b]Jade[/b]: +1 production, but can no longer spawn on plains (from +0, plains and grassland)
 				[NEWLINE]
-				[ICON_BULLET][b]Mercury[/b]: +1 food / +1 science (from +0/+1)
-				[b][Pearls][/b]: +1 production / +1 faith (from +0/+1)
+				[ICON_BULLET] [b]Mercury[/b]: +1 food / +1 science (from +0/+1)
 				[NEWLINE]
-				[ICON_BULLET][b]Spices[/b]: +1 food / +1 gold (from +2/+0)
+				[ICON_BULLET] [b]Pearls[/b]: +1 production / +1 faith (from +0/+1)
 				[NEWLINE]
-				[ICON_BULLET][b]Tea[/b]: +1 food / +1 science (from +0/+1)
+				[ICON_BULLET] [b]Spices[/b]: +1 food / +1 gold (from +2/+0)
+				[NEWLINE]
+				[ICON_BULLET] [b]Tea[/b]: +1 food / +1 science (from +0/+1)
 			</Text>
 		</Row>
 
@@ -942,8 +891,6 @@
 				[b]Merchant Republic[/b]: 1 Military, 2 Economic, 1 Diplomatic, and 2 Wild slots (from 1/2/2/1)
 				[NEWLINE][NEWLINE]
 				[b]Monarchy[/b]: removed +2 Diplo Favor from Renaissance Walls.  Add +2 Culture for each Renaissance Walls.
-				[NEWLINE][NEWLINE]
-				[b]Theocracy[/b]: No change
 				[NEWLINE][NEWLINE]
 				[b]Communism[/b]:
 				[NEWLINE][ICON_BULLET] 2 Military, 4 Economic, 1 Diplomatic, 1 Wild Slots (from 3/3/1/1)

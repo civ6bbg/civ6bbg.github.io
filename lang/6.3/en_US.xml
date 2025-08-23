@@ -1,5 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+		<Row Tag="LOC_CHANGELOG_UNITS_MILITARY_AIR_UNITS_DESC">
+            <Text>
+                Priority target removed for fighter class air units
+				[NEWLINE][ICON_BULLET] All Air Units reduced by -5 combat strength
+				[NEWLINE][ICON_BULLET] [b]Aircraft Carrier[/b]: Gets +25 combat strength defending vs planes if adjacent to a unit with AA strength
+            </Text>
+        </Row>
+		<Row Tag="LOC_CHANGELOG_UNITS_MILITARY_HEAVY_CAVALRY_DESC">
+            <Text>
+                [b]Knight[/b]: cost adjusted to 200 standard speed (from 220)
+				[b]Modern Armor[/b]: Gets +1 movement. +5 when defending inside friendly territory and +5 when attacking outside of friendly territory
+            </Text>
+        </Row>
+		<Row Tag="LOC_CHANGELOG_UNITS_MILITARY_MELEE_DESC">
+            <Text>
+                Melee Units receive +10 Combat Strength vs Anti-Cavalry (from +5)
+				[NEWLINE]
+				[ICON_BULLET][b]Swordsmen[/b]: require 7 iron online speed (from 10), Sword replacement UUs require 5 iron.
+				[NEWLINE]
+				[ICON_BULLET][b]Man at Arms[/b]: require 7 iron online speed (from 10)
+				[NEWLINE]
+				[ICON_BULLET][b]Musketmen[/b]: require 7 niter online speed (from 10), production reduced to 220 (from 240)
+				[NEWLINE]
+				[ICON_BULLET][b]Line Infantry[/b]: require 7 niter online speed (from 10), production reduced to 330, same as cuirassier (from 360)
+				[NEWLINE]
+				[ICON_BULLET][b]Infantry[/b]: 80 combat strength (from 75), 3 movement (from 2), require 1 niter to maintain (from 1 oil).
+				[NEWLINE]
+				[ICON_BULLET][b]Mechanized Infantry[/b]: 90 combat strength (from 85), movement increased to 5 (from 3), and now ignores ZOC
+            </Text>
+        </Row>
+		<Row Tag="LOC_CHANGELOG_RESOURCES_DESC">
+			<Text>
+				[ICON_BULLET] [b]Jade[/b]: +1 production, but can no longer spawn on plains (from +0, plains and grassland)
+				[NEWLINE]
+				[ICON_BULLET] [b]Mercury[/b]: +1 food / +1 science (from +0/+1)
+				[NEWLINE]
+				[ICON_BULLET] [b]Pearls[/b]: +1 production / +1 faith (from +0/+1)
+				[NEWLINE]
+				[ICON_BULLET] [b]Spices[/b]: +1 food / +1 gold (from +2/+0)
+				[NEWLINE]
+				[ICON_BULLET] [b]Tea[/b]: +1 food / +1 science (from +0/+1)
+				[NEWLINE]
+				[ICON_BULLET] [b]Cocoa[/b] and [b]Diamonds[/b]: Reduce base gold value to 2 (from 3)
+			</Text>
+		</Row>
+		<Row Tag="LOC_CHANGELOG_COMBAT_DESC">
+            <Text>
+                [ICON_BULLET] +2 Combat Strength per turn of fortification up to a maximum of +4CS (from +3CS per turn up to a maximum of +6CS)
+                [NEWLINE][ICON_BULLET] Land units no longer provide support bonus in water
+				[NEWLINE][ICON_BULLET] The combat damage formula no longer includes RNG
+            </Text>
+        </Row>
 	</LocalizedText>
 </GameData>
