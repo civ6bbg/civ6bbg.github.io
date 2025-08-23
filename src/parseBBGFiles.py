@@ -2,8 +2,11 @@ from bs4 import BeautifulSoup
 import sqlite3
 import numpy as np
 import csv
+import os
 
 def add_xml_file_to_locs(locs, xml_file):
+    if not os.path.exists(xml_file):
+        return
     with open(xml_file, "r") as f:
         data = f.read()
 
@@ -72,7 +75,7 @@ def get_locs_data(bbg_version, lang):
 
     add_xml_file_to_locs(locs, f"bbg_xml/{bbg_version}/{lang}.xml")
     
-    add_xml_file_to_locs(locs, f"lang/{lang}.xml")
+    add_xml_file_to_locs(locs, f"lang/{bbg_version}/{lang}.xml")
 
     return locs
 
