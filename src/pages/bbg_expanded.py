@@ -5,7 +5,7 @@ from parseBBGFiles import *
 
 from dom_generator_helper import *
 
-def get_expanded_html_file(bbg_version, lang):
+def get_bbg_expanded_html_file(bbg_version, lang):
     en_US_locs_data = get_locs_data(bbg_version, 'en_US')
     locs_data = get_locs_data(bbg_version, lang)
     if bbg_version == None and lang not in base_game_locs_data:

@@ -45,18 +45,18 @@ bbg_version_last_timestamp['5.7'] = datetime.date(2025, 8, 21)
 bbg_version_last_timestamp['5.6'] = datetime.date(2025, 8, 21)
 
 pages_functions_to_file = {
-    get_leader_html_file: 'leaders',
+    get_bbg_expanded_html_file: 'bbg_expanded',
+    get_buildings_html_file: 'buildings',
     get_city_state_html_file: 'city_states',
-    get_religion_html_file: 'religion',
     get_governor_html_file: 'governor',
-    get_natural_wonder_html_file: 'natural_wonder',
-    get_world_wonder_html_file: 'world_wonder',
+    get_great_people_html_file: 'great_people',
+    get_leader_html_file: 'leaders',
     get_misc_html_file: 'misc',
     get_names_html_file: 'names',
-    get_great_people_html_file: 'great_people',
-    get_buildings_html_file: 'buildings',
-    get_expanded_html_file: 'bbg_expanded',
-    get_units_html_file: 'units'
+    get_natural_wonder_html_file: 'natural_wonder',
+    get_religion_html_file: 'religion',
+    get_units_html_file: 'units',
+    get_world_wonder_html_file: 'world_wonder'
 }
 
 def generate_html_file(bbg_ver, l, get_page_function, page_name):
