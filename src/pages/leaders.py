@@ -67,4 +67,4 @@ def get_leader_html_file(bbg_version, lang, pages_list):
                     else:
                         show_element_with_base_option(item[5], lang, locs_data, en_US_locs_data)
                     br()
-    return create_page(bbg_version, lang, title, 'leaders', menu_items, menu_icons, 'images/leaders', pages_list, create_leader_page)
+    return create_page(bbg_version, lang, title, 'leaders', menu_items, menu_icons, 'images/leaders', pages_list, create_leader_page, locs_data, en_US_locs_data)

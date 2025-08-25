@@ -76,4 +76,4 @@ def get_names_html_file(bbg_version, lang, pages_list):
                                       style="text-align:center",
                                       cls='civ-ability-desc')
                 br()
-    return create_page(bbg_version, lang, title, 'names', menu_items, menu_icons, 'images', pages_list, create_names_page)
+    return create_page(bbg_version, lang, title, 'names', menu_items, menu_icons, 'images', pages_list, create_names_page, locs_data, en_US_locs_data)

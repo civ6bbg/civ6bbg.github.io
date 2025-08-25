@@ -41,7 +41,7 @@ def get_buildings_html_file(bbg_version, lang, pages_list):
                           locs_data,
                           en_US_locs_data)
 
-    return create_page(bbg_version, lang, title, 'buildings', menu_items, menu_icons, 'images/buildings', pages_list, create_buildings_page)
+    return create_page(bbg_version, lang, title, 'buildings', menu_items, menu_icons, 'images/buildings', pages_list, create_buildings_page, locs_data, en_US_locs_data)
 
 def show_building_yields(yields, locs_data, en_US_locs_data):
     yield_dict = {}

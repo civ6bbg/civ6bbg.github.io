@@ -31,4 +31,4 @@ def get_natural_wonder_html_file(bbg_version, lang, pages_list):
                 br()
                 show_element_with_base_option(wonder[2], lang, locs_data, en_US_locs_data)
                 br()
-    return create_page(bbg_version, lang, title, 'natural_wonder', menu_items, menu_icons, 'images/natural_wonders', pages_list, create_natural_wonder_page)
+    return create_page(bbg_version, lang, title, 'natural_wonder', menu_items, menu_icons, 'images/natural_wonders', pages_list, create_natural_wonder_page, locs_data, en_US_locs_data)

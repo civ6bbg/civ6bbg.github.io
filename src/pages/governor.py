@@ -49,4 +49,4 @@ def get_governor_html_file(bbg_version, lang, pages_list):
                                     comment(promotion_desc)
                                     p(f'{get_loc(locs_data, promotion_desc, en_US_locs_data)}', style=f"text-align:{alignment}", cls='civ-ability-desc')
                                     br()
-    return create_page(bbg_version, lang, title, 'governor', menu_items, menu_icons, 'images/governors', pages_list, create_governor_page)
+    return create_page(bbg_version, lang, title, 'governor', menu_items, menu_icons, 'images/governors', pages_list, create_governor_page, locs_data, en_US_locs_data)

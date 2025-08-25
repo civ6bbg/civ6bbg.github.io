@@ -86,4 +86,4 @@ def get_misc_html_file(bbg_version, lang, pages_list):
                                         comment(effect)
                                         p(get_loc(locs_data, effect, en_US_locs_data), style="text-align:left", cls='civ-ability-desc')
                 br()
-    return create_page(bbg_version, lang, title, 'misc', menu_items, menu_icons, 'images', pages_list, create_misc_page) 
+    return create_page(bbg_version, lang, title, 'misc', menu_items, menu_icons, 'images', pages_list, create_misc_page, locs_data, en_US_locs_data) 

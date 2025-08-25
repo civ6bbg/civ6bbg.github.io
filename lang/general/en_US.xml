@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GameData>
+	<LocalizedText>
+        <Row Tag="LOC_MAIN_MENU_LEADERS">
+            <Text>Leaders</Text>
+        </Row>
+        <Row Tag="LOC_MAIN_MENU_BBG_EXPANDED">
+            <Text>BBG Expanded</Text>
+        </Row>
+        <Row Tag="LOC_MAIN_MENU_CITY_STATES">
+            <Text>City States</Text>
+        </Row>
+        <Row Tag="LOC_MAIN_MENU_RELIGION">
+            <Text>Religion</Text>
+        </Row>
+        <Row Tag="LOC_MAIN_MENU_GOVERNORS">
+            <Text>Governors</Text>
+        </Row>
+        <Row Tag="LOC_MAIN_MENU_GREAT_PEOPLE">
+            <Text>Great People</Text>
+        </Row>
+        <Row Tag="LOC_MAIN_MENU_NATURAL_WONDERS">
+            <Text>Natural Wonders</Text>
+        </Row>
+        <Row Tag="LOC_MAIN_MENU_WORLD_WONDERS">
+            <Text>World Wonders</Text>
+        </Row>
+        <Row Tag="LOC_MAIN_MENU_BUILDINGS">
+            <Text>Buildings</Text>
+        </Row>
+        <Row Tag="LOC_MAIN_MENU_UNITS">
+            <Text>Units</Text>
+        </Row>
+        <Row Tag="LOC_MAIN_MENU_NAMES">
+            <Text>Names</Text>
+        </Row>
+        <Row Tag="LOC_MAIN_MENU_MISC">
+            <Text>Misc</Text>
+        </Row>
+        <Row Tag="LOC_MAIN_MENU_CHANGELOG">
+            <Text>Changelog</Text>
+        </Row>
+        <Row Tag="LOC_MAIN_MENU_SHOW_BASE_GAME">
+            <Text>Show Base Game</Text>
+        </Row>
+        
+	</LocalizedText>
+</GameData>

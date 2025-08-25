@@ -238,7 +238,7 @@ def add_lang(text_name, link_name, bbg_version, flag, page_type):
         with a(href=f"/{link_name}/{page_type}_{get_version_name(bbg_version)}.html", style="align-content: center;"):
             img(src=f"/assets/flags/4x3/{flag}.svg", style="height:20px")
 
-def add_header(bbg_version, lang, page_type, pages_list):
+def add_header(bbg_version, lang, page_type, pages_list, locs_data, en_US_locs_data):
     with nav(cls="main-nav--bg"), div(cls="main-nav"):
         with div(cls="header"), div(cls="header-inner"), div(cls="inner"):
             with div(cls="row"):
@@ -253,7 +253,7 @@ def add_header(bbg_version, lang, page_type, pages_list):
                 with div(cls="flex col-xl-8 col-lg-8 col-md-8 col-8"), div(cls="main-menu"), nav(cls="navigation"):
                     with ul(cls="nav menu"):
                         for page in pages_list:
-                            page_name = page['main_menu_title']
+                            page_name = get_loc(locs_data, page['main_menu_title'], en_US_locs_data)
                             t = page['name']
                             with li(cls="active" if t == page_type else ""):
                                 a(page_name, href=f"/{lang}/{t}_{get_version_name(bbg_version)}.html", onclick=f'civClicked(null)')
@@ -279,7 +279,7 @@ def add_header(bbg_version, lang, page_type, pages_list):
                                     add_lang('Japanese  ', 'ja_JP', bbg_version, 'jp', page_type)
                     div(cls="w-100")
                     with div(cls="col-xl-4 col-lg-4 col-md-4 col-4"), div(cls="base-game-switcher-wrapper"):
-                        with button(cls="base-game-switcher gray-circle-btn", type="button", title="Show Base Game"):
+                        with button(cls="base-game-switcher gray-circle-btn", type="button", title=get_loc(locs_data, "LOC_MAIN_MENU_SHOW_BASE_GAME", en_US_locs_data)):
                             i(cls="enable-icon", data_feather="toggle-left", aria_hidden="true")
                             i(cls="disable-icon", data_feather="toggle-right", aria_hidden="true")
                     div(cls="w-100")
@@ -381,7 +381,7 @@ def add_footer():
                 with a(id="scrollUp", cls="displayNone", href="#top", onclick=f'civClicked(null)'):
                     i(cls='fa-solid fa-up-long')
 
-def create_page(bbg_version, lang, title, header, menu_items, menu_icons, images_dir, pages_list, page_content_func, *args, **kwargs):
+def create_page(bbg_version, lang, title, header, menu_items, menu_icons, images_dir, pages_list, page_content_func, locs_data, en_US_locs_data, *args, **kwargs):
     doc = dominate.document(title=None, lang=get_html_lang(lang))
     add_html_header(doc, title)
 
@@ -389,7 +389,7 @@ def create_page(bbg_version, lang, title, header, menu_items, menu_icons, images
         add_preloader()
         div(cls="layer")
         with div(cls="page-flex"), div(cls="main-wrapper"):
-            add_header(bbg_version, lang, header, pages_list)
+            add_header(bbg_version, lang, header, pages_list, locs_data, en_US_locs_data)
             with div(cls=""):
                 with div(cls="fixed left-0 right-auto h-screen w-[253px] bg-white border-r border-neutral-300 overflow-scroll", style="z-index: 5;"):
                     add_sidebar(menu_items, menu_icons, images_dir)

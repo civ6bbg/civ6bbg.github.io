@@ -52,4 +52,4 @@ def get_city_state_html_file(bbg_version, lang, pages_list):
                         cs_desc = cs[7] if cs[7] != None else (cs[6] if cs[6] != None else cs[5])
                         show_element_with_base_option(cs_desc, lang, locs_data, en_US_locs_data)
                         br()
-    return create_page(bbg_version, lang, title, 'city_states', menu_items, menu_icons, 'images', pages_list, create_city_state_page)
+    return create_page(bbg_version, lang, title, 'city_states', menu_items, menu_icons, 'images', pages_list, create_city_state_page, locs_data, en_US_locs_data)

@@ -39,4 +39,4 @@ def get_world_wonder_html_file(bbg_version, lang, pages_list):
                         br()
                         show_building_yields(wonder, locs_data, en_US_locs_data)
                         br()
-    return create_page(bbg_version, lang, title, 'world_wonder', menu_items, menu_icons, 'images/world_wonders', pages_list, create_world_wonder_page)
+    return create_page(bbg_version, lang, title, 'world_wonder', menu_items, menu_icons, 'images/world_wonders', pages_list, create_world_wonder_page, locs_data, en_US_locs_data)

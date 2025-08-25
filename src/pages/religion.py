@@ -50,4 +50,4 @@ def get_religion_html_file(bbg_version, lang, pages_list):
                             comment(elem[1])
                             h2(get_loc(locs_data, elem[1], en_US_locs_data), cls='civ-name')
                         show_element_with_base_option(elem[2], lang, locs_data, en_US_locs_data)
-    return create_page(bbg_version, lang, title, 'religion', menu_items, menu_icons, 'images/religion', pages_list, create_religion_page)
+    return create_page(bbg_version, lang, title, 'religion', menu_items, menu_icons, 'images/religion', pages_list, create_religion_page, locs_data, en_US_locs_data)

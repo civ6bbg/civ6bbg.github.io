@@ -69,6 +69,7 @@ def get_locs_data(bbg_version, lang):
 
     connection.close()
 
+    add_xml_file_to_locs(locs, f"lang/general/{lang}.xml")
     if bbg_version == None:
         return locs
 

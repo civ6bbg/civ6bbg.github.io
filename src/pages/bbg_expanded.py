@@ -117,4 +117,4 @@ def get_bbg_expanded_html_file(bbg_version, lang, pages_list):
                                       cls='civ-ability-desc')
                                     br()
 
-    return create_page(bbg_version, lang, title, 'bbg_expanded', menu_items, menu_icons, 'images', pages_list, create_expanded_page)
+    return create_page(bbg_version, lang, title, 'bbg_expanded', menu_items, menu_icons, 'images', pages_list, create_expanded_page, locs_data, en_US_locs_data)
