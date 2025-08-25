@@ -184,7 +184,8 @@ notSupportedIcons = [
     '[ICON_RAZED]',
     '[ICON_Occupied]',
     '[ICON_ABILITY]',
-    '[ICON_POWERRight]'
+    '[ICON_POWERRight]',
+    'ICON_LOYALTY'
 ]
 
 base_game_locs_data = {}

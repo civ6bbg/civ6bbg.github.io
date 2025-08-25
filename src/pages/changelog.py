@@ -189,11 +189,16 @@ def get_changelog_html_file(bbg_version, lang, pages_list):
 
     title = f'Civ VI {f"BBG {bbg_version}" if bbg_version != None else "Base Game"} Changelog'
 
-    menu_items = [get_loc(locs_data, item, en_US_locs_data) for item in changelog_items.keys()]
-    menu_icons = [f'ICON_{item}' for item in changelog_items.keys()]
+    if bbg_version == None or bbg_version[0] == '5':
+        menu_items = []
+        menu_icons = []
+    else:
+        menu_items = [get_loc(locs_data, item, en_US_locs_data) for item in changelog_items.keys()]
+        menu_icons = [f'ICON_{item}' for item in changelog_items.keys()]
 
     def create_changelog_page():
-        if bbg_version == None:
+        if bbg_version == None or bbg_version[0] == '5':
+            p('Changelog is only available for BBG versions 6.0 and later.', cls='civ-ability-desc')
             return
         for section in changelog_items.keys():
             with div(cls='col-lg-12'), div(cls="chart"):
