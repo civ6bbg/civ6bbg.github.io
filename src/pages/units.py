@@ -11,6 +11,7 @@ def get_units_html_file(bbg_version, lang, pages_list):
     if bbg_version == None and lang not in base_game_locs_data:
         base_game_locs_data[lang] = locs_data
     version_name = bbg_version if bbg_version != None else 'baseGame'
+    title = f'Civ VI {f"BBG {bbg_version}" if bbg_version != None else get_loc(locs_data, "LOC_BASE_GAME_TITLE", en_US_locs_data)} {get_loc(locs_data, "LOC_PAGE_TITLE_UNITS", en_US_locs_data)}'
     unit_classes = [
         'PROMOTION_CLASS_MELEE',
         'PROMOTION_CLASS_ANTI_CAVALRY',
@@ -107,7 +108,5 @@ def get_units_html_file(bbg_version, lang, pages_list):
             p(get_loc(locs_data, desc, en_US_locs_data),
               style="display:inline-block;text-align:left",
               cls='civ-ability-desc')
-
-    title = f'Civ VI {f"BBG {bbg_version}" if bbg_version else "Base Game"} Unit Details'
     unit_stats = get_unit_stats(f"sqlFiles/{version_name}/DebugGameplay.sqlite")
     return create_page(bbg_version, lang, title, 'units', menu_items, menu_icons, 'images/units', pages_list, create_units_page, locs_data, en_US_locs_data)

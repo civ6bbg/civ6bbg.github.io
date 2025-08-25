@@ -11,8 +11,7 @@ def get_religion_html_file(bbg_version, lang, pages_list):
     if bbg_version == None and lang not in base_game_locs_data:
         base_game_locs_data[lang] = locs_data
     version_name = bbg_version if bbg_version != None else 'baseGame'
-
-    title = f'Civ VI {f"BBG {bbg_version}" if bbg_version != None else "Base Game"} Religions Beliefs Description'
+    title = f'Civ VI {f"BBG {bbg_version}" if bbg_version != None else get_loc(locs_data, "LOC_BASE_GAME_TITLE", en_US_locs_data)} {get_loc(locs_data, "LOC_PAGE_TITLE_RELIGION", en_US_locs_data)}'
 
     types = [
         'LOC_BELIEF_CLASS_PANTHEON_NAME',

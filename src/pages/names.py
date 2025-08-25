@@ -11,8 +11,7 @@ def get_names_html_file(bbg_version, lang, pages_list):
     if bbg_version == None and lang not in base_game_locs_data:
         base_game_locs_data[lang] = locs_data
     version_name = bbg_version if bbg_version != None else 'baseGame'
-
-    title = f'Civ VI {f"BBG {bbg_version}" if bbg_version != None else "Base Game"} Map Elements Naming Information'
+    title = f'Civ VI {f"BBG {bbg_version}" if bbg_version != None else get_loc(locs_data, "LOC_BASE_GAME_TITLE", en_US_locs_data)} {get_loc(locs_data, "LOC_PAGE_TITLE_NAMES", en_US_locs_data)}'
 
     menu_items = []
     menu_icons = []

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GameData>
 	<LocalizedText>
+        <!-- Top Menu -->
         <Row Tag="LOC_MAIN_MENU_LEADERS">
             <Text>Leaders</Text>
         </Row>
@@ -43,6 +44,49 @@
         <Row Tag="LOC_MAIN_MENU_SHOW_BASE_GAME">
             <Text>Show Base Game</Text>
         </Row>
-        
+
+        <!-- Page Titles -->
+        <Row Tag="LOC_BASE_GAME_TITLE">
+            <Text>Base Game</Text>
+        </Row>
+        <Row Tag="LOC_PAGE_TITLE_BBG_EXPANDED">
+            <Text>Expanded Leaders Description</Text>
+        </Row>
+        <Row Tag="LOC_PAGE_TITLE_BUILDINGS">
+            <Text>Buildings Details per District</Text>
+        </Row>
+        <Row Tag="LOC_PAGE_TITLE_CHANGELOG">
+            <Text>Changelog</Text>
+        </Row>
+        <Row Tag="LOC_PAGE_TITLE_CITY_STATES">
+            <Text>City States Bonuses Description</Text>
+        </Row>
+        <Row Tag="LOC_PAGE_TITLE_GOVERNOR">
+            <Text>Governors and their Promotions Description</Text>
+        </Row>
+        <Row Tag="LOC_PAGE_TITLE_GREAT_PEOPLE">
+            <Text>Great People Abilities Description</Text>
+        </Row>
+        <Row Tag="LOC_PAGE_TITLE_LEADERS">
+            <Text>Leaders and their Abilities Description</Text>
+        </Row>
+        <Row Tag="LOC_PAGE_TITLE_MISC">
+            <Text>Miscellaneous Details on Eras and Alliances</Text>
+        </Row>
+        <Row Tag="LOC_PAGE_TITLE_NAMES">
+            <Text>Map Elements Naming Information</Text>
+        </Row>
+        <Row Tag="LOC_PAGE_TITLE_NATURAL_WONDER">
+            <Text>Natural Wonders Bonuses Description</Text>
+        </Row>
+        <Row Tag="LOC_PAGE_TITLE_RELIGION">
+            <Text>Religions Beliefs Description</Text>
+        </Row>
+        <Row Tag="LOC_PAGE_TITLE_UNITS">
+            <Text>Unit Details</Text>
+        </Row>
+        <Row Tag="LOC_PAGE_TITLE_WORLD_WONDERS">
+            <Text>World Wonders Bonuses Description</Text>
+        </Row>
 	</LocalizedText>
 </GameData>
