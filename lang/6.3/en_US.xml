@@ -11,6 +11,7 @@
 		<Row Tag="LOC_CHANGELOG_UNITS_MILITARY_HEAVY_CAVALRY_DESC">
             <Text>
                 [b]Knight[/b]: cost adjusted to 200 standard speed (from 220)
+				[NEWLINE]
 				[b]Modern Armor[/b]: Gets +1 movement. +5 when defending inside friendly territory and +5 when attacking outside of friendly territory
             </Text>
         </Row>
@@ -33,6 +34,7 @@
         </Row>
 		<Row Tag="LOC_CHANGELOG_RESOURCES_DESC">
 			<Text>
+				Luxury Resources:
 				[ICON_BULLET] [b]Jade[/b]: +1 production, but can no longer spawn on plains (from +0, plains and grassland)
 				[NEWLINE]
 				[ICON_BULLET] [b]Mercury[/b]: +1 food / +1 science (from +0/+1)
@@ -44,6 +46,10 @@
 				[ICON_BULLET] [b]Tea[/b]: +1 food / +1 science (from +0/+1)
 				[NEWLINE]
 				[ICON_BULLET] [b]Cocoa[/b] and [b]Diamonds[/b]: Reduce base gold value to 2 (from 3)
+				[NEWLINE]
+				Strategic Resources:
+				[NEWLINE]
+				[ICON_BULLET] [b]Oil[/b]: Can spawn on flat plains and floodplains
 			</Text>
 		</Row>
 		<Row Tag="LOC_CHANGELOG_COMBAT_DESC">
