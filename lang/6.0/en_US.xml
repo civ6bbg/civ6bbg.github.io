@@ -44,7 +44,7 @@
             <Text>
                 [ICON_BULLET] [b]Unit Production Congress:[/b] Modified to +50% cost in production / gold / faith (from +100%) or -25% cost in production / gold / faith (from -50%)
 				[NEWLINE]
-				[ICON_BULLET] [b]Trade Treaty:[/b] congress vote option B changed to "-4 gold on Trade Routes sent to/from target player" [i](note: this can result in negative gpt trade routes)[/i]
+				[ICON_BULLET] [b]Trade Treaty:[/b] Vote B - changed to "-4 gold on Trade Routes sent to/from target player" [i](note: this can result in negative gpt trade routes)[/i]
             </Text>
         </Row>
 
@@ -410,7 +410,7 @@
 			<Text>
 				Aerodrome yields +1 production to incoming international trade route and +1 production to incoming domestic trade route (like encampment)
 				[NEWLINE]
-				[ICON_BULLET][b]Hanger[/b]: Cost changed to 320 production (from 380, std speed). +1 Aluminum when it is revealed (from +0)
+				[ICON_BULLET][b]Hangar[/b]: Cost changed to 320 production (from 380, std speed). +1 Aluminum when it is revealed (from +0)
 				[NEWLINE]
 				[ICON_BULLET][b]Airport[/b]: Cost changed to 400 production (from 480, std speed). +1 Aluminum and +1 Uranium when it is revealed (from +0). 
 			</Text>
