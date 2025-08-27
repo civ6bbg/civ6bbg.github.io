@@ -33,18 +33,9 @@
 				[NEWLINE]
 				[ICON_BULLET] Ecstatic cities receive +16% yields (from +20%)
 				[NEWLINE]
-				[ICON_BULLET] Dark age threshold increased by 3 era score
-            </Text>
-        </Row>
-		 <Row Tag="LOC_CHANGELOG_GAME_MECHANICS_GLOBAL_DESC">
-            <Text>
-                All cities other than your capital start with +1 amenity bonus.
-				[NEWLINE]
-				[ICON_BULLET] Happy cities receive +8% yields (from +10%)
-				[NEWLINE]
-				[ICON_BULLET] Ecstatic cities receive +16% yields (from +20%)
-				[NEWLINE]
 				[ICON_BULLET] Reduced the trade route gold bonus from efficiency points 2x to 1.5x
+				[NEWLINE]
+				[ICON_BULLET] Dark age threshold increased by 3 era score
             </Text>
         </Row>
 		<Row Tag="LOC_CHANGELOG_POLICIES_DESC">

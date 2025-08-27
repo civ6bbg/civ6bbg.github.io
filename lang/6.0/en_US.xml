@@ -88,19 +88,19 @@
             <Text>
                 Working specialist slots are buffed in the following manner:
 				[NEWLINE]
-				[ICON_BULLET] Campus: 3 science | 4 science w/ Research Labs (from 2s | 3s @ Labs)
+				[ICON_BULLET] Campus: 3 science, 4 science w/ Research Labs (from 2s, 3s @ Labs)
 				[NEWLINE]
-				[ICON_BULLET] Theater Square: 2 culture | 3 culture w/ Broadcast Center (from 2c | 3c @ Broadcast)
+				[ICON_BULLET] Theater Square: 2 culture, 3 culture w/ Broadcast Center (from 2c, 3c @ Broadcast)
 				[NEWLINE]
 				[ICON_BULLET] Commercial Hub: unchanged
 				[NEWLINE]
-				[ICON_BULLET] Harbor: 1 food + 3 gold | 2 food + 3 gold w/ Seaport (from 1f+2g | 2f+2g @ Seaport)
+				[ICON_BULLET] Harbor: 1 food + 3 gold, 2 food + 3 gold w/ Seaport (from 1f+2g, 2f+2g @ Seaport)
 				[NEWLINE]
-				[ICON_BULLET] Holy Site: 3 faith | 4 faith w/ Tier 3 building (from 2f | 3f @ Tier 3)
+				[ICON_BULLET] Holy Site: 3 faith, 4 faith w/ Tier 3 building (from 2fm 3f @ Tier 3)
 				[NEWLINE]
-				[ICON_BULLET] Industrial Zone: 4 production always (from 2p | 3p @ Powerplant)
+				[ICON_BULLET] Industrial Zone: 4 production always (from 2p, 3p @ Powerplant)
 				[NEWLINE]
-				[ICON_BULLET] Encampment: 2 production + 2 gold | 3 production + 2 gold w/ Military Academy (from 1p+2g | 2p+2g @ Academy)
+				[ICON_BULLET] Encampment: 2 production + 2 gold, 3 production + 2 gold w/ Military Academy (from 1p+2g, 2p+2g @ Academy)
             </Text>
         </Row>
 
