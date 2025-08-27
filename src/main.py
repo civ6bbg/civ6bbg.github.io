@@ -74,8 +74,7 @@ for bbg_ver in bbg_versions:
         for page in pages_list:
             page_name = page['name']
             get_page_function = page['func']
-            if page_name == 'changelog':
-                print(f'  page: {page_name}')
-                generate_html_file(bbg_ver, l, get_page_function, page_name)
+            print(f'  page: {page_name}')
+            generate_html_file(bbg_ver, l, get_page_function, page_name)
 
 generate_sitemap()
