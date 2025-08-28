@@ -117,7 +117,6 @@
             <Text>
                 [ICON_BULLET] When a spy is captured, you gain +1 spy capacity.  This is because in multiplayer, especially team games, there is no way of getting your spy back unlike if it is killed.
 				[NEWLINE][ICON_BULLET] Spy production scales with techs/civics (from previous number of copies). Spies are now stackable (Fixed a bug where Wu Zetian could not faith buy spies when there was an opponent spy already in the city).
-				[NEWLINE][ICON_BULLET] "Neutralize Governor" and "Sabotage Production" mission duration increased to 6 turns [from 4]
             </Text>
         </Row>
 		<Row Tag="LOC_CHANGELOG_IMPROVEMENTS_DESC">

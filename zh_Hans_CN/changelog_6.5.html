@@ -348,6 +348,8 @@
                     <p class="civ-ability-desc" style="text-align:left">
                 <span>&#8226;</span>  +2 Combat Strength per turn of fortification up to a maximum of +4CS (from +3CS per turn up to a maximum of +6CS)
                 <br><span>&#8226;</span>  Land units no longer provide support bonus in water
+				<br><span>&#8226;</span>  Melee ancient era unit (Warrior and UUs, Scout and UU, Galley and UU, WarCart and Sabum) get -5 against city center until a classical technology is reached
+				<br><span>&#8226;</span>  The combat damage formula no longer includes RNG
 				<br><span>&#8226;</span>  A game option has been added to disable settler stealing. If enabled, settlers will simply be sent back to the nearest city (like great people)
             </p><br>
                     <!--LOC_CHANGELOG_CONGRESS-->
@@ -356,10 +358,15 @@
             </h2><br>
                     <!--LOC_CHANGELOG_CONGRESS_DESC-->
                     <p class="civ-ability-desc" style="text-align:left">
-				<span>&#8226;</span>  Unit Production Congress modified to +50% cost in production / gold / faith (from +100%) or -25% cost in production / gold / faith (from -50%)
+				<span>&#8226;</span>  <b>Unit Production Congress:</b> Modified to +50% cost in production / gold / faith (from +100%) or -25% cost in production / gold / faith (from -50%)
 				<br>
-				<span>&#8226;</span>  Border Control Treaty: Vote A - Can purchase tiles at a 50% Gold discount (from culture bomb when completing districts)
-			</p><br>
+				<span>&#8226;</span>  <b>Border Control Treaty:</b> Vote A - Can purchase tiles at a 50% Gold discount (from culture bomb when completing districts)
+				<br>
+				<span>&#8226;</span>  <b>Trade Treaty:</b> Vote A - Now should correctly give +4 gold to players sending trade routes to the target and the target gets +1 trade route. Previously this was the text, but firaxis had it coded that the target got the +4 gold as well as the trade route and other players received nothing.				<br>
+				Vote B - changed to &quot;-4 gold on Trade Routes sent to/from target player&quot; <i>(note: this can result in negative gpt trade routes)</i>
+				<br>
+				<span>&#8226;</span> <b>Combat strength resolution:</b> Down to -+3 strength (from -+5)
+            </p><br>
                     <!--LOC_CHANGELOG_DIPLOMATIC_FAVOR-->
                     <h2 class="civ-name">
                 Diplomatic Favor
@@ -391,8 +398,6 @@
 				<span>&#8226;</span>  Disaster level 1 now gives the disaster frequency that level 0 used to have
 				<br>
 				<span>&#8226;</span>  Flood yields reduced by 25%.
-				<br>
-				<span>&#8226;</span>  Improvement pillage value reduction changed to -30% (from -40%)
             </p><br>
                     <!--LOC_CHANGELOG_SPECIALISTS-->
                     <h2 class="civ-name">
@@ -404,7 +409,7 @@
 				<br>
 				<span>&#8226;</span>  Campus: 3 science, 4 science w/ Research Labs (from 2s, 3s @ Labs)
 				<br>
-				<span>&#8226;</span>  Theater Square: 2 culture, 3 culture w/ Broadcast Center (from 2c, 3c @ Broadcast)
+				<span>&#8226;</span>  Theater Square: 3 culture, 4 culture w/ Broadcast Center (from 2c, 3c @ Broadcast)
 				<br>
 				<span>&#8226;</span>  Commercial Hub: unchanged
 				<br>
@@ -423,7 +428,9 @@
                     <!--LOC_CHANGELOG_SPIES_DESC-->
                     <p class="civ-ability-desc" style="text-align:left">
                 <span>&#8226;</span>  When a spy is captured, you gain +1 spy capacity.  This is because in multiplayer, especially team games, there is no way of getting your spy back unlike if it is killed.
+				<br><span>&#8226;</span>  Spy production scales with techs/civics (from previous number of copies). Spies are now stackable (Fixed a bug where Wu Zetian could not faith buy spies when there was an opponent spy already in the city).
 				<br><span>&#8226;</span>  &quot;Neutralize Governor&quot; and &quot;Sabotage Production&quot; mission duration increased to 6 turns [from 4]
+				<br><span>&#8226;</span>  +1 spy capacity at Military Science
             </p><br>
                     <!--LOC_CHANGELOG_TRIBAL_HUTS-->
                     <h2 class="civ-name">
@@ -542,8 +549,6 @@
 				<span>&#8226;</span>  First world congress is in Medieval Era
 				<br>
 				<span>&#8226;</span>  First vote for Diplomatic Victory points is in Medieval Era
-				<br>
-				<span>&#8226;</span>  Trade Treaty congress vote option B changed to &quot;-4 gold on Trade Routes sent to/from target player&quot; <i>(note: this can result in negative gpt trade routes)</i>
 				<br>
 				<span>&#8226;</span>  Diplomatic point penalty from grievances is removed
             </p>
@@ -701,7 +706,7 @@
                     <p class="civ-ability-desc" style="text-align:left">
 				Aerodrome yields +1 production to incoming international trade route and +1 production to incoming domestic trade route (like encampment)
 				<br>
-				<span>&#8226;</span> <b>Hanger</b>: Cost changed to 320 production (from 380, std speed). +1 Aluminum when it is revealed (from +0)
+				<span>&#8226;</span> <b>Hangar</b>: Cost changed to 320 production (from 380, std speed). +1 Aluminum when it is revealed (from +0)
 				<br>
 				<span>&#8226;</span> <b>Airport</b>: Cost changed to 400 production (from 480, std speed). +1 Aluminum and +1 Uranium when it is revealed (from +0). 
 			</p><br>
@@ -861,6 +866,12 @@
                     <h2 class="civ-name"> </h2><br>
                     <!--LOC_CHANGELOG_IMPROVEMENTS_DESC-->
                     <p class="civ-ability-desc" style="text-align:left">
+				Yields from pillaging Districts and Improvements reduced:
+				<br>
+				<span>&#8226;</span> -20% on Districts.
+				<br>
+				<span>&#8226;</span> -30% on Improvements.
+				<br>
 				All improvements correctly give tourism at flight equal to their culture value unless stated otherwise, this is a fix to a Firaxis bug.
 				<br>
 				<span>&#8226;</span> <b>Fishing Boats</b>: give +1 production.
@@ -873,7 +884,7 @@
 				<br>
 				<span>&#8226;</span> <b>Plantations</b>: gives +1 production if built on a flat tile. Food bonus delayed to Medieval Faires (from Feudalism)
 				<br>
-				<span>&#8226;</span> <b>Geothermal Plant</b>: moved to Chemistry (from Synthetic Materials; +3 power (from +4), additional +3 power and +1 science at Synthetic Materials
+				<span>&#8226;</span> <b>Geothermal Plant</b>: moved to Chemistry (from Synthetic Materials; +3 power (from +4), additional +3 power and +1 science at Synthetic Materials)
 				<br>
 				<span>&#8226;</span> <b>Quarry</b>: +1 production at Military Engineering (from Gunpowder), +2 production at Rocketry (from +1 Rocketry and +1 Predictive Systems)
 				<br>
@@ -898,7 +909,9 @@
 				<span>&#8226;</span>  <b>Jade</b>: +1 production, but can no longer spawn on plains (from +0, plains and grassland)
 				<br>
 				<span>&#8226;</span>  <b>Mercury</b>: +1 food / +1 science (from +0/+1)
-				<b>[Pearls]</b>: +1 production / +1 faith (from +0/+1)
+				<br>
+				<span>&#8226;</span> 
+				<b>Pearls</b>: +1 production / +1 faith (from +0/+1)
 				<br>
 				<span>&#8226;</span>  <b>Spices</b>: +1 food / +1 gold (from +2/+0)
 				<br>
@@ -967,6 +980,7 @@
                     <!--LOC_CHANGELOG_UNITS_MILITARY_HEAVY_CAVALRY_DESC-->
                     <p class="civ-ability-desc" style="text-align:left">
                 <b>Knight</b>: cost adjusted to 200 standard speed (from 220)
+				<br>
 				<b>Modern Armor</b>: Gets +1 movement. +5 when defending inside friendly territory and +5 when attacking outside of friendly territory
             </p><br>
                     <!--LOC_CHANGELOG_UNITS_MILITARY_MELEE-->
@@ -1107,8 +1121,6 @@
                     <p class="civ-ability-desc" style="text-align:left">
 				<span>&#8226;</span> <b>Manhattan Project</b>: cost increased to 750 online speed (from 500), 1500 standard speed (from 1000)
 				<br>
-				<span>&#8226;</span> <b>Operation Ivy</b>: cost increased to 750 online speed (from 500), 1500 standard speed (from 1000)
-				<br>
 				<span>&#8226;</span> <b>Nuclear Device</b>: 600 production online speed (from 400), uranium cost = 7 (from 5)
 				<br>
 				<span>&#8226;</span> <b>Thermonuclear Device</b>: 750 production online speed (from 500), uranium cost = 20 (from 10)
@@ -1187,7 +1199,7 @@
                     <!--LOC_CHANGELOG_POLICIES_DESC-->
                     <p class="civ-ability-desc" style="text-align:left">
 				<span>&#8226;</span>  +100% prod towards support units card moved from Communism tech to Ideology
-				<span>&#8226;</span>  <b>Bastions</b>: +0 city ranged strength (from +5)
+				<br><span>&#8226;</span>  <b>Bastions</b>: +0 city ranged strength (from +5)
 				<br><span>&#8226;</span>  <b>Communications Office</b>: +2 loyalty per governor promotion (from +1)
 				<br><span>&#8226;</span>  <b>Discipline</b>: Combat bonus against barbarian buffed to +10 (from +5)
 				<br><span>&#8226;</span>  <b>Limes</b>: never gets obsolete, +50% production toward walls (from 100%)
