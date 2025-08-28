@@ -7,8 +7,8 @@
 				[NEWLINE]
 				[ICON_BULLET] [b]Border Control Treaty:[/b] Vote A - Can purchase tiles at a 50% Gold discount (from culture bomb when completing districts)
 				[NEWLINE]
-				[ICON_BULLET] [b]Trade Treaty:[/b] Vote A - Now should correctly give +4 gold to players sending trade routes to the target and the target gets +1 trade route. Previously this was the text, but firaxis had it coded that the target got the +4 gold as well as the trade route and other players received nothing.				[NEWLINE]
-				Vote B - changed to "-4 gold on Trade Routes sent to/from target player" [i](note: this can result in negative gpt trade routes)[/i]
+				[ICON_BULLET] [b]Trade Treaty:[/b] Vote A - Now should correctly give +4 gold to players sending trade routes to the target and the target gets +1 trade route. Previously this was the text, but firaxis had it coded that the target got the +4 gold as well as the trade route and other players received nothing.
+				[NEWLINE] Vote B - changed to "-4 gold on Trade Routes sent to/from target player" [i](note: this can result in negative gpt trade routes)[/i]
 			</Text>
 		</Row>
 		<Row Tag="LOC_CHANGELOG_IMPROVEMENTS_DESC">
@@ -25,7 +25,7 @@
 				[NEWLINE]
 				[ICON_BULLET][b]Plantations[/b]: gives +1 production if built on a flat tile.
 				[NEWLINE]
-				[ICON_BULLET][b]Geothermal Plant[/b]: moved to Chemistry (from Synthetic Materials; +3 power (from +4), additional +3 power and +1 science at Synthetic Materials
+				[ICON_BULLET][b]Geothermal Plant[/b]: moved to Chemistry (from Synthetic Materials; +3 power (from +4), additional +3 power and +1 science at Synthetic Materials)
 				[NEWLINE]
 				[ICON_BULLET][b]Quarry[/b]: +1 production at Military Engineering (from Gunpowder), +2 production at Rocketry (from +1 Rocketry and +1 Predictive Systems)
 				[NEWLINE]

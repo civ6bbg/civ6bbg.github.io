@@ -168,6 +168,8 @@
 				[ICON_BULLET] Steam Power now requires Scientific Theory
 				[NEWLINE]
 				[ICON_BULLET] Steel eureka changed to "Own a Renaissance Wall" (from Build a Coal Mine and Ironclad)
+				[NEWLINE]
+				[ICON_BULLET] Oxford University: moved to Urbanization (from Scientific Theory)
             </Text>
         </Row>
 
@@ -379,7 +381,7 @@
 		</Row>
 		<Row Tag="LOC_CHANGELOG_DISTRICTS_CITY_CENTER_DESC">
 			<Text>
-				[ICON_BULLET][b]Watermill[/b]: food on farm resources removed, farms in this city receive +1 production, can be built anywhere (from cities adjacent to a river)
+				[ICON_BULLET][b]Watermill[/b]: food on farm resources removed, farms in this city receive +1 production. Watermill and Palgum can be built anywhere (from only cities adjacent to a river)
 				[NEWLINE]
 				[ICON_BULLET][b]Sewer[/b]: +1 amenity (from +0 amenity)
 				[NEWLINE]
@@ -605,9 +607,7 @@
 
 		# Resources Section
 		<Row Tag="LOC_CHANGELOG_RESOURCES">
-			<Text>
-				Resources
-			</Text>
+			<Text>Resources</Text>
 		</Row>
 		<Row Tag="LOC_CHANGELOG_RESOURCES_DESC">
 			<Text>
