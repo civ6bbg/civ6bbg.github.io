@@ -97,13 +97,15 @@
 		<Row Tag="LOC_CHANGELOG_SPIES_DESC">
             <Text>
                 [ICON_BULLET] When a spy is captured, you gain +1 spy capacity.  This is because in multiplayer, especially team games, there is no way of getting your spy back unlike if it is killed.
+				[NEWLINE][ICON_BULLET] Spy production scales with techs/civics (from previous number of copies). Spies are now stackable (Fixed a bug where Wu Zetian could not faith buy spies when there was an opponent spy already in the city).
 				[NEWLINE][ICON_BULLET] "Neutralize Governor" and "Sabotage Production" mission duration increased to 6 turns [from 4]
+				[NEWLINE][ICON_BULLET] +1 spy capacity at Military Science
             </Text>
         </Row>
 		<Row Tag="LOC_CHANGELOG_POLICIES_DESC">
             <Text>
 				[ICON_BULLET] +100% prod towards support units card moved from Communism tech to Ideology
-				[ICON_BULLET] [b]Bastions[/b]: +0 city ranged strength (from +5)
+				[NEWLINE][ICON_BULLET] [b]Bastions[/b]: +0 city ranged strength (from +5)
 				[NEWLINE][ICON_BULLET] [b]Communications Office[/b]: +2 loyalty per governor promotion (from +1)
 				[NEWLINE][ICON_BULLET] [b]Discipline[/b]: Combat bonus against barbarian buffed to +10 (from +5)
 				[NEWLINE][ICON_BULLET] [b]Limes[/b]: never gets obsolete, +50% production toward walls (from 100%)
@@ -148,6 +150,15 @@
                 [ICON_BULLET] Relic Reward: the possibility of relics are delayed until turn 15 (from start of game)
 				[NEWLINE][ICON_BULLET] Free governor title is now only possible starting turn 25
 				[NEWLINE][ICON_BULLET] Free technology is now only possible starting turn 31
+            </Text>
+        </Row>
+        <Row Tag="LOC_CHANGELOG_UNITS_MILITARY_NUCLEAR_DEVICES_DESC">
+            <Text>
+				[ICON_BULLET][b]Manhattan Project[/b]: cost increased to 750 online speed (from 500), 1500 standard speed (from 1000)
+				[NEWLINE]
+				[ICON_BULLET][b]Nuclear Device[/b]: 600 production online speed (from 400), uranium cost = 7 (from 5)
+				[NEWLINE]
+				[ICON_BULLET][b]Thermonuclear Device[/b]: 750 production online speed (from 500), uranium cost = 20 (from 10)
             </Text>
         </Row>
 	</LocalizedText>
