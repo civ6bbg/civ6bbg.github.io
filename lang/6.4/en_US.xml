@@ -22,6 +22,8 @@
             <Text>
                 [ICON_BULLET] +2 Combat Strength per turn of fortification up to a maximum of +4CS (from +3CS per turn up to a maximum of +6CS)
                 [NEWLINE][ICON_BULLET] Land units no longer provide support bonus in water
+				[NEWLINE][ICON_BULLET] Melee ancient era unit (Warrior and UUs, Scout and UU, Galley and UU, WarCart and Sabum) get -5 against city center until a classical technology is reached
+				[NEWLINE][ICON_BULLET] The combat damage formula no longer includes RNG
 				[NEWLINE][ICON_BULLET] A game option has been added to disable settler stealing. If enabled, settlers will simply be sent back to the nearest city (like great people)
             </Text>
         </Row>
@@ -70,7 +72,9 @@
 				[ICON_BULLET] [b]Jade[/b]: +1 production, but can no longer spawn on plains (from +0, plains and grassland)
 				[NEWLINE]
 				[ICON_BULLET] [b]Mercury[/b]: +1 food / +1 science (from +0/+1)
-				[b][Pearls][/b]: +1 production / +1 faith (from +0/+1)
+				[NEWLINE]
+				[ICON_BULLET]
+				[b]Pearls[/b]: +1 production / +1 faith (from +0/+1)
 				[NEWLINE]
 				[ICON_BULLET] [b]Spices[/b]: +1 food / +1 gold (from +2/+0)
 				[NEWLINE]

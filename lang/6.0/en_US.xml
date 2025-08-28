@@ -42,7 +42,9 @@
         </Row>
         <Row Tag="LOC_CHANGELOG_CONGRESS_DESC">
             <Text>
-                Unit Production Congress modified to +50% cost in production / gold / faith (from +100%) or -25% cost in production / gold / faith (from -50%)
+                [ICON_BULLET] [b]Unit Production Congress:[/b] Modified to +50% cost in production / gold / faith (from +100%) or -25% cost in production / gold / faith (from -50%)
+				[NEWLINE]
+				[ICON_BULLET] [b]Trade Treaty:[/b] Vote B - changed to "-4 gold on Trade Routes sent to/from target player" [i](note: this can result in negative gpt trade routes)[/i]
             </Text>
         </Row>
 
@@ -90,7 +92,7 @@
 				[NEWLINE]
 				[ICON_BULLET] Campus: 3 science, 4 science w/ Research Labs (from 2s, 3s @ Labs)
 				[NEWLINE]
-				[ICON_BULLET] Theater Square: 2 culture, 3 culture w/ Broadcast Center (from 2c, 3c @ Broadcast)
+				[ICON_BULLET] Theater Square: 3 culture, 4 culture w/ Broadcast Center (from 2c, 3c @ Broadcast)
 				[NEWLINE]
 				[ICON_BULLET] Commercial Hub: unchanged
 				[NEWLINE]
@@ -229,8 +231,6 @@
 				[ICON_BULLET] First world congress is in Medieval Era
 				[NEWLINE]
 				[ICON_BULLET] First vote for Diplomatic Victory points is in Medieval Era
-				[NEWLINE]
-				[ICON_BULLET] Trade Treaty congress vote option B changed to "-4 gold on Trade Routes sent to/from target player" [i](note: this can result in negative gpt trade routes)[/i]
 				[NEWLINE]
 				[ICON_BULLET] Diplomatic point penalty from grievances is removed
             </Text>
@@ -413,7 +413,7 @@
 			<Text>
 				Aerodrome yields +1 production to incoming international trade route and +1 production to incoming domestic trade route (like encampment)
 				[NEWLINE]
-				[ICON_BULLET][b]Hanger[/b]: Cost changed to 320 production (from 380, std speed). +1 Aluminum when it is revealed (from +0)
+				[ICON_BULLET][b]Hangar[/b]: Cost changed to 320 production (from 380, std speed). +1 Aluminum when it is revealed (from +0)
 				[NEWLINE]
 				[ICON_BULLET][b]Airport[/b]: Cost changed to 400 production (from 480, std speed). +1 Aluminum and +1 Uranium when it is revealed (from +0). 
 			</Text>
@@ -593,7 +593,7 @@
 				[NEWLINE]
 				[ICON_BULLET][b]Plantations[/b]: gives +1 production if built on a flat tile.
 				[NEWLINE]
-				[ICON_BULLET][b]Geothermal Plant[/b]: moved to Chemistry (from Synthetic Materials; +3 power (from +4), additional +3 power and +1 science at Synthetic Materials
+				[ICON_BULLET][b]Geothermal Plant[/b]: moved to Chemistry (from Synthetic Materials; +3 power (from +4), additional +3 power and +1 science at Synthetic Materials)
 				[NEWLINE]
 				[ICON_BULLET][b]Quarry[/b]: +1 production at Military Engineering (from Gunpowder), +2 production at Rocketry (from +1 Rocketry and +1 Predictive Systems)
 				[NEWLINE]
@@ -611,6 +611,8 @@
 		</Row>
 		<Row Tag="LOC_CHANGELOG_RESOURCES_DESC">
 			<Text>
+				Luxury Resources:
+				[NEWLINE]
 				[ICON_BULLET] [b]Jade[/b]: +1 production, but can no longer spawn on plains (from +0, plains and grassland)
 				[NEWLINE]
 				[ICON_BULLET] [b]Mercury[/b]: +1 food / +1 science (from +0/+1)
@@ -620,6 +622,10 @@
 				[ICON_BULLET] [b]Spices[/b]: +1 food / +1 gold (from +2/+0)
 				[NEWLINE]
 				[ICON_BULLET] [b]Tea[/b]: +1 food / +1 science (from +0/+1)
+				[NEWLINE]
+				Strategic Resources:
+				[NEWLINE]
+				[ICON_BULLET] [b]Oil[/b]: Can spawn on flat plains and floodplains
 			</Text>
 		</Row>
 

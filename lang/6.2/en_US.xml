@@ -24,6 +24,18 @@
 				[b]Synthetic Technocracy[/b]: remove -10% tourism malus, add +50% production toward Spaceports, Industrial Zones, Campuses, Harbors, and also buildings inside those districts.
             </Text>
         </Row>
+        <Row Tag="LOC_CHANGELOG_CONGRESS_DESC">
+            <Text>
+				[ICON_BULLET] [b]Unit Production Congress:[/b] Modified to +50% cost in production / gold / faith (from +100%) or -25% cost in production / gold / faith (from -50%)
+				[NEWLINE]
+				[ICON_BULLET] [b]Border Control Treaty:[/b] Vote A - Can purchase tiles at a 50% Gold discount (from culture bomb when completing districts)
+				[NEWLINE]
+				[ICON_BULLET] [b]Trade Treaty:[/b] Vote A - Now should correctly give +4 gold to players sending trade routes to the target and the target gets +1 trade route. Previously this was the text, but firaxis had it coded that the target got the +4 gold as well as the trade route and other players received nothing.				[NEWLINE]
+				Vote B - changed to "-4 gold on Trade Routes sent to/from target player" [i](note: this can result in negative gpt trade routes)[/i]
+				[NEWLINE]
+				[ICON_BULLET][b]Combat strength resolution:[/b] Down to -+3 strength (from -+5)
+            </Text>
+        </Row>
 		<Row Tag="LOC_CHANGELOG_POLICIES_DESC">
             <Text>
 				[ICON_BULLET] [b]Bastions[/b]: +0 city ranged strength (from +5)
@@ -69,8 +81,6 @@
 				[ICON_BULLET] Disaster level 1 now gives the disaster frequency that level 0 used to have
 				[NEWLINE]
 				[ICON_BULLET] Flood yields reduced by 25%.
-				[NEWLINE]
-				[ICON_BULLET] Improvement pillage value reduction changed to -30% (from -40%)
             </Text>
         </Row>
 		<Row Tag="LOC_CHANGELOG_UNITS_MILITARY_SUPPORT_UNITS_DESC">
@@ -103,8 +113,21 @@
 				[ICON_BULLET][b]Mobile SAM[/b]: +115 Anti-air combat strength (from +100) and -5 Anti-air combat strength vs all planes (total = +110 from +100)
             </Text>
         </Row>
+		<Row Tag="LOC_CHANGELOG_SPIES_DESC">
+            <Text>
+                [ICON_BULLET] When a spy is captured, you gain +1 spy capacity.  This is because in multiplayer, especially team games, there is no way of getting your spy back unlike if it is killed.
+				[NEWLINE][ICON_BULLET] Spy production scales with techs/civics (from previous number of copies). Spies are now stackable (Fixed a bug where Wu Zetian could not faith buy spies when there was an opponent spy already in the city).
+				[NEWLINE][ICON_BULLET] "Neutralize Governor" and "Sabotage Production" mission duration increased to 6 turns [from 4]
+            </Text>
+        </Row>
 		<Row Tag="LOC_CHANGELOG_IMPROVEMENTS_DESC">
 			<Text>
+				Yields from pillaging Districts and Improvements reduced:
+				[NEWLINE]
+				[ICON_BULLET]-20% on Districts.
+				[NEWLINE]
+				[ICON_BULLET]-30% on Improvements.
+				[NEWLINE]
 				All improvements correctly give tourism at flight equal to their culture value unless stated otherwise, this is a fix to a Firaxis bug.
 				[NEWLINE]
 				[ICON_BULLET][b]Fishing Boats[/b]: give +1 production.
@@ -117,7 +140,7 @@
 				[NEWLINE]
 				[ICON_BULLET][b]Plantations[/b]: gives +1 production if built on a flat tile. Food bonus delayed to Medieval Faires (from Feudalism)
 				[NEWLINE]
-				[ICON_BULLET][b]Geothermal Plant[/b]: moved to Chemistry (from Synthetic Materials; +3 power (from +4), additional +3 power and +1 science at Synthetic Materials
+				[ICON_BULLET][b]Geothermal Plant[/b]: moved to Chemistry (from Synthetic Materials; +3 power (from +4), additional +3 power and +1 science at Synthetic Materials)
 				[NEWLINE]
 				[ICON_BULLET][b]Quarry[/b]: +1 production at Military Engineering (from Gunpowder), +2 production at Rocketry (from +1 Rocketry and +1 Predictive Systems)
 				[NEWLINE]
@@ -131,5 +154,12 @@
 				UD campus replacements (Seowon and Observatory) now get +2 adjacency from geothermal fissures
 			</Text>
 		</Row>
+		<Row Tag="LOC_CHANGELOG_COMBAT_DESC">
+            <Text>
+                [ICON_BULLET] +2 Combat Strength per turn of fortification up to a maximum of +4CS (from +3CS per turn up to a maximum of +6CS)
+                [NEWLINE][ICON_BULLET] Land units no longer provide support bonus in water
+				[NEWLINE][ICON_BULLET] Melee ancient era unit (Warrior and UUs, Scout and UU, Galley and UU, WarCart and Sabum) get -5 against city center until a classical technology is reached
+            </Text>
+        </Row>
 	</LocalizedText>
 </GameData>
