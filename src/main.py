@@ -39,7 +39,7 @@ def generate_html_file(bbg_ver, l, get_page_function, page_name):
     sitemap[bbg_ver][l].append(file_path)
     with open(file_path, 'w') as f:
         f.write(docStr)
-    if bbg_ver == latest_bbg and l == 'en_US' and page_name == 'bbg_expanded':
+    if bbg_ver == latest_bbg and l == 'en_US' and page_name == 'leaders':
         with open('index.html', 'w') as f:
             f.write(docStr)
 
@@ -74,6 +74,7 @@ for bbg_ver in bbg_versions:
         for page in pages_list:
             page_name = page['name']
             get_page_function = page['func']
+            # if page_name == 'bbg_expanded':
             print(f'  page: {page_name}')
             generate_html_file(bbg_ver, l, get_page_function, page_name)
 

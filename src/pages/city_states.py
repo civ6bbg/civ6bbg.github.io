@@ -7,11 +7,11 @@ from dom_generator_helper import *
 
 def get_city_state_html_file(bbg_version, lang, pages_list):
     en_US_locs_data = get_locs_data(bbg_version, 'en_US')
-    locs_data = get_locs_data(bbg_version, lang)
+    locs_data = get_locs_data_with_fallback(bbg_version, lang)
     if bbg_version == None and lang not in base_game_locs_data:
         base_game_locs_data[lang] = locs_data
     version_name = bbg_version if bbg_version != None else 'baseGame'
-    title = f'Civ VI {f"BBG {bbg_version}" if bbg_version != None else get_loc(locs_data, "LOC_BASE_GAME_TITLE", en_US_locs_data)} {get_loc(locs_data, "LOC_PAGE_TITLE_CITY_STATES", en_US_locs_data)}'
+    title = f'Civ VI {f"BBG {bbg_version}" if bbg_version != None else get_loc(locs_data, "LOC_BASE_GAME_TITLE")} {get_loc(locs_data, "LOC_PAGE_TITLE_CITY_STATES")}'
 
     menu_items = []
     menu_icons = []
@@ -22,7 +22,7 @@ def get_city_state_html_file(bbg_version, lang, pages_list):
         cs_by_type.setdefault(cs_type, [])
         cs_by_type[cs_type].append(cs)
     for cs_type in cs_by_type:
-        cs_by_type[cs_type].sort(key=lambda x: get_loc(locs_data, x[2], en_US_locs_data))
+        cs_by_type[cs_type].sort(key=lambda x: get_loc(locs_data, x[2]))
     category_icon_map = {
         "CULTURAL": 'ICON_DISTRICT_THEATER',
         "INDUSTRIAL": 'ICON_DISTRICT_INDUSTRIAL_ZONE',
@@ -32,20 +32,20 @@ def get_city_state_html_file(bbg_version, lang, pages_list):
         'TRADE': 'ICON_DISTRICT_COMMERCIAL_HUB',
     }
     for cs_type in cs_by_type:
-        menu_items.append(get_loc(locs_data, f'LOC_CITY_STATES_TYPE_{cs_type}', en_US_locs_data))
+        menu_items.append(get_loc(locs_data, f'LOC_CITY_STATES_TYPE_{cs_type}'))
         menu_icons.append(category_icon_map[cs_type])
 
     def create_city_state_page():
         for cs_type in cs_by_type:
-            with div(cls='col-lg-12', id=get_loc(locs_data, f'LOC_CITY_STATES_TYPE_{cs_type}', en_US_locs_data)), div(cls="chart"):
+            with div(cls='col-lg-12', id=get_loc(locs_data, f'LOC_CITY_STATES_TYPE_{cs_type}')), div(cls="chart"):
                 comment(cs_type)
-                h2(get_loc(locs_data, f'LOC_CITY_STATES_TYPE_{cs_type}', en_US_locs_data), cls='civ-name')
+                h2(get_loc(locs_data, f'LOC_CITY_STATES_TYPE_{cs_type}'), cls='civ-name')
             with div(cls="row"):
                 for cs in cs_by_type[cs_type]:
                     with div(cls="col-lg-6 col-md-12"), div(cls="chart"):
                         comment(cs[2])
-                        with h2(get_loc(locs_data, cs[2], en_US_locs_data), cls='civ-name'):
-                            img(src=f'/images/city_states/{get_loc(en_US_locs_data, cs[2], en_US_locs_data)}.webp',
+                        with h2(get_loc(locs_data, cs[2]), cls='civ-name'):
+                            img(src=f'/images/city_states/{get_loc(en_US_locs_data, cs[2])}.webp',
                                 style="vertical-align: middle; width:5em",
                                 onerror=image_onerror)
                         cs_desc = cs[7] if cs[7] != None else (cs[6] if cs[6] != None else cs[5])

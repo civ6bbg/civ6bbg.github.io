@@ -183,17 +183,17 @@ changelog_items = {
 
 def get_changelog_html_file(bbg_version, lang, pages_list):
     en_US_locs_data = get_locs_data(bbg_version, 'en_US')
-    locs_data = get_locs_data(bbg_version, lang)
+    locs_data = get_locs_data_with_fallback(bbg_version, lang)
     if bbg_version == None and lang not in base_game_locs_data:
         base_game_locs_data[lang] = locs_data
     version_name = bbg_version if bbg_version != None else 'baseGame'
-    title = f'Civ VI {f"BBG {bbg_version}" if bbg_version != None else get_loc(locs_data, "LOC_BASE_GAME_TITLE", en_US_locs_data)} {get_loc(locs_data, "LOC_PAGE_TITLE_CHANGELOG", en_US_locs_data)}'
+    title = f'Civ VI {f"BBG {bbg_version}" if bbg_version != None else get_loc(locs_data, "LOC_BASE_GAME_TITLE")} {get_loc(locs_data, "LOC_PAGE_TITLE_CHANGELOG")}'
 
     if bbg_version == None or bbg_version[0] == '5':
         menu_items = []
         menu_icons = []
     else:
-        menu_items = [get_loc(locs_data, item, en_US_locs_data) for item in changelog_items.keys()]
+        menu_items = [get_loc(locs_data, item) for item in changelog_items.keys()]
         menu_icons = [f'ICON_{item}' for item in changelog_items.keys()]
 
     def create_changelog_page():
@@ -203,16 +203,16 @@ def get_changelog_html_file(bbg_version, lang, pages_list):
         for section in changelog_items.keys():
             with div(cls='col-lg-12'), div(cls="chart"):
                 comment(section)
-                h1(get_loc(locs_data, section, en_US_locs_data), cls='civ-name', id=get_loc(locs_data, section, en_US_locs_data))
+                h1(get_loc(locs_data, section), cls='civ-name', id=get_loc(locs_data, section))
                 br()
                 br()
                 for item in changelog_items[section].keys():
                     comment(item)
-                    h2(get_loc(locs_data, item, en_US_locs_data), cls='civ-name')
+                    h2(get_loc(locs_data, item), cls='civ-name')
                     br()
                     for desc in changelog_items[section][item]:
                         comment(desc)
-                        p(get_loc(locs_data, desc, en_US_locs_data), 
+                        p(get_loc(locs_data, desc), 
                         style='text-align:left', 
                         cls='civ-ability-desc')
                     br()

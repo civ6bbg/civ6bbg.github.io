@@ -253,7 +253,7 @@ def add_header(bbg_version, lang, page_type, pages_list, locs_data, en_US_locs_d
                 with div(cls="flex col-xl-8 col-lg-8 col-md-8 col-8"), div(cls="main-menu"), nav(cls="navigation"):
                     with ul(cls="nav menu"):
                         for page in pages_list:
-                            page_name = get_loc(locs_data, page['main_menu_title'], en_US_locs_data)
+                            page_name = get_loc(locs_data, page['main_menu_title'])
                             t = page['name']
                             with li(cls="active" if t == page_type else ""):
                                 a(page_name, href=f"/{lang}/{t}_{get_version_name(bbg_version)}.html", onclick=f'civClicked(null)')
@@ -279,7 +279,7 @@ def add_header(bbg_version, lang, page_type, pages_list, locs_data, en_US_locs_d
                                     add_lang('Japanese  ', 'ja_JP', bbg_version, 'jp', page_type)
                     div(cls="w-100")
                     with div(cls="col-xl-4 col-lg-4 col-md-4 col-4"), div(cls="base-game-switcher-wrapper"):
-                        with button(cls="base-game-switcher gray-circle-btn", type="button", title=get_loc(locs_data, "LOC_MAIN_MENU_SHOW_BASE_GAME", en_US_locs_data)):
+                        with button(cls="base-game-switcher gray-circle-btn", type="button", title=get_loc(locs_data, "LOC_MAIN_MENU_SHOW_BASE_GAME")):
                             i(cls="enable-icon", data_feather="toggle-left", aria_hidden="true")
                             i(cls="disable-icon", data_feather="toggle-right", aria_hidden="true")
                     div(cls="w-100")
@@ -305,7 +305,7 @@ def add_final_scripts():
     script(src="/plugins/feather.min.js")
     script(src="/plugins/chart.min.js")
 
-def get_loc(locs_data, s, en_US_locs_data):
+def get_loc(locs_data, s):
     try:
         res = locs_data[s]
         if res.find('|') == -1:
@@ -313,10 +313,8 @@ def get_loc(locs_data, s, en_US_locs_data):
         else:
             return res[:res.find('|')]
     except KeyError:
-        if locs_data == en_US_locs_data:
-            return f'Not found: {s}'
         print(f'KeyError: {s} not found in locs_data')
-        return get_loc(en_US_locs_data, s, en_US_locs_data)
+        return f'Not found: {s}'
 
 def get_html_lang(lang):
     if len(lang) == 5:
@@ -352,23 +350,23 @@ def add_html_header(doc, page_title):
 def show_element_with_base_option(element, lang, locs_data, en_US_locs_data, data_append = '', base_game_data_append = '', alignment = 'left', add_base_game = True):
     if add_base_game:
         comment(element)
-        p(get_loc(locs_data, element, en_US_locs_data) + f'{data_append}', style=f"text-align:{alignment}", cls='civ-ability-desc actual-text')
+        p(get_loc(locs_data, element) + f'{data_append}', style=f"text-align:{alignment}", cls='civ-ability-desc actual-text')
         with div(cls="base-game-text row"):
             with div(cls='col-lg-6 col-md-6'):
                 with div(cls="chart", style="box-shadow:none"):
-                    p(get_loc(locs_data, element, en_US_locs_data) + f'{data_append}', style=f"text-align:{alignment}", cls='civ-ability-desc')
+                    p(get_loc(locs_data, element) + f'{data_append}', style=f"text-align:{alignment}", cls='civ-ability-desc')
             with div(cls='col-lg-6 col-md-6'):
                 with div(cls="chart", style="box-shadow:none"):
-                    p(get_loc(base_game_locs_data[lang], element, base_game_locs_data['en_US']) + f'\n{base_game_data_append}', style=f"text-align:{alignment}", cls='civ-ability-desc')
+                    p(get_loc(base_game_locs_data[lang], element) + f'\n{base_game_data_append}', style=f"text-align:{alignment}", cls='civ-ability-desc')
     else:
         comment(element)
-        p(get_loc(locs_data, element, en_US_locs_data) + f'{data_append}', style=f"text-align:{alignment}", cls='civ-ability-desc')
+        p(get_loc(locs_data, element) + f'{data_append}', style=f"text-align:{alignment}", cls='civ-ability-desc')
 
 def get_unlock_tech_civic_dialog(unlock_tech, unlock_civic, locs_data, en_US_locs_data, tech_to_loc_dict, civic_to_loc_dict):
     if unlock_tech:
-        return f'{get_loc(locs_data, "LOC_UI_PEDIA_UNLOCKED_BY", en_US_locs_data)} {get_loc(locs_data, tech_to_loc_dict[unlock_tech], en_US_locs_data)} {get_loc(locs_data, "LOC_TECHNOLOGY_NAME", en_US_locs_data)}'
+        return f'{get_loc(locs_data, "LOC_UI_PEDIA_UNLOCKED_BY")} {get_loc(locs_data, tech_to_loc_dict[unlock_tech])} {get_loc(locs_data, "LOC_TECHNOLOGY_NAME")}'
     if unlock_civic:
-        return f'{get_loc(locs_data, "LOC_UI_PEDIA_UNLOCKED_BY", en_US_locs_data)} {get_loc(locs_data, civic_to_loc_dict[unlock_civic], en_US_locs_data)} {get_loc(locs_data, "LOC_CIVIC_NAME", en_US_locs_data)}'
+        return f'{get_loc(locs_data, "LOC_UI_PEDIA_UNLOCKED_BY")} {get_loc(locs_data, civic_to_loc_dict[unlock_civic])} {get_loc(locs_data, "LOC_CIVIC_NAME")}'
 
 def add_footer():
     with div(cls="scroll-up footer-popup", id="footer-popup"), div(cls="footer-popup-inner"):

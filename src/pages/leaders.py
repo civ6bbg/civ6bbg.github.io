@@ -8,11 +8,11 @@ from dom_generator_helper import *
 
 def get_leader_html_file(bbg_version, lang, pages_list):
     en_US_locs_data = get_locs_data(bbg_version, 'en_US')
-    locs_data = get_locs_data(bbg_version, lang)
+    locs_data = get_locs_data_with_fallback(bbg_version, lang)
     if bbg_version == None and lang not in base_game_locs_data:
         base_game_locs_data[lang] = locs_data
     version_name = bbg_version if bbg_version != None else 'baseGame'
-    title = f'Civ VI {f"BBG {bbg_version}" if bbg_version != None else get_loc(locs_data, "LOC_BASE_GAME_TITLE", en_US_locs_data)} {get_loc(locs_data, "LOC_PAGE_TITLE_LEADERS", en_US_locs_data)}'
+    title = f'Civ VI {f"BBG {bbg_version}" if bbg_version != None else get_loc(locs_data, "LOC_BASE_GAME_TITLE")} {get_loc(locs_data, "LOC_PAGE_TITLE_LEADERS")}'
 
     menu_items = []
     menu_icons = []
@@ -21,32 +21,32 @@ def get_leader_html_file(bbg_version, lang, pages_list):
     tech_to_loc_dict = get_tech_to_loc_dict(f"sqlFiles/{version_name}/DebugGameplay.sqlite")
     civic_to_loc_dict = get_civic_to_loc_dict(f"sqlFiles/{version_name}/DebugGameplay.sqlite")
     for leader in civ_leaders_items:
-        menu_items.append(get_loc(locs_data, leader[2], en_US_locs_data) + ' ' + get_loc(locs_data, leader[5], en_US_locs_data))
-        menu_icons.append(get_loc(en_US_locs_data, leader[2], en_US_locs_data) + ' ' + get_loc(en_US_locs_data, leader[5], en_US_locs_data))
+        menu_items.append(get_loc(locs_data, leader[2]) + ' ' + get_loc(locs_data, leader[5]))
+        menu_icons.append(get_loc(en_US_locs_data, leader[2]) + ' ' + get_loc(en_US_locs_data, leader[5]))
     def create_leader_page():
         for leader in civ_leaders_items:
             with div(cls="row",
-                     id=get_loc(locs_data, leader[2], en_US_locs_data) + ' ' + get_loc(locs_data, leader[5], en_US_locs_data)
+                     id=get_loc(locs_data, leader[2]) + ' ' + get_loc(locs_data, leader[5])
                 ), div(cls="col-lg-12"), div(cls="chart"):
                 comment(f'{leader[2]} {leader[5]}')
-                with h2(get_loc(locs_data, leader[2], en_US_locs_data) + ' ' + get_loc(locs_data, leader[5], en_US_locs_data), cls='civ-name'):
-                    img(src=f'/images/leaders/{get_loc(en_US_locs_data, leader[2], en_US_locs_data) + ' ' + get_loc(en_US_locs_data, leader[5], en_US_locs_data)}.webp',
+                with h2(get_loc(locs_data, leader[2]) + ' ' + get_loc(locs_data, leader[5]), cls='civ-name'):
+                    img(src=f'/images/leaders/{get_loc(en_US_locs_data, leader[2]) + ' ' + get_loc(en_US_locs_data, leader[5])}.webp',
                         style="vertical-align: middle; width:7em",
                         onerror=image_onerror)
                 comment(leader[3])
-                h3(get_loc(locs_data, leader[3], en_US_locs_data), style="text-align:left", cls='civ-ability-name')
+                h3(get_loc(locs_data, leader[3]), style="text-align:left", cls='civ-ability-name')
                 br()
                 show_element_with_base_option(leader[4], lang, locs_data, en_US_locs_data)
                 br()
                 comment(leader[6])
-                h3(get_loc(locs_data, leader[6], en_US_locs_data), style="text-align:left", cls='civ-ability-name')
+                h3(get_loc(locs_data, leader[6]), style="text-align:left", cls='civ-ability-name')
                 br()
                 show_element_with_base_option(leader[7], lang, locs_data, en_US_locs_data)
                 br()
                 for item in civ_leaders_items[leader]:
                     comment(item[4])
-                    with h3(f'{get_loc(locs_data, item[4], en_US_locs_data)}', style="text-align:left", cls='civ-ability-name'):
-                        img(src=f'/images/items/{get_loc(en_US_locs_data, item[4], en_US_locs_data)}.webp',
+                    with h3(f'{get_loc(locs_data, item[4])}', style="text-align:left", cls='civ-ability-name'):
+                        img(src=f'/images/items/{get_loc(en_US_locs_data, item[4])}.webp',
                             style="vertical-align: middle; width:2em; text-align:left",
                             onerror=image_onerror)
 

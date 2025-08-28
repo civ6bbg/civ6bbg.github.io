@@ -7,11 +7,11 @@ from dom_generator_helper import *
 
 def get_names_html_file(bbg_version, lang, pages_list):
     en_US_locs_data = get_locs_data(bbg_version, 'en_US')
-    locs_data = get_locs_data(bbg_version, lang)
+    locs_data = get_locs_data_with_fallback(bbg_version, lang)
     if bbg_version == None and lang not in base_game_locs_data:
         base_game_locs_data[lang] = locs_data
     version_name = bbg_version if bbg_version != None else 'baseGame'
-    title = f'Civ VI {f"BBG {bbg_version}" if bbg_version != None else get_loc(locs_data, "LOC_BASE_GAME_TITLE", en_US_locs_data)} {get_loc(locs_data, "LOC_PAGE_TITLE_NAMES", en_US_locs_data)}'
+    title = f'Civ VI {f"BBG {bbg_version}" if bbg_version != None else get_loc(locs_data, "LOC_BASE_GAME_TITLE")} {get_loc(locs_data, "LOC_PAGE_TITLE_NAMES")}'
 
     menu_items = []
     menu_icons = []
@@ -60,7 +60,7 @@ def get_names_html_file(bbg_version, lang, pages_list):
                         div_cls = 'col-md-12 col-lg-12'
                     with div(cls=div_cls), div(cls="chart"):
                         comment(property_name)
-                        h2(get_loc(locs_data, f'{property_name}', en_US_locs_data),
+                        h2(get_loc(locs_data, f'{property_name}'),
                            style="text-align:center",
                            cls='civ-ability-desc')
                         with div(cls='row'):
@@ -71,7 +71,7 @@ def get_names_html_file(bbg_version, lang, pages_list):
                             for name in name_classes[name_cls][property_name]:
                                 with div(cls=curr_div_cls):
                                     comment(name)
-                                    p(get_loc(locs_data, f'{name}', en_US_locs_data),
+                                    p(get_loc(locs_data, f'{name}'),
                                       style="text-align:center",
                                       cls='civ-ability-desc')
                 br()

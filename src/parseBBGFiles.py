@@ -85,6 +85,19 @@ def get_locs_data(bbg_version, lang):
 
     return locs
 
+locs_data_cache = {}
+
+def get_locs_data_with_fallback(bbg_version, lang):
+    if (bbg_version, lang) in locs_data_cache:
+        return locs_data_cache[(bbg_version, lang)]
+    locs = get_locs_data(bbg_version, lang)
+    if lang != 'en_US':
+        en_US_locs = get_locs_data(bbg_version, 'en_US')
+        for k in en_US_locs:
+            if k not in locs:
+                locs[k] = en_US_locs[k]
+    locs_data_cache[(bbg_version, lang)] = locs
+    return locs
 
 def get_civs_tables(db_path):
     connection = sqlite3.connect(db_path)

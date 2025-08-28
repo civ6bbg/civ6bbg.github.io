@@ -7,11 +7,11 @@ from dom_generator_helper import *
 
 def get_governor_html_file(bbg_version, lang, pages_list):
     en_US_locs_data = get_locs_data(bbg_version, 'en_US')
-    locs_data = get_locs_data(bbg_version, lang)
+    locs_data = get_locs_data_with_fallback(bbg_version, lang)
     if bbg_version == None and lang not in base_game_locs_data:
         base_game_locs_data[lang] = locs_data
     version_name = bbg_version if bbg_version != None else 'baseGame'
-    title = f'Civ VI {f"BBG {bbg_version}" if bbg_version != None else get_loc(locs_data, "LOC_BASE_GAME_TITLE", en_US_locs_data)} {get_loc(locs_data, "LOC_PAGE_TITLE_GOVERNOR", en_US_locs_data)}'
+    title = f'Civ VI {f"BBG {bbg_version}" if bbg_version != None else get_loc(locs_data, "LOC_BASE_GAME_TITLE")} {get_loc(locs_data, "LOC_PAGE_TITLE_GOVERNOR")}'
 
     menu_items = []
     menu_icons = []
@@ -19,14 +19,14 @@ def get_governor_html_file(bbg_version, lang, pages_list):
     governor_promotion_dict = get_governors_promotion_dict(f"sqlFiles/{version_name}/DebugGameplay.sqlite")
     governor_promotion_set_dict = get_governors_promotion_sets_dict(f"sqlFiles/{version_name}/DebugGameplay.sqlite", governors, governor_promotion_dict)
     for gov in governors:
-        menu_items.append(get_loc(locs_data, gov[1], en_US_locs_data))
-        menu_icons.append(get_loc(en_US_locs_data, gov[1], en_US_locs_data))
+        menu_items.append(get_loc(locs_data, gov[1]))
+        menu_icons.append(get_loc(en_US_locs_data, gov[1]))
     def create_governor_page():
         for gov in governors:
-            with div(cls="row", id=get_loc(locs_data, gov[1], en_US_locs_data)), div(cls="col-lg-12"), div(cls="chart"):
+            with div(cls="row", id=get_loc(locs_data, gov[1])), div(cls="col-lg-12"), div(cls="chart"):
                 comment(gov[1])
-                with h2(get_loc(locs_data, gov[1], en_US_locs_data), cls='civ-name'):
-                    img(src=f'/images/governors/{get_loc(en_US_locs_data, gov[1], en_US_locs_data)}.webp',
+                with h2(get_loc(locs_data, gov[1]), cls='civ-name'):
+                    img(src=f'/images/governors/{get_loc(en_US_locs_data, gov[1])}.webp',
                         style="vertical-align: middle; width:7em",
                         onerror=image_onerror)
                 br()
@@ -41,11 +41,11 @@ def get_governor_html_file(bbg_version, lang, pages_list):
                                 promotion_name = governor_promotion_dict[promotion][1]
                                 alignment = 'left' if column == 0 else 'center' if column == 1 else 'right'
                                 comment(promotion_name)
-                                with h3(f'{get_loc(locs_data, promotion_name, en_US_locs_data)}', style=f"text-align:{alignment}", cls='civ-ability-name'):
+                                with h3(f'{get_loc(locs_data, promotion_name)}', style=f"text-align:{alignment}", cls='civ-ability-name'):
                                     br()
                                     br()
                                     promotion_desc = governor_promotion_dict[promotion][2]
                                     comment(promotion_desc)
-                                    p(f'{get_loc(locs_data, promotion_desc, en_US_locs_data)}', style=f"text-align:{alignment}", cls='civ-ability-desc')
+                                    p(f'{get_loc(locs_data, promotion_desc)}', style=f"text-align:{alignment}", cls='civ-ability-desc')
                                     br()
     return create_page(bbg_version, lang, title, 'governor', menu_items, menu_icons, 'images/governors', pages_list, create_governor_page, locs_data, en_US_locs_data)

@@ -7,11 +7,11 @@ from dom_generator_helper import *
 
 def get_bbg_expanded_html_file(bbg_version, lang, pages_list):
     en_US_locs_data = get_locs_data(bbg_version, 'en_US')
-    locs_data = get_locs_data(bbg_version, lang)
+    locs_data = get_locs_data_with_fallback(bbg_version, lang)
     if bbg_version == None and lang not in base_game_locs_data:
         base_game_locs_data[lang] = locs_data
     version_name = bbg_version if bbg_version != None else 'baseGame'
-    title = f'Civ VI {f"BBG {bbg_version}" if bbg_version != None else get_loc(locs_data, "LOC_BASE_GAME_TITLE", en_US_locs_data)} {get_loc(locs_data, "LOC_PAGE_TITLE_BBG_EXPANDED", en_US_locs_data)}'
+    title = f'Civ VI {f"BBG {bbg_version}" if bbg_version != None else get_loc(locs_data, "LOC_BASE_GAME_TITLE")} {get_loc(locs_data, "LOC_PAGE_TITLE_BBG_EXPANDED")}'
 
     menu_items = []
     menu_icons = []
@@ -24,34 +24,34 @@ def get_bbg_expanded_html_file(bbg_version, lang, pages_list):
     civic_to_loc_dict = get_civic_to_loc_dict(f"sqlFiles/{version_name}/DebugGameplay.sqlite")
     for leader in civ_leaders_items:
         menu_items.append(
-          get_loc(locs_data, leader[2], en_US_locs_data) + ' ' + get_loc(locs_data, leader[5], en_US_locs_data))
+          get_loc(locs_data, leader[2]) + ' ' + get_loc(locs_data, leader[5]))
         menu_icons.append(
-          f'leaders/{get_loc(en_US_locs_data, leader[2], en_US_locs_data) + ' ' + get_loc(en_US_locs_data, leader[5], en_US_locs_data)}')
+          f'leaders/{get_loc(en_US_locs_data, leader[2]) + ' ' + get_loc(en_US_locs_data, leader[5])}')
     for gov in governors:
         menu_items.append(
-          get_loc(locs_data, gov[1], en_US_locs_data))
+          get_loc(locs_data, gov[1]))
         menu_icons.append(
-          f'governors/{get_loc(en_US_locs_data, gov[1], en_US_locs_data)}')
+          f'governors/{get_loc(en_US_locs_data, gov[1])}')
     
     def create_expanded_page():
         for leader in civ_leaders_items:
             with div(cls="row", 
-                     id=get_loc(locs_data, leader[2], en_US_locs_data) + ' ' + get_loc(locs_data, leader[5], en_US_locs_data)
+                     id=get_loc(locs_data, leader[2]) + ' ' + get_loc(locs_data, leader[5])
                     ), div(cls="col-lg-12"), div(cls="chart"):
                 comment(f'{leader[2]} {leader[5]}')
-                with h2(get_loc(locs_data, leader[2], en_US_locs_data) + ' ' + get_loc(locs_data, leader[5], en_US_locs_data), cls='civ-name'):
-                    img(src=f'/images/leaders/{get_loc(en_US_locs_data, leader[2], en_US_locs_data) + ' ' + get_loc(en_US_locs_data, leader[5], en_US_locs_data)}.webp',
+                with h2(get_loc(locs_data, leader[2]) + ' ' + get_loc(locs_data, leader[5]), cls='civ-name'):
+                    img(src=f'/images/leaders/{get_loc(en_US_locs_data, leader[2]) + ' ' + get_loc(en_US_locs_data, leader[5])}.webp',
                         style="vertical-align: middle; width:7em",
                         onerror=image_onerror)
                 comment(leader[3])
-                h3(get_loc(locs_data, leader[3], en_US_locs_data),
+                h3(get_loc(locs_data, leader[3]),
                    style="text-align:left",
                    cls='civ-ability-name')
                 br()
                 show_element_with_base_option(leader[4], lang, locs_data, en_US_locs_data, add_base_game = False)
                 br()
                 comment(leader[6])
-                h3(get_loc(locs_data, leader[6], en_US_locs_data),
+                h3(get_loc(locs_data, leader[6]),
                    style="text-align:left",
                    cls='civ-ability-name')
                 br()
@@ -59,10 +59,10 @@ def get_bbg_expanded_html_file(bbg_version, lang, pages_list):
                 br()
                 for item in civ_leaders_items[leader]:
                     comment(item[4])
-                    with h3(f'{get_loc(locs_data, item[4], en_US_locs_data)}',
+                    with h3(f'{get_loc(locs_data, item[4])}',
                             style="text-align:left",
                             cls='civ-ability-name'):
-                        img(src=f'/images/items/{get_loc(en_US_locs_data, item[4], en_US_locs_data)}.webp',
+                        img(src=f'/images/items/{get_loc(en_US_locs_data, item[4])}.webp',
                             style="vertical-align: middle; width:2em; text-align:left",
                             onerror=image_onerror)
 
@@ -84,12 +84,12 @@ def get_bbg_expanded_html_file(bbg_version, lang, pages_list):
                     br()
         for gov in governors:
             with div(cls="row",
-                     id=get_loc(locs_data, gov[1], en_US_locs_data)
+                     id=get_loc(locs_data, gov[1])
                     ), div(cls="col-lg-12"), div(cls="chart"):
                 comment(gov[1])
-                with h2(get_loc(locs_data, gov[1], en_US_locs_data),
+                with h2(get_loc(locs_data, gov[1]),
                         cls='civ-name'):
-                    img(src=f'/images/governors/{get_loc(en_US_locs_data, gov[1], en_US_locs_data)}.webp',
+                    img(src=f'/images/governors/{get_loc(en_US_locs_data, gov[1])}.webp',
                         style="vertical-align: middle; width:7em",
                         onerror=image_onerror)
                 br()
@@ -104,14 +104,14 @@ def get_bbg_expanded_html_file(bbg_version, lang, pages_list):
                                 promotion_name = governor_promotion_dict[promotion][1]
                                 alignment = 'left' if column == 0 else 'center' if column == 1 else 'right'
                                 comment(promotion_name)
-                                with h3(f'{get_loc(locs_data, promotion_name, en_US_locs_data)}',
+                                with h3(f'{get_loc(locs_data, promotion_name)}',
                                         style=f"text-align:{alignment}",
                                         cls='civ-ability-name'):
                                     br()
                                     br()
                                     promotion_desc = governor_promotion_dict[promotion][2]
                                     comment(promotion_desc)
-                                    p(f'{get_loc(locs_data, promotion_desc, en_US_locs_data)}',
+                                    p(f'{get_loc(locs_data, promotion_desc)}',
                                       style=f"text-align:{alignment}",
                                       cls='civ-ability-desc')
                                     br()
