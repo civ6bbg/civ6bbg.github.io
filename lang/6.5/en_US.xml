@@ -128,20 +128,12 @@
 				[NEWLINE][ICON_BULLET] New military policy card unlocked at Military Training: Grants +10 regeneration per turn for land units outside of friendly territory
             </Text>
         </Row>
-		<Row Tag="LOC_CHANGELOG_VICTORY_CONDITIONS_CUSTOM_SETTINGS_SCIENCE_VICTORY_DESC">
+		<Row Tag="LOC_CHANGELOG_VICTORY_CONDITIONS_LEGACY_BBG_SETTINGS_SCIENCE_VICTORY_DESC">
             <Text>
 				[u][b]Science Victory[/b][/u]
 				[NEWLINE]
 				If a spaceport is pillaged, the booster projects in launched do not grant extra light years per turn towards Exoplanet Expedition
-				[NEWLINE]
-				Settings Options for Science Victory:
-				[NEWLINE]
-				[ICON_BULLET] Standard - default Firaxis settings, default Legacy BBG setting
-				[NEWLINE]
-				[ICON_BULLET] Early - cheaper space projects and lowered cost for future era techs
-				[NEWLINE]
-				[ICON_BULLET] Earliest - even cheaper space projects and even lowered cost for future era techs
-            </Text>
+			</Text>
         </Row>
 		<Row Tag="LOC_CHANGELOG_TRIBAL_HUTS_RELIC_DESC">
             <Text>

@@ -219,6 +219,9 @@
 				[ICON_BULLET] Rock Bands: Potential album sales results reduced by 20% to be 80% of the default value
             </Text>
         </Row>
+		<Row Tag="LOC_CHANGELOG_VICTORY_CONDITIONS_LEGACY_BBG_SETTINGS_SCIENCE_VICTORY_DESC">
+            <Text> </Text>
+        </Row>
         <Row Tag="LOC_CHANGELOG_VICTORY_CONDITIONS_LEGACY_BBG_SETTINGS_DIPLOMATIC_VICTORY_DESC">
             <Text>
 				[u][b]Diplomatic Victory[/b][/u]
