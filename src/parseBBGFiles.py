@@ -763,3 +763,18 @@ def get_unit_stats(db_path):
         res.setdefault(promo_cls, {})
         res[promo_cls][unit_type] = row[2:]
     return res
+
+def get_unit_promotion_sets_dict(db_path):
+    res = {}
+    connection = sqlite3.connect(db_path)
+
+    crsr = connection.cursor()
+    crsr.execute(f"SELECT PromotionClass, Level, Column, UnitPromotionType, Name, Description FROM UnitPromotions")
+    rows = crsr.fetchall()
+    for row in rows:
+        res.setdefault(row[0], {})
+        res[row[0]].setdefault(row[1], [])
+        res[row[0]][row[1]].append(row[2:])
+    connection.close()
+    return res
+
