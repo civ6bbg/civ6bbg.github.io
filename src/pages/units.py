@@ -46,9 +46,30 @@ def get_units_html_file(bbg_version, lang, pages_list):
                 comment(loc_promo_cls)
                 h2(get_loc(locs_data, loc_promo_cls),
                    cls='civ-name')
+                if promo_cls in unit_promotions:
+                    process_unit_promotions(promo_cls)
             with div(cls="row"):
                 for unit_type in unit_stats[promo_cls].keys():
                     process_unit_stats(unit_type, promo_cls)
+    def process_unit_promotions(promo_cls):
+        with details():
+            summary(get_loc(locs_data, 'LOC_PEDIA_UNITPROMOTIONS_TITLE'), cls='civ-ability-desc', style=f"text-align:left")
+            for level in unit_promotions[promo_cls]:
+                column_count = len(unit_promotions[promo_cls][level])
+                div_cls = f'col-lg-{math.floor(12 / column_count)}'
+                with div(cls='row'):
+                    for column, _, promo_name, promo_desc in unit_promotions[promo_cls][level]:
+                        has_border = 'gov-promotion-border' if column < column_count else ''
+                        with div(cls=f'{div_cls} gov-promotion {has_border}'):
+                            alignment = 'left' if column == 1 else 'center' if column == 2 else 'right'
+                            comment(promo_name)
+                            with h3(f'{get_loc(locs_data, promo_name)}', style=f"text-align:{alignment}", cls='civ-ability-name'):
+                                br()
+                                br()
+                                comment(promo_desc)
+                                p(f'{get_loc(locs_data, promo_desc)}', style=f"text-align:{alignment}", cls='civ-ability-desc')
+                                br()
+
 
     def process_unit_stats(unit_type, promo_cls):
         with div(cls="col-lg-6 col-md-12"), div(cls="chart"):
@@ -109,4 +130,5 @@ def get_units_html_file(bbg_version, lang, pages_list):
               style="display:inline-block;text-align:left",
               cls='civ-ability-desc')
     unit_stats = get_unit_stats(f"sqlFiles/{version_name}/DebugGameplay.sqlite")
+    unit_promotions = get_unit_promotion_sets_dict(f'sqlFiles/{version_name}/DebugGameplay.sqlite')
     return create_page(bbg_version, lang, title, 'units', menu_items, menu_icons, 'images/units', pages_list, create_units_page, locs_data, en_US_locs_data)
