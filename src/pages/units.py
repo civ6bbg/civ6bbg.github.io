@@ -51,6 +51,7 @@ def get_units_html_file(bbg_version, lang, pages_list):
             with div(cls="row"):
                 for unit_type in unit_stats[promo_cls].keys():
                     process_unit_stats(unit_type, promo_cls)
+
     def process_unit_promotions(promo_cls):
         with details():
             summary(get_loc(locs_data, 'LOC_PEDIA_UNITPROMOTIONS_TITLE'), cls='civ-ability-desc', style=f"text-align:left")
@@ -58,10 +59,10 @@ def get_units_html_file(bbg_version, lang, pages_list):
                 column_count = len(unit_promotions[promo_cls][level])
                 div_cls = f'col-lg-{math.floor(12 / column_count)}'
                 with div(cls='row'):
-                    for column, _, promo_name, promo_desc in unit_promotions[promo_cls][level]:
-                        has_border = 'gov-promotion-border' if column < column_count else ''
+                    for i, (column, _, promo_name, promo_desc) in enumerate(unit_promotions[promo_cls][level]):
+                        has_border = 'gov-promotion-border' if i < column_count - 1 else ''
                         with div(cls=f'{div_cls} gov-promotion {has_border}'):
-                            alignment = 'left' if column == 1 else 'center' if column == 2 else 'right'
+                            alignment = 'left' if column == 1 else 'center' if column == 2 or column == 0 else 'right'
                             comment(promo_name)
                             with h3(f'{get_loc(locs_data, promo_name)}', style=f"text-align:{alignment}", cls='civ-ability-name'):
                                 br()

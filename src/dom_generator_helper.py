@@ -389,7 +389,7 @@ def create_page(bbg_version, lang, title, header, menu_items, menu_icons, images
         with div(cls="page-flex"), div(cls="main-wrapper"):
             add_header(bbg_version, lang, header, pages_list, locs_data, en_US_locs_data)
             with div(cls=""):
-                with div(cls="fixed left-0 right-auto h-screen w-[253px] bg-white border-r border-neutral-300 overflow-scroll", style="z-index: 5;"):
+                with div(cls="fixed left-0 right-auto h-screen bg-white border-r border-neutral-300 overflow-scroll", style="z-index: 5;"):
                     add_sidebar(menu_items, menu_icons, images_dir)
                 with div(cls="leaders-data min-w-full main-pl"), main(cls="main users chart-page"), div(cls="container"):
                     h1(title, cls='civ-name')
