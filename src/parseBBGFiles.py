@@ -778,3 +778,40 @@ def get_unit_promotion_sets_dict(db_path):
     connection.close()
     return res
 
+def get_policies(db_path):
+    res = {}
+    connection = sqlite3.connect(db_path)
+
+    crsr = connection.cursor()
+    crsr.execute(
+        f"""SELECT GovernmentSlotType
+            ,RequiresGovernmentUnlock
+            ,RequiresDarkAge
+            ,PolicyType
+            ,PrereqCivic
+            ,p.Description
+            ,p.Name
+            ,ObsoletePolicy
+        FROM Policies p
+        LEFT JOIN Policies_XP1 USING (PolicyType)
+        LEFT JOIN ObsoletePolicies USING (PolicyType)
+        LEFT JOIN Civics c ON CivicType = PrereqCivic
+        ORDER BY Cost
+        """)
+    rows = crsr.fetchall()
+    for row in rows:
+        if row[2]:
+            policy_type = 'DARKAGE'
+        elif row[0].endswith('GREAT_PERSON'):
+            policy_type = 'WILDCARD'
+        else:
+            policy_type = row[0][5:]
+        res.setdefault(policy_type, {})
+        if row[3] in res[policy_type]:
+            res[policy_type][row[3]][-1].append(row[-1])
+            continue
+        prereq = 'CIVIC_POLITICAL_PHILOSOPHY' if row[1] else row[4]
+        res[policy_type][row[3]] = [prereq, *row[5:7], [row[7]] if row[7] else []]
+    connection.close()
+    return res
+
