@@ -107,7 +107,7 @@ def get_policy_html_file(bbg_version, lang, pages_list):
         bbg_version,
         lang,
         title,
-        "city_states",
+        "policies",
         menu_items,
         menu_icons,
         "images/policies",
