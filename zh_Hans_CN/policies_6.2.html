@@ -237,27 +237,11 @@
                 <div class="sidebar-body">
                   <ul class="sidebar-body-menu">
                     <li>
-                      <a href="#通配符政策" onclick="civClicked(&quot;通配符政策&quot;)">
-                        <span aria-hidden="true" class="icon">
-                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp">
-                        </span>
-                        <p>通配符政策</p>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#黑暗时代政策" onclick="civClicked(&quot;黑暗时代政策&quot;)">
-                        <span aria-hidden="true" class="icon">
-                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/DARKAGE_CARD.webp">
-                        </span>
-                        <p>黑暗时代政策</p>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#宗教政策" onclick="civClicked(&quot;宗教政策&quot;)">
+                      <a href="#军事政策" onclick="civClicked(&quot;军事政策&quot;)">
                         <span aria-hidden="true" class="icon">
                           <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/MILITARY_CARD.webp">
                         </span>
-                        <p>宗教政策</p>
+                        <p>军事政策</p>
                       </a>
                     </li>
                     <li>
@@ -276,6 +260,22 @@
                         <p>外交政策</p>
                       </a>
                     </li>
+                    <li>
+                      <a href="#通配符政策" onclick="civClicked(&quot;通配符政策&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp">
+                        </span>
+                        <p>通配符政策</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#黑暗时代政策" onclick="civClicked(&quot;黑暗时代政策&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/DARKAGE_CARD.webp">
+                        </span>
+                        <p>黑暗时代政策</p>
+                      </a>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -285,1016 +285,461 @@
             <main class="main users chart-page">
               <div class="container">
                 <h1 class="civ-name">Civ VI BBG 6.2 政策</h1><br>
-                <div class="col-lg-12" id="通配符政策">
-                  <div class="chart">
-                    <!--WILDCARD-->
-                    <h2 class="civ-name">通配符政策</h2>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-lg-6 col-md-12">
-                    <div class="chart">
-                      <!--POLICY_GOV_AUTOCRACY-->
-                      <h2 class="civ-name">专制传承
-                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
-                      </h2>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">宫殿、市政广场及其中建筑、外交区及其中建筑的所有产出+1。拥有 <img src="/images/ICON_DISTRICT.webp" style="height:1em"/> 区域的城市中纪念碑+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食物、+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 政治哲学 市政</p>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="chart">
-                      <!--POLICY_GOV_OLIGARCHY-->
-                      <h2 class="civ-name">寡头传承
-                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
-                      </h2>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">所有陆地近战、抗骑兵和海军近战类单位 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 战斗力+4。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 政治哲学 市政</p>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="chart">
-                      <!--POLICY_GOV_CLASSICAL_REPUBLIC-->
-                      <h2 class="civ-name">共和传承
-                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
-                      </h2>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">拥有 <img src="/images/ICON_DISTRICT.webp" style="height:1em"/> 区域的所有城市+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住房、+1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> 宜居度。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 政治哲学 市政</p>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="chart">
-                      <!--POLICY_GOV_MONARCHY-->
-                      <h2 class="civ-name">君主传承
-                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
-                      </h2>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">每级城墙提供+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住房。文艺复兴城墙提供+2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化值。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 政治哲学 市政</p>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="chart">
-                      <!--POLICY_GOV_THEOCRACY-->
-                      <h2 class="civ-name">神权传承
-                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
-                      </h2>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">神学战争中+5 <img src="/images/ICON_RELIGION.webp" style="height:1em"/> 宗教战斗力。<br><img src="/images/ICON_GOVERNOR.webp" style="height:1em"/> 总督就职的城市中每位 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 公民将+0.5点 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰值。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 政治哲学 市政</p>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="chart">
-                      <!--POLICY_GOV_MERCHANT_REPUBLIC-->
-                      <h2 class="civ-name">重商传承
-                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
-                      </h2>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">所有 <img src="/images/ICON_GOVERNOR.webp" style="height:1em"/> 总督就职城市产出的 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币+10%。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 政治哲学 市政</p>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="chart">
-                      <!--POLICY_GOV_FASCISM-->
-                      <h2 class="civ-name">法西斯传承
-                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
-                      </h2>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">所有单位+5 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 战斗力。厌战情绪降低15%。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 政治哲学 市政</p>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="chart">
-                      <!--POLICY_GOV_COMMUNISM-->
-                      <h2 class="civ-name">共产传承
-                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
-                      </h2>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">拥有 <img src="/images/ICON_GOVERNOR.webp" style="height:1em"/> 总督的城市中每位 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 公民+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 政治哲学 市政</p>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="chart">
-                      <!--POLICY_GOV_DEMOCRACY-->
-                      <h2 class="civ-name">民主传承
-                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
-                      </h2>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">您通往盟友或宗主国城市的 <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> 贸易路线为双边城市+4 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食物、+4 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。所有盟友的同盟点数每回合额外增加0.25点。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 政治哲学 市政</p>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="chart">
-                      <!--POLICY_STRATEGOS-->
-                      <h2 class="civ-name">将军
-                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
-                      </h2>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">每回合+2 <img src="/images/ICON_GREATGENERAL.webp" style="height:1em"/> 大将军点数。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 军事传统 市政</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">随着焦土策略 市政的出现，代替了之前的政策。</p>
-                      <details>
-                        <summary class="civ-ability-desc" style="text-align:left">随着发展会被以下替代</summary>
-                        <p class="civ-ability-desc" style="display:inline-block;text-align:left">将军➜军事组织</p><br>
-                      </details>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="chart">
-                      <!--POLICY_INSPIRATION-->
-                      <h2 class="civ-name">鼓舞
-                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
-                      </h2>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">每回合+2 <img src="/images/ICON_GREATSCIENTIST.webp" style="height:1em"/> 大科学家点数。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 神秘主义 市政</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">随着核计划 市政的出现，代替了之前的政策。</p>
-                      <details>
-                        <summary class="civ-ability-desc" style="text-align:left">随着发展会被以下替代</summary>
-                        <p class="civ-ability-desc" style="display:inline-block;text-align:left">鼓舞➜科学基金会</p><br>
-                      </details>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="chart">
-                      <!--POLICY_REVELATION-->
-                      <h2 class="civ-name">启示
-                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
-                      </h2>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">每回合+2 <img src="/images/ICON_GREATPROPHET.webp" style="height:1em"/> 大预言家点数。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 神秘主义 市政</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">随着人文主义 市政的出现，代替了之前的政策。</p>
-                      <details>
-                        <summary class="civ-ability-desc" style="text-align:left">随着发展会被以下替代</summary>
-                        <p class="civ-ability-desc" style="display:inline-block;text-align:left">启示➜发明</p><br>
-                      </details>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="chart">
-                      <!--POLICY_LITERARY_TRADITION-->
-                      <h2 class="civ-name">文学传统
-                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
-                      </h2>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">每回合+2 <img src="/images/ICON_GREATWRITER.webp" style="height:1em"/> 大作家点数。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 戏剧和诗歌 市政</p>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="chart">
-                      <!--POLICY_NAVIGATION-->
-                      <h2 class="civ-name">航海
-                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
-                      </h2>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">每回合+2 <img src="/images/ICON_GREATADMIRAL.webp" style="height:1em"/> 海军统帅点数。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 海军传统 市政</p>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="chart">
-                      <!--POLICY_TRAVELING_MERCHANTS-->
-                      <h2 class="civ-name">旅行商人
-                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
-                      </h2>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">每回合+2 <img src="/images/ICON_GREATMERCHANT.webp" style="height:1em"/> 大商人点数。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 公会 市政</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">随着资本主义 市政的出现，代替了之前的政策。</p>
-                      <details>
-                        <summary class="civ-ability-desc" style="text-align:left">随着发展会被以下替代</summary>
-                        <p class="civ-ability-desc" style="display:inline-block;text-align:left">旅行商人➜不干涉主义</p><br>
-                      </details>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="chart">
-                      <!--POLICY_INVENTION-->
-                      <h2 class="civ-name">发明
-                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
-                      </h2>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">每回合的 <img src="/images/ICON_GREATENGINEER.webp" style="height:1em"/> 大工程师点数+4。每有一座工作坊，每回合的 <img src="/images/ICON_GREATENGINEER.webp" style="height:1em"/> 大工程师点数便+2。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 人文主义 市政</p>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="chart">
-                      <!--POLICY_FRESCOES-->
-                      <h2 class="civ-name">壁画
-                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
-                      </h2>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">每回合的 <img src="/images/ICON_GREATARTIST.webp" style="height:1em"/> 大艺术家点数+2。每有一座艺术博物馆，每回合的 <img src="/images/ICON_GREATARTIST.webp" style="height:1em"/> 大艺术家点数便+2。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 人文主义 市政</p>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="chart">
-                      <!--POLICY_SYMPHONIES-->
-                      <h2 class="civ-name">交响曲
-                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
-                      </h2>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">每回合的 <img src="/images/ICON_GREATMUSICIAN.webp" style="height:1em"/> 大音乐家点数+4。每有一座广播中心，每回合的 <img src="/images/ICON_GREATMUSICIAN.webp" style="height:1em"/> 大音乐家点数便+4。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 歌剧和芭蕾 市政</p>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="chart">
-                      <!--POLICY_MILITARY_ORGANIZATION-->
-                      <h2 class="civ-name">军事组织
-                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
-                      </h2>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">每有一座兵工厂，每回合的 <img src="/images/ICON_GREATGENERAL.webp" style="height:1em"/> 大将军点数便+2；每有一所军事学院，每回合的 <img src="/images/ICON_GREATGENERAL.webp" style="height:1em"/> 大将军点数便+4。大将军的移动力+2。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 焦土策略 市政</p>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="chart">
-                      <!--POLICY_LAISSEZ_FAIRE-->
-                      <h2 class="civ-name">不干涉主义
-                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
-                      </h2>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">每有一座银行，每回合的 <img src="/images/ICON_GREATMERCHANT.webp" style="height:1em"/> 大商人点数便+2；每有一座证券交易所，每回合的 <img src="/images/ICON_GREATMERCHANT.webp" style="height:1em"/> 大商人点数便+4。每有一座造船厂，每回合的 <img src="/images/ICON_GREATADMIRAL.webp" style="height:1em"/> 海军统帅点数便+2；每有一座码头，每回合的 <img src="/images/ICON_GREATADMIRAL.webp" style="height:1em"/> 海军统帅点数便+4。 </p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 资本主义 市政</p>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="chart">
-                      <!--POLICY_FINEST_HOUR-->
-                      <h2 class="civ-name">光荣时刻
-                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
-                      </h2>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">所有单位在本国领土中作战时+5 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 战斗力。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 选举权 市政</p>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="chart">
-                      <!--POLICY_MARTIAL_LAW-->
-                      <h2 class="civ-name">军事管制
-                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
-                      </h2>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">累积的厌战情绪在常规基础上降低25%。拥有驻军的城市每回合忠诚度+4。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 极权主义 市政</p>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="chart">
-                      <!--POLICY_DEFENSE_OF_MOTHERLAND-->
-                      <h2 class="civ-name">保卫祖国
-                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
-                      </h2>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">在您领土中发生的战斗不会产生厌战情绪。生产现代、原子时代和信息时代支援单位时+100% <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 阶级斗争 市政</p>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="chart">
-                      <!--POLICY_NOBEL_PRIZE-->
-                      <h2 class="civ-name">科学基金会
-                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
-                      </h2>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">每有一所大学，每回合的 <img src="/images/ICON_GREATSCIENTIST.webp" style="height:1em"/> 大科学家点数便+2；每有一所研究实验室，每回合的 <img src="/images/ICON_GREATSCIENTIST.webp" style="height:1em"/> 大科学家点数便+4。每有一座工厂，每回合的 <img src="/images/ICON_GREATENGINEER.webp" style="height:1em"/> 大工程师点数便+2；每有一座发电厂，每回合的 <img src="/images/ICON_GREATENGINEER.webp" style="height:1em"/> 大工程师点数便+4。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 核计划 市政</p>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="chart">
-                      <!--POLICY_FUTURE_VICTORY_SCIENCE-->
-                      <h2 class="civ-name">航天承包商
-                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
-                      </h2>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">拥有宇航中心的城市每回合+3点 <img src="/images/ICON_RESOURCE_ALUMINUM.webp" style="height:1em"/> 铝；同时+3点 <img src="/images/ICON_POWER.webp" style="height:1em"/> 电力。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 必要性远征 市政</p>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="chart">
-                      <!--POLICY_FUTURE_COUNTER_CULTURE-->
-                      <h2 class="civ-name">太空旅游
-                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
-                      </h2>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">其他文明对您的 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 旅游业绩减少20%。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 必要性远征 市政</p>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="chart">
-                      <!--POLICY_FUTURE_VICTORY_CULTURE-->
-                      <h2 class="civ-name">韩流
-                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
-                      </h2>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">您的摇滚乐队可以选择任何可用 <img src="/images/ICON_PROMOTION.webp" style="height:1em"/> 升级。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 文化霸权 市政</p>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="chart">
-                      <!--POLICY_FUTURE_COUNTER_SCIENCE-->
-                      <h2 class="civ-name">非国家行为者
-                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
-                      </h2>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">您的间谍可以选择任何可用 <img src="/images/ICON_PROMOTION.webp" style="height:1em"/> 升级。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 文化霸权 市政</p>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="chart">
-                      <!--POLICY_FUTURE_VICTORY_DOMINATION-->
-                      <h2 class="civ-name">综合攻击后勤保障
-                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
-                      </h2>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">在敌方领土开启回合+1 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移动力。生产末日机甲时 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力+50%。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 信息战 市政</p>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="chart">
-                      <!--POLICY_FUTURE_COUNTER_DIPLOMATIC-->
-                      <h2 class="civ-name">煽动人心
-                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
-                      </h2>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">在世界议会中降低另一文明的外交胜利点数后，可取回所花费 <img src="/images/ICON_FAVOR.webp" style="height:1em"/> 外交支持的50%。每回合+1 <img src="/images/ICON_FAVOR.webp" style="height:1em"/> 外交支持。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 信息战 市政</p>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="chart">
-                      <!--POLICY_FUTURE_VICTORY_DIPLOMATIC-->
-                      <h2 class="civ-name">外交资本
-                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
-                      </h2>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">每回合+4点 <img src="/images/ICON_FAVOR.webp" style="height:1em"/> 外交支持。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 巧实力主义 市政</p>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="chart">
-                      <!--POLICY_FUTURE_COUNTER_DOMINATION-->
-                      <h2 class="civ-name">全球联合
-                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
-                      </h2>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">位于友方领土中的单位+7 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 战斗力。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 巧实力主义 市政</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-12" id="黑暗时代政策">
-                  <div class="chart">
-                    <!--DARKAGE-->
-                    <h2 class="civ-name">黑暗时代政策</h2>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-lg-6 col-md-12">
-                    <div class="chart">
-                      <!--POLICY_MONASTICISM-->
-                      <h2 class="civ-name">修行制度
-                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/DARKAGE_CARD.webp" style="vertical-align: middle; width:2em">
-                      </h2>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">拥有圣地的城市 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科技值+75%。<br>但所有城市的 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化值-25%。</p><br>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="chart">
-                      <!--POLICY_TWILIGHT_VALOR-->
-                      <h2 class="civ-name">迟暮勇武
-                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/DARKAGE_CARD.webp" style="vertical-align: middle; width:2em">
-                      </h2>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">所有近战攻击单位+5 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 战斗力。<br>但无法在本国领土外进行治疗。</p><br>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="chart">
-                      <!--POLICY_INQUISITION-->
-                      <h2 class="civ-name">宗教审讯
-                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/DARKAGE_CARD.webp" style="vertical-align: middle; width:2em">
-                      </h2>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">消耗1次使徒使用次数开始宗教审讯。友方领土中的所有宗教单位+15 <img src="/images/ICON_RELIGION.webp" style="height:1em"/> 宗教战斗力。<br>但所有城市的 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科技值-25%。</p><br>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="chart">
-                      <!--POLICY_ISOLATIONISM-->
-                      <h2 class="civ-name">孤立主义
-                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/DARKAGE_CARD.webp" style="vertical-align: middle; width:2em">
-                      </h2>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">国内贸易路线提供+2 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食物、+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。<br>但无法生产或购买开拓者，也无法建立新城市。</p><br>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="chart">
-                      <!--POLICY_LETTERS_OF_MARQUE-->
-                      <h2 class="civ-name">私掠许可证
-                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/DARKAGE_CARD.webp" style="vertical-align: middle; width:2em">
-                      </h2>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">生产海军袭击者：+100% <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力、+2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移动力。掠夺贸易路线的收益加倍。<br>但 <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> 贸易路线产量-50%。</p><br>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="chart">
-                      <!--POLICY_ROBBER_BARONS-->
-                      <h2 class="civ-name">敛财大亨
-                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/DARKAGE_CARD.webp" style="vertical-align: middle; width:2em">
-                      </h2>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">拥有证券交易所的城市+50% <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币。拥有工厂的城市+25% <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。<br>但所有城市-2 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> 宜居度。</p><br>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="chart">
-                      <!--POLICY_ELITE_FORCES-->
-                      <h2 class="civ-name">精兵政策
-                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/DARKAGE_CARD.webp" style="vertical-align: middle; width:2em">
-                      </h2>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">所有单位的战斗经验值+100%。<br>但每个战斗和间谍单位的维护费用+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币。</p><br>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="chart">
-                      <!--POLICY_COLLECTIVISM-->
-                      <h2 class="civ-name">集体主义
-                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/DARKAGE_CARD.webp" style="vertical-align: middle; width:2em">
-                      </h2>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">农场+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食物。所有城市+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住房。工业区相邻加成+100%。<br>但 <img src="/images/ICON_GREATPERSON.webp" style="height:1em"/> 伟人点数的获取速度减缓50%。</p><br>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="chart">
-                      <!--POLICY_ROGUE_STATE-->
-                      <h2 class="civ-name">无赖国家
-                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/DARKAGE_CARD.webp" style="vertical-align: middle; width:2em">
-                      </h2>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">核计划项目和核装置的 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力+50%。<br>但每回合无法获得 <img src="/images/ICON_INFLUENCEPERTURN.webp" style="height:1em"/> 影响力。</p><br>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="chart">
-                      <!--POLICY_FLOWER_POWER-->
-                      <h2 class="civ-name">权力归花儿
-                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/DARKAGE_CARD.webp" style="vertical-align: middle; width:2em">
-                      </h2>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">在当前未交战的文明中举办音乐会获得的 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 旅游业绩+100%。<br>减益：生产摇滚乐队之外的所有单位时生产力-100%、购买时则费用+100%。</p><br>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="chart">
-                      <!--POLICY_CYBER_WARFARE-->
-                      <h2 class="civ-name">网络战
-                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/DARKAGE_CARD.webp" style="vertical-align: middle; width:2em">
-                      </h2>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">信息和未来时代的单位+10 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 战斗力。<br>减益：对您的 <img src="/images/ICON_STAT_GRIEVANCE.webp" style="height:1em"/> 不满不会下降。</p><br>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="chart">
-                      <!--POLICY_AUTOMATED_WORKFORCE-->
-                      <h2 class="civ-name">自动化劳动力
-                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/DARKAGE_CARD.webp" style="vertical-align: middle; width:2em">
-                      </h2>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">进行城市项目时，您城市的 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力+20%。<br>减益：城市每回合-1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> 宜居度、-5忠诚度。</p><br>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="chart">
-                      <!--POLICY_DISINFORMATION_CAMPAIGN-->
-                      <h2 class="civ-name">抹黑行动
-                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/DARKAGE_CARD.webp" style="vertical-align: middle; width:2em">
-                      </h2>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">每拥有1个广播中心，每回合获得的 <img src="/images/ICON_FAVOR.webp" style="height:1em"/> 外交支持便+3。<br>减益：所有城市中的 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科技值和 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化值-10%。</p><br>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-12" id="宗教政策">
+                <div class="col-lg-12" id="军事政策">
                   <div class="chart">
                     <!--MILITARY-->
-                    <h2 class="civ-name">宗教政策</h2>
+                    <h2 class="civ-name">军事政策</h2>
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_DISCIPLINE-->
                       <h2 class="civ-name">纪律
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/MILITARY_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">同 <img src="/images/ICON_BARBARIAN.webp" style="height:1em"/> 蛮族战斗时，+10 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 单位战斗力。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 法典 市政</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">随着殖民主义 市政的出现，代替了之前的政策。</p>
-                      <details>
-                        <summary class="civ-ability-desc" style="text-align:left">随着发展会被以下替代</summary>
-                        <p class="civ-ability-desc" style="display:inline-block;text-align:left">纪律➜本土征服</p><br>
-                      </details>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 法典 市政</small><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">随着发展会被以下替代 殖民主义 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_SURVEY-->
                       <h2 class="civ-name">调查
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/MILITARY_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">侦察单位获得的经验值翻倍。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 法典 市政</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">随着殖民主义 市政的出现，代替了之前的政策。</p>
-                      <details>
-                        <summary class="civ-ability-desc" style="text-align:left">随着发展会被以下替代</summary>
-                        <p class="civ-ability-desc" style="display:inline-block;text-align:left">调查➜本土征服</p><br>
-                      </details>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 法典 市政</small><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">随着发展会被以下替代 殖民主义 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_AGOGE-->
                       <h2 class="civ-name">斯巴达教育
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/MILITARY_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">生产远古和古典时代的近战、侦察、抗骑兵和远程单位时+50% <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 技艺 市政</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">随着封建主义 市政的出现，代替了之前的政策。</p>
-                      <details>
-                        <summary class="civ-ability-desc" style="text-align:left">随着发展会被以下替代</summary>
-                        <p class="civ-ability-desc" style="display:inline-block;text-align:left">斯巴达教育➜封建契约➜大军团➜先军政策</p><br>
-                      </details>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 技艺 市政</small><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">随着发展会被以下替代 封建主义 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_MARITIME_INDUSTRIES-->
                       <h2 class="civ-name">海运业
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/MILITARY_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">为远古和古典时代的海军单位+100% <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 对外贸易 市政</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">随着冷战 市政, 探索 市政的出现，代替了之前的政策。</p>
-                      <details>
-                        <summary class="civ-ability-desc" style="text-align:left">随着发展会被以下替代</summary>
-                        <p class="civ-ability-desc" style="display:inline-block;text-align:left">海运业➜公海</p><br>
-                        <p class="civ-ability-desc" style="display:inline-block;text-align:left">海运业➜强征入伍➜公海</p><br>
-                      </details>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 对外贸易 市政</small><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">随着发展会被以下替代 冷战 市政, 探索 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_MANEUVER-->
                       <h2 class="civ-name">演习
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/MILITARY_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">为远古和古典时代的重型和轻型骑兵单位+50% <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 军事传统 市政</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">随着王权神授 市政, 意识形态 市政的出现，代替了之前的政策。</p>
-                      <details>
-                        <summary class="civ-ability-desc" style="text-align:left">随着发展会被以下替代</summary>
-                        <p class="civ-ability-desc" style="display:inline-block;text-align:left">演习➜骑士精神➜闪电战</p><br>
-                        <p class="civ-ability-desc" style="display:inline-block;text-align:left">演习➜闪电战</p><br>
-                      </details>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 军事传统 市政</small><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">随着发展会被以下替代 王权神授 市政, 意识形态 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_CONSCRIPTION-->
                       <h2 class="civ-name">征兵
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/MILITARY_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">每回合、每单位的单位维护费用减少1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 国家劳动力 市政</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">随着动员 市政的出现，代替了之前的政策。</p>
-                      <details>
-                        <summary class="civ-ability-desc" style="text-align:left">随着发展会被以下替代</summary>
-                        <p class="civ-ability-desc" style="display:inline-block;text-align:left">征兵➜全民动员</p><br>
-                      </details>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 国家劳动力 市政</small><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">随着发展会被以下替代 动员 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_LIMITANEI-->
                       <h2 class="civ-name">边防军
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/MILITARY_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">拥有驻军单位的城市每回合的忠诚度+2。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 帝国初期 市政</p>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 帝国初期 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_RAID-->
                       <h2 class="civ-name">扫荡
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/MILITARY_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">掠夺和海岸扫荡的收益+50%。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 军事训练 市政</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">随着焦土策略 市政的出现，代替了之前的政策。</p>
-                      <details>
-                        <summary class="civ-ability-desc" style="text-align:left">随着发展会被以下替代</summary>
-                        <p class="civ-ability-desc" style="display:inline-block;text-align:left">扫荡➜全面战争</p><br>
-                      </details>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 军事训练 市政</small><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">随着发展会被以下替代 焦土策略 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_VETERANCY-->
                       <h2 class="civ-name">经验
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/MILITARY_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">建造军营、港口和这些区域中的建筑时+30% <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 军事训练 市政</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">随着动员 市政的出现，代替了之前的政策。</p>
-                      <details>
-                        <summary class="civ-ability-desc" style="text-align:left">随着发展会被以下替代</summary>
-                        <p class="civ-ability-desc" style="display:inline-block;text-align:left">经验➜军备竞赛</p><br>
-                      </details>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 军事训练 市政</small><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">随着发展会被以下替代 动员 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_EQUESTRIAN_ORDERS-->
                       <h2 class="civ-name">骑士阶级
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/MILITARY_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">每回合额外获得2点 <img src="/images/ICON_RESOURCE_HORSES.webp" style="height:1em"/> 马与 <img src="/images/ICON_RESOURCE_IRON.webp" style="height:1em"/> 铁资源。所有对应改良设施每回合额外产出1点。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 军事训练 市政</p>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 军事训练 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_SIEGE-->
                       <h2 class="civ-name">攻城器械
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/MILITARY_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">生产远古、古典和中世纪时代的攻城单位时+50% <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 军事训练 市政</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">随着中世纪集市 市政的出现，代替了之前的政策。</p>
-                      <details>
-                        <summary class="civ-ability-desc" style="text-align:left">随着发展会被以下替代</summary>
-                        <p class="civ-ability-desc" style="display:inline-block;text-align:left">攻城器械➜高爆炸药➜堑壕战</p><br>
-                      </details>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 军事训练 市政</small><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">随着发展会被以下替代 中世纪集市 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_BASTIONS-->
                       <h2 class="civ-name">棱堡
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/MILITARY_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">城市 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 防御力+6。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 防御战术 市政</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">随着土木工程 市政的出现，代替了之前的政策。</p>
-                      <details>
-                        <summary class="civ-ability-desc" style="text-align:left">随着发展会被以下替代</summary>
-                        <p class="civ-ability-desc" style="display:inline-block;text-align:left">棱堡➜公共工程</p><br>
-                      </details>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 防御战术 市政</small><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">随着发展会被以下替代 土木工程 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_LIMES-->
                       <h2 class="civ-name">边界
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/MILITARY_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">为防御建筑+50% <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 防御战术 市政</p>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 防御战术 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_FEUDAL_CONTRACT-->
                       <h2 class="civ-name">封建契约
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/MILITARY_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">生产远古、古典、中世纪和文艺复兴时代的近战、侦察、抗骑兵和远程单位时+50% <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 封建主义 市政</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">随着民族主义 市政的出现，代替了之前的政策。</p>
-                      <details>
-                        <summary class="civ-ability-desc" style="text-align:left">随着发展会被以下替代</summary>
-                        <p class="civ-ability-desc" style="display:inline-block;text-align:left">封建契约➜大军团➜先军政策</p><br>
-                      </details>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 封建主义 市政</small><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">随着发展会被以下替代 民族主义 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_RETAINERS-->
                       <h2 class="civ-name">侍从
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/MILITARY_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">拥有驻军单位的城市+1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> 宜居度。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 行政部门 市政</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">随着大众媒体 市政的出现，代替了之前的政策。</p>
-                      <details>
-                        <summary class="civ-ability-desc" style="text-align:left">随着发展会被以下替代</summary>
-                        <p class="civ-ability-desc" style="display:inline-block;text-align:left">侍从➜宣传机构</p><br>
-                      </details>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 行政部门 市政</small><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">随着发展会被以下替代 大众媒体 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_PROFESSIONAL_ARMY-->
                       <h2 class="civ-name">职业军队
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/MILITARY_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">所有单位升级所需的 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币减少50%。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 雇佣兵 市政</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">随着城市化 市政的出现，代替了之前的政策。</p>
-                      <details>
-                        <summary class="civ-ability-desc" style="text-align:left">随着发展会被以下替代</summary>
-                        <p class="civ-ability-desc" style="display:inline-block;text-align:left">职业军队➜军队现代化</p><br>
-                      </details>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 雇佣兵 市政</small><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">随着发展会被以下替代 城市化 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_CHIVALRY-->
                       <h2 class="civ-name">骑士精神
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/MILITARY_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">生产工业及更早时代的重型和轻型骑兵单位时+50% <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 王权神授 市政</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">随着意识形态 市政的出现，代替了之前的政策。</p>
-                      <details>
-                        <summary class="civ-ability-desc" style="text-align:left">随着发展会被以下替代</summary>
-                        <p class="civ-ability-desc" style="display:inline-block;text-align:left">骑士精神➜闪电战</p><br>
-                      </details>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 王权神授 市政</small><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">随着发展会被以下替代 意识形态 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_RETINUES-->
                       <h2 class="civ-name">贴身随从
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/MILITARY_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">所有单位生产和升级所需的战略资源减少50%。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 雇佣兵 市政</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">随着城市化 市政的出现，代替了之前的政策。</p>
-                      <details>
-                        <summary class="civ-ability-desc" style="text-align:left">随着发展会被以下替代</summary>
-                        <p class="civ-ability-desc" style="display:inline-block;text-align:left">贴身随从➜军队现代化</p><br>
-                      </details>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 雇佣兵 市政</small><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">随着发展会被以下替代 城市化 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_CRAFTSMEN-->
                       <h2 class="civ-name">工匠
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/MILITARY_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">100%工业区相邻加成。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 公会 市政</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">随着意识形态 市政的出现，代替了之前的政策。</p>
-                      <details>
-                        <summary class="civ-ability-desc" style="text-align:left">随着发展会被以下替代</summary>
-                        <p class="civ-ability-desc" style="display:inline-block;text-align:left">工匠➜五年计划</p><br>
-                      </details>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 公会 市政</small><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">随着发展会被以下替代 意识形态 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_HARD_SHELL_EXPLOSIVES-->
                       <h2 class="civ-name">高爆炸药
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/MILITARY_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">生产文艺复兴及更早时代的攻城单位时+50% <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 中世纪集市 市政</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">随着焦土策略 市政的出现，代替了之前的政策。</p>
-                      <details>
-                        <summary class="civ-ability-desc" style="text-align:left">随着发展会被以下替代</summary>
-                        <p class="civ-ability-desc" style="display:inline-block;text-align:left">高爆炸药➜堑壕战</p><br>
-                      </details>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 中世纪集市 市政</small><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">随着发展会被以下替代 焦土策略 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_PRESS_GANGS-->
                       <h2 class="civ-name">强征入伍
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/MILITARY_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">生产工业及更早时代的海军单位时+100% <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 探索 市政</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">随着冷战 市政的出现，代替了之前的政策。</p>
-                      <details>
-                        <summary class="civ-ability-desc" style="text-align:left">随着发展会被以下替代</summary>
-                        <p class="civ-ability-desc" style="display:inline-block;text-align:left">强征入伍➜公海</p><br>
-                      </details>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 探索 市政</small><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">随着发展会被以下替代 冷战 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_WARS_OF_RELIGION-->
                       <h2 class="civ-name">宗教战争
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/MILITARY_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">非宗教单位与信奉其他宗教的文明进行战争时，+4 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 战斗力。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 归正会 市政</p>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 归正会 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_LOGISTICS-->
                       <h2 class="civ-name">后勤
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/MILITARY_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">在友好领土开启回合+1 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移动力。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 重商主义 市政</p>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 重商主义 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_DRILL_MANUALS-->
                       <h2 class="civ-name">训练手册
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/MILITARY_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">每回合额外获得2点 <img src="/images/ICON_RESOURCE_NITER.webp" style="height:1em"/> 硝石与 <img src="/images/ICON_RESOURCE_COAL.webp" style="height:1em"/> 煤资源。所有对应改良设施每回合额外产出1点。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 重商主义 市政</p>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 重商主义 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_NATIVE_CONQUEST-->
                       <h2 class="civ-name">本土征服
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/MILITARY_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">击杀先前时代的单位可获得等同于被击杀单位 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 战斗力50%的 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币（标准速度下）。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 殖民主义 市政</p>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 殖民主义 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_GRANDE_ARMEE-->
                       <h2 class="civ-name">大军团
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/MILITARY_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">生产现代及更早时代的近战、侦察、抗骑兵和远程单位时+50% <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 民族主义 市政</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">随着动员 市政的出现，代替了之前的政策。</p>
-                      <details>
-                        <summary class="civ-ability-desc" style="text-align:left">随着发展会被以下替代</summary>
-                        <p class="civ-ability-desc" style="display:inline-block;text-align:left">大军团➜先军政策</p><br>
-                      </details>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 民族主义 市政</small><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">随着发展会被以下替代 动员 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_NATIONAL_IDENTITY-->
                       <h2 class="civ-name">国家认同
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/MILITARY_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">受到伤害后，单位的 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 战斗力减益降低50%。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 民族主义 市政</p>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 民族主义 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_TOTAL_WAR-->
                       <h2 class="civ-name">全面战争
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/MILITARY_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">掠夺、海岸扫荡和掠夺 <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> 贸易路线的收益+50%。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 焦土策略 市政</p>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 焦土策略 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_MILITARY_RESEARCH-->
                       <h2 class="civ-name">军事研究
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/MILITARY_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">军事学院、码头和文艺复兴城墙提供的 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科技值+2。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 城市化 市政</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">随着太空竞赛 市政的出现，代替了之前的政策。</p>
-                      <details>
-                        <summary class="civ-ability-desc" style="text-align:left">随着发展会被以下替代</summary>
-                        <p class="civ-ability-desc" style="display:inline-block;text-align:left">军事研究➜一体化空间机构</p><br>
-                      </details>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 城市化 市政</small><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">随着发展会被以下替代 太空竞赛 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_FORCE_MODERNIZATION-->
                       <h2 class="civ-name">军队现代化
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/MILITARY_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">所有单位升级所需的 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币减少50%。所有单位生产和升级所需的战略资源减少50%。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 城市化 市政</p>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 城市化 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_TRENCH_WARFARE-->
                       <h2 class="civ-name">堑壕战
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/MILITARY_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">生产所有攻城单位时+50% <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 焦土策略 市政</p>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 焦土策略 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_RESOURCE_MANAGEMENT-->
                       <h2 class="civ-name">资源管理
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/MILITARY_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">每回合额外获得2点 <img src="/images/ICON_RESOURCE_ALUMINUM.webp" style="height:1em"/> 铝与 <img src="/images/ICON_RESOURCE_OIL.webp" style="height:1em"/> 石油资源。所有对应改良设施每回合额外产出1点。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 保护地球 市政</p>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 保护地球 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_PROPAGANDA-->
                       <h2 class="civ-name">宣传机构
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/MILITARY_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">累积厌战情绪比平时减少25%。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 大众媒体 市政</p>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 大众媒体 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_LEVEE_EN_MASSE-->
                       <h2 class="civ-name">全民动员
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/MILITARY_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">每回合、每单位的单位维护减少2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 动员 市政</p>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 动员 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_MILITARY_FIRST-->
                       <h2 class="civ-name">先军政策
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/MILITARY_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">生产所有近战、侦察、抗骑兵和远程单位时+50% <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 动员 市政</p>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 动员 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_ARMS_RACE-->
                       <h2 class="civ-name">军备竞赛
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/MILITARY_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">建造军营、港口、航空港和这些区域中的建筑时+30% <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 动员 市政</p>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 动员 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_LIGHTNING_WARFARE-->
                       <h2 class="civ-name">闪电战
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/MILITARY_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">生产所有重型和轻型骑兵单位时+50% <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 意识形态 市政</p>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 意识形态 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_THIRD_ALTERNATIVE-->
                       <h2 class="civ-name">第三选择
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/MILITARY_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">每座研究实验室、军事学院、燃煤发电厂、燃油发电厂和核电站产出的 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化值+2、<img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币+4。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 极权主义 市政</p>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 极权主义 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_INTERNATIONAL_WATERS-->
                       <h2 class="civ-name">公海
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/MILITARY_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">生产所有海军单位时+100% <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力，航空母舰除外。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 冷战 市政</p>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 冷战 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_SECOND_STRIKE_CAPABILITY-->
                       <h2 class="civ-name">二次攻击能力
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/MILITARY_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">核装置每回合的 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 维护费降低50%。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 冷战 市政</p>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 冷战 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_INTEGRATED_SPACE_CELL-->
                       <h2 class="civ-name">一体化空间机构
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/MILITARY_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">如果一座城市有一所军事学院或一座码头，则为太空竞赛项目+15% <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 太空竞赛 市政</p>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 太空竞赛 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_AFTER_ACTION_REPORTS-->
                       <h2 class="civ-name">行动总结报告
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/MILITARY_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">所有单位的战斗经验值+25%。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 紧急部署 市政</p>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 紧急部署 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_STRATEGIC_AIR_FORCE-->
                       <h2 class="civ-name">战略空军
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/MILITARY_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">生产所有空中单位与航空母舰时+50% <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 全球化 市政</p>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 全球化 市政</small>
                     </div>
                   </div>
                 </div>
@@ -1305,480 +750,411 @@
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_GOD_KING-->
                       <h2 class="civ-name">君主崇拜
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/ECONOMIC_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left"><img src="/images/ICON_CAPITAL.webp" style="height:1em"/> 首都+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰值和+1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 法典 市政</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">随着神学 市政的出现，代替了之前的政策。</p>
-                      <details>
-                        <summary class="civ-ability-desc" style="text-align:left">随着发展会被以下替代</summary>
-                        <p class="civ-ability-desc" style="display:inline-block;text-align:left">君主崇拜➜经文</p><br>
-                      </details>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 法典 市政</small><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">随着发展会被以下替代 神学 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_URBAN_PLANNING-->
                       <h2 class="civ-name">城市规划
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/ECONOMIC_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">所有城市+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 法典 市政</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">随着启蒙运动 市政的出现，代替了之前的政策。</p>
-                      <details>
-                        <summary class="civ-ability-desc" style="text-align:left">随着发展会被以下替代</summary>
-                        <p class="civ-ability-desc" style="display:inline-block;text-align:left">城市规划➜理性主义</p><br>
-                      </details>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 法典 市政</small><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">随着发展会被以下替代 启蒙运动 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_ILKUM-->
                       <h2 class="civ-name">服役
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/ECONOMIC_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">为生产建造者+30% <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 技艺 市政</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">随着封建主义 市政的出现，代替了之前的政策。</p>
-                      <details>
-                        <summary class="civ-ability-desc" style="text-align:left">随着发展会被以下替代</summary>
-                        <p class="civ-ability-desc" style="display:inline-block;text-align:left">服役➜农奴制➜公共工程</p><br>
-                      </details>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 技艺 市政</small><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">随着发展会被以下替代 封建主义 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_CARAVANSARIES-->
                       <h2 class="civ-name">商队旅馆
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/ECONOMIC_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">所有 <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> 贸易路线+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 对外贸易 市政</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">随着重商主义 市政的出现，代替了之前的政策。</p>
-                      <details>
-                        <summary class="civ-ability-desc" style="text-align:left">随着发展会被以下替代</summary>
-                        <p class="civ-ability-desc" style="display:inline-block;text-align:left">商队旅馆➜三角贸易➜电子商务</p><br>
-                      </details>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 对外贸易 市政</small><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">随着发展会被以下替代 重商主义 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_CORVEE-->
                       <h2 class="civ-name">强迫劳役
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/ECONOMIC_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">为远古和古典奇观+15% <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 国家劳动力 市政</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">随着王权神授 市政, 土木工程 市政的出现，代替了之前的政策。</p>
-                      <details>
-                        <summary class="civ-ability-desc" style="text-align:left">随着发展会被以下替代</summary>
-                        <p class="civ-ability-desc" style="display:inline-block;text-align:left">强迫劳役➜哥特式建筑➜摩天大楼</p><br>
-                        <p class="civ-ability-desc" style="display:inline-block;text-align:left">强迫劳役➜摩天大楼</p><br>
-                      </details>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 国家劳动力 市政</small><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">随着发展会被以下替代 王权神授 市政, 土木工程 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_LAND_SURVEYORS-->
                       <h2 class="civ-name">土地测量员
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/ECONOMIC_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">购买一个单元格的费用降低20%。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 帝国初期 市政</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">随着焦土策略 市政的出现，代替了之前的政策。</p>
-                      <details>
-                        <summary class="civ-ability-desc" style="text-align:left">随着发展会被以下替代</summary>
-                        <p class="civ-ability-desc" style="display:inline-block;text-align:left">土地测量员➜征收</p><br>
-                      </details>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 帝国初期 市政</small><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">随着发展会被以下替代 焦土策略 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_COLONIZATION-->
                       <h2 class="civ-name">殖民
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/ECONOMIC_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">为开拓者+50% <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 帝国初期 市政</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">随着焦土策略 市政的出现，代替了之前的政策。</p>
-                      <details>
-                        <summary class="civ-ability-desc" style="text-align:left">随着发展会被以下替代</summary>
-                        <p class="civ-ability-desc" style="display:inline-block;text-align:left">殖民➜征收</p><br>
-                      </details>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 帝国初期 市政</small><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">随着发展会被以下替代 焦土策略 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_INSULAE-->
                       <h2 class="civ-name">楼房
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/ECONOMIC_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">拥有 <img src="/images/ICON_DISTRICT.webp" style="height:1em"/> 特色区域的所有城市+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住房。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 游戏和娱乐 市政</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">随着中世纪集市 市政的出现，代替了之前的政策。</p>
-                      <details>
-                        <summary class="civ-ability-desc" style="text-align:left">随着发展会被以下替代</summary>
-                        <p class="civ-ability-desc" style="display:inline-block;text-align:left">楼房➜古老城区➜新政</p><br>
-                      </details>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 游戏和娱乐 市政</small><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">随着发展会被以下替代 中世纪集市 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_SCRIPTURE-->
                       <h2 class="civ-name">经文
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/ECONOMIC_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">+100%圣地相邻加成。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 神学 市政</p>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 神学 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_NATURAL_PHILOSOPHY-->
                       <h2 class="civ-name">自然哲学
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/ECONOMIC_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">+100% 学院区相邻加成。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 历史记录 市政</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">随着意识形态 市政的出现，代替了之前的政策。</p>
-                      <details>
-                        <summary class="civ-ability-desc" style="text-align:left">随着发展会被以下替代</summary>
-                        <p class="civ-ability-desc" style="display:inline-block;text-align:left">自然哲学➜五年计划</p><br>
-                      </details>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 历史记录 市政</small><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">随着发展会被以下替代 意识形态 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_NAVAL_INFRASTRUCTURE-->
                       <h2 class="civ-name">海军基础设施
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/ECONOMIC_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">+100%港口区域相邻加成。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 海军传统 市政</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">随着意识形态 市政的出现，代替了之前的政策。</p>
-                      <details>
-                        <summary class="civ-ability-desc" style="text-align:left">随着发展会被以下替代</summary>
-                        <p class="civ-ability-desc" style="display:inline-block;text-align:left">海军基础设施➜经济同盟</p><br>
-                      </details>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 海军传统 市政</small><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">随着发展会被以下替代 意识形态 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_SERFDOM-->
                       <h2 class="civ-name">农奴制
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/ECONOMIC_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">新训练的建造者获得两点额外 <img src="/images/ICON_CHARGES.webp" style="height:1em"/> 劳动力。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 封建主义 市政</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">随着土木工程 市政的出现，代替了之前的政策。</p>
-                      <details>
-                        <summary class="civ-ability-desc" style="text-align:left">随着发展会被以下替代</summary>
-                        <p class="civ-ability-desc" style="display:inline-block;text-align:left">农奴制➜公共工程</p><br>
-                      </details>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 封建主义 市政</small><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">随着发展会被以下替代 土木工程 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_CIVIL_PRESTIGE-->
                       <h2 class="civ-name">民间威望
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/ECONOMIC_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">拥有至少2项升级的 <img src="/images/ICON_GOVERNOR.webp" style="height:1em"/> 总督就职后将提供+1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> 宜居度、+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住房。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 行政部门 市政</p>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 行政部门 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_TRADE_CONFEDERATION-->
                       <h2 class="civ-name">贸易联盟
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/ECONOMIC_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">从国际 <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> 贸易路线+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化值和+1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科技值。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 雇佣兵 市政</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">随着资本主义 市政的出现，代替了之前的政策。</p>
-                      <details>
-                        <summary class="civ-ability-desc" style="text-align:left">随着发展会被以下替代</summary>
-                        <p class="civ-ability-desc" style="display:inline-block;text-align:left">贸易联盟➜市场经济</p><br>
-                      </details>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 雇佣兵 市政</small><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">随着发展会被以下替代 资本主义 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_GOTHIC_ARCHITECTURE-->
                       <h2 class="civ-name">哥特式建筑
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/ECONOMIC_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">建造远古、古典、中世纪和文艺复兴时代的奇观时+15% <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 王权神授 市政</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">随着土木工程 市政的出现，代替了之前的政策。</p>
-                      <details>
-                        <summary class="civ-ability-desc" style="text-align:left">随着发展会被以下替代</summary>
-                        <p class="civ-ability-desc" style="display:inline-block;text-align:left">哥特式建筑➜摩天大楼</p><br>
-                      </details>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 王权神授 市政</small><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">随着发展会被以下替代 土木工程 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_AESTHETICS-->
                       <h2 class="civ-name">美学
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/ECONOMIC_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">+100%剧院广场区相邻加成。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 中世纪集市 市政</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">随着职业体育 市政的出现，代替了之前的政策。</p>
-                      <details>
-                        <summary class="civ-ability-desc" style="text-align:left">随着发展会被以下替代</summary>
-                        <p class="civ-ability-desc" style="display:inline-block;text-align:left">美学➜体育传媒</p><br>
-                      </details>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 中世纪集市 市政</small><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">随着发展会被以下替代 职业体育 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_MEDINA_QUARTER-->
                       <h2 class="civ-name">古老城区
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/ECONOMIC_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">每个 <img src="/images/ICON_DISTRICT.webp" style="height:1em"/> 特色区域+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住房。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 中世纪集市 市政</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">随着选举权 市政的出现，代替了之前的政策。</p>
-                      <details>
-                        <summary class="civ-ability-desc" style="text-align:left">随着发展会被以下替代</summary>
-                        <p class="civ-ability-desc" style="display:inline-block;text-align:left">古老城区➜新政</p><br>
-                      </details>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 中世纪集市 市政</small><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">随着发展会被以下替代 选举权 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_TOWN_CHARTERS-->
                       <h2 class="civ-name">城镇特许状
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/ECONOMIC_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">+100%商业中心区域相邻加成。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 公会 市政</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">随着意识形态 市政的出现，代替了之前的政策。</p>
-                      <details>
-                        <summary class="civ-ability-desc" style="text-align:left">随着发展会被以下替代</summary>
-                        <p class="civ-ability-desc" style="display:inline-block;text-align:left">城镇特许状➜经济同盟</p><br>
-                      </details>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 公会 市政</small><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">随着发展会被以下替代 意识形态 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_RELIGIOUS_ORDERS-->
                       <h2 class="civ-name">宗教教派
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/ECONOMIC_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">所有宗教单位在神学战斗中+5 <img src="/images/ICON_RELIGION.webp" style="height:1em"/> 宗教战斗力。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 归正会 市政</p>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 归正会 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_SIMULTANEUM-->
                       <h2 class="civ-name">共享教堂
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/ECONOMIC_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">圣地中的建筑将产出额外 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰值：如城市 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 人口大于等于13点，+50%信仰值；如区域拥有至少+3相邻加成，+50%信仰值。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 归正会 市政</p>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 归正会 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_TRIANGULAR_TRADE-->
                       <h2 class="civ-name">三角贸易
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/ECONOMIC_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">所有 <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> 贸易路线+4 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币和+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰值。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 重商主义 市政</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">随着全球化 市政的出现，代替了之前的政策。</p>
-                      <details>
-                        <summary class="civ-ability-desc" style="text-align:left">随着发展会被以下替代</summary>
-                        <p class="civ-ability-desc" style="display:inline-block;text-align:left">三角贸易➜电子商务</p><br>
-                      </details>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 重商主义 市政</small><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">随着发展会被以下替代 全球化 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_RATIONALISM-->
                       <h2 class="civ-name">理性主义
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/ECONOMIC_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">学院中的建筑将产出额外的 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科技值：如城市 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 人口大于等于13点，+50%科技值；如区域拥有至少+3相邻加成，+50%科技值。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 启蒙运动 市政</p>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 启蒙运动 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_FREE_MARKET-->
                       <h2 class="civ-name">自由市场
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/ECONOMIC_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">商业中心中的建筑将产出额外的 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币值：如城市 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 人口大于等于13点，+50%金币值；如区域拥有至少+4相邻加成，+50%金币值。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 启蒙运动 市政</p>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 启蒙运动 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_LIBERALISM-->
                       <h2 class="civ-name">自由主义
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/ECONOMIC_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">拥有至少2个 <img src="/images/ICON_DISTRICT.webp" style="height:1em"/> 特色区域的所有城市+1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> 宜居度。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 启蒙运动 市政</p>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 启蒙运动 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_GRAND_OPERA-->
                       <h2 class="civ-name">大歌剧
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/ECONOMIC_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">剧院广场中的建筑将产出额外 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化值：如城市 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 人口大于等于13点，+50%文化值；如区域拥有至少+3相邻加成，+50%文化值。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 歌剧和芭蕾 市政</p>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 歌剧和芭蕾 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_PUBLIC_WORKS-->
                       <h2 class="civ-name">公共工程
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/ECONOMIC_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">为生产建造者+30% <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力，新训练的建造者获得两点额外 <img src="/images/ICON_CHARGES.webp" style="height:1em"/> 劳动力。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 土木工程 市政</p>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 土木工程 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_SKYSCRAPERS-->
                       <h2 class="civ-name">摩天大楼
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/ECONOMIC_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">建造所有奇观时+15% <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 土木工程 市政</p>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 土木工程 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_PUBLIC_TRANSPORT-->
                       <h2 class="civ-name">公共交通
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/ECONOMIC_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">拥有迷人魅力的社区+3 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食物、+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力；拥有惊艳魅力的社区额外+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食物、+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。所有社区+1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 城市化 市政</p>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 城市化 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_EXPROPRIATION-->
                       <h2 class="civ-name">征收
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/ECONOMIC_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">生产开拓者 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 时生产力+50%。土地购买费用降低20%。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 焦土策略 市政</p>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 焦土策略 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_MARKET_ECONOMY-->
                       <h2 class="civ-name">市场经济
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/ECONOMIC_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">目的地已开发的每个奢侈品资源和战略资源为您的国际 <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> 贸易路线+1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币，同时+2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化值和+2 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科技值。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 资本主义 市政</p>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 资本主义 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_ECONOMIC_UNION-->
                       <h2 class="civ-name">经济同盟
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/ECONOMIC_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">+100%商业中心和港口相邻加成。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 意识形态 市政</p>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 意识形态 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_NEW_DEAL-->
                       <h2 class="civ-name">新政
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/ECONOMIC_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">拥有至少3个 <img src="/images/ICON_DISTRICT.webp" style="height:1em"/> 特色区域的所有城市+4 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住房、+2 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> 宜居度。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 选举权 市政</p>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 选举权 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_FIVE_YEAR_PLAN-->
                       <h2 class="civ-name">五年计划
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/ECONOMIC_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">+100%学院和工业区相邻加成。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 意识形态 市政</p>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 意识形态 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_COLLECTIVIZATION-->
                       <h2 class="civ-name">集体化
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/ECONOMIC_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">国内 <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> 贸易路线+4 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力、+4 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食物。所有 <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> 贸易路线+4 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 阶级斗争 市政</p>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 阶级斗争 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_HERITAGE_TOURISM-->
                       <h2 class="civ-name">遗产旅游
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/ECONOMIC_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left"><img src="/images/ICON_GREATWORK_LANDSCAPE.webp" style="height:1em"/> 艺术巨作和 <img src="/images/ICON_GREATWORK_ARTIFACT.webp" style="height:1em"/> 文物+100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 旅游业绩。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 文化遗产 市政</p>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 文化遗产 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_SPORTS_MEDIA-->
                       <h2 class="civ-name">体育传媒
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/ECONOMIC_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">+100%剧院广场区相邻加成，体育场+1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> 宜居度。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 职业体育 市政</p>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 职业体育 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_SATELLITE_BROADCASTS-->
                       <h2 class="civ-name">卫星广播
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/ECONOMIC_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">音乐 <img src="/images/ICON_GREATWORK_MUSIC.webp" style="height:1em"/> 巨作提供的 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 旅游业绩+200%。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 太空竞赛 市政</p>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 太空竞赛 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_ECOMMERCE-->
                       <h2 class="civ-name">电子商务
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/ECONOMIC_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">所有 <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> 贸易路线提供的 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力+2、<img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币+5。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 全球化 市政</p>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 全球化 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_ONLINE_COMMUNITIES-->
                       <h2 class="civ-name">在线社区
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/ECONOMIC_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">从与您有 <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> 贸易路线的文明+50% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 旅游业绩。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 社交媒体 市政</p>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 社交媒体 市政</small>
                     </div>
                   </div>
                 </div>
@@ -1789,209 +1165,637 @@
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_CHARISMATIC_LEADER-->
                       <h2 class="civ-name">魅力型领袖
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/DIPLOMATIC_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">每回合+2 <img src="/images/ICON_INFLUENCEPERTURN.webp" style="height:1em"/> 影响力点数。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 政治哲学 市政</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">随着意识形态 市政的出现，代替了之前的政策。</p>
-                      <details>
-                        <summary class="civ-ability-desc" style="text-align:left">随着发展会被以下替代</summary>
-                        <p class="civ-ability-desc" style="display:inline-block;text-align:left">魅力型领袖➜炮舰外交</p><br>
-                      </details>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 政治哲学 市政</small><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">随着发展会被以下替代 意识形态 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_DIPLOMATIC_LEAGUE-->
                       <h2 class="civ-name">外交联盟
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/DIPLOMATIC_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">您向每个城邦派遣的第一个 <img src="/images/ICON_ENVOY.webp" style="height:1em"/> 使者会被视为2个 <img src="/images/ICON_ENVOY.webp" style="height:1em"/> 使者。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 政治哲学 市政</p>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 政治哲学 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_PRAETORIUM-->
                       <h2 class="civ-name">司令部
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/DIPLOMATIC_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left"><img src="/images/ICON_GOVERNOR.webp" style="height:1em"/> 总督为其所在城市每回合忠诚度+4。被占领城市+20% <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 历史记录 市政</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">随着社交媒体 市政的出现，代替了之前的政策。</p>
-                      <details>
-                        <summary class="civ-ability-desc" style="text-align:left">随着发展会被以下替代</summary>
-                        <p class="civ-ability-desc" style="display:inline-block;text-align:left">司令部➜联络处</p><br>
-                      </details>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 历史记录 市政</small><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">随着发展会被以下替代 社交媒体 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_SOVEREIGN_STATE-->
                       <h2 class="civ-name">主权国家
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/DIPLOMATIC_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">开放所有城邦的边境。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 行政部门 市政</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">随着意识形态 市政的出现，代替了之前的政策。</p>
-                      <details>
-                        <summary class="civ-ability-desc" style="text-align:left">随着发展会被以下替代</summary>
-                        <p class="civ-ability-desc" style="display:inline-block;text-align:left">主权国家➜炮舰外交</p><br>
-                      </details>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 行政部门 市政</small><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">随着发展会被以下替代 意识形态 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_MERCHANT_CONFEDERATION-->
                       <h2 class="civ-name">商人联盟
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/DIPLOMATIC_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">来自每位城邦 <img src="/images/ICON_ENVOY.webp" style="height:1em"/> 使者的 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币+1。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 中世纪集市 市政</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">随着意识形态 市政的出现，代替了之前的政策。</p>
-                      <details>
-                        <summary class="civ-ability-desc" style="text-align:left">随着发展会被以下替代</summary>
-                        <p class="civ-ability-desc" style="display:inline-block;text-align:left">商人联盟➜炮舰外交</p><br>
-                      </details>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 中世纪集市 市政</small><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">随着发展会被以下替代 意识形态 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_COLONIAL_OFFICES-->
                       <h2 class="civ-name">殖民地办事处
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/DIPLOMATIC_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left"><img src="/images/ICON_CAPITAL.webp" style="height:1em"/> 首都8个单元格范围外的城市+10% <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力、发展加速15%、每回合提供3点忠诚度。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 探索 市政</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">随着殖民主义 市政的出现，代替了之前的政策。</p>
-                      <details>
-                        <summary class="civ-ability-desc" style="text-align:left">随着发展会被以下替代</summary>
-                        <p class="civ-ability-desc" style="display:inline-block;text-align:left">殖民地办事处➜殖民地税收</p><br>
-                      </details>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 探索 市政</small><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">随着发展会被以下替代 殖民主义 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_MACHIAVELLIANISM-->
                       <h2 class="civ-name">权术主义
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/DIPLOMATIC_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">为间谍+50% <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。间谍行动 <img src="/images/ICON_TURN.webp" style="height:1em"/> 时间减少25%。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 外交部门 市政</p>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 外交部门 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_WISSELBANKEN-->
                       <h2 class="civ-name">贸易银行
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/DIPLOMATIC_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">您通往盟友城市或旗下城邦的 <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> 贸易路线为双边城市+2 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食物、+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。所有盟友的同盟点数每回合额外增加0.25点。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 外交部门 市政</p>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 外交部门 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_COLONIAL_TAXES-->
                       <h2 class="civ-name">殖民地税收
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/DIPLOMATIC_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left"><img src="/images/ICON_CAPITAL.webp" style="height:1em"/> 首都8个单元格范围外的城市+25% <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币、+10% <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力、发展加速15%、每回合提供3点忠诚度。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 殖民主义 市政</p>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 殖民主义 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_RAJ-->
                       <h2 class="civ-name">统治
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/DIPLOMATIC_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">通往城邦的 <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> 贸易路线额外+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食物、+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力、+2 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科技值、+2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化值、+2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰值、+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 殖民主义 市政</p>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 殖民主义 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_GUNBOAT_DIPLOMACY-->
                       <h2 class="civ-name">炮舰外交
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/DIPLOMATIC_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">每回合+4 <img src="/images/ICON_INFLUENCEPERTURN.webp" style="height:1em"/> 影响力点数。来自每位城邦 <img src="/images/ICON_ENVOY.webp" style="height:1em"/> 使者的 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币+1。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 意识形态 市政</p>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 意识形态 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_NUCLEAR_ESPIONAGE-->
                       <h2 class="civ-name">核间谍
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/DIPLOMATIC_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">窃取到 <img src="/images/ICON_TECHBOOSTED.webp" style="height:1em"/> 科技提升而未被发现的间谍获得额外 <img src="/images/ICON_TECHBOOSTED.webp" style="height:1em"/> 提升。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 核计划 市政</p>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 核计划 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_CRYPTOGRAPHY-->
                       <h2 class="civ-name">密码学
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/DIPLOMATIC_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">在您的领土内，敌方间谍等级降低2级。您的间谍等级在出击行动时增加1级。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 冷战 市政</p>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 冷战 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_CONTAINMENT-->
                       <h2 class="civ-name">遏制
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/DIPLOMATIC_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">如果城邦的宗主国和您的 <img src="/images/ICON_GOVERNMENT.webp" style="height:1em"/> 政体不同，您向城邦派遣的每个 <img src="/images/ICON_ENVOY.webp" style="height:1em"/> 使者都被视为两个。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 冷战 市政</p>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 冷战 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_MUSIC_CENSORSHIP-->
                       <h2 class="civ-name">音乐审查制度
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/DIPLOMATIC_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">来自其他文明的摇滚乐队无法进入您的领土。您拥有10点或以上 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 人口的所有城市-1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> 宜居度。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 太空竞赛 市政</p>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 太空竞赛 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_INTERNATIONAL_SPACE_AGENCY-->
                       <h2 class="civ-name">国际宇航局
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/DIPLOMATIC_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">作为宗主国时，每个下辖城邦将使您的 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科技值+5%。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 全球化 市政</p>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 全球化 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_COLLECTIVE_ACTIVISM-->
                       <h2 class="civ-name">集体行动主义
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/DIPLOMATIC_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">作为宗主国时，每个下辖城邦将使您的 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化值+5%。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 社交媒体 市政</p>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 社交媒体 市政</small>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
+                  <div class="col-lg-3 col-sm-6 col-12">
                     <div class="chart">
                       <!--POLICY_COMMUNICATIONS_OFFICE-->
                       <h2 class="civ-name">联络处
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/DIPLOMATIC_CARD.webp" style="vertical-align: middle; width:2em">
                       </h2>
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left"><img src="/images/ICON_GOVERNOR.webp" style="height:1em"/> 总督每拥有一次升级，其所在城市每回合忠诚度+2。</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 社交媒体 市政</p>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 社交媒体 市政</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12" id="通配符政策">
+                  <div class="chart">
+                    <!--WILDCARD-->
+                    <h2 class="civ-name">通配符政策</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--POLICY_GOV_AUTOCRACY-->
+                      <h2 class="civ-name">专制传承
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
+                      </h2>
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">宫殿、市政广场及其中建筑、外交区及其中建筑的所有产出+1。拥有 <img src="/images/ICON_DISTRICT.webp" style="height:1em"/> 区域的城市中纪念碑+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食物、+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。</p><br>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--POLICY_GOV_OLIGARCHY-->
+                      <h2 class="civ-name">寡头传承
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
+                      </h2>
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">所有陆地近战、抗骑兵和海军近战类单位 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 战斗力+4。</p><br>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--POLICY_GOV_CLASSICAL_REPUBLIC-->
+                      <h2 class="civ-name">共和传承
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
+                      </h2>
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">拥有 <img src="/images/ICON_DISTRICT.webp" style="height:1em"/> 区域的所有城市+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住房、+1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> 宜居度。</p><br>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--POLICY_GOV_MONARCHY-->
+                      <h2 class="civ-name">君主传承
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
+                      </h2>
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">每级城墙提供+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住房。文艺复兴城墙提供+2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化值。</p><br>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--POLICY_GOV_THEOCRACY-->
+                      <h2 class="civ-name">神权传承
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
+                      </h2>
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">神学战争中+5 <img src="/images/ICON_RELIGION.webp" style="height:1em"/> 宗教战斗力。<br><img src="/images/ICON_GOVERNOR.webp" style="height:1em"/> 总督就职的城市中每位 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 公民将+0.5点 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰值。</p><br>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--POLICY_GOV_MERCHANT_REPUBLIC-->
+                      <h2 class="civ-name">重商传承
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
+                      </h2>
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">所有 <img src="/images/ICON_GOVERNOR.webp" style="height:1em"/> 总督就职城市产出的 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币+10%。</p><br>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--POLICY_GOV_FASCISM-->
+                      <h2 class="civ-name">法西斯传承
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
+                      </h2>
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">所有单位+5 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 战斗力。厌战情绪降低15%。</p><br>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--POLICY_GOV_COMMUNISM-->
+                      <h2 class="civ-name">共产传承
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
+                      </h2>
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">拥有 <img src="/images/ICON_GOVERNOR.webp" style="height:1em"/> 总督的城市中每位 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 公民+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。</p><br>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--POLICY_GOV_DEMOCRACY-->
+                      <h2 class="civ-name">民主传承
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
+                      </h2>
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">您通往盟友或宗主国城市的 <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> 贸易路线为双边城市+4 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食物、+4 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。所有盟友的同盟点数每回合额外增加0.25点。</p><br>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--POLICY_STRATEGOS-->
+                      <h2 class="civ-name">将军
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
+                      </h2>
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">每回合+2 <img src="/images/ICON_GREATGENERAL.webp" style="height:1em"/> 大将军点数。</p><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 军事传统 市政</small><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">随着发展会被以下替代 焦土策略 市政</small>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--POLICY_INSPIRATION-->
+                      <h2 class="civ-name">鼓舞
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
+                      </h2>
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">每回合+2 <img src="/images/ICON_GREATSCIENTIST.webp" style="height:1em"/> 大科学家点数。</p><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 神秘主义 市政</small><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">随着发展会被以下替代 核计划 市政</small>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--POLICY_REVELATION-->
+                      <h2 class="civ-name">启示
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
+                      </h2>
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">每回合+2 <img src="/images/ICON_GREATPROPHET.webp" style="height:1em"/> 大预言家点数。</p><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 神秘主义 市政</small><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">随着发展会被以下替代 人文主义 市政</small>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--POLICY_LITERARY_TRADITION-->
+                      <h2 class="civ-name">文学传统
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
+                      </h2>
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">每回合+2 <img src="/images/ICON_GREATWRITER.webp" style="height:1em"/> 大作家点数。</p><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 戏剧和诗歌 市政</small>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--POLICY_NAVIGATION-->
+                      <h2 class="civ-name">航海
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
+                      </h2>
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">每回合+2 <img src="/images/ICON_GREATADMIRAL.webp" style="height:1em"/> 海军统帅点数。</p><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 海军传统 市政</small>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--POLICY_TRAVELING_MERCHANTS-->
+                      <h2 class="civ-name">旅行商人
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
+                      </h2>
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">每回合+2 <img src="/images/ICON_GREATMERCHANT.webp" style="height:1em"/> 大商人点数。</p><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 公会 市政</small><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">随着发展会被以下替代 资本主义 市政</small>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--POLICY_INVENTION-->
+                      <h2 class="civ-name">发明
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
+                      </h2>
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">每回合的 <img src="/images/ICON_GREATENGINEER.webp" style="height:1em"/> 大工程师点数+4。每有一座工作坊，每回合的 <img src="/images/ICON_GREATENGINEER.webp" style="height:1em"/> 大工程师点数便+2。</p><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 人文主义 市政</small>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--POLICY_FRESCOES-->
+                      <h2 class="civ-name">壁画
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
+                      </h2>
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">每回合的 <img src="/images/ICON_GREATARTIST.webp" style="height:1em"/> 大艺术家点数+2。每有一座艺术博物馆，每回合的 <img src="/images/ICON_GREATARTIST.webp" style="height:1em"/> 大艺术家点数便+2。</p><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 人文主义 市政</small>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--POLICY_SYMPHONIES-->
+                      <h2 class="civ-name">交响曲
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
+                      </h2>
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">每回合的 <img src="/images/ICON_GREATMUSICIAN.webp" style="height:1em"/> 大音乐家点数+4。每有一座广播中心，每回合的 <img src="/images/ICON_GREATMUSICIAN.webp" style="height:1em"/> 大音乐家点数便+4。</p><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 歌剧和芭蕾 市政</small>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--POLICY_MILITARY_ORGANIZATION-->
+                      <h2 class="civ-name">军事组织
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
+                      </h2>
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">每有一座兵工厂，每回合的 <img src="/images/ICON_GREATGENERAL.webp" style="height:1em"/> 大将军点数便+2；每有一所军事学院，每回合的 <img src="/images/ICON_GREATGENERAL.webp" style="height:1em"/> 大将军点数便+4。大将军的移动力+2。</p><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 焦土策略 市政</small>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--POLICY_LAISSEZ_FAIRE-->
+                      <h2 class="civ-name">不干涉主义
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
+                      </h2>
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">每有一座银行，每回合的 <img src="/images/ICON_GREATMERCHANT.webp" style="height:1em"/> 大商人点数便+2；每有一座证券交易所，每回合的 <img src="/images/ICON_GREATMERCHANT.webp" style="height:1em"/> 大商人点数便+4。每有一座造船厂，每回合的 <img src="/images/ICON_GREATADMIRAL.webp" style="height:1em"/> 海军统帅点数便+2；每有一座码头，每回合的 <img src="/images/ICON_GREATADMIRAL.webp" style="height:1em"/> 海军统帅点数便+4。 </p><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 资本主义 市政</small>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--POLICY_FINEST_HOUR-->
+                      <h2 class="civ-name">光荣时刻
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
+                      </h2>
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">所有单位在本国领土中作战时+5 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 战斗力。</p><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 选举权 市政</small>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--POLICY_MARTIAL_LAW-->
+                      <h2 class="civ-name">军事管制
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
+                      </h2>
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">累积的厌战情绪在常规基础上降低25%。拥有驻军的城市每回合忠诚度+4。</p><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 极权主义 市政</small>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--POLICY_DEFENSE_OF_MOTHERLAND-->
+                      <h2 class="civ-name">保卫祖国
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
+                      </h2>
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">在您领土中发生的战斗不会产生厌战情绪。生产现代、原子时代和信息时代支援单位时+100% <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。</p><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 阶级斗争 市政</small>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--POLICY_NOBEL_PRIZE-->
+                      <h2 class="civ-name">科学基金会
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
+                      </h2>
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">每有一所大学，每回合的 <img src="/images/ICON_GREATSCIENTIST.webp" style="height:1em"/> 大科学家点数便+2；每有一所研究实验室，每回合的 <img src="/images/ICON_GREATSCIENTIST.webp" style="height:1em"/> 大科学家点数便+4。每有一座工厂，每回合的 <img src="/images/ICON_GREATENGINEER.webp" style="height:1em"/> 大工程师点数便+2；每有一座发电厂，每回合的 <img src="/images/ICON_GREATENGINEER.webp" style="height:1em"/> 大工程师点数便+4。</p><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 核计划 市政</small>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--POLICY_FUTURE_VICTORY_SCIENCE-->
+                      <h2 class="civ-name">航天承包商
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
+                      </h2>
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">拥有宇航中心的城市每回合+3点 <img src="/images/ICON_RESOURCE_ALUMINUM.webp" style="height:1em"/> 铝；同时+3点 <img src="/images/ICON_POWER.webp" style="height:1em"/> 电力。</p><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 必要性远征 市政</small>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--POLICY_FUTURE_COUNTER_CULTURE-->
+                      <h2 class="civ-name">太空旅游
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
+                      </h2>
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">其他文明对您的 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 旅游业绩减少20%。</p><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 必要性远征 市政</small>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--POLICY_FUTURE_VICTORY_CULTURE-->
+                      <h2 class="civ-name">韩流
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
+                      </h2>
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">您的摇滚乐队可以选择任何可用 <img src="/images/ICON_PROMOTION.webp" style="height:1em"/> 升级。</p><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 文化霸权 市政</small>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--POLICY_FUTURE_COUNTER_SCIENCE-->
+                      <h2 class="civ-name">非国家行为者
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
+                      </h2>
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">您的间谍可以选择任何可用 <img src="/images/ICON_PROMOTION.webp" style="height:1em"/> 升级。</p><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 文化霸权 市政</small>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--POLICY_FUTURE_VICTORY_DOMINATION-->
+                      <h2 class="civ-name">综合攻击后勤保障
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
+                      </h2>
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">在敌方领土开启回合+1 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移动力。生产末日机甲时 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力+50%。</p><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 信息战 市政</small>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--POLICY_FUTURE_COUNTER_DIPLOMATIC-->
+                      <h2 class="civ-name">煽动人心
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
+                      </h2>
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">在世界议会中降低另一文明的外交胜利点数后，可取回所花费 <img src="/images/ICON_FAVOR.webp" style="height:1em"/> 外交支持的50%。每回合+1 <img src="/images/ICON_FAVOR.webp" style="height:1em"/> 外交支持。</p><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 信息战 市政</small>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--POLICY_FUTURE_VICTORY_DIPLOMATIC-->
+                      <h2 class="civ-name">外交资本
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
+                      </h2>
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">每回合+4点 <img src="/images/ICON_FAVOR.webp" style="height:1em"/> 外交支持。</p><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 巧实力主义 市政</small>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--POLICY_FUTURE_COUNTER_DOMINATION-->
+                      <h2 class="civ-name">全球联合
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/WILDCARD_CARD.webp" style="vertical-align: middle; width:2em">
+                      </h2>
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">位于友方领土中的单位+7 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 战斗力。</p><br>
+                      <small class="civ-ability-desc" style="display:inline-block;text-align:left">被解锁 巧实力主义 市政</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12" id="黑暗时代政策">
+                  <div class="chart">
+                    <!--DARKAGE-->
+                    <h2 class="civ-name">黑暗时代政策</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--POLICY_MONASTICISM-->
+                      <h2 class="civ-name">修行制度
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/DARKAGE_CARD.webp" style="vertical-align: middle; width:2em">
+                      </h2>
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">拥有圣地的城市 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科技值+75%。<br>但所有城市的 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化值-25%。</p><br>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--POLICY_TWILIGHT_VALOR-->
+                      <h2 class="civ-name">迟暮勇武
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/DARKAGE_CARD.webp" style="vertical-align: middle; width:2em">
+                      </h2>
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">所有近战攻击单位+5 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 战斗力。<br>但无法在本国领土外进行治疗。</p><br>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--POLICY_INQUISITION-->
+                      <h2 class="civ-name">宗教审讯
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/DARKAGE_CARD.webp" style="vertical-align: middle; width:2em">
+                      </h2>
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">消耗1次使徒使用次数开始宗教审讯。友方领土中的所有宗教单位+15 <img src="/images/ICON_RELIGION.webp" style="height:1em"/> 宗教战斗力。<br>但所有城市的 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科技值-25%。</p><br>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--POLICY_ISOLATIONISM-->
+                      <h2 class="civ-name">孤立主义
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/DARKAGE_CARD.webp" style="vertical-align: middle; width:2em">
+                      </h2>
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">国内贸易路线提供+2 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食物、+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。<br>但无法生产或购买开拓者，也无法建立新城市。</p><br>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--POLICY_LETTERS_OF_MARQUE-->
+                      <h2 class="civ-name">私掠许可证
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/DARKAGE_CARD.webp" style="vertical-align: middle; width:2em">
+                      </h2>
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">生产海军袭击者：+100% <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力、+2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移动力。掠夺贸易路线的收益加倍。<br>但 <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> 贸易路线产量-50%。</p><br>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--POLICY_ROBBER_BARONS-->
+                      <h2 class="civ-name">敛财大亨
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/DARKAGE_CARD.webp" style="vertical-align: middle; width:2em">
+                      </h2>
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">拥有证券交易所的城市+50% <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币。拥有工厂的城市+25% <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。<br>但所有城市-2 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> 宜居度。</p><br>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--POLICY_ELITE_FORCES-->
+                      <h2 class="civ-name">精兵政策
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/DARKAGE_CARD.webp" style="vertical-align: middle; width:2em">
+                      </h2>
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">所有单位的战斗经验值+100%。<br>但每个战斗和间谍单位的维护费用+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币。</p><br>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--POLICY_COLLECTIVISM-->
+                      <h2 class="civ-name">集体主义
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/DARKAGE_CARD.webp" style="vertical-align: middle; width:2em">
+                      </h2>
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">农场+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食物。所有城市+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住房。工业区相邻加成+100%。<br>但 <img src="/images/ICON_GREATPERSON.webp" style="height:1em"/> 伟人点数的获取速度减缓50%。</p><br>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--POLICY_ROGUE_STATE-->
+                      <h2 class="civ-name">无赖国家
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/DARKAGE_CARD.webp" style="vertical-align: middle; width:2em">
+                      </h2>
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">核计划项目和核装置的 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力+50%。<br>但每回合无法获得 <img src="/images/ICON_INFLUENCEPERTURN.webp" style="height:1em"/> 影响力。</p><br>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--POLICY_FLOWER_POWER-->
+                      <h2 class="civ-name">权力归花儿
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/DARKAGE_CARD.webp" style="vertical-align: middle; width:2em">
+                      </h2>
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">在当前未交战的文明中举办音乐会获得的 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 旅游业绩+100%。<br>减益：生产摇滚乐队之外的所有单位时生产力-100%、购买时则费用+100%。</p><br>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--POLICY_CYBER_WARFARE-->
+                      <h2 class="civ-name">网络战
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/DARKAGE_CARD.webp" style="vertical-align: middle; width:2em">
+                      </h2>
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">信息和未来时代的单位+10 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 战斗力。<br>减益：对您的 <img src="/images/ICON_STAT_GRIEVANCE.webp" style="height:1em"/> 不满不会下降。</p><br>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--POLICY_AUTOMATED_WORKFORCE-->
+                      <h2 class="civ-name">自动化劳动力
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/DARKAGE_CARD.webp" style="vertical-align: middle; width:2em">
+                      </h2>
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">进行城市项目时，您城市的 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力+20%。<br>减益：城市每回合-1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> 宜居度、-5忠诚度。</p><br>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--POLICY_DISINFORMATION_CAMPAIGN-->
+                      <h2 class="civ-name">抹黑行动
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/policies/DARKAGE_CARD.webp" style="vertical-align: middle; width:2em">
+                      </h2>
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">每拥有1个广播中心，每回合获得的 <img src="/images/ICON_FAVOR.webp" style="height:1em"/> 外交支持便+3。<br>减益：所有城市中的 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科技值和 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化值-10%。</p><br>
                     </div>
                   </div>
                 </div>

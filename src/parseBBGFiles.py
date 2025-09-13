@@ -810,7 +810,7 @@ def get_policies(db_path):
         if row[3] in res[policy_type]:
             res[policy_type][row[3]][-1].append(row[-1])
             continue
-        prereq = 'CIVIC_POLITICAL_PHILOSOPHY' if row[1] else row[4]
+        prereq = None if row[1] else row[4]
         res[policy_type][row[3]] = [prereq, *row[5:7], [row[7]] if row[7] else []]
     connection.close()
     return res

@@ -21,18 +21,23 @@ def get_policy_html_file(bbg_version, lang, pages_list):
     menu_icons = []
     age_name = {}
     policies = get_policies(f"sqlFiles/{version_name}/DebugGameplay.sqlite")
-    for policy_type in policies:
-        # damn firaxis typos
-        policy_page_str = "POLICES" if policy_type == "ECONOMIC" else "POLICIES"
+    policy_types_order = [
+        'MILITARY',
+        'ECONOMIC',
+        'DIPLOMATIC',
+        'WILDCARD',
+        'DARKAGE'
+    ]
+    for policy_type in policy_types_order:
         age_name[policy_type] = get_loc(
             locs_data,
-            f"LOC_PEDIA_GOVERNMENTS_PAGEGROUP_{policy_type}_{policy_page_str}_NAME",
+            f"LOC_GOVT_POLICY_TYPE_{policy_type}",
         )
         menu_items.append(age_name[policy_type])
         menu_icons.append(f"{policy_type}_CARD")
 
     def create_policy_page():
-        for policy_type in policies:
+        for policy_type in policy_types_order:
             with div(cls="col-lg-12", id=age_name[policy_type]), div(cls="chart"):
                 comment(policy_type)
                 h2(age_name[policy_type], cls="civ-name")
@@ -42,7 +47,7 @@ def get_policy_html_file(bbg_version, lang, pages_list):
     def process_policy_details(policy_type):
         for policy_name in policies[policy_type]:
             policy = policies[policy_type][policy_name]
-            with div(cls="col-lg-6 col-md-12"), div(cls="chart"):
+            with div(cls="col-lg-3 col-sm-6 col-12"), div(cls="chart"):
                 comment(policy_name)
                 with h2(get_loc(locs_data, policy[2]), cls="civ-name"):
                     img(
@@ -57,7 +62,7 @@ def get_policy_html_file(bbg_version, lang, pages_list):
                 )
                 br()
                 if policy[0]:
-                    p(
+                    small(
                         get_loc(locs_data, "LOC_UI_PEDIA_UNLOCKED_BY")
                         + " "
                         + get_unlock_tech_civic_dialog(
@@ -78,61 +83,59 @@ def get_policy_html_file(bbg_version, lang, pages_list):
                         _type = find_policy_type(obsolete_policy)
                         obsolete_civics.append(policies[_type][obsolete_policy][0])
 
-                    p(
+                    small(
                         get_loc(
                             locs_data,
-                            "LOC_TYPE_TRAIT_ADJACENT_BONUS_OBSOLETE_WITH_TECH_OR_CIVIC",
-                        ).replace(
-                            "{1_TechOrCivicName}",
-                            ", ".join(
-                                [
-                                    get_unlock_tech_civic_dialog(
-                                        None,
-                                        obsolete_civic,
-                                        locs_data,
-                                        en_US_locs_data,
-                                        None,
-                                        civic_to_loc,
-                                    )
-                                    for obsolete_civic in obsolete_civics
-                                ]
-                            ),
+                            "LOC_UI_PEDIA_MADE_OBSOLETE_BY",
+                        ) + " " +
+                        ", ".join(
+                            [
+                                get_unlock_tech_civic_dialog(
+                                    None,
+                                    obsolete_civic,
+                                    locs_data,
+                                    en_US_locs_data,
+                                    None,
+                                    civic_to_loc,
+                                )
+                                for obsolete_civic in obsolete_civics
+                            ]
                         ),
                         style="display:inline-block;text-align:left",
                         cls="civ-ability-desc",
                     )
-                    with details():
-                        summary(
-                            get_loc(locs_data, "LOC_UI_PEDIA_MADE_OBSOLETE_BY"),
-                            cls="civ-ability-desc",
-                            style=f"text-align:left",
-                        )
-                        policy_inheritances = []
+                    # with details():
+                    #     summary(
+                    #         get_loc(locs_data, "LOC_UI_PEDIA_MADE_OBSOLETE_BY"),
+                    #         cls="civ-ability-desc",
+                    #         style=f"text-align:left",
+                    #     )
+                    #     policy_inheritances = []
 
-                        def dfs(policy_name, policy_type, policy_chain):
-                            policy_chain.append(policies[policy_type][policy_name][2])
-                            if not policies[policy_type][policy_name][3]:
-                                policy_inheritances.append(policy_chain.copy())
-                            else:
-                                for obsolete_policy in policies[policy_type][
-                                    policy_name
-                                ][3]:
-                                    _type = find_policy_type(obsolete_policy)
-                                    dfs(
-                                        obsolete_policy,
-                                        _type,
-                                        policy_chain,
-                                    )
-                            policy_chain.pop()
+                    #     def dfs(policy_name, policy_type, policy_chain):
+                    #         policy_chain.append(policies[policy_type][policy_name][2])
+                    #         if not policies[policy_type][policy_name][3]:
+                    #             policy_inheritances.append(policy_chain.copy())
+                    #         else:
+                    #             for obsolete_policy in policies[policy_type][
+                    #                 policy_name
+                    #             ][3]:
+                    #                 _type = find_policy_type(obsolete_policy)
+                    #                 dfs(
+                    #                     obsolete_policy,
+                    #                     _type,
+                    #                     policy_chain,
+                    #                 )
+                    #         policy_chain.pop()
 
-                        dfs(policy_name, policy_type, [])
-                        for string in policy_inheritances:
-                            p(
-                                "➜".join([get_loc(locs_data, x) for x in string]),
-                                style="display:inline-block;text-align:left",
-                                cls="civ-ability-desc",
-                            )
-                            br()
+                    #     dfs(policy_name, policy_type, [])
+                    #     for string in policy_inheritances:
+                    #         p(
+                    #             "➜".join([get_loc(locs_data, x) for x in string]),
+                    #             style="display:inline-block;text-align:left",
+                    #             cls="civ-ability-desc",
+                    #         )
+                    #         br()
 
     def find_policy_type(policy):
         # unfortunately due to the design, we need to find
