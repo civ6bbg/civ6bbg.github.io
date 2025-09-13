@@ -83,12 +83,13 @@ def get_policy_html_file(bbg_version, lang, pages_list):
                         _type = find_policy_type(obsolete_policy)
                         obsolete_civics.append(policies[_type][obsolete_policy][0])
 
+                    or_loc = get_loc(locs_data, "LOC_WORLD_CONGRESS_OR")
                     small(
                         get_loc(
                             locs_data,
                             "LOC_UI_PEDIA_MADE_OBSOLETE_BY",
                         ) + " " +
-                        ", ".join(
+                        f", ".join(
                             [
                                 get_unlock_tech_civic_dialog(
                                     None,
@@ -97,10 +98,11 @@ def get_policy_html_file(bbg_version, lang, pages_list):
                                     en_US_locs_data,
                                     None,
                                     civic_to_loc,
+                                    False
                                 )
                                 for obsolete_civic in obsolete_civics
                             ]
-                        ),
+                        ) + f' {get_loc(locs_data, "LOC_CIVIC_NAME")}',
                         style="display:inline-block;text-align:left",
                         cls="civ-ability-desc",
                     )

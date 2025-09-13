@@ -362,11 +362,11 @@ def show_element_with_base_option(element, lang, locs_data, en_US_locs_data, dat
         comment(element)
         p(get_loc(locs_data, element) + f'{data_append}', style=f"text-align:{alignment}", cls='civ-ability-desc')
 
-def get_unlock_tech_civic_dialog(unlock_tech, unlock_civic, locs_data, en_US_locs_data, tech_to_loc_dict, civic_to_loc_dict):
+def get_unlock_tech_civic_dialog(unlock_tech, unlock_civic, locs_data, en_US_locs_data, tech_to_loc_dict, civic_to_loc_dict, include_tech_civic_word = True):
     if unlock_tech:
-        return f'{get_loc(locs_data, tech_to_loc_dict[unlock_tech])} {get_loc(locs_data, "LOC_TECHNOLOGY_NAME")}'
+        return f'{get_loc(locs_data, tech_to_loc_dict[unlock_tech])}{f' {get_loc(locs_data, "LOC_TECHNOLOGY_NAME")}' if include_tech_civic_word else ""}'
     if unlock_civic:
-        return f'{get_loc(locs_data, civic_to_loc_dict[unlock_civic])} {get_loc(locs_data, "LOC_CIVIC_NAME")}'
+        return f'{get_loc(locs_data, civic_to_loc_dict[unlock_civic])}{f' {get_loc(locs_data, "LOC_CIVIC_NAME")}' if include_tech_civic_word else ""}'
 
 def add_footer():
     with div(cls="scroll-up footer-popup", id="footer-popup"), div(cls="footer-popup-inner"):
