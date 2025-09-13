@@ -61,7 +61,13 @@ def get_misc_html_file(bbg_version, lang, pages_list):
                 for policy in dark_age_policy_per_era[eras_reverse_map[era]]:
                     with div(cls="col-lg-3"), div(cls="chart"):
                         comment(policy[4])
-                        h2(get_loc(locs_data, policy[4]), cls='civ-name')
+                        with h2(get_loc(locs_data, policy[4]), cls='civ-name'):
+                            img(
+                                src=f"/images/policies/DARKAGE_CARD.webp",
+                                style="vertical-align: middle; width:1em",
+                                onerror=image_onerror,
+                            )
+
                         br()
                         comment(policy[1])
                         p(get_loc(locs_data, policy[1]), style="text-align:left", cls='civ-ability-desc')

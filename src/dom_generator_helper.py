@@ -364,9 +364,9 @@ def show_element_with_base_option(element, lang, locs_data, en_US_locs_data, dat
 
 def get_unlock_tech_civic_dialog(unlock_tech, unlock_civic, locs_data, en_US_locs_data, tech_to_loc_dict, civic_to_loc_dict):
     if unlock_tech:
-        return f'{get_loc(locs_data, "LOC_UI_PEDIA_UNLOCKED_BY")} {get_loc(locs_data, tech_to_loc_dict[unlock_tech])} {get_loc(locs_data, "LOC_TECHNOLOGY_NAME")}'
+        return f'{get_loc(locs_data, tech_to_loc_dict[unlock_tech])} {get_loc(locs_data, "LOC_TECHNOLOGY_NAME")}'
     if unlock_civic:
-        return f'{get_loc(locs_data, "LOC_UI_PEDIA_UNLOCKED_BY")} {get_loc(locs_data, civic_to_loc_dict[unlock_civic])} {get_loc(locs_data, "LOC_CIVIC_NAME")}'
+        return f'{get_loc(locs_data, civic_to_loc_dict[unlock_civic])} {get_loc(locs_data, "LOC_CIVIC_NAME")}'
 
 def add_footer():
     with div(cls="scroll-up footer-popup", id="footer-popup"), div(cls="footer-popup-inner"):
