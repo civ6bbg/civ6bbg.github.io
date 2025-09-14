@@ -237,6 +237,14 @@
                 <div class="sidebar-body">
                   <ul class="sidebar-body-menu">
                     <li>
+                      <a href="#Religious" onclick="civClicked(&quot;Religious&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/TYPE_APOSTLE.webp">
+                        </span>
+                        <p>Religious</p>
+                      </a>
+                    </li>
+                    <li>
                       <a href="#Melee" onclick="civClicked(&quot;Melee&quot;)">
                         <span aria-hidden="true" class="icon">
                           <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/TYPE_MELEE.webp">
@@ -381,6 +389,170 @@
             <main class="main users chart-page">
               <div class="container">
                 <h1 class="civ-name">Civ VI BBG 5.6 Unit Details</h1><br>
+                <div class="col-lg-12" id="Religious">
+                  <div class="chart">
+                    <!--LOC_PEDIA_CITYSTATES_PAGEGROUP_RELIGIOUS_NAME-->
+                    <h2 class="civ-name">Religious</h2>
+                    <details>
+                      <summary class="civ-ability-desc" style="text-align:left">Unit Promotions</summary>
+                      <div class="row">
+                        <div class="col-md-4 col-sm-6 col-12 gov-promotion ">
+                          <!--LOC_PROMOTION_ORATOR_NAME-->
+                          <h3 class="civ-ability-name" style="text-align:center">Orator<br><br>
+                            <!--LOC_PROMOTION_ORATOR_DESCRIPTION-->
+                            <p class="civ-ability-desc" style="text-align:center">Can spread Religion 2 extra times.</p><br>
+                          </h3>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-12 gov-promotion ">
+                          <!--LOC_PROMOTION_PROSELYTIZER_NAME-->
+                          <h3 class="civ-ability-name" style="text-align:center">Proselytizer<br><br>
+                            <!--LOC_PROMOTION_PROSELYTIZER_DESCRIPTION-->
+                            <p class="civ-ability-desc" style="text-align:center">Religious spread eliminates 75% of existing pressure from other Religions in the target city.</p><br>
+                          </h3>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-12 gov-promotion ">
+                          <!--LOC_PROMOTION_TRANSLATOR_NAME-->
+                          <h3 class="civ-ability-name" style="text-align:center">Translator<br><br>
+                            <!--LOC_PROMOTION_TRANSLATOR_DESCRIPTION-->
+                            <p class="civ-ability-desc" style="text-align:center">Religious spread is triple strength in cities of other civilizations.</p><br>
+                          </h3>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-12 gov-promotion ">
+                          <!--LOC_PROMOTION_PILGRIM_NAME-->
+                          <h3 class="civ-ability-name" style="text-align:center">Pilgrim<br><br>
+                            <!--LOC_PROMOTION_PILGRIM_DESCRIPTION-->
+                            <p class="civ-ability-desc" style="text-align:center">Gains 3 extra spreads when moving adjacent to a natural wonder for the first time.</p><br>
+                          </h3>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-12 gov-promotion ">
+                          <!--LOC_PROMOTION_INDULGENCE_VENDOR_NAME-->
+                          <h3 class="civ-ability-name" style="text-align:center">Indulgence Vendor<br><br>
+                            <!--LOC_PROMOTION_INDULGENCE_VENDOR_DESCRIPTION-->
+                            <p class="civ-ability-desc" style="text-align:center">Gain <img src="/images/ICON_GOLD.webp" style="height:1em"/> 100 Gold if this unit converts a city to your Religion for the first time.</p><br>
+                          </h3>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-12 gov-promotion ">
+                          <!--LOC_PROMOTION_HEATHEN_CONVERSION_NAME-->
+                          <h3 class="civ-ability-name" style="text-align:center">Heathen Conversion<br><br>
+                            <!--LOC_PROMOTION_HEATHEN_CONVERSION_DESCRIPTION-->
+                            <p class="civ-ability-desc" style="text-align:center">Can convert all adjacent Barbarians to your side by using a religious charge.</p><br>
+                          </h3>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-12 gov-promotion ">
+                          <!--LOC_PROMOTION_DEBATER_NAME-->
+                          <h3 class="civ-ability-name" style="text-align:center">Debater<br><br>
+                            <!--LOC_PROMOTION_DEBATER_DESCRIPTION-->
+                            <p class="civ-ability-desc" style="text-align:center">+20 <img src="/images/ICON_RELIGION.webp" style="height:1em"/> Religious Strength in Theological Combat.</p><br>
+                          </h3>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-12 gov-promotion ">
+                          <!--LOC_PROMOTION_MARTYR_NAME-->
+                          <h3 class="civ-ability-name" style="text-align:center">Martyr<br><br>
+                            <!--LOC_PROMOTION_MARTYR_DESCRIPTION-->
+                            <p class="civ-ability-desc" style="text-align:center">Relic is created if this Apostle dies in Theological Combat.</p><br>
+                          </h3>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-12 gov-promotion ">
+                          <!--LOC_PROMOTION_CHAPLAIN_NAME-->
+                          <h3 class="civ-ability-name" style="text-align:center">Chaplain<br><br>
+                            <!--LOC_PROMOTION_CHAPLAIN_DESCRIPTION-->
+                            <p class="civ-ability-desc" style="text-align:center">Apostle operates as a Medic, providing extra healing to units within 1 tile.</p><br>
+                          </h3>
+                        </div>
+                      </div>
+                    </details>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <!--LOC_UNIT_MISSIONARY_NAME-->
+                      <h2 class="civ-name">Missionary
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Missionary.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <!--LOC_HUD_PRODUCTION_COST-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">Cost: 75 <img src="/images/ICON_FAITH.webp" style="height:1em"/></p><br>
+                      <!--LOC_UI_PEDIA_MAITENANCE_COST-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">Maintenance Cost: 0 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Per Turn</p><br>
+                      <!--LOC_UI_PEDIA_MOVEMENT_POINTS-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
+                      <!--LOC_UI_PEDIA_RELIGIOUS_STRENGTH-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">100 <img src="/images/ICON_RELIGIOUS_STRENGTH.webp" style="height:1em"/> Religious Strength</p><br>
+                      <!--LOC_UI_PEDIA_SPREAD_CHARGES-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_SPREAD_CHARGES.webp" style="height:1em"/> Spread Charges</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
+                      <!--LOC_UNIT_MISSIONARY_DESCRIPTION-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">May convert <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> Citizens to their Religion. May not initiate theological combat with units of other Religions (but can defend).</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <!--LOC_UNIT_APOSTLE_NAME-->
+                      <h2 class="civ-name">Apostle
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Apostle.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <!--LOC_HUD_PRODUCTION_COST-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">Cost: 200 <img src="/images/ICON_FAITH.webp" style="height:1em"/></p><br>
+                      <!--LOC_UI_PEDIA_MAITENANCE_COST-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">Maintenance Cost: 0 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Per Turn</p><br>
+                      <!--LOC_UI_PEDIA_MOVEMENT_POINTS-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
+                      <!--LOC_UI_PEDIA_RELIGIOUS_STRENGTH-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">110 <img src="/images/ICON_RELIGIOUS_STRENGTH.webp" style="height:1em"/> Religious Strength</p><br>
+                      <!--LOC_UI_PEDIA_SPREAD_CHARGES-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_SPREAD_CHARGES.webp" style="height:1em"/> Spread Charges</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
+                      <!--LOC_UNIT_APOSTLE_DESCRIPTION-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">May convert <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> Citizens to their Religion and initiate theological combat with units of other Religions. Once per game may Launch Inquisition to allow the purchase of Inquisitors. Once per game may Evangelize Belief to add an additional Belief to their Religion. These uses consume the Apostle.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <!--LOC_UNIT_INQUISITOR_NAME-->
+                      <h2 class="civ-name">Inquisitor
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Inquisitor.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <!--LOC_HUD_PRODUCTION_COST-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">Cost: 75 <img src="/images/ICON_FAITH.webp" style="height:1em"/></p><br>
+                      <!--LOC_UI_PEDIA_MAITENANCE_COST-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">Maintenance Cost: 0 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Per Turn</p><br>
+                      <!--LOC_UI_PEDIA_MOVEMENT_POINTS-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
+                      <!--LOC_UI_PEDIA_RELIGIOUS_STRENGTH-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">75 <img src="/images/ICON_RELIGIOUS_STRENGTH.webp" style="height:1em"/> Religious Strength</p><br>
+                      <!--LOC_UI_PEDIA_SPREAD_CHARGES-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_SPREAD_CHARGES.webp" style="height:1em"/> Spread Charges</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
+                      <!--LOC_UNIT_INQUISITOR_EXPANSION2_DESCRIPTION-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">May reduce the presence of other Religions in their territory by 75%, and initiate theological combat with units of other Religions.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <!--LOC_UNIT_GURU_NAME-->
+                      <h2 class="civ-name">Guru
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Guru.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <!--LOC_HUD_PRODUCTION_COST-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">Cost: 120 <img src="/images/ICON_FAITH.webp" style="height:1em"/></p><br>
+                      <!--LOC_UI_PEDIA_MAITENANCE_COST-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">Maintenance Cost: 0 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Per Turn</p><br>
+                      <!--LOC_UI_PEDIA_MOVEMENT_POINTS-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
+                      <!--LOC_UI_PEDIA_RELIGIOUS_STRENGTH-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">90 <img src="/images/ICON_RELIGIOUS_STRENGTH.webp" style="height:1em"/> Religious Strength</p><br>
+                      <!--LOC_UI_PEDIA_HEAL_CHARGES-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_HEAL_CHARGES.webp" style="height:1em"/> Heal Charges</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
+                      <!--LOC_UNIT_GURU_DESCRIPTION-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">May use a charge to heal itself and all adjacent friendly religious units. May not initiate theological combat with units of other Religions (but can defend).</p>
+                    </div>
+                  </div>
+                </div>
                 <div class="col-lg-12" id="Melee">
                   <div class="chart">
                     <!--LOC_PROMOTION_CLASS_MELEE_NAME-->
@@ -462,7 +634,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">17 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_BABYLONIAN_SABUM_KIBITTUM_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Babylonian unique Ancient era melee unit. +17 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Combat Strength against Heavy and Light Cavalry promotion class units. This unit has 3 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement and sight.</p>
                     </div>
@@ -481,7 +654,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">20 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_WARRIOR_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Weak Ancient era melee unit.</p>
                     </div>
@@ -500,7 +674,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">20 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_GAUL_GAESATAE_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Gallic unique Ancient era unit that replaces the Warrior. This unit has increased cost and receives +10 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Combat Strength when fighting units with a higher base Combat Strength. +5 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Combat Strength vs. district defenses.</p>
                     </div>
@@ -519,7 +694,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">28 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_AZTEC_EAGLE_WARRIOR_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Aztec unique Ancient era unit that replaces the Warrior.  Has a chance to capture other civilization's military units by turning them into Builders.</p>
                     </div>
@@ -539,7 +715,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">36 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_SWORDSMAN_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Strong Classical era melee unit.</p>
                     </div>
@@ -563,7 +740,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_RANGE.webp" style="height:1em"/> Range</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">25 <img src="/images/ICON_RANGED.webp" style="height:1em"/> Ranged Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_PERSIAN_IMMORTAL_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Persian unique melee unit that replaces the Swordsman. Melee class unit with a ranged attack, <img src="/images/ICON_RANGE.webp" style="height:1em"/> Range 2. Strong defense strength.</p>
                     </div>
@@ -583,7 +761,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">38 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_KONGO_SHIELD_BEARER_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Kongo unique Classical era unit that replaces the Swordsman. +10 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Combat Strength when defending against ranged attacks. Can see through Woods and Rainforests.</p>
                     </div>
@@ -603,7 +782,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">38 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_MACEDONIAN_HYPASPIST_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Macedonian unique melee unit that replaces the Swordsman. +10 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Combat Strength when besieging districts. Receives +50% Additional Support Bonus.</p>
                     </div>
@@ -622,7 +802,10 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">38 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_UI_PEDIA_BUILD_CHARGES-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">1 <img src="/images/ICON_CHARGES.webp" style="height:1em"/> Build Charges</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_MAORI_TOA_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Māori unique Classical era melee unit. Adjacent enemy units receive -5 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Combat Strength. Has 1 <img src="/images/ICON_CHARGES.webp" style="height:1em"/> charge to build PÄ improvement.</p>
                     </div>
@@ -642,7 +825,10 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">40 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_UI_PEDIA_BUILD_CHARGES-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">1 <img src="/images/ICON_CHARGES.webp" style="height:1em"/> Build Charges</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_ROMAN_LEGION_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Roman unique Classical era melee unit that replaces the Swordsman. Has 1 <img src="/images/ICON_CHARGES.webp" style="height:1em"/> charge to build a Roman Fort.</p>
                     </div>
@@ -662,7 +848,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">40 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_NORWEGIAN_BERSERKER_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Norwegian unique Medieval era unit. +2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement if this unit starts in enemy territory or is embarked. +10 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Combat Strength when attacking. Can be purchased with <img src="/images/ICON_FAITH.webp" style="height:1em"/> Faith.</p>
                     </div>
@@ -682,7 +869,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">46 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_MAN_AT_ARMS_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Medieval Era melee unit.</p>
                     </div>
@@ -702,7 +890,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">48 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_JAPANESE_SAMURAI_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Japanese unique Medieval era melee unit that replaces the Man-At-Arms. Does not suffer combat penalties when damaged.</p>
                     </div>
@@ -722,7 +911,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">48 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_GEORGIAN_KHEVSURETI_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Georgian unique Medieval Era unit that replaces the Man-At-Arms. +7 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Combat Strength bonus when fighting in hill terrain. No <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement penalty in hill terrain.</p>
                     </div>
@@ -742,7 +932,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">55 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_MUSKETMAN_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Renaissance era melee unit.</p>
                     </div>
@@ -762,7 +953,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">58 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_SPANISH_CONQUISTADOR_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Spanish unique Renaissance era unit that replaces the Musketman. +5 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Combat Strength when there is a religious unit within 1 hex. If this unit captures a city or is adjacent to a city when it is captured, the city will automatically adopt the Conquistador player's majority religion.</p>
                     </div>
@@ -782,7 +974,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">60 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_SULEIMAN_JANISSARY_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Ottoman unique Renaissance Era unit that replaces the Musketman. Starts with a <img src="/images/ICON_PROMOTION.webp" style="height:1em"/> free promotion. Stronger and cheaper than the Musketman. To train a Janissary a city must have a population of at least 2. If a city is founded by the Ottomans and trains a Janissary it loses a population.</p>
                     </div>
@@ -802,7 +995,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">65 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_LINE_INFANTRY_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Industrial Era melee unit.</p>
                     </div>
@@ -822,7 +1016,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">70 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_ENGLISH_REDCOAT_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">English unique Industrial era unit when Victoria is their leader that replaces the Line Infantry. +5 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Combat Strength when fighting on a continent other than that of your capital's. No disembark cost.</p>
                     </div>
@@ -842,7 +1037,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">70 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_FRENCH_GARDE_IMPERIALE_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">French unique Industrial era melee unit that replaces the Line Infantry. +5 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Combat Strength when fighting on your capital's continent. +10 <img src="/images/ICON_GREATGENERAL.webp" style="height:1em"/> Great General points when killing an enemy unit.</p>
                     </div>
@@ -863,7 +1059,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">80 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_INFANTRY_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Modern era melee unit.</p>
                     </div>
@@ -884,7 +1081,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">83 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_DIGGER_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Australian unique Modern era unit that replaces Infantry. +10 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Combat Strength when fighting on Coastal tiles. +5 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Combat Strength when fighting on Neutral or Foreign Territory.</p>
                     </div>
@@ -905,7 +1103,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">90 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_MECHANIZED_INFANTRY_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Information era melee unit.</p>
                     </div>
@@ -992,7 +1191,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">25 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_SPEARMAN_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Ancient era anti-cavalry unit.</p>
                     </div>
@@ -1011,7 +1211,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">28 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_GREEK_HOPLITE_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Greek unique Ancient era anti-cavalry unit that replaces the Spearman. +7 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Combat Strength if there is at least one adjacent Hoplite unit.</p>
                     </div>
@@ -1030,7 +1231,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">45 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_PIKEMAN_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Medieval era anti-cavalry unit.</p>
                     </div>
@@ -1049,7 +1251,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">45 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_ZULU_IMPI_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Zulu unique Medieval Era unit that replaces the Pikeman. Increased Flanking bonus, low cost and low maintenance. Earns XP faster.</p>
                     </div>
@@ -1068,7 +1271,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">55 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_PIKE_AND_SHOT_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Late Renaissance era anti-cavalry unit.</p>
                     </div>
@@ -1087,7 +1291,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">55 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_SWEDEN_CAROLEAN_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Swedish unique Renaissance Era unit that replaces the Pike and Shot. Faster than the Pike and Shot. +3 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Combat Strength per unused <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement.</p>
                     </div>
@@ -1106,7 +1311,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">80 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_AT_CREW_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Modern era counter to cavalry class units.</p>
                     </div>
@@ -1125,7 +1331,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">90 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_MODERN_AT_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Information era counter to cavalry class units.</p>
                     </div>
@@ -1216,7 +1423,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">1 <img src="/images/ICON_RANGE.webp" style="height:1em"/> Range</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">15 <img src="/images/ICON_RANGED.webp" style="height:1em"/> Ranged Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_SLINGER_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Weak Ancient era ranged unit. Better on attack than defense.</p>
                     </div>
@@ -1239,7 +1447,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_RANGE.webp" style="height:1em"/> Range</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">25 <img src="/images/ICON_RANGED.webp" style="height:1em"/> Ranged Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_ARCHER_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">First Ancient era ranged unit with a <img src="/images/ICON_RANGE.webp" style="height:1em"/> Range of 2.</p>
                     </div>
@@ -1262,7 +1471,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_RANGE.webp" style="height:1em"/> Range</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">28 <img src="/images/ICON_RANGED.webp" style="height:1em"/> Ranged Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_MAYAN_HULCHE_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Mayan unique Ancient Era ranged unit that replaces the Archer. Strong ranged attack. +5 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Combat Strength when fighting a wounded opponent.</p>
                     </div>
@@ -1285,7 +1495,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_RANGE.webp" style="height:1em"/> Range</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">30 <img src="/images/ICON_RANGED.webp" style="height:1em"/> Ranged Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_NUBIAN_PITATI_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Nubian unique Ancient era unit that replaces the Archer. Stronger than the Archer with extra <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement. Upgrades to Crossbowman.</p>
                     </div>
@@ -1309,7 +1520,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_RANGE.webp" style="height:1em"/> Range</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">25 <img src="/images/ICON_RANGED.webp" style="height:1em"/> Ranged Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_SCYTHIAN_HORSE_ARCHER_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Scythian unique Classical Era ranged cavalry unit with 4 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement and a <img src="/images/ICON_RANGE.webp" style="height:1em"/> Range of 2.</p>
                     </div>
@@ -1332,7 +1544,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_RANGE.webp" style="height:1em"/> Range</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">35 <img src="/images/ICON_RANGED.webp" style="height:1em"/> Ranged Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_EGYPTIAN_CHARIOT_ARCHER_EXPANSION2_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Egyptian unique Ancient era ranged cavalry unit. 4 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement when starting in open terrain.</p>
                     </div>
@@ -1355,7 +1568,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_RANGE.webp" style="height:1em"/> Range</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">40 <img src="/images/ICON_RANGED.webp" style="height:1em"/> Ranged Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_CROSSBOWMAN_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Medieval era ranged unit.</p>
                     </div>
@@ -1378,7 +1592,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_RANGE.webp" style="height:1em"/> Range</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">40 <img src="/images/ICON_RANGED.webp" style="height:1em"/> Ranged Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_CHINESE_CROUCHING_TIGER_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Chinese unique unit that replaces the Crossbowman. +7 <img src="/images/ICON_RANGED.webp" style="height:1em"/> Ranged Strength when attacking adjacent enemy units.</p>
                     </div>
@@ -1402,7 +1617,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_RANGE.webp" style="height:1em"/> Range</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">40 <img src="/images/ICON_RANGED.webp" style="height:1em"/> Ranged Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_MONGOLIAN_KESHIG_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Mongolian unique Medieval Era Ranged Cavalry unit. Can escort moving civilian and support units at their higher <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement speed.</p>
                     </div>
@@ -1425,7 +1641,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_RANGE.webp" style="height:1em"/> Range</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">40 <img src="/images/ICON_RANGED.webp" style="height:1em"/> Ranged Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_VIETNAMESE_VOI_CHIEN_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Vietnamese unique Medieval era ranged unit that replaces the Crossbowman. Has Sight of 3 and can move after attacking. They are also stronger when defending and more expensive.</p>
                     </div>
@@ -1448,7 +1665,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_RANGE.webp" style="height:1em"/> Range</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">60 <img src="/images/ICON_RANGED.webp" style="height:1em"/> Ranged Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_KOREAN_HWACHA_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Korean unique Renaissance Era unit that replaces the Field Cannon. High <img src="/images/ICON_RANGED.webp" style="height:1em"/> Ranged Attack Strength. Cannot move and attack in the same turn.</p>
                     </div>
@@ -1471,7 +1689,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_RANGE.webp" style="height:1em"/> Range</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">60 <img src="/images/ICON_RANGED.webp" style="height:1em"/> Ranged Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_FIELD_CANNON_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Industrial era ranged unit.</p>
                     </div>
@@ -1494,7 +1713,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_RANGE.webp" style="height:1em"/> Range</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">85 <img src="/images/ICON_RANGED.webp" style="height:1em"/> Ranged Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_MACHINE_GUN_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Atomic era ranged unit.</p>
                     </div>
@@ -1585,7 +1805,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_RANGE.webp" style="height:1em"/> Range</p><br>
                       <!--LOC_UI_PEDIA_BOMBARD_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">35 <img src="/images/ICON_BOMBARD.webp" style="height:1em"/> Bombard Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_CATAPULT_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Classical era siege unit, ideal for attacking cities. Cannot move and attack on the same turn unless they've earned the Expert Crew promotion.</p>
                     </div>
@@ -1608,7 +1829,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_RANGE.webp" style="height:1em"/> Range</p><br>
                       <!--LOC_UI_PEDIA_BOMBARD_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">45 <img src="/images/ICON_BOMBARD.webp" style="height:1em"/> Bombard Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_TREBUCHET_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Medieval era siege unit, ideal for attacking cities. Cannot move and attack on the same turn unless they've earned the Expert Crew promotion.</p>
                     </div>
@@ -1631,7 +1853,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_RANGE.webp" style="height:1em"/> Range</p><br>
                       <!--LOC_UI_PEDIA_BOMBARD_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">50 <img src="/images/ICON_BOMBARD.webp" style="height:1em"/> Bombard Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_KHMER_DOMREY_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Khmer unique Medieval era siege unit that replaces the Trebuchet. This unit has a higher <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee and Range Strength than the Trebuchet. It can move and shoot in the same turn and exerts zone of control.</p>
                     </div>
@@ -1655,7 +1878,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_RANGE.webp" style="height:1em"/> Range</p><br>
                       <!--LOC_UI_PEDIA_BOMBARD_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">55 <img src="/images/ICON_BOMBARD.webp" style="height:1em"/> Bombard Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_BOMBARD_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Renaissance era siege unit, ideal for attacking cities. Cannot move and attack on the same turn unless they've earned the Expert Crew promotion.</p>
                     </div>
@@ -1680,7 +1904,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_RANGE.webp" style="height:1em"/> Range</p><br>
                       <!--LOC_UI_PEDIA_BOMBARD_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">80 <img src="/images/ICON_BOMBARD.webp" style="height:1em"/> Bombard Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_ARTILLERY_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Modern era siege unit, ideal for attacking cities. Cannot move and attack on the same turn unless they've earned the Expert Crew promotion.</p>
                     </div>
@@ -1705,7 +1930,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_RANGE.webp" style="height:1em"/> Range</p><br>
                       <!--LOC_UI_PEDIA_BOMBARD_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">100 <img src="/images/ICON_BOMBARD.webp" style="height:1em"/> Bombard Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_ROCKET_ARTILLERY_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Information era siege unit, ideal for attacking cities. Cannot move and attack on the same turn unless they've earned the Expert Crew promotion.</p>
                     </div>
@@ -1793,7 +2019,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">36 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_HORSEMAN_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Fast-moving Classical era light cavalry unit.</p>
                     </div>
@@ -1813,7 +2040,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">5 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">46 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_COURSER_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Medieval Era light cavalry unit.</p>
                     </div>
@@ -1833,7 +2061,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">6 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">48 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_MAPUCHE_MALON_RAIDER_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Mapuche unique Medieval Era unit that replaces the Courser. +1 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement. Starts with <img src="/images/ICON_PROMOTION.webp" style="height:1em"/> free Promotion.</p>
                     </div>
@@ -1853,7 +2082,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">5 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">48 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_ETHIOPIAN_OROMO_CAVALRY_EXPANSION2_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Ethiopian unique Medieval era unit that replaces the Courser. +1 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement if starts in Hills and +4 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Combat Strength when fighting in Hills. Has Sight of 3.</p>
                     </div>
@@ -1873,7 +2103,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">5 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">49 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_HUNGARY_BLACK_ARMY_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Hungarian unique Medieval Era unit that replaces the Courser. +2 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Combat Strength from each adjacent Levied unit.</p>
                     </div>
@@ -1893,7 +2124,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">5 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">62 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_CAVALRY_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Fast-moving Industrial era light cavalry unit.</p>
                     </div>
@@ -1913,7 +2145,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">5 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">62 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_RUSSIAN_COSSACK_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Russian unique Industrial era unit that replaces Cavalry. +5 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Combat Strength when fighting in or adjacent to its home territory. Can move after attacking if <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement points remain.</p>
                     </div>
@@ -1933,7 +2166,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">5 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">62 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_COLOMBIAN_LLANERO_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Gran Colombian Industrial era unique unit that replaces the Cavalry. Low maintenance cost. +2 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Combat Strength for every adjacent Llanero. Fully heals when in range of a Comandante General that activates its retire ability.</p>
                     </div>
@@ -1953,7 +2187,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">5 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">65 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_HUNGARY_HUSZAR_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Hungarian unique Industrial era unit that replaces Cavalry. +2 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Combat Strength from every City-state of which you are suzerain.</p>
                     </div>
@@ -1972,7 +2207,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">5 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">70 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_CANADA_MOUNTIE_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Canadian unique Modern era unit. Has Sight of 4. Can create 2 National Parks. +5 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Combat Strength when fighting within 4 tiles of a National Park. Additional +5 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Combat Strength when fighting within 4 tiles of an Owned National Park.</p>
                     </div>
@@ -1993,7 +2229,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">5 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">86 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_HELICOPTER_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Fast-moving Atomic era light cavalry unit.</p>
                     </div>
@@ -2080,7 +2317,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">20 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_SUMERIAN_WAR_CART_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Sumerian unique Ancient era unit. 4 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement if this unit starts in open terrain. Can escort civilian and support units at their higher <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement speed. No penalties against anti-cavalry units. +4 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Combat Strength when fighting <img src="/images/ICON_BARBARIAN.webp" style="height:1em"/> Barbarians.</p>
                     </div>
@@ -2099,7 +2337,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">28 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_HEAVY_CHARIOT_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Hard-hitting, Ancient era heavy cavalry unit. Gains 1 bonus <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement if it begins a turn on a flat tile with no Woods, Rainforest, or Hills.</p>
                     </div>
@@ -2119,7 +2358,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">36 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_MACEDONIAN_HETAIROI_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Macedonian unique heavy cavalry unit. Additional +5 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Combat Strength when adjacent to a <img src="/images/ICON_GREATGENERAL.webp" style="height:1em"/> Great General from any era. +5 <img src="/images/ICON_GREATGENERAL.webp" style="height:1em"/> Great General points when killing an enemy unit. Starts with <img src="/images/ICON_PROMOTION.webp" style="height:1em"/> free Promotion.</p>
                     </div>
@@ -2138,7 +2378,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">40 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_INDIAN_VARU_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Indian unique Classical era heavy cavalry unit. Has Sight of 3. Adjacent enemy units receive -5 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Combat Strength.</p>
                     </div>
@@ -2158,7 +2399,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">50 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_KNIGHT_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Hard-hitting, Medieval era heavy cavalry unit.</p>
                     </div>
@@ -2178,7 +2420,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">50 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_BYZANTINE_TAGMA_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Basil II's unique Medieval era unit that replaces the Knight. Land units within 1 tile of the Tagma receive +2 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Combat Strength or <img src="/images/ICON_RELIGION.webp" style="height:1em"/> Religious Strength.</p>
                     </div>
@@ -2198,7 +2441,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">53 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_ARABIAN_MAMLUK_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Arabian unique Medieval era unit that replaces the Knight. Heals at the end of every turn, even after moving or attacking.</p>
                     </div>
@@ -2218,7 +2462,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">53 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_MALI_MANDEKALU_CAVALRY_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Mali unique Medieval Era unit that replaces the Knight. Trader units are immune to being plundered if they are within 4 tiles of a Mandekalu Cavalry and on a land tile. Combat victories provide <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold equal to 50% of that unit's base <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Combat Strength (on Online speed).</p>
                     </div>
@@ -2238,7 +2483,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">64 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_POLISH_HUSSAR_EXPANSION2_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Polish unique Renaissance era unit that replaces the Cuirassier. Pushes defending enemy units back from their hex in any battle where they score more damage. Defenders that cannot retreat suffer additional damage.</p>
                     </div>
@@ -2258,7 +2504,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">64 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_CUIRASSIER_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Industrial Era heavy cavalry unit.</p>
                     </div>
@@ -2278,7 +2525,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">5 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">64 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_AMERICAN_ROUGH_RIDER_EXPANSION2_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">American unique Industrial era unit that replaces Cuirassier when Teddy Roosevelt is their leader. Combat victories on their <img src="/images/ICON_CAPITAL.webp" style="height:1em"/> Capital's continent provide <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture equal to 25% of the <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Combat Strength of the defeated unit (on Online speed). +5 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Combat Strength when fighting on Hills. Lower maintenance cost.</p>
                     </div>
@@ -2299,7 +2547,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">85 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_TANK_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Fast-moving Modern era heavy cavalry unit that ignores zone of control.</p>
                     </div>
@@ -2320,7 +2569,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">95 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_MODERN_ARMOR_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Information era heavy cavalry unit that is fast and strong.</p>
                     </div>
@@ -2407,7 +2657,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">10 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_SCOUT_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Fast-moving Ancient era recon unit.</p>
                     </div>
@@ -2426,7 +2677,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">15 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_CREE_OKIHTCITAW_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Cree unique Ancient era unit that replaces the Scout. Starts with a <img src="/images/ICON_PROMOTION.webp" style="height:1em"/> free promotion. +5 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Combat Strength when fighting units with a higher base Combat Strength.</p>
                     </div>
@@ -2449,7 +2701,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">1 <img src="/images/ICON_RANGE.webp" style="height:1em"/> Range</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">35 <img src="/images/ICON_RANGED.webp" style="height:1em"/> Ranged Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_SKIRMISHER_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Medieval Era recon unit.</p>
                     </div>
@@ -2472,7 +2725,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">1 <img src="/images/ICON_RANGE.webp" style="height:1em"/> Range</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">40 <img src="/images/ICON_RANGED.webp" style="height:1em"/> Ranged Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_INCA_WARAKAQ_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Incan unique Medieval Era unit that replaces the Skirmisher. Stronger at ranged combat than the Skirmisher and +1 additional attack per turn.</p>
                     </div>
@@ -2495,7 +2749,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">1 <img src="/images/ICON_RANGE.webp" style="height:1em"/> Range</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">65 <img src="/images/ICON_RANGED.webp" style="height:1em"/> Ranged Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_RANGER_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Fast-moving Industrial era recon unit.</p>
                     </div>
@@ -2518,7 +2773,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">1 <img src="/images/ICON_RANGE.webp" style="height:1em"/> Range</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">70 <img src="/images/ICON_RANGED.webp" style="height:1em"/> Ranged Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_SCOTTISH_HIGHLANDER_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Scottish unique Industrial Era unit that replaces the Ranger. Strong reconnaissance unit. +5 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Combat Strength bonus when fighting in Hill and Forest terrain.</p>
                     </div>
@@ -2541,7 +2797,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_RANGE.webp" style="height:1em"/> Range</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">75 <img src="/images/ICON_RANGED.webp" style="height:1em"/> Ranged Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_SPEC_OPS_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Atomic Era reconnaissance unit. Paradrop ability allows movement from friendly tile to location 7 tiles away (12 if starting from Aerodrome or Airstrip). Can attack support units directly without having to eliminate the combat unit first.</p>
                     </div>
@@ -2566,7 +2823,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Maintenance Cost: 1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Per Turn</p><br>
                       <!--LOC_UI_PEDIA_MOVEMENT_POINTS-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_BATTERING_RAM_EXPANSION2_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Ancient era support unit. When adjacent to a city, attacking melee and anti-cavalry units do full damage to the city’s Walls. Does not affect cities with Medieval or Renaissance Walls. Ineffective against Urban Defenses.</p>
                     </div>
@@ -2583,7 +2841,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Maintenance Cost: 2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Per Turn</p><br>
                       <!--LOC_UI_PEDIA_MOVEMENT_POINTS-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_SIEGE_TOWER_EXPANSION2_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Medieval era support unit. When adjacent to a city, attacking melee and anti-cavalry units ignore Walls and immediately assault the city. Does not affect cities with Renaissance Walls. Ineffective against Urban Defenses.</p>
                     </div>
@@ -2600,7 +2859,10 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Maintenance Cost: 2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Per Turn</p><br>
                       <!--LOC_UI_PEDIA_MOVEMENT_POINTS-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_UI_PEDIA_BUILD_CHARGES-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_CHARGES.webp" style="height:1em"/> Build Charges</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_MILITARY_ENGINEER_ALT_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Medieval era support unit. Requires an Armory to produce. Can construct Roads, Railroads, Forts, Airstrips, Missile Silos, and Mountain Tunnel improvements. One of their build charges can also be used to complete 20% of a Canal, Dam or Aqueduct district or a Flood Barrier building.</p>
                     </div>
@@ -2617,7 +2879,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Maintenance Cost: 5 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Per Turn</p><br>
                       <!--LOC_UI_PEDIA_MOVEMENT_POINTS-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_MEDIC_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Industrial era support unit. Can heal adjacent units.</p>
                     </div>
@@ -2634,7 +2897,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Maintenance Cost: 2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Per Turn</p><br>
                       <!--LOC_UI_PEDIA_MOVEMENT_POINTS-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_OBSERVATION_BALLOON_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Modern era support unit. Grants +1 <img src="/images/ICON_RANGE.webp" style="height:1em"/> Range to Siege class units within 1 hex.</p>
                     </div>
@@ -2655,7 +2919,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">1 <img src="/images/ICON_RANGE.webp" style="height:1em"/> Range</p><br>
                       <!--LOC_UI_PEDIA_ANTIAIR_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">90 <img src="/images/ICON_ANTIAIR_LARGE.webp" style="height:1em"/> Anti-air Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_ANTIAIR_GUN_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Modern era anti-air support unit. Provides cover from air attacks up to 1 hex away from the weapon.</p>
                     </div>
@@ -2676,7 +2941,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">1 <img src="/images/ICON_RANGE.webp" style="height:1em"/> Range</p><br>
                       <!--LOC_UI_PEDIA_ANTIAIR_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">110 <img src="/images/ICON_ANTIAIR_LARGE.webp" style="height:1em"/> Anti-air Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_MOBILE_SAM_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Information era anti-air support unit. Provides cover from air and nuclear attacks up to 1 hex away from the weapon.</p>
                     </div>
@@ -2693,7 +2959,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Maintenance Cost: 3 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Per Turn</p><br>
                       <!--LOC_UI_PEDIA_MOVEMENT_POINTS-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">5 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">5 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_DRONE_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Atomic era support unit. Adds +1 <img src="/images/ICON_RANGE.webp" style="height:1em"/> Range and +5 <img src="/images/ICON_BOMBARD.webp" style="height:1em"/> Bombard Strength to Siege class units within 1 hex.</p>
                     </div>
@@ -2710,7 +2977,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Maintenance Cost: 2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Per Turn</p><br>
                       <!--LOC_UI_PEDIA_MOVEMENT_POINTS-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_SUPPLY_CONVOY_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Modern era support unit. Increases healing for adjacent units. Gives units 1 bonus <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement if move is started adjacent to the Convoy.</p>
                     </div>
@@ -2797,7 +3065,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">30 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_GALLEY_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Ancient era melee naval combat unit. Can only operate on Coastal waters until Cartography is researched.</p>
                     </div>
@@ -2816,7 +3085,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">35 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_NORWEGIAN_LONGSHIP_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Norwegian unique Ancient era naval unit that replaces the Galley. Can pillage enemy coastal lands and capture civilians if adjacent using its coastal raiding ability. 4 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement while in coastal waters.</p>
                     </div>
@@ -2835,7 +3105,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">35 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_PHOENICIA_BIREME_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Phoenician unique Ancient Era unit that replaces the Galley. Increased <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Combat Strength and <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement. Trader units are immune to being plundered if they are within 4 tiles of a Bireme and on a water tile.</p>
                     </div>
@@ -2854,7 +3125,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">55 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_CARAVEL_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Fast Renaissance era exploration melee naval unit.</p>
                     </div>
@@ -2873,7 +3145,10 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">55 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 Sight</p><br>
+                      <!--LOC_UI_PEDIA_BUILD_CHARGES-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_CHARGES.webp" style="height:1em"/> Build Charges</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_PORTUGUESE_NAU_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Portuguese unique naval melee unit that replaces the Caravel. Starts with <img src="/images/ICON_PROMOTION.webp" style="height:1em"/> free Promotion and is less maintenance. Has 2 <img src="/images/ICON_CHARGES.webp" style="height:1em"/> charge to build Feitorias.</p>
                     </div>
@@ -2894,7 +3169,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">5 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">70 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_IRONCLAD_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Powerful Industrial era armored melee naval unit.</p>
                     </div>
@@ -2917,7 +3193,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">90 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
                       <!--LOC_UI_PEDIA_ANTIAIR_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">90 <img src="/images/ICON_ANTIAIR_LARGE.webp" style="height:1em"/> Anti-air Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_DESTROYER_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Strongest melee naval unit. Reveals Naval Raiders within sight range.</p>
                     </div>
@@ -3008,7 +3285,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">1 <img src="/images/ICON_RANGE.webp" style="height:1em"/> Range</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">25 <img src="/images/ICON_RANGED.webp" style="height:1em"/> Ranged Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_QUADRIREME_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Classical era ranged naval unit with <img src="/images/ICON_RANGE.webp" style="height:1em"/> Range of 1. Can only operate on Coastal waters until Cartography is researched.</p>
                     </div>
@@ -3031,7 +3309,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_RANGE.webp" style="height:1em"/> Range</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">25 <img src="/images/ICON_RANGED.webp" style="height:1em"/> Ranged Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_BYZANTINE_DROMON_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Byzantine unique Classical era unit that replaces the Quadrireme and has additional range.</p>
                     </div>
@@ -3055,7 +3334,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_RANGE.webp" style="height:1em"/> Range</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">55 <img src="/images/ICON_RANGED.webp" style="height:1em"/> Ranged Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_FRIGATE_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Renaissance era ranged naval unit with <img src="/images/ICON_RANGE.webp" style="height:1em"/> Range of 2.</p>
                     </div>
@@ -3079,7 +3359,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_RANGE.webp" style="height:1em"/> Range</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">55 <img src="/images/ICON_RANGED.webp" style="height:1em"/> Ranged Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_INDONESIAN_JONG_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Indonesian unique Medieval era naval unit that replaces the Frigate. Formation units all inherit escort's <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement speed and +5 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Combat Strength when in a formation.</p>
                     </div>
@@ -3103,7 +3384,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_RANGE.webp" style="height:1em"/> Range</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">60 <img src="/images/ICON_RANGED.webp" style="height:1em"/> Ranged Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_DE_ZEVEN_PROVINCIEN_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Netherlands unique Renaissance Era unit that replaces the Frigate. +7 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Combat Strength when attacking defensible districts.</p>
                     </div>
@@ -3130,7 +3412,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">75 <img src="/images/ICON_RANGED.webp" style="height:1em"/> Ranged Strength</p><br>
                       <!--LOC_UI_PEDIA_ANTIAIR_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">90 <img src="/images/ICON_ANTIAIR_LARGE.webp" style="height:1em"/> Anti-air Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_BATTLESHIP_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Modern era naval ranged unit with <img src="/images/ICON_RANGE.webp" style="height:1em"/> Range of 3. Provides cover from air and nuclear attacks up to 1 tile away.</p>
                     </div>
@@ -3157,7 +3440,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">85 <img src="/images/ICON_RANGED.webp" style="height:1em"/> Ranged Strength</p><br>
                       <!--LOC_UI_PEDIA_ANTIAIR_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">95 <img src="/images/ICON_ANTIAIR_LARGE.webp" style="height:1em"/> Anti-air Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_BRAZILIAN_MINAS_GERAES_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Brazilian unique Industrial era unit that replaces the Battleship. Stronger than the Battleship. Unlocked by Nationalism.</p>
                     </div>
@@ -3184,7 +3468,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">90 <img src="/images/ICON_RANGED.webp" style="height:1em"/> Ranged Strength</p><br>
                       <!--LOC_UI_PEDIA_ANTIAIR_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">110 <img src="/images/ICON_ANTIAIR_LARGE.webp" style="height:1em"/> Anti-air Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_MISSILE_CRUISER_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Information era ranged naval unit with <img src="/images/ICON_RANGE.webp" style="height:1em"/> Range of 4. Provides cover from air and nuclear attacks up to 1 tile away.</p>
                     </div>
@@ -3275,7 +3560,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_RANGE.webp" style="height:1em"/> Range</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">50 <img src="/images/ICON_RANGED.webp" style="height:1em"/> Ranged Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_PRIVATEER_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Renaissance era ranged naval unit with the ability to coastal raid.Can only be seen by other Naval Raiders unless adjacent to it. Reveals Naval Raiders within sight range.</p>
                     </div>
@@ -3298,7 +3584,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_RANGE.webp" style="height:1em"/> Range</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">55 <img src="/images/ICON_RANGED.webp" style="height:1em"/> Ranged Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_ENGLISH_SEADOG_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">English unique Renaissance era naval unit that replaces the Privateer. Has a chance to capture defeated enemy ships. Can only be seen by other Naval Raiders unless adjacent to it. Reveals Naval Raiders within sight range.</p>
                     </div>
@@ -3321,7 +3608,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_RANGE.webp" style="height:1em"/> Range</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">50 <img src="/images/ICON_RANGED.webp" style="height:1em"/> Ranged Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_OTTOMAN_BARBARY_CORSAIR_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Ottoman unique Medieval era naval unit that replaces the Privateer. Can enter Ocean tiles regardless of researched Technologies. It costs no <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement to coastal raid. Can only be seen by other Naval Raiders unless adjacent to it. Reveals Naval Raiders within sight range.</p>
                     </div>
@@ -3344,7 +3632,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_RANGE.webp" style="height:1em"/> Range</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">75 <img src="/images/ICON_RANGED.webp" style="height:1em"/> Ranged Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_SUBMARINE_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Modern era ranged raiding naval unit. Can only be seen by other Naval Raiders unless adjacent to it. Reveals Naval Raiders within sight range.</p>
                     </div>
@@ -3367,7 +3656,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_RANGE.webp" style="height:1em"/> Range</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">75 <img src="/images/ICON_RANGED.webp" style="height:1em"/> Ranged Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_GERMAN_UBOAT_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">German unique Modern era naval unit that replaces the Submarine. Cheaper to produce, +1 Sight, and +10 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Combat Strength when fighting on Ocean tiles. Able to reveal other stealthed units.</p>
                     </div>
@@ -3390,7 +3680,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_RANGE.webp" style="height:1em"/> Range</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">85 <img src="/images/ICON_RANGED.webp" style="height:1em"/> Ranged Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_NUCLEAR_SUBMARINE_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Highly advanced Information era ranged raiding naval unit that can be armed with nuclear weapons. Can only be seen by other Naval Raiders unless adjacent to it. Reveals Naval Raiders within sight range.</p>
                     </div>
@@ -3477,7 +3768,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">5 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">70 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_AIRCRAFT_CARRIER_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Atomic era melee naval unit that can transport air units.</p>
                     </div>
@@ -3548,7 +3840,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">25 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_LAHORE_NIHANG_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Lahore City-state unique unit with a unique Promotion tree. Purchasable with <img src="/images/ICON_FAITH.webp" style="height:1em"/> Faith. +15 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Combat Strength when Barracks, Armory, and Military Academy buildings are first constructed. Receives bonuses from <img src="/images/ICON_GREATGENERAL.webp" style="height:1em"/> Great General from any era.</p>
                     </div>
@@ -3635,7 +3928,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement Points</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">28 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Melee Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_WARRIOR_MONK_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Fast-moving land combat unit with a unique promotion tree.<br><br>Receives all combat bonuses of melee units except bonus vs. anti-cavalry. Receives bonuses from <img src="/images/ICON_GREATGENERAL.webp" style="height:1em"/> Great General from any era. Has scaling cost that depends on advancement through Tech and Civics tree.<br><br>Has unique ability Battle Meditation: +1 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Combat Strength for every researched civic (up to and including Industrial Era).</p>
                     </div>
@@ -3728,7 +4022,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 <img src="/images/ICON_RANGE.webp" style="height:1em"/> Range</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">70 <img src="/images/ICON_RANGED.webp" style="height:1em"/> Ranged Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_BIPLANE_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">First air combat unit, available in the Modern era.</p>
                     </div>
@@ -3753,7 +4048,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">5 <img src="/images/ICON_RANGE.webp" style="height:1em"/> Range</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">95 <img src="/images/ICON_RANGED.webp" style="height:1em"/> Ranged Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_FIGHTER_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Atomic era Biplane upgrade.</p>
                     </div>
@@ -3778,7 +4074,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">5 <img src="/images/ICON_RANGE.webp" style="height:1em"/> Range</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">95 <img src="/images/ICON_RANGED.webp" style="height:1em"/> Ranged Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_AMERICAN_P51_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">American unique Atomic era air unit that replaces the Fighter.  Gains +5 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Combat Strength against fighter aircraft, has +2 flight range, and gains +50% experience.</p>
                     </div>
@@ -3803,7 +4100,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">6 <img src="/images/ICON_RANGE.webp" style="height:1em"/> Range</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">105 <img src="/images/ICON_RANGED.webp" style="height:1em"/> Ranged Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">5 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">5 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_JET_FIGHTER_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Information era Fighter upgrade.</p>
                     </div>
@@ -3896,7 +4194,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">10 <img src="/images/ICON_RANGE.webp" style="height:1em"/> Range</p><br>
                       <!--LOC_UI_PEDIA_BOMBARD_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">105 <img src="/images/ICON_BOMBARD.webp" style="height:1em"/> Bombard Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_BOMBER_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">First bomber unit, available in the Atomic era.</p>
                     </div>
@@ -3921,7 +4220,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">15 <img src="/images/ICON_RANGE.webp" style="height:1em"/> Range</p><br>
                       <!--LOC_UI_PEDIA_BOMBARD_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">115 <img src="/images/ICON_BOMBARD.webp" style="height:1em"/> Bombard Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">5 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">5 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_JET_BOMBER_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Information era Bomber upgrade.</p>
                     </div>
@@ -3989,7 +4289,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">120 <img src="/images/ICON_RANGED.webp" style="height:1em"/> Ranged Strength</p><br>
                       <!--LOC_UI_PEDIA_ANTIAIR_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">120 <img src="/images/ICON_ANTIAIR_LARGE.webp" style="height:1em"/> Anti-air Strength</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> Line of Sight</p><br>
                       <!--LOC_UNIT_GIANT_DEATH_ROBOT_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">Information Era Super-Unit. Able to move and fight in water. Resistant to Weapons of Mass Destruction. Combat abilities can be upgraded by researching future technologies.</p>
                     </div>

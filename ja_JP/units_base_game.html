@@ -237,6 +237,14 @@
                 <div class="sidebar-body">
                   <ul class="sidebar-body-menu">
                     <li>
+                      <a href="#宗教" onclick="civClicked(&quot;宗教&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/TYPE_APOSTLE.webp">
+                        </span>
+                        <p>宗教</p>
+                      </a>
+                    </li>
+                    <li>
                       <a href="#近接戦闘" onclick="civClicked(&quot;近接戦闘&quot;)">
                         <span aria-hidden="true" class="icon">
                           <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/TYPE_MELEE.webp">
@@ -381,6 +389,170 @@
             <main class="main users chart-page">
               <div class="container">
                 <h1 class="civ-name">Civ VI Base Game Unit Details</h1><br>
+                <div class="col-lg-12" id="宗教">
+                  <div class="chart">
+                    <!--LOC_PEDIA_CITYSTATES_PAGEGROUP_RELIGIOUS_NAME-->
+                    <h2 class="civ-name">宗教</h2>
+                    <details>
+                      <summary class="civ-ability-desc" style="text-align:left">ユニットのレベルアップ</summary>
+                      <div class="row">
+                        <div class="col-md-4 col-sm-6 col-12 gov-promotion ">
+                          <!--LOC_PROMOTION_ORATOR_NAME-->
+                          <h3 class="civ-ability-name" style="text-align:center">演説者<br><br>
+                            <!--LOC_PROMOTION_ORATOR_DESCRIPTION-->
+                            <p class="civ-ability-desc" style="text-align:center">布教可能回数が2回増える。</p><br>
+                          </h3>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-12 gov-promotion ">
+                          <!--LOC_PROMOTION_PROSELYTIZER_NAME-->
+                          <h3 class="civ-ability-name" style="text-align:center">改宗者<br><br>
+                            <!--LOC_PROMOTION_PROSELYTIZER_DESCRIPTION-->
+                            <p class="civ-ability-desc" style="text-align:center">布教の対象となった都市から他の宗教の圧力を75%減少させる。</p><br>
+                          </h3>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-12 gov-promotion ">
+                          <!--LOC_PROMOTION_TRANSLATOR_NAME-->
+                          <h3 class="civ-ability-name" style="text-align:center">通訳<br><br>
+                            <!--LOC_PROMOTION_TRANSLATOR_DESCRIPTION-->
+                            <p class="civ-ability-desc" style="text-align:center">他の文明の都市における布教力が3倍になる。</p><br>
+                          </h3>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-12 gov-promotion ">
+                          <!--LOC_PROMOTION_PILGRIM_NAME-->
+                          <h3 class="civ-ability-name" style="text-align:center">巡礼者<br><br>
+                            <!--LOC_PROMOTION_PILGRIM_DESCRIPTION-->
+                            <p class="civ-ability-desc" style="text-align:center">自然遺産に隣接するタイルに初めて移動した際に布教可能回数が3回増える。</p><br>
+                          </h3>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-12 gov-promotion ">
+                          <!--LOC_PROMOTION_INDULGENCE_VENDOR_NAME-->
+                          <h3 class="civ-ability-name" style="text-align:center">免罪符の販売人<br><br>
+                            <!--LOC_PROMOTION_INDULGENCE_VENDOR_DESCRIPTION-->
+                            <p class="civ-ability-desc" style="text-align:center">このユニットが都市を初めて改宗させると100 <img src="/images/ICON_GOLD.webp" style="height:1em"/> ゴールドを得る。</p><br>
+                          </h3>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-12 gov-promotion ">
+                          <!--LOC_PROMOTION_HEATHEN_CONVERSION_NAME-->
+                          <h3 class="civ-ability-name" style="text-align:center">異教徒の改宗<br><br>
+                            <!--LOC_PROMOTION_HEATHEN_CONVERSION_DESCRIPTION-->
+                            <p class="civ-ability-desc" style="text-align:center">布教力を1使って隣接するすべての蛮族を改宗させ、自分の味方にできる。</p><br>
+                          </h3>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-12 gov-promotion ">
+                          <!--LOC_PROMOTION_DEBATER_NAME-->
+                          <h3 class="civ-ability-name" style="text-align:center">論客<br><br>
+                            <!--LOC_PROMOTION_DEBATER_DESCRIPTION-->
+                            <p class="civ-ability-desc" style="text-align:center">神学戦争において <img src="/images/ICON_RELIGION.webp" style="height:1em"/> 宗教戦闘力+20。</p><br>
+                          </h3>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-12 gov-promotion ">
+                          <!--LOC_PROMOTION_MARTYR_NAME-->
+                          <h3 class="civ-ability-name" style="text-align:center">殉教者<br><br>
+                            <!--LOC_PROMOTION_MARTYR_DESCRIPTION-->
+                            <p class="civ-ability-desc" style="text-align:center">神学戦争で使徒が命を落とすと遺物が生まれる。</p><br>
+                          </h3>
+                        </div>
+                        <div class="col-md-4 col-sm-6 col-12 gov-promotion ">
+                          <!--LOC_PROMOTION_CHAPLAIN_NAME-->
+                          <h3 class="civ-ability-name" style="text-align:center">従軍牧師<br><br>
+                            <!--LOC_PROMOTION_CHAPLAIN_DESCRIPTION-->
+                            <p class="civ-ability-desc" style="text-align:center">使徒が衛生兵として機能し、1タイル以内にいるユニットの回復力が向上。</p><br>
+                          </h3>
+                        </div>
+                      </div>
+                    </details>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <!--LOC_UNIT_MISSIONARY_NAME-->
+                      <h2 class="civ-name">伝道師
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Missionary.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <!--LOC_HUD_PRODUCTION_COST-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">現在のコスト: 75 <img src="/images/ICON_FAITH.webp" style="height:1em"/></p><br>
+                      <!--LOC_UI_PEDIA_MAITENANCE_COST-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">維持コスト: 0 <img src="/images/ICON_GOLD.webp" style="height:1em"/>ターンごとの</p><br>
+                      <!--LOC_UI_PEDIA_MOVEMENT_POINTS-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
+                      <!--LOC_UI_PEDIA_RELIGIOUS_STRENGTH-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">100 <img src="/images/ICON_RELIGIOUS_STRENGTH.webp" style="height:1em"/> 宗教戦闘力</p><br>
+                      <!--LOC_UI_PEDIA_SPREAD_CHARGES-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_SPREAD_CHARGES.webp" style="height:1em"/> 布教力</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
+                      <!--LOC_UNIT_MISSIONARY_DESCRIPTION-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left"><img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 市民を自分の宗教に改宗させることができる。他宗教のユニットに対して神学戦争を開始できない (防衛は可能)。</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <!--LOC_UNIT_APOSTLE_NAME-->
+                      <h2 class="civ-name">使徒
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Apostle.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <!--LOC_HUD_PRODUCTION_COST-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">現在のコスト: 200 <img src="/images/ICON_FAITH.webp" style="height:1em"/></p><br>
+                      <!--LOC_UI_PEDIA_MAITENANCE_COST-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">維持コスト: 0 <img src="/images/ICON_GOLD.webp" style="height:1em"/>ターンごとの</p><br>
+                      <!--LOC_UI_PEDIA_MOVEMENT_POINTS-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
+                      <!--LOC_UI_PEDIA_RELIGIOUS_STRENGTH-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">110 <img src="/images/ICON_RELIGIOUS_STRENGTH.webp" style="height:1em"/> 宗教戦闘力</p><br>
+                      <!--LOC_UI_PEDIA_SPREAD_CHARGES-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_SPREAD_CHARGES.webp" style="height:1em"/> 布教力</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
+                      <!--LOC_UNIT_APOSTLE_DESCRIPTION-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left"><img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 市民を自分の宗教に改宗させることができる。他宗教のユニットに対して神学戦争を開始できる。ゲーム中に一度だけ、「審問を開始」によって審問官の購入が可能になる。ゲーム中に一度だけ、「信仰を広める」によって信仰を追加できる。使用すると使徒は消費される。</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <!--LOC_UNIT_INQUISITOR_NAME-->
+                      <h2 class="civ-name">審問官
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Inquisitor.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <!--LOC_HUD_PRODUCTION_COST-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">現在のコスト: 75 <img src="/images/ICON_FAITH.webp" style="height:1em"/></p><br>
+                      <!--LOC_UI_PEDIA_MAITENANCE_COST-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">維持コスト: 0 <img src="/images/ICON_GOLD.webp" style="height:1em"/>ターンごとの</p><br>
+                      <!--LOC_UI_PEDIA_MOVEMENT_POINTS-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
+                      <!--LOC_UI_PEDIA_RELIGIOUS_STRENGTH-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">75 <img src="/images/ICON_RELIGIOUS_STRENGTH.webp" style="height:1em"/> 宗教戦闘力</p><br>
+                      <!--LOC_UI_PEDIA_SPREAD_CHARGES-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_SPREAD_CHARGES.webp" style="height:1em"/> 布教力</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
+                      <!--LOC_UNIT_INQUISITOR_EXPANSION2_DESCRIPTION-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">領土内から他の宗教の勢力を75%減少させ、他の宗教のユニットと神学戦争を始めることができる。</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <!--LOC_UNIT_GURU_NAME-->
+                      <h2 class="civ-name">グル
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Guru.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <!--LOC_HUD_PRODUCTION_COST-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">現在のコスト: 120 <img src="/images/ICON_FAITH.webp" style="height:1em"/></p><br>
+                      <!--LOC_UI_PEDIA_MAITENANCE_COST-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">維持コスト: 0 <img src="/images/ICON_GOLD.webp" style="height:1em"/>ターンごとの</p><br>
+                      <!--LOC_UI_PEDIA_MOVEMENT_POINTS-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
+                      <!--LOC_UI_PEDIA_RELIGIOUS_STRENGTH-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">90 <img src="/images/ICON_RELIGIOUS_STRENGTH.webp" style="height:1em"/> 宗教戦闘力</p><br>
+                      <!--LOC_UI_PEDIA_HEAL_CHARGES-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_HEAL_CHARGES.webp" style="height:1em"/> 回復力</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
+                      <!--LOC_UNIT_GURU_DESCRIPTION-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">チャージを使って自身と隣接した味方宗教ユニットをすべて回復させる。他宗教のユニットに対して神学戦争を開始できない (防衛は可能)。</p>
+                    </div>
+                  </div>
+                </div>
                 <div class="col-lg-12" id="近接戦闘">
                   <div class="chart">
                     <!--LOC_PROMOTION_CLASS_MELEE_NAME-->
@@ -462,7 +634,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">17 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_BABYLONIAN_SABUM_KIBITTUM_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">バビロン固有の太古の近接戦闘ユニット。重騎兵と軽騎兵のレベルアップ・クラスを持つユニットに対して <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 戦闘力+17。 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動力3、視界3。</p>
                     </div>
@@ -481,7 +654,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">20 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_WARRIOR_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">太古の脆弱な近接戦闘ユニット。</p>
                     </div>
@@ -500,7 +674,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">20 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_GAUL_GAESATAE_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">ガリア固有の太古のユニット。戦士に取ってかわり、戦士よりもコストが高い。自分より基本戦闘力が高いユニットに対して <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 戦闘力+10。対区域 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 戦闘力+5。</p>
                     </div>
@@ -519,7 +694,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">28 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_AZTEC_EAGLE_WARRIOR_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">戦士ユニットに取ってかわるアステカ固有の太古のユニット。捕獲した軍事ユニットを労働者として使える。</p>
                     </div>
@@ -539,7 +715,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">35 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_SWORDSMAN_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">古典時代の強力な近接戦闘ユニット。</p>
                     </div>
@@ -563,7 +740,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_RANGE.webp" style="height:1em"/> 射程</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">25 <img src="/images/ICON_RANGED.webp" style="height:1em"/> 長距離戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_PERSIAN_IMMORTAL_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">剣士に取ってかわるペルシア固有の近接戦闘ユニット。近接戦闘ユニットでありながら <img src="/images/ICON_RANGE.webp" style="height:1em"/> 射程2の長距離攻撃が可能。高い防御力を誇る。</p>
                     </div>
@@ -583,7 +761,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">38 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_KONGO_SHIELD_BEARER_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">剣士に取ってかわるコンゴ固有の古典時代のユニット。長距離攻撃に対して <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 戦闘力+10。森と熱帯雨林を通行可能で、なおかつこれらに視界を妨げられない。</p>
                     </div>
@@ -603,7 +782,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">38 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_MACEDONIAN_HYPASPIST_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">剣士に取ってかわるマケドニア固有の近接戦闘ユニット。区域攻囲時は <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 戦闘力+5。支援ボーナス+50%。</p>
                     </div>
@@ -622,7 +802,10 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">38 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_UI_PEDIA_BUILD_CHARGES-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">1 <img src="/images/ICON_CHARGES.webp" style="height:1em"/> 労働力</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_MAORI_TOA_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">マオリ固有の古典時代の近接戦闘ユニット。隣接する敵ユニットの <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 戦闘力-5。固有の施設「パー」を建設できる。</p>
                     </div>
@@ -642,7 +825,10 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">40 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_UI_PEDIA_BUILD_CHARGES-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">1 <img src="/images/ICON_CHARGES.webp" style="height:1em"/> 労働力</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_ROMAN_LEGION_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">剣士に取ってかわるローマ固有の古典時代の近接戦闘ユニット。カストラを作ることができる。</p>
                     </div>
@@ -662,7 +848,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">45 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_MAN_AT_ARMS_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">中世の近接戦闘ユニット。</p>
                     </div>
@@ -682,7 +869,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">48 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_JAPANESE_SAMURAI_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">メンアットアームズに取ってかわる、日本固有の中世の近接戦闘ユニット。ダメージを受けても戦闘ペナルティが生じない。</p>
                     </div>
@@ -702,7 +890,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">48 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_NORWEGIAN_BERSERKER_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">メンアットアームズに取ってかわる、ノルウェー固有の中世の近接戦闘ユニット。敵の領土で移動を開始した場合は <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動力4。攻撃時は <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 戦闘力+10、近接攻撃に対する防衛時は <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 戦闘力-5。</p>
                     </div>
@@ -722,7 +911,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">48 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_GEORGIAN_KHEVSURETI_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">メンアットアームズに取ってかわる、グルジア固有の中世のユニット。丘陵での戦闘時は <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 戦闘力+7。丘陵でも <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ペナルティが発生しない。</p>
                     </div>
@@ -742,7 +932,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">55 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_MUSKETMAN_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">ルネサンス時代の近接戦闘ユニット。</p>
                     </div>
@@ -762,7 +953,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">58 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_SPANISH_CONQUISTADOR_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">マスケット銃兵に取ってかわる、スペイン固有のルネサンス時代のユニット。1タイル以内に宗教ユニットがいると <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 戦闘力+10。このユニットが都市を制圧するか、このユニットが隣接した状態で都市を制圧すると、そのプレイヤーの宗教が自動的にその都市の主流宗教になる。</p>
                     </div>
@@ -782,7 +974,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">60 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_SULEIMAN_JANISSARY_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">マスケット銃兵に取ってかわるオスマン固有のルネサンス時代のユニット。無償のレベルアップを1つ持った状態でスタートする。マスケット銃兵より強力かつ低コスト。イェニチェリは人口が2以上の都市でしか訓練できない。オスマンが築いた都市でイェニチェリを訓練すると、都市の人口-1。</p>
                     </div>
@@ -802,7 +995,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">65 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_LINE_INFANTRY_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">産業時代の近接戦闘ユニット。</p>
                     </div>
@@ -822,7 +1016,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">70 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_ENGLISH_REDCOAT_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">ヴィクトリア女王が指導者である場合のイギリス固有の産業時代のユニット。戦列歩兵に取ってかわる。自国の首都のない大陸での戦闘では <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 戦闘力+10。下船にコストがかからない。</p>
                     </div>
@@ -842,7 +1037,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">70 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_FRENCH_GARDE_IMPERIALE_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">戦列歩兵に取ってかわる、フランス固有の産業時代の近接戦闘ユニット。自国の首都がある大陸での戦闘では <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 戦闘力+10。ユニットを倒すことで <img src="/images/ICON_GREATGENERAL.webp" style="height:1em"/> 大将軍ポイントを獲得する。</p>
                     </div>
@@ -863,7 +1059,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">75 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_INFANTRY_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">近代の近接戦闘ユニット。</p>
                     </div>
@@ -882,7 +1079,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">78 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_DIGGER_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">歩兵に代わるオーストラリア固有の近代ユニット。沿岸タイルでの戦闘で <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 戦闘力+10。中立か他国の領土での戦闘で <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 戦闘力+5。</p>
                     </div>
@@ -903,7 +1101,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">85 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_MECHANIZED_INFANTRY_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">情報時代の近接戦闘ユニット。</p>
                     </div>
@@ -990,7 +1189,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">25 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_SPEARMAN_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">太古の対騎兵ユニット。</p>
                     </div>
@@ -1009,7 +1209,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">28 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_GREEK_HOPLITE_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">槍兵に取ってかわる、ギリシャ固有の太古の対騎兵ユニット。重装歩兵が1ユニットでも隣接していると <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 戦闘力+10。</p>
                     </div>
@@ -1028,7 +1229,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">45 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_PIKEMAN_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">中世の対騎兵ユニット。</p>
                     </div>
@@ -1047,7 +1249,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">45 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_ZULU_IMPI_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">ズールー固有の中世のユニット。長槍兵に取ってかわる。側面攻撃ボーナスが大きく、コストと維持費が安い。また、経験値の獲得が速い。</p>
                     </div>
@@ -1066,7 +1269,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">55 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_PIKE_AND_SHOT_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">ルネサンス時代後期の対騎兵ユニット。</p>
                     </div>
@@ -1085,7 +1289,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">55 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_SWEDEN_CAROLEAN_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">槍銃兵に取ってかわるスウェーデン固有のルネサンス時代のユニット。槍銃兵よりも移動力が高い。未使用の <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動力1ポイントにつき <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 戦闘力+3。</p>
                     </div>
@@ -1104,7 +1309,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">75 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_AT_CREW_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">近代の対騎兵クラスユニット。</p>
                     </div>
@@ -1123,7 +1329,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">85 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_MODERN_AT_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">情報時代の対騎兵ユニット。</p>
                     </div>
@@ -1214,7 +1421,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">1 <img src="/images/ICON_RANGE.webp" style="height:1em"/> 射程</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">15 <img src="/images/ICON_RANGED.webp" style="height:1em"/> 長距離戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_SLINGER_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">太古の脆弱な長距離戦闘ユニット。どちらかといえば防御より攻撃を得意とする。</p>
                     </div>
@@ -1237,7 +1445,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_RANGE.webp" style="height:1em"/> 射程</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">25 <img src="/images/ICON_RANGED.webp" style="height:1em"/> 長距離戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_ARCHER_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left"><img src="/images/ICON_RANGE.webp" style="height:1em"/> 射程距離2の太古の長距離戦闘ユニット。</p>
                     </div>
@@ -1260,7 +1469,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_RANGE.webp" style="height:1em"/> 射程</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">28 <img src="/images/ICON_RANGED.webp" style="height:1em"/> 長距離戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_MAYAN_HULCHE_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">弓兵に取ってかわる、マヤ固有の太古の長距離戦闘ユニット。長距離攻撃力が高い。負傷している敵に対する <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 戦闘力+5。</p>
                     </div>
@@ -1283,7 +1493,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_RANGE.webp" style="height:1em"/> 射程</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">30 <img src="/images/ICON_RANGED.webp" style="height:1em"/> 長距離戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_NUBIAN_PITATI_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">弓兵に取ってかわるヌビア固有の太古の長距離戦闘ユニット。弓兵より強く、 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動力も優れている。アップグレードすると弩兵になる。</p>
                     </div>
@@ -1306,7 +1517,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">1 <img src="/images/ICON_RANGE.webp" style="height:1em"/> 射程</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">25 <img src="/images/ICON_RANGED.webp" style="height:1em"/> 長距離戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_SCYTHIAN_HORSE_ARCHER_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">スキタイ固有の長距離戦闘ユニット。古典時代に生産可能。 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動力4、 <img src="/images/ICON_RANGE.webp" style="height:1em"/> 射程1。</p>
                     </div>
@@ -1329,7 +1541,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_RANGE.webp" style="height:1em"/> 射程</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">35 <img src="/images/ICON_RANGED.webp" style="height:1em"/> 長距離戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_EGYPTIAN_CHARIOT_ARCHER_EXPANSION2_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">エジプト固有の太古の長距離戦闘ユニット。開けた地形から移動をはじめると <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動力4。</p>
                     </div>
@@ -1352,7 +1565,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_RANGE.webp" style="height:1em"/> 射程</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">40 <img src="/images/ICON_RANGED.webp" style="height:1em"/> 長距離戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_CROSSBOWMAN_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">中世の長距離戦闘ユニット。</p>
                     </div>
@@ -1375,7 +1589,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">1 <img src="/images/ICON_RANGE.webp" style="height:1em"/> 射程</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">50 <img src="/images/ICON_RANGED.webp" style="height:1em"/> 長距離戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_CHINESE_CROUCHING_TIGER_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">中国固有の中世のユニット。 <img src="/images/ICON_RANGE.webp" style="height:1em"/> 射程1の長距離戦闘ユニットで戦闘力が高い。</p>
                     </div>
@@ -1399,7 +1614,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_RANGE.webp" style="height:1em"/> 射程</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">45 <img src="/images/ICON_RANGED.webp" style="height:1em"/> 長距離戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_MONGOLIAN_KESHIG_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">モンゴル固有の中世の長距離騎兵ユニット。動きの遅い民間人や支援ユニットを、その高い <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動力を利用して護衛できる。</p>
                     </div>
@@ -1422,7 +1638,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_RANGE.webp" style="height:1em"/> 射程</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">40 <img src="/images/ICON_RANGED.webp" style="height:1em"/> 長距離戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_VIETNAMESE_VOI_CHIEN_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">ベトナム固有の中世の長距離戦闘ユニット。弩兵に取ってかわる。攻撃後に移動でき、移動力も高い。防衛戦に強く、コストは高いが視界が広い。</p>
                     </div>
@@ -1445,7 +1662,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_RANGE.webp" style="height:1em"/> 射程</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">60 <img src="/images/ICON_RANGED.webp" style="height:1em"/> 長距離戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_KOREAN_HWACHA_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">野戦砲に取ってかわる韓国固有のルネサンス時代のユニット。 <img src="/images/ICON_RANGED.webp" style="height:1em"/> 長距離戦闘力が高い。移動と攻撃を同じターンに実行できない。</p>
                     </div>
@@ -1468,7 +1686,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_RANGE.webp" style="height:1em"/> 射程</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">60 <img src="/images/ICON_RANGED.webp" style="height:1em"/> 長距離戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_FIELD_CANNON_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">産業時代の長距離戦闘ユニット。</p>
                     </div>
@@ -1491,7 +1710,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_RANGE.webp" style="height:1em"/> 射程</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">85 <img src="/images/ICON_RANGED.webp" style="height:1em"/> 長距離戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_MACHINE_GUN_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">原子力時代の長距離戦闘ユニット。</p>
                     </div>
@@ -1582,7 +1802,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_RANGE.webp" style="height:1em"/> 射程</p><br>
                       <!--LOC_UI_PEDIA_BOMBARD_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">35 <img src="/images/ICON_BOMBARD.webp" style="height:1em"/> 砲撃戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_CATAPULT_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">古典時代の攻囲ユニット。都市を攻撃する際に力を発揮する。「熟練搭乗員」レベルアップを獲得しない限り、同じターンに移動と攻撃の両方をおこなうことはできない。</p>
                     </div>
@@ -1605,7 +1826,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_RANGE.webp" style="height:1em"/> 射程</p><br>
                       <!--LOC_UI_PEDIA_BOMBARD_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">45 <img src="/images/ICON_BOMBARD.webp" style="height:1em"/> 砲撃戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_TREBUCHET_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">中世時代の攻囲ユニット。都市を攻撃する際に威力を発揮する。「熟練搭乗員」レベルアップを獲得しない限り、同じターンに移動と攻撃の両方をおこなうことはできない。</p>
                     </div>
@@ -1628,7 +1850,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_RANGE.webp" style="height:1em"/> 射程</p><br>
                       <!--LOC_UI_PEDIA_BOMBARD_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">50 <img src="/images/ICON_BOMBARD.webp" style="height:1em"/> 砲撃戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_KHMER_DOMREY_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">クメール固有の中世の攻囲ユニット。トレビュシェットに取ってかわる。トレビュシェットよりも高い近接および遠距離 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 戦闘力を有する。同じターンに移動と攻撃を実行し、支配領域を行使できる。</p>
                     </div>
@@ -1652,7 +1875,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_RANGE.webp" style="height:1em"/> 射程</p><br>
                       <!--LOC_UI_PEDIA_BOMBARD_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">55 <img src="/images/ICON_BOMBARD.webp" style="height:1em"/> 砲撃戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_BOMBARD_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">ルネサンス時代の攻囲ユニット。都市を攻撃する際に力を発揮する。<br>「熟練搭乗員」レベルアップを獲得しない限り、同じターンに移動と攻撃の両方をおこなうことはできない。</p>
                     </div>
@@ -1677,7 +1901,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_RANGE.webp" style="height:1em"/> 射程</p><br>
                       <!--LOC_UI_PEDIA_BOMBARD_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">80 <img src="/images/ICON_BOMBARD.webp" style="height:1em"/> 砲撃戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_ARTILLERY_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">近代の攻囲ユニット。都市を攻撃する際に力を発揮する。「熟練搭乗員」レベルアップを獲得しない限り、同じターンに移動と攻撃の両方をおこなうことはできない。</p>
                     </div>
@@ -1702,7 +1927,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_RANGE.webp" style="height:1em"/> 射程</p><br>
                       <!--LOC_UI_PEDIA_BOMBARD_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">100 <img src="/images/ICON_BOMBARD.webp" style="height:1em"/> 砲撃戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_ROCKET_ARTILLERY_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">情報時代の攻囲ユニット。都市を攻撃する際に威力を発揮する。「熟練搭乗員」レベルアップを獲得しない限り、同じターンに移動と攻撃の両方をおこなうことはできない。</p>
                     </div>
@@ -1790,7 +2016,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">36 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_HORSEMAN_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">移動速度に優れている古典時代の軽騎兵ユニット。</p>
                     </div>
@@ -1810,7 +2037,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">5 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">46 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_COURSER_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">中世の軽騎兵ユニット。</p>
                     </div>
@@ -1830,7 +2058,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">5 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">48 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_ETHIOPIAN_OROMO_CAVALRY_EXPANSION2_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">エチオピア固有の中世の軽騎兵ユニット。コーサーに取ってかわるユニットで、より強く、視界も広い。丘陵から移動を開始した場合には <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ペナルティを受けない。</p>
                     </div>
@@ -1850,7 +2079,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">5 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">49 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_HUNGARY_BLACK_ARMY_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">コーサーに取ってかわるハンガリー固有の中世のユニット。隣接する徴用されたユニット1つにつき <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 戦闘力+3。</p>
                     </div>
@@ -1869,7 +2099,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">55 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_MAPUCHE_MALON_RAIDER_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">マプチェ固有のルネサンス時代のユニット。友好的な領土から4タイル以内にいる場合、 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 戦闘力+5。略奪による消費 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動力1。</p>
                     </div>
@@ -1889,7 +2120,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">5 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">62 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_CAVALRY_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">移動速度に優れている産業時代の軽騎兵ユニット。</p>
                     </div>
@@ -1908,7 +2140,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">5 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">62 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_CANADA_MOUNTIE_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">カナダ固有の近代のユニット。国立公園を2つ建設できる。国立公園の2タイル以内で戦うと <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 戦闘力+5。2タイル以内にある国立公園が自国のものである場合はさらに <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 戦闘力+5。</p>
                     </div>
@@ -1928,7 +2161,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">5 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">62 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_COLOMBIAN_LLANERO_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">騎兵に取ってかわる、大コロンビア固有の産業時代のユニット。維持コストが低い。隣接するリャネロ1体につき <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 戦闘力+2。大司令官が退職能力を発動する際、一定の範囲内にいると体力が完全に回復する。</p>
                     </div>
@@ -1948,7 +2182,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">5 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">65 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_HUNGARY_HUSZAR_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">騎兵に取ってかわるハンガリー固有の産業時代のユニット。有効な同盟1つにつき <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 戦闘力+3。</p>
                     </div>
@@ -1968,7 +2203,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">5 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">67 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_RUSSIAN_COSSACK_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">騎兵ユニットに取ってかわるロシア固有の産業時代のユニット。騎兵より強力で、自分の領土に隣接しているタイルでの戦闘で <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 戦闘力+5。 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイントが残っている場合は、攻撃後に移動することもできる。</p>
                     </div>
@@ -1989,7 +2225,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">86 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_HELICOPTER_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">高い機動力を誇る原子力時代の軽騎兵ユニット。</p>
                     </div>
@@ -2076,7 +2313,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">28 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_HEAVY_CHARIOT_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">機動力の高い強力な太古の重騎兵ユニット。森、熱帯雨林、丘陵のない平坦なタイルでターンを開始すると、 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動力+1。</p>
                     </div>
@@ -2095,7 +2333,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">30 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_SUMERIAN_WAR_CART_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">太古のシュメール固有のユニット。最初期のユニット中で最強。対騎兵ユニットに対してペナルティが発生しない。開けた地形で移動を開始した場合は <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動力4。</p>
                     </div>
@@ -2115,7 +2354,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">36 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_MACEDONIAN_HETAIROI_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">騎乗兵に取ってかわるマケドニア固有の重騎兵ユニット。大将軍に隣接していると <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 戦闘力+5。敵ユニットを倒すと大将軍ポイント+5。最初から無料でレベルアップを1つ有する。</p>
                     </div>
@@ -2134,7 +2374,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">40 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_INDIAN_VARU_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">インド固有の古典時代の重騎兵ユニット。隣接する敵ユニットの <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 戦闘力-5。</p>
                     </div>
@@ -2154,7 +2395,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">50 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_KNIGHT_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">機動力の高い強力な中世の重騎兵ユニット。</p>
                     </div>
@@ -2174,7 +2416,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">50 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_ARABIAN_MAMLUK_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">騎士に取ってかわるアラビア固有の中世のユニット。移動あるいは攻撃した後でも、ターン終了時に回復する。</p>
                     </div>
@@ -2194,7 +2437,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">50 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_BYZANTINE_TAGMA_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">騎士に取ってかわるバシレイオス2世固有の中世のユニット。タグマの1タイル以内にいる陸上ユニットは、 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 戦闘力または <img src="/images/ICON_RELIGION.webp" style="height:1em"/> 宗教戦闘力+4。</p>
                     </div>
@@ -2214,7 +2458,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">55 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_MALI_MANDEKALU_CAVALRY_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">騎士に取って代わるマリ固有の中世のユニット。マンデカル騎兵の4タイル以内にいる交易商ユニットは、陸地タイルで略奪を受けない。戦闘に勝利すると、そのユニットの基本 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 戦闘力の100%に相当する <img src="/images/ICON_GOLD.webp" style="height:1em"/> ゴールドを得る (標準のスピードで) 。</p>
                     </div>
@@ -2234,7 +2479,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">64 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_POLISH_HUSSAR_EXPANSION2_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">胸甲騎兵に取ってかわる、ポーランド固有のルネサンス時代のユニット。防御側の敵ユニットをダメージで上回った場合は敵を後退させる。退却できない敵は追加ダメージを受ける。</p>
                     </div>
@@ -2254,7 +2500,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">64 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_CUIRASSIER_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">産業時代の重騎兵ユニット。</p>
                     </div>
@@ -2273,7 +2520,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">5 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">67 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_AMERICAN_ROUGH_RIDER_EXPANSION2_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">テディ・ルーズベルトが指導者である場合のアメリカ固有の産業時代のユニット。 <img src="/images/ICON_CAPITAL.webp" style="height:1em"/> 首都のある大陸で敵を倒すと <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力を得る。 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 丘陵での戦闘力+10。維持コストが比較的低い。</p>
                     </div>
@@ -2294,7 +2542,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">85 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_TANK_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">支配領域を無視できる近代の俊敏な重騎兵ユニット。</p>
                     </div>
@@ -2315,7 +2564,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">95 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_MODERN_ARMOR_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">情報時代の敏捷で強力な重騎兵ユニット。</p>
                     </div>
@@ -2402,7 +2652,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">10 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_SCOUT_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">移動速度に優れている太古の偵察ユニット。</p>
                     </div>
@@ -2421,7 +2672,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">20 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_CREE_OKIHTCITAW_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">クリー固有の太古のユニット。斥候に取ってかわる、強力な偵察ユニット。無償のレベルアップを1つ有する状態でスタートする。</p>
                     </div>
@@ -2444,7 +2696,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">1 <img src="/images/ICON_RANGE.webp" style="height:1em"/> 射程</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">30 <img src="/images/ICON_RANGED.webp" style="height:1em"/> 長距離戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_SKIRMISHER_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">中世の偵察ユニット。</p>
                     </div>
@@ -2467,7 +2720,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">1 <img src="/images/ICON_RANGE.webp" style="height:1em"/> 射程</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">40 <img src="/images/ICON_RANGED.webp" style="height:1em"/> 長距離戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_INCA_WARAKAQ_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">散兵に取ってかわるインカ固有の中世のユニット。散兵よりも長距離戦闘に強い。ターンごとの攻撃回数+1。</p>
                     </div>
@@ -2490,7 +2744,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">1 <img src="/images/ICON_RANGE.webp" style="height:1em"/> 射程</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">60 <img src="/images/ICON_RANGED.webp" style="height:1em"/> 長距離戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_RANGER_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">移動速度に優れている産業時代の偵察ユニット。</p>
                     </div>
@@ -2513,7 +2768,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">1 <img src="/images/ICON_RANGE.webp" style="height:1em"/> 射程</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">65 <img src="/images/ICON_RANGED.webp" style="height:1em"/> 長距離戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_SCOTTISH_HIGHLANDER_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">スコットランド固有の産業時代のユニット。レンジャーに取ってかわる、強力な偵察ユニット。丘陵または森地形での戦闘時にはボーナスとして <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 戦闘力+5。</p>
                     </div>
@@ -2536,7 +2792,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_RANGE.webp" style="height:1em"/> 射程</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">65 <img src="/images/ICON_RANGED.webp" style="height:1em"/> 長距離戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_SPEC_OPS_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">原子力時代の偵察ユニット。空中投下能力を持ち、友好的なタイルから7タイル移動できる (飛行場か滑走路からなら12)。先に戦闘ユニットを倒さなくても支援ユニットを直接攻撃できる。</p>
                     </div>
@@ -2561,7 +2818,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">維持コスト: 1 <img src="/images/ICON_GOLD.webp" style="height:1em"/>ターンごとの</p><br>
                       <!--LOC_UI_PEDIA_MOVEMENT_POINTS-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_BATTERING_RAM_EXPANSION2_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">太古の支援ユニット。都市に隣接している場合、近接戦闘ユニットと対騎兵ユニットが都市の防壁に最大のダメージを与えられるようになる。中世の防壁かルネサンス時代の防壁がある都市には効果がない。都市防衛には無効。</p>
                     </div>
@@ -2578,7 +2836,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">維持コスト: 2 <img src="/images/ICON_GOLD.webp" style="height:1em"/>ターンごとの</p><br>
                       <!--LOC_UI_PEDIA_MOVEMENT_POINTS-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_SIEGE_TOWER_EXPANSION2_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">中世の支援ユニット。都市に隣接している場合、近接戦闘ユニットと対騎兵ユニットが防壁の存在を無視して都市を直接攻められるようになる。ルネサンス時代の防壁がある都市には効果がない。都市防衛には無効。</p>
                     </div>
@@ -2595,7 +2854,10 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">維持コスト: 2 <img src="/images/ICON_GOLD.webp" style="height:1em"/>ターンごとの</p><br>
                       <!--LOC_UI_PEDIA_MOVEMENT_POINTS-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_UI_PEDIA_BUILD_CHARGES-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_CHARGES.webp" style="height:1em"/> 労働力</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_MILITARY_ENGINEER_ALT_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">中世の支援ユニット。生産には武器庫が必要。道路、鉄道、要塞、滑走路、ミサイル格納庫、山岳トンネルを建設できる。労働力を1消費することで、運河、ダム、用水路区域や防波堤を20%完成させることができる。</p>
                     </div>
@@ -2612,7 +2874,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">維持コスト: 5 <img src="/images/ICON_GOLD.webp" style="height:1em"/>ターンごとの</p><br>
                       <!--LOC_UI_PEDIA_MOVEMENT_POINTS-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_MEDIC_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">産業時代の支援ユニット。隣接するユニットを回復できる。</p>
                     </div>
@@ -2629,7 +2892,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">維持コスト: 2 <img src="/images/ICON_GOLD.webp" style="height:1em"/>ターンごとの</p><br>
                       <!--LOC_UI_PEDIA_MOVEMENT_POINTS-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_OBSERVATION_BALLOON_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">近代の支援ユニット。1タイル以内にいる攻囲クラスユニットの <img src="/images/ICON_RANGE.webp" style="height:1em"/> 射程+1。</p>
                     </div>
@@ -2650,7 +2914,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">1 <img src="/images/ICON_RANGE.webp" style="height:1em"/> 射程</p><br>
                       <!--LOC_UI_PEDIA_ANTIAIR_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">90 <img src="/images/ICON_ANTIAIR_LARGE.webp" style="height:1em"/> 対空攻撃力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_ANTIAIR_GUN_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">原子力時代の対空支援ユニット。兵器から1タイル以内への攻撃に対応する。</p>
                     </div>
@@ -2671,7 +2936,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">1 <img src="/images/ICON_RANGE.webp" style="height:1em"/> 射程</p><br>
                       <!--LOC_UI_PEDIA_ANTIAIR_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">100 <img src="/images/ICON_ANTIAIR_LARGE.webp" style="height:1em"/> 対空攻撃力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_MOBILE_SAM_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">情報時代の対空支援ユニット。1タイル先からの航空攻撃と核攻撃を防御できる。</p>
                     </div>
@@ -2688,7 +2954,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">維持コスト: 3 <img src="/images/ICON_GOLD.webp" style="height:1em"/>ターンごとの</p><br>
                       <!--LOC_UI_PEDIA_MOVEMENT_POINTS-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">5 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">5 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_DRONE_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">原子力時代の支援ユニット。1タイル以内にいる長距離攻囲ユニットの <img src="/images/ICON_RANGE.webp" style="height:1em"/> 射程+1、<img src="/images/ICON_BOMBARD.webp" style="height:1em"/> 砲撃戦闘力+5。</p>
                     </div>
@@ -2705,7 +2972,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">維持コスト: 2 <img src="/images/ICON_GOLD.webp" style="height:1em"/>ターンごとの</p><br>
                       <!--LOC_UI_PEDIA_MOVEMENT_POINTS-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_SUPPLY_CONVOY_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">近代の支援ユニット。隣接するユニットの回復力が向上する。護送船団に隣接した状態で移動を開始した場合、ボーナスとして <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動力+1。</p>
                     </div>
@@ -2792,7 +3060,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">30 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_GALLEY_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">太古の近接戦闘海洋ユニット。「地図製作法」を研究するまでは沿岸部でしか活動できない。</p>
                     </div>
@@ -2811,7 +3080,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">35 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_NORWEGIAN_LONGSHIP_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">ガレー船に取ってかわるノルウェー固有の太古の海洋ユニット。沿岸襲撃能力を使って敵国の沿岸部を略奪し、隣接した場所に民間人がいる場合は捕獲できる。沿岸水域での <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動力4。</p>
                     </div>
@@ -2830,7 +3100,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">35 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_PHOENICIA_BIREME_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">ガレー船に取ってかわるフェニキア固有の太古のユニット。 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 戦闘力と <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動力が高い。ビレームの4タイル以内にいる交易商ユニットは、水域タイルで略奪を受けない。</p>
                     </div>
@@ -2849,7 +3120,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">55 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_CARAVEL_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">ルネサンス時代の近接戦闘海洋ユニット。迅速な探検が可能。</p>
                     </div>
@@ -2868,7 +3140,10 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">55 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 Sight</p><br>
+                      <!--LOC_UI_PEDIA_BUILD_CHARGES-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_CHARGES.webp" style="height:1em"/> 労働力</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_PORTUGUESE_NAU_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">キャラベル船に取ってかわるポルトガル固有の近接海洋ユニット。最初から無償のレベルアップを1つ持ち、維持費が安い。交易所を建設するためのチャージ2を持つ。</p>
                     </div>
@@ -2889,7 +3164,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">5 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">70 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_IRONCLAD_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">産業時代の近接戦闘海洋ユニット。強力かつ防御力が高い。</p>
                     </div>
@@ -2912,7 +3188,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">85 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
                       <!--LOC_UI_PEDIA_ANTIAIR_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">90 <img src="/images/ICON_ANTIAIR_LARGE.webp" style="height:1em"/> 対空攻撃力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_DESTROYER_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">きわめて強力な近接戦闘海洋ユニット。視程内にいる海洋略奪ユニットの居場所が明らかになる。</p>
                     </div>
@@ -3003,7 +3280,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">1 <img src="/images/ICON_RANGE.webp" style="height:1em"/> 射程</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">25 <img src="/images/ICON_RANGED.webp" style="height:1em"/> 長距離戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_QUADRIREME_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">古典時代の長距離戦闘海洋ユニット。「地図製作法」を研究するまでは沿岸部でしか活動できない。</p>
                     </div>
@@ -3026,7 +3304,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_RANGE.webp" style="height:1em"/> 射程</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">25 <img src="/images/ICON_RANGED.webp" style="height:1em"/> 長距離戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_BYZANTINE_DROMON_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">ビザンティン固有の古典時代のユニット。カドリレームに取ってかわる。カドリレームより射程が長い。また、対ユニット <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 戦闘力+10。</p>
                     </div>
@@ -3050,7 +3329,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_RANGE.webp" style="height:1em"/> 射程</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">55 <img src="/images/ICON_RANGED.webp" style="height:1em"/> 長距離戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_FRIGATE_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">ルネサンス時代の長距離戦闘海洋ユニット。</p>
                     </div>
@@ -3073,7 +3353,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_RANGE.webp" style="height:1em"/> 射程</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">55 <img src="/images/ICON_RANGED.webp" style="height:1em"/> 長距離戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_INDONESIAN_JONG_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">フリゲート艦に取ってかわるインドネシア固有の中世の海洋ユニット。すべての陣形ユニットは護衛の <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動速度を継承する。陣形を組むと <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 戦闘力+5。</p>
                     </div>
@@ -3097,7 +3378,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_RANGE.webp" style="height:1em"/> 射程</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">60 <img src="/images/ICON_RANGED.webp" style="height:1em"/> 長距離戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_DE_ZEVEN_PROVINCIEN_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">フリゲート艦に取ってかわるオランダ固有のルネサンス時代のユニット。防御に適した区域を攻撃する際、 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 戦闘力+7。</p>
                     </div>
@@ -3124,7 +3406,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">70 <img src="/images/ICON_RANGED.webp" style="height:1em"/> 長距離戦闘力</p><br>
                       <!--LOC_UI_PEDIA_ANTIAIR_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">90 <img src="/images/ICON_ANTIAIR_LARGE.webp" style="height:1em"/> 対空攻撃力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_BATTLESHIP_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">近代の海洋長距離戦闘ユニット。1タイル先からの航空攻撃と核攻撃を防御できる。</p>
                     </div>
@@ -3151,7 +3434,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">80 <img src="/images/ICON_RANGED.webp" style="height:1em"/> 長距離戦闘力</p><br>
                       <!--LOC_UI_PEDIA_ANTIAIR_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">95 <img src="/images/ICON_ANTIAIR_LARGE.webp" style="height:1em"/> 対空攻撃力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_BRAZILIAN_MINAS_GERAES_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">戦艦に取ってかわるブラジル固有の産業時代のユニット。戦艦よりも強力。「ナショナリズム」によって解除される。</p>
                     </div>
@@ -3178,7 +3462,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">90 <img src="/images/ICON_RANGED.webp" style="height:1em"/> 長距離戦闘力</p><br>
                       <!--LOC_UI_PEDIA_ANTIAIR_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">110 <img src="/images/ICON_ANTIAIR_LARGE.webp" style="height:1em"/> 対空攻撃力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_MISSILE_CRUISER_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">極めて強力な長距離戦闘海洋ユニット。情報時代で利用可能。</p>
                     </div>
@@ -3269,7 +3554,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_RANGE.webp" style="height:1em"/> 射程</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">50 <img src="/images/ICON_RANGED.webp" style="height:1em"/> 長距離戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_PRIVATEER_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">ルネサンス時代の長距離戦闘海洋ユニット。沿岸部を襲撃する能力を持つ。他の海洋略奪ユニットが隣接するまで見えない。視程内にいる海洋略奪ユニットの居場所を明らかにする。</p>
                     </div>
@@ -3292,7 +3578,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_RANGE.webp" style="height:1em"/> 射程</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">55 <img src="/images/ICON_RANGED.webp" style="height:1em"/> 長距離戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_ENGLISH_SEADOG_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">私掠船に取ってかわるイギリス固有のルネサンス時代の海洋ユニット。敵の船を拿捕できる可能性がある。他の海洋略奪ユニットが隣接するまで見えない。視程内にいる海洋略奪ユニットの居場所を明らかにする。</p>
                     </div>
@@ -3315,7 +3602,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_RANGE.webp" style="height:1em"/> 射程</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">50 <img src="/images/ICON_RANGED.webp" style="height:1em"/> 長距離戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_OTTOMAN_BARBARY_CORSAIR_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">私掠船に取ってかわるオスマン固有の中世の海洋ユニット。 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動力を消費せずに沿岸襲撃を実行できる。他の海洋略奪ユニットが隣接するまで見えない。視程内にいる海洋略奪ユニットの居場所を明らかにする。</p>
                     </div>
@@ -3340,7 +3628,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_RANGE.webp" style="height:1em"/> 射程</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">75 <img src="/images/ICON_RANGED.webp" style="height:1em"/> 長距離戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_SUBMARINE_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">近代の強襲用長距離戦闘海洋ユニット。他の海洋略奪ユニットが隣接するまで見えない。視程内にいる海洋略奪ユニットの居場所を明らかにする。</p>
                     </div>
@@ -3363,7 +3652,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_RANGE.webp" style="height:1em"/> 射程</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">75 <img src="/images/ICON_RANGED.webp" style="height:1em"/> 長距離戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_GERMAN_UBOAT_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">潜水艦に取ってかわるドイツ固有の近代海洋ユニット。低コスト。視界+1、外洋タイルでの戦闘では <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 戦闘力+10。ステルス状態の他ユニットの居場所を明らかにできる。</p>
                     </div>
@@ -3386,7 +3676,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_RANGE.webp" style="height:1em"/> 射程</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">85 <img src="/images/ICON_RANGED.webp" style="height:1em"/> 長距離戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_NUCLEAR_SUBMARINE_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">情報時代の強襲用長距離戦闘海洋ユニット。核兵器を搭載可能。他の海洋略奪ユニットが隣接するまで見えない。視程内にいる海洋略奪ユニットの居場所を明らかにする。</p>
                     </div>
@@ -3473,7 +3764,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">65 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_AIRCRAFT_CARRIER_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">原子力時代の近接戦闘海洋ユニット。航空ユニットを輸送できる。</p>
                     </div>
@@ -3544,7 +3836,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">25 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_LAHORE_NIHANG_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">ラホール都市国家の固有ユニット。固有のレベルアップツリーを持ち、 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰力を使って購入できる。兵舎、武器庫、士官学校を初めて建設すると <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 戦闘力が強化される。</p>
                     </div>
@@ -3631,7 +3924,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動ポイント</p><br>
                       <!--LOC_UI_PEDIA_MELEE_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">40 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 近接戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">2 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_WARRIOR_MONK_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">移動力に優れた陸上戦闘ユニット。固有のレベルアップツリーを持つ。</p>
                     </div>
@@ -3724,7 +4018,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 <img src="/images/ICON_RANGE.webp" style="height:1em"/> 射程</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">75 <img src="/images/ICON_RANGED.webp" style="height:1em"/> 長距離戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_BIPLANE_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">最初の航空戦闘ユニット。近代で利用可能。</p>
                     </div>
@@ -3749,7 +4044,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">5 <img src="/images/ICON_RANGE.webp" style="height:1em"/> 射程</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">100 <img src="/images/ICON_RANGED.webp" style="height:1em"/> 長距離戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_FIGHTER_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">原子力時代の複葉機の進化型。</p>
                     </div>
@@ -3774,7 +4070,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">5 <img src="/images/ICON_RANGE.webp" style="height:1em"/> 射程</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">105 <img src="/images/ICON_RANGED.webp" style="height:1em"/> 長距離戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_AMERICAN_P51_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">戦闘機に取って代わるアメリカ固有の原子力時代の航空ユニット。敵戦闘機に対する <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 戦闘力+5、航続距離+2、経験値+50%。</p>
                     </div>
@@ -3799,7 +4096,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">6 <img src="/images/ICON_RANGE.webp" style="height:1em"/> 射程</p><br>
                       <!--LOC_UI_PEDIA_RANGED_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">110 <img src="/images/ICON_RANGED.webp" style="height:1em"/> 長距離戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">5 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">5 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_JET_FIGHTER_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">情報時代の戦闘機の進化型。</p>
                     </div>
@@ -3892,7 +4190,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">10 <img src="/images/ICON_RANGE.webp" style="height:1em"/> 射程</p><br>
                       <!--LOC_UI_PEDIA_BOMBARD_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">110 <img src="/images/ICON_BOMBARD.webp" style="height:1em"/> 砲撃戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">4 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_BOMBER_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">最初の爆撃機ユニット。原子力時代で利用可能。</p>
                     </div>
@@ -3917,7 +4216,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">15 <img src="/images/ICON_RANGE.webp" style="height:1em"/> 射程</p><br>
                       <!--LOC_UI_PEDIA_BOMBARD_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">120 <img src="/images/ICON_BOMBARD.webp" style="height:1em"/> 砲撃戦闘力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">5 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">5 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_JET_BOMBER_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">情報時代の爆撃機の進化型。</p>
                     </div>
@@ -3985,7 +4285,8 @@
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">120 <img src="/images/ICON_RANGED.webp" style="height:1em"/> 長距離戦闘力</p><br>
                       <!--LOC_UI_PEDIA_ANTIAIR_STRENGTH-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">90 <img src="/images/ICON_ANTIAIR_LARGE.webp" style="height:1em"/> 対空攻撃力</p><br>
-                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 Sight</p><br>
+                      <!--LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE-->
+                      <p class="civ-ability-desc" style="display:inline-block;text-align:left">3 <img src="/images/ICON_SIGHT.webp" style="height:1em"/> 視界</p><br>
                       <!--LOC_UNIT_GIANT_DEATH_ROBOT_DESCRIPTION-->
                       <p class="civ-ability-desc" style="display:inline-block;text-align:left">情報時代のスーパーユニット。水域での移動と戦闘が可能。大量破壊兵器に耐性がある。未来技術を研究することで戦闘力を強化できる。</p>
                     </div>

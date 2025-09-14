@@ -13,6 +13,7 @@ def get_units_html_file(bbg_version, lang, pages_list):
     version_name = bbg_version if bbg_version != None else 'baseGame'
     title = f'Civ VI {f"BBG {bbg_version}" if bbg_version != None else get_loc(locs_data, "LOC_BASE_GAME_TITLE")} {get_loc(locs_data, "LOC_PAGE_TITLE_UNITS")}'
     unit_classes = [
+        'PROMOTION_CLASS_APOSTLE',
         'PROMOTION_CLASS_MELEE',
         'PROMOTION_CLASS_ANTI_CAVALRY',
         'PROMOTION_CLASS_RANGED',
@@ -34,12 +35,18 @@ def get_units_html_file(bbg_version, lang, pages_list):
     menu_items = []
     menu_icons = []
     for unit_cls in unit_classes:
+        if unit_cls == 'PROMOTION_CLASS_APOSTLE':
+            menu_items.append(get_loc(locs_data, 'LOC_PEDIA_CITYSTATES_PAGEGROUP_RELIGIOUS_NAME'))
+            menu_icons.append('TYPE_APOSTLE')
+            continue
         menu_items.append(get_loc(locs_data, f'LOC_{unit_cls}_NAME'))
         menu_icons.append(f'TYPE_{unit_cls[16:]}')
 
     def create_units_page():
         for promo_cls in unit_classes:
             loc_promo_cls = f'LOC_{promo_cls}_NAME'
+            if promo_cls == 'PROMOTION_CLASS_APOSTLE':
+                loc_promo_cls = 'LOC_PEDIA_CITYSTATES_PAGEGROUP_RELIGIOUS_NAME'
             with div(cls='col-lg-12',
                      id=get_loc(locs_data, loc_promo_cls)
                     ), div(cls="chart"):
@@ -58,9 +65,13 @@ def get_units_html_file(bbg_version, lang, pages_list):
             for level in unit_promotions[promo_cls]:
                 column_count = len(unit_promotions[promo_cls][level])
                 div_cls = f'col-lg-{math.floor(12 / column_count)}'
+                if column_count > 4:
+                    div_cls = 'col-md-4 col-sm-6 col-12'
                 with div(cls='row'):
                     for i, (column, _, promo_name, promo_desc) in enumerate(unit_promotions[promo_cls][level]):
                         has_border = 'gov-promotion-border' if i < column_count - 1 else ''
+                        if promo_cls == 'PROMOTION_CLASS_APOSTLE':
+                            has_border = ''
                         with div(cls=f'{div_cls} gov-promotion {has_border}'):
                             alignment = 'left' if column == 1 else 'center' if column == 2 or column == 0 else 'right'
                             comment(promo_name)
@@ -76,7 +87,8 @@ def get_units_html_file(bbg_version, lang, pages_list):
         with div(cls="col-lg-6 col-md-12"), div(cls="chart"):
             (
                 unit_name_loc, sight, movement, cs, ranged_cs, attack_range, bombard_cs, prod, desc,
-                maint, strategic_type, strategic_amt, strategic_maint_type, strategic_maint_amt, antiair_cs
+                maint, strategic_type, strategic_amt, strategic_maint_type, strategic_maint_amt, antiair_cs,
+                build_charges, religious_strength, spread_charges, religious_heal_charges
             ) = unit_stats[promo_cls][unit_type]
             comment(unit_name_loc)
             with h2(get_loc(locs_data, unit_name_loc),
@@ -85,10 +97,16 @@ def get_units_html_file(bbg_version, lang, pages_list):
                     style="vertical-align: middle; width:5em",
                     onerror=image_onerror)
             br()
-            comment('LOC_UI_PEDIA_PRODUCTION_COST')
-            p(f'{get_loc(locs_data, 'LOC_UI_PEDIA_PRODUCTION_COST')}: {prod// 2} [ICON_PRODUCTION]',
-              style="display:inline-block;text-align:left",
-              cls='civ-ability-desc')
+            if promo_cls == 'PROMOTION_CLASS_APOSTLE':
+                comment('LOC_HUD_PRODUCTION_COST')
+                p(f'{get_loc(locs_data, 'LOC_HUD_PRODUCTION_COST')}: {prod} [ICON_FAITH]',
+                style="display:inline-block;text-align:left",
+                cls='civ-ability-desc')
+            else:
+                comment('LOC_UI_PEDIA_PRODUCTION_COST')
+                p(f'{get_loc(locs_data, 'LOC_UI_PEDIA_PRODUCTION_COST')}: {prod// 2} [ICON_PRODUCTION]',
+                style="display:inline-block;text-align:left",
+                cls='civ-ability-desc')
             br()
             if strategic_amt and strategic_type:
                 p(f'{max(strategic_amt // 2, 1)} [ICON_{strategic_type}]',
@@ -111,7 +129,12 @@ def get_units_html_file(bbg_version, lang, pages_list):
                 'ICON_RANGE': ('LOC_UI_PEDIA_RANGE', attack_range),
                 'ICON_RANGED': ('LOC_UI_PEDIA_RANGED_STRENGTH', ranged_cs),
                 'ICON_BOMBARD': ('LOC_UI_PEDIA_BOMBARD_STRENGTH', bombard_cs),
-                'ICON_ANTIAIR_LARGE': ('LOC_UI_PEDIA_ANTIAIR_STRENGTH', antiair_cs)
+                'ICON_ANTIAIR_LARGE': ('LOC_UI_PEDIA_ANTIAIR_STRENGTH', antiair_cs),
+                'ICON_RELIGIOUS_STRENGTH': ('LOC_UI_PEDIA_RELIGIOUS_STRENGTH', religious_strength),
+                'ICON_CHARGES': ('LOC_UI_PEDIA_BUILD_CHARGES', build_charges),
+                'ICON_SPREAD_CHARGES': ('LOC_UI_PEDIA_SPREAD_CHARGES', spread_charges),
+                'ICON_HEAL_CHARGES': ('LOC_UI_PEDIA_HEAL_CHARGES', religious_heal_charges),
+                'ICON_SIGHT': ('LOC_PEDIA_CONCEPTS_PAGE_COMBAT_6_CHAPTER_CONTENT_TITLE', sight)
             }
             for icon in icon_to_stats:
                 name, val = icon_to_stats[icon]
@@ -122,10 +145,10 @@ def get_units_html_file(bbg_version, lang, pages_list):
                   style="display:inline-block;text-align:left",
                   cls='civ-ability-desc')
                 br()
-            p(f'{sight} Sight',
-              style="display:inline-block;text-align:left",
-              cls='civ-ability-desc')
-            br()
+            # p(f'{sight} Sight',
+            #   style="display:inline-block;text-align:left",
+            #   cls='civ-ability-desc')
+            # br()
             comment(desc)
             p(get_loc(locs_data, desc),
               style="display:inline-block;text-align:left",

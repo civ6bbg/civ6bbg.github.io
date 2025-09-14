@@ -752,11 +752,16 @@ def get_unit_stats(db_path):
         crsr.execute('''
         SELECT UnitType, PromotionClass, Name, BaseSightRange, BaseMoves, Combat, RangedCombat, Range, Bombard,
         Cost, Description, Maintenance, StrategicResource, ResourceCost,
-        ResourceMaintenanceType, ResourceMaintenanceAmount, AntiAirCombat
-        FROM Units LEFT JOIN Units_XP2 USING(UnitType) WHERE FormationClass <> 'FORMATION_CLASS_CIVILIAN' 
+        ResourceMaintenanceType, ResourceMaintenanceAmount, AntiAirCombat,
+		BuildCharges, ReligiousStrength, SpreadCharges, ReligiousHealCharges
+        FROM Units LEFT JOIN Units_XP2 USING(UnitType) WHERE 
+		(FormationClass <> 'FORMATION_CLASS_CIVILIAN'  OR ReligiousStrength > 0)
         AND (TraitType <> 'TRAIT_BARBARIAN_BUT_SHOWS_UP_IN_PEDIA' OR TraitType IS NULL) ORDER BY Combat
         ''')
         rows = crsr.fetchall()
+    rows[0] = (rows[0][0],'PROMOTION_CLASS_APOSTLE',) + rows[0][2:]
+    rows[2] = (rows[2][0],'PROMOTION_CLASS_APOSTLE',) + rows[2][2:]
+    rows[3] = (rows[3][0],'PROMOTION_CLASS_APOSTLE',) + rows[3][2:]
     res = {}
     for row in rows:
         unit_type, promo_cls = row[:2]
