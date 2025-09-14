@@ -145,10 +145,6 @@ def get_units_html_file(bbg_version, lang, pages_list):
                   style="display:inline-block;text-align:left",
                   cls='civ-ability-desc')
                 br()
-            # p(f'{sight} Sight',
-            #   style="display:inline-block;text-align:left",
-            #   cls='civ-ability-desc')
-            # br()
             comment(desc)
             p(get_loc(locs_data, desc),
               style="display:inline-block;text-align:left",
