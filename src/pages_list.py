@@ -2,6 +2,7 @@ from pages.bbg_expanded import *
 from pages.buildings import *
 from pages.changelog import *
 from pages.city_states import *
+from pages.congress import *
 from pages.governor import *
 from pages.great_people import *
 from pages.leaders import *
@@ -85,6 +86,12 @@ pages_list = [
         'func': get_policy_html_file,
         'title': 'Policies',
         'main_menu_title': 'LOC_PEDIA_CONCEPTS_PAGE_GOVT_2_CHAPTER_CONTENT_TITLE'
+    },
+    {
+        'name': 'congress',
+        'func': get_congress_html_file,
+        'title': 'World Congress',
+        'main_menu_title': 'LOC_PEDIA_CONCEPTS_PAGE_WORLD_CONGRESS_CHAPTER_CONGRESS_TITLE'
     },
     {
         'name': 'misc',

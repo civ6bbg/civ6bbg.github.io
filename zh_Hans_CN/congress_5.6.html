@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-Z2ESCT7CR0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-Z2ESCT7CR0');
+    </script>
+    <title>Civ VI BBG 5.6 世界议会</title>
+    <meta charset="utf-8">
+    <meta contents="IE=edge" httpequiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="/images/BBGLogo.webp" rel="icon" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap" rel="stylesheet">
+    <link href="/css/style.min.css" rel="stylesheet">
+    <link href="/css/preloader.css" rel="stylesheet">
+    <link href="/css/animate.min.css" rel="stylesheet">
+    <link href="/css/header.css" rel="stylesheet">
+    <link href="/css/footer.css" rel="stylesheet">
+    <link href="/fontawesome-free-7.0.0-web/css/all.css" rel="stylesheet">
+    <script async="async" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9556735523664127"></script>
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="loader">
+        <div class="loader-outter"></div>
+        <div class="loader-inner"></div>
+        <div class="indicator">
+          <svg height="12px" width="16px">
+            <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+            <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="layer"></div>
+    <div class="page-flex">
+      <div class="main-wrapper">
+        <nav class="main-nav--bg">
+          <div class="main-nav">
+            <div class="header">
+              <div class="header-inner">
+                <div class="inner">
+                  <div class="row">
+                    <div class="flex center sidebar-toggle col-xl-1 col-lg-1 col-md-1 col-1">
+                      <button class="transparent-btn" title="Menu" type="button">
+                        <span class="sr-only">Toggle menu</span>
+                        <span aria-hidden="true" class="icon menu-toggle"></span>
+                      </button>
+                    </div>
+                    <div class="flex center col-xl-1 col-lg-1 col-md-1 col-2">
+                      <a href="/index.html" style="align-content: center;">
+                        <img alt="#" src="/images/BBGLogo.webp" style="width:3em; border-radius:10%">
+                      </a>
+                      <div class="mobile-nav"></div>
+                    </div>
+                    <div class="flex col-xl-8 col-lg-8 col-md-8 col-8">
+                      <div class="main-menu">
+                        <nav class="navigation">
+                          <ul class="nav menu">
+                            <li class="">
+                              <a href="/zh_Hans_CN/leaders_5.6.html" onclick="civClicked(null)">领袖</a>
+                            </li>
+                            <li class="">
+                              <a href="/zh_Hans_CN/bbg_expanded_5.6.html" onclick="civClicked(null)">BBG Expanded</a>
+                            </li>
+                            <li class="">
+                              <a href="/zh_Hans_CN/city_states_5.6.html" onclick="civClicked(null)">城邦</a>
+                            </li>
+                            <li class="">
+                              <a href="/zh_Hans_CN/religion_5.6.html" onclick="civClicked(null)">宗教</a>
+                            </li>
+                            <li class="">
+                              <a href="/zh_Hans_CN/governor_5.6.html" onclick="civClicked(null)">总督</a>
+                            </li>
+                            <li class="">
+                              <a href="/zh_Hans_CN/great_people_5.6.html" onclick="civClicked(null)">伟人</a>
+                            </li>
+                            <li class="">
+                              <a href="/zh_Hans_CN/natural_wonder_5.6.html" onclick="civClicked(null)">自然奇观</a>
+                            </li>
+                            <li class="">
+                              <a href="/zh_Hans_CN/world_wonder_5.6.html" onclick="civClicked(null)">World Wonders</a>
+                            </li>
+                            <li class="">
+                              <a href="/zh_Hans_CN/buildings_5.6.html" onclick="civClicked(null)">建筑</a>
+                            </li>
+                            <li class="">
+                              <a href="/zh_Hans_CN/units_5.6.html" onclick="civClicked(null)">单位</a>
+                            </li>
+                            <li class="">
+                              <a href="/zh_Hans_CN/names_5.6.html" onclick="civClicked(null)">Names</a>
+                            </li>
+                            <li class="">
+                              <a href="/zh_Hans_CN/policies_5.6.html" onclick="civClicked(null)">政策</a>
+                            </li>
+                            <li class="active">
+                              <a href="/zh_Hans_CN/congress_5.6.html" onclick="civClicked(null)">世界议会</a>
+                            </li>
+                            <li class="">
+                              <a href="/zh_Hans_CN/misc_5.6.html" onclick="civClicked(null)">Misc</a>
+                            </li>
+                            <li class="">
+                              <a href="/zh_Hans_CN/changelog_5.6.html" onclick="civClicked(null)">Changelog</a>
+                            </li>
+                            <li>
+                              <a>BBG Version<i class="icofont-rounded-down"></i></a>
+                              <ul class="dropdown bbg-version-dropdown">
+                                <li>
+                                  <a href="/zh_Hans_CN/congress_base_game.html">Base</a>
+                                </li>
+                                <li>
+                                  <a href="/zh_Hans_CN/congress_7.2.html">7.2</a>
+                                </li>
+                                <li>
+                                  <a href="/zh_Hans_CN/congress_7.1.html">7.1</a>
+                                </li>
+                                <li>
+                                  <a href="/zh_Hans_CN/congress_6.5.html">6.5</a>
+                                </li>
+                                <li>
+                                  <a href="/zh_Hans_CN/congress_6.4.html">6.4</a>
+                                </li>
+                                <li>
+                                  <a href="/zh_Hans_CN/congress_6.3.html">6.3</a>
+                                </li>
+                                <li>
+                                  <a href="/zh_Hans_CN/congress_6.2.html">6.2</a>
+                                </li>
+                                <li>
+                                  <a href="/zh_Hans_CN/congress_6.1.html">6.1</a>
+                                </li>
+                                <li>
+                                  <a href="/zh_Hans_CN/congress_6.0.html">6.0</a>
+                                </li>
+                                <li>
+                                  <a href="/zh_Hans_CN/congress_5.8.html">5.8</a>
+                                </li>
+                                <li>
+                                  <a href="/zh_Hans_CN/congress_5.7.html">5.7</a>
+                                </li>
+                                <li>
+                                  <a href="/zh_Hans_CN/congress_5.6.html">5.6</a>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+                    <div class="flex center col-xl-2 col-lg-2 col-md-2 col-1">
+                      <div class="flex row justify-content-around">
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-4">
+                          <div class="main-menu">
+                            <nav class="navigation">
+                              <ul class="nav menu">
+                                <li><i class="fa-solid fa-language lang-icon"></i>
+                                  <ul class="dropdown">
+                                    <li>
+                                      <a href="/en_US/congress_5.6.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/us.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/fr_FR/congress_5.6.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/fr.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/ru_RU/congress_5.6.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/ru.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/de_DE/congress_5.6.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/de.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/zh_Hans_CN/congress_5.6.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/cn.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/ko_KR/congress_5.6.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/kr.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/ja_JP/congress_5.6.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/jp.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </nav>
+                          </div>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-4">
+                          <div class="base-game-switcher-wrapper">
+                            <button class="base-game-switcher gray-circle-btn" title="Show Base Game" type="button"><i aria-hidden="true" class="enable-icon" data-feather="toggle-left"></i><i aria-hidden="true" class="disable-icon" data-feather="toggle-right"></i></button>
+                          </div>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-4">
+                          <div class="theme-switcher-wrapper">
+                            <button class="theme-switcher gray-circle-btn" title="Switch theme" type="button">
+                              <span class="sr-only">Switch theme</span><i aria-hidden="true" class="sun-icon" data-feather="sun"></i><i aria-hidden="true" class="moon-icon" data-feather="moon"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="scroll-up footer-popup" id="footer-popup">
+          <div class="footer-popup-inner">
+            <div class="row">
+              <div class="col-sm-8 col-1 footer-popup-body">
+                <p id="donateText">If you like this project, any donation would be extremely helpful for me in maintaining the website.</p>
+              </div>
+              <div class="col-sm-2 col-6 footer-popup-donate">
+                <a class="btn btn-primary" href="https://ko-fi.com/calcalciffer" target="_blank">Donate</a>
+              </div>
+              <div class="col-sm-2 col-6 footer-popup-scroll-up">
+                <a class="displayNone" href="#top" id="scrollUp" onclick="civClicked(null)"><i class="fa-solid fa-up-long"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="fixed left-0 right-auto h-screen bg-white border-r border-neutral-300 overflow-scroll" style="z-index: 5;">
+            <aside class="sidebar">
+              <div class="sidebar-start">
+                <div class="sidebar-body">
+                  <ul class="sidebar-body-menu">
+                    <li>
+                      <a href="#军备控制" onclick="civClicked(&quot;军备控制&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images//images/resolutions/WC_RES_ARMS_CONTROL.webp.webp">
+                        </span>
+                        <p>军备控制</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#边境控制条约" onclick="civClicked(&quot;边境控制条约&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images//images/resolutions/WC_RES_BORDER_CONTROL.webp.webp">
+                        </span>
+                        <p>边境控制条约</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#森林砍伐条约" onclick="civClicked(&quot;森林砍伐条约&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images//images/resolutions/WC_RES_DEFORESTATION_TREATY.webp.webp">
+                        </span>
+                        <p>森林砍伐条约</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#间谍协定" onclick="civClicked(&quot;间谍协定&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images//images/resolutions/WC_RES_ESPIONAGE_PACT.webp.webp">
+                        </span>
+                        <p>间谍协定</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#全球能源条约" onclick="civClicked(&quot;全球能源条约&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images//images/resolutions/WC_RES_GLOBAL_ENERGY_TREATY.webp.webp">
+                        </span>
+                        <p>全球能源条约</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#文化遗产组织" onclick="civClicked(&quot;文化遗产组织&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images//images/resolutions/WC_RES_HERITAGE_ORG.webp.webp">
+                        </span>
+                        <p>文化遗产组织</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#奢侈品政策" onclick="civClicked(&quot;奢侈品政策&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images//images/resolutions/WC_RES_LUXURY.webp.webp">
+                        </span>
+                        <p>奢侈品政策</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#雇佣兵公司" onclick="civClicked(&quot;雇佣兵公司&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images//images/resolutions/WC_RES_MERCENARY_COMPANIES.webp.webp">
+                        </span>
+                        <p>雇佣兵公司</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#移民条约" onclick="civClicked(&quot;移民条约&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images//images/resolutions/WC_RES_MIGRATION_TREATY.webp.webp">
+                        </span>
+                        <p>移民条约</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#军事顾问" onclick="civClicked(&quot;军事顾问&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images//images/resolutions/WC_RES_MILITARY_ADVISORY.webp.webp">
+                        </span>
+                        <p>军事顾问</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#赞助" onclick="civClicked(&quot;赞助&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images//images/resolutions/WC_RES_PATRONAGE.webp.webp">
+                        </span>
+                        <p>赞助</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#公共工程计划" onclick="civClicked(&quot;公共工程计划&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images//images/resolutions/WC_RES_PUBLIC_WORKS.webp.webp">
+                        </span>
+                        <p>公共工程计划</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#主权" onclick="civClicked(&quot;主权&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images//images/resolutions/WC_RES_SOVEREIGNTY.webp.webp">
+                        </span>
+                        <p>主权</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#贸易政策" onclick="civClicked(&quot;贸易政策&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images//images/resolutions/WC_RES_TRADE_TREATY.webp.webp">
+                        </span>
+                        <p>贸易政策</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#城市发展条约" onclick="civClicked(&quot;城市发展条约&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images//images/resolutions/WC_RES_URBAN_DEVELOPMENT.webp.webp">
+                        </span>
+                        <p>城市发展条约</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#世界意识形态" onclick="civClicked(&quot;世界意识形态&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images//images/resolutions/WC_RES_WORLD_IDEOLOGY.webp.webp">
+                        </span>
+                        <p>世界意识形态</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#世界宗教" onclick="civClicked(&quot;世界宗教&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images//images/resolutions/WC_RES_WORLD_RELIGION.webp.webp">
+                        </span>
+                        <p>世界宗教</p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </aside>
+          </div>
+          <div class="leaders-data min-w-full main-pl">
+            <main class="main users chart-page">
+              <div class="container">
+                <h1 class="civ-name">Civ VI BBG 5.6 世界议会</h1><br>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <!--LOC_WC_RES_ARMS_CONTROL_NAME-->
+                      <h2 class="civ-name">军备控制
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/resolutions/WC_RES_ARMS_CONTROL.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">所有文明的大规模杀伤性武器储量将与目标文明储量匹配。</p>
+                      <p class="civ-ability-desc" style="text-align:right">目标文明将失去所有大规模杀伤性武器。</p>
+                      <p class="civ-ability-desc" style="text-align:left">Earliest Era: 现代</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <!--LOC_WC_RES_BORDER_CONTROL_NAME-->
+                      <h2 class="civ-name">边境控制条约
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/resolutions/WC_RES_BORDER_CONTROL.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">此文明新建区域将具有 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化炸弹效果。</p>
+                      <p class="civ-ability-desc" style="text-align:right">该文明的边界将无法通过 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化值增长。</p>
+                      <p class="civ-ability-desc" style="text-align:left">Latest Era: 现代</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <!--LOC_WC_RES_DEFORESTATION_TREATY_NAME-->
+                      <h2 class="civ-name">森林砍伐条约
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/resolutions/WC_RES_DEFORESTATION_TREATY.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">禁止砍伐或清除所选地貌类型。</p>
+                      <p class="civ-ability-desc" style="text-align:right">清除所选地貌类型产出的 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币等同于 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力与 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食物。</p>
+                      <p class="civ-ability-desc" style="text-align:left">Earliest Era: 工业时代</p>
+                      <p class="civ-ability-desc" style="text-align:left">Latest Era: 信息时代</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <!--LOC_WC_RES_ESPIONAGE_PACT_NAME-->
+                      <h2 class="civ-name">间谍协定
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/resolutions/WC_RES_ESPIONAGE_PACT.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">间谍执行所选行动时产生的效果提升2级。</p>
+                      <p class="civ-ability-desc" style="text-align:right">选择的行动不可用。</p>
+                      <p class="civ-ability-desc" style="text-align:left">Earliest Era: 文艺复兴时期</p>
+                      <p class="civ-ability-desc" style="text-align:left">Latest Era: 原子能时代</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <!--LOC_WC_RES_GLOBAL_ENERGY_TREATY_NAME-->
+                      <h2 class="civ-name">全球能源条约
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/resolutions/WC_RES_GLOBAL_ENERGY_TREATY.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">禁止建造此类型建筑。</p>
+                      <p class="civ-ability-desc" style="text-align:right">建造此类型建筑所需生产力减少50%。</p>
+                      <p class="civ-ability-desc" style="text-align:left">Earliest Era: 文艺复兴时期</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <!--LOC_WC_RES_HERITAGE_ORG_NAME-->
+                      <h2 class="civ-name">文化遗产组织
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/resolutions/WC_RES_HERITAGE_ORG.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">该类型巨作的 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 旅游业绩翻倍。</p>
+                      <p class="civ-ability-desc" style="text-align:right">该类型巨作将不提供 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 旅游业绩。</p>
+                      <p class="civ-ability-desc" style="text-align:left">Earliest Era: 工业时代</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <!--LOC_WC_RES_LUXURY_NAME-->
+                      <h2 class="civ-name">奢侈品政策
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/resolutions/WC_RES_LUXURY.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">所选奢侈品资源将重复提供 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> 宜居度。</p>
+                      <p class="civ-ability-desc" style="text-align:right">所选奢侈品资源将无法提供 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> 宜居度。</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <!--LOC_WC_RES_MERCENARY_COMPANIES_NAME-->
+                      <h2 class="civ-name">雇佣兵公司
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/resolutions/WC_RES_MERCENARY_COMPANIES.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">下次世界议会召开前，使用此类型货币建造或购买军事单位时花费+100%。</p>
+                      <p class="civ-ability-desc" style="text-align:right">下次世界议会召开前，使用此类型货币建造或购买军事单位时花费-50%。</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <!--LOC_WC_RES_MIGRATION_TREATY_NAME-->
+                      <h2 class="civ-name">移民条约
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/resolutions/WC_RES_MIGRATION_TREATY.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">该文明的城市 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 人口增长+20%，但每回合将-5忠诚度。</p>
+                      <p class="civ-ability-desc" style="text-align:right">该文明的城市每回合+5忠诚度，但 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 人口增长将-20%。</p>
+                      <p class="civ-ability-desc" style="text-align:left">Earliest Era: 中世纪</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <!--LOC_WC_RES_MILITARY_ADVISORY_NAME-->
+                      <h2 class="civ-name">军事顾问
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/resolutions/WC_RES_MILITARY_ADVISORY.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">拥有所选升级类型的单位+5战斗力。</p>
+                      <p class="civ-ability-desc" style="text-align:right">拥有所选升级类型的单位-5战斗力。</p>
+                      <p class="civ-ability-desc" style="text-align:left">Latest Era: 原子能时代</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <!--LOC_WC_RES_PATRONAGE_NAME-->
+                      <h2 class="civ-name">赞助
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/resolutions/WC_RES_PATRONAGE.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">获得此类型 <img src="/images/ICON_GREATPERSON.webp" style="height:1em"/> 伟人两倍的点数。</p>
+                      <p class="civ-ability-desc" style="text-align:right">无法获得此类型 <img src="/images/ICON_GREATPERSON.webp" style="height:1em"/> 伟人的点数。</p>
+                      <p class="civ-ability-desc" style="text-align:left">Latest Era: 现代</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <!--LOC_WC_RES_PUBLIC_WORKS_NAME-->
+                      <h2 class="civ-name">公共工程计划
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/resolutions/WC_RES_PUBLIC_WORKS.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">建造该项目时+100% <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。</p>
+                      <p class="civ-ability-desc" style="text-align:right">建造该项目时-50% <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。</p>
+                      <p class="civ-ability-desc" style="text-align:left">Earliest Era: 工业时代</p>
+                      <p class="civ-ability-desc" style="text-align:left">Latest Era: 信息时代</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <!--LOC_WC_RES_SOVEREIGNTY_NAME-->
+                      <h2 class="civ-name">主权
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/resolutions/WC_RES_SOVEREIGNTY.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">通往该类型城邦的 <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> 贸易路线建立后城邦的此类产出+100%。</p>
+                      <p class="civ-ability-desc" style="text-align:right">此类型的城邦将无法提供自身特色宗主国加成。</p>
+                      <p class="civ-ability-desc" style="text-align:left">Latest Era: 现代</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <!--LOC_WC_RES_TRADE_TREATY_NAME-->
+                      <h2 class="civ-name">贸易政策
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/resolutions/WC_RES_TRADE_TREATY.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">通往所选文明的国际 <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> 贸易路线可为其发起者提供+4金币。所选文明获得+1 <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> 贸易路线容量。</p>
+                      <p class="civ-ability-desc" style="text-align:right">通往或源自所选文明的国际 <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> 贸易路线-4金币。（可变为负值）</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <!--LOC_WC_RES_URBAN_DEVELOPMENT_NAME-->
+                      <h2 class="civ-name">城市发展条约
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/resolutions/WC_RES_URBAN_DEVELOPMENT.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">建造该区域中的建筑时+100% <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。</p>
+                      <p class="civ-ability-desc" style="text-align:right">该区域中无法修建建筑。</p>
+                      <p class="civ-ability-desc" style="text-align:left">Latest Era: 现代</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <!--LOC_WC_RES_WORLD_IDEOLOGY_NAME-->
+                      <h2 class="civ-name">世界意识形态
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/resolutions/WC_RES_WORLD_IDEOLOGY.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">该政体类型获得一个通配符政策槽位。</p>
+                      <p class="civ-ability-desc" style="text-align:right">该政体类型失去一个通配符政策槽位。</p>
+                      <p class="civ-ability-desc" style="text-align:left">Earliest Era: 中世纪</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <!--LOC_WC_RES_WORLD_RELIGION_NAME-->
+                      <h2 class="civ-name">世界宗教
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/resolutions/WC_RES_WORLD_RELIGION.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">为此 <img src="/images/ICON_RELIGION.webp" style="height:1em"/> 宗教的所有单位+10战斗力（普通及宗教战斗力）。</p>
+                      <p class="civ-ability-desc" style="text-align:right">所有文明可对所选宗教的单位进行“异教徒审判”，审判后可获得25点 <img src="/images/ICON_FAVOR.webp" style="height:1em"/> 外交支持。</p>
+                      <p class="civ-ability-desc" style="text-align:left">Latest Era: 工业时代</p><br>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </main>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/plugins/feather.min.js"></script>
+    <script src="/plugins/chart.min.js"></script>
+  </body>
+</html>

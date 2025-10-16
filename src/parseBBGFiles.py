@@ -820,3 +820,16 @@ def get_policies(db_path):
     connection.close()
     return res
 
+def get_congress_options(db_path):
+    connection = sqlite3.connect(db_path)
+
+    crsr = connection.cursor()
+    crsr.execute(
+        f"""SELECT *
+        FROM Resolutions 
+        WHERE InjectionOnly=0
+        ORDER BY NAME
+        """)
+    rows = crsr.fetchall()
+    connection.close()
+    return rows
