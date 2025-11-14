@@ -168,7 +168,7 @@ def get_expanded_civs_tables(db_path):
     )
     rows = crsr.fetchall()
 
-    rows = sorted(rows)
+    rows = sorted(rows, key=lambda civ: get_civ_name(civ[0]))
     civLeaders = []
     civLeaderItems = dict()
     uniques = []
