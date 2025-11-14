@@ -99,6 +99,18 @@ def get_locs_data_with_fallback(bbg_version, lang):
     locs_data_cache[(bbg_version, lang)] = locs
     return locs
 
+def get_civ_name(name):
+    if name == 'CIVILIZATION_LIME_TEOTIHUACAN':
+        return 'CIVILIZATION_TEOTIHUACAN'
+    elif name == 'CIVILIZATION_LIME_THULE':
+        return 'CIVILIZATION_THULE'
+    elif name == 'CIVILIZATION_SUK_SWAHILI':
+        return 'CIVILIZATION_SWAHILI'
+    elif name == 'CIVILIZATION_SUK_TIBET':
+        return 'CIVILIZATION_TIBET'
+    else:
+        return name
+
 def get_civs_tables(db_path):
     connection = sqlite3.connect(db_path)
 
@@ -109,7 +121,7 @@ def get_civs_tables(db_path):
     )
     rows = crsr.fetchall()
 
-    rows = sorted(rows)
+    rows = sorted(rows, key=lambda civ: get_civ_name(civ[0]))
     civLeaders = []
     civLeaderItems = dict()
     uniques = []
