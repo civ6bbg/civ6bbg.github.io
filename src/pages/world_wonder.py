@@ -12,6 +12,8 @@ def get_world_wonder_html_file(bbg_version, lang, pages_list):
     if bbg_version == None and lang not in base_game_locs_data:
         base_game_locs_data[lang] = locs_data
     version_name = bbg_version if bbg_version != None else 'baseGame'
+    tech_to_loc_dict = get_tech_to_loc_dict(f"sqlFiles/{version_name}/DebugGameplay.sqlite")
+    civic_to_loc_dict = get_civic_to_loc_dict(f"sqlFiles/{version_name}/DebugGameplay.sqlite")
     title = f'Civ VI {f"BBG {bbg_version}" if bbg_version != None else get_loc(locs_data, "LOC_BASE_GAME_TITLE")} {get_loc(locs_data, "LOC_PAGE_TITLE_WORLD_WONDERS")}'
 
     menu_items = []
@@ -37,5 +39,12 @@ def get_world_wonder_html_file(bbg_version, lang, pages_list):
                                 onerror=image_onerror)
                         br()
                         show_building_yields(wonder, locs_data, en_US_locs_data)
+                        unlocked_by = get_loc(locs_data, "LOC_UI_PEDIA_UNLOCKED_BY")
+                        unlock_tech = wonder[0][23]
+                        unlock_civic = wonder[0][24]
+                        tech_civic_dialog = get_unlock_tech_civic_dialog(unlock_tech, unlock_civic, locs_data, en_US_locs_data, tech_to_loc_dict, civic_to_loc_dict)
+                        p(f'{unlocked_by} {tech_civic_dialog}' if tech_civic_dialog != None else '',
+                            style="text-align:left",
+                            cls='civ-ability-desc')
                         br()
     return create_page(bbg_version, lang, title, 'world_wonder', menu_items, menu_icons, 'images/world_wonders', pages_list, create_world_wonder_page, locs_data, en_US_locs_data)
