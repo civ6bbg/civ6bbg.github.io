@@ -82,6 +82,9 @@
         <Row Tag="LOC_PAGE_TITLE_RELIGION">
             <Text>Religions Beliefs Description</Text>
         </Row>
+        <Row Tag="LOC_PAGE_TITLE_TECHNOLOGY_TREE">
+            <Text>Technology Tree</Text>
+        </Row>
         <Row Tag="LOC_PAGE_TITLE_UNITS">
             <Text>Unit Details</Text>
         </Row>

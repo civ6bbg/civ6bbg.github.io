@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-Z2ESCT7CR0"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-Z2ESCT7CR0');
+    </script>
+    <title>Civ VI BBG 7.1 Technology Tree</title>
+    <meta charset="utf-8">
+    <meta contents="IE=edge" httpequiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="/images/BBGLogo.webp" rel="icon" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap" rel="stylesheet">
+    <link href="/css/style.min.css" rel="stylesheet">
+    <link href="/css/preloader.css" rel="stylesheet">
+    <link href="/css/animate.min.css" rel="stylesheet">
+    <link href="/css/header.css" rel="stylesheet">
+    <link href="/css/footer.css" rel="stylesheet">
+    <link href="/fontawesome-free-7.0.0-web/css/all.css" rel="stylesheet">
+    <script async="async" crossorigin="anonymous" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9556735523664127"></script>
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="loader">
+        <div class="loader-outter"></div>
+        <div class="loader-inner"></div>
+        <div class="indicator">
+          <svg height="12px" width="16px">
+            <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+            <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="layer"></div>
+    <div class="page-flex">
+      <div class="main-wrapper">
+        <nav class="main-nav--bg">
+          <div class="main-nav">
+            <div class="header">
+              <div class="header-inner">
+                <div class="inner">
+                  <div class="row">
+                    <div class="flex center sidebar-toggle col-xl-1 col-lg-1 col-md-1 col-1">
+                      <button class="transparent-btn" title="Menu" type="button">
+                        <span class="sr-only">Toggle menu</span>
+                        <span aria-hidden="true" class="icon menu-toggle"></span>
+                      </button>
+                    </div>
+                    <div class="flex center col-xl-1 col-lg-1 col-md-1 col-2">
+                      <a href="/index.html" style="align-content: center;">
+                        <img alt="#" src="/images/BBGLogo.webp" style="width:3em; border-radius:10%">
+                      </a>
+                      <div class="mobile-nav"></div>
+                    </div>
+                    <div class="flex col-xl-8 col-lg-8 col-md-8 col-8">
+                      <div class="main-menu">
+                        <nav class="navigation">
+                          <ul class="nav menu">
+                            <li class="">
+                              <a href="/zh_Hans_CN/leaders_7.1.html" onclick="civClicked(null)">领袖</a>
+                            </li>
+                            <li class="">
+                              <a href="/zh_Hans_CN/bbg_expanded_7.1.html" onclick="civClicked(null)">BBG Expanded</a>
+                            </li>
+                            <li class="">
+                              <a href="/zh_Hans_CN/city_states_7.1.html" onclick="civClicked(null)">城邦</a>
+                            </li>
+                            <li class="">
+                              <a href="/zh_Hans_CN/religion_7.1.html" onclick="civClicked(null)">宗教</a>
+                            </li>
+                            <li class="">
+                              <a href="/zh_Hans_CN/governor_7.1.html" onclick="civClicked(null)">总督</a>
+                            </li>
+                            <li class="">
+                              <a href="/zh_Hans_CN/great_people_7.1.html" onclick="civClicked(null)">伟人</a>
+                            </li>
+                            <li class="">
+                              <a href="/zh_Hans_CN/natural_wonder_7.1.html" onclick="civClicked(null)">自然奇观</a>
+                            </li>
+                            <li class="">
+                              <a href="/zh_Hans_CN/world_wonder_7.1.html" onclick="civClicked(null)">World Wonders</a>
+                            </li>
+                            <li class="">
+                              <a href="/zh_Hans_CN/buildings_7.1.html" onclick="civClicked(null)">建筑</a>
+                            </li>
+                            <li class="">
+                              <a href="/zh_Hans_CN/units_7.1.html" onclick="civClicked(null)">单位</a>
+                            </li>
+                            <li class="active">
+                              <a href="/zh_Hans_CN/tech_tree_7.1.html" onclick="civClicked(null)">Technology Tree</a>
+                            </li>
+                            <li class="">
+                              <a href="/zh_Hans_CN/names_7.1.html" onclick="civClicked(null)">Names</a>
+                            </li>
+                            <li class="">
+                              <a href="/zh_Hans_CN/policies_7.1.html" onclick="civClicked(null)">政策</a>
+                            </li>
+                            <li class="">
+                              <a href="/zh_Hans_CN/congress_7.1.html" onclick="civClicked(null)">世界议会</a>
+                            </li>
+                            <li class="">
+                              <a href="/zh_Hans_CN/misc_7.1.html" onclick="civClicked(null)">Misc</a>
+                            </li>
+                            <li class="">
+                              <a href="/zh_Hans_CN/changelog_7.1.html" onclick="civClicked(null)">Changelog</a>
+                            </li>
+                            <li>
+                              <a>BBG Version<i class="icofont-rounded-down"></i></a>
+                              <ul class="dropdown bbg-version-dropdown">
+                                <li>
+                                  <a href="/zh_Hans_CN/tech_tree_base_game.html">Base</a>
+                                </li>
+                                <li>
+                                  <a href="/zh_Hans_CN/tech_tree_7.2.html">7.2</a>
+                                </li>
+                                <li>
+                                  <a href="/zh_Hans_CN/tech_tree_7.1.html">7.1</a>
+                                </li>
+                                <li>
+                                  <a href="/zh_Hans_CN/tech_tree_6.5.html">6.5</a>
+                                </li>
+                                <li>
+                                  <a href="/zh_Hans_CN/tech_tree_6.4.html">6.4</a>
+                                </li>
+                                <li>
+                                  <a href="/zh_Hans_CN/tech_tree_6.3.html">6.3</a>
+                                </li>
+                                <li>
+                                  <a href="/zh_Hans_CN/tech_tree_6.2.html">6.2</a>
+                                </li>
+                                <li>
+                                  <a href="/zh_Hans_CN/tech_tree_6.1.html">6.1</a>
+                                </li>
+                                <li>
+                                  <a href="/zh_Hans_CN/tech_tree_6.0.html">6.0</a>
+                                </li>
+                                <li>
+                                  <a href="/zh_Hans_CN/tech_tree_5.8.html">5.8</a>
+                                </li>
+                                <li>
+                                  <a href="/zh_Hans_CN/tech_tree_5.7.html">5.7</a>
+                                </li>
+                                <li>
+                                  <a href="/zh_Hans_CN/tech_tree_5.6.html">5.6</a>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+                    <div class="flex center col-xl-2 col-lg-2 col-md-2 col-1">
+                      <div class="flex row justify-content-around">
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-4">
+                          <div class="main-menu">
+                            <nav class="navigation">
+                              <ul class="nav menu">
+                                <li><i class="fa-solid fa-language lang-icon"></i>
+                                  <ul class="dropdown">
+                                    <li>
+                                      <a href="/en_US/tech_tree_7.1.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/us.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/fr_FR/tech_tree_7.1.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/fr.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/ru_RU/tech_tree_7.1.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/ru.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/de_DE/tech_tree_7.1.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/de.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/zh_Hans_CN/tech_tree_7.1.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/cn.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/ko_KR/tech_tree_7.1.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/kr.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/ja_JP/tech_tree_7.1.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/jp.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </nav>
+                          </div>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-4">
+                          <div class="base-game-switcher-wrapper">
+                            <button class="base-game-switcher gray-circle-btn" title="Show Base Game" type="button"><i aria-hidden="true" class="enable-icon" data-feather="toggle-left"></i><i aria-hidden="true" class="disable-icon" data-feather="toggle-right"></i></button>
+                          </div>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-4">
+                          <div class="theme-switcher-wrapper">
+                            <button class="theme-switcher gray-circle-btn" title="Switch theme" type="button">
+                              <span class="sr-only">Switch theme</span><i aria-hidden="true" class="sun-icon" data-feather="sun"></i><i aria-hidden="true" class="moon-icon" data-feather="moon"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="scroll-up footer-popup" id="footer-popup">
+          <div class="footer-popup-inner">
+            <div class="row">
+              <div class="col-sm-8 col-1 footer-popup-body">
+                <p id="donateText">If you like this project, any donation would be extremely helpful for me in maintaining the website.</p>
+              </div>
+              <div class="col-sm-2 col-6 footer-popup-donate">
+                <a class="btn btn-primary" href="https://ko-fi.com/calcalciffer" target="_blank">Donate</a>
+              </div>
+              <div class="col-sm-2 col-6 footer-popup-scroll-up">
+                <a class="displayNone" href="#top" id="scrollUp" onclick="civClicked(null)"><i class="fa-solid fa-up-long"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="fixed left-0 right-auto h-screen bg-white border-r border-neutral-300 overflow-scroll" style="z-index: 5;">
+            <aside class="sidebar">
+              <div class="sidebar-start">
+                <div class="sidebar-body">
+                  <ul class="sidebar-body-menu">
+                    <li>
+                      <a href="#高卢 维钦托利" onclick="civClicked(&quot;高卢 维钦托利&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/leaders/Gaul Vercingetorix.webp">
+                        </span>
+                        <p>高卢 维钦托利</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#马其顿 奥林匹娅斯" onclick="civClicked(&quot;马其顿 奥林匹娅斯&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/leaders/Macedon Olympias.webp">
+                        </span>
+                        <p>马其顿 奥林匹娅斯</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#玛雅 特·基尼奇二世" onclick="civClicked(&quot;玛雅 特·基尼奇二世&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/leaders/Maya Te' K'inich II.webp">
+                        </span>
+                        <p>玛雅 特·基尼奇二世</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#腓尼基 阿希拉姆" onclick="civClicked(&quot;腓尼基 阿希拉姆&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/leaders/Phoenicia Ahiram.webp">
+                        </span>
+                        <p>腓尼基 阿希拉姆</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#斯瓦希里 哈桑·伊本·苏莱曼" onclick="civClicked(&quot;斯瓦希里 哈桑·伊本·苏莱曼&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/leaders/Swahili Al-Hasan ibn Sulaiman.webp">
+                        </span>
+                        <p>斯瓦希里 哈桑·伊本·苏莱曼</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#特奥蒂瓦坎 掷矛者猫头鹰" onclick="civClicked(&quot;特奥蒂瓦坎 掷矛者猫头鹰&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/leaders/Teotihuacán Spearthrower Owl.webp">
+                        </span>
+                        <p>特奥蒂瓦坎 掷矛者猫头鹰</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#图勒 基维乌克" onclick="civClicked(&quot;图勒 基维乌克&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/leaders/Thule Kiviuq.webp">
+                        </span>
+                        <p>图勒 基维乌克</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#吐蕃 赤松德赞" onclick="civClicked(&quot;吐蕃 赤松德赞&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/leaders/Tibet Trisong Detsen.webp">
+                        </span>
+                        <p>吐蕃 赤松德赞</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#西雅赫·卡克" onclick="civClicked(&quot;西雅赫·卡克&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/governors/Fire is Born.webp">
+                        </span>
+                        <p>西雅赫·卡克</p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </aside>
+          </div>
+          <div class="leaders-data min-w-full main-pl">
+            <main class="main users chart-page">
+              <div class="container">
+                <h1 class="civ-name">Civ VI BBG 7.1 Technology Tree</h1><br>
+                <div class="row" id="高卢 维钦托利">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <!--LOC_CIVILIZATION_GAUL_NAME LOC_LEADER_SUK_VERCINGETORIX_NAME-->
+                      <h2 class="civ-name">高卢 维钦托利
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/leaders/Gaul Vercingetorix.webp" style="vertical-align: middle; width:7em">
+                      </h2>
+                      <!--LOC_TRAIT_CIVILIZATION_GAUL_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">哈尔施塔特文化</h3><br>
+                      <!--LOC_TRAIT_CIVILIZATION_GAUL_DESCRIPTION-->
+                      <p class="civ-ability-desc" style="text-align:left">矿山为所有区域提供少量相邻加成。采石场为所有区域提供标准相邻加成。特色区域与其他区域相邻时不会获得少量相邻加成；特色区域也无法建在市中心旁。<br><br><span>&#8226;</span> 出生地关联：T3铁、T5采石场资源、T5矿山奢侈品与加成资源。</p><br>
+                      <!--LOC_TRAIT_LEADER_SUK_GALLIC_WAR_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">高卢邦联</h3><br>
+                      <!--LOC_TRAIT_LEADER_SUK_GALLIC_WAR_DESCRIPTION_DLC-->
+                      <p class="civ-ability-desc" style="text-align:left">解锁“铸铜术”科技后，矿山+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化值。每个工作坊+1 <img src="/images/ICON_INFLUENCEPERTURN.webp" style="height:1em"/> 影响力，招募 <img src="/images/ICON_GREATENGINEER.webp" style="height:1em"/> 大工程师时获得1 <img src="/images/ICON_ENVOY.webp" style="height:1em"/> 使者。</p><br>
+                      <!--LOC_DISTRICT_OPPIDUM_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">奥皮杜姆
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/items/Oppidum.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <!--LOC_DISTRICT_OPPIDUM_DESCRIPTION-->
+                      <p class="civ-ability-desc" style="text-align:left">高卢特色区域，替代工业区，建造花费更低，且出现时间更早。“奥皮杜姆”区域具有防御力且可执行远程攻击。对无主领土施放文化炸弹。<br><br>采石场和战略资源提供+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 相邻加成。</p><br>
+                      <!--LOC_UNIT_GAUL_GAESATAE_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">高卢枪佣兵
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/items/Gaesatae.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <!--LOC_UNIT_GAUL_GAESATAE_DESCRIPTION-->
+                      <p class="civ-ability-desc" style="text-align:left">高卢特色远古时代单位，替代勇士。此单位拥有更高花费。与基础战斗力更高的单位作战时+10 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 战斗力。进攻区域防御时+5 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 战斗力。</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="马其顿 奥林匹娅斯">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <!--LOC_CIVILIZATION_MACEDON_NAME LOC_LEADER_JFD_OLYMPIAS_NAME-->
+                      <h2 class="civ-name">马其顿 奥林匹娅斯
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/leaders/Macedon Olympias.webp" style="vertical-align: middle; width:7em">
+                      </h2>
+                      <!--LOC_TRAIT_LEADER_HELLENISTIC_FUSION_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">希腊文化融合</h3><br>
+                      <!--LOC_TRAIT_LEADER_HELLENISTIC_FUSION_EXPANSION1_DESCRIPTION-->
+                      <p class="civ-ability-desc" style="text-align:left">征服城市后将获得提升：所有城市获得10 <img src="/images/ICON_TURN.webp" style="height:1em"/> 回合的+20% <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力，并且征服城市中每个军营或学院都会启动 <img src="/images/ICON_TECHBOOSTED.webp" style="height:1em"/> 尤里卡、每个圣地和剧院广场都带来 <img src="/images/ICON_CIVICBOOSTED.webp" style="height:1em"/> 鼓舞。<br><br><span>&#8226;</span> 出生地关联：无。</p><br>
+                      <!--LOC_TRAIT_LEADER_JFD_CABEIRI_MYSTERIES_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">众卡比洛斯之秘仪</h3><br>
+                      <!--LOC_TRAIT_LEADER_JFD_CABEIRI_MYSTERIES_DESCRIPTION-->
+                      <p class="civ-ability-desc" style="text-align:left">创建万神殿后获得一个 <img src="/images/ICON_ENVOY.webp" style="height:1em"/> 使者。拥有皇家学堂并且信仰奥林匹亚 <img src="/images/ICON_RELIGION.webp" style="height:1em"/> 宗教的城市每个人口+1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科技值并获得1<img src="/images/ICON_ENVOY.webp" style="height:1em"/> 使者。每宗主一个城邦可为近战和重骑兵单位+2 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 战斗力。</p><br>
+                      <!--LOC_BUILDING_BASILIKOI_PAIDES_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">皇家学堂
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/items/Basilikoi Paides.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <!--LOC_BUILDING_BASILIKOI_PAIDES_EXPANSION2_DESCRIPTION-->
+                      <p class="civ-ability-desc" style="text-align:left">马其顿特色建筑。该城中训练的陆地近战、远程单位和伙友骑兵+25%战斗经验值。非平民单位在此城中创建时，获得等同于单位 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力花费20%的 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科技值。<br><br>无法建造在已拥有马厩的军营区域中。</p><br>
+                      <!--LOC_UNIT_MACEDONIAN_HYPASPIST_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">持盾护卫
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/items/Hypaspist.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <!--LOC_UNIT_MACEDONIAN_HYPASPIST_DESCRIPTION-->
+                      <p class="civ-ability-desc" style="text-align:left">马其顿特色近战单位，替代剑客。围攻区域时+10 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 战斗力。+50%支援加成。<br><br>炼铁术 科技</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="玛雅 特·基尼奇二世">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <!--LOC_CIVILIZATION_MAYA_NAME LOC_LEADER_LL_TEKINICH_II_NAME-->
+                      <h2 class="civ-name">玛雅 特·基尼奇二世
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/leaders/Maya Te' K'inich II.webp" style="vertical-align: middle; width:7em">
+                      </h2>
+                      <!--LOC_TRAIT_CIVILIZATION_MAYAB_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">玛雅布</h3><br>
+                      <!--LOC_TRAIT_CIVILIZATION_MAYAB_DESCRIPTION-->
+                      <p class="civ-ability-desc" style="text-align:left">在淡水和海岸旁定居时不提供额外 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住房；但每座农场额外+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住房、+1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币，每与一座天文台相邻则+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。种植园每与一座天文台相邻则+1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科技值，“教育”科技后提升至+2 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科技值。每有一种奢侈品与市中心相邻，则+1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> 宜居度。<br><br><img src="/images/ICON_CAPITAL.webp" style="height:1em"/> 首都+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住房。<br><br><span>&#8226;</span> 出生地关联：T3种植园资源、T4香蕉。特殊：距离水域更远。</p><br>
+                      <!--LOC_TRAIT_LEADER_LL_TEKINICH_II_WRATH_OF_VENUS_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">金星之怒</h3><br>
+                      <!--LOC_TRAIT_LEADER_LL_TEKINICH_II_WRATH_OF_VENUS_DESC-->
+                      <p class="civ-ability-desc" style="text-align:left">当进入古典时代后，首都6环内的军事单位-2 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 战斗力。首都6环外的军事单位+4 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 战斗力。每启动一个 <img src="/images/ICON_TECHBOOSTED.webp" style="height:1em"/> 尤里卡时刻，为所有单位回复5点生命值并获得2点经验值</p><br>
+                      <!--LOC_DISTRICT_OBSERVATORY_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">天文台
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/items/Observatory.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <!--LOC_DISTRICT_OBSERVATORY_DESCRIPTION-->
+                      <p class="civ-ability-desc" style="text-align:left">玛雅特色科学研究区域。替代“学院”区域，且建造花费更低。<br><br>+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住房，与种植园相邻则+1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科技值。每与2个农场或区域单元格相邻，则+1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科技值。每与1个地热裂缝相邻，则+2 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科技值。</p><br>
+                      <!--LOC_UNIT_MAYAN_HULCHE_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">投枪手
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/items/Hul'che.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <!--LOC_UNIT_MAYAN_HULCHE_DESCRIPTION-->
+                      <p class="civ-ability-desc" style="text-align:left">玛雅特色远古时代远程单位，替代弓箭手，远程攻击力强。与受伤的对手作战时+5 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 战斗力。<br><br>箭术 科技</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="腓尼基 阿希拉姆">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <!--LOC_CIVILIZATION_PHOENICIA_NAME LOC_LEADER_LIME_PHOE_AHIRAM_NAME-->
+                      <h2 class="civ-name">腓尼基 阿希拉姆
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/leaders/Phoenicia Ahiram.webp" style="vertical-align: middle; width:7em">
+                      </h2>
+                      <!--LOC_TRAIT_CIVILIZATION_MEDITERRANEAN_COLONIES_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">地中海殖民地</h3><br>
+                      <!--LOC_TRAIT_CIVILIZATION_MEDITERRANEAN_COLONIES_DESCRIPTION-->
+                      <p class="civ-ability-desc" style="text-align:left">游戏开始便激活“写作”科技 <img src="/images/ICON_TECHBOOSTED.webp" style="height:1em"/> 尤里卡。腓尼基建造的海岸城市若与 <img src="/images/ICON_CAPITAL.webp" style="height:1em"/> 首都在同一大陆，则其忠诚度为100%。开拓者上船后，<img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移动力与视野范围各+2。开拓者上船和下船无需额外花费 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移动力。<br><br><span>&#8226;</span> 出生地关联：T1海岸。</p><br>
+                      <!--LOC_TRAIT_LEADER_LIME_PHOE_AHIRAM_MERCHANT_PRINCES_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">商贸王子</h3><br>
+                      <!--LOC_TRAIT_LEADER_LIME_PHOE_AHIRAM_MERCHANT_PRINCES_DESCRIPTION-->
+                      <p class="civ-ability-desc" style="text-align:left">国际 <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> 贸易路线从起源于腓尼基城市里的每一个奢侈品资源获得+0.5 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力和2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币。在解锁“写作”科技之后可建造特色建筑“皇家陵墓”。</p><br>
+                      <!--LOC_DISTRICT_COTHON_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">U型港
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/items/Cothon.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <!--LOC_DISTRICT_COTHON_DESCRIPTION-->
+                      <p class="civ-ability-desc" style="text-align:left">腓尼基特色城市海军活动区域，取代港口且建造成本更低。必须修建在海岸或与陆地相邻的湖泊地貌上。<br><br>该城市生产海军单位与开拓者时+25% <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。</p><br>
+                      <!--LOC_LEADER_BUILDING_LIME_PHOE_AHIRAM_TOMB_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">皇家陵墓
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/items/Royal Tomb.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <!--LOC_LEADER_BUILDING_LIME_PHOE_AHIRAM_TOMB_DESCRIPTION-->
+                      <p class="civ-ability-desc" style="text-align:left">替代图书馆，每招募一个 <img src="/images/ICON_GREATADMIRAL.webp" style="height:1em"/> 海军统帅+0.5点基础 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科技值，提供等同于该区域相邻加成的 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币。 <br> 没有维护费。</p><br>
+                      <!--LOC_UNIT_PHOENICIA_BIREME_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">双层桨座战船
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/items/Bireme.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <!--LOC_UNIT_PHOENICIA_BIREME_DESCRIPTION-->
+                      <p class="civ-ability-desc" style="text-align:left">腓尼基远古时代特色单位，取代桨帆船。<img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 战斗力及 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移动力均有所提升。位于水域且与双层桨座战船相距4个单元格内的贸易单位可免遭掠夺。<br><br>航海术 科技</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="斯瓦希里 哈桑·伊本·苏莱曼">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <!--LOC_CIVILIZATION_SUK_SWAHILI_NAME LOC_LEADER_SUK_AL_HASAN_NAME-->
+                      <h2 class="civ-name">斯瓦希里 哈桑·伊本·苏莱曼
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/leaders/Swahili Al-Hasan ibn Sulaiman.webp" style="vertical-align: middle; width:7em">
+                      </h2>
+                      <!--LOC_TRAIT_CIVILIZATION_SUK_CORAL_CONSTRUCTION_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">仿珊瑚式建造</h3><br>
+                      <!--LOC_TRAIT_CIVILIZATION_SUK_CORAL_CONSTRUCTION_DESCRIPTION_XP1-->
+                      <p class="civ-ability-desc" style="text-align:left">沿海城市建造区域+25% <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。<br> 解锁“航海术”科技后，未改良的礁石+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。<br><br><span>&#8226;</span> 出生地关联：T1海岸。</p><br>
+                      <!--LOC_TRAIT_LEADER_SUK_HUSUNI_KUBWA_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">千廊之殿</h3><br>
+                      <!--LOC_TRAIT_LEADER_SUK_HUSUNI_KUBWA_XP2_DESCRIPTION-->
+                      <p class="civ-ability-desc" style="text-align:left">相邻奇观的港口区域获得+1 <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> 贸易路线容量。</p><br>
+                      <!--LOC_BUILDING_SUK_PILLAR_TOMB_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">柱墓
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/items/Pillar Tomb.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <!--LOC_BUILDING_SUK_PILLAR_TOMB_XP1_DESCRIPTION-->
+                      <p class="civ-ability-desc" style="text-align:left">斯瓦西里特色市中心建筑，替代“纪念碑”。+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化值，+1忠诚度。若忠诚度已满，则获得+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化值。若城市拥有此建筑，每两个市中心二环内区域（最多6个区域）可为该城市的每条国际 <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> 贸易路线提供+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币和+1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科技值。</p><br>
+                      <!--LOC_UNIT_SUK_JAHAZI_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">方舟
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/items/Jahazi.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <!--LOC_UNIT_SUK_JAHAZI_DESCRIPTION-->
+                      <p class="civ-ability-desc" style="text-align:left">斯瓦西里远古时代特色海军支援单位，可建造渔船并使其获得+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币，拥有两次建造次数。2格范围内的单位获得+1 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移动力并且无视地形惩罚。可以被俘获。<br><br>航海术 科技</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="特奥蒂瓦坎 掷矛者猫头鹰">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <!--LOC_CITY_NAME_TEOTIHUACAN LOC_LEADER_LIME_TEO_OWL_NAME-->
+                      <h2 class="civ-name">特奥蒂瓦坎 掷矛者猫头鹰
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/leaders/Teotihuacán Spearthrower Owl.webp" style="vertical-align: middle; width:7em">
+                      </h2>
+                      <!--LOC_TRAIT_CIVILIZATION_LIME_TEO_MEN_BECOME_GODS_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">众神诞生之地</h3><br>
+                      <!--LOC_TRAIT_CIVILIZATION_LIME_TEO_MEN_BECOME_GODS_DESC-->
+                      <p class="civ-ability-desc" style="text-align:left">国际 <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> 贸易路线会根据所宗主城邦类型获得额外产出：<br> 宗主宗教城邦则获得+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食物。<br>宗主军事或工业城邦则获得+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。<br>宗主贸易城邦则获得+3 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币。<br>宗主科技城邦则获得+1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科技值。<br>宗主文化城邦则获得+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化值。<br>若宗主两个同样类型城邦，则额外产出增至三倍。</p><br>
+                      <!--LOC_TRAIT_LEADER_LIME_TEO_OWL_FIRE_IS_BORN_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">西境领主</h3><br>
+                      <!--LOC_TRAIT_LEADER_LIME_TEO_OWL_FIRE_IS_BORN_DESC-->
+                      <p class="civ-ability-desc" style="text-align:left">建造完波奇特卡聚集地和大使馆建筑分别获得+1 <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> 贸易路线容量。解锁特色 <img src="/images/ICON_GOVERNOR.webp" style="height:1em"/> 总督：“西雅赫·卡克”。</p><br>
+                      <!--LOC_DISTRICT_LIME_TEO_TOLLAN_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">波奇特卡聚集区
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/items/Pochteca Enclave.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <!--LOC_DISTRICT_LIME_TEO_TOLLAN_DESC-->
+                      <p class="civ-ability-desc" style="text-align:left">特奧蒂瓦坎特色区域，替代外交区，解锁于“国家劳动力”市政。完成时获得一个 <img src="/images/ICON_GOVERNOR.webp" style="height:1em"/> 总督头衔。 可以无视人口要求建造，不提供国内贸易路线加成。</p><br>
+                      <!--LOC_UNIT_LIME_TEO_OWL_WARRIOR_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">羽甲战士
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/items/Ehuatl Wearer.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <!--LOC_UNIT_LIME_TEO_OWL_WARRIOR_DESC-->
+                      <p class="civ-ability-desc" style="text-align:left">特奧蒂瓦坎特色古典时期近战单位，替代“剑士”，解锁于“政治哲学”市政。+1视野并且生产时不消耗<img src="/images/ICON_RESOURCE_IRON.webp" style="height:1em"/> 铁资源。<br><br>政治哲学 市政</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="图勒 基维乌克">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <!--LOC_CIVILIZATION_LIME_THULE_NAME LOC_LEADER_LIME_THULE_DAVE_NAME-->
+                      <h2 class="civ-name">图勒 基维乌克
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/leaders/Thule Kiviuq.webp" style="vertical-align: middle; width:7em">
+                      </h2>
+                      <!--LOC_TRAIT_CIVILIZATION_LIME_THULE_HUNTING_BOWHEAD_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">极海鲸狩</h3><br>
+                      <!--LOC_TRAIT_CIVILIZATION_LIME_THULE_HUNTING_BOWHEAD_DESCRIPTION-->
+                      <p class="civ-ability-desc" style="text-align:left">猎人小屋可为相邻的单元格提供额外产出，冻土单元格+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食物（雪地则翻倍），营地和渔船+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食物和+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。<br> 工人可以消耗1点 <img src="/images/ICON_CHARGES.webp" style="height:1em"/> 劳动力和1 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> 人口在海岸单元格上创造奢侈品资源 <img src="/images/ICON_RESOURCE_WHALES.webp" style="height:1em"/> “鲸鱼”。<br><br>出生地关联：T2海岸、T1冻土。</p><br>
+                      <!--LOC_TRAIT_LEADER_LIME_THULE_DAVE_HEART_NOT_STONE_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">心非磐石</h3><br>
+                      <!--LOC_TRAIT_LEADER_LIME_THULE_DAVE_HEART_NOT_STONE_DESCRIPTION-->
+                      <p class="civ-ability-desc" style="text-align:left">侦察单位在冻土或雪地开始回合时+1 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移动力和+5 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 战斗力。</p><br>
+                      <!--LOC_IMPROVEMENT_LIME_THULE_WBH_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">猎人小屋
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/items/Hunter's House.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <!--LOC_IMPROVEMENT_LIME_THULE_WBH_DESCRIPTION-->
+                      <p class="civ-ability-desc" style="text-align:left">图勒特色改良设施，在“航海术”科技解锁。建在冻土单元格上时获得+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食物（雪地则翻倍）。每相邻1个海洋资源或营地获得+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化值和+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰值。必须建在与加成或奢侈品资源相邻的单元格。“飞行”科技后提供等同于 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰值的 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 旅游业绩。可建造在树林上。不能建在另一个猎人小屋旁。</p><br>
+                      <!--LOC_UNIT_LIME_THULE_DOGSLED_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">雪橇猎人
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/items/Dogsled Hunter.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <!--LOC_UNIT_LIME_THULE_DOGSLED_DESCRIPTION-->
+                      <p class="civ-ability-desc" style="text-align:left">图勒远古时代特色侦查单位，替代侦察兵，造价更低。拥有一次 <img src="/images/ICON_CHARGES.webp" style="height:1em"/> 劳动力次数，能建造猎人小屋。</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="吐蕃 赤松德赞">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <!--LOC_CIVILIZATION_SUK_TIBET_NAME LOC_LEADER_SUK_TRISONG_DETSEN_NAME-->
+                      <h2 class="civ-name">吐蕃 赤松德赞
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/leaders/Tibet Trisong Detsen.webp" style="vertical-align: middle; width:7em">
+                      </h2>
+                      <!--LOC_TRAIT_CIVILIZATION_SUK_DHARMA_KINGS_NAME_XP2-->
+                      <h3 class="civ-ability-name" style="text-align:left">世界屋脊</h3><br>
+                      <!--LOC_TRAIT_CIVILIZATION_SUK_DHARMA_KINGS_DESCRIPTION_XP2-->
+                      <p class="civ-ability-desc" style="text-align:left">公民可在山脉单元格上工作。山脉单元格根据其2环内每有一个的特色区域获得额外产出：<br><img src="/images/ICON_FOOD.webp" style="height:1em"/>每个市中心获得+2 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食物。<br>每个工业区获得+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。<br>每个港口或商业中心获得+1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币。<br>每个学院获得+1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科技值。<br>每个剧院获得+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化值。<br>每个圣地获得+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰值。<br> 相邻山脉的特色区域可用信仰购买建筑。 <img src="/images/ICON_GOVERNOR.webp" style="height:1em"/> 总督每次升级（包括首次升级）都将提供5%城市 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰值产出。<br><br>出生地关联：T3草原山脉、平原山脉和冻土山脉。</p><br>
+                      <!--LOC_TRAIT_LEADER_SUK_CAPTURE_OF_CHANGAN_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">长安之克</h3><br>
+                      <!--LOC_TRAIT_LEADER_SUK_CAPTURE_OF_CHANGAN_DESCRIPTION-->
+                      <p class="civ-ability-desc" style="text-align:left">拥有祭祀建筑和军营的城市训练的陆地军事单位初始便拥有一次 <img src="/images/ICON_PROMOTION.webp" style="height:1em"/> 升级。</p><br>
+                      <!--LOC_DISTRICT_SUK_DZONG_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">宗堡
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/items/Dzong.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <!--LOC_DISTRICT_SUK_DZONG_DESCRIPTION_XP2-->
+                      <p class="civ-ability-desc" style="text-align:left">吐蕃特色宗教活动区域，替代圣地，且建造费用更低。驻守单位获得+5 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 防御力。使用 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 金币和 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰购买宗堡内建筑时，费用减少20%。</p><br>
+                      <!--LOC_UNIT_SUK_TIBET_RTA_PA_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">藏巴弓骑
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/items/Rta Pa.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <!--LOC_UNIT_SUK_TIBET_RTA_PA_DESCRIPTION-->
+                      <p class="civ-ability-desc" style="text-align:left">吐蕃特色文艺复兴远程骑兵单位，解锁于“天文学”科技。射程为1，攻击后可移动。在丘陵地形移动时不受移动力减益。<br><br>天文学 科技</p><br>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="西雅赫·卡克">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <!--LOC_GOVERNOR_LIME_TEO_OWL_EMISSARY_NAME-->
+                      <h2 class="civ-name">西雅赫·卡克
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/governors/Fire is Born.webp" style="vertical-align: middle; width:7em">
+                      </h2><br>
+                      <div class="row">
+                        <div class="col-lg-12 gov-promotion ">
+                          <!--LOC_GOV_PROMO_LIME_TEO_OWL_EMISSARY_ARRIVAL_NAME-->
+                          <h3 class="civ-ability-name" style="text-align:center">初来乍到<br><br>
+                            <!--LOC_GOV_PROMO_LIME_TEO_OWL_EMISSARY_ARRIVAL_DESC-->
+                            <p class="civ-ability-desc" style="text-align:center">可派遣至城邦，效力等同于1名 <img src="/images/ICON_ENVOY.webp" style="height:1em"/> 使者。城邦边境内的友方单位+5 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 战斗力。</p><br>
+                          </h3>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-6 gov-promotion gov-promotion-border">
+                          <!--LOC_GOV_PROMO_LIME_TEO_OWL_EMISSARY_OUTPOST_NAME-->
+                          <h3 class="civ-ability-name" style="text-align:left">瓦卡前哨<br><br>
+                            <!--LOC_GOV_PROMO_LIME_TEO_OWL_EMISSARY_OUTPOST_DESC-->
+                            <p class="civ-ability-desc" style="text-align:left">当总督就任在城邦中时，为你提供可以交易的城邦所有奢侈品资源的复本。</p><br>
+                          </h3>
+                        </div>
+                        <div class="col-lg-6 gov-promotion ">
+                          <!--LOC_GOV_PROMO_LIME_TEO_OWL_EMISSARY_EXPEDITION_NAME-->
+                          <h3 class="civ-ability-name" style="text-align:right">佩腾远征<br><br>
+                            <!--LOC_GOV_PROMO_LIME_TEO_OWL_EMISSARY_EXPEDITION_DESC-->
+                            <p class="civ-ability-desc" style="text-align:right">城邦驻军+10 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 战斗力。</p><br>
+                          </h3>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-6 gov-promotion gov-promotion-border">
+                          <!--LOC_GOV_PROMO_LIME_TEO_OWL_EMISSARY_FALL_NAME-->
+                          <h3 class="civ-ability-name" style="text-align:left">伟大之爪的崩殂<br><br>
+                            <!--LOC_GOV_PROMO_LIME_TEO_OWL_EMISSARY_FALL_DESC-->
+                            <p class="civ-ability-desc" style="text-align:left">如与该总督就职的城邦之间存在 <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> 贸易路线，派往此处的1位 <img src="/images/ICON_ENVOY.webp" style="height:1em"/> 使者将视为2位。在该城邦15个单元格内的城市建造商业中心建筑时+25% <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生产力。</p><br>
+                          </h3>
+                        </div>
+                        <div class="col-lg-6 gov-promotion ">
+                          <!--LOC_GOV_PROMO_LIME_TEO_OWL_EMISSARY_OVERSEER_NAME-->
+                          <h3 class="civ-ability-name" style="text-align:right">瓦哈克通的攻占<br><br>
+                            <!--LOC_GOV_PROMO_LIME_TEO_OWL_EMISSARY_OVERSEER_DESC-->
+                            <p class="civ-ability-desc" style="text-align:right">城邦十格内征召单位+5 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 战斗力。</p><br>
+                          </h3>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-12 gov-promotion ">
+                          <!--LOC_GOV_PROMO_LIME_TEO_OWL_EMISSARY_HEGEMONY_NAME-->
+                          <h3 class="civ-ability-name" style="text-align:center">统御诸王<br><br>
+                            <!--LOC_GOV_PROMO_LIME_TEO_OWL_EMISSARY_HEGEMONY_DESC-->
+                            <p class="civ-ability-desc" style="text-align:center">每宗主一个城邦+2 <img src="/images/ICON_FAVOR.webp" style="height:1em"/> 外交支持。</p><br>
+                          </h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </main>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/plugins/feather.min.js"></script>
+    <script src="/plugins/chart.min.js"></script>
+  </body>
+</html>

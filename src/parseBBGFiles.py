@@ -845,3 +845,108 @@ def get_congress_options(db_path):
     rows = crsr.fetchall()
     connection.close()
     return rows
+
+def get_techs_per_era(db_path):
+    res = {}
+    connection = sqlite3.connect(db_path)
+
+    crsr = connection.cursor()
+    crsr.execute("SELECT TechnologyType, Name, EraType, UITreeRow FROM Technologies ORDER BY EraType, Cost")
+    rows = crsr.fetchall()
+    for row in rows:
+        era_type = row[2]
+        if era_type not in res:
+            res[era_type] = []
+        res[era_type].append(row)
+    connection.close()
+    return res
+
+def get_units_per_techcivic(db_path):
+    res = {}
+    connection = sqlite3.connect(db_path)
+
+    crsr = connection.cursor()
+    crsr.execute("SELECT UnitType, PrereqTech, PrereqCivic, Name FROM Units")
+    rows = crsr.fetchall()
+    for row in rows:
+        for i in [1, 2]:
+            if row[i] not in res:
+                res[row[i]] = []
+            res[row[i]].append(row)
+    connection.close()
+    return res
+
+def get_buildings_per_techcivic(db_path):
+    res = {}
+    connection = sqlite3.connect(db_path)
+
+    crsr = connection.cursor()
+    crsr.execute("SELECT BuildingType, PrereqTech, PrereqCivic, Name FROM Buildings WHERE IsWonder = 0 AND InternalOnly = 0")
+    rows = crsr.fetchall()
+    for row in rows:
+        for i in [1, 2]:
+            if row[i] not in res:
+                res[row[i]] = []
+            res[row[i]].append(row)
+    connection.close()
+    return res
+
+def get_wonders_per_techcivic(db_path):
+    res = {}
+    connection = sqlite3.connect(db_path)
+
+    crsr = connection.cursor()
+    crsr.execute("SELECT BuildingType, PrereqTech, PrereqCivic, Name FROM Buildings WHERE IsWonder = 1 AND InternalOnly = 0")
+    rows = crsr.fetchall()
+    for row in rows:
+        for i in [1, 2]:
+            if row[i] not in res:
+                res[row[i]] = []
+            res[row[i]].append(row)
+    connection.close()
+    return res
+
+def get_districts_per_techcivic(db_path):
+    res = {}
+    connection = sqlite3.connect(db_path)
+
+    crsr = connection.cursor()
+    crsr.execute("SELECT DistrictType, PrereqTech, PrereqCivic, Name FROM Districts WHERE InternalOnly = 0")
+    rows = crsr.fetchall()
+    for row in rows:
+        for i in [1, 2]:
+            if row[i] not in res:
+                res[row[i]] = []
+            res[row[i]].append(row)
+    connection.close()
+    return res
+
+def get_improvements_per_techcivic(db_path):
+    res = {}
+    connection = sqlite3.connect(db_path)
+
+    crsr = connection.cursor()
+    crsr.execute("SELECT ImprovementType, PrereqTech, PrereqCivic, Name FROM Improvements")
+    rows = crsr.fetchall()
+    for row in rows:
+        for i in [1, 2]:
+            if row[i] not in res:
+                res[row[i]] = []
+            res[row[i]].append(row)
+    connection.close()
+    return res
+
+def get_improvement_buffs_per_techcivic(db_path):
+    res = {}
+    connection = sqlite3.connect(db_path)
+
+    crsr = connection.cursor()
+    crsr.execute("SELECT ImprovementType, YieldType, BonusYieldChange, byc.PrereqTech, byc.PrereqCivic, imp.Name FROM Improvement_BonusYieldChanges byc LEFT JOIN Improvements imp USING(ImprovementType)")
+    rows = crsr.fetchall()
+    for row in rows:
+        for i in [3, 4]:
+            if row[i] not in res:
+                res[row[i]] = []
+            res[row[i]].append(row)
+    connection.close()
+    return res
