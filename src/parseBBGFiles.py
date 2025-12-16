@@ -876,6 +876,35 @@ def get_civics_per_era(db_path):
     connection.close()
     return res
 
+def get_civic_policies(db_path):
+    res = {}
+    connection = sqlite3.connect(db_path)
+
+    crsr = connection.cursor()
+    crsr.execute("SELECT PrereqCivic, Name, Description, GovernmentSlotType FROM Policies")
+    rows = crsr.fetchall()
+    for row in rows:
+        prereq_civic = row[0]
+        if prereq_civic not in res:
+            res[prereq_civic] = []
+        res[prereq_civic].append(row)
+    connection.close()
+    return res
+
+def get_techcivic_boosts(db_path):
+    res = {}
+    connection = sqlite3.connect(db_path)
+
+    crsr = connection.cursor()
+    crsr.execute("SELECT TechnologyType, CivicType, TriggerDescription FROM Boosts")
+    rows = crsr.fetchall()
+    for row in rows:
+        for i in [0, 1]:
+            if row[i] != None:
+                res[row[i]] = row
+    connection.close()
+    return res
+
 def get_units_per_techcivic(db_path):
     res = {}
     connection = sqlite3.connect(db_path)

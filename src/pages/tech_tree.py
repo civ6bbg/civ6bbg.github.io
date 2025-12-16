@@ -22,6 +22,7 @@ def get_tech_tree_html_file(bbg_version, lang, pages_list):
     menu_items = []
     menu_icons = []
     tech_per_era = get_techs_per_era(f"sqlFiles/{version_name}/DebugGameplay.sqlite")
+    boosts = get_techcivic_boosts(f"sqlFiles/{version_name}/DebugGameplay.sqlite")
     units_techcivic = get_units_per_techcivic(f"sqlFiles/{version_name}/DebugGameplay.sqlite")
     improvements_techcivic = get_improvements_per_techcivic(f"sqlFiles/{version_name}/DebugGameplay.sqlite")
     improvements_buffs_techcivic = get_improvement_buffs_per_techcivic(f"sqlFiles/{version_name}/DebugGameplay.sqlite")
@@ -68,38 +69,43 @@ def get_tech_tree_html_file(bbg_version, lang, pages_list):
                         if tech[0] in units_techcivic:
                             for unit in units_techcivic[tech[0]]:
                                 img(src=f'/images/units/{get_loc(en_US_locs_data, unit[3]).replace(' ', '_')}.webp',
-                                    style="vertical-align: middle; width:1.5em",
+                                    style="vertical-align: middle; width:2em",
                                     title = get_loc(locs_data, unit[3]),
                                     onerror=image_onerror)
                         if tech[0] in improvements_techcivic:
                             for improvement in improvements_techcivic[tech[0]]:
                                 img(src=f'/images/improvements/{get_loc(en_US_locs_data, improvement[3])}.webp',
-                                    style="vertical-align: middle; width:1.5em",
+                                    style="vertical-align: middle; width:2em",
                                     title = get_loc(locs_data, improvement[3]),
                                     onerror=image_onerror)
                         if tech[0] in buildings_techcivic:
                             for building in buildings_techcivic[tech[0]]:
                                 img(src=f'/images/buildings/{get_loc(en_US_locs_data, building[3])}.webp',
-                                    style="vertical-align: middle; width:1.5em",
+                                    style="vertical-align: middle; width:2em",
                                     title = get_loc(locs_data, building[3]),
                                     onerror=image_onerror)
                         if tech[0] in wonders_techcivic:
                             for wonder in wonders_techcivic[tech[0]]:
                                 img(src=f'/images/world_wonders/{get_loc(en_US_locs_data, wonder[3])}.webp',
-                                    style="vertical-align: middle; width:1.5em",
+                                    style="vertical-align: middle; width:2em",
                                     title = get_loc(locs_data, wonder[3]),
                                     onerror=image_onerror)
                         if tech[0] in districts_techcivic:
                             for district in districts_techcivic[tech[0]]:
                                 img(src=f'/images/districts/{get_loc(en_US_locs_data, district[3])}.webp',
-                                    style="vertical-align: middle; width:1.5em",
+                                    style="vertical-align: middle; width:2em",
                                     title = get_loc(locs_data, district[3]),
                                     onerror=image_onerror)
                         if tech[0] in improvements_buffs_techcivic:
                             for improvement_buff in improvements_buffs_techcivic[tech[0]]:
                                 img(src=f'/images/improvements/{get_loc(en_US_locs_data, improvement_buff[5])}.webp',
-                                    style="vertical-align: middle; width:1.5em",
+                                    style="vertical-align: middle; width:2em",
                                     title = get_improvement_buff_text(improvement_buff, locs_data),
                                     onerror=image_onerror)
+                        br()
+                        if tech[0] in boosts:
+                            p(f'{get_loc(locs_data, "LOC_BOOST_TO_BOOST")} {get_loc(locs_data, boosts[tech[0]][2])}', 
+                                style="text-align:left",
+                                cls='civ-ability-desc')
 
     return create_page(bbg_version, lang, title, 'tech_tree', menu_items, menu_icons, 'images', pages_list, create_tech_tree_page, locs_data, en_US_locs_data)
