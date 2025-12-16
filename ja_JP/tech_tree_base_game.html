@@ -244,7 +244,80 @@
             <aside class="sidebar">
               <div class="sidebar-start">
                 <div class="sidebar-body">
-                  <ul class="sidebar-body-menu"></ul>
+                  <ul class="sidebar-body-menu">
+                    <li>
+                      <a href="#太古" onclick="civClicked(&quot;太古&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/Ancient Era.webp">
+                        </span>
+                        <p>太古</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#古典時代" onclick="civClicked(&quot;古典時代&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/Classical Era.webp">
+                        </span>
+                        <p>古典時代</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#中世" onclick="civClicked(&quot;中世&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/Medieval Era.webp">
+                        </span>
+                        <p>中世</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#ルネサンス時代" onclick="civClicked(&quot;ルネサンス時代&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/Renaissance Era.webp">
+                        </span>
+                        <p>ルネサンス時代</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#産業時代" onclick="civClicked(&quot;産業時代&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/Industrial Era.webp">
+                        </span>
+                        <p>産業時代</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#近代" onclick="civClicked(&quot;近代&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/Modern Era.webp">
+                        </span>
+                        <p>近代</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#原子力時代" onclick="civClicked(&quot;原子力時代&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/Atomic Era.webp">
+                        </span>
+                        <p>原子力時代</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#情報時代" onclick="civClicked(&quot;情報時代&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/Information Era.webp">
+                        </span>
+                        <p>情報時代</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#未来時代" onclick="civClicked(&quot;未来時代&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/Future Era.webp">
+                        </span>
+                        <p>未来時代</p>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </aside>
@@ -253,6 +326,970 @@
             <main class="main users chart-page">
               <div class="container">
                 <h1 class="civ-name">Civ VI Base Game Technology Tree</h1><br>
+                <div class="row" id="太古">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <!--ERA_ANCIENT-->
+                      <h2 class="civ-name">太古
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/Ancient Era.webp" style="vertical-align: middle; width:3em">
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_POTTERY_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">陶磁器
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Pottery.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Mekewap.webp" style="vertical-align: middle; width:1.5em" title="メクワップ">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Granary.webp" style="vertical-align: middle; width:1.5em" title="穀物庫">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/world_wonders/Great Bath.webp" style="vertical-align: middle; width:1.5em" title="大浴場">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_ANIMAL_HUSBANDRY_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">畜産
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Animal_Husbandry.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Pasture.webp" style="vertical-align: middle; width:1.5em" title="牧草地">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Camp.webp" style="vertical-align: middle; width:1.5em" title="キャンプ">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Kurgan.webp" style="vertical-align: middle; width:1.5em" title="クルガン">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_MINING_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">採鉱
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Mining.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Mine.webp" style="vertical-align: middle; width:1.5em" title="鉱山">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Quarry.webp" style="vertical-align: middle; width:1.5em" title="採石場">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_SAILING_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">帆走術
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Sailing.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Galley.webp" style="vertical-align: middle; width:1.5em" title="ガレー船">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Viking_Longship.webp" style="vertical-align: middle; width:1.5em" title="ロングシップ">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Bireme.webp" style="vertical-align: middle; width:1.5em" title="ビレーム">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Fishing Boats.webp" style="vertical-align: middle; width:1.5em" title="漁船">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Fishery.webp" style="vertical-align: middle; width:1.5em" title="養殖場">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_ASTROLOGY_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">占星術
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Astrology.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Shrine.webp" style="vertical-align: middle; width:1.5em" title="社">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/world_wonders/Stonehenge.webp" style="vertical-align: middle; width:1.5em" title="ストーンヘンジ">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/districts/Holy Site.webp" style="vertical-align: middle; width:1.5em" title="聖地">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/districts/Lavra.webp" style="vertical-align: middle; width:1.5em" title="ラヴラ">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_IRRIGATION_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">灌漑
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Irrigation.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Plantation.webp" style="vertical-align: middle; width:1.5em" title="プランテーション">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Stepwell.webp" style="vertical-align: middle; width:1.5em" title="階段井戸">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Palgum.webp" style="vertical-align: middle; width:1.5em" title="パルグム">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/world_wonders/Hanging Gardens.webp" style="vertical-align: middle; width:1.5em" title="空中庭園">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_ARCHERY_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">弓術
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Archery.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Archer.webp" style="vertical-align: middle; width:1.5em" title="弓兵">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Pítati_Archer.webp" style="vertical-align: middle; width:1.5em" title="ピタティ弓兵">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Hul'che.webp" style="vertical-align: middle; width:1.5em" title="フルチェ">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/world_wonders/Temple of Artemis.webp" style="vertical-align: middle; width:1.5em" title="アルテミス神殿">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_WRITING_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">筆記
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Writing.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Library.webp" style="vertical-align: middle; width:1.5em" title="図書館">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/world_wonders/Etemenanki.webp" style="vertical-align: middle; width:1.5em" title="エ・テメン・アン・キ">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/districts/Campus.webp" style="vertical-align: middle; width:1.5em" title="キャンパス">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/districts/Seowon.webp" style="vertical-align: middle; width:1.5em" title="書院">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/districts/Observatory.webp" style="vertical-align: middle; width:1.5em" title="観測所">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_MASONRY_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">石工術
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Masonry.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Battering_Ram.webp" style="vertical-align: middle; width:1.5em" title="破城槌">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Great Wall.webp" style="vertical-align: middle; width:1.5em" title="長城">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Nubian Pyramid.webp" style="vertical-align: middle; width:1.5em" title="ヌビアのピラミッド">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Ancient Walls.webp" style="vertical-align: middle; width:1.5em" title="太古の防壁">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/world_wonders/Pyramids.webp" style="vertical-align: middle; width:1.5em" title="ピラミッド">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_BRONZE_WORKING_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">青銅器
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Bronze_Working.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Spearman.webp" style="vertical-align: middle; width:1.5em" title="槍兵">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Hoplite.webp" style="vertical-align: middle; width:1.5em" title="重装歩兵">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Barracks.webp" style="vertical-align: middle; width:1.5em" title="兵舎">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Basilikoi Paides.webp" style="vertical-align: middle; width:1.5em" title="バシリコイ・パイデス">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/districts/Encampment.webp" style="vertical-align: middle; width:1.5em" title="兵営">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/districts/Ikanda.webp" style="vertical-align: middle; width:1.5em" title="イカンダ">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/districts/Thành.webp" style="vertical-align: middle; width:1.5em" title="タイン">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_THE_WHEEL_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">車輪
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Wheel.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Heavy_Chariot.webp" style="vertical-align: middle; width:1.5em" title="ヒッタイト・チャリオット">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Maryannu_Chariot_Archer.webp" style="vertical-align: middle; width:1.5em" title="マリヤンヌ・チャリオット弓兵">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Water Mill.webp" style="vertical-align: middle; width:1.5em" title="水車小屋">
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="古典時代">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <!--ERA_CLASSICAL-->
+                      <h2 class="civ-name">古典時代
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/Classical Era.webp" style="vertical-align: middle; width:3em">
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_CELESTIAL_NAVIGATION_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">天文航法
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Celestial_Navigation.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Lighthouse.webp" style="vertical-align: middle; width:1.5em" title="灯台">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/world_wonders/Great Lighthouse.webp" style="vertical-align: middle; width:1.5em" title="ファロス灯台">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/districts/Harbor.webp" style="vertical-align: middle; width:1.5em" title="港">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/districts/Royal Navy Dockyard.webp" style="vertical-align: middle; width:1.5em" title="王立海軍造船所">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/districts/Cothon.webp" style="vertical-align: middle; width:1.5em" title="コトン">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_CURRENCY_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">通貨
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Currency.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Market.webp" style="vertical-align: middle; width:1.5em" title="市場">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Sukiennice.webp" style="vertical-align: middle; width:1.5em" title="織物会館">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/districts/Commercial Hub.webp" style="vertical-align: middle; width:1.5em" title="商業ハブ">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/districts/Suguba.webp" style="vertical-align: middle; width:1.5em" title="スグバ">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_HORSEBACK_RIDING_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">騎乗
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Horseback_Riding.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Horseman.webp" style="vertical-align: middle; width:1.5em" title="騎乗兵">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Saka_Horse_Archer.webp" style="vertical-align: middle; width:1.5em" title="サカ族弓騎兵">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Varu.webp" style="vertical-align: middle; width:1.5em" title="ヴァル">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Hetairoi.webp" style="vertical-align: middle; width:1.5em" title="ヘタイロイ">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Stable.webp" style="vertical-align: middle; width:1.5em" title="厩舎">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Ordu.webp" style="vertical-align: middle; width:1.5em" title="オルド">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_IRON_WORKING_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">鉄器
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Iron_Working.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Swordsman.webp" style="vertical-align: middle; width:1.5em" title="剣士">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Legion.webp" style="vertical-align: middle; width:1.5em" title="レギオン">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Ngao_Mbeba.webp" style="vertical-align: middle; width:1.5em" title="ンガオ・ムベバ">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Hypaspist.webp" style="vertical-align: middle; width:1.5em" title="ヒュパスピスタイ">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Immortal.webp" style="vertical-align: middle; width:1.5em" title="不死隊">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/world_wonders/Jebel Barkal.webp" style="vertical-align: middle; width:1.5em" title="ゲベル・バルカル">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/districts/Oppidum.webp" style="vertical-align: middle; width:1.5em" title="オッピドゥム">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_SHIPBUILDING_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">造船
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Shipbuilding.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Quadrireme.webp" style="vertical-align: middle; width:1.5em" title="カドリレーム">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Dromon.webp" style="vertical-align: middle; width:1.5em" title="デュロモイ">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Kampung.webp" style="vertical-align: middle; width:1.5em" title="カンプン">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/world_wonders/Colossus.webp" style="vertical-align: middle; width:1.5em" title="ロードス島の巨神像">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_MATHEMATICS_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">数学
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Mathematics.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Consulate.webp" style="vertical-align: middle; width:1.5em" title="領事館">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/world_wonders/Petra.webp" style="vertical-align: middle; width:1.5em" title="ペトラ">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/districts/Diplomatic Quarter.webp" style="vertical-align: middle; width:1.5em" title="外交街">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_CONSTRUCTION_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">建築学
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Construction.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Toa.webp" style="vertical-align: middle; width:1.5em" title="トア">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Lumber Mill.webp" style="vertical-align: middle; width:1.5em" title="製材所">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/world_wonders/Terracotta Army.webp" style="vertical-align: middle; width:1.5em" title="兵馬俑">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_ENGINEERING_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">工学
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Engineering.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Catapult.webp" style="vertical-align: middle; width:1.5em" title="カタパルト">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/world_wonders/Machu Picchu.webp" style="vertical-align: middle; width:1.5em" title="マチュ・ピチュ">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/districts/Aqueduct.webp" style="vertical-align: middle; width:1.5em" title="用水路">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/districts/Bath.webp" style="vertical-align: middle; width:1.5em" title="浴場">
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="中世">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <!--ERA_MEDIEVAL-->
+                      <h2 class="civ-name">中世
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/Medieval Era.webp" style="vertical-align: middle; width:3em">
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_MILITARY_TACTICS_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">戦術
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Military_Tactics.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Berserker.webp" style="vertical-align: middle; width:1.5em" title="ベルセルク">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Pikeman.webp" style="vertical-align: middle; width:1.5em" title="長槍兵">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Impi.webp" style="vertical-align: middle; width:1.5em" title="インピ">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Khevsur.webp" style="vertical-align: middle; width:1.5em" title="ヘヴスル">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/world_wonders/Huey Teocalli.webp" style="vertical-align: middle; width:1.5em" title="ヒューイ・テオカリ">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_APPRENTICESHIP_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">徒弟制度
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Apprenticeship.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Man-At-Arms.webp" style="vertical-align: middle; width:1.5em" title="メンアットアームズ">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Workshop.webp" style="vertical-align: middle; width:1.5em" title="工房">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/districts/Industrial Zone.webp" style="vertical-align: middle; width:1.5em" title="工業地帯">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/districts/Hansa.webp" style="vertical-align: middle; width:1.5em" title="ハンザ">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Mine.webp" style="vertical-align: middle; width:1.5em" title="鉱山: +1 生産力">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_MACHINERY_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">機械
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Machinery.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Siege_Tower.webp" style="vertical-align: middle; width:1.5em" title="攻城塔">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Crossbowman.webp" style="vertical-align: middle; width:1.5em" title="弩兵">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Crouching_Tiger.webp" style="vertical-align: middle; width:1.5em" title="虎蹲砲">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Skirmisher.webp" style="vertical-align: middle; width:1.5em" title="散兵">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Warak’aq.webp" style="vertical-align: middle; width:1.5em" title="ワラカク">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Voi_Chiến.webp" style="vertical-align: middle; width:1.5em" title="ヴォイ・チェン">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/world_wonders/Kilwa Kisiwani.webp" style="vertical-align: middle; width:1.5em" title="キルワ・キシワニ">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_BUTTRESS_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">控え壁
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Buttress.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/world_wonders/Hagia Sophia.webp" style="vertical-align: middle; width:1.5em" title="ハギア・ソフィア聖堂">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/districts/Dam.webp" style="vertical-align: middle; width:1.5em" title="ダム">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_EDUCATION_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">教育
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Education.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Mission.webp" style="vertical-align: middle; width:1.5em" title="伝道所">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/University.webp" style="vertical-align: middle; width:1.5em" title="大学">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Navigation School.webp" style="vertical-align: middle; width:1.5em" title="航海術学校">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/world_wonders/University of Sankore.webp" style="vertical-align: middle; width:1.5em" title="サンコーレ大学">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_STIRRUPS_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">あぶみ
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Stirrups.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Knight.webp" style="vertical-align: middle; width:1.5em" title="騎士">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Mamluk.webp" style="vertical-align: middle; width:1.5em" title="マムルーク">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Keshig.webp" style="vertical-align: middle; width:1.5em" title="ケシク">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Mandekalu_Cavalry.webp" style="vertical-align: middle; width:1.5em" title="マンデカル騎兵">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Pasture.webp" style="vertical-align: middle; width:1.5em" title="牧草地: +1 食料">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_MILITARY_ENGINEERING_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">軍事工学
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Military_Engineering.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Military_Engineer.webp" style="vertical-align: middle; width:1.5em" title="工兵">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Trebuchet.webp" style="vertical-align: middle; width:1.5em" title="トレビュシェット">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Domrey.webp" style="vertical-align: middle; width:1.5em" title="ダムレイ">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Armory.webp" style="vertical-align: middle; width:1.5em" title="武器庫">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_CASTLES_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">城
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Castles.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Courser.webp" style="vertical-align: middle; width:1.5em" title="コーサー">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Black_Army.webp" style="vertical-align: middle; width:1.5em" title="黒軍">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Oromo_Cavalry.webp" style="vertical-align: middle; width:1.5em" title="オロモ騎兵">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Medieval Walls.webp" style="vertical-align: middle; width:1.5em" title="中世の防壁">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/world_wonders/Alhambra.webp" style="vertical-align: middle; width:1.5em" title="アルハンブラ宮殿">
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="ルネサンス時代">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <!--ERA_RENAISSANCE-->
+                      <h2 class="civ-name">ルネサンス時代
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/Renaissance Era.webp" style="vertical-align: middle; width:3em">
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_CARTOGRAPHY_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">地図製作法
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Cartography.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Caravel.webp" style="vertical-align: middle; width:1.5em" title="キャラベル船">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Nau.webp" style="vertical-align: middle; width:1.5em" title="ナウ船">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/world_wonders/Casa de Contratación.webp" style="vertical-align: middle; width:1.5em" title="通商院">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Fishing Boats.webp" style="vertical-align: middle; width:1.5em" title="漁船: +2 ゴールド">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_MASS_PRODUCTION_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">大量生産
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Mass_Production.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Shipyard.webp" style="vertical-align: middle; width:1.5em" title="造船所">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/world_wonders/Venetian Arsenal.webp" style="vertical-align: middle; width:1.5em" title="アルセナーレ・ディ・ヴェネツィア">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_BANKING_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">銀行制度
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Banking.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Bank.webp" style="vertical-align: middle; width:1.5em" title="銀行">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Grand Bazaar.webp" style="vertical-align: middle; width:1.5em" title="グランドバザール">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/world_wonders/Great Zimbabwe.webp" style="vertical-align: middle; width:1.5em" title="グレート・ジンバブエ遺跡">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_GUNPOWDER_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">火薬
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Gunpowder.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Musketman.webp" style="vertical-align: middle; width:1.5em" title="マスケット銃兵">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Conquistador.webp" style="vertical-align: middle; width:1.5em" title="コンキスタドール">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Hwacha.webp" style="vertical-align: middle; width:1.5em" title="火車">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Malón_Raider.webp" style="vertical-align: middle; width:1.5em" title="マロン騎兵">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Janissary.webp" style="vertical-align: middle; width:1.5em" title="イェニチェリ">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Quarry.webp" style="vertical-align: middle; width:1.5em" title="採石場: +1 生産力">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_PRINTING_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">印刷
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Printing.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/world_wonders/Forbidden City.webp" style="vertical-align: middle; width:1.5em" title="紫禁城">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_SQUARE_RIGGING_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">横帆船
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Square_Rigging.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Frigate.webp" style="vertical-align: middle; width:1.5em" title="フリゲート艦">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/De_Zeven_Provinciën.webp" style="vertical-align: middle; width:1.5em" title="デ・ゼーヴェン・プロヴィンシェン">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_ASTRONOMY_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">天文学
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Astronomy.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/world_wonders/Potala Palace.webp" style="vertical-align: middle; width:1.5em" title="ポタラ宮">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_METAL_CASTING_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">鋳造
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Metal_Casting.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Bombard.webp" style="vertical-align: middle; width:1.5em" title="射石砲">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Pike_and_Shot.webp" style="vertical-align: middle; width:1.5em" title="槍銃兵">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Carolean.webp" style="vertical-align: middle; width:1.5em" title="カロライン">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_SIEGE_TACTICS_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">攻囲戦術
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Siege_Tactics.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Fort.webp" style="vertical-align: middle; width:1.5em" title="要塞">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Renaissance Walls.webp" style="vertical-align: middle; width:1.5em" title="ルネサンス時代の防壁">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Tsikhe.webp" style="vertical-align: middle; width:1.5em" title="ツィク">
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="産業時代">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <!--ERA_INDUSTRIAL-->
+                      <h2 class="civ-name">産業時代
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/Industrial Era.webp" style="vertical-align: middle; width:3em">
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_INDUSTRIALIZATION_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">工業化
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Industrialization.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Factory.webp" style="vertical-align: middle; width:1.5em" title="工場">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Electronics Factory.webp" style="vertical-align: middle; width:1.5em" title="エレクトロニクス工場">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Coal Power Plant.webp" style="vertical-align: middle; width:1.5em" title="石炭火力発電所">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/world_wonders/Ruhr Valley.webp" style="vertical-align: middle; width:1.5em" title="ルール地方">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Mine.webp" style="vertical-align: middle; width:1.5em" title="鉱山: +1 生産力">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_SCIENTIFIC_THEORY_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">科学理論
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Scientific_Theory.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/world_wonders/Oxford University.webp" style="vertical-align: middle; width:1.5em" title="オックスフォード大学">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Plantation.webp" style="vertical-align: middle; width:1.5em" title="プランテーション: +1 食料">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_BALLISTICS_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">弾道学
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Ballistics.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Field_Cannon.webp" style="vertical-align: middle; width:1.5em" title="野戦砲">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Cuirassier.webp" style="vertical-align: middle; width:1.5em" title="胸甲騎兵">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Rough_Rider.webp" style="vertical-align: middle; width:1.5em" title="ラフライダー">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_MILITARY_SCIENCE_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">軍事学
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Military_Science.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Cavalry.webp" style="vertical-align: middle; width:1.5em" title="騎兵">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Cossack.webp" style="vertical-align: middle; width:1.5em" title="コサック">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Redcoat.webp" style="vertical-align: middle; width:1.5em" title="レッドコート">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Garde_Impériale.webp" style="vertical-align: middle; width:1.5em" title="皇帝近衛隊">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Line_Infantry.webp" style="vertical-align: middle; width:1.5em" title="戦列歩兵">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Huszár.webp" style="vertical-align: middle; width:1.5em" title="フッサー">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Llanero.webp" style="vertical-align: middle; width:1.5em" title="リャネロ">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Military Academy.webp" style="vertical-align: middle; width:1.5em" title="士官学校">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_STEAM_POWER_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">蒸気機関
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Steam_Power.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Ironclad.webp" style="vertical-align: middle; width:1.5em" title="装甲艦">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/world_wonders/Panama Canal.webp" style="vertical-align: middle; width:1.5em" title="パナマ運河">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/districts/Canal.webp" style="vertical-align: middle; width:1.5em" title="運河">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_SANITATION_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">公衆衛生
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Sanitation.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Medic.webp" style="vertical-align: middle; width:1.5em" title="衛生兵">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Sewer.webp" style="vertical-align: middle; width:1.5em" title="下水道">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/world_wonders/Országház.webp" style="vertical-align: middle; width:1.5em" title="オーサカーツ">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_ECONOMICS_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">経済学
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Economics.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Stock Exchange.webp" style="vertical-align: middle; width:1.5em" title="証券取引所">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/world_wonders/Big Ben.webp" style="vertical-align: middle; width:1.5em" title="ビッグ・ベン">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_RIFLING_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">ライフリング
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Rifling.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Ranger.webp" style="vertical-align: middle; width:1.5em" title="レンジャー">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Highlander.webp" style="vertical-align: middle; width:1.5em" title="ハイランダー">
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="近代">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <!--ERA_MODERN-->
+                      <h2 class="civ-name">近代
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/Modern Era.webp" style="vertical-align: middle; width:3em">
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_FLIGHT_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">航空技術
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Flight.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Observation_Balloon.webp" style="vertical-align: middle; width:1.5em" title="観測気球">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Biplane.webp" style="vertical-align: middle; width:1.5em" title="複葉機">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Airstrip.webp" style="vertical-align: middle; width:1.5em" title="滑走路">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Hangar.webp" style="vertical-align: middle; width:1.5em" title="格納庫">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/districts/Aerodrome.webp" style="vertical-align: middle; width:1.5em" title="飛行場">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_REPLACEABLE_PARTS_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">共通規格
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Replaceable_Parts.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Infantry.webp" style="vertical-align: middle; width:1.5em" title="歩兵">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Digger.webp" style="vertical-align: middle; width:1.5em" title="ディガー">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Food Market.webp" style="vertical-align: middle; width:1.5em" title="食料市場">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Pasture.webp" style="vertical-align: middle; width:1.5em" title="牧草地: +1 生産力">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_STEEL_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">鉄鋼
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Steel.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Artillery.webp" style="vertical-align: middle; width:1.5em" title="大砲">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/world_wonders/Eiffel Tower.webp" style="vertical-align: middle; width:1.5em" title="エッフェル塔">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Lumber Mill.webp" style="vertical-align: middle; width:1.5em" title="製材所: +1 生産力">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_REFINING_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">精製技術
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Refining.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Battleship.webp" style="vertical-align: middle; width:1.5em" title="戦艦">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Oil Well.webp" style="vertical-align: middle; width:1.5em" title="油井">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_ELECTRICITY_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">電気
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Electricity.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Submarine.webp" style="vertical-align: middle; width:1.5em" title="潜水艦">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/U-Boat.webp" style="vertical-align: middle; width:1.5em" title="Uボート">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Seaport.webp" style="vertical-align: middle; width:1.5em" title="港湾">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Hydroelectric Dam.webp" style="vertical-align: middle; width:1.5em" title="水力発電ダム">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Oil Power Plant.webp" style="vertical-align: middle; width:1.5em" title="石油火力発電所">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_RADIO_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">無線通信
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Radio.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Seaside Resort.webp" style="vertical-align: middle; width:1.5em" title="シーサイドリゾート">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Broadcast Center.webp" style="vertical-align: middle; width:1.5em" title="放送センター">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Film Studio.webp" style="vertical-align: middle; width:1.5em" title="映画スタジオ">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_CHEMISTRY_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">化学
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Chemistry.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/AT_Crew.webp" style="vertical-align: middle; width:1.5em" title="対戦車兵">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Mountain Tunnel.webp" style="vertical-align: middle; width:1.5em" title="山岳トンネル">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Research Lab.webp" style="vertical-align: middle; width:1.5em" title="研究所">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_COMBUSTION_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">内燃機関
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Combustion.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Tank.webp" style="vertical-align: middle; width:1.5em" title="戦車">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Supply_Convoy.webp" style="vertical-align: middle; width:1.5em" title="補給部隊">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/world_wonders/Golden Gate Bridge.webp" style="vertical-align: middle; width:1.5em" title="ゴールデン・ゲート・ブリッジ">
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="原子力時代">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <!--ERA_ATOMIC-->
+                      <h2 class="civ-name">原子力時代
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/Atomic Era.webp" style="vertical-align: middle; width:3em">
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_ADVANCED_FLIGHT_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">高度な航空技術
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Advanced_Flight.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Fighter.webp" style="vertical-align: middle; width:1.5em" title="戦闘機">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/P-51_Mustang.webp" style="vertical-align: middle; width:1.5em" title="P-51マスタング">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Bomber.webp" style="vertical-align: middle; width:1.5em" title="爆撃機">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Airport.webp" style="vertical-align: middle; width:1.5em" title="空港">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_ROCKETRY_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">ロケット工学
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Rocketry.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Missile Silo.webp" style="vertical-align: middle; width:1.5em" title="ミサイル格納庫">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/districts/Spaceport.webp" style="vertical-align: middle; width:1.5em" title="宇宙船基地">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Quarry.webp" style="vertical-align: middle; width:1.5em" title="採石場: +1 生産力">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_ADVANCED_BALLISTICS_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">高度な弾道学
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Advanced_Ballistics.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Anti-Air_Gun.webp" style="vertical-align: middle; width:1.5em" title="対空砲">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Machine_Gun.webp" style="vertical-align: middle; width:1.5em" title="機関銃">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_COMBINED_ARMS_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">諸兵科連合
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Combined_Arms.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Aircraft_Carrier.webp" style="vertical-align: middle; width:1.5em" title="空母">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Destroyer.webp" style="vertical-align: middle; width:1.5em" title="駆逐艦">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_PLASTICS_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">プラスチック
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Plastics.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Spec_Ops.webp" style="vertical-align: middle; width:1.5em" title="特殊部隊">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Offshore Oil Rig.webp" style="vertical-align: middle; width:1.5em" title="洋上プラットフォーム">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Fishing Boats.webp" style="vertical-align: middle; width:1.5em" title="漁船: +1 食料">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_COMPUTERS_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">コンピューター
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Computers.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Drone.webp" style="vertical-align: middle; width:1.5em" title="ドローン">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Flood Barrier.webp" style="vertical-align: middle; width:1.5em" title="防波堤">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_NUCLEAR_FISSION_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">核分裂
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Nuclear_Fission.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Nuclear Power Plant.webp" style="vertical-align: middle; width:1.5em" title="原子力発電所">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_SYNTHETIC_MATERIALS_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">化学合成物質
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Synthetic_Materials.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Helicopter.webp" style="vertical-align: middle; width:1.5em" title="ヘリコプター">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Geothermal Plant.webp" style="vertical-align: middle; width:1.5em" title="地熱発電所">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/world_wonders/Biosphère.webp" style="vertical-align: middle; width:1.5em" title="バイオスフィア">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Camp.webp" style="vertical-align: middle; width:1.5em" title="キャンプ: +2 ゴールド">
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="情報時代">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <!--ERA_INFORMATION-->
+                      <h2 class="civ-name">情報時代
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/Information Era.webp" style="vertical-align: middle; width:3em">
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_TELECOMMUNICATIONS_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">電気通信
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Telecommunications.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Nuclear_Submarine.webp" style="vertical-align: middle; width:1.5em" title="原子力潜水艦">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_SATELLITES_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">人工衛星
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Satellites.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Mechanized_Infantry.webp" style="vertical-align: middle; width:1.5em" title="機械化歩兵">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Solar Farm.webp" style="vertical-align: middle; width:1.5em" title="太陽光発電所">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_GUIDANCE_SYSTEMS_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">誘導システム
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Guidance_Systems.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Rocket_Artillery.webp" style="vertical-align: middle; width:1.5em" title="ロケット砲">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Mobile_SAM.webp" style="vertical-align: middle; width:1.5em" title="自走式地対空ミサイル">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_LASERS_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">レーザー
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Lasers.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Jet_Fighter.webp" style="vertical-align: middle; width:1.5em" title="ジェット戦闘機">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Missile_Cruiser.webp" style="vertical-align: middle; width:1.5em" title="ミサイル巡洋艦">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_COMPOSITES_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">合成物
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Composites.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Modern_AT.webp" style="vertical-align: middle; width:1.5em" title="近代的対戦車兵">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Modern_Armor.webp" style="vertical-align: middle; width:1.5em" title="近代的機甲部隊">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Wind Farm.webp" style="vertical-align: middle; width:1.5em" title="風力発電所">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_STEALTH_TECHNOLOGY_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">ステルス技術
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Stealth_Technology.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Jet_Bomber.webp" style="vertical-align: middle; width:1.5em" title="ジェット爆撃機">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_ROBOTICS_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">ロボット工学
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Robotics.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/units/Giant_Death_Robot.webp" style="vertical-align: middle; width:1.5em" title="巨大戦闘ロボット">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Pasture.webp" style="vertical-align: middle; width:1.5em" title="牧草地: +1 食料">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_NANOTECHNOLOGY_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">ナノテクノロジー
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Nanotechnology.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_NUCLEAR_FUSION_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">核融合
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Nuclear_Fusion.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="row" id="未来時代">
+                  <div class="col-lg-12">
+                    <div class="chart">
+                      <!--ERA_FUTURE-->
+                      <h2 class="civ-name">未来時代
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/Future Era.webp" style="vertical-align: middle; width:3em">
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_SEASTEADS_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">海上都市
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Seasteads.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Seastead.webp" style="vertical-align: middle; width:1.5em" title="海上都市">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_ADVANCED_AI_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">高性能AI
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Advanced_AI.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_ADVANCED_POWER_CELLS_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">高性能バッテリー
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Advanced_Power_Cells.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_CYBERNETICS_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">サイバネティクス
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Cybernetics.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Lumber Mill.webp" style="vertical-align: middle; width:1.5em" title="製材所: +1 生産力">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_SMART_MATERIALS_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">スマート素材
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Smart_Materials.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Mine.webp" style="vertical-align: middle; width:1.5em" title="鉱山: +1 生産力">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_PREDICTIVE_SYSTEMS_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">予測システム
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Predictive_Systems.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Offshore Wind Farm.webp" style="vertical-align: middle; width:1.5em" title="洋上風力発電所">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Oil Well.webp" style="vertical-align: middle; width:1.5em" title="油井: +1 生産力">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Offshore Oil Rig.webp" style="vertical-align: middle; width:1.5em" title="洋上プラットフォーム: +1 生産力">
+                      <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Quarry.webp" style="vertical-align: middle; width:1.5em" title="採石場: +1 生産力">
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_OFFWORLD_MISSION_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">地球外ミッション
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Offworld_Mission.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="chart">
+                      <!--LOC_TECH_FUTURE_TECH_NAME-->
+                      <h3 class="civ-ability-name" style="text-align:left">未来技術
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/techs/Future_Tech.webp" style="vertical-align: middle; width:2em; text-align:left">
+                      </h3>
+                    </div>
+                  </div>
+                </div>
               </div>
             </main>
           </div>
