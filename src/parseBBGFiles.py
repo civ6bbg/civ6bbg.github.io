@@ -861,6 +861,21 @@ def get_techs_per_era(db_path):
     connection.close()
     return res
 
+def get_civics_per_era(db_path):
+    res = {}
+    connection = sqlite3.connect(db_path)
+
+    crsr = connection.cursor()
+    crsr.execute("SELECT CivicType, Name, EraType, UITreeRow FROM Civics ORDER BY EraType, Cost")
+    rows = crsr.fetchall()
+    for row in rows:
+        era_type = row[2]
+        if era_type not in res:
+            res[era_type] = []
+        res[era_type].append(row)
+    connection.close()
+    return res
+
 def get_units_per_techcivic(db_path):
     res = {}
     connection = sqlite3.connect(db_path)

@@ -85,11 +85,17 @@
         <Row Tag="LOC_PAGE_TITLE_TECHNOLOGY_TREE">
             <Text>Technology Tree</Text>
         </Row>
+        <Row Tag="LOC_PAGE_TITLE_CIVIC_TREE">
+            <Text>Civic Tree</Text>
+        </Row>
         <Row Tag="LOC_PAGE_TITLE_UNITS">
             <Text>Unit Details</Text>
         </Row>
         <Row Tag="LOC_PAGE_TITLE_WORLD_WONDERS">
             <Text>World Wonders Bonuses Description</Text>
+        </Row>
+        <Row Tag="LOC_CIVIC_NUCLEAR_PROGRAM_NAME">
+            <Text>Nuclear Program</Text>
         </Row>
 	</LocalizedText>
 </GameData>

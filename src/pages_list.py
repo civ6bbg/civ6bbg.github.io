@@ -12,6 +12,7 @@ from pages.natural_wonder import *
 from pages.policies import *
 from pages.religion import *
 from pages.tech_tree import *
+from pages.civic_tree import *
 from pages.units import *
 from pages.world_wonder import *
 
@@ -81,6 +82,12 @@ pages_list = [
         'func': get_tech_tree_html_file,
         'title': 'Technology Tree',
         'main_menu_title': 'LOC_PAGE_TITLE_TECHNOLOGY_TREE'
+    },
+    {
+        'name': 'civic_tree',
+        'func': get_civic_tree_html_file,
+        'title': 'Civic Tree',
+        'main_menu_title': 'LOC_PAGE_TITLE_CIVIC_TREE'
     },
     {
         'name': 'names',
