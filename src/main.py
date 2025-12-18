@@ -14,25 +14,25 @@ from pages_list import *
 from dom_generator_helper import *
 
 langs = ['en_US', 'de_DE', 'es_ES', 'it_IT', 'ko_KR', 'pt_BR', 'zh_Hans_CN', 'fr_FR', 'ja_JP', 'pl_PL', 'ru_RU']
-langs_tmp = ['en_US']
+langs_tmp = ['en_US', 'fr_FR']
 bbg_versions_tmp = [None, '7.2']
 latest_bbg = '7.2'
 
 sitemap = {bbg_ver: {l: [] for l in langs} for bbg_ver in bbg_versions}
 
 bbg_version_last_timestamp = {bbg_ver: None for bbg_ver in bbg_versions}
-bbg_version_last_timestamp[None] = datetime.date(2025, 10, 16)
-bbg_version_last_timestamp['7.2'] = datetime.date(2025, 10, 16)
-bbg_version_last_timestamp['7.1'] = datetime.date(2025, 10, 16)
-bbg_version_last_timestamp['6.5'] = datetime.date(2025, 10, 16)
-bbg_version_last_timestamp['6.4'] = datetime.date(2025, 10, 16)
-bbg_version_last_timestamp['6.3'] = datetime.date(2025, 10, 16)
-bbg_version_last_timestamp['6.2'] = datetime.date(2025, 10, 16)
-bbg_version_last_timestamp['6.1'] = datetime.date(2025, 10, 16)
-bbg_version_last_timestamp['6.0'] = datetime.date(2025, 10, 16)
-bbg_version_last_timestamp['5.8'] = datetime.date(2025, 10, 16)
-bbg_version_last_timestamp['5.7'] = datetime.date(2025, 10, 16)
-bbg_version_last_timestamp['5.6'] = datetime.date(2025, 10, 16)
+bbg_version_last_timestamp[None] = datetime.date(2025, 12, 15)
+bbg_version_last_timestamp['7.2'] = datetime.date(2025, 12, 15)
+bbg_version_last_timestamp['7.1'] = datetime.date(2025, 12, 15)
+bbg_version_last_timestamp['6.5'] = datetime.date(2025, 12, 15)
+bbg_version_last_timestamp['6.4'] = datetime.date(2025, 12, 15)
+bbg_version_last_timestamp['6.3'] = datetime.date(2025, 12, 15)
+bbg_version_last_timestamp['6.2'] = datetime.date(2025, 12, 15)
+bbg_version_last_timestamp['6.1'] = datetime.date(2025, 12, 15)
+bbg_version_last_timestamp['6.0'] = datetime.date(2025, 12, 15)
+bbg_version_last_timestamp['5.8'] = datetime.date(2025, 12, 15)
+bbg_version_last_timestamp['5.7'] = datetime.date(2025, 12, 15)
+bbg_version_last_timestamp['5.6'] = datetime.date(2025, 12, 15)
 
 def generate_html_file(bbg_ver, l, get_page_function, page_name):
     docStr = get_page_function(bbg_ver, l, pages_list)
@@ -75,6 +75,7 @@ for bbg_ver in bbg_versions:
         for page in pages_list:
             page_name = page['name']
             get_page_function = page['func']
+            # if page_name == 'civic_tree' or page_name == 'tech_tree':
             print(f'  page: {page_name}')
             generate_html_file(bbg_ver, l, get_page_function, page_name)
 

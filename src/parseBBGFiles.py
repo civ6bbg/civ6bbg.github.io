@@ -861,6 +861,36 @@ def get_techs_per_era(db_path):
     connection.close()
     return res
 
+def get_tech_prereqs(db_path):
+    res = {}
+    connection = sqlite3.connect(db_path)
+
+    crsr = connection.cursor()
+    crsr.execute("SELECT Technology, PrereqTech, Name FROM TechnologyPrereqs tp LEFT JOIN Technologies t On tp.PrereqTech = t.TechnologyType")
+    rows = crsr.fetchall()
+    for row in rows:
+        tech = row[0]
+        if tech not in res:
+            res[tech] = []
+        res[tech].append(row)
+    connection.close()
+    return res
+
+def get_civic_prereqs(db_path):
+    res = {}
+    connection = sqlite3.connect(db_path)
+
+    crsr = connection.cursor()
+    crsr.execute("SELECT Civic, PrereqCivic, Name FROM CivicPrereqs tp LEFT JOIN Civics t On tp.PrereqCivic = t.CivicType")
+    rows = crsr.fetchall()
+    for row in rows:
+        civic = row[0]
+        if civic not in res:
+            res[civic] = []
+        res[civic].append(row)
+    connection.close()
+    return res
+
 def get_civics_per_era(db_path):
     res = {}
     connection = sqlite3.connect(db_path)

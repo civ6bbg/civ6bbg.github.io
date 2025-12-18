@@ -22,6 +22,7 @@ def get_tech_tree_html_file(bbg_version, lang, pages_list):
     menu_items = []
     menu_icons = []
     tech_per_era = get_techs_per_era(f"sqlFiles/{version_name}/DebugGameplay.sqlite")
+    tech_prereqs = get_tech_prereqs(f"sqlFiles/{version_name}/DebugGameplay.sqlite")
     boosts = get_techcivic_boosts(f"sqlFiles/{version_name}/DebugGameplay.sqlite")
     units_techcivic = get_units_per_techcivic(f"sqlFiles/{version_name}/DebugGameplay.sqlite")
     improvements_techcivic = get_improvements_per_techcivic(f"sqlFiles/{version_name}/DebugGameplay.sqlite")
@@ -105,6 +106,13 @@ def get_tech_tree_html_file(bbg_version, lang, pages_list):
                         br()
                         if tech[0] in boosts:
                             p(f'{get_loc(locs_data, "LOC_BOOST_TO_BOOST")} {get_loc(locs_data, boosts[tech[0]][2])}', 
+                                style="text-align:left",
+                                cls='civ-ability-desc')
+                        if tech[0] in tech_prereqs:
+                            prereq_techs = tech_prereqs[tech[0]]
+                            prereq_techs_locs = [get_loc(locs_data, prereq_techs[i][2]) for i in range(len(prereq_techs))]
+                            prereq_tech_requires = f'{get_loc(locs_data, "LOC_HUD_RESEARCH_REQUIRES")} {", ".join(prereq_techs_locs)}'
+                            p(prereq_tech_requires,
                                 style="text-align:left",
                                 cls='civ-ability-desc')
 

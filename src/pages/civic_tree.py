@@ -22,6 +22,7 @@ def get_civic_tree_html_file(bbg_version, lang, pages_list):
     menu_items = []
     menu_icons = []
     civic_per_era = get_civics_per_era(f"sqlFiles/{version_name}/DebugGameplay.sqlite")
+    civic_prereqs = get_civic_prereqs(f"sqlFiles/{version_name}/DebugGameplay.sqlite")
     policies = get_civic_policies(f"sqlFiles/{version_name}/DebugGameplay.sqlite")
     boosts = get_techcivic_boosts(f"sqlFiles/{version_name}/DebugGameplay.sqlite")
     units_techcivic = get_units_per_techcivic(f"sqlFiles/{version_name}/DebugGameplay.sqlite")
@@ -130,5 +131,12 @@ def get_civic_tree_html_file(bbg_version, lang, pages_list):
                                 div(get_loc(locs_data, policy[2]),
                                     style="text-align:left",
                                     cls='civ-ability-desc')
+                        if civic[0] in civic_prereqs:
+                            prereq_civics = civic_prereqs[civic[0]]
+                            prereq_civics_locs = [get_loc(locs_data, prereq_civics[i][2]) for i in range(len(prereq_civics))]
+                            prereq_civic_requires = f'{get_loc(locs_data, "LOC_HUD_RESEARCH_REQUIRES")} {", ".join(prereq_civics_locs)}'
+                            p(prereq_civic_requires,
+                                style="text-align:left",
+                                cls='civ-ability-desc')
 
     return create_page(bbg_version, lang, title, 'civic_tree', menu_items, menu_icons, 'images', pages_list, create_civic_tree_page, locs_data, en_US_locs_data)
