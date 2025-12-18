@@ -911,13 +911,30 @@ def get_civic_policies(db_path):
     connection = sqlite3.connect(db_path)
 
     crsr = connection.cursor()
-    crsr.execute("SELECT PrereqCivic, Name, Description, GovernmentSlotType FROM Policies")
+    crsr.execute("SELECT PrereqCivic, Name, Description, GovernmentSlotType, PolicyType FROM Policies")
     rows = crsr.fetchall()
     for row in rows:
         prereq_civic = row[0]
         if prereq_civic not in res:
             res[prereq_civic] = []
         res[prereq_civic].append(row)
+    connection.close()
+    return res
+
+def get_obsolete_policies(db_path):
+    res = {}
+    connection = sqlite3.connect(db_path)
+
+    crsr = connection.cursor()
+    crsr.execute("SELECT p1.Name, op.ObsoletePolicy FROM Policies p1 LEFT JOIN ObsoletePolicies op USING (PolicyType)")
+    rows = crsr.fetchall()
+    for row in rows:
+        if row[1] is None:
+            continue
+        policy = row[0]
+        if policy not in res:
+            res[policy] = []
+        res[policy].append(row)
     connection.close()
     return res
 

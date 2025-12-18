@@ -91,6 +91,9 @@
         <Row Tag="LOC_PAGE_TITLE_UNITS">
             <Text>Unit Details</Text>
         </Row>
+        <Row Tag="LOC_PAGE_TITLE_Improvements">
+            <Text>Tile Improvements</Text>
+        </Row>
         <Row Tag="LOC_PAGE_TITLE_WORLD_WONDERS">
             <Text>World Wonders Bonuses Description</Text>
         </Row>

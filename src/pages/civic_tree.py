@@ -24,6 +24,11 @@ def get_civic_tree_html_file(bbg_version, lang, pages_list):
     civic_per_era = get_civics_per_era(f"sqlFiles/{version_name}/DebugGameplay.sqlite")
     civic_prereqs = get_civic_prereqs(f"sqlFiles/{version_name}/DebugGameplay.sqlite")
     policies = get_civic_policies(f"sqlFiles/{version_name}/DebugGameplay.sqlite")
+    policy_names = {}
+    for civic in policies:
+        for policy in policies[civic]:
+            policy_names[policy[4]] = policy[1]
+    obsolete_policies = get_obsolete_policies(f"sqlFiles/{version_name}/DebugGameplay.sqlite")
     boosts = get_techcivic_boosts(f"sqlFiles/{version_name}/DebugGameplay.sqlite")
     units_techcivic = get_units_per_techcivic(f"sqlFiles/{version_name}/DebugGameplay.sqlite")
     improvements_techcivic = get_improvements_per_techcivic(f"sqlFiles/{version_name}/DebugGameplay.sqlite")
@@ -131,6 +136,13 @@ def get_civic_tree_html_file(bbg_version, lang, pages_list):
                                 div(get_loc(locs_data, policy[2]),
                                     style="text-align:left",
                                     cls='civ-ability-desc')
+                                if policy[1] in obsolete_policies:
+                                    s = ', '.join([get_loc(locs_data, policy_names[obsolete_policy[1]]) for obsolete_policy in obsolete_policies[policy[1]]])
+                                    small(get_loc(locs_data, "LOC_UI_PEDIA_MADE_OBSOLETE_BY") + ' ' + s,
+                                        style="text-align:left",
+                                        cls='civ-ability-desc')
+                                    br()
+                                    br()
                         if civic[0] in civic_prereqs:
                             prereq_civics = civic_prereqs[civic[0]]
                             prereq_civics_locs = [get_loc(locs_data, prereq_civics[i][2]) for i in range(len(prereq_civics))]
