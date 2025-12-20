@@ -765,7 +765,8 @@ def get_unit_stats(db_path):
         SELECT UnitType, PromotionClass, Name, BaseSightRange, BaseMoves, Combat, RangedCombat, Range, Bombard,
         Cost, Description, Maintenance, StrategicResource, ResourceCost,
         ResourceMaintenanceType, ResourceMaintenanceAmount, AntiAirCombat,
-		BuildCharges, ReligiousStrength, SpreadCharges, ReligiousHealCharges
+		BuildCharges, ReligiousStrength, SpreadCharges, ReligiousHealCharges,
+        MandatoryObsoleteTech
         FROM Units LEFT JOIN Units_XP2 USING(UnitType) WHERE 
 		(FormationClass <> 'FORMATION_CLASS_CIVILIAN'  OR ReligiousStrength > 0)
         AND (TraitType <> 'TRAIT_BARBARIAN_BUT_SHOWS_UP_IN_PEDIA' OR TraitType IS NULL) ORDER BY Combat

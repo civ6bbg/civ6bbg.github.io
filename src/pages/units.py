@@ -88,7 +88,7 @@ def get_units_html_file(bbg_version, lang, pages_list):
             (
                 unit_name_loc, sight, movement, cs, ranged_cs, attack_range, bombard_cs, prod, desc,
                 maint, strategic_type, strategic_amt, strategic_maint_type, strategic_maint_amt, antiair_cs,
-                build_charges, religious_strength, spread_charges, religious_heal_charges
+                build_charges, religious_strength, spread_charges, religious_heal_charges, mandatory_obsolete_tech
             ) = unit_stats[promo_cls][unit_type]
             comment(unit_name_loc)
             with h2(get_loc(locs_data, unit_name_loc),
@@ -145,10 +145,17 @@ def get_units_html_file(bbg_version, lang, pages_list):
                   style="display:inline-block;text-align:left",
                   cls='civ-ability-desc')
                 br()
+            if mandatory_obsolete_tech:
+                small(f'{get_loc(locs_data, "LOC_UI_PEDIA_MADE_OBSOLETE_BY")} {get_loc(locs_data, techs_names[mandatory_obsolete_tech])}',
+                      style="display:inline-block;text-align:left",
+                      cls='civ-ability-desc')
+                br()
             comment(desc)
             p(get_loc(locs_data, desc),
               style="display:inline-block;text-align:left",
               cls='civ-ability-desc')
+    
+    techs_names = get_tech_to_loc_dict(f"sqlFiles/{version_name}/DebugGameplay.sqlite")
     unit_stats = get_unit_stats(f"sqlFiles/{version_name}/DebugGameplay.sqlite")
     unit_promotions = get_unit_promotion_sets_dict(f'sqlFiles/{version_name}/DebugGameplay.sqlite')
     return create_page(bbg_version, lang, title, 'units', menu_items, menu_icons, 'images/units', pages_list, create_units_page, locs_data, en_US_locs_data)
