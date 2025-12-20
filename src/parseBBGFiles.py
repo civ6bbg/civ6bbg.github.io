@@ -4,7 +4,7 @@ import numpy as np
 import csv
 import os
 
-bbg_versions = [None, '7.2', '7.1', '6.5', '6.4', '6.3', '6.2', '6.1', '6.0', '5.8', '5.7', '5.6']
+bbg_versions = [None, 'Beta', '7.2', '7.1', '6.5', '6.4', '6.3', '6.2', '6.1', '6.0', '5.8', '5.7', '5.6']
 
 def add_xml_file_to_locs(locs, xml_file):
     if not os.path.exists(xml_file):
@@ -54,6 +54,8 @@ def get_locs_data(bbg_version, lang):
 
     if lang == 'en_US' or lang == 'fr_FR':
         add_xml_file_to_locs(locs, f'sqlFiles/expandedBase_{lang}.xml')
+        
+    add_xml_file_to_locs(locs, f'lang/steelThunder/MoarUniqueUnits_LocalisationText_{lang}.xml')
 
     connection.close()
 

@@ -1,0 +1,557 @@
+<GameData><LocalizedText>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_100_PERCENT_FLANKING_DESCRIPTION"><Text>+100% flanking bonus.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_ADDITIONAL_ATTACK_DESCRIPTION"><Text>Can attack twice per turn.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_AMERICAN_AH64_APACHE_DESCRIPTION"><Text>+10 [ICON_Strength] Combat Strength versus Heavy Cavalry units.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_ARMATOLOS_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength when fighting on Hills terrain. Ignores movement penalty on Hills.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_BALLISTA_DESCRIPTION"><Text>+17 [ICON_Strength] versus non-District tiles and -10 [ICON_Strength] versus District tiles.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_BANDEIRANTE_DESCRIPTION"><Text>Can build forts. Yields 25% of defeated units' combat strength as [ICON_Gold] Gold and 25% of defeated units' combat strength as [ICON_Culture] Culture.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_CAMEL_ARCHER_DESCRIPTION"><Text>+8 [ICON_Strength] when fighting on Desert or Plains terrain.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_CHOSEN_INFANTRY_DESCRIPTION"><Text>Heals an additional 10 points per turn.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_CREE_OTEHTAPIW_DESCRIPTION"><Text>Gains +2 movement points if it starts on flat terrain. Heals +15 per turn when on Plains or Grassland. +10 [ICON_Strength] when fighting on Plains or Grassland. </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_DRUZHINA_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength versus damaged units and +4 [ICON_Strength] Combat Strength against Melee units.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_DUTCH_SCHUTTERIJ_DESCRIPTION"><Text>+10 [ICON_Strength] when defending districts.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_EQUITE_ADJACENCY_BONUS_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength when fighting next to Legion or Warrior unit.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_EXTRA_MOVEMENT_ON_SNOW_TUNDRA_DESCRIPTION"><Text>Gains +2 movement points if starting on Tundra, Tundra Hills, Snow or Snow Hills.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_FATHERLAND_VOLUNTEER_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength on same continent as capital city.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_FRENCH_MARINE_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength on foreign continents. No attack penalty when attacking from sea or across rivers.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_FULL_STRENGTH_WHEN_DAMAGED_ON_HILLS_DESCRIPTION"><Text>Fights at full strength when damaged on Hills.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_GARDE_REPUBLICAINE_DESCRIPTION"><Text>+10 [ICON_Strength] Combat Strength when attacking or defending districts.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_GENDARME_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength when attacking.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_GEORGIAN_TADZREULI_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength when opponent is another religion. Yields 50% of defeated units' [ICON_Strength] Combat Strength as [ICON_Faith] Faith on combat victory. Converts captured cities to player's religion. </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_GHAZI_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength when opponent is another religion. Yields 50% of defeated units' [ICON_Strength] Combat Strength as [ICON_Faith] Faith on combat victory. Converts captured cities to player's religion. </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_GOLD_FROM_CITY_STATES_UNIT_KILLS_DESCRIPTION"><Text>Yields 100% of defeated City State units' combat strength as [ICON_Gold] Gold.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_HIRDMAN_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength and yields 50% of defeated units' [ICON_Strength] Combat Strength as [ICON_Culture] Culture on combat victory if fighting on same continent as capital. </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_JAGUAR_DESCRIPTION"><Text>+10 [ICON_Strength] Combat Strength when attacking and -5 [ICON_Strength] Combat Strength when defending. May capture defeated enemies, turning them into Builders. Ignores terrain movement cost in Jungle and Forest. </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_JINETE_DESCRIPTION"><Text>Yields 50% of defeated units' [ICON_Strength] Combat Strength as [ICON_Faith] Faith on combat victory if fighting on same continent as capital.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_KHMER_WAR_CANOE_DESCRIPTION"><Text>Escorted units move at the same speed. Can capture ships. Adjacent land units incur no embark/disembark movement cost.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_KOREAN_TURTLE_SHIP_DESCRIPTION"><Text>+5 [ICON_Strength] vs damaged units.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_LESS_MOVEMENT_PILLAGE_DESCRIPTION"><Text>Requires fewer movement points to pillage.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_LONGBOWMAN_DESCRIPTION"><Text>+4 [ICON_Strength] Combat Strength against Melee and Cavalry units with a further +4 [ICON_Strength] Combat Strength if adjacent to another Longbowman unit. </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_MAPUCHE_GUERILLA_DESCRIPTION"><Text>Can move after attacking. Can move and see through Woods and Rainforest.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_MINUTEMAN_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength when fighting in or adjacent to its home territory. Also gains additional +5 [ICON_Strength] when fighting in Forest or Jungle. </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_MOVE_AFTER_ATTACKING_DESCRIPTION"><Text>Can move after attacking.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_MUGHAL_SOWAR_DESCRIPTION"><Text>Heals +15 per turn when on or adjacent to a Stepwell improvement. Ignores terrain costs.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_NUBIAN_AFRICAN_FOREST_ELEPHANT_DESCRIPTION"><Text>Pushes defending enemy units back. No movement cost when crossing rivers.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_PANZER_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength when attacking.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_PELTAST_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength when defending.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_PERC_50_POST_COMBAT_GOLD_DESCRIPTION"><Text>Yields 50% of defeated units' [ICON_Strength] as [ICON_Gold] on combat victory.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_PERSIAN_WARSHIP_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength when attacking.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_PEZHETAIROS_DESCRIPTION"><Text>+10 [ICON_Strength] Combat Strength versus Melee units.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_PHALANX_DESCRIPTION"><Text>+5 [ICON_Strength] if fighting within 8 tiles of a Ziggurat improvement.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_PLUS_10_DEFENDER_DESCRIPTION"><Text>+10 [ICON_Strength] Combat Strength when defending.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_PLUS_5_BONUS_VS_DAMAGED_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength versus damaged units.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_PLUS_5_DEFENDER_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength when defending.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_PLUS_5_OTHER_RELIGION_COMBAT_BONUS_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength when opponent is another religion.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_PLUS_5_WHEN_ATTACKING_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength when attacking.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_PLUS_X_HOLY_SITE_PROXIMITY_BONUS_DESCRIPTION"><Text>+5 [ICON_Strength] within 4 tiles of any Holy Site District.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_PLUS_X_IN_FORMATION_BONUS_DESCRIPTION"><Text>+5 [ICON_Strength] when in formation.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_PLUS_X_VS_NAVAL_RAIDER_COMBAT_BONUS_DESCRIPTION"><Text>+10 [ICON_Strength] versus Naval Raider class units.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_PLUS_X_WHEN_ATTACKING_RANGED_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength when attacking Ranged units.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_RECEIVE_HUI_HUI_PAO_BONUS_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength when attacking Districts if adjacent to Hui Hui Pao (Mongolia).</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_RECEIVE_KHMER_WAR_CANOE_BONUS_DESCRIPTION"><Text>Incurs no embark/disembark movement cost if adjacent to War Canoe (Khmer).</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_RECEIVE_MEDICINE_MAN_BONUS_DESCRIPTION"><Text>Yields 50% of defeated units' [ICON_Strength] Combat Strength as [ICON_Faith] Faith on combat victory when adjacent to Medicine Man (Medicine Man).</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_RECEIVE_NORWEGIAN_ULFHEDNAR_BONUS_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength versus undamaged units, +10 [ICON_Strength] Combat Strength versus damaged units, and yields 50% of defeated units' [ICON_Strength] Combat Strength as [ICON_Faith] Faith if adjacent to Ulfhedinn (Norway). </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_RECEIVE_PERSIAN_WARSHIP_BONUS_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength and +2 movement at start of turn if adjacent to Warship (Persia).</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_RECEIVE_SHIGONG_BONUS_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength and earns more experience if adjacent to Strategist (China).</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_RECEIVE_SOFA_BONUS_DESCRIPTION"><Text>+4 [ICON_Strength] if adjacent to Sofa (Mali).</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_RECEIVE_WARRIOR_PRIEST_BONUS_DESCRIPTION"><Text>Fights at full strength when damaged and earn Great General points from kills if adjacent to Warrior Priest (Aztec).</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_SASR_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength when fighting on Desert or Plains. Ignores Zone of Control.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_SCOTTISH_GALLOWGLASS_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength when attacking. Earns experience more quickly.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_SEPOY_DESCRIPTION"><Text>Fights at full Combat Strength when damaged.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_SHIP_OF_THE_LINE_ADJACENCY_BONUS_DESCRIPTION"><Text>+7 [ICON_Strength] Combat Strength when adjacent to another Ship of the Line.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_SWEDEN_HAKKAPELIITTA_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength when attacking. Gains +2 movement points if starting on Tundra, Tundra Hills, Snow or Snow Hills terrain.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_T34_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength in or adjacent to own territory.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_TERCIO_DESCRIPTION"><Text>Earns experience more quickly.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_UNIT_BONUS_VERSUS_CITY_STATES_DESCRIPTION"><Text>+7 [ICON_Strength] Combat Strength when attacking City States' units.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_ABILITY_ZULU_ASSEGAI_DESCRIPTION"><Text>+4 [ICON_Strength] when adjacent to another Isijula Warrior.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_HEAL_ON_VICTORY_DESCRIPTION"><Text>Heals after defeating unit.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_AMERICAN_AH64_APACHE_CHAPTER_HISTORY_PARA_1"><Text> 這架波音AH-64阿帕奇是壹架美國的四翼飛機，雙渦輪軸攻擊直升飛機，配備了壹個尾輪式起落架裝置和壹個雙人座艙。它的特點是爲目標采集和夜視系統安裝了傳感器。它配備了30毫米(1.18英寸)M230鏈槍在主起落架之間，在飛機的前機身下。它有四個挂載在柱翼塔上的挂載點，典型的是攜帶AGM-114“地獄火”導彈和九頭蛇70火箭吊艙的混合物。AH-64有大量的防護系統來提高戰鬥的生存能力。 </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_AMERICAN_AH64_APACHE_CHAPTER_HISTORY_PARA_2"><Text> 阿帕奇最初是由休斯直升機爲美國陸軍高級攻擊直升機項目開發的77型直升機，以取代AH-1眼鏡蛇。YAH-64原型機于1975年9月30日首次飛行。美國陸軍在1976年選擇了YAH-64，並在1982年批准了全部生産。在1984年購買休斯直升機後，麥克唐納道格拉斯繼續生産和開發AH-64。直升飛機于1986年4月被引入美國陸軍服役。 </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_AMERICAN_AH64_APACHE_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_AMERICAN_AH64_APACHE_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_AMERICAN_AH64_APACHE_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_AMERICAN_MINUTEMAN_CHAPTER_HISTORY_PARA_1"><Text>在美國獨立戰爭期間，美國民兵組織是殖民地民兵的成員。他們是壹種“快速反應”的力量，訓練對敵人的攻擊迅速作出反應，給予正規軍(以及其他民兵)時間來作出反應和准備戰鬥。事實上，“民兵”早在美國革命之前就已經存在了:1645年，馬薩諸塞灣殖民地就有壹些民兵被指定爲“即召民兵”。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_AMERICAN_MINUTEMAN_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_AMERICAN_MINUTEMAN_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_AMERICAN_MINUTEMAN_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_AMERICAN_MINUTEMAN_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ARABIAN_CAMEL_ARCHER_CHAPTER_HISTORY_PARA_1"><Text> 壹些穆斯林騎兵騎著駱駝參加戰鬥。這通常會對歐洲的馬産生壹種令人不安的影響，而這些馬在遇到這些不尋常的野獸之前就已經沒有了。正如人們所料，駱駝比馬更適合沙漠地形。壹般來說，駱駝弓箭手使用的是對敵人的打和跑戰術，更類似于蒙古騎兵，而不是騎士或其他重騎兵部隊。如果這些騎士不受弓箭手或他們自己的輕騎兵的保護，壹支訓練有素的駱駝弓箭兵就很難對付了。 </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ARABIAN_CAMEL_ARCHER_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ARABIAN_CAMEL_ARCHER_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ARABIAN_CAMEL_ARCHER_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ARABIAN_CAMEL_ARCHER_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ARABIAN_GHAZI_CHAPTER_HISTORY_PARA_1"><Text>加齊是壹個阿拉伯語術語，原意指衛教軍，意思是軍事遠征或突襲;伊斯蘭教興起後，宗教戰爭又有了新的內涵。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ARABIAN_GHAZI_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ARABIAN_GHAZI_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ARABIAN_GHAZI_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ARABIAN_GHAZI_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_AUSTRALIAN_SASR_CHAPTER_HISTORY_PARA_1"><Text> 特別空勤團，正式縮寫爲S.A.S.R.，雖然通常被稱爲S.A.S.。是澳大利亞軍隊的特種部隊。它成立于1957年，最初是模仿英國的“誰敢贏”的口號。該團駐紮在位于西澳大利亞珀斯郊區的坎貝爾軍營，是特種作戰司令部的直接指揮部隊。它已參加了在婆羅洲、越南、索馬裏、東帝汶、伊拉克和阿富汗的行動，以及許多其他的維持和平行動。S.A.S.R.也提供反恐能力，並參與了許多國內安全行動。 </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_AZTEC_JAGUAR_CHAPTER_HISTORY_PARA_1"><Text> 在阿茲特克文化中，戰爭是壹種宗教儀式，因爲它是壹種政治工具。爲了獲得更高的地位，年輕的種馬必須捕獲或殺死敵人，爲了阿茲特克人的宗教儀式，需要不斷增加的囚犯數量。美洲虎戰士是阿茲特克軍隊的精英職業士兵。美洲虎身上穿著美洲豹皮，裝備有致命的“macuahuitls”(木劍上鑲嵌著鋒利的黑石碎片)，它可能是哥倫布發現美洲前中部和北美洲最致命的輕步兵。 </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_AZTEC_WARRIOR_PRIEST_CHAPTER_HISTORY_PARA_1"><Text> 強大的阿茲特克戰士不僅是社會上的重要人物，而且是可怕的戰士，他們不僅能夠在戰場上用致命的武器攻擊馬庫哈伊特。在正常的生活中，阿茲特克牧師將負責許多任務，並經常在社會中占據高位。他們將是阿茲特克宗教的生命和血液，但也在政府中工作，創造了calenders，並且是主要的記錄員。此外，他們還將在學校和勇士訓練機構，如Calmecac和Telpochocalli進行教學。作爲壹名戰士牧師，他們的角色是不同的，他們會和阿茲特克戰士壹起戰鬥。武士祭司裝備了能夠造成嚴重傷害的武器，他們被盔甲和盾牌保護，他們的能力或堅守陣地。 </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_BRAZILIAN_BANDEIRANTE_CHAPTER_HISTORY_PARA_1"><Text>“執旗者”是17世紀的葡萄牙殖民者和財富獵人。這個組織主要來自聖保羅州，在1709年之前被稱爲Sao Vicente的隊長，然後是聖保羅的隊長。他們帶領的探險隊被稱爲bandeiras(葡萄牙語，“旗幟”)，在1494年的Tordesillas線的南部和西部穿過了巴西的內陸地區，這條線正式將卡斯提爾語，後來的西班牙語，(西)從南美洲的葡萄牙(東)域分割開來。 </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_BRAZILIAN_BANDEIRANTE_CHAPTER_HISTORY_PARA_2"><Text> 聖保羅的定居點是最著名的班德蘭人的大本營。大多數班德蘭人都是在聖保羅定居的第壹代和第二代葡萄牙人的後裔，但他們的人數也包括了許多mameluco背景的人(歐洲和美國本土的祖先)。雖然他們最初的目的是捕獲並迫使美洲土著成爲奴隸，但後來，班德蘭人開始把他們的探險重點放在尋找金、銀和鑽石礦上。當他們冒險進入沒有地圖的地區尋找利潤和冒險時，他們擴大了巴西殖民地的有效邊界。 </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_BRAZILIAN_BANDEIRANTE_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_BRAZILIAN_BANDEIRANTE_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_BRAZILIAN_BANDEIRANTE_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_BRAZILIAN_FATHERLAND_VOLUNTEER_CHAPTER_HISTORY_PARA_1"><Text> 1864年12月，巴拉圭獨裁者弗朗西斯科·索洛拉·洛佩斯下令逮捕包括乘客和機組人員在內的巴西平民汽船。巴拉圭軍隊在沒有宣戰的情況下，立即入侵了巴西馬托格羅索省(目前是馬托格羅索州)。4個月後，巴拉圭軍隊也入侵了阿根廷領土，作爲對巴西的進攻的前奏。1865年6月30日，在首都華盛頓被入侵。佩德羅二世意識到該省的無政府狀態，以及其軍事首長們無法抵抗巴拉圭軍隊的無能和無能，于是決定親自前往前線。他寫信給巴拉爾伯爵夫人說:“我的地方已經被入侵了，我的地方在那裏。”作爲國家元首，他打算擔任巴西軍隊的指揮官。內閣和大會都拒絕服從皇帝的意願。在他收到國務委員會的反對後，佩德羅二世發表了令人難忘的聲明:“如果他們能阻止我去當皇帝，他們就不能阻止我退位，成爲壹名祖國的志願者。”因此，那些在1865年1月7日簽署了第3371號法令的巴西人，在全國被稱爲“祖國的志願者”。 </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_BRAZILIAN_FATHERLAND_VOLUNTEER_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_BRAZILIAN_FATHERLAND_VOLUNTEER_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_BRAZILIAN_FATHERLAND_VOLUNTEER_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_BRAZILIAN_FATHERLAND_VOLUNTEER_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CANADA_HMCS_HAIDA_CHAPTER_HISTORY_PARA_1"><Text>HMCS Haida is a Tribal-class destroyer that served in the Royal Canadian Navy (RCN) from 1943 to 1963, participating in World War II and the Korean War. She was named after the Haida people. The only surviving Tribal-class destroyer out of 27 vessels constructed for the RCN, Royal Navy and Royal Australian Navy between 1937 and 1945, Haida sank more enemy surface tonnage than any other Canadian warship and as such is commonly referred to as the "Fightingest Ship in the Royal Canadian Navy". Designated a National Historic Site of Canada in 1984, she now serves as a museum ship berthed next to HMCS Star, an active Royal Canadian Naval Reserve Division, in Hamilton, Ontario. In 2018, Haida was designated the ceremonial flagship of the RCN. </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CANADA_HMCS_HAIDA_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CANADA_HMCS_HAIDA_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CANADA_HMCS_HAIDA_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CANADA_HMCS_HAIDA_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CHINESE_CHOKONU_CHAPTER_HISTORY_PARA_1"><Text> 諸葛弩是中國在公元二世紀末期發明的壹種相當漂亮的重複弩。這台機器看起來就像壹個標准的歐洲十字弓，上面有個盒子，上面有個盒子，剛好在繩子的上方。盒子裏裝滿了十字弓螺栓。在操作過程中，士兵會拉壹根杠杆把繩子栓在壹起，然後把操縱杆推回去，導致壹個螺栓從盒子裏掉出來，然後被發射出去。這給了楚-科-奴比標准的歐洲十字弓更快的射擊速度。然而，諸葛弩發射了壹個較輕的螺栓，射程比歐洲機器短。這是最先進的武器將取決于環境——歐洲的模式可能在開闊的地形上戰勝重裝甲的對手，而諸葛弩可能會在短射程內更好地對付大量的輕裝攻擊者。 </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CHINESE_CHOKONU_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CHINESE_CHOKONU_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CHINESE_CHOKONU_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CHINESE_CHOKONU_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CHINESE_SHIGONG_CHAPTER_HISTORY_PARA_1"><Text> 軍師”爲東漢、三國、晉設置的掌監察軍務之職官。《三國演義辭典》“軍師”條則釋曰：“軍師，官名。三國時三公及常設將軍所置屬官，其職爲參謀軍事，類似幕僚。第五品。”同書“諸葛亮爲軍師”條又指“軍師是品秩較低的屬官。”以上諸說，闡明了“軍師”作爲封建官僚軍事機構中的職官的性質、職能和地位。反映了後代“軍師”職能的變化，卻並沒有揭示設置“軍師”壹職的原初意義。(甚至也與《三國志·荀攸傳》所載相異。)事實上，在封建國家形成過程中，特別是激烈的戰爭時期，在君權需要士道和才智強力支撐之際，軍師的地位要崇高得多。據現有記載，“軍師”壹職的出現，起碼應上溯至戰國時代。《史記·孫子吳起列傳》記曰：于是（田）忌進孫子于威王。威王問兵法，遂以爲師。其後魏伐趙，趙急，求救于齊，齊威王欲將孫膑，膑辭謝曰：‘刑余之人，不可。’于是乃以田忌爲將，而孫子爲師。居辎車中，坐爲計謀。 </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CHINESE_SHIGONG_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CHINESE_SHIGONG_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CHINESE_SHIGONG_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CHINESE_SHIGONG_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_COLOMBIAN_BRITISH_LEGION_CHAPTER_HISTORY_PARA_1"><Text>The British Legion (Spanish: Legión Británica) or British Legions were foreign volunteer units that fought under Simón Bolívar against Spain for the independence of Colombia, Venezuela, Ecuador and José de San Martín for the independence of Peru in the Spanish American wars of independence. Venezuelans generally called them the Albion Legion. They were composed of over seven thousand volunteers, mainly Napoleonic War veterans from Great Britain and Ireland, as well as some German veterans and some locals recruited after arriving in South America. Volunteers in the British Legion were motivated by a combination of both genuine political motives and mercenary motives. </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_COLOMBIAN_BRITISH_LEGION_CHAPTER_HISTORY_PARA_2"><Text>Their greatest achievements were at the Boyacá (1819), Carabobo (1821), Pichincha (1822) and Battle of Ayacucho (1824) which secured independence for Colombia, Venezuela, Ecuador and Peru from Spanish rule respectively. </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_COLOMBIAN_BRITISH_LEGION_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_COLOMBIAN_BRITISH_LEGION_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_COLOMBIAN_BRITISH_LEGION_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CREE_OTEHTAPIW_CHAPTER_HISTORY_PARA_1"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CREE_OTEHTAPIW_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CREE_OTEHTAPIW_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CREE_OTEHTAPIW_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CREE_OTEHTAPIW_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_DUTCH_SCHUTTERIJ_CHAPTER_HISTORY_PARA_1"><Text> 守城射手是指在中世紀和早期的荷蘭，壹個志願的城市守衛或公民民兵組織，目的是保護城鎮免受攻擊，並在發生暴動或火災時采取行動。他們的訓練場地經常在城市附近的空地上，但是，當天氣不允許的時候，在教堂裏面。他們主要根據他們的地區和他們使用的武器來分組:弓、弩或槍。它的成員被稱爲“schorsgilde”，可以粗略地翻譯爲“射手工會”。 </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_DUTCH_SCHUTTERIJ_CHAPTER_HISTORY_PARA_2"><Text> 射手,城防，或觀察哨，是當地市政當局的防禦性軍事支持系統。它的官員都是城裏的有錢市民，由市治安官任命。在荷蘭北部，根據城鎮的情況，在正式交接之後，在1566年到1580年間，警察必須是荷蘭歸正教會的壹員。它的船長通常是這個地區的壹個富有的居民，而該組織的ensign是壹個富有的年輕單身漢(他經常被他的特別精美的衣服和他所攜帶的旗幟在群畫像中認出來)。作爲壹名軍官，在市議會中擔任幾年的職務通常是壹種踏腳石。成員們被期望購買他們自己的裝備:這需要購買武器和制服。每天晚上有兩個人守著他們的地區，從晚上10點到淩晨2點。，從淩晨2點到淩晨6點。關閉並打開城市的大門。在每個月的固定時間，舒斯特爾會在軍官的指揮下列隊行進。 </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_DUTCH_SCHUTTERIJ_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_DUTCH_SCHUTTERIJ_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_DUTCH_SCHUTTERIJ_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_EGYPTIAN_HYKSOS_BOWMAN_CHAPTER_HISTORY_PARA_1"><Text> 希克索斯(“外國統治者”)是壹群來自西亞的混血兒，他們定居在東尼羅河三角洲，大約在公元前1650年。希克索斯給埃及帶來了幾項技術革新，同時也帶來了文化融合，如新的樂器和外國的外來詞。這些變化包括新技術的青銅工作和陶器，新品種的動物，和新的作物。在戰爭中，他們引進了馬和戰車，複合弓，改良的戰斧，以及先進的防禦技術。由于這些文化的進步，希克索斯規則對埃及後來的中東帝國起了決定性作用。 </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_EGYPTIAN_HYKSOS_BOWMAN_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_EGYPTIAN_HYKSOS_BOWMAN_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_EGYPTIAN_HYKSOS_BOWMAN_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_EGYPTIAN_HYKSOS_BOWMAN_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_EGYPTIAN_KHOPESH_CHAPTER_HISTORY_PARA_1"><Text>khopesh是由戰斧演變而來的鐮刀。壹個典型的khopesh長度是50-60厘米(20-24英寸)，但也有較小的例子。武器尖端的鈍邊也是壹個有效的棍棒，還有壹個鈎子。最早對khopesh的描述是來自禿鹫的Stele，描繪的是拉加什的國王Eannatum揮舞著武器;這將使khopesh至少到公元前2500年。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_EGYPTIAN_KHOPESH_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_EGYPTIAN_KHOPESH_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_EGYPTIAN_KHOPESH_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_EGYPTIAN_KHOPESH_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_EGYPTIAN_WAR_GALLEY_CHAPTER_HISTORY_PARA_1"><Text> 老普林尼把他的發明歸功于亞曆山大大帝。庫爾修斯證實了這壹點，並有報道稱，國王下令在黎巴嫩山砍下700個七分之壹的木材，用于他預測的阿拉伯半島和非洲的航行。在薩拉米斯.德米特裏厄斯.奧西，有7艘這樣的船，建造在肺尼基，後來的托勒密二世(公元前283-246)有36個建築。伊庇魯斯的皮拉斯顯然也有至少壹個“七”，這是由迦太基人捕獲並最終在梅萊消失的。 </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_EGYPTIAN_WAR_GALLEY_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_EGYPTIAN_WAR_GALLEY_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_EGYPTIAN_WAR_GALLEY_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_EGYPTIAN_WAR_GALLEY_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ELEANOR_TEMPLAR_CHAPTER_HISTORY_PARA_1"><Text>The Knights Templar was a holy order devoted to defending the fledgling crusader states founded during the First Crusade against Muslim reconquest. The king of Jerusalem allowed them to make their headquarters in the main temple of Jerusalem, from which they took their name. In exchange for this hospitality they swore allegiance to the throne of Jerusalem. They participated in several major battles and did very well; this increased their numbers substantially. Eventually their power grew so much -- to the point where they could field an army of almost 10,000 knights and still uphold their promises to garrison individual towns -- that the Pope decided to place them under his direct control. </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ELEANOR_TEMPLAR_CHAPTER_HISTORY_PARA_2"><Text>Templar valor in the Holy Land resulted in many rewards back in Europe; knights who fought under the red cross and white field of the Templars often found themselves with new estates and castles in their native countries. As a result the order became fantastically wealthy, as the Grandmasters shrewdly invested the order's wealth, using plunder to buy goods and sell them throughout the Mediterranean. </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ELEANOR_TEMPLAR_CHAPTER_HISTORY_PARA_3"><Text>Kings, however, often become jealous of wealthy organizations over which they have little or no control. The French king Philip IV, his treasury emptied and his debts monstrous from constant warfare, accused the Templars of heresy and blasphemy, and confiscated almost all of their wealth in France. Other monarchs followed suit, embarking on a program of persecution and repression whose goal was mostly to secure the Templars' money for themselves. Hundreds of Templars gave false confessions of heresy under torture, and others were burned at the stake. The order died out completely in the early 14th century when the entire Templar leadership had been murdered. </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ELEANOR_TEMPLAR_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ELEANOR_TEMPLAR_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ENGLISH_LONGBOWMAN_CHAPTER_HISTORY_PARA_1"><Text> 英國人在12世紀發明了長弓，當時英國人正爲征服威爾士而戰。長弓由紫杉或榆樹制成，身高5-7英尺(視乎用戶的身高和強度而定)。長弓是非常難掌握的，但是訓練有素的英國長弓手可以比白天的弩兵飛得更遠更快更准確。但這確實需要多年的訓練。隨著英國人口的增長，英國的荒野變成了農田。狩獵的機會消失了，英國人對弓箭的熟練程度也降低了。這壹點，甚至比火藥的出現，導致了英國長弓的衰落。 </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ENGLISH_LONGBOWMAN_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ENGLISH_LONGBOWMAN_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ENGLISH_LONGBOWMAN_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ENGLISH_LONGBOWMAN_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ENGLISH_SHIP_OF_THE_LINE_CHAPTER_HISTORY_PARA_1"><Text>Ships of the line are the largest and most powerful sailing vessels ever built. They formed the backbone of Europe's great navies from the 17th to the mid 19th centuries. Ships of the line were named for the classic formation that these ships fought in. In battle, each side's ships would approach the enemy in a line, and as the opposing ships passed, each would let off a thundering broadside of cannon fire, doing horrific damage to the vessels and to those aboard her. Victory usually went to the side with the most cannon and the best-trained sailors. The English were masters at this form of warfare, and their ships of the line dominated the world's oceans for more than a century. </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ENGLISH_SHIP_OF_THE_LINE_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ENGLISH_SHIP_OF_THE_LINE_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ENGLISH_SHIP_OF_THE_LINE_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ENGLISH_SHIP_OF_THE_LINE_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_FRENCH_GENDARME_CHAPTER_HISTORY_PARA_1"><Text>憲騎士是壹個出身高貴的騎兵，主要在法國軍隊服役，從中世紀晚期到近代歐洲曆史時期。他們的全盛時期是在15世紀晚期到16世紀中期，當時他們爲法國國王提供了壹支強大的常規力量，全副武裝，全副武裝，在適當的情況下，可以控制戰場。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_FRENCH_GENDARME_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_FRENCH_GENDARME_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_FRENCH_GENDARME_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_FRENCH_GENDARME_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_FRENCH_MARINE_CHAPTER_HISTORY_PARA_1"><Text> 在1622年由紅衣主教黎塞留創立的“海洋之旅”最初是爲了組建法國國王的船只的駐地。1674年，讓·巴蒂斯特·科爾伯特決定建立永久性的殖民地軍隊並給他們命名爲“海軍陸戰隊”。法國海軍陸戰隊是海軍和殖民地正規軍的獨立公司，隸屬于海軍陸戰隊，也負責法國海軍、海外貿易和法國殖民地。在新法國，從1685年到1755年，他們是唯壹的正規士兵，當時有幾個陸軍營被派往北美。法國海軍部門開始使用這些公司來保護皮毛貿易和當地的平民，從易洛魁族人那裏。他們被1756年在蒙特平靜下的大批軍隊的到來所取代。1760年蒙特利爾淪陷後，加拿大的公司就不複存在了。 </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_FRENCH_MARINE_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_FRENCH_MARINE_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_FRENCH_MARINE_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_FRENCH_MARINE_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GEORGIAN_TADZREULI_CHAPTER_HISTORY_PARA_1"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GEORGIAN_TADZREULI_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GEORGIAN_TADZREULI_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GEORGIAN_TADZREULI_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GEORGIAN_TADZREULI_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GERMAN_LANDSKNECHT_CHAPTER_HISTORY_PARA_1"><Text>自有傭兵是16世紀的德國雇傭兵。在模仿傳奇的瑞士雇傭兵長矛兵時，landsknecht最終會取代他們成爲歐洲最優秀的雇傭兵，在16世紀幾乎所有的主要交戰中都有戰鬥——通常雙方都有。在戰場上，landsknechts通常能長到20英尺長。也有少數人手持巨大的雙手劍或戟;這些都是用來把對手的頭砍下來的。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GERMAN_LANDSKNECHT_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GERMAN_LANDSKNECHT_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GERMAN_LANDSKNECHT_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GERMAN_LANDSKNECHT_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GERMAN_PANZER_CHAPTER_HISTORY_PARA_1"><Text>壹種德國中型坦克，從1942年開始在非洲和歐洲部署，通常在獨立的重型坦克營。它的最終名稱是Panzerkampfwagen VI Tiger Ausf。E常縮寫爲Tiger。我給國防軍的第壹輛裝甲戰車上了8.8厘米的KwK 36槍(不要和8.8 cm的Flak 36混在壹起)。1347是在1942年8月到1944年8月之間建造的。這個坦克被費迪南德·保時捷(Ferdinand Porsche)昵稱爲“虎式”(Tiger)，在老虎二世進入生産後，羅馬數字被加入。 </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GERMAN_PANZER_CHAPTER_HISTORY_PARA_2"><Text>盡管“虎式”被稱爲傑出設計，但它被過度設計，使用昂貴的材料和勞動密集型的生産方法。老虎容易出現某些類型的軌道故障和故障，並且由于其高耗油量而受到限制。它也很難運輸，而且當泥漿、冰和雪在交叉重疊和交錯的沙克特爾式道路車輪之間凍結時，它很容易被固定住。這是壹個東線的問題，在泥濘的rasputitsa季節和在極端的寒冷時期。 </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GERMAN_PANZER_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GERMAN_PANZER_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GERMAN_PANZER_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GREEK_ARMATOLOS_CHAPTER_HISTORY_PARA_1"><Text> 警備糾察隊是基督教的希臘不規則士兵，或民兵，受奧斯曼帝國的委托，在壹個叫做Armatoliki的行政區內執行蘇丹的權威。Armatolikia是在希臘的壹些地區建立的，這些地區有很高的土地，或者是那些由于難以到達的地形而難以管理的地區，比如Thessaly的Agrafa山，那裏是15世紀第壹個armatoliki建立的地方。隨著時間的推移，armatoloi和klephtes的角色變得模糊了，隨著局勢的發展，他們的角色和忠誠都發生了改變，所有這些都與奧斯曼當局保持著微妙的狀態。在希臘獨立戰爭期間，armatoloi和klephts壹起組成了希臘作戰部隊的核心，並在其持續期間發揮了重要作用。Yannis Makriyannis將armatoloi和klephts稱爲“自由酵母”。 </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GREEK_ARMATOLOS_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GREEK_ARMATOLOS_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GREEK_ARMATOLOS_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GREEK_ARMATOLOS_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GREEK_PELTAST_CHAPTER_HISTORY_PARA_1"><Text> 輕盾步兵(Peltast)是色雷斯(Thrace)和帕伊尼亞(Paeonia)的壹種輕步兵，經常充當小規模戰鬥人員。輕盾標槍手攜帶壹個新月形的柳條盾牌，被稱爲“pelte”，作爲他們的主要保護，因此得名。根據亞裏斯多德的說法，這種毛皮是無邊的，覆蓋著山羊或綿羊皮。壹些文學來源暗示盾牌可能是圓的，但在藝術中，它通常表現爲新月形。它也出現在Scythian藝術中，可能是中歐的壹種常見類型。該盾牌可以攜帶壹個中央帶和壹個手握在邊緣或僅僅是壹個中央的手握。它也可能有壹個帶肩帶(或baldric)，因爲色雷斯人在躲避敵人時將盾牌甩在背上。輕盾標槍手的武器包括幾杆標槍(akontia)，它可能已經投擲了肩帶，以允許更多的力量應用于投擲。 </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GREEK_PELTAST_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GREEK_PELTAST_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GREEK_PELTAST_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GREEK_PELTAST_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_HUNGARY_KALANDOZO_CHAPTER_HISTORY_PARA_1"><Text>The Hungarian invasions of Europe (kalandozások in Hungarian) took place in the ninth and tenth centuries, the period of transition in the history of Europe in the Early Middle Ages, when the territory of the former Carolingian Empire was threatened by invasion from multiple hostile forces, the Magyars (Hungarians) from the east, the Viking expansion from the north and the Arabs from the south. </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_HUNGARY_KALANDOZO_CHAPTER_HISTORY_PARA_2"><Text>The Magyars successfully conquered the Pannonian Basin (i.e. what is now Hungary) by the end of the ninth century, and launched a number of plundering raids both westward into former Francia and southward into the Byzantine Empire. The westward raids were stopped only with the Magyar defeat of the Battle of Lechfeld of 955, which led to a new political order in Western Europe centered on the Holy Roman Empire. The raids in to Byzantine territories continued throughout the 10th century, until the eventual Christianisation of the Magyars and the establishment of the Christian Kingdom of Hungary in 1000 or 1001. </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_HUNGARY_KALANDOZO_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_HUNGARY_KALANDOZO_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_HUNGARY_KALANDOZO_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_INCA_CHASQUI_CHAPTER_HISTORY_PARA_1"><Text>The Chasquis were the messengers of the Inca empire. Agile, highly trained and physically fit, they were in charge of carrying the quipus, messages and gifts up to 240 km per day through the chasquis relay system. Chasquis were not just messengers (those were young boys who were just used to pass along basic information), the chasquis were trained to be able to read and translate the quipus to each other and higher authorities. Not only were they used to transport oral messages, but they also helped the inspector general, the Sapa Inka's brother, keep track of the people in the empire. </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_INCA_CHASQUI_CHAPTER_HISTORY_PARA_2"><Text>Chasquis were dispatched along thousands of miles, taking advantage of the vast Inca system of purpose-built roads and rope bridges in the Andes of Peru and Ecuador. On the coast of what is now Peru their route ran from Nazca to Tumbes. Chasqui routes also extended into further reaches of the empire into parts of what are now Colombia, Bolivia, Argentina, and Chile. </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_INCA_CHASQUI_CHAPTER_HISTORY_PARA_3"><Text>Tambos, or relay stations, were used for the chasquis to stop at and transfer messages to the next chasqui. There were different sizes and levels of tambos and each one was assigned a different use. The use of the tambo depended on what route it was on and who was allowed to use it, but the majority of them were just to pass the messages along because there were other structures that the chasquis used for rest and shelter called chaskiwasis. Chasquis would start at one tambo and run to the next tambo where a rested chasqui was waiting to carry the message to the next tambo. </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_INCA_CHASQUI_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_INCA_CHASQUI_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_INDIAN_MUGHAL_SOWAR_CHAPTER_HISTORY_PARA_1"><Text>Sowar的意思是庫爾德語和波斯語的“騎兵”，最初是在莫臥兒時期的壹個軍籍。騎兵是莫臥兒軍隊的高級分支。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_INDIAN_MUGHAL_SOWAR_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_INDIAN_MUGHAL_SOWAR_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_INDIAN_MUGHAL_SOWAR_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_INDIAN_MUGHAL_SOWAR_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_INDIAN_SEPOY_CHAPTER_HISTORY_PARA_1"><Text>從前，壹名印度士兵被指定爲壹名士兵。“sepoy”這個詞來源于波斯語單詞sepahi，意思是在莫臥兒帝國的“步兵”。在最常見的應用中，印度土兵是在英國印度軍隊中使用的術語，早期在英國東印度公司使用，用于步兵私人。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_INDIAN_SEPOY_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_INDIAN_SEPOY_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_INDIAN_SEPOY_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_INDIAN_SEPOY_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_INDONESIAN_KRIS_SWORDSMAN_CHAPTER_HISTORY_PARA_1"><Text> 波刃是壹種長葉、不對稱的匕首或劍，具有獨特的波紋葉片，在印度尼西亞和馬來亞常見。這兩種武器和神秘的物品，都被印尼部落認爲是具有神奇力量的精華，壹些葉片帶來好運，另壹些則帶來壞運氣。印尼的kris是如此珍貴，祖傳的葉片代代相傳。在戰鬥中，壹個劍客可以攜帶多達三種:他自己的，壹個來自他的嶽父，壹個傳家寶。kris刀片的鍛造被限制在少數人的手中，這些熟練的金屬工人將不同的鐵礦石和隕星鎳層的葉片折疊了很多次，這壹過程可能需要數年時間才能完成。 </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_INDONESIAN_KRIS_SWORDSMAN_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_INDONESIAN_KRIS_SWORDSMAN_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_INDONESIAN_KRIS_SWORDSMAN_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_INDONESIAN_KRIS_SWORDSMAN_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_JANISSARY_CHAPTER_HISTORY_PARA_1"><Text>蘇丹親兵(意思是“新士兵”)是組成奧斯曼蘇丹家庭部隊和保镖的精英步兵部隊。兵團很可能是在Murad I(1362-89)統治期間成立的。他們開始是壹個精英的奴隸軍團，由年輕的基督教徒組成，並以嚴格的紀律和秩序鞏固了內部的凝聚力。與典型的奴隸不同，他們的工資是固定的。禁止結婚或從事貿易，他們對蘇丹的完全忠誠是預料之中的。到17世紀，由于奧斯曼帝國軍隊規模的急劇增加，軍隊最初嚴格的征兵政策已經放寬。平民爲了從被賦予的社會經濟地位中獲益而購買了他們的軍隊。因此，兵團逐漸失去了軍事性質，經曆了壹個被稱爲“文明”的過程。軍隊在1826年被蘇丹·馬哈茂德二世(Sultan Mahmud II)廢除，在這壹吉祥事件中，6000人或更多的人被處死。 </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_JANISSARY_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_JANISSARY_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_JAPANESE_SOHEI_CHAPTER_HISTORY_PARA_1"><Text> 僧兵(字面意思是“僧侶戰士”)是中世紀和封建日本的佛教武僧。在10世紀到17世紀期間，隨著天台宗的影響力的上升，僧兵的地位也隨之上升。兵馬俑保護了土地，威嚇了敵對的佛教學校，成爲佛教傳播的重要因素，也成爲了不同學校的發展。僧兵與歐洲的lay兄弟們有許多相似之處，他們是僧侶秩序的成員，他們可能不是被任命的。就像條頓騎士團，德國的武士僧侶，以及十字軍的命令，僧兵並不是作爲個人，甚至是小的，獨立的寺廟的成員，而是作爲壹個大的兄弟會或僧侶團的戰士。如果不是幾十個或100個小修道院、訓練大廳，以及與之相連的附屬寺廟，那麽，壹個僧兵修道院的聖殿可能已經有好幾個了。 </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_JAPANESE_SOHEI_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_JAPANESE_SOHEI_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_JAPANESE_SOHEI_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_JAPANESE_SOHEI_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_JAPANESE_YAMATO_CHAPTER_HISTORY_PARA_1"><Text> 大和級戰艦是日本帝國海軍(IJN)在二戰期間建造和操作的戰列艦。滿載72000噸(73000噸)的船只是有史以來最重型、最強大的戰艦。這艘潛艇配備了最大的壹艘軍艦，有9門460毫米(18.1英寸)的海軍炮，每壹艘能夠發射1枚360公斤(3000磅)炮彈，射程超過42公裏(26英裏)。兩艘戰列艦(大和號和武藏)完成，第三艘(Shinano)在建造過程中被轉換爲航空母艦。 </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_JAPANESE_YAMATO_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_JAPANESE_YAMATO_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_JAPANESE_YAMATO_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_JAPANESE_YAMATO_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_KHMER_WAR_CANOE_CHAPTER_HISTORY_PARA_1"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_KHMER_WAR_CANOE_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_KHMER_WAR_CANOE_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_KHMER_WAR_CANOE_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_KHMER_WAR_CANOE_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_KONGO_GARDE_REPUBLICAINE_CHAPTER_HISTORY_PARA_1"><Text>共和國衛隊是剛果民主共和國的軍事組成部分，是該國武裝力量的壹部分。這個警衛是在1960年宣布從比利時獨立出來並選舉共和國第壹任總統之後成立的。共和黨的主要任務是保護合法當選的總統和政府。同時也保護重要的政府官員和具有重要戰略意義的目標。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_KONGO_GARDE_REPUBLICAINE_CHAPTER_HISTORY_PARA_2"><Text> 盡管共和國衛隊地位顯赫，但他們經常不得不參加新共和國政治精英之間的自相殘殺戰爭。此外，他們還必須參加與總統的政治對手軍隊的血腥內戰。在獨立的幾十年裏，這個年輕的共和國成功地度過了三次政權更叠、盧旺達種族滅絕、兩波難民潮(圖西族和胡圖族部落)、數十次叛亂和兩場剛果戰爭。但是，盡管有種種困難，局勢的不穩定和領導人更叠後政治進程的不確定性，共和國衛隊宣誓效忠國家權力。在不同時期，共和黨衛隊的兵力從8000名到20,000名全副武裝的士兵。除了軍隊以外,分爲18旅的3500名士兵,有10000-15000名士兵在現代共和國衛隊,還有三個旅在警衛:第十在金沙薩(剛果共和國的首都),15日和16日在盧本巴希(共和國)的第二大城市。 </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_KONGO_GARDE_REPUBLICAINE_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_KONGO_GARDE_REPUBLICAINE_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_KONGO_GARDE_REPUBLICAINE_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_KONGO_MEDICINE_MAN_CHAPTER_HISTORY_PARA_1"><Text> 傳統的非洲醫學是壹種替代醫學的學科，涉及土著的草藥和非洲的靈性，通常包括占蔔者，助産士和草藥醫生。診斷是通過精神手段和治療，通常包括壹種草藥治療，被認爲不僅具有治療能力，而且具有象征意義和精神意義。傳統的非洲醫學認爲疾病不是偶然發生的，而是通過精神上或社會上的不平衡，與現代科學醫學有很大的不同，從技術上和分析上都是如此。在建立以科學爲基礎的醫學之前，傳統醫學是非洲數百萬人的主要醫療系統，但歐洲人的到來是這壹古老傳統和文化曆史上的壹個引人注目的轉折點。 </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_KONGO_MEDICINE_MAN_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_KONGO_MEDICINE_MAN_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_KONGO_MEDICINE_MAN_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_KONGO_MEDICINE_MAN_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_KOREAN_TURTLE_SHIP_CHAPTER_HISTORY_PARA_1"><Text> 在16世紀日本侵華期間，這些大型、裝甲戰艦在朝鮮的防衛戰中發揮了重要作用。這艘龜船通常以士兵和劃槳員的同等的贊美爲基礎，爲韓國海軍提供了壹艘攻擊型的近艦攻擊艦。爲了打擊敵人的恐懼，每艘海龜艦的船頭上都有壹個雕刻的龍雕像，據說它噴出了壹團硫磺味的煙霧來僞裝這艘船的方法。與當時帆船的設計不同，海龜船沒有上層甲板。這艘船的最高水平被鐵釘覆蓋，以防止登船，槳手和士兵被隔離在下面的甲板上。這艘“海龜艦”配備了多達24門大炮和其他小型抛射武器，是朝鮮敵人毫無准備的海軍的危險敵人。 </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_KOREAN_TURTLE_SHIP_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_KOREAN_TURTLE_SHIP_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_KOREAN_TURTLE_SHIP_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_KOREAN_TURTLE_SHIP_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MACEDONIAN_BALLISTA_CHAPTER_HISTORY_PARA_1"><Text>弩炮(拉丁語，來自希臘的ballistra)是壹種攻城武器。所有不是由木頭制成的部件都是在行李車上運輸的。如有必要，它將用當地木材組裝。壹些被安置在大型，裝甲，移動攻城塔，甚至在戰場的邊緣。盡管提供了所有的戰術優勢，但只有在馬其頓的菲利普二世和他的兒子亞曆山大的領導下，弩炮開始發展並獲得了攻城引擎和野戰炮的認可。 </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MACEDONIAN_PEZHETAIROS_CHAPTER_HISTORY_PARA_1"><Text> 夥伴步兵(單數:Pezhetairos)是馬其頓軍隊和繼業者王國的骨幹。他們是字面上的“夥伴”(希臘語中，pezos意爲“步兵”或“步兵”，而hetairos則意爲“同伴”或“朋友”)。馬其頓的方陣幾乎完全是由夥伴步兵組成的。夥伴步兵對敵軍騎兵和步兵都非常有效，因爲他們的長槍可以用來刺穿敵人的馬背，或者用更短的武器牽制敵軍步兵。 </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MACEDONIAN_PEZHETAIROS_CHAPTER_HISTORY_PARA_2"><Text> 在肺力二世統治時期，“庇哲塔萊”開始聲名鵲起，尤其是在公元前338年，他們在肺力的征服希臘的戰役中扮演了如此重要的角色。“徒步夥伴”這個名字是由著名的亞曆山大大帝，菲利普二世的繼承者，作爲壹種古老的征兵方法而使用的。通過將他的步兵標記爲他的個人“夥伴”和“朋友”，亞曆山大能夠爲他隨後的軍事行動建立更廣泛的人力基礎，因爲他個人步兵的位置將表示驕傲和榮譽。因此，正如亞曆山大在亞洲各地的競選活動壹樣，他可以利用他作爲傑出軍事戰略家的名聲，以及他的步兵的個人內涵，來招募更多的土著民族，而不是傳統的招募方法。這爲這位迅速發展的軍事領袖創造了壹個近乎無窮無盡的人力基礎，並允許他在諸如小亞細亞、埃及、波斯和印度等地區進行更長期、更昂貴的活動。 </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MACEDONIAN_PEZHETAIROS_CHAPTER_HISTORY_PARA_3"><Text> 他們裝備了薩裏沙長槍，這是壹種長柄長矛，由柔韌的山茱萸木制成，比傳統的重裝步兵的長矛要長得多。由于它的長度，方陣可以顯示大約5個人類檔案的矛尖;這使得方陣幾乎是無法穿透的，而可怕的是反對。從戰術上講，夥友步兵最好被用作強大的防線，而不是作爲突擊部隊。薩瑞薩的長度，使他們害怕敵人的反對，嚴重限制了他們的機動性;如果他們是在側翼或後方，他們幾乎沒有機會作出反應。尤其在公元前331年的高加米拉戰役,快速推進時引起的右翼違反之間開放的兩個營Pezhetairoi——敵人騎兵突破的力量,如果不是因爲缺乏紀律在自己的命令,和亞曆山大的將傳統的二線,從後方方陣可能被摧毀。 </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MALI_SOFA_CHAPTER_HISTORY_PARA_1"><Text>Sofa is a Mandinka term for slave soldiers who served in the army of the Mali Empire. Sofas would also fight, in varying capacities, in the armies of later Mandé states such as the Bamana and Wassoulou empires. The word sofa translates into English as "father of the horse" ("so" means horse, and "fa" means "father") or "guardian of the horse". This term stems from the original function of the sofa as a caretaker for the horse or horses of Mandinka cavalry commanders called "farari". </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MALI_SOFA_CHAPTER_HISTORY_PARA_2"><Text>Sofas make their first appearance in oral and written records during the formation of the Mali Empire. Sofas were recruited from "jonow" (slaves) captured in battle or bought from afar. They could be depended on in most instances for obedience, since their livelihood depended entirely on their master. The institution of slavery in the Mali Empire heavily rewarded loyalty, and jonow could rise to civil or military positions of prominence. Jonow became part of their master's clan, and were often freed after a certain number of years. As part of the clan, jonow were expected to accompany their master's into battle and handle his horse and weapons. Initially forbidden from engaging in direct warfare, sofa eventually made up the majority of Mali's infantry army. As infantry, they were armed with bows and arrows by the state or, more accurately, royal clans devoted to the state. </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MALI_SOFA_CHAPTER_HISTORY_PARA_3"><Text>In the forest and swampy areas of the Mali Empire, cavalry was minimized or altogether abandoned making sofas the exclusive instrument of war. Sofas were equipped with two quivers, and their bow was small by European standards. It could not fire very far or even powerfully, so sofas utilized deadly poisons and fired in arcs to give the arrows strength. Sofas also used flaming arrows, especially against fortifications that were often little more than thatch or wooden palisades. </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MALI_SOFA_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MALI_SOFA_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MAORI_TUPARA_CHAPTER_HISTORY_PARA_1"><Text>Maori often preferred the double-barreled tupara (two barrel), shotguns loaded with musket balls, as they could fire twice before reloading.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MAORI_TUPARA_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MAORI_TUPARA_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MAORI_TUPARA_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MAORI_TUPARA_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MAPUCHE_GUERILLA_CHAPTER_HISTORY_PARA_1"><Text> Namuntulinco的字面意思是“步兵”。在阿洛坎戰爭開始時，馬普切人沒有馬或火藥。然而，他們能夠反對對西班牙軍隊的非常成功的抵抗。馬普什重型步兵依靠長矛、長矛、斧頭和馬甲。輕裝步兵依靠弓箭手、彈弓、標槍、波利奧拉斯;這支箭最有效的武器是西班牙盾或護胸甲，它缺乏穿透能力，但可以使用的箭的數量和它們對西班牙身體的非裝甲部分造成的嚴重傷害，使弓箭手成爲強大的武器系統。 </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MAPUCHE_GUERILLA_CHAPTER_HISTORY_PARA_2"><Text>馬普切最初是徒步作戰，從小就接受訓練，在壹年的任何季節都能忍受各種地形的艱苦和長途跋涉。開始于六歲時，男孩被教導使用軍事武器。通過觀察他，男孩的戰士或父親將決定他最能勝任的武器，然後他將訓練成爲使用該武器的專家。大約在同壹時間，他在跑步、打獵和遊泳方面進行了有力的訓練。如果他沒有作戰能力的話，他就會被取消資格。 </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MAPUCHE_GUERILLA_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MAPUCHE_GUERILLA_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MAPUCHE_GUERILLA_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MAYAN_HOLKAN_CHAPTER_HISTORY_PARA_1"><Text>Warfare among the Mayans was a bloody and constant affair, serving both economic and religious purposes. Most leaders demanded tribute from conquered city-states in order to increase their own standing. Yet equally important was the capture of victims for sacrifice. This was the domain of the dreaded Holcan. Elite warriors armed with slingshots, stones and razor-sharp spears, the Holcans were trained specifically to capture enemies alive, to provide fodder for ever-hungry sacrificial altars. </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MAYAN_HOLKAN_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MAYAN_HOLKAN_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MAYAN_HOLKAN_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MAYAN_HOLKAN_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MONGOLIAN_HUI_HUI_PAO_CHAPTER_HISTORY_PARA_1"><Text> 直到1268年，蒙古人包圍了樊城和襄陽時，中國的曆史記錄中才出現了回回炮。在圍城和襄陽的包圍中，蒙古軍雖然圍困了宋軍多年，卻無法占領這些城市，卻引來了兩名波斯工程師，他們建造了壹種有環的平衡錘。這些引擎是由中國曆史學家“慧慧”(“慧輝”是指任何壹個穆斯林的俚語)所稱的，因爲他們是在那次戰鬥中第壹次遭遇到的。在Aju要求蒙古帝國的皇帝忽必烈的幫助下，來自伊拉克的伊爾汗國的強大的攻城機器，來自伊拉克的亦思馬因和阿老瓦丁到達了中國南方，建造了壹種新型的投石機。這些波斯工程師爲圍城建造了馬戈瑞斯和特雷布契。中國和穆斯林工程師爲蒙古軍隊開炮和攻城。這壹設計是由旭烈兀使用的，用來擊毀巴格達的城牆。中國是牽引式投石器的發明者，但現在他們在蒙古軍隊中面對著穆斯林設計的回回炮。中國的回應是建立起自己的抛石機。 </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MONGOLIAN_HUI_HUI_PAO_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MONGOLIAN_HUI_HUI_PAO_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MONGOLIAN_HUI_HUI_PAO_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MONGOLIAN_HUI_HUI_PAO_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_NORWEGIAN_HIRDMAN_CHAPTER_HISTORY_PARA_1"><Text> 挪威曆史上的hird最初是壹個非正式的私人武裝夥伴，hirdmen或housecarls，但它不僅意味著皇家軍隊的核心(“警衛”)，而且還發展成爲壹個更正式的王室家庭。當挪威皇家hird已經發展成爲壹個正式的法庭,hirdman成爲最高的四個等級的標題,那些被允許坐在巨頭皇家委員會(最接近封建相當于內閣),因此在政府和其他重要事項。 </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_NORWEGIAN_HIRDMAN_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_NORWEGIAN_HIRDMAN_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_NORWEGIAN_HIRDMAN_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_NORWEGIAN_HIRDMAN_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_NORWEGIAN_ULFHEDNAR_CHAPTER_HISTORY_PARA_1"><Text>Ulfhednar被壹群維京勇士起源于古代挪威人宗教儀式(首席維京最有可能涉及奧丁神被維京人最崇敬的,有兩個巨大的狼當寵物,被壹個巨大的狼,是注定要被吞下去在世界毀滅之戰)。Ulfhednar穿著狼皮，他們自己的皮膚是黑死的。這些嚎叫的心理變態，在行爲和凶殘上都像狼壹樣，在後來的歐洲狼人民間傳說中受到了啓發。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_NORWEGIAN_ULFHEDNAR_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_NORWEGIAN_ULFHEDNAR_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_NORWEGIAN_ULFHEDNAR_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_NORWEGIAN_ULFHEDNAR_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_NUBIAN_AFRICAN_FOREST_ELEPHANT_CHAPTER_HISTORY_PARA_1"><Text>有強有力的考古證據表明，非洲森林象是在努比亞期間被用來作爲戰爭的武器。在戰爭中使用大象作爲壹種古代的坦克，在希臘化時期廣泛傳播。只要考慮壹下漢尼拔和他的大象或者亞曆山大大帝在印度的大門上的偉大戰鬥。漢尼拔使用非洲森林象(拉克斯齒龍)，而亞曆山大，在他之前，求助于亞洲象(Elephas maximus)。從大象在毛派藝術中被描繪的方式來看，除了在19世紀拍攝的蘇丹象的照片外，可以推斷出該地區的大象屬于短腿森林品種。 </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_NUBIAN_AFRICAN_FOREST_ELEPHANT_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_NUBIAN_AFRICAN_FOREST_ELEPHANT_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_NUBIAN_AFRICAN_FOREST_ELEPHANT_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_NUBIAN_AFRICAN_FOREST_ELEPHANT_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_OTTOMAN_SIPAHI_CHAPTER_HISTORY_PARA_1"><Text>The Sipahi were the lancers of the Ottoman Empire. Founded during the reign of Murad I (ruled 1362 – 1389), the sipahi were drawn from the ethnic Turk landed gentry. They were extremely highly motivated and loyal fighters and were the sultan's personal bodyguard. The sipahi were great rivals of the Janissaries (another special Ottoman unit), who were drawn from both Turkish and non-Turkish soldiers. In fact the sipahi enthusiastically assisted in the violent disbandment of the Janissaries in 1826, following an unsuccessful revolt by the latter group. </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_OTTOMAN_SIPAHI_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_OTTOMAN_SIPAHI_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_OTTOMAN_SIPAHI_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_OTTOMAN_SIPAHI_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_PERSIAN_CATAPHRACT_CHAPTER_HISTORY_PARA_1"><Text> “甲胄騎兵”是西方歐亞大陸和歐亞大草原上的壹些民族在古代戰爭中使用的壹種裝甲重騎兵。從曆史上看，這是壹名全副武裝的騎士，騎手和駿馬從頭到腳都裹著鱗甲，而通常使用的是kontos或lance作爲他們的武器。在壹個特定的時代(例如伊朗高原)，重型裝甲騎兵的演變並不是孤立的，而是在中亞的不同地區(特別是在絲綢之路上的人民中)和在大伊朗境內同時發展起來的。亞述和Khwarezm地區在公元前壹千年的發展中也很重要。浮雕古代遺迹的發現Nimrud(古代亞述城由王服事我在公元前13世紀)的最早描寫騎士穿plated-mail襯衫由金屬鱗片,想必部署爲亞述人提供戰術優勢未安裝弓箭手的遊牧民族的敵人,主要是亞蘭,Mushki,北阿拉伯部落和巴比倫人。Tiglath-Pileser III(公元前745-727)期間，新亞述帝國形成並達到其軍事高峰，據信是亞述王國組成的第壹個環境，在這壹背景下，亞述王國形成了類似于“cataphract”式的騎兵的粗糙團。即使只裝備了長矛，這些早期的騎兵也能有效地裝備騎兵，但在Sennacherib(公元前707-681年)的弓箭下，他們最終能夠進行遠程和肉搏戰，在公元前1世紀時，帕提亞帝國的雙重目標召喚者的發展。 </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_PERSIAN_CATAPHRACT_CHAPTER_HISTORY_PARA_2"><Text> 考古發掘也表明，到公元前6世紀，伊朗人民居住在Khwarezm地區和鹹海盆地，如Massagetae、Dahae和Saka，也進行了類似的試驗。雖然這些原型的攻擊性武器與亞述人相同，但他們的不同之處在于，馬的頭部和側翼都受到盔甲的保護。這壹發展是否受到亞述人的影響，如Rubin的假定，或阿契曼尼德帝國，或他們是否自發地，與古代近東的重裝裝甲部隊的進步完全無關，這些遊牧民族留下的考古記錄無法辨認。這些早期的重型騎兵在歐亞大陸西部的進壹步演化還不完全清楚。在公元前4世紀，在北方黑海地區出現了大量騎在大型馬甲上的騎兵，特別是那些依靠輕型弓騎兵的斯基提亞人，被薩爾馬特人所取代。到公元前3世紀，輕騎兵部隊在大多數東部軍隊中被使用，但仍然只有“在東方或西方相對較少的國家試圖模仿亞述人和Chorasmian的實驗，並使用了甲胄騎兵”。 </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_PERSIAN_CATAPHRACT_CHAPTER_HISTORY_PARA_3"><Text>希臘人在公元前5世紀的希臘-波斯戰爭中，第壹次遇到了阿契美尼德帝國。愛奧尼亞起義，壹場反抗波斯統治的起義，在第壹次波斯入侵希臘的時候，很有可能是第壹次西方的Cataphract騎兵，以及壹般的重型騎兵。這個“Cataphract”被塞琉西帝國(Seleucid Empire)廣泛采用，亞曆山大大帝的王國在公元前323年死後征服了波斯和小亞細亞。公元前147年，帕提亞人從東部最後的塞琉西王國手中奪取了他們的波斯王國的控制權，他們也因依靠在戰鬥中使用的貓和騎兵而聞名。 </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_PERSIAN_WARSHIP_CHAPTER_HISTORY_PARA_1"><Text> 波斯帝國自成立以來，主要是壹個擁有強大軍隊的陸地帝國，但沒有任何真正的海軍力量。到了公元前5世紀，這壹切都發生了變化，因爲帝國出現了希臘和埃及的軍隊，每個人都有自己的航海傳統和能力。大流士大帝(大流士壹世)將被認爲是第壹個投資波斯艦隊的achemenid國王。即使到那時，也沒有真正的“帝國海軍”存在于希臘或埃及。波斯將成爲第壹個帝國，在大流士的統治下，開創和部署第壹個正規的帝國海軍。盡管取得了這壹成就，帝國海軍的人員並不是來自伊朗，而是經常是肺尼基人(大部分來自西頓)，由大流士選擇的埃及人和希臘人來經營帝國的戰鬥艦艇。 </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_PERSIAN_WARSHIP_CHAPTER_HISTORY_PARA_2"><Text> 起初，這些船是由肺尼基人建造在西頓的;第壹艘阿契美尼德艦長約40米，寬6米，能在任何壹次航行中運送多達300名波斯軍隊。很快，帝國的其他國家也在建造自己的船只，每艘船都有輕微的地方偏好。船只最終找到了通往波斯灣的路。波斯海軍爲波斯灣的強大的波斯海上力量奠定了基礎。波斯人不僅駐紮在波斯灣的島嶼上，而且還經常有100到200人的船只在帝國的各種河流中巡邏，包括在西部的卡隆、卡倫、底格裏斯河和尼羅河，以及印度河。 </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_PERSIAN_WARSHIP_CHAPTER_HISTORY_PARA_3"><Text> 阿契美尼德海軍建立了位于Karun，巴林，阿曼和也門的基地。波斯艦隊不僅被用于維持和平目的，而且還打開了通過波斯灣與印度進行貿易的大門。大流士的海軍在許多方面是壹個世界強國,但它將亞達薛西公元前二世在397年的夏天誰將建立壹個強大的海軍,作爲重整軍備的壹部分,這將導致他的決定性勝利Knidos公元前394年,重建愛奧尼亞阿。Artaxerxes II也會利用他的海軍來平息埃及的叛亂。 </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_PERSIAN_WARSHIP_CHAPTER_HISTORY_PARA_4"><Text>選擇的建築材料是木頭，但是壹些裝甲的阿契美尼德艦只的前部有金屬的葉片，這通常意味著用船的動量來切割敵人的船只。海軍艦艇也裝備有吊鈎來奪取敵船，或談判他們的位置。這些船是由風帆或人力推動的。波斯人創造的船只是獨壹無二的。在海上交戰中，艦艇上裝備了兩艘將發射炮彈，如石頭或易燃物。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_PERSIAN_WARSHIP_CHAPTER_HISTORY_PARA_5"><Text> 色諾芬描述了他親眼目睹的壹個巨大的軍事橋梁，它是通過連接在底格裏斯河上的37艘波斯船只而建造的。波斯人利用每艘船的浮力，以支撐壹個連接在上面的連接橋，供其運輸。希羅多德也提出了許多波斯人利用船只建造橋梁的說法。達流士大帝爲了征服黑海北部的斯基提亞人，在博斯普魯斯海峽渡過，用壹座巨大的橋梁連接了阿切曼尼號的船只，然後向多瑙河進發，通過第二艘船橋渡過了它。博斯普魯斯海峽大橋連接了亞洲到歐洲的最近的尖端，至少有1000米的開闊水域。希羅多德描述了這壹奇觀，並稱之爲“大流士之橋”。 </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_PHOENICIA_NUMIDIAN_CAVALRY_CHAPTER_HISTORY_PARA_1"><Text>Numidia was a Berber kingdom located in northern Africa to the west of Carthage. Originally nomadic tribesmen and well-versed in horsemanship, the Numidians were most famous for their cavalry, which was considered to be among the finest in the ancient world. These warriors were lightly-armed - riding on swift horses equipped with nothing more than a small shield and a fistful of javelins - but very tough customers nonetheless. Even after settling down in cities, the Numidians remained enamored with the horse warriors - the Numidians did eventually produce infantry, but it was always regarded as unreliable and substantially inferior to the cavalry. </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_PHOENICIA_NUMIDIAN_CAVALRY_CHAPTER_HISTORY_PARA_2"><Text>Numidian cavalry specialized in hit-and-run attacks, making excellent use of their javelins to harass and break up enemy formations. They were never intended to close with the enemy and fight hand-to-hand. Roman commanders were initially skeptical of the threat posed by such lightly armed cavalry, but they soon learned of the danger caused by a force that constantly would attack, retreat and regroup, and then attack again, always remaining out of range of melee weapons. Ancient authors compare the Numidian cavalry to a pack of dogs, because of the way that they savaged the flanks and rear of enemy formations. It required strict discipline for opposing infantry not to break ranks when they came under attack from Numidian cavalry, but in time the Romans learned from their mistakes and became more adept at combating them. </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_PHOENICIA_NUMIDIAN_CAVALRY_CHAPTER_HISTORY_PARA_3"><Text>Numidian cavalry was not the fastest, but since the riders wore no armor, they were nimbler than the opposition of the day and able to traverse terrain too difficult for heavier cavalry. Numidian cavalry is most famous for serving in Hannibal's cavalry wing during the Second Punic War. However, they were also employed by the Romans as mercenaries as well. Julius Caesar deployed Numidians during his campaigns - and also fought against them during the Roman Civil War. In short, Numidian cavalry was highly prized and among the best light cavalry in the ancient world. </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_PHOENICIA_NUMIDIAN_CAVALRY_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_PHOENICIA_NUMIDIAN_CAVALRY_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_POLISH_CHOSEN_INFANTRY_CHAPTER_HISTORY_PARA_1"><Text>特選步兵也稱爲piechotałanowa(łan步兵)是壹種步兵在波蘭立陶宛聯邦形成。成立于1578年。由“皇家”農民組成(每20人中有壹人)，不受指控(不經常留置權，等等)和皇家領地。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_POLISH_CHOSEN_INFANTRY_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_POLISH_CHOSEN_INFANTRY_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_POLISH_UHLAN_CHAPTER_HISTORY_PARA_1"><Text>烏蘭是波蘭輕騎兵，裝備長矛、軍刀和手槍。這個頭銜後來被俄國、普魯士和奧地利軍隊使用。Uhlans通常穿著壹件雙排扣的夾克(kurtka)，前面有壹個彩色的面板(plastron)，有壹個彩色的飾帶，還有壹個方形的波蘭lancer cap (rogatywka，也叫czapka)。這頂帽子或騎兵頭盔源自傳統的波蘭帽設計，更正式，更適合軍事用途。他們的騎槍通常有小的，燕尾旗(被稱爲lance pennon)，就在矛頭下方。 </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_POLISH_UHLAN_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_POLISH_UHLAN_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ROMAN_EQUITE_CHAPTER_HISTORY_PARA_1"><Text> 從貴族和貴族階級的羅馬社會中招募來的騎士，是皇家和早期共和羅馬軍隊的騎兵。要成爲馬術班的壹員，就意味著壹個人足夠富有來養壹匹馬，並提供他自己的盔甲、盾牌和長矛。在每壹個共和軍團中，通常有大約300個相等的人，在三個人的指揮下，每個人都有10個馬兵。其中壹個人就是空軍中隊的指揮官。這些人大多來自精英社會的年輕兒子，他們渴望展現自己的勇氣。在戰場上展示實力是邁向獲得政治職位和爲其家人樹立威信的重要壹步。諸如巡查或偵察之類的普通職責，將會是羅馬人所收集的意大利盟友們的非凡之舉。在Samnite和Punic Wars期間，equites的等級向壹等平民開放。雖然他們沒有得到馬術的社會和政治權力，但他們最終在羅馬騎兵的隊伍中取代了貴族，使得馬術師成爲了新的Marian軍團的高級軍官。 </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ROMAN_EQUITE_CHAPTER_HISTORY_PARA_2"><Text> 從最早的時期到整個民國時期，羅馬人都以羅馬騎兵的身份認同了個人英雄主義和榮耀的精神。這是出于想要證明他們的特權地位是爲了向下層階級提供的，他們提供了步兵等級，增強了他們家族的名聲，並增加了他們在軍事社會中隨後的政治進步的機會。對于equites來說，英雄主義精神的壹個焦點是對斯波利亞·軍國主義的追求，這是他們在壹次戰鬥中犧牲的敵人的脫衣盔甲和武器。 </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ROMAN_EQUITE_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ROMAN_EQUITE_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ROMAN_EQUITE_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ROMAN_ONAGER_CHAPTER_HISTORY_PARA_1"><Text> 野驢投石車是壹種羅馬攻城引擎，它是壹種使用扭力的彈弓，通常是用扭曲的繩子來儲存能量。弩炮由壹個放在地上的大框架組成，它的前端是固定的實木的垂直框架。壹個垂直的輻條穿過壹個綁在框架上的繩子，上面有壹個彈弓，裏面裝著壹個彈丸。爲了撲滅它，說話者或手臂被壓下來，用絞盤繩或其他彈簧壓住，然後突然松開。當彈弓向外擺動時，壹端將會釋放，就像壹個工作人員吊索壹樣，彈丸將被向前抛。然後，手臂就會被壹個填充的橫梁或床抓住，當它再次被絞死的時候。 </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ROMAN_ONAGER_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ROMAN_ONAGER_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ROMAN_ONAGER_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ROMAN_ONAGER_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_RUSSIAN_DRUZHINA_CHAPTER_HISTORY_PARA_1"><Text>早在親衛隊騎手幫助王子管理他的公國構成該地區的軍事力量。在俄羅斯親衛騎兵壹親衛隊騎手第壹成員則爲諸侯，建立了控制在九世紀。很快，當地的斯拉夫貴族成員以及其他各民族親衛隊騎手。隨時間變化的親衛隊騎手存活在壹種或另壹種形式直到十六世紀。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_RUSSIAN_DRUZHINA_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_RUSSIAN_DRUZHINA_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_RUSSIAN_DRUZHINA_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_RUSSIAN_DRUZHINA_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_RUSSIAN_T34_CHAPTER_HISTORY_PARA_1"><Text> T-34是蘇聯中型坦克，對坦克設計領域有著深遠的影響。盡管它的裝甲和武器在戰爭後期被超越，但它經常被認爲是第二次世界大戰最有效、最有效和最有影響力的坦克設計。在它的介紹中，T-34擁有前所未有的火力、機動性、保護和堅固性的結合。它的76.2毫米(3英寸)高速度坦克炮提供了比它的任何壹個同時代人強大的火力;它沈重的傾斜裝甲很難被大多數當代反坦克武器穿透。1941年第壹次遭遇時，德國坦克將軍馮·克萊斯特(von Kleist)稱其爲“世界上最好的坦克”，海因茨·古德裏安(Heinz Guderian)證實了T-34的“巨大優勢”，超越了當時的德國裝甲。 </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_RUSSIAN_T34_CHAPTER_HISTORY_PARA_2"><Text>在第二次世界大戰期間，T-34是蘇聯裝甲部隊的中流砥柱。它的設計允許它不斷地改進，以滿足東線不斷變化的需求:隨著戰爭的進行，它變得更有能力，但生産也更快更便宜。蘇聯工業最終將生産超過8萬t -34的所有變種，盡管在與德國國防軍的戰鬥中損失了數千人，但隨著戰爭的進展，越來越多的數字將被部署到戰場上。在紅軍服役中，它取代了許多輕型和中型坦克，它是戰爭中産量最多的坦克，也是有史以來第二大生産坦克(在它的繼任者T-54/55系列之後)。它的進化發展直接導致了T-54/55系列坦克，從那裏到T-62、T-72和T-90坦克，以及壹些基于T-55的中國坦克，即使在今天，也構成了許多軍隊的脊梁。T-34型在第二次世界大戰後廣泛出口，直到1996年仍在至少27個國家服役。 </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_RUSSIAN_T34_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_RUSSIAN_T34_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_RUSSIAN_T34_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SCOTTISH_GALLOWGLASS_CHAPTER_HISTORY_PARA_1"><Text>加羅韋斧兵是壹群精英雇傭兵，他們主要是13世紀中期到16世紀晚期的蘇格蘭北部蓋爾族的成員。作爲蘇格蘭人，他們是蓋爾人，與愛爾蘭人有著共同的背景和語言，但由于他們與10世紀蘇格蘭西部的北歐定居者通婚，愛爾蘭人稱他們爲Gall Gaeil(“外國蓋爾人”)。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SCOTTISH_GALLOWGLASS_CHAPTER_HISTORY_PARA_2"><Text> 在蘇格蘭，由于蘇格蘭獨立戰爭中選擇了錯誤的壹方而被剝奪了在蘇格蘭土地上的權利，大量的法國人在愛爾蘭定居下來。壹個早期的加洛威斯家族是麥克斯威尼家族，由北多尼哥的奧唐納家族定居下來。接下來是馬克唐納爾斯,麥卡貝斯和其他幾個由強大的愛爾蘭貴族在不同地區定居的團體。作爲壹名全副武裝的、訓練有素的貴族步兵，加洛維眼鏡作爲壹種強大的防禦力量，可以作爲壹種強有力的防禦手段，不像大多數愛爾蘭步兵，他們比典型的愛爾蘭貴族騎兵更低，盔甲也更弱。隨著時間的推移，出現了許多土生土長的愛爾蘭人的gallow眼鏡，這個詞的意思是壹種戰士，而不是壹種民族名稱。 </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SCOTTISH_GALLOWGLASS_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SCOTTISH_GALLOWGLASS_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SCOTTISH_GALLOWGLASS_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SCYTHIAN_AMAZON_CHAPTER_HISTORY_PARA_1"><Text> 亞馬遜女戰士是斯基提亞的女性，她們曾在希臘神話中作爲壹群女性戰士而戰，並被神話化。希羅多德報告說，他們與斯基提亞人有關，並把他們安置在薩爾馬提亞(烏克蘭的現代領土)與塞西亞接壤的地區。其他曆史學家把他們安置在安納托利亞，有時甚至是利比亞。在整個羅馬帝國時期和晚期，亞馬遜人都與許多曆史人物聯系在壹起。據說亞馬遜建立了幾個城市和寺廟。根據傳說，亞馬遜人還發明了騎兵。從近代開始，他們的名字就成爲了壹般女性戰士的稱謂。 </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SCYTHIAN_AMAZON_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SCYTHIAN_AMAZON_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SCYTHIAN_AMAZON_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SCYTHIAN_AMAZON_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SCYTHIAN_AMAZON_SCOUT_CHAPTER_HISTORY_PARA_1"><Text> 亞馬遜女戰士是斯基提亞的女性，她們曾在希臘神話中作爲壹群女性戰士而戰，並被神話化。希羅多德報告說，他們與斯基提亞人有關，並把他們安置在薩爾馬提亞(烏克蘭的現代領土)與塞西亞接壤的地區。其他曆史學家把他們安置在安納托利亞，有時甚至是利比亞。在整個羅馬帝國時期和晚期，亞馬遜人都與許多曆史人物聯系在壹起。據說亞馬遜建立了幾個城市和寺廟。根據傳說，亞馬遜人還發明了騎兵。從近代開始，他們的名字就成爲了壹般女性戰士的稱謂。 </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SCYTHIAN_AMAZON_SCOUT_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SCYTHIAN_AMAZON_SCOUT_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SCYTHIAN_AMAZON_SCOUT_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SCYTHIAN_AMAZON_SCOUT_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SPANISH_JINETE_CHAPTER_HISTORY_PARA_1"><Text> 亞馬遜女戰士是斯基提亞的女性，她們曾在希臘神話中作爲壹群女性戰士而戰，並被神話化。希羅多德報告說，他們與斯基提亞人有關，並把他們安置在薩爾馬提亞(烏克蘭的現代領土)與塞西亞接壤的地區。其他曆史學家把他們安置在安納托利亞，有時甚至是利比亞。在整個羅馬帝國時期和晚期，亞馬遜人都與許多曆史人物聯系在壹起。據說亞馬遜建立了幾個城市和寺廟。根據傳說，亞馬遜人還發明了騎兵。從近代開始，他們的名字就成爲了壹般女性戰士的稱謂。 </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SPANISH_JINETE_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SPANISH_JINETE_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SPANISH_JINETE_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SPANISH_JINETE_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SPANISH_TERCIO_CHAPTER_HISTORY_PARA_1"><Text> 大方陣(西班牙語爲“第三”)是壹個西班牙步兵組織，在哈布斯堡王朝統治歐洲的早期現代時期。西班牙方陣是壹個管理部門，擁有多達3000名士兵，最初分爲10個，後來有12個公司，由皮科曼、劍士、火槍手或火槍手組成。這些公司部署在戰鬥中，並進壹步細分爲30名士兵。這些較小的單位可以單獨部署，或者聯合起來形成有時被稱爲西班牙方塊的東西。這些強大的步兵廣場也被其他歐洲國家，尤其是神聖羅馬帝國的帝國軍隊所使用。 </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SPANISH_TERCIO_CHAPTER_HISTORY_PARA_2"><Text>注意維持大量的“老兵”(老兵)單位,和他們的專業培訓,結合特定的人格印在他們的驕傲的貴族紳士可以培養他們,使方陣上場的壹個半世紀在歐洲最好的步兵。此外，西班牙方陣是第壹個有效地混合長矛和火器的。Tercio公司在16世紀和17世紀上半葉主導歐洲戰場，被曆史學家視爲早期現代聯合武器戰爭的主要發展。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SPANISH_TERCIO_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SPANISH_TERCIO_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SPANISH_TERCIO_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SUMERIAN_PHALANX_CHAPTER_HISTORY_PARA_1"><Text>蘇美爾人是最早使用方陣的文明之壹，在那裏，壹群手持大盾牌和長矛的士兵組成了壹個密集的隊伍，他們能夠互相保護，不受攻擊，同時也能像壹個人壹樣移動，擊退敵人。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SUMERIAN_PHALANX_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SUMERIAN_PHALANX_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SUMERIAN_PHALANX_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SUMERIAN_PHALANX_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SWEDEN_HAKKAPELIITTA_CHAPTER_HISTORY_PARA_1"><Text>The snowy North is their fatherland; there, their heart crackles on the stormy beach. The Hakkapeliitta were a division of Finnish light cavalrymen employed by King Gustavus Adolphus of Sweden during the Thirty Years' War. They were highly trained, and excelled at raiding, spying, lightning-quick attacks, and most especially, charging. Attacking at full gallop, the Hakkapeliitta would fire pistol shots as they approached the enemy lines, drawing their sword once the horse made contact. The small, sturdy, and powerful horses ridden in the Hakkapeliitta were some of the founding members the modern Finnhorse breed, the national horse of Finland. </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SWEDEN_HAKKAPELIITTA_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SWEDEN_HAKKAPELIITTA_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SWEDEN_HAKKAPELIITTA_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SWEDEN_HAKKAPELIITTA_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ZULU_ASSEGAI_CHAPTER_HISTORY_PARA_1"><Text>阿塞蓋是壹種用于投擲的杆件，通常是由木頭制成的輕型長矛或標槍，並帶有鐵或火硬化的尖端。使用各種各樣的資産，在整個非洲都很普遍，這是在使用火器之前最常用的武器。南非的祖魯族人和其他恩古尼部落以他們使用阿塞蓋而聞名。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ZULU_ASSEGAI_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ZULU_ASSEGAI_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ZULU_ASSEGAI_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ZULU_ASSEGAI_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_AMERICAN_AH64_APACHE_DESCRIPTION"><Text>美國原子能時代特色輕騎兵單位，對抗重騎兵單位+10戰鬥力[ICON_Strength]。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_AMERICAN_AH64_APACHE_NAME"><Text>阿帕奇武裝直升機</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_AMERICAN_MINUTEMAN_DESCRIPTION"><Text>美國工業時代特色近戰單位，替換火槍手。略弱，但訓練更便宜維護費更低，唯壹領土大陸附近作戰時+5戰鬥力[ICON_Strength]。同時位于森林和雨林時給予額外+5 戰鬥力[ICON_Strength]。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_AMERICAN_MINUTEMAN_NAME"><Text>即召民兵</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_ARABIAN_CAMEL_ARCHER_DESCRIPTION"><Text>阿拉伯古典時期特色弓騎兵單位，位于沙漠和平原作戰時+8額外攻擊力[ICON_Strength]。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_ARABIAN_CAMEL_ARCHER_NAME"><Text>駱駝弓手</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_ARABIAN_GHAZI_DESCRIPTION"><Text>阿拉伯中世紀特色近戰單位，替換長劍士。對抗異教徒+5戰鬥力[ICON_Strength]。獲取等同于50%被擊殺敵軍戰鬥力[ICON_Strength]的[ICON_Faith]信仰值。 下城即轉換城市信仰。可以通過信仰值購買。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_ARABIAN_GHAZI_NAME"><Text>衛教軍</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_AUSTRALIAN_SASR_DESCRIPTION"><Text>澳大利亞信息化時期特色近戰單位，替換機械化步兵，忽略區域控制，位于沙漠和平原作戰時+5戰鬥力[ICON_Strength]。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_AUSTRALIAN_SASR_NAME"><Text>特別空勤團</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_AZTEC_JAGUAR_DESCRIPTION"><Text>阿茲特克古典時期特色近戰單位，替換劍士。攻擊時+10戰鬥力[ICON_Strength]但防禦時-5戰鬥力[ICON_Strength]。可將俘虜轉爲建造者。忽略森林和雨林地格的移動懲罰。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_AZTEC_JAGUAR_NAME"><Text>美洲虎戰士</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_AZTEC_WARRIOR_PRIEST_DESCRIPTION"><Text>阿茲特克特色志願的那位，通過神秘主義市政解鎖。可通過信仰值購買，與除騎兵外的陸地單位相鄰時使其忽略戰鬥懲罰並在擊殺單位時獲得大將軍點數。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_AZTEC_WARRIOR_PRIEST_NAME"><Text>戰鬥祭司</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_BRAZILIAN_BANDEIRANTE_DESCRIPTION"><Text>巴西文藝複興時期特色偵查單位，替換遊騎兵。能更早通過火藥解鎖，並可建造堡壘。擊殺單位獲取等同于其25%戰鬥力的金幣[ICON_Gold]和文化值[ICON_Culture]。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_BRAZILIAN_BANDEIRANTE_NAME"><Text>執旗者</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_BRAZILIAN_FATHERLAND_VOLUNTEER_DESCRIPTION"><Text>巴西工業時代特色近戰單位，替換線列步兵。較之便宜且無需太多維護費。位于首都所在大陸作戰時+5戰鬥力[ICON_Strength]。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_BRAZILIAN_FATHERLAND_VOLUNTEER_NAME"><Text>衛國義勇軍</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_CANADA_HMCS_HAIDA_DESCRIPTION"><Text>Canadian unique Atomic Era Naval Melee unit that replaces the Destroyer. +10 [ICON_Strength] versus Naval Raider class units. + [ICON_Strength] when in formation. Prevents friendly Traders within 4 tiles from being plundered as long as they are on a water tile. </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_CANADA_HMCS_HAIDA_NAME"><Text>HMCS Haida</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_CHINESE_CHOKONU_DESCRIPTION"><Text>中國中世紀特色遠程單位，替換弓箭手。比弩兵略弱，但每回合可以攻擊兩次。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_CHINESE_CHOKONU_NAME"><Text>諸葛弩手</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_CHINESE_SHIGONG_DESCRIPTION"><Text>中國特色支援單位，通過軍事市政解鎖。相鄰除騎兵外陸地單位時給予+5戰鬥力和更多戰鬥經驗。必須由兵營建造。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_CHINESE_SHIGONG_NAME"><Text>軍師</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_COLOMBIAN_BRITISH_LEGION_DESCRIPTION"><Text>Colombian unique Industrial Melee unit. Fights at full Combat Strength when damaged while on Hills. +5 [ICON_Strength] when attacking Ranged units.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_COLOMBIAN_BRITISH_LEGION_NAME"><Text>Legión Británica</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_CREE_OTEHTAPIW_DESCRIPTION"><Text>克裏工業時代特色輕騎兵單位，替換近代騎兵。位于平坦地形時給予+2移動力。位于平原和草原時每回合+15治愈並+10戰鬥力[ICON_Strength]。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_CREE_OTEHTAPIW_NAME"><Text>平原部落騎兵</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_DUTCH_SCHUTTERIJ_DESCRIPTION"><Text>荷蘭文藝複興時期近戰單位，替換火槍手。只需壹般維護費。區域防禦時+10戰鬥力[ICON_Strength]。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_DUTCH_SCHUTTERIJ_NAME"><Text>守城射手</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_EGYPTIAN_HYKSOS_BOWMAN_DESCRIPTION"><Text>埃及古典時期特色遠程單位，強于並替換弓箭手。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_EGYPTIAN_HYKSOS_BOWMAN_NAME"><Text>希克索斯弓手</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_EGYPTIAN_KHOPESH_DESCRIPTION"><Text>埃及特色近戰單位。對抗受傷單位時+5戰鬥力[ICON_Strength]。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_EGYPTIAN_KHOPESH_NAME"><Text>彎刀戰士</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_EGYPTIAN_WAR_GALLEY_DESCRIPTION"><Text>埃及特色古典時期海軍單位。強于並替換四段帆船，擁有2射程。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_EGYPTIAN_WAR_GALLEY_NAME"><Text>四十槳帆船</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_ELEANOR_TEMPLAR_DESCRIPTION"><Text>Unique unit for Eleanor of Aquitaine. +5 [ICON_Strength] Combat Strength when opponent is another religion. +5 [ICON_Strength] within 4 tiles of any Holy Site District. </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_ELEANOR_TEMPLAR_NAME"><Text>Templar</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_ENGLISH_LONGBOWMAN_DESCRIPTION"><Text>英國中世紀時期特色遠程單位，替換弩手。對抗近戰和騎兵單位時+4戰鬥力[ICON_Strength]，與其他長弓手則兩兩相鄰時+4戰鬥力[ICON_Strength]。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_ENGLISH_LONGBOWMAN_NAME"><Text>長弓手</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_ENGLISH_SHIP_OF_THE_LINE_DESCRIPTION"><Text>English unique Renaissance era Naval Ranged unit replacing the Frigate. +7 [ICON_Strength] Combat Strength when adjacent to another Ship of the Line.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_ENGLISH_SHIP_OF_THE_LINE_NAME"><Text>Ship of the Line</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_FRENCH_GENDARME_DESCRIPTION"><Text>法國中世紀特色重騎兵單位，替換騎士。進攻時+5戰鬥力[ICON_Strength]。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_FRENCH_GENDARME_NAME"><Text>憲騎士</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_FRENCH_MARINE_DESCRIPTION"><Text>法國文藝複興時期特色近戰單位，替換火槍手。位于外國大陸作戰時+5戰鬥力[ICON_Strength]。兩棲作戰-當從海上或跨河攻擊時沒有戰鬥懲罰。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_FRENCH_MARINE_NAME"><Text>海軍陸戰隊</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_GEORGIAN_TADZREULI_DESCRIPTION"><Text>格魯吉亞中世紀特色重騎兵單位，替換騎士。與異教徒作戰時+5戰鬥力[ICON_Strength]。獲取等同于擊殺單位50%戰鬥力的信仰值[ICON_Faith]。下城即轉換城市宗教。可通過信仰值購買。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_GEORGIAN_TADZREULI_NAME"><Text>塔茲盧利槍騎兵</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_GERMAN_LANDSKNECHT_DESCRIPTION"><Text>德國中世紀特色反騎兵單位，替換長矛兵。 金幣購買只需長矛兵壹般費用。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_GERMAN_LANDSKNECHT_NAME"><Text>自由傭兵</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_GERMAN_PANZER_DESCRIPTION"><Text>德國特色坦克，進攻時+5戰鬥力[ICON_Strength]。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_GERMAN_PANZER_NAME"><Text>虎式坦克</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_GREEK_ARMATOLOS_DESCRIPTION"><Text>希臘文藝複興時期特色近戰單位，替換火槍手。位于丘陵地行時+5戰鬥力[ICON_Strength]並忽略丘陵移動懲罰。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_GREEK_ARMATOLOS_NAME"><Text>警備糾察隊</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_GREEK_PELTAST_DESCRIPTION"><Text>希臘古典時期特色遠程單位，替換弓箭手。防禦近戰單位時更強但攻擊範圍只有1。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_GREEK_PELTAST_NAME"><Text>輕盾步兵</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_HUNGARY_KALANDOZO_DESCRIPTION"><Text>Hungarian unique Medieval Era Ranged unit replacing the Crossbowman. Double gold from pillaging Districts and Improvements. Yields 50% of defeated units' [ICON_Strength] as [ICON_Gold] on combat victory. </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_HUNGARY_KALANDOZO_NAME"><Text>Kalandozó</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_INCA_CHASQUI_DESCRIPTION"><Text>Incan unique Ancient Era Recon unit replacing the Scout. +1 extra movement and can build roads.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_INCA_CHASQUI_NAME"><Text>Chasqui</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_INDIAN_MUGHAL_SOWAR_DESCRIPTION"><Text>印度中世紀特色重騎兵單位，替換騎士，忽略地形懲罰。相鄰梯井時每回合+15治愈。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_INDIAN_MUGHAL_SOWAR_NAME"><Text>莫臥兒重騎兵</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_INDIAN_SEPOY_DESCRIPTION"><Text>印度工業時期特色近戰單位，替換線列步兵。受傷沒有戰鬥損益。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_INDIAN_SEPOY_NAME"><Text>印度土兵</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_INDONESIAN_KRIS_SWORDSMAN_DESCRIPTION"><Text>印尼特色陸地單位，使用武僧的升級樹。可通過信仰值購買。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_INDONESIAN_KRIS_SWORDSMAN_NAME"><Text>波刃武士</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_JANISSARY_DESCRIPTION"><Text>文藝複興時期近戰單位，當成爲普雷斯拉夫和埃裏溫宗主國時獲得。擊殺敵軍即獲痊愈。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_JANISSARY_NAME"><Text>蘇丹親兵</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_JAPANESE_SOHEI_DESCRIPTION"><Text>日本特色近戰單位，通過封建主義市政解鎖。可通過信仰值[ICON_Faith]購買。防禦時+10戰鬥力[ICON_Strength]。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_JAPANESE_SOHEI_NAME"><Text>僧兵</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_JAPANESE_YAMATO_DESCRIPTION"><Text>日本原子能時代特色遠程海軍單位。強于並替換戰艦。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_JAPANESE_YAMATO_NAME"><Text>大和級戰艦</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_KHMER_WAR_CANOE_DESCRIPTION"><Text>高棉古典時期特色海軍近戰單位，替換槳帆船。護送單位以同樣的速度移動。並能俘獲艦只。相鄰的陸地單位忽略運輸懲罰。初始只在沿海水域作業，直到研究完科技制圖學。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_KHMER_WAR_CANOE_NAME"><Text>戰鬥龍舟</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_KONGO_GARDE_REPUBLICAINE_DESCRIPTION"><Text>剛果信息時代特色近戰單位，替換機械化步兵。區域防禦時+10戰鬥力[ICON_Strength]。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_KONGO_GARDE_REPUBLICAINE_NAME"><Text>共和國衛隊</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_KONGO_MEDICINE_MAN_DESCRIPTION"><Text>剛果特色支援單位，替換醫療兵，能更早通過神秘主義市政解鎖。可通過信仰值購買。治愈相鄰除騎兵外的陸地單位，遠程單位擊殺單位獲取等同于該單位50%戰鬥力[ICON_Strength]的信仰值[ICON_Faith]。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_KONGO_MEDICINE_MAN_NAME"><Text>巫醫</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_KOREAN_TURTLE_SHIP_DESCRIPTION"><Text>朝鮮文藝複興時期特色海軍單位。 較之輕快帆船更快更強。對受傷單位作戰時+5戰鬥力[ICON_Strength]。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_KOREAN_TURTLE_SHIP_NAME"><Text>龜船</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_MACEDONIAN_BALLISTA_DESCRIPTION"><Text>馬其頓特色攻城單位，替換石弩。位于非區域地格作戰+17戰鬥力[ICON_Strength]，位于區域作戰-10戰鬥力[ICON_Strength]。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_MACEDONIAN_BALLISTA_NAME"><Text>弩炮</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_MACEDONIAN_HETAIROI_NAME"><Text>王伴騎兵</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_MACEDONIAN_PEZHETAIROS_DESCRIPTION"><Text>馬其頓古典時期特色單位，替換槍兵較之槍兵更強，對抗近戰單位時+10戰鬥力[ICON_Strength]。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_MACEDONIAN_PEZHETAIROS_NAME"><Text>夥伴步兵</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_MALI_SOFA_DESCRIPTION"><Text>Malian unique Medieval Era Ranged unit replacing the Crossbowman. +5 [ICON_Strength] vs damaged units. Adjacent Cavalry units receive +4 [ICON_Strength].</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_MALI_SOFA_NAME"><Text>Sofa</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_MAORI_TUPARA_DESCRIPTION"><Text>Maori unique Industrial Era Recon unit replacing the Ranger. Weaker than Ranger but can attack twice per turn. Can build Pa Improvement.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_MAORI_TUPARA_NAME"><Text>Toatupara</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_MAPUCHE_GUERILLA_DESCRIPTION"><Text>馬普切中世紀特色反騎兵單位，替換長矛兵。擁有遠程攻擊，並可攻擊後移動。可穿越並探索森林和雨林區域。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_MAPUCHE_GUERILLA_NAME"><Text>馬普切方陣</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_MAYAN_HOLKAN_DESCRIPTION"><Text>Mayan unique Medieval Melee unit. +5 [ICON_Strength] when attacking City States' units and yields 100% of defeated City State units' combat strength as [ICON_Gold] Gold. </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_MAYAN_HOLKAN_NAME"><Text>Holcan</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_MONGOLIAN_HUI_HUI_PAO_DESCRIPTION"><Text>蒙古中世紀時期特色攻城單位。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_MONGOLIAN_HUI_HUI_PAO_NAME"><Text>回回炮</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_NORWEGIAN_HIRDMAN_DESCRIPTION"><Text>挪威中世紀時期特色近戰單位，替換劍士。位于首都所在大陸作戰時+5戰鬥力[ICON_Strength]並從擊殺單位中獲取等同于其50%戰鬥力[ICON_Strength] 的文化值[ICON_Culture]。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_NORWEGIAN_HIRDMAN_NAME"><Text>皇家仆從</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_NORWEGIAN_ULFHEDNAR_DESCRIPTION"><Text>挪威特色支援單位，通過神秘主義市政解鎖。相鄰單位與非受傷單位作戰時獲取+5戰鬥力[ICON_Strength]，受傷單位則+10戰鬥力[ICON_Strength]。從擊殺單位中獲取等同于其50%戰鬥力[ICON_Strength]的信仰值[ICON_Faith]。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_NORWEGIAN_ULFHEDNAR_NAME"><Text>北歐狂戰士</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_NUBIAN_AFRICAN_FOREST_ELEPHANT_DESCRIPTION"><Text>努比亞古典時期特色重騎兵單位。防禦時擊退敵軍。過河沒有移動懲罰。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_NUBIAN_AFRICAN_FOREST_ELEPHANT_NAME"><Text>非洲叢林戰象</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_OTTOMAN_SIPAHI_DESCRIPTION"><Text>Ottoman unique Medieval Era Heavy Cavalry unit replacing the Knight. +100% flanking bonus and requires fewer movement points to pillage.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_OTTOMAN_SIPAHI_NAME"><Text>Sipahi</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_PERSIAN_CATAPHRACT_DESCRIPTION"><Text>波斯古典時期特色重騎兵單位。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_PERSIAN_CATAPHRACT_NAME"><Text>波斯鐵甲騎兵</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_PERSIAN_WARSHIP_DESCRIPTION"><Text>波斯特色古典時期海軍單位，替換四段帆船。進攻時+5戰鬥力[ICON_Strength]，與陸地單位相鄰時也+5戰鬥力[ICON_Strength]並且如果他們在初始回合的相鄰地格移動時+2移動力。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_PERSIAN_WARSHIP_NAME"><Text>肺尼基戰艦</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_PHOENICIA_NUMIDIAN_CAVALRY_DESCRIPTION"><Text>Phoenician unique Classical Era Light Cavalry unit replacing Horseman. Has Ranged Attack. Can move after attacking.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_PHOENICIA_NUMIDIAN_CAVALRY_NAME"><Text>Numidian Cavalry</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_POLISH_CHOSEN_INFANTRY_DESCRIPTION"><Text>波蘭文藝複興特色近戰單位，替換火槍手。每回合+10治愈。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_POLISH_CHOSEN_INFANTRY_NAME"><Text>特選步兵</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_POLISH_UHLAN_DESCRIPTION"><Text>波蘭現代時期特色輕騎兵單位，替換近代騎兵。+100%側翼加成。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_POLISH_UHLAN_NAME"><Text>烏蘭槍騎兵</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_ROMAN_EQUITE_DESCRIPTION"><Text>羅馬古典時期特色騎兵單位，替換騎手。與羅馬軍團或勇士單位相鄰作戰時+5戰鬥力[ICON_Strength]。擊殺敵軍獲取等同于其50%戰鬥力[ICON_Strength]的金幣[ICON_Gold]。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_ROMAN_EQUITE_NAME"><Text>軍團騎手</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_ROMAN_ONAGER_DESCRIPTION"><Text>羅馬特色攻城單位。強于並替換石弩。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_ROMAN_ONAGER_NAME"><Text>野驢投石車</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_RUSSIAN_DRUZHINA_DESCRIPTION"><Text>俄羅斯古典時期特色輕騎兵單位，替換騎手。與受傷單位作戰時+5戰鬥力[ICON_Strength]，與近戰單位作戰時則+4戰鬥力[ICON_Strength]。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_RUSSIAN_DRUZHINA_NAME"><Text>親衛隊騎手</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_RUSSIAN_T34_DESCRIPTION"><Text>俄羅斯特色坦克，更便宜建造且更低維護費。鄰近領土作戰+5戰鬥力[ICON_Strength]。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_RUSSIAN_T34_NAME"><Text>T-34坦克</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_SCOTTISH_GALLOWGLASS_DESCRIPTION"><Text>蘇格蘭中世紀時期特色近戰單位。獲取戰鬥經驗更快並在進攻時+5戰鬥力[ICON_Strength]。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_SCOTTISH_GALLOWGLASS_NAME"><Text>加羅韋斧兵</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_SCYTHIAN_AMAZON_DESCRIPTION"><Text>斯基泰中世紀特色重騎兵單位，替換騎士。攻擊後可移動。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_SCYTHIAN_AMAZON_NAME"><Text>亞馬遜遊獵者</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_SCYTHIAN_AMAZON_SCOUT_DESCRIPTION"><Text>斯基泰古典時期特色偵查單位，強于並替換偵察兵。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_SCYTHIAN_AMAZON_SCOUT_NAME"><Text>亞馬遜探路者</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_SPANISH_CONQUISTADOR_DESCRIPTION"><Text>西班牙文藝複興時期特色近戰單位，替換火槍手。相鄰宗教單位時+9戰鬥力[ICON_Strength]。下城及轉換城市宗教爲自己宗教。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_SPANISH_JINETE_DESCRIPTION"><Text>西班牙古典時期特色遠程單位，替換騎手。當位于首都所在大陸時擊殺單位獲取等同于其50%戰鬥力[ICON_Strength]的信仰值[ICON_Faith]。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_SPANISH_JINETE_NAME"><Text>龍騎手</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_SPANISH_TERCIO_DESCRIPTION"><Text>西班牙文藝複興特色反騎兵單位，能更快獲取經驗值。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_SPANISH_TERCIO_NAME"><Text>大方陣</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_SUMERIAN_PHALANX_DESCRIPTION"><Text>蘇美爾古典時期特色抗騎兵單位，替換槍兵。通過采礦科技解鎖。位于通靈塔8格以內作戰時+8戰鬥力[ICON_Strength]。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_SUMERIAN_PHALANX_NAME"><Text>方陣步兵</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_SWEDEN_HAKKAPELIITTA_DESCRIPTION"><Text>Swedish unique Industrial Era Light Cavalry unit replacing Cavalry. +5 [ICON_Strength] Combat Strength when attacking. Gains +2 movement points if starting on Tundra, Tundra Hills, Snow or Snow Hills. </Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_SWEDEN_HAKKAPELIITTA_NAME"><Text>Hakkapeliitta</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_ZULU_ASSEGAI_DESCRIPTION"><Text>祖魯古典時期特色遠程單位，替換弓箭手。更高的近戰傷害。與其他長矛勇士兩兩相鄰時+4戰鬥力[ICON_Strength]。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="LOC_UNIT_ZULU_ASSEGAI_NAME"><Text>擲矛勇士</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="MINUS_10_WHEN_ATTACKING_DISTRICT_MALUS_DESC"><Text>位于區域作戰時-10戰鬥力[ICON_Strength]。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="PLUS_10_VERSUS_MELEE_COMBAT_BONUS_DESC"><Text>對抗近戰單位+10戰鬥力[ICON_Strength]。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="PLUS_10_VS_HEAVY_CAVALRY_COMBAT_BONUS_DESC"><Text>對抗重騎兵單位+10戰鬥力[ICON_Strength]。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="PLUS_10_WHEN_DEFENDING_COMBAT_BONUS_DESC"><Text>防禦時+10戰鬥力[ICON_Strength]。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="PLUS_10_WHEN_DEFENDING_DISTRICT_BONUS_DESC"><Text>區域防禦時+10戰鬥力[ICON_Strength]。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="PLUS_15_VS_HEAVY_CAVALRY_COMBAT_BONUS_DESC"><Text>對抗重騎兵單位+15戰鬥力[ICON_Strength]。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="PLUS_17_WHEN_ATTACKING_NON_DISTRICT_BONUS_DESC"><Text>位于非區域地格作戰+17戰鬥力[ICON_Strength]。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="PLUS_20_VS_LIGHT_CAVALRY_COMBAT_BONUS_DESC"><Text>對抗輕騎兵單位+20戰鬥力[ICON_Strength]。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="PLUS_4_ASSEGAI_ADJACENCY_COMBAT_BONUS_DESC"><Text>與其他長矛勇士兩兩相鄰時+4戰鬥力[ICON_Strength]。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="PLUS_4_LONGBOWMAN_ADJACENCY_COMBAT_BONUS_DESC"><Text>與其他長弓手兩兩相鄰時+4戰鬥力[ICON_Strength]。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="PLUS_4_VERSUS_MELEE_CAVALRY_COMBAT_BONUS_DESC"><Text>對抗近戰和騎兵單位時+4戰鬥力[ICON_Strength]。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="PLUS_4_VERSUS_MELEE_COMBAT_BONUS_DESC"><Text>對抗近戰單位+4戰鬥力[ICON_Strength]。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="PLUS_5_CAPITAL_CONTINENT_COMBAT_BONUS_DESC"><Text>位于首都所在大陸時+5戰鬥力[ICON_Strength]。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="PLUS_5_COMBAT_STRENGTH_NON_DISTRICT_DESC"><Text>位于非區域地格作戰時+5戰鬥力[ICON_Strength]。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="PLUS_5_DESERT_PLAINS_COMBAT_BONUS_DESC"><Text>位于沙漠和平原作戰時+5戰鬥力[ICON_Strength]。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="PLUS_5_EQUITE_ADJACENCY_COMBAT_BONUS_DESC"><Text>相鄰羅馬軍團和勇士單位時+5戰鬥力[ICON_Strength]。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="PLUS_5_FOREIGN_COMBAT_BONUS_DESC"><Text>位于外國大陸作戰時+5戰鬥力[ICON_Strength]。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="PLUS_5_FOREST_JUNGLE_COMBAT_BONUS_DESC"><Text>位于森林或雨林作戰時+5戰鬥力[ICON_Strength]。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="PLUS_5_HILLS_COMBAT_BONUS_DESC"><Text>位于丘陵作戰時+5戰鬥力[ICON_Strength]。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="PLUS_5_NOT_OWNER_TERRITORY_COMBAT_BONUS_DESC"><Text>位于邊界外作戰時+5戰鬥力[ICON_Strength]。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="PLUS_5_OTHER_RELIGION_COMBAT_BONUS_DESC"><Text>位于異教大陸作戰時+5戰鬥力[ICON_Strength]。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="PLUS_5_PLAINS_GRASS_COMBAT_BONUS_DESC"><Text>位于平原和草原時+5戰鬥力[ICON_Strength]。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="PLUS_5_WHEN_ATTACKING_COMBAT_BONUS_DESC"><Text>進攻時+5戰鬥力[ICON_Strength]。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="PLUS_5_WHEN_DEFENDING_COMBAT_BONUS_DESC"><Text>+5 [ICON_Strength] Combat Strength when defending.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="PLUS_5_ZIGURRAT_PROXIMITY_COMBAT_BONUS_DESC"><Text>位于通靈塔8格以內+5戰鬥力[ICON_Strength]。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="PLUS_8_DESERT_PLAINS_COMBAT_BONUS_DESC"><Text>位于沙漠和平原作戰時+8戰鬥力[ICON_Strength]。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="PLUS_X_ADJACENT_FRIENDLY_NAVAL_RANGED_BONUS_DESC"><Text>[ICON_Strength] Combat Strength when adjacent to another Kronan unit.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="PLUS_X_HOLY_SITE_PROXIMITY_BONUS_DESC"><Text>[ICON_Strength] Combat Strength within 4 tiles of a Holy Site.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="PLUS_X_IN_FORMATION_BONUS_DESC"><Text>[ICON_Strength] Combat Strength when in formation.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="PLUS_X_VS_MELEE_ANTICAV_LIGHTCAV_COMBAT_BONUS_DESC"><Text>對抗近戰，反騎兵和輕騎兵單位時+8戰鬥力[ICON_Strength]。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="PLUS_X_VS_NAVAL_RAIDER_COMBAT_BONUS_DESC"><Text>[ICON_Strength] Combat Strength vs Naval Raider class.</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="RECEIVE_HUI_HUI_PAO_BONUS_DESC"><Text>+5 [ICON_Strength] District defenders fear the adjacent Hui Hui Pao!</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="RECEIVE_NORWEGIAN_ULFHEDNAR_COMBAT_BONUS_DESC"><Text>對抗受傷單位+5戰鬥力[ICON_Strength]。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="RECEIVE_NORWEGIAN_ULFHEDNAR_DAMAGED_UNITS_BONUS_DESC"><Text>對抗受傷單位+10戰鬥力[ICON_Strength]。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="RECEIVE_PERSIAN_WARSHIP_COMBAT_STRENGTH_BONUS_DESC"><Text>相鄰皇家海軍船塢時+5戰鬥力[ICON_Strength]。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="RECEIVE_SHIGONG_COMBAT_BONUS_DESC"><Text>從軍師中獲得+5戰鬥力[ICON_Strength]。</Text></Replace>
+<Replace Language="zh_Hant_HK" Tag="RECEIVE_SOFA_BONUS_DESC"><Text>[ICON_Strength] Combat Strength from adjacent Sofa unit.</Text></Replace>
+</LocalizedText></GameData>

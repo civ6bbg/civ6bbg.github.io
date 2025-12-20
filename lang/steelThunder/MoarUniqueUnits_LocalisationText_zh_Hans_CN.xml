@@ -1,0 +1,557 @@
+<GameData><LocalizedText>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_100_PERCENT_FLANKING_DESCRIPTION"><Text>+100% flanking bonus.</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_ADDITIONAL_ATTACK_DESCRIPTION"><Text>Can attack twice per turn.</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_AMERICAN_AH64_APACHE_DESCRIPTION"><Text>+10 [ICON_Strength] Combat Strength versus Heavy Cavalry units.</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_ARMATOLOS_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength when fighting on Hills terrain. Ignores movement penalty on Hills.</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_BALLISTA_DESCRIPTION"><Text>+17 [ICON_Strength] versus non-District tiles and -10 [ICON_Strength] versus District tiles.</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_BANDEIRANTE_DESCRIPTION"><Text>Can build forts. Yields 25% of defeated units' combat strength as [ICON_Gold] Gold and 25% of defeated units' combat strength as [ICON_Culture] Culture.</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_CAMEL_ARCHER_DESCRIPTION"><Text>+8 [ICON_Strength] when fighting on Desert or Plains terrain.</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_CHOSEN_INFANTRY_DESCRIPTION"><Text>Heals an additional 10 points per turn.</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_CREE_OTEHTAPIW_DESCRIPTION"><Text>Gains +2 movement points if it starts on flat terrain. Heals +15 per turn when on Plains or Grassland. +10 [ICON_Strength] when fighting on Plains or Grassland. </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_DRUZHINA_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength versus damaged units and +4 [ICON_Strength] Combat Strength against Melee units.</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_DUTCH_SCHUTTERIJ_DESCRIPTION"><Text>+10 [ICON_Strength] when defending districts.</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_EQUITE_ADJACENCY_BONUS_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength when fighting next to Legion or Warrior unit.</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_EXTRA_MOVEMENT_ON_SNOW_TUNDRA_DESCRIPTION"><Text>Gains +2 movement points if starting on Tundra, Tundra Hills, Snow or Snow Hills.</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_FATHERLAND_VOLUNTEER_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength on same continent as capital city.</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_FRENCH_MARINE_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength on foreign continents. No attack penalty when attacking from sea or across rivers.</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_FULL_STRENGTH_WHEN_DAMAGED_ON_HILLS_DESCRIPTION"><Text>Fights at full strength when damaged on Hills.</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_GARDE_REPUBLICAINE_DESCRIPTION"><Text>+10 [ICON_Strength] Combat Strength when attacking or defending districts.</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_GENDARME_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength when attacking.</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_GEORGIAN_TADZREULI_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength when opponent is another religion. Yields 50% of defeated units' [ICON_Strength] Combat Strength as [ICON_Faith] Faith on combat victory. Converts captured cities to player's religion. </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_GHAZI_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength when opponent is another religion. Yields 50% of defeated units' [ICON_Strength] Combat Strength as [ICON_Faith] Faith on combat victory. Converts captured cities to player's religion. </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_GOLD_FROM_CITY_STATES_UNIT_KILLS_DESCRIPTION"><Text>Yields 100% of defeated City State units' combat strength as [ICON_Gold] Gold.</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_HIRDMAN_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength and yields 50% of defeated units' [ICON_Strength] Combat Strength as [ICON_Culture] Culture on combat victory if fighting on same continent as capital. </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_JAGUAR_DESCRIPTION"><Text>+10 [ICON_Strength] Combat Strength when attacking and -5 [ICON_Strength] Combat Strength when defending. May capture defeated enemies, turning them into Builders. Ignores terrain movement cost in Jungle and Forest. </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_JINETE_DESCRIPTION"><Text>Yields 50% of defeated units' [ICON_Strength] Combat Strength as [ICON_Faith] Faith on combat victory if fighting on same continent as capital.</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_KHMER_WAR_CANOE_DESCRIPTION"><Text>Escorted units move at the same speed. Can capture ships. Adjacent land units incur no embark/disembark movement cost.</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_KOREAN_TURTLE_SHIP_DESCRIPTION"><Text>+5 [ICON_Strength] vs damaged units.</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_LESS_MOVEMENT_PILLAGE_DESCRIPTION"><Text>Requires fewer movement points to pillage.</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_LONGBOWMAN_DESCRIPTION"><Text>+4 [ICON_Strength] Combat Strength against Melee and Cavalry units with a further +4 [ICON_Strength] Combat Strength if adjacent to another Longbowman unit. </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_MAPUCHE_GUERILLA_DESCRIPTION"><Text>Can move after attacking. Can move and see through Woods and Rainforest.</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_MINUTEMAN_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength when fighting in or adjacent to its home territory. Also gains additional +5 [ICON_Strength] when fighting in Forest or Jungle. </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_MOVE_AFTER_ATTACKING_DESCRIPTION"><Text>Can move after attacking.</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_MUGHAL_SOWAR_DESCRIPTION"><Text>Heals +15 per turn when on or adjacent to a Stepwell improvement. Ignores terrain costs.</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_NUBIAN_AFRICAN_FOREST_ELEPHANT_DESCRIPTION"><Text>Pushes defending enemy units back. No movement cost when crossing rivers.</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_PANZER_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength when attacking.</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_PELTAST_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength when defending.</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_PERC_50_POST_COMBAT_GOLD_DESCRIPTION"><Text>Yields 50% of defeated units' [ICON_Strength] as [ICON_Gold] on combat victory.</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_PERSIAN_WARSHIP_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength when attacking.</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_PEZHETAIROS_DESCRIPTION"><Text>+10 [ICON_Strength] Combat Strength versus Melee units.</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_PHALANX_DESCRIPTION"><Text>+5 [ICON_Strength] if fighting within 8 tiles of a Ziggurat improvement.</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_PLUS_10_DEFENDER_DESCRIPTION"><Text>+10 [ICON_Strength] Combat Strength when defending.</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_PLUS_5_BONUS_VS_DAMAGED_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength versus damaged units.</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_PLUS_5_DEFENDER_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength when defending.</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_PLUS_5_OTHER_RELIGION_COMBAT_BONUS_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength when opponent is another religion.</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_PLUS_5_WHEN_ATTACKING_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength when attacking.</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_PLUS_X_HOLY_SITE_PROXIMITY_BONUS_DESCRIPTION"><Text>+5 [ICON_Strength] within 4 tiles of any Holy Site District.</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_PLUS_X_IN_FORMATION_BONUS_DESCRIPTION"><Text>+5 [ICON_Strength] when in formation.</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_PLUS_X_VS_NAVAL_RAIDER_COMBAT_BONUS_DESCRIPTION"><Text>+10 [ICON_Strength] versus Naval Raider class units.</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_PLUS_X_WHEN_ATTACKING_RANGED_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength when attacking Ranged units.</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_RECEIVE_HUI_HUI_PAO_BONUS_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength when attacking Districts if adjacent to Hui Hui Pao (Mongolia).</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_RECEIVE_KHMER_WAR_CANOE_BONUS_DESCRIPTION"><Text>Incurs no embark/disembark movement cost if adjacent to War Canoe (Khmer).</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_RECEIVE_MEDICINE_MAN_BONUS_DESCRIPTION"><Text>Yields 50% of defeated units' [ICON_Strength] Combat Strength as [ICON_Faith] Faith on combat victory when adjacent to Medicine Man (Medicine Man).</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_RECEIVE_NORWEGIAN_ULFHEDNAR_BONUS_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength versus undamaged units, +10 [ICON_Strength] Combat Strength versus damaged units, and yields 50% of defeated units' [ICON_Strength] Combat Strength as [ICON_Faith] Faith if adjacent to Ulfhedinn (Norway). </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_RECEIVE_PERSIAN_WARSHIP_BONUS_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength and +2 movement at start of turn if adjacent to Warship (Persia).</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_RECEIVE_SHIGONG_BONUS_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength and earns more experience if adjacent to Strategist (China).</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_RECEIVE_SOFA_BONUS_DESCRIPTION"><Text>+4 [ICON_Strength] if adjacent to Sofa (Mali).</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_RECEIVE_WARRIOR_PRIEST_BONUS_DESCRIPTION"><Text>Fights at full strength when damaged and earn Great General points from kills if adjacent to Warrior Priest (Aztec).</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_SASR_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength when fighting on Desert or Plains. Ignores Zone of Control.</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_SCOTTISH_GALLOWGLASS_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength when attacking. Earns experience more quickly.</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_SEPOY_DESCRIPTION"><Text>Fights at full Combat Strength when damaged.</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_SHIP_OF_THE_LINE_ADJACENCY_BONUS_DESCRIPTION"><Text>+7 [ICON_Strength] Combat Strength when adjacent to another Ship of the Line.</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_SWEDEN_HAKKAPELIITTA_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength when attacking. Gains +2 movement points if starting on Tundra, Tundra Hills, Snow or Snow Hills terrain.</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_T34_DESCRIPTION"><Text>+5 [ICON_Strength] Combat Strength in or adjacent to own territory.</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_TERCIO_DESCRIPTION"><Text>Earns experience more quickly.</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_UNIT_BONUS_VERSUS_CITY_STATES_DESCRIPTION"><Text>+7 [ICON_Strength] Combat Strength when attacking City States' units.</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_ABILITY_ZULU_ASSEGAI_DESCRIPTION"><Text>+4 [ICON_Strength] when adjacent to another Isijula Warrior.</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_HEAL_ON_VICTORY_DESCRIPTION"><Text>Heals after defeating unit.</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_AMERICAN_AH64_APACHE_CHAPTER_HISTORY_PARA_1"><Text> 美国波音公司AH-64“阿帕奇”直升机是一款双涡轮轴引擎、四桨叶旋翼武装直升机，采用后三点轮式起落架和双人纵列式座舱构型。机鼻部分设有目标识瞄系统与夜视系统的集成套件。机首正下方的主起落架之间装有一门30毫米（1.18英寸）M230链炮。两侧的短翼部分共有4处悬挂点，通常会挂载AGM-114地狱火反坦克导弹和九头蛇-70火箭发射器的混装组合。阿帕奇备有大量的冗余系统，可以提升其在战场上的生存能力。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_AMERICAN_AH64_APACHE_CHAPTER_HISTORY_PARA_2"><Text> 阿帕奇诞生自美国陆军为取代AH-1“眼镜蛇”直升机而开展的“先进武装直升机”（AAH）计划，由休斯公司投标的77号概念机发展而来。其原型机YAH-64于1975年9月30日首飞。在与贝尔公司投标的YAH-63方案的竞争中最终于1976年被美国军方选中，并于1982年正式批准投产。1984年休斯公司与麦道公司合并，AH-64的生产和开发工作由后者继续进行。这款直升机于1986年4月正式入役美军。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_AMERICAN_AH64_APACHE_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_AMERICAN_AH64_APACHE_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_AMERICAN_AH64_APACHE_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_AMERICAN_MINUTEMAN_CHAPTER_HISTORY_PARA_1"><Text> 快速民兵（Minuteman）或译为“一分钟人”，是北美独立战争期间从殖民地民兵中特别选拔出来的精英战士。他们是一种“快速反应”部队，其任务是在敌人进攻时迅速投入战斗，以使大陆军的正规部队（和其他民兵）有足够的时间进行集结。实际上快速民兵在独立战争前就存在了：马萨诸塞殖民地早在1645年就有一部分民兵被编制为快速民兵了。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_AMERICAN_MINUTEMAN_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_AMERICAN_MINUTEMAN_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_AMERICAN_MINUTEMAN_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_AMERICAN_MINUTEMAN_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ARABIAN_CAMEL_ARCHER_CHAPTER_HISTORY_PARA_1"><Text>有些穆斯林的骑手是骑着骆驼打仗的。骆驼常常能惊吓欧洲长大的马匹，因为它们从来没有见过这样的怪物。意料之中的是，骆驼比马匹更能适应沙漠的地形。总的来说，骆驼骑射手用的是边打边跑的战术，在这点上更像蒙古骑射手，而不是骑士或者别的骑兵种类。如果骑士们没有轻骑兵或者弓箭手掩护的话，训练有素的骆驼骑射手会让他们非常头疼。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ARABIAN_CAMEL_ARCHER_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ARABIAN_CAMEL_ARCHER_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ARABIAN_CAMEL_ARCHER_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ARABIAN_CAMEL_ARCHER_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ARABIAN_GHAZI_CHAPTER_HISTORY_PARA_1"><Text> 加齐（Ghazi）作为一个阿拉伯术语原本指代的是参与远征（军事入侵或掠夺）的人。当伊斯兰教兴起之后，这一词汇被赋予了宗教战争方面的新含义。在前伊斯兰时期的贝都因人文化中，“远征”（Ghazw）是一种近乎于抢劫的有限战争方式——尽量避免正面对抗而强调突袭和掠夺（通常是针对牲畜）。历史学家威廉·蒙哥马利·瓦特认为，先知穆罕默德发现将这种连续性的内部战争施加到他的敌人身上时会收到良好的效果，并以此为基础制定了他的战争方略，比如著名的白尔德之战正是始于这样的一次袭击行动。在伊斯兰战争的背景之下，远征的目地则是为了削弱敌人的防御并为最终的镇压和征服行动搭桥铺路。虽然伊斯兰教的战争规则会为非战斗人员（如妇女、僧侣和农民）提供保护，但他们的财产和人身自由仍然可能会在这样的行动中遭到践踏。再之后，奥斯曼人接受了这一概念并将之运用在了他们领袖的称谓上，“加齐”成为了奥斯曼苏丹的官方头衔之一。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ARABIAN_GHAZI_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ARABIAN_GHAZI_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ARABIAN_GHAZI_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ARABIAN_GHAZI_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_AUSTRALIAN_SASR_CHAPTER_HISTORY_PARA_1"><Text> 特种空勤团是澳大利亚军队中的特种作战部队，正式缩写为SASR，不过通常被简称为SAS。特种空勤团成立于1957年，最初是以英国特种空勤团为模板组建而成，并且沿袭了该部队的座右铭“敢拼才会赢”。其驻地位于澳大利亚西部珀斯郊区斯旺伯恩的坎贝尔军营，由特种作战指挥部直接指挥。这支部队参与了在婆罗洲、越南、索马里、东帝汶、伊拉克和阿富汗等地区的军事及维和行动，同时也会进行反恐作战，并已多次在澳大利亚国内的安保行动中亮相。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_AZTEC_JAGUAR_CHAPTER_HISTORY_PARA_1"><Text> 在阿兹特克文化中，战争除了被当作一种政治工具外，还被当作一种宗教仪式。年轻人想要获得更高的社会地位，就必须俘获或杀死足够多的敌人，而阿兹特克人无数的宗教仪式也需要越来越多的战俘作为祭礼。“美洲虎战士”是阿兹特克军队中资深的精英战士。身披美洲虎皮，装备致命的双刃刀“马库阿辉特尔”（一种覆满尖利黑曜石碎片的木剑），美洲虎战士可能是哥伦布时代之前中北美洲地区最致命的轻装步兵。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_AZTEC_WARRIOR_PRIEST_CHAPTER_HISTORY_PARA_1"><Text> 强大的战斗祭司不仅是阿兹特克社会中的重要人物，同时也是可怕的战士。战场上的他们能够从容的挥舞着双刃刀（马库阿辉特尔）夺走目标的生命。在日常生活中，祭司们通常身据高位，并且肩负着诸多重要的使命。他们是阿兹特克信仰体系的生命和血液，同时也是政府部门的要员、历法编定者和重要记录的保管人。此外，祭司们还在诸如“卡尔梅克（传承之家）”和“坦帕奇卡利（青年之家）”这类学校或战士训练所之中担任教师的职务。然而不同于其所处的社会地位，祭司们在战斗中会和身边的战士们共同进退。他们手中的武器极具杀伤力，护甲和盾牌可以在防御时提供有效的保护。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_BRAZILIAN_BANDEIRANTE_CHAPTER_HISTORY_PARA_1"><Text> Bandeirantes（携带旗帜的人）是对17世纪来到巴西的葡萄牙移民和财宝猎人的称呼。这个团体大多来自于圣保罗地区（1709年以前被称为圣维森特总督辖区，之后则叫做圣保罗总督辖区）。他们带领着名为Bandeiras（葡语意为“旗帜”）的探险队，穿过了1494年划定的教皇子午线（一条在卡斯蒂利亚划定的将美洲大陆西侧归属西班牙、东侧归属葡萄牙的分界线），深入了巴西内陆遥远的南部和西部。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_BRAZILIAN_BANDEIRANTE_CHAPTER_HISTORY_PARA_2"><Text> 圣保罗定居点是先锋旗手最著名的基地。大多数旗手都是在圣保罗定居的第一或第二代葡萄牙人的后裔，但其中也有不少人是印欧混血背景（欧洲和美洲原住民的混血）。虽然最初的目的是抓捕并强迫美洲土著充当奴隶，但很快，旗手们将主要精力放在了远征中发现的黄金、白银和钻石矿之上。他们为了财富和冒险不断探索未知领域的大胆行动，从实质上扩展了巴西的领土疆界。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_BRAZILIAN_BANDEIRANTE_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_BRAZILIAN_BANDEIRANTE_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_BRAZILIAN_BANDEIRANTE_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_BRAZILIAN_FATHERLAND_VOLUNTEER_CHAPTER_HISTORY_PARA_1"><Text> 1864年12月，巴拉圭的独裁者弗朗西斯科·索拉诺·洛佩斯下令捕获了“欧琳达侯爵号”民用轮船以及船上的乘客和船员。之后在没有宣战的情况下入侵了巴西的马托格罗索省（今南马托格罗索州）。四个月后，巴拉圭的部队侵入了阿根廷的领土，并以此作为进攻巴西南里奥格兰德州的前奏。1865年6月30日，南里奥格兰德州遭到入侵的消息在巴西首都被公开。在意识到该省陷入无政府状态以及软弱无力的军事官员无法抵抗巴拉圭的军队后，佩德罗二世决定亲自前往前线。他在给巴拉尔伯爵夫人的信中写道：“南里奥格兰德遭到了侵略，那里是我要去的地方。”作为国家元首，佩德罗二世打算担任巴西军队的总指挥。但皇帝的这一愿望却遭到了内阁和代表大会双方的共同否决，当国务委员会也提出了同样的反对意见时，佩德罗二世发表了令人难忘的宣言：“他们也许可以阻止身为皇帝的我，但阻止不了退位后作为一名义勇兵的我。”因此，那些响应1865年1月7日签署的第3371号法令报名参军的巴西人在这个国家也被称为“卫国义勇兵”。" </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_BRAZILIAN_FATHERLAND_VOLUNTEER_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_BRAZILIAN_FATHERLAND_VOLUNTEER_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_BRAZILIAN_FATHERLAND_VOLUNTEER_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_BRAZILIAN_FATHERLAND_VOLUNTEER_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CANADA_HMCS_HAIDA_CHAPTER_HISTORY_PARA_1"><Text> 海达号是一艘部落级驱逐舰，1943年至1963年在加拿大皇家海军服役，参加了第二次世界大战和朝鲜战争。她是以海达人的名字命名的。海达号是1937年至1945年间为皇家海军、皇家海军和澳大利亚皇家海军建造的27艘舰艇中唯一幸存的部落级驱逐舰，其沉没的敌方水面吨位超过了任何其他加拿大军舰，因此通常被称为“加拿大皇家海军的战斗舰”。1984年，她被指定为加拿大国家历史遗址，现在她是一艘博物馆船，停泊在加拿大皇家海军预备役分队HMCS Star旁边，该分队位于安大略省汉密尔顿市。2018年，海达被指定为RCN的仪式旗舰。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CANADA_HMCS_HAIDA_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CANADA_HMCS_HAIDA_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CANADA_HMCS_HAIDA_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CANADA_HMCS_HAIDA_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CHINESE_CHOKONU_CHAPTER_HISTORY_PARA_1"><Text> 诸葛弩是公元2世纪末期中国人发明的一种非常精巧的连发弩。诸葛弩的外形和欧洲的弩相似，但在弓弦的上方装有一个木盒。木盒中装有多支箭矢。在作战中，弩兵使用拉杆上弦，随后将拉杆推回原位，这时将有一支箭从木盒落入箭槽等待发射。这样的设计使得诸葛弩具有比普通欧洲弩更高的射速。不过，诸葛弩发射的箭矢较轻，射程也较短。因此两者各有优势——欧洲弩适合在开阔地形对付身披重甲的敌军，而诸葛弩则更适合在近距离打击大批轻装的进攻者。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CHINESE_CHOKONU_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CHINESE_CHOKONU_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CHINESE_CHOKONU_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CHINESE_CHOKONU_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CHINESE_SHIGONG_CHAPTER_HISTORY_PARA_1"><Text>“大师”是用来形容和称呼一些德高望重或造诣高深的武术家的头衔。通常这是一个表达尊敬的称谓，它意味着所指之人已经超越了等级的桎梏而在其所属的学塾、体系或是流派之中拥有了别于常人的尊崇地位。传统的中国武术学校（道馆）是一个由师父领导着的大家庭式的团体，而师父的师父则被称为“师尊”或“师公”。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CHINESE_SHIGONG_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CHINESE_SHIGONG_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CHINESE_SHIGONG_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CHINESE_SHIGONG_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_COLOMBIAN_BRITISH_LEGION_CHAPTER_HISTORY_PARA_1"><Text>The British Legion (Spanish: Legión Británica) or British Legions were foreign volunteer units that fought under Simón Bolívar against Spain for the independence of Colombia, Venezuela, Ecuador and José de San Martín for the independence of Peru in the Spanish American wars of independence. Venezuelans generally called them the Albion Legion. They were composed of over seven thousand volunteers, mainly Napoleonic War veterans from Great Britain and Ireland, as well as some German veterans and some locals recruited after arriving in South America. Volunteers in the British Legion were motivated by a combination of both genuine political motives and mercenary motives. </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_COLOMBIAN_BRITISH_LEGION_CHAPTER_HISTORY_PARA_2"><Text>Their greatest achievements were at the Boyacá (1819), Carabobo (1821), Pichincha (1822) and Battle of Ayacucho (1824) which secured independence for Colombia, Venezuela, Ecuador and Peru from Spanish rule respectively. </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_COLOMBIAN_BRITISH_LEGION_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_COLOMBIAN_BRITISH_LEGION_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_COLOMBIAN_BRITISH_LEGION_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CREE_OTEHTAPIW_CHAPTER_HISTORY_PARA_1"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CREE_OTEHTAPIW_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CREE_OTEHTAPIW_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CREE_OTEHTAPIW_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CREE_OTEHTAPIW_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_DUTCH_SCHUTTERIJ_CHAPTER_HISTORY_PARA_1"><Text>SurutijJ指中世纪和早期荷兰的一个志愿城市守卫或公民民兵，意在保护城镇或城市免受叛乱或火灾的袭击和行为。他们的训练场地经常在城市内的开放空间里，靠近城墙，但是，当天气不允许的时候，在教堂里面。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_DUTCH_SCHUTTERIJ_CHAPTER_HISTORY_PARA_2"><Text> SuutTeiJ，公民守卫，或城镇守卫，是当地公民权威的防御军事支持系统。它的官员是镇上的富有公民，由市治安官任命。在荷兰北部，在经过1566年至1580年间的一段时间里，在塞尔德姆风暴之后，在官方权力的正式移交之后，官员们不得不成为荷兰改革教会的成员。它的上尉通常是这个地区的富有的居民，该团体的军旗是一个富有的年轻单身汉（经常以他特别漂亮的衣服和他携带的旗帜在Schutterijen的团体肖像中认得）。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_DUTCH_SCHUTTERIJ_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_DUTCH_SCHUTTERIJ_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_DUTCH_SCHUTTERIJ_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_EGYPTIAN_HYKSOS_BOWMAN_CHAPTER_HISTORY_PARA_1"><Text> 希克索斯（原意为“异国的统治者”）是埃及人对起源混杂的西亚人的称呼，他们于公元前1650年在尼罗河三角洲的东部定居。希克索斯人为埃及带来了几项技术革新以及文化输入（比如新的乐器和外来词汇）。这些改变包括新的青铜和陶器工艺，新品种的动物和新的农作物。在军事方面，他们引入了马和马拉战车、复合弓、改良的战斧以及先进的筑城技术。因为这些文明上的进步，希克索斯人的统治为埃及之后在近东地区建立的王朝带来了深远的影响。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_EGYPTIAN_HYKSOS_BOWMAN_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_EGYPTIAN_HYKSOS_BOWMAN_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_EGYPTIAN_HYKSOS_BOWMAN_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_EGYPTIAN_HYKSOS_BOWMAN_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_EGYPTIAN_KHOPESH_CHAPTER_HISTORY_PARA_1"><Text> 镰状剑（Khopesh）是一种由战斧演化而成的镰形弯剑。长度通常为50-60厘米（20-24英寸），虽然也有更小的例子存在。其尖端未开刃的一面也可以作为有效的钝击武器以及钩子来使用。有关于镰状剑最早的记载来自于“秃鹫石碑”，其上描绘了拉格什的埃纳纳吐姆王挥舞这种武器的图案。这表明镰状剑的出现时间至少在公元前2500年以前。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_EGYPTIAN_KHOPESH_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_EGYPTIAN_KHOPESH_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_EGYPTIAN_KHOPESH_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_EGYPTIAN_KHOPESH_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_EGYPTIAN_WAR_GALLEY_CHAPTER_HISTORY_PARA_1"><Text> Tessarakonteres（意思为“四十桨”）或者简称为“四十”，是埃及在希腊化时代建造的一艘非常巨大的战船。“四十”这个名称是指为其提供动力的单侧每一纵列桨手的数量。“四十”的船身长度达到了280肘，宽38肘，船尾最高点到吃水线的距离为53肘。内部拥有超过4000名划桨手和400名替补人员，以及位于甲板之上将近3000人的陆战部队。它可能是古代世界建造过的最大的船只，或许也是人类史上最大的人力船只。四十列桨战船据说是在公元前3世纪的埃及由托勒密四世主持建造的。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_EGYPTIAN_WAR_GALLEY_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_EGYPTIAN_WAR_GALLEY_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_EGYPTIAN_WAR_GALLEY_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_EGYPTIAN_WAR_GALLEY_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ELEANOR_TEMPLAR_CHAPTER_HISTORY_PARA_1"><Text>圣殿骑士团(Knights Templar)是一个神圣的组织，致力于保卫第一次十字军东征期间建立的新生的十字军国家。耶路撒冷王允许他们把总部设在耶路撒冷的大殿里，并以此命名。作为回报，他们宣誓效忠于耶路撒冷的王位。他们参加了几次大战，都打得很好;这大大增加了它们的数量。最终，他们的势力增长如此之大——以至于他们可以派出一支由近1万名骑士组成的军队，同时仍能坚守各自驻守城镇的承诺——以至于教皇决定将他们置于自己的直接控制之下。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ELEANOR_TEMPLAR_CHAPTER_HISTORY_PARA_2"><Text>圣殿骑士团在圣地的英勇行为在欧洲得到了很多回报;在红十字会和白地圣殿骑士团下作战的骑士们经常发现他们在自己的祖国有了新的领地和城堡。结果，这个秩序变得异常富有，因为大师们精明地投资了这个秩序的财富，用掠夺来的东西购买商品，并在整个地中海地区销售。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ELEANOR_TEMPLAR_CHAPTER_HISTORY_PARA_3"><Text>然而，国王往往会嫉妒他们几乎或根本无法控制的富有组织。法国国王腓力四世(Philip IV)的国库被掏空，债台高筑，不断的战争让他债台高筑，他指责圣殿骑士团异端邪说，亵渎神明，并没收了他们在法国的几乎所有财富。其他君主也纷纷效仿，开始了一项迫害和镇压计划，其目标主要是为圣殿骑士团谋得钱财。数百名圣殿武士在严刑拷打下对异端邪说做出虚假供述，其他人则被烧死在火刑柱上。圣殿骑士团在14世纪早期完全消亡，当时整个圣殿骑士团的领袖都被谋杀了。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ELEANOR_TEMPLAR_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ELEANOR_TEMPLAR_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ENGLISH_LONGBOWMAN_CHAPTER_HISTORY_PARA_1"><Text> 英格兰长弓手是在12世纪英格兰人征服威尔士的过程中发展起来的兵种。长弓由红豆杉木或者榆木制成，长度在五到七英尺（这取决与弓手的身高和力量）。长弓的使用极端难以掌握，但是训练有素的英格兰长弓手能比当时的弩兵射得更快、更远、更准。然而训练一名合格的长弓手需要很长的时间。随着英格兰的人口越来越多，大片荒野被开垦成农场，狩猎的机会逐渐减少，英格兰自耕农对弓箭的熟练程度也随之下降——这是英格兰长弓手部队衰落的最主要原因，火器的发明反倒是次要原因。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ENGLISH_LONGBOWMAN_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ENGLISH_LONGBOWMAN_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ENGLISH_LONGBOWMAN_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ENGLISH_LONGBOWMAN_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ENGLISH_SHIP_OF_THE_LINE_CHAPTER_HISTORY_PARA_1"><Text>Ships of the line are the largest and most powerful sailing vessels ever built. They formed the backbone of Europe's great navies from the 17th to the mid 19th centuries. Ships of the line were named for the classic formation that these ships fought in. In battle, each side's ships would approach the enemy in a line, and as the opposing ships passed, each would let off a thundering broadside of cannon fire, doing horrific damage to the vessels and to those aboard her. Victory usually went to the side with the most cannon and the best-trained sailors. The English were masters at this form of warfare, and their ships of the line dominated the world's oceans for more than a century. </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ENGLISH_SHIP_OF_THE_LINE_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ENGLISH_SHIP_OF_THE_LINE_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ENGLISH_SHIP_OF_THE_LINE_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ENGLISH_SHIP_OF_THE_LINE_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_FRENCH_GENDARME_CHAPTER_HISTORY_PARA_1"><Text>宪兵由出身高贵的重骑兵组成，在法国军队中的服役时间贯穿了中世纪晚期到近代早期的欧洲历史。15世纪末至16世纪中叶是宪兵的鼎盛时期，他们为当时的法国国王提供了一支强而有力的正规装甲力量。只要运用得当，这些长枪铁骑可以成为整个战场的主宰者。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_FRENCH_GENDARME_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_FRENCH_GENDARME_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_FRENCH_GENDARME_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_FRENCH_GENDARME_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_FRENCH_MARINE_CHAPTER_HISTORY_PARA_1"><Text>海军陆战部队（Troupes de la Marine）是由红衣主教黎塞留于1622年创立的军事组织，其原本的使命是在法国舰队中担任国王的卫戍部队。1674年，法国海军大臣让-巴普蒂斯特·柯尔贝尔决定组建殖民地常驻军队并正式赋予其“法国海军陆战队”这一名称。法国海军陆战队是独立的海军和殖民地军队，受海军军部直接指挥，承担着法国海军、海外贸易以及法国殖民地的相关任务。在1685年到1755年期间的新法兰西殖民地，当数个陆战队分队被派遣至北美后，他们成为了此时此地唯一的一支正规军队。海军军部开始利用他们保护当地的毛皮贸易和定居者免受易洛魁人的袭击，在加拿大地区的一系列军事行动使得这支部队闻名于世。到了1756年，他们被抵达蒙卡尔姆的大部队所取代，而当1760年蒙特利尔陷落之后，这支部队的身影也从加拿大地区彻底消失了。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_FRENCH_MARINE_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_FRENCH_MARINE_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_FRENCH_MARINE_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_FRENCH_MARINE_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GEORGIAN_TADZREULI_CHAPTER_HISTORY_PARA_1"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GEORGIAN_TADZREULI_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GEORGIAN_TADZREULI_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GEORGIAN_TADZREULI_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GEORGIAN_TADZREULI_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GERMAN_LANDSKNECHT_CHAPTER_HISTORY_PARA_1"><Text> 自由佣兵（Landsknecht）是16世纪来自日耳曼地区的雇佣长枪兵。他们是按照名噪一时的瑞士雇佣长枪兵的模式组建的，但他们最终却取代瑞士人成为了当时欧洲最好的雇佣步兵。几乎所有的大型战争中都能看到他们的身影——他们也不在乎自己是为谁提供服务。在战斗中，自由佣兵通常手持长达20英尺的长枪。有些还使用双手大剑或长戟——用来砍掉对手的枪头。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GERMAN_LANDSKNECHT_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GERMAN_LANDSKNECHT_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GERMAN_LANDSKNECHT_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GERMAN_LANDSKNECHT_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GERMAN_PANZER_CHAPTER_HISTORY_PARA_1"><Text>虎Ⅰ坦克是德国在第二次世界大战期间投入使用的重型坦克，1942年入役，大多被部署在了非洲和欧洲的独立重坦克营之中。虎Ⅰ坦克是战争期间最具代表性和传奇色彩的坦克之一。其最终定名为Panzerkampfwagen VI Ausf. E（简称虎式），是纳粹国防军第一种搭载了8.8厘米KwK 36坦克炮（非高射炮）的重型装甲战车，在1942年8月到1944年8月期间共生产1347辆。“虎”这一昵称由斐迪南·保时捷博士命名，其后的罗马数字Ⅰ则添加于后续的虎Ⅱ坦克投产之后。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GERMAN_PANZER_CHAPTER_HISTORY_PARA_2"><Text> 虎式坦克的设计方案在当时堪称出类拔萃，但同时也存在着过犹不及的问题，因其需要使用昂贵的原材料和高度集约化的生产装配方式。虎式坦克的履带部分经常会出现某种故障或破损，其活动范围也受到自身高耗油量的限制。此外，对虎式的运输同样是一个难题，当泥浆、冰块和冻雪等杂物混入行进系统中那些重叠交错的负重轮之间时，常常会造成阻塞，极易引发抛锚——这一问题往往发生在东线战场泥泞的“无路季节”和极度严寒的时期之中。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GERMAN_PANZER_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GERMAN_PANZER_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GERMAN_PANZER_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GREEK_ARMATOLOS_CHAPTER_HISTORY_PARA_1"><Text> 治安纠察队（Armatoloi）是希腊在奥斯曼帝国统治时期对基督徒非常规士兵以及民兵的称呼，他们被奥斯曼帝国委派在每一个行政“治安辖区”内厉行苏丹的统治权力。“治安辖区”（Armatoliki）指的是设立于希腊境内的“匪患”（反抗军）高发地带或是奥斯曼当局因地形闭塞而难以治理的地区——比如在色萨利的阿格拉法山区，那里的第一个治安辖区于15世纪创立。随着时间的推移，纠察队（Armatoloi）和反抗军（Klephtes）的形象变得模糊起来。两者会根据形势的需要转变自身的角色和效忠对象，并且都与奥斯曼当局维持着微妙的平稳状态。在希腊独立战争期间，纠察队与反抗军一起组成了希腊武装力量的核心，并且在这一时期发挥了至关重要的作用。希腊军事家、传记作家扬尼斯·马克里扬尼斯将纠察队和反抗军们称之为“自由的酵母”。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GREEK_ARMATOLOS_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GREEK_ARMATOLOS_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GREEK_ARMATOLOS_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GREEK_ARMATOLOS_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GREEK_PELTAST_CHAPTER_HISTORY_PARA_1"><Text> 轻盾兵（Peltast）是色雷斯和帕俄尼亚地区的一种轻装步兵，通常被当作散兵使用。轻盾兵携带一面被称为“轻盾”（Pelte）的新月型柳条盾牌，这是他们最主要的防护手段，也是其名称的由来。根据亚里士多德的记录，轻盾没有外框，其上覆盖着山羊或绵羊的毛皮。一些文献则显示，轻盾的形状有可能是圆形，不过在文艺作品中通常会被演绎为新月型。这种盾牌在斯基泰人的艺术作品中也有出现，同时可能也是中欧地区常见的盾牌类型之一。轻盾的中央通常会附加一条握带，以及一个延伸至边缘或仅位于中心部分的手柄。其上或许还有一条背带（或肩带），因为色雷斯的轻盾兵在逃避敌人的追击时会把他们的盾牌背在身后。轻盾兵以数支标枪（Akontia）为武器，通常还会用到“掷枪皮圈”（Amentum），以便在投掷时迸发出更强的力道。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GREEK_PELTAST_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GREEK_PELTAST_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GREEK_PELTAST_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GREEK_PELTAST_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_HUNGARY_KALANDOZO_CHAPTER_HISTORY_PARA_1"><Text>匈牙利入侵欧洲（匈牙利的卡兰多兹索克）发生在9世纪和10世纪，即中世纪早期欧洲历史的过渡时期，当时前加洛林帝国的领土受到来自多个敌对势力的入侵的威胁，东方的马扎尔人（匈牙利人），维京人的出口北方的锡安，南方的阿拉伯人。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_HUNGARY_KALANDOZO_CHAPTER_HISTORY_PARA_2"><Text> 到九世纪末，马扎尔人成功地征服了潘诺尼亚盆地（即现在的匈牙利），并发动了一系列抢劫袭击，向西进入前佛朗哥，向南进入拜占庭帝国。西进突袭只有在公元955年勒赫菲尔德战役的马扎尔战败后才停止，这导致了以神圣罗马帝国为中心的西欧新的政治秩序。对拜占庭领土的突袭一直持续到10世纪，直到公元1000年或公元1001年马扎尔人的最终基督教化和匈牙利基督教王国的建立。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_HUNGARY_KALANDOZO_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_HUNGARY_KALANDOZO_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_HUNGARY_KALANDOZO_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_INCA_CHASQUI_CHAPTER_HISTORY_PARA_1"><Text>Chasquis是印加帝国的使者。 他们敏捷，训练有素，身体健康，负责通过chasquis接力系统每天携带高达240公里的通行证，信息和礼物。 Chasquis不仅仅是信使（那些是刚刚习惯传递基本信息的小男孩），chasquis经过培训，能够阅读并将这些权利转交给对方和上级。 他们不仅习惯于传递口头信息，而且还帮助检察长Sapa Inka的兄弟跟踪帝国的人民。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_INCA_CHASQUI_CHAPTER_HISTORY_PARA_2"><Text>在秘鲁和厄瓜多尔的安第斯山脉，利用印加人为修建的公路和索桥，猎人们被派遣到数千英里外的地方。在现在的秘鲁海岸，他们的路线是从纳斯卡到图姆贝斯。查斯基路线也延伸到帝国的更远的地方，现在是哥伦比亚、玻利维亚、阿根廷和智利的部分地区。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_INCA_CHASQUI_CHAPTER_HISTORY_PARA_3"><Text>坦博斯，或中继站，被用于猎场停止和传递信息到下一个猎场。有不同的大小和水平的坦博斯和每一个分配了不同的用途。坦波的使用取决于它所走的路线以及谁被允许使用它，但是大多数人只是传递信息，因为还有其他的结构，猎场用来休息和遮蔽，叫做猎场。猎奇会从一个坦波出发，跑到下一个坦波那里，一个休息的猎奇正等着把信息带给下一个坦波。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_INCA_CHASQUI_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_INCA_CHASQUI_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_INDIAN_MUGHAL_SOWAR_CHAPTER_HISTORY_PARA_1"><Text> 索瓦尔（Sowar）在库尔德和波斯语中的原意为“骑马的人”，最初是莫卧儿帝国时期的一个等级称谓。骑兵部队是莫卧儿军队中的上层分支，通常从具备高级军衔（曼萨卜）的人员中进行招募。他们会获得比步兵和炮兵更好的报酬，但必须自备至少两匹马以及良好的装备。他们的武器包括刀剑、长矛、盾牌、手枪以及少量步枪，盔甲则由钢和皮革打造而成。每一名索瓦尔骑兵在战斗时都会身穿他们自己所属部族的传统服饰。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_INDIAN_MUGHAL_SOWAR_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_INDIAN_MUGHAL_SOWAR_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_INDIAN_MUGHAL_SOWAR_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_INDIAN_MUGHAL_SOWAR_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_INDIAN_SEPOY_CHAPTER_HISTORY_PARA_1"><Text> 西帕依（Sepoy）是旧时对印度士兵的称呼。这一词语源自波斯语“Sepahi”，在莫卧儿帝国时期的含意为“步兵”。这一称呼后来主要用于指代英属印度军队的本地士兵以及早期英国东印度公司的私人部队。西帕依的成员通常来自于同一个社群、村落甚至是家族，其指挥官一般由村长兼任。与土邦军队不同，西帕依部队拥有稳定的薪酬，甚至在出国作战时可以提前或由家人代为领取。这在训练精良、纪律严明的西帕依部队之间营造出了一股正面风气，并且令士兵们持有一份荣誉感。这些正面影响成为了西帕依步兵在印度和海外战场上立下功勋的关键。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_INDIAN_SEPOY_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_INDIAN_SEPOY_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_INDIAN_SEPOY_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_INDIAN_SEPOY_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_INDONESIAN_KRIS_SWORDSMAN_CHAPTER_HISTORY_PARA_1"><Text>克里斯是一种长叶片，非对称匕首或剑，具有独特的波状叶片，常见于印度尼西亚和马来亚。无论是武器还是神秘物体，克里斯都被印度尼西亚部落认为拥有一种充满魔力的精髓，一些刀刃带来好运和其他坏运气。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_INDONESIAN_KRIS_SWORDSMAN_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_INDONESIAN_KRIS_SWORDSMAN_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_INDONESIAN_KRIS_SWORDSMAN_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_INDONESIAN_KRIS_SWORDSMAN_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_JANISSARY_CHAPTER_HISTORY_PARA_1"><Text>耶尼切里（苏丹亲兵）在土耳其语中的含义为“新军”，他们是奥斯曼帝国的精锐部队，担任着苏丹的亲兵和近卫。他们与普通奴隶不同，能够获得正规的薪酬，但被禁止结婚和经商，必须全身心效忠于苏丹。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_JANISSARY_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_JANISSARY_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_JAPANESE_SOHEI_CHAPTER_HISTORY_PARA_1"><Text> 僧兵（字面意思为“僧侣战士”）是日本中世纪和封建时期出现的佛教僧侣战斗集团。在10到17世纪之间，随着天台宗等密教流派的兴起，僧兵的作用越发地突显出来。这些战士负责保护寺院的土地以及威慑对立的宗派，他们的行为所引发的社会不安是影响了镰仓时代佛教传播以及不同流派发展方向的重要因素之一。僧兵与欧洲的世俗修士有很多相似之处，一个集团的成员很可能没有被授予过圣职，就像德国的战斗修士“条顿骑士团”那样。僧兵不会代表个人或小团体甚至是某个单独的寺院，而是作为一个大型的延伸宗派或修行组织的战士团队中的一员。对于宗家寺院来说，如果不是有几十甚至上百个小型寺庙、训练场或分家庙宇的支持，它的僧兵团往往可能只有寥寥数人。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_JAPANESE_SOHEI_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_JAPANESE_SOHEI_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_JAPANESE_SOHEI_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_JAPANESE_SOHEI_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_JAPANESE_YAMATO_CHAPTER_HISTORY_PARA_1"><Text> 大和级战列舰是日本帝国海军（IJN）在第二次世界大战期间建造并投入使用的战舰。最大航行载荷达到了73000吨，是人类曾经建造过的最重、最强力的武装主力舰。这一舰型搭载了为其量身定做的当时最大口径的九门460毫米（18.1英寸）舰炮，每一门炮都能将1360公斤（3000磅）重的炮弹投射到42公里（26英里）以外。这一舰型最终完成了两艘（“大和”以及“武藏”），而第三艘“信浓”于建造过程中被改造为航母。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_JAPANESE_YAMATO_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_JAPANESE_YAMATO_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_JAPANESE_YAMATO_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_JAPANESE_YAMATO_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_KHMER_WAR_CANOE_CHAPTER_HISTORY_PARA_1"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_KHMER_WAR_CANOE_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_KHMER_WAR_CANOE_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_KHMER_WAR_CANOE_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_KHMER_WAR_CANOE_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_KONGO_GARDE_REPUBLICAINE_CHAPTER_HISTORY_PARA_1"><Text>刚果共和国卫队是刚果民主共和国的一支军事组织，是该国武装力量的一个组成部分。1960年，刚果脱离比利时宣布独立并于同年选举出共和国的首任总统，这支部队也于其后成立。共和国卫队的主要职责是保卫合法选举产生的总统及政府内阁，同时也担任着政要和高战略价值目标的卫戍工作。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_KONGO_GARDE_REPUBLICAINE_CHAPTER_HISTORY_PARA_2"><Text> 尽管与其身份相悖，这支卫队仍然被一次次卷进了新生共和国政治精英们之间的内部纷争里。此外，他们还不得不参与到同总统政敌军队的血腥内战之中。在独立后的几十年，这个年轻的共和国挺过了三次政权更替，卢旺达大屠杀，两次难民潮（图西族人和胡图族人），几十次叛乱以及两次“刚果战争”。尽管困难重重，时局不稳，新上台领导人的后续政治路线也充满了不确定性。但共和国卫队仍然宣誓以维护国家政权的利益为己任。在不同时期，卫队的武装人员规模从8000到20000人不等，此外还有被分为18个旅的3500名士兵。现如今，共和国卫队拥有10000-15000名士兵，由3个旅组成，位于金沙萨（首都）的第10旅以及位于卢本巴希（第二大城市）的第15和16旅。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_KONGO_GARDE_REPUBLICAINE_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_KONGO_GARDE_REPUBLICAINE_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_KONGO_GARDE_REPUBLICAINE_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_KONGO_MEDICINE_MAN_CHAPTER_HISTORY_PARA_1"><Text> 非洲传统医学是一种涵盖了土著草药学和非洲神秘学的替代性医学，涉及其中的通常有预言者、助产士和草药医生。诊断通过精神手段和一些规定的治疗手法达成，在这一过程中通常会加入某种草药作为补充（其被认为不仅具有治愈功能，同时也具有象征性和精神领域的意义）。非洲传统医学认为，疾病不是偶然发生而是精神或者社会性失调的体现。这与建立在科学和分析方法之上的现代医学有着本质上的不同。在现代医学的科学基础确立之前，传统医学体系是非洲数百万人口的主要医疗方式，但随着欧洲人的到来，这一古老的传统和文化迎来了一个显而易见的历史转折点。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_KONGO_MEDICINE_MAN_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_KONGO_MEDICINE_MAN_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_KONGO_MEDICINE_MAN_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_KONGO_MEDICINE_MAN_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_KOREAN_TURTLE_SHIP_CHAPTER_HISTORY_PARA_1"><Text>在1592到1598年壬辰卫国战争（又称：壬辰倭乱 ）期间，由于帮助朝鲜人民对抗日军船舰赢得数场海战胜利，龟船的威名远播。然而与一般流行的信念相反，在战争中朝鲜海军的主流仍然是板屋船。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_KOREAN_TURTLE_SHIP_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_KOREAN_TURTLE_SHIP_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_KOREAN_TURTLE_SHIP_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_KOREAN_TURTLE_SHIP_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MACEDONIAN_BALLISTA_CHAPTER_HISTORY_PARA_1"><Text> 希腊弩炮是古希腊和马其顿时期的一种攻城器械。能够向敌人发射石块或是带有木杆的巨型“标枪”。其主体部分为木质结构并以厚重的铁板进行加固，在训练有素的操作者手中具有令人惊叹的精确度。弩炮上的所有非木质部件会由辎重部队进行输送。如有必要，可在目的地就近伐木取材临时组装。有些弩炮会安放在重重防护下的大型移动攻城塔之中，甚或是置于战场的边缘地带。作为攻城器械和野战轰炸部队，弩炮的价值及其战术优势在马其顿国王腓力二世——尤其是其子亚历山大的统治时期得到了承认和发展。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MACEDONIAN_PEZHETAIROS_CHAPTER_HISTORY_PARA_1"><Text> 伙友步兵（Pezhetairoi）是马其顿和继业者王国军队中的骨干力量。其字面意思为“同伴”（在希腊语中，Pezos意为“步兵”，而Hetairos意为“伙伴、朋友”）。马其顿方阵几乎完全由伙友步兵组成，无论面对骑兵还是步兵都能从容应对。他们手中的长矛可以将冲锋中的敌骑挑落马背，或是将武器长度处于劣势的敌方步兵逼至走投无路。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MACEDONIAN_PEZHETAIROS_CHAPTER_HISTORY_PARA_2"><Text> 在腓力二世统治时期，伙友步兵首次于历史上崭露头角。特别是在公元前338年腓力征服希腊的喀罗尼亚战役中扮演了重要的角色。作为一种古老的招募方式，其名称“伙友”出自腓力二世的接班人——著名的指挥官亚历山大大帝。通过将步兵定位为他个人的“伙伴”和“朋友”，亚历山大为自己随后的一系列军事行动赢得了广泛的人力基础，因为成为他的私人部队也意味着骄傲与荣耀。故此，在亚历山大横跨亚洲的征战过程中，凭借自己杰出的军略声望，以及赋予其步兵部队的独特内涵，他以有别于传统的征兵方式在所到之处获得了当地人更多的响应。这一结果使得这位茁壮成长的军事领袖得到了近乎无限的人力资源，从而允许其在小亚细亚半岛、埃及、波斯和印度地区展开时间更长、代价更高昂的军事行动。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MACEDONIAN_PEZHETAIROS_CHAPTER_HISTORY_PARA_3"><Text> 伙友步兵配备了萨里萨矛——一种矛柄以柔韧的山茱萸木制成的超长长枪，其长度比传统的步兵矛要长出许多。凭此长度，方阵周边的五列士兵能够将矛头指向同一个位置，从而使整个方阵几近牢不可破，并对敌人造成阻吓效果。在战术上，比起进行冲锋，伙友步兵更适合用来构建强大的防线。萨里萨矛的长度会使对面的敌军陷入恐慌，严重制约他们的机动能力。但如果能够绕到方阵的侧翼或背后，进攻方也会有很小的几率获得回报。这一点在公元前331年的高加米拉战役中体现的尤为明显——当突袭行动在方阵右翼的两个伙友步兵团之间打开了缺口时，一支敌军的骑兵突破了方阵。如果不是因为对手的指挥缺乏组织力度以及亚历山大惯例性的预留了第二道重装步兵防线，整个方阵很可能从后方被一击而溃。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MALI_SOFA_CHAPTER_HISTORY_PARA_1"><Text>Sofa是曼丁卡语，指在马里帝国军队服役的奴隶士兵。Sofa也会以不同的身份在后来的曼德邦军队中作战，比如巴马纳和瓦苏卢帝国。sofa在英语中的意思是“马的父亲”(“so”的意思是马，“fa”的意思是“父亲”)或“马的监护人”。这个术语源于sofa最初的功能，被曼丁卡骑兵指挥官或骑手称为“法拉里”。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MALI_SOFA_CHAPTER_HISTORY_PARA_2"><Text> Sofa最早出现在口头和书面记录在马里帝国的形成。Sofa是从“jonow”(奴隶)那里招募来的，这些奴隶要么是在战争中被俘，要么是从远处买来的。在大多数情况下，他们的顺从是可以依靠的，因为他们的生活完全依赖于他们的主人。马里帝国的奴隶制制度对忠诚给予了丰厚的回报，而约诺可能会升到显赫的文职或军事职位。约诺成为他们主人家族的一员，并在一定的年限后经常被释放。作为氏族的一员，约诺被要求陪同他们的主人上战场，驾驭他的马和武器。最初被禁止参与直接战争，Sofa军最终成为马里步兵的主力。作为步兵，他们由国家或更准确地说是忠于国家的皇家氏族提供弓箭。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MALI_SOFA_CHAPTER_HISTORY_PARA_3"><Text>在马里帝国的森林和沼泽地区，骑兵被减到最少，甚至完全被遗弃，Sofa成了唯一的战争工具。Sofa上装有两个箭筒，按欧洲标准，它们的弓很小。它不能射得很远，甚至威力也不大，所以Sofa使用致命的毒药，以弧形射出，给箭以力量。Sofa也使用火红的箭，尤其是对防御工事，往往只有茅草或木制栅栏。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MALI_SOFA_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MALI_SOFA_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MAORI_TUPARA_CHAPTER_HISTORY_PARA_1"><Text>毛利人通常更喜欢双管短枪(双管)，这是一种装有滑膛枪子弹的散弹枪，因为他们可以在重新装弹前开两枪。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MAORI_TUPARA_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MAORI_TUPARA_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MAORI_TUPARA_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MAORI_TUPARA_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MAPUCHE_GUERILLA_CHAPTER_HISTORY_PARA_1"><Text>纳蒙图林科字面意思是“脚军”。在阿劳卡尼亚战争开始时，马普什没有马或火药。尽管如此，他们还是能够成功地抵抗西班牙军队。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MAPUCHE_GUERILLA_CHAPTER_HISTORY_PARA_2"><Text>马普奇最初是徒步训练的，从小就受训，在一年中的任何季节都能忍受各种地形的艰苦跋涉。开始于六岁时，男孩被教导使用军事武器。通过观察他，男孩的战士或父亲会决定他最擅长的武器，然后他会训练成为使用该武器的专家。与此同时，他大力训练跑步、狩猎和游泳。如果他没有作战能力，立即被取消资格。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MAPUCHE_GUERILLA_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MAPUCHE_GUERILLA_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MAPUCHE_GUERILLA_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MAYAN_HOLKAN_CHAPTER_HISTORY_PARA_1"><Text>Warfare among the Mayans was a bloody and constant affair, serving both economic and religious purposes. Most leaders demanded tribute from conquered city-states in order to increase their own standing. Yet equally important was the capture of victims for sacrifice. This was the domain of the dreaded Holcan. Elite warriors armed with slingshots, stones and razor-sharp spears, the Holcans were trained specifically to capture enemies alive, to provide fodder for ever-hungry sacrificial altars. </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MAYAN_HOLKAN_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MAYAN_HOLKAN_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MAYAN_HOLKAN_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MAYAN_HOLKAN_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MONGOLIAN_HUI_HUI_PAO_CHAPTER_HISTORY_PARA_1"><Text>“回回炮”的主要制作者是阿老瓦丁和亦思马因。这两个人都是西域（今玉门关以西）回回人（伊斯兰教），因此炮名叫西域炮、回回炮，又因首先在攻打襄阳、樊城时使用，又名襄阳炮。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MONGOLIAN_HUI_HUI_PAO_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MONGOLIAN_HUI_HUI_PAO_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MONGOLIAN_HUI_HUI_PAO_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_MONGOLIAN_HUI_HUI_PAO_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_NORWEGIAN_HIRDMAN_CHAPTER_HISTORY_PARA_1"><Text> 赫德（Hird）在挪威的历史上最初是对非正式的私人武装随从或护卫的称呼。但之后，这一词汇不仅指代着皇家军队中的核心成员（御前侍卫），同时也发展成了一个更为正式的宫廷贵族称号。在哈康四世统治期间，挪威的赫德阶层不再仅仅专注于军事领域，其内部也获得了更为细致的划分。整个赫德阶层被分成了四大部分：“士绅”、“卫士”、“骑士”以及出身低微的“游人”。其中的大量赫德上层被招募为王室官员，与此同时，更多的普通官员也被吸纳进了赫德阶层之中。当赫德正式成为挪威贵族阶级中的一员时，“卫士”（Hirdman）成为了四个称号中地位最高的一个。这些豪强们在皇家评议会（类似于封建时代的内阁机构）里拥有席位，能够参与到政治以及其它一些重要事项的决策当中。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_NORWEGIAN_HIRDMAN_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_NORWEGIAN_HIRDMAN_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_NORWEGIAN_HIRDMAN_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_NORWEGIAN_HIRDMAN_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_NORWEGIAN_ULFHEDNAR_CHAPTER_HISTORY_PARA_1"><Text> “沃芬达尔”（Ulfhednar）是一群起源自古诺尔斯宗教仪式的维京战士（这一仪式最有可能涉及的神明是奥丁——最受维京人崇拜的主神，拥有两只宠物巨狼，注定要在诸神的黄昏一战中被魔狼芬里尔吞噬）。沃芬达尔身披狼皮，他们自己的皮肤已经漆黑若死。这些嚎叫的狂人行止似狼、暴虐成性，他们的事迹启发和影响了后世欧洲民俗传说之中的狼人形象。作为狂暴武士的分支，沃芬达尔在战前同样会举行颂祷和祝仪，并使自己进入“狂怒”的状态。与那些披着熊皮的同行不同，沃芬达尔在战斗中从不使用盾牌。虽然最终他们并入了“狂战士”的名下，但仍就执着于自己独特的行事风格（比如狼皮和武器）。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_NORWEGIAN_ULFHEDNAR_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_NORWEGIAN_ULFHEDNAR_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_NORWEGIAN_ULFHEDNAR_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_NORWEGIAN_ULFHEDNAR_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_NUBIAN_AFRICAN_FOREST_ELEPHANT_CHAPTER_HISTORY_PARA_1"><Text>有强有力的考古学证据表明非洲森林象在努比亚时期被用来作为战争武器的事实。大象在战争中的使用，作为一种古老的坦克，在希腊化时期广泛传播。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_NUBIAN_AFRICAN_FOREST_ELEPHANT_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_NUBIAN_AFRICAN_FOREST_ELEPHANT_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_NUBIAN_AFRICAN_FOREST_ELEPHANT_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_NUBIAN_AFRICAN_FOREST_ELEPHANT_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_OTTOMAN_SIPAHI_CHAPTER_HISTORY_PARA_1"><Text>西帕希是奥斯曼帝国的长矛兵。西帕希人建立于穆拉德一世统治时期(1362 - 1389年)，他们来自土耳其的地主贵族。他们是非常积极和忠诚的战士，是苏丹的私人保镖。西帕希人是由土耳其和非土耳其士兵组成的Janissaries(另一个奥斯曼帝国的特殊部队)的劲敌。事实上，在1826年，在禁卫军发动了一场失败的起义后，西帕希人热情地帮助他们以暴力方式解散了禁卫军。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_OTTOMAN_SIPAHI_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_OTTOMAN_SIPAHI_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_OTTOMAN_SIPAHI_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_OTTOMAN_SIPAHI_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_PERSIAN_CATAPHRACT_CHAPTER_HISTORY_PARA_1"><Text> 甲胄骑兵（Cataphract）是在西欧亚大陆和欧亚草原的古代战争中出现过的装甲重骑兵运用形式。历史上的甲胄骑兵是一种全装甲骑兵，骑手和坐骑从头到脚皆披挂鳞甲，通常使用骑矛（Kontos）或长枪作为武器。甲胄骑兵的发展并不是局限在特定时期某个封闭的焦点之内（如伊朗高原地区），而是在中亚的不同地区（特别是居住在丝绸之路上的各个族群之中）同时进行着演化，以伊朗次大陆地区为最。而亚述和花剌子模在公元前1000年间对类甲胄骑兵的运用历史同样至关重要。在尼姆鲁德（公元前13世纪由萨尔玛那萨尔一世建立的亚述城市）的古代废墟中发现的浮雕首次描绘了穿着金属鳞片甲的骑士。据推测是由亚述人所部署，用以在同他们那些游牧敌人（主要是阿拉姆人、穆西奇人、北部的阿拉伯部落以及巴比伦人）手中的无护甲弓骑兵部队的对抗中取得战术上的优势。在提格拉特帕拉沙尔三世时期（前745–前727年），新亚述帝国成立并达到了其军事实力的巅峰，通常认为这是亚述王国组成原始的甲胄骑兵军团的第一条脉络。即使仅以长矛为武器，这些早期的马上部队依然是高水准的骑兵，而在辛那赫里布统治时期（前705–前681年），弓箭的加入使他们最终成为了远攻和肉搏的双面能手。这一改变也反映在了公元前1世纪安息帝国时期的两用重装弓步兵的身上。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_PERSIAN_CATAPHRACT_CHAPTER_HISTORY_PARA_2"><Text> 考古发掘还显示，在公元前6世纪，类似的骑兵运用实验也出现在了花剌子模以及咸海地区的伊朗族群（如马萨格泰人、达黑人和萨卡人）之中。虽然这些原型甲胄骑兵的武器与亚述人相同，但区别在于——不仅是骑手，马的头部和侧边部分也被披挂上了护甲。这一发展是否如学者们假设的那般是受到了亚述人的影响，抑或是受到了波斯第一帝国（阿契美尼德王朝）的影响，甚或是与古代近东地区创立的装甲骑兵完全无关的独自演化。从这些马背上的游牧民族留下的考古记录中尚且无法得出结论。而关于这些西欧亚大陆早期重骑兵的进一步演变过程在整体上依然不甚明朗。公元前4世纪黑海北部地区的壁画中也出现了骑在大型马背上的重甲骑士。值得注意的是这一时期也是仰赖轻装弓骑兵的斯基泰人被使用重骑兵的萨尔马提亚人取而代之的历史节点。到了公元前3世纪，轻骑兵成为了大多数东方军队中的主力骑兵，但仍有“相对稀少的东方或西方国家试图模仿亚述人和花剌子模人对装甲重骑兵的运用实践。” </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_PERSIAN_CATAPHRACT_CHAPTER_HISTORY_PARA_3"><Text> 公元前5世纪的波希战争时期，古希腊人在与阿契美尼德王朝的对抗中第一次遭遇了甲胄骑兵。这场由小亚细亚反抗波斯统治的伊奥尼亚起义为导火索引发的波斯对希腊的第一次入侵战争，极有可能是西方与甲胄骑兵的首次遭遇，某种程度上也可以说是西方与重骑兵的首次遭遇。当亚历山大大帝于公元前323年逝世之后，作为马其顿帝国希腊化时期的继承者，统治波斯故领和小亚细亚的塞琉古帝国广泛采用了甲胄骑兵这一兵种。而到了公元前147年，安息帝国从最后的继业者王国手中夺回波斯故土的掌控权时，也因在战场上仰赖的甲胄骑兵和弓骑兵而倍受瞩目。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_PERSIAN_WARSHIP_CHAPTER_HISTORY_PARA_1"><Text> 自居鲁士二世登基开始，波斯帝国逐渐成为一个拥有强大军事实力的大陆国家，但其海上力量却极为空虚。到了公元前5世纪，当帝国与希腊和埃及的军事武装遭遇，并且接触到其各自传统的海上力量之后，这一情况发生了改变。大流士大帝（大流士一世）被认为是第一位投身于建立波斯舰队的阿契美尼德统治者。即使在希腊和埃及，这一时期也没有真正意义上的“皇家海军”。在大流士一世治下，波斯成为了第一个创立和部署正规国家级海军的帝国。尽管取得了这一成就，皇家海军的成员却并非来自于波斯。战舰的操纵工作通常由大流士大帝挑选的腓尼基人（大多来自于西顿）、埃及人和希腊人来担任。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_PERSIAN_WARSHIP_CHAPTER_HISTORY_PARA_2"><Text> 所需的船只最初由腓尼基人在西顿地区建造，首批阿契美尼德战舰的尺寸为长40米，宽6米，能够携带300名波斯士兵踏上任何一段航程。不久之后，帝国中的其它地区也开始建造他们自己的船只，每一艘成品都带有细微的本地偏好。这些船只最终抵达了波斯湾，为帝国在这里建立的海上强权奠定了基础。波斯人不仅在海湾内的岛屿上驻守，还会经常性的派遣规模为100-200艘左右的帝国舰队沿河道进行巡逻，其范围包括卡伦河、底格里斯河与尼罗河西部以及印度河。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_PERSIAN_WARSHIP_CHAPTER_HISTORY_PARA_3"><Text> 阿契美尼德海军在卡伦河沿岸、巴林、阿曼和也门地区设有基地。舰队的作用不仅是维护卡伦河周边地区的和平，也为波斯湾通往印度的商路打开了大门。在这一历史时期，大流士的海军于很多方面都可被称为世界霸权，而公元前397年的夏天，阿尔塔薛西斯二世建立了一支同样恐怖的舰队。作为重整军备的一部分，为其在公元前394年的奈达斯战役中带来了决定性的胜利，并在伊奥尼亚地区重新确立了阿契美尼德王朝的统治地位。此后，阿尔塔薛西斯二世还运用这支海军平定了发生在埃及的叛乱。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_PERSIAN_WARSHIP_CHAPTER_HISTORY_PARA_4"><Text> 阿契美尼德战船的建造材料为精选的木材，部分装甲战舰还会在船头位置安装金属利刃，意图凭借船只行进的动能切割敌舰。某些海军战船会在侧舷装设抓勾，用于抢夺敌军船只或是抵近它们的所在位置。这类战船依靠风帆或人力驱动，是波斯人创造的一种独一无二的舰船类型。在海上的军事行动中，这些战船还可以搭载两台投石机发射诸如石弹或易燃物质之类的抛射物。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_PERSIAN_WARSHIP_CHAPTER_HISTORY_PARA_5"><Text> 希腊文史学家色诺芬在他的目击记录中描述了一座横跨底格里斯河，由37艘波斯船舰参与搭建的大型军事桥梁。波斯人利用这些船只的浮力为连接而成的桥体提供支撑，以便在其上进行物资的转运。“历史之父”希罗多德也提供了诸多波斯人利用船只搭设桥梁的记录。大流士大帝在一次对黑海北部斯基泰骑兵的征服行动中，曾使用连锁的阿契美尼德战船打造了一座横跨博斯普鲁斯海峡的巨型桥梁，在行军到多瑙河之后，又以同样的方式从第二座“船桥”之上跨河而过。这座位于博斯普鲁斯海峡上的大桥实质上也是连接亚洲和欧洲的最近点，其间至少有近千米的开放水域。希罗多德描述了这一场面，并称其为“大流士之桥”。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_PHOENICIA_NUMIDIAN_CAVALRY_CHAPTER_HISTORY_PARA_1"><Text> 努米迪亚是一个柏柏尔王国，位于北非迦太基以西。努米迪亚人最初是游牧部落，精通马术，他们最著名的是骑兵，被认为是古代世界最优秀的骑兵之一。这些战士轻装上阵——骑着快马，身上只带着一面小盾牌和一把标枪——但他们的顾客都很强悍。即使在定居城市后，努米迪亚人仍然迷恋马武士——努米迪亚人最终还是培养出了步兵，但人们总是认为步兵不可靠，而且在很大程度上不如骑兵。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_PHOENICIA_NUMIDIAN_CAVALRY_CHAPTER_HISTORY_PARA_2"><Text> 努米迪亚骑兵擅长打了就跑的攻击，他们出色地利用标枪骚扰和破坏敌人的阵形。他们从未打算与敌人近距离肉搏战。罗马指挥官最初对这种轻装上阵的骑兵的威胁持怀疑态度，但他们很快就意识到，这支部队不断地进攻、撤退、重新集结，然后再次进攻，始终保持在近战武器的射程之外，会带来危险。古代的作者把努米迪亚骑兵比作一群狗，因为他们攻击敌人队形的侧翼和后方。当步兵受到努米迪亚骑兵的攻击时，他们需要严格的纪律，不能打乱队形，但随着时间的推移，罗马人从他们的错误中吸取了教训，变得更加善于与他们作战。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_PHOENICIA_NUMIDIAN_CAVALRY_CHAPTER_HISTORY_PARA_3"><Text> 努米迪亚骑兵不是速度最快的，但由于骑士们不穿盔甲，他们比当时的对手更敏捷，能够穿越重装骑兵难以穿越的地形。在第二次布匿战争中，努米迪亚骑兵因在汉尼拔骑兵联队服役而闻名。然而，他们也被罗马人雇佣为雇佣兵。凯撒大帝在他的战役中部署了努米迪亚人，也在罗马内战中与他们作战。总之，Numidian骑兵是古代世界最优秀的轻骑兵之一。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_PHOENICIA_NUMIDIAN_CAVALRY_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_PHOENICIA_NUMIDIAN_CAVALRY_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_POLISH_CHOSEN_INFANTRY_CHAPTER_HISTORY_PARA_1"><Text>选征步兵（Piechota wybraniecka）也被称为“封邑步兵”，是波兰-立陶宛联邦时期的一种非正规步兵组织形式。最早成立于1578年，由没有抵押和归公的皇家土地上那些“皇家”农民所组成（每20封邑招募一人）。被征召的农民会被免除赋税和劳役，但必须配备定制的蓝色制服和武器（包括火绳枪、剑和长柄斧），并在每个季度参加强制性的军事训练。一旦发生战事，他们要在第一时间前往队长所在之处进行报到，并从那一刻起领取等同于正规士兵的薪酬。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_POLISH_CHOSEN_INFANTRY_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_POLISH_CHOSEN_INFANTRY_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_POLISH_UHLAN_CHAPTER_HISTORY_PARA_1"><Text>“乌兰”是装备了骑枪、军刀和手枪的波兰轻骑兵。“乌兰”（Uhlan）一词在突厥鞑靼语中的原意为“勇敢的年轻战士”。第一支乌兰骑兵团成立于18世纪20年代的波兰-立陶宛联邦。这一头衔后来也被俄罗斯、普鲁士和奥地利军队用于称呼自己的枪骑兵团。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_POLISH_UHLAN_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_POLISH_UHLAN_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ROMAN_EQUITE_CHAPTER_HISTORY_PARA_1"><Text> 骑士（Equites）来自于罗马的上层社会和贵族阶级，他们是高贵的骑兵以及罗马共和国早期的军事力量。能够成为骑士团的一员，意味着一个人有足够的财富养一匹马，置办一套盔甲、一面盾牌和一柄长矛。共和国的每个军团里大约有300名骑士，他们分成10个小队，每队由3名十夫长指挥，并在其中选出一名担任骑兵部队的总指挥。这些人都是来自精英阶层的年轻小伙子，渴望着能够表现出自己的勇气。在战场上展示武勇，可以为他们个人增加政治资本并为其家族赢得声望。至于那些俗务，诸如巡逻和侦查之类的工作，则会指派给意大利盟军的骑兵们去做。在萨莫奈和布匿战争期间，骑士阶级开始向上层的平民开放。尽管没能享受到这一阶级应有的社会地位和政治权力，但他们最终还是取代了贵族在罗马骑兵部队中的位置，并使骑士在新成立的马略军团中成为了领导阶层。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ROMAN_EQUITE_CHAPTER_HISTORY_PARA_2"><Text> 从早期开始到整个共和国时期，罗马的骑士阶级一直担任着骑兵部队的角色，并且秉持着一种个人英雄主义和荣誉精神。这一追求不但可以将其有别于下级步兵阶层的特权地位正当化，也可以提高他们所在家族姓氏的名望，以及增加在这个尚武社会里出人头地的机会。对于骑士们来说，这种英雄情怀体现在了对战利品的追求上，如果能在一对一的决斗中杀死敌人，他们会剥下对手的盔甲和武器来作为荣誉的证明。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ROMAN_EQUITE_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ROMAN_EQUITE_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ROMAN_EQUITE_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ROMAN_ONAGER_CHAPTER_HISTORY_PARA_1"><Text> 抛石机是一种罗马的攻城器械，依靠扭力通过绞绳积蓄的能量进行发射。抛石机的组成部分包括一个放置在地面上的大型支架和一个固定在前端的实木垂直框架，以及一根通过绳索将装有抛射物的吊袋绞紧在框架上的垂直抛杆。发射时将抛杆下压，通过绞盘抵抗住绞绳或其它弹射装置的张力，然后突然松开。抛杆的一端弹起，随着吊袋的摆动，如同投石索那样将其中的物体抛射出去。当绞绳能够再次绞紧时，抛杆会被衬梁或底盘部分接住。由于在发射时酷似正在踢腿的驴子，所以这种投石器械拥有了“野驴”（Onager）这一名称。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ROMAN_ONAGER_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ROMAN_ONAGER_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ROMAN_ONAGER_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ROMAN_ONAGER_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_RUSSIAN_DRUZHINA_CHAPTER_HISTORY_PARA_1"><Text> 亲卫（Druzhina）在斯拉夫语中的含义是“同伴、朋友”。在早期的罗斯，亲卫会帮助大公管理公国并在该地区构建军事力量。第一批亲卫是罗斯汗国的维京人，他们的大公于9世纪获得了对这片土地的控制权。随后，当地的斯拉夫贵族以及各个民族的冒险家们成为了义勇兵（Druzhinniki）。亲卫们依赖于领地主人提供的财政支持，但也拥有选择服务以及转投他人的自由。因此，领主们通常会以支付义勇兵的薪酬或是分享战利品和税收之类的手段向他的亲卫们表达善意，并在最终通过奖励土地产权的方式，赋予亲卫中的高级成员对当地人口进行征税和执法的权力。随着时间的推移，亲卫组织一直以这样或那样的形式存在着，一直持续到了16世纪。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_RUSSIAN_DRUZHINA_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_RUSSIAN_DRUZHINA_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_RUSSIAN_DRUZHINA_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_RUSSIAN_DRUZHINA_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_RUSSIAN_T34_CHAPTER_HISTORY_PARA_1"><Text> T-34坦克是一种苏联研制的中型坦克，它的出现对坦克设计领域造成了深远的影响。虽然装甲和火力在战争期间被后来者超越，但它仍被普遍认为是第二次世界大战中最实用、最高效以及最具影响力的坦克型号。数据表明，T-34坦克是前所未有的火力、机动性、防御力以及坚固性的集合体。它的76.2毫米（3英寸）高速坦克炮的火力大大超越了同期的所有对手，而同时代的大多数反坦克武器却很难击穿它厚重的倾斜装甲。当1941年第一次与之遭遇时，德国的坦克指挥官冯·克莱斯特称其为“世界上最好的坦克”。而海因茨·古德里安则承认T-34坦克对当时的德国装甲部队拥有“巨大的优势”。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_RUSSIAN_T34_CHAPTER_HISTORY_PARA_2"><Text> 在第二次世界大战期间，T-34坦克一直是苏联装甲部队的支柱，它的设计使其能够被不断改进以满足东线战场上多变的需求：随着战争的进行，它变得更加有效，而且可以被更快、更廉价的制造。苏联的工业体系最终生产了超过80000辆包含各种衍生型号的T-34坦克，虽然在与德国纳粹的战斗中损失了数千辆，但其总数仍能保持稳定的增长。T-34取代了红军诸多轻、中型号坦克成为了整个战争期间生产数量最多的坦克，同时也是历史上生产数量第二多的坦克（紧随其继任者T-54/55系列之后）。基于这一型号直接发展出的T-54/55系列以及后续的T-62、T-72和T-90坦克，连同中国以T-55为基础研发的几种型号，直到今天仍然是许多军队中的骨干力量。T-34坦克的衍生型号在第二次世界大战后被大量出口，直到1996年底仍然有至少27个国家尚在使用。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_RUSSIAN_T34_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_RUSSIAN_T34_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_RUSSIAN_T34_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SCOTTISH_GALLOWGLASS_CHAPTER_HISTORY_PARA_1"><Text>Gallowglasses是一批精英雇佣兵，主要是十三世纪中旬到十六世纪下旬的苏格兰挪威盖尔族人。作为苏格兰人，他们是盖尔人，与爱尔兰人有着共同的背景和语言，但由于他们与苏格兰西部的十世纪挪威殖民者通婚，爱尔兰人称他们为Gall Gaeil（“外国盖尔人”）。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SCOTTISH_GALLOWGLASS_CHAPTER_HISTORY_PARA_2"><Text>Gallowglasses是一个重装甲，训练有素的贵族步兵，被视为一个强有力的防御据点，不像大多数爱尔兰步兵，他们是低级的，盔甲不如典型的爱尔兰贵族谁战斗作为骑兵。随着时间的推移，出现了许多土著爱尔兰人Gallowglasses，这个词的意思是一种战士，而不是一个种族称号。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SCOTTISH_GALLOWGLASS_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SCOTTISH_GALLOWGLASS_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SCOTTISH_GALLOWGLASS_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SCYTHIAN_AMAZON_CHAPTER_HISTORY_PARA_1"><Text> 亚马逊（Amazones）是战场上的斯基泰女性，同时也指代古希腊神话中一个由女性战士构成的民族。希腊“历史学家”希罗多德认为这一民族与斯基泰人息息相关，并将其活动区域定位在了萨尔马地区（今乌克兰）。另一些历史学家则认为她们曾经生活在小亚细亚或利比亚地区。亚马逊人与罗马帝国时期以及晚期的诸多历史人物都产生过关联。根据传说，她们建立了许多城镇和庙宇，并且创立了自己的骑兵部队。到了现代早些时候，这一名称已经变成了指代女性战士的专属名词。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SCYTHIAN_AMAZON_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SCYTHIAN_AMAZON_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SCYTHIAN_AMAZON_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SCYTHIAN_AMAZON_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SCYTHIAN_AMAZON_SCOUT_CHAPTER_HISTORY_PARA_1"><Text> 亚马逊（Amazones）是战场上的斯基泰女性，同时也指代古希腊神话中一个由女性战士构成的民族。希腊“历史学家”希罗多德认为这一民族与斯基泰人息息相关，并将其活动区域定位在了萨尔马地区（今乌克兰）。另一些历史学家则认为她们曾经生活在小亚细亚或利比亚地区。亚马逊人崇拜战神和狩猎女神，在战斗中追寻自我。希腊神话中的她们骁勇善战、奔跑如风、弓箭和投枪百发百中。由于需要在辽阔的疆土内辗转生存，亚马逊人天生就是优秀的猎手（针对各种各样的动物以及人类）。到了现代早些时候，这一名称已经变成了指代女性战士的专属名词。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SCYTHIAN_AMAZON_SCOUT_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SCYTHIAN_AMAZON_SCOUT_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SCYTHIAN_AMAZON_SCOUT_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SCYTHIAN_AMAZON_SCOUT_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SPANISH_JINETE_CHAPTER_HISTORY_PARA_1"><Text> 作为一个军事术语，Jinete（也可以拼写成Ginete或Genitour）指代的是装备着剑与盾以及一杆标枪的西班牙轻骑兵——一种在中世纪早期为了对抗摩尔人众多的轻骑兵而发展出来的骑兵类型。通常由西班牙进行大规模的调遣，有时甚至是整个西班牙骑兵部队中最大的组成部分。直到16世纪为止，在整个收复失地运动里，他们在西班牙的骑兵战中始终扮演着举足轻重的角色。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SPANISH_JINETE_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SPANISH_JINETE_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SPANISH_JINETE_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SPANISH_JINETE_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SPANISH_TERCIO_CHAPTER_HISTORY_PARA_1"><Text> 大方阵（西班牙语意为“第三”）是近代早期在哈布斯堡王朝称雄欧洲期间于西班牙诞生的一种步兵组合。大方阵是一个整合了多达3000名士兵的行政单位。其内部分为10个部分，并以此为基础再细分为12个连队，由长枪手、剑士与火绳枪兵或重火枪兵组合而成。这些连队在战场上部署时会进一步细分为由30名士兵组成的战斗单元。这些小型战斗单元可以单独部署或者汇集一处组成所谓的“西班牙方阵”。这种强大的步兵方阵也被欧洲其它军事力量，特别是神圣罗马帝国的帝国军队广泛使用。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SPANISH_TERCIO_CHAPTER_HISTORY_PARA_2"><Text> 良好的保障使得方阵队伍能够拥有更多的“老兵”（精锐）以及专业化的训练，再加上培养他们将下级贵族的绅士荣誉刻印于身的独特个性，大方阵在长达一个半世纪里成为了欧洲最好的步兵兵种。此外，大方阵也是长柄武器和火药武器第一次有效的联合作战。其在欧洲战场上的主导地位从16世纪一直持续到了17世纪上半叶，并被历史学家们视为近代武器协同作战发展史上重要的一页。 </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SPANISH_TERCIO_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SPANISH_TERCIO_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SPANISH_TERCIO_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SUMERIAN_PHALANX_CHAPTER_HISTORY_PARA_1"><Text>苏美尔人是最早运用步兵方阵的文明之一。根据“秃鹫石碑”上的记载，在早王朝时期（约公元前3000年至2350年）苏美尔人就已经发展出了成熟的密集方阵战术。处于方阵阵列中的士兵携带着巨大的盾牌和长矛，能够在敌军的攻势之中为彼此提供有效的保护。同时也可以保持整体队列的步调一致，将交火线推向敌阵一侧。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SUMERIAN_PHALANX_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SUMERIAN_PHALANX_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SUMERIAN_PHALANX_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SUMERIAN_PHALANX_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SWEDEN_HAKKAPELIITTA_CHAPTER_HISTORY_PARA_1"><Text>The snowy North is their fatherland; there, their heart crackles on the stormy beach. The Hakkapeliitta were a division of Finnish light cavalrymen employed by King Gustavus Adolphus of Sweden during the Thirty Years' War. They were highly trained, and excelled at raiding, spying, lightning-quick attacks, and most especially, charging. Attacking at full gallop, the Hakkapeliitta would fire pistol shots as they approached the enemy lines, drawing their sword once the horse made contact. The small, sturdy, and powerful horses ridden in the Hakkapeliitta were some of the founding members the modern Finnhorse breed, the national horse of Finland. </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SWEDEN_HAKKAPELIITTA_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SWEDEN_HAKKAPELIITTA_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SWEDEN_HAKKAPELIITTA_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SWEDEN_HAKKAPELIITTA_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ZULU_ASSEGAI_CHAPTER_HISTORY_PARA_1"><Text>Assegai是一种用于投掷的极武器，通常是由木头制成的轻矛或标枪，用铁或火淬的尖端指向。各种类型的Assegai（也称为阿塞盖伊）在非洲各地都很普遍，它是使用枪支之前使用的最普通的武器。祖鲁人和其他南非的努贡部落因使用Assegai而闻名。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ZULU_ASSEGAI_CHAPTER_HISTORY_PARA_2"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ZULU_ASSEGAI_CHAPTER_HISTORY_PARA_3"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ZULU_ASSEGAI_CHAPTER_HISTORY_PARA_4"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ZULU_ASSEGAI_CHAPTER_HISTORY_PARA_5"><Text/></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_AMERICAN_AH64_APACHE_DESCRIPTION"><Text>取代轻骑兵的美国原子能时代特色骑兵单位。当对抗重骑兵单位时+10[ICON_Strength]战斗力。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_AMERICAN_AH64_APACHE_NAME"><Text>AH-64阿帕奇</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_AMERICAN_MINUTEMAN_DESCRIPTION"><Text>取代火枪手的美国工业时代特色近战单位，当毗邻己方领土或位于森林、雨林时+5[ICON_Strength]战斗力。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_AMERICAN_MINUTEMAN_NAME"><Text>爱国者</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_ARABIAN_CAMEL_ARCHER_DESCRIPTION"><Text>取代轻骑兵的阿拉伯古典时代特色轻骑兵单位，位于沙漠或泛滥平原时+8[ICON_Strength]战斗力。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_ARABIAN_CAMEL_ARCHER_NAME"><Text>骆驼骑手</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_ARABIAN_GHAZI_DESCRIPTION"><Text>取代剑客的阿拉伯古典时代特色近战单位，当消灭敌军单位即获得对方自身50%[ICON_Strength]战斗力的[ICON_Faith]信仰。对异教进攻时+5[ICON_Strength]战斗力，攻占的城市自动转换为玩家创立的宗教且可用信仰购买。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_ARABIAN_GHAZI_NAME"><Text>加齐</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_AUSTRALIAN_SASR_DESCRIPTION"><Text>取代机械化步兵的澳大利亚信息时代特色近战单位,当在沙漠或平原时+5[ICON_Strength]战斗力且忽略控制区域。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_AUSTRALIAN_SASR_NAME"><Text>特别空勤部队</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_AZTEC_JAGUAR_DESCRIPTION"><Text>取代剑客的阿兹特克中世纪特色近战单位,当进攻时+7[ICON_Strength]战斗力,防御时-7[ICON_Strength]战斗力,有机会把其他文明的军事单位转化为建造者并俘获。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_AZTEC_JAGUAR_NAME"><Text>美洲虎勇士</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_AZTEC_WARRIOR_PRIEST_DESCRIPTION"><Text>阿兹特克远古时代特色支援单位,研究市政树的“神秘主义”解锁。为陆地受损单位提供初始[ICON_Strength]战斗力且消灭敌方单位即获得大将军点数。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_AZTEC_WARRIOR_PRIEST_NAME"><Text>战斗祭司</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_BRAZILIAN_BANDEIRANTE_DESCRIPTION"><Text>取代游骑兵的巴西文艺复兴特色侦察单位，研究科技树的“火药”解锁，当消灭敌军单位即获得其对方战斗力25%的[ICON_Gold]金币和[ICON_Culture]文化，且能建造堡垒。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_BRAZILIAN_BANDEIRANTE_NAME"><Text>远征探行者</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_BRAZILIAN_FATHERLAND_VOLUNTEER_DESCRIPTION"><Text>取代步兵的巴西工业时代特色近战单位，招募成本和维护费更低。当位于首都同一大陆作战时+5[ICON_Strength]战斗力。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_BRAZILIAN_FATHERLAND_VOLUNTEER_NAME"><Text>卫国义勇兵</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_CANADA_HMCS_HAIDA_DESCRIPTION"><Text>取代驱逐舰的加拿大特色原子时代近战海军单位。当对抗海军海军袭击者单位或组成编队时+10[ICON_Strength]战斗力，附近4个单元格内的友方商人掠夺免疫。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_CANADA_HMCS_HAIDA_NAME"><Text>海达人部落级驱逐舰</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_CHINESE_CHOKONU_DESCRIPTION"><Text>取代弩手的中国中世纪特色远程攻击单位，[ICON_Strength]战斗力略低于弩手但每回合有两次进攻机会。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_CHINESE_CHOKONU_NAME"><Text>诸葛连弩手</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_CHINESE_SHIGONG_DESCRIPTION"><Text>中国特色支援单位，研究市政树的“军事训练”解锁，为近战、骑兵、反骑兵单位提供+5[ICON_Strength]战斗力且能获得更多经验值，但每座兵营只能招募一位。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_CHINESE_SHIGONG_NAME"><Text>大师</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_COLOMBIAN_BRITISH_LEGION_DESCRIPTION"><Text>Colombian unique Industrial Melee unit. Fights at full Combat Strength when damaged while on Hills. +5 [ICON_Strength] when attacking Ranged units.</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_COLOMBIAN_BRITISH_LEGION_NAME"><Text>Legión Británica</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_CREE_OTEHTAPIW_DESCRIPTION"><Text>取代轻骑兵的克里工业时代特色骑兵单位。当始于平地移动时+2移动力，位于平原或草地时+10[ICON_Strength]战斗力且每回合额外+15生命值回复。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_CREE_OTEHTAPIW_NAME"><Text>奥特哈普</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_DUTCH_SCHUTTERIJ_DESCRIPTION"><Text>取代火枪手的荷兰文艺复兴时期特色近战单位。当防御时+10[ICON_Strength]战斗力且相比火枪手更加廉价。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_DUTCH_SCHUTTERIJ_NAME"><Text>公民卫队</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_EGYPTIAN_HYKSOS_BOWMAN_DESCRIPTION"><Text>取代弓箭手的埃及古典时代特色远程攻击单位，拥有更强的[ICON_Strength]战斗力。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_EGYPTIAN_HYKSOS_BOWMAN_NAME"><Text>希克索斯弓手</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_EGYPTIAN_KHOPESH_DESCRIPTION"><Text>取代勇士的埃及远古时代特色近战单位。当进攻受伤单位时+5[ICON_Strength]战斗力。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_EGYPTIAN_KHOPESH_NAME"><Text>法老卫队</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_EGYPTIAN_WAR_GALLEY_DESCRIPTION"><Text>取代四段帆船的埃及特色海军远程攻击单位，拥有更强的[ICON_Strength]战斗力且射程+1。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_EGYPTIAN_WAR_GALLEY_NAME"><Text>四十桨战船</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_ELEANOR_TEMPLAR_DESCRIPTION"><Text>阿基坦埃莉诺古典时代特色近战单位。当对抗异教徒时+5[ICON_Strength]战斗力，位于圣地附近时+5[ICON_Strength]战斗力。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_ELEANOR_TEMPLAR_NAME"><Text>圣殿骑士</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_ENGLISH_LONGBOWMAN_DESCRIPTION"><Text>取代了弩手的英国中世纪特色远程攻击单位，当进攻骑兵单位时+4[ICON_Strength]战斗力且靠近另一队长弓手时+4[ICON_Strength]战斗力。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_ENGLISH_LONGBOWMAN_NAME"><Text>长弓手</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_ENGLISH_SHIP_OF_THE_LINE_DESCRIPTION"><Text>取代风帆战列舰的英国文艺复兴时期远程海军单位。当靠近另一个皇家风帆战列舰时+7[ICON_Strength]战斗力。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_ENGLISH_SHIP_OF_THE_LINE_NAME"><Text>皇家风帆战列舰</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_FRENCH_GENDARME_DESCRIPTION"><Text>取代骑士的法国中世纪特色重骑兵单位，当进攻时+5[ICON_Strength]战斗力。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_FRENCH_GENDARME_NAME"><Text>宪兵</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_FRENCH_MARINE_DESCRIPTION"><Text>取代火枪手的法国文艺复兴特色近战单位，当位于外国大陆作战时+5[ICON_Strength]战斗力，且海岸登陆与渡河时没有进攻惩罚。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_FRENCH_MARINE_NAME"><Text>近卫海军陆战队</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_GEORGIAN_TADZREULI_DESCRIPTION"><Text>取代骑士的格鲁吉亚特色中世纪重骑兵单位。当对抗异教徒时+5[ICON_Strength]战斗力，击败敌方单位时将获得其50%[ICON_Strength]战斗力的[ICON_Faith]信仰值，被本单位占领的城市自动转换为玩家宗教且可以用信仰购买。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_GEORGIAN_TADZREULI_NAME"><Text>塔兹卢利枪骑兵</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_GERMAN_LANDSKNECHT_DESCRIPTION"><Text>取代枪兵的德国中世纪特色抗骑兵单位，仅限金币招募但比平常花费便宜一半。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_GERMAN_LANDSKNECHT_NAME"><Text>自由佣兵</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_GERMAN_PANZER_DESCRIPTION"><Text>取代坦克的德国现代特色重骑兵单位，当进攻时+5[ICON_Strength]战斗力。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_GERMAN_PANZER_NAME"><Text>虎式坦克</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_GREEK_ARMATOLOS_DESCRIPTION"><Text>取代线列步兵的希腊工业时代特色近战单位，当位于丘陵作战时+5[ICON_Strength]战斗力且没有移动惩罚。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_GREEK_ARMATOLOS_NAME"><Text>警备纠察队</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_GREEK_PELTAST_DESCRIPTION"><Text>取代标枪手的希腊远古时代特色远程攻击单位，防御时+5[ICON_Strength]战斗力。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_GREEK_PELTAST_NAME"><Text>轻盾步兵</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_HUNGARY_KALANDOZO_DESCRIPTION"><Text>取代弩兵的匈牙利特色中世纪远程单位。掠夺区域或改良设施获得双倍黄金，击败敌军单位即获得其自身50%[ICON_Strength]战斗力的[ICON_Gold]金币。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_HUNGARY_KALANDOZO_NAME"><Text>袭破死士</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_INCA_CHASQUI_DESCRIPTION"><Text>取代侦察兵的印加特色远古时代侦察单位。额外+1移动力，能够建造改良设施“道路”。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_INCA_CHASQUI_NAME"><Text>海螺信使</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_INDIAN_MUGHAL_SOWAR_DESCRIPTION"><Text>取代骑士的印度文艺复兴特色重骑兵单位，当靠近梯井时每回合+15生命值且忽略地形惩罚。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_INDIAN_MUGHAL_SOWAR_NAME"><Text>索瓦尔</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_INDIAN_SEPOY_DESCRIPTION"><Text>取代线列步兵的印度工业时代特色近战单位，当受伤时不会减少[ICON_Strength]战斗力。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_INDIAN_SEPOY_NAME"><Text>西帕依火枪手</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_INDONESIAN_KRIS_SWORDSMAN_DESCRIPTION"><Text>取代步兵的印度尼西亚特色近战单位。采用武僧升级树且可以用信仰购买。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_INDONESIAN_KRIS_SWORDSMAN_NAME"><Text>克里斯剑士</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_JANISSARY_DESCRIPTION"><Text>文艺复兴特色近战单位,当成为“埃里温”与“普雷斯拉夫”的宗主国解锁,消灭单位即可恢复生命值。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_JANISSARY_NAME"><Text>苏丹亲兵</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_JAPANESE_SOHEI_DESCRIPTION"><Text>日本中世纪特色近战单位，可使用信仰[ICON_Faith]购买，当防御时+10[ICON_Strength]战斗力。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_JAPANESE_SOHEI_NAME"><Text>雉刀僧侣</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_JAPANESE_YAMATO_DESCRIPTION"><Text>取代战列舰的日本特色现代海军远程攻击单位，拥有更强的[ICON_Strength]战斗力。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_JAPANESE_YAMATO_NAME"><Text>大和级战列舰</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_KHMER_WAR_CANOE_DESCRIPTION"><Text>取代桨帆船的高棉远古时代特色海军近战单位。能掠夺敌方战船，被护送的单位将以同样的速度移动且毗邻的陆地单位将不受上岸/下船移动惩罚。制图学研究前只能在沿海水域活动。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_KHMER_WAR_CANOE_NAME"><Text>独木舟</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_KONGO_GARDE_REPUBLICAINE_DESCRIPTION"><Text>取代机械化步兵的刚果信息时代特色近战单位，当位于城市区域内或攻击城市区域时+10[ICON_Strength]战斗力。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_KONGO_GARDE_REPUBLICAINE_NAME"><Text>共和国卫队</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_KONGO_MEDICINE_MAN_DESCRIPTION"><Text>取代医生的刚果特色支援单位，研究市政树的“神秘主义”解锁，为近战、骑兵、反骑兵单位提供医治且消灭敌方单位即获得对方50%[ICON_Strength]战斗力的[ICON_Faith]信仰，可用信仰购买但每座圣地只能招募一位。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_KONGO_MEDICINE_MAN_NAME"><Text>部族药师</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_KOREAN_TURTLE_SHIP_DESCRIPTION"><Text>取代轻快帆船的朝鲜特色文艺复兴时期海军近战单位。当对抗受伤单位时+5[ICON_Strength]战斗力。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_KOREAN_TURTLE_SHIP_NAME"><Text>龟船</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_MACEDONIAN_BALLISTA_DESCRIPTION"><Text>取代投石机的马其顿古典时代特色攻城单位，当位于城市区域外时+17[ICON_Strength]战斗力，位城市区域内时-10[ICON_Strength]战斗力。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_MACEDONIAN_BALLISTA_NAME"><Text>蝎弩</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_MACEDONIAN_HETAIROI_NAME"><Text>伙伴骑兵</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_MACEDONIAN_PEZHETAIROS_DESCRIPTION"><Text>取代长枪手的马其顿古典时代特色抗骑兵单位，拥有更强的[ICON_Strength]战斗力且进攻近战单位时+10[ICON_Strength]战斗力。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_MACEDONIAN_PEZHETAIROS_NAME"><Text>同伴步兵</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_MALI_SOFA_DESCRIPTION"><Text>取代弩兵的马里特色中世纪远程单位。当对抗受伤单位时+5[ICON_Strength]战斗力，邻近骑兵单位时+4[ICON_Strength]战斗力。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_MALI_SOFA_NAME"><Text>奴隶射手</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_MAORI_TUPARA_DESCRIPTION"><Text>取代游骑兵的毛利特色工业时代侦察单位。[ICON_Strength]战斗力略低于游骑兵但每回合有两次进攻机会，能够建造改良设施“帕堡”。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_MAORI_TUPARA_NAME"><Text>托塔帕拉</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_MAPUCHE_GUERILLA_DESCRIPTION"><Text>取代长枪手的马普切中世纪特色反骑兵单位。能进行远程攻击且攻击后能继续移动，视线能穿透树林和雨林。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_MAPUCHE_GUERILLA_NAME"><Text>游击者</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_MAYAN_HOLKAN_DESCRIPTION"><Text>Mayan unique Medieval Melee unit. +7 [ICON_Strength] when attacking City States' units and yields 100% of defeated City State units' combat strength as [ICON_Gold] Gold. </Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_MAYAN_HOLKAN_NAME"><Text>Holcan</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_MONGOLIAN_HUI_HUI_PAO_DESCRIPTION"><Text>替代抛石机的蒙古中世纪攻城单位，拥有更强的[ICON_Strength]战斗力。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_MONGOLIAN_HUI_HUI_PAO_NAME"><Text>回回炮</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_NORWEGIAN_HIRDMAN_DESCRIPTION"><Text>取代剑客的挪威古典时代特色近战单位，当位于首都所在大陆时+5[ICON_Strength]战斗力，牺牲后即获得其自身50%[ICON_Strength]战斗力的[ICON_Gold]金币。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_NORWEGIAN_HIRDMAN_NAME"><Text>北欧狂热者</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_NORWEGIAN_ULFHEDNAR_DESCRIPTION"><Text>挪威远古时代特色火力支援单位，研究市政树的“神秘主义”解锁。为近战、骑兵、反骑兵单位提供+5[ICON_Strength]战斗力且击败敌军单位即获得其自身[ICON_Strength]战斗力50%的[ICON_Faith]信仰。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_NORWEGIAN_ULFHEDNAR_NAME"><Text>半人狼祭祀者</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_NUBIAN_AFRICAN_FOREST_ELEPHANT_DESCRIPTION"><Text>取代骑士的努比亚特色中世纪重骑兵单位。当穿越河流时没有移动惩罚且能迫使敌方单位后撤。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_NUBIAN_AFRICAN_FOREST_ELEPHANT_NAME"><Text>非洲森林战象</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_OTTOMAN_SIPAHI_DESCRIPTION"><Text>取代骑士的奥斯曼特色中世纪重骑兵单位。侧翼攻击加成+100%，掠夺能消耗更少的行动力。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_OTTOMAN_SIPAHI_NAME"><Text>西帕希</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_PERSIAN_CATAPHRACT_DESCRIPTION"><Text>波斯古典时代特色重骑兵单位，拥有更强的[ICON_Strength]战斗力。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_PERSIAN_CATAPHRACT_NAME"><Text>贵族鳞甲骑兵</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_PERSIAN_WARSHIP_DESCRIPTION"><Text>取代浆帆船的波斯古典时代特色近战海军单位，当进攻时+5[ICON_Strength]战斗力、邻近的陆地单位时+5[ICON_Strength]战斗力且+2移动力。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_PERSIAN_WARSHIP_NAME"><Text>腓尼基战舰</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_PHOENICIA_NUMIDIAN_CAVALRY_DESCRIPTION"><Text>取代骑手的腓尼基特色古典时代轻骑兵单位。能额外使用远程攻击且攻击后能继续移动。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_PHOENICIA_NUMIDIAN_CAVALRY_NAME"><Text>努米底亚雇佣骑手</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_POLISH_CHOSEN_INFANTRY_DESCRIPTION"><Text>取代火枪手的波兰工业时代特色近战单位,每回合生命值回复额外+10。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_POLISH_CHOSEN_INFANTRY_NAME"><Text>封邑步兵</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_POLISH_UHLAN_DESCRIPTION"><Text>取代骑兵的波兰中世纪特色轻骑兵单位,当侧面进攻时+100%侧翼[ICON_Strength]战斗力加成。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_POLISH_UHLAN_NAME"><Text>乌兰</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_ROMAN_EQUITE_DESCRIPTION"><Text>取代轻骑兵的罗马古典时代特色轻骑兵单位，当位于友军勇士或罗马军团附近时+5[ICON_Strength]战斗力且击败敌军即获得其自身33%[ICON_Strength]战斗力的金币[ICON_Gold]。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_ROMAN_EQUITE_NAME"><Text>禁卫骑兵</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_ROMAN_ONAGER_DESCRIPTION"><Text>取代石弩的罗马古典时代特色攻城单位，拥有更强的战斗力。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_ROMAN_ONAGER_NAME"><Text>野驴</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_RUSSIAN_DRUZHINA_DESCRIPTION"><Text>取代轻骑兵的俄罗斯中世纪特色轻骑兵单位，当进攻受伤敌军单位时+5[ICON_Strength]战斗力，进攻近战单位时+4[ICON_Strength]战斗力。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_RUSSIAN_DRUZHINA_NAME"><Text>公国骑兵</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_RUSSIAN_T34_DESCRIPTION"><Text>取代坦克的俄罗斯现代特色重骑兵单位，当进攻时+5[ICON_Strength]战斗力。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_RUSSIAN_T34_NAME"><Text>T-34坦克</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_SCOTTISH_GALLOWGLASS_DESCRIPTION"><Text>取代剑士的苏格兰中世纪特色近战单位。当进攻时+5[ICON_Strength]战斗力且能更快的获得经验值。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_SCOTTISH_GALLOWGLASS_NAME"><Text>贵族侍从</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_SCYTHIAN_AMAZON_DESCRIPTION"><Text>取代骑士的斯基泰中世纪特色重骑兵单位，移动力+1且每回合有两次进攻机会。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_SCYTHIAN_AMAZON_NAME"><Text>亚马逊猎骑手</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_SCYTHIAN_AMAZON_SCOUT_DESCRIPTION"><Text>取代侦察兵的斯基太特色远古时代侦察单位。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_SCYTHIAN_AMAZON_SCOUT_NAME"><Text>探林者</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_SPANISH_CONQUISTADOR_DESCRIPTION"><Text>取代火枪手的西班牙文艺复兴时期特色近战单位，当有宗教单位跟随时+9[ICON_Strength]战斗力，征服者攻破城市或攻破城市时征服者与城市中心相邻，则强迫该城市改信西班牙的主流宗教。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_SPANISH_JINETE_DESCRIPTION"><Text>取代轻骑兵的西班牙古典时代特色轻骑兵单位，当位于首都所在大陆时击败敌军单位即获得其自身50%[ICON_Strength]战斗力的[ICON_Faith]信仰。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_SPANISH_JINETE_NAME"><Text>卢西塔尼骑手</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_SPANISH_TERCIO_DESCRIPTION"><Text>西班牙文艺复兴特色近战单位，当对抗骑兵时[ICON_Strength]战斗力更强。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_SPANISH_TERCIO_NAME"><Text>大方阵</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_SUMERIAN_PHALANX_DESCRIPTION"><Text>取代枪兵的苏美尔远古时代特色抗骑兵单位，研究科技树的“采矿”解锁，当位于金字形神塔附近作战时受到神灵祝福+5战斗力[ICON_Strength]。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_SUMERIAN_PHALANX_NAME"><Text>铜盾枪阵步兵</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_SWEDEN_HAKKAPELIITTA_DESCRIPTION"><Text>取代骑兵的瑞典特色工业时代轻骑兵单位。当进攻时+5 [ICON_Strength] 战斗力，位于冻土和雪地地块时+2移动力。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_SWEDEN_HAKKAPELIITTA_NAME"><Text>北方突击骑兵</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_ZULU_ASSEGAI_DESCRIPTION"><Text>取代弓箭手的祖鲁远古时代远程单位。当靠近另一个部族标枪手时+4[ICON_Strength]战斗力。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="LOC_UNIT_ZULU_ASSEGAI_NAME"><Text>部落猎手</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="MINUS_10_WHEN_ATTACKING_DISTRICT_MALUS_DESC"><Text>当对抗城区地格时-10[ICON_Strength]战斗力。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="PLUS_10_VERSUS_MELEE_COMBAT_BONUS_DESC"><Text>当对近战单位时+10[ICON_Strength]战斗力。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="PLUS_10_VS_HEAVY_CAVALRY_COMBAT_BONUS_DESC"><Text>当对抗重骑兵时+10[ICON_Strength]战斗力。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="PLUS_10_WHEN_DEFENDING_COMBAT_BONUS_DESC"><Text>当防御时+10[ICON_Strength]战斗力。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="PLUS_10_WHEN_DEFENDING_DISTRICT_BONUS_DESC"><Text>当防御时+10[ICON_Strength]战斗力。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="PLUS_15_VS_HEAVY_CAVALRY_COMBAT_BONUS_DESC"><Text>当对抗重骑兵时+15[ICON_Strength]战斗力。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="PLUS_17_WHEN_ATTACKING_NON_DISTRICT_BONUS_DESC"><Text>当位于非城区时+17[ICON_Strength]战斗力。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="PLUS_20_VS_LIGHT_CAVALRY_COMBAT_BONUS_DESC"><Text>当对抗轻骑兵时+20[ICON_Strength]战斗力。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="PLUS_4_ASSEGAI_ADJACENCY_COMBAT_BONUS_DESC"><Text>当靠近阿塞盖勇士时+4[ICON_Strength]战斗力。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="PLUS_4_LONGBOWMAN_ADJACENCY_COMBAT_BONUS_DESC"><Text>当靠近皇家长弓手时+4[ICON_Strength]战斗力。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="PLUS_4_VERSUS_MELEE_CAVALRY_COMBAT_BONUS_DESC"><Text>当反击近战和骑兵单位时+4[ICON_Strength]战斗力。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="PLUS_4_VERSUS_MELEE_COMBAT_BONUS_DESC"><Text>当反击近战单位时+4[ICON_Strength]战斗力。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="PLUS_5_CAPITAL_CONTINENT_COMBAT_BONUS_DESC"><Text>当位于首都同大陆时+5[ICON_Strength]战斗力。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="PLUS_5_COMBAT_STRENGTH_NON_DISTRICT_DESC"><Text>当进攻非城区时+5[ICON_Strength]战斗力。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="PLUS_5_DESERT_PLAINS_COMBAT_BONUS_DESC"><Text>当位于沙漠或平原时+5[ICON_Strength]战斗力。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="PLUS_5_EQUITE_ADJACENCY_COMBAT_BONUS_DESC"><Text>当靠近军团步兵或勇士时+5[ICON_Strength]战斗力。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="PLUS_5_FOREIGN_COMBAT_BONUS_DESC"><Text>当位于外国大陆时+5[ICON_Strength]战斗力。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="PLUS_5_FOREST_JUNGLE_COMBAT_BONUS_DESC"><Text>当位于丛林或雨林时+5[ICON_Strength]战斗力。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="PLUS_5_HILLS_COMBAT_BONUS_DESC"><Text>当位于丘陵时+5[ICON_Strength]战斗力。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="PLUS_5_NOT_OWNER_TERRITORY_COMBAT_BONUS_DESC"><Text>当位于国土外时+5[ICON_Strength]战斗力</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="PLUS_5_OTHER_RELIGION_COMBAT_BONUS_DESC"><Text>当对抗异教徒时+5[ICON_Strength]战斗力。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="PLUS_5_PLAINS_GRASS_COMBAT_BONUS_DESC"><Text>当位于平原与草地时+5[ICON_Strength]战斗力。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="PLUS_5_WHEN_ATTACKING_COMBAT_BONUS_DESC"><Text>当进攻时+5[ICON_Strength]战斗力。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="PLUS_5_WHEN_DEFENDING_COMBAT_BONUS_DESC"><Text>+5 [ICON_Strength] Combat Strength when defending.</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="PLUS_5_ZIGURRAT_PROXIMITY_COMBAT_BONUS_DESC"><Text>当位于金字形神塔8个范围内时+5[ICON_Strength]攻击力</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="PLUS_8_DESERT_PLAINS_COMBAT_BONUS_DESC"><Text>当位于沙漠或平原时+8[ICON_Strength]战斗力。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="PLUS_X_ADJACENT_FRIENDLY_NAVAL_RANGED_BONUS_DESC"><Text>[ICON_Strength] 战斗力当相邻另一个克伦纳级护卫舰时。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="PLUS_X_HOLY_SITE_PROXIMITY_BONUS_DESC"><Text>[ICON_Strength] 战斗力当位于圣地附近时。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="PLUS_X_IN_FORMATION_BONUS_DESC"><Text>[ICON_Strength] 战斗力当组成编队时。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="PLUS_X_VS_MELEE_ANTICAV_LIGHTCAV_COMBAT_BONUS_DESC"><Text>当对抗近战、反骑兵、轻骑兵单位时+8[ICON_Strength]战斗力。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="PLUS_X_VS_NAVAL_RAIDER_COMBAT_BONUS_DESC"><Text>[ICON_Strength] 战斗力当对抗海军劫掠占位时。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="RECEIVE_HUI_HUI_PAO_BONUS_DESC"><Text>+5 [ICON_Strength] District defenders fear the adjacent Hui Hui Pao!</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="RECEIVE_NORWEGIAN_ULFHEDNAR_COMBAT_BONUS_DESC"><Text>当对抗未受损单位时+5[ICON_Strength]战斗力。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="RECEIVE_NORWEGIAN_ULFHEDNAR_DAMAGED_UNITS_BONUS_DESC"><Text>当对抗受伤单位时+10[ICON_Strength]战斗力。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="RECEIVE_PERSIAN_WARSHIP_COMBAT_STRENGTH_BONUS_DESC"><Text>当相邻皇家战舰时+5[ICON_Strength]战斗力。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="RECEIVE_SHIGONG_COMBAT_BONUS_DESC"><Text>当位于大师附近时+5[ICON_Strength]战斗力。</Text></Replace>
+<Replace Language="zh_Hans_CN" Tag="RECEIVE_SOFA_BONUS_DESC"><Text>[ICON_Strength] 战斗力当相邻索法时。</Text></Replace>
+</LocalizedText></GameData>
