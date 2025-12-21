@@ -14,8 +14,8 @@
 	justify-content: center;
 	align-items: center;
 	z-index: 1000;
-	padding-left: 263px;
-	padding-right: 10px;
+	left:270px;
+	padding-right:280px;
 }
 .footer-popup-inner {
 	background-color: #161624;
@@ -78,7 +78,9 @@
 }
 @media (max-width: 1199.98px) {
 	.footer-popup {
+		left: 0px;
     	padding-left: 10px;
+		padding-right: 10px;
    	}
 }
 @media (max-width: 575.98px) {
