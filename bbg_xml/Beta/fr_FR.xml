@@ -5004,7 +5004,7 @@
 			<Text>Pacte de prospérité</Text>
 		</Replace>
 		<Replace Tag="LOC_POLICY_PROSPERITY_PACT_DESCRIPTION" Language="fr_FR">
-			<Text>Points [ICON_ALLIANCE] d'alliance +2 avec tous les alliés.</Text>
+			<Text>Points d'alliance +2 avec tous les alliés.</Text>
 		</Replace>
 		<Replace Tag="LOC_POLICY_CRYPTOGRAPHY_DESCRIPTION" Language="fr_FR">
 			<Text>Niveau de l'espion ennemi réduit de 2 sur vos terres. Celui de votre espion augmente de 1 pour les opérations offensives.</Text>
