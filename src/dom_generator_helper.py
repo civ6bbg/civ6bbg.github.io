@@ -274,13 +274,14 @@ def add_header(bbg_version, lang, page_type, pages_list, locs_data, en_US_locs_d
                             with li():
                                 i(cls="fa-solid fa-language lang-icon")
                                 with ul(cls="dropdown"):
-                                    add_lang('English  ', 'en_US', bbg_version, 'us', page_type)
-                                    add_lang('French  ', 'fr_FR', bbg_version, 'fr', page_type)
-                                    add_lang('Russian  ', 'ru_RU', bbg_version, 'ru', page_type)
-                                    add_lang('German  ', 'de_DE', bbg_version, 'de', page_type)
-                                    add_lang('Chinese  ', 'zh_Hans_CN', bbg_version, 'cn', page_type)
-                                    add_lang('Korean  ', 'ko_KR', bbg_version, 'kr', page_type)
+                                    add_lang('English   ', 'en_US', bbg_version, 'us', page_type)
+                                    add_lang('French    ', 'fr_FR', bbg_version, 'fr', page_type)
+                                    add_lang('Russian   ', 'ru_RU', bbg_version, 'ru', page_type)
+                                    add_lang('German    ', 'de_DE', bbg_version, 'de', page_type)
+                                    add_lang('Chinese   ', 'zh_Hans_CN', bbg_version, 'cn', page_type)
+                                    add_lang('Korean    ', 'ko_KR', bbg_version, 'kr', page_type)
                                     add_lang('Japanese  ', 'ja_JP', bbg_version, 'jp', page_type)
+                                    add_lang('Portuguese', 'pt_BR', bbg_version, 'pt', page_type)
                     div(cls="w-100")
                     with div(cls="col-xl-4 col-lg-4 col-md-4 col-4"), div(cls="base-game-switcher-wrapper"):
                         with button(cls="base-game-switcher gray-circle-btn", type="button", title=get_loc(locs_data, "LOC_MAIN_MENU_SHOW_BASE_GAME")):
