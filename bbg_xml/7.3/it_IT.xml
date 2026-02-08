@@ -3703,7 +3703,7 @@
 			<Text>+6 [ICON_GOLD] Oro alle [ICON_TRADEROUTE] Rotte commerciali tra civiltà alleate.</Text>
 		</Replace>
 		<Replace Tag="LOC_ALLIANCE_LV2_ECONOMIC_EFFECT_1" Language="it_IT">
-			<Text>+1 [ICON_InfluencePerTurn] Influenza per turno per ogni città-stato che ha una civiltà tua alleata come Sovrano e +1 [ICON_PRODUZIONE] alle [ICON_TRADEROUTE] Rotte commerciali tra civiltà alleate.</Text>
+			<Text>+1 [ICON_InfluencePerTurn] Influenza per turno per ogni città-stato che ha una civiltà tua alleata come Sovrano e +1 [ICON_PRODUCTION] alle [ICON_TRADEROUTE] Rotte commerciali tra civiltà alleate.</Text>
 		</Replace>
 		<Replace Tag="LOC_ALLIANCE_LV1_RELIGIOUS_EFFECT_1" Language="it_IT">
 			<Text>+1 [ICON_FOOD] Cibo e +4 [ICON_FAITH] Fede alle [ICON_TRADEROUTE] Rotte commerciali tra civiltà alleate.</Text>
@@ -4150,4 +4150,3 @@
 		
 	</LocalizedText>
 </GameData>
-
