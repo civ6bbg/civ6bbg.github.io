@@ -332,13 +332,13 @@ def get_html_lang(lang):
 
 def add_html_header(doc, page_title):
     with doc.head:
-        script(_async=True, src="https://www.googletagmanager.com/gtag/js?id=G-Z2ESCT7CR0")
-        script('''
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-Z2ESCT7CR0');
-    ''')
+    #     script(_async=True, src="https://www.googletagmanager.com/gtag/js?id=G-Z2ESCT7CR0")
+    #     script('''
+    #   window.dataLayer = window.dataLayer || [];
+    #   function gtag(){dataLayer.push(arguments);}
+    #   gtag('js', new Date());
+    #   gtag('config', 'G-Z2ESCT7CR0');
+    # ''')
         title(page_title)
         meta(charset='utf-8')
         meta(httpequiv="X-UA-Compatible", contents="IE=edge")
@@ -351,7 +351,7 @@ def add_html_header(doc, page_title):
         link(rel='stylesheet', href=f"/css/header.css")
         link(rel='stylesheet', href=f"/css/footer.css")
         link(rel='stylesheet', href=f"/fontawesome-free-7.0.0-web/css/all.css")
-        script(_async=True, src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9556735523664127", crossorigin="anonymous")
+        # script(_async=True, src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9556735523664127", crossorigin="anonymous")
 
 def show_element_with_base_option(element, lang, locs_data, en_US_locs_data, data_append = '', base_game_data_append = '', alignment = 'left', add_base_game = True):
     if add_base_game:
