@@ -247,8 +247,8 @@ def add_aether_kingdom_ad():
     with div(cls="aether-kingdom-ad", id="aether-kingdom-ad"):
         with a(href="https://www.aetherkingdoms.com/", target="_blank"):
             img(src="/images/ak_village_animation.gif", alt="Aether Kingdom", cls="aether-kingdom-ad-img")
-            h2("Try Aether Kingdoms!", cls="aether-kingdom-ad-title")
-            p("If you like my website here, please check out Aether Kingdoms, a free-to-play strategy game inspired by Civilization and developed by my friend and I. Click the link to learn more!", cls="aether-kingdom-ad-text")
+        h2("Try Aether Kingdoms!", cls="aether-kingdom-ad-title")
+        p("If you like my website here, please check out Aether Kingdoms, a free-to-play strategy game inspired by Civilization and developed by my friend and I. Click the button below to learn more!", cls="aether-kingdom-ad-text")
         button('Aether Kingdoms', cls="ad-btn", type="submit", title="Aether Kingdoms")
             # p("Aether Kingdoms", cls="sr-only")
             # i(cls="fa-solid fa-xmark", aria_hidden="true")
