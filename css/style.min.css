@@ -3954,3 +3954,71 @@
     width: 97%;
   }
 }
+
+.aether-kingdom-ad {
+  width: 400px;
+  background: #333;
+  border-radius: 6px;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: #333;
+  z-index: 10;
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+}
+
+.aether-kingdom-ad-open {
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  animation: popIn 0.3s ease-out forwards;
+}
+
+.aether-kingdom-ad-img {
+  width: 100px;
+  margin-top: -50px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.aether-kingdom-ad h2 {
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 30px 0 10px;
+  color: #eee;
+}
+
+.aether-kingdom-ad p {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 30px 0 10px;
+  line-height: 1.5;
+  color: #eee;
+}
+
+.ad-btn {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px 0;
+  background: #6fd649;
+  color: #fff;
+  border: 0;
+  outline: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.darkmode .aether-kingdom-ad {
+  background: #fff;
+}
+.darkmode .aether-kingdom-ad h2,
+.darkmode .aether-kingdom-ad p {
+  color: #333;
+}

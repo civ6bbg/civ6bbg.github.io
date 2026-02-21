@@ -596,6 +596,7 @@ document.addEventListener("scroll", (event) => {
   }
   if (scrollTop > lastScrollTop) {
     $('.main-nav').addClass('displayNone');
+    aetherKingdomAdOpen();
   } else {
     $('.main-nav').removeClass('displayNone');
   }
@@ -641,3 +642,20 @@ function newDonateText() {
   document.getElementById('donateText').innerHTML = options[randOption];
 };
 newDonateText();
+
+function aetherKingdomAdOpen() {
+  if (localStorage.getItem('aetherKingdomAdClosed') === 'true') {
+    return;
+  }
+  const adElement = document.getElementById('aether-kingdom-ad');
+  if (adElement) {
+    adElement.classList.add('aether-kingdom-ad-open');
+  }
+}
+function aetherKingdomAdClose() {
+  const adElement = document.getElementById('aether-kingdom-ad');
+  if (adElement) {
+    adElement.classList.remove('aether-kingdom-ad-open');
+  }
+  localStorage.setItem('aetherKingdomAdClosed', 'true');
+}

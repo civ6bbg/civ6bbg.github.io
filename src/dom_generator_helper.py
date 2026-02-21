@@ -243,6 +243,17 @@ def add_lang(text_name, link_name, bbg_version, flag, page_type):
         with a(href=f"/{link_name}/{page_type}_{get_version_name(bbg_version)}.html", style="align-content: center;"):
             img(src=f"/assets/flags/4x3/{flag}.svg", style="height:20px")
 
+def add_aether_kingdom_ad():
+    with div(cls="aether-kingdom-ad", id="aether-kingdom-ad"):
+        with a(href="https://www.aetherkingdoms.com/", target="_blank"):
+            img(src="/images/ak_village_animation.gif", alt="Aether Kingdom", cls="aether-kingdom-ad-img")
+            h2("Try Aether Kingdoms!", cls="aether-kingdom-ad-title")
+            p("If you like my website here, please check out Aether Kingdoms, a free-to-play strategy game inspired by Civilization and developed by my friend and I. Click the link to learn more!", cls="aether-kingdom-ad-text")
+        button('Aether Kingdoms', cls="ad-btn", type="submit", title="Aether Kingdoms")
+            # p("Aether Kingdoms", cls="sr-only")
+            # i(cls="fa-solid fa-xmark", aria_hidden="true")
+        button('Close', cls="ad-btn", type="submit", title="Close ad", onclick="aetherKingdomAdClose()")
+
 def add_header(bbg_version, lang, page_type, pages_list, locs_data, en_US_locs_data):
     with nav(cls="main-nav--bg"), div(cls="main-nav"):
         with div(cls="header"), div(cls="header-inner"), div(cls="inner"):
@@ -295,6 +306,7 @@ def add_header(bbg_version, lang, page_type, pages_list, locs_data, en_US_locs_d
                             i(cls="sun-icon", data_feather="sun", aria_hidden="true")
                             i(cls="moon-icon", data_feather="moon", aria_hidden="true")
     add_footer()
+    add_aether_kingdom_ad()
 
 def add_sidebar(menu_items, menu_icons, images_dir):
     with aside(cls="sidebar"), div(cls="sidebar-start"), div(cls="sidebar-body"), ul(cls="sidebar-body-menu"):
