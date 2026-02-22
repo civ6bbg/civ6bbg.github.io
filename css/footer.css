@@ -19,7 +19,7 @@
 }
 .footer-popup-inner {
 	background-color: #161624;
-	padding: 20px;
+	padding: 10px;
 	border-radius: 8px;
 	width: 100%;
 }
@@ -27,6 +27,20 @@
 	font-size: 1em;
 	color: #b9b9b9;
 }
+.footer-popup-body a {
+	font-size: 1em;
+	color: #b9b9b9;
+}
+.footer-popup-link {
+	text-decoration: underline;
+}
+.footer-popup-img {
+    width: 50px;
+    height: 50px;
+	border-radius: 10%;
+	box-shadow: 0px 0px 10px #00000026;
+	cursor: pointer;
+ }
 .footer-popup-donate {
 	text-align: right;
 }
@@ -74,6 +88,9 @@
 	background-color: #f8f9fa;
 }
 .darkmode .footer-popup-body p {
+	color: #555;
+}
+.darkmode .footer-popup-body a {
 	color: #555;
 }
 @media (max-width: 1199.98px) {

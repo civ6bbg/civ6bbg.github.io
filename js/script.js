@@ -641,7 +641,7 @@ function newDonateText() {
   var randOption = Math.floor(Math.random() * options.length);
   document.getElementById('donateText').innerHTML = options[randOption];
 };
-newDonateText();
+// newDonateText();
 
 function aetherKingdomAdOpen() {
   if (localStorage.getItem('aetherKingdomAdClosed') === 'true') {

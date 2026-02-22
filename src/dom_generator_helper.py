@@ -389,8 +389,11 @@ def get_unlock_tech_civic_dialog(unlock_tech, unlock_civic, locs_data, en_US_loc
 def add_footer():
     with div(cls="scroll-up footer-popup", id="footer-popup"), div(cls="footer-popup-inner"):
         with div(cls="row"):
-            with div(cls="col-sm-8 col-1 footer-popup-body"):
-                p("If you like this project, any donation would be extremely helpful for me in maintaining the website.", id="donateText")
+            with div(cls="col-sm-6 col-1 footer-popup-body"):
+                p("Enjoy this work? Try Aether Kingdoms!", b(a("(Link)", href="https://www.aetherkingdoms.com/", target="_blank", cls="footer-popup-link")), id="donateText")
+            with div(cls="col-sm-2 col-1 footer-popup-body"):
+                with a(href="https://www.aetherkingdoms.com/", target="_blank", cls="btn btn-primary"):
+                    img(src="/images/ak_village_animation.gif", alt="Aether Kingdom", cls="footer-popup-img")
             with div(cls="col-sm-2 col-6 footer-popup-donate"):
                 a("Donate", href="https://ko-fi.com/calcalciffer", target="_blank", cls="btn btn-primary")
             with div(cls="col-sm-2 col-6 footer-popup-scroll-up"):
