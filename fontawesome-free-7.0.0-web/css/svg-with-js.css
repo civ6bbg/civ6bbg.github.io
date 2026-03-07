@@ -372,8 +372,8 @@
   .fa-shake,
   .fa-spin,
   .fa-spin-pulse {
-    animation: none !important;
-    transition: none !important;
+    animation: none ;
+    transition: none ;
   }
 }
 @keyframes fa-beat {

@@ -725,7 +725,7 @@
  
  .skip-link {
    background-color: #eee;
-   clip: auto !important;
+   clip: auto ;
    clip-path: none;
    color: #444;
    display: block;
@@ -748,14 +748,14 @@
    margin: -1px;
    overflow: hidden;
    padding: 0;
-   position: absolute !important;
+   position: absolute ;
    width: 1px;
-   word-wrap: normal !important;
+   word-wrap: normal ;
  }
  
  .skip-link.sr-only:focus {
    background-color: #fff;
-   clip: auto !important;
+   clip: auto ;
    clip-path: none;
    color: #767676;
    display: block;
@@ -1289,7 +1289,7 @@
  
  button:focus {
    outline: none;
-   border: 2px solid #AFBCFF !important;
+   border: 2px solid #AFBCFF ;
  }
  
  button.disabled {
@@ -1302,7 +1302,7 @@
  }
  
  button.disabled:focus {
-   border-color: transparent !important;
+   border-color: transparent ;
    outline: none;
  }
  
@@ -1314,12 +1314,12 @@
  
  .transparent-btn {
    background-color: transparent;
-   border: 2px solid transparent !important;
+   border: 2px solid transparent ;
  }
  
  .transparent-btn:focus {
    outline: none;
-   border: 2px solid #AFBCFF !important;
+   border: 2px solid #AFBCFF ;
  }
  
  .primary-default-btn {
@@ -1493,7 +1493,7 @@
  }
  
  .extentions-btn {
-   border: 1px solid #EEEEEE !important;
+   border: 1px solid #EEEEEE ;
    border-radius: 4px;
    background-color: transparent;
    padding: 5px 20px;
@@ -1703,7 +1703,7 @@
    background-color: #eff0f6;
    border-width: 0;
    min-height: 40px;
-   border: solid transparent 2px !important;
+   border: solid transparent 2px ;
  }
  
  input[type="checkbox"],
@@ -1752,7 +1752,7 @@
  
  input:focus {
    outline: none;
-   border: rgba(134, 182, 254, 0.5) solid !important;
+   border: rgba(134, 182, 254, 0.5) solid ;
    box-shadow: 0 0 0 2px rgba(134, 182, 254, 0.5);
  }
  
@@ -1884,7 +1884,7 @@
    display: flex;
    flex-direction: column;
    justify-content: space-between;
-   background-color: #f5f6f7 !important;
+   background-color: #f5f6f7 ;
    width: 253px;
    padding: 20px 15px 37px 20px;
    transition: 0.5s all;
@@ -2060,7 +2060,7 @@
    top: 50%;
    transform: translateY(-50%);
    font-weight: 500;
-   font-size: 12px !important;
+   font-size: 12px ;
    line-height: 1.25;
    letter-spacing: 0.75px;
    color: #FFFFFF;
@@ -2667,8 +2667,8 @@
  }
 
  .chart #myChart {
-   max-height: 100% !important;
-   max-width: 100% !important;
+   max-height: 100% ;
+   max-width: 100% ;
    box-shadow: 0px 15px 50px rgba(160, 163, 189, 0.1);
  }
  
@@ -2999,7 +2999,7 @@
  }
  
  .darkmode .sidebar {
-   background-color: #161624 !important;
+   background-color: #161624 ;
  }
 
  .darkmode .sidebar-body-menu a {
@@ -3186,7 +3186,7 @@
  }
  
  .darkmode .primary-white-btn {
-   border: 1px solid #222235 !important;
+   border: 1px solid #222235 ;
    background-color: #161624;
  }
  
