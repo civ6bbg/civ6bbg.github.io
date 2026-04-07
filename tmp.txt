@@ -1,0 +1,2270 @@
+Generating HTML files for BBG version None
+language: en_US
+  page: leaders
+  page: bbg_expanded
+  page: city_states
+  page: religion
+  page: governor
+  page: great_people
+  page: natural_wonder
+KeyError: LOC_FEATURE_BARRINGER_CRATER_NAME not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_NAME not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_NAME not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_NAME not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_NAME not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_NAME not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_NAME not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_NAME not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_NAME not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_NAME not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_NAME not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_NAME not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_NAME not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_NAME not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_NAME not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_NAME not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_NAME not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_NAME not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_NAME not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_NAME not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_NAME not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_NAME not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_NAME not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SINAI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SINAI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_NAME not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_NAME not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_NAME not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_NAME not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_NAME not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_NAME not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_NAME not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_NAME not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_NAME not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_NAME not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_NAME not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_NAME not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_NAME not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_NAME not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_NAME not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_NAME not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_NAME not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_NAME not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_NAME not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_NAME not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_NAME not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_NAME not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_NAME not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_NAME not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_NAME not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_NAME not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_NAME not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_NAME not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_NAME not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_NAME not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_NAME not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_NAME not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_NAME not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_NAME not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_NAME not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_NAME not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_NAME not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_NAME not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_NAME not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_NAME not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_NAME not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_NAME not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SINAI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SINAI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SINAI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SINAI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SINAI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SINAI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_NAME not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_NAME not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_NAME not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_NAME not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_NAME not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_NAME not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_NAME not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_NAME not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_NAME not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_DESCRIPTION not found in locs_data
+  page: world_wonder
+  page: buildings
+  page: units
+  page: tech_tree
+  page: civic_tree
+  page: names
+  page: policies
+  page: congress
+  page: misc
+  page: changelog
+language: de_DE
+  page: leaders
+  page: bbg_expanded
+  page: city_states
+  page: religion
+  page: governor
+  page: great_people
+  page: natural_wonder
+KeyError: LOC_FEATURE_BARRINGER_CRATER_NAME not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_NAME not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_NAME not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_NAME not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_NAME not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_NAME not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_NAME not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_NAME not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_NAME not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_NAME not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_NAME not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_NAME not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_NAME not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_NAME not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_NAME not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_NAME not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_NAME not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_NAME not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_NAME not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_NAME not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_NAME not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_NAME not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_NAME not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SINAI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SINAI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_NAME not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_NAME not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_NAME not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_NAME not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_NAME not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_NAME not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_NAME not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_NAME not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_NAME not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_NAME not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_NAME not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_NAME not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_NAME not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_NAME not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_NAME not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_NAME not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_NAME not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_NAME not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_NAME not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_NAME not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_NAME not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_NAME not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_NAME not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_NAME not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_NAME not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_NAME not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_NAME not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_NAME not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_NAME not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_NAME not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_NAME not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_NAME not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_NAME not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_NAME not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_NAME not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_NAME not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_NAME not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_NAME not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_NAME not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_NAME not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_NAME not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_NAME not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SINAI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SINAI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SINAI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SINAI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SINAI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SINAI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_NAME not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_NAME not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_NAME not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_NAME not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_NAME not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_NAME not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_NAME not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_NAME not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_NAME not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_DESCRIPTION not found in locs_data
+  page: world_wonder
+  page: buildings
+  page: units
+  page: tech_tree
+  page: civic_tree
+  page: names
+  page: policies
+  page: congress
+  page: misc
+  page: changelog
+language: es_ES
+  page: leaders
+  page: bbg_expanded
+  page: city_states
+  page: religion
+  page: governor
+  page: great_people
+  page: natural_wonder
+KeyError: LOC_FEATURE_BARRINGER_CRATER_NAME not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_NAME not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_NAME not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_NAME not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_NAME not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_NAME not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_NAME not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_NAME not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_NAME not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_NAME not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_NAME not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_NAME not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_NAME not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_NAME not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_NAME not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_NAME not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_NAME not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_NAME not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_NAME not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_NAME not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_NAME not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_NAME not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_NAME not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SINAI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SINAI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_NAME not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_NAME not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_NAME not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_NAME not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_NAME not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_NAME not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_NAME not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_NAME not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_NAME not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_NAME not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_NAME not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_NAME not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_NAME not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_NAME not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_NAME not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_NAME not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_NAME not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_NAME not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_NAME not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_NAME not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_NAME not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_NAME not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_NAME not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_NAME not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_NAME not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_NAME not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_NAME not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_NAME not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_NAME not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_NAME not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_NAME not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_NAME not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_NAME not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_NAME not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_NAME not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_NAME not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_NAME not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_NAME not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_NAME not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_NAME not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_NAME not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_NAME not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SINAI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SINAI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SINAI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SINAI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SINAI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SINAI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_NAME not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_NAME not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_NAME not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_NAME not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_NAME not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_NAME not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_NAME not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_NAME not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_NAME not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_DESCRIPTION not found in locs_data
+  page: world_wonder
+  page: buildings
+  page: units
+  page: tech_tree
+  page: civic_tree
+  page: names
+  page: policies
+  page: congress
+  page: misc
+  page: changelog
+language: it_IT
+  page: leaders
+  page: bbg_expanded
+  page: city_states
+  page: religion
+  page: governor
+  page: great_people
+  page: natural_wonder
+KeyError: LOC_FEATURE_BARRINGER_CRATER_NAME not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_NAME not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_NAME not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_NAME not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_NAME not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_NAME not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_NAME not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_NAME not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_NAME not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_NAME not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_NAME not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_NAME not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_NAME not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_NAME not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_NAME not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_NAME not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_NAME not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_NAME not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_NAME not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_NAME not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_NAME not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_NAME not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_NAME not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SINAI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SINAI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_NAME not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_NAME not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_NAME not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_NAME not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_NAME not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_NAME not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_NAME not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_NAME not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_NAME not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_NAME not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_NAME not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_NAME not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_NAME not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_NAME not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_NAME not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_NAME not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_NAME not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_NAME not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_NAME not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_NAME not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_NAME not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_NAME not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_NAME not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_NAME not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_NAME not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_NAME not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_NAME not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_NAME not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_NAME not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_NAME not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_NAME not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_NAME not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_NAME not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_NAME not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_NAME not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_NAME not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_NAME not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_NAME not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_NAME not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_NAME not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_NAME not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_NAME not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SINAI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SINAI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SINAI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SINAI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SINAI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SINAI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_NAME not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_NAME not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_NAME not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_NAME not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_NAME not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_NAME not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_NAME not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_NAME not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_NAME not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_DESCRIPTION not found in locs_data
+  page: world_wonder
+  page: buildings
+  page: units
+  page: tech_tree
+  page: civic_tree
+  page: names
+  page: policies
+  page: congress
+  page: misc
+  page: changelog
+language: ko_KR
+  page: leaders
+  page: bbg_expanded
+  page: city_states
+  page: religion
+  page: governor
+  page: great_people
+  page: natural_wonder
+KeyError: LOC_FEATURE_BARRINGER_CRATER_NAME not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_NAME not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_NAME not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_NAME not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_NAME not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_NAME not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_NAME not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_NAME not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_NAME not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_NAME not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_NAME not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_NAME not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_NAME not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_NAME not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_NAME not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_NAME not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_NAME not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_NAME not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_NAME not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_NAME not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_NAME not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_NAME not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_NAME not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SINAI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SINAI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_NAME not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_NAME not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_NAME not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_NAME not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_NAME not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_NAME not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_NAME not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_NAME not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_NAME not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_NAME not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_NAME not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_NAME not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_NAME not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_NAME not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_NAME not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_NAME not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_NAME not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_NAME not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_NAME not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_NAME not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_NAME not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_NAME not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_NAME not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_NAME not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_NAME not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_NAME not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_NAME not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_NAME not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_NAME not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_NAME not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_NAME not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_NAME not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_NAME not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_NAME not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_NAME not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_NAME not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_NAME not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_NAME not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_NAME not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_NAME not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_NAME not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_NAME not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SINAI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SINAI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SINAI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SINAI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SINAI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SINAI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_NAME not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_NAME not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_NAME not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_NAME not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_NAME not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_NAME not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_NAME not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_NAME not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_NAME not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_DESCRIPTION not found in locs_data
+  page: world_wonder
+  page: buildings
+  page: units
+  page: tech_tree
+  page: civic_tree
+  page: names
+  page: policies
+  page: congress
+  page: misc
+  page: changelog
+language: pt_BR
+  page: leaders
+  page: bbg_expanded
+  page: city_states
+  page: religion
+  page: governor
+  page: great_people
+  page: natural_wonder
+KeyError: LOC_FEATURE_BARRINGER_CRATER_NAME not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_NAME not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_NAME not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_NAME not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_NAME not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_NAME not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_NAME not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_NAME not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_NAME not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_NAME not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_NAME not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_NAME not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_NAME not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_NAME not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_NAME not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_NAME not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_NAME not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_NAME not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_NAME not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_NAME not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_NAME not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_NAME not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_NAME not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SINAI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SINAI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_NAME not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_NAME not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_NAME not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_NAME not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_NAME not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_NAME not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_NAME not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_NAME not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_NAME not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_NAME not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_NAME not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_NAME not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_NAME not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_NAME not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_NAME not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_NAME not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_NAME not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_NAME not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_NAME not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_NAME not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_NAME not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_NAME not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_NAME not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_NAME not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_NAME not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_NAME not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_NAME not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_NAME not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_NAME not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_NAME not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_NAME not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_NAME not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_NAME not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_NAME not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_NAME not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_NAME not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_NAME not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_NAME not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_NAME not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_NAME not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_NAME not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_NAME not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SINAI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SINAI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SINAI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SINAI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SINAI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SINAI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_NAME not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_NAME not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_NAME not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_NAME not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_NAME not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_NAME not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_NAME not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_NAME not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_NAME not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_DESCRIPTION not found in locs_data
+  page: world_wonder
+  page: buildings
+  page: units
+  page: tech_tree
+  page: civic_tree
+  page: names
+  page: policies
+  page: congress
+  page: misc
+  page: changelog
+language: zh_Hans_CN
+  page: leaders
+  page: bbg_expanded
+  page: city_states
+  page: religion
+  page: governor
+  page: great_people
+  page: natural_wonder
+KeyError: LOC_FEATURE_BARRINGER_CRATER_NAME not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_NAME not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_NAME not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_NAME not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_NAME not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_NAME not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_NAME not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_NAME not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_NAME not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_NAME not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_NAME not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_NAME not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_NAME not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_NAME not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_NAME not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_NAME not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_NAME not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_NAME not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_NAME not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_NAME not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_NAME not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_NAME not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_NAME not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SINAI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SINAI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_NAME not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_NAME not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_NAME not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_NAME not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_NAME not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_NAME not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_NAME not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_NAME not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_NAME not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_NAME not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_NAME not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_NAME not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_NAME not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_NAME not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_NAME not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_NAME not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_NAME not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_NAME not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_NAME not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_NAME not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_NAME not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_NAME not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_NAME not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_NAME not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_NAME not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_NAME not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_NAME not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_NAME not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_NAME not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_NAME not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_NAME not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_NAME not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_NAME not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_NAME not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_NAME not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_NAME not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_NAME not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_NAME not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_NAME not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_NAME not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_NAME not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_NAME not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SINAI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SINAI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SINAI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SINAI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SINAI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SINAI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_NAME not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_NAME not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_NAME not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_NAME not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_NAME not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_NAME not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_NAME not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_NAME not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_NAME not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_DESCRIPTION not found in locs_data
+  page: world_wonder
+  page: buildings
+  page: units
+  page: tech_tree
+  page: civic_tree
+  page: names
+  page: policies
+  page: congress
+  page: misc
+  page: changelog
+language: fr_FR
+  page: leaders
+  page: bbg_expanded
+  page: city_states
+  page: religion
+  page: governor
+  page: great_people
+  page: natural_wonder
+KeyError: LOC_FEATURE_BARRINGER_CRATER_NAME not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_NAME not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_NAME not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_NAME not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_NAME not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_NAME not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_NAME not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_NAME not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_NAME not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_NAME not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_NAME not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_NAME not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_NAME not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_NAME not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_NAME not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_NAME not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_NAME not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_NAME not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_NAME not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_NAME not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_NAME not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_NAME not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_NAME not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SINAI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SINAI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_NAME not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_NAME not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_NAME not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_NAME not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_NAME not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_NAME not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_NAME not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_NAME not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_NAME not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_NAME not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_NAME not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_NAME not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_NAME not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_NAME not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_NAME not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_NAME not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_NAME not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_NAME not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_NAME not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_NAME not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_NAME not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_NAME not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_NAME not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_NAME not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_NAME not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_NAME not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_NAME not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_NAME not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_NAME not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_NAME not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_NAME not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_NAME not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_NAME not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_NAME not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_NAME not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_NAME not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_NAME not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_NAME not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_NAME not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_NAME not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_NAME not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_NAME not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SINAI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SINAI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SINAI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SINAI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SINAI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SINAI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_NAME not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_NAME not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_NAME not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_NAME not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_NAME not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_NAME not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_NAME not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_NAME not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_NAME not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_DESCRIPTION not found in locs_data
+  page: world_wonder
+  page: buildings
+  page: units
+  page: tech_tree
+  page: civic_tree
+  page: names
+  page: policies
+  page: congress
+  page: misc
+  page: changelog
+language: ja_JP
+  page: leaders
+  page: bbg_expanded
+  page: city_states
+  page: religion
+  page: governor
+  page: great_people
+  page: natural_wonder
+KeyError: LOC_FEATURE_BARRINGER_CRATER_NAME not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_NAME not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_NAME not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_NAME not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_NAME not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_NAME not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_NAME not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_NAME not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_NAME not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_NAME not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_NAME not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_NAME not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_NAME not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_NAME not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_NAME not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_NAME not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_NAME not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_NAME not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_NAME not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_NAME not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_NAME not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_NAME not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_NAME not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SINAI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SINAI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_NAME not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_NAME not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_NAME not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_NAME not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_NAME not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_NAME not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_NAME not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_NAME not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_NAME not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_NAME not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_NAME not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_NAME not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_NAME not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_NAME not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_NAME not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_NAME not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_NAME not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_NAME not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_NAME not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_NAME not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_NAME not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_NAME not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_NAME not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_NAME not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_NAME not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_NAME not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_NAME not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_NAME not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_NAME not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_NAME not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_NAME not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_NAME not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_NAME not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_NAME not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_NAME not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_NAME not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_NAME not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_NAME not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_NAME not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_NAME not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_NAME not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_NAME not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SINAI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SINAI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SINAI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SINAI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SINAI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SINAI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_NAME not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_NAME not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_NAME not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_NAME not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_NAME not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_NAME not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_NAME not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_NAME not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_NAME not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_DESCRIPTION not found in locs_data
+  page: world_wonder
+  page: buildings
+  page: units
+  page: tech_tree
+  page: civic_tree
+  page: names
+  page: policies
+  page: congress
+  page: misc
+  page: changelog
+language: pl_PL
+  page: leaders
+  page: bbg_expanded
+  page: city_states
+  page: religion
+  page: governor
+  page: great_people
+  page: natural_wonder
+KeyError: LOC_FEATURE_BARRINGER_CRATER_NAME not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_NAME not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_NAME not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_NAME not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_NAME not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_NAME not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_NAME not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_NAME not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_NAME not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_NAME not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_NAME not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_NAME not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_NAME not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_NAME not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_NAME not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_NAME not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_NAME not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_NAME not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_NAME not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_NAME not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_NAME not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_NAME not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_NAME not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SINAI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SINAI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_NAME not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_NAME not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_NAME not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_NAME not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_NAME not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_NAME not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_NAME not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_NAME not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_NAME not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_NAME not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_NAME not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_NAME not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_NAME not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_NAME not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_NAME not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_NAME not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_NAME not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_NAME not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_NAME not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_NAME not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_NAME not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_NAME not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_NAME not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_NAME not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_NAME not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_NAME not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_NAME not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_NAME not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_NAME not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_NAME not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_NAME not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_NAME not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_NAME not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_NAME not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_NAME not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_NAME not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_NAME not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_NAME not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_NAME not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_NAME not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_NAME not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_NAME not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SINAI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SINAI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SINAI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SINAI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SINAI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SINAI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_NAME not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_NAME not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_NAME not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_NAME not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_NAME not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_NAME not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_NAME not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_NAME not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_NAME not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_DESCRIPTION not found in locs_data
+  page: world_wonder
+  page: buildings
+  page: units
+  page: tech_tree
+  page: civic_tree
+  page: names
+  page: policies
+  page: congress
+  page: misc
+  page: changelog
+language: ru_RU
+  page: leaders
+  page: bbg_expanded
+  page: city_states
+  page: religion
+  page: governor
+  page: great_people
+  page: natural_wonder
+KeyError: LOC_FEATURE_BARRINGER_CRATER_NAME not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_NAME not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_NAME not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_NAME not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_NAME not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_NAME not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_NAME not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_NAME not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_NAME not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_NAME not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_NAME not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_NAME not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_NAME not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_NAME not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_NAME not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_NAME not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_NAME not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_NAME not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_NAME not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_NAME not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_NAME not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_NAME not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_NAME not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SINAI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SINAI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_NAME not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_NAME not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_NAME not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_NAME not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_NAME not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_NAME not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_NAME not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_NAME not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_NAME not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BARRINGER_CRATER_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_NAME not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_NAME not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_NAME not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_NAME not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_NAME not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_NAME not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_NAME not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_NAME not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_NAME not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_NAME not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_NAME not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_NAME not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_NAME not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_NAME not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_NAME not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_NAME not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_NAME not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_NAME not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_NAME not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_NAME not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_NAME not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_NAME not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_NAME not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_NAME not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_NAME not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_NAME not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_NAME not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_NAME not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_NAME not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_NAME not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_NAME not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_NAME not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_NAME not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_NAME not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_NAME not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SINAI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SINAI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SINAI_NAME not found in locs_data
+KeyError: LOC_FEATURE_SINAI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SINAI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SINAI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_NAME not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_NAME not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_NAME not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_NAME not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_NAME not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_NAME not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_NAME not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_NAME not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_NAME not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_DESCRIPTION not found in locs_data
+  page: world_wonder
+  page: buildings
+  page: units
+  page: tech_tree
+  page: civic_tree
+  page: names
+  page: policies
+  page: congress
+  page: misc
+  page: changelog
+Generating HTML files for BBG version 7.4
+language: en_US
+  page: leaders
+  page: bbg_expanded
+  page: city_states
+  page: religion
+  page: governor
+  page: great_people
+  page: natural_wonder
+KeyError: LOC_FEATURE_BARRINGER_CRATER_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SINAI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_DESCRIPTION not found in locs_data
+  page: world_wonder
+  page: buildings
+  page: units
+  page: tech_tree
+  page: civic_tree
+  page: names
+  page: policies
+  page: congress
+  page: misc
+  page: changelog
+language: de_DE
+  page: leaders
+  page: bbg_expanded
+  page: city_states
+  page: religion
+  page: governor
+  page: great_people
+  page: natural_wonder
+KeyError: LOC_FEATURE_BARRINGER_CRATER_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SINAI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_DESCRIPTION not found in locs_data
+  page: world_wonder
+  page: buildings
+  page: units
+  page: tech_tree
+  page: civic_tree
+  page: names
+  page: policies
+  page: congress
+  page: misc
+  page: changelog
+language: es_ES
+  page: leaders
+  page: bbg_expanded
+  page: city_states
+  page: religion
+  page: governor
+  page: great_people
+  page: natural_wonder
+KeyError: LOC_FEATURE_BARRINGER_CRATER_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SINAI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_DESCRIPTION not found in locs_data
+  page: world_wonder
+  page: buildings
+  page: units
+  page: tech_tree
+  page: civic_tree
+  page: names
+  page: policies
+  page: congress
+  page: misc
+  page: changelog
+language: it_IT
+  page: leaders
+  page: bbg_expanded
+  page: city_states
+  page: religion
+  page: governor
+  page: great_people
+  page: natural_wonder
+KeyError: LOC_FEATURE_BARRINGER_CRATER_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SINAI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_DESCRIPTION not found in locs_data
+  page: world_wonder
+  page: buildings
+  page: units
+  page: tech_tree
+  page: civic_tree
+  page: names
+  page: policies
+  page: congress
+  page: misc
+  page: changelog
+language: ko_KR
+  page: leaders
+  page: bbg_expanded
+  page: city_states
+  page: religion
+  page: governor
+  page: great_people
+  page: natural_wonder
+KeyError: LOC_FEATURE_BARRINGER_CRATER_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SINAI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_DESCRIPTION not found in locs_data
+  page: world_wonder
+  page: buildings
+  page: units
+  page: tech_tree
+  page: civic_tree
+  page: names
+  page: policies
+  page: congress
+  page: misc
+  page: changelog
+language: pt_BR
+  page: leaders
+  page: bbg_expanded
+  page: city_states
+  page: religion
+  page: governor
+  page: great_people
+  page: natural_wonder
+KeyError: LOC_FEATURE_BARRINGER_CRATER_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SINAI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_DESCRIPTION not found in locs_data
+  page: world_wonder
+  page: buildings
+  page: units
+  page: tech_tree
+  page: civic_tree
+  page: names
+  page: policies
+  page: congress
+  page: misc
+  page: changelog
+language: zh_Hans_CN
+  page: leaders
+  page: bbg_expanded
+  page: city_states
+  page: religion
+  page: governor
+  page: great_people
+  page: natural_wonder
+KeyError: LOC_FEATURE_BARRINGER_CRATER_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SINAI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_DESCRIPTION not found in locs_data
+  page: world_wonder
+  page: buildings
+  page: units
+  page: tech_tree
+  page: civic_tree
+  page: names
+  page: policies
+  page: congress
+  page: misc
+  page: changelog
+language: fr_FR
+  page: leaders
+  page: bbg_expanded
+  page: city_states
+  page: religion
+  page: governor
+  page: great_people
+  page: natural_wonder
+KeyError: LOC_FEATURE_BARRINGER_CRATER_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_BIOLUMINESCENT_BAY_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_CERRO_DE_POTOSI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_DALLOL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GIBRALTAR_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_GRAND_MESA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KAILASH_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_KRAKATOA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LAKE_VICTORIA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_LENCOIS_MARANHENSES_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOSI_OA_TUNYA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_MOTLATSE_CANYON_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_NAMIB_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OLD_FAITHFUL_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_OUNIANGA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SALAR_DE_UYUNI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SINAI_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_SRI_PADA_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_VREDEFORT_DOME_DESCRIPTION not found in locs_data
+KeyError: LOC_FEATURE_WULINGYUAN_DESCRIPTION not found in locs_data
+  page: world_wonder
+  page: buildings
+  page: units
+  page: tech_tree
+  page: civic_tree
+  page: names
+  page: policies
+  page: congress
+  page: misc
+  page: changelog
+language: ja_JP
+  page: leaders
+  page: bbg_expanded
+  page: city_states
+  page: religion
+  page: governor
