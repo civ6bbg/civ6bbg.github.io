@@ -446,6 +446,7 @@ def loc_amount_parameter(localized_text: str, amount: float) -> str:
     localized_text = localized_text.replace('{Cantidad}', f'{amount}')
 
     localized_text = re.sub(r'{1_Amount ?: ?plural 1\?(.*?); ?other\?(.*?);}', fix_amount, localized_text)
+    localized_text = re.sub(r'{1: plural 1\?(.*?); ?other\?(.*?);}', fix_amount, localized_text)
 
     # 1_Amount: number +#,###;-#,###}
     localized_text = re.sub(r'{1_Amount: number +#,###;-#,###}', fix_amount, localized_text)

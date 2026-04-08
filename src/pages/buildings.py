@@ -88,6 +88,7 @@ def show_building_yields(yields, locs_data, en_US_locs_data):
                     else:
                         return matchobj.group(2)
                 loc = re.sub(r'{3: gender \*:vowel\?(.*?); other\?(.*?);}', fix_gp, loc)
+                loc = re.sub(r'{4: gender \*:vowel\?(.*?); other\?(.*?);}', fix_gp, loc)
                 processed = loc_amount_parameter(loc, gpp_turn)
                 p(f'{processed}', style="text-align:left", cls='civ-ability-desc')
                 yield_dict[gp_type] = 1
@@ -113,6 +114,12 @@ def show_building_yields(yields, locs_data, en_US_locs_data):
                 loc = loc.replace('{4_FromYieldName}', get_loc(locs_data, f'LOC_YIELD_{from_yield_type}_NAME'))
                 loc = loc.replace('{4_FromYieldName[2]}', get_loc(locs_data, f'LOC_YIELD_{from_yield_type}_NAME', 2))
                 loc = loc.replace('{4_FromYieldName[8]}', get_loc(locs_data, f'LOC_YIELD_{from_yield_type}_NAME', 8))
+                def fix_gp(matchobj):
+                    if gp_type[0] in 'AEIOUaeiou':
+                        return matchobj.group(1)
+                    else:
+                        return matchobj.group(2)
+                loc = re.sub(r'{4: gender \*:vowel\?(.*?); other\?(.*?);}', fix_gp, loc)
 
                 p(f'{loc}', style="text-align:left", cls='civ-ability-desc')
                 yield_dict[key] = 1
@@ -124,6 +131,8 @@ def show_building_yields(yields, locs_data, en_US_locs_data):
                 loc = get_loc(locs_data, f'LOC_TYPE_TRAIT_YIELD_POWER_ENHANCEMENT')
                 loc = loc.replace('{2_Icon}', f'[ICON_{yield_type}]')
                 loc = loc.replace('{3_Name}', get_loc(locs_data, yield_loc))
+                loc = loc.replace('{3_Name[2]}', get_loc(locs_data, yield_loc, 2))
+                loc = loc.replace('{3_Name[8]}', get_loc(locs_data, yield_loc, 8))
                 processed = loc_amount_parameter(loc, element[21])
                 p(f'{processed}', style="text-align:left", cls='civ-ability-desc')
                 yield_dict[key] = 1
