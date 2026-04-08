@@ -80,6 +80,14 @@ def show_building_yields(yields, locs_data, en_US_locs_data):
                 loc = get_loc(locs_data, 'LOC_TYPE_TRAIT_GREAT_PERSON_POINTS')
                 loc = loc.replace('{2_Icon}', f'{gp_icon}')
                 loc = loc.replace('{3_GreatPersonClassName}', gp_type)
+                loc = loc.replace('{3_GreatPersonClassName[1]}', get_loc(locs_data, element[14], 1))
+                loc = loc.replace('{3_GreatPersonClassName[2]}', get_loc(locs_data, element[14], 2))
+                def fix_gp(matchobj):
+                    if gp_type[0] in 'AEIOUaeiou':
+                        return matchobj.group(1)
+                    else:
+                        return matchobj.group(2)
+                loc = re.sub(r'{3: gender \*:vowel\?(.*?); other\?(.*?);}', fix_gp, loc)
                 processed = loc_amount_parameter(loc, gpp_turn)
                 p(f'{processed}', style="text-align:left", cls='civ-ability-desc')
                 yield_dict[gp_type] = 1
@@ -99,8 +107,12 @@ def show_building_yields(yields, locs_data, en_US_locs_data):
                 loc = get_loc(locs_data, f'LOC_TYPE_TRAIT_BUILDING_DISTRICT_COPY')
                 loc = loc.replace('{1_ToYieldIcon}', f'[ICON_{to_yield_type}]')
                 loc = loc.replace('{2_ToYieldName}', get_loc(locs_data, f'LOC_YIELD_{to_yield_type}_NAME'))
+                loc = loc.replace('{2_ToYieldName[2]}', get_loc(locs_data, f'LOC_YIELD_{to_yield_type}_NAME', 2))
+                loc = loc.replace('{2_ToYieldName[8]}', get_loc(locs_data, f'LOC_YIELD_{to_yield_type}_NAME', 8))
                 loc = loc.replace('{3_FromYieldIcon}', f'[ICON_{from_yield_type}]')
                 loc = loc.replace('{4_FromYieldName}', get_loc(locs_data, f'LOC_YIELD_{from_yield_type}_NAME'))
+                loc = loc.replace('{4_FromYieldName[2]}', get_loc(locs_data, f'LOC_YIELD_{from_yield_type}_NAME', 2))
+                loc = loc.replace('{4_FromYieldName[8]}', get_loc(locs_data, f'LOC_YIELD_{from_yield_type}_NAME', 8))
 
                 p(f'{loc}', style="text-align:left", cls='civ-ability-desc')
                 yield_dict[key] = 1
@@ -147,6 +159,6 @@ def show_building_yields(yields, locs_data, en_US_locs_data):
         processed = loc_amount_parameter(maintenance_loc, building_maintenance)
         processed = processed.replace('{2_YieldIcon}', '[ICON_GOLD]')
         processed = processed.replace('{3_YieldName}', get_loc(locs_data, 'LOC_YIELD_GOLD_NAME'))
-        processed = processed.replace('{3_YieldName[2]}', get_loc(locs_data, 'LOC_YIELD_GOLD_NAME'))
-        processed = processed.replace('{3_YieldName[8]}', get_loc(locs_data, 'LOC_YIELD_GOLD_NAME'))
+        processed = processed.replace('{3_YieldName[2]}', get_loc(locs_data, 'LOC_YIELD_GOLD_NAME', 2))
+        processed = processed.replace('{3_YieldName[8]}', get_loc(locs_data, 'LOC_YIELD_GOLD_NAME', 8))
         p(processed, style="text-align:left", cls='civ-ability-desc')

@@ -323,14 +323,28 @@ def add_final_scripts():
     script(src="/js/script.js")
     script(src="/plugins/feather.min.js")
     script(src="/plugins/chart.min.js")
+    
+def find_nth(haystack: str, needle: str, n: int) -> int:
+    start = haystack.find(needle)
+    while start >= 0 and n > 1:
+        start = haystack.find(needle, start+len(needle))
+        n -= 1
+    return start
 
-def get_loc(locs_data, s):
+def get_loc(locs_data, s, index = 0):
     try:
         res = locs_data[s]
         if res.find('|') == -1:
             return res
         else:
-            return res[:res.find('|')]
+            if index == 0:
+                return res[:res.find('|')]
+            start = find_nth(res, '|', index - 1)
+            end = find_nth(res, '|', index)
+            if start != end:
+                return res[start + 1:end]
+            else:
+                return res[:res.find('|')]
     except KeyError:
         print(f'KeyError: {s} not found in locs_data')
         return f'Not found: {s}'
@@ -429,9 +443,9 @@ def loc_amount_parameter(localized_text: str, amount: float) -> str:
         return matchobj.group(2) if amount > 1 else matchobj.group(1)
     localized_text = re.sub(r'{Amount ?: ?plural 1\?(.*?); ?other\?(.*?);}', fix_amount, localized_text)
     localized_text = localized_text.replace('{Amount}', f'{amount}').replace('{Amount : number #}', f'{amount}')
+    localized_text = localized_text.replace('{Cantidad}', f'{amount}')
 
     localized_text = re.sub(r'{1_Amount ?: ?plural 1\?(.*?); ?other\?(.*?);}', fix_amount, localized_text)
-    localized_text = localized_text.replace('{Amount}', f'{amount}').replace('{Amount : number #}', f'{amount}')
 
     # 1_Amount: number +#,###;-#,###}
     localized_text = re.sub(r'{1_Amount: number +#,###;-#,###}', fix_amount, localized_text)
