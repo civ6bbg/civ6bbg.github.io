@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>Civ VI BBG 7.4 Aménagements</title>
+    <meta charset="utf-8">
+    <meta contents="IE=edge" httpequiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="/images/BBGLogo.webp" rel="icon" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap" rel="stylesheet">
+    <link href="/css/style.min.css" rel="stylesheet">
+    <link href="/css/preloader.css" rel="stylesheet">
+    <link href="/css/animate.min.css" rel="stylesheet">
+    <link href="/css/header.css" rel="stylesheet">
+    <link href="/css/footer.css" rel="stylesheet">
+    <link href="/fontawesome-free-7.0.0-web/css/all.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="loader">
+        <div class="loader-outter"></div>
+        <div class="loader-inner"></div>
+        <div class="indicator">
+          <svg height="12px" width="16px">
+            <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+            <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="layer"></div>
+    <div class="page-flex">
+      <div class="main-wrapper">
+        <nav class="main-nav--bg">
+          <div class="main-nav">
+            <div class="header">
+              <div class="header-inner">
+                <div class="inner">
+                  <div class="row">
+                    <div class="flex center sidebar-toggle col-xl-1 col-lg-1 col-md-1 col-1">
+                      <button class="transparent-btn" title="Menu" type="button">
+                        <span class="sr-only">Toggle menu</span>
+                        <span aria-hidden="true" class="icon menu-toggle"></span>
+                      </button>
+                    </div>
+                    <div class="flex center col-xl-1 col-lg-1 col-md-1 col-2">
+                      <a href="/index.html" style="align-content: center;">
+                        <img alt="#" src="/images/BBGLogo.webp" style="width:3em; border-radius:10%">
+                      </a>
+                      <div class="mobile-nav"></div>
+                    </div>
+                    <div class="flex col-xl-8 col-lg-8 col-md-8 col-8">
+                      <div class="main-menu">
+                        <nav class="navigation">
+                          <ul class="nav menu">
+                            <li class="">
+                              <a href="/fr_FR/leaders_7.4.html" onclick="civClicked(null)">Dirigeants</a>
+                            </li>
+                            <li class="">
+                              <a href="/fr_FR/bbg_expanded_7.4.html" onclick="civClicked(null)">BBG Expanded</a>
+                            </li>
+                            <li class="">
+                              <a href="/fr_FR/city_states_7.4.html" onclick="civClicked(null)">Cités-états</a>
+                            </li>
+                            <li class="">
+                              <a href="/fr_FR/religion_7.4.html" onclick="civClicked(null)">Religion</a>
+                            </li>
+                            <li class="">
+                              <a href="/fr_FR/governor_7.4.html" onclick="civClicked(null)">Gouverneurs</a>
+                            </li>
+                            <li class="">
+                              <a href="/fr_FR/great_people_7.4.html" onclick="civClicked(null)">Personnages illustres</a>
+                            </li>
+                            <li class="">
+                              <a href="/fr_FR/natural_wonder_7.4.html" onclick="civClicked(null)">Merveilles naturelles</a>
+                            </li>
+                            <li class="">
+                              <a href="/fr_FR/world_wonder_7.4.html" onclick="civClicked(null)">World Wonders</a>
+                            </li>
+                            <li class="">
+                              <a href="/fr_FR/buildings_7.4.html" onclick="civClicked(null)">Bâtiments</a>
+                            </li>
+                            <li class="">
+                              <a href="/fr_FR/units_7.4.html" onclick="civClicked(null)">Unités</a>
+                            </li>
+                            <li class="active">
+                              <a href="/fr_FR/improvements_7.4.html" onclick="civClicked(null)">Aménagements</a>
+                            </li>
+                            <li class="">
+                              <a href="/fr_FR/tech_tree_7.4.html" onclick="civClicked(null)">Technology Tree</a>
+                            </li>
+                            <li class="">
+                              <a href="/fr_FR/civic_tree_7.4.html" onclick="civClicked(null)">Civic Tree</a>
+                            </li>
+                            <li class="">
+                              <a href="/fr_FR/names_7.4.html" onclick="civClicked(null)">Names</a>
+                            </li>
+                            <li class="">
+                              <a href="/fr_FR/policies_7.4.html" onclick="civClicked(null)">Doctrines</a>
+                            </li>
+                            <li class="">
+                              <a href="/fr_FR/congress_7.4.html" onclick="civClicked(null)">Congrès mondial</a>
+                            </li>
+                            <li class="">
+                              <a href="/fr_FR/misc_7.4.html" onclick="civClicked(null)">Misc</a>
+                            </li>
+                            <li class="">
+                              <a href="/fr_FR/changelog_7.4.html" onclick="civClicked(null)">Changelog</a>
+                            </li>
+                            <li>
+                              <a>BBG Version<i class="icofont-rounded-down"></i></a>
+                              <ul class="dropdown bbg-version-dropdown">
+                                <li>
+                                  <a href="/fr_FR/improvements_base_game.html">Base</a>
+                                </li>
+                                <li>
+                                  <a href="/fr_FR/improvements_7.4.html">7.4</a>
+                                </li>
+                                <li>
+                                  <a href="/fr_FR/improvements_7.3.html">7.3</a>
+                                </li>
+                                <li>
+                                  <a href="/fr_FR/improvements_7.2.html">7.2</a>
+                                </li>
+                                <li>
+                                  <a href="/fr_FR/improvements_7.1.html">7.1</a>
+                                </li>
+                                <li>
+                                  <a href="/fr_FR/improvements_6.5.html">6.5</a>
+                                </li>
+                                <li>
+                                  <a href="/fr_FR/improvements_6.4.html">6.4</a>
+                                </li>
+                                <li>
+                                  <a href="/fr_FR/improvements_6.3.html">6.3</a>
+                                </li>
+                                <li>
+                                  <a href="/fr_FR/improvements_6.2.html">6.2</a>
+                                </li>
+                                <li>
+                                  <a href="/fr_FR/improvements_6.1.html">6.1</a>
+                                </li>
+                                <li>
+                                  <a href="/fr_FR/improvements_6.0.html">6.0</a>
+                                </li>
+                                <li>
+                                  <a href="/fr_FR/improvements_5.8.html">5.8</a>
+                                </li>
+                                <li>
+                                  <a href="/fr_FR/improvements_5.7.html">5.7</a>
+                                </li>
+                                <li>
+                                  <a href="/fr_FR/improvements_5.6.html">5.6</a>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+                    <div class="flex center col-xl-2 col-lg-2 col-md-2 col-1">
+                      <div class="flex row justify-content-around">
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-4">
+                          <div class="main-menu">
+                            <nav class="navigation">
+                              <ul class="nav menu">
+                                <li><i class="fa-solid fa-language lang-icon"></i>
+                                  <ul class="dropdown">
+                                    <li>
+                                      <a href="/en_US/improvements_7.4.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/us.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/fr_FR/improvements_7.4.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/fr.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/ru_RU/improvements_7.4.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/ru.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/de_DE/improvements_7.4.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/de.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/zh_Hans_CN/improvements_7.4.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/cn.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/ko_KR/improvements_7.4.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/kr.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/ja_JP/improvements_7.4.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/jp.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/pt_BR/improvements_7.4.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/br.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </nav>
+                          </div>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-4">
+                          <div class="base-game-switcher-wrapper">
+                            <button class="base-game-switcher gray-circle-btn" title="Show Base Game" type="button"><i aria-hidden="true" class="enable-icon" data-feather="toggle-left"></i><i aria-hidden="true" class="disable-icon" data-feather="toggle-right"></i></button>
+                          </div>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-4">
+                          <div class="theme-switcher-wrapper">
+                            <button class="theme-switcher gray-circle-btn" title="Switch theme" type="button">
+                              <span class="sr-only">Switch theme</span><i aria-hidden="true" class="sun-icon" data-feather="sun"></i><i aria-hidden="true" class="moon-icon" data-feather="moon"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="scroll-up footer-popup" id="footer-popup">
+          <div class="footer-popup-inner">
+            <div class="row">
+              <div class="col-sm-6 col-1 footer-popup-body">
+                <p id="donateText">Enjoy this work? Try Aether Kingdoms!
+                  <b>
+                    <a class="footer-popup-link" href="https://www.aetherkingdoms.com/" target="_blank">(Link)</a>
+                  </b>
+                </p>
+              </div>
+              <div class="col-sm-2 col-1 footer-popup-body">
+                <a class="btn btn-primary" href="https://www.aetherkingdoms.com/" target="_blank">
+                  <img alt="Aether Kingdom" class="footer-popup-img" src="/images/ak_village_animation.gif">
+                </a>
+              </div>
+              <div class="col-sm-2 col-6 footer-popup-donate">
+                <a class="btn btn-primary" href="https://ko-fi.com/calcalciffer" target="_blank">Donate</a>
+              </div>
+              <div class="col-sm-2 col-6 footer-popup-scroll-up">
+                <a class="displayNone" href="#top" id="scrollUp" onclick="civClicked(null)"><i class="fa-solid fa-up-long"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="aether-kingdom-ad" id="aether-kingdom-ad">
+          <a href="https://www.aetherkingdoms.com/" target="_blank">
+            <img alt="Aether Kingdom" class="aether-kingdom-ad-img" src="/images/ak_village_animation.gif">
+          </a>
+          <h2 class="aether-kingdom-ad-title">Try Aether Kingdoms!</h2>
+          <p class="aether-kingdom-ad-text">If you like my website here, please check out Aether Kingdoms, a free-to-play strategy game inspired by Civilization and developed by my friend and I. Click the button below to learn more!</p>
+          <a href="https://www.aetherkingdoms.com/" target="_blank">
+            <button class="ad-btn" title="Aether Kingdoms" type="submit">Aether Kingdoms</button>
+          </a>
+          <button class="ad-btn" onclick="aetherKingdomAdClose()" title="Close ad" type="submit">Close</button>
+        </div>
+        <div class="">
+          <div class="fixed left-0 right-auto h-screen bg-white border-r border-neutral-300 overflow-scroll" style="z-index: 5;">
+            <aside class="sidebar">
+              <div class="sidebar-start">
+                <div class="sidebar-body">
+                  <ul class="sidebar-body-menu"></ul>
+                </div>
+              </div>
+            </aside>
+          </div>
+          <div class="leaders-data min-w-full main-pl">
+            <main class="main users chart-page">
+              <div class="container">
+                <h1 class="civ-name">Civ VI BBG 7.4 Aménagements</h1><br>
+                <div class="row">
+                  <div class="col-md-6 col-12" id="Alcázar">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_ALCAZAR_NAME-->
+                      <h2 class="civ-name">Alcázar
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Alcázar.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Récompense de pillage : <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Modificateur de défense : 4</p>
+                      <p class="civ-ability-desc" style="text-align:left">Bonus de retranchement appliqué à l'unité occupante.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait : <img src="/images/ICON_TOURISM.webp" style="height:1em"/> tourisme 50 %</p>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait pour les cases adjacentes : 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture : <img src="/images/ICON_TOURISM.webp" style="height:1em"/> tourisme 100 % (requiert {4: plural 1?{4: gender *:no_article?; *:vowel?l'; m?le ; f?la ;}; 2?les ;}Aviation Technologie).</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construit par Bâtisseur</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Désert,  Désert (colline),  Prairie,  Prairie (colline),  Plaines,  Plaines (colline),  Neige,  Neige (colline),  Toundra,  Toundra (colline)</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloque la compétence de Bâtisseur permettant de construire un alcázar.<br><br><img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +1 et <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture +2. <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture +1 par Campement adjacent. Octroie une quantité de <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Science égale à 50% de l'Attrait de la case. <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Puissance de combat en défense +4, Vision +1 et <img src="/images/ICON_FORTIFIED.webp" style="height:1em"/> retranchement instantané. Génère du <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourisme par le biais de la <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture une fois l'Aviation découverte. Deux alcázars ne peuvent pas être adjacents.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Aquaculture">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_FISHERY_NAME-->
+                      <h2 class="civ-name">Aquaculture
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Fishery.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Récompense de pillage : Soins 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitations</p>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait pour les cases adjacentes : 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construit par Bâtisseur</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Côte et lac</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloqué par Navigation astronomique Technologie</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloque la compétence de Bâtisseur permettant de construire une aquaculture. <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture +1 et <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitations +1. <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture +1 par ressource maritime adjacente. Doit être construite sur une case de côte ou lacustre.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Bateaux de pêche">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_FISHING_BOATS_NAME-->
+                      <h2 class="civ-name">Bateaux de pêche
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Fishing Boats.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Récompense de pillage : Soins 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitations</p>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait pour les cases adjacentes : 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Or (Débloqué par Cartographie Technologie)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture (Débloqué par Matières plastiques Technologie)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production (Débloqué par Colonialisme Dogme)</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture : <img src="/images/ICON_TOURISM.webp" style="height:1em"/> tourisme 100 % (requiert {4: plural 1?{4: gender *:no_article?; *:vowel?l'; m?le ; f?la ;}; 2?les ;}Aviation Technologie).</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construit par Bâtisseur OU  Jahazi</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloqué par Navigation à voile Technologie</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloque la compétence de Bâtisseur permettant de construire un bateau de pêche.<br><br><img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture +1, <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +1 et <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitations +0.5. <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture +1 à Matières Plastiques. <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +1 à Colonialisme. <img src="/images/ICON_GOLD.webp" style="height:1em"/> Or +2 à la Cartographie. Ne peut être construit que sur une ressource valide.<br><br>Permet d'utiliser la ressource de luxe sur laquelle l'aménagement est construit.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Batey">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_BATEY_NAME-->
+                      <h2 class="civ-name">Batey
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Batey.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Récompense de pillage : <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait pour les cases adjacentes : 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture : <img src="/images/ICON_TOURISM.webp" style="height:1em"/> tourisme 100 % (requiert {4: plural 1?{4: gender *:no_article?; *:vowel?l'; m?le ; f?la ;}; 2?les ;}Aviation Technologie).</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construit par Bâtisseur</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Désert,  Désert (colline),  Prairie,  Prairie (colline),  Plaines,  Plaines (colline),  Neige,  Neige (colline),  Toundra,  Toundra (colline)</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloque la compétence de Bâtisseur permettant de construire un batey.<br><br><img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture +1. <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +1 pour chaque ressource stratégique adjacente, <img src="/images/ICON_GOLD.webp" style="height:1em"/> Or +1 pour chaque ressource de luxe adjacente et <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture +1 pour chaque ressource bonus et Complexe de loisirs adjacents (passe à +2 à l'Exploration). Génère du <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourisme par le biais de la <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture une fois l'Aviation découverte. Ne peut pas être construit à côté d'un autre batey.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Cabane de chasse">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_LIME_THULE_WBH_NAME-->
+                      <h2 class="civ-name">Cabane de chasse
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Hunter's House.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Récompense de pillage : Soins 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitations</p>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait pour les cases adjacentes : 0</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi : <img src="/images/ICON_TOURISM.webp" style="height:1em"/> tourisme 100 % (requiert {4: plural 1?{4: gender *:no_article?; *:vowel?l'; m?le ; f?la ;}; 2?les ;}Aviation Technologie).</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construit par Bâtisseur OU  Chasseur à traîneau</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Désert,  Désert (colline),  Prairie,  Prairie (colline),  Plaines,  Plaines (colline),  Neige,  Neige (colline),  Toundra,  Toundra (colline)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Bois</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Aménagement exclusif au Thulé.<br><br><img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitations +1.<br><img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture +1 si construit sur une case de Toundra.<br><img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture +2 si construit sur une case de Neige.<br><img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture +1 et <img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi +1 pour chaque case de ressource maritime et de camp adjacente au [COLOR:212,115,212,255]Commerce avec l'Étranger[ENDCOLOR].<br>Génère du <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourisme par le biais de la <img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi à l'[COLOR_FLOAT_SCIENCE]Aviation[ENDCOLOR].<br><br>Doit être construit adjacent à une case de ressource. Peut être aménagé dans une case de bois. Ne peut pas être aménagé adjacent à une case de cabane de chasse.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Camp">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_CAMP_NAME-->
+                      <h2 class="civ-name">Camp
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Camp.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Récompense de pillage : <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitations</p>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait pour les cases adjacentes : 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Or</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production (Débloqué par Mercantilisme Dogme)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture (Débloqué par Mercantilisme Dogme)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Or (Débloqué par Matériaux synthétiques Technologie)</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture : <img src="/images/ICON_TOURISM.webp" style="height:1em"/> tourisme 100 % (requiert {4: plural 1?{4: gender *:no_article?; *:vowel?l'; m?le ; f?la ;}; 2?les ;}Aviation Technologie).</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construit par Bâtisseur</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloqué par Élevage Technologie</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloque la compétence de bâtisseur permettant de construire des camps. <br><br><img src="/images/ICON_GOLD.webp" style="height:1em"/> Or +2. Ne peut être construit que sur une ressource valide. <br><br>Construit sur une ressource de luxe, permet à la ville d'exploiter cette ressource.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Carrière">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_QUARRY_NAME-->
+                      <h2 class="civ-name">Carrière
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Quarry.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Récompense de pillage : <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait pour les cases adjacentes : -1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production (Débloqué par Fusées Technologie)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production (Débloqué par Ingénierie militaire Technologie)</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture : <img src="/images/ICON_TOURISM.webp" style="height:1em"/> tourisme 100 % (requiert {4: plural 1?{4: gender *:no_article?; *:vowel?l'; m?le ; f?la ;}; 2?les ;}Aviation Technologie).</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construit par Bâtisseur</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloqué par Exploitation minière Technologie</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloque la compétence de Bâtisseur permettant de construire une carrière.<br><br><img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +1. <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +1 à Ingénierie Militaire, +2 à Fusées. Attrait pour les cases adjacentes -1. Ne peut être construite que sur une ressource valide.<br><br>Permet d'utiliser la ressource de luxe sur laquelle l'aménagement est construit.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Castel">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_CHATEAU_NAME-->
+                      <h2 class="civ-name">Castel
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Château.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Récompense de pillage : <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitations</p>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait pour les cases adjacentes : 1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Or</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture : <img src="/images/ICON_TOURISM.webp" style="height:1em"/> tourisme 100 % (requiert {4: plural 1?{4: gender *:no_article?; *:vowel?l'; m?le ; f?la ;}; 2?les ;}Aviation Technologie).</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construit par Bâtisseur</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Désert,  Désert (colline),  Prairie,  Prairie (colline),  Plaines,  Plaines (colline),  Neige,  Neige (colline),  Toundra,  Toundra (colline)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Plaines inondables,  Plaines inondables de prairie,  Plaines inondables de plaines</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloqué par Féodalité Dogme</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Aménagement exclusif à la France, débloqué à la [COLOR:212,115,212,255]Féodalité[ENDCOLOR].<br><img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture +1, <img src="/images/ICON_GOLD.webp" style="height:1em"/> Or +1, <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture +1 et <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitations +1.<br><img src="/images/ICON_GOLD.webp" style="height:1em"/> Or +2 si placé sur une rivière.<br><img src="/images/ICON_GOLD.webp" style="height:1em"/> Or +1 et <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture +1 pour chaque case de ressource de luxe adjacente.<br><img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture +1 pour chaque merveille adjacente (passe à +2 à l'Aviation).<br>Attrait +1 pour les cases adjacentes.<br>Génère du <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourisme par le biais de la <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture à l'[COLOR_FLOAT_SCIENCE]Aviation[ENDCOLOR].<br><br>Deux castels ne peuvent pas être adjacents.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Centrale géothermique">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_GEOTHERMAL_PLANT_NAME-->
+                      <h2 class="civ-name">Centrale géothermique
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Geothermal Plant.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Récompense de pillage : <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait pour les cases adjacentes : 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Science</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production (Débloqué par Matériaux synthétiques Technologie)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Science (Débloqué par Matériaux synthétiques Technologie)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construit par Bâtisseur</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Fissure géothermique</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloqué par Chimie Technologie</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloque la compétence de Bâtisseur permettant de construire une centrale géothermique.<br><br><img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +2, <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Science +1 et <img src="/images/ICON_POWER.webp" style="height:1em"/> Électricité +3. <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +1, <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Science +1 et <img src="/images/ICON_POWER.webp" style="height:1em"/> Électricité +3 à Matériaux Synthétiques. Doit être construit sur une fissure géothermique.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Centrale solaire">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_SOLAR_FARM_NAME-->
+                      <h2 class="civ-name">Centrale solaire
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Solar Farm.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Récompense de pillage : <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait pour les cases adjacentes : 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Or</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construit par Bâtisseur</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Désert,  Prairie,  Plaines,  Toundra</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloqué par Satellites Technologie</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloque la compétence de bâtisseur permettant de construire une centrale solaire. <br><br><img src="/images/ICON_GOLD.webp" style="height:1em"/> Or +1. <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +1. <img src="/images/ICON_POWER.webp" style="height:1em"/> Électricité +2 par tour. Doit être construit sur un terrain plat. Construction impossible sur la neige.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Chemamull">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_CHEMAMULL_NAME-->
+                      <h2 class="civ-name">Chemamull
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Chemamull.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Récompense de pillage : <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Nécessite : Attrait &gt;= 4</p>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait : <img src="/images/ICON_TOURISM.webp" style="height:1em"/> tourisme 75 %</p>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait pour les cases adjacentes : 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production (Débloqué par Fonction publique Dogme)</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture : <img src="/images/ICON_TOURISM.webp" style="height:1em"/> tourisme 100 % (requiert {4: plural 1?{4: gender *:no_article?; *:vowel?l'; m?le ; f?la ;}; 2?les ;}Aviation Technologie).</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construit par Bâtisseur</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Désert,  Désert (colline),  Prairie,  Prairie (colline),  Plaines,  Plaines (colline),  Neige,  Neige (colline),  Toundra,  Toundra (colline)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Sol volcanique</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloqué par Artisanat Dogme</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Aménagement exclusif aux Mapuches, débloqué à l'[COLOR:212,115,212,255]Artisanat[ENDCOLOR].<br><br><img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +1.<br><img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +1 à la [COLOR:212,115,212,255]Fonction Publique[ENDCOLOR].<br>Fournit une quantité de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture correspondant à 75% de l'Attrait de la case.<br>Génère du <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourisme par le biais de la <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture à l'[COLOR_FLOAT_SCIENCE]Aviation[ENDCOLOR].<br><br>Ne peut être posé que sur une case à l'Attrait époustouflant.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Culture en terrasses">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_TERRACE_FARM_NAME-->
+                      <h2 class="civ-name">Culture en terrasses
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Terrace Farm.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Récompense de pillage : Soins 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitations</p>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait pour les cases adjacentes : 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construit par Bâtisseur</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Désert (colline),  Prairie (colline),  Plaines (colline)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Sol volcanique</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Aménagement exclusif aux Incas.<br><br><img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture +1 et <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitations +1.<br><img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture +1 pour chaque case de montagne adjacente.<br><img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +2 pour chaque Aqueduc adjacent.<br><img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +1 si adjacente à de l'eau douce, mais pas à un Aqueduc.<br><img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture +1 toutes les 2 cases de culture en terrasses adjacentes (pour chaque culture en terrasses aux [COLOR_FLOAT_SCIENCE]Pièces de rechange[ENDCOLOR]).<br><br>Ne peut être construite que sur une case de collines de prairie, de plaine et de désert.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Dôme commercial">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_TRADING_DOME_NAME-->
+                      <h2 class="civ-name">Dôme commercial
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Trading Dome.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Récompense de pillage : <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait pour les cases adjacentes : 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Or</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construit par Bâtisseur</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Désert,  Désert (colline),  Prairie,  Prairie (colline),  Plaines,  Plaines (colline),  Neige,  Neige (colline),  Toundra,  Toundra (colline)</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloque la compétence de Bâtisseur permettant de construire un dôme commercial.<br><br><img src="/images/ICON_GOLD.webp" style="height:1em"/> Or +2. <img src="/images/ICON_GOLD.webp" style="height:1em"/> Or +1 pour chaque ressource de luxe adjacente. <img src="/images/ICON_GOLD.webp" style="height:1em"/> Or +2 et <img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi +1 pour vos <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> routes commerciales internationales pour chaque dôme commercial dans la ville d'origine. Deux dômes commerciaux ne peuvent pas être adjacents.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Feitoria">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_FEITORIA_NAME-->
+                      <h2 class="civ-name">Feitoria
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Feitoria.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait pour les cases adjacentes : 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+4 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Or</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construit par Nau</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Côte et lac</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Aménagement exclusif au Portugal, débloqué par le Nau.<br><br><img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +1 et <img src="/images/ICON_GOLD.webp" style="height:1em"/> Or +4.<br><img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +1 et <img src="/images/ICON_GOLD.webp" style="height:1em"/> Or +2 pour les <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> routes commerciales entre cette ville et le Portugal.<br><br>Ne peut être construite que sur une case de côte ou de lac, adjacente à une ressource de luxe ou bonus sur le territoire d'une autre civilisation ou d'une Cité-état. Les feitorias ne peuvent ni être adjacentes entre elles, ni supprimées.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Ferme">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_FARM_NAME-->
+                      <h2 class="civ-name">Ferme
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Farm.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Récompense de pillage : Soins 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitations</p>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait pour les cases adjacentes : 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture : <img src="/images/ICON_TOURISM.webp" style="height:1em"/> tourisme 100 % (requiert {4: plural 1?{4: gender *:no_article?; *:vowel?l'; m?le ; f?la ;}; 2?les ;}Aviation Technologie).</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construit par Bâtisseur</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Prairie,  Prairie (colline) (Nécessite : Génie civil),  Plaines,  Plaines (colline) (Nécessite : Génie civil)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Plaines inondables,  Plaines inondables de prairie,  Plaines inondables de plaines,  Sol volcanique</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloque la compétence de Bâtisseur permettant de construire une ferme.<br><br><img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture +1 et <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitations +0.5. <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture +1 toutes les 2 fermes adjacentes à la Féodalité (+1 toutes les fermes adjacentes Pièces de Rechange). Ne peut être construite que sur une prairie ou une plaine.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Fort">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_FORT_NAME-->
+                      <h2 class="civ-name">Fort
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Fort.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Modificateur de défense : 4</p>
+                      <p class="civ-ability-desc" style="text-align:left">Bonus de retranchement appliqué à l'unité occupante.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait pour les cases adjacentes : 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construit par Ingénieur militaire</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Désert,  Désert (colline),  Prairie,  Prairie (colline),  Plaines,  Plaines (colline),  Neige,  Neige (colline),  Toundra,  Toundra (colline)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Sol volcanique</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloqué par Ingénierie militaire Technologie</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Puissance de combat en défense +4, Vision +1 et <img src="/images/ICON_FORTIFIED.webp" style="height:1em"/> retranchement instantané.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Fort romain">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_ROMAN_FORT_NAME-->
+                      <h2 class="civ-name">Fort romain
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Roman Fort.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Modificateur de défense : 4</p>
+                      <p class="civ-ability-desc" style="text-align:left">Bonus de retranchement appliqué à l'unité occupante.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait pour les cases adjacentes : 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construit par Légion</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Désert,  Désert (colline),  Prairie,  Prairie (colline),  Plaines,  Plaines (colline),  Neige,  Neige (colline),  Toundra,  Toundra (colline)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Sol volcanique</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloque la compétence de légion romaine permettant de construire un fort romain, exclusif à Rome. <br><br>L'unité occupante voit sa <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> puissance défensive augmenter de 4 points et gagne automatiquement 2 tours de retranchement.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Grande Muraille">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_GREAT_WALL_NAME-->
+                      <h2 class="civ-name">Grande Muraille
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Great Wall.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Récompense de pillage : <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Modificateur de défense : 4</p>
+                      <p class="civ-ability-desc" style="text-align:left">Bonus de retranchement appliqué à l'unité occupante.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait pour les cases adjacentes : 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture : <img src="/images/ICON_TOURISM.webp" style="height:1em"/> tourisme 100 % (requiert {4: plural 1?{4: gender *:no_article?; *:vowel?l'; m?le ; f?la ;}; 2?les ;}Aviation Technologie).</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construit par Bâtisseur</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Désert,  Désert (colline),  Prairie,  Prairie (colline),  Plaines,  Plaines (colline),  Neige,  Neige (colline),  Toundra,  Toundra (colline)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Sol volcanique</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloqué par Maçonnerie Technologie</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Aménagement exclusif à la Chine, débloqué à la [COLOR_FLOAT_SCIENCE]Maçonnerie[ENDCOLOR].<br><br><img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +1.<br><img src="/images/ICON_GOLD.webp" style="height:1em"/> Or +1 pour chaque case de Grande Muraille adjacente.<br><img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture +1 pour chaque case de Grande Muraille adjacente aux [COLOR_FLOAT_SCIENCE]Châteaux[ENDCOLOR].<br><br>Génère du <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourisme par le biais de la <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture à l'[COLOR_FLOAT_SCIENCE]Aviation[ENDCOLOR].<br><br><img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Puissance de combat en défense +4, Vision +1 et <img src="/images/ICON_FORTIFIED.webp" style="height:1em"/> retranchement instantané.<br><br>Doit être construite sur une ligne longeant la frontière de votre Empire. Peut uniquement être pillée, mais jamais détruite par les catastrophes naturelles.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Hacienda">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_HACIENDA_NAME-->
+                      <h2 class="civ-name">Hacienda
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Hacienda.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Récompense de pillage : Soins 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitations</p>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait pour les cases adjacentes : 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Or</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construit par Bâtisseur</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Prairie,  Plaines</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloqué par Foires médiévales Dogme</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Aménagement exclusif à la Grande Colombie, débloqué aux [COLOR:212,115,212,255]Foires Médiévales[ENDCOLOR].<br><br><img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +1, <img src="/images/ICON_GOLD.webp" style="height:1em"/> Or +2 et <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitations +0.5.<br><img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture +1 toutes les 2 cases de plantations adjacentes (pour chaque case de plantation aux [COLOR_FLOAT_SCIENCE]Pièces de Rechange[ENDCOLOR]).<br><br><img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +1 pour les plantations et les haciendas, toutes les 2 cases d'haciendas adjacentes (pour chaque case d'hacienda adjacente au [COLOR:212,115,212,255]Mercantilisme[ENDCOLOR]).<br><br>Ne peut être construite que sur une case de plaine ou de prairie.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Kampung">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_KAMPUNG_NAME-->
+                      <h2 class="civ-name">Kampung
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Kampung.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Récompense de pillage : Soins 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitations</p>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait pour les cases adjacentes : 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production (Débloqué par Génie civil Dogme)</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture : <img src="/images/ICON_TOURISM.webp" style="height:1em"/> tourisme 100 % (requiert {4: plural 1?{4: gender *:no_article?; *:vowel?l'; m?le ; f?la ;}; 2?les ;}Aviation Technologie).</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construit par Bâtisseur</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Côte et lac</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloqué par Construction navale Technologie</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Aménagement exclusif à l'Indonésie, débloqué à la [COLOR_FLOAT_SCIENCE]Construction Navale[ENDCOLOR].<br><br><img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +1 et <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitations +1.<br><img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture +1 et <img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi +1 pour chaque case de bateau de pêche adjacente.<br><img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +1 au Génie Civil.<br><br>Génère du <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourisme par le biais de la <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture à l'Aviation.<br><br>Doit être placé sur une case de côte ou de lac adjacente à une ressource maritime.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Kourgane">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_KURGAN_NAME-->
+                      <h2 class="civ-name">Kourgane
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Kurgan.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Récompense de pillage : <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait pour les cases adjacentes : 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi</p>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Or</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi : <img src="/images/ICON_TOURISM.webp" style="height:1em"/> tourisme 100 % (requiert {4: plural 1?{4: gender *:no_article?; *:vowel?l'; m?le ; f?la ;}; 2?les ;}Aviation Technologie).</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construit par Bâtisseur</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Désert,  Désert (colline),  Prairie,  Prairie (colline),  Plaines,  Plaines (colline),  Neige,  Neige (colline),  Toundra,  Toundra (colline)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloqué par Élevage Technologie</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Aménagement exclusif à la Scythie, débloqué à l'[COLOR_FLOAT_SCIENCE]Élevage[ENDCOLOR].<br><br><img src="/images/ICON_GOLD.webp" style="height:1em"/> Or +3 et <img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi +1.<br><img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +1 et <img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi +1 pour chaque case de pâturage adjacente (passe à <img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi +2 aux Étriers).<br>Génère du <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourisme par le biais de la <img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi à l'[COLOR_FLOAT_SCIENCE]Aviation[ENDCOLOR].</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Lignes de Nazca">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_NAZCA_LINE_NAME-->
+                      <h2 class="civ-name">Lignes de Nazca
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Nazca Line.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Récompense de pillage : <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait pour les cases adjacentes : 1</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construit par Bâtisseur</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Désert</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloque la compétence de Bâtisseur permettant de construire une ligne de Nazca.<br><br><img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi +1 pour les cases adjacentes. <img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi +1 pour les cases adjacentes disposant d'une ressource. <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture +1 pour les cases de désert et de colline désertique adjacentes à Fonction Publique. <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +1 pour les cases plates adjacentes à Production en Série. Attrait +1 pour les cases adjacentes. Ne peut être construit que sur une case de désert plat. Cette case ne peut pas être exploitée.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Mahavihara">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MAHAVIHARA_NAME-->
+                      <h2 class="civ-name">Mahavihara
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Mahavihara.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Récompense de pillage : <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitations</p>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait pour les cases adjacentes : 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Science</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construit par Bâtisseur</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Désert,  Prairie,  Plaines,  Neige,  Toundra</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloque la compétence de Bâtisseur permettant de construire un mahavihara.<br><br><img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Science +2 et <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitations +1. <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Science +1 pour chaque Campus adjacent (passe à +2 à Théorie Scientifique). <img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi +1 pour chaque Lieu saint adjacent. À la construction de son premier mahavihara, le joueur reçoit une technologie aléatoire. Doit être construit sur un terrain plat. Deux mahaviharas ne peuvent pas être adjacents.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Mekewāp">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MEKEWAP_NAME-->
+                      <h2 class="civ-name">Mekewāp
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Mekewap.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Récompense de pillage : Soins 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitations</p>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait pour les cases adjacentes : 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production (Débloqué par Fonction publique Dogme)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construit par Bâtisseur</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Désert,  Désert (colline),  Prairie,  Prairie (colline),  Plaines,  Plaines (colline),  Neige,  Neige (colline),  Toundra,  Toundra (colline)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloqué par Poterie Technologie</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Aménagement exclusif aux Cris, débloqué à la [COLOR_FLOAT_SCIENCE]Poterie[ENDCOLOR].<br><br><img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +1 et <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitations +1.<br><img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture +1 toutes les 2 cases de ressource bonus adjacentes (pour chaque case de ressource bonus adjacente à la [COLOR:212,115,212,255]Conservation[ENDCOLOR]).<br><img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +1 et <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitations +1 à la Fonction Publique.<br><img src="/images/ICON_GOLD.webp" style="height:1em"/> Or +1 si adjacent à une case de ressource de luxe.<br><img src="/images/ICON_GOLD.webp" style="height:1em"/> Or +2 par case de ressource de luxe adjacente à la [COLOR_FLOAT_SCIENCE]Cartographie[ENDCOLOR].<br><br>Doit être placé adjacent à une case de ressource bonus ou de luxe. Deux mekewaps ne peuvent pas être adjacents.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Mine">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MINE_NAME-->
+                      <h2 class="civ-name">Mine
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Mine.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Récompense de pillage : <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait pour les cases adjacentes : -1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production (Débloqué par Apprentissage Technologie)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production (Débloqué par Industrialisation Technologie)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production (Débloqué par Matériaux intelligents Technologie)</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture : <img src="/images/ICON_TOURISM.webp" style="height:1em"/> tourisme 0 % (requiert {4: plural 1?{4: gender *:no_article?; *:vowel?l'; m?le ; f?la ;}; 2?les ;}Aviation Technologie).</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construit par Bâtisseur</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Désert (colline),  Prairie (colline),  Plaines (colline),  Neige (colline),  Toundra (colline)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Sol volcanique</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloqué par Exploitation minière Technologie</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloque la compétence de Bâtisseur permettant de construire une mine.<br><br><img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +1. <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +1 à Apprentissage, Industrialisation et Matériaux Intelligents. Attrait -1 pour les cases adjacentes. Ne peut être construite que sur une colline ou une ressource valide.<br><br>Permet d'utiliser la ressource stratégique ou de luxe sur laquelle l'aménagement est construit.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Mission">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MISSION_NAME-->
+                      <h2 class="civ-name">Mission
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Mission.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Récompense de pillage : <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait pour les cases adjacentes : 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Science (Débloqué par Lumières Dogme)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construit par Bâtisseur</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Désert,  Désert (colline),  Prairie,  Prairie (colline),  Plaines,  Plaines (colline),  Neige,  Neige (colline),  Toundra,  Toundra (colline)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloqué par Théologie Dogme</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Aménagement exclusif à l'Espagne, débloqué à la [COLOR:212,115,212,255]Théologie[ENDCOLOR].<br><br><img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi +2.<br><img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +1, <img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi +1 et <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitations +1 si construit à 8 cases ou plus de votre <img src="/images/ICON_CAPITAL.webp" style="height:1em"/> Capitale.<br><img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Science +1 pour chaque Campus et Lieu saint adjacent.<br><img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Science +2 aux [COLOR:212,115,212,255]Lumières[ENDCOLOR].<br><br>Deux missions ne peuvent pas être adjacentes.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Moaï">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MOAI_NAME-->
+                      <h2 class="civ-name">Moaï
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Moai.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Récompense de pillage : <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait pour les cases adjacentes : 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture : <img src="/images/ICON_TOURISM.webp" style="height:1em"/> tourisme 100 % (requiert {4: plural 1?{4: gender *:no_article?; *:vowel?l'; m?le ; f?la ;}; 2?les ;}Aviation Technologie).</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construit par Bâtisseur</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Prairie,  Prairie (colline),  Plaines,  Plaines (colline)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Sol volcanique</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloque la compétence de Bâtisseur permettant de construire un moaï.<br><br><img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture +1. <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture +1 tous les 2 moaïs adjacents (pour chaque moaï adjacent à Foires Médiévales). <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture +2 si construit sur une case de sol volcanique ou sur une case adjacente. <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture +1 si adjacent à une case de côte ou de lac. Génère du <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourisme par le biais de la <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture une fois l'Aviation découverte.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Monastère">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MONASTERY_NAME-->
+                      <h2 class="civ-name">Monastère
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Monastery.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Récompense de pillage : <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitations</p>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait pour les cases adjacentes : 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi : <img src="/images/ICON_TOURISM.webp" style="height:1em"/> tourisme 100 % (requiert {4: plural 1?{4: gender *:no_article?; *:vowel?l'; m?le ; f?la ;}; 2?les ;}Aviation Technologie).</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construit par Bâtisseur</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Désert,  Désert (colline),  Prairie,  Prairie (colline),  Plaines,  Plaines (colline),  Neige,  Neige (colline),  Toundra,  Toundra (colline)</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloque la compétence de Bâtisseur permettant de construire un monastère.<br><br><img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture +1, <img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi +3 et <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitations +1. <img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi +1 par <img src="/images/ICON_DISTRICT.webp" style="height:1em"/> quartier adjacent à l'Église Réformée. <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitations +1 à Colonialisme. Régénération +15 pour les unités qui n'ont pas attaqué ce tour. Génère du <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourisme par le biais de la <img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi après la découverte de l'Aviation. Ne peut pas être construit à côté d'un autre monastère.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Monts de Cahokia">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MOUND_NAME-->
+                      <h2 class="civ-name">Monts de Cahokia
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Cahokia Mounds.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Récompense de pillage : Soins 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitations</p>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait pour les cases adjacentes : 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Or</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construit par Bâtisseur</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Désert,  Prairie,  Plaines,  Toundra</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Plaines inondables,  Plaines inondables de prairie,  Plaines inondables de plaines</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloque la compétence de Bâtisseur permettant de construire un mont de Cahokia.<br><br><img src="/images/ICON_GOLD.webp" style="height:1em"/> Or +3 et <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> Activités +1 (<img src="/images/ICON_AMENITIES.webp" style="height:1em"/> l'Activité est limitée à 1 par ville, puis 2 à la découverte de l'Histoire Naturelle). <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture +1 toutes les 2 cases de <img src="/images/ICON_DISTRICT.webp" style="height:1em"/> quartiers adjacentes à la Féodalité (pour chaque <img src="/images/ICON_DISTRICT.webp" style="height:1em"/> quartier adjacent à Pièces de Rechange). <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitations +1 (passe à +2 à Patrimoine Culturel découvert). Deux monts de Cahokia ne peuvent pas être adjacents.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Musée en plein air">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_OPEN_AIR_MUSEUM_NAME-->
+                      <h2 class="civ-name">Musée en plein air
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Open-Air Museum.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Récompense de pillage : <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait pour les cases adjacentes : 0</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture : <img src="/images/ICON_TOURISM.webp" style="height:1em"/> tourisme 100 %</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construit par Bâtisseur</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Désert,  Désert (colline),  Prairie,  Prairie (colline),  Plaines,  Plaines (colline),  Neige,  Neige (colline),  Toundra,  Toundra (colline)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloqué par Service diplomatique Dogme</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Aménagement exclusif à la Suède, débloqué au [COLOR:212,115,212,255]Service Diplomatique[ENDCOLOR].<br><br>Loyauté +2 par tour dans la ville.<br><img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture +2 et <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourisme +2 pour chaque type de terrain (prairie/plaine/désert/toundra/neige) sur lequel une ville suédoise est construite.<br><br>Limité à un par ville. Les cases contenant un musée en plein air ne peuvent pas être attribuées à une autre ville.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Pairidaēza">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_PAIRIDAEZA_NAME-->
+                      <h2 class="civ-name">Pairidaēza
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Pairidaeza.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Récompense de pillage : <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitations</p>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait pour les cases adjacentes : 1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Or</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture (Débloqué par Service diplomatique Dogme)</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture : <img src="/images/ICON_TOURISM.webp" style="height:1em"/> tourisme 100 % (requiert {4: plural 1?{4: gender *:no_article?; *:vowel?l'; m?le ; f?la ;}; 2?les ;}Aviation Technologie).</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construit par Bâtisseur</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Désert,  Désert (colline),  Prairie,  Prairie (colline),  Plaines,  Plaines (colline)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloqué par Premier Empire Dogme</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Aménagement exclusif à la Perse, débloqué au [COLOR:212,115,212,255]Premier Empire[ENDCOLOR].<br><br><img src="/images/ICON_GOLD.webp" style="height:1em"/> Or +2, <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture +1 et <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitations +1.<br><img src="/images/ICON_GOLD.webp" style="height:1em"/> Or +1 pour chaque Centre-ville, Zone industrielle, Port et Plateforme commerciale adjacent.<br><img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture +1 pour chaque Centre-ville, Campus, Place du théâtre et Lieu saint adjacent.<br><img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture +1 au [COLOR:212,115,212,255]Service diplomatique[ENDCOLOR].<br><br>Attrait +1 pour les cases adjacentes.<br><br>Génère du <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourisme par le biais de la <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture à l'[COLOR_FLOAT_SCIENCE]Aviation[ENDCOLOR].<br><br>Construction impossible sur une case de neige et de toundra, ou adjacent à un autre pairidaeza.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Parc urbain">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_CITY_PARK_NAME-->
+                      <h2 class="civ-name">Parc urbain
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/City Park.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Récompense de pillage : Soins 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait pour les cases adjacentes : 2</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture</p>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Science</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture : <img src="/images/ICON_TOURISM.webp" style="height:1em"/> tourisme 100 % (requiert {4: plural 1?{4: gender *:no_article?; *:vowel?l'; m?le ; f?la ;}; 2?les ;}Aviation Technologie).</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construit par Bâtisseur</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Désert,  Prairie,  Plaines,  Neige,  Toundra</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloqué par Loisirs Dogme</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Aménagement unique à <img src="/images/ICON_GOVERNOR.webp" style="height:1em"/> Liang. <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Science +3, <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture +2, <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitations +2 et <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> Activités +1. Attrait +2 pour les cases adjacentes.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Parc éolien">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_WIND_FARM_NAME-->
+                      <h2 class="civ-name">Parc éolien
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Wind Farm.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Récompense de pillage : <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait pour les cases adjacentes : 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Or</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construit par Bâtisseur</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Désert (colline),  Prairie (colline),  Plaines (colline),  Neige (colline),  Toundra (colline)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloqué par Matériaux composites Technologie</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloque la compétence de bâtisseur permettant de construire un parc éolien. <br><br><img src="/images/ICON_GOLD.webp" style="height:1em"/> Or +2. <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +1. <img src="/images/ICON_POWER.webp" style="height:1em"/> Électricité +2 par tour. Doit être construit sur une case de colline.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Parc éolien en mer">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_OFFSHORE_WIND_FARM_NAME-->
+                      <h2 class="civ-name">Parc éolien en mer
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Offshore Wind Farm.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Récompense de pillage : <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait pour les cases adjacentes : 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construit par Bâtisseur</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Côte et lac</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloqué par Systèmes prédictifs Technologie</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloque la compétence de bâtisseur permettant de construire un parc éolien en mer. <br><br><img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +2. <img src="/images/ICON_POWER.webp" style="height:1em"/> Électricité +2 par tour. Doit être construit sur une case côtière ou lacustre.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Patinoire">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_ICE_HOCKEY_RINK_NAME-->
+                      <h2 class="civ-name">Patinoire
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Ice Hockey Rink.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Récompense de pillage : Soins 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait pour les cases adjacentes : 2</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production (Débloqué par Sport professionnel Dogme)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture (Débloqué par Sport professionnel Dogme)</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture : <img src="/images/ICON_TOURISM.webp" style="height:1em"/> tourisme 100 % (requiert {4: plural 1?{4: gender *:no_article?; *:vowel?l'; m?le ; f?la ;}; 2?les ;}Aviation Technologie).</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construit par Bâtisseur</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Neige,  Neige (colline),  Toundra,  Toundra (colline)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloqué par Service diplomatique Dogme</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Aménagement exclusif au Canada, débloqué au [COLOR:212,115,212,255]Service Diplomatique[ENDCOLOR].<br><br><img src="/images/ICON_AMENITIES.webp" style="height:1em"/> Activités +1.<br><img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture +2 et <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +2 au [COLOR:212,115,212,255]Sport Professionnel[ENDCOLOR].<br><img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture +1 pour chaque case de toundra et de neige adjacente.<br><img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture +4 si adjacent à un stade.<br><br>Attrait +2 pour les cases adjacentes.<br>Génère du <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourisme par le biais de la <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture à l'[COLOR_FLOAT_SCIENCE]Aviation[ENDCOLOR].<br><br>Peut être construit sur une case de toundra ou de neige. Un par ville.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Piste d'atterrissage">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_AIRSTRIP_NAME-->
+                      <h2 class="civ-name">Piste d'atterrissage
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Airstrip.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait pour les cases adjacentes : -1</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construit par Ingénieur militaire</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Désert,  Prairie,  Plaines,  Neige,  Toundra</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Sol volcanique</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloqué par Aviation Technologie</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloque la compétence d'ingénieur militaire permettant de construire une piste d'atterrissage.<br><br>Peut héberger 3 unités aériennes. Ne peut être construite que sur un terrain plat. Attrait pour les cases adjacentes -1.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Plantation">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_PLANTATION_NAME-->
+                      <h2 class="civ-name">Plantation
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Plantation.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Récompense de pillage : <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitations</p>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait pour les cases adjacentes : 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Or</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture (Débloqué par Théorie scientifique Technologie)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Or (Débloqué par Mondialisation Dogme)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture (Débloqué par Foires médiévales Dogme)</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture : <img src="/images/ICON_TOURISM.webp" style="height:1em"/> tourisme 100 % (requiert {4: plural 1?{4: gender *:no_article?; *:vowel?l'; m?le ; f?la ;}; 2?les ;}Aviation Technologie).</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construit par Bâtisseur</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloqué par Irrigation Technologie</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloque la compétence de Bâtisseur permettant de construire une plantation.<br><br><img src="/images/ICON_GOLD.webp" style="height:1em"/> Or +2. <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture +1 à Féodalité et à Théorie Scientifique. <img src="/images/ICON_GOLD.webp" style="height:1em"/> Or +2 à Mondialisation.<br><img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +1 si construite sur une case plate. Ne peut être construite que sur une ressource valide.<br><br>Permet d'utiliser la ressource de luxe sur laquelle l'aménagement est construit.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Plateforme pétrolière">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_OFFSHORE_OIL_RIG_NAME-->
+                      <h2 class="civ-name">Plateforme pétrolière
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Offshore Oil Rig.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Récompense de pillage : <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait pour les cases adjacentes : -1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production (Débloqué par Systèmes prédictifs Technologie)</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture : <img src="/images/ICON_TOURISM.webp" style="height:1em"/> tourisme 100 % (requiert {4: plural 1?{4: gender *:no_article?; *:vowel?l'; m?le ; f?la ;}; 2?les ;}Aviation Technologie).</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construit par Bâtisseur</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Côte et lac,  Océan</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloqué par Raffinage Technologie</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloque la compétence de Bâtisseur permettant de construire une plateforme pétrolière. <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +2. <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +1 à Systèmes Prédictifs. Attrait pour les cases adjacentes -1. Ne peut être construite que sur une case côtière ou lacustre contenant du <img src="/images/ICON_RESOURCE_OIL.webp" style="height:1em"/> pétrole, et permet ainsi de l'utiliser.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Polder">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_POLDER_NAME-->
+                      <h2 class="civ-name">Polder
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Polder.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Récompense de pillage : <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitations</p>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait pour les cases adjacentes : 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production</p>
+                      <p class="civ-ability-desc" style="text-align:left">+4 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Or (Débloqué par Génie civil Dogme)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construit par Bâtisseur</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Côte et lac</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloqué par Féodalité Dogme</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Aménagement exclusif aux Pays-Bas, débloqué à la [COLOR:212,115,212,255]Féodalité[ENDCOLOR].<br><br><img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture +1, <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +1 et <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitations +0.5.<br><img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture +1 pour chaque case de polder adjacente (passe à +2 aux [COLOR_FLOAT_SCIENCE]Pièces de Rechange[ENDCOLOR]).<br><img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +1 toutes les deux cases de polder adjacentes (pour chaque case de polder adjacente aux [COLOR_FLOAT_SCIENCE]Pièces de Rechange[ENDCOLOR]).<br><img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +1 pour chaque Port adjacent.<br><img src="/images/ICON_GOLD.webp" style="height:1em"/> Or +4 au [COLOR:212,115,212,255]Génie Civil[ENDCOLOR].<br><br>Doit être placé sur une case de côte ou de lac adjacente à au moins une case de terre franchissable.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Puits de pétrole">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_OIL_WELL_NAME-->
+                      <h2 class="civ-name">Puits de pétrole
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Oil Well.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Récompense de pillage : <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait pour les cases adjacentes : -1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production (Débloqué par Systèmes prédictifs Technologie)</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture : <img src="/images/ICON_TOURISM.webp" style="height:1em"/> tourisme 100 % (requiert {4: plural 1?{4: gender *:no_article?; *:vowel?l'; m?le ; f?la ;}; 2?les ;}Aviation Technologie).</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construit par Bâtisseur</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Désert,  Désert (colline),  Prairie,  Prairie (colline),  Plaines,  Plaines (colline),  Neige,  Neige (colline),  Toundra,  Toundra (colline)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloqué par Raffinage Technologie</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloque la compétence de Bâtisseur permettant de construire un puits de pétrole. <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +2. <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> +1 à Systèmes Prédictifs. Attrait -1 pour les cases adjacentes. Ne peut être construit que sur une case terrestre contenant du <img src="/images/ICON_RESOURCE_OIL.webp" style="height:1em"/> pétrole, et permet ainsi de l'utiliser.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Puits à degrés">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_STEPWELL_NAME-->
+                      <h2 class="civ-name">Puits à degrés
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Stepwell.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Récompense de pillage : Soins 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitations</p>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait pour les cases adjacentes : 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi (Débloqué par Féodalité Dogme)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture (Débloqué par Féodalité Dogme)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construit par Bâtisseur</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Désert,  Prairie,  Plaines,  Neige,  Toundra</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloqué par Irrigation Technologie</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Aménagement exclusif à l'Inde, débloqué à l'[COLOR_FLOAT_SCIENCE]Irrigation[ENDCOLOR].<br><br><img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture +1, <img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi +1 et <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitations +1.<br><img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture +1 pour chaque case de ferme adjacente.<br><img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi +1 si adjacent à un Lieu saint.<br><img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture +1 et <img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi +1 à la [COLOR:212,115,212,255]Féodalité[ENDCOLOR].<br><img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitations +1 à l'[COLOR_FLOAT_SCIENCE]Assainissement[ENDCOLOR].<br><br>Ne peut pas être construit sur une case de collines ou adjacent à un autre puits à degrés.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Pyramide nubienne">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_PYRAMID_NAME-->
+                      <h2 class="civ-name">Pyramide nubienne
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Nubian Pyramid.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Récompense de pillage : <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait pour les cases adjacentes : 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construit par Bâtisseur</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Désert,  Désert (colline),  Prairie,  Plaines</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Plaines inondables,  Plaines inondables de prairie,  Plaines inondables de plaines</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloqué par Artisanat Dogme</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Aménagement exclusif à la Nubie, débloqué à l'[COLOR:212,115,212,255]Artisanat[ENDCOLOR].<br><br><img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture +2 et <img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi +2.<br><br>Les <img src="/images/ICON_DISTRICT.webp" style="height:1em"/> quartiers adjacents octroient des rendements supplémentaires selon les quartiers adjacents:<br> • <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture +1 si adjacente à un Centre-ville.<br> • <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +1 par Zone industrielle, Campement et Aérodrome.<br> • <img src="/images/ICON_GOLD.webp" style="height:1em"/> Or +1 par Plateforme commerciale et Port.<br> • <img src="/images/ICON_GOLD.webp" style="height:1em"/> Or +2 et <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture +1 par Place de la gouvernance et Quartier diplomatique.<br> • <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Science +1 par Campus.<br> • <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture +1 par Place du théâtre.<br> • <img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi +1 par Lieu saint.<br><br>Bonus de proximité +1 pour les <img src="/images/ICON_DISTRICT.webp" style="height:1em"/> quartiers adjacents.<br><br>Doit être construit sur une case plate. Un par ville. Deux pyramides nubiennes ne peuvent pas être adjacentes.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Pâturage">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_PASTURE_NAME-->
+                      <h2 class="civ-name">Pâturage
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Pasture.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Récompense de pillage : <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitations</p>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait pour les cases adjacentes : 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture (Débloqué par Étriers Technologie)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production (Débloqué par Pièces de rechange Technologie)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture (Débloqué par Robotique Technologie)</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture : <img src="/images/ICON_TOURISM.webp" style="height:1em"/> tourisme 100 % (requiert {4: plural 1?{4: gender *:no_article?; *:vowel?l'; m?le ; f?la ;}; 2?les ;}Aviation Technologie).</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construit par Bâtisseur</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloqué par Élevage Technologie</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloque la compétence de Bâtisseur permettant de construire un pâturage.<br><br><img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +1 et <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitations +0.5. <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture +1 à Étriers et à Robotique. <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +1 à Pièces de Rechange. Ne peut être construit que sur une ressource valide.<br><br>Permet d'utiliser la ressource stratégique sur laquelle l'aménagement est construit.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Pā">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MAORI_PA_NAME-->
+                      <h2 class="civ-name">Pā
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Pā.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Modificateur de défense : 4</p>
+                      <p class="civ-ability-desc" style="text-align:left">Bonus de retranchement appliqué à l'unité occupante.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait pour les cases adjacentes : 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construit par Toa</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Désert (colline),  Prairie (colline),  Plaines (colline),  Neige (colline),  Toundra (colline)</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Aménagement exclusif aux Maoris, débloque à la [COLOR_FLOAT_SCIENCE]Construction[ENDCOLOR].<br><br><img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Puissance de combat en défense +4, Vision +1 et <img src="/images/ICON_FORTIFIED.webp" style="height:1em"/> retranchement instantané.<br>Une unité maorie occupant un pā se soigne, même si elle vient juste de se déplacer ou d'attaquer.<br><br>Doit être construit sur une case de collines, par un Toa maori.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Qhapaq Ñan">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MOUNTAIN_ROAD_NAME-->
+                      <h2 class="civ-name">Qhapaq Ñan
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Qhapaq Ñan.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait pour les cases adjacentes : 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construit par Bâtisseur OU  Huaraca OU  Ranger OU  Éclaireur OU  Forces spéciales</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Désert (montagne),  Prairie (montagne),  Plaines (montagne),  Neige (montagne),  Toundra (montagne)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloqué par Commerce avec l'étranger Dogme</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Aménagement exclusif à Pachacutec, débloqué au [COLOR:212,115,212,255]Commerce à l'Étranger[ENDCOLOR].<br><br>Fait office de portail de déplacement sur une chaîne de montagnes : les unités entrent dans un portail et ressortent par un autre pour 2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> PM.<br>Augmente <img src="/images/ICON_GOLD.webp" style="height:1em"/> l'Or reçu des <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> routes commerciales traversant le Qhapaq Ñan.<br><br>Ne peut être construit que sur une case de montagne. Ne peut pas être pillée ou supprimée.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Scierie">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_LUMBER_MILL_NAME-->
+                      <h2 class="civ-name">Scierie
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Lumber Mill.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Récompense de pillage : <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait pour les cases adjacentes : 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production (Débloqué par Balistique Technologie)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production (Débloqué par Matériaux synthétiques Technologie)</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture : <img src="/images/ICON_TOURISM.webp" style="height:1em"/> tourisme 100 % (requiert {4: plural 1?{4: gender *:no_article?; *:vowel?l'; m?le ; f?la ;}; 2?les ;}Aviation Technologie).</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construit par Bâtisseur</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Bois,  Forêt tropicale (Nécessite : Mercantilisme)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloqué par Construction Technologie</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloque la compétence de bâtisseur permettant de construire une scierie. <br><br><img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +2. Doit être construite sur une case de bois. Construction possible sur une case de forêt tropicale une fois le mercantilisme découvert.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Silo à missiles">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MISSILE_SILO-->
+                      <h2 class="civ-name">Silo à missiles
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Missile Silo.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait pour les cases adjacentes : 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construit par Ingénieur militaire</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Désert,  Prairie,  Plaines,  Neige,  Toundra</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Sol volcanique</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloqué par Fusées Technologie</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloque la compétence d'ingénieur militaire permettant de construire un silo à missiles. <br><br>Sert de base de lancement pour bombes A et bombes H.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Sphinx">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_SPHINX_NAME-->
+                      <h2 class="civ-name">Sphinx
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Sphinx.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Récompense de pillage : <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait pour les cases adjacentes : 2</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture (Débloqué par Service diplomatique Dogme)</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture : <img src="/images/ICON_TOURISM.webp" style="height:1em"/> tourisme 100 % (requiert {4: plural 1?{4: gender *:no_article?; *:vowel?l'; m?le ; f?la ;}; 2?les ;}Aviation Technologie).</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construit par Bâtisseur</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Désert,  Désert (colline),  Prairie,  Prairie (colline),  Plaines,  Plaines (colline),  Toundra,  Toundra (colline)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Plaines inondables,  Plaines inondables de prairie,  Plaines inondables de plaines</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloqué par Artisanat Dogme</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Aménagement exclusif à l'Égypte, débloqué à l'[COLOR:212,115,212,255]Artisanat[ENDCOLOR].<br><br><img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture +1 et <img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi +2.<br><img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture +1 et <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +1 si construit sur une case de désert.<br><img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture +1 si construit sur une case de plaines.<br><img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +1 si construit sur une case de prairie.<br><img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture +1 si construit sur une case de plaines inondables.<br><img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture +1 au [COLOR:212,115,212,255]Service Diplomatique[ENDCOLOR].<br><img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture +1 et <img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi +1 si adjacent à une merveille mondiale.<br><br>Attrait +2 pour les cases adjacentes.<br><br>Génère du <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourisme par le biais de la <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture à l'[COLOR_FLOAT_SCIENCE]Aviation[ENDCOLOR].<br><br>Ne peut pas être construit sur une case de neige. Deux sphinx ne peuvent pas être adjacents.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Station balnéaire">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_BEACH_RESORT_NAME-->
+                      <h2 class="civ-name">Station balnéaire
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Seaside Resort.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Récompense de pillage : <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Nécessite : Attrait &gt;= 2</p>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait : <img src="/images/ICON_TOURISM.webp" style="height:1em"/> tourisme 150 %</p>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait pour les cases adjacentes : 0</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_GOLD.webp" style="height:1em"/> Or : <img src="/images/ICON_TOURISM.webp" style="height:1em"/> tourisme 100 %</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construit par Bâtisseur</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Désert,  Désert (colline),  Prairie,  Prairie (colline),  Plaines,  Plaines (colline)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Sol volcanique</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloqué par Radio Technologie</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloque la compétence de Bâtisseur permettant de construire une station balnéaire.<br><br>Fournit une quantité <img src="/images/ICON_GOLD.webp" style="height:1em"/> d'Or égale à 150% de l'Attrait de la case. Génère du <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourisme par le biais de <img src="/images/ICON_GOLD.webp" style="height:1em"/> l'Or. Ne peut être construite que sur un désert côtier, une plaine côtière ou une prairie côtière. Attrait minimum : charmant.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Station de sports d'hiver">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_SKI_RESORT_NAME-->
+                      <h2 class="civ-name">Station de sports d'hiver
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Ski Resort.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait pour les cases adjacentes : 0</p>
+                      <p class="civ-ability-desc" style="text-align:left"> Attrait : <img src="/images/ICON_TOURISM.webp" style="height:1em"/> tourisme 100 %</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construit par Bâtisseur</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Désert (montagne),  Prairie (montagne),  Plaines (montagne),  Neige (montagne),  Toundra (montagne)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloqué par Sport professionnel Dogme</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloque la compétence de bâtisseur permettant de construire une station de sports d'hiver. <br><br><img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourisme +4. <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> Activités +1. Ne peut être construit que sur une montagne. Ne peut pas être adjacente à une autre station de sports d'hiver. Pillage, suppression ou exploitation impossible.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Terrain de golf">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_GOLF_COURSE_NAME-->
+                      <h2 class="civ-name">Terrain de golf
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Golf Course.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Récompense de pillage : Soins 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait pour les cases adjacentes : 1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Or</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Or (Débloqué par Lumières Dogme)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture (Débloqué par Lumières Dogme)</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture : <img src="/images/ICON_TOURISM.webp" style="height:1em"/> tourisme 100 % (requiert {4: plural 1?{4: gender *:no_article?; *:vowel?l'; m?le ; f?la ;}; 2?les ;}Aviation Technologie).</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construit par Bâtisseur</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Prairie,  Prairie (colline),  Plaines,  Plaines (colline),  Neige,  Neige (colline),  Toundra,  Toundra (colline)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloqué par Loisirs Dogme</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Aménagement exclusif à l'Écosse, débloqué aux [COLOR:212,115,212,255]Loisirs[ENDCOLOR].<br><br><img src="/images/ICON_GOLD.webp" style="height:1em"/> Or +2, <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture +1 et <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> Activités +1.<br><img src="/images/ICON_GOLD.webp" style="height:1em"/> Or +1 et <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture +1 si adjacent à un Centre-ville.<br><img src="/images/ICON_GOLD.webp" style="height:1em"/> Or +1 et <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture +1 aux [COLOR:212,115,212,255]Lumières[ENDCOLOR].<br><img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture +1 et <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> Activités +1 si adjacent à un Complexe de loisirs.<br><img src="/images/ICON_AMENITIES.webp" style="height:1em"/> Activités +1 aux [COLOR:212,115,212,255]Guildes[ENDCOLOR].<br><img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitations +1 à la [COLOR:212,115,212,255]Mondialisation[ENDCOLOR].<br><br>Attrait +1 pour les cases adjacentes.<br><br>Ne peut pas être construit sur une case de désert. Un par ville. Les cases de terrain de golf ne peuvent pas être attribuées à une autre ville.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Tunnel de montagne">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MOUNTAIN_TUNNEL_NAME-->
+                      <h2 class="civ-name">Tunnel de montagne
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Mountain Tunnel.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait pour les cases adjacentes : 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construit par Ingénieur militaire</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Désert (montagne),  Prairie (montagne),  Plaines (montagne),  Neige (montagne),  Toundra (montagne)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloqué par Science militaire Technologie</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloque la compétence d'ingénieur militaire permettant de construire un tunnel de montagne.<br><br>Fait office de portail de déplacement sur une chaîne de montagnes : les unités entrent dans un portail et ressortent par un autre pour 2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> PM. Les <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> routes commerciales qui empruntent des tunnels de montagnes peuvent multiplier <img src="/images/ICON_GOLD.webp" style="height:1em"/> l'Or reçu des <img src="/images/ICON_DISTRICT.webp" style="height:1em"/> quartiers de la ville de destination.<br>Ne peut pas être pillée ou supprimée.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Tête colossale">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_COLOSSAL_HEAD_NAME-->
+                      <h2 class="civ-name">Tête colossale
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Colossal Head.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Récompense de pillage : <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitations</p>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait pour les cases adjacentes : 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi : <img src="/images/ICON_TOURISM.webp" style="height:1em"/> tourisme 100 % (requiert {4: plural 1?{4: gender *:no_article?; *:vowel?l'; m?le ; f?la ;}; 2?les ;}Aviation Technologie).</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construit par Bâtisseur</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Désert,  Désert (colline),  Prairie,  Prairie (colline),  Plaines,  Plaines (colline),  Toundra,  Toundra (colline)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Sol volcanique</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloque la compétence de Bâtisseur permettant de construire une tête colossale.<br><br><img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture +1, <img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi +2 et <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitations +1. <img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi +1 toutes les 2 cases de forêt tropicale adjacentes (par case de forêt tropicale à Humanisme). <img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi +1 toutes les 2 cases de bois adjacentes (par case de bois à Humanisme). Génère du <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourisme par le biais de la <img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi une fois l'Aviation découverte. Construction impossible sur la neige ou une colline enneigée.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Ville flottante">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_SEASTEAD_NAME-->
+                      <h2 class="civ-name">Ville flottante
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Seastead.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Récompense de pillage : Soins 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+4 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitations</p>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait pour les cases adjacentes : 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture : <img src="/images/ICON_TOURISM.webp" style="height:1em"/> tourisme 100 %</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construit par Bâtisseur</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Côte et lac,  Océan</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloqué par Villes flottantes Technologie</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloque la compétence de bâtisseur permettant de construire une ville flottante. <br><br><img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture +2. <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +1 pour chaque bateau de pêche adjacent. <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +1 pour les bateaux de pêche pour chaque ville flottante adjacente. <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture et <img src="/images/ICON_TOURISM.webp" style="height:1em"/> tourisme +1 pour chaque récif adjacent. <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitations +2. Doit être construite sur une case côtière, lacustre, ou océanique. Deux villes flottantes ne peuvent pas être adjacentes.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Ziggurat">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_ZIGGURAT_NAME-->
+                      <h2 class="civ-name">Ziggurat
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Ziggurat.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Récompense de pillage : <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitations</p>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait pour les cases adjacentes : 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Science</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture (Débloqué par Histoire naturelle Dogme)</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture : <img src="/images/ICON_TOURISM.webp" style="height:1em"/> tourisme 100 % (requiert {4: plural 1?{4: gender *:no_article?; *:vowel?l'; m?le ; f?la ;}; 2?les ;}Aviation Technologie).</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construit par Bâtisseur</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Désert,  Prairie,  Plaines,  Neige,  Toundra</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Plaines inondables,  Plaines inondables de prairie,  Plaines inondables de plaines</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Aménagement exclusif au Sumer.<br><br><img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Science +2 et <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitations +1.<br><img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture +1 si adjacent à une rivière.<br><img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi +1 par <img src="/images/ICON_DISTRICT.webp" style="height:1em"/> quartier adjacent et toutes les deux fermes adjacentes au Premier Empire.<br><br>Construction impossible sur une colline ou à côté d'une autre Ziggurat.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Église rupestre">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_ROCK_HEWN_CHURCH_NAME-->
+                      <h2 class="civ-name">Église rupestre
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Rock-Hewn Church.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Récompense de pillage : <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait pour les cases adjacentes : 1</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi : <img src="/images/ICON_TOURISM.webp" style="height:1em"/> tourisme 100 % (requiert {4: plural 1?{4: gender *:no_article?; *:vowel?l'; m?le ; f?la ;}; 2?les ;}Aviation Technologie).</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construit par Bâtisseur</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Désert (colline),  Prairie (colline),  Plaines (colline),  Neige (colline),  Toundra (colline)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Sol volcanique</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloqué par Dramaturgie et poésie Dogme</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Aménagement exclusif à l'Éthiopie, débloqué à la [COLOR:212,115,212,255]Dramaturgie et Poésie[ENDCOLOR].<br><br><img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi +1 pour chaque case de collines ou de montagnes adjacente.<br><br>Attrait +1 pour les cases adjacentes.<br><br>Génère du <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourisme par le biais de la <img src="/images/ICON_FAITH.webp" style="height:1em"/> Foi à l'[COLOR_FLOAT_SCIENCE]Aviation[ENDCOLOR].<br><br>Ne peut pas être détruite par les catastrophes naturelles. Ne peut être construite que sur une colline ou un sol volcanique. Deux églises rupestres ne peuvent pas être adjacentes</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Élevage de l'Outback">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_OUTBACK_STATION_NAME-->
+                      <h2 class="civ-name">Élevage de l'Outback
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Outback Station.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Récompense de pillage : Soins 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitations</p>
+                      <p class="civ-ability-desc" style="text-align:left">Attrait pour les cases adjacentes : 1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construit par Bâtisseur</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Désert,  Désert (colline),  Prairie,  Prairie (colline),  Plaines,  Plaines (colline)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Débloqué par Guildes Dogme</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Aménagement exclusif à l'Australie, débloqué aux [COLOR:212,115,212,255]Guildes[ENDCOLOR].<br><br><img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture +1, <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +1 et <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitations +0.5.<br><img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture +1 pour chaque pâturage adjacent.<br><img src="/images/ICON_FOOD.webp" style="height:1em"/> Nourriture +1 tous les deux élevages de l'Outback adjacents au [COLOR:212,115,212,255]Déploiement Rapide[ENDCOLOR].<br><img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +1 tous les deux élevages de l'Outback adjacents à l'[COLOR_FLOAT_SCIENCE]Industrialisation[ENDCOLOR].<br><br><img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +1 pour les pâturages pour chaque élevage de l'Outback adjacent à l'[COLOR_FLOAT_SCIENCE]Industrialisation[ENDCOLOR].<br>Attrait +1 pour les cases adjacentes.<br><br>Ne peut être construit que sur une case de prairie, de plaine ou de désert.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </main>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/plugins/feather.min.js"></script>
+    <script src="/plugins/chart.min.js"></script>
+  </body>
+</html>

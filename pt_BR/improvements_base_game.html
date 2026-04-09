@@ -1,0 +1,1270 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <title>Civ VI Base Game Melhorias</title>
+    <meta charset="utf-8">
+    <meta contents="IE=edge" httpequiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="/images/BBGLogo.webp" rel="icon" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap" rel="stylesheet">
+    <link href="/css/style.min.css" rel="stylesheet">
+    <link href="/css/preloader.css" rel="stylesheet">
+    <link href="/css/animate.min.css" rel="stylesheet">
+    <link href="/css/header.css" rel="stylesheet">
+    <link href="/css/footer.css" rel="stylesheet">
+    <link href="/fontawesome-free-7.0.0-web/css/all.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="loader">
+        <div class="loader-outter"></div>
+        <div class="loader-inner"></div>
+        <div class="indicator">
+          <svg height="12px" width="16px">
+            <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+            <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="layer"></div>
+    <div class="page-flex">
+      <div class="main-wrapper">
+        <nav class="main-nav--bg">
+          <div class="main-nav">
+            <div class="header">
+              <div class="header-inner">
+                <div class="inner">
+                  <div class="row">
+                    <div class="flex center sidebar-toggle col-xl-1 col-lg-1 col-md-1 col-1">
+                      <button class="transparent-btn" title="Menu" type="button">
+                        <span class="sr-only">Toggle menu</span>
+                        <span aria-hidden="true" class="icon menu-toggle"></span>
+                      </button>
+                    </div>
+                    <div class="flex center col-xl-1 col-lg-1 col-md-1 col-2">
+                      <a href="/index.html" style="align-content: center;">
+                        <img alt="#" src="/images/BBGLogo.webp" style="width:3em; border-radius:10%">
+                      </a>
+                      <div class="mobile-nav"></div>
+                    </div>
+                    <div class="flex col-xl-8 col-lg-8 col-md-8 col-8">
+                      <div class="main-menu">
+                        <nav class="navigation">
+                          <ul class="nav menu">
+                            <li class="">
+                              <a href="/pt_BR/leaders_base_game.html" onclick="civClicked(null)">Líderes</a>
+                            </li>
+                            <li class="">
+                              <a href="/pt_BR/bbg_expanded_base_game.html" onclick="civClicked(null)">BBG Expanded</a>
+                            </li>
+                            <li class="">
+                              <a href="/pt_BR/city_states_base_game.html" onclick="civClicked(null)">Cidades-estados</a>
+                            </li>
+                            <li class="">
+                              <a href="/pt_BR/religion_base_game.html" onclick="civClicked(null)">Religião</a>
+                            </li>
+                            <li class="">
+                              <a href="/pt_BR/governor_base_game.html" onclick="civClicked(null)">Governadores</a>
+                            </li>
+                            <li class="">
+                              <a href="/pt_BR/great_people_base_game.html" onclick="civClicked(null)">Grandes Personalidades</a>
+                            </li>
+                            <li class="">
+                              <a href="/pt_BR/natural_wonder_base_game.html" onclick="civClicked(null)">Maravilhas da natureza</a>
+                            </li>
+                            <li class="">
+                              <a href="/pt_BR/world_wonder_base_game.html" onclick="civClicked(null)">World Wonders</a>
+                            </li>
+                            <li class="">
+                              <a href="/pt_BR/buildings_base_game.html" onclick="civClicked(null)">Edificações</a>
+                            </li>
+                            <li class="">
+                              <a href="/pt_BR/units_base_game.html" onclick="civClicked(null)">Unidades</a>
+                            </li>
+                            <li class="active">
+                              <a href="/pt_BR/improvements_base_game.html" onclick="civClicked(null)">Melhorias</a>
+                            </li>
+                            <li class="">
+                              <a href="/pt_BR/tech_tree_base_game.html" onclick="civClicked(null)">Technology Tree</a>
+                            </li>
+                            <li class="">
+                              <a href="/pt_BR/civic_tree_base_game.html" onclick="civClicked(null)">Civic Tree</a>
+                            </li>
+                            <li class="">
+                              <a href="/pt_BR/names_base_game.html" onclick="civClicked(null)">Names</a>
+                            </li>
+                            <li class="">
+                              <a href="/pt_BR/policies_base_game.html" onclick="civClicked(null)">Políticas</a>
+                            </li>
+                            <li class="">
+                              <a href="/pt_BR/congress_base_game.html" onclick="civClicked(null)">Congresso Mundial</a>
+                            </li>
+                            <li class="">
+                              <a href="/pt_BR/misc_base_game.html" onclick="civClicked(null)">Misc</a>
+                            </li>
+                            <li class="">
+                              <a href="/pt_BR/changelog_base_game.html" onclick="civClicked(null)">Changelog</a>
+                            </li>
+                            <li>
+                              <a>BBG Version<i class="icofont-rounded-down"></i></a>
+                              <ul class="dropdown bbg-version-dropdown">
+                                <li>
+                                  <a href="/pt_BR/improvements_base_game.html">Base</a>
+                                </li>
+                                <li>
+                                  <a href="/pt_BR/improvements_7.4.html">7.4</a>
+                                </li>
+                                <li>
+                                  <a href="/pt_BR/improvements_7.3.html">7.3</a>
+                                </li>
+                                <li>
+                                  <a href="/pt_BR/improvements_7.2.html">7.2</a>
+                                </li>
+                                <li>
+                                  <a href="/pt_BR/improvements_7.1.html">7.1</a>
+                                </li>
+                                <li>
+                                  <a href="/pt_BR/improvements_6.5.html">6.5</a>
+                                </li>
+                                <li>
+                                  <a href="/pt_BR/improvements_6.4.html">6.4</a>
+                                </li>
+                                <li>
+                                  <a href="/pt_BR/improvements_6.3.html">6.3</a>
+                                </li>
+                                <li>
+                                  <a href="/pt_BR/improvements_6.2.html">6.2</a>
+                                </li>
+                                <li>
+                                  <a href="/pt_BR/improvements_6.1.html">6.1</a>
+                                </li>
+                                <li>
+                                  <a href="/pt_BR/improvements_6.0.html">6.0</a>
+                                </li>
+                                <li>
+                                  <a href="/pt_BR/improvements_5.8.html">5.8</a>
+                                </li>
+                                <li>
+                                  <a href="/pt_BR/improvements_5.7.html">5.7</a>
+                                </li>
+                                <li>
+                                  <a href="/pt_BR/improvements_5.6.html">5.6</a>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+                    <div class="flex center col-xl-2 col-lg-2 col-md-2 col-1">
+                      <div class="flex row justify-content-around">
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-4">
+                          <div class="main-menu">
+                            <nav class="navigation">
+                              <ul class="nav menu">
+                                <li><i class="fa-solid fa-language lang-icon"></i>
+                                  <ul class="dropdown">
+                                    <li>
+                                      <a href="/en_US/improvements_base_game.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/us.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/fr_FR/improvements_base_game.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/fr.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/ru_RU/improvements_base_game.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/ru.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/de_DE/improvements_base_game.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/de.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/zh_Hans_CN/improvements_base_game.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/cn.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/ko_KR/improvements_base_game.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/kr.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/ja_JP/improvements_base_game.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/jp.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/pt_BR/improvements_base_game.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/br.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </nav>
+                          </div>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-4">
+                          <div class="base-game-switcher-wrapper">
+                            <button class="base-game-switcher gray-circle-btn" title="Show Base Game" type="button"><i aria-hidden="true" class="enable-icon" data-feather="toggle-left"></i><i aria-hidden="true" class="disable-icon" data-feather="toggle-right"></i></button>
+                          </div>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-4">
+                          <div class="theme-switcher-wrapper">
+                            <button class="theme-switcher gray-circle-btn" title="Switch theme" type="button">
+                              <span class="sr-only">Switch theme</span><i aria-hidden="true" class="sun-icon" data-feather="sun"></i><i aria-hidden="true" class="moon-icon" data-feather="moon"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="scroll-up footer-popup" id="footer-popup">
+          <div class="footer-popup-inner">
+            <div class="row">
+              <div class="col-sm-6 col-1 footer-popup-body">
+                <p id="donateText">Enjoy this work? Try Aether Kingdoms!
+                  <b>
+                    <a class="footer-popup-link" href="https://www.aetherkingdoms.com/" target="_blank">(Link)</a>
+                  </b>
+                </p>
+              </div>
+              <div class="col-sm-2 col-1 footer-popup-body">
+                <a class="btn btn-primary" href="https://www.aetherkingdoms.com/" target="_blank">
+                  <img alt="Aether Kingdom" class="footer-popup-img" src="/images/ak_village_animation.gif">
+                </a>
+              </div>
+              <div class="col-sm-2 col-6 footer-popup-donate">
+                <a class="btn btn-primary" href="https://ko-fi.com/calcalciffer" target="_blank">Donate</a>
+              </div>
+              <div class="col-sm-2 col-6 footer-popup-scroll-up">
+                <a class="displayNone" href="#top" id="scrollUp" onclick="civClicked(null)"><i class="fa-solid fa-up-long"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="aether-kingdom-ad" id="aether-kingdom-ad">
+          <a href="https://www.aetherkingdoms.com/" target="_blank">
+            <img alt="Aether Kingdom" class="aether-kingdom-ad-img" src="/images/ak_village_animation.gif">
+          </a>
+          <h2 class="aether-kingdom-ad-title">Try Aether Kingdoms!</h2>
+          <p class="aether-kingdom-ad-text">If you like my website here, please check out Aether Kingdoms, a free-to-play strategy game inspired by Civilization and developed by my friend and I. Click the button below to learn more!</p>
+          <a href="https://www.aetherkingdoms.com/" target="_blank">
+            <button class="ad-btn" title="Aether Kingdoms" type="submit">Aether Kingdoms</button>
+          </a>
+          <button class="ad-btn" onclick="aetherKingdomAdClose()" title="Close ad" type="submit">Close</button>
+        </div>
+        <div class="">
+          <div class="fixed left-0 right-auto h-screen bg-white border-r border-neutral-300 overflow-scroll" style="z-index: 5;">
+            <aside class="sidebar">
+              <div class="sidebar-start">
+                <div class="sidebar-body">
+                  <ul class="sidebar-body-menu"></ul>
+                </div>
+              </div>
+            </aside>
+          </div>
+          <div class="leaders-data min-w-full main-pl">
+            <main class="main users chart-page">
+              <div class="container">
+                <h1 class="civ-name">Civ VI Base Game Melhorias</h1><br>
+                <div class="row">
+                  <div class="col-md-6 col-12" id="Alcácer">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_ALCAZAR_NAME-->
+                      <h2 class="civ-name">Alcácer
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Alcázar.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pilhagem concedida: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 25</p>
+                      <p class="civ-ability-desc" style="text-align:left">Modificador de defesa: 4</p>
+                      <p class="civ-ability-desc" style="text-align:left">Bônus de fortificação aplicados à unidade ocupante.</p>
+                      <p class="civ-ability-desc" style="text-align:left">50% de <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turismo de apelo</p>
+                      <p class="civ-ability-desc" style="text-align:left">Apelo para painéis adjacentes: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% de <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turismo de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura (requer Voo Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construído por Construtor</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto,  Deserto (colinas),  Pradaria,  Pradaria (colinas),  Planície,  Planície (colinas),  Neve,  Neve (colinas),  Tundra,  Tundra (colinas)</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueia a habilidade de Construtores para construírem um Alcázar.<br><br>+2 de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> cultura. Oferece <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> ciência igual a 50% do apelo do painel. Unidade ocupante recebe +4 de <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> força de defesa e automaticamente recebe 2 turnos de fortificação. Oferece <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turismo após pesquisar Voo. Não pode ser construído ao lado de outro Alcázar.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Aquicultura">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_FISHERY_NAME-->
+                      <h2 class="civ-name">Aquicultura
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Fishery.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pilhagem concedida: Curando 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitações</p>
+                      <p class="civ-ability-desc" style="text-align:left">Apelo para painéis adjacentes: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Alimento</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construído por Construtor</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Costa e lago</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueado por Navegação Tecnologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">A melhoria exclusiva de <img src="/images/ICON_GOVERNOR.webp" style="height:1em"/> Governador que pode ser construída em uma cidade com uma Governadora Topógrafa com a promoção Aquicultura. Concede 1 de <img src="/images/ICON_FOOD.webp" style="height:1em"/> alimento, +0,5 de <img src="/images/ICON_HOUSING.webp" style="height:1em"/> habitação, +1 de <img src="/images/ICON_FOOD.webp" style="height:1em"/> alimento adicional se adjacente a um recurso marítimo. +1 de <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produção se em uma cidade com Governadora Topógrafa com promoção de Aquicultura. Deve ser construído em terreno costeiro.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Barco de Pesca">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_FISHING_BOATS_NAME-->
+                      <h2 class="civ-name">Barco de Pesca
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Fishing Boats.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pilhagem concedida: Curando 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitações</p>
+                      <p class="civ-ability-desc" style="text-align:left">Apelo para painéis adjacentes: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Alimento</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Ouro (Desbloqueado por Cartografia Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Alimento (Desbloqueado por Plásticos Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção (Desbloqueado por Colonialismo Cívico)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construído por Construtor</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueado por Navegação Tecnologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueia a habilidade de Construtores para construir Barcos de Pesca.<br><br>+1 de <img src="/images/ICON_FOOD.webp" style="height:1em"/> alimento. Só podem ser construídos com recursos válidos.<br><br>Se construídos com recursos de luxo, a cidade poderá usar este recurso.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Batey">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_BATEY_NAME-->
+                      <h2 class="civ-name">Batey
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Batey.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pilhagem concedida: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 25</p>
+                      <p class="civ-ability-desc" style="text-align:left">Apelo para painéis adjacentes: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% de <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turismo de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura (requer Voo Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construído por Construtor</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto,  Pradaria,  Planície,  Neve,  Tundra</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueia a habilidade de Construtores para construírem um Batey.<br><br>+1 de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> cultura. +1 de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> cultura para cada recurso bônus e Complexo de Entretenimento adjacente (aumenta para +2 de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> cultura após descobrir Exploração). Concede <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turismo após pesquisar Voo. Não pode ser construído adjacente a outro Batey ou em Colinas.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Cabeça Colossal">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_COLOSSAL_HEAD_NAME-->
+                      <h2 class="civ-name">Cabeça Colossal
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Colossal Head.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pilhagem concedida: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 25</p>
+                      <p class="civ-ability-desc" style="text-align:left">Apelo para painéis adjacentes: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fé</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% de <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turismo de <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fé (requer Voo Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construído por Construtor</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto,  Deserto (colinas),  Pradaria,  Pradaria (colinas),  Planície,  Planície (colinas),  Tundra,  Tundra (colinas)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Solo vulcânico</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueia a habilidade de Construtores para construírem uma Cabeça Colossal.<br><br>+2 de <img src="/images/ICON_FAITH.webp" style="height:1em"/> fé. +1 de <img src="/images/ICON_FAITH.webp" style="height:1em"/> fé para cada 2 florestas tropicais adjacentes ou para cada floresta tropical adjacente após Humanismo ser descoberto.. +1 de <img src="/images/ICON_FAITH.webp" style="height:1em"/> fé para cada 2 bosques adjacentes ou para cada bosque adjacente após humanismo ser descoberto. <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turismo de <img src="/images/ICON_FAITH.webp" style="height:1em"/> fé após Voo ser descoberto. Não pode ser construída em neve ou colina com neve.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Campo">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_CAMP_NAME-->
+                      <h2 class="civ-name">Campo
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Camp.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pilhagem concedida: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 25</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitações</p>
+                      <p class="civ-ability-desc" style="text-align:left">Apelo para painéis adjacentes: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Ouro</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção (Desbloqueado por Mercantilismo Cívico)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Alimento (Desbloqueado por Mercantilismo Cívico)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Ouro (Desbloqueado por Materiais Sintéticos Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construído por Construtor</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueado por Domesticação de Animais Tecnologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueia a habilidade de Construtores para construir Campos.<br><br>+2 de <img src="/images/ICON_GOLD.webp" style="height:1em"/> ouro. Só podem ser construídas com recursos válidos.<br><br>Se construídas com recursos de luxo, a cidade poderá usar este recurso.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Campo de Golfe">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_GOLF_COURSE_NAME-->
+                      <h2 class="civ-name">Campo de Golfe
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Golf Course.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pilhagem concedida: Curando 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">Apelo para painéis adjacentes: 1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Ouro</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% de <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turismo de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura (requer Voo Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construído por Construtor</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Pradaria,  Pradaria (colinas),  Planície,  Planície (colinas),  Neve,  Neve (colinas),  Tundra,  Tundra (colinas)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueado por Igreja Reformada Cívico</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueia a habilidade de Construtores para construir um Campo de Golfe exclusivo da Escócia.<br><br>+2 de <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> serviços e +2 de <img src="/images/ICON_GOLD.webp" style="height:1em"/> ouro. +1 de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> cultura se estiver adjacente a um distrito de centro da cidade e +1 de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> cultura se estiver adjacente a um distrito de Complexo de Entretenimento. <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo adicional e <img src="/images/ICON_HOUSING.webp" style="height:1em"/> habitações conforme você avançar nas Árvores cívica e tecnológica. Não pode ser colocado em um Deserto ou Deserto com colinas. Um por cidade. Painéis com Campo de Golfe não podem ser trocados. +1 de apelo.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Chemamüll">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_CHEMAMULL_NAME-->
+                      <h2 class="civ-name">Chemamüll
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Chemamull.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pilhagem concedida: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 25</p>
+                      <p class="civ-ability-desc" style="text-align:left">Requer: Apelo &gt;= 4</p>
+                      <p class="civ-ability-desc" style="text-align:left">75% de <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turismo de apelo</p>
+                      <p class="civ-ability-desc" style="text-align:left">Apelo para painéis adjacentes: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% de <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turismo de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura (requer Voo Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construído por Construtor</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto,  Deserto (colinas),  Pradaria,  Pradaria (colinas),  Planície,  Planície (colinas),  Neve,  Neve (colinas),  Tundra,  Tundra (colinas)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueado por Artesanato Cívico</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueia a habilidade de Construtores para construir um Chemamüll, exclusivo dos mapuches.<br><br>+1 de <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produção. Concede <img src="/images/ICON_CULTURE.webp" style="height:1em"/> cultura igual a 75% do apelo do painel. <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo adicional após pesquisar Voo. Apelo mínimo deve ser de Tirar o Fôlego.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Château">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_CHATEAU_NAME-->
+                      <h2 class="civ-name">Château
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Château.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pilhagem concedida: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 25</p>
+                      <p class="civ-ability-desc" style="text-align:left">Apelo para painéis adjacentes: 1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Ouro</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% de <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turismo de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura (requer Voo Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construído por Construtor</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto,  Deserto (colinas),  Pradaria,  Pradaria (colinas),  Planície,  Planície (colinas),  Neve,  Neve (colinas),  Tundra,  Tundra (colinas)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Planície aluvial,  Planície Aluvial de Pradaria,  Planície Aluvial</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueado por Humanismo Cívico</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueia a habilidade de Construtores para construir um Château, exclusivo da França.<br><br>+2 de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> cultura e +1 de <img src="/images/ICON_GOLD.webp" style="height:1em"/> ouro. +1 de apelo. +1 de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> cultura para cada maravilha adjacente (+2 após pesquisar Voo). +2 de <img src="/images/ICON_GOLD.webp" style="height:1em"/> ouro se estiver em um painel contendo a margem de um rio. Concede <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turismo de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> cultura após pesquisar o Voo. Deve ser colocado adjacente a um recurso bônus ou de luxo. Não pode ser construído adjacente a outro Château.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Cidade Flutuante">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_SEASTEAD_NAME-->
+                      <h2 class="civ-name">Cidade Flutuante
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Seastead.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pilhagem concedida: Curando 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+4 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitações</p>
+                      <p class="civ-ability-desc" style="text-align:left">Apelo para painéis adjacentes: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Alimento</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% de <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turismo de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construído por Construtor</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Costa e lago,  Oceano</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueado por Cidades Flutuantes Tecnologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueia a habilidade do Construtor para construir uma Cidade Flutuante.<br><br>+2 de <img src="/images/ICON_FOOD.webp" style="height:1em"/> alimento. +1 de <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produção para cada Barco de Pesca adjacente. Barcos de pesca recebem +1 de <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produção para cada Cidade Flutuante adjacente. +1 de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> cultura e de <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turismo para cada Recife adjacente. +2 de <img src="/images/ICON_HOUSING.webp" style="height:1em"/> habitação. Deve ser construída em terreno de Costa, Lago ou Oceano. Não pode ser colocada adjacente a outra Cidade Flutuante.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Cúpula Comercial">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_TRADING_DOME_NAME-->
+                      <h2 class="civ-name">Cúpula Comercial
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Trading Dome.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pilhagem concedida: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">Apelo para painéis adjacentes: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Ouro</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construído por Construtor</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto,  Deserto (colinas),  Pradaria,  Pradaria (colinas),  Planície,  Planície (colinas),  Neve,  Neve (colinas),  Tundra,  Tundra (colinas)</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueia a habilidade de Construtores para construírem uma Cúpula Comercial.<br><br>+2 de <img src="/images/ICON_GOLD.webp" style="height:1em"/> ouro. +1 de <img src="/images/ICON_GOLD.webp" style="height:1em"/> ouro para cada recurso de luxo adjacente. Suas <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> rotas comerciais internacionais de exportação concedem +1 de <img src="/images/ICON_GOLD.webp" style="height:1em"/> ouro por Cúpula Comercial na origem. Não pode ser construída ao lado de outra Cúpula Comercial.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Esfinge">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_SPHINX_NAME-->
+                      <h2 class="civ-name">Esfinge
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Sphinx.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pilhagem concedida: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 25</p>
+                      <p class="civ-ability-desc" style="text-align:left">Apelo para painéis adjacentes: 2</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fé</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura (Desbloqueado por História Natural Cívico)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% de <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turismo de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura (requer Voo Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construído por Construtor</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto,  Deserto (colinas),  Pradaria,  Pradaria (colinas),  Planície,  Planície (colinas),  Tundra,  Tundra (colinas)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Planície aluvial,  Planície Aluvial de Pradaria,  Planície Aluvial</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueado por Artesanato Cívico</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueia a habilidade de Construtores para construir uma Esfinge, exclusiva do Egito.<br><br>+1 de <img src="/images/ICON_FAITH.webp" style="height:1em"/> fé e +1 de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> cultura. +2 de apelo. +2 de <img src="/images/ICON_FAITH.webp" style="height:1em"/> fé se ao lado de uma maravilha. +1 de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> cultura se construída em planícies aluviais. <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura adicional quando História Natural é descoberta. Fornece <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turismo após pesquisar o Voo. Não pode ser construída ao lado de outra Esfinge. Não pode ser construída em neve ou colina com neve.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Estação do Outback">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_OUTBACK_STATION_NAME-->
+                      <h2 class="civ-name">Estação do Outback
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Outback Station.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pilhagem concedida: Curando 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitações</p>
+                      <p class="civ-ability-desc" style="text-align:left">Apelo para painéis adjacentes: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Alimento</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construído por Construtor</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto,  Deserto (colinas),  Pradaria,  Planície</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueado por Guildas Cívico</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueia a habilidade de Construtores para construir a Estação do Outback, exclusiva da Austrália.<br><br>+1 de <img src="/images/ICON_FOOD.webp" style="height:1em"/> alimento e +1 de <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produção. +1 de <img src="/images/ICON_FOOD.webp" style="height:1em"/> alimento para cada Pasto adjacente. <img src="/images/ICON_FOOD.webp" style="height:1em"/> Alimento e <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produção adicionais para Estações do Outback e Pastos conforme você avança pelas árvores de tecnologias e cívica. Só pode ser construído em painéis de deserto, desertos com colinas, pradaria e planícies.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Fazenda">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_FARM_NAME-->
+                      <h2 class="civ-name">Fazenda
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Farm.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pilhagem concedida: Curando 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitações</p>
+                      <p class="civ-ability-desc" style="text-align:left">Apelo para painéis adjacentes: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Alimento</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construído por Construtor</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Pradaria,  Pradaria (colinas) (Requer: Engenharia Civil),  Planície,  Planície (colinas) (Requer: Engenharia Civil)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Planície aluvial,  Planície Aluvial de Pradaria,  Planície Aluvial,  Solo vulcânico</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueia a habilidade de Construtores para construir Fazendas<br><br>+1 de <img src="/images/ICON_FOOD.webp" style="height:1em"/> alimento. Só podem ser construídas em pradarias e planícies.<br><br>Construir Fazendas adjacentes a outras Fazendas concede bônus em habitação.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Fazenda Solar">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_SOLAR_FARM_NAME-->
+                      <h2 class="civ-name">Fazenda Solar
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Solar Farm.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pilhagem concedida: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">Apelo para painéis adjacentes: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Ouro</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construído por Construtor</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto,  Pradaria,  Planície,  Tundra</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueado por Satélites Tecnologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueia a habilidade de Construtores para construírem uma fazenda solar.<br><br>+1 de <img src="/images/ICON_GOLD.webp" style="height:1em"/> ouro. +1 de <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produção. Oferece 2 de <img src="/images/ICON_POWER.webp" style="height:1em"/> energia por turno. Deve ser construída em um terreno plano. Não pode ser construída na neve.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Feitoria">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_FEITORIA_NAME-->
+                      <h2 class="civ-name">Feitoria
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Feitoria.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Apelo para painéis adjacentes: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+4 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Ouro</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construído por Nau</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Costa e lago</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueia a habilidade de Nau para construir uma Feitoria, exclusiva de Portugal.<br><br>Concede +4 de <img src="/images/ICON_GOLD.webp" style="height:1em"/> ouro e +1 de <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produção. Rotas comerciais enviadas de Portugal para esta cidade recebem +4 de <img src="/images/ICON_GOLD.webp" style="height:1em"/> ouro e +1 de <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produção. Só pode ser construída adjacente a recursos de luxo ou recursos bônus em territórios pertencentes a outras civilizações ou cidades-estados com as quais você tem fronteiras abertas. Deve ser construída em um painel em uma costa ou lago, adjacente a terra e não adjacente a outra Feitoria. É impossível remover Feitorias. </p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Forte">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_FORT_NAME-->
+                      <h2 class="civ-name">Forte
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Fort.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Modificador de defesa: 4</p>
+                      <p class="civ-ability-desc" style="text-align:left">Bônus de fortificação aplicados à unidade ocupante.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Apelo para painéis adjacentes: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construído por Engenheiro Militar</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto,  Deserto (colinas),  Pradaria,  Pradaria (colinas),  Planície,  Planície (colinas),  Neve,  Neve (colinas),  Tundra,  Tundra (colinas)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Solo vulcânico</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueado por Táticas de Cerco Tecnologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unidade ocupante recebe +4 de <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> força de defesa e automaticamente ganha 2 turnos de fortificação.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Forte Romano">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_ROMAN_FORT_NAME-->
+                      <h2 class="civ-name">Forte Romano
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Roman Fort.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Modificador de defesa: 4</p>
+                      <p class="civ-ability-desc" style="text-align:left">Bônus de fortificação aplicados à unidade ocupante.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Apelo para painéis adjacentes: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construído por Legião</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto,  Deserto (colinas),  Pradaria,  Pradaria (colinas),  Planície,  Planície (colinas),  Neve,  Neve (colinas),  Tundra,  Tundra (colinas)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Solo vulcânico</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueia a habilidade de Legião Romana para construir um Forte Romano, exclusivo de Roma.<br><br>Unidade ocupante recebe +4 de <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> força de defesa e automaticamente recebe 2 turnos de fortificação.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Grande Muralha">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_GREAT_WALL_NAME-->
+                      <h2 class="civ-name">Grande Muralha
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Great Wall.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pilhagem concedida: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">Modificador de defesa: 4</p>
+                      <p class="civ-ability-desc" style="text-align:left">Bônus de fortificação aplicados à unidade ocupante.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Apelo para painéis adjacentes: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Ouro</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% de <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turismo de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura (requer Voo Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construído por Construtor</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto,  Deserto (colinas),  Pradaria,  Pradaria (colinas),  Planície,  Planície (colinas),  Neve,  Neve (colinas),  Tundra,  Tundra (colinas)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Solo vulcânico</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueado por Alvenaria Tecnologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueia a habilidade de Construtores para construir a Muralha da China, exclusiva da China.<br><br>+2 de <img src="/images/ICON_GOLD.webp" style="height:1em"/> Ouro. Dá um aumento de <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> defesa. Bônus de <img src="/images/ICON_GOLD.webp" style="height:1em"/> ouro, se adjacente a outros segmentos. <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura e <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turismo adicionais conforme você avança pela Árvore de Tecnologias para segmentos adjacentes. Deve ser construída ao longo da fronteira do seu império. Só pode ser pilhada (nunca destruída) por desastres naturais.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Hacienda">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_HACIENDA_NAME-->
+                      <h2 class="civ-name">Hacienda
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Hacienda.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pilhagem concedida: Curando 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitações</p>
+                      <p class="civ-ability-desc" style="text-align:left">Apelo para painéis adjacentes: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Ouro</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construído por Construtor</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Pradaria,  Pradaria (colinas),  Planície,  Planície (colinas)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueado por Mercantilismo Cívico</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueia a habilidade de Construtores para construírem uma Hacienda, exclusiva da Grande Colômbia.<br><br>+2 de <img src="/images/ICON_GOLD.webp" style="height:1em"/> ouro, +1 de <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produção e +0,5 de <img src="/images/ICON_HOUSING.webp" style="height:1em"/> habitação. +1 de <img src="/images/ICON_FOOD.webp" style="height:1em"/> alimento para cada duas Plantações adjacentes (aumenta para cada Plantação com Partes Substituíveis). Plantações e Haciendas recebem +1 de <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produção para cada duas Haciendas adjacentes (aumenta para cada Hacienda com mobilização rápida). Só pode ser construída em Planícies, Colinas de Planícies, Pradarias e Colinas de Pradarias.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Igreja Escavada na Rocha">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_ROCK_HEWN_CHURCH_NAME-->
+                      <h2 class="civ-name">Igreja Escavada na Rocha
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Rock-Hewn Church.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pilhagem concedida: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 25</p>
+                      <p class="civ-ability-desc" style="text-align:left">Apelo para painéis adjacentes: 1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fé</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% de <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turismo de <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fé (requer Voo Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construído por Construtor</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto (colinas),  Pradaria (colinas),  Planície (colinas),  Neve (colinas),  Tundra (colinas)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Solo vulcânico</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueado por Dramaturgia e Poesia Cívico</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueia a habilidade de Construtores para construírem uma Igreja Escavada na Rocha, exclusiva da Etiópia.<br><br>+1 de <img src="/images/ICON_FAITH.webp" style="height:1em"/> fé. +1 de <img src="/images/ICON_FAITH.webp" style="height:1em"/> fé para cada painel adjacente de Montanha e Colinas. Concede <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turismo de <img src="/images/ICON_FAITH.webp" style="height:1em"/> fé após pesquisar Voo. +1 de apelo. Só pode ser pilhada (nunca destruída) por desastres naturais. Só pode ser construída em Colinas ou Solos Vulcânicos não adjacentes a outra Igreja Escavada na Rocha.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Kampung">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_KAMPUNG_NAME-->
+                      <h2 class="civ-name">Kampung
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Kampung.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pilhagem concedida: Curando 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitações</p>
+                      <p class="civ-ability-desc" style="text-align:left">Apelo para painéis adjacentes: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção (Desbloqueado por Engenharia Civil Cívico)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% de <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turismo de <img src="/images/ICON_FOOD.webp" style="height:1em"/> Alimento (requer Voo Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construído por Construtor</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Costa e lago</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueado por Construção de Navios Tecnologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueia a habilidade de Construtores para construir uma kampung, exclusiva da Indonésia.<br><br>+1 de <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produção e +1 de <img src="/images/ICON_HOUSING.webp" style="height:1em"/> habitação. +1 de <img src="/images/ICON_FOOD.webp" style="height:1em"/> alimento para cada Barco de Pesca adjacente. <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção, <img src="/images/ICON_HOUSING.webp" style="height:1em"/> habitação e <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turismo adicionais à medida que você avançar na árvore cívica e tecnológica. Deve ser colocada em um painel em uma costa ou lago adjacente a um recurso marítimo.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Kurgan">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_KURGAN_NAME-->
+                      <h2 class="civ-name">Kurgan
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Kurgan.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pilhagem concedida: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 25</p>
+                      <p class="civ-ability-desc" style="text-align:left">Apelo para painéis adjacentes: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fé</p>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Ouro</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% de <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turismo de <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fé (requer Voo Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construído por Construtor</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto,  Pradaria,  Planície,  Neve,  Tundra</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueado por Domesticação de Animais Tecnologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueia a habilidade de Construtores para construir um Kurgan, exclusivo da Cítia.<br><br>+1 de <img src="/images/ICON_FAITH.webp" style="height:1em"/> fé e +3 de <img src="/images/ICON_GOLD.webp" style="height:1em"/> ouro. +1 de <img src="/images/ICON_FAITH.webp" style="height:1em"/> fé por cada Pasto adjacente (+2 após pesquisar Estribos). Concede <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turismo de <img src="/images/ICON_FAITH.webp" style="height:1em"/> fé após pesquisar o Voo. Não pode ser construído em colinas.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Linha de Nazca">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_NAZCA_LINE_NAME-->
+                      <h2 class="civ-name">Linha de Nazca
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Nazca Line.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pilhagem concedida: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 25</p>
+                      <p class="civ-ability-desc" style="text-align:left">Apelo para painéis adjacentes: 1</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construído por Construtor</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueia a habilidade do Construtor de fazer uma Linha de Nazca.<br><br>+1 de <img src="/images/ICON_FAITH.webp" style="height:1em"/> fé para painéis adjacentes. +1 de <img src="/images/ICON_FAITH.webp" style="height:1em"/> fé para painéis adjacentes com um recurso. +1 de <img src="/images/ICON_FOOD.webp" style="height:1em"/> alimento para painéis de deserto e de deserto (colinas) adjacentes após a descoberta do Serviço Público. +1 de <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produção para painéis planos adjacentes depois de pesquisar a Produção em Massa. +1 de apelo. Só pode ser construída em um deserto plano. Este painel não pode ser trabalhado.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Mahavihara">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MAHAVIHARA_NAME-->
+                      <h2 class="civ-name">Mahavihara
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Mahavihara.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pilhagem concedida: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 25</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitações</p>
+                      <p class="civ-ability-desc" style="text-align:left">Apelo para painéis adjacentes: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Ciência</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construído por Construtor</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto,  Pradaria,  Planície,  Neve,  Tundra</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueia a habilidade de Construtores para construírem um Mahavihara.<br><br>+2 de <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> ciência e +1 de <img src="/images/ICON_HOUSING.webp" style="height:1em"/> habitação. +1 de <img src="/images/ICON_FAITH.webp" style="height:1em"/> fé para cada distrito adjacente de Local Sagrado e +1 de <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> ciência para cada distrito de Campus adjacente. Após pesquisar Teoria Científica, recebe +1 de <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> ciência adicional para cada Campus adjacente. Quando um jogador constrói seu primeiro Mahavihara, recebe uma tecnologia aleatória. Deve ser construído em terreno plano não adjacente a outro Mahavihara.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Mekewap">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MEKEWAP_NAME-->
+                      <h2 class="civ-name">Mekewap
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Mekewap.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pilhagem concedida: Curando 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitações</p>
+                      <p class="civ-ability-desc" style="text-align:left">Apelo para painéis adjacentes: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção (Desbloqueado por Serviço Público Cívico)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construído por Construtor</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto,  Deserto (colinas),  Pradaria,  Pradaria (colinas),  Planície,  Planície (colinas),  Neve,  Neve (colinas),  Tundra,  Tundra (colinas)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueado por Cerâmica Tecnologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueia a habilidade de Construtores para construir um mekewap, exclusivo dos crees.<br><br>Concede +1 de <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produção e +1 de <img src="/images/ICON_HOUSING.webp" style="height:1em"/> habitação. +1 de <img src="/images/ICON_GOLD.webp" style="height:1em"/> ouro se estiver adjacente a um recurso de luxo. Para cada 2 bônus de recurso adjacentes +1 de <img src="/images/ICON_FOOD.webp" style="height:1em"/> alimento. <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção, <img src="/images/ICON_GOLD.webp" style="height:1em"/> ouro, <img src="/images/ICON_FOOD.webp" style="height:1em"/> alimento e <img src="/images/ICON_HOUSING.webp" style="height:1em"/> habitações adicionais conforme você avançar na árvore cívica e tecnológica. Deve ser colocado adjacente a um recurso bônus ou de luxo. Não pode ser construído adjacente a outro mekewap.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Mina">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MINE_NAME-->
+                      <h2 class="civ-name">Mina
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Mine.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pilhagem concedida: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">Apelo para painéis adjacentes: -1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção (Desbloqueado por Aprendizagem Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção (Desbloqueado por Industrialização Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção (Desbloqueado por Materiais Inteligentes Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">0% de <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turismo de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura (requer Voo Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construído por Construtor</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto (colinas),  Pradaria (colinas),  Planície (colinas),  Neve (colinas),  Tundra (colinas)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Solo vulcânico</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueado por Mineração Tecnologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueia a habilidade de Construtores para construir Minas.<br><br>+1 de <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produção. -1 de apelo. Podem ser construídas em colinas ou recursos válidos.<br><br>Se construídas com recursos de luxo ou estratégicos, a cidade poderá usar este recurso.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Missão">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MISSION_NAME-->
+                      <h2 class="civ-name">Missão
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Mission.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pilhagem concedida: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 25</p>
+                      <p class="civ-ability-desc" style="text-align:left">Apelo para painéis adjacentes: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fé</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Ciência (Desbloqueado por Herança Cultural Cívico)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construído por Construtor</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto,  Deserto (colinas),  Pradaria,  Pradaria (colinas),  Planície,  Planície (colinas),  Neve,  Neve (colinas),  Tundra,  Tundra (colinas)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueado por Educação Tecnologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueia a habilidade de Construtores para criar uma Missão, exclusiva da Espanha.<br><br>+2 de <img src="/images/ICON_FAITH.webp" style="height:1em"/> fé. +2 de <img src="/images/ICON_FAITH.webp" style="height:1em"/> fé, +1 de <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produção e +1 de <img src="/images/ICON_FOOD.webp" style="height:1em"/> alimento se em um continente diferente da sua <img src="/images/ICON_CAPITAL.webp" style="height:1em"/> capital. +1 de <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> ciência para cada distrito de Campus e de Local Sagrado adjacente. <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> ciência adicional quando Herança Cultural for descoberta. +2 de lealdade por turno para cidades com a melhoria Missão adjacente ao Centro da Cidade e não no continente original da <img src="/images/ICON_CAPITAL.webp" style="height:1em"/> capital.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Moai">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MOAI_NAME-->
+                      <h2 class="civ-name">Moai
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Moai.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pilhagem concedida: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 25</p>
+                      <p class="civ-ability-desc" style="text-align:left">Apelo para painéis adjacentes: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% de <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turismo de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura (requer Voo Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construído por Construtor</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Pradaria,  Pradaria (colinas),  Planície,  Planície (colinas)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Solo vulcânico</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueia a habilidade do Construtor de fazer um Moai.<br><br>+1 de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> cultura. +1 de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> cultura para cada 2 Moais adjacentes. +2 de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> cultura se estiver em ou adjacente a um painel de solo vulcânico. +1 de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> cultura se adjacente a um painel de costa ou de lago. <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura e <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turismo adicionais conforme você avançar as Árvores cívica e tecnológica. Pode ser construído em Planícies, Colinas de planícies, Pradarias, Colinas de pradarias ou Solo vulcânico. Não pode ser colocado adjacente a painéis de Floresta ou de Floresta tropical.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Monastério">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MONASTERY_NAME-->
+                      <h2 class="civ-name">Monastério
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Monastery.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pilhagem concedida: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 25</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitações</p>
+                      <p class="civ-ability-desc" style="text-align:left">Apelo para painéis adjacentes: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fé</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construído por Construtor</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto,  Deserto (colinas),  Pradaria,  Pradaria (colinas),  Planície,  Planície (colinas),  Neve,  Neve (colinas),  Tundra,  Tundra (colinas)</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueia a habilidade de Construtores para construírem um Monastério.<br><br>+2 de <img src="/images/ICON_FAITH.webp" style="height:1em"/> fé. +15 de cura de PS para uma unidade religiosa aliada neste painel que não tenha atacado neste turno. +1 de <img src="/images/ICON_FAITH.webp" style="height:1em"/> fé para cada 2 distritos adjacentes. Oferece +1 de <img src="/images/ICON_HOUSING.webp" style="height:1em"/> habitação. Recebe uma <img src="/images/ICON_HOUSING.webp" style="height:1em"/> habitação adicional após colonialismo ser descoberto. Não pode ser construído próximo a outro Monastério.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Montes de Cahokia">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MOUND_NAME-->
+                      <h2 class="civ-name">Montes de Cahokia
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Cahokia Mounds.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pilhagem concedida: Curando 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitações</p>
+                      <p class="civ-ability-desc" style="text-align:left">Apelo para painéis adjacentes: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Ouro</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construído por Construtor</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto,  Pradaria,  Planície,  Tundra</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Planície aluvial,  Planície Aluvial de Pradaria,  Planície Aluvial</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueia a habilidade do Construtor para construir Montes de Cahokia.<br><br>+3 de <img src="/images/ICON_GOLD.webp" style="height:1em"/> ouro. Fornece um <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> serviço. Cidades recebem +1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> serviço da primeira melhoria dos Montes de Cahokia. Ao descobrir História Natural, as cidades recebem +1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> serviço da segunda melhoria dos Montes de Cahokia. +1 de <img src="/images/ICON_FOOD.webp" style="height:1em"/> alimento para cada 2 distritos adjacentes quando o Feudalismo for descoberto ou para cada distrito adjacente quando Peças Substituíveis for pesquisada. Dá +1 de <img src="/images/ICON_HOUSING.webp" style="height:1em"/> habitação. Receba uma <img src="/images/ICON_HOUSING.webp" style="height:1em"/> habitação adicional quando Herança Cultural for descoberta. Não pode ser construído adjacente a outros Montes de Cahokia.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Museu a Céu Aberto">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_OPEN_AIR_MUSEUM_NAME-->
+                      <h2 class="civ-name">Museu a Céu Aberto
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Open-Air Museum.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pilhagem concedida: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 25</p>
+                      <p class="civ-ability-desc" style="text-align:left">Apelo para painéis adjacentes: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% de <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turismo de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construído por Construtor</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto,  Deserto (colinas),  Pradaria,  Pradaria (colinas),  Planície,  Planície (colinas),  Neve,  Neve (colinas),  Tundra,  Tundra (colinas)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueado por Nacionalismo Cívico</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueia a habilidade do Construtor para fazer um Museu a Céu Aberto, exclusivo da Suécia.<br><br>Dá +2 de lealdade por turno nesta cidade. +2 de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> cultura e +2 de <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turismo para cada tipo de terreno (Neve, Tundra, Deserto, Planície e Pradaria) em que pelo menos uma cidade sueca for fundada. Um por cidade. Painéis com Museus ao ar livre não podem ser trocados.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Pairi-daeza">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_PAIRIDAEZA_NAME-->
+                      <h2 class="civ-name">Pairi-daeza
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Pairidaeza.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pilhagem concedida: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 25</p>
+                      <p class="civ-ability-desc" style="text-align:left">Apelo para painéis adjacentes: 1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Ouro</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura (Desbloqueado por Serviço Diplomático Cívico)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% de <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turismo de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura (requer Voo Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construído por Construtor</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto,  Deserto (colinas),  Pradaria,  Pradaria (colinas),  Planície,  Planície (colinas)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueado por Início do Império Cívico</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueia a habilidade de Construtores para construir uma Pairi-daeza.<br><br>+1 de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> cultura e +2 de <img src="/images/ICON_GOLD.webp" style="height:1em"/> ouro. +1 de apelo. +1 de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> cultura para cada Local Sagrado e Teatro adjacente. +1 de <img src="/images/ICON_GOLD.webp" style="height:1em"/> ouro para cada Centro Comercial e Centro da Cidade adjacente. <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura e <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turismo adicionais conforme você avança pelas árvores de tecnologias e cívica. Não pode ser construída em neve, tundra, colina com neve ou colina com tundra ou adjacente a outra Pairi-daeza.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Parque Eólico">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_WIND_FARM_NAME-->
+                      <h2 class="civ-name">Parque Eólico
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Wind Farm.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pilhagem concedida: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">Apelo para painéis adjacentes: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Ouro</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construído por Construtor</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto (colinas),  Pradaria (colinas),  Planície (colinas),  Neve (colinas),  Tundra (colinas)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueado por Compostos Tecnologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueia a habilidade de Construtores para construírem um Parque eólico.<br><br>+2 de <img src="/images/ICON_GOLD.webp" style="height:1em"/> ouro. +1 de <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produção. Dá 2 de <img src="/images/ICON_POWER.webp" style="height:1em"/> energia por turno. Deve ser construída em um terreno de Colina.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Parque Eólico Offshore">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_OFFSHORE_WIND_FARM_NAME-->
+                      <h2 class="civ-name">Parque Eólico Offshore
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Offshore Wind Farm.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pilhagem concedida: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">Apelo para painéis adjacentes: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construído por Construtor</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Costa e lago</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueado por Sistemas de Previsão Tecnologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueia a habilidade de Construtores para construírem um parque eólico offshore.<br><br>+2 de <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produção. Oferece 2 de <img src="/images/ICON_POWER.webp" style="height:1em"/> energia por turno. Deve ser construído em um terreno de Costa ou Lago.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Parque Municipal">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_CITY_PARK_NAME-->
+                      <h2 class="civ-name">Parque Municipal
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/City Park.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pilhagem concedida: Curando 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">Apelo para painéis adjacentes: 2</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% de <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turismo de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura (requer Voo Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construído por Construtor</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto,  Deserto (colinas),  Pradaria,  Pradaria (colinas),  Planície,  Planície (colinas),  Neve,  Neve (colinas),  Tundra,  Tundra (colinas)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueado por Jogos e Lazer Cívico</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">A melhoria exclusiva de <img src="/images/ICON_GOVERNOR.webp" style="height:1em"/> Governador que pode ser construída em uma cidade com uma Governadora Topógrafa com a promoção Parques e Lazer. Concede 2 de apelo e 1 de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> cultura. +1 de <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> serviços se estiver adjacente à água. +3 de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> cultura se em uma cidade com Governadora Topógrafa com a promoção de Parques e Lazer. Não pode ser adjacente a outro Parque da Cidade.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Pasto">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_PASTURE_NAME-->
+                      <h2 class="civ-name">Pasto
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Pasture.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pilhagem concedida: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 25</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitações</p>
+                      <p class="civ-ability-desc" style="text-align:left">Apelo para painéis adjacentes: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Alimento (Desbloqueado por Estribos Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção (Desbloqueado por Partes Substituíveis Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Alimento (Desbloqueado por Robótica Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% de <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turismo de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura (requer Voo Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construído por Construtor</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueado por Domesticação de Animais Tecnologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueia a habilidade de Construtores para construir Pastos.<br><br>+1 de <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produção. Só podem ser construídos com recursos válidos.<br><br>Se construídos com recursos estratégicos, a cidade poderá usar este recurso.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Pedreira">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_QUARRY_NAME-->
+                      <h2 class="civ-name">Pedreira
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Quarry.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pilhagem concedida: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 25</p>
+                      <p class="civ-ability-desc" style="text-align:left">Apelo para painéis adjacentes: -1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção (Desbloqueado por Construção de Foguetes Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção (Desbloqueado por Pólvora Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção (Desbloqueado por Sistemas de Previsão Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construído por Construtor</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueado por Mineração Tecnologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueia a habilidade de Construtores para construir Pedreiras.<br><br>+1 de <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produção. -1 de apelo. Só podem ser criados com recursos válidos.<br><br>Se construídas com um recurso de luxo, a cidade poderá usar este recurso.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Pirâmide núbia">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_PYRAMID_NAME-->
+                      <h2 class="civ-name">Pirâmide núbia
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Nubian Pyramid.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pilhagem concedida: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 25</p>
+                      <p class="civ-ability-desc" style="text-align:left">Apelo para painéis adjacentes: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fé</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Alimento</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construído por Construtor</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto,  Deserto (colinas)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Planície aluvial</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueado por Alvenaria Tecnologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Melhoria desbloqueada com alvenaria, deve ser construída em deserto, desertos com colinas ou planícies aluviais. +2 de <img src="/images/ICON_FAITH.webp" style="height:1em"/> fé e +2 de <img src="/images/ICON_FOOD.webp" style="height:1em"/> alimento. Recebe ganhos adicionais de distritos adjacentes. +1 de <img src="/images/ICON_FOOD.webp" style="height:1em"/> alimento se estiver adjacente a um Centro da Cidade. Para todos os demais distritos que concedem bônus adjacentes: +1 do ganho devido se o distrito estiver adjacente.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Pista de Pouso">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_AIRSTRIP_NAME-->
+                      <h2 class="civ-name">Pista de Pouso
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Airstrip.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Apelo para painéis adjacentes: -1</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construído por Engenheiro Militar</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto,  Pradaria,  Planície,  Neve,  Tundra</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Solo vulcânico</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueado por Voo Tecnologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueia a habilidade de Engenheiro Militar para construir uma Pista de Pouso.<br><br>Tem capacidade para 3 unidades aéreas. Só pode ser construído em terreno plano. -1 de apelo.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Plantação">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_PLANTATION_NAME-->
+                      <h2 class="civ-name">Plantação
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Plantation.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pilhagem concedida: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 25</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitações</p>
+                      <p class="civ-ability-desc" style="text-align:left">Apelo para painéis adjacentes: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Ouro</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Alimento (Desbloqueado por Teoria Científica Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Ouro (Desbloqueado por Globalização Cívico)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Alimento (Desbloqueado por Feudalismo Cívico)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% de <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turismo de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura (requer Voo Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construído por Construtor</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueado por Irrigação Tecnologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueia a habilidade de Construtores para construir Plantações.<br><br>+2 de <img src="/images/ICON_GOLD.webp" style="height:1em"/> ouro. Só podem ser construídas com recursos válidos.<br><br>Se construídas com recursos de luxo, a cidade poderá usar este recurso.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Plataforma Petrolífera em alto mar">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_OFFSHORE_OIL_RIG_NAME-->
+                      <h2 class="civ-name">Plataforma Petrolífera em alto mar
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Offshore Oil Rig.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pilhagem concedida: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">Apelo para painéis adjacentes: -1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção (Desbloqueado por Sistemas de Previsão Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construído por Construtor</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Costa e lago,  Oceano</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueado por Plásticos Tecnologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueia a habilidade de Construtores para fazer uma Plataforma Petrolífera em alto mar.<br><br>-1 de apelo. Só pode ser construída em painéis de Costa ou de Lago com <img src="/images/ICON_RESOURCE_OIL.webp" style="height:1em"/> petróleo.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Poço com Degraus">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_STEPWELL_NAME-->
+                      <h2 class="civ-name">Poço com Degraus
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Stepwell.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pilhagem concedida: Curando 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitações</p>
+                      <p class="civ-ability-desc" style="text-align:left">Apelo para painéis adjacentes: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Alimento</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fé (Desbloqueado por Feudalismo Cívico)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Alimento (Desbloqueado por Esportes Profissionais Cívico)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construído por Construtor</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto,  Pradaria,  Planície,  Neve,  Tundra</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueado por Irrigação Tecnologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueia a habilidade de Construtores para construir um Poço com Degraus, exclusivo da Índia.<br><br>+1 de <img src="/images/ICON_FOOD.webp" style="height:1em"/> alimento e +1 de <img src="/images/ICON_HOUSING.webp" style="height:1em"/> habitação. +1 de <img src="/images/ICON_FAITH.webp" style="height:1em"/> fé se adjacente a um distrito de Local Sagrado. +1 de <img src="/images/ICON_FOOD.webp" style="height:1em"/> alimento se adjacente a uma Fazenda. <img src="/images/ICON_HOUSING.webp" style="height:1em"/> habitação, <img src="/images/ICON_FAITH.webp" style="height:1em"/> fé e <img src="/images/ICON_FOOD.webp" style="height:1em"/> alimento adicionais à medida que você avançar na árvore cívica e tecnológica. Evita perda de <img src="/images/ICON_FOOD.webp" style="height:1em"/> alimento durante a seca. Não pode ser construído em colinas ou adjacente a um outro Poço com Degraus.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Poço de Petróleo">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_OIL_WELL_NAME-->
+                      <h2 class="civ-name">Poço de Petróleo
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Oil Well.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pilhagem concedida: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">Apelo para painéis adjacentes: -1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção (Desbloqueado por Sistemas de Previsão Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construído por Construtor</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto,  Deserto (colinas),  Pradaria,  Pradaria (colinas),  Planície,  Planície (colinas),  Neve,  Neve (colinas),  Tundra,  Tundra (colinas)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueado por Refinamento Tecnologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueia a habilidade de Construtores para fazer um Poço de Petróleo.<br><br>-1 de apelo. Só pode ser construído em painéis de terra com<img src="/images/ICON_RESOURCE_OIL.webp" style="height:1em"/> petróleo.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Pôlder">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_POLDER_NAME-->
+                      <h2 class="civ-name">Pôlder
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Polder.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pilhagem concedida: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 25</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitações</p>
+                      <p class="civ-ability-desc" style="text-align:left">Apelo para painéis adjacentes: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Alimento</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção</p>
+                      <p class="civ-ability-desc" style="text-align:left">+4 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Ouro (Desbloqueado por Engenharia Civil Cívico)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construído por Construtor</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Costa e lago</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueado por Guildas Cívico</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueia a habilidade do Construtor para construir um Pôlder, exclusivo dos Países Baixos.<br><br>+1 de <img src="/images/ICON_FOOD.webp" style="height:1em"/> alimento, +1 de <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produção e +0,5 de <img src="/images/ICON_HOUSING.webp" style="height:1em"/> habitação. +1 de <img src="/images/ICON_FOOD.webp" style="height:1em"/> alimento se estiver adjacente a uma melhoria de Pôlder. <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção, <img src="/images/ICON_GOLD.webp" style="height:1em"/> ouro e <img src="/images/ICON_FOOD.webp" style="height:1em"/> alimento adicionais conforme você avançar na árvore cívica e tecnológica. Deve ser colocado em um painel de Costa ou de Lago adjacente a 3 ou mais painéis de terra atravessáveis. Aumenta o custo de <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> movimento do painel para 3.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Pā">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MAORI_PA_NAME-->
+                      <h2 class="civ-name">Pā
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Pā.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Modificador de defesa: 4</p>
+                      <p class="civ-ability-desc" style="text-align:left">Bônus de fortificação aplicados à unidade ocupante.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Apelo para painéis adjacentes: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construído por Toa</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto (colinas),  Pradaria (colinas),  Planície (colinas),  Neve (colinas),  Tundra (colinas)</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueia a habilidade Toa para fazer um Pā, exclusivo dos Maori.<br><br>Unidade ocupante recebe +4 de <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> força de defesa e automaticamente recebe 2 turnos de fortificação. Uma unidade Maori ocupando um Pā se cura mesmo que já tenha se movido ou atacado. Deve ser construído em um painel de colina.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Qhapaq Ñan">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MOUNTAIN_ROAD_NAME-->
+                      <h2 class="civ-name">Qhapaq Ñan
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Qhapaq Ñan.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Apelo para painéis adjacentes: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construído por Construtor</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto (montanhas),  Pradaria (montanhas),  Planície (montanhas),  Neve (montanhas),  Tundra (montanhas)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueado por Comércio Exterior Cívico</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueia a habilidade do Construtor de fazer um Qhapaq Ñan, exclusivo de Pachacuti.<br><br>Atua como um portal de movimentação em uma cordilheira, permitindo que unidades se movam para ela e saiam de outro portal ao custo de 2 de <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> movimento. <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> Rotas comerciais passando por ela podem multiplicar o <img src="/images/ICON_GOLD.webp" style="height:1em"/> Ouro ganho de distritos em seu destino. Só pode ser construído em um painel de Montanha adjacente. Não pode ser pilhado nem removido.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Resort Litorâneo">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_BEACH_RESORT_NAME-->
+                      <h2 class="civ-name">Resort Litorâneo
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Seaside Resort.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pilhagem concedida: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">Requer: Apelo &gt;= 4</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% de <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turismo de apelo</p>
+                      <p class="civ-ability-desc" style="text-align:left">Apelo para painéis adjacentes: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% de <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turismo de  Apelo</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construído por Construtor</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto,  Pradaria,  Planície</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Solo vulcânico</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueado por Rádio Tecnologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueia a habilidade de Construtores para construírem Resorts Litorâneos.<br><br>Concede <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turismo igual ao apelo do painel. Só pode ser construído em painéis de deserto costeiro, planícies costeiras ou pradarias costeiras. Apelo mínimo deve ser de Tirar o Fôlego.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Resort de esqui">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_SKI_RESORT_NAME-->
+                      <h2 class="civ-name">Resort de esqui
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Ski Resort.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Apelo para painéis adjacentes: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% de <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turismo de  Apelo</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construído por Construtor</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto (montanhas),  Pradaria (montanhas),  Planície (montanhas),  Neve (montanhas),  Tundra (montanhas)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueado por Esportes Profissionais Cívico</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueia a habilidade de Construtores para construir Resort de Esqui.<br><br>Concede +4 de <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turismo. Concede um <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> serviço. Só pode ser construído em uma Montanha. Não pode ser construído adjacente a outro Resort de Esqui. Não pode ser pilhado, trabalhado ou removido.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Rinque de hóquei no gelo">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_ICE_HOCKEY_RINK_NAME-->
+                      <h2 class="civ-name">Rinque de hóquei no gelo
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Ice Hockey Rink.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pilhagem concedida: Curando 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">Apelo para painéis adjacentes: 2</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção (Desbloqueado por Esportes Profissionais Cívico)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Alimento (Desbloqueado por Esportes Profissionais Cívico)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% de <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turismo de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura (requer Voo Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construído por Construtor</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Neve,  Neve (colinas),  Tundra,  Tundra (colinas)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueado por Colonialismo Cívico</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueia a habilidade do Construtor para fazer um rinque de hóquei no gelo, exclusivo do Canadá.<br><br>+1 de <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> serviço. +1 de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> cultura para painéis de Tundra, Colina com Tundra, Neve e Colina com Neve adjacentes. Fornece <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turismo de cultura quando o voo for desbloqueado. +2 de <img src="/images/ICON_FOOD.webp" style="height:1em"/> alimento e de <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produção quando o cívico de Esportes Profissionais for desbloqueado. +4 de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> cultura se adjacente a um Estádio. Pode ser construído em Tundra, Colina com Tundra, Neve e Colina com Neve. Um por cidade. +2 de apelo.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Serraria">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_LUMBER_MILL_NAME-->
+                      <h2 class="civ-name">Serraria
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Lumber Mill.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pilhagem concedida: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">Apelo para painéis adjacentes: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção (Desbloqueado por Aço Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção (Desbloqueado por Cibernética Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construído por Construtor</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Floresta,  Floresta tropical (Requer: Mercantilismo)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueado por Construção Tecnologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueia a habilidade de Construtores para construir uma Serraria.<br><br>+2 de <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produção. Só pode ser construída em bosques. Após o Mercantilismo ser desbloqueado, também pode ser construída em floresta tropical</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Silo de Mísseis">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MISSILE_SILO-->
+                      <h2 class="civ-name">Silo de Mísseis
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Missile Silo.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Apelo para painéis adjacentes: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construído por Engenheiro Militar</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto,  Pradaria,  Planície,  Neve,  Tundra</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Solo vulcânico</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueado por Construção de Foguetes Tecnologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueia a habilidade de construir um Silo de Mísseis de um Engenheiro Militar.<br><br>Age como local de lançamento de Dispositivos Nucleares e Termonucleares.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Terraço de cultivo">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_TERRACE_FARM_NAME-->
+                      <h2 class="civ-name">Terraço de cultivo
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Terrace Farm.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pilhagem concedida: Curando 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Habitações</p>
+                      <p class="civ-ability-desc" style="text-align:left">Apelo para painéis adjacentes: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Alimento</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construído por Construtor</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto (colinas),  Pradaria (colinas),  Planície (colinas)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Solo vulcânico</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueia a habilidade do Construtor para construir um Terraço de Cultivo, exclusivo dos Incas.<br><br>+1 de <img src="/images/ICON_FOOD.webp" style="height:1em"/> alimento. Concede +1 de <img src="/images/ICON_HOUSING.webp" style="height:1em"/> habitação. +1 de <img src="/images/ICON_FOOD.webp" style="height:1em"/> alimento para cada painel de Montanha adjacente. Ganha +2 de <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produção para cada distrito de Aqueduto adjacente. Recebe +1 de <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produção se adjacente a água doce e não a um distrito de Aqueduto. <img src="/images/ICON_FOOD.webp" style="height:1em"/> Alimento adicional conforme você avança nas Árvores tecnológica e cívica por adjacência a outros terraços de cultivo. Pode ser colocado em Colinas de pradaria, Colinas de planícies e Colinas de deserto.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Túnel na montanha">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MOUNTAIN_TUNNEL_NAME-->
+                      <h2 class="civ-name">Túnel na montanha
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Mountain Tunnel.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Apelo para painéis adjacentes: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construído por Engenheiro Militar</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto (montanhas),  Pradaria (montanhas),  Planície (montanhas),  Neve (montanhas),  Tundra (montanhas)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueado por Química Tecnologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueia a habilidade do Engenheiro Militar de fazer um Túnel na Montanha.<br><br>Atua como um portal de movimentação em uma cordilheira, permitindo que unidades se movam para ela e saiam de outro portal ao custo de 2 de <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> movimento. <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> Rotas comerciais passando por ela podem multiplicar o <img src="/images/ICON_GOLD.webp" style="height:1em"/> Ouro ganho de distritos em seu destino. Só pode ser construído em um painel de Montanha adjacente. Não pode ser pilhado nem removido.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Usina Geotérmica">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_GEOTHERMAL_PLANT_NAME-->
+                      <h2 class="civ-name">Usina Geotérmica
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Geothermal Plant.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pilhagem concedida: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">Apelo para painéis adjacentes: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Ciência</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construído por Construtor</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Fissura Geotérmica</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueado por Materiais Sintéticos Tecnologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueia a habilidade do Construtor para fazer uma Usina Geotérmica.<br><br>+1 de <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> ciência. +2 de <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produção. Dá 4 de <img src="/images/ICON_POWER.webp" style="height:1em"/> energia por turno. Deve ser construída em uma Fissura Geotérmica.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Zigurate">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_ZIGGURAT_NAME-->
+                      <h2 class="civ-name">Zigurate
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Ziggurat.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pilhagem concedida: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">Apelo para painéis adjacentes: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Ciência</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura (Desbloqueado por História Natural Cívico)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% de <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turismo de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura (requer Voo Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construído por Construtor</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto,  Pradaria,  Planície,  Neve,  Tundra</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Planície aluvial,  Planície Aluvial de Pradaria,  Planície Aluvial</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Desbloqueia a habilidade de Construtor para fazer um Zigurate, exclusivo da Suméria.<br><br>+2 de <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> ciência. +1 de <img src="/images/ICON_CULTURE.webp" style="height:1em"/> cultura se ao lado de um Rio. Não pode ser construído em Colinas, mas pode ser construído em Planícies aluviais.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </main>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/plugins/feather.min.js"></script>
+    <script src="/plugins/chart.min.js"></script>
+  </body>
+</html>

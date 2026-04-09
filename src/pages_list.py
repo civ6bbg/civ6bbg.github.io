@@ -5,6 +5,7 @@ from pages.city_states import *
 from pages.congress import *
 from pages.governor import *
 from pages.great_people import *
+from pages.improvements import *
 from pages.leaders import *
 from pages.misc import *
 from pages.names import *
@@ -76,6 +77,12 @@ pages_list = [
         'func': get_units_html_file,
         'title': 'Units Description',
         'main_menu_title': 'LOC_PEDIA_UNITS_TITLE'
+    },
+    {
+        'name': 'improvements',
+        'func': get_improvements_html_file,
+        'title': 'Improvements Description',
+        'main_menu_title': 'LOC_TECH_FILTER_IMPROVEMENTS'
     },
     {
         'name': 'tech_tree',

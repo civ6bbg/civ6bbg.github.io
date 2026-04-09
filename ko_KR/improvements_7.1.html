@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>Civ VI BBG 7.1 시설</title>
+    <meta charset="utf-8">
+    <meta contents="IE=edge" httpequiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="/images/BBGLogo.webp" rel="icon" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap" rel="stylesheet">
+    <link href="/css/style.min.css" rel="stylesheet">
+    <link href="/css/preloader.css" rel="stylesheet">
+    <link href="/css/animate.min.css" rel="stylesheet">
+    <link href="/css/header.css" rel="stylesheet">
+    <link href="/css/footer.css" rel="stylesheet">
+    <link href="/fontawesome-free-7.0.0-web/css/all.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="loader">
+        <div class="loader-outter"></div>
+        <div class="loader-inner"></div>
+        <div class="indicator">
+          <svg height="12px" width="16px">
+            <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+            <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="layer"></div>
+    <div class="page-flex">
+      <div class="main-wrapper">
+        <nav class="main-nav--bg">
+          <div class="main-nav">
+            <div class="header">
+              <div class="header-inner">
+                <div class="inner">
+                  <div class="row">
+                    <div class="flex center sidebar-toggle col-xl-1 col-lg-1 col-md-1 col-1">
+                      <button class="transparent-btn" title="Menu" type="button">
+                        <span class="sr-only">Toggle menu</span>
+                        <span aria-hidden="true" class="icon menu-toggle"></span>
+                      </button>
+                    </div>
+                    <div class="flex center col-xl-1 col-lg-1 col-md-1 col-2">
+                      <a href="/index.html" style="align-content: center;">
+                        <img alt="#" src="/images/BBGLogo.webp" style="width:3em; border-radius:10%">
+                      </a>
+                      <div class="mobile-nav"></div>
+                    </div>
+                    <div class="flex col-xl-8 col-lg-8 col-md-8 col-8">
+                      <div class="main-menu">
+                        <nav class="navigation">
+                          <ul class="nav menu">
+                            <li class="">
+                              <a href="/ko_KR/leaders_7.1.html" onclick="civClicked(null)">지도자</a>
+                            </li>
+                            <li class="">
+                              <a href="/ko_KR/bbg_expanded_7.1.html" onclick="civClicked(null)">BBG Expanded</a>
+                            </li>
+                            <li class="">
+                              <a href="/ko_KR/city_states_7.1.html" onclick="civClicked(null)">도시 국가</a>
+                            </li>
+                            <li class="">
+                              <a href="/ko_KR/religion_7.1.html" onclick="civClicked(null)">종교</a>
+                            </li>
+                            <li class="">
+                              <a href="/ko_KR/governor_7.1.html" onclick="civClicked(null)">총독</a>
+                            </li>
+                            <li class="">
+                              <a href="/ko_KR/great_people_7.1.html" onclick="civClicked(null)">위인</a>
+                            </li>
+                            <li class="">
+                              <a href="/ko_KR/natural_wonder_7.1.html" onclick="civClicked(null)">자연경관</a>
+                            </li>
+                            <li class="">
+                              <a href="/ko_KR/world_wonder_7.1.html" onclick="civClicked(null)">World Wonders</a>
+                            </li>
+                            <li class="">
+                              <a href="/ko_KR/buildings_7.1.html" onclick="civClicked(null)">건물</a>
+                            </li>
+                            <li class="">
+                              <a href="/ko_KR/units_7.1.html" onclick="civClicked(null)">유닛</a>
+                            </li>
+                            <li class="active">
+                              <a href="/ko_KR/improvements_7.1.html" onclick="civClicked(null)">시설</a>
+                            </li>
+                            <li class="">
+                              <a href="/ko_KR/tech_tree_7.1.html" onclick="civClicked(null)">Technology Tree</a>
+                            </li>
+                            <li class="">
+                              <a href="/ko_KR/civic_tree_7.1.html" onclick="civClicked(null)">Civic Tree</a>
+                            </li>
+                            <li class="">
+                              <a href="/ko_KR/names_7.1.html" onclick="civClicked(null)">Names</a>
+                            </li>
+                            <li class="">
+                              <a href="/ko_KR/policies_7.1.html" onclick="civClicked(null)">정책</a>
+                            </li>
+                            <li class="">
+                              <a href="/ko_KR/congress_7.1.html" onclick="civClicked(null)">세계 의회</a>
+                            </li>
+                            <li class="">
+                              <a href="/ko_KR/misc_7.1.html" onclick="civClicked(null)">Misc</a>
+                            </li>
+                            <li class="">
+                              <a href="/ko_KR/changelog_7.1.html" onclick="civClicked(null)">Changelog</a>
+                            </li>
+                            <li>
+                              <a>BBG Version<i class="icofont-rounded-down"></i></a>
+                              <ul class="dropdown bbg-version-dropdown">
+                                <li>
+                                  <a href="/ko_KR/improvements_base_game.html">Base</a>
+                                </li>
+                                <li>
+                                  <a href="/ko_KR/improvements_7.4.html">7.4</a>
+                                </li>
+                                <li>
+                                  <a href="/ko_KR/improvements_7.3.html">7.3</a>
+                                </li>
+                                <li>
+                                  <a href="/ko_KR/improvements_7.2.html">7.2</a>
+                                </li>
+                                <li>
+                                  <a href="/ko_KR/improvements_7.1.html">7.1</a>
+                                </li>
+                                <li>
+                                  <a href="/ko_KR/improvements_6.5.html">6.5</a>
+                                </li>
+                                <li>
+                                  <a href="/ko_KR/improvements_6.4.html">6.4</a>
+                                </li>
+                                <li>
+                                  <a href="/ko_KR/improvements_6.3.html">6.3</a>
+                                </li>
+                                <li>
+                                  <a href="/ko_KR/improvements_6.2.html">6.2</a>
+                                </li>
+                                <li>
+                                  <a href="/ko_KR/improvements_6.1.html">6.1</a>
+                                </li>
+                                <li>
+                                  <a href="/ko_KR/improvements_6.0.html">6.0</a>
+                                </li>
+                                <li>
+                                  <a href="/ko_KR/improvements_5.8.html">5.8</a>
+                                </li>
+                                <li>
+                                  <a href="/ko_KR/improvements_5.7.html">5.7</a>
+                                </li>
+                                <li>
+                                  <a href="/ko_KR/improvements_5.6.html">5.6</a>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+                    <div class="flex center col-xl-2 col-lg-2 col-md-2 col-1">
+                      <div class="flex row justify-content-around">
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-4">
+                          <div class="main-menu">
+                            <nav class="navigation">
+                              <ul class="nav menu">
+                                <li><i class="fa-solid fa-language lang-icon"></i>
+                                  <ul class="dropdown">
+                                    <li>
+                                      <a href="/en_US/improvements_7.1.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/us.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/fr_FR/improvements_7.1.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/fr.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/ru_RU/improvements_7.1.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/ru.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/de_DE/improvements_7.1.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/de.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/zh_Hans_CN/improvements_7.1.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/cn.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/ko_KR/improvements_7.1.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/kr.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/ja_JP/improvements_7.1.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/jp.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/pt_BR/improvements_7.1.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/br.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </nav>
+                          </div>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-4">
+                          <div class="base-game-switcher-wrapper">
+                            <button class="base-game-switcher gray-circle-btn" title="Show Base Game" type="button"><i aria-hidden="true" class="enable-icon" data-feather="toggle-left"></i><i aria-hidden="true" class="disable-icon" data-feather="toggle-right"></i></button>
+                          </div>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-4">
+                          <div class="theme-switcher-wrapper">
+                            <button class="theme-switcher gray-circle-btn" title="Switch theme" type="button">
+                              <span class="sr-only">Switch theme</span><i aria-hidden="true" class="sun-icon" data-feather="sun"></i><i aria-hidden="true" class="moon-icon" data-feather="moon"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="scroll-up footer-popup" id="footer-popup">
+          <div class="footer-popup-inner">
+            <div class="row">
+              <div class="col-sm-6 col-1 footer-popup-body">
+                <p id="donateText">Enjoy this work? Try Aether Kingdoms!
+                  <b>
+                    <a class="footer-popup-link" href="https://www.aetherkingdoms.com/" target="_blank">(Link)</a>
+                  </b>
+                </p>
+              </div>
+              <div class="col-sm-2 col-1 footer-popup-body">
+                <a class="btn btn-primary" href="https://www.aetherkingdoms.com/" target="_blank">
+                  <img alt="Aether Kingdom" class="footer-popup-img" src="/images/ak_village_animation.gif">
+                </a>
+              </div>
+              <div class="col-sm-2 col-6 footer-popup-donate">
+                <a class="btn btn-primary" href="https://ko-fi.com/calcalciffer" target="_blank">Donate</a>
+              </div>
+              <div class="col-sm-2 col-6 footer-popup-scroll-up">
+                <a class="displayNone" href="#top" id="scrollUp" onclick="civClicked(null)"><i class="fa-solid fa-up-long"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="aether-kingdom-ad" id="aether-kingdom-ad">
+          <a href="https://www.aetherkingdoms.com/" target="_blank">
+            <img alt="Aether Kingdom" class="aether-kingdom-ad-img" src="/images/ak_village_animation.gif">
+          </a>
+          <h2 class="aether-kingdom-ad-title">Try Aether Kingdoms!</h2>
+          <p class="aether-kingdom-ad-text">If you like my website here, please check out Aether Kingdoms, a free-to-play strategy game inspired by Civilization and developed by my friend and I. Click the button below to learn more!</p>
+          <a href="https://www.aetherkingdoms.com/" target="_blank">
+            <button class="ad-btn" title="Aether Kingdoms" type="submit">Aether Kingdoms</button>
+          </a>
+          <button class="ad-btn" onclick="aetherKingdomAdClose()" title="Close ad" type="submit">Close</button>
+        </div>
+        <div class="">
+          <div class="fixed left-0 right-auto h-screen bg-white border-r border-neutral-300 overflow-scroll" style="z-index: 5;">
+            <aside class="sidebar">
+              <div class="sidebar-start">
+                <div class="sidebar-body">
+                  <ul class="sidebar-body-menu"></ul>
+                </div>
+              </div>
+            </aside>
+          </div>
+          <div class="leaders-data min-w-full main-pl">
+            <main class="main users chart-page">
+              <div class="container">
+                <h1 class="civ-name">Civ VI BBG 7.1 시설</h1><br>
+                <div class="row">
+                  <div class="col-md-6 col-12" id="간척지">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_POLDER_NAME-->
+                      <h2 class="civ-name">간척지
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Polder.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">약탈 보상: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 주거공간</p>
+                      <p class="civ-ability-desc" style="text-align:left">인접 타일에 매력도 제공: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 식량</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력</p>
+                      <p class="civ-ability-desc" style="text-align:left">+4 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 금 (다음에 의해 잠금 해제 토목 공학 사회 제도)</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자 건설자</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  해안 및 호수</p>
+                      <p class="civ-ability-desc" style="text-align:left">다음에 의해 잠금 해제 봉건제 사회 제도</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">네덜란드 특유 시설물인 간척지를 건설할 수 있는 건설자 능력을 잠금 해제합니다.<br><br><img src="/images/ICON_FOOD.webp" style="height:1em"/> 식량 +1, <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력 +1, <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 주거공간 +0.5를 제공합니다. 인접한 간척지 시설마다 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 식량 +1을, 인접한 간척지 시설 2개마다 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력 +1을 추가 제공합니다. 인접한 항만 특수지구마다 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력 +1을 추가 제공합니다. 기술 발전표와 사회 제도 진보에 따라 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력과 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 금, <img src="/images/ICON_FOOD.webp" style="height:1em"/> 식량이 추가됩니다. 1개 이상의 지나갈 수 있는 지상 타일에 인접한 해안이나 호수에 배치해야 합니다.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="거대 두상">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_COLOSSAL_HEAD_NAME-->
+                      <h2 class="civ-name">거대 두상
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Colossal Head.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">약탈 보상: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 주거공간</p>
+                      <p class="civ-ability-desc" style="text-align:left">인접 타일에 매력도 제공: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 신앙</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 식량</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_FAITH.webp" style="height:1em"/> 신앙에서 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 관광 100%(비행 기술 필요)</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자 건설자</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  사막,  사막 (언덕),  초원,  초원 (언덕),  평원,  평원 (언덕),  툰드라,  툰드라 (언덕)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  화산토</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자의 거대 두상 건설 능력을 잠금 해제합니다.<br><br>거대 두상이 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 식량 +1, <img src="/images/ICON_FAITH.webp" style="height:1em"/> 신앙 +2, <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 주거공간 +1을 제공합니다. 인본주의를 발견하면 인접한 열대우림 2개마다 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 신앙 +1을 제공합니다. 인본주의를 발견하면 인접한 숲 2개마다 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 신앙 +1을 제공합니다. 비행을 연구하면 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 신앙에서 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 관광을 제공합니다. 설원 또는 설원 언덕에 지을 수 없습니다.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="계단식 농장">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_TERRACE_FARM_NAME-->
+                      <h2 class="civ-name">계단식 농장
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Terrace Farm.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">약탈 보상: 체력 회복 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 주거공간</p>
+                      <p class="civ-ability-desc" style="text-align:left">인접 타일에 매력도 제공: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 식량</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자 건설자</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  사막 (언덕),  초원 (언덕),  평원 (언덕)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  화산토</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">잉카 특유의 계단식 농장 건설을 위한 건설자 능력을 잠금 해제합니다.<br><br><img src="/images/ICON_FOOD.webp" style="height:1em"/> 식량 +1을 제공합니다. <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 주거공간 +1을 제공합니다. 인접한 각 산 타일마다 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 식량 +1을 제공합니다. 인접한 각 송수로 특수지구마다 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력 +2를 제공합니다. 담수에만 인접 시 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력 +1을 제공합니다. 다른 계단식 농장과 인접한 경우 기술 발전표와 사회 제도 진보에 따라 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 식량이 추가됩니다. 초원 언덕, 평원 언덕과 사막 언덕에 배치할 수 있습니다.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="계단식 우물">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_STEPWELL_NAME-->
+                      <h2 class="civ-name">계단식 우물
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Stepwell.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">약탈 보상: 체력 회복 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 주거공간</p>
+                      <p class="civ-ability-desc" style="text-align:left">인접 타일에 매력도 제공: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 신앙</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 식량</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 신앙 (다음에 의해 잠금 해제 봉건제 사회 제도)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 식량 (다음에 의해 잠금 해제 봉건제 사회 제도)</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자 건설자</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  사막,  초원,  평원,  설원,  툰드라</p>
+                      <p class="civ-ability-desc" style="text-align:left">다음에 의해 잠금 해제 관개 기술</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">인도 특유의 계단식 우물을 건설할 수 있도록 건설자 능력을 잠금 해제합니다.<br><br><img src="/images/ICON_FOOD.webp" style="height:1em"/> 식량 +1, <img src="/images/ICON_FAITH.webp" style="height:1em"/> 신앙 +1, <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 주거공간 +1을 제공합니다. 성지 특수지구에 인접한 경우 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 신앙 +1, 인접한 농장마다 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 식량 +1을 추가 제공합니다. 언덕이나 다른 계단식 우물에 인접하게 지을 수 없습니다.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="고래뼈 집">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_LIME_THULE_WBH_NAME-->
+                      <h2 class="civ-name">고래뼈 집
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Hunter's House.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">약탈 보상: 체력 회복 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 주거공간</p>
+                      <p class="civ-ability-desc" style="text-align:left">인접 타일에 매력도 제공: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_FAITH.webp" style="height:1em"/> 신앙에서 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 관광 100%(비행 기술 필요)</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자 건설자 또는  개썰매 사냥꾼</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  사막,  사막 (언덕),  초원,  초원 (언덕),  평원,  평원 (언덕),  설원,  설원 (언덕),  툰드라,  툰드라 (언덕)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  숲</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">항해에서 해금되는 툴레의 고유한 시설입니다.<br><br>툰드라 타일 위에서 건설되면 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 식량 +1 (설원에선 두배), 인접한 해양자원과 야영지에 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화 +1 및 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 신앙 +1을 제공합니다.<br>자원 타일에 인접하여 건설해야 합니다. 숲 위에 배치할 수 있습니다.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="골프 코스">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_GOLF_COURSE_NAME-->
+                      <h2 class="civ-name">골프 코스
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Golf Course.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">약탈 보상: 체력 회복 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">인접 타일에 매력도 제공: 1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 금</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 금 (다음에 의해 잠금 해제 계몽주의 사회 제도)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화 (다음에 의해 잠금 해제 계몽주의 사회 제도)</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화에서 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 관광 100%(비행 기술 필요)</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자 건설자</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  초원,  초원 (언덕),  평원,  평원 (언덕),  설원,  설원 (언덕),  툰드라,  툰드라 (언덕)</p>
+                      <p class="civ-ability-desc" style="text-align:left">다음에 의해 잠금 해제 오락과 여가 사회 제도</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">스코틀랜드 특유의 골프 코스를 지을 수 있는 건설자 능력을 잠금 해제합니다.<br><br><img src="/images/ICON_AMENITIES.webp" style="height:1em"/> 쾌적도 +1, <img src="/images/ICON_GOLD.webp" style="height:1em"/> 금 +2 및 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화 +1, 매력도 +1을 제공합니다. <br><br>도심부 특수지구가 인접해 있으면 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 금 +1 및 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화 +1, 유흥단지 특수지구가 인접해 있으면 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> 쾌적도 +1 및 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화 +1을 제공합니다. <br><br>기술 발전표와 사회 제도 진보에 따라 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화, <img src="/images/ICON_GOLD.webp" style="height:1em"/> 금, <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> 쾌적도, <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 관광 및 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 주거공간이 추가됩니다. <br><br>사막이나 사막 언덕에 배치할 수 없으며 도시당 하나만 가능합니다. 골프 코스가 있는 타일은 교체할 수 없습니다.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="광산">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MINE_NAME-->
+                      <h2 class="civ-name">광산
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Mine.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">약탈 보상: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">인접 타일에 매력도 제공: -1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력 (다음에 의해 잠금 해제 도제제도 기술)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력 (다음에 의해 잠금 해제 산업화 기술)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력 (다음에 의해 잠금 해제 스마트 소재 기술)</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화에서 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 관광 0%(비행 기술 필요)</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자 건설자</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  사막 (언덕),  초원 (언덕),  평원 (언덕),  설원 (언덕),  툰드라 (언덕)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  화산토</p>
+                      <p class="civ-ability-desc" style="text-align:left">다음에 의해 잠금 해제 채광 기술</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자의 광산 건설 능력을 잠금 해제합니다.<br><br><img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력 +1을 제공합니다. 매력도 -1이 적용됩니다. 언덕 또는 유효한 자원 위에 지어야 합니다.<br><br>사치 또는 전략 자원 위에 지으면 도시가 해당 자원을 사용할 수 있습니다.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="근해 풍력 발전 단지">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_OFFSHORE_WIND_FARM_NAME-->
+                      <h2 class="civ-name">근해 풍력 발전 단지
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Offshore Wind Farm.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">약탈 보상: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">인접 타일에 매력도 제공: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자 건설자</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  해안 및 호수</p>
+                      <p class="civ-ability-desc" style="text-align:left">다음에 의해 잠금 해제 예측 시스템 기술</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자의 근해 풍력 발전 단지 건설 능력을 잠금 해제합니다.<br><br><img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력 +2를 제공합니다. 턴당 <img src="/images/ICON_POWER.webp" style="height:1em"/> 전력 2를 제공합니다. 해안이나 호수 지형에 건설해야 합니다.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="나스카 라인">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_NAZCA_LINE_NAME-->
+                      <h2 class="civ-name">나스카 라인
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Nazca Line.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">약탈 보상: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">인접 타일에 매력도 제공: 1</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자 건설자</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  사막</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자의 나스카 라인 건설 능력을 잠금 해제합니다.<br><br>인접 타일에 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 신앙 +1을 제공합니다. 자원이 있는 인접 타일에 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 신앙 +1을 제공합니다. 공공 행정 발견 후 인접한 사막 및 사막 언덕 타일에 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 식량 +1을 제공합니다. 대량 생산 연구 후 인접한 평지 타일에 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력 +1을 제공합니다. 매력도 +1을 제공합니다. 평지 사막에만 건설할 수 있습니다. 이 타일은 작업할 수 없습니다.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="농장">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_FARM_NAME-->
+                      <h2 class="civ-name">농장
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Farm.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">약탈 보상: 체력 회복 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 주거공간</p>
+                      <p class="civ-ability-desc" style="text-align:left">인접 타일에 매력도 제공: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 식량</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화에서 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 관광 100%(비행 기술 필요)</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자 건설자</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  초원,  초원 (언덕) (필요 조건: 토목 공학),  평원,  평원 (언덕) (필요 조건: 토목 공학)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  범람원,  범람원(초원),  범람원(평원),  화산토</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자의 농장 건설 능력을 잠금 해제합니다.<br><br><img src="/images/ICON_FOOD.webp" style="height:1em"/> 식량 +1을 제공합니다. 초원 또는 평원에 지어야 합니다.<br><br>농장 옆에 다른 농장을 지으면 주거공간 보너스가 부여됩니다.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="누비아 피라미드">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_PYRAMID_NAME-->
+                      <h2 class="civ-name">누비아 피라미드
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Nubian Pyramid.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">약탈 보상: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">인접 타일에 매력도 제공: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 신앙</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 식량</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자 건설자</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  사막,  사막 (언덕),  초원,  평원</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  범람원,  범람원(초원),  범람원(평원)</p>
+                      <p class="civ-ability-desc" style="text-align:left">다음에 의해 잠금 해제 장인 정신 사회 제도</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">장인정신 사회제도와 함께 잠금 해제되며 사막, 사막 언덕, 초원 및 평원에 지어야 하는 시설입니다. 도시당 하나만 가능하며 다른 누비아 피라미드 옆에 지을 수 없습니다. <img src="/images/ICON_FOOD.webp" style="height:1em"/> 식량 +2, <img src="/images/ICON_FAITH.webp" style="height:1em"/> 신앙 +2를 제공합니다. 도심부에 인접하는 경우 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 식량 +1, 주둔지와 공항에 인접하는 경우 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력 +1, 정부 청사와 외교지구에 인접하는 경우 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 금 +2, <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화 +1을 제공합니다. 인접 보너스를 제공하는 다른 모든 특수지구(캠퍼스:<img src="/images/ICON_SCIENCE.webp" style="height:1em"/>, 산업구역:<img src="/images/ICON_PRODUCTION.webp" style="height:1em"/>, 극장가:<img src="/images/ICON_CULTURE.webp" style="height:1em"/>, 성지:<img src="/images/ICON_FAITH.webp" style="height:1em"/>, 상업 중심지와 항만:<img src="/images/ICON_GOLD.webp" style="height:1em"/>)에 대해 해당 특수지구가 인접했다면 해당 산출물 +1을 제공합니다. 누비아 피라미드는 주변 특수지구에 인접 보너스 +1을 제공합니다.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="돔 시장">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_TRADING_DOME_NAME-->
+                      <h2 class="civ-name">돔 시장
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Trading Dome.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">약탈 보상: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">인접 타일에 매력도 제공: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 금</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자 건설자</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  사막,  사막 (언덕),  초원,  초원 (언덕),  평원,  평원 (언덕),  설원,  설원 (언덕),  툰드라,  툰드라 (언덕)</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자의 돔 시장 건설 능력을 잠금 해제합니다.<br><br> <img src="/images/ICON_GOLD.webp" style="height:1em"/> 금 +2를 제공합니다. 인접 사치 자원당 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 금 +1. 외부 국제 <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> 교역로가 출발지의 돔 시장당 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 금 +1를 부여합니다. 다른 돔 시장 옆에 건설할 수 없습니다.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="로마 요새">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_ROMAN_FORT_NAME-->
+                      <h2 class="civ-name">로마 요새
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Roman Fort.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">방어 보정치: 4</p>
+                      <p class="civ-ability-desc" style="text-align:left">점유 유닛에 요새화 보너스를 적용합니다.</p>
+                      <p class="civ-ability-desc" style="text-align:left">인접 타일에 매력도 제공: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자 군단병</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  사막,  사막 (언덕),  초원,  초원 (언덕),  평원,  평원 (언덕),  설원,  설원 (언덕),  툰드라,  툰드라 (언덕)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  화산토</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">로마 특유의 로마 요새를 지을 수 있는 로마 군단병의 능력을 잠금 해제합니다.<br><br>점유 유닛의 시야가 +1 증가하며, <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 방어력 +4를 획득하고, 자동으로 2턴의 방어 태세를 얻습니다.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="마하비하라">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MAHAVIHARA_NAME-->
+                      <h2 class="civ-name">마하비하라
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Mahavihara.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">약탈 보상: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 주거공간</p>
+                      <p class="civ-ability-desc" style="text-align:left">인접 타일에 매력도 제공: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 과학</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자 건설자</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  사막,  초원,  평원,  설원,  툰드라</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">마하비하라를 건설할 수 있는 건설자 능력을 잠금 해제합니다.<br><br><img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 과학 +2와 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 문화 +1을 얻습니다. 인접한 성지 특수지구마다 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 신앙 +1을, 인접한 캠퍼스 특수지구마다 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 과학 +1. 과학이론을 연구한 후 인접 캠퍼스마다 추가로 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 과학 +1을 얻습니다. 첫 마하비하라를 건설한 플레이어는 무작위 기술을 얻습니다. 다른 마하비하라와 인접하지 않은 평지에 건설해야 합니다.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="만리장성">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_GREAT_WALL_NAME-->
+                      <h2 class="civ-name">만리장성
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Great Wall.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">약탈 보상: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">방어 보정치: 4</p>
+                      <p class="civ-ability-desc" style="text-align:left">점유 유닛에 요새화 보너스를 적용합니다.</p>
+                      <p class="civ-ability-desc" style="text-align:left">인접 타일에 매력도 제공: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화에서 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 관광 100%(비행 기술 필요)</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자 건설자</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  사막,  사막 (언덕),  초원,  초원 (언덕),  평원,  평원 (언덕),  설원,  설원 (언덕),  툰드라,  툰드라 (언덕)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  화산토</p>
+                      <p class="civ-ability-desc" style="text-align:left">다음에 의해 잠금 해제 석조기술 기술</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">중국 특유의 만리장성을 지을 수 있는 건설자 능력을 잠금 해제합니다.<br><br><img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력 +1을 제공합니다. 점유 유닛의 시야가 +1 증가하며, <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 방어력 +4를 획득하고, 자동으로 2턴의 방어 태세를 얻습니다. 서로 연결된 만리장성 타일에는 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 금 보너스를 제공합니다. 지도자에 따라, 인접 만리장성 타일에 산출량이 추가로 부여됩니다:<br><span>&#8226;</span> 측천무후에서 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 과학.<br><span>&#8226;</span> 영락제에서 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 식량.<br><span>&#8226;</span> 진시황(통일한 자)에서 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력.<br><span>&#8226;</span> 진시황(천명)에서 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 금 및 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 신앙.<br><span>&#8226;</span> 쿠빌라이 칸에서 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화.<br>제국 국경을 따라 일렬로 지어야 합니다. 자연재해로 인해 약탈당할 수 있지만, 파괴되지는 않습니다.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="메케와프">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MEKEWAP_NAME-->
+                      <h2 class="civ-name">메케와프
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Mekewap.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">약탈 보상: 체력 회복 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 주거공간</p>
+                      <p class="civ-ability-desc" style="text-align:left">인접 타일에 매력도 제공: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력 (다음에 의해 잠금 해제 공공 행정 사회 제도)</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자 건설자</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  사막,  사막 (언덕),  초원,  초원 (언덕),  평원,  평원 (언덕),  설원,  설원 (언덕),  툰드라,  툰드라 (언덕)</p>
+                      <p class="civ-ability-desc" style="text-align:left">다음에 의해 잠금 해제 도예 기술</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">크리 특유의 메케와프를 지을 수 있는 건설자 능력을 잠금 해제합니다.<br><br><img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력 +1 및 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 주거공간 +1을 제공합니다. 사치 자원이 인접해 있으면 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 금 +1을 제공합니다. 인접 보너스 자원 2개마다 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 식량 +1을 제공합니다. 공공 행정 사회제도를 보유하면 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 주거공간 +1을 추가 제공합니다. 기술 발전표와 사회 제도 진보에 따라 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력과 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 금, <img src="/images/ICON_FOOD.webp" style="height:1em"/> 식량이 추가됩니다. 보너스 자원이나 사치 자원 옆에 배치해야 합니다. 다른 메케와프 옆에 지을 수 없습니다.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="모아이">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MOAI_NAME-->
+                      <h2 class="civ-name">모아이
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Moai.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">약탈 보상: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">인접 타일에 매력도 제공: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화에서 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 관광 100%(비행 기술 필요)</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자 건설자</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  초원,  초원 (언덕),  평원,  평원 (언덕)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  화산토</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자의 모아이 건설 능력을 잠금 해제합니다.<br><br><img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화 +1을 제공합니다. 인접한 모아이 2개마다 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화 +1을 제공합니다. 화산토에 있거나 인접한 경우 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화 +2을 제공합니다. 해안 또는 호수 타일에 인접한 경우 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화 +1을 제공합니다. 기술 발전표와 사회 제도 진보에 따라 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화와 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 관광이 추가됩니다. 평원, 평원 언덕, 초원, 초원 언덕이나 화산토에 건설할 수 있습니다. 숲이나 열대우림 타일 옆에 건설할 수 없습니다.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="목장">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_PASTURE_NAME-->
+                      <h2 class="civ-name">목장
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Pasture.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">약탈 보상: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 주거공간</p>
+                      <p class="civ-ability-desc" style="text-align:left">인접 타일에 매력도 제공: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 식량 (다음에 의해 잠금 해제 등자 기술)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력 (다음에 의해 잠금 해제 교환부품 기술)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 식량 (다음에 의해 잠금 해제 로봇공학 기술)</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화에서 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 관광 100%(비행 기술 필요)</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자 건설자</p>
+                      <p class="civ-ability-desc" style="text-align:left">다음에 의해 잠금 해제 목축업 기술</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자의 목장 건설 능력을 잠금 해제합니다.<br><br><img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력 +1을 제공합니다. 유효한 자원 위에 지어야 합니다.<br><br>전략 자원 위에 지으면 도시가 해당 자원을 사용할 수 있습니다.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="미사일 격납고">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MISSILE_SILO-->
+                      <h2 class="civ-name">미사일 격납고
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Missile Silo.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">인접 타일에 매력도 제공: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자 공병</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  사막,  초원,  평원,  설원,  툰드라</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  화산토</p>
+                      <p class="civ-ability-desc" style="text-align:left">다음에 의해 잠금 해제 로켓공학 기술</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">공병의 미사일 격납고 건설 능력을 잠금 해제합니다.<br><br>핵 폭탄 및 수소 폭탄 발사장 기능을 합니다.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="바테이">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_BATEY_NAME-->
+                      <h2 class="civ-name">바테이
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Batey.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">약탈 보상: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">인접 타일에 매력도 제공: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화에서 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 관광 100%(비행 기술 필요)</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자 건설자</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  사막,  사막 (언덕),  초원,  초원 (언덕),  평원,  평원 (언덕),  설원,  설원 (언덕),  툰드라,  툰드라 (언덕)</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">바테이를 건설할 수 있는 건설자 능력을 잠금 해제합니다.<br><br><img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화 +1을 얻습니다. 인접한 보너스 자원 및 유흥단지마다 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화 +1을 얻습니다(탐험 발견 시 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화 +2로 증가). 비행 연구 후 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 관광을 제공합니다. 다른 바테이 인근 또는 언덕에는 건설할 수 없습니다.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="산악 터널">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MOUNTAIN_TUNNEL_NAME-->
+                      <h2 class="civ-name">산악 터널
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Mountain Tunnel.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">인접 타일에 매력도 제공: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자 공병</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  사막 (산),  초원 (산),  평원 (산),  설원 (산),  툰드라 (산)</p>
+                      <p class="civ-ability-desc" style="text-align:left">다음에 의해 잠금 해제 군사 과학 기술</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">공병의 산악 터널 건설 능력을 잠금 해제합니다.<br><br>산맥에서 이동 차원문과 같은 역할을 하여, 들어간 유닛은 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 이동력 2를 소모하여 다른 차원문에서 나올 수 있습니다. 이곳을 지나가는 <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> 교역로는 목적지에 있는 특수지구에서 얻는 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 금의 양을 배가시킬 수 있습니다. 인접한 산 타일에만 건설할 수 있습니다. 약탈하거나 제거할 수 없습니다.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="샤토">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_CHATEAU_NAME-->
+                      <h2 class="civ-name">샤토
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Château.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">약탈 보상: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 주거공간</p>
+                      <p class="civ-ability-desc" style="text-align:left">인접 타일에 매력도 제공: 1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 식량</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 금</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화에서 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 관광 100%(비행 기술 필요)</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자 건설자</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  사막,  사막 (언덕),  초원,  초원 (언덕),  평원,  평원 (언덕),  설원,  설원 (언덕),  툰드라,  툰드라 (언덕)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  범람원,  범람원(초원),  범람원(평원)</p>
+                      <p class="civ-ability-desc" style="text-align:left">다음에 의해 잠금 해제 봉건제 사회 제도</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">프랑스 특유의 샤토를 지을 수 있는 건설자 능력을 잠금 해제합니다.<br><br><img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화 +1, <img src="/images/ICON_FOOD.webp" style="height:1em"/> 식량 +1, <img src="/images/ICON_GOLD.webp" style="height:1em"/> 금 +1, <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 주거공간 +1을 제공합니다. 매력도 +1을 제공합니다. 인접한 모든 불가사의마다 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화 +1을 제공하며, 비행을 연구하면 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화 +1을 추가로 제공합니다. 강에 인접하면 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 금 +2를 제공합니다. 인접한 모든 사치 자원마다 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화 +1과 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 금 +1을 제공합니다. 비행을 연구하면 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 관광을 제공합니다. 다른 샤토에 인접하게 지을 수 없습니다.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="수도원">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MONASTERY_NAME-->
+                      <h2 class="civ-name">수도원
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Monastery.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">약탈 보상: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 주거공간</p>
+                      <p class="civ-ability-desc" style="text-align:left">인접 타일에 매력도 제공: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 신앙</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 식량</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_FAITH.webp" style="height:1em"/> 신앙에서 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 관광 100%(비행 기술 필요)</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자 건설자</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  사막,  사막 (언덕),  초원,  초원 (언덕),  평원,  평원 (언덕),  설원,  설원 (언덕),  툰드라,  툰드라 (언덕)</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자의 수도원 건설 능력을 잠금 해제합니다.<br><br>수도원이 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 식량 +1, <img src="/images/ICON_FAITH.webp" style="height:1em"/> 신앙 +3, <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 주거공간 +1을 제공합니다. 이 타일에 위치하고 이번 턴에 공격하지 않은 우호적인 종교 유닛 체력이 +15 회복합니다. 인접한 특수지구 2개마다 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 신앙 +1을 제공합니다.(개혁 교회 사회제도 보유 시 인접 특수지구 1개마다 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 신앙 +1). 식민주의를 발견하면 추가 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 주거공간을 제공합니다. 비행 연구 후 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 신앙으로 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 관광을 제공합니다. 다른 수도원 옆에 지을 수 없습니다.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="스키 리조트">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_SKI_RESORT_NAME-->
+                      <h2 class="civ-name">스키 리조트
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Ski Resort.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">인접 타일에 매력도 제공: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left"> 매력도에서 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 관광 100%</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자 건설자</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  사막 (산),  초원 (산),  평원 (산),  설원 (산),  툰드라 (산)</p>
+                      <p class="civ-ability-desc" style="text-align:left">다음에 의해 잠금 해제 프로 스포츠 사회 제도</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자의 스키 리조트 건설 능력을 잠금 해제합니다.<br><br><img src="/images/ICON_TOURISM.webp" style="height:1em"/> 관광 +4를 제공합니다. <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> 쾌적도를 제공합니다. 산에만 건설할 수 있습니다. 다른 스키 리조트의 옆에 건설할 수 없습니다. 약탈, 사용 또는 제거할 수 없습니다.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="스핑크스">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_SPHINX_NAME-->
+                      <h2 class="civ-name">스핑크스
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Sphinx.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">약탈 보상: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">인접 타일에 매력도 제공: 2</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 신앙</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화 (다음에 의해 잠금 해제 외교부 사회 제도)</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화에서 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 관광 100%(비행 기술 필요)</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자 건설자</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  사막,  사막 (언덕),  초원,  초원 (언덕),  평원,  평원 (언덕),  툰드라,  툰드라 (언덕)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  범람원,  범람원(초원),  범람원(평원)</p>
+                      <p class="civ-ability-desc" style="text-align:left">다음에 의해 잠금 해제 장인 정신 사회 제도</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">이집트 특유의 스핑크스를 지을 수 있는 건설자의 능력을 잠금 해제합니다.<br><br><img src="/images/ICON_FAITH.webp" style="height:1em"/> 신앙 +2 및 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화 +1을 제공합니다. 매력도 +2를 제공합니다.<br><br>불가사의 옆에 지으면 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 신앙 +1 및 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화 +1을 추가 제공합니다. 범람원이 아닌 사막에 지으면 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 식량 +1 및 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력 +1을 추가 제공합니다. 범람원에 지으면 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화 +1을 제공합니다.<br><br>외교부 사회 제도를 발견하면 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화를 추가로 제공합니다. 비행을 연구하면 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 관광을 제공합니다. 다른 스핑크스 옆에 지을 수 없습니다. 설원 또는 설원 언덕에 지을 수 없습니다.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="시립 공원">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_CITY_PARK_NAME-->
+                      <h2 class="civ-name">시립 공원
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/City Park.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">약탈 보상: 체력 회복 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">인접 타일에 매력도 제공: 2</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화</p>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 과학</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화에서 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 관광 100%(비행 기술 필요)</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자 건설자</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  사막,  초원,  평원,  설원,  툰드라</p>
+                      <p class="civ-ability-desc" style="text-align:left">다음에 의해 잠금 해제 오락과 여가 사회 제도</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_GOVERNOR.webp" style="height:1em"/> 총독 특유 시설로 공원 및 휴가 진급을 보유한 측량사 총독이 있는 도시 안에 건설할 수 있습니다. 도시당 하나만 건설 가능합니다. <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 과학 +3, <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화 +2, <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 주거 +2, <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> 쾌적도 +1과 매력도 +2를 제공합니다.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="시스테드">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_SEASTEAD_NAME-->
+                      <h2 class="civ-name">시스테드
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Seastead.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">약탈 보상: 체력 회복 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+4 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 주거공간</p>
+                      <p class="civ-ability-desc" style="text-align:left">인접 타일에 매력도 제공: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 식량</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화에서 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 관광 100%</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자 건설자</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  해안 및 호수,  해양</p>
+                      <p class="civ-ability-desc" style="text-align:left">다음에 의해 잠금 해제 시스테드 기술</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자의 시스테드 건설 능력을 잠금 해제합니다.<br><br><img src="/images/ICON_FOOD.webp" style="height:1em"/> 식량 +2를 제공합니다. 인접한 어선마다 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력 +1을 제공합니다. 인접한 시스테드마다 어선에 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력 +1을 제공합니다. 인접한 산호초마다 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화와 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 관광 +1을 제공합니다. <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 주거공간 +2를 제공합니다. 해안, 호수 또는 바다 지형에 건설해야 합니다. 다른 시스테드 옆에 위치할 수 없습니다.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="아웃백 목장">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_OUTBACK_STATION_NAME-->
+                      <h2 class="civ-name">아웃백 목장
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Outback Station.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">약탈 보상: 체력 회복 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 주거공간</p>
+                      <p class="civ-ability-desc" style="text-align:left">인접 타일에 매력도 제공: 1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 식량</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자 건설자</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  사막,  사막 (언덕),  초원,  초원 (언덕),  평원,  평원 (언덕)</p>
+                      <p class="civ-ability-desc" style="text-align:left">다음에 의해 잠금 해제 길드 사회 제도</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">호주 특유의 아웃백 목장을 지을 수 있는 건설자의 능력을 잠금 해제합니다.<br><br><img src="/images/ICON_FOOD.webp" style="height:1em"/> 식량 +1 및 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력 +1을 제공합니다. 매력도 +1을 제공합니다. 인접한 목장마다 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 식량 +1을 제공합니다. 기술 발전표 및 사회 제도표의 진전에 따라 인접 아웃백 목장 및 목장에 추가 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 식량 및 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력을 제공합니다. 사막, 초원 및 평원 타일에만 지을 수 있습니다.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="아이스하키 링크">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_ICE_HOCKEY_RINK_NAME-->
+                      <h2 class="civ-name">아이스하키 링크
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Ice Hockey Rink.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">약탈 보상: 체력 회복 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">인접 타일에 매력도 제공: 2</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력 (다음에 의해 잠금 해제 프로 스포츠 사회 제도)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 식량 (다음에 의해 잠금 해제 프로 스포츠 사회 제도)</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화에서 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 관광 100%(비행 기술 필요)</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자 건설자</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  설원,  설원 (언덕),  툰드라,  툰드라 (언덕)</p>
+                      <p class="civ-ability-desc" style="text-align:left">다음에 의해 잠금 해제 외교부 사회 제도</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">캐나다 특유의 아이스하키 링크 건설을 위한 건설자 능력을 잠금 해제합니다.<br><br><img src="/images/ICON_AMENITIES.webp" style="height:1em"/> 쾌적도 +1을 제공합니다. 인접한 각 툰드라, 툰드라 언덕, 설원 및 설원 언덕 타일마다 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화 +1을 제공합니다. 비행 기술이 잠금 해제되면 문화에서 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 관광을 제공합니다. 프로 스포츠 사회 제도가 잠금 해제되면 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 식량과 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력 +2를 제공합니다. 경기장 건물에 인접한 경우 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화 +4를 제공합니다. 툰드라, 툰드라 언덕, 설원 및 설원 언덕 타일에 건설할 수 있습니다. 도시당 1회만 건설 가능합니다. 매력도 +2를 제공합니다.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="알카사르">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_ALCAZAR_NAME-->
+                      <h2 class="civ-name">알카사르
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Alcázar.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">약탈 보상: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">방어 보정치: 4</p>
+                      <p class="civ-ability-desc" style="text-align:left">점유 유닛에 요새화 보너스를 적용합니다.</p>
+                      <p class="civ-ability-desc" style="text-align:left">매력도에서 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 관광 50%</p>
+                      <p class="civ-ability-desc" style="text-align:left">인접 타일에 매력도 제공: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화에서 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 관광 100%(비행 기술 필요)</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자 건설자</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  사막,  사막 (언덕),  초원,  초원 (언덕),  평원,  평원 (언덕),  설원,  설원 (언덕),  툰드라,  툰드라 (언덕)</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자의 알카사르 건설 능력을 잠금 해제합니다.<br><br><img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화 +2. 타일 매력도의 50%만큼 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 과학을 제공합니다. 점유 유닛은 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 방어력 +4를 획득하고, 자동으로 2턴의 방어 태세를 얻습니다. 비행을 연구하면 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 관광을 제공합니다. 다른 알카사르 옆에 지을 수 없습니다.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="암굴 교회">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_ROCK_HEWN_CHURCH_NAME-->
+                      <h2 class="civ-name">암굴 교회
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Rock-Hewn Church.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">약탈 보상: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">인접 타일에 매력도 제공: 1</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_FAITH.webp" style="height:1em"/> 신앙에서 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 관광 100%(비행 기술 필요)</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자 건설자</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  사막 (언덕),  초원 (언덕),  평원 (언덕),  설원 (언덕),  툰드라 (언덕)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  화산토</p>
+                      <p class="civ-ability-desc" style="text-align:left">다음에 의해 잠금 해제 드라마와 시 사회 제도</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">에티오피아 특유 건물인 암굴 교회를 건설할 수 있는 건설자 능력을 잠금 해제합니다.<br><br>인접한 산맥 및 언덕마다 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 신앙 +1을 제공합니다. 비행 연구 후 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 신앙으로 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 관광을 제공합니다. 매력도 +1을 제공합니다. 자연재해로 인해서만 약탈당할 수 있으며 파괴되지 않습니다. 다른 암굴 교회에 인접하지 않은 언덕 또는 화산토에만 건설할 수 있습니다.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="야영지">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_CAMP_NAME-->
+                      <h2 class="civ-name">야영지
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Camp.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">약탈 보상: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 주거공간</p>
+                      <p class="civ-ability-desc" style="text-align:left">인접 타일에 매력도 제공: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 금</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력 (다음에 의해 잠금 해제 중상주의 사회 제도)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 식량 (다음에 의해 잠금 해제 중상주의 사회 제도)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 금 (다음에 의해 잠금 해제 합성 자재 기술)</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화에서 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 관광 100%(비행 기술 필요)</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자 건설자</p>
+                      <p class="civ-ability-desc" style="text-align:left">다음에 의해 잠금 해제 목축업 기술</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자의 야영지 건설 능력을 잠금 해제합니다.<br><br> <img src="/images/ICON_GOLD.webp" style="height:1em"/> 금 +2를 제공합니다. 유효한 자원 위에 지어야 합니다.<br><br>사치 자원 위에 지으면 도시가 해당 자원을 사용할 수 있습니다.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="야외 박물관">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_OPEN_AIR_MUSEUM_NAME-->
+                      <h2 class="civ-name">야외 박물관
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Open-Air Museum.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">약탈 보상: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">인접 타일에 매력도 제공: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화에서 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 관광 100%</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자 건설자</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  사막,  사막 (언덕),  초원,  초원 (언덕),  평원,  평원 (언덕),  설원,  설원 (언덕),  툰드라,  툰드라 (언덕)</p>
+                      <p class="civ-ability-desc" style="text-align:left">다음에 의해 잠금 해제 외교부 사회 제도</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">스웨덴 특유의 야외 박물관 건설을 위한 건설자 능력을 잠금 해제합니다.<br><br>이 도시에 턴당 충성심 +2를 제공합니다. 1개 이상의 스웨덴 도시가 건설된 각 지형 유형(설원, 툰드라, 사막, 평원 또는 초원)마다 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화 +2와 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 관광 +2를 제공합니다. 도시당 1개만 건설할 수 있습니다. 야외 박물관이 있는 타일은 교체할 수 없습니다.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="양식장">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_FISHERY_NAME-->
+                      <h2 class="civ-name">양식장
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Fishery.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">약탈 보상: 체력 회복 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 주거공간</p>
+                      <p class="civ-ability-desc" style="text-align:left">인접 타일에 매력도 제공: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 식량</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자 건설자</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  해안 및 호수</p>
+                      <p class="civ-ability-desc" style="text-align:left">다음에 의해 잠금 해제 천문 항법 기술</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">양식장을 지을 수 있는 건설자 능력을 잠금 해제합니다.<br><br><img src="/images/ICON_FOOD.webp" style="height:1em"/> 식량 +1, <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 주거 +1을 제공하며, 해양 자원에 인접해 있으면 추가 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 식량 +1을 제공합니다. 해안 지역에 건설해야 합니다.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="어선">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_FISHING_BOATS_NAME-->
+                      <h2 class="civ-name">어선
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Fishing Boats.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">약탈 보상: 체력 회복 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 주거공간</p>
+                      <p class="civ-ability-desc" style="text-align:left">인접 타일에 매력도 제공: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 식량</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 금 (다음에 의해 잠금 해제 지도 제작 기술)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 식량 (다음에 의해 잠금 해제 플라스틱 기술)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력 (다음에 의해 잠금 해제 식민주의 사회 제도)</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화에서 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 관광 100%(비행 기술 필요)</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자 건설자 또는  자하지</p>
+                      <p class="civ-ability-desc" style="text-align:left">다음에 의해 잠금 해제 항해 기술</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자의 어선 건설 능력을 잠금 해제합니다.<br><br><img src="/images/ICON_FOOD.webp" style="height:1em"/> 식량 +1, <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력 +1을 제공합니다. 유효한 자원 위에 지어야 합니다.<br><br>사치 자원 위에 지으면 도시가 해당 자원을 사용할 수 있습니다.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="요새">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_FORT_NAME-->
+                      <h2 class="civ-name">요새
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Fort.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">방어 보정치: 4</p>
+                      <p class="civ-ability-desc" style="text-align:left">점유 유닛에 요새화 보너스를 적용합니다.</p>
+                      <p class="civ-ability-desc" style="text-align:left">인접 타일에 매력도 제공: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자 공병</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  사막,  사막 (언덕),  초원,  초원 (언덕),  평원,  평원 (언덕),  설원,  설원 (언덕),  툰드라,  툰드라 (언덕)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  화산토</p>
+                      <p class="civ-ability-desc" style="text-align:left">다음에 의해 잠금 해제 군사 공학 기술</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">점유 유닛의 시야가 +1 증가하며, <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 방어력 +4를 획득하고, 자동으로 2턴의 방어 태세를 얻습니다.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="유정">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_OIL_WELL_NAME-->
+                      <h2 class="civ-name">유정
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Oil Well.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">약탈 보상: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">인접 타일에 매력도 제공: -1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력 (다음에 의해 잠금 해제 예측 시스템 기술)</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화에서 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 관광 100%(비행 기술 필요)</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자 건설자</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  사막,  사막 (언덕),  초원,  초원 (언덕),  평원,  평원 (언덕),  설원,  설원 (언덕),  툰드라,  툰드라 (언덕)</p>
+                      <p class="civ-ability-desc" style="text-align:left">다음에 의해 잠금 해제 정제 기술</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자의 유정 건설 능력을 잠금 해제합니다.<br><br>매력도 -1이 적용됩니다. <img src="/images/ICON_RESOURCE_OIL.webp" style="height:1em"/> 석유가 있는 육지 타일에 건설해야 합니다.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="재배지">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_PLANTATION_NAME-->
+                      <h2 class="civ-name">재배지
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Plantation.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">약탈 보상: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 주거공간</p>
+                      <p class="civ-ability-desc" style="text-align:left">인접 타일에 매력도 제공: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 금</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 식량 (다음에 의해 잠금 해제 과학이론 기술)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 금 (다음에 의해 잠금 해제 세계화 사회 제도)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 식량 (다음에 의해 잠금 해제 중세 시장 사회 제도)</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화에서 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 관광 100%(비행 기술 필요)</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자 건설자</p>
+                      <p class="civ-ability-desc" style="text-align:left">다음에 의해 잠금 해제 관개 기술</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자의 재배지 건설 능력을 잠금 해제합니다.<br><br><img src="/images/ICON_GOLD.webp" style="height:1em"/> 금 +2를 제공하며, 평지에 건설 시 추가 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력 +1을 제공합니다. 유효한 자원 위에 지어야 합니다.<br><br>사치 자원 위에 지으면 도시가 해당 자원을 사용할 수 있습니다.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="전도관">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MISSION_NAME-->
+                      <h2 class="civ-name">전도관
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Mission.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">약탈 보상: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">인접 타일에 매력도 제공: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 신앙</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 과학 (다음에 의해 잠금 해제 계몽주의 사회 제도)</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자 건설자</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  사막,  사막 (언덕),  초원,  초원 (언덕),  평원,  평원 (언덕),  설원,  설원 (언덕),  툰드라,  툰드라 (언덕)</p>
+                      <p class="civ-ability-desc" style="text-align:left">다음에 의해 잠금 해제 신학 사회 제도</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">스페인 특유의 전도관을 지을 수 있는 건설자 능력을 잠금 해제합니다.<br><br><img src="/images/ICON_FAITH.webp" style="height:1em"/> 신앙 +2를 제공합니다. 현재 <img src="/images/ICON_CAPITAL.webp" style="height:1em"/> 수도에서 8타일 이상 떨어져 있으면 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 신앙 +1, <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력 +1을 제공합니다. 수도 7타일 이내에 있으면 대신 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 주거 +1을 제공합니다.<br><br>모든 인접한 캠퍼스 및 성지 특수지구에 대해 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 과학 +1을 제공합니다. 계몽주의 사회 제도를 획득하면 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 과학 +2를 추가 제공합니다. 다른 전도관 옆에 지을 수 없습니다.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="제재소">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_LUMBER_MILL_NAME-->
+                      <h2 class="civ-name">제재소
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Lumber Mill.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">약탈 보상: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">인접 타일에 매력도 제공: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력 (다음에 의해 잠금 해제 탄도학 기술)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력 (다음에 의해 잠금 해제 합성 자재 기술)</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화에서 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 관광 100%(비행 기술 필요)</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자 건설자</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  숲,  열대우림 (필요 조건: 중상주의)</p>
+                      <p class="civ-ability-desc" style="text-align:left">다음에 의해 잠금 해제 건축 기술</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자의 제재소 건설 능력을 잠금 해제합니다.<br><br><img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력 +2를 제공합니다. 숲에만 건설할 수 있습니다. 중상주의가 잠금 해제되면 열대우림에 지을 수도 있습니다.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="지구라트">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_ZIGGURAT_NAME-->
+                      <h2 class="civ-name">지구라트
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Ziggurat.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">약탈 보상: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 주거공간</p>
+                      <p class="civ-ability-desc" style="text-align:left">인접 타일에 매력도 제공: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 과학</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화 (다음에 의해 잠금 해제 자연사 사회 제도)</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화에서 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 관광 100%(비행 기술 필요)</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자 건설자</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  사막,  초원,  평원,  설원,  툰드라</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  범람원,  범람원(초원),  범람원(평원)</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">수메르 특유의 지구라트를 지을 수 있는 건설자의 능력을 잠금 해제합니다.<br><br><img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 과학 +2를 제공합니다. 강 옆에 지으면 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화 +1을 제공합니다. 초기 제국 사회 제도를 획득하면 인접한 특수지구마다 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 신앙 +1, 인접한 농장 2개마다 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 신앙 +1을 제공합니다. 외교부 사회 제도를 획득하면 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화 +1을 추가 제공하며, 계몽주의 사회 제도를 획득하면 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화 +1과 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 과학 +1을 추가 제공합니다. 언덕에 지을 수 없습니다.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="지열 발전소">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_GEOTHERMAL_PLANT_NAME-->
+                      <h2 class="civ-name">지열 발전소
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Geothermal Plant.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">약탈 보상: <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">인접 타일에 매력도 제공: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 과학</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력 (다음에 의해 잠금 해제 합성 자재 기술)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 과학 (다음에 의해 잠금 해제 합성 자재 기술)</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자 건설자</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  지열 열하</p>
+                      <p class="civ-ability-desc" style="text-align:left">다음에 의해 잠금 해제 화학 기술</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자의 지열 발전소 건설 능력을 잠금 해제합니다.<br><br><img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력 +2, <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 과학 +1, 턴당 <img src="/images/ICON_POWER.webp" style="height:1em"/> 전력 3을 제공합니다. 합성 자재 기술을 완료하면 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력 +1, <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 과학 +1 및 <img src="/images/ICON_POWER.webp" style="height:1em"/> 전력 3을 추가 제공합니다. 지열 열하에 건설해야 합니다.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="채석장">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_QUARRY_NAME-->
+                      <h2 class="civ-name">채석장
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Quarry.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">약탈 보상: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">인접 타일에 매력도 제공: -1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력 (다음에 의해 잠금 해제 로켓공학 기술)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력 (다음에 의해 잠금 해제 군사 공학 기술)</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화에서 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 관광 100%(비행 기술 필요)</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자 건설자</p>
+                      <p class="civ-ability-desc" style="text-align:left">다음에 의해 잠금 해제 채광 기술</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자의 채석장 건설 능력을 잠금 해제합니다.<br><br><img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력 +1을 제공합니다. 매력도 -1이 적용됩니다. 유효한 자원 위에 지어야 합니다.<br><br>사치 자원 위에 지으면 도시가 해당 자원을 사용할 수 있습니다.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="체마물">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_CHEMAMULL_NAME-->
+                      <h2 class="civ-name">체마물
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Chemamull.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">약탈 보상: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">요구: 매력도 &gt;= 4</p>
+                      <p class="civ-ability-desc" style="text-align:left">매력도에서 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 관광 75%</p>
+                      <p class="civ-ability-desc" style="text-align:left">인접 타일에 매력도 제공: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력 (다음에 의해 잠금 해제 공공 행정 사회 제도)</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화에서 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 관광 100%(비행 기술 필요)</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자 건설자</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  사막,  사막 (언덕),  초원,  초원 (언덕),  평원,  평원 (언덕),  설원,  설원 (언덕),  툰드라,  툰드라 (언덕)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  화산토</p>
+                      <p class="civ-ability-desc" style="text-align:left">다음에 의해 잠금 해제 장인 정신 사회 제도</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">마푸체 특유의 체마물을 지을 수 있는 건설자의 능력을 잠금 해제합니다.<br><br><img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력 +1을 제공합니다. 타일 매력도의 75%만큼 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화를 제공합니다. <br><br>공공행정 사회제도를 보유하면 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력 +1을 추가 제공합니다. 비행을 연구하면 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 관광을 추가로 제공합니다. 놀라운 매력도 이상의 타일에서 지을 수 있습니다.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="카팍냔">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MOUNTAIN_ROAD_NAME-->
+                      <h2 class="civ-name">카팍냔
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Qhapaq Ñan.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">인접 타일에 매력도 제공: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자 건설자 또는  와라칵 또는  레인저 또는  정찰병 또는  특수작전부대</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  사막 (산),  초원 (산),  평원 (산),  설원 (산),  툰드라 (산)</p>
+                      <p class="civ-ability-desc" style="text-align:left">다음에 의해 잠금 해제 외국 무역 사회 제도</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">파차쿠티 특유의 카팍냔 건설을 위한 건설자 능력을 잠금 해제합니다.<br><br>산맥에서 이동 차원문과 같은 역할을 하여, 들어간 유닛은 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 이동력 2를 소모하여 다른 차원문에서 나올 수 있습니다. 이곳을 지나가는 <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> 교역로는 목적지에 있는 특수지구에서 얻는 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 금의 양을 배가시킬 수 있습니다. 인접한 산 타일에만 건설할 수 있습니다. 약탈하거나 제거할 수 없습니다.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="카호키아 마운드">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MOUND_NAME-->
+                      <h2 class="civ-name">카호키아 마운드
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Cahokia Mounds.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">약탈 보상: 체력 회복 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 주거공간</p>
+                      <p class="civ-ability-desc" style="text-align:left">인접 타일에 매력도 제공: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 금</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자 건설자</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  사막,  초원,  평원,  툰드라</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  범람원,  범람원(초원),  범람원(평원)</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자의 카호키아 마운드 건설 능력을 잠금 해제합니다.<br><br><img src="/images/ICON_GOLD.webp" style="height:1em"/> 금 +3을 제공합니다. 도시는 첫 번째 카호키아 마운드 시설에서 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> 쾌적도 1을 얻을 수 있습니다. 도시는 자연사를 발견할 때까지 두 번째 카호키아 마운드 시설에서 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> 쾌적도 1을 얻을 수 있습니다. 봉건제를 발견한 경우 인접한 특수지구 2개마다, 교환부품이 연구된 경우 인접한 특수지구마다 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 식량 +1을 제공합니다. <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 주거공간 +1을 제공합니다. 문화 유산을 발견하면 추가 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 주거공간을 얻습니다. 다른 카호키아 마운드 옆에 건설할 수 없습니다.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="캄풍">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_KAMPUNG_NAME-->
+                      <h2 class="civ-name">캄풍
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Kampung.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">약탈 보상: 체력 회복 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 주거공간</p>
+                      <p class="civ-ability-desc" style="text-align:left">인접 타일에 매력도 제공: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력 (다음에 의해 잠금 해제 토목 공학 사회 제도)</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_FOOD.webp" style="height:1em"/> 식량에서 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 관광 100%(비행 기술 필요)</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자 건설자</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  해안 및 호수</p>
+                      <p class="civ-ability-desc" style="text-align:left">다음에 의해 잠금 해제 조선 기술</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">인도네시아 특유의 캄풍을 지을 수 있는 건설자의 능력을 잠금 해제합니다.<br><br><img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력 +1과 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 주거공간 +1을 제공합니다. 인접한 어선에 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 식량 +1, <img src="/images/ICON_FAITH.webp" style="height:1em"/> 신앙 +1을 제공합니다. 기술 발전표와 사회 제도표의 진전에 따라 추가 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력, <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 주거공간과 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 관광을 제공합니다. 해양 자원과 인접한 해안 또는 호수 타일에 배치되어야 합니다.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="쿠르간">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_KURGAN_NAME-->
+                      <h2 class="civ-name">쿠르간
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Kurgan.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">약탈 보상: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">인접 타일에 매력도 제공: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 신앙</p>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 금</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_FAITH.webp" style="height:1em"/> 신앙에서 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 관광 100%(비행 기술 필요)</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자 건설자</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  사막,  사막 (언덕),  초원,  초원 (언덕),  평원,  평원 (언덕),  설원,  설원 (언덕),  툰드라,  툰드라 (언덕)</p>
+                      <p class="civ-ability-desc" style="text-align:left">다음에 의해 잠금 해제 목축업 기술</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">스키타이 특유의 쿠르간을 지을 수 있는 건설자의 능력을 잠금 해제합니다.<br><br><img src="/images/ICON_FAITH.webp" style="height:1em"/> 신앙 +1, <img src="/images/ICON_GOLD.webp" style="height:1em"/> 금 +3을 제공합니다. 인접한 목장마다 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 신앙 +1(등자 연구 이후 +2), <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력 +1을 추가 제공합니다. 비행을 연구하면 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 신앙에서 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 관광을 제공합니다.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="태양광 발전 단지">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_SOLAR_FARM_NAME-->
+                      <h2 class="civ-name">태양광 발전 단지
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Solar Farm.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">약탈 보상: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">인접 타일에 매력도 제공: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 금</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자 건설자</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  사막,  초원,  평원,  툰드라</p>
+                      <p class="civ-ability-desc" style="text-align:left">다음에 의해 잠금 해제 인공위성 기술</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자의 태양광 발전 단지 건설 능력을 잠금 해제합니다.<br><br><img src="/images/ICON_GOLD.webp" style="height:1em"/> 금 +1. <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력 +1. 턴당 <img src="/images/ICON_POWER.webp" style="height:1em"/> 전력 2를 제공합니다. 평지 지형에 건설해야 합니다. 설원에 건설할 수 없습니다.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="파">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MAORI_PA_NAME-->
+                      <h2 class="civ-name">파
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Pā.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">방어 보정치: 4</p>
+                      <p class="civ-ability-desc" style="text-align:left">점유 유닛에 요새화 보너스를 적용합니다.</p>
+                      <p class="civ-ability-desc" style="text-align:left">인접 타일에 매력도 제공: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자 토아</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  사막 (언덕),  초원 (언덕),  평원 (언덕),  설원 (언덕),  툰드라 (언덕)</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">마오리 특유의 파 건설을 위한 토아 능력을 잠금 해제합니다.<br><br>점유 유닛의 시야가 +1 증가하며, <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 방어력 +4를 획득하고, 자동으로 2턴의 방어 태세를 얻습니다. 파 점유 유닛은 이동 또는 공격 후라도 체력을 회복합니다. 언덕 타일에 건설해야 합니다.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="파이리다에자">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_PAIRIDAEZA_NAME-->
+                      <h2 class="civ-name">파이리다에자
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Pairidaeza.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">약탈 보상: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 주거공간</p>
+                      <p class="civ-ability-desc" style="text-align:left">인접 타일에 매력도 제공: 1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 금</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화 (다음에 의해 잠금 해제 외교부 사회 제도)</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화에서 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 관광 100%(비행 기술 필요)</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자 건설자</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  사막,  사막 (언덕),  초원,  초원 (언덕),  평원,  평원 (언덕)</p>
+                      <p class="civ-ability-desc" style="text-align:left">다음에 의해 잠금 해제 초기 제국 사회 제도</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">페르시아 특유의 파이리다에자를 지을 수 있는 건설자 능력을 잠금 해제합니다.<br><br><img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화 +1 및 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 금 +2, <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 주거공간 +1을 제공합니다. 매력도 +1을 제공합니다. 인접한 도심부, 성지, 캠퍼스 또는 극장가마다 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화 +1을 제공합니다. 인접한 도심부, 상업 중심지, 항만 또는 산업구역마다 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 금 +1을 제공합니다. 기술 발전표 및 사회 제도표의 진전에 따라 추가 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화 및 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 관광을 제공합니다. 설원, 툰드라, 설원 언덕, 툰드라 언덕 위에 또는 다른 파이리다에자 옆에 지을 수 없습니다.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="포르투갈 교역소">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_FEITORIA_NAME-->
+                      <h2 class="civ-name">포르투갈 교역소
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Feitoria.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">인접 타일에 매력도 제공: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+4 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 금</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자 나우</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  해안 및 호수</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">포르투갈 특유 건물인 포르투갈 교역소를 건설할 수 있는 나우 능력을 잠금 해제합니다.<br><br><img src="/images/ICON_GOLD.webp" style="height:1em"/> 금 +4와 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력 +1을 제공합니다. 포르투갈에서 이 도시로 보낸 교역로가 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 금 +2와 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력 +1을 얻습니다. 국경을 개방한 다른 문명이나 도시 국가에 속한 영토 내 사치 자원 또는 보너스 자원 인근에만 건설할 수 있습니다. 육지 옆에 있고 인근에 다른 포르투갈 교역소가 없는 해안 또는 호수 타일에 건설해야 합니다. 포르투갈 교역소는 제거할 수 없습니다.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="풍력 발전 단지">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_WIND_FARM_NAME-->
+                      <h2 class="civ-name">풍력 발전 단지
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Wind Farm.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">약탈 보상: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">인접 타일에 매력도 제공: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 금</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자 건설자</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  사막 (언덕),  초원 (언덕),  평원 (언덕),  설원 (언덕),  툰드라 (언덕)</p>
+                      <p class="civ-ability-desc" style="text-align:left">다음에 의해 잠금 해제 합성물 기술</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자의 풍력 발전 단지 건설 능력을 잠금 해제합니다.<br><br><img src="/images/ICON_GOLD.webp" style="height:1em"/> 금 +2. <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력 +1. 턴당 <img src="/images/ICON_POWER.webp" style="height:1em"/> 전력 2를 제공합니다. 언덕 지형에 건설해야 합니다.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="하시엔다">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_HACIENDA_NAME-->
+                      <h2 class="civ-name">하시엔다
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Hacienda.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">약탈 보상: 체력 회복 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 주거공간</p>
+                      <p class="civ-ability-desc" style="text-align:left">인접 타일에 매력도 제공: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> 금</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자 건설자</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  초원,  평원</p>
+                      <p class="civ-ability-desc" style="text-align:left">다음에 의해 잠금 해제 중세 시장 사회 제도</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">그란 콜롬비아 특유 건물인 하시엔다를 건설할 수 있는 건설자 능력을 잠금 해제합니다.<br><br><img src="/images/ICON_GOLD.webp" style="height:1em"/> 금 +2, <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력 +1, <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 주거공간 +0.5를 부여합니다. 2개의 인접한 재배지마다 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 식량 +1을 얻습니다(교환부품 연구 이후 모든 재배지마다 획득). 재배지와 하시엔다가 인접한 2개의 하시엔다마다 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력 +1을 얻습니다(중상주의 연구 이후 모든 하시엔다마다 획득). 언덕이 아닌, 평원과 초원에만 건설할 수 있습니다.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="해변 리조트">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_BEACH_RESORT_NAME-->
+                      <h2 class="civ-name">해변 리조트
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Seaside Resort.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">약탈 보상: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">요구: 매력도 &gt;= 2</p>
+                      <p class="civ-ability-desc" style="text-align:left">매력도에서 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 관광 150%</p>
+                      <p class="civ-ability-desc" style="text-align:left">인접 타일에 매력도 제공: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_GOLD.webp" style="height:1em"/> 금에서 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 관광 100%</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자 건설자</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  사막,  사막 (언덕),  초원,  초원 (언덕),  평원,  평원 (언덕)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  화산토</p>
+                      <p class="civ-ability-desc" style="text-align:left">다음에 의해 잠금 해제 라디오 기술</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자의 해변 리조트 건설 능력을 잠금 해제합니다.<br><br>타일의 매력도의 1.5배 만큼의 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 관광을 제공합니다. 해안가 사막, 해안가 평원, 또는 해안가 초원에 지어야 합니다. 놀라운 매력도 이상의 타일에서 지을 수 있습니다.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="해양 유정 굴착 장치">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_OFFSHORE_OIL_RIG_NAME-->
+                      <h2 class="civ-name">해양 유정 굴착 장치
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Offshore Oil Rig.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">약탈 보상: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">인접 타일에 매력도 제공: -1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 생산력 (다음에 의해 잠금 해제 예측 시스템 기술)</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> 문화에서 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 관광 100%(비행 기술 필요)</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자 건설자</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  해안 및 호수,  해양</p>
+                      <p class="civ-ability-desc" style="text-align:left">다음에 의해 잠금 해제 정제 기술</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자의 해양 유정 굴착 장치 건설 능력을 잠금 해제합니다.<br><br>매력도 -1이 적용됩니다. <img src="/images/ICON_RESOURCE_OIL.webp" style="height:1em"/> 석유가 있는 해안이나 호수 타일에 건설해야 합니다.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="활주로">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_AIRSTRIP_NAME-->
+                      <h2 class="civ-name">활주로
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Airstrip.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">인접 타일에 매력도 제공: -1</p>
+                      <p class="civ-ability-desc" style="text-align:left">건설자 공병</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  사막,  초원,  평원,  설원,  툰드라</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  화산토</p>
+                      <p class="civ-ability-desc" style="text-align:left">다음에 의해 잠금 해제 비행 기술</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">공병의 활주로 건설 능력을 잠금 해제합니다.<br><br>공중 유닛 3개를 지원할 수 있습니다. 평지에 건설해야 합니다. 매력도 -1이 적용됩니다.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </main>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/plugins/feather.min.js"></script>
+    <script src="/plugins/chart.min.js"></script>
+  </body>
+</html>

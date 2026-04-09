@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <title>Civ VI BBG 7.2 Ulepszenia</title>
+    <meta charset="utf-8">
+    <meta contents="IE=edge" httpequiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="/images/BBGLogo.webp" rel="icon" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap" rel="stylesheet">
+    <link href="/css/style.min.css" rel="stylesheet">
+    <link href="/css/preloader.css" rel="stylesheet">
+    <link href="/css/animate.min.css" rel="stylesheet">
+    <link href="/css/header.css" rel="stylesheet">
+    <link href="/css/footer.css" rel="stylesheet">
+    <link href="/fontawesome-free-7.0.0-web/css/all.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="loader">
+        <div class="loader-outter"></div>
+        <div class="loader-inner"></div>
+        <div class="indicator">
+          <svg height="12px" width="16px">
+            <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+            <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="layer"></div>
+    <div class="page-flex">
+      <div class="main-wrapper">
+        <nav class="main-nav--bg">
+          <div class="main-nav">
+            <div class="header">
+              <div class="header-inner">
+                <div class="inner">
+                  <div class="row">
+                    <div class="flex center sidebar-toggle col-xl-1 col-lg-1 col-md-1 col-1">
+                      <button class="transparent-btn" title="Menu" type="button">
+                        <span class="sr-only">Toggle menu</span>
+                        <span aria-hidden="true" class="icon menu-toggle"></span>
+                      </button>
+                    </div>
+                    <div class="flex center col-xl-1 col-lg-1 col-md-1 col-2">
+                      <a href="/index.html" style="align-content: center;">
+                        <img alt="#" src="/images/BBGLogo.webp" style="width:3em; border-radius:10%">
+                      </a>
+                      <div class="mobile-nav"></div>
+                    </div>
+                    <div class="flex col-xl-8 col-lg-8 col-md-8 col-8">
+                      <div class="main-menu">
+                        <nav class="navigation">
+                          <ul class="nav menu">
+                            <li class="">
+                              <a href="/pl_PL/leaders_7.2.html" onclick="civClicked(null)">Przywódcy</a>
+                            </li>
+                            <li class="">
+                              <a href="/pl_PL/bbg_expanded_7.2.html" onclick="civClicked(null)">BBG Expanded</a>
+                            </li>
+                            <li class="">
+                              <a href="/pl_PL/city_states_7.2.html" onclick="civClicked(null)">Miasta-państwa</a>
+                            </li>
+                            <li class="">
+                              <a href="/pl_PL/religion_7.2.html" onclick="civClicked(null)">Religia</a>
+                            </li>
+                            <li class="">
+                              <a href="/pl_PL/governor_7.2.html" onclick="civClicked(null)">Gubernatorzy</a>
+                            </li>
+                            <li class="">
+                              <a href="/pl_PL/great_people_7.2.html" onclick="civClicked(null)">Wielcy ludzie</a>
+                            </li>
+                            <li class="">
+                              <a href="/pl_PL/natural_wonder_7.2.html" onclick="civClicked(null)">Cuda natury</a>
+                            </li>
+                            <li class="">
+                              <a href="/pl_PL/world_wonder_7.2.html" onclick="civClicked(null)">World Wonders</a>
+                            </li>
+                            <li class="">
+                              <a href="/pl_PL/buildings_7.2.html" onclick="civClicked(null)">Budowle</a>
+                            </li>
+                            <li class="">
+                              <a href="/pl_PL/units_7.2.html" onclick="civClicked(null)">Jednostki</a>
+                            </li>
+                            <li class="active">
+                              <a href="/pl_PL/improvements_7.2.html" onclick="civClicked(null)">Ulepszenia</a>
+                            </li>
+                            <li class="">
+                              <a href="/pl_PL/tech_tree_7.2.html" onclick="civClicked(null)">Technology Tree</a>
+                            </li>
+                            <li class="">
+                              <a href="/pl_PL/civic_tree_7.2.html" onclick="civClicked(null)">Civic Tree</a>
+                            </li>
+                            <li class="">
+                              <a href="/pl_PL/names_7.2.html" onclick="civClicked(null)">Names</a>
+                            </li>
+                            <li class="">
+                              <a href="/pl_PL/policies_7.2.html" onclick="civClicked(null)">Doktryny</a>
+                            </li>
+                            <li class="">
+                              <a href="/pl_PL/congress_7.2.html" onclick="civClicked(null)">Kongres Światowy</a>
+                            </li>
+                            <li class="">
+                              <a href="/pl_PL/misc_7.2.html" onclick="civClicked(null)">Misc</a>
+                            </li>
+                            <li class="">
+                              <a href="/pl_PL/changelog_7.2.html" onclick="civClicked(null)">Changelog</a>
+                            </li>
+                            <li>
+                              <a>BBG Version<i class="icofont-rounded-down"></i></a>
+                              <ul class="dropdown bbg-version-dropdown">
+                                <li>
+                                  <a href="/pl_PL/improvements_base_game.html">Base</a>
+                                </li>
+                                <li>
+                                  <a href="/pl_PL/improvements_7.4.html">7.4</a>
+                                </li>
+                                <li>
+                                  <a href="/pl_PL/improvements_7.3.html">7.3</a>
+                                </li>
+                                <li>
+                                  <a href="/pl_PL/improvements_7.2.html">7.2</a>
+                                </li>
+                                <li>
+                                  <a href="/pl_PL/improvements_7.1.html">7.1</a>
+                                </li>
+                                <li>
+                                  <a href="/pl_PL/improvements_6.5.html">6.5</a>
+                                </li>
+                                <li>
+                                  <a href="/pl_PL/improvements_6.4.html">6.4</a>
+                                </li>
+                                <li>
+                                  <a href="/pl_PL/improvements_6.3.html">6.3</a>
+                                </li>
+                                <li>
+                                  <a href="/pl_PL/improvements_6.2.html">6.2</a>
+                                </li>
+                                <li>
+                                  <a href="/pl_PL/improvements_6.1.html">6.1</a>
+                                </li>
+                                <li>
+                                  <a href="/pl_PL/improvements_6.0.html">6.0</a>
+                                </li>
+                                <li>
+                                  <a href="/pl_PL/improvements_5.8.html">5.8</a>
+                                </li>
+                                <li>
+                                  <a href="/pl_PL/improvements_5.7.html">5.7</a>
+                                </li>
+                                <li>
+                                  <a href="/pl_PL/improvements_5.6.html">5.6</a>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+                    <div class="flex center col-xl-2 col-lg-2 col-md-2 col-1">
+                      <div class="flex row justify-content-around">
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-4">
+                          <div class="main-menu">
+                            <nav class="navigation">
+                              <ul class="nav menu">
+                                <li><i class="fa-solid fa-language lang-icon"></i>
+                                  <ul class="dropdown">
+                                    <li>
+                                      <a href="/en_US/improvements_7.2.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/us.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/fr_FR/improvements_7.2.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/fr.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/ru_RU/improvements_7.2.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/ru.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/de_DE/improvements_7.2.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/de.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/zh_Hans_CN/improvements_7.2.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/cn.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/ko_KR/improvements_7.2.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/kr.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/ja_JP/improvements_7.2.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/jp.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/pt_BR/improvements_7.2.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/br.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </nav>
+                          </div>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-4">
+                          <div class="base-game-switcher-wrapper">
+                            <button class="base-game-switcher gray-circle-btn" title="Show Base Game" type="button"><i aria-hidden="true" class="enable-icon" data-feather="toggle-left"></i><i aria-hidden="true" class="disable-icon" data-feather="toggle-right"></i></button>
+                          </div>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-4">
+                          <div class="theme-switcher-wrapper">
+                            <button class="theme-switcher gray-circle-btn" title="Switch theme" type="button">
+                              <span class="sr-only">Switch theme</span><i aria-hidden="true" class="sun-icon" data-feather="sun"></i><i aria-hidden="true" class="moon-icon" data-feather="moon"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="scroll-up footer-popup" id="footer-popup">
+          <div class="footer-popup-inner">
+            <div class="row">
+              <div class="col-sm-6 col-1 footer-popup-body">
+                <p id="donateText">Enjoy this work? Try Aether Kingdoms!
+                  <b>
+                    <a class="footer-popup-link" href="https://www.aetherkingdoms.com/" target="_blank">(Link)</a>
+                  </b>
+                </p>
+              </div>
+              <div class="col-sm-2 col-1 footer-popup-body">
+                <a class="btn btn-primary" href="https://www.aetherkingdoms.com/" target="_blank">
+                  <img alt="Aether Kingdom" class="footer-popup-img" src="/images/ak_village_animation.gif">
+                </a>
+              </div>
+              <div class="col-sm-2 col-6 footer-popup-donate">
+                <a class="btn btn-primary" href="https://ko-fi.com/calcalciffer" target="_blank">Donate</a>
+              </div>
+              <div class="col-sm-2 col-6 footer-popup-scroll-up">
+                <a class="displayNone" href="#top" id="scrollUp" onclick="civClicked(null)"><i class="fa-solid fa-up-long"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="aether-kingdom-ad" id="aether-kingdom-ad">
+          <a href="https://www.aetherkingdoms.com/" target="_blank">
+            <img alt="Aether Kingdom" class="aether-kingdom-ad-img" src="/images/ak_village_animation.gif">
+          </a>
+          <h2 class="aether-kingdom-ad-title">Try Aether Kingdoms!</h2>
+          <p class="aether-kingdom-ad-text">If you like my website here, please check out Aether Kingdoms, a free-to-play strategy game inspired by Civilization and developed by my friend and I. Click the button below to learn more!</p>
+          <a href="https://www.aetherkingdoms.com/" target="_blank">
+            <button class="ad-btn" title="Aether Kingdoms" type="submit">Aether Kingdoms</button>
+          </a>
+          <button class="ad-btn" onclick="aetherKingdomAdClose()" title="Close ad" type="submit">Close</button>
+        </div>
+        <div class="">
+          <div class="fixed left-0 right-auto h-screen bg-white border-r border-neutral-300 overflow-scroll" style="z-index: 5;">
+            <aside class="sidebar">
+              <div class="sidebar-start">
+                <div class="sidebar-body">
+                  <ul class="sidebar-body-menu"></ul>
+                </div>
+              </div>
+            </aside>
+          </div>
+          <div class="leaders-data min-w-full main-pl">
+            <main class="main users chart-page">
+              <div class="container">
+                <h1 class="civ-name">Civ VI BBG 7.2 Ulepszenia</h1><br>
+                <div class="row">
+                  <div class="col-md-6 col-12" id="Alkazar">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_ALCAZAR_NAME-->
+                      <h2 class="civ-name">Alkazar
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Alcázar.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Nagroda za plądrowanie: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Modyfikator obrony: 4</p>
+                      <p class="civ-ability-desc" style="text-align:left">Premia za fortyfikację dla jednostki zajmującej pole</p>
+                      <p class="civ-ability-desc" style="text-align:left">50% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turystyki dzięki atrakcyjności</p>
+                      <p class="civ-ability-desc" style="text-align:left">Zwiększenie atrakcyjności sąsiednich pól: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultura</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produkcja</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turystyki dzięki <img src="/images/ICON_CULTURE.webp" style="height:1em"/> {3_YieldName[9]} (wymaga {4_TechOrCivicName[8]})</p>
+                      <p class="civ-ability-desc" style="text-align:left">Stworzone przez Budowniczowie</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Pustynia,  Pustynia (wzgórza),  Łąki,  Łąki (wzgórza),  Równiny,  Równiny (wzgórza),  Śnieg,  Śnieg (wzgórza),  Tundra,  Tundra (wzgórza)</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowuje zdolność budowniczych pozwalającą wznosić alkazar.<br><br>+2 do <img src="/images/ICON_CULTURE.webp" style="height:1em"/> kultury. Zapewnia premię do <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> nauki równą 50% atrakcyjności pola. Znajdująca się w nim jednostka dostaje +4 do <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> siły obrony i automatycznie zyskuje 2 tury fortyfikacji. Po opracowaniu technologii lotu zapewnia <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turystykę. Nie można zbudować go w sąsiedztwie innego alkazaru.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Batey">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_BATEY_NAME-->
+                      <h2 class="civ-name">Batey
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Batey.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Nagroda za plądrowanie: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Zwiększenie atrakcyjności sąsiednich pól: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultura</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turystyki dzięki <img src="/images/ICON_CULTURE.webp" style="height:1em"/> {3_YieldName[9]} (wymaga {4_TechOrCivicName[8]})</p>
+                      <p class="civ-ability-desc" style="text-align:left">Stworzone przez Budowniczowie</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Pustynia,  Pustynia (wzgórza),  Łąki,  Łąki (wzgórza),  Równiny,  Równiny (wzgórza),  Śnieg,  Śnieg (wzgórza),  Tundra,  Tundra (wzgórza)</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowuje zdolność budowniczych pozwalającą wznieść batey.<br><br>+1 do <img src="/images/ICON_CULTURE.webp" style="height:1em"/> kultury. +1 do <img src="/images/ICON_CULTURE.webp" style="height:1em"/> kultury za każdy zasób dodatkowy i dzielnicę rozrywkową (premia zwiększana do +2 do <img src="/images/ICON_CULTURE.webp" style="height:1em"/> kultury po odkryciu idei eksploracji). Po opracowaniu technologii lotu zapewnia <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turystykę. Nie można wznosić w sąsiedztwie innego bateyu lub na wzgórzu.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Chateau">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_CHATEAU_NAME-->
+                      <h2 class="civ-name">Chateau
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Château.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Nagroda za plądrowanie: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Obszary mieszkalne:</p>
+                      <p class="civ-ability-desc" style="text-align:left">Zwiększenie atrakcyjności sąsiednich pól: 1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultura</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Żywność</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Złoto</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turystyki dzięki <img src="/images/ICON_CULTURE.webp" style="height:1em"/> {3_YieldName[9]} (wymaga {4_TechOrCivicName[8]})</p>
+                      <p class="civ-ability-desc" style="text-align:left">Stworzone przez Budowniczowie</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Pustynia,  Pustynia (wzgórza),  Łąki,  Łąki (wzgórza),  Równiny,  Równiny (wzgórza),  Śnieg,  Śnieg (wzgórza),  Tundra,  Tundra (wzgórza)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Równiny zalewowe,  Trawiasta równina zalewowa,  Płaska równina zalewowa</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowywane przez Feudalizm Idea</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowuje zdolność budowniczych pozwalającą wznieść chateau dostępne tylko Francji.<br><br>+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> obszarów mieszkalnych, +2 do <img src="/images/ICON_CULTURE.webp" style="height:1em"/> kultury i +1 do atrakcyjności. +1 do <img src="/images/ICON_CULTURE.webp" style="height:1em"/> kultury za każdy sąsiadujący cud. +1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> złota i +1 do <img src="/images/ICON_FOOD.webp" style="height:1em"/> żywności za każdy sąsiadujący zasób luksusowy. Zapewnia <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turystykę po opracowaniu technologii lotu. Nie można wybudować obok innego Chateau.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Chemamull">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_CHEMAMULL_NAME-->
+                      <h2 class="civ-name">Chemamull
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Chemamull.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Nagroda za plądrowanie: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Wymaga: {1_Name[7]}</p>
+                      <p class="civ-ability-desc" style="text-align:left">75% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turystyki dzięki atrakcyjności</p>
+                      <p class="civ-ability-desc" style="text-align:left">Zwiększenie atrakcyjności sąsiednich pól: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produkcja</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produkcja (Odblokowywane przez Służba cywilna Idea)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turystyki dzięki <img src="/images/ICON_CULTURE.webp" style="height:1em"/> {3_YieldName[9]} (wymaga {4_TechOrCivicName[8]})</p>
+                      <p class="civ-ability-desc" style="text-align:left">Stworzone przez Budowniczowie</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Pustynia,  Pustynia (wzgórza),  Łąki,  Łąki (wzgórza),  Równiny,  Równiny (wzgórza),  Śnieg,  Śnieg (wzgórza),  Tundra,  Tundra (wzgórza)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Wulkaniczna gleba</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowywane przez Rzemiosło Idea</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowuje zdolność budowniczych pozwalającą tworzyć chemamull, dostępny wyłącznie dla Mapuczów.<br><br>+1 do <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produkcji. Zapewnia <img src="/images/ICON_CULTURE.webp" style="height:1em"/> kulturę równą 75% atrakcyjności pola, na którym się znajduje. Dodatkowa <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turystyka po opracowaniu technologii lotu. Można umieścić wyłącznie na polach o co najmniej niesamowitym poziomie atrakcyjności.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Elektrownia geotermalna">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_GEOTHERMAL_PLANT_NAME-->
+                      <h2 class="civ-name">Elektrownia geotermalna
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Geothermal Plant.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Nagroda za plądrowanie: <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Zwiększenie atrakcyjności sąsiednich pól: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produkcja</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Nauka</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produkcja (Odblokowywane przez Syntetyki Technologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Nauka (Odblokowywane przez Syntetyki Technologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Stworzone przez Budowniczowie</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Szczelina geotermalna</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowywane przez Chemia Technologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowuje zdolność budowniczych pozwalającą wznosić elektrownie geotermalne.<br><br>+1 do <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> nauki. +2 do <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produkcji. Zapewnia 3 <img src="/images/ICON_POWER.webp" style="height:1em"/> energii na turę.<br>+1 do <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> nauki i +3 do <img src="/images/ICON_POWER.webp" style="height:1em"/> energii na turę po odkryciu syntetyków.<br>Można budować wyłącznie na szczelinach geotermalnych.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Elektrownia słoneczna">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_SOLAR_FARM_NAME-->
+                      <h2 class="civ-name">Elektrownia słoneczna
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Solar Farm.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Nagroda za plądrowanie: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Zwiększenie atrakcyjności sąsiednich pól: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Złoto</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produkcja</p>
+                      <p class="civ-ability-desc" style="text-align:left">Stworzone przez Budowniczowie</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Pustynia,  Łąki,  Równiny,  Tundra</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowywane przez Satelity Technologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowuje zdolność budowniczych pozwalającą wznosić elektrownie słoneczne.<br><br>+1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> złota. +1 do <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produkcji. Zapewniają 2 <img src="/images/ICON_POWER.webp" style="height:1em"/> energii na turę. Można je budować wyłącznie na płaskim terenie. Nie można budować na śniegu.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Elektrownia wiatrowa">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_WIND_FARM_NAME-->
+                      <h2 class="civ-name">Elektrownia wiatrowa
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Wind Farm.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Nagroda za plądrowanie: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Zwiększenie atrakcyjności sąsiednich pól: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Złoto</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produkcja</p>
+                      <p class="civ-ability-desc" style="text-align:left">Stworzone przez Budowniczowie</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Pustynia (wzgórza),  Łąki (wzgórza),  Równiny (wzgórza),  Śnieg (wzgórza),  Tundra (wzgórza)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowywane przez Kompozyty Technologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowuje zdolność budowniczych pozwalającą wznosić elektrownie wiatrowe.<br><br>+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> złota. +1 do <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produkcji. Zapewnia 2 <img src="/images/ICON_POWER.webp" style="height:1em"/> energii na turę. Można wznieść wyłącznie na polach ze wzgórzami.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Faktoria">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_FEITORIA_NAME-->
+                      <h2 class="civ-name">Faktoria
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Feitoria.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Zwiększenie atrakcyjności sąsiednich pól: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+4 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Złoto</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produkcja</p>
+                      <p class="civ-ability-desc" style="text-align:left">Stworzone przez Nau</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Wybrzeże i jezioro</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowuje zdolność nau pozwalającą wznieść faktorię, dostępną tylko dla Portugalii.<br><br>Zapewnia +4 <img src="/images/ICON_GOLD.webp" style="height:1em"/> złota i +1 do <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produkcji. Szlaki handlowe prowadzące do tego miasta z Portugalii zyskują +2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> złota i +1 do <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produkcji. Można wznieść wyłącznie w sąsiedztwie zasobów luksusowych lub dodatkowych znajdujących się na terytorium innej cywilizacji bądź miasta-państwa, z którymi zawarto porozumienie o otwartych granicach. Można wznieść tylko na polu wybrzeża lub jeziora sąsiadującym z lądem. Nie można wznieść w sąsiedztwie faktorii. Faktorie są nieusuwalne.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Farma">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_FARM_NAME-->
+                      <h2 class="civ-name">Farma
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Farm.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Nagroda za plądrowanie: Leczenie 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Obszary mieszkalne:</p>
+                      <p class="civ-ability-desc" style="text-align:left">Zwiększenie atrakcyjności sąsiednich pól: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Żywność</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turystyki dzięki <img src="/images/ICON_CULTURE.webp" style="height:1em"/> {3_YieldName[9]} (wymaga {4_TechOrCivicName[8]})</p>
+                      <p class="civ-ability-desc" style="text-align:left">Stworzone przez Budowniczowie</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Łąki,  Łąki (wzgórza) (Wymóg: Inżynieria cywilna),  Równiny,  Równiny (wzgórza) (Wymóg: Inżynieria cywilna)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Równiny zalewowe,  Trawiasta równina zalewowa,  Płaska równina zalewowa,  Wulkaniczna gleba</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowuje zdolność budowniczych pozwalającą wznosić farmy.<br><br>+1 do <img src="/images/ICON_FOOD.webp" style="height:1em"/> żywności. Można budować je tylko na łąkach albo równinach.<br><br>Stawianie farm obok siebie zapewnia premie dla obszarów mieszkalnych.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Fort">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_FORT_NAME-->
+                      <h2 class="civ-name">Fort
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Fort.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Modyfikator obrony: 4</p>
+                      <p class="civ-ability-desc" style="text-align:left">Premia za fortyfikację dla jednostki zajmującej pole</p>
+                      <p class="civ-ability-desc" style="text-align:left">Zwiększenie atrakcyjności sąsiednich pól: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">Stworzone przez Inżynier wojskowy</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Pustynia,  Pustynia (wzgórza),  Łąki,  Łąki (wzgórza),  Równiny,  Równiny (wzgórza),  Śnieg,  Śnieg (wzgórza),  Tundra,  Tundra (wzgórza)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Wulkaniczna gleba</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowywane przez Inżynieria wojskowa Technologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Znajdująca się w nim jednostka otrzymuje +4 do <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> siły obrony i automatycznie zyskuje 2 tury fortyfikacji.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Fort rzymski">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_ROMAN_FORT_NAME-->
+                      <h2 class="civ-name">Fort rzymski
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Roman Fort.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Modyfikator obrony: 4</p>
+                      <p class="civ-ability-desc" style="text-align:left">Premia za fortyfikację dla jednostki zajmującej pole</p>
+                      <p class="civ-ability-desc" style="text-align:left">Zwiększenie atrakcyjności sąsiednich pól: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">Stworzone przez Legion</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Pustynia,  Pustynia (wzgórza),  Łąki,  Łąki (wzgórza),  Równiny,  Równiny (wzgórza),  Śnieg,  Śnieg (wzgórza),  Tundra,  Tundra (wzgórza)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Wulkaniczna gleba</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowuje zdolność rzymskich legionów pozwalającą wznosić fort rzymski, dostępny tylko dla Rzymu.<br><br>Znajdująca się w nim jednostka dostaje +4 do <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> siły obrony i automatycznie zyskuje 2 tury fortyfikacji.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Gospodarstwo hodowlane">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_OUTBACK_STATION_NAME-->
+                      <h2 class="civ-name">Gospodarstwo hodowlane
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Outback Station.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Nagroda za plądrowanie: Leczenie 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Obszary mieszkalne:</p>
+                      <p class="civ-ability-desc" style="text-align:left">Zwiększenie atrakcyjności sąsiednich pól: 1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Żywność</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produkcja</p>
+                      <p class="civ-ability-desc" style="text-align:left">Stworzone przez Budowniczowie</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Pustynia,  Pustynia (wzgórza),  Łąki,  Łąki (wzgórza),  Równiny,  Równiny (wzgórza)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowywane przez Gildie Idea</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowuje zdolność budowniczych pozwalającą wznieść gospodarstwo hodowlane, dostępne tylko w Australii.<br><br>+1 do <img src="/images/ICON_FOOD.webp" style="height:1em"/> żywności i +1 do <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produkcji. +1 do <img src="/images/ICON_FOOD.webp" style="height:1em"/> żywności za każde sąsiadujące pastwisko. Dodatkowa <img src="/images/ICON_FOOD.webp" style="height:1em"/> żywność i <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produkcja za sąsiadujące gospodarstwa hodowlane i pastwiska wraz z postępami na drzewach technologii i idei. Można zbudować tylko na pustyni, wzgórzach na pustyni, łąkach i równinach.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Hacjenda">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_HACIENDA_NAME-->
+                      <h2 class="civ-name">Hacjenda
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Hacienda.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Nagroda za plądrowanie: Leczenie 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Obszary mieszkalne:</p>
+                      <p class="civ-ability-desc" style="text-align:left">Zwiększenie atrakcyjności sąsiednich pól: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Złoto</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produkcja</p>
+                      <p class="civ-ability-desc" style="text-align:left">Stworzone przez Budowniczowie</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Łąki,  Równiny</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowywane przez Średniowiecze Idea</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowuje zdolność budowniczych do wznoszenia Hacjend, unikalne dla Gran Colombia.<br><br>+2 do <img src="/images/ICON_GOLD.webp" style="height:1em"/> złota, +1 do <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produkcji i +1 do <img src="/images/ICON_HOUSING.webp" style="height:1em"/> obszarów mieszkalnych. +1 do <img src="/images/ICON_FOOD.webp" style="height:1em"/> żywności za każde dwie sąsiadujące plantacje (za każdą plantację po opracowaniu technologii części zamiennych). Plantacje i Hacjendy otrzymują +1 do <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produkcji za każde dwie sąsiadujące Hacjendy (za każdą Hacjendę po opracowaniu technologii Rapid Deployment). Może być zbudowana wyłącznie na równinach i łąkach.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Hodowla ryb">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_FISHERY_NAME-->
+                      <h2 class="civ-name">Hodowla ryb
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Fishery.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Nagroda za plądrowanie: Leczenie 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Obszary mieszkalne:</p>
+                      <p class="civ-ability-desc" style="text-align:left">Zwiększenie atrakcyjności sąsiednich pól: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Żywność</p>
+                      <p class="civ-ability-desc" style="text-align:left">Stworzone przez Budowniczowie</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Wybrzeże i jezioro</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowywane przez Astronawigacja Technologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowuje zdolność budowniczych pozwalającą konstruować hodowle ryb.<br><br>+1 do <img src="/images/ICON_FOOD.webp" style="height:1em"/> żywności i dodatkowe +1, jeśli sąsiaduje z zasobem morskim. Można wybudować wyłącznie na polach wybrzeża.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Hunter's House">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_LIME_THULE_WBH_NAME-->
+                      <h2 class="civ-name">Hunter's House
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Hunter's House.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Nagroda za plądrowanie: Leczenie 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Obszary mieszkalne:</p>
+                      <p class="civ-ability-desc" style="text-align:left">Zwiększenie atrakcyjności sąsiednich pól: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turystyki dzięki <img src="/images/ICON_FAITH.webp" style="height:1em"/> {3_YieldName[9]} (wymaga {4_TechOrCivicName[8]})</p>
+                      <p class="civ-ability-desc" style="text-align:left">Stworzone przez Budowniczowie LUB  Dogsled Hunter</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Pustynia,  Pustynia (wzgórza),  Łąki,  Łąki (wzgórza),  Równiny,  Równiny (wzgórza),  Śnieg,  Śnieg (wzgórza),  Tundra,  Tundra (wzgórza)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Las</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unique improvement for Thule, unlocked at Sailing.<br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Food if built on a Tundra tile (doubled on snow)<br>+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture and <img src="/images/ICON_FAITH.webp" style="height:1em"/> Faith +1 for each adjacent sea resource and Camp tile after Foreign Trade.<br><br>Hunter's House provides additional yields to adjacent tiles.<br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Food for Tundra tiles (doubled for snow).<br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Food and +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production for Camps and Fishing Boats.<br><br>Must be built adjacent to a resource tile. Can be placed on forests. Cannot be placed next to another Hunter's House.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Kamieniołom">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_QUARRY_NAME-->
+                      <h2 class="civ-name">Kamieniołom
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Quarry.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Nagroda za plądrowanie: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Zwiększenie atrakcyjności sąsiednich pól: -1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produkcja</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produkcja (Odblokowywane przez Technika rakietowa Technologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produkcja (Odblokowywane przez Inżynieria wojskowa Technologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turystyki dzięki <img src="/images/ICON_CULTURE.webp" style="height:1em"/> {3_YieldName[9]} (wymaga {4_TechOrCivicName[8]})</p>
+                      <p class="civ-ability-desc" style="text-align:left">Stworzone przez Budowniczowie</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowywane przez Górnictwo Technologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowuje zdolność budowniczych pozwalającą tworzyć kamieniołomy.<br><br>+1 do <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produkcji. -1 do atrakcyjności. Można budować tylko na odpowiednich zasobach.<br><br>Jeśli kamieniołom powstanie na zasobach luksusowych, miasto będzie mogło z nich korzystać.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Kampung">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_KAMPUNG_NAME-->
+                      <h2 class="civ-name">Kampung
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Kampung.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Nagroda za plądrowanie: Leczenie 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Obszary mieszkalne:</p>
+                      <p class="civ-ability-desc" style="text-align:left">Zwiększenie atrakcyjności sąsiednich pól: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produkcja</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produkcja (Odblokowywane przez Inżynieria cywilna Idea)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turystyki dzięki <img src="/images/ICON_FOOD.webp" style="height:1em"/> {3_YieldName[9]} (wymaga {4_TechOrCivicName[8]})</p>
+                      <p class="civ-ability-desc" style="text-align:left">Stworzone przez Budowniczowie</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Wybrzeże i jezioro</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowywane przez Szkutnictwo Technologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowuje zdolność budowniczych pozwalającą tworzyć kampung dostępny wyłącznie dla Indonezji.<br><br>+1 do <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produkcji i +1 do <img src="/images/ICON_HOUSING.webp" style="height:1em"/> obszarów mieszkalnych. +1 do <img src="/images/ICON_FOOD.webp" style="height:1em"/> żywności i +1 do <img src="/images/ICON_FAITH.webp" style="height:1em"/> wiary za każdą sąsiadującą łódź rybacką. Dodatkowa <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produkcja, <img src="/images/ICON_HOUSING.webp" style="height:1em"/> obszary mieszkalne i <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turystyka wraz z postępami na drzewie technologii i idei. Można zbudować go wyłącznie na polu wybrzeża lub jeziora w sąsiedztwie morskiego zasobu.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Klasztor">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MONASTERY_NAME-->
+                      <h2 class="civ-name">Klasztor
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Monastery.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Nagroda za plądrowanie: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Obszary mieszkalne:</p>
+                      <p class="civ-ability-desc" style="text-align:left">Zwiększenie atrakcyjności sąsiednich pól: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Wiara</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Żywność</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turystyki dzięki <img src="/images/ICON_FAITH.webp" style="height:1em"/> {3_YieldName[9]} (wymaga {4_TechOrCivicName[8]})</p>
+                      <p class="civ-ability-desc" style="text-align:left">Stworzone przez Budowniczowie</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Pustynia,  Pustynia (wzgórza),  Łąki,  Łąki (wzgórza),  Równiny,  Równiny (wzgórza),  Śnieg,  Śnieg (wzgórza),  Tundra,  Tundra (wzgórza)</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowuje zdolność budowniczych pozwalającą wznosić klasztor.<br><br>+2 do <img src="/images/ICON_FAITH.webp" style="height:1em"/> wiary. +15 do leczenia PŻ dla przyjaznych jednostek religijnych znajdujących się na tym polu, które nie atakowały w tej turze. +1 do <img src="/images/ICON_FAITH.webp" style="height:1em"/> wiary za każde 2 sąsiadujące dzielnice. Zapewnia +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> obszar mieszkalny. Dodatkowy <img src="/images/ICON_HOUSING.webp" style="height:1em"/> obszar mieszkalny po odkryciu kolonializmu. Nie można zbudować go w sąsiedztwie innego klasztoru.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Kolonia morska">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_SEASTEAD_NAME-->
+                      <h2 class="civ-name">Kolonia morska
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Seastead.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Nagroda za plądrowanie: Leczenie 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+4 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Obszary mieszkalne:</p>
+                      <p class="civ-ability-desc" style="text-align:left">Zwiększenie atrakcyjności sąsiednich pól: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Żywność</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turystyki dzięki <img src="/images/ICON_CULTURE.webp" style="height:1em"/> {3_YieldName[9]}</p>
+                      <p class="civ-ability-desc" style="text-align:left">Stworzone przez Budowniczowie</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Wybrzeże i jezioro,  Ocean</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowywane przez Kolonie morskie Technologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowuje zdolność budowniczych pozwalającą zakładać kolonie morskie.<br><br>+2 do <img src="/images/ICON_FOOD.webp" style="height:1em"/> żywności. +1 do <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produkcji za każdą sąsiadującą łódź rybacką. Łodzie rybackie zyskują +1 do <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produkcji za każdą sąsiadującą kolonię morską. +1 do <img src="/images/ICON_CULTURE.webp" style="height:1em"/> kultury i <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turystyki za każdą sąsiadującą rafę. +2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> obszary mieszkalne. Można wznieść wyłącznie na polach wybrzeża, jeziora lub oceanu. Nie może sąsiadować z kolonią morską. </p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Kopalnia">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MINE_NAME-->
+                      <h2 class="civ-name">Kopalnia
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Mine.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Nagroda za plądrowanie: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Zwiększenie atrakcyjności sąsiednich pól: -1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produkcja</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produkcja (Odblokowywane przez Termin Technologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produkcja (Odblokowywane przez Uprzemysłowienie Technologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produkcja (Odblokowywane przez Inteligentne materiały Technologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">0% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turystyki dzięki <img src="/images/ICON_CULTURE.webp" style="height:1em"/> {3_YieldName[9]} (wymaga {4_TechOrCivicName[8]})</p>
+                      <p class="civ-ability-desc" style="text-align:left">Stworzone przez Budowniczowie</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Pustynia (wzgórza),  Łąki (wzgórza),  Równiny (wzgórza),  Śnieg (wzgórza),  Tundra (wzgórza)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Wulkaniczna gleba</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowywane przez Górnictwo Technologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowuje zdolność budowniczych pozwalającą tworzyć kopalnie.<br><br>+1 do <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produkcji. -1 do atrakcyjności. Można budować na wzgórzach lub odpowiednich zasobach.<br><br>Jeżeli kopalnia powstanie na zasobach luksusowych lub strategicznych, miasto będzie mogło korzystać z tych zasobów.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Kopce Cahokii">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MOUND_NAME-->
+                      <h2 class="civ-name">Kopce Cahokii
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Cahokia Mounds.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Nagroda za plądrowanie: Leczenie 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Obszary mieszkalne:</p>
+                      <p class="civ-ability-desc" style="text-align:left">Zwiększenie atrakcyjności sąsiednich pól: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Złoto</p>
+                      <p class="civ-ability-desc" style="text-align:left">Stworzone przez Budowniczowie</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Pustynia,  Łąki,  Równiny,  Tundra</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Równiny zalewowe,  Trawiasta równina zalewowa,  Płaska równina zalewowa</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowuje umiejętność budowniczych pozwalającą wznosić kopce Cahokii.<br><br>+3 <img src="/images/ICON_GOLD.webp" style="height:1em"/> złota. Miasta otrzymują +1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> udogodnienie dzięki pierwszym kopcom Cahokii. Po odkryciu historii naturalnej miasta otrzymują +1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> udogodnienie dzięki drugim kopcom Cahokii. +1 do <img src="/images/ICON_FOOD.webp" style="height:1em"/> żywności za każde 2 sąsiadujące dzielnice, jeśli odkryto feudalizm, lub za każdą dzielnicę, jeśli opracowano technologię części zamiennych. Zapewniają +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> obszar mieszkalny. Dodatkowy <img src="/images/ICON_HOUSING.webp" style="height:1em"/> obszar mieszkalny wraz z odkryciem idei dziedzictwa kulturowego. Nie można wznieść w sąsiedztwie kopców Cahokii.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Kopuła handlowa">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_TRADING_DOME_NAME-->
+                      <h2 class="civ-name">Kopuła handlowa
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Trading Dome.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Nagroda za plądrowanie: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Zwiększenie atrakcyjności sąsiednich pól: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Złoto</p>
+                      <p class="civ-ability-desc" style="text-align:left">Stworzone przez Budowniczowie</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Pustynia,  Pustynia (wzgórza),  Łąki,  Łąki (wzgórza),  Równiny,  Równiny (wzgórza),  Śnieg,  Śnieg (wzgórza),  Tundra,  Tundra (wzgórza)</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowuje zdolność budowniczych pozwalającą wznosić kopułę handlową.<br><br>+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> złota. +1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> złota za każdy sąsiadujący zasób luksusowy. Twoje wychodzące międzynarodowe <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> szlaki handlowe zapewniają +1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> złota za każdą kopułę handlową znajdującą się w mieście początkowym. Nie można wznieść w sąsiedztwie innej kopuły handlowej.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Kościół skalny">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_ROCK_HEWN_CHURCH_NAME-->
+                      <h2 class="civ-name">Kościół skalny
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Rock-Hewn Church.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Nagroda za plądrowanie: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Zwiększenie atrakcyjności sąsiednich pól: 1</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turystyki dzięki <img src="/images/ICON_FAITH.webp" style="height:1em"/> {3_YieldName[9]} (wymaga {4_TechOrCivicName[8]})</p>
+                      <p class="civ-ability-desc" style="text-align:left">Stworzone przez Budowniczowie</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Pustynia (wzgórza),  Łąki (wzgórza),  Równiny (wzgórza),  Śnieg (wzgórza),  Tundra (wzgórza)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Wulkaniczna gleba</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowywane przez Dramat i poezja Idea</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowuje zdolność budowniczych pozwalającą wznieść kościół skalny, dostępny tylko dla Etiopii.<br><br>+1 do <img src="/images/ICON_FAITH.webp" style="height:1em"/> wiary za każde sąsiadujące pole z górą lub wzgórzami. Po opracowaniu technologii lotu zapewnia <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turystykę dzięki <img src="/images/ICON_FAITH.webp" style="height:1em"/> wierze. +1 do atrakcyjności. Może być jedynie splądrowany (nigdy zniszczony) przez katastrofy naturalne. Można wznieść tylko na polach ze wzgórzami lub wulkaniczną glebą, które nie sąsiadują z innym kościołem skalnym.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Kurhan">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_KURGAN_NAME-->
+                      <h2 class="civ-name">Kurhan
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Kurgan.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Nagroda za plądrowanie: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Zwiększenie atrakcyjności sąsiednich pól: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Wiara</p>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Złoto</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turystyki dzięki <img src="/images/ICON_FAITH.webp" style="height:1em"/> {3_YieldName[9]} (wymaga {4_TechOrCivicName[8]})</p>
+                      <p class="civ-ability-desc" style="text-align:left">Stworzone przez Budowniczowie</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Pustynia,  Pustynia (wzgórza),  Łąki,  Łąki (wzgórza),  Równiny,  Równiny (wzgórza),  Śnieg,  Śnieg (wzgórza),  Tundra,  Tundra (wzgórza)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowywane przez Hodowla zwierząt Technologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocks the Builder ability to construct a Kurgan, unique to Scythia.<br><br>+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Faith and +3 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold. An additional +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Faith and +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production for each adjacent Pasture, increasing to +2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Faith per pasture at Stirrups.<br>Provides <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourism from <img src="/images/ICON_FAITH.webp" style="height:1em"/> Faith after researching Flight.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Kurort narciarski">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_SKI_RESORT_NAME-->
+                      <h2 class="civ-name">Kurort narciarski
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Ski Resort.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Zwiększenie atrakcyjności sąsiednich pól: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turystyki dzięki  {3_YieldName[9]}</p>
+                      <p class="civ-ability-desc" style="text-align:left">Stworzone przez Budowniczowie</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Pustynia (góry),  Łąki (góry),  Równiny (góry),  Śnieg (góry),  Tundra (góry)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowywane przez Sport zawodowy Idea</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowuje zdolność budowniczych pozwalającą na wznoszenie ośrodków narciarskich.<br><br>Zapewniają one +4 do <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turystyki oraz <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> udogodnienie. Można zbudować tylko na polach gór. Nie może sąsiadować z innym ośrodkiem narciarskim. Nie można plądrować, eksploatować ani usunąć.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Lodowisko hokejowe">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_ICE_HOCKEY_RINK_NAME-->
+                      <h2 class="civ-name">Lodowisko hokejowe
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Ice Hockey Rink.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Nagroda za plądrowanie: Leczenie 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">Zwiększenie atrakcyjności sąsiednich pól: 2</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produkcja (Odblokowywane przez Sport zawodowy Idea)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Żywność (Odblokowywane przez Sport zawodowy Idea)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turystyki dzięki <img src="/images/ICON_CULTURE.webp" style="height:1em"/> {3_YieldName[9]} (wymaga {4_TechOrCivicName[8]})</p>
+                      <p class="civ-ability-desc" style="text-align:left">Stworzone przez Budowniczowie</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Śnieg,  Śnieg (wzgórza),  Tundra,  Tundra (wzgórza)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowywane przez Służba dyplomatyczna Idea</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowuje zdolność budowniczych pozwalającą tworzyć unikalne dla Kanady lodowiska hokejowe.<br><br>+1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> udogodnienie. +1 do <img src="/images/ICON_CULTURE.webp" style="height:1em"/> kultury za każde sąsiadujące pole z tundrą, tundrą ze wzgórzami, śniegiem oraz ze wzgórzami ze śniegiem. Zapewnia <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turystykę z kultury po odblokowaniu technologii lotu. +2 do <img src="/images/ICON_FOOD.webp" style="height:1em"/> żywności i <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produkcji po odblokowaniu idei sportu zawodowego. +4 do <img src="/images/ICON_CULTURE.webp" style="height:1em"/> kultury, jeśli sąsiaduje ze stadionem. Można zbudować na polu z tundrą, wzgórzach z tundrą, śniegiem i wzgórzami ze śniegiem. Jedno lodowisko na miasto. +2 do atrakcyjności.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Lądowisko">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_AIRSTRIP_NAME-->
+                      <h2 class="civ-name">Lądowisko
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Airstrip.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Zwiększenie atrakcyjności sąsiednich pól: -1</p>
+                      <p class="civ-ability-desc" style="text-align:left">Stworzone przez Inżynier wojskowy</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Pustynia,  Łąki,  Równiny,  Śnieg,  Tundra</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Wulkaniczna gleba</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowywane przez Lot Technologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowuje możliwość budowania lądowisk przez inżynierów wojskowych.<br><br>Potrafi obsłużyć 3 jednostki powietrzne. Można zbudować tylko na płaskim terenie. -1 do atrakcyjności.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Mahawihara">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MAHAVIHARA_NAME-->
+                      <h2 class="civ-name">Mahawihara
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Mahavihara.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Nagroda za plądrowanie: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Obszary mieszkalne:</p>
+                      <p class="civ-ability-desc" style="text-align:left">Zwiększenie atrakcyjności sąsiednich pól: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Nauka</p>
+                      <p class="civ-ability-desc" style="text-align:left">Stworzone przez Budowniczowie</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Pustynia,  Łąki,  Równiny,  Śnieg,  Tundra</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowuje zdolność budowniczych pozwalającą wznosić mahawiharę.<br><br>+2 do <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> nauki i +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> obszar mieszkalny. +1 do <img src="/images/ICON_FAITH.webp" style="height:1em"/> wiary za każdą sąsiadującą dzielnicę świątynną i +1 do <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> nauki za każdy sąsiadujący kampus. Po opracowaniu technologii teorii naukowej otrzymuje dodatkowo +1 do <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> nauki za każdy sąsiadujący kampus. Po wzniesieniu swojej pierwszej mahawihary gracz otrzymuje losową technologię. Można wybudować wyłącznie na płaskim terenie. Nie może sąsiadować z inną mahawiharą.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Mekewap">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MEKEWAP_NAME-->
+                      <h2 class="civ-name">Mekewap
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Mekewap.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Nagroda za plądrowanie: Leczenie 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Obszary mieszkalne:</p>
+                      <p class="civ-ability-desc" style="text-align:left">Zwiększenie atrakcyjności sąsiednich pól: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produkcja</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produkcja (Odblokowywane przez Służba cywilna Idea)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Stworzone przez Budowniczowie</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Pustynia,  Pustynia (wzgórza),  Łąki,  Łąki (wzgórza),  Równiny,  Równiny (wzgórza),  Śnieg,  Śnieg (wzgórza),  Tundra,  Tundra (wzgórza)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowywane przez Garncarstwo Technologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowuje zdolność budowniczych pozwalającą tworzyć mekewap dostępny jedynie Kri.<br><br>Zapewnia +1 do <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produkcji i +1 do <img src="/images/ICON_HOUSING.webp" style="height:1em"/> obszarów mieszkalnych. +1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> złota, jeśli sąsiaduje z zasobem luksusowym. +1 do <img src="/images/ICON_FOOD.webp" style="height:1em"/> żywności za każde 2 sąsiadujące zasoby dodatkowe. Dodatkowa <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produkcja, <img src="/images/ICON_GOLD.webp" style="height:1em"/> złoto, <img src="/images/ICON_FOOD.webp" style="height:1em"/> żywność i <img src="/images/ICON_HOUSING.webp" style="height:1em"/> obszary mieszkalne wraz z postępami na drzewach idei i technologii. Można umieścić wyłącznie na polach sąsiadujących z zasobami dodatkowymi lub luksusowymi. Nie można wybudować w sąsiedztwie innego mekewapu.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Misja">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MISSION_NAME-->
+                      <h2 class="civ-name">Misja
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Mission.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Nagroda za plądrowanie: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Zwiększenie atrakcyjności sąsiednich pól: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Wiara</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Nauka (Odblokowywane przez Oświecenie Idea)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Stworzone przez Budowniczowie</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Pustynia,  Pustynia (wzgórza),  Łąki,  Łąki (wzgórza),  Równiny,  Równiny (wzgórza),  Śnieg,  Śnieg (wzgórza),  Tundra,  Tundra (wzgórza)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowywane przez Teologia Idea</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowuje zdolność budowniczych pozwalającą wznosić misje, dostępne tylko dla Hiszpanii.<br><br>+2 do <img src="/images/ICON_FAITH.webp" style="height:1em"/> wiary. +2 do <img src="/images/ICON_FAITH.webp" style="height:1em"/> wiary, +1 do <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produkcji i +1 do <img src="/images/ICON_FOOD.webp" style="height:1em"/> żywności, jeśli znajduje się na innym kontynencie niż twoja <img src="/images/ICON_CAPITAL.webp" style="height:1em"/> stolica. +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> obszarów mieszkalnych jeśli znajduje się na domowym kontynencie.<br><br> +1 do <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> nauki za każdy sąsiadujący kampus i dzielnicę świątynną. +2 do <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> nauki po opracowaniu idei oświecenia. Nie może być wzniesiona obok innej misji.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Moai">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MOAI_NAME-->
+                      <h2 class="civ-name">Moai
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Moai.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Nagroda za plądrowanie: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Zwiększenie atrakcyjności sąsiednich pól: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultura</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turystyki dzięki <img src="/images/ICON_CULTURE.webp" style="height:1em"/> {3_YieldName[9]} (wymaga {4_TechOrCivicName[8]})</p>
+                      <p class="civ-ability-desc" style="text-align:left">Stworzone przez Budowniczowie</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Łąki,  Łąki (wzgórza),  Równiny,  Równiny (wzgórza)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Wulkaniczna gleba</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowuje umiejętność budowniczych pozwalającą wznosić moai.<br><br>+1 do <img src="/images/ICON_CULTURE.webp" style="height:1em"/> kultury. +1 do <img src="/images/ICON_CULTURE.webp" style="height:1em"/> kultury za każde 2 sąsiadujące moai. +2 do <img src="/images/ICON_CULTURE.webp" style="height:1em"/> kultury, jeśli znajduje się na polu z wulkaniczną glebą lub z nim sąsiaduje. +1 do <img src="/images/ICON_CULTURE.webp" style="height:1em"/> kultury, jeśli sąsiaduje z polem wybrzeża lub jeziora. Dodatkowa <img src="/images/ICON_CULTURE.webp" style="height:1em"/> kultura i <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turystyka wraz z postępami na drzewach idei i technologii. Można zbudować na równinach, wzgórzach z równinami, łąkach, wzgórzach z łąkami i na wulkanicznej glebie. Nie może sąsiadować z lasem ani lasem deszczowym.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Morska elektrownia wiatrowa">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_OFFSHORE_WIND_FARM_NAME-->
+                      <h2 class="civ-name">Morska elektrownia wiatrowa
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Offshore Wind Farm.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Nagroda za plądrowanie: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Zwiększenie atrakcyjności sąsiednich pól: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produkcja</p>
+                      <p class="civ-ability-desc" style="text-align:left">Stworzone przez Budowniczowie</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Wybrzeże i jezioro</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowywane przez Systemy predykcyjne Technologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowuje zdolność budowniczych pozwalającą wznosić morskie elektrownie wiatrowe.<br><br>+2 do <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produkcji. Zapewnia 2 <img src="/images/ICON_POWER.webp" style="height:1em"/> energii na turę. Można wznieść wyłącznie na polach wybrzeża lub jeziora.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Morska platforma wiertnicza">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_OFFSHORE_OIL_RIG_NAME-->
+                      <h2 class="civ-name">Morska platforma wiertnicza
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Offshore Oil Rig.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Nagroda za plądrowanie: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Zwiększenie atrakcyjności sąsiednich pól: -1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produkcja</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produkcja (Odblokowywane przez Systemy predykcyjne Technologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turystyki dzięki <img src="/images/ICON_CULTURE.webp" style="height:1em"/> {3_YieldName[9]} (wymaga {4_TechOrCivicName[8]})</p>
+                      <p class="civ-ability-desc" style="text-align:left">Stworzone przez Budowniczowie</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Wybrzeże i jezioro,  Ocean</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowywane przez Rafinacja Technologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowuje zdolność budowniczych pozwalającą wznosić morską platformę wiertniczą.<br><br>-1 do atrakcyjności. Może być wznoszona wyłącznie na polach wybrzeża lub jeziora, na których znajduje się <img src="/images/ICON_RESOURCE_OIL.webp" style="height:1em"/> ropa.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Nadmorski kurort">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_BEACH_RESORT_NAME-->
+                      <h2 class="civ-name">Nadmorski kurort
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Seaside Resort.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Nagroda za plądrowanie: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Wymaga: {1_Name[7]}</p>
+                      <p class="civ-ability-desc" style="text-align:left">150% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turystyki dzięki atrakcyjności</p>
+                      <p class="civ-ability-desc" style="text-align:left">Zwiększenie atrakcyjności sąsiednich pól: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turystyki dzięki <img src="/images/ICON_GOLD.webp" style="height:1em"/> {3_YieldName[9]}</p>
+                      <p class="civ-ability-desc" style="text-align:left">Stworzone przez Budowniczowie</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Pustynia,  Pustynia (wzgórza),  Łąki,  Łąki (wzgórza),  Równiny,  Równiny (wzgórza)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Wulkaniczna gleba</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowywane przez Radio Technologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowuje możliwość tworzenia nadmorskich kurortów przez budowniczych.<br><br>Zapewnia <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turystykę równą atrakcyjności pola. Można zbudować tylko na przybrzeżnych polach pustyni, równiny lub łąki. Minimalny poziom atrakcyjności: niesamowity.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Nubijska piramida">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_PYRAMID_NAME-->
+                      <h2 class="civ-name">Nubijska piramida
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Nubian Pyramid.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Nagroda za plądrowanie: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Zwiększenie atrakcyjności sąsiednich pól: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Wiara</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Żywność</p>
+                      <p class="civ-ability-desc" style="text-align:left">Stworzone przez Budowniczowie</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Pustynia,  Pustynia (wzgórza),  Łąki,  Równiny</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Równiny zalewowe,  Trawiasta równina zalewowa,  Płaska równina zalewowa</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowywane przez Rzemiosło Idea</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Ulepszenie odblokowywane po odkryciu rzemiosła, mogące znajdować się na polu z pustynią, pustynią ze wzgórzami, równiną zalewową, równiną i łąką. +1 do <img src="/images/ICON_FOOD.webp" style="height:1em"/> żywności i  +2 do <img src="/images/ICON_FAITH.webp" style="height:1em"/> wiary. Otrzymuje dodatkowe dochody z sąsiadujących dzielnic. +2 do <img src="/images/ICON_FOOD.webp" style="height:1em"/> żywności, jeśli sąsiaduje z centrum miasta. Jeśli sąsiadująca dzielnica zapewnia premię za sąsiedztwo, +2 do dochodów związanych z tą premią.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Obóz">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_CAMP_NAME-->
+                      <h2 class="civ-name">Obóz
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Camp.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Nagroda za plądrowanie: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Obszary mieszkalne:</p>
+                      <p class="civ-ability-desc" style="text-align:left">Zwiększenie atrakcyjności sąsiednich pól: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Złoto</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produkcja (Odblokowywane przez Merkantylizm Idea)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Żywność (Odblokowywane przez Merkantylizm Idea)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Złoto (Odblokowywane przez Syntetyki Technologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turystyki dzięki <img src="/images/ICON_CULTURE.webp" style="height:1em"/> {3_YieldName[9]} (wymaga {4_TechOrCivicName[8]})</p>
+                      <p class="civ-ability-desc" style="text-align:left">Stworzone przez Budowniczowie</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowywane przez Hodowla zwierząt Technologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowuje zdolność budowniczych pozwalającą tworzyć obozy.<br><br>+2 do <img src="/images/ICON_GOLD.webp" style="height:1em"/> złota. Można budować je tylko na odpowiednich zasobach.<br><br>Jeśli powstaną na zasobie luksusowym, miasto będzie mogło korzystać z tego zasobu.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Olbrzymia głowa">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_COLOSSAL_HEAD_NAME-->
+                      <h2 class="civ-name">Olbrzymia głowa
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Colossal Head.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Nagroda za plądrowanie: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Obszary mieszkalne:</p>
+                      <p class="civ-ability-desc" style="text-align:left">Zwiększenie atrakcyjności sąsiednich pól: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Wiara</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Żywność</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turystyki dzięki <img src="/images/ICON_FAITH.webp" style="height:1em"/> {3_YieldName[9]} (wymaga {4_TechOrCivicName[8]})</p>
+                      <p class="civ-ability-desc" style="text-align:left">Stworzone przez Budowniczowie</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Pustynia,  Pustynia (wzgórza),  Łąki,  Łąki (wzgórza),  Równiny,  Równiny (wzgórza),  Tundra,  Tundra (wzgórza)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Wulkaniczna gleba</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowuje zdolność budowniczych pozwalającą wznieść olbrzymią głowę.<br><br>+2 do <img src="/images/ICON_FAITH.webp" style="height:1em"/> wiary. +1 do <img src="/images/ICON_FAITH.webp" style="height:1em"/> wiary za każde 2 sąsiadujące lasy deszczowe lub za każdy las deszczowy po odkryciu idei humanizmu. +1 do <img src="/images/ICON_FAITH.webp" style="height:1em"/> wiary za każde 2 sąsiadujące lasy lub za każdy las po odkryciu idei humanizmu. <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turystyka dzięki <img src="/images/ICON_FAITH.webp" style="height:1em"/> wierze po opracowaniu technologii lotu. Nie można zbudować na śniegu i zaśnieżonych wzgórzach.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Pa">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MAORI_PA_NAME-->
+                      <h2 class="civ-name">Pa
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Pā.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Modyfikator obrony: 4</p>
+                      <p class="civ-ability-desc" style="text-align:left">Premia za fortyfikację dla jednostki zajmującej pole</p>
+                      <p class="civ-ability-desc" style="text-align:left">Zwiększenie atrakcyjności sąsiednich pól: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">Stworzone przez Toa</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Pustynia (wzgórza),  Łąki (wzgórza),  Równiny (wzgórza),  Śnieg (wzgórza),  Tundra (wzgórza)</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowuje zdolność toa pozwalającą wznosić pa dostępne wyłącznie dla Maorysów.<br><br>Znajdująca się w nim jednostka dostaje +4 do <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> siły obrony i automatycznie zyskuje 2 tury fortyfikacji. Maoryska jednostka przebywająca w pa leczy się, nawet jeśli wykonała wcześniej ruch lub atakowała. Można wznieść wyłącznie na polu ze wzgórzem.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Pairidaeza">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_PAIRIDAEZA_NAME-->
+                      <h2 class="civ-name">Pairidaeza
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Pairidaeza.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Nagroda za plądrowanie: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Obszary mieszkalne:</p>
+                      <p class="civ-ability-desc" style="text-align:left">Zwiększenie atrakcyjności sąsiednich pól: 1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultura</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Złoto</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultura (Odblokowywane przez Służba dyplomatyczna Idea)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turystyki dzięki <img src="/images/ICON_CULTURE.webp" style="height:1em"/> {3_YieldName[9]} (wymaga {4_TechOrCivicName[8]})</p>
+                      <p class="civ-ability-desc" style="text-align:left">Stworzone przez Budowniczowie</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Pustynia,  Pustynia (wzgórza),  Łąki,  Łąki (wzgórza),  Równiny,  Równiny (wzgórza)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowywane przez Wczesne imperium Idea</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowuje zdolność budowniczych pozwalającą wznieść pairidaezę dostępną tylko dla Persji.<br><br>+1 do <img src="/images/ICON_CULTURE.webp" style="height:1em"/> kultury i +2 do <img src="/images/ICON_GOLD.webp" style="height:1em"/> złota. +1 do atrakcyjności. +1 do <img src="/images/ICON_CULTURE.webp" style="height:1em"/> kultury za każdy sąsiadujący kampus, dzielnicę świątynną i kulturalną. +1 do <img src="/images/ICON_GOLD.webp" style="height:1em"/> złota za każdą sąsiadującą dzielnicę biznesową, przystań, dzilenicę przemysłową i centrum miasta. Dodatkowa <img src="/images/ICON_CULTURE.webp" style="height:1em"/> kultura i <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turystyka wraz z postępami na drzewach technologii i idei. Nie można budować na śniegu, w tundrze, na zaśnieżonych wzgórzach, wzgórzach pokrytych tundrą i w sąsiedztwie innej pairidaezy.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Park miejski">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_CITY_PARK_NAME-->
+                      <h2 class="civ-name">Park miejski
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/City Park.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Nagroda za plądrowanie: Leczenie 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">Zwiększenie atrakcyjności sąsiednich pól: 2</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultura</p>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Nauka</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turystyki dzięki <img src="/images/ICON_CULTURE.webp" style="height:1em"/> {3_YieldName[9]} (wymaga {4_TechOrCivicName[8]})</p>
+                      <p class="civ-ability-desc" style="text-align:left">Stworzone przez Budowniczowie</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Pustynia,  Łąki,  Równiny,  Śnieg,  Tundra</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowywane przez Gry i rekreacja Idea</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unikalne ulepszenie związane z <img src="/images/ICON_GOVERNOR.webp" style="height:1em"/> gubernatorem, które można umieścić na obszarze miasta, gdzie urzęduje gubernator planista z awansem parki i rekreacja. Zapewnia +2 do atrakcyjności i +1 do <img src="/images/ICON_CULTURE.webp" style="height:1em"/> kultury. +1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> udogodnienie, jeśli sąsiaduje z wodą. +3 do <img src="/images/ICON_CULTURE.webp" style="height:1em"/> kultury, jeśli w mieście urzęduje gubernator planista z awansem parki i rekreacja. Nie można wybudować w sąsiedztwie innego parku miejskiego.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Pastwisko">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_PASTURE_NAME-->
+                      <h2 class="civ-name">Pastwisko
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Pasture.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Nagroda za plądrowanie: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Obszary mieszkalne:</p>
+                      <p class="civ-ability-desc" style="text-align:left">Zwiększenie atrakcyjności sąsiednich pól: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produkcja</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Żywność (Odblokowywane przez Strzemiona Technologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produkcja (Odblokowywane przez Części zamienne Technologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Żywność (Odblokowywane przez Robotyka Technologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turystyki dzięki <img src="/images/ICON_CULTURE.webp" style="height:1em"/> {3_YieldName[9]} (wymaga {4_TechOrCivicName[8]})</p>
+                      <p class="civ-ability-desc" style="text-align:left">Stworzone przez Budowniczowie</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowywane przez Hodowla zwierząt Technologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowuje zdolność budowniczych pozwalającą tworzyć pastwiska.<br><br>+1 do <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produkcji. Można budować je tylko na odpowiednich zasobach.<br><br>Jeśli powstaną na zasobie strategicznym, miasto będzie mogło korzystać z tego zasobu.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Plantacja">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_PLANTATION_NAME-->
+                      <h2 class="civ-name">Plantacja
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Plantation.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Nagroda za plądrowanie: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Obszary mieszkalne:</p>
+                      <p class="civ-ability-desc" style="text-align:left">Zwiększenie atrakcyjności sąsiednich pól: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Złoto</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Żywność (Odblokowywane przez Teoria naukowa Technologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Złoto (Odblokowywane przez Globalizacja Idea)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Żywność (Odblokowywane przez Średniowiecze Idea)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turystyki dzięki <img src="/images/ICON_CULTURE.webp" style="height:1em"/> {3_YieldName[9]} (wymaga {4_TechOrCivicName[8]})</p>
+                      <p class="civ-ability-desc" style="text-align:left">Stworzone przez Budowniczowie</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowywane przez Irygacja Technologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowuje zdolność budowniczych pozwalającą tworzyć plantacje.<br><br>+2 do <img src="/images/ICON_GOLD.webp" style="height:1em"/> złota.+1 do <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produkcji jeśli zbudowane na płaskim polu.<br>Można budować je tylko na odpowiednich zasobach.<br><br>Jeśli powstaną na zasobie luksusowym, miasto będzie mogło korzystać z tego zasobu.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Polder">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_POLDER_NAME-->
+                      <h2 class="civ-name">Polder
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Polder.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Nagroda za plądrowanie: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Obszary mieszkalne:</p>
+                      <p class="civ-ability-desc" style="text-align:left">Zwiększenie atrakcyjności sąsiednich pól: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Żywność</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produkcja</p>
+                      <p class="civ-ability-desc" style="text-align:left">+4 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Złoto (Odblokowywane przez Inżynieria cywilna Idea)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Stworzone przez Budowniczowie</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Wybrzeże i jezioro</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowywane przez Feudalizm Idea</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowuje zdolność budowniczych pozwalającą tworzyć polder dostępny wyłącznie dla Holandii.<br><br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> żywności, +1 do <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produkcji i +0,5 do <img src="/images/ICON_HOUSING.webp" style="height:1em"/> obszarów mieszkalnych. +1 do <img src="/images/ICON_FOOD.webp" style="height:1em"/> żywności, jeśli sąsiaduje z polderem. Dodatkowa <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produkcja, <img src="/images/ICON_GOLD.webp" style="height:1em"/> złoto i <img src="/images/ICON_FOOD.webp" style="height:1em"/> żywność wraz z postępami na drzewach idei i technologii. Można umieścić wyłącznie na polu wybrzeża lub jeziora sąsiadującego co najmniej z 2 polami terenu umożliwiającego ruch. Zwiększa koszt <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> ruchu na polu do 3.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Pole golfowe">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_GOLF_COURSE_NAME-->
+                      <h2 class="civ-name">Pole golfowe
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Golf Course.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Nagroda za plądrowanie: Leczenie 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">Zwiększenie atrakcyjności sąsiednich pól: 1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultura</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Złoto</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Złoto (Odblokowywane przez Oświecenie Idea)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultura (Odblokowywane przez Oświecenie Idea)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turystyki dzięki <img src="/images/ICON_CULTURE.webp" style="height:1em"/> {3_YieldName[9]} (wymaga {4_TechOrCivicName[8]})</p>
+                      <p class="civ-ability-desc" style="text-align:left">Stworzone przez Budowniczowie</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Łąki,  Łąki (wzgórza),  Równiny,  Równiny (wzgórza),  Śnieg,  Śnieg (wzgórza),  Tundra,  Tundra (wzgórza)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowywane przez Gry i rekreacja Idea</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Budowniczy mogą budować pola golfowe, unikalne dla Szkocji.<br><br>+1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> Atrakcyjności, +2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Złota i  +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultury. +1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Złota i +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultury jeśli sąsiaduje z miastem. +1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> Atrakcyjności i +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultury jeśli sąsiaduje z dystryktem rozrywkowym. Dodatkowa <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultura, <img src="/images/ICON_GOLD.webp" style="height:1em"/> Złoto, <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turystyka i <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Obszary mieszkalne poznając coraz więcej technologii i idee. Nie może być zbudowane na polach pustynii i wzgórzach pustynii. Jedno na miasto. Pola z polem golfowym mogą być zamieniane. +1 Atrakcyjności.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Qhapaq Ñan">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MOUNTAIN_ROAD_NAME-->
+                      <h2 class="civ-name">Qhapaq Ñan
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Qhapaq Ñan.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Zwiększenie atrakcyjności sąsiednich pól: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">Stworzone przez Budowniczowie LUB  Warak’aq LUB  Ranger LUB  Zwiadowca LUB  Żołnierze sił specjalnych</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Pustynia (góry),  Łąki (góry),  Równiny (góry),  Śnieg (góry),  Tundra (góry)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowywane przez Handel zagraniczny Idea</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowuje zdolność budowniczych pozwalającą wznosić Qhapaq Ñan, unikalne ulepszenie Pachacutiego.<br><br>Ulepszenie to funkcjonuje jak portal umożliwiający jednostkom przekraczanie łańcuchów górskich, przenosząc je w miejsce, w którym znajduje się portal wyjściowy. Podróż taka kosztuje 2 punkty <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> ruchu. <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> Szlaki handlowe przebiegające przez Qhapaq Ñan mogą zyskać wielokrotnie więcej <img src="/images/ICON_GOLD.webp" style="height:1em"/> złota zapewnianego im przez dzielnice w miastach docelowych. Można wznieść wyłącznie w sąsiedztwie pola gór. Nie można splądrować ani usunąć.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Rysunki z Nazca">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_NAZCA_LINE_NAME-->
+                      <h2 class="civ-name">Rysunki z Nazca
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Nazca Line.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Nagroda za plądrowanie: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Zwiększenie atrakcyjności sąsiednich pól: 1</p>
+                      <p class="civ-ability-desc" style="text-align:left">Stworzone przez Budowniczowie</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Pustynia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowuje zdolność budowniczych pozwalającą tworzyć rysunki z Nazca.<br><br>Zapewniają one +1 do <img src="/images/ICON_FAITH.webp" style="height:1em"/> wiary sąsiadującym polom, +1 do <img src="/images/ICON_FAITH.webp" style="height:1em"/> wiary sąsiadującym polom z zasobem, +1 do <img src="/images/ICON_FOOD.webp" style="height:1em"/> żywności sąsiadującym polom z pustynią lub z pustynią ze wzgórzami po odkryciu idei służby cywilnej. +1 do <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produkcji sąsiadującym płaskim polom po opracowaniu technologii masowej produkcji. +1 do atrakcyjności. Można tworzyć wyłącznie na płaskim polu pustyni. Pola z rysunkami z Nazca nie mogą być eksploatowane.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Sfinks">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_SPHINX_NAME-->
+                      <h2 class="civ-name">Sfinks
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Sphinx.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Nagroda za plądrowanie: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Zwiększenie atrakcyjności sąsiednich pól: 2</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultura</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Wiara</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultura (Odblokowywane przez Służba dyplomatyczna Idea)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turystyki dzięki <img src="/images/ICON_CULTURE.webp" style="height:1em"/> {3_YieldName[9]} (wymaga {4_TechOrCivicName[8]})</p>
+                      <p class="civ-ability-desc" style="text-align:left">Stworzone przez Budowniczowie</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Pustynia,  Pustynia (wzgórza),  Łąki,  Łąki (wzgórza),  Równiny,  Równiny (wzgórza),  Tundra,  Tundra (wzgórza)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Równiny zalewowe,  Trawiasta równina zalewowa,  Płaska równina zalewowa</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowywane przez Rzemiosło Idea</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowuje zdolność budowniczych pozwalającą wznieść sfinksa, dostępnego tylko dla Egiptu.<br><br>+2 do <img src="/images/ICON_FAITH.webp" style="height:1em"/> wiary i +1 do <img src="/images/ICON_CULTURE.webp" style="height:1em"/> kultury. +2 do atrakcyjności. +1 do <img src="/images/ICON_FAITH.webp" style="height:1em"/> wiary i +1 do <img src="/images/ICON_CULTURE.webp" style="height:1em"/>, jeśli znajduje się obok cudu. +1 do <img src="/images/ICON_FOOD.webp" style="height:1em"/> żywności i +1 do <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produkcji jesli znajduje się na pustyni oraz +1 do <img src="/images/ICON_CULTURE.webp" style="height:1em"/> kultury, jeśli znajduje się na równinach zalewowych. Zapewnia dodatkową <img src="/images/ICON_CULTURE.webp" style="height:1em"/> kulturę po odkryciu historii naturalnej. Zapewnia <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turystykę po opracowaniu technologii lotu. Nie można zbudować obok innego sfinksa. Nie można zbudować na śniegu i wzgórzach ze śniegiem.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Silos atomowy">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MISSILE_SILO-->
+                      <h2 class="civ-name">Silos atomowy
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Missile Silo.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Zwiększenie atrakcyjności sąsiednich pól: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">Stworzone przez Inżynier wojskowy</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Pustynia,  Łąki,  Równiny,  Śnieg,  Tundra</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Wulkaniczna gleba</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowywane przez Technika rakietowa Technologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowuje umiejętność inżynierów wojskowych: budowę silosu atomowego.<br><br>Stanowi on wyrzutnię broni  jądrowej i termojądrowej.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Skansen">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_OPEN_AIR_MUSEUM_NAME-->
+                      <h2 class="civ-name">Skansen
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Open-Air Museum.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Nagroda za plądrowanie: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Zwiększenie atrakcyjności sąsiednich pól: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turystyki dzięki <img src="/images/ICON_CULTURE.webp" style="height:1em"/> {3_YieldName[9]}</p>
+                      <p class="civ-ability-desc" style="text-align:left">Stworzone przez Budowniczowie</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Pustynia,  Pustynia (wzgórza),  Łąki,  Łąki (wzgórza),  Równiny,  Równiny (wzgórza),  Śnieg,  Śnieg (wzgórza),  Tundra,  Tundra (wzgórza)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowywane przez Służba dyplomatyczna Idea</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowuje zdolność budowniczych pozwalającą wznosić skanseny, unikalne ulepszenie Szwecji.<br><br>Zapewnia miastu +2 do lojalności na turę. +2 do <img src="/images/ICON_CULTURE.webp" style="height:1em"/> kultury i +2 do <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turystyki za każdy rodzaj terenu (śnieg, tundra, pustynia, równina lub łąki), na którym założono co najmniej jedno szwedzkie miasto. Tylko jeden skansen na miasto. Pól ze skansenami nie można wymieniać.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Studnia schodkowa">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_STEPWELL_NAME-->
+                      <h2 class="civ-name">Studnia schodkowa
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Stepwell.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Nagroda za plądrowanie: Leczenie 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Obszary mieszkalne:</p>
+                      <p class="civ-ability-desc" style="text-align:left">Zwiększenie atrakcyjności sąsiednich pól: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Wiara</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Żywność</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Wiara (Odblokowywane przez Feudalizm Idea)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Żywność (Odblokowywane przez Feudalizm Idea)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Stworzone przez Budowniczowie</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Pustynia,  Łąki,  Równiny,  Śnieg,  Tundra</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowywane przez Irygacja Technologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowuje zdolność budowniczych pozwalającą kopać unikalną dla Indii studnię schodkową.<br><br>+1 do <img src="/images/ICON_FOOD.webp" style="height:1em"/> żywności, +1 do <img src="/images/ICON_FAITH.webp" style="height:1em"/> wiary i +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> obszar mieszkalny. +1 do <img src="/images/ICON_FAITH.webp" style="height:1em"/> wiary, jeśli znajduje się obok dzielnicy świątynnej. +1 do <img src="/images/ICON_FOOD.webp" style="height:1em"/> żywności, jeżeli sąsiaduje z farmą. Dodatkowe <img src="/images/ICON_HOUSING.webp" style="height:1em"/> obszary mieszkalne, <img src="/images/ICON_FAITH.webp" style="height:1em"/> wiara i <img src="/images/ICON_FOOD.webp" style="height:1em"/> żywność wraz z postępami na drzewach technologii i idei. Zapobiega utracie <img src="/images/ICON_FOOD.webp" style="height:1em"/> żywności podczas suszy. Nie można jej zbudować na wzgórzach ani obok innej studni schodkowej.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Szyb naftowy">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_OIL_WELL_NAME-->
+                      <h2 class="civ-name">Szyb naftowy
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Oil Well.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Nagroda za plądrowanie: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Zwiększenie atrakcyjności sąsiednich pól: -1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produkcja</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produkcja (Odblokowywane przez Systemy predykcyjne Technologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turystyki dzięki <img src="/images/ICON_CULTURE.webp" style="height:1em"/> {3_YieldName[9]} (wymaga {4_TechOrCivicName[8]})</p>
+                      <p class="civ-ability-desc" style="text-align:left">Stworzone przez Budowniczowie</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Pustynia,  Pustynia (wzgórza),  Łąki,  Łąki (wzgórza),  Równiny,  Równiny (wzgórza),  Śnieg,  Śnieg (wzgórza),  Tundra,  Tundra (wzgórza)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowywane przez Rafinacja Technologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowuje zdolność budowniczych pozwalającą wznosić szyby naftowe.<br><br>-1 do atrakcyjności. Można zbudować wyłącznie na polu lądowym z <img src="/images/ICON_RESOURCE_OIL.webp" style="height:1em"/> ropą.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Tartak">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_LUMBER_MILL_NAME-->
+                      <h2 class="civ-name">Tartak
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Lumber Mill.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Nagroda za plądrowanie: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Zwiększenie atrakcyjności sąsiednich pól: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produkcja</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produkcja (Odblokowywane przez Balistyka Technologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produkcja (Odblokowywane przez Syntetyki Technologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turystyki dzięki <img src="/images/ICON_CULTURE.webp" style="height:1em"/> {3_YieldName[9]} (wymaga {4_TechOrCivicName[8]})</p>
+                      <p class="civ-ability-desc" style="text-align:left">Stworzone przez Budowniczowie</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Las,  Las deszczowy (Wymóg: Merkantylizm)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowywane przez Budownictwo Technologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowuje zdolność budowniczych pozwalającą wznosić tartaki.<br><br>+2 do <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produkcji. Można budować tylko w lasach. Po opracowaniu idei merkantylizmu tartaki można wznosić również w lasach deszczowych.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Tunel górski">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MOUNTAIN_TUNNEL_NAME-->
+                      <h2 class="civ-name">Tunel górski
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Mountain Tunnel.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Zwiększenie atrakcyjności sąsiednich pól: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">Stworzone przez Inżynier wojskowy</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Pustynia (góry),  Łąki (góry),  Równiny (góry),  Śnieg (góry),  Tundra (góry)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowywane przez Nauki militarne Technologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowuje zdolność inżynierów wojskowych pozwalającą tworzyć tunele górskie.<br><br>Ulepszenie to funkcjonuje jak portal umożliwiający jednostkom przekraczanie łańcuchów górskich, przenosząc je w miejsce, w którym znajduje się portal wyjściowy. Podróż taka kosztuje 2 punkty <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> ruchu. <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> Szlaki handlowe przebiegające przez tunele górskie mogą zyskać wielokrotnie więcej <img src="/images/ICON_GOLD.webp" style="height:1em"/> złota zapewnianego im przez dzielnice w miastach docelowych. Można wznieść wyłącznie w sąsiedztwie pola gór. Nie można splądrować ani usunąć.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Uprawy tarasowe">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_TERRACE_FARM_NAME-->
+                      <h2 class="civ-name">Uprawy tarasowe
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Terrace Farm.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Nagroda za plądrowanie: Leczenie 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Obszary mieszkalne:</p>
+                      <p class="civ-ability-desc" style="text-align:left">Zwiększenie atrakcyjności sąsiednich pól: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Żywność</p>
+                      <p class="civ-ability-desc" style="text-align:left">Stworzone przez Budowniczowie</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Pustynia (wzgórza),  Łąki (wzgórza),  Równiny (wzgórza)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Wulkaniczna gleba</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowuje zdolność budowniczych pozwalającą zakładać uprawy tarasowe, unikalne ulepszenie Inków.<br><br>+1 do <img src="/images/ICON_FOOD.webp" style="height:1em"/> żywności. +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> obszar mieszkalny. +1 do <img src="/images/ICON_FOOD.webp" style="height:1em"/> żywności za każde sąsiadujące pole gór. Zapewnia +2 do <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produkcji za każdą sąsiadującą dzielnicę z akweduktem. Daje +1 do <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produkcji, jeśli sąsiaduje ze słodką wodą, a nie z dzielnicą z akweduktem. Zapewnia dodatkową <img src="/images/ICON_FOOD.webp" style="height:1em"/> żywność wraz z postępami na drzewach idei i technologii za sąsiedztwo z innymi uprawami tarasowymi. Można wybudować na wzgórzach z łąkami, równinami i pustyniami.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Wielki Mur">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_GREAT_WALL_NAME-->
+                      <h2 class="civ-name">Wielki Mur
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Great Wall.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Nagroda za plądrowanie: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Modyfikator obrony: 4</p>
+                      <p class="civ-ability-desc" style="text-align:left">Premia za fortyfikację dla jednostki zajmującej pole</p>
+                      <p class="civ-ability-desc" style="text-align:left">Zwiększenie atrakcyjności sąsiednich pól: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produkcja</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turystyki dzięki <img src="/images/ICON_CULTURE.webp" style="height:1em"/> {3_YieldName[9]} (wymaga {4_TechOrCivicName[8]})</p>
+                      <p class="civ-ability-desc" style="text-align:left">Stworzone przez Budowniczowie</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Pustynia,  Pustynia (wzgórza),  Łąki,  Łąki (wzgórza),  Równiny,  Równiny (wzgórza),  Śnieg,  Śnieg (wzgórza),  Tundra,  Tundra (wzgórza)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Wulkaniczna gleba</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowywane przez Murarstwo Technologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowuje zdolność budowniczych pozwalającą wznieść Wielki Mur dostępny tylko w Chinach.<br><br>+1 do <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produkcji za segment. Zwiększa <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> obronę. Zapewnia premię do <img src="/images/ICON_GOLD.webp" style="height:1em"/> złota, jeśli sąsiaduje z innymi segmentami. Premia do <img src="/images/ICON_CULTURE.webp" style="height:1em"/> kultury i <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turystyki za sąsiadujące segmenty rośnie w miarę przechodzenia do kolejnych elementów drzewa technologii. Mur musi być budowany w linii wzdłuż granicy imperium. Katastrofy naturalne mogą go jedynie splądrować.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Ziggurat">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_ZIGGURAT_NAME-->
+                      <h2 class="civ-name">Ziggurat
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Ziggurat.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Nagroda za plądrowanie: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Obszary mieszkalne:</p>
+                      <p class="civ-ability-desc" style="text-align:left">Zwiększenie atrakcyjności sąsiednich pól: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Nauka</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultura (Odblokowywane przez Historia naturalna Idea)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turystyki dzięki <img src="/images/ICON_CULTURE.webp" style="height:1em"/> {3_YieldName[9]} (wymaga {4_TechOrCivicName[8]})</p>
+                      <p class="civ-ability-desc" style="text-align:left">Stworzone przez Budowniczowie</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Pustynia,  Łąki,  Równiny,  Śnieg,  Tundra</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Równiny zalewowe,  Trawiasta równina zalewowa,  Płaska równina zalewowa</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Budowniczy mogą wznosić Zigguraty, unikalne dla Sumerii.<br><br>+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> obszarów mieszkalnych. +2 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Nauki. +1 do <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultury jeśli sąsiaduje z rzeką. +1 do <img src="/images/ICON_FAITH.webp" style="height:1em"/> Wiary jeśli sąsiaduje z dzielnicą albo dwoma farmami. <br>Nie może być wzniesiony na wzgórzach oraz Zigguratu.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Łodzie rybackie">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_FISHING_BOATS_NAME-->
+                      <h2 class="civ-name">Łodzie rybackie
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Fishing Boats.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Nagroda za plądrowanie: Leczenie 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Obszary mieszkalne:</p>
+                      <p class="civ-ability-desc" style="text-align:left">Zwiększenie atrakcyjności sąsiednich pól: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Żywność</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produkcja</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Złoto (Odblokowywane przez Kartografia Technologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Żywność (Odblokowywane przez Tworzywo sztuczne Technologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produkcja (Odblokowywane przez Kolonializm Idea)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> turystyki dzięki <img src="/images/ICON_CULTURE.webp" style="height:1em"/> {3_YieldName[9]} (wymaga {4_TechOrCivicName[8]})</p>
+                      <p class="civ-ability-desc" style="text-align:left">Stworzone przez Budowniczowie LUB  Jahazi</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowywane przez Żegluga Technologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Odblokowuje zdolność budowniczych pozwalającą konstruować łodzie rybackie.<br><br>+1 do <img src="/images/ICON_FOOD.webp" style="height:1em"/> żywności i +1 do <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> produkcji. Można budować je tylko na odpowiednich zasobach.<br><br>Jeśli powstaną na zasobie luksusowym, miasto będzie mogło korzystać z tego zasobu.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </main>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/plugins/feather.min.js"></script>
+    <script src="/plugins/chart.min.js"></script>
+  </body>
+</html>

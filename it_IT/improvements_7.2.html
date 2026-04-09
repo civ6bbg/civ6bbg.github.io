@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <title>Civ VI BBG 7.2 Miglioramenti</title>
+    <meta charset="utf-8">
+    <meta contents="IE=edge" httpequiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="/images/BBGLogo.webp" rel="icon" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap" rel="stylesheet">
+    <link href="/css/style.min.css" rel="stylesheet">
+    <link href="/css/preloader.css" rel="stylesheet">
+    <link href="/css/animate.min.css" rel="stylesheet">
+    <link href="/css/header.css" rel="stylesheet">
+    <link href="/css/footer.css" rel="stylesheet">
+    <link href="/fontawesome-free-7.0.0-web/css/all.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="loader">
+        <div class="loader-outter"></div>
+        <div class="loader-inner"></div>
+        <div class="indicator">
+          <svg height="12px" width="16px">
+            <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+            <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="layer"></div>
+    <div class="page-flex">
+      <div class="main-wrapper">
+        <nav class="main-nav--bg">
+          <div class="main-nav">
+            <div class="header">
+              <div class="header-inner">
+                <div class="inner">
+                  <div class="row">
+                    <div class="flex center sidebar-toggle col-xl-1 col-lg-1 col-md-1 col-1">
+                      <button class="transparent-btn" title="Menu" type="button">
+                        <span class="sr-only">Toggle menu</span>
+                        <span aria-hidden="true" class="icon menu-toggle"></span>
+                      </button>
+                    </div>
+                    <div class="flex center col-xl-1 col-lg-1 col-md-1 col-2">
+                      <a href="/index.html" style="align-content: center;">
+                        <img alt="#" src="/images/BBGLogo.webp" style="width:3em; border-radius:10%">
+                      </a>
+                      <div class="mobile-nav"></div>
+                    </div>
+                    <div class="flex col-xl-8 col-lg-8 col-md-8 col-8">
+                      <div class="main-menu">
+                        <nav class="navigation">
+                          <ul class="nav menu">
+                            <li class="">
+                              <a href="/it_IT/leaders_7.2.html" onclick="civClicked(null)">Leader</a>
+                            </li>
+                            <li class="">
+                              <a href="/it_IT/bbg_expanded_7.2.html" onclick="civClicked(null)">BBG Expanded</a>
+                            </li>
+                            <li class="">
+                              <a href="/it_IT/city_states_7.2.html" onclick="civClicked(null)">Città-stato</a>
+                            </li>
+                            <li class="">
+                              <a href="/it_IT/religion_7.2.html" onclick="civClicked(null)">Religione</a>
+                            </li>
+                            <li class="">
+                              <a href="/it_IT/governor_7.2.html" onclick="civClicked(null)">Governatori</a>
+                            </li>
+                            <li class="">
+                              <a href="/it_IT/great_people_7.2.html" onclick="civClicked(null)">Grandi Personaggi</a>
+                            </li>
+                            <li class="">
+                              <a href="/it_IT/natural_wonder_7.2.html" onclick="civClicked(null)">Meraviglie naturali</a>
+                            </li>
+                            <li class="">
+                              <a href="/it_IT/world_wonder_7.2.html" onclick="civClicked(null)">World Wonders</a>
+                            </li>
+                            <li class="">
+                              <a href="/it_IT/buildings_7.2.html" onclick="civClicked(null)">Edifici</a>
+                            </li>
+                            <li class="">
+                              <a href="/it_IT/units_7.2.html" onclick="civClicked(null)">Unità</a>
+                            </li>
+                            <li class="active">
+                              <a href="/it_IT/improvements_7.2.html" onclick="civClicked(null)">Miglioramenti</a>
+                            </li>
+                            <li class="">
+                              <a href="/it_IT/tech_tree_7.2.html" onclick="civClicked(null)">Technology Tree</a>
+                            </li>
+                            <li class="">
+                              <a href="/it_IT/civic_tree_7.2.html" onclick="civClicked(null)">Civic Tree</a>
+                            </li>
+                            <li class="">
+                              <a href="/it_IT/names_7.2.html" onclick="civClicked(null)">Names</a>
+                            </li>
+                            <li class="">
+                              <a href="/it_IT/policies_7.2.html" onclick="civClicked(null)">Politiche</a>
+                            </li>
+                            <li class="">
+                              <a href="/it_IT/congress_7.2.html" onclick="civClicked(null)">Congresso Mondiale</a>
+                            </li>
+                            <li class="">
+                              <a href="/it_IT/misc_7.2.html" onclick="civClicked(null)">Misc</a>
+                            </li>
+                            <li class="">
+                              <a href="/it_IT/changelog_7.2.html" onclick="civClicked(null)">Changelog</a>
+                            </li>
+                            <li>
+                              <a>BBG Version<i class="icofont-rounded-down"></i></a>
+                              <ul class="dropdown bbg-version-dropdown">
+                                <li>
+                                  <a href="/it_IT/improvements_base_game.html">Base</a>
+                                </li>
+                                <li>
+                                  <a href="/it_IT/improvements_7.4.html">7.4</a>
+                                </li>
+                                <li>
+                                  <a href="/it_IT/improvements_7.3.html">7.3</a>
+                                </li>
+                                <li>
+                                  <a href="/it_IT/improvements_7.2.html">7.2</a>
+                                </li>
+                                <li>
+                                  <a href="/it_IT/improvements_7.1.html">7.1</a>
+                                </li>
+                                <li>
+                                  <a href="/it_IT/improvements_6.5.html">6.5</a>
+                                </li>
+                                <li>
+                                  <a href="/it_IT/improvements_6.4.html">6.4</a>
+                                </li>
+                                <li>
+                                  <a href="/it_IT/improvements_6.3.html">6.3</a>
+                                </li>
+                                <li>
+                                  <a href="/it_IT/improvements_6.2.html">6.2</a>
+                                </li>
+                                <li>
+                                  <a href="/it_IT/improvements_6.1.html">6.1</a>
+                                </li>
+                                <li>
+                                  <a href="/it_IT/improvements_6.0.html">6.0</a>
+                                </li>
+                                <li>
+                                  <a href="/it_IT/improvements_5.8.html">5.8</a>
+                                </li>
+                                <li>
+                                  <a href="/it_IT/improvements_5.7.html">5.7</a>
+                                </li>
+                                <li>
+                                  <a href="/it_IT/improvements_5.6.html">5.6</a>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+                    <div class="flex center col-xl-2 col-lg-2 col-md-2 col-1">
+                      <div class="flex row justify-content-around">
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-4">
+                          <div class="main-menu">
+                            <nav class="navigation">
+                              <ul class="nav menu">
+                                <li><i class="fa-solid fa-language lang-icon"></i>
+                                  <ul class="dropdown">
+                                    <li>
+                                      <a href="/en_US/improvements_7.2.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/us.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/fr_FR/improvements_7.2.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/fr.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/ru_RU/improvements_7.2.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/ru.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/de_DE/improvements_7.2.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/de.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/zh_Hans_CN/improvements_7.2.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/cn.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/ko_KR/improvements_7.2.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/kr.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/ja_JP/improvements_7.2.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/jp.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/pt_BR/improvements_7.2.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/br.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </nav>
+                          </div>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-4">
+                          <div class="base-game-switcher-wrapper">
+                            <button class="base-game-switcher gray-circle-btn" title="Show Base Game" type="button"><i aria-hidden="true" class="enable-icon" data-feather="toggle-left"></i><i aria-hidden="true" class="disable-icon" data-feather="toggle-right"></i></button>
+                          </div>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-4">
+                          <div class="theme-switcher-wrapper">
+                            <button class="theme-switcher gray-circle-btn" title="Switch theme" type="button">
+                              <span class="sr-only">Switch theme</span><i aria-hidden="true" class="sun-icon" data-feather="sun"></i><i aria-hidden="true" class="moon-icon" data-feather="moon"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="scroll-up footer-popup" id="footer-popup">
+          <div class="footer-popup-inner">
+            <div class="row">
+              <div class="col-sm-6 col-1 footer-popup-body">
+                <p id="donateText">Enjoy this work? Try Aether Kingdoms!
+                  <b>
+                    <a class="footer-popup-link" href="https://www.aetherkingdoms.com/" target="_blank">(Link)</a>
+                  </b>
+                </p>
+              </div>
+              <div class="col-sm-2 col-1 footer-popup-body">
+                <a class="btn btn-primary" href="https://www.aetherkingdoms.com/" target="_blank">
+                  <img alt="Aether Kingdom" class="footer-popup-img" src="/images/ak_village_animation.gif">
+                </a>
+              </div>
+              <div class="col-sm-2 col-6 footer-popup-donate">
+                <a class="btn btn-primary" href="https://ko-fi.com/calcalciffer" target="_blank">Donate</a>
+              </div>
+              <div class="col-sm-2 col-6 footer-popup-scroll-up">
+                <a class="displayNone" href="#top" id="scrollUp" onclick="civClicked(null)"><i class="fa-solid fa-up-long"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="aether-kingdom-ad" id="aether-kingdom-ad">
+          <a href="https://www.aetherkingdoms.com/" target="_blank">
+            <img alt="Aether Kingdom" class="aether-kingdom-ad-img" src="/images/ak_village_animation.gif">
+          </a>
+          <h2 class="aether-kingdom-ad-title">Try Aether Kingdoms!</h2>
+          <p class="aether-kingdom-ad-text">If you like my website here, please check out Aether Kingdoms, a free-to-play strategy game inspired by Civilization and developed by my friend and I. Click the button below to learn more!</p>
+          <a href="https://www.aetherkingdoms.com/" target="_blank">
+            <button class="ad-btn" title="Aether Kingdoms" type="submit">Aether Kingdoms</button>
+          </a>
+          <button class="ad-btn" onclick="aetherKingdomAdClose()" title="Close ad" type="submit">Close</button>
+        </div>
+        <div class="">
+          <div class="fixed left-0 right-auto h-screen bg-white border-r border-neutral-300 overflow-scroll" style="z-index: 5;">
+            <aside class="sidebar">
+              <div class="sidebar-start">
+                <div class="sidebar-body">
+                  <ul class="sidebar-body-menu"></ul>
+                </div>
+              </div>
+            </aside>
+          </div>
+          <div class="leaders-data min-w-full main-pl">
+            <main class="main users chart-page">
+              <div class="container">
+                <h1 class="civ-name">Civ VI BBG 7.2 Miglioramenti</h1><br>
+                <div class="row">
+                  <div class="col-md-6 col-12" id="Alcázar">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_ALCAZAR_NAME-->
+                      <h2 class="civ-name">Alcázar
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Alcázar.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Ricompensa saccheggio: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Modificatore alla difesa: 4</p>
+                      <p class="civ-ability-desc" style="text-align:left">Bonus per la fortificazione applicato all'unità occupante.</p>
+                      <p class="civ-ability-desc" style="text-align:left">50% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo dall'Appeal</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal alle caselle adiacenti: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo da <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura (richiede Volo Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Costruito da Costruttore</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto,  Deserto (collina),  Prateria,  Prateria (collina),  Pianura,  Pianura (collina),  Neve,  Neve (collina),  Tundra,  Tundra (collina)</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sblocca l'abilità dei Costruttori di realizzare un Alcázar.<br><br>+2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura. Fornisce <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Scienza pari al 50% dell'Appeal della casella. L'unità che lo occupa riceve +4 alla <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Forza difensiva e guadagna automaticamente 2 turni di fortificazione. Fornisce <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo dopo la scoperta del Volo. Non può essere costruito accanto a un altro Alcázar.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Allevamento nell'Outback">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_OUTBACK_STATION_NAME-->
+                      <h2 class="civ-name">Allevamento nell'Outback
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Outback Station.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Ricompensa saccheggio: Cura 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Abitazioni</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal alle caselle adiacenti: 1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Cibo</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione</p>
+                      <p class="civ-ability-desc" style="text-align:left">Costruito da Costruttore</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto,  Deserto (collina),  Prateria,  Prateria (collina),  Pianura,  Pianura (collina)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sbloccata da Gilde Progresso civico</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sblocca l'abilità dei Costruttori di creare un Allevamento nell'Outback, esclusivo dell'Australia.<br><br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Cibo, +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione e +1 Appeal alle caselle adiacenti.<br><br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Cibo per ogni Pascolo adiacente. +1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Cibo per ogni Allevamento nell'Outback adiacente dopo il Progresso Civico Dispiegamento Rapido. +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione per ogni 2 Allevamenti nell'Outback adiacenti dopo la scoperta dell'Industrializzazione.<br><br>Può essere costruito solo su caselle di deserto, prateria e pianura.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Batey">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_BATEY_NAME-->
+                      <h2 class="civ-name">Batey
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Batey.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Ricompensa saccheggio: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal alle caselle adiacenti: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo da <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura (richiede Volo Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Costruito da Costruttore</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto,  Deserto (collina),  Prateria,  Prateria (collina),  Pianura,  Pianura (collina),  Neve,  Neve (collina),  Tundra,  Tundra (collina)</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sblocca la capacità dei Costruttori di creare Batey.<br><br>Un Batey fornisce +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura. +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura per ogni risorsa bonus adiacente e per ogni Quartiere dei divertimenti (che passa a +2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura dopo la scoperta dell'Esplorazione). Dopo la scoperta del Volo fornisce anche <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo. Non può essere costruito in collina o adiacente a un altro Batey.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Bazaar a cupola">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_TRADING_DOME_NAME-->
+                      <h2 class="civ-name">Bazaar a cupola
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Trading Dome.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Ricompensa saccheggio: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal alle caselle adiacenti: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Oro</p>
+                      <p class="civ-ability-desc" style="text-align:left">Costruito da Costruttore</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto,  Deserto (collina),  Prateria,  Prateria (collina),  Pianura,  Pianura (collina),  Neve,  Neve (collina),  Tundra,  Tundra (collina)</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sblocca l'abilità dei Costruttori di realizzare un Bazaar a cupola.<br><br>+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Oro. +1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Oro per ogni risorsa di lusso adiacente. Le tue <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> Rotte commerciali internazionali in uscita forniscono +1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Oro per ogni Bazaar a cupola nella città d'origine. Non può essere costruito accanto a un altro Bazaar a cupola.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Cahokia Mounds">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MOUND_NAME-->
+                      <h2 class="civ-name">Cahokia Mounds
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Cahokia Mounds.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Ricompensa saccheggio: Cura 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Abitazioni</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal alle caselle adiacenti: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Oro</p>
+                      <p class="civ-ability-desc" style="text-align:left">Costruito da Costruttore</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto,  Prateria,  Pianura,  Tundra</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Terreni allagati,  Prateria con terreni allagati,  Pianura con terreni allagati</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sblocca l'abilità dei Costruttori di realizzare i miglioramenti Cahokia Mounds.<br><br>+3 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Oro. Il primo miglioramento Cahokia Mounds fornisce +1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> Attrattiva alla città. Dopo la scoperta della Storia Naturale, il secondo miglioramento Cahokia Mounds fornisce +1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> Attrattiva. Dopo la scoperta del Feudalesimo, i Cahokia Mounds forniscono anche +1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Cibo per ogni 2 distretti adiacenti, che diventa +1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Cibo per ogni distretto adiacente dopo aver ottenuto la tecnologia Pezzi Indipendenti. Forniscono +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Abitazioni e +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Abitazioni aggiuntive dopo la scoperta del Retaggio Culturale. È impossibile costruire due Cahokia Mounds adiacenti.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Campo">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_CAMP_NAME-->
+                      <h2 class="civ-name">Campo
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Camp.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Ricompensa saccheggio: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Abitazioni</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal alle caselle adiacenti: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Oro</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione (Sbloccata da Mercantilismo Progresso civico)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Cibo (Sbloccata da Mercantilismo Progresso civico)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Oro (Sbloccata da Materiali Sintetici Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo da <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura (richiede Volo Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Costruito da Costruttore</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sbloccata da Allevamento di Animali Tecnologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sblocca l'abilità dei Costruttori di realizzare Campi.<br><br>+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Oro. Un Campo può essere costruito solo su una risorsa valida.<br><br>Se è costruito su una risorsa di lusso, la città acquisisce l'uso di tale risorsa.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Campo da golf">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_GOLF_COURSE_NAME-->
+                      <h2 class="civ-name">Campo da golf
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Golf Course.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Ricompensa saccheggio: Cura 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal alle caselle adiacenti: 1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Oro</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Oro (Sbloccata da Illuminismo Progresso civico)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura (Sbloccata da Illuminismo Progresso civico)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo da <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura (richiede Volo Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Costruito da Costruttore</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Prateria,  Prateria (collina),  Pianura,  Pianura (collina),  Neve,  Neve (collina),  Tundra,  Tundra (collina)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sbloccata da Svaghi e Passatempi Progresso civico</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Con l'acquisizione del Progresso Civico Svaghi e Passatempi sblocca l'abilità dei Costruttori di realizzare un Campo da golf, esclusivo della Scozia.<br><br>+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Oro, +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura e +1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> Attrattiva.<br>+1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Oro e +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura se adiacente a un Centro Cittadino.<br>+1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> Attrattiva e +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura se adiacente a un Quartiere dei divertimenti. Ulteriore +1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> Attrattiva col Progresso Civico Gilde. Ulteriore +1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Oro e +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura con l'Illuminismo. +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Abitazioni con la Globalizzazione.<br><br>Non può essere posizionato in un deserto o in un deserto con colline. Massimo uno per città. Le caselle che contengono un Campo da golf non possono essere assegnate a un'altra delle tue città. +1 Appeal alle caselle adiacenti.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Campo da hockey">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_ICE_HOCKEY_RINK_NAME-->
+                      <h2 class="civ-name">Campo da hockey
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Ice Hockey Rink.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Ricompensa saccheggio: Cura 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal alle caselle adiacenti: 2</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione (Sbloccata da Sport Professionistico Progresso civico)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Cibo (Sbloccata da Sport Professionistico Progresso civico)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo da <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura (richiede Volo Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Costruito da Costruttore</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Neve,  Neve (collina),  Tundra,  Tundra (collina)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sbloccata da Corpo Diplomatico Progresso civico</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Un edificio esclusivo del Canada, sbloccato con l'acquisizione del Progresso Civico Corpo Diplomatico. <br><br>+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura per ogni casella adiacente di tundra, tundra con colline, neve e neve con colline.<br>+1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> Attrattiva e +2 Appeal alle caselle adiacenti.<br>+2 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Cibo e <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione dopo l'acquisizione del Progresso Civico Sport Professionistico.<br>+4 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura se adiacente a un edificio Stadio.<br><br>Dopo la scoperta della tecnologia Volo fornisce <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo dalla Cultura.<br><br>Si può costruire solo su tundra, tundra con colline, neve e neve con colline. Max uno per città.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Casa del Cacciatore">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_LIME_THULE_WBH_NAME-->
+                      <h2 class="civ-name">Casa del Cacciatore
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Hunter's House.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Ricompensa saccheggio: Cura 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Abitazioni</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal alle caselle adiacenti: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo da <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fede (richiede Volo Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Costruito da Costruttore OPPURE  Cacciatore con Slitta</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto,  Deserto (collina),  Prateria,  Prateria (collina),  Pianura,  Pianura (collina),  Neve,  Neve (collina),  Tundra,  Tundra (collina)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Bosco</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Miglioramento esclusivo dei Thule, sbloccato con la Vela.<br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Cibo se costruita su una casella di tundra (raddoppiato se sulla neve).<br>+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura e +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fede per ogni risorsa marina e miglioramento Campo adiacenti dopo l'acquisizione del Commercio Internazionale.<br><br>La Casa del Cacciatore fornisce rese aggiuntive alle caselle adiacenti.<br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Cibo alle caselle di tundra (doppio per la neve).<br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Cibo e +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione per i Campi e i Pescherecci.<br><br>Dev'essere costruito adiacente a una risorsa. Può essere posizionato sui boschi. Non può essere posizionata accanto a un'altra Casa del Cacciatore.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Cava">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_QUARRY_NAME-->
+                      <h2 class="civ-name">Cava
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Quarry.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Ricompensa saccheggio: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal alle caselle adiacenti: -1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione (Sbloccata da Missilistica Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione (Sbloccata da Ingegneria Militare Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo da <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura (richiede Volo Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Costruito da Costruttore</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sbloccata da Estrazione Mineraria Tecnologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sblocca l'abilità dei Costruttori di realizzare una Cava.<br><br>+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione. +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione aggiuntiva dopo la scoperta dell'Ingegneria Militare e un ulteriore +2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione dopo la scoperta della Missilistica. -1 Appeal alle caselle adiacenti. Una Cava può essere costruita solo su una risorsa valida. Se costruita su una risorsa di lusso, la città acquisisce l'uso di tale risorsa.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Centrale eolica">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_WIND_FARM_NAME-->
+                      <h2 class="civ-name">Centrale eolica
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Wind Farm.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Ricompensa saccheggio: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal alle caselle adiacenti: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Oro</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione</p>
+                      <p class="civ-ability-desc" style="text-align:left">Costruito da Costruttore</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto (collina),  Prateria (collina),  Pianura (collina),  Neve (collina),  Tundra (collina)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sbloccata da Materiali Compositi Tecnologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sblocca l'abilità dei Costruttori di realizzare una Centrale eolica.<br><br>+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Oro. +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione. Fornisce 2 <img src="/images/ICON_POWER.webp" style="height:1em"/> Energia per turno. Dev'essere costruita su una collina.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Centrale eolica offshore">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_OFFSHORE_WIND_FARM_NAME-->
+                      <h2 class="civ-name">Centrale eolica offshore
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Offshore Wind Farm.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Ricompensa saccheggio: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal alle caselle adiacenti: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione</p>
+                      <p class="civ-ability-desc" style="text-align:left">Costruito da Costruttore</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Costa e lago</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sbloccata da Sistemi predittivi Tecnologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sblocca l'abilità dei Costruttori di realizzare una Centrale eolica offshore.<br><br>+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione. Fornisce 2 <img src="/images/ICON_POWER.webp" style="height:1em"/> Energia per turno. Può essere costruita solo in una casella di lago o costa.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Centrale fotovoltaica">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_SOLAR_FARM_NAME-->
+                      <h2 class="civ-name">Centrale fotovoltaica
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Solar Farm.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Ricompensa saccheggio: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal alle caselle adiacenti: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Oro</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione</p>
+                      <p class="civ-ability-desc" style="text-align:left">Costruito da Costruttore</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto,  Prateria,  Pianura,  Tundra</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sbloccata da Satelliti Tecnologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sblocca l'abilità dei Costruttori di realizzare una Centrale fotovoltaica.<br><br>+1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Oro. +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione. Fornisce 2 <img src="/images/ICON_POWER.webp" style="height:1em"/> Energia per turno. Dev'essere costruita su terreno pianeggiante. Non può essere costruita su Neve.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Centrale geotermica ">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_GEOTHERMAL_PLANT_NAME-->
+                      <h2 class="civ-name">Centrale geotermica 
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Geothermal Plant.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Ricompensa saccheggio: <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal alle caselle adiacenti: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Scienza</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione (Sbloccata da Materiali Sintetici Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Scienza (Sbloccata da Materiali Sintetici Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Costruito da Costruttore</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Fenditura geotermica</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sbloccata da Chimica Tecnologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sblocca l'abilità dei Costruttori di realizzare una Centrale geotermica.<br><br>+1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Scienza. +2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione. Fornisce 3 <img src="/images/ICON_POWER.webp" style="height:1em"/> Energia per turno. +1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Scienza. +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione e +3 <img src="/images/ICON_POWER.webp" style="height:1em"/> Energia per turno aggiuntivi dopo la scoperta dei Materiali Sintetici.<br>Dev'essere costruita su una Fenditura geotermica.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Chemamull">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_CHEMAMULL_NAME-->
+                      <h2 class="civ-name">Chemamull
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Chemamull.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Ricompensa saccheggio: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Richiede: Appeal &gt;= 4</p>
+                      <p class="civ-ability-desc" style="text-align:left">75% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo dall'Appeal</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal alle caselle adiacenti: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione (Sbloccata da Pubblica Amministrazione Progresso civico)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo da <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura (richiede Volo Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Costruito da Costruttore</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto,  Deserto (collina),  Prateria,  Prateria (collina),  Pianura,  Pianura (collina),  Neve,  Neve (collina),  Tundra,  Tundra (collina)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Suolo vulcanico</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sbloccata da Artigianato Progresso civico</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Il Progresso Civico Artigianato sblocca l'abilità dei Costruttori di realizzare un Chemamull, edificio esclusivo dei Mapuche.<br><br>+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione. Fornisce <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura pari al 75% dell'Appeal della casella.<br>Ulteriore +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione con l'acquisizione della Pubblica Amministrazione. Fornisce <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo aggiuntivo dopo la scoperta Volo.<br><br>Appeal minimo: Mozzafiato.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Chiesa nella roccia">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_ROCK_HEWN_CHURCH_NAME-->
+                      <h2 class="civ-name">Chiesa nella roccia
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Rock-Hewn Church.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Ricompensa saccheggio: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal alle caselle adiacenti: 1</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo da <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fede (richiede Volo Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Costruito da Costruttore</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto (collina),  Prateria (collina),  Pianura (collina),  Neve (collina),  Tundra (collina)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Suolo vulcanico</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sbloccata da Drammaturgia e Poesia Progresso civico</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Il Progresso Civico Drammaturgia e Poesia sblocca la capacità dei Costruttori di realizzare una Chiesa nella roccia, miglioramento esclusivo dell’Etiopia.<br><br>+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fede per ogni casella adiacente di montagna e collina.<br>+1 Appeal nelle caselle adiacenti. Dopo la scoperta del Volo fornisce <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo dalla <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fede.<br><br>Si può costruire solo su una collina o Suolo vulcanico non adiacente a un'altra Chiesa nella roccia. I disastri naturali possono solo danneggiarla (mai distruggerla).</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Château">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_CHATEAU_NAME-->
+                      <h2 class="civ-name">Château
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Château.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Ricompensa saccheggio: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Abitazioni</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal alle caselle adiacenti: 1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Cibo</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Oro</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo da <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura (richiede Volo Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Costruito da Costruttore</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto,  Deserto (collina),  Prateria,  Prateria (collina),  Pianura,  Pianura (collina),  Neve,  Neve (collina),  Tundra,  Tundra (collina)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Terreni allagati,  Prateria con terreni allagati,  Pianura con terreni allagati</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sbloccata da Feudalesimo Progresso civico</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Il Progresso Civico Feudalesimo sblocca l'abilità dei Costruttori di realizzare uno Château, miglioramento esclusivo della Francia.<br><br>+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura, +1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> oro, +1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Cibo, +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Abitazioni e +1 Appeal alle caselle adiacenti. +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura per ogni Meraviglia adiacente, che diventa +2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura con la scoperta di Volo. +1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Oro e +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura per ogni risorsa di lusso adiacente. +2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Oro se realizzato adiacente ad un fiume. Fornisce <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo dopo la scoperta del Volo.<br><br>Non può essere costruito accanto ad un altro Château.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Fattoria">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_FARM_NAME-->
+                      <h2 class="civ-name">Fattoria
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Farm.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Ricompensa saccheggio: Cura 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Abitazioni</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal alle caselle adiacenti: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Cibo</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo da <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura (richiede Volo Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Costruito da Costruttore</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Prateria,  Prateria (collina) (Richiede: Ingegneria Civile),  Pianura,  Pianura (collina) (Richiede: Ingegneria Civile)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Terreni allagati,  Prateria con terreni allagati,  Pianura con terreni allagati,  Suolo vulcanico</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sblocca l'abilità dei Costruttori di realizzare Fattorie.<br><br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Cibo. Una Fattoria può essere costruita solo in una casella di prateria o pianura.<br><br>Costruire più Fattorie adiacenti fornisce un bonus alle Abitazioni.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Fattoria a terrazze">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_TERRACE_FARM_NAME-->
+                      <h2 class="civ-name">Fattoria a terrazze
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Terrace Farm.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Ricompensa saccheggio: Cura 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Abitazioni</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal alle caselle adiacenti: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Cibo</p>
+                      <p class="civ-ability-desc" style="text-align:left">Costruito da Costruttore</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto (collina),  Prateria (collina),  Pianura (collina)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Suolo vulcanico</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sblocca l'abilità dei Costruttori di realizzare una Fattoria a terrazze, miglioramento esclusivo degli Inca.<br><br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Cibo. Fornisce +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Abitazioni.<br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Cibo per ogni casella di montagna adiacente.<br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Cibo per ogni 2 Fattorie a terrazze adiacenti, che diventa +3 con la scoperta dei Pezzi Indipendenti.+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione per ogni distretto Acquedotto adiacente, altrimenti +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione se adiacente ad acqua dolce. Può essere costruita in una casella di prateria con colline, pianura con colline, deserto con colline e suolo vulcanico.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Feitoria">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_FEITORIA_NAME-->
+                      <h2 class="civ-name">Feitoria
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Feitoria.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal alle caselle adiacenti: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+4 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Oro</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione</p>
+                      <p class="civ-ability-desc" style="text-align:left">Costruito da Caracca</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Costa e lago</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sblocca la capacità della Caracca di costruire una Feitoria, un miglioramento esclusivo del Portogallo.<br><br>+4 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Oro e +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione. Le Rotte commerciali inviate nella città dal Portogallo forniscono +2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Oro e +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione.<br><br>Si può costruire solo in una casella adiacente a una risorsa bonus o di lusso, nel territorio che appartiene a un'altra civiltà o a una città-stato con cui è attivo il Diritto di passaggio. Deve trovarsi in una casella di costa o di lago, adiacente alla terraferma e non adiacente a un'altra Feitoria. Una Feitoria non può mai essere rimossa.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Forte">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_FORT_NAME-->
+                      <h2 class="civ-name">Forte
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Fort.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Modificatore alla difesa: 4</p>
+                      <p class="civ-ability-desc" style="text-align:left">Bonus per la fortificazione applicato all'unità occupante.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal alle caselle adiacenti: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">Costruito da Ingegnere militare</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto,  Deserto (collina),  Prateria,  Prateria (collina),  Pianura,  Pianura (collina),  Neve,  Neve (collina),  Tundra,  Tundra (collina)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Suolo vulcanico</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sbloccata da Ingegneria Militare Tecnologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">L'unità che lo occupa riceve +4 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> forza difensiva e guadagna automaticamente 2 turni di fortificazione.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Forte romano">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_ROMAN_FORT_NAME-->
+                      <h2 class="civ-name">Forte romano
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Roman Fort.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Modificatore alla difesa: 4</p>
+                      <p class="civ-ability-desc" style="text-align:left">Bonus per la fortificazione applicato all'unità occupante.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal alle caselle adiacenti: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">Costruito da Legione</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto,  Deserto (collina),  Prateria,  Prateria (collina),  Pianura,  Pianura (collina),  Neve,  Neve (collina),  Tundra,  Tundra (collina)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Suolo vulcanico</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sblocca l'abilità della Legione di realizzare un Forte romano, esclusivo di Roma.<br><br>L'unità che lo occupa riceve +4 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> forza difensiva e guadagna automaticamente 2 turni di fortificazione.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Grande Muraglia">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_GREAT_WALL_NAME-->
+                      <h2 class="civ-name">Grande Muraglia
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Great Wall.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Ricompensa saccheggio: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Modificatore alla difesa: 4</p>
+                      <p class="civ-ability-desc" style="text-align:left">Bonus per la fortificazione applicato all'unità occupante.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal alle caselle adiacenti: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo da <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura (richiede Volo Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Costruito da Costruttore</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto,  Deserto (collina),  Prateria,  Prateria (collina),  Pianura,  Pianura (collina),  Neve,  Neve (collina),  Tundra,  Tundra (collina)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Suolo vulcanico</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sbloccata da Muratura Tecnologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">La scoperta della Muratura sblocca l'abilità dei Costruttori di realizzare la Grande Muraglia, esclusiva della Cina.<br><br>+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione. Aumenta di +4 la <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Difesa e riceve automaticamente 2 turni di fortificazione.<br><br>+1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Oro per ogni Grande Muraglia adiacente. +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura per ogni Grande Muraglia adiacente, dopo la scoperta dei Castelli.<br><br>Fornisce bonus diversi in base al Leader della Cina, i quali raddoppiano se adiacente ad altre 2 Grandi Muraglie:<br>+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fede e +1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Oro se guidata da Qin Shi (Mandato divino);<br>+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione se guidata da Qin Shi (Unificatore);<br>+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura se guidata da Kublai Khan;<br>+1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Scienza se guidata da Wu Zetian;<br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Cibo se guidata da Yongle.<br><br>Fornisce <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo dopo la scoperta del Volo.<br><br>Può solamente essere danneggiata (mai distrutta) da disastri naturali. Dev'essere costruita lungo una linea che corre sul confine dell'impero.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Hacienda">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_HACIENDA_NAME-->
+                      <h2 class="civ-name">Hacienda
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Hacienda.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Ricompensa saccheggio: Cura 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Abitazioni</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal alle caselle adiacenti: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Oro</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione</p>
+                      <p class="civ-ability-desc" style="text-align:left">Costruito da Costruttore</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Prateria,  Pianura</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sbloccata da Fiere Medievali Progresso civico</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Il Progresso Civico Fiere Medievali sblocca l'abilità dei Costruttori di realizzare un'Hacienda, miglioramento esclusivo della Grande Colombia.<br><br>+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Oro, +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione e +0.5 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Abitazioni.<br><br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Cibo per ogni 2 Piantagioni adiacenti, che diventa +1 per Piantagione adiacente dopo la scoperta di Pezzi Indipendenti. Le Piantagioni e le Haciendas ricevono +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione per ogni 2 Haciendas adiacenti, che diventa +1 per Hacienda adiacente dopo l'acquisizione del Mercantilismo.<br><br>Si può costruire solo in pianura e prateria.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Kampung">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_KAMPUNG_NAME-->
+                      <h2 class="civ-name">Kampung
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Kampung.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Ricompensa saccheggio: Cura 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Abitazioni</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal alle caselle adiacenti: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione (Sbloccata da Ingegneria Civile Progresso civico)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo da <img src="/images/ICON_FOOD.webp" style="height:1em"/> Cibo (richiede Volo Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Costruito da Costruttore</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Costa e lago</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sbloccata da Costruzione Navale Tecnologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">La tecnologia Costruzione Navale sblocca l'abilità dei Costruttori di realizzare il Kampung, edificio esclusivo dell'Indonesia.<br><br>+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione e +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Abitazioni.<br><br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Cibo e +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fede per ogni Peschereccio adiacente.<br>+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione con l'acquisizione del Progresso Civico Ingegneria Civile.<br>Fornisce +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Abitazioni extra con la scoperta della tecnologia Produzione in Serie.<br><br>Fornisce <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo pari al <img src="/images/ICON_FOOD.webp" style="height:1em"/> Cibo dopo la scoperta del Volo.<br><br>Dev'essere costruito in una casella di costa o lago adiacente a una risorsa acquatica.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Kurgan">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_KURGAN_NAME-->
+                      <h2 class="civ-name">Kurgan
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Kurgan.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Ricompensa saccheggio: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal alle caselle adiacenti: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fede</p>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Oro</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo da <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fede (richiede Volo Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Costruito da Costruttore</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto,  Deserto (collina),  Prateria,  Prateria (collina),  Pianura,  Pianura (collina),  Neve,  Neve (collina),  Tundra,  Tundra (collina)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sbloccata da Allevamento di Animali Tecnologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">La tecnologia Allevamento sblocca l'abilità dei Costruttori di realizzare un Kurgan, esclusivo della Scizia.<br><br>+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fede e +3 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Oro.<br>+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fede per ogni Pascolo adiacente (diventa +2 dopo la scoperta delle Staffe).<br>+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione per ogni Pascolo adiacente.<br><br>Fornisce <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo dalla <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fede dopo la scoperta del Volo.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Linea di Nazca">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_NAZCA_LINE_NAME-->
+                      <h2 class="civ-name">Linea di Nazca
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Nazca Line.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Ricompensa saccheggio: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal alle caselle adiacenti: 1</p>
+                      <p class="civ-ability-desc" style="text-align:left">Costruito da Costruttore</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sblocca l'abilità dei Costruttori di realizzare una Linea di Nazca.<br><br>+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fede nelle caselle adiacenti. +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fede nelle caselle adiacenti che contengono una risorsa. Dopo la scoperta della Pubblica Amministrazione, +1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Cibo nelle caselle adiacenti di deserto o deserto con colline. Dopo la scoperta della tecnologia Produzione in Serie, +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione nelle caselle adiacenti pianeggianti. +1 Appeal. Una Linea di Nazca può essere costruita solo in una casella di deserto pianeggiante. La casella non può essere sfruttata dalla città.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Mahavihara">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MAHAVIHARA_NAME-->
+                      <h2 class="civ-name">Mahavihara
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Mahavihara.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Ricompensa saccheggio: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Abitazioni</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal alle caselle adiacenti: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Scienza</p>
+                      <p class="civ-ability-desc" style="text-align:left">Costruito da Costruttore</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto,  Prateria,  Pianura,  Neve,  Tundra</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sblocca l'abilità dei Costruttori di realizzare un Mahavihara.<br><br>+2 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Scienza e +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Abitazioni. +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fede per ogni distretto Luogo Santo adiacente e +1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Scienza per ogni distretto Campus adiacente. Dopo la scoperta della Teoria Scientifica riceve +1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Scienza aggiuntiva per ogni Campus adiacente. Quando un giocatore costruisce il suo primo Mahavihara riceve una tecnologia casuale. Dev'essere costruito su terreno pianeggiante e non adiacente a un altro Mahavihara.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Mekewap">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MEKEWAP_NAME-->
+                      <h2 class="civ-name">Mekewap
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Mekewap.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Ricompensa saccheggio: Cura 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Abitazioni</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal alle caselle adiacenti: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione (Sbloccata da Pubblica Amministrazione Progresso civico)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Costruito da Costruttore</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto,  Deserto (collina),  Prateria,  Prateria (collina),  Pianura,  Pianura (collina),  Neve,  Neve (collina),  Tundra,  Tundra (collina)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sbloccata da Ceramica Tecnologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">La tecnologia Ceramica sblocca l'abilità dei Costruttori di realizzare il Mekewap, esclusivo dei Cree.<br><br>+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione e +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Abitazioni.<br><br>Ulteriore +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione e +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Abitazioni con l'acquisizione della Pubblica Amministrazione. +1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Cibo per ogni 2 Risorse Bonus adiacenti, che diventa +1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Cibo per ciascuna Risorsa Bonus adiacente con l'acquisizione della Conservazione.<br><br>Dev'essere costruito in una casella adiacente a una risorsa bonus o di lusso. Non può essere costruito adiacente a un altro Mekewap.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Miniera">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MINE_NAME-->
+                      <h2 class="civ-name">Miniera
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Mine.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Ricompensa saccheggio: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal alle caselle adiacenti: -1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione (Sbloccata da Apprendistato Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione (Sbloccata da Industrializzazione Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione (Sbloccata da Materiali intelligenti Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">0% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo da <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura (richiede Volo Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Costruito da Costruttore</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto (collina),  Prateria (collina),  Pianura (collina),  Neve (collina),  Tundra (collina)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Suolo vulcanico</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sbloccata da Estrazione Mineraria Tecnologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sblocca l'abilità dei Costruttori di realizzare Miniere.<br><br>+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione. -1 Appeal. Una Miniera può essere costruita su una collina o su una risorsa valida.<br><br>Se costruita su una risorsa strategica o di lusso, la città otterrà l'uso di tale risorsa.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Misión">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MISSION_NAME-->
+                      <h2 class="civ-name">Misión
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Mission.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Ricompensa saccheggio: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal alle caselle adiacenti: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fede</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Scienza (Sbloccata da Illuminismo Progresso civico)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Costruito da Costruttore</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto,  Deserto (collina),  Prateria,  Prateria (collina),  Pianura,  Pianura (collina),  Neve,  Neve (collina),  Tundra,  Tundra (collina)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sbloccata da Teologia Progresso civico</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Il Progresso Civico Teologia sblocca l'abilità dei Costruttori di realizzare una Missione, esclusiva della Spagna.<br><br>+2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fede.<br><br>+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Abitazioni se costruita entro 7 caselle dalla <img src="/images/ICON_CAPITAL.webp" style="height:1em"/> capitale. +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fede e +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione se costruita ad almeno 8 caselle di distanza dalla <img src="/images/ICON_CAPITAL.webp" style="height:1em"/> capitale. +1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Scienza per ogni Campus o Luogo Santo adiacente. +2 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Scienza dopo l'acquisizione dell’Illuminismo.<br><br>Non può essere costruito adiacente a un'altra Missione.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Moai">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MOAI_NAME-->
+                      <h2 class="civ-name">Moai
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Moai.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Ricompensa saccheggio: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal alle caselle adiacenti: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo da <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura (richiede Volo Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Costruito da Costruttore</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Prateria,  Prateria (collina),  Pianura,  Pianura (collina)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Suolo vulcanico</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sblocca l'abilità dei Costruttori di realizzare i miglioramenti Moai.<br><br>+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura. +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura per ogni 2 Moai adiacenti. +2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura se si trova in una casella di suolo vulcanico. +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura se si trova in una casella di costa o lago. Ulteriore <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura e <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo con il progressivo avanzamento nell'Albero delle Tecnologie e in quello dei Progressi Civici. Può essere costruito in una casella di pianura, pianura con colline, prateria, prateria con colline o suolo vulcanico.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Monastero">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MONASTERY_NAME-->
+                      <h2 class="civ-name">Monastero
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Monastery.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Ricompensa saccheggio: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Abitazioni</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal alle caselle adiacenti: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fede</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Cibo</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo da <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fede (richiede Volo Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Costruito da Costruttore</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto,  Deserto (collina),  Prateria,  Prateria (collina),  Pianura,  Pianura (collina),  Neve,  Neve (collina),  Tundra,  Tundra (collina)</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Ora i tuoi Costruttori possono realizzare un miglioramento Monastero.<br><br>+3 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fede e +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Abitazioni. Cura +15 PF alle unità religiose alleate nella casella che non hanno attaccato in questo turno.<br><br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Cibo e +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fede per ogni 2 distretti adiacenti. Fornisce +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fede aggiuntiva con la scoperta della Chiesa Riformata e +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Abitazioni extra con l'acquisizione del Colonialismo. Fornisce <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo pari alla quantità di Fede <img src="/images/ICON_FAITH.webp" style="height:1em"/> dopo la scoperta del Volo.<br><br>Non può essere costruito accanto a un altro Monastero.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Museo all'aperto">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_OPEN_AIR_MUSEUM_NAME-->
+                      <h2 class="civ-name">Museo all'aperto
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Open-Air Museum.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Ricompensa saccheggio: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal alle caselle adiacenti: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo da <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura</p>
+                      <p class="civ-ability-desc" style="text-align:left">Costruito da Costruttore</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto,  Deserto (collina),  Prateria,  Prateria (collina),  Pianura,  Pianura (collina),  Neve,  Neve (collina),  Tundra,  Tundra (collina)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sbloccata da Corpo Diplomatico Progresso civico</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Il Progresso Civico Corpo Diplomatico sblocca l'abilità dei Costruttori di realizzare un Museo all'aperto, un miglioramento esclusivo svedese.<br><br>+2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura e +2 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo per ogni tipo di terreno (neve, tundra, deserto, pianura o prateria) su cui è stata fondata almeno una città svedese.<br>Fornisce +2 Lealtà per turno nella sua città.<br><br>Massimo uno per città.<br>Le caselle che contengono un Museo all'aperto non possono essere assegnate a un'altra città.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Pa">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MAORI_PA_NAME-->
+                      <h2 class="civ-name">Pa
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Pā.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Modificatore alla difesa: 4</p>
+                      <p class="civ-ability-desc" style="text-align:left">Bonus per la fortificazione applicato all'unità occupante.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal alle caselle adiacenti: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">Costruito da Toa</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto (collina),  Prateria (collina),  Pianura (collina),  Neve (collina),  Tundra (collina)</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sblocca l'abilità dei Toa di realizzare un Pa, esclusivo dei Maori.<br><br>Le unità che lo occupano ricevono +1 al raggio visivo, +4 alla <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Forza difensiva e due turni di fortificazione automatici. Un'unità Maori che occupa un Pa si cura anche se si è appena mossa o ha attaccato. Un Pa dev'essere costruito in collina.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Pairidaeza">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_PAIRIDAEZA_NAME-->
+                      <h2 class="civ-name">Pairidaeza
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Pairidaeza.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Ricompensa saccheggio: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Abitazioni</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal alle caselle adiacenti: 1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Oro</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura (Sbloccata da Corpo Diplomatico Progresso civico)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo da <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura (richiede Volo Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Costruito da Costruttore</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto,  Deserto (collina),  Prateria,  Prateria (collina),  Pianura,  Pianura (collina)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sbloccata da Primo Impero Progresso civico</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Il Progresso Civico Primo Impero sblocca l'abilità dei Costruttori di realizzare una Pairidaeza, esclusiva della Persia.<br><br>+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura, +2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Oro e +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Abitazione. Ulteriore +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura dopo l'acquisizione del Corpo Diplomatico.<br>+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura per ogni Centro cittadino, Luogo Santo, Campus e Piazza del Teatro adiacenti. +1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Oro per ogni Centro cittadino, Snodo commerciale, Porto e Zona industriale adiacenti.<br>+1 Appeal alle caselle adiacenti.<br>Fornisce <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo con la scoperta del Volo.<br><br>Non può essere costruita su neve, tundra, terreni allagati o adiacente a un'altra Pairidaeza.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Parco cittadino">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_CITY_PARK_NAME-->
+                      <h2 class="civ-name">Parco cittadino
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/City Park.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Ricompensa saccheggio: Cura 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal alle caselle adiacenti: 2</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura</p>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Scienza</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo da <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura (richiede Volo Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Costruito da Costruttore</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto,  Prateria,  Pianura,  Neve,  Tundra</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sbloccata da Svaghi e Passatempi Progresso civico</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Miglioramento esclusivo per <img src="/images/ICON_GOVERNOR.webp" style="height:1em"/> Governatori che può essere costruito in una città da un Governatore Geometra con la promozione Parchi e Divertimenti. +3 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Scienza, +3 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura, +2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Abitazioni e +1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> Attrattiva. +2 Appeal alle caselle adiacenti. Massimo uno per città.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Pascolo">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_PASTURE_NAME-->
+                      <h2 class="civ-name">Pascolo
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Pasture.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Ricompensa saccheggio: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Abitazioni</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal alle caselle adiacenti: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Cibo (Sbloccata da Staffe Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione (Sbloccata da Pezzi Indipendenti Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Cibo (Sbloccata da Robotica Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo da <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura (richiede Volo Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Costruito da Costruttore</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sbloccata da Allevamento di Animali Tecnologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sblocca l'abilità dei Costruttori di realizzare Pascoli.<br><br>+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione. Un Pascolo può essere costruito solo su una risorsa valida.<br><br>Se costruito su una risorsa strategica o di lusso, la città otterrà l'uso di tale risorsa.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Pescherecci">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_FISHING_BOATS_NAME-->
+                      <h2 class="civ-name">Pescherecci
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Fishing Boats.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Ricompensa saccheggio: Cura 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Abitazioni</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal alle caselle adiacenti: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Cibo</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Oro (Sbloccata da Cartografia Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Cibo (Sbloccata da Plastica Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione (Sbloccata da Colonialismo Progresso civico)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo da <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura (richiede Volo Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Costruito da Costruttore OPPURE  Jahazi</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sbloccata da Vela Tecnologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sblocca l'abilità dei Costruttori di realizzare Pescherecci.<br><br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Cibo e +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione. Un Peschereccio può essere costruito solo su una risorsa valida.<br><br>Se è costruito su una risorsa di lusso, la città acquisisce l'uso di tale risorsa.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Piantagione">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_PLANTATION_NAME-->
+                      <h2 class="civ-name">Piantagione
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Plantation.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Ricompensa saccheggio: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Abitazioni</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal alle caselle adiacenti: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Oro</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Cibo (Sbloccata da Teoria Scientifica Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Oro (Sbloccata da Globalizzazione Progresso civico)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Cibo (Sbloccata da Fiere Medievali Progresso civico)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo da <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura (richiede Volo Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Costruito da Costruttore</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sbloccata da Irrigazione Tecnologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sblocca l'abilità dei Costruttori di realizzare Piantagioni.<br><br>+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Oro. +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione se costruita su una casella pianeggiante.<br>Una Piantagione può essere costruita solo su una risorsa valida.<br><br>Se è costruita su una risorsa di lusso, la città acquisisce l'uso di tale risorsa.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Piattaforma petrolifera offshore">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_OFFSHORE_OIL_RIG_NAME-->
+                      <h2 class="civ-name">Piattaforma petrolifera offshore
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Offshore Oil Rig.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Ricompensa saccheggio: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal alle caselle adiacenti: -1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione (Sbloccata da Sistemi predittivi Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo da <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura (richiede Volo Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Costruito da Costruttore</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Costa e lago,  Oceano</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sbloccata da Raffinazione Tecnologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sblocca l'abilità dei Costruttori di realizzare una Piattaforma petrolifera offshore.<br><br>-1 Appeal. Una Piattaforma petrolifera offshore può essere costruita solo su caselle di costa o di lago che contengono la risorsa <img src="/images/ICON_RESOURCE_OIL.webp" style="height:1em"/> Petrolio.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Piramide nubiana">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_PYRAMID_NAME-->
+                      <h2 class="civ-name">Piramide nubiana
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Nubian Pyramid.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Ricompensa saccheggio: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal alle caselle adiacenti: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fede</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Cibo</p>
+                      <p class="civ-ability-desc" style="text-align:left">Costruito da Costruttore</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto,  Deserto (collina),  Prateria,  Pianura</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Terreni allagati,  Prateria con terreni allagati,  Pianura con terreni allagati</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sbloccata da Artigianato Progresso civico</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Il Progresso Civico Artigianato sblocca l'abilità dei Costruttori di realizzare la Piramide nubiana, esclusiva per Nubia.<br><br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Cibo e +2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fede.<br>Fornisce bonus standard per la posizione ai distretti adiacenti.<br>Fornisce rese aggiuntive per l'adiacenza ai distretti:<br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Cibo dal Centro cittadino.<br>+1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Scienza dai Campus.<br>+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura dalle Piazze del Teatro.<br>+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fede dai Luoghi Santi.<br>+1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Oro da Snodi commerciali e Porti.<br>+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione da Zone industriali, Accampamenti e Aerodromi.<br>+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura e +2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Oro da Piazze del Governo e Quartieri diplomatici. Può essere costruita su caselle di deserto, deserto con colline e su qualsiasi altra casella pianeggiante. Non può essere costruita accanto a un'altra Piramide nubiana. Max una per città.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Pista d'atterraggio">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_AIRSTRIP_NAME-->
+                      <h2 class="civ-name">Pista d'atterraggio
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Airstrip.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal alle caselle adiacenti: -1</p>
+                      <p class="civ-ability-desc" style="text-align:left">Costruito da Ingegnere militare</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto,  Prateria,  Pianura,  Neve,  Tundra</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Suolo vulcanico</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sbloccata da Volo Tecnologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sblocca l'abilità dell'Ingegnere militare di costruire una Pista d'atterraggio.<br><br>Può supportare 3 unità aeree. Può essere costruita solo su terreno pianeggiante. -1 Appeal.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Polder">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_POLDER_NAME-->
+                      <h2 class="civ-name">Polder
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Polder.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Ricompensa saccheggio: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Abitazioni</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal alle caselle adiacenti: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Cibo</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione</p>
+                      <p class="civ-ability-desc" style="text-align:left">+4 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Oro (Sbloccata da Ingegneria Civile Progresso civico)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Costruito da Costruttore</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Costa e lago</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sbloccata da Feudalesimo Progresso civico</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Il Progresso Civico Feudalesismo sblocca l'abilità dei Costruttori di realizzare un Polder, miglioramento esclusivo dei Paesi Bassi.<br><br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Cibo, +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione e +0.5 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Abitazioni.<br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Cibo se adiacente ad un altro miglioramento Polder, che diventa +2 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Cibo dopo la scoperta dei Pezzi Indipendenti.<br>+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione per ogni Porto adiacente.<br>+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione per ogni 2 Polder adiacenti, che diventa +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione per ogni Polder adiacente con la scoperta dei Pezzi Indipendenti.<br>+4 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Oro con l'avvento dell'Ingegneria Civile.<br>+3 alla <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Forza di Combattimento per le unità navali che si difendono nel Polder.<br><br>Dev'essere costruito in una casella costiera o di lago adiacente a 2 o più caselle di terraferma non invalicabili.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Pozzo a gradini">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_STEPWELL_NAME-->
+                      <h2 class="civ-name">Pozzo a gradini
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Stepwell.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Ricompensa saccheggio: Cura 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Abitazioni</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal alle caselle adiacenti: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fede</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Cibo</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fede (Sbloccata da Feudalesimo Progresso civico)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Cibo (Sbloccata da Feudalesimo Progresso civico)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Costruito da Costruttore</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto,  Prateria,  Pianura,  Neve,  Tundra</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sbloccata da Irrigazione Tecnologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">La tecnologia Irrigazione sblocca l'abilità dei Costruttori di realizzare un Pozzo a gradini, esclusivo dell'India.<br><br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Cibo, +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Abitazioni e +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fede.<br>Fornisce un ulteriore +1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Cibo e +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fede dopo la scoperta del Feudalesimo.<br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Cibo per ogni Fattoria adiacente. +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fede se adiacente a un distretto Luogo Santo.<br>+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Abitazioni con la scoperta della Fognatura.<br><br>Non può essere costruito in collina o adiacente a un altro Pozzo a gradini.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Pozzo petrolifero">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_OIL_WELL_NAME-->
+                      <h2 class="civ-name">Pozzo petrolifero
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Oil Well.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Ricompensa saccheggio: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal alle caselle adiacenti: -1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione (Sbloccata da Sistemi predittivi Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo da <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura (richiede Volo Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Costruito da Costruttore</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto,  Deserto (collina),  Prateria,  Prateria (collina),  Pianura,  Pianura (collina),  Neve,  Neve (collina),  Tundra,  Tundra (collina)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sbloccata da Raffinazione Tecnologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sblocca l'abilità dei Costruttori di realizzare un Pozzo petrolifero.<br><br>-1 Appeal. Può essere costruito solo in una casella terrestre con la risorsa <img src="/images/ICON_RESOURCE_OIL.webp" style="height:1em"/> Petrolio.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Qhapaq Nan">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MOUNTAIN_ROAD_NAME-->
+                      <h2 class="civ-name">Qhapaq Nan
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Qhapaq Ñan.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal alle caselle adiacenti: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">Costruito da Costruttore OPPURE  Warak'aq OPPURE  Ranger OPPURE  Scout OPPURE  Forza Speciale</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto (montagna),  Prateria (montagna),  Pianura (montagna),  Neve (montagna),  Tundra (montagna)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sbloccata da Commercio Internazionale Progresso civico</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sblocca l'abilità dei Costruttori di realizzare un Qhapaq Nan, esclusivo di Pachacuti.<br><br>Agisce come un portale per il movimento attraverso una catena montuosa, permettendo alle unità di entrarvi e di uscire da un altro portale al costo di 2 punti <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> movimento. Le <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> Rotte commerciali che lo attraversano possono moltiplicare l'<img src="/images/ICON_GOLD.webp" style="height:1em"/> Oro ottenuto dai distretti nella città di destinazione. Può essere costruito solo su una casella di montagna adiacente. Non è possibile rimuovere o saccheggiare questo miglioramento.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Seastead">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_SEASTEAD_NAME-->
+                      <h2 class="civ-name">Seastead
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Seastead.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Ricompensa saccheggio: Cura 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+4 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Abitazioni</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal alle caselle adiacenti: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Cibo</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo da <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura</p>
+                      <p class="civ-ability-desc" style="text-align:left">Costruito da Costruttore</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Costa e lago,  Oceano</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sbloccata da Seastead Tecnologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sblocca l'abilità dei Costruttori di realizzare un Seastead.<br><br>+2 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Cibo. +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione per ogni Peschereccio adiacente. I Pescherecci ricevono +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione per ogni Seastead adiacente. +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura e <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo per ogni Reef adiacente. +2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Abitazioni. Un Seastead dev'essere costruito in una casella di lago, oceano o costa e non può essere adiacente a un altro Seastead. </p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Segheria">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_LUMBER_MILL_NAME-->
+                      <h2 class="civ-name">Segheria
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Lumber Mill.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Ricompensa saccheggio: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal alle caselle adiacenti: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione (Sbloccata da Balistica Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione (Sbloccata da Materiali Sintetici Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo da <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura (richiede Volo Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Costruito da Costruttore</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Bosco,  Foresta pluviale (Richiede: Mercantilismo)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sbloccata da Costruzione Tecnologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sblocca l'abilità dei Costruttori di realizzare una Segheria.<br><br>+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione. Può essere costruita solo su un bosco. Dopo la scoperta del Mercantilismo può essere costruita anche su una foresta pluviale.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Sfinge">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_SPHINX_NAME-->
+                      <h2 class="civ-name">Sfinge
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Sphinx.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Ricompensa saccheggio: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal alle caselle adiacenti: 2</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fede</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura (Sbloccata da Corpo Diplomatico Progresso civico)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo da <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura (richiede Volo Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Costruito da Costruttore</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto,  Deserto (collina),  Prateria,  Prateria (collina),  Pianura,  Pianura (collina),  Tundra,  Tundra (collina)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Terreni allagati,  Prateria con terreni allagati,  Pianura con terreni allagati</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sbloccata da Artigianato Progresso civico</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Il Progresso Civico Artigianato sblocca l'abilità dei Costruttori di realizzare una Sfinge, esclusiva dell'Egitto.<br><br>+2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fede e +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura.<br>+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura se costruita su un terreno allagato.<br>+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura col Progresso Civico Corpo Diplomatico.<br>+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> e +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura se costruita adiacente a una Meraviglia.<br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Cibo e +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produzione se è costruita su deserto (non allagato) o deserto con colline.<br>+2 Appeal alle caselle adiacenti.<br><br>Fornisce <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo dopo la scoperta del Volo.<br><br>Non può essere costruita adiacente a un'altra Sfinge. Non può essere costruita sulla neve.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Silo missilistico">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MISSILE_SILO-->
+                      <h2 class="civ-name">Silo missilistico
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Missile Silo.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal alle caselle adiacenti: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">Costruito da Ingegnere militare</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto,  Prateria,  Pianura,  Neve,  Tundra</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Suolo vulcanico</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sbloccata da Missilistica Tecnologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sblocca l'abilità dell'Ingegnere militare di costruire un Silo missilistico.<br><br>Funziona da rampa di lancio per i Dispositivi nucleari e termonucleari.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Stazione sciistica">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_SKI_RESORT_NAME-->
+                      <h2 class="civ-name">Stazione sciistica
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Ski Resort.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal alle caselle adiacenti: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo da  Appeal</p>
+                      <p class="civ-ability-desc" style="text-align:left">Costruito da Costruttore</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto (montagna),  Prateria (montagna),  Pianura (montagna),  Neve (montagna),  Tundra (montagna)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sbloccata da Sport Professionistico Progresso civico</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sblocca l'abilità dei Costruttori di realizzare una Stazione sciistica.<br><br>Fornisce +4 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo. Fornisce 1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> Attrattiva. Si può costruire solo su una montagna e non può essere adiacente a un'altra Stazione sciistica. Non è possibile saccheggiare o rimuovere questo miglioramento, né sfruttare la casella in cui si trova.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Testa colossale">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_COLOSSAL_HEAD_NAME-->
+                      <h2 class="civ-name">Testa colossale
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Colossal Head.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Ricompensa saccheggio: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Abitazioni</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal alle caselle adiacenti: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fede</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Cibo</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo da <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fede (richiede Volo Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Costruito da Costruttore</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto,  Deserto (collina),  Prateria,  Prateria (collina),  Pianura,  Pianura (collina),  Tundra,  Tundra (collina)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Suolo vulcanico</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sblocca l'abilità dei Costruttori di realizzare una Testa colossale.<br><br>+2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fede. +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fede per ogni 2 caselle di foresta pluviale adiacenti o per ogni casella di foresta pluviale adiacente dopo la scoperta dell'Umanesimo. +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fede per ogni 2 caselle di bosco adiacenti o per ogni casella di bosco adiacente dopo la scoperta dell'Umanesimo. Fornisce <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo dalla <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fede dopo la scoperta del Volo. Non può essere costruita su Neve o Neve con colline.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Traforo">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MOUNTAIN_TUNNEL_NAME-->
+                      <h2 class="civ-name">Traforo
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Mountain Tunnel.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal alle caselle adiacenti: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">Costruito da Ingegnere militare</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto (montagna),  Prateria (montagna),  Pianura (montagna),  Neve (montagna),  Tundra (montagna)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sbloccata da Scienza Militare Tecnologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sblocca l'abilità degli Ingegneri Militari di realizzare un Traforo.<br><br>Agisce come un portale per il movimento attraverso una catena montuosa, permettendo alle unità di entrarvi e di uscire da un altro portale al costo di 2 punti <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> movimento. Le <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> Rotte commerciali che lo attraversano possono moltiplicare l'<img src="/images/ICON_GOLD.webp" style="height:1em"/> Oro ottenuto dai distretti nella città di destinazione. Può essere costruito solo su una casella di montagna adiacente. Non è possibile rimuovere o saccheggiare questo miglioramento.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Villaggio vacanze">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_BEACH_RESORT_NAME-->
+                      <h2 class="civ-name">Villaggio vacanze
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Seaside Resort.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Ricompensa saccheggio: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Richiede: Appeal &gt;= 2</p>
+                      <p class="civ-ability-desc" style="text-align:left">150% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo dall'Appeal</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal alle caselle adiacenti: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo da <img src="/images/ICON_GOLD.webp" style="height:1em"/> Oro</p>
+                      <p class="civ-ability-desc" style="text-align:left">Costruito da Costruttore</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto,  Deserto (collina),  Prateria,  Prateria (collina),  Pianura,  Pianura (collina)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Suolo vulcanico</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sbloccata da Radio Tecnologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sblocca l'abilità dei Costruttori di realizzare Villaggi vacanze.<br><br>Un Villaggio vacanze fornisce <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo pari a 150% dell'Appeal della casella. Può essere costruito solo sulla costa e solo su caselle di deserto, pianura o prateria. Appeal minimo: Delizioso.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Vivaio">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_FISHERY_NAME-->
+                      <h2 class="civ-name">Vivaio
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Fishery.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Ricompensa saccheggio: Cura 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Abitazioni</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal alle caselle adiacenti: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Cibo</p>
+                      <p class="civ-ability-desc" style="text-align:left">Costruito da Costruttore</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Costa e lago</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sbloccata da Navigazione Astronomica Tecnologia</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sblocca l'abilità dei Costruttori di realizzare un Vivaio.<br><br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Cibo. +1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Cibo aggiuntivo se adiacente a una risorsa acquatica. +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Abitazioni. Dev'essere costruito in una casella costiera.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Ziqqurat">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_ZIGGURAT_NAME-->
+                      <h2 class="civ-name">Ziqqurat
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Ziggurat.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Ricompensa saccheggio: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Abitazioni</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal alle caselle adiacenti: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Scienza</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura (Sbloccata da Storia Naturale Progresso civico)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo da <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura (richiede Volo Tecnologia)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Costruito da Costruttore</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Deserto,  Prateria,  Pianura,  Neve,  Tundra</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Terreni allagati,  Prateria con terreni allagati,  Pianura con terreni allagati</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sblocca l'abilità dei Costruttori di realizzare una Ziqqurat, esclusiva della Sumeria.<br><br>+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Abitazioni e +2 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Scienza.<br>+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura se adiacente a un fiume.<br> Dopo l'acquisizione del Primo Impero, fornisce +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fede per ogni distretto adiacente o per ogni 2 Fattorie adiacenti.<br><br>Non può essere costruita in collina o adiacente a un'altra Ziqqurat.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </main>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/plugins/feather.min.js"></script>
+    <script src="/plugins/chart.min.js"></script>
+  </body>
+</html>

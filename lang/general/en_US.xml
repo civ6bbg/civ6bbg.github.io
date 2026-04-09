@@ -100,5 +100,11 @@
         <Row Tag="LOC_CIVIC_NUCLEAR_PROGRAM_NAME">
             <Text>Nuclear Program</Text>
         </Row>
+        <Row Tag="LOC_VALID_TERRAIN_TYPE">
+            <Text>Valid Terrains: </Text>
+        </Row>
+        <Row Tag="LOC_VALID_FEATURE_TYPE">
+            <Text>Valid Features: </Text>
+        </Row>
 	</LocalizedText>
 </GameData>

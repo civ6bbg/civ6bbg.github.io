@@ -1,0 +1,1296 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <title>Civ VI BBG 6.2 施設</title>
+    <meta charset="utf-8">
+    <meta contents="IE=edge" httpequiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="/images/BBGLogo.webp" rel="icon" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap" rel="stylesheet">
+    <link href="/css/style.min.css" rel="stylesheet">
+    <link href="/css/preloader.css" rel="stylesheet">
+    <link href="/css/animate.min.css" rel="stylesheet">
+    <link href="/css/header.css" rel="stylesheet">
+    <link href="/css/footer.css" rel="stylesheet">
+    <link href="/fontawesome-free-7.0.0-web/css/all.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="loader">
+        <div class="loader-outter"></div>
+        <div class="loader-inner"></div>
+        <div class="indicator">
+          <svg height="12px" width="16px">
+            <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+            <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="layer"></div>
+    <div class="page-flex">
+      <div class="main-wrapper">
+        <nav class="main-nav--bg">
+          <div class="main-nav">
+            <div class="header">
+              <div class="header-inner">
+                <div class="inner">
+                  <div class="row">
+                    <div class="flex center sidebar-toggle col-xl-1 col-lg-1 col-md-1 col-1">
+                      <button class="transparent-btn" title="Menu" type="button">
+                        <span class="sr-only">Toggle menu</span>
+                        <span aria-hidden="true" class="icon menu-toggle"></span>
+                      </button>
+                    </div>
+                    <div class="flex center col-xl-1 col-lg-1 col-md-1 col-2">
+                      <a href="/index.html" style="align-content: center;">
+                        <img alt="#" src="/images/BBGLogo.webp" style="width:3em; border-radius:10%">
+                      </a>
+                      <div class="mobile-nav"></div>
+                    </div>
+                    <div class="flex col-xl-8 col-lg-8 col-md-8 col-8">
+                      <div class="main-menu">
+                        <nav class="navigation">
+                          <ul class="nav menu">
+                            <li class="">
+                              <a href="/ja_JP/leaders_6.2.html" onclick="civClicked(null)">指導者</a>
+                            </li>
+                            <li class="">
+                              <a href="/ja_JP/bbg_expanded_6.2.html" onclick="civClicked(null)">BBG Expanded</a>
+                            </li>
+                            <li class="">
+                              <a href="/ja_JP/city_states_6.2.html" onclick="civClicked(null)">都市国家</a>
+                            </li>
+                            <li class="">
+                              <a href="/ja_JP/religion_6.2.html" onclick="civClicked(null)">宗教</a>
+                            </li>
+                            <li class="">
+                              <a href="/ja_JP/governor_6.2.html" onclick="civClicked(null)">総督</a>
+                            </li>
+                            <li class="">
+                              <a href="/ja_JP/great_people_6.2.html" onclick="civClicked(null)">偉人</a>
+                            </li>
+                            <li class="">
+                              <a href="/ja_JP/natural_wonder_6.2.html" onclick="civClicked(null)">自然遺産</a>
+                            </li>
+                            <li class="">
+                              <a href="/ja_JP/world_wonder_6.2.html" onclick="civClicked(null)">World Wonders</a>
+                            </li>
+                            <li class="">
+                              <a href="/ja_JP/buildings_6.2.html" onclick="civClicked(null)">建造物</a>
+                            </li>
+                            <li class="">
+                              <a href="/ja_JP/units_6.2.html" onclick="civClicked(null)">ユニット</a>
+                            </li>
+                            <li class="active">
+                              <a href="/ja_JP/improvements_6.2.html" onclick="civClicked(null)">施設</a>
+                            </li>
+                            <li class="">
+                              <a href="/ja_JP/tech_tree_6.2.html" onclick="civClicked(null)">Technology Tree</a>
+                            </li>
+                            <li class="">
+                              <a href="/ja_JP/civic_tree_6.2.html" onclick="civClicked(null)">Civic Tree</a>
+                            </li>
+                            <li class="">
+                              <a href="/ja_JP/names_6.2.html" onclick="civClicked(null)">Names</a>
+                            </li>
+                            <li class="">
+                              <a href="/ja_JP/policies_6.2.html" onclick="civClicked(null)">政策</a>
+                            </li>
+                            <li class="">
+                              <a href="/ja_JP/congress_6.2.html" onclick="civClicked(null)">世界会議</a>
+                            </li>
+                            <li class="">
+                              <a href="/ja_JP/misc_6.2.html" onclick="civClicked(null)">Misc</a>
+                            </li>
+                            <li class="">
+                              <a href="/ja_JP/changelog_6.2.html" onclick="civClicked(null)">Changelog</a>
+                            </li>
+                            <li>
+                              <a>BBG Version<i class="icofont-rounded-down"></i></a>
+                              <ul class="dropdown bbg-version-dropdown">
+                                <li>
+                                  <a href="/ja_JP/improvements_base_game.html">Base</a>
+                                </li>
+                                <li>
+                                  <a href="/ja_JP/improvements_7.4.html">7.4</a>
+                                </li>
+                                <li>
+                                  <a href="/ja_JP/improvements_7.3.html">7.3</a>
+                                </li>
+                                <li>
+                                  <a href="/ja_JP/improvements_7.2.html">7.2</a>
+                                </li>
+                                <li>
+                                  <a href="/ja_JP/improvements_7.1.html">7.1</a>
+                                </li>
+                                <li>
+                                  <a href="/ja_JP/improvements_6.5.html">6.5</a>
+                                </li>
+                                <li>
+                                  <a href="/ja_JP/improvements_6.4.html">6.4</a>
+                                </li>
+                                <li>
+                                  <a href="/ja_JP/improvements_6.3.html">6.3</a>
+                                </li>
+                                <li>
+                                  <a href="/ja_JP/improvements_6.2.html">6.2</a>
+                                </li>
+                                <li>
+                                  <a href="/ja_JP/improvements_6.1.html">6.1</a>
+                                </li>
+                                <li>
+                                  <a href="/ja_JP/improvements_6.0.html">6.0</a>
+                                </li>
+                                <li>
+                                  <a href="/ja_JP/improvements_5.8.html">5.8</a>
+                                </li>
+                                <li>
+                                  <a href="/ja_JP/improvements_5.7.html">5.7</a>
+                                </li>
+                                <li>
+                                  <a href="/ja_JP/improvements_5.6.html">5.6</a>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+                    <div class="flex center col-xl-2 col-lg-2 col-md-2 col-1">
+                      <div class="flex row justify-content-around">
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-4">
+                          <div class="main-menu">
+                            <nav class="navigation">
+                              <ul class="nav menu">
+                                <li><i class="fa-solid fa-language lang-icon"></i>
+                                  <ul class="dropdown">
+                                    <li>
+                                      <a href="/en_US/improvements_6.2.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/us.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/fr_FR/improvements_6.2.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/fr.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/ru_RU/improvements_6.2.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/ru.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/de_DE/improvements_6.2.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/de.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/zh_Hans_CN/improvements_6.2.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/cn.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/ko_KR/improvements_6.2.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/kr.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/ja_JP/improvements_6.2.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/jp.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/pt_BR/improvements_6.2.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/br.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </nav>
+                          </div>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-4">
+                          <div class="base-game-switcher-wrapper">
+                            <button class="base-game-switcher gray-circle-btn" title="Show Base Game" type="button"><i aria-hidden="true" class="enable-icon" data-feather="toggle-left"></i><i aria-hidden="true" class="disable-icon" data-feather="toggle-right"></i></button>
+                          </div>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-4">
+                          <div class="theme-switcher-wrapper">
+                            <button class="theme-switcher gray-circle-btn" title="Switch theme" type="button">
+                              <span class="sr-only">Switch theme</span><i aria-hidden="true" class="sun-icon" data-feather="sun"></i><i aria-hidden="true" class="moon-icon" data-feather="moon"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="scroll-up footer-popup" id="footer-popup">
+          <div class="footer-popup-inner">
+            <div class="row">
+              <div class="col-sm-6 col-1 footer-popup-body">
+                <p id="donateText">Enjoy this work? Try Aether Kingdoms!
+                  <b>
+                    <a class="footer-popup-link" href="https://www.aetherkingdoms.com/" target="_blank">(Link)</a>
+                  </b>
+                </p>
+              </div>
+              <div class="col-sm-2 col-1 footer-popup-body">
+                <a class="btn btn-primary" href="https://www.aetherkingdoms.com/" target="_blank">
+                  <img alt="Aether Kingdom" class="footer-popup-img" src="/images/ak_village_animation.gif">
+                </a>
+              </div>
+              <div class="col-sm-2 col-6 footer-popup-donate">
+                <a class="btn btn-primary" href="https://ko-fi.com/calcalciffer" target="_blank">Donate</a>
+              </div>
+              <div class="col-sm-2 col-6 footer-popup-scroll-up">
+                <a class="displayNone" href="#top" id="scrollUp" onclick="civClicked(null)"><i class="fa-solid fa-up-long"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="aether-kingdom-ad" id="aether-kingdom-ad">
+          <a href="https://www.aetherkingdoms.com/" target="_blank">
+            <img alt="Aether Kingdom" class="aether-kingdom-ad-img" src="/images/ak_village_animation.gif">
+          </a>
+          <h2 class="aether-kingdom-ad-title">Try Aether Kingdoms!</h2>
+          <p class="aether-kingdom-ad-text">If you like my website here, please check out Aether Kingdoms, a free-to-play strategy game inspired by Civilization and developed by my friend and I. Click the button below to learn more!</p>
+          <a href="https://www.aetherkingdoms.com/" target="_blank">
+            <button class="ad-btn" title="Aether Kingdoms" type="submit">Aether Kingdoms</button>
+          </a>
+          <button class="ad-btn" onclick="aetherKingdomAdClose()" title="Close ad" type="submit">Close</button>
+        </div>
+        <div class="">
+          <div class="fixed left-0 right-auto h-screen bg-white border-r border-neutral-300 overflow-scroll" style="z-index: 5;">
+            <aside class="sidebar">
+              <div class="sidebar-start">
+                <div class="sidebar-body">
+                  <ul class="sidebar-body-menu"></ul>
+                </div>
+              </div>
+            </aside>
+          </div>
+          <div class="leaders-data min-w-full main-pl">
+            <main class="main users chart-page">
+              <div class="container">
+                <h1 class="civ-name">Civ VI BBG 6.2 施設</h1><br>
+                <div class="row">
+                  <div class="col-md-6 col-12" id="アウトバックステーション">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_OUTBACK_STATION_NAME-->
+                      <h2 class="civ-name">アウトバックステーション
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Outback Station.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">略奪の成果: 体力の回復 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住宅</p>
+                      <p class="civ-ability-desc" style="text-align:left">隣接タイルへのアピール: 1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食料</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力</p>
+                      <p class="civ-ability-desc" style="text-align:left">建設者 労働者</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  砂漠,  砂漠 (丘陵),  草原,  草原 (丘陵),  平原,  平原 (丘陵)</p>
+                      <p class="civ-ability-desc" style="text-align:left">必要な技術 ギルド 社会制度</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">労働者がオーストラリア固有の施設「アウトバックステーション」を建設できるようになる。<br><br><img src="/images/ICON_FOOD.webp" style="height:1em"/> 食料+1、 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力+1。隣接する牧草地1つにつき <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食料+1。隣接タイルのアピール+1。工業化の技術を研究後は隣接するアウトバックステーション2つにつき <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力+1。早期展開の社会制度を解禁後は隣接するアウトバックステーション1つにつき <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食料+1。<br><br>砂漠、砂漠 (丘陵)、草原、草原(丘陵)、平原、平原(丘陵)にのみ建設可能。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="アシエンダ">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_HACIENDA_NAME-->
+                      <h2 class="civ-name">アシエンダ
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Hacienda.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">略奪の成果: 体力の回復 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住宅</p>
+                      <p class="civ-ability-desc" style="text-align:left">隣接タイルへのアピール: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> ゴールド</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力</p>
+                      <p class="civ-ability-desc" style="text-align:left">建設者 労働者</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  草原,  平原</p>
+                      <p class="civ-ability-desc" style="text-align:left">必要な技術 中世の市 社会制度</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">労働者が大コロンビア固有の改善であるアシエンダを建設できるようになる。<br><br><img src="/images/ICON_GOLD.webp" style="height:1em"/>ゴールド+2、<img src="/images/ICON_PRODUCTION.webp" style="height:1em"/>生産力+1、<img src="/images/ICON_HOUSING.webp" style="height:1em"/>住宅+0.5。隣接するプランテーション2つごとに<img src="/images/ICON_FOOD.webp" style="height:1em"/>食糧+1(共通規格の研究完了で1つごとに改良)。プランテーションとアシエンダは隣接するアシエンダ2つごとに<img src="/images/ICON_PRODUCTION.webp" style="height:1em"/>生産力+1(重商主義の発明後は1つごと)。草原か平原に建設されなければならない。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="アルカサル宮殿">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_ALCAZAR_NAME-->
+                      <h2 class="civ-name">アルカサル宮殿
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Alcázar.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">略奪の成果: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">防御修正値: 4</p>
+                      <p class="civ-ability-desc" style="text-align:left">ここにいるユニットに「守りを固める」ボーナスを適用。</p>
+                      <p class="civ-ability-desc" style="text-align:left">アピールにより <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 観光力50%</p>
+                      <p class="civ-ability-desc" style="text-align:left">隣接タイルへのアピール: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力により <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 観光力100% (航空技術 技術が必要)</p>
+                      <p class="civ-ability-desc" style="text-align:left">建設者 労働者</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  砂漠,  砂漠 (丘陵),  草原,  草原 (丘陵),  平原,  平原 (丘陵),  雪原,  雪原 (丘陵),  ツンドラ,  ツンドラ (丘陵)</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">労働者がアルカサル宮殿を建設できるようになる。<br><br><img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力+2。タイルのアピールの50%に等しい <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科学力を得る。この中にいるユニットは <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 防御力+4となり、自動的に守りを固めた状態となる (2ターン)。航空技術を研究した後は、 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 観光力がさらに高まる。別のアルカサル宮殿の隣に築くことはできない。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="カストラ">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_ROMAN_FORT_NAME-->
+                      <h2 class="civ-name">カストラ
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Roman Fort.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">防御修正値: 4</p>
+                      <p class="civ-ability-desc" style="text-align:left">ここにいるユニットに「守りを固める」ボーナスを適用。</p>
+                      <p class="civ-ability-desc" style="text-align:left">隣接タイルへのアピール: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">建設者 レギオン</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  砂漠,  砂漠 (丘陵),  草原,  草原 (丘陵),  平原,  平原 (丘陵),  雪原,  雪原 (丘陵),  ツンドラ,  ツンドラ (丘陵)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  火山性土</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">レギオンがローマの固有建造物であるカストラを建設できるようになる。<br><br>ここを占拠しているユニットは <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 防御力+4となり、自動的に守りを固めた状態となる (2ターン)。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="カパック・ニャン">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MOUNTAIN_ROAD_NAME-->
+                      <h2 class="civ-name">カパック・ニャン
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Qhapaq Ñan.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">隣接タイルへのアピール: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">建設者 労働者 または  ワラカク または  レンジャー または  斥候 または  特殊部隊</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  砂漠 (山岳),  草原 (山岳),  平原 (山岳),  雪原 (山岳),  ツンドラ (山岳)</p>
+                      <p class="civ-ability-desc" style="text-align:left">必要な技術 対外貿易 社会制度</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">労働者がパチャクティ固有の施設であるカパック・ニャンを建設できるようになる。<br><br>山岳地帯を一瞬で通り抜ける近道として機能し、 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動力2を消費することでユニットを入口から出口まで移動させることができる。ここを通過する <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> 交易路は、目的地で得られる <img src="/images/ICON_GOLD.webp" style="height:1em"/> ゴールドを増加させる。隣接する山岳タイルにのみ建設可能。略奪や除去はできない。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="カホキア墳丘">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MOUND_NAME-->
+                      <h2 class="civ-name">カホキア墳丘
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Cahokia Mounds.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">略奪の成果: 体力の回復 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住宅</p>
+                      <p class="civ-ability-desc" style="text-align:left">隣接タイルへのアピール: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_GOLD.webp" style="height:1em"/> ゴールド</p>
+                      <p class="civ-ability-desc" style="text-align:left">建設者 労働者</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  砂漠,  草原,  平原,  ツンドラ</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  氾濫原,  氾濫原 (草原),  氾濫原 (平原)</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">労働者がカホキア墳丘を建設できるようになる。<br><br><img src="/images/ICON_GOLD.webp" style="height:1em"/> ゴールド+3。最初のカホキア墳丘から <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> 快適性+1を得る。「博物学」を発見すると2つ目のカホキア墳丘から <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> 快適性+1を得る。「封建制度」の発見後は、隣接する区域2つにつき <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食料+1。「共通規格」の研究完了後は、隣接する区域+1つにつき <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食料+1。 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住宅+1。「文化遺産」の発見後は、さらに <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住宅+1。別のカホキア墳丘と隣接させることはできない。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="カンプン">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_KAMPUNG_NAME-->
+                      <h2 class="civ-name">カンプン
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Kampung.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">略奪の成果: 体力の回復 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住宅</p>
+                      <p class="civ-ability-desc" style="text-align:left">隣接タイルへのアピール: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力 (必要な技術 土木工学 社会制度)</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_FOOD.webp" style="height:1em"/> 食料により <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 観光力100% (航空技術 技術が必要)</p>
+                      <p class="civ-ability-desc" style="text-align:left">建設者 労働者</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  沿岸/湖</p>
+                      <p class="civ-ability-desc" style="text-align:left">必要な技術 造船 技術</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">労働者がインドネシア固有の施設「カンプン」を建設できるようになる。<br><br><img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住宅+1、<img src="/images/ICON_PRODUCTION.webp" style="height:1em"/>生産力+1。漁船に隣接するたび、<img src="/images/ICON_FOOD.webp" style="height:1em"/> 食料+1、 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰力+1。技術ツリーと社会制度ツリーの発展にともない、 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力、 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住宅、 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 観光力がさらに追加される。海洋資源に隣接する沿岸/湖タイルにのみ建設可能。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="キャンプ">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_CAMP_NAME-->
+                      <h2 class="civ-name">キャンプ
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Camp.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">略奪の成果: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住宅</p>
+                      <p class="civ-ability-desc" style="text-align:left">隣接タイルへのアピール: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> ゴールド</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力 (必要な技術 重商主義 社会制度)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食料 (必要な技術 重商主義 社会制度)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> ゴールド (必要な技術 化学合成物質 技術)</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力により <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 観光力100% (航空技術 技術が必要)</p>
+                      <p class="civ-ability-desc" style="text-align:left">建設者 労働者</p>
+                      <p class="civ-ability-desc" style="text-align:left">必要な技術 畜産 技術</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">労働者がキャンプを建設できるようになる。<br><br><img src="/images/ICON_GOLD.webp" style="height:1em"/> ゴールド+2。適切な資源がある場合のみ建設可能。<br><br>高級資源のある場所に建設すると、都市はそれを利用できるようになる。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="クルガン">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_KURGAN_NAME-->
+                      <h2 class="civ-name">クルガン
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Kurgan.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">略奪の成果: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">隣接タイルへのアピール: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰力</p>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_GOLD.webp" style="height:1em"/> ゴールド</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰力により <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 観光力100% (航空技術 技術が必要)</p>
+                      <p class="civ-ability-desc" style="text-align:left">建設者 労働者</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  砂漠,  砂漠 (丘陵),  草原,  草原 (丘陵),  平原,  平原 (丘陵),  雪原,  雪原 (丘陵),  ツンドラ,  ツンドラ (丘陵)</p>
+                      <p class="civ-ability-desc" style="text-align:left">必要な技術 畜産 技術</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">労働者がスキタイの固有の施設であるクルガンを建設できるようになる。<br><br> <img src="/images/ICON_FAITH.webp" style="height:1em"/>信仰力+1、<img src="/images/ICON_GOLD.webp" style="height:1em"/>ゴールド+3。隣接する牧草地1つにつき<img src="/images/ICON_FAITH.webp" style="height:1em"/>信仰力+1、<img src="/images/ICON_PRODUCTION.webp" style="height:1em"/>生産力+1、あぶみの研究を完了すると<img src="/images/ICON_FAITH.webp" style="height:1em"/>信仰力+2に強化される。航空技術の研究を完了すると<img src="/images/ICON_FAITH.webp" style="height:1em"/>信仰力に等しい<img src="/images/ICON_TOURISM.webp" style="height:1em"/>観光力を産出する。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="ケマムル">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_CHEMAMULL_NAME-->
+                      <h2 class="civ-name">ケマムル
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Chemamull.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">略奪の成果: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">条件: アピール &gt;= 4</p>
+                      <p class="civ-ability-desc" style="text-align:left">アピールにより <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 観光力75%</p>
+                      <p class="civ-ability-desc" style="text-align:left">隣接タイルへのアピール: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力 (必要な技術 公務員制度 社会制度)</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力により <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 観光力100% (航空技術 技術が必要)</p>
+                      <p class="civ-ability-desc" style="text-align:left">建設者 労働者</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  砂漠,  砂漠 (丘陵),  草原,  草原 (丘陵),  平原,  平原 (丘陵),  雪原,  雪原 (丘陵),  ツンドラ,  ツンドラ (丘陵)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  火山性土</p>
+                      <p class="civ-ability-desc" style="text-align:left">必要な技術 職人技 社会制度</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">労働者がマプチェの固有施設「ケマムル」を建設できるようになる。<br><br> タイルのアピールの75%に相当する <img src="/images/ICON_CULTURE.webp" style="height:1em"/>文化力が得られ、<img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力+1。公務員制度を研究した後は追加で<img src="/images/ICON_PRODUCTION.webp" style="height:1em"/>生産力+1。航空技術を研究した後は、<img src="/images/ICON_TOURISM.webp" style="height:1em"/> 観光力がさらに高まる。「最高」以上のアピールが必要。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="ゴルフコース">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_GOLF_COURSE_NAME-->
+                      <h2 class="civ-name">ゴルフコース
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Golf Course.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">略奪の成果: 体力の回復 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">隣接タイルへのアピール: 1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> ゴールド</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> ゴールド (必要な技術 啓蒙思想 社会制度)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力 (必要な技術 啓蒙思想 社会制度)</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力により <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 観光力100% (航空技術 技術が必要)</p>
+                      <p class="civ-ability-desc" style="text-align:left">建設者 労働者</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  草原,  草原 (丘陵),  平原,  平原 (丘陵),  雪原,  雪原 (丘陵),  ツンドラ,  ツンドラ (丘陵)</p>
+                      <p class="civ-ability-desc" style="text-align:left">必要な技術 遊びと娯楽 社会制度</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">スコットランドに固有の改善であるゴルフコースを労働者の能力を使って建設できるようになる。<br><br><img src="/images/ICON_AMENITIES.webp" style="height:1em"/>快適性+1、<img src="/images/ICON_GOLD.webp" style="height:1em"/>ゴールド+2、<img src="/images/ICON_CULTURE.webp" style="height:1em"/>文化力+1。都心タイルに隣接している場合、<img src="/images/ICON_GOLD.webp" style="height:1em"/>ゴールド+1、<img src="/images/ICON_CULTURE.webp" style="height:1em"/>文化力+1。総合娯楽施設に隣接している場合、<img src="/images/ICON_AMENITIES.webp" style="height:1em"/>快適性+1、<img src="/images/ICON_CULTURE.webp" style="height:1em"/>文化力+1。ギルドの社会制度を解禁するとさらに<img src="/images/ICON_AMENITIES.webp" style="height:1em"/>快適性+1。啓蒙思想の社会制度を解禁すると<img src="/images/ICON_GOLD.webp" style="height:1em"/>ゴールド+1、<img src="/images/ICON_CULTURE.webp" style="height:1em"/>文化力+1。砂漠や砂漠の丘陵には建設できない。1都市につき1つしか建設できない。ゴルフコースのタイルは交換できない。アピール+1。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="シャトー">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_CHATEAU_NAME-->
+                      <h2 class="civ-name">シャトー
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Château.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">略奪の成果: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住宅</p>
+                      <p class="civ-ability-desc" style="text-align:left">隣接タイルへのアピール: 1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食料</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> ゴールド</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力により <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 観光力100% (航空技術 技術が必要)</p>
+                      <p class="civ-ability-desc" style="text-align:left">建設者 労働者</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  砂漠,  砂漠 (丘陵),  草原,  草原 (丘陵),  平原,  平原 (丘陵),  雪原,  雪原 (丘陵),  ツンドラ,  ツンドラ (丘陵)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  氾濫原,  氾濫原 (草原),  氾濫原 (平原)</p>
+                      <p class="civ-ability-desc" style="text-align:left">必要な技術 封建制度 社会制度</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">労働者がフランス固有の改善であるシャトーを建設できるようになる。<br><br><img src="/images/ICON_CULTURE.webp" style="height:1em"/>文化力+1、<img src="/images/ICON_GOLD.webp" style="height:1em"/>ゴールド+1、<img src="/images/ICON_FOOD.webp" style="height:1em"/>食料+1、<img src="/images/ICON_HOUSING.webp" style="height:1em"/>住宅+1、アピール+1。隣接する遺産1つごとに<img src="/images/ICON_CULTURE.webp" style="height:1em"/>文化力+1、航空技術の研究完了後は<img src="/images/ICON_CULTURE.webp" style="height:1em"/>文化力+2に強化される。川に隣接している場合、<img src="/images/ICON_GOLD.webp" style="height:1em"/>ゴールド+2。隣接する高級資源1つごとに<img src="/images/ICON_GOLD.webp" style="height:1em"/>ゴールド+1、<img src="/images/ICON_CULTURE.webp" style="height:1em"/>文化力+1。航空技術の研究完了後は<img src="/images/ICON_TOURISM.webp" style="height:1em"/>観光力を産出する。別のシャトーの隣には建設できない。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="シーサイドリゾート">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_BEACH_RESORT_NAME-->
+                      <h2 class="civ-name">シーサイドリゾート
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Seaside Resort.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">略奪の成果: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">条件: アピール &gt;= 2</p>
+                      <p class="civ-ability-desc" style="text-align:left">アピールにより <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 観光力150%</p>
+                      <p class="civ-ability-desc" style="text-align:left">隣接タイルへのアピール: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_GOLD.webp" style="height:1em"/> ゴールドにより <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 観光力100%</p>
+                      <p class="civ-ability-desc" style="text-align:left">建設者 労働者</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  砂漠,  砂漠 (丘陵),  草原,  草原 (丘陵),  平原,  平原 (丘陵)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  火山性土</p>
+                      <p class="civ-ability-desc" style="text-align:left">必要な技術 無線通信 技術</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">労働者がシーサイドリゾートを建設できるようになる。<br><br>タイルのアピールの150%に等しい <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 観光力をもたらす。沿岸の、砂漠・砂漠丘陵・平原・平原丘陵・草原・草原丘陵・火山性土にのみ建設できる。「素敵」以上のアピールが必要。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="ジッグラト">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_ZIGGURAT_NAME-->
+                      <h2 class="civ-name">ジッグラト
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Ziggurat.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">略奪の成果: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住宅</p>
+                      <p class="civ-ability-desc" style="text-align:left">隣接タイルへのアピール: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科学力</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力 (必要な技術 博物学 社会制度)</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力により <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 観光力100% (航空技術 技術が必要)</p>
+                      <p class="civ-ability-desc" style="text-align:left">建設者 労働者</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  砂漠,  草原,  平原,  雪原,  ツンドラ</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  氾濫原,  氾濫原 (草原),  氾濫原 (平原)</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">労働者がシュメール固有の改善であるジッグラトを建設できるようになる。<br><br><img src="/images/ICON_HOUSING.webp" style="height:1em"/>住宅+1、<img src="/images/ICON_SCIENCE.webp" style="height:1em"/>科学力+2。河川に隣接している場合<img src="/images/ICON_CULTURE.webp" style="height:1em"/>文化力+1。古代の帝国の社会制度の完了後は、隣接する区域1つあるいは農場2つにつき<img src="/images/ICON_FAITH.webp" style="height:1em"/>信仰力+1。<br>丘陵および他のジッグラトの隣に建設することはできない。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="スキーリゾート">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_SKI_RESORT_NAME-->
+                      <h2 class="civ-name">スキーリゾート
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Ski Resort.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">隣接タイルへのアピール: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left"> アピールにより <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 観光力100%</p>
+                      <p class="civ-ability-desc" style="text-align:left">建設者 労働者</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  砂漠 (山岳),  草原 (山岳),  平原 (山岳),  雪原 (山岳),  ツンドラ (山岳)</p>
+                      <p class="civ-ability-desc" style="text-align:left">必要な技術 プロスポーツ 社会制度</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">労働者がスキーリゾートを建設できるようになる。<br><br><img src="/images/ICON_TOURISM.webp" style="height:1em"/> 観光力+4。 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> 快適性+1。山岳にのみ建設可能。スキーリゾート同士を隣接させることはできない。略奪、活用、除去はできない。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="スフィンクス">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_SPHINX_NAME-->
+                      <h2 class="civ-name">スフィンクス
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Sphinx.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">略奪の成果: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">隣接タイルへのアピール: 2</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰力</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力 (必要な技術 外交官 社会制度)</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力により <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 観光力100% (航空技術 技術が必要)</p>
+                      <p class="civ-ability-desc" style="text-align:left">建設者 労働者</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  砂漠,  砂漠 (丘陵),  草原,  草原 (丘陵),  平原,  平原 (丘陵),  ツンドラ,  ツンドラ (丘陵)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  氾濫原,  氾濫原 (草原),  氾濫原 (平原)</p>
+                      <p class="civ-ability-desc" style="text-align:left">必要な技術 職人技 社会制度</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">労働者がエジプト固有の改善であるスフィンクスを建設できるようになる。<br><br><img src="/images/ICON_FAITH.webp" style="height:1em"/>信仰力+2、<img src="/images/ICON_CULTURE.webp" style="height:1em"/>文化力+1、タイルのアピール+2。<br><br>遺産に隣接している場合は追加で<img src="/images/ICON_FAITH.webp" style="height:1em"/>信仰力+1、<img src="/images/ICON_CULTURE.webp" style="height:1em"/>文化力+1。砂漠に建設された場合は<img src="/images/ICON_FOOD.webp" style="height:1em"/>食料+1、<img src="/images/ICON_PRODUCTION.webp" style="height:1em"/>生産力+1。氾濫原に建設された場合は<img src="/images/ICON_CULTURE.webp" style="height:1em"/>文化力+1。<br><br>外交官の社会制度を解禁すると追加の<img src="/images/ICON_CULTURE.webp" style="height:1em"/>文化力を産出するようになる。飛行機の技術を研究すると観光力を産出するようになる。スフィンクスの隣、雪原および雪原の丘陵上には建設できない。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="ナスカの地上絵">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_NAZCA_LINE_NAME-->
+                      <h2 class="civ-name">ナスカの地上絵
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Nazca Line.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">略奪の成果: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">隣接タイルへのアピール: 1</p>
+                      <p class="civ-ability-desc" style="text-align:left">建設者 労働者</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  砂漠</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">労働者がナスカの地上絵を建設できるようになる。<br><br>隣接タイルの <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰力+1。資源を含む隣接タイルの <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰力+1。「公務員制度」の発見後は、隣接する砂漠と砂漠の丘陵タイルの <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食料+1。「大量生産」の研究完了後は、隣接する平坦なタイルの <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力+1。アピール+1。平坦な砂漠にのみ建設可能。このタイルは利用できなくなる。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="ヌビアのピラミッド">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_PYRAMID_NAME-->
+                      <h2 class="civ-name">ヌビアのピラミッド
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Nubian Pyramid.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">略奪の成果: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">隣接タイルへのアピール: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰力</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食料</p>
+                      <p class="civ-ability-desc" style="text-align:left">建設者 労働者</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  砂漠,  砂漠 (丘陵),  草原,  平原</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  氾濫原,  氾濫原 (草原),  氾濫原 (平原)</p>
+                      <p class="civ-ability-desc" style="text-align:left">必要な技術 職人技 社会制度</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">
+        職人技の社会制度によって解禁される改善。草原、平原、砂漠、丘陵の砂漠あるいは氾濫原にしか建設できない。1都市につき1つのみ建設可能。他のヌビアのピラミッドの隣には建設できない。ヌビアの区域はヌビアのピラミッドから隣接ボーナス+1を受け取る。<img src="/images/ICON_FOOD.webp" style="height:1em"/>食料+2、<img src="/images/ICON_FAITH.webp" style="height:1em"/>信仰力+2。隣接する区域によって追加の産出を得る。<br>都心に隣接している場合<img src="/images/ICON_FOOD.webp" style="height:1em"/>食料+1。<br>キャンパスに隣接するごとに、<img src="/images/ICON_SCIENCE.webp" style="height:1em"/>科学力+1。<br>工業区域、兵営、飛行場に隣接するごとに、<img src="/images/ICON_PRODUCTION.webp" style="height:1em"/>生産力+1。<br>劇場区域に隣接するごとに、<img src="/images/ICON_CULTURE.webp" style="height:1em"/>文化力+1。<br>聖地に隣接するごとに、<img src="/images/ICON_FAITH.webp" style="height:1em"/>信仰力+1。<br>商業区域や港に隣接するごとに、<img src="/images/ICON_GOLD.webp" style="height:1em"/>ゴールド+1。<br>政府複合施設や外交街に隣接するごとに文化力+1、ゴールド+2。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="バテイ">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_BATEY_NAME-->
+                      <h2 class="civ-name">バテイ
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Batey.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">略奪の成果: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">隣接タイルへのアピール: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力により <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 観光力100% (航空技術 技術が必要)</p>
+                      <p class="civ-ability-desc" style="text-align:left">建設者 労働者</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  砂漠,  砂漠 (丘陵),  草原,  草原 (丘陵),  平原,  平原 (丘陵),  雪原,  雪原 (丘陵),  ツンドラ,  ツンドラ (丘陵)</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">労働者がバテイを建設できるようになる。<br><br><img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力+1。隣接するボーナス資源と総合娯楽施設ごとに <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力+1 (「探検」の発見後は <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力+2)。「航空技術」の研究完了後は <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 観光力をもたらす。別のバテイや丘陵と隣接させることはできない。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="パイリダエーザ">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_PAIRIDAEZA_NAME-->
+                      <h2 class="civ-name">パイリダエーザ
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Pairidaeza.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">略奪の成果: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住宅</p>
+                      <p class="civ-ability-desc" style="text-align:left">隣接タイルへのアピール: 1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> ゴールド</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力 (必要な技術 外交官 社会制度)</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力により <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 観光力100% (航空技術 技術が必要)</p>
+                      <p class="civ-ability-desc" style="text-align:left">建設者 労働者</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  砂漠,  砂漠 (丘陵),  草原,  草原 (丘陵),  平原,  平原 (丘陵)</p>
+                      <p class="civ-ability-desc" style="text-align:left">必要な技術 古代の帝国 社会制度</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">労働者がペルシャ固有の改善であるパイリダエーザを建設できるようになる。<br><br><img src="/images/ICON_CULTURE.webp" style="height:1em"/>文化力+1、<img src="/images/ICON_GOLD.webp" style="height:1em"/>ゴールド+2、<img src="/images/ICON_HOUSING.webp" style="height:1em"/>住宅+1、タイルのアピール+1。隣接する都心、聖地、キャンパス、劇場区域1つごとに<img src="/images/ICON_CULTURE.webp" style="height:1em"/>文化力+1。隣接する都心、商業ハブ、港、工業区域1つごとに<img src="/images/ICON_GOLD.webp" style="height:1em"/>ゴールド+1。外交官の社会制度を完了すると追加で<img src="/images/ICON_CULTURE.webp" style="height:1em"/>文化力+1。航空技術の技術の発明後は<img src="/images/ICON_TOURISM.webp" style="height:1em"/>観光力も生み出すようになる。雪原、雪原の丘陵、ツンドラ、ツンドラの丘陵、氾濫原の上と、パイリダエーザの隣には建設できない。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="パー">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MAORI_PA_NAME-->
+                      <h2 class="civ-name">パー
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Pā.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">防御修正値: 4</p>
+                      <p class="civ-ability-desc" style="text-align:left">ここにいるユニットに「守りを固める」ボーナスを適用。</p>
+                      <p class="civ-ability-desc" style="text-align:left">隣接タイルへのアピール: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">建設者 トア</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  砂漠 (丘陵),  草原 (丘陵),  平原 (丘陵),  雪原 (丘陵),  ツンドラ (丘陵)</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">トアがマオリ固有の施設であるパーを建設できるようになる。<br><br>パーの中にいるユニットは <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 防御力+4となり、自動的に守りを固めた状態となる (2ターン)。パーの中にいるマオリのユニットは、移動や攻撃の直後であっても回復する。丘陵タイルにのみ建設可能。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="フェイトリア">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_FEITORIA_NAME-->
+                      <h2 class="civ-name">フェイトリア
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Feitoria.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">隣接タイルへのアピール: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+4 <img src="/images/ICON_GOLD.webp" style="height:1em"/> ゴールド</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力</p>
+                      <p class="civ-ability-desc" style="text-align:left">建設者 ナウ船</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  沿岸/湖</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">ナウ船がポルトガル固有の地形改善、フェイトリアを建設できるようになる。<br><br><img src="/images/ICON_GOLD.webp" style="height:1em"/> ゴールド+4、 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力+1。ポルトガルからこの都市への交易路の <img src="/images/ICON_GOLD.webp" style="height:1em"/> ゴールド+2、 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力+1。国境を開放させた他文明か都市国家の領土内にのみ建設可能。高級資源またはボーナス資源に隣接していなければならない。他のフェイトリアに隣接していない、陸地に隣接する沿岸か湖タイルにのみ建設可能。建設されたフェイトリアを取り除くことはできない。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="プランテーション">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_PLANTATION_NAME-->
+                      <h2 class="civ-name">プランテーション
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Plantation.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">略奪の成果: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住宅</p>
+                      <p class="civ-ability-desc" style="text-align:left">隣接タイルへのアピール: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> ゴールド</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食料 (必要な技術 科学理論 技術)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> ゴールド (必要な技術 グローバル化 社会制度)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食料 (必要な技術 中世の市 社会制度)</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力により <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 観光力100% (航空技術 技術が必要)</p>
+                      <p class="civ-ability-desc" style="text-align:left">建設者 労働者</p>
+                      <p class="civ-ability-desc" style="text-align:left">必要な技術 灌漑 技術</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">労働者がプランテーションを建設できるようになる。<br><br><img src="/images/ICON_GOLD.webp" style="height:1em"/> ゴールド+2。適切な資源がある場所にのみ建設可能。平地に建設された場合、<img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力+1。<br><br>高級資源のある場所に建設すると、都市はそれを利用できるようになる。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="ホッケーリンク">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_ICE_HOCKEY_RINK_NAME-->
+                      <h2 class="civ-name">ホッケーリンク
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Ice Hockey Rink.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">略奪の成果: 体力の回復 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">隣接タイルへのアピール: 2</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力 (必要な技術 プロスポーツ 社会制度)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食料 (必要な技術 プロスポーツ 社会制度)</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力により <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 観光力100% (航空技術 技術が必要)</p>
+                      <p class="civ-ability-desc" style="text-align:left">建設者 労働者</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  雪原,  雪原 (丘陵),  ツンドラ,  ツンドラ (丘陵)</p>
+                      <p class="civ-ability-desc" style="text-align:left">必要な技術 外交官 社会制度</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">労働者がカナダ固有の施設であるホッケーリンクを建設できるようになる。<br><br><img src="/images/ICON_AMENITIES.webp" style="height:1em"/> 快適性+1。隣接するツンドラ、ツンドラ丘陵、雪原、雪原タイル1つにつき <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力+1。「航空技術」の解除後は、文化力から <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 観光力を得られる。社会制度「プロスポーツ」の解除後は、 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食料+2、 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力+2。建造物「スタジアム」に隣接している場合、 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力+4。ツンドラ、ツンドラの丘陵、雪原、雪原の丘陵にのみ建設可能。1都市につき1つしか建設できない。アピール+2。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="ポルダー">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_POLDER_NAME-->
+                      <h2 class="civ-name">ポルダー
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Polder.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">略奪の成果: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住宅</p>
+                      <p class="civ-ability-desc" style="text-align:left">隣接タイルへのアピール: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食料</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力</p>
+                      <p class="civ-ability-desc" style="text-align:left">+4 <img src="/images/ICON_GOLD.webp" style="height:1em"/> ゴールド (必要な技術 土木工学 社会制度)</p>
+                      <p class="civ-ability-desc" style="text-align:left">建設者 労働者</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  沿岸/湖</p>
+                      <p class="civ-ability-desc" style="text-align:left">必要な技術 封建制度 社会制度</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">労働者がオランダに固有の改善であるポルダーを建設できるようになる。<br><br><img src="/images/ICON_FOOD.webp" style="height:1em"/>食糧+1、<img src="/images/ICON_PRODUCTION.webp" style="height:1em"/>生産力+1、<img src="/images/ICON_HOUSING.webp" style="height:1em"/>住宅+0.5。隣接するポルダー１つにつき、追加で<img src="/images/ICON_FOOD.webp" style="height:1em"/>食糧+1。共通規格の技術の発明後は+2。隣接する港１つにつき、<img src="/images/ICON_PRODUCTION.webp" style="height:1em"/>生産力+1。ボルダー２つに隣接するたび、<img src="/images/ICON_PRODUCTION.webp" style="height:1em"/>生産力+1。共通規格の技術の発明後は１つに隣接するたび+1。土木工学の社会制度の完了後は<img src="/images/ICON_GOLD.webp" style="height:1em"/>ゴールド+4。1タイル以上の通行可能な陸上タイルに隣接している近海あるいは湖にしか建設できない。オランダの海軍ユニットがポルダーで防御する際、<img src="/images/ICON_STRENGTH.webp" style="height:1em"/>戦闘力+3。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="マハーヴィハーラ">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MAHAVIHARA_NAME-->
+                      <h2 class="civ-name">マハーヴィハーラ
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Mahavihara.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">略奪の成果: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住宅</p>
+                      <p class="civ-ability-desc" style="text-align:left">隣接タイルへのアピール: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科学力</p>
+                      <p class="civ-ability-desc" style="text-align:left">建設者 労働者</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  砂漠,  草原,  平原,  雪原,  ツンドラ</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">労働者がマハーヴィハーラを建設できるようになる。<br><br><img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科学力+2、 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住宅+1。隣接する聖地区域ごとに <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰力+1、隣接するキャンパス区域ごとに <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科学力+1。「科学理論」を研究すると、隣接するキャンパスごとに <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科学力+1。初めてマハーヴィハーラを建設すると、ランダムな技術を1つ得る。別のマハーヴィハーラに隣接していない、平坦な地形にのみ建設可能。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="ミサイル格納庫">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MISSILE_SILO-->
+                      <h2 class="civ-name">ミサイル格納庫
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Missile Silo.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">隣接タイルへのアピール: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">建設者 工兵</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  砂漠,  草原,  平原,  雪原,  ツンドラ</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  火山性土</p>
+                      <p class="civ-ability-desc" style="text-align:left">必要な技術 ロケット工学 技術</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">工兵がミサイル格納庫を建設できるようになる。<br><br>完成後は核分裂兵器と核融合兵器の発射基地として機能する。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="メクワップ">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MEKEWAP_NAME-->
+                      <h2 class="civ-name">メクワップ
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Mekewap.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">略奪の成果: 体力の回復 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住宅</p>
+                      <p class="civ-ability-desc" style="text-align:left">隣接タイルへのアピール: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力 (必要な技術 公務員制度 社会制度)</p>
+                      <p class="civ-ability-desc" style="text-align:left">建設者 労働者</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  砂漠,  砂漠 (丘陵),  草原,  草原 (丘陵),  平原,  平原 (丘陵),  雪原,  雪原 (丘陵),  ツンドラ,  ツンドラ (丘陵)</p>
+                      <p class="civ-ability-desc" style="text-align:left">必要な技術 陶磁器 技術</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">労働者がクリーの固有施設「メクワップ」を建設できるようになる。<br><br><img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力+1、 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住宅+1。高級資源に接していると <img src="/images/ICON_GOLD.webp" style="height:1em"/> ゴールド+1。ボーナス資源が2つ隣接するごとに <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食料+1。技術ツリーと社会制度ツリーの発展にともない、<img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力、<img src="/images/ICON_GOLD.webp" style="height:1em"/> ゴールド、<img src="/images/ICON_FOOD.webp" style="height:1em"/> 食料、<img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住宅が追加される。ボーナス資源か高級資源の隣にのみ建設可能。別のメクワップと隣接させることはできない。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="モアイ">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MOAI_NAME-->
+                      <h2 class="civ-name">モアイ
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Moai.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">略奪の成果: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">隣接タイルへのアピール: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力により <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 観光力100% (航空技術 技術が必要)</p>
+                      <p class="civ-ability-desc" style="text-align:left">建設者 労働者</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  草原,  草原 (丘陵),  平原,  平原 (丘陵)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  火山性土</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">労働者がモアイを建設できるようになる。<br><br><img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力+1。隣接するモアイ2つにつき <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力+1。火山性土タイルかそれに隣接するタイルにある場合、 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力+2。沿岸/湖タイルに隣接する場合、 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力+1。技術ツリーと社会制度ツリーの発展にともない、 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力と <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 観光力が上乗せされる。平原、平原の丘陵、草原、草原の丘陵、火山性土に建設可能。森や熱帯雨林タイルに隣接する場所には設置できない。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="交易ドーム">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_TRADING_DOME_NAME-->
+                      <h2 class="civ-name">交易ドーム
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Trading Dome.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">略奪の成果: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">隣接タイルへのアピール: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> ゴールド</p>
+                      <p class="civ-ability-desc" style="text-align:left">建設者 労働者</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  砂漠,  砂漠 (丘陵),  草原,  草原 (丘陵),  平原,  平原 (丘陵),  雪原,  雪原 (丘陵),  ツンドラ,  ツンドラ (丘陵)</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">労働者が交易ドームを建設できるようになる。<br><br><img src="/images/ICON_GOLD.webp" style="height:1em"/> ゴールド+2。隣接する高級資源ごとに <img src="/images/ICON_GOLD.webp" style="height:1em"/> ゴールド+1。起点都市にある交易ドームごとに、他文明に向かう <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> 交易路からのゴールド <img src="/images/ICON_GOLD.webp" style="height:1em"/> ゴールド+1。別の交易ドームの隣に築くことはできない。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="伝道所">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MISSION_NAME-->
+                      <h2 class="civ-name">伝道所
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Mission.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">略奪の成果: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">隣接タイルへのアピール: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰力</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科学力 (必要な技術 啓蒙思想 社会制度)</p>
+                      <p class="civ-ability-desc" style="text-align:left">建設者 労働者</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  砂漠,  砂漠 (丘陵),  草原,  草原 (丘陵),  平原,  平原 (丘陵),  雪原,  雪原 (丘陵),  ツンドラ,  ツンドラ (丘陵)</p>
+                      <p class="civ-ability-desc" style="text-align:left">必要な技術 神学 社会制度</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">労働者がスペイン固有の施設である伝道所を建設できるようになる。<br><br><img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰力+2。自文明の首都から少なくとも8タイル離れている場合さらに<img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰力+1、<img src="/images/ICON_PRODUCTION.webp" style="height:1em"/>生産力+1。そうでない場合<img src="/images/ICON_HOUSING.webp" style="height:1em"/>住宅+1。<br><br>キャンパスや聖地に隣接するごとに<img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科学力+1。<br><br>啓蒙思想の社会制度を解禁後は<img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科学力+2。他の伝道所に隣接することはできない。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="修道院">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MONASTERY_NAME-->
+                      <h2 class="civ-name">修道院
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Monastery.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">略奪の成果: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住宅</p>
+                      <p class="civ-ability-desc" style="text-align:left">隣接タイルへのアピール: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰力</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食料</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰力により <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 観光力100% (航空技術 技術が必要)</p>
+                      <p class="civ-ability-desc" style="text-align:left">建設者 労働者</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  砂漠,  砂漠 (丘陵),  草原,  草原 (丘陵),  平原,  平原 (丘陵),  雪原,  雪原 (丘陵),  ツンドラ,  ツンドラ (丘陵)</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">労働者が修道院を建設できるようになる。<br><br> <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食料+1、 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰力+3、 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住宅+1。このタイルにいて、なおかつこのターン中に攻撃をおこなわなかった味方宗教ユニットのHP+15。<br><br>区域が2つ隣接するごとに <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰力+1。宗教改革の社会制度の完了後は1つ隣接するごとに <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰力+1に強化される。植民地主義の発見後は <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住宅がさらに+1される。航空技術の完了後は <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰力に等しい <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 観光力をもたらすようになる。<br><br>別の修道院の隣に築くことはできない。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="地熱発電所">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_GEOTHERMAL_PLANT_NAME-->
+                      <h2 class="civ-name">地熱発電所
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Geothermal Plant.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">略奪の成果: <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">隣接タイルへのアピール: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科学力</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力 (必要な技術 化学合成物質 技術)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科学力 (必要な技術 化学合成物質 技術)</p>
+                      <p class="civ-ability-desc" style="text-align:left">建設者 労働者</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  地熱孔</p>
+                      <p class="civ-ability-desc" style="text-align:left">必要な技術 化学 技術</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">労働者が地熱発電所を建設できるようになる。<br><br><img src="/images/ICON_SCIENCE.webp" style="height:1em"/>科学力+1、<img src="/images/ICON_PRODUCTION.webp" style="height:1em"/>生産力+2。ターン毎の <img src="/images/ICON_POWER.webp" style="height:1em"/> 電力+3。<br>化学合成物質の研究を完了するとさらに<img src="/images/ICON_SCIENCE.webp" style="height:1em"/>科学力+1、<img src="/images/ICON_PRODUCTION.webp" style="height:1em"/>生産力+1、<img src="/images/ICON_POWER.webp" style="height:1em"/>電力+3。地熱孔にのみ建設可能。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="太陽光発電所">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_SOLAR_FARM_NAME-->
+                      <h2 class="civ-name">太陽光発電所
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Solar Farm.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">略奪の成果: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">隣接タイルへのアピール: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> ゴールド</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力</p>
+                      <p class="civ-ability-desc" style="text-align:left">建設者 労働者</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  砂漠,  草原,  平原,  ツンドラ</p>
+                      <p class="civ-ability-desc" style="text-align:left">必要な技術 人工衛星 技術</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">労働者が太陽光発電所を建設できるようになる。<br><br><img src="/images/ICON_GOLD.webp" style="height:1em"/> ゴールド+1。<img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力+1。ターン毎の <img src="/images/ICON_POWER.webp" style="height:1em"/> 電力+2。平坦な地形にのみ建設可能。雪原には建設不可。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="山岳トンネル">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MOUNTAIN_TUNNEL_NAME-->
+                      <h2 class="civ-name">山岳トンネル
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Mountain Tunnel.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">隣接タイルへのアピール: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">建設者 工兵</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  砂漠 (山岳),  草原 (山岳),  平原 (山岳),  雪原 (山岳),  ツンドラ (山岳)</p>
+                      <p class="civ-ability-desc" style="text-align:left">必要な技術 軍事学 技術</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">工兵が山岳トンネルを建設できるようになる。<br><br>山岳地帯を一瞬で通り抜ける近道として機能し、 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> 移動力2を消費することでユニットを入口から出口まで移動させることができる。ここを通過する <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> 交易路は、目的地で得られる <img src="/images/ICON_GOLD.webp" style="height:1em"/> ゴールドを増加させる。隣接する山岳タイルにのみ建設可能。略奪や除去はできない。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="岩窟教会">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_ROCK_HEWN_CHURCH_NAME-->
+                      <h2 class="civ-name">岩窟教会
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Rock-Hewn Church.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">略奪の成果: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">隣接タイルへのアピール: 1</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰力により <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 観光力100% (航空技術 技術が必要)</p>
+                      <p class="civ-ability-desc" style="text-align:left">建設者 労働者</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  砂漠 (丘陵),  草原 (丘陵),  平原 (丘陵),  雪原 (丘陵),  ツンドラ (丘陵)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  火山性土</p>
+                      <p class="civ-ability-desc" style="text-align:left">必要な技術 演劇と詩 社会制度</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">労働者がエチオピアに固有の改善である岩窟教会を建設できるようになる。<br><br>隣接する丘陵または山岳のタイル1つごとに<img src="/images/ICON_FAITH.webp" style="height:1em"/>信仰力+1。飛行機の技術を研究後、<img src="/images/ICON_FAITH.webp" style="height:1em"/>信仰力に基づいた<img src="/images/ICON_TOURISM.webp" style="height:1em"/>観光力を産出するようになる。アピール+1。自然災害によって略奪状態にまでにしかならず、破壊されない。丘陵あるいは火山灰タイル、かつほかの岩窟教会に隣接していないタイルにしか建設できない。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="巨石人頭像">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_COLOSSAL_HEAD_NAME-->
+                      <h2 class="civ-name">巨石人頭像
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Colossal Head.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">略奪の成果: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住宅</p>
+                      <p class="civ-ability-desc" style="text-align:left">隣接タイルへのアピール: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰力</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食料</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰力により <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 観光力100% (航空技術 技術が必要)</p>
+                      <p class="civ-ability-desc" style="text-align:left">建設者 労働者</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  砂漠,  砂漠 (丘陵),  草原,  草原 (丘陵),  平原,  平原 (丘陵),  ツンドラ,  ツンドラ (丘陵)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  火山性土</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">労働者が巨石人頭像を建設できるようになる。<br><br><img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰力+2。隣接している熱帯雨林2つ (ヒューマニズムの発見後は1つ) ごとに <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰力+1。隣接している森2つ (ヒューマニズムの発見後は1つ) ごとに <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰力+1。航空技術を研究した後は、 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰力ではなく <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 観光力を得る。雪原と雪原の丘陵には建設できない。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="採石場">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_QUARRY_NAME-->
+                      <h2 class="civ-name">採石場
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Quarry.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">略奪の成果: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">隣接タイルへのアピール: -1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力 (必要な技術 ロケット工学 技術)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力 (必要な技術 軍事工学 技術)</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力により <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 観光力100% (航空技術 技術が必要)</p>
+                      <p class="civ-ability-desc" style="text-align:left">建設者 労働者</p>
+                      <p class="civ-ability-desc" style="text-align:left">必要な技術 採鉱 技術</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">労働者で採石場を建設できるようになる。<br><br>生産力+1。軍事工学の技術を研究すると、生産力+1。ロケット工学の技術を研究すると生産力+2。隣接タイルのアピール-1。有効なボーナスまたは高級資源タイル(石材、大理石、石膏)の上にのみ建設可能。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="棚畑">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_TERRACE_FARM_NAME-->
+                      <h2 class="civ-name">棚畑
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Terrace Farm.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">略奪の成果: 体力の回復 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住宅</p>
+                      <p class="civ-ability-desc" style="text-align:left">隣接タイルへのアピール: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食料</p>
+                      <p class="civ-ability-desc" style="text-align:left">建設者 労働者</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  砂漠 (丘陵),  草原 (丘陵),  平原 (丘陵)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  火山性土</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">労働者がインカ固有の施設である棚畑を建設できるようになる。<br><br><img src="/images/ICON_FOOD.webp" style="height:1em"/> 食料+1。 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住宅+1。隣接する山岳タイル1につき <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食料+1。隣接する用水路区域1つにつき <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力+2。真水に隣接し、かつ用水路に隣接していない場合は、 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力+1。技術ツリーと社会制度ツリーの発展にともない、他の棚畑と隣接させると <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食料が上乗せされるようになる。草原の丘陵、平原の丘陵、砂漠の丘陵にのみ建設可能。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="油井">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_OIL_WELL_NAME-->
+                      <h2 class="civ-name">油井
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Oil Well.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">略奪の成果: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">隣接タイルへのアピール: -1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力 (必要な技術 予測システム 技術)</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力により <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 観光力100% (航空技術 技術が必要)</p>
+                      <p class="civ-ability-desc" style="text-align:left">建設者 労働者</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  砂漠,  砂漠 (丘陵),  草原,  草原 (丘陵),  平原,  平原 (丘陵),  雪原,  雪原 (丘陵),  ツンドラ,  ツンドラ (丘陵)</p>
+                      <p class="civ-ability-desc" style="text-align:left">必要な技術 精製技術 技術</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">労働者が油井を建設できるようになる。<br><br>アピール-1。 <img src="/images/ICON_RESOURCE_OIL.webp" style="height:1em"/> 石油のある陸地タイルにのみ建設可能。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="洋上プラットフォーム">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_OFFSHORE_OIL_RIG_NAME-->
+                      <h2 class="civ-name">洋上プラットフォーム
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Offshore Oil Rig.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">略奪の成果: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">隣接タイルへのアピール: -1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力 (必要な技術 予測システム 技術)</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力により <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 観光力100% (航空技術 技術が必要)</p>
+                      <p class="civ-ability-desc" style="text-align:left">建設者 労働者</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  沿岸/湖,  海</p>
+                      <p class="civ-ability-desc" style="text-align:left">必要な技術 精製技術 技術</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">労働者が洋上プラットフォームを建設できるようになる。<br><br>アピール-1。 <img src="/images/ICON_RESOURCE_OIL.webp" style="height:1em"/> 石油のある沿岸や湖タイルにのみ建設可能。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="洋上風力発電所">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_OFFSHORE_WIND_FARM_NAME-->
+                      <h2 class="civ-name">洋上風力発電所
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Offshore Wind Farm.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">略奪の成果: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">隣接タイルへのアピール: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力</p>
+                      <p class="civ-ability-desc" style="text-align:left">建設者 労働者</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  沿岸/湖</p>
+                      <p class="civ-ability-desc" style="text-align:left">必要な技術 予測システム 技術</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">労働者が洋上風力発電所を建設できるようになる。<br><br><img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力+2。ターン毎の <img src="/images/ICON_POWER.webp" style="height:1em"/> 電力+2。沿岸か湖にのみ建設可能。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="海上都市">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_SEASTEAD_NAME-->
+                      <h2 class="civ-name">海上都市
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Seastead.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">略奪の成果: 体力の回復 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+4 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住宅</p>
+                      <p class="civ-ability-desc" style="text-align:left">隣接タイルへのアピール: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食料</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力により <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 観光力100%</p>
+                      <p class="civ-ability-desc" style="text-align:left">建設者 労働者</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  沿岸/湖,  海</p>
+                      <p class="civ-ability-desc" style="text-align:left">必要な技術 海上都市 技術</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">労働者が海上都市を建設できるようになる。<br><br><img src="/images/ICON_FOOD.webp" style="height:1em"/> 食料+2。隣接する漁船1つにつき、 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力+1。隣接する海上都市1つにつき、漁船の <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力+1。隣接する礁1つにつき <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力+1、 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 観光力+1。<img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住宅+2。沿岸、湖、外洋にのみ建設可能。別の海上都市に隣接する場所には配置できない。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="滑走路">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_AIRSTRIP_NAME-->
+                      <h2 class="civ-name">滑走路
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Airstrip.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">隣接タイルへのアピール: -1</p>
+                      <p class="civ-ability-desc" style="text-align:left">建設者 工兵</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  砂漠,  草原,  平原,  雪原,  ツンドラ</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  火山性土</p>
+                      <p class="civ-ability-desc" style="text-align:left">必要な技術 航空技術 技術</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">工兵が滑走路を建設できるようになる。<br><br>航空ユニット3つを支援可能。平地にのみ建設可能。アピール-1。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="漁船">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_FISHING_BOATS_NAME-->
+                      <h2 class="civ-name">漁船
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Fishing Boats.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">略奪の成果: 体力の回復 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住宅</p>
+                      <p class="civ-ability-desc" style="text-align:left">隣接タイルへのアピール: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食料</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> ゴールド (必要な技術 地図製作法 技術)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食料 (必要な技術 プラスチック 技術)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力 (必要な技術 植民地主義 社会制度)</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力により <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 観光力100% (航空技術 技術が必要)</p>
+                      <p class="civ-ability-desc" style="text-align:left">建設者 労働者</p>
+                      <p class="civ-ability-desc" style="text-align:left">必要な技術 帆走術 技術</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">労働者が漁船を建造できるようになる。<br><br><img src="/images/ICON_FOOD.webp" style="height:1em"/> 食料+1、 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力+1。適切な資源のある場合のみ建設可能。<br><br>高級資源がある場所に建設すると、都市はそれを利用できるようになる。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="牧草地">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_PASTURE_NAME-->
+                      <h2 class="civ-name">牧草地
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Pasture.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">略奪の成果: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住宅</p>
+                      <p class="civ-ability-desc" style="text-align:left">隣接タイルへのアピール: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食料 (必要な技術 あぶみ 技術)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力 (必要な技術 共通規格 技術)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食料 (必要な技術 ロボット工学 技術)</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力により <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 観光力100% (航空技術 技術が必要)</p>
+                      <p class="civ-ability-desc" style="text-align:left">建設者 労働者</p>
+                      <p class="civ-ability-desc" style="text-align:left">必要な技術 畜産 技術</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">労働者が牧草地を建設できるようになる。<br><br><img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力+1。適切な資源がある場所にのみ建設可能。<br><br>戦略資源がある場所に建設すると、都市はそれを利用できるようになる。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="製材所">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_LUMBER_MILL_NAME-->
+                      <h2 class="civ-name">製材所
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Lumber Mill.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">略奪の成果: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">隣接タイルへのアピール: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力 (必要な技術 弾道学 技術)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力 (必要な技術 化学合成物質 技術)</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力により <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 観光力100% (航空技術 技術が必要)</p>
+                      <p class="civ-ability-desc" style="text-align:left">建設者 労働者</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  森,  熱帯雨林 (必要: 重商主義)</p>
+                      <p class="civ-ability-desc" style="text-align:left">必要な技術 建築学 技術</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">労働者が製材所を建設できるようになる。<br><br><img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力+2。森にのみ建設可能。重商主義が解除されると、熱帯雨林にも建設できるようになる。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="要塞">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_FORT_NAME-->
+                      <h2 class="civ-name">要塞
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Fort.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">防御修正値: 4</p>
+                      <p class="civ-ability-desc" style="text-align:left">ここにいるユニットに「守りを固める」ボーナスを適用。</p>
+                      <p class="civ-ability-desc" style="text-align:left">隣接タイルへのアピール: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">建設者 工兵</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  砂漠,  砂漠 (丘陵),  草原,  草原 (丘陵),  平原,  平原 (丘陵),  雪原,  雪原 (丘陵),  ツンドラ,  ツンドラ (丘陵)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  火山性土</p>
+                      <p class="civ-ability-desc" style="text-align:left">必要な技術 軍事工学 技術</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">この中にいるユニットは <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> 防御力+4となり、自動的に守りを固めた状態となる (2ターン)。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="農場">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_FARM_NAME-->
+                      <h2 class="civ-name">農場
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Farm.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">略奪の成果: 体力の回復 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住宅</p>
+                      <p class="civ-ability-desc" style="text-align:left">隣接タイルへのアピール: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食料</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力により <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 観光力100% (航空技術 技術が必要)</p>
+                      <p class="civ-ability-desc" style="text-align:left">建設者 労働者</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  草原,  草原 (丘陵) (必要: 土木工学),  平原,  平原 (丘陵) (必要: 土木工学)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  氾濫原,  氾濫原 (草原),  氾濫原 (平原),  火山性土</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">労働者が農場を建設できるようになる。<br><br><img src="/images/ICON_FOOD.webp" style="height:1em"/> 食料+1。草原または平原にのみ建設可能。<br><br>他の農場に隣接して建設すると、住宅にボーナス。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="都市公園">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_CITY_PARK_NAME-->
+                      <h2 class="civ-name">都市公園
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/City Park.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">略奪の成果: 体力の回復 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">隣接タイルへのアピール: 2</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力</p>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 科学力</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力により <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 観光力100% (航空技術 技術が必要)</p>
+                      <p class="civ-ability-desc" style="text-align:left">建設者 労働者</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  砂漠,  草原,  平原,  雪原,  ツンドラ</p>
+                      <p class="civ-ability-desc" style="text-align:left">必要な技術 遊びと娯楽 社会制度</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">都市公園の昇進を持つ<img src="/images/ICON_GOVERNOR.webp" style="height:1em"/>梁総督が着任している都市に建設できる固有の地形改善。各都市1つまで。<img src="/images/ICON_SCIENCE.webp" style="height:1em"/>科学力+3、<img src="/images/ICON_CULTURE.webp" style="height:1em"/>文化力+2、<img src="/images/ICON_HOUSING.webp" style="height:1em"/>住宅+2、<img src="/images/ICON_AMENITIES.webp" style="height:1em"/>快適性+1、アピール+2。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="野外博物館">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_OPEN_AIR_MUSEUM_NAME-->
+                      <h2 class="civ-name">野外博物館
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Open-Air Museum.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">略奪の成果: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">隣接タイルへのアピール: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力により <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 観光力100%</p>
+                      <p class="civ-ability-desc" style="text-align:left">建設者 労働者</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  砂漠,  砂漠 (丘陵),  草原,  草原 (丘陵),  平原,  平原 (丘陵),  雪原,  雪原 (丘陵),  ツンドラ,  ツンドラ (丘陵)</p>
+                      <p class="civ-ability-desc" style="text-align:left">必要な技術 外交官 社会制度</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">労働者がスウェーデン固有の施設である野外博物館を建設できるようになる。<br><br>この都市のターン毎の忠誠心+2。この文明が都市を築いた地形 (雪原、ツンドラ、砂漠、平原、草原) 1種類につき <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力+2、 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 観光力+2。1都市につき1つしか建設できない。野外博物館のあるタイルは交換できない。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="鉱山">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MINE_NAME-->
+                      <h2 class="civ-name">鉱山
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Mine.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">略奪の成果: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">隣接タイルへのアピール: -1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力 (必要な技術 徒弟制度 技術)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力 (必要な技術 工業化 技術)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力 (必要な技術 スマート素材 技術)</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力により <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 観光力0% (航空技術 技術が必要)</p>
+                      <p class="civ-ability-desc" style="text-align:left">建設者 労働者</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  砂漠 (丘陵),  草原 (丘陵),  平原 (丘陵),  雪原 (丘陵),  ツンドラ (丘陵)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  火山性土</p>
+                      <p class="civ-ability-desc" style="text-align:left">必要な技術 採鉱 技術</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">労働者が鉱山を建設できるようになる。<br><br><img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力+1。アピール-1。丘陵や適切な資源がある場所にのみ建設可能。<br><br>高級資源または戦略資源のある場所に建設すると、都市はそれを利用できるようになる。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="長城">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_GREAT_WALL_NAME-->
+                      <h2 class="civ-name">長城
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Great Wall.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">略奪の成果: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">防御修正値: 4</p>
+                      <p class="civ-ability-desc" style="text-align:left">ここにいるユニットに「守りを固める」ボーナスを適用。</p>
+                      <p class="civ-ability-desc" style="text-align:left">隣接タイルへのアピール: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力 (必要な技術 軍事学 技術)</p>
+                      <p class="civ-ability-desc" style="text-align:left"><img src="/images/ICON_CULTURE.webp" style="height:1em"/> 文化力により <img src="/images/ICON_TOURISM.webp" style="height:1em"/> 観光力100% (航空技術 技術が必要)</p>
+                      <p class="civ-ability-desc" style="text-align:left">建設者 労働者</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  砂漠,  砂漠 (丘陵),  草原,  草原 (丘陵),  平原,  平原 (丘陵),  雪原,  雪原 (丘陵),  ツンドラ,  ツンドラ (丘陵)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  火山性土</p>
+                      <p class="civ-ability-desc" style="text-align:left">必要な技術 石工術 技術</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">労働者が中国固有の改善である万里の長城を建設できるようになる。<br><br>1タイルにつき<img src="/images/ICON_PRODUCTION.webp" style="height:1em"/>生産力+1。このタイルで防衛するユニットの<img src="/images/ICON_STRENGTH.webp" style="height:1em"/>戦闘力にボーナス。他の長城に隣接するごとに追加の<img src="/images/ICON_GOLD.webp" style="height:1em"/>ゴールドを与える。テクノロジーツリーを進展させると<img src="/images/ICON_CULTURE.webp" style="height:1em"/>文化力および<img src="/images/ICON_TOURISM.webp" style="height:1em"/>観光力も隣接のボーナスとして現れるようになる。自文明の国境に建設されなければならない。自然災害によって略奪状態にまでにしかならず、破壊されない。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="階段井戸">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_STEPWELL_NAME-->
+                      <h2 class="civ-name">階段井戸
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Stepwell.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">略奪の成果: 体力の回復 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住宅</p>
+                      <p class="civ-ability-desc" style="text-align:left">隣接タイルへのアピール: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰力</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食料</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> 信仰力 (必要な技術 封建制度 社会制度)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食料 (必要な技術 封建制度 社会制度)</p>
+                      <p class="civ-ability-desc" style="text-align:left">建設者 労働者</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  砂漠,  草原,  平原,  雪原,  ツンドラ</p>
+                      <p class="civ-ability-desc" style="text-align:left">必要な技術 灌漑 技術</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">労働者がインド固有の改善である階段井戸を建設できるようになる。<br><br><img src="/images/ICON_FOOD.webp" style="height:1em"/>食料+1、<img src="/images/ICON_FAITH.webp" style="height:1em"/>信仰力+1、<img src="/images/ICON_HOUSING.webp" style="height:1em"/>住宅+1。聖地区域に隣接している場合、さらに<img src="/images/ICON_FAITH.webp" style="height:1em"/>信仰力+1。隣接している農場1つごとに<img src="/images/ICON_FOOD.webp" style="height:1em"/>食料+1。丘陵タイル上や他の階段井戸と隣接するタイルには建設できない。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="風力発電所">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_WIND_FARM_NAME-->
+                      <h2 class="civ-name">風力発電所
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Wind Farm.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">略奪の成果: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">隣接タイルへのアピール: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> ゴールド</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力</p>
+                      <p class="civ-ability-desc" style="text-align:left">建設者 労働者</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  砂漠 (丘陵),  草原 (丘陵),  平原 (丘陵),  雪原 (丘陵),  ツンドラ (丘陵)</p>
+                      <p class="civ-ability-desc" style="text-align:left">必要な技術 合成物 技術</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">労働者が風力発電所を建設できるようになる。<br><br><img src="/images/ICON_GOLD.webp" style="height:1em"/> ゴールド+2。<img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> 生産力+1。ターン毎の <img src="/images/ICON_POWER.webp" style="height:1em"/> 電力+2。丘陵にのみ建設可能。</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="養殖場">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_FISHERY_NAME-->
+                      <h2 class="civ-name">養殖場
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Fishery.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">略奪の成果: 体力の回復 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住宅</p>
+                      <p class="civ-ability-desc" style="text-align:left">隣接タイルへのアピール: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食料</p>
+                      <p class="civ-ability-desc" style="text-align:left">建設者 労働者</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  沿岸/湖</p>
+                      <p class="civ-ability-desc" style="text-align:left">必要な技術 天文航法 技術</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">労働者が養殖場を建設できるようになる。<br><br> <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食糧+1、隣接する海洋資源ごとにさらに <img src="/images/ICON_FOOD.webp" style="height:1em"/> 食糧+1。 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> 住宅+1。沿岸タイルにしか建設できない。</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </main>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/plugins/feather.min.js"></script>
+    <script src="/plugins/chart.min.js"></script>
+  </body>
+</html>

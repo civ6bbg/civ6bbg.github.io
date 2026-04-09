@@ -1015,6 +1015,127 @@ def get_districts_per_techcivic(db_path):
     connection.close()
     return res
 
+def get_improvements(db_path):
+    res = {}
+    connection = sqlite3.connect(db_path)
+
+    crsr = connection.cursor()
+    crsr.execute("""SELECT ImprovementType, Name, imp.PrereqTech, imp.PrereqCivic, Description, PlunderType, PlunderAmount,
+                           Housing, SameAdjacentValid, BuildInLine, CanBuildOutsideTerritory, BuildOnFrontier,
+                           AirSlots, DefenseModifier, GrantFortification, MinimumAppeal, Coast,
+                           YieldFromAppeal, YieldFromAppealPercent, WeaponSlots, ReligiousUnitHealRate, Appeal,
+                           OnePerCity, ValidAdjacentTerrainAmount, Domain, AdjacentSeaResource,
+                           RequiresAdjacentBonusOrLuxury, Workable, AdjacentToLand, Removable, OnlyOpenBorders
+                    FROM Improvements imp
+                    WHERE RemoveOnEntry = 0 AND ImprovementType != 'IMPROVEMENT_LIME_THULE_WHALESPERM'
+                """)
+    rows = crsr.fetchall()
+    res = []
+    for row in rows:
+        data = {
+            'ImprovementType': row[0],
+            'Name': row[1],
+            'PrereqTech': row[2],
+            'PrereqCivic': row[3],
+            'Description': row[4],
+            'PlunderType': row[5],
+            'PlunderAmount': row[6],
+            'Housing': row[7],
+            'SameAdjacentValid': row[8],
+            'BuildInLine': row[9],
+            'CanBuildOutsideTerritory': row[10],
+            'BuildOnFrontier': row[11],
+            'AirSlots': row[12],
+            'DefenseModifier': row[13],
+            'GrantFortification': row[14],
+            'MinimumAppeal': row[15],
+            'Coast': row[16],
+            'YieldFromAppeal': row[17],
+            'YieldFromAppealPercent': row[18],
+            'WeaponSlots': row[19],
+            'ReligiousUnitHealRate': row[20],
+            'Appeal': row[21],
+            'OnePerCity': row[22],
+            'ValidAdjacentTerrainAmount': row[23],
+            'Domain': row[24],
+            'AdjacentSeaResource': row[25],
+            'RequiresAdjacentBonusOrLuxury': row[26],
+            'Workable': row[27],
+            'AdjacentToLand': row[28],
+            'Removable': row[29],
+            'OnlyOpenBorders': row[30],
+        }
+        crsr.execute(f"""SELECT ImprovementType, YieldType, YieldChange FROM Improvement_YieldChanges
+                        WHERE ImprovementType = '{row[0]}'""")
+        yield_changes = crsr.fetchall()
+        data['YieldChanges'] = []
+        for yc in yield_changes:
+            data['YieldChanges'].append({
+                'YieldType': yc[1],
+                'YieldChange': yc[2]
+                })
+        crsr.execute(f"""SELECT ImprovementType, YieldType, BonusYieldChange, PrereqTech, PrereqCivic FROM Improvement_BonusYieldChanges
+                        WHERE ImprovementType = '{row[0]}'""")
+        bonus_yield_changes = crsr.fetchall()
+        data['BonusYieldChanges'] = []
+        for byc in bonus_yield_changes:
+            data['BonusYieldChanges'].append(
+                {
+                    'YieldType': byc[1],
+                    'BonusYieldChange': byc[2],
+                    'PrereqTech': byc[3],
+                    'PrereqCivic': byc[4]
+                })
+        crsr.execute(f"""SELECT ImprovementType, TourismSource, PrereqTech, ScalingFactor FROM Improvement_Tourism
+                        WHERE ImprovementType = '{row[0]}'""")
+        tourism = crsr.fetchall()
+        data['Tourism'] = []
+        for it in tourism:
+            data['Tourism'].append({
+                    'TourismSource': it[1],
+                    'PrereqTech': it[2],
+                    'ScalingFactor': it[3]
+                })
+        crsr.execute(f"""SELECT ImprovementType, TerrainType FROM Improvement_ValidAdjacentTerrains
+                        WHERE ImprovementType = '{row[0]}'""")
+        valid_adjacent_terrains = crsr.fetchall()
+        data['ValidAdjacentTerrains'] = []
+        for ivat in valid_adjacent_terrains:
+            data['ValidAdjacentTerrains'].append({
+                    'TerrainType': ivat[1]
+                })
+        crsr.execute(f"""SELECT ImprovementType, UnitType FROM Improvement_ValidBuildUnits
+                        WHERE ImprovementType = '{row[0]}'""")
+        valid_build_units = crsr.fetchall()
+        data['ValidBuildUnits'] = []
+        for ivbu in valid_build_units:
+            data['ValidBuildUnits'].append({
+                    'UnitType': ivbu[1]
+                })
+        crsr.execute(f"""SELECT ImprovementType, FeatureType, PrereqCivic FROM Improvement_ValidFeatures
+                        WHERE ImprovementType = '{row[0]}'""")
+        valid_features = crsr.fetchall()
+        data['ValidFeatures'] = []
+        for ivf in valid_features:
+            data['ValidFeatures'].append({
+                    'FeatureType': ivf[1],
+                    'PrereqCivic': ivf[2]
+                })
+        crsr.execute(f"""SELECT ImprovementType, TerrainType, PrereqTech, PrereqCivic FROM Improvement_ValidTerrains
+                        WHERE ImprovementType = '{row[0]}'""")
+        valid_terrains = crsr.fetchall()
+        data['ValidTerrains'] = []
+        for ivt in valid_terrains:
+            data['ValidTerrains'].append({
+                    'TerrainType': ivt[1],
+                    'PrereqTech': ivt[2],
+                    'PrereqCivic': ivt[3]
+                })
+        res.append(data)
+    
+    connection.close()
+    return res
+
 def get_improvements_per_techcivic(db_path):
     res = {}
     connection = sqlite3.connect(db_path)

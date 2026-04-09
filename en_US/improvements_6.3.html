@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Civ VI BBG 6.3 Improvements</title>
+    <meta charset="utf-8">
+    <meta contents="IE=edge" httpequiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="/images/BBGLogo.webp" rel="icon" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap" rel="stylesheet">
+    <link href="/css/style.min.css" rel="stylesheet">
+    <link href="/css/preloader.css" rel="stylesheet">
+    <link href="/css/animate.min.css" rel="stylesheet">
+    <link href="/css/header.css" rel="stylesheet">
+    <link href="/css/footer.css" rel="stylesheet">
+    <link href="/fontawesome-free-7.0.0-web/css/all.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="loader">
+        <div class="loader-outter"></div>
+        <div class="loader-inner"></div>
+        <div class="indicator">
+          <svg height="12px" width="16px">
+            <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+            <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="layer"></div>
+    <div class="page-flex">
+      <div class="main-wrapper">
+        <nav class="main-nav--bg">
+          <div class="main-nav">
+            <div class="header">
+              <div class="header-inner">
+                <div class="inner">
+                  <div class="row">
+                    <div class="flex center sidebar-toggle col-xl-1 col-lg-1 col-md-1 col-1">
+                      <button class="transparent-btn" title="Menu" type="button">
+                        <span class="sr-only">Toggle menu</span>
+                        <span aria-hidden="true" class="icon menu-toggle"></span>
+                      </button>
+                    </div>
+                    <div class="flex center col-xl-1 col-lg-1 col-md-1 col-2">
+                      <a href="/index.html" style="align-content: center;">
+                        <img alt="#" src="/images/BBGLogo.webp" style="width:3em; border-radius:10%">
+                      </a>
+                      <div class="mobile-nav"></div>
+                    </div>
+                    <div class="flex col-xl-8 col-lg-8 col-md-8 col-8">
+                      <div class="main-menu">
+                        <nav class="navigation">
+                          <ul class="nav menu">
+                            <li class="">
+                              <a href="/en_US/leaders_6.3.html" onclick="civClicked(null)">Leaders</a>
+                            </li>
+                            <li class="">
+                              <a href="/en_US/bbg_expanded_6.3.html" onclick="civClicked(null)">BBG Expanded</a>
+                            </li>
+                            <li class="">
+                              <a href="/en_US/city_states_6.3.html" onclick="civClicked(null)">City States</a>
+                            </li>
+                            <li class="">
+                              <a href="/en_US/religion_6.3.html" onclick="civClicked(null)">Religion</a>
+                            </li>
+                            <li class="">
+                              <a href="/en_US/governor_6.3.html" onclick="civClicked(null)">Governors</a>
+                            </li>
+                            <li class="">
+                              <a href="/en_US/great_people_6.3.html" onclick="civClicked(null)">Great People</a>
+                            </li>
+                            <li class="">
+                              <a href="/en_US/natural_wonder_6.3.html" onclick="civClicked(null)">Natural Wonders</a>
+                            </li>
+                            <li class="">
+                              <a href="/en_US/world_wonder_6.3.html" onclick="civClicked(null)">World Wonders</a>
+                            </li>
+                            <li class="">
+                              <a href="/en_US/buildings_6.3.html" onclick="civClicked(null)">Buildings</a>
+                            </li>
+                            <li class="">
+                              <a href="/en_US/units_6.3.html" onclick="civClicked(null)">Units</a>
+                            </li>
+                            <li class="active">
+                              <a href="/en_US/improvements_6.3.html" onclick="civClicked(null)">Improvements</a>
+                            </li>
+                            <li class="">
+                              <a href="/en_US/tech_tree_6.3.html" onclick="civClicked(null)">Technology Tree</a>
+                            </li>
+                            <li class="">
+                              <a href="/en_US/civic_tree_6.3.html" onclick="civClicked(null)">Civic Tree</a>
+                            </li>
+                            <li class="">
+                              <a href="/en_US/names_6.3.html" onclick="civClicked(null)">Names</a>
+                            </li>
+                            <li class="">
+                              <a href="/en_US/policies_6.3.html" onclick="civClicked(null)">Policies</a>
+                            </li>
+                            <li class="">
+                              <a href="/en_US/congress_6.3.html" onclick="civClicked(null)">World Congress</a>
+                            </li>
+                            <li class="">
+                              <a href="/en_US/misc_6.3.html" onclick="civClicked(null)">Misc</a>
+                            </li>
+                            <li class="">
+                              <a href="/en_US/changelog_6.3.html" onclick="civClicked(null)">Changelog</a>
+                            </li>
+                            <li>
+                              <a>BBG Version<i class="icofont-rounded-down"></i></a>
+                              <ul class="dropdown bbg-version-dropdown">
+                                <li>
+                                  <a href="/en_US/improvements_base_game.html">Base</a>
+                                </li>
+                                <li>
+                                  <a href="/en_US/improvements_7.4.html">7.4</a>
+                                </li>
+                                <li>
+                                  <a href="/en_US/improvements_7.3.html">7.3</a>
+                                </li>
+                                <li>
+                                  <a href="/en_US/improvements_7.2.html">7.2</a>
+                                </li>
+                                <li>
+                                  <a href="/en_US/improvements_7.1.html">7.1</a>
+                                </li>
+                                <li>
+                                  <a href="/en_US/improvements_6.5.html">6.5</a>
+                                </li>
+                                <li>
+                                  <a href="/en_US/improvements_6.4.html">6.4</a>
+                                </li>
+                                <li>
+                                  <a href="/en_US/improvements_6.3.html">6.3</a>
+                                </li>
+                                <li>
+                                  <a href="/en_US/improvements_6.2.html">6.2</a>
+                                </li>
+                                <li>
+                                  <a href="/en_US/improvements_6.1.html">6.1</a>
+                                </li>
+                                <li>
+                                  <a href="/en_US/improvements_6.0.html">6.0</a>
+                                </li>
+                                <li>
+                                  <a href="/en_US/improvements_5.8.html">5.8</a>
+                                </li>
+                                <li>
+                                  <a href="/en_US/improvements_5.7.html">5.7</a>
+                                </li>
+                                <li>
+                                  <a href="/en_US/improvements_5.6.html">5.6</a>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+                    <div class="flex center col-xl-2 col-lg-2 col-md-2 col-1">
+                      <div class="flex row justify-content-around">
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-4">
+                          <div class="main-menu">
+                            <nav class="navigation">
+                              <ul class="nav menu">
+                                <li><i class="fa-solid fa-language lang-icon"></i>
+                                  <ul class="dropdown">
+                                    <li>
+                                      <a href="/en_US/improvements_6.3.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/us.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/fr_FR/improvements_6.3.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/fr.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/ru_RU/improvements_6.3.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/ru.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/de_DE/improvements_6.3.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/de.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/zh_Hans_CN/improvements_6.3.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/cn.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/ko_KR/improvements_6.3.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/kr.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/ja_JP/improvements_6.3.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/jp.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/pt_BR/improvements_6.3.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/br.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </nav>
+                          </div>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-4">
+                          <div class="base-game-switcher-wrapper">
+                            <button class="base-game-switcher gray-circle-btn" title="Show Base Game" type="button"><i aria-hidden="true" class="enable-icon" data-feather="toggle-left"></i><i aria-hidden="true" class="disable-icon" data-feather="toggle-right"></i></button>
+                          </div>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-4">
+                          <div class="theme-switcher-wrapper">
+                            <button class="theme-switcher gray-circle-btn" title="Switch theme" type="button">
+                              <span class="sr-only">Switch theme</span><i aria-hidden="true" class="sun-icon" data-feather="sun"></i><i aria-hidden="true" class="moon-icon" data-feather="moon"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="scroll-up footer-popup" id="footer-popup">
+          <div class="footer-popup-inner">
+            <div class="row">
+              <div class="col-sm-6 col-1 footer-popup-body">
+                <p id="donateText">Enjoy this work? Try Aether Kingdoms!
+                  <b>
+                    <a class="footer-popup-link" href="https://www.aetherkingdoms.com/" target="_blank">(Link)</a>
+                  </b>
+                </p>
+              </div>
+              <div class="col-sm-2 col-1 footer-popup-body">
+                <a class="btn btn-primary" href="https://www.aetherkingdoms.com/" target="_blank">
+                  <img alt="Aether Kingdom" class="footer-popup-img" src="/images/ak_village_animation.gif">
+                </a>
+              </div>
+              <div class="col-sm-2 col-6 footer-popup-donate">
+                <a class="btn btn-primary" href="https://ko-fi.com/calcalciffer" target="_blank">Donate</a>
+              </div>
+              <div class="col-sm-2 col-6 footer-popup-scroll-up">
+                <a class="displayNone" href="#top" id="scrollUp" onclick="civClicked(null)"><i class="fa-solid fa-up-long"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="aether-kingdom-ad" id="aether-kingdom-ad">
+          <a href="https://www.aetherkingdoms.com/" target="_blank">
+            <img alt="Aether Kingdom" class="aether-kingdom-ad-img" src="/images/ak_village_animation.gif">
+          </a>
+          <h2 class="aether-kingdom-ad-title">Try Aether Kingdoms!</h2>
+          <p class="aether-kingdom-ad-text">If you like my website here, please check out Aether Kingdoms, a free-to-play strategy game inspired by Civilization and developed by my friend and I. Click the button below to learn more!</p>
+          <a href="https://www.aetherkingdoms.com/" target="_blank">
+            <button class="ad-btn" title="Aether Kingdoms" type="submit">Aether Kingdoms</button>
+          </a>
+          <button class="ad-btn" onclick="aetherKingdomAdClose()" title="Close ad" type="submit">Close</button>
+        </div>
+        <div class="">
+          <div class="fixed left-0 right-auto h-screen bg-white border-r border-neutral-300 overflow-scroll" style="z-index: 5;">
+            <aside class="sidebar">
+              <div class="sidebar-start">
+                <div class="sidebar-body">
+                  <ul class="sidebar-body-menu"></ul>
+                </div>
+              </div>
+            </aside>
+          </div>
+          <div class="leaders-data min-w-full main-pl">
+            <main class="main users chart-page">
+              <div class="container">
+                <h1 class="civ-name">Civ VI BBG 6.3 Improvements</h1><br>
+                <div class="row">
+                  <div class="col-md-6 col-12" id="Airstrip">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_AIRSTRIP_NAME-->
+                      <h2 class="civ-name">Airstrip
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Airstrip.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal to Adjacent Tiles: -1</p>
+                      <p class="civ-ability-desc" style="text-align:left">Built By Military Engineer</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Desert,  Grassland,  Plains,  Snow,  Tundra</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Volcanic Soil</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocked by Flight Technology</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocks the Military Engineer ability to construct an Airstrip.<br><br>Can support 3 air units. Can only be built on flat terrain. -1 Appeal.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Alcázar">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_ALCAZAR_NAME-->
+                      <h2 class="civ-name">Alcázar
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Alcázar.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pillage Award: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Defense Modifier: 4</p>
+                      <p class="civ-ability-desc" style="text-align:left">Fortification bonus applied to occupying unit.</p>
+                      <p class="civ-ability-desc" style="text-align:left">50% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourism from Appeal</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal to Adjacent Tiles: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourism from <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture (requires Flight Technology)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Built By Builder</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Desert,  Desert (Hills),  Grassland,  Grassland (Hills),  Plains,  Plains (Hills),  Snow,  Snow (Hills),  Tundra,  Tundra (Hills)</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocks the Builder ability to construct an Alcázar.<br><br>+2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture. Provides <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Science equal to 50% of the tile's Appeal. Occupying unit receives +4 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Defense Strength, and automatically gains 2 turns of fortification. Provides <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourism after researching Flight. Cannot be built next to another Alcázar.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Batey">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_BATEY_NAME-->
+                      <h2 class="civ-name">Batey
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Batey.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pillage Award: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal to Adjacent Tiles: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourism from <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture (requires Flight Technology)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Built By Builder</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Desert,  Desert (Hills),  Grassland,  Grassland (Hills),  Plains,  Plains (Hills),  Snow,  Snow (Hills),  Tundra,  Tundra (Hills)</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocks the Builder ability to construct a Batey.<br><br>+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture. +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture for every adjacent Bonus Resource and Entertainment Complex (increased to +2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture when Exploration is discovered). Provides <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourism after researching Flight. Cannot be built adjacent to another Batey or on Hills.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Cahokia Mounds">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MOUND_NAME-->
+                      <h2 class="civ-name">Cahokia Mounds
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Cahokia Mounds.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pillage Award: Healing 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Housing</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal to Adjacent Tiles: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold</p>
+                      <p class="civ-ability-desc" style="text-align:left">Built By Builder</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Desert,  Grassland,  Plains,  Tundra</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Floodplains,  Grassland Floodplains,  Plains Floodplains</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocks the Builder ability to construct a Cahokia Mounds.<br><br>+3 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold. Cities receive +1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> Amenity from their first Cahokia Mound improvement. Upon discovering Natural History, cities receive +1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> Amenity from their second Cahokia Mound improvement. +1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Food for every 2 adjacent Districts once Feudalism is discovered or for every adjacent District once Replaceable Parts is researched. Provides +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Housing. Receive an additional <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Housing once Cultural Heritage is discovered. Cannot be built adjacent to other Cahokia Mounds.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Camp">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_CAMP_NAME-->
+                      <h2 class="civ-name">Camp
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Camp.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pillage Award: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Housing</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal to Adjacent Tiles: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production (Unlocked by Mercantilism Civic)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Food (Unlocked by Mercantilism Civic)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold (Unlocked by Synthetic Materials Technology)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourism from <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture (requires Flight Technology)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Built By Builder</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocked by Animal Husbandry Technology</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocks the Builder ability to construct Camps.<br><br>+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold. Can only be built on valid resources.<br><br>If built on Luxury resources, the city will gain use of that resource.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Chemamull">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_CHEMAMULL_NAME-->
+                      <h2 class="civ-name">Chemamull
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Chemamull.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pillage Award: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Requires: Appeal &gt;= 4</p>
+                      <p class="civ-ability-desc" style="text-align:left">75% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourism from Appeal</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal to Adjacent Tiles: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production (Unlocked by Civil Service Civic)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourism from <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture (requires Flight Technology)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Built By Builder</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Desert,  Desert (Hills),  Grassland,  Grassland (Hills),  Plains,  Plains (Hills),  Snow,  Snow (Hills),  Tundra,  Tundra (Hills)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Volcanic Soil</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocked by Craftsmanship Civic</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Mapuche unique builder improvement unlocked with Craftsmanship. Requires a minimum Appeal of Breathtaking (+4 Appeal).<br><br>+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production.<br><img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture equal to 75% of the tile's Appeal.<br>+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production with Civil Service.<br><br>Provides <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourism after researching Flight.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Château">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_CHATEAU_NAME-->
+                      <h2 class="civ-name">Château
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Château.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pillage Award: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Housing</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal to Adjacent Tiles: 1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Food</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourism from <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture (requires Flight Technology)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Built By Builder</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Desert,  Desert (Hills),  Grassland,  Grassland (Hills),  Plains,  Plains (Hills),  Snow,  Snow (Hills),  Tundra,  Tundra (Hills)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Floodplains,  Grassland Floodplains,  Plains Floodplains</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocked by Feudalism Civic</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">French unique builder improvement unlocked at Feudalism. Cannot be built adjacent to another Chateau.<br><br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Food, +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture, +1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold<br>+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Housing and +1 Appeal to adjacent tiles.<br>+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture for each adjacent wonder, increasing to +2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture with the Flight technology.<br>+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture and +1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold for each adjacent Luxury resource.<br>+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold if built next to River.<br><br>Provides <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourism after researching Flight.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="City Park">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_CITY_PARK_NAME-->
+                      <h2 class="civ-name">City Park
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/City Park.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pillage Award: Healing 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal to Adjacent Tiles: 2</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture</p>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Science</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourism from <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture (requires Flight Technology)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Built By Builder</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Desert,  Grassland,  Plains,  Snow,  Tundra</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocked by Games and Recreation Civic</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">A <img src="/images/ICON_GOVERNOR.webp" style="height:1em"/> Governor unique improvement that can be built in a city with a Surveyor Governor with the Parks and Recreation promotion. +3 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Science, +2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture, +2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Housing, +1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> Amenity, and +2 Appeal to adjacent tiles. Limit one per city.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Colossal Head">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_COLOSSAL_HEAD_NAME-->
+                      <h2 class="civ-name">Colossal Head
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Colossal Head.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pillage Award: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Housing</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal to Adjacent Tiles: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Faith</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Food</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourism from <img src="/images/ICON_FAITH.webp" style="height:1em"/> Faith (requires Flight Technology)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Built By Builder</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Desert,  Desert (Hills),  Grassland,  Grassland (Hills),  Plains,  Plains (Hills),  Tundra,  Tundra (Hills)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Volcanic Soil</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocks the Builder ability to construct a Colossal Head.<br><br>+2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Faith. +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Faith for every 2 adjacent Rainforest or for every adjacent Rainforest once Humanism is discovered. +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Faith for every 2 adjacent Woods or for every adjacent Woods once Humanism is discovered. <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourism from <img src="/images/ICON_FAITH.webp" style="height:1em"/> Faith once Flight is researched. Cannot be built on Snow or Snow Hills.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Farm">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_FARM_NAME-->
+                      <h2 class="civ-name">Farm
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Farm.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pillage Award: Healing 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Housing</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal to Adjacent Tiles: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Food</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourism from <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture (requires Flight Technology)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Built By Builder</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Grassland,  Grassland (Hills) (Requires: Civil Engineering),  Plains,  Plains (Hills) (Requires: Civil Engineering)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Floodplains,  Grassland Floodplains,  Plains Floodplains,  Volcanic Soil</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocks the Builder ability to construct Farms.<br><br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Food. Can only be built on Grassland or Plains.<br><br>Constructing farms adjacent to other Farms provides bonuses to Housing.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Feitoria">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_FEITORIA_NAME-->
+                      <h2 class="civ-name">Feitoria
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Feitoria.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal to Adjacent Tiles: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+4 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production</p>
+                      <p class="civ-ability-desc" style="text-align:left">Built By Nau</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Coast and Lake</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Portuguese unique improvement built by the Nau. Can only be built adjacent to Luxury or Bonus resources in territory belonging to other Civilizations or City-states that you have Open Borders with. Must be built on a Coast or Lake tile adjacent to land and not adjacent to another Feitoria. Feitorias cannot be removed.<br><br>+4 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold and +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production.<br>Trade routes sent to this city from Portugal gain +2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold and +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Fishery">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_FISHERY_NAME-->
+                      <h2 class="civ-name">Fishery
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Fishery.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pillage Award: Healing 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Housing</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal to Adjacent Tiles: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Food</p>
+                      <p class="civ-ability-desc" style="text-align:left">Built By Builder</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Coast and Lake</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocked by Celestial Navigation Technology</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocks the Builder ability to construct Fisheries.<br><br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Food, +1 additional <img src="/images/ICON_FOOD.webp" style="height:1em"/> Food if adjacent to a sea resource. +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Housing. Must be built on a coastal tile.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Fishing Boats">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_FISHING_BOATS_NAME-->
+                      <h2 class="civ-name">Fishing Boats
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Fishing Boats.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pillage Award: Healing 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Housing</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal to Adjacent Tiles: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Food</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold (Unlocked by Cartography Technology)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Food (Unlocked by Plastics Technology)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production (Unlocked by Colonialism Civic)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourism from <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture (requires Flight Technology)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Built By Builder</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocked by Sailing Technology</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocks the Builder ability to construct Fishing Boats.<br><br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Food and +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production. Can only be built on valid resources.<br><br>If built on Luxury resources, the city will gain use of that resource.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Fort">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_FORT_NAME-->
+                      <h2 class="civ-name">Fort
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Fort.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Defense Modifier: 4</p>
+                      <p class="civ-ability-desc" style="text-align:left">Fortification bonus applied to occupying unit.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal to Adjacent Tiles: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">Built By Military Engineer</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Desert,  Desert (Hills),  Grassland,  Grassland (Hills),  Plains,  Plains (Hills),  Snow,  Snow (Hills),  Tundra,  Tundra (Hills)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Volcanic Soil</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocked by Military Engineering Technology</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Occupying unit receives +4 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Defense Strength, and automatically gains 2 turns of fortification.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Geothermal Plant">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_GEOTHERMAL_PLANT_NAME-->
+                      <h2 class="civ-name">Geothermal Plant
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Geothermal Plant.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pillage Award: <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal to Adjacent Tiles: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Science</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production (Unlocked by Synthetic Materials Technology)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Science (Unlocked by Synthetic Materials Technology)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Built By Builder</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Geothermal Fissure</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocked by Chemistry Technology</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocks the Builder ability to construct a Geothermal Plant.<br><br>+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production, +1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Science, +3 <img src="/images/ICON_POWER.webp" style="height:1em"/> Power per turn.<br>Additional +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production, +1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Science and +3 <img src="/images/ICON_POWER.webp" style="height:1em"/> Power per turn after researching Synthetic Materials.<br>Must be built on a Geothermal Fissure.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Golf Course">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_GOLF_COURSE_NAME-->
+                      <h2 class="civ-name">Golf Course
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Golf Course.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pillage Award: Healing 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal to Adjacent Tiles: 1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold (Unlocked by The Enlightenment Civic)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture (Unlocked by The Enlightenment Civic)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourism from <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture (requires Flight Technology)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Built By Builder</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Grassland,  Grassland (Hills),  Plains,  Plains (Hills),  Snow,  Snow (Hills),  Tundra,  Tundra (Hills)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocked by Games and Recreation Civic</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Scottish unique builder improvement unlocked with Games and Recreation. Cannot be placed on Desert or Desert Hills. One per City. Tiles with Golf Courses cannot be swapped.<br><br>+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture, +2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold, +1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> Amenity.<br>+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture and +1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold if adjacent to a City Center.<br>+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture and +1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> Amenity if adjacent to an Entertainment Complex.<br>+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture and +1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold with Enlightenment.<br>+1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> Amenity with Guilds.<br>+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Housing with Globalization.<br>+1 Appeal to adjacent tiles</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Great Wall">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_GREAT_WALL_NAME-->
+                      <h2 class="civ-name">Great Wall
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Great Wall.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pillage Award: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Defense Modifier: 4</p>
+                      <p class="civ-ability-desc" style="text-align:left">Fortification bonus applied to occupying unit.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal to Adjacent Tiles: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture (Unlocked by Military Science Technology)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourism from <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture (requires Flight Technology)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Built By Builder</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Desert,  Desert (Hills),  Grassland,  Grassland (Hills),  Plains,  Plains (Hills),  Snow,  Snow (Hills),  Tundra,  Tundra (Hills)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Volcanic Soil</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocked by Masonry Technology</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Chinese unique builder improvement unlocked with Masonry. Must be built in a line along the borders of your empire. Can only be pillaged (never destroyed) by natural disasters.<br><br>+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production.<br>+1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold for each adjacent Great Wall.<br>+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture for each adjacent Great Wall with Castles.	<br>+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture with Military Science.<br><br>Provides <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourism after researching Flight.<br>An occupying unit receives +1 Sight and +4 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Defense Strength and automatically gains 2 turns of fortification.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Hacienda">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_HACIENDA_NAME-->
+                      <h2 class="civ-name">Hacienda
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Hacienda.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pillage Award: Healing 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Housing</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal to Adjacent Tiles: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production</p>
+                      <p class="civ-ability-desc" style="text-align:left">Built By Builder</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Grassland,  Plains</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocked by Medieval Faires Civic</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Colombian unique builder improvement unlocked with Medieval Faires. Can be built on Plains and Grassland flat tiles.<br><br>+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production, +2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold, and +0.5 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Housing.<br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Food for every 2 adjacent Plantations, increasing to +1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Food for every adjacent Plantation with Replaceable Parts.<br>+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production on Plantations and Haciendas for every 2 adjacent Haciendas, increasing to +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production for every adjacent Hacienda with Mercantilism.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Ice Hockey Rink">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_ICE_HOCKEY_RINK_NAME-->
+                      <h2 class="civ-name">Ice Hockey Rink
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Ice Hockey Rink.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pillage Award: Healing 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal to Adjacent Tiles: 2</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production (Unlocked by Professional Sports Civic)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Food (Unlocked by Professional Sports Civic)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourism from <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture (requires Flight Technology)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Built By Builder</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Snow,  Snow (Hills),  Tundra,  Tundra (Hills)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocked by Diplomatic Service Civic</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Canadian unique Builder improvement unlocked with Diplomatic Service. Can be built on Tundra, Tundra Hills, Snow, and Snow Hills. One per city.<br><br>+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture for each adjacent Tundra, Tundra Hills, Snow, and Snow Hills tile.<br>+1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> Amenity and +2 Appeal to adjacent tiles.<br>+2 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Food and <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production with Professional Sports.<br>+4 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture if adjacent to a Stadium building.<br><br>Provides <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourism from Culture once Flight is unlocked.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Kampung">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_KAMPUNG_NAME-->
+                      <h2 class="civ-name">Kampung
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Kampung.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pillage Award: Healing 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Housing</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal to Adjacent Tiles: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production (Unlocked by Civil Engineering Civic)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourism from <img src="/images/ICON_FOOD.webp" style="height:1em"/> Food (requires Flight Technology)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Built By Builder</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Coast and Lake</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocked by Shipbuilding Technology</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Indonesian unique builder improvement unlocked at Shipbuilding. Must be placed on a Coast or Lake tile adjacent to a sea resource.<br><br>+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production and +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Housing.<br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Food and +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Faith for each adjacent Fishing Boat.<br>+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production with Civil Engineering.<br>+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Housing with Mass Production.<br><br>Provides <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourism from <img src="/images/ICON_FOOD.webp" style="height:1em"/> Food after researching Flight.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Kurgan">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_KURGAN_NAME-->
+                      <h2 class="civ-name">Kurgan
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Kurgan.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pillage Award: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal to Adjacent Tiles: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Faith</p>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourism from <img src="/images/ICON_FAITH.webp" style="height:1em"/> Faith (requires Flight Technology)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Built By Builder</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Desert,  Desert (Hills),  Grassland,  Grassland (Hills),  Plains,  Plains (Hills),  Snow,  Snow (Hills),  Tundra,  Tundra (Hills)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocked by Animal Husbandry Technology</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Scythian unique builder improvement unlocked with Animal Husbandry.<br><br>+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Faith and +3 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold.<br>+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Faith for each adjacent Pasture, increasing to +2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Faith for each adjacent Pasture with Stirrups.<br>+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production for each adjacent Pasture.<br><br>Provides <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourism from <img src="/images/ICON_FAITH.webp" style="height:1em"/> Faith after researching Flight.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Lumber Mill">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_LUMBER_MILL_NAME-->
+                      <h2 class="civ-name">Lumber Mill
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Lumber Mill.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pillage Award: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal to Adjacent Tiles: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production (Unlocked by Ballistics Technology)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production (Unlocked by Synthetic Materials Technology)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourism from <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture (requires Flight Technology)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Built By Builder</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Woods,  Rainforest (Requires: Mercantilism)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocked by Construction Technology</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocks the Builder ability to construct a Lumber Mill.<br><br>+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production. Can only be built on Woods. Once Mercantilism is unlocked it can also be built on Rainforest.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Mahavihara">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MAHAVIHARA_NAME-->
+                      <h2 class="civ-name">Mahavihara
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Mahavihara.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pillage Award: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Housing</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal to Adjacent Tiles: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Science</p>
+                      <p class="civ-ability-desc" style="text-align:left">Built By Builder</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Desert,  Grassland,  Plains,  Snow,  Tundra</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocks the Builder ability to construct a Mahavihara.<br><br>+2 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Science and +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Housing. +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Faith for every adjacent Holy Site district and +1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Science for every adjacent Campus district. After researching Scientific Theory receive an additional +1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Science for every adjacent Campus. When a player constructs their first Mahavihara receive a random technology. Must be built on flat terrain not adjacent to another Mahavihara.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Mekewap">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MEKEWAP_NAME-->
+                      <h2 class="civ-name">Mekewap
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Mekewap.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pillage Award: Healing 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Housing</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal to Adjacent Tiles: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production (Unlocked by Civil Service Civic)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Built By Builder</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Desert,  Desert (Hills),  Grassland,  Grassland (Hills),  Plains,  Plains (Hills),  Snow,  Snow (Hills),  Tundra,  Tundra (Hills)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocked by Pottery Technology</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Cree unique builder improvement unlocked with Pottery. Must be placed adjacent to a Bonus or Luxury resource. Cannot be built adjacent to another Mekewap.<br><br>+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production and +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Housing.<br>+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production and +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Housing with Civil Service.<br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Food for every 2 adjacent Bonus Resources, increasing to +1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Food for every adjacent Bonus Resource with Conservation.<br>+1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold if adjacent to a Luxury resource.<br>+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold for every adjacent Luxury resource with Cartography.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Mine">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MINE_NAME-->
+                      <h2 class="civ-name">Mine
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Mine.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pillage Award: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal to Adjacent Tiles: -1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production (Unlocked by Apprenticeship Technology)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production (Unlocked by Industrialization Technology)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production (Unlocked by Smart Materials Technology)</p>
+                      <p class="civ-ability-desc" style="text-align:left">0% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourism from <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture (requires Flight Technology)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Built By Builder</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Desert (Hills),  Grassland (Hills),  Plains (Hills),  Snow (Hills),  Tundra (Hills)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Volcanic Soil</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocked by Mining Technology</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocks the Builder ability to construct Mines.<br><br>+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production. -1 Appeal. Can be built on hills or valid resources.<br><br>If built on Luxury or Strategic resources, the city will gain use of that resource.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Missile Silo">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MISSILE_SILO-->
+                      <h2 class="civ-name">Missile Silo
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Missile Silo.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal to Adjacent Tiles: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">Built By Military Engineer</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Desert,  Grassland,  Plains,  Snow,  Tundra</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Volcanic Soil</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocked by Rocketry Technology</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocks the Military Engineer ability to construct a Missile Silo.<br><br>Acts as a launch site for Nuclear and Thermonuclear Devices.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Mission">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MISSION_NAME-->
+                      <h2 class="civ-name">Mission
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Mission.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pillage Award: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal to Adjacent Tiles: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Faith</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Science (Unlocked by The Enlightenment Civic)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Built By Builder</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Desert,  Desert (Hills),  Grassland,  Grassland (Hills),  Plains,  Plains (Hills),  Snow,  Snow (Hills),  Tundra,  Tundra (Hills)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocked by Theology Civic</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Spanish unique builder improvement unlocked with Theology. Cannot be built next to another Mission.<br><br>+2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Faith.<br>+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Housing if built 7 tiles or less from current <img src="/images/ICON_CAPITAL.webp" style="height:1em"/> Capital.<br>+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Faith and +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production if built 8 tiles or more from current <img src="/images/ICON_CAPITAL.webp" style="height:1em"/> Capital.<br>+1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Science for every adjacent Campus and Holy Site district.<br>+2 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Science with Enlightenment.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Moai">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MOAI_NAME-->
+                      <h2 class="civ-name">Moai
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Moai.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pillage Award: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal to Adjacent Tiles: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourism from <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture (requires Flight Technology)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Built By Builder</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Grassland,  Grassland (Hills),  Plains,  Plains (Hills)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Volcanic Soil</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocks the Builder ability to construct a Moai.<br><br>+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture. +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture for every 2 adjacent Moai. +2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture if on or adjacent to a Volcanic Soil tile. +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture if adjacent to a Coast or Lake tile . Additional <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture and <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourism as you advance through the Civics and Technology Tree. Can be built on Plains, Plains Hills, Grassland, Grassland Hills, or Volcanic Soil. Cannot be placed adjacent to a Woods or Rainforest tile.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Monastery">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MONASTERY_NAME-->
+                      <h2 class="civ-name">Monastery
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Monastery.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pillage Award: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Housing</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal to Adjacent Tiles: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Faith</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Food</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourism from <img src="/images/ICON_FAITH.webp" style="height:1em"/> Faith (requires Flight Technology)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Built By Builder</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Desert,  Desert (Hills),  Grassland,  Grassland (Hills),  Plains,  Plains (Hills),  Snow,  Snow (Hills),  Tundra,  Tundra (Hills)</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Your Builders can now make Monastery improvements.<br><br>+3 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Faith and +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Housing. +15 HP healing for friendly religious unit on this tile that has not attacked this turn.<br><br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Food and +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Faith for every 2 adjacent districts, increasing to +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Faith for each adjacent district at Reformed Church. Additional +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Housing with the Colonialism civic. Provides <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourism equal to <img src="/images/ICON_FAITH.webp" style="height:1em"/> Faith after researching Flight.<br><br>Cannot be built next to another Monastery.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Mountain Tunnel">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MOUNTAIN_TUNNEL_NAME-->
+                      <h2 class="civ-name">Mountain Tunnel
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Mountain Tunnel.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal to Adjacent Tiles: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">Built By Military Engineer</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Desert (Mountain),  Grassland (Mountain),  Plains (Mountain),  Snow (Mountain),  Tundra (Mountain)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocked by Military Science Technology</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocks the Military Engineer ability to construct a Mountain Tunnel.<br><br>Acts as a movement portal on a mountain range, allowing units to move into it and exit from another portal at the cost of 2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement. <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> Trade Routes traveling through it can multiply the <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold they get from districts at their destination. Can only be built on an adjacent Mountain tile. Cannot be pillaged or removed.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Nazca Line">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_NAZCA_LINE_NAME-->
+                      <h2 class="civ-name">Nazca Line
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Nazca Line.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pillage Award: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal to Adjacent Tiles: 1</p>
+                      <p class="civ-ability-desc" style="text-align:left">Built By Builder</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Desert</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocks the Builder ability to construct a Nazca Line.<br><br>+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Faith to adjacent tiles. +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Faith to adjacent tiles with a resource. +1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Food to adjacent Desert and Desert Hill tiles after discovering Civil Service. +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production to adjacent flat tiles after researching Mass Production. +1 Appeal. Can only be built on flat Desert. This tile cannot be worked .</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Nubian Pyramid">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_PYRAMID_NAME-->
+                      <h2 class="civ-name">Nubian Pyramid
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Nubian Pyramid.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pillage Award: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal to Adjacent Tiles: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Faith</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Food</p>
+                      <p class="civ-ability-desc" style="text-align:left">Built By Builder</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Desert,  Desert (Hills),  Grassland,  Plains</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Floodplains,  Grassland Floodplains,  Plains Floodplains</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocked by Craftsmanship Civic</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Nubian unique builder improvement unlocked at Craftsmanship and limited to 1 per city. Nubian Districts receive standard adjacency from Nubian Pyramids. Can be built on any flat tile or desert hill. Cannot be built next to another Nubian Pyramid.<br><br>+2 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Food and +2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Faith.<br><br>Receives additional yields from adjacent districts:<br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Food for the City Center.<br>+1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Science per adjacent Campus.<br>+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture per adjacent Theater Square.<br>+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Faith per adjacent Holy Site.<br>+1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold per adjacent Commercial Hub and Harbor.<br>+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production per adjacent Industrial Zone, Encampment, and Aerodrome.<br>+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture and +2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold per adjacent Government Plaza and Diplomatic Quarter.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Offshore Oil Rig">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_OFFSHORE_OIL_RIG_NAME-->
+                      <h2 class="civ-name">Offshore Oil Rig
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Offshore Oil Rig.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pillage Award: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal to Adjacent Tiles: -1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production (Unlocked by Predictive Systems Technology)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourism from <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture (requires Flight Technology)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Built By Builder</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Coast and Lake,  Ocean</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocked by Refining Technology</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocks the Builder ability to construct an Offshore Oil Rig.<br><br>-1 Appeal. Can only be built on Coast or Lake tiles with <img src="/images/ICON_RESOURCE_OIL.webp" style="height:1em"/> Oil.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Offshore Wind Farm">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_OFFSHORE_WIND_FARM_NAME-->
+                      <h2 class="civ-name">Offshore Wind Farm
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Offshore Wind Farm.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pillage Award: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal to Adjacent Tiles: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production</p>
+                      <p class="civ-ability-desc" style="text-align:left">Built By Builder</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Coast and Lake</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocked by Predictive Systems Technology</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocks the Builder ability to construct an Offshore Wind Farm.<br><br>+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production. Provides 2 <img src="/images/ICON_POWER.webp" style="height:1em"/> Power per turn. Must be built on Coast or Lake terrain.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Oil Well">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_OIL_WELL_NAME-->
+                      <h2 class="civ-name">Oil Well
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Oil Well.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pillage Award: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal to Adjacent Tiles: -1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production (Unlocked by Predictive Systems Technology)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourism from <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture (requires Flight Technology)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Built By Builder</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Desert,  Desert (Hills),  Grassland,  Grassland (Hills),  Plains,  Plains (Hills),  Snow,  Snow (Hills),  Tundra,  Tundra (Hills)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocked by Refining Technology</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocks the Builder ability to construct an Oil Well.<br><br>-1 Appeal. Can only be built on land tiles with<img src="/images/ICON_RESOURCE_OIL.webp" style="height:1em"/> Oil.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Open-Air Museum">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_OPEN_AIR_MUSEUM_NAME-->
+                      <h2 class="civ-name">Open-Air Museum
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Open-Air Museum.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pillage Award: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal to Adjacent Tiles: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourism from <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture</p>
+                      <p class="civ-ability-desc" style="text-align:left">Built By Builder</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Desert,  Desert (Hills),  Grassland,  Grassland (Hills),  Plains,  Plains (Hills),  Snow,  Snow (Hills),  Tundra,  Tundra (Hills)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocked by Diplomatic Service Civic</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Swedish unique builder improvement unlocked with Diplomatic Service. Limited to one per city. Tiles with Open-Air Museums cannot be swapped.<br><br>+2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture and +2 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourism for each type of terrain (Snow, Tundra, Desert, Plains or Grassland) in which at least one Swedish city is founded.<br>+2 Loyalty per turn in this city.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Outback Station">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_OUTBACK_STATION_NAME-->
+                      <h2 class="civ-name">Outback Station
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Outback Station.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pillage Award: Healing 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Housing</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal to Adjacent Tiles: 1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Food</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production</p>
+                      <p class="civ-ability-desc" style="text-align:left">Built By Builder</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Desert,  Desert (Hills),  Grassland,  Grassland (Hills),  Plains,  Plains (Hills)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocked by Guilds Civic</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Australian unique builder improvement unlocked at Guilds. Can only be built in Desert, Grassland and Plains tiles.<br><br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Food and +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production.<br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Food for each adjacent Pasture.<br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Food for every adjacent Outback Stations with Rapid Deployment.<br>+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production for every 2 adjacent Outback Stations with Industrialization.<br>+1 Appeal to adjacent tiles.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Pairidaeza">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_PAIRIDAEZA_NAME-->
+                      <h2 class="civ-name">Pairidaeza
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Pairidaeza.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pillage Award: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Housing</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal to Adjacent Tiles: 1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture (Unlocked by Diplomatic Service Civic)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourism from <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture (requires Flight Technology)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Built By Builder</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Desert,  Desert (Hills),  Grassland,  Grassland (Hills),  Plains,  Plains (Hills)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocked by Early Empire Civic</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Persian unique builder improvement unlocked with Early Empire. Cannot be built on Snow tiles, Tundra tiles or Floodplains. Cannot be build next to another Pairidaeza.<br><br>+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture, +2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold, +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Housing.<br>+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture with Diplomatic Service.<br>+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture for each adjacent City Center, Holy Site, Campus, and Theater Square.<br>+1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold for each adjacent City Center, Commercial Hub, Harbor, and Industrial Zone.<br>+1 Appeal to adjacent tiles.<br>Provides <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourism after researching Flight.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Pasture">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_PASTURE_NAME-->
+                      <h2 class="civ-name">Pasture
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Pasture.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pillage Award: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Housing</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal to Adjacent Tiles: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Food (Unlocked by Stirrups Technology)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production (Unlocked by Replaceable Parts Technology)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Food (Unlocked by Robotics Technology)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourism from <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture (requires Flight Technology)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Built By Builder</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocked by Animal Husbandry Technology</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocks the Builder ability to construct Pastures.<br><br>+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production. Can only be built on valid resources.<br><br>If built on Strategic resources, the city will gain use of that resource.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Plantation">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_PLANTATION_NAME-->
+                      <h2 class="civ-name">Plantation
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Plantation.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pillage Award: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Housing</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal to Adjacent Tiles: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Food (Unlocked by Scientific Theory Technology)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold (Unlocked by Globalization Civic)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Food (Unlocked by Medieval Faires Civic)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourism from <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture (requires Flight Technology)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Built By Builder</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocked by Irrigation Technology</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocks the Builder ability to construct Plantations.<br><br>+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold. +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production if built on flat tile.<br>Can only be built on valid resources.<br><br>If built on Luxury resources, the city will gain use of that resource.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Polder">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_POLDER_NAME-->
+                      <h2 class="civ-name">Polder
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Polder.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pillage Award: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Housing</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal to Adjacent Tiles: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Food</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production</p>
+                      <p class="civ-ability-desc" style="text-align:left">+4 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold (Unlocked by Civil Engineering Civic)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Built By Builder</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Coast and Lake</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocked by Feudalism Civic</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Dutch unique builder improvement unlocked at Feudalism. Must be placed on a Coast or Lake tile adjacent to 1 or more passable land tiles.<br><br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Food, +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production, and +0.5 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Housing.<br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Food for every adjacent Polder, increasing to +2 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Food for every adjacent Polder with Replaceable Parts.<br>+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production for every adjacent Harbor.<br>+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production for every 2 adjacent Polders, increasing to +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production for every adjacent Polder with Replaceable Parts.<br>+4 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold with Civil Engineering.<br>+3 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Combat Strength for Dutch naval units on Polder tiles.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Pā">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MAORI_PA_NAME-->
+                      <h2 class="civ-name">Pā
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Pā.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Defense Modifier: 4</p>
+                      <p class="civ-ability-desc" style="text-align:left">Fortification bonus applied to occupying unit.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal to Adjacent Tiles: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">Built By Toa</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Desert (Hills),  Grassland (Hills),  Plains (Hills),  Snow (Hills),  Tundra (Hills)</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Maori unique improvement built by the Toa.<br><br>Occupying units receive +1 Sight and +4 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Defense Strength, and automatically gains 2 turns of fortification. A Māori unit occupying a Pā heals even if they just moved or attacked. Must be built on a Hill tile.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Qhapaq Ñan">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MOUNTAIN_ROAD_NAME-->
+                      <h2 class="civ-name">Qhapaq Ñan
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Qhapaq Ñan.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal to Adjacent Tiles: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">Built By Builder OR  Warak’aq OR  Ranger OR  Scout OR  Spec Ops</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Desert (Mountain),  Grassland (Mountain),  Plains (Mountain),  Snow (Mountain),  Tundra (Mountain)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocked by Foreign Trade Civic</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocks the Builder ability to construct a Qhapaq Ñan, unique to Pachacuti.<br><br>Acts as a movement portal on a mountain range, allowing units to move into it and exit from another portal at the cost of 2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Movement. <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> Trade Routes traveling through it can multiply the <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold they get from districts at their destination. Can only be built on an adjacent Mountain tile. Cannot be pillaged or removed.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Quarry">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_QUARRY_NAME-->
+                      <h2 class="civ-name">Quarry
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Quarry.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pillage Award: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal to Adjacent Tiles: -1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production (Unlocked by Rocketry Technology)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production (Unlocked by Military Engineering Technology)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourism from <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture (requires Flight Technology)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Built By Builder</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocked by Mining Technology</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocks the Builder ability to construct a Quarry.<br><br>+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production. +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production +1 after researching Military Engineering, and +2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production after researching Rocketry. -1 Appeal to adjacent tiles. Can only be constructed on a valid bonus or luxury resource tile (Stone, Marble, Gypsum).</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Rock-Hewn Church">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_ROCK_HEWN_CHURCH_NAME-->
+                      <h2 class="civ-name">Rock-Hewn Church
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Rock-Hewn Church.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pillage Award: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal to Adjacent Tiles: 1</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourism from <img src="/images/ICON_FAITH.webp" style="height:1em"/> Faith (requires Flight Technology)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Built By Builder</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Desert (Hills),  Grassland (Hills),  Plains (Hills),  Snow (Hills),  Tundra (Hills)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Volcanic Soil</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocked by Drama and Poetry Civic</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Ethiopian unique builder improvement unlocked with Drama and Poetry. Can only be built on Hills or Volcanic Soil not adjacent to another Rock-Hewn Church. Can only be pillaged (never destroyed) by natural disasters.<br><br>+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Faith for every adjacent Mountain and Hills tile.<br>+1 Appeal to adjacent tiles.<br><br>Provides <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourism from <img src="/images/ICON_FAITH.webp" style="height:1em"/> Faith after researching Flight.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Roman Fort">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_ROMAN_FORT_NAME-->
+                      <h2 class="civ-name">Roman Fort
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Roman Fort.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Defense Modifier: 4</p>
+                      <p class="civ-ability-desc" style="text-align:left">Fortification bonus applied to occupying unit.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal to Adjacent Tiles: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">Built By Legion</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Desert,  Desert (Hills),  Grassland,  Grassland (Hills),  Plains,  Plains (Hills),  Snow,  Snow (Hills),  Tundra,  Tundra (Hills)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Volcanic Soil</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocks the Roman Legion ability to construct a Roman Fort, unique to Rome.<br><br>Occupying unit receives +4 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Defense Strength, and automatically gains 2 turns of fortification.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Seaside Resort">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_BEACH_RESORT_NAME-->
+                      <h2 class="civ-name">Seaside Resort
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Seaside Resort.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pillage Award: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Requires: Appeal &gt;= 2</p>
+                      <p class="civ-ability-desc" style="text-align:left">150% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourism from Appeal</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal to Adjacent Tiles: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourism from <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold</p>
+                      <p class="civ-ability-desc" style="text-align:left">Built By Builder</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Desert,  Desert (Hills),  Grassland,  Grassland (Hills),  Plains,  Plains (Hills)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Volcanic Soil</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocked by Radio Technology</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocks the Builder ability to construct Seaside Resorts.<br><br>Provides <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourism equal to 150% of the tile's Appeal. Can only be built on Coastal Desert, Coastal Plains, or Coastal Grassland tiles. Minimum Appeal of Charming.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Seastead">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_SEASTEAD_NAME-->
+                      <h2 class="civ-name">Seastead
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Seastead.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pillage Award: Healing 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+4 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Housing</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal to Adjacent Tiles: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Food</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourism from <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture</p>
+                      <p class="civ-ability-desc" style="text-align:left">Built By Builder</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Coast and Lake,  Ocean</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocked by Seasteads Technology</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocks the Builder ability to construct a Seastead.<br><br>+2 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Food. +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production for each adjacent Fishing Boats. Fishing Boats receive +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production for each adjacent Seastead. +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture and <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourism for every adjacent Reef. +2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Housing. Must be built on Coast, Lake or Ocean terrain. Cannot be placed adjacent to another Seastead. </p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Ski Resort">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_SKI_RESORT_NAME-->
+                      <h2 class="civ-name">Ski Resort
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Ski Resort.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal to Adjacent Tiles: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourism from  Appeal</p>
+                      <p class="civ-ability-desc" style="text-align:left">Built By Builder</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Desert (Mountain),  Grassland (Mountain),  Plains (Mountain),  Snow (Mountain),  Tundra (Mountain)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocked by Professional Sports Civic</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocks the Builder ability to construct a Ski Resort.<br><br>Provides +4 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourism. Provides an <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> Amenity. Can only be built on a Mountain. Cannot be built adjacent to another Ski Resort. Cannot be pillaged, worked or removed.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Solar Farm">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_SOLAR_FARM_NAME-->
+                      <h2 class="civ-name">Solar Farm
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Solar Farm.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pillage Award: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal to Adjacent Tiles: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production</p>
+                      <p class="civ-ability-desc" style="text-align:left">Built By Builder</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Desert,  Grassland,  Plains,  Tundra</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocked by Satellites Technology</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocks the Builder ability to construct a Solar Farm.<br><br>+1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold. +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production. Provides 2 <img src="/images/ICON_POWER.webp" style="height:1em"/> Power per turn. Must be built on flat terrain. Cannot be built on Snow.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Sphinx">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_SPHINX_NAME-->
+                      <h2 class="civ-name">Sphinx
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Sphinx.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pillage Award: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal to Adjacent Tiles: 2</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Faith</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture (Unlocked by Diplomatic Service Civic)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourism from <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture (requires Flight Technology)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Built By Builder</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Desert,  Desert (Hills),  Grassland,  Grassland (Hills),  Plains,  Plains (Hills),  Tundra,  Tundra (Hills)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Floodplains,  Grassland Floodplains,  Plains Floodplains</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocked by Craftsmanship Civic</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Egyptian unique builder improvement unlocked with Craftsmanship. Cannot be built next to another Sphinx. Cannot be built on Snow tiles.<br><br>+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture and +2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Faith.<br>+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture if built on Floodplains.<br>+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture with Diplomatic Service.<br>+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Faith and +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture if built next to a wonder.<br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Food and +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production if built on Desert (not Floodplains) or Desert Hills.<br>+2 Appeal to adjacent tiles.<br><br>Provides <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourism after researching Flight.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Stepwell">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_STEPWELL_NAME-->
+                      <h2 class="civ-name">Stepwell
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Stepwell.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pillage Award: Healing 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Housing</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal to Adjacent Tiles: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Faith</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Food</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Faith (Unlocked by Feudalism Civic)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Food (Unlocked by Feudalism Civic)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Built By Builder</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Desert,  Grassland,  Plains,  Snow,  Tundra</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocked by Irrigation Technology</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Indian unique builder improvement unlocked with Irrigation.<br><br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Food, +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Faith, and +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Housing.<br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Food and +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Faith with Feudalism.<br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Food for each adjacent Farm.<br>+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Faith if adjacent to a Holy Site district.<br>+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Housing with Sanitation.<br><br>Cannot be built on Hills or adjacent to another Stepwell.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Terrace Farm">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_TERRACE_FARM_NAME-->
+                      <h2 class="civ-name">Terrace Farm
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Terrace Farm.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pillage Award: Healing 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Housing</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal to Adjacent Tiles: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Food</p>
+                      <p class="civ-ability-desc" style="text-align:left">Built By Builder</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Desert (Hills),  Grassland (Hills),  Plains (Hills)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Volcanic Soil</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Incan unique builder improvement available at the start of the game. Can be placed on Grassland Hills, Plains Hills, Desert Hills, or Volcanic Soil.<br><br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Food +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Housing.<br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Food for each adjacent Mountain.<br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Food for every 2 adjacent Terrace Farms, increasing to +1 Food for every Terrace Farm with Replaceable Parts.<br>+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production if adjacent to Fresh Water and not an Aqueduct.<br>+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production for each adjacent Aqueduct.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Trading Dome">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_TRADING_DOME_NAME-->
+                      <h2 class="civ-name">Trading Dome
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Trading Dome.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pillage Award: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal to Adjacent Tiles: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold</p>
+                      <p class="civ-ability-desc" style="text-align:left">Built By Builder</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Desert,  Desert (Hills),  Grassland,  Grassland (Hills),  Plains,  Plains (Hills),  Snow,  Snow (Hills),  Tundra,  Tundra (Hills)</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocks the Builder ability to construct a Trading Dome.<br><br>+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold. +1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold for every adjacent Luxury resource. Your outgoing international <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> Trade Routes grant +1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold per Trading Dome at the origin. Cannot be built next to another Trading Dome.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Wind Farm">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_WIND_FARM_NAME-->
+                      <h2 class="civ-name">Wind Farm
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Wind Farm.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pillage Award: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal to Adjacent Tiles: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production</p>
+                      <p class="civ-ability-desc" style="text-align:left">Built By Builder</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Desert (Hills),  Grassland (Hills),  Plains (Hills),  Snow (Hills),  Tundra (Hills)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocked by Composites Technology</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Unlocks the Builder ability to construct a Wind Farm.<br><br>+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold. +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production. Provides 2 <img src="/images/ICON_POWER.webp" style="height:1em"/> Power per turn. Must be built on Hills terrain.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Ziggurat">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_ZIGGURAT_NAME-->
+                      <h2 class="civ-name">Ziggurat
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Ziggurat.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Pillage Award: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Housing</p>
+                      <p class="civ-ability-desc" style="text-align:left">Appeal to Adjacent Tiles: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Science</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture (Unlocked by Natural History Civic)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourism from <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture (requires Flight Technology)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Built By Builder</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Desert,  Grassland,  Plains,  Snow,  Tundra</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Floodplains,  Grassland Floodplains,  Plains Floodplains</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Sumerian unique builder improvement available from the start of the game. Cannot be built on Hills or adjacent to another Ziggurat.<br><br>+2 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Science and +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Housing.<br>+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture if built next to River.<br>+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Faith after Early Empire for each adjacent district or for every 2 adjacent Farms.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </main>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/plugins/feather.min.js"></script>
+    <script src="/plugins/chart.min.js"></script>
+  </body>
+</html>

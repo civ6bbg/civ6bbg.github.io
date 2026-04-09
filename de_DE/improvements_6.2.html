@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <title>Civ VI BBG 6.2 Modernisierungen</title>
+    <meta charset="utf-8">
+    <meta contents="IE=edge" httpequiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="/images/BBGLogo.webp" rel="icon" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap" rel="stylesheet">
+    <link href="/css/style.min.css" rel="stylesheet">
+    <link href="/css/preloader.css" rel="stylesheet">
+    <link href="/css/animate.min.css" rel="stylesheet">
+    <link href="/css/header.css" rel="stylesheet">
+    <link href="/css/footer.css" rel="stylesheet">
+    <link href="/fontawesome-free-7.0.0-web/css/all.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="loader">
+        <div class="loader-outter"></div>
+        <div class="loader-inner"></div>
+        <div class="indicator">
+          <svg height="12px" width="16px">
+            <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+            <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="layer"></div>
+    <div class="page-flex">
+      <div class="main-wrapper">
+        <nav class="main-nav--bg">
+          <div class="main-nav">
+            <div class="header">
+              <div class="header-inner">
+                <div class="inner">
+                  <div class="row">
+                    <div class="flex center sidebar-toggle col-xl-1 col-lg-1 col-md-1 col-1">
+                      <button class="transparent-btn" title="Menu" type="button">
+                        <span class="sr-only">Toggle menu</span>
+                        <span aria-hidden="true" class="icon menu-toggle"></span>
+                      </button>
+                    </div>
+                    <div class="flex center col-xl-1 col-lg-1 col-md-1 col-2">
+                      <a href="/index.html" style="align-content: center;">
+                        <img alt="#" src="/images/BBGLogo.webp" style="width:3em; border-radius:10%">
+                      </a>
+                      <div class="mobile-nav"></div>
+                    </div>
+                    <div class="flex col-xl-8 col-lg-8 col-md-8 col-8">
+                      <div class="main-menu">
+                        <nav class="navigation">
+                          <ul class="nav menu">
+                            <li class="">
+                              <a href="/de_DE/leaders_6.2.html" onclick="civClicked(null)">Staatsoberhäupter</a>
+                            </li>
+                            <li class="">
+                              <a href="/de_DE/bbg_expanded_6.2.html" onclick="civClicked(null)">BBG Expanded</a>
+                            </li>
+                            <li class="">
+                              <a href="/de_DE/city_states_6.2.html" onclick="civClicked(null)">Stadtstaaten</a>
+                            </li>
+                            <li class="">
+                              <a href="/de_DE/religion_6.2.html" onclick="civClicked(null)">Religion</a>
+                            </li>
+                            <li class="">
+                              <a href="/de_DE/governor_6.2.html" onclick="civClicked(null)">Gouverneure</a>
+                            </li>
+                            <li class="">
+                              <a href="/de_DE/great_people_6.2.html" onclick="civClicked(null)">Große Persönlichkeiten</a>
+                            </li>
+                            <li class="">
+                              <a href="/de_DE/natural_wonder_6.2.html" onclick="civClicked(null)">Naturwunder</a>
+                            </li>
+                            <li class="">
+                              <a href="/de_DE/world_wonder_6.2.html" onclick="civClicked(null)">World Wonders</a>
+                            </li>
+                            <li class="">
+                              <a href="/de_DE/buildings_6.2.html" onclick="civClicked(null)">Gebäude</a>
+                            </li>
+                            <li class="">
+                              <a href="/de_DE/units_6.2.html" onclick="civClicked(null)">Einheiten</a>
+                            </li>
+                            <li class="active">
+                              <a href="/de_DE/improvements_6.2.html" onclick="civClicked(null)">Modernisierungen</a>
+                            </li>
+                            <li class="">
+                              <a href="/de_DE/tech_tree_6.2.html" onclick="civClicked(null)">Technology Tree</a>
+                            </li>
+                            <li class="">
+                              <a href="/de_DE/civic_tree_6.2.html" onclick="civClicked(null)">Civic Tree</a>
+                            </li>
+                            <li class="">
+                              <a href="/de_DE/names_6.2.html" onclick="civClicked(null)">Names</a>
+                            </li>
+                            <li class="">
+                              <a href="/de_DE/policies_6.2.html" onclick="civClicked(null)">Politiken</a>
+                            </li>
+                            <li class="">
+                              <a href="/de_DE/congress_6.2.html" onclick="civClicked(null)">Weltkongress</a>
+                            </li>
+                            <li class="">
+                              <a href="/de_DE/misc_6.2.html" onclick="civClicked(null)">Misc</a>
+                            </li>
+                            <li class="">
+                              <a href="/de_DE/changelog_6.2.html" onclick="civClicked(null)">Changelog</a>
+                            </li>
+                            <li>
+                              <a>BBG Version<i class="icofont-rounded-down"></i></a>
+                              <ul class="dropdown bbg-version-dropdown">
+                                <li>
+                                  <a href="/de_DE/improvements_base_game.html">Base</a>
+                                </li>
+                                <li>
+                                  <a href="/de_DE/improvements_7.4.html">7.4</a>
+                                </li>
+                                <li>
+                                  <a href="/de_DE/improvements_7.3.html">7.3</a>
+                                </li>
+                                <li>
+                                  <a href="/de_DE/improvements_7.2.html">7.2</a>
+                                </li>
+                                <li>
+                                  <a href="/de_DE/improvements_7.1.html">7.1</a>
+                                </li>
+                                <li>
+                                  <a href="/de_DE/improvements_6.5.html">6.5</a>
+                                </li>
+                                <li>
+                                  <a href="/de_DE/improvements_6.4.html">6.4</a>
+                                </li>
+                                <li>
+                                  <a href="/de_DE/improvements_6.3.html">6.3</a>
+                                </li>
+                                <li>
+                                  <a href="/de_DE/improvements_6.2.html">6.2</a>
+                                </li>
+                                <li>
+                                  <a href="/de_DE/improvements_6.1.html">6.1</a>
+                                </li>
+                                <li>
+                                  <a href="/de_DE/improvements_6.0.html">6.0</a>
+                                </li>
+                                <li>
+                                  <a href="/de_DE/improvements_5.8.html">5.8</a>
+                                </li>
+                                <li>
+                                  <a href="/de_DE/improvements_5.7.html">5.7</a>
+                                </li>
+                                <li>
+                                  <a href="/de_DE/improvements_5.6.html">5.6</a>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+                    <div class="flex center col-xl-2 col-lg-2 col-md-2 col-1">
+                      <div class="flex row justify-content-around">
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-4">
+                          <div class="main-menu">
+                            <nav class="navigation">
+                              <ul class="nav menu">
+                                <li><i class="fa-solid fa-language lang-icon"></i>
+                                  <ul class="dropdown">
+                                    <li>
+                                      <a href="/en_US/improvements_6.2.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/us.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/fr_FR/improvements_6.2.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/fr.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/ru_RU/improvements_6.2.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/ru.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/de_DE/improvements_6.2.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/de.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/zh_Hans_CN/improvements_6.2.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/cn.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/ko_KR/improvements_6.2.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/kr.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/ja_JP/improvements_6.2.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/jp.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/pt_BR/improvements_6.2.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/br.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </nav>
+                          </div>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-4">
+                          <div class="base-game-switcher-wrapper">
+                            <button class="base-game-switcher gray-circle-btn" title="Show Base Game" type="button"><i aria-hidden="true" class="enable-icon" data-feather="toggle-left"></i><i aria-hidden="true" class="disable-icon" data-feather="toggle-right"></i></button>
+                          </div>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-4">
+                          <div class="theme-switcher-wrapper">
+                            <button class="theme-switcher gray-circle-btn" title="Switch theme" type="button">
+                              <span class="sr-only">Switch theme</span><i aria-hidden="true" class="sun-icon" data-feather="sun"></i><i aria-hidden="true" class="moon-icon" data-feather="moon"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="scroll-up footer-popup" id="footer-popup">
+          <div class="footer-popup-inner">
+            <div class="row">
+              <div class="col-sm-6 col-1 footer-popup-body">
+                <p id="donateText">Enjoy this work? Try Aether Kingdoms!
+                  <b>
+                    <a class="footer-popup-link" href="https://www.aetherkingdoms.com/" target="_blank">(Link)</a>
+                  </b>
+                </p>
+              </div>
+              <div class="col-sm-2 col-1 footer-popup-body">
+                <a class="btn btn-primary" href="https://www.aetherkingdoms.com/" target="_blank">
+                  <img alt="Aether Kingdom" class="footer-popup-img" src="/images/ak_village_animation.gif">
+                </a>
+              </div>
+              <div class="col-sm-2 col-6 footer-popup-donate">
+                <a class="btn btn-primary" href="https://ko-fi.com/calcalciffer" target="_blank">Donate</a>
+              </div>
+              <div class="col-sm-2 col-6 footer-popup-scroll-up">
+                <a class="displayNone" href="#top" id="scrollUp" onclick="civClicked(null)"><i class="fa-solid fa-up-long"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="aether-kingdom-ad" id="aether-kingdom-ad">
+          <a href="https://www.aetherkingdoms.com/" target="_blank">
+            <img alt="Aether Kingdom" class="aether-kingdom-ad-img" src="/images/ak_village_animation.gif">
+          </a>
+          <h2 class="aether-kingdom-ad-title">Try Aether Kingdoms!</h2>
+          <p class="aether-kingdom-ad-text">If you like my website here, please check out Aether Kingdoms, a free-to-play strategy game inspired by Civilization and developed by my friend and I. Click the button below to learn more!</p>
+          <a href="https://www.aetherkingdoms.com/" target="_blank">
+            <button class="ad-btn" title="Aether Kingdoms" type="submit">Aether Kingdoms</button>
+          </a>
+          <button class="ad-btn" onclick="aetherKingdomAdClose()" title="Close ad" type="submit">Close</button>
+        </div>
+        <div class="">
+          <div class="fixed left-0 right-auto h-screen bg-white border-r border-neutral-300 overflow-scroll" style="z-index: 5;">
+            <aside class="sidebar">
+              <div class="sidebar-start">
+                <div class="sidebar-body">
+                  <ul class="sidebar-body-menu"></ul>
+                </div>
+              </div>
+            </aside>
+          </div>
+          <div class="leaders-data min-w-full main-pl">
+            <main class="main users chart-page">
+              <div class="container">
+                <h1 class="civ-name">Civ VI BBG 6.2 Modernisierungen</h1><br>
+                <div class="row">
+                  <div class="col-md-6 col-12" id="Alcázar">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_ALCAZAR_NAME-->
+                      <h2 class="civ-name">Alcázar
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Alcázar.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Plünder-Auszeichnung: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Verteidigungsmodifikator: 4</p>
+                      <p class="civ-ability-desc" style="text-align:left">Verschanzungsbonus auf besetzende Einheit angewendet.</p>
+                      <p class="civ-ability-desc" style="text-align:left">50 % <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourismus durch Anziehungskraft</p>
+                      <p class="civ-ability-desc" style="text-align:left">Anziehungskraft für angrenzende Geländefelder: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion</p>
+                      <p class="civ-ability-desc" style="text-align:left">100 % <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourismus durch <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur(erfordert {4_TechOrCivicName : plural 1?{4_TechOrCivicName : gender *:no_article? {4_TechOrCivicName[2]}; m?den {4_TechOrCivicName[2]}; f?die {4_TechOrCivicName[2]}; other?das {4_TechOrCivicName[2]};}; other?die {4_TechOrCivicName[5]};})</p>
+                      <p class="civ-ability-desc" style="text-align:left">Gebaut von Handwerker</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Wüste,  Wüste (Hügel),  Grasland,  Grasland (Hügel),  Ebene,  Ebene (Hügel),  Schnee,  Schnee (Hügel),  Tundra,  Tundra (Hügel)</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Schaltet die Handwerker-Fähigkeit frei, einen Alcázar zu bauen.<br><br>+2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur. Bringt <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Wissenschaft in Höhe von 50% der Anziehungskraft des Geländefelds. Die besetzende Einheit erhält +4 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Verteidigungsstärke und automatisch 2 Runden Befestigung. Bringt <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourismus nach Erforschung der Luftfahrt. Kann nicht neben einem weiteren Alcázar gebaut werden.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Batey">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_BATEY_NAME-->
+                      <h2 class="civ-name">Batey
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Batey.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Plünder-Auszeichnung: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Anziehungskraft für angrenzende Geländefelder: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur</p>
+                      <p class="civ-ability-desc" style="text-align:left">100 % <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourismus durch <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur(erfordert {4_TechOrCivicName : plural 1?{4_TechOrCivicName : gender *:no_article? {4_TechOrCivicName[2]}; m?den {4_TechOrCivicName[2]}; f?die {4_TechOrCivicName[2]}; other?das {4_TechOrCivicName[2]};}; other?die {4_TechOrCivicName[5]};})</p>
+                      <p class="civ-ability-desc" style="text-align:left">Gebaut von Handwerker</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Wüste,  Wüste (Hügel),  Grasland,  Grasland (Hügel),  Ebene,  Ebene (Hügel),  Schnee,  Schnee (Hügel),  Tundra,  Tundra (Hügel)</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Schaltet die Handwerker-Fähigkeit frei, ein Batey zu bauen.<br><br>+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur. +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur für jede/n angrenzende/n Bonus-Ressource und Unterhaltungskomplex (wird auf +2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur erhöht, sobald Erkundung entdeckt wurde). Gewährt <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourismus nach der Erforschung der Luftfahrt. Kann nicht an ein weiteres Batey angrenzen oder auf Hügeln gebaut werden.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Bauernhof">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_FARM_NAME-->
+                      <h2 class="civ-name">Bauernhof
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Farm.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Plünder-Auszeichnung: Heilen 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Wohnraum</p>
+                      <p class="civ-ability-desc" style="text-align:left">Anziehungskraft für angrenzende Geländefelder: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nahrung</p>
+                      <p class="civ-ability-desc" style="text-align:left">100 % <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourismus durch <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur(erfordert {4_TechOrCivicName : plural 1?{4_TechOrCivicName : gender *:no_article? {4_TechOrCivicName[2]}; m?den {4_TechOrCivicName[2]}; f?die {4_TechOrCivicName[2]}; other?das {4_TechOrCivicName[2]};}; other?die {4_TechOrCivicName[5]};})</p>
+                      <p class="civ-ability-desc" style="text-align:left">Gebaut von Handwerker</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Grasland,  Grasland (Hügel) (Benötigt: Bauwesen),  Ebene,  Ebene (Hügel) (Benötigt: Bauwesen)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Schwemmland,  Gras-Schwemmland,  Ebenen-Schwemmland,  Vulkanerde</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Schaltet die Handwerker-Fähigkeit frei, Bauernhöfe zu bauen.<br><br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nahrung. Kann nur auf Grasland oder Ebenen gebaut werden.<br><br>Bauernhöfe angrenzend an andere Bauernhöfe zu bauen bietet Bonusse auf Wohnraum.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Bohrinsel">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_OFFSHORE_OIL_RIG_NAME-->
+                      <h2 class="civ-name">Bohrinsel
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Offshore Oil Rig.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Plünder-Auszeichnung: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Anziehungskraft für angrenzende Geländefelder: -1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion (Freigeschaltet durch Prognosesysteme Technologie)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100 % <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourismus durch <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur(erfordert {4_TechOrCivicName : plural 1?{4_TechOrCivicName : gender *:no_article? {4_TechOrCivicName[2]}; m?den {4_TechOrCivicName[2]}; f?die {4_TechOrCivicName[2]}; other?das {4_TechOrCivicName[2]};}; other?die {4_TechOrCivicName[5]};})</p>
+                      <p class="civ-ability-desc" style="text-align:left">Gebaut von Handwerker</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Küste und See,  Ozean</p>
+                      <p class="civ-ability-desc" style="text-align:left">Freigeschaltet durch Raffinerie Technologie</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Schaltet die Handwerker-Fähigkeit frei, eine Bohrinsel zu bauen.<br><br>-1 Anziehungskraft. Kann nur auf Küsten- oder See-Geländefeldern mit <img src="/images/ICON_RESOURCE_OIL.webp" style="height:1em"/> Öl gebaut werden.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Cahokia-Hügel">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MOUND_NAME-->
+                      <h2 class="civ-name">Cahokia-Hügel
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Cahokia Mounds.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Plünder-Auszeichnung: Heilen 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Wohnraum</p>
+                      <p class="civ-ability-desc" style="text-align:left">Anziehungskraft für angrenzende Geländefelder: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold</p>
+                      <p class="civ-ability-desc" style="text-align:left">Gebaut von Handwerker</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Wüste,  Grasland,  Ebene,  Tundra</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Schwemmland,  Gras-Schwemmland,  Ebenen-Schwemmland</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Schaltet die Handwerker-Fähigkeit frei, Cahokia-Hügel zu bauen.<br><br>+3 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold. Städte erhalten +1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> Annehmlichkeit durch ihre erste Cahokia-Hügel-Modernisierung. Mit der Entdeckung der Naturgeschichte erhalten Städte +1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> Annehmlichkeit durch ihre zweite Cahokia-Hügel-Modernisierung. +1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nahrung für je 2 angrenzende Bezirke, wenn Feudalismus entdeckt wurde, oder für jeden angrenzenden Bezirk, wenn Normbauteile erforscht wurden. Bringt +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Wohnraum. Ihr erhaltet zusätzlich +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Wohnraum, sobald das Kulturerbe entdeckt wurde. Darf nicht an einen weiteren Cahokia-Hügel angrenzen.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Chateau">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_CHATEAU_NAME-->
+                      <h2 class="civ-name">Chateau
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Château.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Plünder-Auszeichnung: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Wohnraum</p>
+                      <p class="civ-ability-desc" style="text-align:left">Anziehungskraft für angrenzende Geländefelder: 1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nahrung</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold</p>
+                      <p class="civ-ability-desc" style="text-align:left">100 % <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourismus durch <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur(erfordert {4_TechOrCivicName : plural 1?{4_TechOrCivicName : gender *:no_article? {4_TechOrCivicName[2]}; m?den {4_TechOrCivicName[2]}; f?die {4_TechOrCivicName[2]}; other?das {4_TechOrCivicName[2]};}; other?die {4_TechOrCivicName[5]};})</p>
+                      <p class="civ-ability-desc" style="text-align:left">Gebaut von Handwerker</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Wüste,  Wüste (Hügel),  Grasland,  Grasland (Hügel),  Ebene,  Ebene (Hügel),  Schnee,  Schnee (Hügel),  Tundra,  Tundra (Hügel)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Schwemmland,  Gras-Schwemmland,  Ebenen-Schwemmland</p>
+                      <p class="civ-ability-desc" style="text-align:left">Freigeschaltet durch Feudalismus Ausrichtung</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Die Ausrichtung &quot;Feudalismus&quot; schaltet die Fähigkeit des Handwerkers frei, ein &quot;Chateau&quot; zu errichten, das einzigartig für Frankreich ist.<br><br>+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur, +1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold, +1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nahrung, +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Wohnraum und +1 Anziehungskraft für benachbarte Felder.<br><br>+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur für jedes benachbarte <img src="/images/ICON_DISTRICT_WONDER.webp" style="height:1em"/> Weltwunder, steigend auf +2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> nach Erforschung der Technologie &quot;Luftfahrt&quot;. +2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold, wenn es neben einem Fluss gebaut wird. +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur und +1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold für jede benachbarte Luxusressource. Gewährt <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourismus nach der Erforschung der Technologie &quot;Luftfahrt&quot;.<br><br>Kann nicht an ein anderes &quot;Chateau&quot; angrenzend gebaut werden.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Chemamüll">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_CHEMAMULL_NAME-->
+                      <h2 class="civ-name">Chemamüll
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Chemamull.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Plünder-Auszeichnung: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Benötigt: Anziehungskraft &gt;= 4</p>
+                      <p class="civ-ability-desc" style="text-align:left">75 % <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourismus durch Anziehungskraft</p>
+                      <p class="civ-ability-desc" style="text-align:left">Anziehungskraft für angrenzende Geländefelder: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion (Freigeschaltet durch Öffentliche Verwaltung Ausrichtung)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100 % <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourismus durch <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur(erfordert {4_TechOrCivicName : plural 1?{4_TechOrCivicName : gender *:no_article? {4_TechOrCivicName[2]}; m?den {4_TechOrCivicName[2]}; f?die {4_TechOrCivicName[2]}; other?das {4_TechOrCivicName[2]};}; other?die {4_TechOrCivicName[5]};})</p>
+                      <p class="civ-ability-desc" style="text-align:left">Gebaut von Handwerker</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Wüste,  Wüste (Hügel),  Grasland,  Grasland (Hügel),  Ebene,  Ebene (Hügel),  Schnee,  Schnee (Hügel),  Tundra,  Tundra (Hügel)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Vulkanerde</p>
+                      <p class="civ-ability-desc" style="text-align:left">Freigeschaltet durch Handwerkskunst Ausrichtung</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Die Ausrichtung &quot;Handwerkskunst&quot; schaltet die Handwerkerfähigkeit für &quot;Chemamull&quot; frei, die nur für die Mapuche einzigartig ist.<br><br>+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion. Gewährt <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur in Höhe von 75% der Anziehungskraft des Feldes.<br><br>Zusätzliche +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion nach Erforschung der Ausrichtung &quot;Öffentliche Verwaltung&quot;. Gewährt <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourismus nach Erforschung der Technologie &quot;Luftfahrt&quot;.<br><br>Minimale Anziehungskraft von Atemberaubend.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Eissporthalle">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_ICE_HOCKEY_RINK_NAME-->
+                      <h2 class="civ-name">Eissporthalle
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Ice Hockey Rink.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Plünder-Auszeichnung: Heilen 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">Anziehungskraft für angrenzende Geländefelder: 2</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion (Freigeschaltet durch Profisport Ausrichtung)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nahrung (Freigeschaltet durch Profisport Ausrichtung)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100 % <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourismus durch <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur(erfordert {4_TechOrCivicName : plural 1?{4_TechOrCivicName : gender *:no_article? {4_TechOrCivicName[2]}; m?den {4_TechOrCivicName[2]}; f?die {4_TechOrCivicName[2]}; other?das {4_TechOrCivicName[2]};}; other?die {4_TechOrCivicName[5]};})</p>
+                      <p class="civ-ability-desc" style="text-align:left">Gebaut von Handwerker</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Schnee,  Schnee (Hügel),  Tundra,  Tundra (Hügel)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Freigeschaltet durch Diplomatischer Dienst Ausrichtung</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Die Ausrichtung &quot;Diplomatischer Dienst&quot; schaltet die Fähigkeit des Handwerkers frei, die &quot;Eissporthalle&quot; zu bauen, die für Kanada einzigartig ist. Kann auf Tundra-, Tundrahügel-, Schnee-, und Schneehügelfeldern gebaut werden. Es kann nur eine &quot;Eissporthalle&quot; pro Stadt gebaut werden.<br><br>+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur für jedes angrenzende Tundra-, Tundrahügel-, Schnee-, und Schneehügelfeld.<br>+1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> Annehmlichkeit und + 2 Anziehungskraft für jedes angrenzende Feld.<br>+2 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nahrung und +2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion nach Erforschung der Ausrichtung &quot;Profisport&quot;.<br>+4 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur für ein angrenzendes Stadion-Gebäude im <img src="/images/ICON_DISTRICT_ENTERTAINMENT.webp" style="height:1em"/> Unterhaltungskomplex-Bezirk.<br><br>Bietet <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourismus aus Kultur nach Erforschung der Technologie &quot;Luftfahrt&quot;.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Feitoria">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_FEITORIA_NAME-->
+                      <h2 class="civ-name">Feitoria
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Feitoria.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Anziehungskraft für angrenzende Geländefelder: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+4 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion</p>
+                      <p class="civ-ability-desc" style="text-align:left">Gebaut von Nao</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Küste und See</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Schaltet die Fähigkeit der &quot;Nau&quot; zum Bau der &quot;Feitoria&quot; frei, die für Portugal einzigartig ist.<br><br>+4 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold und +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion. <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> Handelswege, die von Portugal zu dieser Stadt gesendet werden, erhalten +2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold und +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion.<br><br>Kann nur angrenzend an Luxus- oder Bonus-Ressourcen in Territorien anderer Zivilisationen oder Stadtstaaten gebaut werden, mit denen du offene Grenzen hast. Muss auf Küsten- oder Seefeldern angrenzend an Land und nicht angrenzend an eine andere &quot;Feitoria&quot; gebaut werden. &quot;Feitorias&quot; können nicht entfernt werden.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Felskirche">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_ROCK_HEWN_CHURCH_NAME-->
+                      <h2 class="civ-name">Felskirche
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Rock-Hewn Church.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Plünder-Auszeichnung: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Anziehungskraft für angrenzende Geländefelder: 1</p>
+                      <p class="civ-ability-desc" style="text-align:left">100 % <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourismus durch <img src="/images/ICON_FAITH.webp" style="height:1em"/> Glauben(erfordert {4_TechOrCivicName : plural 1?{4_TechOrCivicName : gender *:no_article? {4_TechOrCivicName[2]}; m?den {4_TechOrCivicName[2]}; f?die {4_TechOrCivicName[2]}; other?das {4_TechOrCivicName[2]};}; other?die {4_TechOrCivicName[5]};})</p>
+                      <p class="civ-ability-desc" style="text-align:left">Gebaut von Handwerker</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Wüste (Hügel),  Grasland (Hügel),  Ebene (Hügel),  Schnee (Hügel),  Tundra (Hügel)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Vulkanerde</p>
+                      <p class="civ-ability-desc" style="text-align:left">Freigeschaltet durch Drama und Dichtung Ausrichtung</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Die Ausrichtung &quot;Drama und Dichtung&quot; schaltet die Fähigkeit des Handwerkers frei, eine &quot;Felsenkirche&quot; zu errichten, die einzigartig für Äthiopien ist.<br><br>+1 Anziehungskraft für benachbarte Felder.<br><br>+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Glauben für jedes benachbarte Berg- und Hügelfeld. Gewährt <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourismus aus <img src="/images/ICON_FAITH.webp" style="height:1em"/> Glauben nach Erforschung der Technologie &quot;Luftfahrt&quot;.<br><br>Kann nur auf Hügel- oder Vulkanerdefeldern gebaut werden, die nicht an eine andere &quot;Felsenkirche&quot; angrenzen. Kann nur durch Naturkatastrophen geplündert (nie zerstört) werden.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Festung">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_FORT_NAME-->
+                      <h2 class="civ-name">Festung
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Fort.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Verteidigungsmodifikator: 4</p>
+                      <p class="civ-ability-desc" style="text-align:left">Verschanzungsbonus auf besetzende Einheit angewendet.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Anziehungskraft für angrenzende Geländefelder: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">Gebaut von Militärpionier</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Wüste,  Wüste (Hügel),  Grasland,  Grasland (Hügel),  Ebene,  Ebene (Hügel),  Schnee,  Schnee (Hügel),  Tundra,  Tundra (Hügel)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Vulkanerde</p>
+                      <p class="civ-ability-desc" style="text-align:left">Freigeschaltet durch Militärtechnik Technologie</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Die besetzende Einheit erhält +4 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Verteidigungsstärke und automatisch 2 Runden Befestigung.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Fischerboote">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_FISHING_BOATS_NAME-->
+                      <h2 class="civ-name">Fischerboote
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Fishing Boats.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Plünder-Auszeichnung: Heilen 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Wohnraum</p>
+                      <p class="civ-ability-desc" style="text-align:left">Anziehungskraft für angrenzende Geländefelder: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nahrung</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold (Freigeschaltet durch Kartografie Technologie)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nahrung (Freigeschaltet durch Plastik Technologie)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion (Freigeschaltet durch Kolonialismus Ausrichtung)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100 % <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourismus durch <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur(erfordert {4_TechOrCivicName : plural 1?{4_TechOrCivicName : gender *:no_article? {4_TechOrCivicName[2]}; m?den {4_TechOrCivicName[2]}; f?die {4_TechOrCivicName[2]}; other?das {4_TechOrCivicName[2]};}; other?die {4_TechOrCivicName[5]};})</p>
+                      <p class="civ-ability-desc" style="text-align:left">Gebaut von Handwerker</p>
+                      <p class="civ-ability-desc" style="text-align:left">Freigeschaltet durch Segeln Technologie</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Schaltet die Bauoption &quot;Fischereiboote&quot; für den Handwerker frei.<br><br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nahrung und +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion. Kann nur auf gültigen Ressourcen gebaut werden.<br><br>Wenn auf Luxusressourcen gebaut, erhält die Stadt Zugriff zu dieser Ressource.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Fischzucht">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_FISHERY_NAME-->
+                      <h2 class="civ-name">Fischzucht
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Fishery.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Plünder-Auszeichnung: Heilen 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Wohnraum</p>
+                      <p class="civ-ability-desc" style="text-align:left">Anziehungskraft für angrenzende Geländefelder: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nahrung</p>
+                      <p class="civ-ability-desc" style="text-align:left">Gebaut von Handwerker</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Küste und See</p>
+                      <p class="civ-ability-desc" style="text-align:left">Freigeschaltet durch Astronomische Navigation Technologie</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Schaltet die Bauoption &quot;Fischereien&quot; für den Handwerker frei.<br><br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nahrung, +1 zusätzlich <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nahrung, wenn benachbart zu einer Meeresressource. +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Wohnraum. Muss auf einem Küstenfeld gebaut werden.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Freilichtmuseum">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_OPEN_AIR_MUSEUM_NAME-->
+                      <h2 class="civ-name">Freilichtmuseum
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Open-Air Museum.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Plünder-Auszeichnung: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Anziehungskraft für angrenzende Geländefelder: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">100 % <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourismus durch <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur</p>
+                      <p class="civ-ability-desc" style="text-align:left">Gebaut von Handwerker</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Wüste,  Wüste (Hügel),  Grasland,  Grasland (Hügel),  Ebene,  Ebene (Hügel),  Schnee,  Schnee (Hügel),  Tundra,  Tundra (Hügel)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Freigeschaltet durch Diplomatischer Dienst Ausrichtung</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Die Ausrichtung &quot;Diplomatischer Dienst&quot; schaltet die Fähigkeit des Handwerkers frei, das &quot;Freilichtmuseum&quot; zu bauen, das für Schweden einzigartig ist. Es kann nur eins pro Stadt gebaut werden. Felder auf denen ein Freilichtmuseum gebaut wurde, können nicht unter Städten getauscht werden.<br><br>+2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur und +2 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourismus für jede Feldart (Schnee, Tundra, Wüste, Ebenen oder Grasland) auf der wenigstens eine schwedische Stadt gegründet wurde.<br>+2   Loyalität pro <img src="/images/ICON_TURN.webp" style="height:1em"/> Runde in dieser Stadt.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Gebirgstunnel">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MOUNTAIN_TUNNEL_NAME-->
+                      <h2 class="civ-name">Gebirgstunnel
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Mountain Tunnel.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Anziehungskraft für angrenzende Geländefelder: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">Gebaut von Militärpionier</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Wüste (Berg),  Grasland (Berg),  Ebene (Berg),  Schnee (Berg),  Tundra (Berg)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Freigeschaltet durch Militärwissenschaft Technologie</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Schaltet die Militärpionier-Fähigkeit frei, einen Gebirgstunnel zu bauen.<br><br>Dient als Bewegungsportal auf einem Gebirge, durch das Einheiten für 2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Fortbewegungspunkte hindurchgehen können, um an einem anderen Portal hinauszutreten. Kreuzende <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> Handelswege können das erhaltene <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold von Bezirken an ihrem Zielort multiplizieren. Kann nur auf einem angrenzenden Berg-Geländefeld gebaut werden. Kann nicht geplündert oder entfernt werden.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Geothermie-Kraftwerk">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_GEOTHERMAL_PLANT_NAME-->
+                      <h2 class="civ-name">Geothermie-Kraftwerk
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Geothermal Plant.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Plünder-Auszeichnung: <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Anziehungskraft für angrenzende Geländefelder: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Wissenschaft</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion (Freigeschaltet durch Synthetisches Material Technologie)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Wissenschaft (Freigeschaltet durch Synthetisches Material Technologie)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Gebaut von Handwerker</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Geothermischer Riss</p>
+                      <p class="civ-ability-desc" style="text-align:left">Freigeschaltet durch Chemie Technologie</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Schaltet die Bauoption &quot;Geothermiekraftwerke&quot; für den Handwerker frei.<br><br>+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion, +1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Wissenschaft, +3 <img src="/images/ICON_POWER.webp" style="height:1em"/> Energie pro <img src="/images/ICON_TURN.webp" style="height:1em"/> Runde.<br>Zusätzlich +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion, +1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Wissenschaft und +3 <img src="/images/ICON_POWER.webp" style="height:1em"/> Energie pro <img src="/images/ICON_TURN.webp" style="height:1em"/> Runde, nach Erforschung der Technologie &quot;Synthetisches Material&quot;.<br>Muss auf einem Geothermischer Riss-Feld gebaut werden.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Golfplatz">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_GOLF_COURSE_NAME-->
+                      <h2 class="civ-name">Golfplatz
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Golf Course.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Plünder-Auszeichnung: Heilen 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">Anziehungskraft für angrenzende Geländefelder: 1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold (Freigeschaltet durch Aufklärung Ausrichtung)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur (Freigeschaltet durch Aufklärung Ausrichtung)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100 % <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourismus durch <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur(erfordert {4_TechOrCivicName : plural 1?{4_TechOrCivicName : gender *:no_article? {4_TechOrCivicName[2]}; m?den {4_TechOrCivicName[2]}; f?die {4_TechOrCivicName[2]}; other?das {4_TechOrCivicName[2]};}; other?die {4_TechOrCivicName[5]};})</p>
+                      <p class="civ-ability-desc" style="text-align:left">Gebaut von Handwerker</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Grasland,  Grasland (Hügel),  Ebene,  Ebene (Hügel),  Schnee,  Schnee (Hügel),  Tundra,  Tundra (Hügel)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Freigeschaltet durch Spiele und Erholung Ausrichtung</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Die Ausrichtung „Spiele und Erholung“ schaltet die Fähigkeit des Handwerkers frei, einen &quot;Golfplatz&quot; zu bauen, der nur für Schottland einzigartig ist.<br><br>+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold, +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur, +1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> Annehmlichkeit und +1 Anziehungskraft für angrenzende Felder.<br><br>+1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold und +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur, wenn angrenzend an ein <img src="/images/ICON_DISTRICT_CITY_CENTER.webp" style="height:1em"/> Stadtzentrum-Bezirk. +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur und +1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> Annehmlichkeit, wenn angrenzend an einen <img src="/images/ICON_DISTRICT_ENTERTAINMENT.webp" style="height:1em"/> Unterhaltungskomplex-Bezirk. Zusätzlich +1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> Annehmlichkeit nach Erforschung der Ausrichtung &quot;Gilden&quot;. Zusätzlich +1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold und +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur nach Erforschung der Ausrichtung &quot;Aufklärung&quot;. +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Wohnraum nach Erforschung der Ausrichtung &quot;Globalisierung&quot;.<br><br>Kann nicht auf Wüsten- oder Wüstenhügelfeldern platziert werden. Einmal pro Stadt. Felder mit &quot;Golfplatz&quot; können nicht getauscht werden.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Große Mauer">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_GREAT_WALL_NAME-->
+                      <h2 class="civ-name">Große Mauer
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Great Wall.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Plünder-Auszeichnung: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Verteidigungsmodifikator: 4</p>
+                      <p class="civ-ability-desc" style="text-align:left">Verschanzungsbonus auf besetzende Einheit angewendet.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Anziehungskraft für angrenzende Geländefelder: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur (Freigeschaltet durch Militärwissenschaft Technologie)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100 % <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourismus durch <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur(erfordert {4_TechOrCivicName : plural 1?{4_TechOrCivicName : gender *:no_article? {4_TechOrCivicName[2]}; m?den {4_TechOrCivicName[2]}; f?die {4_TechOrCivicName[2]}; other?das {4_TechOrCivicName[2]};}; other?die {4_TechOrCivicName[5]};})</p>
+                      <p class="civ-ability-desc" style="text-align:left">Gebaut von Handwerker</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Wüste,  Wüste (Hügel),  Grasland,  Grasland (Hügel),  Ebene,  Ebene (Hügel),  Schnee,  Schnee (Hügel),  Tundra,  Tundra (Hügel)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Vulkanerde</p>
+                      <p class="civ-ability-desc" style="text-align:left">Freigeschaltet durch Steinmetzkunst Technologie</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Die Technologie &quot;Steinmetzkunst&quot; schaltet die Fähigkeit des Handwerkers zum Bau der &quot;Großen Mauer&quot; frei, die einzigartig für China ist.<br><br>+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion. +1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold für jede angrenzende &quot;Große Mauer&quot;. +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur für jede angrenzende &quot;Große Mauer&quot; nach Erforschung der Technologie &quot;Burgen&quot;. +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur nach Erforschung der Technologie &quot;Militärwissenschaft&quot;.<br><br>Gewährt <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourismus nach Erforschung der Technologie &quot;Luftfahrt&quot;. <br><br>Muss in einer Linie entlang der Grenzen deines Reiches gebaut werden. <br><br>Eine besetzende Einheit erhält +1 Sicht und +4 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Verteidigungsstärke und erhält automatisch 2 <img src="/images/ICON_TURN.webp" style="height:1em"/> Runden <img src="/images/ICON_FORTIFIED.webp" style="height:1em"/> Befestigung. Kann nur von Naturkatastrophen geplündert (niemals zerstört) werden.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Hacienda">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_HACIENDA_NAME-->
+                      <h2 class="civ-name">Hacienda
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Hacienda.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Plünder-Auszeichnung: Heilen 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Wohnraum</p>
+                      <p class="civ-ability-desc" style="text-align:left">Anziehungskraft für angrenzende Geländefelder: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion</p>
+                      <p class="civ-ability-desc" style="text-align:left">Gebaut von Handwerker</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Grasland,  Ebene</p>
+                      <p class="civ-ability-desc" style="text-align:left">Freigeschaltet durch Mittelaltermärkte Ausrichtung</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Die Ausrichtung &quot;Mittelaltermärkte&quot; schaltet die Fähigkeit des Handwerkers zum Bau einer &quot;Hacienda&quot; frei, die einzigartig für Großkolumbien ist.<br><br>+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold, +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion und +0,5 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Wohnraum.<br><br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nahrung für je 2 benachbarten Plantagen, die auf +1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nahrung für jede benachbarte Plantage nach Erforschung der Technologie &quot;Normbauteile&quot; erhöht wird. Plantagen und &quot;Haciendas&quot; erhalten +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion für je 2 benachbarten &quot;Haciendas&quot;, die auf +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion für jede benachbarte &quot;Hacienda&quot; nach Erforschung der Ausrichtung &quot;Merkantilismus&quot; erhöht wird.<br><br>Kann auf Ebenen- und Graslandfeldern gebaut werden.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Handelskuppel">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_TRADING_DOME_NAME-->
+                      <h2 class="civ-name">Handelskuppel
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Trading Dome.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Plünder-Auszeichnung: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Anziehungskraft für angrenzende Geländefelder: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold</p>
+                      <p class="civ-ability-desc" style="text-align:left">Gebaut von Handwerker</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Wüste,  Wüste (Hügel),  Grasland,  Grasland (Hügel),  Ebene,  Ebene (Hügel),  Schnee,  Schnee (Hügel),  Tundra,  Tundra (Hügel)</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Schaltet die Handwerker-Fähigkeit frei, eine Handelskuppel zu bauen.<br><br>+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold. +1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold für jedes benachbarte Luxusgut. Eure ausgehenden internationalen <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> Handelswege bieten +1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold pro Handelskuppel in der Ursprungsstadt. Kann nicht neben einer weiteren Handelskuppel gebaut werden.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Jagdlager">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_CAMP_NAME-->
+                      <h2 class="civ-name">Jagdlager
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Camp.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Plünder-Auszeichnung: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Wohnraum</p>
+                      <p class="civ-ability-desc" style="text-align:left">Anziehungskraft für angrenzende Geländefelder: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion (Freigeschaltet durch Merkantilismus Ausrichtung)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nahrung (Freigeschaltet durch Merkantilismus Ausrichtung)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold (Freigeschaltet durch Synthetisches Material Technologie)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100 % <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourismus durch <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur(erfordert {4_TechOrCivicName : plural 1?{4_TechOrCivicName : gender *:no_article? {4_TechOrCivicName[2]}; m?den {4_TechOrCivicName[2]}; f?die {4_TechOrCivicName[2]}; other?das {4_TechOrCivicName[2]};}; other?die {4_TechOrCivicName[5]};})</p>
+                      <p class="civ-ability-desc" style="text-align:left">Gebaut von Handwerker</p>
+                      <p class="civ-ability-desc" style="text-align:left">Freigeschaltet durch Tierzucht Technologie</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Schaltet die Handwerker-Fähigkeit frei, Lager zu bauen.<br><br>+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold. Kann nur auf gültigen Ressourcen gebaut werden.<br><br>Beim Bau auf Luxusgütern kann die Stadt die entsprechende Ressource nutzen.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Kampung">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_KAMPUNG_NAME-->
+                      <h2 class="civ-name">Kampung
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Kampung.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Plünder-Auszeichnung: Heilen 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Wohnraum</p>
+                      <p class="civ-ability-desc" style="text-align:left">Anziehungskraft für angrenzende Geländefelder: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion (Freigeschaltet durch Bauwesen Ausrichtung)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100 % <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourismus durch <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nahrung(erfordert {4_TechOrCivicName : plural 1?{4_TechOrCivicName : gender *:no_article? {4_TechOrCivicName[2]}; m?den {4_TechOrCivicName[2]}; f?die {4_TechOrCivicName[2]}; other?das {4_TechOrCivicName[2]};}; other?die {4_TechOrCivicName[5]};})</p>
+                      <p class="civ-ability-desc" style="text-align:left">Gebaut von Handwerker</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Küste und See</p>
+                      <p class="civ-ability-desc" style="text-align:left">Freigeschaltet durch Schiffsbau Technologie</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Die Technologie &quot;Schiffbau&quot; schaltet die Fähigkeit des Handwerkers frei, einen &quot;Kampung&quot; zu bauen, der einzigartig für Indonesien ist.<br><br>+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion und +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Wohnraum.<br><br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nahrung und +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Glauben für jedes benachbarte Fischereiboot. Zusätzlicher +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Wohnraum nach Erforschung der Technologie &quot;Massenproduktion&quot;. +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion nach Erforschung der Ausrichtung &quot;Bauwesen&quot;. Gewährt <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourismus aus <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nahrung nach Erforschung der Technologie &quot;Luftfahrt&quot;.<br><br>Muss auf einem Küsten- oder Seefeld angrenzend an eine Meeresressource gebaut werden.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Kloster">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MONASTERY_NAME-->
+                      <h2 class="civ-name">Kloster
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Monastery.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Plünder-Auszeichnung: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Wohnraum</p>
+                      <p class="civ-ability-desc" style="text-align:left">Anziehungskraft für angrenzende Geländefelder: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Glauben</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nahrung</p>
+                      <p class="civ-ability-desc" style="text-align:left">100 % <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourismus durch <img src="/images/ICON_FAITH.webp" style="height:1em"/> Glauben(erfordert {4_TechOrCivicName : plural 1?{4_TechOrCivicName : gender *:no_article? {4_TechOrCivicName[2]}; m?den {4_TechOrCivicName[2]}; f?die {4_TechOrCivicName[2]}; other?das {4_TechOrCivicName[2]};}; other?die {4_TechOrCivicName[5]};})</p>
+                      <p class="civ-ability-desc" style="text-align:left">Gebaut von Handwerker</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Wüste,  Wüste (Hügel),  Grasland,  Grasland (Hügel),  Ebene,  Ebene (Hügel),  Schnee,  Schnee (Hügel),  Tundra,  Tundra (Hügel)</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Deine Handwerker können jetzt &quot;Kloster&quot;-Verbesserungen durchführen.<br><br>+3 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Glauben und +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Wohnraum. +15 HP Heilung für freundliche religiöse Einheiten auf diesem Feld, die in dieser <img src="/images/ICON_TURN.webp" style="height:1em"/> Runde nicht angegriffen haben.<br><br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nahrung und +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Glauben für je 2 angrenzenden <img src="/images/ICON_DISTRICT.webp" style="height:1em"/> Bezirke, steigend auf +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Glauben für jeden angrenzenden <img src="/images/ICON_DISTRICT.webp" style="height:1em"/> Bezirk bei der &quot;Reformierten Kirche&quot;. Zusätzlich +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Wohnraum nach Erforschung der Ausrichtung &quot;Kolonialismus&quot;. Bietet <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourismus in Höhe von <img src="/images/ICON_FAITH.webp" style="height:1em"/> Glauben nach Erforschung der Technologie &quot;Luftfahrt&quot;.<br><br>Kann nicht neben einem anderen &quot;Kloster&quot; gebaut werden.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Kolossalkopf">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_COLOSSAL_HEAD_NAME-->
+                      <h2 class="civ-name">Kolossalkopf
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Colossal Head.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Plünder-Auszeichnung: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Wohnraum</p>
+                      <p class="civ-ability-desc" style="text-align:left">Anziehungskraft für angrenzende Geländefelder: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Glauben</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nahrung</p>
+                      <p class="civ-ability-desc" style="text-align:left">100 % <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourismus durch <img src="/images/ICON_FAITH.webp" style="height:1em"/> Glauben(erfordert {4_TechOrCivicName : plural 1?{4_TechOrCivicName : gender *:no_article? {4_TechOrCivicName[2]}; m?den {4_TechOrCivicName[2]}; f?die {4_TechOrCivicName[2]}; other?das {4_TechOrCivicName[2]};}; other?die {4_TechOrCivicName[5]};})</p>
+                      <p class="civ-ability-desc" style="text-align:left">Gebaut von Handwerker</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Wüste,  Wüste (Hügel),  Grasland,  Grasland (Hügel),  Ebene,  Ebene (Hügel),  Tundra,  Tundra (Hügel)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Vulkanerde</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Schaltet die Handwerker-Fähigkeit frei, einen Kolossalkopf zu bauen.<br><br>+2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Glauben. +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Glauben für alle 2 angrenzenden Regenwälder oder für jeden angrenzenden Regenwald, wenn Humanismus entdeckt wurde. +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Glauben für alle 2 angrenzenden Wälder oder für jeden angrenzenden Wald, wenn Humanismus entdeckt wurde. Bringt <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourismus durch <img src="/images/ICON_FAITH.webp" style="height:1em"/> Glauben nach Erforschung der Luftfahrt. Kann nicht auf Schnee oder Schneehügeln gebaut werden.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Koog">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_POLDER_NAME-->
+                      <h2 class="civ-name">Koog
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Polder.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Plünder-Auszeichnung: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Wohnraum</p>
+                      <p class="civ-ability-desc" style="text-align:left">Anziehungskraft für angrenzende Geländefelder: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nahrung</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion</p>
+                      <p class="civ-ability-desc" style="text-align:left">+4 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold (Freigeschaltet durch Bauwesen Ausrichtung)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Gebaut von Handwerker</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Küste und See</p>
+                      <p class="civ-ability-desc" style="text-align:left">Freigeschaltet durch Feudalismus Ausrichtung</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Die Ausrichtung &quot;Feudalismus&quot; schaltet die Fähigkeit des Handwerkers zum Bau eines &quot;Koog&quot; frei, der einzigartig für die Niederlande ist.<br><br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nahrung, +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion und +0,5 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Wohnraum. +3 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Kampfstärke für niederländische Marine-Einheiten auf Feldern mit &quot;Koog&quot;.<br><br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nahrung für jeden benachbarten &quot;Koog&quot;, steigend auf +2 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nahrung für jeden benachbarten &quot;Koog&quot;, nach Erforschung der Technologie &quot;Normbauteile&quot;. +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion für jeden benachbarten <img src="/images/ICON_DISTRICT_HARBOR.webp" style="height:1em"/> Hafen-Bezirk. +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion für je 2 benachbarten &quot;Koog&quot;, steigend auf +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion für jeden benachbarten &quot;Koog&quot;, nach Erforschung der Technologie &quot;Normbauteile&quot;. +4 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold nach Erforschung der Ausrichtung &quot;Bauwesen&quot;.<br><br>Muss auf einem Küsten- oder Seefeld benachbart zu 1 oder mehreren passierbaren Landfeldern gebaut werden.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Kurgan">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_KURGAN_NAME-->
+                      <h2 class="civ-name">Kurgan
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Kurgan.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Plünder-Auszeichnung: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Anziehungskraft für angrenzende Geländefelder: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Glauben</p>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold</p>
+                      <p class="civ-ability-desc" style="text-align:left">100 % <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourismus durch <img src="/images/ICON_FAITH.webp" style="height:1em"/> Glauben(erfordert {4_TechOrCivicName : plural 1?{4_TechOrCivicName : gender *:no_article? {4_TechOrCivicName[2]}; m?den {4_TechOrCivicName[2]}; f?die {4_TechOrCivicName[2]}; other?das {4_TechOrCivicName[2]};}; other?die {4_TechOrCivicName[5]};})</p>
+                      <p class="civ-ability-desc" style="text-align:left">Gebaut von Handwerker</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Wüste,  Wüste (Hügel),  Grasland,  Grasland (Hügel),  Ebene,  Ebene (Hügel),  Schnee,  Schnee (Hügel),  Tundra,  Tundra (Hügel)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Freigeschaltet durch Tierzucht Technologie</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Die Technologie &quot;Tierzucht&quot; schaltet die Fähigkeit des Handwerkers frei, den &quot;Kurgan&quot; zu bauen, der für die Skythen einzigartig ist.<br><br>+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Glauben und +3 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold.<br><br>+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion für jede angrenzende Weide. +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Glauben für jede angrenzende Weide, steigend auf +2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Glauben für jede angrenzende Weide nach Erforschung der Technologie &quot;Steigbügel&quot;. Bietet <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourismus aus <img src="/images/ICON_FAITH.webp" style="height:1em"/> Glauben nach Erforschung der Technologie &quot;Luftfahrt&quot;.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Landepiste">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_AIRSTRIP_NAME-->
+                      <h2 class="civ-name">Landepiste
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Airstrip.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Anziehungskraft für angrenzende Geländefelder: -1</p>
+                      <p class="civ-ability-desc" style="text-align:left">Gebaut von Militärpionier</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Wüste,  Grasland,  Ebene,  Schnee,  Tundra</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Vulkanerde</p>
+                      <p class="civ-ability-desc" style="text-align:left">Freigeschaltet durch Luftfahrt Technologie</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Schaltet die Militärpionier-Fähigkeit frei, eine Landepiste zu bauen.<br><br>Kann 3 Lufteinheiten unterstützen. Kann nur auf ebenem Gelände gebaut werden. -1 Anziehungskraft.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Mahavihara">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MAHAVIHARA_NAME-->
+                      <h2 class="civ-name">Mahavihara
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Mahavihara.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Plünder-Auszeichnung: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Wohnraum</p>
+                      <p class="civ-ability-desc" style="text-align:left">Anziehungskraft für angrenzende Geländefelder: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Wissenschaft</p>
+                      <p class="civ-ability-desc" style="text-align:left">Gebaut von Handwerker</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Wüste,  Grasland,  Ebene,  Schnee,  Tundra</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Schaltet die Handwerker-Fähigkeit frei, einen Mahavihara zu bauen.<br><br>+2 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Wissenschaft und +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Wohnraum. +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Glauben für jeden angrenzenden Heilige-Stätte-Bezirk und +1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Wissenschaft für jeden angrenzenden Campus-Bezirk. Nach Erforschung der Wissenschaftstheorie erhaltet Ihr zusätzlich +1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Wissenschaft für jeden angrenzenden Campus-Bezirk. Wenn ein Spieler seinen ersten Mahavihara baut, erhält er eine zufällige Technologie. Muss auf flachem Gelände und nicht angrenzend an einen anderen Mahavihara gebaut werden.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Mekewap">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MEKEWAP_NAME-->
+                      <h2 class="civ-name">Mekewap
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Mekewap.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Plünder-Auszeichnung: Heilen 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Wohnraum</p>
+                      <p class="civ-ability-desc" style="text-align:left">Anziehungskraft für angrenzende Geländefelder: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion (Freigeschaltet durch Öffentliche Verwaltung Ausrichtung)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Gebaut von Handwerker</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Wüste,  Wüste (Hügel),  Grasland,  Grasland (Hügel),  Ebene,  Ebene (Hügel),  Schnee,  Schnee (Hügel),  Tundra,  Tundra (Hügel)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Freigeschaltet durch Keramik Technologie</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Die Technologie &quot;Keramik&quot; schaltet die Fähigkeit des Handwerkers zum Bau eines &quot;Mekewap&quot; frei, der einzigartig für die Cree ist.<br><br>+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion und +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Wohnraum.<br><br>Zusätzlich +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion und +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Wohnraum nach Erforschung der Ausrichtung &quot;Öffentliche Verwaltung&quot;. +1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold, wenn benachbart zu einer Luxusressource, zusätzlich +2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold für jede benachbarte Luxusressource, nach Erforschung der Technologie &quot;Kartografie&quot;. +1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nahrung für je 2 benachbarte Bonus-Ressourcen, die auf +1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nahrung für jede benachbarte Bonus-Ressource, nach Erforschung der Ausrichtung &quot;Naturschutz&quot; erhöht wird.<br><br>Muss benachbart zu einer Bonus- oder Luxus-Ressource gebaut werden. Kann nicht benachbart zu einem anderen &quot;Mekewap&quot; gebaut werden.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Mine">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MINE_NAME-->
+                      <h2 class="civ-name">Mine
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Mine.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Plünder-Auszeichnung: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Anziehungskraft für angrenzende Geländefelder: -1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion (Freigeschaltet durch Ausbildung Technologie)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion (Freigeschaltet durch Industrialisierung Technologie)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion (Freigeschaltet durch Intelligentes Material Technologie)</p>
+                      <p class="civ-ability-desc" style="text-align:left">0 % <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourismus durch <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur(erfordert {4_TechOrCivicName : plural 1?{4_TechOrCivicName : gender *:no_article? {4_TechOrCivicName[2]}; m?den {4_TechOrCivicName[2]}; f?die {4_TechOrCivicName[2]}; other?das {4_TechOrCivicName[2]};}; other?die {4_TechOrCivicName[5]};})</p>
+                      <p class="civ-ability-desc" style="text-align:left">Gebaut von Handwerker</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Wüste (Hügel),  Grasland (Hügel),  Ebene (Hügel),  Schnee (Hügel),  Tundra (Hügel)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Vulkanerde</p>
+                      <p class="civ-ability-desc" style="text-align:left">Freigeschaltet durch Bergbau Technologie</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Schaltet die Handwerker-Fähigkeit frei, Minen zu bauen.<br><br>+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion. -1 Anziehungskraft. Kann nur auf Hügeln oder gültigen Ressourcen gebaut werden.<br><br>Wenn sie auf Luxusgütern oder strategischen Ressourcen gebaut werden, kann die Stadt diese Ressourcen benutzen.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Mission">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MISSION_NAME-->
+                      <h2 class="civ-name">Mission
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Mission.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Plünder-Auszeichnung: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Anziehungskraft für angrenzende Geländefelder: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Glauben</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Wissenschaft (Freigeschaltet durch Aufklärung Ausrichtung)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Gebaut von Handwerker</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Wüste,  Wüste (Hügel),  Grasland,  Grasland (Hügel),  Ebene,  Ebene (Hügel),  Schnee,  Schnee (Hügel),  Tundra,  Tundra (Hügel)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Freigeschaltet durch Theologie Ausrichtung</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Die Ausrichtung „Theologie“ schaltet die Fähigkeit des Handwerkers frei, die &quot;Mission&quot; zu bauen, die für Spanien einzigartig ist.<br><br>+2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Glauben.<br><br>+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Wohnraum, wenn sie 7 Felder oder weniger von der aktuellen <img src="/images/ICON_CAPITAL.webp" style="height:1em"/> Hauptstadt entfernt gebaut wird. +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> und +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion, wenn sie 8 Felder oder mehr von der aktuellen <img src="/images/ICON_CAPITAL.webp" style="height:1em"/> Hauptstadt entfernt gebaut wird. +1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Wissenschaft für jeden angrenzenden <img src="/images/ICON_DISTRICT_CAMPUS.webp" style="height:1em"/> Campus- und <img src="/images/ICON_DISTRICT_HOLYSITE.webp" style="height:1em"/> Heilige Stätte-Bezirk. +2 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Wissenschaft von der Ausrichtung &quot;Aufklärung&quot;.<br><br>Kann nicht neben einer anderen &quot;Mission&quot; gebaut werden.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Moai-Statue">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MOAI_NAME-->
+                      <h2 class="civ-name">Moai-Statue
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Moai.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Plünder-Auszeichnung: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Anziehungskraft für angrenzende Geländefelder: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur</p>
+                      <p class="civ-ability-desc" style="text-align:left">100 % <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourismus durch <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur(erfordert {4_TechOrCivicName : plural 1?{4_TechOrCivicName : gender *:no_article? {4_TechOrCivicName[2]}; m?den {4_TechOrCivicName[2]}; f?die {4_TechOrCivicName[2]}; other?das {4_TechOrCivicName[2]};}; other?die {4_TechOrCivicName[5]};})</p>
+                      <p class="civ-ability-desc" style="text-align:left">Gebaut von Handwerker</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Grasland,  Grasland (Hügel),  Ebene,  Ebene (Hügel)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Vulkanerde</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Schaltet die Handwerker-Fähigkeit frei, eine Moai-Statue zu bauen.<br><br>+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur. +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur für alle 2 angrenzenden Moai-Statuen. +2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur, wenn sie auf oder neben einem Vulkanerde-Geländefeld gebaut wird. +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur für ein angrenzendes Küsten- oder See-Geländefeld. Zusätzliche <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur und <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourismus für Euren Fortschritt beim Ausrichtungs- und Technologiebaum. Kann auf Ebenen, Ebenen-Hügeln, Grasland, Grasland-Hügeln oder Vulkanerde gebaut werden. Kann nicht neben einem Wald- oder Regenwald-Geländefeld platziert werden.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Nazca-Linie">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_NAZCA_LINE_NAME-->
+                      <h2 class="civ-name">Nazca-Linie
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Nazca Line.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Plünder-Auszeichnung: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Anziehungskraft für angrenzende Geländefelder: 1</p>
+                      <p class="civ-ability-desc" style="text-align:left">Gebaut von Handwerker</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Wüste</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Schaltet die Handwerker-Fähigkeit frei, eine Nazca-Linie zu bauen.<br><br>+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Glauben für angrenzende Geländefelder. +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Glauben für angrenzende Geländefelder mit einer Ressource. +1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nahrung für angrenzende Wüsten- und Wüstenhügel-Geländefelder nach der Entdeckung der Öffentlichen Verwaltung. +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion für angrenzende flache Geländefelder nach der Erforschung der Massenfertigung. +1 Anziehungskraft. Kann nur auf flacher Wüste gebaut werden. Dieses Geländefeld kann nicht bearbeitet werden.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Nubische Pyramide">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_PYRAMID_NAME-->
+                      <h2 class="civ-name">Nubische Pyramide
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Nubian Pyramid.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Plünder-Auszeichnung: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Anziehungskraft für angrenzende Geländefelder: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Glauben</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nahrung</p>
+                      <p class="civ-ability-desc" style="text-align:left">Gebaut von Handwerker</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Wüste,  Wüste (Hügel),  Grasland,  Ebene</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Schwemmland,  Gras-Schwemmland,  Ebenen-Schwemmland</p>
+                      <p class="civ-ability-desc" style="text-align:left">Freigeschaltet durch Handwerkskunst Ausrichtung</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Die Ausrichtung &quot;Handwerkskunst&quot; schaltet die Handwerkerfähigkeit für die &quot;Nubische Pyramide&quot; frei, die für Nubien einzigartig ist. &quot;Nubische Pyramide&quot; ist auf 1 pro Stadt limitiert, kann nur auf Flachlandfeldern und Wüstenhügelfeldern, sowie nicht neben anderen &quot;Nubischen Pyramiden&quot; gebaut werden und gewährt <img src="/images/ICON_DISTRICT.webp" style="height:1em"/> Bezirken einen Standard-Nachbarschaftsbonus.<br><br>+2 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nahrung und +2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Glauben.<br><br>Erhält zusätzliche Erträge von benachbarten <img src="/images/ICON_DISTRICT.webp" style="height:1em"/> Bezirken:<br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nahrung für das <img src="/images/ICON_DISTRICT_CITY_CENTER.webp" style="height:1em"/> Stadtzentrum-Bezirk <br>+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur und +2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold pro benachbartem <img src="/images/ICON_DISTRICT_GOVERNMENT.webp" style="height:1em"/> Regierungsplatz- und <img src="/images/ICON_DISTRICT.webp" style="height:1em"/> Diplomatenviertel-Bezirk <br>+1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Wissenschaft pro benachbarten <img src="/images/ICON_DISTRICT_CAMPUS.webp" style="height:1em"/> Campus-Bezirk <br>+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion pro benachbarten <img src="/images/ICON_DISTRICT_INDUSTRIAL_ZONE.webp" style="height:1em"/> Industriegebiet-, <img src="/images/ICON_DISTRICT_ENCAMPMENT.webp" style="height:1em"/> Lager- und <img src="/images/ICON_DISTRICT_AERODROME.webp" style="height:1em"/> Flugplatz-Bezirk <br>+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur pro benachbarten <img src="/images/ICON_DISTRICT_THEATER.webp" style="height:1em"/> Theaterplatz-Bezirk <br>+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Glauben pro benachbarten <img src="/images/ICON_DISTRICT_HOLYSITE.webp" style="height:1em"/> Heilige Stätte-Bezirk <br>+1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold pro benachbarten <img src="/images/ICON_DISTRICT_COMMERCIAL_HUB.webp" style="height:1em"/> Handelszentrum- und <img src="/images/ICON_DISTRICT_HARBOR.webp" style="height:1em"/> Hafen-Bezirk.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Offshore-Windpark">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_OFFSHORE_WIND_FARM_NAME-->
+                      <h2 class="civ-name">Offshore-Windpark
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Offshore Wind Farm.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Plünder-Auszeichnung: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Anziehungskraft für angrenzende Geländefelder: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion</p>
+                      <p class="civ-ability-desc" style="text-align:left">Gebaut von Handwerker</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Küste und See</p>
+                      <p class="civ-ability-desc" style="text-align:left">Freigeschaltet durch Prognosesysteme Technologie</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Schaltet die Handwerker-Fähigkeit frei, einen Offshore-Windpark zu bauen.<br><br>+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion. Bringt 2 Energie pro Runde. Muss auf Küsten- oder See-Gelände gebaut werden.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Outback-Station">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_OUTBACK_STATION_NAME-->
+                      <h2 class="civ-name">Outback-Station
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Outback Station.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Plünder-Auszeichnung: Heilen 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Wohnraum</p>
+                      <p class="civ-ability-desc" style="text-align:left">Anziehungskraft für angrenzende Geländefelder: 1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nahrung</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion</p>
+                      <p class="civ-ability-desc" style="text-align:left">Gebaut von Handwerker</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Wüste,  Wüste (Hügel),  Grasland,  Grasland (Hügel),  Ebene,  Ebene (Hügel)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Freigeschaltet durch Gilden Ausrichtung</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Die Ausrichtung „Gilden“ schaltet die Fähigkeit des Handwerkers für die Errichtung einer &quot;Outback-Station&quot; frei, die einzigartig für Australien ist.<br><br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nahrung, +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion und +1 Anziehungskraft auf benachbarten Feldern.<br><br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nahrung für jede benachbarte Weide. +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion für je 2 benachbarte &quot;Outback-Station&quot; nach Erforschung der Technologie &quot;Industrialisierung&quot;. +1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nahrung für jede benachbarte &quot;Outback-Station&quot; nach Erforschung der Ausrichtung &quot;Schnelle Einsatzkräfte&quot;.<br><br>Kann nur auf Wüsten-, Grasland- und Flachlandfeldern gebaut werden.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Pairidaeza">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_PAIRIDAEZA_NAME-->
+                      <h2 class="civ-name">Pairidaeza
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Pairidaeza.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Plünder-Auszeichnung: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Wohnraum</p>
+                      <p class="civ-ability-desc" style="text-align:left">Anziehungskraft für angrenzende Geländefelder: 1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur (Freigeschaltet durch Diplomatischer Dienst Ausrichtung)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100 % <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourismus durch <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur(erfordert {4_TechOrCivicName : plural 1?{4_TechOrCivicName : gender *:no_article? {4_TechOrCivicName[2]}; m?den {4_TechOrCivicName[2]}; f?die {4_TechOrCivicName[2]}; other?das {4_TechOrCivicName[2]};}; other?die {4_TechOrCivicName[5]};})</p>
+                      <p class="civ-ability-desc" style="text-align:left">Gebaut von Handwerker</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Wüste,  Wüste (Hügel),  Grasland,  Grasland (Hügel),  Ebene,  Ebene (Hügel)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Freigeschaltet durch Frühes Reich Ausrichtung</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Die Ausrichtung &quot;Frühes Reich&quot; schaltet die Handwerkerfähigkeit für den Bau von &quot;Pairidaeza&quot; frei, es ist für Persien einzigartig.<br><br>+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur, +2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold, +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Wohnraum und +1 Anziehungskraft für benachbarte Felder.<br><br>+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur für jedes benachbarte <img src="/images/ICON_DISTRICT_CITY_CENTER.webp" style="height:1em"/> Stadtzentrum-Bezirk, <img src="/images/ICON_DISTRICT_HOLYSITE.webp" style="height:1em"/> Heilige Stätte-, <img src="/images/ICON_DISTRICT_CAMPUS.webp" style="height:1em"/> Campus- und <img src="/images/ICON_DISTRICT_THEATER.webp" style="height:1em"/> Theaterplatz-Bezirk. +1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold für jedes benachbarte <img src="/images/ICON_DISTRICT_CITY_CENTER.webp" style="height:1em"/> Stadtzentrum-Bezirk, <img src="/images/ICON_DISTRICT_COMMERCIAL_HUB.webp" style="height:1em"/> Handelszentrum-, <img src="/images/ICON_DISTRICT_HARBOR.webp" style="height:1em"/> Hafen- und <img src="/images/ICON_DISTRICT_INDUSTRIAL_ZONE.webp" style="height:1em"/> Industriegebiet-Bezirk. Zusätzliche +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur nach Erforschung der Ausrichtung &quot;Diplomatischer Dienst&quot;. Gewährt <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourismus nach Erforschung der Technologie &quot;Luftfahrt&quot;.<br><br>Kann nicht auf Schnee-, Tundra- oder Schwemmlandfeldern gebaut werden. Kann nicht neben einer anderen &quot;Pairidaeza&quot; gebaut werden.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Plantage">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_PLANTATION_NAME-->
+                      <h2 class="civ-name">Plantage
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Plantation.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Plünder-Auszeichnung: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Wohnraum</p>
+                      <p class="civ-ability-desc" style="text-align:left">Anziehungskraft für angrenzende Geländefelder: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nahrung (Freigeschaltet durch Wissenschaftstheorie Technologie)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold (Freigeschaltet durch Globalisierung Ausrichtung)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nahrung (Freigeschaltet durch Mittelaltermärkte Ausrichtung)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100 % <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourismus durch <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur(erfordert {4_TechOrCivicName : plural 1?{4_TechOrCivicName : gender *:no_article? {4_TechOrCivicName[2]}; m?den {4_TechOrCivicName[2]}; f?die {4_TechOrCivicName[2]}; other?das {4_TechOrCivicName[2]};}; other?die {4_TechOrCivicName[5]};})</p>
+                      <p class="civ-ability-desc" style="text-align:left">Gebaut von Handwerker</p>
+                      <p class="civ-ability-desc" style="text-align:left">Freigeschaltet durch Bewässerung Technologie</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Schaltet die Bauoption &quot;Plantagen&quot; für den Handwerker frei.<br><br>+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold. +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion, wenn auf flachen Feldern gebaut.<br>Kann nur auf gültigen Ressourcen gebaut werden.<br><br>Wenn auf Luxusressourcen gebaut, erhält die Stadt Zugriff zu dieser Ressource.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Pā">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MAORI_PA_NAME-->
+                      <h2 class="civ-name">Pā
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Pā.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Verteidigungsmodifikator: 4</p>
+                      <p class="civ-ability-desc" style="text-align:left">Verschanzungsbonus auf besetzende Einheit angewendet.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Anziehungskraft für angrenzende Geländefelder: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">Gebaut von Toa</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Wüste (Hügel),  Grasland (Hügel),  Ebene (Hügel),  Schnee (Hügel),  Tundra (Hügel)</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Freischaltung der Fähigkeit der &quot;Toa&quot;, eine &quot;Pā&quot; zu errichten, die für die Māori einzigartig ist.<br><br>Besetzende Einheiten erhalten +1 Sicht und +4 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Verteidigungskraft und erhalten automatisch 2 <img src="/images/ICON_TURN.webp" style="height:1em"/> Runden <img src="/images/ICON_FORTIFIED.webp" style="height:1em"/> Befestigung. Eine Māori-Einheit, die eine &quot;Pā&quot; besetzt, heilt sich, selbst wenn sie sich gerade bewegte oder angegriffen hatte. Muss auf einem Hügelfeld gebaut werden.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Qhapaq Ñan">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MOUNTAIN_ROAD_NAME-->
+                      <h2 class="civ-name">Qhapaq Ñan
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Qhapaq Ñan.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Anziehungskraft für angrenzende Geländefelder: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">Gebaut von Handwerker ODER  Warak’aq ODER  Ranger ODER  Späher ODER  Spez-Op</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Wüste (Berg),  Grasland (Berg),  Ebene (Berg),  Schnee (Berg),  Tundra (Berg)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Freigeschaltet durch Außenhandel Ausrichtung</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Schaltet die Handwerker-Fähigkeit frei, eine Qhapaq Ñan, die einzigartige Modernisierung Pachacútecs, zu bauen.<br><br>Dient als Bewegungsportal auf einem Gebirge, durch das Einheiten für 2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> Fortbewegungspunkte hindurchgehen können, um an einem anderen Portal hinauszutreten. Kreuzende <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> Handelswege können das erhaltene <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold von Bezirken an ihrem Zielort multiplizieren. Kann nur auf einem angrenzenden Berg-Geländefeld gebaut werden. Kann nicht geplündert oder entfernt werden.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Raketensilo">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MISSILE_SILO-->
+                      <h2 class="civ-name">Raketensilo
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Missile Silo.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Anziehungskraft für angrenzende Geländefelder: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">Gebaut von Militärpionier</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Wüste,  Grasland,  Ebene,  Schnee,  Tundra</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Vulkanerde</p>
+                      <p class="civ-ability-desc" style="text-align:left">Freigeschaltet durch Raketentechnik Technologie</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Schaltet die Militärpionier-Fähigkeit frei, ein Raketensilo zu bauen.<br><br>Dient als Abschussbasis für Atomwaffen und Thermonuklearwaffen.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Römisches Militärlager">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_ROMAN_FORT_NAME-->
+                      <h2 class="civ-name">Römisches Militärlager
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Roman Fort.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Verteidigungsmodifikator: 4</p>
+                      <p class="civ-ability-desc" style="text-align:left">Verschanzungsbonus auf besetzende Einheit angewendet.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Anziehungskraft für angrenzende Geländefelder: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">Gebaut von Legion</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Wüste,  Wüste (Hügel),  Grasland,  Grasland (Hügel),  Ebene,  Ebene (Hügel),  Schnee,  Schnee (Hügel),  Tundra,  Tundra (Hügel)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Vulkanerde</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Schaltet die Fähigkeit der römischen Legion frei, ein römisches Militärlager, die einzigartige Modernisierung Roms, zu bauen.<br><br>Besetzende Einheit erhält +4 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> Verteidigungsstärke und automatisch 2 Runden Befestigung.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Seastead">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_SEASTEAD_NAME-->
+                      <h2 class="civ-name">Seastead
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Seastead.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Plünder-Auszeichnung: Heilen 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+4 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Wohnraum</p>
+                      <p class="civ-ability-desc" style="text-align:left">Anziehungskraft für angrenzende Geländefelder: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nahrung</p>
+                      <p class="civ-ability-desc" style="text-align:left">100 % <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourismus durch <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur</p>
+                      <p class="civ-ability-desc" style="text-align:left">Gebaut von Handwerker</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Küste und See,  Ozean</p>
+                      <p class="civ-ability-desc" style="text-align:left">Freigeschaltet durch Seasteads Technologie</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Schaltet die Handwerker-Fähigkeit frei, ein Seastead zu bauen.<br><br>+2 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nahrung. +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion für jedes angrenzende Fischerboot. Fischerboote erhalten +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion für jedes angrenzende Seastead. +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur und <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourismus für jedes angrenzende Riff. +2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Wohnraum. Muss auf Küsten-, See- oder Ozean-Gelände gebaut werden. Kann nicht neben einem weiteren Seastead platziert werden.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Seebad">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_BEACH_RESORT_NAME-->
+                      <h2 class="civ-name">Seebad
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Seaside Resort.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Plünder-Auszeichnung: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Benötigt: Anziehungskraft &gt;= 2</p>
+                      <p class="civ-ability-desc" style="text-align:left">150 % <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourismus durch Anziehungskraft</p>
+                      <p class="civ-ability-desc" style="text-align:left">Anziehungskraft für angrenzende Geländefelder: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">100 % <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourismus durch <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold</p>
+                      <p class="civ-ability-desc" style="text-align:left">Gebaut von Handwerker</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Wüste,  Wüste (Hügel),  Grasland,  Grasland (Hügel),  Ebene,  Ebene (Hügel)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Vulkanerde</p>
+                      <p class="civ-ability-desc" style="text-align:left">Freigeschaltet durch Funkwesen Technologie</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Schaltet die Bauoption &quot;Seebad&quot; für den Handwerker frei.<br><br>Bietet <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourismus entsprechend 150% des Anziehungskraft des Geländes. Kann nur auf Küstenwüste-, Küstenebenen- oder Küstengraslandfeld gebaut werden. Mindest-Anziehungskraft: Bezaubernd.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Skiort">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_SKI_RESORT_NAME-->
+                      <h2 class="civ-name">Skiort
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Ski Resort.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Anziehungskraft für angrenzende Geländefelder: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">100 % <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourismus durch  Anziehungskraft</p>
+                      <p class="civ-ability-desc" style="text-align:left">Gebaut von Handwerker</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Wüste (Berg),  Grasland (Berg),  Ebene (Berg),  Schnee (Berg),  Tundra (Berg)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Freigeschaltet durch Profisport Ausrichtung</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Schaltet die Handwerker-Fähigkeit frei, einen Skiort zu bauen.<br><br>Bringt +4 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourismus. Gewährt 1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> Annehmlichkeit. Kann nur auf einem Berg gebaut werden. Darf nicht an einen weiteren Skiort angrenzen. Kann nicht geplündert, bearbeitet oder entfernt werden.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Solarpark">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_SOLAR_FARM_NAME-->
+                      <h2 class="civ-name">Solarpark
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Solar Farm.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Plünder-Auszeichnung: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Anziehungskraft für angrenzende Geländefelder: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion</p>
+                      <p class="civ-ability-desc" style="text-align:left">Gebaut von Handwerker</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Wüste,  Grasland,  Ebene,  Tundra</p>
+                      <p class="civ-ability-desc" style="text-align:left">Freigeschaltet durch Satellitentechnologie Technologie</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Schaltet die Handwerker-Fähigkeit frei, einen Solarpark zu bauen.<br><br>+1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold. +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion. Bringt 2 Energie pro Runde. Muss auf flachem Gelände gebaut werden. Kann nicht entfernt werden.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Sphinx">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_SPHINX_NAME-->
+                      <h2 class="civ-name">Sphinx
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Sphinx.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Plünder-Auszeichnung: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Anziehungskraft für angrenzende Geländefelder: 2</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Glauben</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur (Freigeschaltet durch Diplomatischer Dienst Ausrichtung)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100 % <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourismus durch <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur(erfordert {4_TechOrCivicName : plural 1?{4_TechOrCivicName : gender *:no_article? {4_TechOrCivicName[2]}; m?den {4_TechOrCivicName[2]}; f?die {4_TechOrCivicName[2]}; other?das {4_TechOrCivicName[2]};}; other?die {4_TechOrCivicName[5]};})</p>
+                      <p class="civ-ability-desc" style="text-align:left">Gebaut von Handwerker</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Wüste,  Wüste (Hügel),  Grasland,  Grasland (Hügel),  Ebene,  Ebene (Hügel),  Tundra,  Tundra (Hügel)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Schwemmland,  Gras-Schwemmland,  Ebenen-Schwemmland</p>
+                      <p class="civ-ability-desc" style="text-align:left">Freigeschaltet durch Handwerkskunst Ausrichtung</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Die Ausrichtung &quot;Handwerkskunst&quot; schaltet die Fähigkeit des Handwerkers zum Bau einer &quot;Sphinx&quot; frei, die einzigartig für Ägypten ist.<br><br>+2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Glauben, +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur und +2 Anziehungskraft für benachbarte Felder.<br><br>+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Glauben und +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur, wenn neben einem <img src="/images/ICON_DISTRICT_WONDER.webp" style="height:1em"/> Weltwunder gebaut. +1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nahrung und +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion, wenn auf Wüsten- (nicht Schwemmlandfeldern) oder Wüstenhügelfeldern gebaut. +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur, wenn auf Schwemmlandfeldern gebaut. +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur nach Erforschung der Ausrichtung &quot;Diplomatischer Dienst&quot;. Gewährt <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourismus nach Erforschung der Technologie &quot;Luftfahrt&quot;.<br><br>Kann nicht neben einer anderen &quot;Sphinx&quot; gebaut werden. Kann nicht auf Schneefeldern gebaut werden.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Stadtpark">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_CITY_PARK_NAME-->
+                      <h2 class="civ-name">Stadtpark
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/City Park.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Plünder-Auszeichnung: Heilen 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">Anziehungskraft für angrenzende Geländefelder: 2</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur</p>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Wissenschaft</p>
+                      <p class="civ-ability-desc" style="text-align:left">100 % <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourismus durch <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur(erfordert {4_TechOrCivicName : plural 1?{4_TechOrCivicName : gender *:no_article? {4_TechOrCivicName[2]}; m?den {4_TechOrCivicName[2]}; f?die {4_TechOrCivicName[2]}; other?das {4_TechOrCivicName[2]};}; other?die {4_TechOrCivicName[5]};})</p>
+                      <p class="civ-ability-desc" style="text-align:left">Gebaut von Handwerker</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Wüste,  Grasland,  Ebene,  Schnee,  Tundra</p>
+                      <p class="civ-ability-desc" style="text-align:left">Freigeschaltet durch Spiele und Erholung Ausrichtung</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Eine einzigartige Verbesserung, die errichtet werden kann, wenn sich der <img src="/images/ICON_GOVERNOR.webp" style="height:1em"/> Gouverneur &quot;Liang&quot;, mit der entsprechenden <img src="/images/ICON_GOVERNOR.webp" style="height:1em"/> Gouverneur-Beförderung &quot;Parks und Erholung&quot;, in der Stadt befindet. Gewährt +3 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Wissenschaft, +2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur, +2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Wohnraum, +1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> Annehmlichkeit und +2 Anziehungskraft für benachbarte Felder. Begrenzung auf einen pro Stadt.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Steinbruch">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_QUARRY_NAME-->
+                      <h2 class="civ-name">Steinbruch
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Quarry.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Plünder-Auszeichnung: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Anziehungskraft für angrenzende Geländefelder: -1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion (Freigeschaltet durch Raketentechnik Technologie)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion (Freigeschaltet durch Militärtechnik Technologie)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100 % <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourismus durch <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur(erfordert {4_TechOrCivicName : plural 1?{4_TechOrCivicName : gender *:no_article? {4_TechOrCivicName[2]}; m?den {4_TechOrCivicName[2]}; f?die {4_TechOrCivicName[2]}; other?das {4_TechOrCivicName[2]};}; other?die {4_TechOrCivicName[5]};})</p>
+                      <p class="civ-ability-desc" style="text-align:left">Gebaut von Handwerker</p>
+                      <p class="civ-ability-desc" style="text-align:left">Freigeschaltet durch Bergbau Technologie</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Schaltet die Bauoption &quot;Steinbrüche&quot; für den Handwerker frei.<br><br>+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion. +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion nach Erforschung der Technologie &quot;Militärtechnik&quot; und +2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion nach Erforschung der Technologie &quot;Raketentechnik&quot;. -1 Anziehungskraft für benachbarte Felder. Kann nur auf gültigen Bonus- oder Luxusressourcenfeldern (Stein, Marmor, Gips) gebaut werden.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Stufenbrunnen">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_STEPWELL_NAME-->
+                      <h2 class="civ-name">Stufenbrunnen
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Stepwell.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Plünder-Auszeichnung: Heilen 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Wohnraum</p>
+                      <p class="civ-ability-desc" style="text-align:left">Anziehungskraft für angrenzende Geländefelder: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Glauben</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nahrung</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Glauben (Freigeschaltet durch Feudalismus Ausrichtung)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nahrung (Freigeschaltet durch Feudalismus Ausrichtung)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Gebaut von Handwerker</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Wüste,  Grasland,  Ebene,  Schnee,  Tundra</p>
+                      <p class="civ-ability-desc" style="text-align:left">Freigeschaltet durch Bewässerung Technologie</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Die Technologie &quot;Bewässerung&quot; schaltet die Fähigkeit des Handwerkers frei, einen &quot;Stufenbrunnen&quot; zu bauen, der einzigartig für Indien ist.<br><br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nahrung, +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Glauben und +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Wohnraum.<br><br>Zusätzliche +1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nahrung und +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Glauben nach Erforschung der Ausrichtung &quot;Feudalismus&quot;. +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Glauben, wenn angrenzend an einen <img src="/images/ICON_DISTRICT_HOLYSITE.webp" style="height:1em"/> Heilige Stätte-Bezirk. +1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nahrung für jede benachbarte Farm.<br><br>Kann nicht auf Hügelfeldern oder angrenzend an einen anderen &quot;Stufenbrunnen&quot; gebaut werden.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Sägewerk">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_LUMBER_MILL_NAME-->
+                      <h2 class="civ-name">Sägewerk
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Lumber Mill.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Plünder-Auszeichnung: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Anziehungskraft für angrenzende Geländefelder: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion (Freigeschaltet durch Ballistik Technologie)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion (Freigeschaltet durch Synthetisches Material Technologie)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100 % <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourismus durch <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur(erfordert {4_TechOrCivicName : plural 1?{4_TechOrCivicName : gender *:no_article? {4_TechOrCivicName[2]}; m?den {4_TechOrCivicName[2]}; f?die {4_TechOrCivicName[2]}; other?das {4_TechOrCivicName[2]};}; other?die {4_TechOrCivicName[5]};})</p>
+                      <p class="civ-ability-desc" style="text-align:left">Gebaut von Handwerker</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Wälder,  Regenwald (Benötigt: Merkantilismus)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Freigeschaltet durch Bauwesen Technologie</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Schaltet die Handwerker-Fähigkeit frei, ein Sägewerk zu bauen.<br><br>+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion. Kann nur auf Wald gebaut werden. Sobald Merkantilismus freigeschaltet wurde, kann es auch auf Regenwald gebaut werden.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Terrassenfeld">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_TERRACE_FARM_NAME-->
+                      <h2 class="civ-name">Terrassenfeld
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Terrace Farm.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Plünder-Auszeichnung: Heilen 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Wohnraum</p>
+                      <p class="civ-ability-desc" style="text-align:left">Anziehungskraft für angrenzende Geländefelder: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nahrung</p>
+                      <p class="civ-ability-desc" style="text-align:left">Gebaut von Handwerker</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Wüste (Hügel),  Grasland (Hügel),  Ebene (Hügel)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Vulkanerde</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Einzigartige Verbesserung des Handwerkers der Inka, die zu Beginn des Spiels verfügbar ist. Kann auf Graslandhügel-, Ebenenhügel-, Wüstenhügel- oder Vulkanerdefeldern platziert werden.<br><br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nahrung +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Wohnraum.<br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nahrung für jedes angrenzende Bergfeld. <br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nahrung für je 2 angrenzende Terrassenfarmen, steigend auf +1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nahrung für jede Terrassenfarm nach Erforschung der Technologie &quot;Normbauteile&quot;.<br>+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion, wenn sie an Süßwasser und nicht an ein <img src="/images/ICON_DISTRICT_AQUEDUCT.webp" style="height:1em"/> Aquädukt-Bezirk angrenzt.<br>+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion für jedes angrenzende <img src="/images/ICON_DISTRICT_AQUEDUCT.webp" style="height:1em"/> Aquädukt-Bezirk.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Weide">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_PASTURE_NAME-->
+                      <h2 class="civ-name">Weide
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Pasture.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Plünder-Auszeichnung: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Wohnraum</p>
+                      <p class="civ-ability-desc" style="text-align:left">Anziehungskraft für angrenzende Geländefelder: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nahrung (Freigeschaltet durch Steigbügel Technologie)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion (Freigeschaltet durch Normbauteile Technologie)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Nahrung (Freigeschaltet durch Robotertechnik Technologie)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100 % <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourismus durch <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur(erfordert {4_TechOrCivicName : plural 1?{4_TechOrCivicName : gender *:no_article? {4_TechOrCivicName[2]}; m?den {4_TechOrCivicName[2]}; f?die {4_TechOrCivicName[2]}; other?das {4_TechOrCivicName[2]};}; other?die {4_TechOrCivicName[5]};})</p>
+                      <p class="civ-ability-desc" style="text-align:left">Gebaut von Handwerker</p>
+                      <p class="civ-ability-desc" style="text-align:left">Freigeschaltet durch Tierzucht Technologie</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Schaltet die Handwerker-Fähigkeit frei, Weiden zu bauen.<br><br>+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion. Kann nur auf gültigen Ressourcen gebaut werden.<br><br>Wenn sie auf strategischen Ressourcen gebaut werden, kann die Stadt diese Ressource benutzen.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Windpark">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_WIND_FARM_NAME-->
+                      <h2 class="civ-name">Windpark
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Wind Farm.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Plünder-Auszeichnung: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Anziehungskraft für angrenzende Geländefelder: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion</p>
+                      <p class="civ-ability-desc" style="text-align:left">Gebaut von Handwerker</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Wüste (Hügel),  Grasland (Hügel),  Ebene (Hügel),  Schnee (Hügel),  Tundra (Hügel)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Freigeschaltet durch Verbundwerkstoffe Technologie</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Schaltet die Handwerker-Fähigkeit frei, einen Windpark zu bauen.<br><br>+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold. +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion. Bringt 2 Energie pro Runde. Muss auf Hügel-Gelände gebaut werden.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Zikkurat">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_ZIGGURAT_NAME-->
+                      <h2 class="civ-name">Zikkurat
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Ziggurat.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Plünder-Auszeichnung: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Wohnraum</p>
+                      <p class="civ-ability-desc" style="text-align:left">Anziehungskraft für angrenzende Geländefelder: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Wissenschaft</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur (Freigeschaltet durch Naturgeschichte Ausrichtung)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100 % <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourismus durch <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur(erfordert {4_TechOrCivicName : plural 1?{4_TechOrCivicName : gender *:no_article? {4_TechOrCivicName[2]}; m?den {4_TechOrCivicName[2]}; f?die {4_TechOrCivicName[2]}; other?das {4_TechOrCivicName[2]};}; other?die {4_TechOrCivicName[5]};})</p>
+                      <p class="civ-ability-desc" style="text-align:left">Gebaut von Handwerker</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Wüste,  Grasland,  Ebene,  Schnee,  Tundra</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Schwemmland,  Gras-Schwemmland,  Ebenen-Schwemmland</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Schaltet die Fähigkeit des Handwerkers frei, einen &quot;Ziggurat&quot; zu bauen, der für die Sumerer einzigartig ist.<br><br>+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Wohnraum und +2 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Wissenschaft.<br><br>+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur, wenn er neben einem Fluss gebaut wird. Nach Erforschung der Ausrichtung &quot;Frühes Reich&quot;, +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Glauben für jeden angrenzenden <img src="/images/ICON_DISTRICT.webp" style="height:1em"/> Bezirk oder für alle 2 angrenzenden Farmen.<br><br>Kann nicht auf Hügelfeldern oder neben einem anderen &quot;Ziggurat&quot; gebaut werden.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Ölquelle">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_OIL_WELL_NAME-->
+                      <h2 class="civ-name">Ölquelle
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Oil Well.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Plünder-Auszeichnung: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Anziehungskraft für angrenzende Geländefelder: -1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produktion (Freigeschaltet durch Prognosesysteme Technologie)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100 % <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourismus durch <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Kultur(erfordert {4_TechOrCivicName : plural 1?{4_TechOrCivicName : gender *:no_article? {4_TechOrCivicName[2]}; m?den {4_TechOrCivicName[2]}; f?die {4_TechOrCivicName[2]}; other?das {4_TechOrCivicName[2]};}; other?die {4_TechOrCivicName[5]};})</p>
+                      <p class="civ-ability-desc" style="text-align:left">Gebaut von Handwerker</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Wüste,  Wüste (Hügel),  Grasland,  Grasland (Hügel),  Ebene,  Ebene (Hügel),  Schnee,  Schnee (Hügel),  Tundra,  Tundra (Hügel)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Freigeschaltet durch Raffinerie Technologie</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Schaltet die Handwerker-Fähigkeit frei, eine Ölquelle zu bauen.<br><br>-1 Anziehungskraft. Kann nur auf Land-Geländefeldern mit <img src="/images/ICON_RESOURCE_OIL.webp" style="height:1em"/> Öl gebaut werden.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </main>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/plugins/feather.min.js"></script>
+    <script src="/plugins/chart.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Civ VI BBG 7.2 Улучшения</title>
+    <meta charset="utf-8">
+    <meta contents="IE=edge" httpequiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="/images/BBGLogo.webp" rel="icon" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap" rel="stylesheet">
+    <link href="/css/style.min.css" rel="stylesheet">
+    <link href="/css/preloader.css" rel="stylesheet">
+    <link href="/css/animate.min.css" rel="stylesheet">
+    <link href="/css/header.css" rel="stylesheet">
+    <link href="/css/footer.css" rel="stylesheet">
+    <link href="/fontawesome-free-7.0.0-web/css/all.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="preloader">
+      <div class="loader">
+        <div class="loader-outter"></div>
+        <div class="loader-inner"></div>
+        <div class="indicator">
+          <svg height="12px" width="16px">
+            <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+            <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="layer"></div>
+    <div class="page-flex">
+      <div class="main-wrapper">
+        <nav class="main-nav--bg">
+          <div class="main-nav">
+            <div class="header">
+              <div class="header-inner">
+                <div class="inner">
+                  <div class="row">
+                    <div class="flex center sidebar-toggle col-xl-1 col-lg-1 col-md-1 col-1">
+                      <button class="transparent-btn" title="Menu" type="button">
+                        <span class="sr-only">Toggle menu</span>
+                        <span aria-hidden="true" class="icon menu-toggle"></span>
+                      </button>
+                    </div>
+                    <div class="flex center col-xl-1 col-lg-1 col-md-1 col-2">
+                      <a href="/index.html" style="align-content: center;">
+                        <img alt="#" src="/images/BBGLogo.webp" style="width:3em; border-radius:10%">
+                      </a>
+                      <div class="mobile-nav"></div>
+                    </div>
+                    <div class="flex col-xl-8 col-lg-8 col-md-8 col-8">
+                      <div class="main-menu">
+                        <nav class="navigation">
+                          <ul class="nav menu">
+                            <li class="">
+                              <a href="/ru_RU/leaders_7.2.html" onclick="civClicked(null)">Лидеры</a>
+                            </li>
+                            <li class="">
+                              <a href="/ru_RU/bbg_expanded_7.2.html" onclick="civClicked(null)">BBG Expanded</a>
+                            </li>
+                            <li class="">
+                              <a href="/ru_RU/city_states_7.2.html" onclick="civClicked(null)">Города-государства</a>
+                            </li>
+                            <li class="">
+                              <a href="/ru_RU/religion_7.2.html" onclick="civClicked(null)">Религия</a>
+                            </li>
+                            <li class="">
+                              <a href="/ru_RU/governor_7.2.html" onclick="civClicked(null)">Губернаторы</a>
+                            </li>
+                            <li class="">
+                              <a href="/ru_RU/great_people_7.2.html" onclick="civClicked(null)">Великие люди</a>
+                            </li>
+                            <li class="">
+                              <a href="/ru_RU/natural_wonder_7.2.html" onclick="civClicked(null)">Чудеса природы</a>
+                            </li>
+                            <li class="">
+                              <a href="/ru_RU/world_wonder_7.2.html" onclick="civClicked(null)">World Wonders</a>
+                            </li>
+                            <li class="">
+                              <a href="/ru_RU/buildings_7.2.html" onclick="civClicked(null)">Здания</a>
+                            </li>
+                            <li class="">
+                              <a href="/ru_RU/units_7.2.html" onclick="civClicked(null)">Юниты</a>
+                            </li>
+                            <li class="active">
+                              <a href="/ru_RU/improvements_7.2.html" onclick="civClicked(null)">Улучшения</a>
+                            </li>
+                            <li class="">
+                              <a href="/ru_RU/tech_tree_7.2.html" onclick="civClicked(null)">Technology Tree</a>
+                            </li>
+                            <li class="">
+                              <a href="/ru_RU/civic_tree_7.2.html" onclick="civClicked(null)">Civic Tree</a>
+                            </li>
+                            <li class="">
+                              <a href="/ru_RU/names_7.2.html" onclick="civClicked(null)">Names</a>
+                            </li>
+                            <li class="">
+                              <a href="/ru_RU/policies_7.2.html" onclick="civClicked(null)">Политические курсы</a>
+                            </li>
+                            <li class="">
+                              <a href="/ru_RU/congress_7.2.html" onclick="civClicked(null)">Всемирный конгресс</a>
+                            </li>
+                            <li class="">
+                              <a href="/ru_RU/misc_7.2.html" onclick="civClicked(null)">Misc</a>
+                            </li>
+                            <li class="">
+                              <a href="/ru_RU/changelog_7.2.html" onclick="civClicked(null)">Changelog</a>
+                            </li>
+                            <li>
+                              <a>BBG Version<i class="icofont-rounded-down"></i></a>
+                              <ul class="dropdown bbg-version-dropdown">
+                                <li>
+                                  <a href="/ru_RU/improvements_base_game.html">Base</a>
+                                </li>
+                                <li>
+                                  <a href="/ru_RU/improvements_7.4.html">7.4</a>
+                                </li>
+                                <li>
+                                  <a href="/ru_RU/improvements_7.3.html">7.3</a>
+                                </li>
+                                <li>
+                                  <a href="/ru_RU/improvements_7.2.html">7.2</a>
+                                </li>
+                                <li>
+                                  <a href="/ru_RU/improvements_7.1.html">7.1</a>
+                                </li>
+                                <li>
+                                  <a href="/ru_RU/improvements_6.5.html">6.5</a>
+                                </li>
+                                <li>
+                                  <a href="/ru_RU/improvements_6.4.html">6.4</a>
+                                </li>
+                                <li>
+                                  <a href="/ru_RU/improvements_6.3.html">6.3</a>
+                                </li>
+                                <li>
+                                  <a href="/ru_RU/improvements_6.2.html">6.2</a>
+                                </li>
+                                <li>
+                                  <a href="/ru_RU/improvements_6.1.html">6.1</a>
+                                </li>
+                                <li>
+                                  <a href="/ru_RU/improvements_6.0.html">6.0</a>
+                                </li>
+                                <li>
+                                  <a href="/ru_RU/improvements_5.8.html">5.8</a>
+                                </li>
+                                <li>
+                                  <a href="/ru_RU/improvements_5.7.html">5.7</a>
+                                </li>
+                                <li>
+                                  <a href="/ru_RU/improvements_5.6.html">5.6</a>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+                    <div class="flex center col-xl-2 col-lg-2 col-md-2 col-1">
+                      <div class="flex row justify-content-around">
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-4">
+                          <div class="main-menu">
+                            <nav class="navigation">
+                              <ul class="nav menu">
+                                <li><i class="fa-solid fa-language lang-icon"></i>
+                                  <ul class="dropdown">
+                                    <li>
+                                      <a href="/en_US/improvements_7.2.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/us.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/fr_FR/improvements_7.2.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/fr.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/ru_RU/improvements_7.2.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/ru.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/de_DE/improvements_7.2.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/de.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/zh_Hans_CN/improvements_7.2.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/cn.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/ko_KR/improvements_7.2.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/kr.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/ja_JP/improvements_7.2.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/jp.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                    <li>
+                                      <a href="/pt_BR/improvements_7.2.html" style="align-content: center;">
+                                        <img src="/assets/flags/4x3/br.svg" style="height:20px">
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </li>
+                              </ul>
+                            </nav>
+                          </div>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-4">
+                          <div class="base-game-switcher-wrapper">
+                            <button class="base-game-switcher gray-circle-btn" title="Show Base Game" type="button"><i aria-hidden="true" class="enable-icon" data-feather="toggle-left"></i><i aria-hidden="true" class="disable-icon" data-feather="toggle-right"></i></button>
+                          </div>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-4">
+                          <div class="theme-switcher-wrapper">
+                            <button class="theme-switcher gray-circle-btn" title="Switch theme" type="button">
+                              <span class="sr-only">Switch theme</span><i aria-hidden="true" class="sun-icon" data-feather="sun"></i><i aria-hidden="true" class="moon-icon" data-feather="moon"></i>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="scroll-up footer-popup" id="footer-popup">
+          <div class="footer-popup-inner">
+            <div class="row">
+              <div class="col-sm-6 col-1 footer-popup-body">
+                <p id="donateText">Enjoy this work? Try Aether Kingdoms!
+                  <b>
+                    <a class="footer-popup-link" href="https://www.aetherkingdoms.com/" target="_blank">(Link)</a>
+                  </b>
+                </p>
+              </div>
+              <div class="col-sm-2 col-1 footer-popup-body">
+                <a class="btn btn-primary" href="https://www.aetherkingdoms.com/" target="_blank">
+                  <img alt="Aether Kingdom" class="footer-popup-img" src="/images/ak_village_animation.gif">
+                </a>
+              </div>
+              <div class="col-sm-2 col-6 footer-popup-donate">
+                <a class="btn btn-primary" href="https://ko-fi.com/calcalciffer" target="_blank">Donate</a>
+              </div>
+              <div class="col-sm-2 col-6 footer-popup-scroll-up">
+                <a class="displayNone" href="#top" id="scrollUp" onclick="civClicked(null)"><i class="fa-solid fa-up-long"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="aether-kingdom-ad" id="aether-kingdom-ad">
+          <a href="https://www.aetherkingdoms.com/" target="_blank">
+            <img alt="Aether Kingdom" class="aether-kingdom-ad-img" src="/images/ak_village_animation.gif">
+          </a>
+          <h2 class="aether-kingdom-ad-title">Try Aether Kingdoms!</h2>
+          <p class="aether-kingdom-ad-text">If you like my website here, please check out Aether Kingdoms, a free-to-play strategy game inspired by Civilization and developed by my friend and I. Click the button below to learn more!</p>
+          <a href="https://www.aetherkingdoms.com/" target="_blank">
+            <button class="ad-btn" title="Aether Kingdoms" type="submit">Aether Kingdoms</button>
+          </a>
+          <button class="ad-btn" onclick="aetherKingdomAdClose()" title="Close ad" type="submit">Close</button>
+        </div>
+        <div class="">
+          <div class="fixed left-0 right-auto h-screen bg-white border-r border-neutral-300 overflow-scroll" style="z-index: 5;">
+            <aside class="sidebar">
+              <div class="sidebar-start">
+                <div class="sidebar-body">
+                  <ul class="sidebar-body-menu"></ul>
+                </div>
+              </div>
+            </aside>
+          </div>
+          <div class="leaders-data min-w-full main-pl">
+            <main class="main users chart-page">
+              <div class="container">
+                <h1 class="civ-name">Civ VI BBG 7.2 Улучшения</h1><br>
+                <div class="row">
+                  <div class="col-md-6 col-12" id="Алькасар">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_ALCAZAR_NAME-->
+                      <h2 class="civ-name">Алькасар
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Alcázar.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Добыча: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Модификатор обороны: 4</p>
+                      <p class="civ-ability-desc" style="text-align:left">Размещенный здесь юнит получил бонус для укрепления.</p>
+                      <p class="civ-ability-desc" style="text-align:left">50% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> туризма от престижа</p>
+                      <p class="civ-ability-desc" style="text-align:left">Престиж для ближайших клеток: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Культура</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Производство</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> туризма от <img src="/images/ICON_CULTURE.webp" style="height:1em"/> {3_YieldName[2]} (требуется Авиация Технология)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Создается: Строители</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Пустыня,  Пустыня (Холмы),  Луг,  Луг (Холмы),  Равнина,  Равнина (Холмы),  Снег,  Снег (Холмы),  Тундра,  Тундра (Холмы)</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Позволяет строителям строить алькасары.<br><br>+2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> ед. культуры и +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> производства. +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> культуры за каждый соседний военный лагерь. Дает <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> науку в количестве, равном 50% престижа клетки. Находящийся здесь юнит получает +4 к <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> обороноспособности и автоматически получает укрепление на 2 хода. Дает <img src="/images/ICON_TOURISM.webp" style="height:1em"/> туризм после исследования авиации. Нельзя построить рядом с другим алькасаром.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Асьенда">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_HACIENDA_NAME-->
+                      <h2 class="civ-name">Асьенда
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Hacienda.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Добыча: Лечение 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Жилья</p>
+                      <p class="civ-ability-desc" style="text-align:left">Престиж для ближайших клеток: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Золото</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Производство</p>
+                      <p class="civ-ability-desc" style="text-align:left">Создается: Строители</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Луг,  Равнина</p>
+                      <p class="civ-ability-desc" style="text-align:left">Открыто: Средневековые ярмарки Социальный институт</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Позволяет строителям строить Асьенду (уникально для Великой Колумбии).<br><br>+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> золота, +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> производства и +0.5 к <img src="/images/ICON_HOUSING.webp" style="height:1em"/> жилью.<br><br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> пищи за каждые две соседние плантации (повышается до каждой плантации после открытия &quot;Стандартизации&quot;). Плантации и асьенды получают +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> производства за каждые две соседние асьенды (повышается до каждой асьенды после открытия &quot;Меркантилизма&quot;).<br><br>Можно строить только на равнинах и лугах.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Батей">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_BATEY_NAME-->
+                      <h2 class="civ-name">Батей
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Batey.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Добыча: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Престиж для ближайших клеток: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Культура</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> туризма от <img src="/images/ICON_CULTURE.webp" style="height:1em"/> {3_YieldName[2]} (требуется Авиация Технология)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Создается: Строители</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Пустыня,  Пустыня (Холмы),  Луг,  Луг (Холмы),  Равнина,  Равнина (Холмы),  Снег,  Снег (Холмы),  Тундра,  Тундра (Холмы)</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Позволяет строителям строить батеи.<br><br>+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> ед. культуры. Дополнительно +1 ед. <img src="/images/ICON_CULTURE.webp" style="height:1em"/> культуры за каждый примыкающий бонусный ресурс и развлекательный комплекс (+2 ед. <img src="/images/ICON_CULTURE.webp" style="height:1em"/> культуры, если есть «Исследование»). Дает <img src="/images/ICON_TOURISM.webp" style="height:1em"/> туризм после открытия авиации. Нельзя строить рядом с другим батеем или на холме.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Береговая ветроэлектростанция">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_OFFSHORE_WIND_FARM_NAME-->
+                      <h2 class="civ-name">Береговая ветроэлектростанция
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Offshore Wind Farm.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Добыча: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Престиж для ближайших клеток: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Производство</p>
+                      <p class="civ-ability-desc" style="text-align:left">Создается: Строители</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Побережье и озеро</p>
+                      <p class="civ-ability-desc" style="text-align:left">Открыто: Прогнозирующие системы Технология</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Позволяет строителям строить береговые ветроэлектростанции.<br><br>+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> к производству. Дает 2 ед. <img src="/images/ICON_POWER.webp" style="height:1em"/> энергии за ход. Можно построить только на клетках побережья или озера.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Буровая вышка">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_OIL_WELL_NAME-->
+                      <h2 class="civ-name">Буровая вышка
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Oil Well.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Добыча: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Престиж для ближайших клеток: -1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Производство</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Производство (Открыто: Прогнозирующие системы Технология)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> туризма от <img src="/images/ICON_CULTURE.webp" style="height:1em"/> {3_YieldName[2]} (требуется Авиация Технология)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Создается: Строители</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Пустыня,  Пустыня (Холмы),  Луг,  Луг (Холмы),  Равнина,  Равнина (Холмы),  Снег,  Снег (Холмы),  Тундра,  Тундра (Холмы)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Открыто: Переработка Технология</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Позволяет строителям строить буровую вышку.<br><br>-1 престижа. Можно строить только на клетках суши с <img src="/images/ICON_RESOURCE_OIL.webp" style="height:1em"/> нефтью.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Буровая платформа">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_OFFSHORE_OIL_RIG_NAME-->
+                      <h2 class="civ-name">Буровая платформа
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Offshore Oil Rig.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Добыча: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Престиж для ближайших клеток: -1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Производство</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Производство (Открыто: Прогнозирующие системы Технология)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> туризма от <img src="/images/ICON_CULTURE.webp" style="height:1em"/> {3_YieldName[2]} (требуется Авиация Технология)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Создается: Строители</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Побережье и озеро,  Океан</p>
+                      <p class="civ-ability-desc" style="text-align:left">Открыто: Переработка Технология</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Позволяет строителям строить плавучую буровую платформу.<br><br>-1 престижа. Можно строить только на клетках побережья или озера с <img src="/images/ICON_RESOURCE_OIL.webp" style="height:1em"/> нефтью.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Великая стена">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_GREAT_WALL_NAME-->
+                      <h2 class="civ-name">Великая стена
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Great Wall.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Добыча: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Модификатор обороны: 4</p>
+                      <p class="civ-ability-desc" style="text-align:left">Размещенный здесь юнит получил бонус для укрепления.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Престиж для ближайших клеток: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Производство</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> туризма от <img src="/images/ICON_CULTURE.webp" style="height:1em"/> {3_YieldName[2]} (требуется Авиация Технология)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Создается: Строители</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Пустыня,  Пустыня (Холмы),  Луг,  Луг (Холмы),  Равнина,  Равнина (Холмы),  Снег,  Снег (Холмы),  Тундра,  Тундра (Холмы)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Вулканическая почва</p>
+                      <p class="civ-ability-desc" style="text-align:left">Открыто: Каменная кладка Технология</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Позволяет строителям создавать Великую стену (уникально для Китая).<br><br>+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> производства. Наземные боевые юниты, оказавшиеся на клетке со стеной получают +4 к <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> боевой мощи в обороне и автоматически укрепляются на 2 хода.<br><br>+1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> золота за каждую соседнюю Великую стену. +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Культуры за каждую соседнюю Великую стену после изучения технологии &quot;Замки&quot;. Даёт <img src="/images/ICON_TOURISM.webp" style="height:1em"/> туризм после изучения Полёта.<br><br>Можно построить только вдоль границы империи.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Ветроэлектростанция">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_WIND_FARM_NAME-->
+                      <h2 class="civ-name">Ветроэлектростанция
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Wind Farm.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Добыча: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Престиж для ближайших клеток: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Золото</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Производство</p>
+                      <p class="civ-ability-desc" style="text-align:left">Создается: Строители</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Пустыня (Холмы),  Луг (Холмы),  Равнина (Холмы),  Снег (Холмы),  Тундра (Холмы)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Открыто: Композиты Технология</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Позволяет строителям строить ветроэлектростанции.<br><br>+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> золота. +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> к производству. Дает 2 ед. <img src="/images/ICON_POWER.webp" style="height:1em"/> энергии за ход. Можно построить только на холмах.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Взлетная полоса">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_AIRSTRIP_NAME-->
+                      <h2 class="civ-name">Взлетная полоса
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Airstrip.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Престиж для ближайших клеток: -1</p>
+                      <p class="civ-ability-desc" style="text-align:left">Создается: Военный инженер</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Пустыня,  Луг,  Равнина,  Снег,  Тундра</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Вулканическая почва</p>
+                      <p class="civ-ability-desc" style="text-align:left">Открыто: Авиация Технология</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Позволяет военному инженеру построить взлетную полосу.<br><br>Поддерживает до 3 воздушных юнитов. Можно построить только на ровном ландшафте. -1 престижа</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Вигвам">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MEKEWAP_NAME-->
+                      <h2 class="civ-name">Вигвам
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Mekewap.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Добыча: Лечение 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Жилья</p>
+                      <p class="civ-ability-desc" style="text-align:left">Престиж для ближайших клеток: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Производство</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Производство (Открыто: Госслужба Социальный институт)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Создается: Строители</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Пустыня,  Пустыня (Холмы),  Луг,  Луг (Холмы),  Равнина,  Равнина (Холмы),  Снег,  Снег (Холмы),  Тундра,  Тундра (Холмы)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Открыто: Гончарное дело Технология</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Позволяет строителям строить Вигвам - уникальную постройку Кри.<br><br>+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Производства и +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Жилья.<br><br>Дополнительные +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Производства и +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Жилья после изучения Госслужбы. +1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Золота при соседстве с Редким ресурсом. Дополнительные +2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Золота за каждый соседний Редкий ресурс после изучения Картографии. +1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Пищи за каждые 2 соседних Бонусных Ресурса, бонус повышается до +1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Пищи за каждый соседний бонусный Ресурс после открытия социального института &quot;Охрана природы&quot;.<br><br>Можно построить только рядом с Бонусными или Редкими ресурсами. Нельзя построить рядом с другим Вигвамом.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Геотермальная электростанция">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_GEOTHERMAL_PLANT_NAME-->
+                      <h2 class="civ-name">Геотермальная электростанция
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Geothermal Plant.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Добыча: <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Престиж для ближайших клеток: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Производство</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Наука</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Производство (Открыто: Синтетические материалы Технология)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Наука (Открыто: Синтетические материалы Технология)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Создается: Строители</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Геотермальное поле</p>
+                      <p class="civ-ability-desc" style="text-align:left">Открыто: Химия Технология</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Позволяет рабочим строить геотермальные электростанции.<br><br>+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> производства. +1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> науки. Даёт 3 <img src="/images/ICON_POWER.webp" style="height:1em"/> энергии в ход.<br>Дополнительные +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> производства, +1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> науки и +3 <img src="/images/ICON_POWER.webp" style="height:1em"/> энергии в ход после изучения Синтетических Материалов.<br>Должна быть построена на геотермальном поле.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Гигантская голова">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_COLOSSAL_HEAD_NAME-->
+                      <h2 class="civ-name">Гигантская голова
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Colossal Head.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Добыча: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Жилья</p>
+                      <p class="civ-ability-desc" style="text-align:left">Престиж для ближайших клеток: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Вера</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Пища</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> туризма от <img src="/images/ICON_FAITH.webp" style="height:1em"/> {3_YieldName[2]} (требуется Авиация Технология)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Создается: Строители</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Пустыня,  Пустыня (Холмы),  Луг,  Луг (Холмы),  Равнина,  Равнина (Холмы),  Тундра,  Тундра (Холмы)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Вулканическая почва</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Позволяет строителям создавать гигантские головы.<br><br>+2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> веры, +1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> пищи и +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> жилья. +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> веры за каждые 2 соседние клетки тропических лесов, а после открытия гуманизма – за каждую клетку. +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> веры за каждые 2 соседние клетки леса, а после открытия гуманизма – за каждую клетку. <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Туризм за <img src="/images/ICON_FAITH.webp" style="height:1em"/> веру после исследования авиации. Нельзя строить в снегах и на заснеженных холмах.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Горный тоннель">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MOUNTAIN_TUNNEL_NAME-->
+                      <h2 class="civ-name">Горный тоннель
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Mountain Tunnel.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Престиж для ближайших клеток: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">Создается: Военный инженер</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Пустыня (Горы),  Луг (Горы),  Равнина (Горы),  Снег (Горы),  Тундра (Горы)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Открыто: Военная наука Технология</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Позволяет военным инженерам строить горный тоннель.<br><br>Действует как портал, ведущий сквозь горную цепь: юниты проходят через него и выходят уже из другого портала, расходуя на это 2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> очка перемещения. <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> Торговые пути, проходящие по этой постройке, получают больше <img src="/images/ICON_GOLD.webp" style="height:1em"/> золота от районов в пункте назначения. Можно построить только рядом с клеткой гор. Нельзя разграбить или убрать.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Городской парк">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_CITY_PARK_NAME-->
+                      <h2 class="civ-name">Городской парк
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/City Park.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Добыча: Лечение 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">Престиж для ближайших клеток: 2</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Культура</p>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Наука</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> туризма от <img src="/images/ICON_CULTURE.webp" style="height:1em"/> {3_YieldName[2]} (требуется Авиация Технология)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Создается: Строители</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Пустыня,  Луг,  Равнина,  Снег,  Тундра</p>
+                      <p class="civ-ability-desc" style="text-align:left">Открыто: Игры и развлечения Социальный институт</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Уникальное <img src="/images/ICON_GOVERNOR.webp" style="height:1em"/> губернаторское улучшение, которое можно построить только в городе с губернатором Лян и повышением &quot;Парки и развлечения&quot;. Одна постройка на город. +3 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Науки, +2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Культуры, +2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Жилья, +1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> Довольства и +2 Престижа соседним клеткам.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Зиккурат">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_ZIGGURAT_NAME-->
+                      <h2 class="civ-name">Зиккурат
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Ziggurat.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Добыча: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Жилья</p>
+                      <p class="civ-ability-desc" style="text-align:left">Престиж для ближайших клеток: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Наука</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Культура (Открыто: Естественная история Социальный институт)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> туризма от <img src="/images/ICON_CULTURE.webp" style="height:1em"/> {3_YieldName[2]} (требуется Авиация Технология)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Создается: Строители</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Пустыня,  Луг,  Равнина,  Снег,  Тундра</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Речные поймы,  Речная пойма (луговая),  Речная пойма (равнинная)</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Позволяет рабочим строить Зиккурат, уникальное для Шумеров улучшение.<br><br>+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> жилье. +2 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> науки.<br><br>+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> культуры при соседстве с рекой. +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> веры при соседстве с районом или двумя фермами после открытия ранней империи.<br><br>Невозможно построить рядом с другим зиккуратом или на холме.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Каменоломня">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_QUARRY_NAME-->
+                      <h2 class="civ-name">Каменоломня
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Quarry.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Добыча: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Престиж для ближайших клеток: -1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Производство</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Производство (Открыто: Ракетостроение Технология)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Производство (Открыто: Военная инженерия Технология)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> туризма от <img src="/images/ICON_CULTURE.webp" style="height:1em"/> {3_YieldName[2]} (требуется Авиация Технология)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Создается: Строители</p>
+                      <p class="civ-ability-desc" style="text-align:left">Открыто: Горное дело Технология</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Позволяет строителям строить каменоломни.<br><br>+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> производства. -1 престижа. Можно строить только на определенных ресурсах.<br><br>При постройке на редких ресурсах город получит эти ресурсы.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Кампонг">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_KAMPUNG_NAME-->
+                      <h2 class="civ-name">Кампонг
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Kampung.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Добыча: Лечение 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Жилья</p>
+                      <p class="civ-ability-desc" style="text-align:left">Престиж для ближайших клеток: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Производство</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Производство (Открыто: Строительная инженерия Социальный институт)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> туризма от <img src="/images/ICON_FOOD.webp" style="height:1em"/> {3_YieldName[2]} (требуется Авиация Технология)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Создается: Строители</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Побережье и озеро</p>
+                      <p class="civ-ability-desc" style="text-align:left">Открыто: Судостроение Технология</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Позволяет Строителям создавать Кампонг, уникальный для Индонезии.<br><br>+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Производства и +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Жилья.<br><br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Пищи и +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Веры за каждую соседнюю Рыбацкую Лодку. +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> жилья после открытия технологии &quot;Массовое производство&quot;. +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> производства после открытия социального института &quot;Строительная инженерия&quot;. Даёт <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Туризм, равный количеству <img src="/images/ICON_FOOD.webp" style="height:1em"/> пищи после открытия Полёта.<br><br>Можно построить только на клетках побережья или озера по соседству с морским ресурсом.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Капах-ньян">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MOUNTAIN_ROAD_NAME-->
+                      <h2 class="civ-name">Капах-ньян
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Qhapaq Ñan.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Престиж для ближайших клеток: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">Создается: Строители ИЛИ  Пращники вараках ИЛИ  Рейнджер ИЛИ  Разведчики ИЛИ  Спецназ</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Пустыня (Горы),  Луг (Горы),  Равнина (Горы),  Снег (Горы),  Тундра (Горы)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Открыто: Международная торговля Социальный институт</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Позволяет строителям возводить капах-ньян, уникальную постройку Пачакутека.<br><br>Действует как портал, ведущий сквозь горную цепь: юниты проходят через него и выходят уже из другого портала, расходуя на это 2 <img src="/images/ICON_MOVEMENT.webp" style="height:1em"/> очка перемещения. <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> Торговые пути, проходящие по этой постройке, получают больше <img src="/images/ICON_GOLD.webp" style="height:1em"/> золота от районов в пункте назначения. Можно построить только рядом с клеткой гор. Нельзя разграбить или убрать.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Каток">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_ICE_HOCKEY_RINK_NAME-->
+                      <h2 class="civ-name">Каток
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Ice Hockey Rink.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Добыча: Лечение 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">Престиж для ближайших клеток: 2</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Производство (Открыто: Профессиональный спорт Социальный институт)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Пища (Открыто: Профессиональный спорт Социальный институт)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> туризма от <img src="/images/ICON_CULTURE.webp" style="height:1em"/> {3_YieldName[2]} (требуется Авиация Технология)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Создается: Строители</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Снег,  Снег (Холмы),  Тундра,  Тундра (Холмы)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Открыто: Дипломатическая служба Социальный институт</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Позволяет строителям строить хоккейный каток (уникально для Канады).<br><br>+1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> к довольству. +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> к культуре за каждую соседнюю клетку тундры, тундровых холмов, снега и заснеженных холмов. Приносит <img src="/images/ICON_TOURISM.webp" style="height:1em"/> туризм от культуры после открытия технологии «Авиация». +2 <img src="/images/ICON_FOOD.webp" style="height:1em"/> к пище и <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> производству после открытия социального института «Профессиональный спорт». +4 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> к культуре при соседстве со стадионом. Можно построить в тундре, на тундровых холмах, на снегу и заснеженных холмах. Одна постройка на город. +2 к престижу.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Курган">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_KURGAN_NAME-->
+                      <h2 class="civ-name">Курган
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Kurgan.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Добыча: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Престиж для ближайших клеток: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Вера</p>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Золото</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> туризма от <img src="/images/ICON_FAITH.webp" style="height:1em"/> {3_YieldName[2]} (требуется Авиация Технология)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Создается: Строители</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Пустыня,  Пустыня (Холмы),  Луг,  Луг (Холмы),  Равнина,  Равнина (Холмы),  Снег,  Снег (Холмы),  Тундра,  Тундра (Холмы)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Открыто: Животноводство Технология</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Уникальное улучшение Скифии.<br><br>+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> веры и +3 <img src="/images/ICON_GOLD.webp" style="height:1em"/> золота.<br>+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> веры и +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> производство за каждое соседнее пастбище. Бонус соседства <img src="/images/ICON_FAITH.webp" style="height:1em"/> веры от пастбищ увеличивается до +2 после открытия технологии &quot;Стремя&quot;. Даёт <img src="/images/ICON_TOURISM.webp" style="height:1em"/> туризм в размере <img src="/images/ICON_FAITH.webp" style="height:1em"/> веры после изучения Авиации.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Курганы Кахокии">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MOUND_NAME-->
+                      <h2 class="civ-name">Курганы Кахокии
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Cahokia Mounds.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Добыча: Лечение 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Жилья</p>
+                      <p class="civ-ability-desc" style="text-align:left">Престиж для ближайших клеток: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Золото</p>
+                      <p class="civ-ability-desc" style="text-align:left">Создается: Строители</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Пустыня,  Луг,  Равнина,  Тундра</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Речные поймы,  Речная пойма (луговая),  Речная пойма (равнинная)</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Позволяет строителям строить курганы Кахокии.<br><br>+3 <img src="/images/ICON_GOLD.webp" style="height:1em"/> золота. Города получают +1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> ед. довольства от первого построенного кургана. После открытия естественной истории города получают еще +1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> ед. довольства от второго кургана. +1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> ед. пищи за 2 соседних района после открытия феодализма или за каждый соседний район после открытия стандартизации. Дает +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> к жилью. Дополнительное <img src="/images/ICON_HOUSING.webp" style="height:1em"/> жилье после открытия культурного наследия. Нельзя построить рядом с другими курганами Кахокии.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Лагерь">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_CAMP_NAME-->
+                      <h2 class="civ-name">Лагерь
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Camp.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Добыча: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Жилья</p>
+                      <p class="civ-ability-desc" style="text-align:left">Престиж для ближайших клеток: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Золото</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Производство (Открыто: Меркантилизм Социальный институт)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Пища (Открыто: Меркантилизм Социальный институт)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Золото (Открыто: Синтетические материалы Технология)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> туризма от <img src="/images/ICON_CULTURE.webp" style="height:1em"/> {3_YieldName[2]} (требуется Авиация Технология)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Создается: Строители</p>
+                      <p class="civ-ability-desc" style="text-align:left">Открыто: Животноводство Технология</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Позволяет строителям возводить лагеря.<br><br>+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> золота. Можно строить только на определенных ресурсах.<br><br>При постройке на редких ресурсах город получит эти ресурсы.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Лесопилка">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_LUMBER_MILL_NAME-->
+                      <h2 class="civ-name">Лесопилка
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Lumber Mill.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Добыча: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Престиж для ближайших клеток: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Производство</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Производство (Открыто: Баллистика Технология)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Производство (Открыто: Синтетические материалы Технология)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> туризма от <img src="/images/ICON_CULTURE.webp" style="height:1em"/> {3_YieldName[2]} (требуется Авиация Технология)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Создается: Строители</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Леса,  Тропический лес (Требуется: Меркантилизм)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Открыто: Строительство Технология</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Позволяет строителям строить лесопилку.<br><br>+2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> производства. Можно строить только в лесах. После открытия меркантилизма можно строить лесопилки в тропических лесах.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Линии Наски">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_NAZCA_LINE_NAME-->
+                      <h2 class="civ-name">Линии Наски
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Nazca Line.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Добыча: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Престиж для ближайших клеток: 1</p>
+                      <p class="civ-ability-desc" style="text-align:left">Создается: Строители</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Пустыня</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Позволяет строителям строить улучшение линии Наски.<br><br>+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> к вере на соседних клетках. +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> к вере на соседних клетках с ресурсами. +1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> к пище на соседних клетках пустыни и пустынных холмов после открытия госслужбы. +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> к производству на соседних клетках равнин после открытия массового производства. +1 к престижу. Можно построить только на пустынной равнине. Эту клетку нельзя обрабатывать.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Лыжный курорт">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_SKI_RESORT_NAME-->
+                      <h2 class="civ-name">Лыжный курорт
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Ski Resort.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Престиж для ближайших клеток: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> туризма от  {3_YieldName[2]}</p>
+                      <p class="civ-ability-desc" style="text-align:left">Создается: Строители</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Пустыня (Горы),  Луг (Горы),  Равнина (Горы),  Снег (Горы),  Тундра (Горы)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Открыто: Профессиональный спорт Социальный институт</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Позволяет строителям строить лыжный курорт.<br><br>Приносит +4 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> туризма. Дает <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> довольство. Можно строить только в горах. Нельзя строить рядом с другим лыжным курортом. Эту клетку нельзя разорять, обрабатывать или убирать.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Махавихара">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MAHAVIHARA_NAME-->
+                      <h2 class="civ-name">Махавихара
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Mahavihara.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Добыча: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Жилья</p>
+                      <p class="civ-ability-desc" style="text-align:left">Престиж для ближайших клеток: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Наука</p>
+                      <p class="civ-ability-desc" style="text-align:left">Создается: Строители</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Пустыня,  Луг,  Равнина,  Снег,  Тундра</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Позволяет строителям строить махавихару.<br><br>+2 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> науки и +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> жилья. +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> веры за каждое соседнее священное место и +1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> науки за каждый соседний кампус. +1 к <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> науке за каждый соседний кампус после исследования научной теории. После строительства первой махавихары игрок получает случайную технологию. Можно строить только на ровном ландшафте и не по соседству с другой махавихарой.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Миссия">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MISSION_NAME-->
+                      <h2 class="civ-name">Миссия
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Mission.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Добыча: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Престиж для ближайших клеток: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Вера</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> Наука (Открыто: Просвещение Социальный институт)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Создается: Строители</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Пустыня,  Пустыня (Холмы),  Луг,  Луг (Холмы),  Равнина,  Равнина (Холмы),  Снег,  Снег (Холмы),  Тундра,  Тундра (Холмы)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Открыто: Теология Социальный институт</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Уникальное улучшение Испании.<br><br>+2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> веры. +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> веры и +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> производства, если построено на расстоянии 8 и более клеток от <img src="/images/ICON_CAPITAL.webp" style="height:1em"/> столицы, +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> жилья в обратном случае.<br><br>+1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> науки за каждый соседний кампус и священное место. +2 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> науки после открытия просвещения.<br><br>Не может быть построено рядом с другой миссией</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Моаи">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MOAI_NAME-->
+                      <h2 class="civ-name">Моаи
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Moai.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Добыча: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Престиж для ближайших клеток: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Культура</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> туризма от <img src="/images/ICON_CULTURE.webp" style="height:1em"/> {3_YieldName[2]} (требуется Авиация Технология)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Создается: Строители</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Луг,  Луг (Холмы),  Равнина,  Равнина (Холмы)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Вулканическая почва</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Позволяет строителям строить моаи.<br><br>+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> к культуре. +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> к культуре за каждые 2 соседних моаи. +2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> к культуре на клетках вулканической почвы или рядом с ними. +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> к культуре рядом с клетками побережья или озера. Дополнительная <img src="/images/ICON_CULTURE.webp" style="height:1em"/> культура и <img src="/images/ICON_TOURISM.webp" style="height:1em"/> туризм по мере продвижения по дереву технологий и социальных институтов. Можно построить на равнинах и лугах (с холмами или без них), а также на вулканической почве. Нельзя построить рядом с клетками лесов или тропических лесов.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Монастырь">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MONASTERY_NAME-->
+                      <h2 class="civ-name">Монастырь
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Monastery.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Добыча: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Жилья</p>
+                      <p class="civ-ability-desc" style="text-align:left">Престиж для ближайших клеток: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Вера</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Пища</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> туризма от <img src="/images/ICON_FAITH.webp" style="height:1em"/> {3_YieldName[2]} (требуется Авиация Технология)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Создается: Строители</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Пустыня,  Пустыня (Холмы),  Луг,  Луг (Холмы),  Равнина,  Равнина (Холмы),  Снег,  Снег (Холмы),  Тундра,  Тундра (Холмы)</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Позволяет строителям строить монастыри.<br><br>Монастыри дают +3 <img src="/images/ICON_FAITH.webp" style="height:1em"/> веры, +1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> пищи и +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> жилья. +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Веры за каждые 2 соседних района (повышается до каждого района после открытия &quot;Реформации&quot;). Дружественный религиозный юнит на этой клетке восстанавливает +15 ОЗ, если на этом ходу не был атакован. Нельзя построить рядом с другим монастырем..</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Морское поселение">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_SEASTEAD_NAME-->
+                      <h2 class="civ-name">Морское поселение
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Seastead.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Добыча: Лечение 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+4 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Жилья</p>
+                      <p class="civ-ability-desc" style="text-align:left">Престиж для ближайших клеток: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Пища</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> туризма от <img src="/images/ICON_CULTURE.webp" style="height:1em"/> {3_YieldName[2]}</p>
+                      <p class="civ-ability-desc" style="text-align:left">Создается: Строители</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Побережье и озеро,  Океан</p>
+                      <p class="civ-ability-desc" style="text-align:left">Открыто: Морские поселения Технология</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Позволяет строителям строить морское поселение.<br><br>+2 <img src="/images/ICON_FOOD.webp" style="height:1em"/> к пище. +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> к производству за каждое соседнее рыбацкое судно. Рыбацкое судно получает +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> к производству за каждое соседнее морское поселение. +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> к культуре и <img src="/images/ICON_TOURISM.webp" style="height:1em"/> туризму за каждый соседний риф. +2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> к жилью. Можно построить только на клетках побережья, озера или океана. Нельзя построить рядом с другим морским поселением. </p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Морской курорт">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_BEACH_RESORT_NAME-->
+                      <h2 class="civ-name">Морской курорт
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Seaside Resort.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Добыча: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Требуется: Престиж &gt;= 2</p>
+                      <p class="civ-ability-desc" style="text-align:left">150% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> туризма от престижа</p>
+                      <p class="civ-ability-desc" style="text-align:left">Престиж для ближайших клеток: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> туризма от <img src="/images/ICON_GOLD.webp" style="height:1em"/> {3_YieldName[2]}</p>
+                      <p class="civ-ability-desc" style="text-align:left">Создается: Строители</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Пустыня,  Пустыня (Холмы),  Луг,  Луг (Холмы),  Равнина,  Равнина (Холмы)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Вулканическая почва</p>
+                      <p class="civ-ability-desc" style="text-align:left">Открыто: Радио Технология</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Позволяет строителям создавать морские курорты.<br><br>Дает <img src="/images/ICON_TOURISM.webp" style="height:1em"/> туризм, равный 150% престижа клетки. Можно строить только на прибрежных клетках. Необходим притягивающий престиж и выше.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Музей под открытым небом">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_OPEN_AIR_MUSEUM_NAME-->
+                      <h2 class="civ-name">Музей под открытым небом
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Open-Air Museum.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Добыча: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Престиж для ближайших клеток: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> туризма от <img src="/images/ICON_CULTURE.webp" style="height:1em"/> {3_YieldName[2]}</p>
+                      <p class="civ-ability-desc" style="text-align:left">Создается: Строители</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Пустыня,  Пустыня (Холмы),  Луг,  Луг (Холмы),  Равнина,  Равнина (Холмы),  Снег,  Снег (Холмы),  Тундра,  Тундра (Холмы)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Открыто: Дипломатическая служба Социальный институт</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Позволяет строителям строить музей под открытым небом (уникально для Швеции).<br><br>Дает городу +2 к лояльности за ход. +2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> к культуре и +2 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> к туризму за каждый тип ландшафта (снег, тундра, пустыня, равнина и луга), на котором основан хотя бы один шведский город. Одна постройка на город. Клетки с музеем под открытым небом не могут быть переданы другому городу.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Нубийская пирамида">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_PYRAMID_NAME-->
+                      <h2 class="civ-name">Нубийская пирамида
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Nubian Pyramid.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Добыча: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Престиж для ближайших клеток: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Вера</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Пища</p>
+                      <p class="civ-ability-desc" style="text-align:left">Создается: Строители</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Пустыня,  Пустыня (Холмы),  Луг,  Равнина</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Речные поймы,  Речная пойма (луговая),  Речная пойма (равнинная)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Открыто: Мастерство Социальный институт</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Уникальное улучшение, открывается в социальном институте Мастерство. +2 <img src="/images/ICON_FOOD.webp" style="height:1em"/> пищи и +2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> веры.<br>Нубийские районы получают стандартный бонус за соседство с Нубийской пирамидой. <br><br>Дополнительный доход от соседства с районами : +1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> пищи от центра города,<br>+1 <img src="/images/ICON_SCIENCE.webp" style="height:1em"/> науки от кампуса,<br>+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> производства от промышленной зоны, военного лагеря и аэродрома,<br>+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> культуры от театральной площади,<br>+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> веры от священного места,<br>+1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> золота от центра коммерции и гавани,<br>+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> культуры и +2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> золота от правительственной площади и дипломатического квартала.<br><br>Можно построить в пустыне, пустынных холмах, поймах, равнинах и лугах. Одна пирамида на город, нельзя построить рядом с другой пирамидой.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Охотничий дом">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_LIME_THULE_WBH_NAME-->
+                      <h2 class="civ-name">Охотничий дом
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Hunter's House.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Добыча: Лечение 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Жилья</p>
+                      <p class="civ-ability-desc" style="text-align:left">Престиж для ближайших клеток: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> туризма от <img src="/images/ICON_FAITH.webp" style="height:1em"/> {3_YieldName[2]} (требуется Авиация Технология)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Создается: Строители ИЛИ  Охотник на собачьей упряжке</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Пустыня,  Пустыня (Холмы),  Луг,  Луг (Холмы),  Равнина,  Равнина (Холмы),  Снег,  Снег (Холмы),  Тундра,  Тундра (Холмы)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Леса</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Уникальное улучшение Туле. +1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> пищи, если находится в тундре (бонус удваивается, если находится на клетке снега).<br>Получает +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> веры и +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> культуры за каждый соседний морской ресурс или лагерь после изучения Международной торговли.<br>Приносит туризм, равный вере, после исследования Авиации.<br><br>Должен быть рядом с ресурсом, может быть расположен в лесу, не может быть расположен рядом с другим охотничим домом.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Па">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MAORI_PA_NAME-->
+                      <h2 class="civ-name">Па
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Pā.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Модификатор обороны: 4</p>
+                      <p class="civ-ability-desc" style="text-align:left">Размещенный здесь юнит получил бонус для укрепления.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Престиж для ближайших клеток: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">Создается: Тоа</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Пустыня (Холмы),  Луг (Холмы),  Равнина (Холмы),  Снег (Холмы),  Тундра (Холмы)</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Позволяет тоа строить па (уникальное здание маори).<br><br>Находящийся здесь юнит получает +4 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> к обороноспособности и автоматически получает укрепление на 2 хода. Юниты маори, размещенные в па, восстанавливают ОЗ, даже если перемещались или были атакованы. Можно строить только на холмах.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Пайридаэза">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_PAIRIDAEZA_NAME-->
+                      <h2 class="civ-name">Пайридаэза
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Pairidaeza.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Добыча: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Жилья</p>
+                      <p class="civ-ability-desc" style="text-align:left">Престиж для ближайших клеток: 1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Культура</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Золото</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Культура (Открыто: Дипломатическая служба Социальный институт)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> туризма от <img src="/images/ICON_CULTURE.webp" style="height:1em"/> {3_YieldName[2]} (требуется Авиация Технология)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Создается: Строители</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Пустыня,  Пустыня (Холмы),  Луг,  Луг (Холмы),  Равнина,  Равнина (Холмы)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Открыто: Ранняя империя Социальный институт</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Позволяет строителям строить паридаэзу (Уникально для Персии).<br><br>+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> культуры, +2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> золота и +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> жилья. +1 престижа всем соседним клеткам.<br><br>+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> культуры за каждое соседнее священное место, кампус, театральную площадь и центр города. +1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> золота за каждый соседний центр коммерции, гавань, промышленную зону и центр города. Дополнительная +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> культура после открытия социального института &quot;Дипломатическая служба&quot;. Даёт <img src="/images/ICON_TOURISM.webp" style="height:1em"/> туризм после открытия Полёта.<br><br>Нельзя построить на клетках снега, тундры или поймы. Нельзя построить рядом с другой паридаэзой.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Пастбище">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_PASTURE_NAME-->
+                      <h2 class="civ-name">Пастбище
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Pasture.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Добыча: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Жилья</p>
+                      <p class="civ-ability-desc" style="text-align:left">Престиж для ближайших клеток: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Производство</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Пища (Открыто: Стремя Технология)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Производство (Открыто: Стандартизация Технология)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Пища (Открыто: Роботехника Технология)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> туризма от <img src="/images/ICON_CULTURE.webp" style="height:1em"/> {3_YieldName[2]} (требуется Авиация Технология)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Создается: Строители</p>
+                      <p class="civ-ability-desc" style="text-align:left">Открыто: Животноводство Технология</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Позволяет строителям создавать пастбища.<br><br>+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> производства. Можно строить только на определенных ресурсах.<br><br>При постройке на стратегических ресурсах город получит эти ресурсы.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Плантация">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_PLANTATION_NAME-->
+                      <h2 class="civ-name">Плантация
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Plantation.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Добыча: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Жилья</p>
+                      <p class="civ-ability-desc" style="text-align:left">Престиж для ближайших клеток: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Золото</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Пища (Открыто: Научная теория Технология)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Золото (Открыто: Глобализация Социальный институт)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Пища (Открыто: Средневековые ярмарки Социальный институт)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> туризма от <img src="/images/ICON_CULTURE.webp" style="height:1em"/> {3_YieldName[2]} (требуется Авиация Технология)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Создается: Строители</p>
+                      <p class="civ-ability-desc" style="text-align:left">Открыто: Орошение Технология</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Позволяет строителям строить плантации.<br><br>+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> золота. +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> если построена на плоской клетке.<br><br>Если построена на ресурсе роскоши, город начнёт получать единицу этого ресурса.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Поле для гольфа">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_GOLF_COURSE_NAME-->
+                      <h2 class="civ-name">Поле для гольфа
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Golf Course.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Добыча: Лечение 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">Престиж для ближайших клеток: 1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Культура</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Золото</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Золото (Открыто: Просвещение Социальный институт)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Культура (Открыто: Просвещение Социальный институт)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> туризма от <img src="/images/ICON_CULTURE.webp" style="height:1em"/> {3_YieldName[2]} (требуется Авиация Технология)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Создается: Строители</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Луг,  Луг (Холмы),  Равнина,  Равнина (Холмы),  Снег,  Снег (Холмы),  Тундра,  Тундра (Холмы)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Открыто: Игры и развлечения Социальный институт</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Уникальное улучшение Шотландии.<br><br>+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> золота, +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> культура, +1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> довольства и +1 престижа всем соседним клеткам. +1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> золота и +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> культуры, если расположено рядом с центром города. +1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> довольство и +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> культура, если расположено рядом с развлекательным комплексом.<br><br>Дополнительное +1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> довольство после открытия социального института &quot;Гильдии&quot;. +1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> золота и +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> культуры после открытия социального института &quot;Просвещение&quot;. +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Жилья после открытия социального института &quot;Глобализация&quot;. Дает <img src="/images/ICON_TOURISM.webp" style="height:1em"/> туризм после открытия Полёта.<br><br>Не может быть построено на клетках пустыни и пустынных холмов. Одно улучшение на город. Клетка с полем для гольфа не может быть передана другому городу.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Польдер">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_POLDER_NAME-->
+                      <h2 class="civ-name">Польдер
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Polder.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Добыча: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Жилья</p>
+                      <p class="civ-ability-desc" style="text-align:left">Престиж для ближайших клеток: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Пища</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Производство</p>
+                      <p class="civ-ability-desc" style="text-align:left">+4 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Золото (Открыто: Строительная инженерия Социальный институт)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Создается: Строители</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Побережье и озеро</p>
+                      <p class="civ-ability-desc" style="text-align:left">Открыто: Феодализм Социальный институт</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Уникальное улучшение Голландии.<br><br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> пищи, +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> производства и +0.5 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> жилья.<br><br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> пищи за каждый соседний польдер (повышается до +2 после открытия технологии &quot;Стандартизация&quot;). +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> производства за каждую соседнюю гавань. +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> производства за каждые два соседних польдера (бонус повышается до +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> производства за каждый соседний польдер после открытия технологии &quot;Стандартизация&quot;). +4 <img src="/images/ICON_GOLD.webp" style="height:1em"/> золота после изучения социального института &quot;Строительная инженерия&quot;.<br><br>Можно построить только на клетках побережья или озера рядом с одной и более проходимыми клетками суши.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Пусковая шахта">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MISSILE_SILO-->
+                      <h2 class="civ-name">Пусковая шахта
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Missile Silo.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Престиж для ближайших клеток: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">Создается: Военный инженер</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Пустыня,  Луг,  Равнина,  Снег,  Тундра</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Вулканическая почва</p>
+                      <p class="civ-ability-desc" style="text-align:left">Открыто: Ракетостроение Технология</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Позволяет военным инженерам строить пусковую шахту.<br><br>Служит местом запуска ядерных и термоядерных устройств.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Римская крепость">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_ROMAN_FORT_NAME-->
+                      <h2 class="civ-name">Римская крепость
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Roman Fort.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Модификатор обороны: 4</p>
+                      <p class="civ-ability-desc" style="text-align:left">Размещенный здесь юнит получил бонус для укрепления.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Престиж для ближайших клеток: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">Создается: Легион</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Пустыня,  Пустыня (Холмы),  Луг,  Луг (Холмы),  Равнина,  Равнина (Холмы),  Снег,  Снег (Холмы),  Тундра,  Тундра (Холмы)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Вулканическая почва</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Позволяет римскому легиону строить римские крепости (Уникально для Рима).<br><br>Находящийся здесь юнит получает +4 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> к обороноспособности и автоматически получает укрепление на 2 хода.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Рудник">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_MINE_NAME-->
+                      <h2 class="civ-name">Рудник
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Mine.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Добыча: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Престиж для ближайших клеток: -1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Производство</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Производство (Открыто: Ученичество Технология)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Производство (Открыто: Индустриализация Технология)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Производство (Открыто: «Умные» материалы Технология)</p>
+                      <p class="civ-ability-desc" style="text-align:left">0% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> туризма от <img src="/images/ICON_CULTURE.webp" style="height:1em"/> {3_YieldName[2]} (требуется Авиация Технология)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Создается: Строители</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Пустыня (Холмы),  Луг (Холмы),  Равнина (Холмы),  Снег (Холмы),  Тундра (Холмы)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Вулканическая почва</p>
+                      <p class="civ-ability-desc" style="text-align:left">Открыто: Горное дело Технология</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Позволяет строителям строить рудники.<br><br>+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> производства. -1 престижа. Можно строить только на холмах или на определенных ресурсах.<br><br>При постройке на редких или стратегических ресурсах город получит эти ресурсы.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Рыбацкое судно">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_FISHING_BOATS_NAME-->
+                      <h2 class="civ-name">Рыбацкое судно
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Fishing Boats.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Добыча: Лечение 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Жилья</p>
+                      <p class="civ-ability-desc" style="text-align:left">Престиж для ближайших клеток: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Пища</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Производство</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Золото (Открыто: Картография Технология)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Пища (Открыто: Пластмассы Технология)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Производство (Открыто: Колониализм Социальный институт)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> туризма от <img src="/images/ICON_CULTURE.webp" style="height:1em"/> {3_YieldName[2]} (требуется Авиация Технология)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Создается: Строители ИЛИ  Джахази</p>
+                      <p class="civ-ability-desc" style="text-align:left">Открыто: Мореходство Технология</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Позволяет строителям создавать рыбацкие суда.<br><br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> пищи и +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> производства.<br><br>При постройке на редких ресурсах город получит эти ресурсы.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Рыбный промысел">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_FISHERY_NAME-->
+                      <h2 class="civ-name">Рыбный промысел
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Fishery.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Добыча: Лечение 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Жилья</p>
+                      <p class="civ-ability-desc" style="text-align:left">Престиж для ближайших клеток: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Пища</p>
+                      <p class="civ-ability-desc" style="text-align:left">Создается: Строители</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Побережье и озеро</p>
+                      <p class="civ-ability-desc" style="text-align:left">Открыто: Навигация по звездам Технология</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Позволяет строителям создавать рыбный промысел.<br><br>+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> жилья и +1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Еды, +1 дополнительной <img src="/images/ICON_FOOD.webp" style="height:1em"/> Пищи за каждый соседний водный ресурс. Может быть построен только на побережье.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Скальный храм">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_ROCK_HEWN_CHURCH_NAME-->
+                      <h2 class="civ-name">Скальный храм
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Rock-Hewn Church.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Добыча: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Престиж для ближайших клеток: 1</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> туризма от <img src="/images/ICON_FAITH.webp" style="height:1em"/> {3_YieldName[2]} (требуется Авиация Технология)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Создается: Строители</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Пустыня (Холмы),  Луг (Холмы),  Равнина (Холмы),  Снег (Холмы),  Тундра (Холмы)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Вулканическая почва</p>
+                      <p class="civ-ability-desc" style="text-align:left">Открыто: Драма и поэзия Социальный институт</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Уникальное улучшение Эфиопии.<br><br>+1 престижа соседним клеткам.<br><br>+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> веры за каждую соседнюю клетку с холмами и горами. После исследования авиации дает <img src="/images/ICON_TOURISM.webp" style="height:1em"/> туризм, равный <img src="/images/ICON_FAITH.webp" style="height:1em"/> вере.<br><br>Можно построить только на холмах и вулканической почве. Нельзя построить рядом с другим Скальным храмом. Может быть только разорено, но не уничтожено стихийными бедствиями.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Скотоводческая ферма">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_OUTBACK_STATION_NAME-->
+                      <h2 class="civ-name">Скотоводческая ферма
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Outback Station.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Добыча: Лечение 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Жилья</p>
+                      <p class="civ-ability-desc" style="text-align:left">Престиж для ближайших клеток: 1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Пища</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Производство</p>
+                      <p class="civ-ability-desc" style="text-align:left">Создается: Строители</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Пустыня,  Пустыня (Холмы),  Луг,  Луг (Холмы),  Равнина,  Равнина (Холмы)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Открыто: Гильдии Социальный институт</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">После открытия социального института &quot;Гильдии&quot; позволяет рабочим строить Скотоводческую Ферму, уникальное улучшение Австралии.<br><br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> пищи и +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Производства. +1 престижа всем соседним клеткам.<br><br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> пищи за каждое соседнее пастбище. +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> производство за каждые 2 соседние скотоводческие фермы после открытия технологии &quot;Индустриализация&quot;. +1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> пищи за каждую соседнюю скотоводческую ферму после открытия социального института &quot;Быстрое развертывание&quot;.<br><br>Может быть построена только на клетках пустыни, лугов или равнин.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Солнечная электростанция">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_SOLAR_FARM_NAME-->
+                      <h2 class="civ-name">Солнечная электростанция
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Solar Farm.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Добыча: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Престиж для ближайших клеток: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Золото</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Производство</p>
+                      <p class="civ-ability-desc" style="text-align:left">Создается: Строители</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Пустыня,  Луг,  Равнина,  Тундра</p>
+                      <p class="civ-ability-desc" style="text-align:left">Открыто: Спутники Технология</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Позволяет строителям строить солнечные электростанции.<br><br>+1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> золота. +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> к производству. Дает 2 ед. <img src="/images/ICON_POWER.webp" style="height:1em"/> энергии за ход. Можно построить только на равнине. Нельзя построить на снегу.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Ступенчатый колодец">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_STEPWELL_NAME-->
+                      <h2 class="civ-name">Ступенчатый колодец
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Stepwell.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Добыча: Лечение 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Жилья</p>
+                      <p class="civ-ability-desc" style="text-align:left">Престиж для ближайших клеток: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Вера</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Пища</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Вера (Открыто: Феодализм Социальный институт)</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Пища (Открыто: Феодализм Социальный институт)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Создается: Строители</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Пустыня,  Луг,  Равнина,  Снег,  Тундра</p>
+                      <p class="civ-ability-desc" style="text-align:left">Открыто: Орошение Технология</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Позволяет строителям строить ступенчатые колодцы (уникально для Индии).<br><br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> пищи, +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> веры и +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> жилья.<br><br>Дополнительные +1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> пищи и +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> веры после открытия социального института &quot;Феодализм&quot; +1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> веры, если построен рядом со священным местом. +1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> пищи за каждую соседнюю ферму. Предотвращает потерю <img src="/images/ICON_FOOD.webp" style="height:1em"/> пищи при засухе.<br><br>Нельзя построить на холмах или рядом с другим ступенчатым колодцем.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Сфинкс">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_SPHINX_NAME-->
+                      <h2 class="civ-name">Сфинкс
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Sphinx.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Добыча: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Престиж для ближайших клеток: 2</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Культура</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Вера</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Культура (Открыто: Дипломатическая служба Социальный институт)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> туризма от <img src="/images/ICON_CULTURE.webp" style="height:1em"/> {3_YieldName[2]} (требуется Авиация Технология)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Создается: Строители</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Пустыня,  Пустыня (Холмы),  Луг,  Луг (Холмы),  Равнина,  Равнина (Холмы),  Тундра,  Тундра (Холмы)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Речные поймы,  Речная пойма (луговая),  Речная пойма (равнинная)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Открыто: Мастерство Социальный институт</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Уникальное улучшение Египта.<br><br>+2 <img src="/images/ICON_FAITH.webp" style="height:1em"/> веры, +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> культуры и +2 престижа соседним клеткам.<br><br>+1 <img src="/images/ICON_FAITH.webp" style="height:1em"/> веры и +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> культуры рядом с чудом света. +1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> пищи и +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> производства в пустыне (кроме пустынных пойм). +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> культуры на пойме.<br><br>+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> культуры при открытии Дипломатической службы. Даёт <img src="/images/ICON_TOURISM.webp" style="height:1em"/> туризм после изучения Полёта.<br><br>Нельзя построить рядом с другим сфинксом, а также на снегу.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Торговый купол">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_TRADING_DOME_NAME-->
+                      <h2 class="civ-name">Торговый купол
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Trading Dome.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Добыча: <img src="/images/ICON_GOLD.webp" style="height:1em"/> 35</p>
+                      <p class="civ-ability-desc" style="text-align:left">Престиж для ближайших клеток: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Золото</p>
+                      <p class="civ-ability-desc" style="text-align:left">Создается: Строители</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Пустыня,  Пустыня (Холмы),  Луг,  Луг (Холмы),  Равнина,  Равнина (Холмы),  Снег,  Снег (Холмы),  Тундра,  Тундра (Холмы)</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Позволяет строителям строить торговый купол.<br><br>+2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> золота. +1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> золота за каждый соседний редкий ресурс. Исходящие международные <img src="/images/ICON_TRADEROUTE.webp" style="height:1em"/> торговые пути дают +1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> золота за каждый торговый купол. Нельзя построить рядом с другим торговым куполом.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Фактория">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_FEITORIA_NAME-->
+                      <h2 class="civ-name">Фактория
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Feitoria.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Престиж для ближайших клеток: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+4 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Золото</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Производство</p>
+                      <p class="civ-ability-desc" style="text-align:left">Создается: Нау</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Побережье и озеро</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Позволяет Нау создавать Фактории, уникальные для Португалии.<br><br>+4 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Золота и +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Производства. Торговые пути Португалии, отправленные в этот город получают +2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Золота и +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Производства.<br><br>Может быть построена только по соседству с Бонусным или Редким ресурсом на территории Города - Государства или игрока, с которыми доступны открытые границы. Может быть построена только на клетках побережья и озера по соседству с клетками земли. Не может быть построена по соседству с другой Факторией. Факторию нельзя уничтожить.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Ферма">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_FARM_NAME-->
+                      <h2 class="civ-name">Ферма
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Farm.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Добыча: Лечение 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Жилья</p>
+                      <p class="civ-ability-desc" style="text-align:left">Престиж для ближайших клеток: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Пища</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> туризма от <img src="/images/ICON_CULTURE.webp" style="height:1em"/> {3_YieldName[2]} (требуется Авиация Технология)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Создается: Строители</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Луг,  Луг (Холмы) (Требуется: Строительная инженерия),  Равнина,  Равнина (Холмы) (Требуется: Строительная инженерия)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Речные поймы,  Речная пойма (луговая),  Речная пойма (равнинная),  Вулканическая почва</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Позволяет строителям создавать фермы.<br><br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> пищи. Можно строить только на лугах и равнинах.<br><br>Постройка ферм рядом с другими фермами дает бонусы к жилью.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Ферма-терраса">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_TERRACE_FARM_NAME-->
+                      <h2 class="civ-name">Ферма-терраса
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Terrace Farm.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Добыча: Лечение 50</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Жилья</p>
+                      <p class="civ-ability-desc" style="text-align:left">Престиж для ближайших клеток: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Пища</p>
+                      <p class="civ-ability-desc" style="text-align:left">Создается: Строители</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Пустыня (Холмы),  Луг (Холмы),  Равнина (Холмы)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Вулканическая почва</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Позволяет строителям строить ферму-террасу (уникально для инков).<br><br>+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> пищи. Дает +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> жилья. +1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> пищи за каждую соседнюю клетку гор. Дает +2 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> производства за каждый соседний акведук. +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> производства, если рядом есть пресная вода и нет акведука. Дополнительная <img src="/images/ICON_FOOD.webp" style="height:1em"/> пища за соседство с другими фермами-террасами по мере продвижения по дереву технологий и социальных институтов. Можно построить только на холмистых лугах, холмах на равнине и на пустынных холмах.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Форт">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_FORT_NAME-->
+                      <h2 class="civ-name">Форт
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Fort.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Модификатор обороны: 4</p>
+                      <p class="civ-ability-desc" style="text-align:left">Размещенный здесь юнит получил бонус для укрепления.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Престиж для ближайших клеток: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">Создается: Военный инженер</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Пустыня,  Пустыня (Холмы),  Луг,  Луг (Холмы),  Равнина,  Равнина (Холмы),  Снег,  Снег (Холмы),  Тундра,  Тундра (Холмы)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Вулканическая почва</p>
+                      <p class="civ-ability-desc" style="text-align:left">Открыто: Военная инженерия Технология</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Находящийся здесь юнит получает +4 <img src="/images/ICON_STRENGTH.webp" style="height:1em"/> к силе при обороне, +1 к обзору и автоматически получает укрепление на 2 хода.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Чемамюль">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_CHEMAMULL_NAME-->
+                      <h2 class="civ-name">Чемамюль
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Chemamull.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Добыча: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">Требуется: Престиж &gt;= 4</p>
+                      <p class="civ-ability-desc" style="text-align:left">75% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> туризма от престижа</p>
+                      <p class="civ-ability-desc" style="text-align:left">Престиж для ближайших клеток: 0</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Производство</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Производство (Открыто: Госслужба Социальный институт)</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> туризма от <img src="/images/ICON_CULTURE.webp" style="height:1em"/> {3_YieldName[2]} (требуется Авиация Технология)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Создается: Строители</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Пустыня,  Пустыня (Холмы),  Луг,  Луг (Холмы),  Равнина,  Равнина (Холмы),  Снег,  Снег (Холмы),  Тундра,  Тундра (Холмы)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Вулканическая почва</p>
+                      <p class="civ-ability-desc" style="text-align:left">Открыто: Мастерство Социальный институт</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Позволяет строителям строить чемамюль — уникальную постройку мапуче.<br><br>+1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> к производству. Производит <img src="/images/ICON_CULTURE.webp" style="height:1em"/> культуру в количестве, равном 75% престижа клетки.<br><br>Дополнительные +1 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> производства после изучения социального института &quot;Госслужба&quot;. Дополнительный <img src="/images/ICON_TOURISM.webp" style="height:1em"/> туризм после исследования авиации.<br><br>Необходим потрясающий престиж.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-12" id="Шато">
+                    <div class="chart">
+                      <!--LOC_IMPROVEMENT_CHATEAU_NAME-->
+                      <h2 class="civ-name">Шато
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/improvements/Château.webp" style="vertical-align: middle; width:5em">
+                      </h2>
+                      <p class="civ-ability-desc" style="text-align:left">Добыча: <img src="/images/ICON_FAITH.webp" style="height:1em"/> 20</p>
+                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> Жилья</p>
+                      <p class="civ-ability-desc" style="text-align:left">Престиж для ближайших клеток: 1</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Культура</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Пища</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Золото</p>
+                      <p class="civ-ability-desc" style="text-align:left">100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> туризма от <img src="/images/ICON_CULTURE.webp" style="height:1em"/> {3_YieldName[2]} (требуется Авиация Технология)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Создается: Строители</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Terrains:  Пустыня,  Пустыня (Холмы),  Луг,  Луг (Холмы),  Равнина,  Равнина (Холмы),  Снег,  Снег (Холмы),  Тундра,  Тундра (Холмы)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Valid Features:  Речные поймы,  Речная пойма (луговая),  Речная пойма (равнинная)</p>
+                      <p class="civ-ability-desc" style="text-align:left">Открыто: Феодализм Социальный институт</p>
+                      <p class="civ-ability-desc" style="text-align:left">------------------------------</p>
+                      <p class="civ-ability-desc" style="text-align:left">Позволяет рабочим создавать Шато, уникальное улучшение Франции.<br><br>+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> культуры, +1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> золота, + 1 <img src="/images/ICON_FOOD.webp" style="height:1em"/> пищи, +1 <img src="/images/ICON_HOUSING.webp" style="height:1em"/> жилья и +1 престиж соседним клеткам.<br><br>+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> культуры за каждое соседнее чудо, повышается до +2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> после изучения авиации. +2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> золота, если построено рядом с рекой. +1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> золота +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> культуры за каждый соседний редкий ресурс. Даёт <img src="/images/ICON_TOURISM.webp" style="height:1em"/> очки туризма после открытия Авиации.<br><br>Невозможно построить рядом с другим шато.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </main>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/plugins/feather.min.js"></script>
+    <script src="/plugins/chart.min.js"></script>
+  </body>
+</html>
