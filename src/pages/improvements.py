@@ -65,8 +65,8 @@ def get_improvements_html_file(bbg_version, lang, pages_list):
                           style="text-align:left",
                           cls='civ-ability-desc')
                     if imp['YieldFromAppeal'] != None:
-                        appeal_yield_text = f'{get_loc(locs_data, "LOC_TYPE_TRAIT_TOURISM_BONUS_APPEAL_NO_REQUIREMENT")}'
-                        appeal_yield_text = loc_amount_parameter(appeal_yield_text, imp['YieldFromAppealPercent'])
+                        appeal_yield_text = f'{get_loc(locs_data, f"LOC_DISTRICT_APPEAL_{imp['YieldFromAppeal'][6:]}")}'
+                        appeal_yield_text = appeal_yield_text.replace('{1_num}', str(imp['YieldFromAppealPercent']) + '%')
                         p(appeal_yield_text,
                           style="text-align:left",
                           cls='civ-ability-desc')
