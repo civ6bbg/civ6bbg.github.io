@@ -64,8 +64,8 @@ def get_names_html_file(bbg_version, lang, pages_list):
                            style="text-align:center",
                            cls='civ-ability-desc')
                         with div(cls='row'):
-                            cls_len = math.floor(12 / 
-                                (1 if len(name_classes[name_cls][property_name]) == 0 
+                            cls_len = math.floor(12 /
+                                (1 if len(name_classes[name_cls][property_name]) == 0
                                  else len(name_classes[name_cls][property_name])))
                             curr_div_cls = f'col-md-{cls_len} col-lg-{cls_len}'
                             for name in name_classes[name_cls][property_name]:

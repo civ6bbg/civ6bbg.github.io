@@ -4,7 +4,7 @@ import numpy as np
 import csv
 import os
 
-bbg_versions = [None, '7.4', '7.3', '7.2', '7.1', '6.5', '6.4', '6.3', '6.2', '6.1', '6.0', '5.8', '5.7', '5.6']
+bbg_versions = [None, '7.5', '7.4', '7.3', '7.2', '7.1', '6.5', '6.4', '6.3', '6.2', '6.1', '6.0', '5.8', '5.7', '5.6']
 
 def add_xml_file_to_locs(locs, xml_file):
     if not os.path.exists(xml_file):
@@ -54,7 +54,7 @@ def get_locs_data(bbg_version, lang):
 
     if lang == 'en_US' or lang == 'fr_FR':
         add_xml_file_to_locs(locs, f'sqlFiles/expandedBase_{lang}.xml')
-        
+
     add_xml_file_to_locs(locs, f'lang/steelThunder/MoarUniqueUnits_LocalisationText_{lang}.xml')
 
     connection.close()
@@ -79,7 +79,7 @@ def get_locs_data(bbg_version, lang):
     add_xml_file_to_locs(locs, f"bbm_xml/{lang}.xml")
 
     add_xml_file_to_locs(locs, f"bbg_xml/{bbg_version}/{lang}.xml")
-    
+
     for bbg_ver in reversed(bbg_versions):
         add_xml_file_to_locs(locs, f"lang/{bbg_ver}/{lang}.xml")
         if bbg_ver == bbg_version:
@@ -119,7 +119,7 @@ def get_civs_tables(db_path):
     crsr = connection.cursor()
     crsr.execute(
         """SELECT CivilizationType, LeaderType, CivilizationName, CivilizationAbilityName, CivilizationAbilityDescription, LeaderName, LeaderAbilityName, LeaderAbilityDescription
-         FROM Players WHERE Domain = 'Players:Expansion2_Players'"""
+           FROM Players WHERE Domain = 'Players:Expansion2_Players'"""
     )
     rows = crsr.fetchall()
 
@@ -274,7 +274,7 @@ def get_governors_list(db_path):
 
 def get_expanded_governors_list(db_path):
     connection = sqlite3.connect(db_path)
-    
+
     expanded_bbg_governors = [
         'GOVERNOR_LIME_TEO_OWL_EMISSARY'
     ]
@@ -341,10 +341,10 @@ def get_world_wonders_list(db_path):
 
     crsr = connection.cursor()
     crsr.execute('''SELECT
-            b.BuildingType, 
-            b.Name, 
-            b.Cost, 
-            b.PrereqDistrict, 
+            b.BuildingType,
+            b.Name,
+            b.Cost,
+            b.PrereqDistrict,
             ds.Name,
             b.Description,
             b.Housing,
@@ -595,10 +595,10 @@ def get_buildings_per_district_list(db_path):
     connection = sqlite3.connect(db_path)
 
     crsr = connection.cursor()
-    crsr.execute("""SELECT b.BuildingType, 
-            b.Name, 
-            b.Cost, 
-            b.PrereqDistrict, 
+    crsr.execute("""SELECT b.BuildingType,
+            b.Name,
+            b.Cost,
+            b.PrereqDistrict,
             ds.Name,
             b.Description,
             b.Housing,
@@ -703,9 +703,9 @@ def get_great_people_modifier_dict(db_path):
 
     crsr = connection.cursor()
     crsr.execute(
-        """SELECT ga.GreatPersonIndividualType, ga.ModifierId, Text, ActionEffectTextOverride, Value FROM GreatPersonIndividualActionModifiers ga 
+        """SELECT ga.GreatPersonIndividualType, ga.ModifierId, Text, ActionEffectTextOverride, Value FROM GreatPersonIndividualActionModifiers ga
          LEFT JOIN ModifierStrings USING(ModifierId)
-         LEFT JOIN GreatPersonIndividuals USING(GreatPersonIndividualType) 
+         LEFT JOIN GreatPersonIndividuals USING(GreatPersonIndividualType)
          LEFT JOIN (SELECT ModifierId, Value FROM ModifierArguments where Name='Amount' or Name='ScalingFactor') USING(ModifierId)"""
     )
     rows = crsr.fetchall()
@@ -745,7 +745,7 @@ def get_alliance_effects(db_path, alliance_type):
 		 LEFT JOIN AllianceEffects USING(AllianceType)
          LEFT JOIN (SELECT ModifierId, Value FROM ModifierArguments where Name='Amount') USING(ModifierId)
          LEFT JOIN ModifierStrings USING(ModifierId)
-         WHERE ga.AllianceType = '{alliance_type}' 
+         WHERE ga.AllianceType = '{alliance_type}'
          AND Text is not NULL
          AND Context = 'Summary'
          ORDER BY LevelRequirement
@@ -769,7 +769,7 @@ def get_unit_stats(db_path):
         ResourceMaintenanceType, ResourceMaintenanceAmount, AntiAirCombat,
 		BuildCharges, ReligiousStrength, SpreadCharges, ReligiousHealCharges,
         MandatoryObsoleteTech
-        FROM Units LEFT JOIN Units_XP2 USING(UnitType) WHERE 
+        FROM Units LEFT JOIN Units_XP2 USING(UnitType) WHERE
 		(FormationClass <> 'FORMATION_CLASS_CIVILIAN'  OR ReligiousStrength > 0)
         AND (TraitType <> 'TRAIT_BARBARIAN_BUT_SHOWS_UP_IN_PEDIA' OR TraitType IS NULL) ORDER BY Combat
         ''')
@@ -841,7 +841,7 @@ def get_congress_options(db_path):
     crsr = connection.cursor()
     crsr.execute(
         f"""SELECT *
-        FROM Resolutions 
+        FROM Resolutions
         WHERE InjectionOnly=0
         ORDER BY NAME
         """)
@@ -1132,7 +1132,7 @@ def get_improvements(db_path):
                     'PrereqCivic': ivt[3]
                 })
         res.append(data)
-    
+
     connection.close()
     return res
 

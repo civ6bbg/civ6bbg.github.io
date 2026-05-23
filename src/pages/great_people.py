@@ -56,7 +56,7 @@ def get_great_people_html_file(bbg_version, lang, pages_list):
                 comment(gp_type)
                 with h2(get_loc(locs_data, gp_type), cls='civ-name'):
                     img(src=f'/images/{get_loc(en_US_locs_data, gp_type)}.webp',
-                        style="vertical-align: middle; width:5em", 
+                        style="vertical-align: middle; width:5em",
                         onerror=image_onerror)
                     br()
             for era in eras_loc:
@@ -64,8 +64,8 @@ def get_great_people_html_file(bbg_version, lang, pages_list):
                     continue
                 if len(great_people[gp_type]) > 1:
                     with div(
-                      cls="row", 
-                      id=get_loc(locs_data, gp_type)
+                        cls="row",
+                        id=get_loc(locs_data, gp_type)
                     ), div(cls="col-lg-12"), div(cls="chart"):
                         comment(era)
                         h3(get_loc(locs_data, era), cls='civ-name')
@@ -85,7 +85,7 @@ def get_great_people_html_file(bbg_version, lang, pages_list):
                                 for mod, amount in great_people_modifier_dict[gp[0]]:
                                     comment(mod)
                                     processed = loc_amount_parameter(
-                                      get_loc(locs_data, mod), amount)
+                                        get_loc(locs_data, mod), amount)
                                     p(processed, style="text-align:left", cls='civ-ability-desc')
                                     br()
                             if gp[0] in great_people_works.keys():
@@ -99,5 +99,5 @@ def get_great_people_html_file(bbg_version, lang, pages_list):
                                         f' {get_loc(locs_data, work[1])}',
                                         style="text-align:left",
                                         cls='civ-ability-desc')
-                                        
+
     return create_page(bbg_version, lang, title, 'great_people', menu_items, menu_icons, 'images', pages_list, create_great_people_page, locs_data, en_US_locs_data)

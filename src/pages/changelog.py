@@ -212,8 +212,8 @@ def get_changelog_html_file(bbg_version, lang, pages_list):
                     br()
                     for desc in changelog_items[section][item]:
                         comment(desc)
-                        p(get_loc(locs_data, desc), 
-                        style='text-align:left', 
-                        cls='civ-ability-desc')
+                        p(get_loc(locs_data, desc),
+                          style='text-align:left',
+                          cls='civ-ability-desc')
                     br()
     return create_page(bbg_version, lang, title, 'changelog', menu_items, menu_icons, 'images', pages_list, create_changelog_page, locs_data, en_US_locs_data)

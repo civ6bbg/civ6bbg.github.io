@@ -122,7 +122,7 @@ def get_units_html_file(bbg_version, lang, pages_list):
             p(f'{get_loc(locs_data, 'LOC_UI_PEDIA_MAITENANCE_COST')}: {maint} [ICON_GOLD]{strategic_maint_text}',
               style="display:inline-block;text-align:left",
               cls='civ-ability-desc')
-            br()                
+            br()
             icon_to_stats = {
                 'ICON_MOVEMENT': ('LOC_UI_PEDIA_MOVEMENT_POINTS', movement),
                 'ICON_STRENGTH': ('LOC_UI_PEDIA_MELEE_STRENGTH', cs),
@@ -154,7 +154,7 @@ def get_units_html_file(bbg_version, lang, pages_list):
             p(get_loc(locs_data, desc),
               style="display:inline-block;text-align:left",
               cls='civ-ability-desc')
-    
+
     techs_names = get_tech_to_loc_dict(f"sqlFiles/{version_name}/DebugGameplay.sqlite")
     unit_stats = get_unit_stats(f"sqlFiles/{version_name}/DebugGameplay.sqlite")
     unit_promotions = get_unit_promotion_sets_dict(f'sqlFiles/{version_name}/DebugGameplay.sqlite')

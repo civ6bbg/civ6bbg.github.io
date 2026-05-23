@@ -125,7 +125,7 @@ def get_improvements_html_file(bbg_version, lang, pages_list):
                     p(valid_build_unit_text,
                         style="text-align:left",
                         cls='civ-ability-desc')
-                    
+
                     if len(imp['ValidTerrains']) > 0:
                         valid_terrains_text = get_loc(locs_data, 'LOC_VALID_TERRAIN_TYPE')
                         valid_terrains_text += f', '.join(f' {get_loc(locs_data, f"LOC_{ivt["TerrainType"]}_NAME")}{'' if ivt['PrereqCivic'] == None else f" ({get_loc(locs_data, 'LOC_HUD_RESEARCH_REQUIRES')} {get_loc(locs_data, civic_to_loc_dict[ivt['PrereqCivic']])})"}' for ivt in imp['ValidTerrains'])

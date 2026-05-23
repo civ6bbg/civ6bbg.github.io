@@ -43,13 +43,13 @@ def get_tech_tree_html_file(bbg_version, lang, pages_list):
     ]
     for era in eras_list:
         menu_items.append(
-          get_loc(locs_data, f'LOC_{era}_NAME'))
+            get_loc(locs_data, f'LOC_{era}_NAME'))
         menu_icons.append(
-          f'{get_loc(en_US_locs_data, f'LOC_{era}_NAME')}')
-    
+            f'{get_loc(en_US_locs_data, f'LOC_{era}_NAME')}')
+
     def create_tech_tree_page():
         for era in eras_list:
-            with div(cls="row", 
+            with div(cls="row",
                      id=get_loc(locs_data, f'LOC_{era}_NAME')
                     ), div(cls="col-lg-12"), div(cls="chart"):
                 comment(f'{era}')
@@ -105,7 +105,7 @@ def get_tech_tree_html_file(bbg_version, lang, pages_list):
                                     onerror=image_onerror)
                         br()
                         if tech[0] in boosts:
-                            p(f'{get_loc(locs_data, "LOC_BOOST_TO_BOOST")} {get_loc(locs_data, boosts[tech[0]][2])}', 
+                            p(f'{get_loc(locs_data, "LOC_BOOST_TO_BOOST")} {get_loc(locs_data, boosts[tech[0]][2])}',
                                 style="text-align:left",
                                 cls='civ-ability-desc')
                         if tech[0] in tech_prereqs:

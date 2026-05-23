@@ -24,18 +24,18 @@ def get_bbg_expanded_html_file(bbg_version, lang, pages_list):
     civic_to_loc_dict = get_civic_to_loc_dict(f"sqlFiles/{version_name}/DebugGameplay.sqlite")
     for leader in civ_leaders_items:
         menu_items.append(
-          get_loc(locs_data, leader[2]) + ' ' + get_loc(locs_data, leader[5]))
+            get_loc(locs_data, leader[2]) + ' ' + get_loc(locs_data, leader[5]))
         menu_icons.append(
-          f'leaders/{get_loc(en_US_locs_data, leader[2]) + ' ' + get_loc(en_US_locs_data, leader[5])}')
+            f'leaders/{get_loc(en_US_locs_data, leader[2]) + ' ' + get_loc(en_US_locs_data, leader[5])}')
     for gov in governors:
         menu_items.append(
-          get_loc(locs_data, gov[1]))
+            get_loc(locs_data, gov[1]))
         menu_icons.append(
-          f'governors/{get_loc(en_US_locs_data, gov[1])}')
-    
+            f'governors/{get_loc(en_US_locs_data, gov[1])}')
+
     def create_expanded_page():
         for leader in civ_leaders_items:
-            with div(cls="row", 
+            with div(cls="row",
                      id=get_loc(locs_data, leader[2]) + ' ' + get_loc(locs_data, leader[5])
                     ), div(cls="col-lg-12"), div(cls="chart"):
                 comment(f'{leader[2]} {leader[5]}')
@@ -75,8 +75,8 @@ def get_bbg_expanded_html_file(bbg_version, lang, pages_list):
                             unlock_tech = base_game_units_dict[item[3]][35]
                             unlock_civic = base_game_units_dict[item[3]][36]
                             base_game_tech_civic_dialog = get_unlock_tech_civic_dialog(unlock_tech, unlock_civic, locs_data, en_US_locs_data, tech_to_loc_dict, civic_to_loc_dict)
-                        show_element_with_base_option(item[5], lang, locs_data, en_US_locs_data, 
-                            data_append = (f'[NEWLINE][NEWLINE]{tech_civic_dialog}' if tech_civic_dialog != None else ''), 
+                        show_element_with_base_option(item[5], lang, locs_data, en_US_locs_data,
+                            data_append = (f'[NEWLINE][NEWLINE]{tech_civic_dialog}' if tech_civic_dialog != None else ''),
                             base_game_data_append = (f'[NEWLINE][NEWLINE]{base_game_tech_civic_dialog}' if tech_civic_dialog != None else ''),
                             add_base_game = False)
                     else:

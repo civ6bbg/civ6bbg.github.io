@@ -38,5 +38,5 @@ def get_congress_html_file(bbg_version, lang, pages_list):
                         era_name = f'LOC_{opt[10]}_NAME'
                         p(f'Latest Era: {get_loc(locs_data, era_name)}', style=f"text-align:left", cls='civ-ability-desc')
                     br()
-                    
+
     return create_page(bbg_version, lang, title, 'congress', menu_items, menu_icons, 'images', pages_list, create_congress_page, locs_data, en_US_locs_data)

@@ -61,10 +61,10 @@ pages_list = [
         'main_menu_title': 'LOC_PEDIA_FEATURES_PAGEGROUP_NATURAL_WONDERS_NAME'
     },
     {
-       'name': 'world_wonder',
-       'func': get_world_wonder_html_file,
-       'title': 'World Wonders Bonuses Description',
-       'main_menu_title': 'LOC_MAIN_MENU_WORLD_WONDERS'
+        'name': 'world_wonder',
+        'func': get_world_wonder_html_file,
+        'title': 'World Wonders Bonuses Description',
+        'main_menu_title': 'LOC_MAIN_MENU_WORLD_WONDERS'
     },
     {
         'name': 'buildings',

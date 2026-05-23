@@ -198,16 +198,16 @@ base_game_units_dict = get_units_dict(f"sqlFiles/baseGame/DebugGameplay.sqlite")
 
 def refactorCivSpecialSyntax(bbg_version, lang, docStr):
     docStr = docStr.replace('[NEWLINE]', '<br>')
-    
+
     reg = re.compile(r'\[b\](.*?)\[/b\]', re.IGNORECASE)
     docStr = reg.sub(r'<b>\1</b>', docStr)
-    
+
     reg = re.compile(r'\[u\](.*?)\[/u\]', re.IGNORECASE)
     docStr = reg.sub(r'<u>\1</u>', docStr)
-    
+
     reg = re.compile(r'\[i\](.*?)\[/i\]', re.IGNORECASE)
     docStr = reg.sub(r'<i>\1</i>', docStr)
-    
+
     reg = re.compile(r'\[/t\]', re.IGNORECASE)
     docStr = reg.sub(r'&nbsp;&nbsp;&nbsp;&nbsp;', docStr)
 
@@ -323,7 +323,7 @@ def add_final_scripts():
     script(src="/js/script.js")
     script(src="/plugins/feather.min.js")
     script(src="/plugins/chart.min.js")
-    
+
 def find_nth(haystack: str, needle: str, n: int) -> int:
     start = haystack.find(needle)
     while start >= 0 and n > 1:

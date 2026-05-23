@@ -30,16 +30,16 @@ def get_buildings_html_file(bbg_version, lang, pages_list):
                 for building in buildings_per_district[district].keys():
                     with div(cls="col-lg-6 col-md-12"), div(cls="chart"):
                         comment(building)
-                        with h2(get_loc(locs_data, building), 
+                        with h2(get_loc(locs_data, building),
                                 cls='civ-name'):
                             img(src=f'/images/buildings/{get_loc(en_US_locs_data, building)}.webp',
                                 style="vertical-align: middle; width:5em",
                                 onerror=image_onerror)
                         br()
                         show_building_yields(
-                          buildings_per_district[district][building],
-                          locs_data,
-                          en_US_locs_data)
+                            buildings_per_district[district][building],
+                            locs_data,
+                            en_US_locs_data)
 
     return create_page(bbg_version, lang, title, 'buildings', menu_items, menu_icons, 'images/buildings', pages_list, create_buildings_page, locs_data, en_US_locs_data)
 
