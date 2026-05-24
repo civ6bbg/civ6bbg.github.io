@@ -18,7 +18,7 @@ def get_congress_html_file(bbg_version, lang, pages_list):
     congress_options = get_congress_options(f"sqlFiles/{version_name}/DebugGameplay.sqlite")
     for opt in congress_options:
         menu_items.append(get_loc(locs_data, opt[2]))
-        menu_icons.append(f'/images/resolutions/{opt[0]}.webp')
+        menu_icons.append(f'resolutions/{opt[0]}')
 
     def create_congress_page():
         for opt in congress_options:
