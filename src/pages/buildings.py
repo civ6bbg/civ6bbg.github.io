@@ -65,7 +65,7 @@ def show_building_yields(yields, locs_data, en_US_locs_data):
         p(f'+{tmp_yields[7]} [ICON_AMENITIES] {get_loc(locs_data, 'LOC_HUD_CITY_AMENITIES')}',
           style="text-align:left",
           cls='civ-ability-desc')
-    if tmp_yields[9] != None:
+    if tmp_yields[9] != None and tmp_yields[9] > 0:
         processed = loc_amount_parameter(
             get_loc(locs_data, 'LOC_TYPE_TRAIT_CITIZENS'),
             tmp_yields[9])

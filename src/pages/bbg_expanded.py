@@ -4,6 +4,7 @@ from dominate.tags import *
 from parseBBGFiles import *
 
 from dom_generator_helper import *
+from pages.buildings import show_building_yields
 
 def get_bbg_expanded_html_file(bbg_version, lang, pages_list):
     en_US_locs_data = get_locs_data(bbg_version, 'en_US')
@@ -16,12 +17,19 @@ def get_bbg_expanded_html_file(bbg_version, lang, pages_list):
     menu_items = []
     menu_icons = []
     civ_leaders_items = get_expanded_civs_tables(f"sqlFiles/{version_name}/DebugConfiguration.sqlite")
+    world_wonders = get_world_wonders_list(f"sqlFiles/{version_name}/DebugGameplay.sqlite", True)
     governors = get_expanded_governors_list(f"sqlFiles/{version_name}/DebugGameplay.sqlite")
     governor_promotion_dict = get_governors_promotion_dict(f"sqlFiles/{version_name}/DebugGameplay.sqlite")
     governor_promotion_set_dict = get_governors_promotion_sets_dict(f"sqlFiles/{version_name}/DebugGameplay.sqlite", governors, governor_promotion_dict)
     units_dict = get_units_dict(f"sqlFiles/{version_name}/DebugGameplay.sqlite")
     tech_to_loc_dict = get_tech_to_loc_dict(f"sqlFiles/{version_name}/DebugGameplay.sqlite")
     civic_to_loc_dict = get_civic_to_loc_dict(f"sqlFiles/{version_name}/DebugGameplay.sqlite")
+    for era in world_wonders.keys():
+        for wonder in world_wonders[era]:
+            menu_items.append(
+                get_loc(locs_data, f'LOC_{wonder}_NAME'))
+            menu_icons.append(
+                f'world_wonders/{get_loc(en_US_locs_data, f'LOC_{wonder}_NAME')}')
     for leader in civ_leaders_items:
         menu_items.append(
             get_loc(locs_data, leader[2]) + ' ' + get_loc(locs_data, leader[5]))
@@ -34,6 +42,27 @@ def get_bbg_expanded_html_file(bbg_version, lang, pages_list):
             f'governors/{get_loc(en_US_locs_data, gov[1])}')
 
     def create_expanded_page():
+        for era in world_wonders.keys():
+            if len(world_wonders[era]) > 0:
+                with div(cls="row"):
+                    for wonder_name in world_wonders[era]:
+                        wonder = world_wonders[era][wonder_name]
+                        with div(cls="col-lg-12"), div(cls="chart"):
+                            comment(wonder[0][1])
+                            with h2(get_loc(locs_data, wonder[0][1]), cls='civ-name'):
+                                img(src=f'/images/world_wonders/{get_loc(en_US_locs_data, wonder[0][1])}.webp',
+                                    style="vertical-align: middle; width:5em",
+                                    onerror=image_onerror)
+                            br()
+                            show_building_yields(wonder, locs_data, en_US_locs_data)
+                            unlocked_by = get_loc(locs_data, "LOC_UI_PEDIA_UNLOCKED_BY")
+                            unlock_tech = wonder[0][23]
+                            unlock_civic = wonder[0][24]
+                            tech_civic_dialog = get_unlock_tech_civic_dialog(unlock_tech, unlock_civic, locs_data, en_US_locs_data, tech_to_loc_dict, civic_to_loc_dict)
+                            p(f'{unlocked_by} {tech_civic_dialog}' if tech_civic_dialog != None else '',
+                                style="text-align:left",
+                                cls='civ-ability-desc')
+                            br()
         for leader in civ_leaders_items:
             with div(cls="row",
                      id=get_loc(locs_data, leader[2]) + ' ' + get_loc(locs_data, leader[5])

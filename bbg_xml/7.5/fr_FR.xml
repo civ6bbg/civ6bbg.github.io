@@ -46,7 +46,7 @@
 		<!-- == AMERICA - AMÉRIQUES == -->
 		<!-- = Civilization - Civilisation = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_FOUNDING_FATHERS_EXPANSION2_DESCRIPTION" Language="fr_FR">
-			<Text>Les emplacements de cartes Diplomatiques sont convertis en emplacements de cartes Joker.[NEWLINE][ICON_FAVOR] Faveurs diplomatiques +1 pour chaque emplacement de cartes Joker.[NEWLINE][NEWLINE]Bias : T4 Montagnes (plaine et de prairie).</Text>
+			<Text>Les emplacements de cartes Diplomatiques sont convertis en emplacements de cartes Joker.[NEWLINE][ICON_FAVOR] Faveurs diplomatiques +1­ pour chaque emplacement de cartes Joker.[NEWLINE][NEWLINE]Bias : T4 Montagnes (plaine et de prairie).</Text>
 		</Replace>
 		<!-- = Leader (Theodore) - Dirigeant (Theodore) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_ROOSEVELT_COROLLARY_DESCRIPTION" Language="fr_FR">
@@ -60,7 +60,7 @@
 		</Replace>
 		<!-- = Leader (Bull Moose) - Dirigeant (Élan) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_ANTIQUES_AND_PARKS_DESCRIPTION" Language="fr_FR">
-			<Text>Au Code Juridique, les cases à l'Attrait époustouflant fournissent des rendements supplémentaires :[NEWLINE] • [ICON_SCIENCE] Science +1 si adjacentes à une case de merveille naturelle ou de montagne (passe à +2 à l'[COLOR_FLOAT_SCIENCE]Astronomie[ENDCOLOR]).[NEWLINE] • [ICON_CULTURE] Culture +1 si adjacentes à une case de merveille mondiale ou de bois (passe à +2 aux [COLOR:212,115,212,255]Lumières[ENDCOLOR]).[NEWLINE][NEWLINE]Les [COLOR:212,115,212,255]Foires Médiévales[ENDCOLOR] permettent de planter des bois.</Text>
+			<Text>Au [COLOR:212,115,212,255]Code Juridique[ENDCOLOR], les cases à l'Attrait époustouflant fournissent des rendements supplémentaires :[NEWLINE] • [ICON_SCIENCE] Science +1 si adjacentes à une case de merveille naturelle ou de montagne (passe à +2 à l'[COLOR_FLOAT_SCIENCE]Astronomie[ENDCOLOR]).[NEWLINE] • [ICON_CULTURE] Culture +1 si adjacentes à une case de merveille mondiale ou de bois (passe à +2 aux [COLOR:212,115,212,255]Lumières[ENDCOLOR]).[NEWLINE][NEWLINE]Les [COLOR:212,115,212,255]Foires Médiévales[ENDCOLOR] permettent de planter des bois.</Text>
 		</Replace>
 		<!-- = Leader (Rough Rider) - Dirigeant (Rough Rider) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_ROOSEVELT_COROLLARY_ROUGH_RIDER_DESCRIPTION" Language="fr_FR">
@@ -114,7 +114,7 @@
 		</Replace>
 		<!-- = Leader (Vizier) - Dirigeant (Vizir) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_RIGHTEOUSNESS_OF_FAITH_DESCRIPTION" Language="fr_FR">
-			<Text>Le lieu de culte de votre [ICON_RELIGION] religion peut être acheté par n'importe quel joueur pour 10% de son coût normal en [ICON_FAITH] Foi. Ce bâtiment augmente de 5% la [ICON_SCIENCE] Science, la [ICON_CULTURE] Culture et la [ICON_FAITH] Foi générées par la ville (+5% à l'Église Réformée et +5% quand votre [ICON_RELIGION] religion est terminée).</Text>
+			<Text>Le lieu de culte de votre [ICON_RELIGION] religion peut être acheté par n'importe quel joueur pour 10% de son coût normal en [ICON_FAITH] Foi. Ce bâtiment augmente de 5% la [ICON_SCIENCE] Science, la [ICON_CULTURE] Culture et la [ICON_FAITH] Foi générées par la ville (+5% à l'[COLOR:212,115,212,255]Église Réformée[ENDCOLOR] et +5% quand votre [ICON_RELIGION] religion est terminée).</Text>
 		</Replace>
 		<!-- = Leader (Sultan) - Dirigeant (Sultan) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_SALADIN_ALT_DESCRIPTION" Language="fr_FR">
@@ -153,6 +153,43 @@
 			<Text>Aménagement exclusif à l'Australie, débloqué aux [COLOR:212,115,212,255]Guildes[ENDCOLOR].[NEWLINE][NEWLINE][ICON_FOOD] Nourriture +1, [ICON_PRODUCTION] Production +1 et [ICON_HOUSING] Habitations +0.5.[NEWLINE][ICON_FOOD] Nourriture +1 pour chaque pâturage adjacent.[NEWLINE][ICON_FOOD] Nourriture +1 tous les deux élevages de l'Outback adjacents au [COLOR:212,115,212,255]Déploiement Rapide[ENDCOLOR].[NEWLINE][ICON_PRODUCTION] Production +1 tous les deux élevages de l'Outback adjacents à l'[COLOR_FLOAT_SCIENCE]Industrialisation[ENDCOLOR].[NEWLINE][NEWLINE][ICON_PRODUCTION] Production +1 pour les pâturages pour chaque élevage de l'Outback adjacent à l'[COLOR_FLOAT_SCIENCE]Industrialisation[ENDCOLOR].[NEWLINE]Attrait +1 pour les cases adjacentes.[NEWLINE][NEWLINE]Ne peut être construit que sur une case de prairie, de plaine ou de désert.</Text>
 		</Replace>
 
+        <!-- == AUSTRIA - AUTRICHE == --> <!-- BBG expanded -->
+		<!-- = Civilization - Civilisation = --> <!-- BBG expanded -->
+        <Replace Tag="LOC_TRAIT_CIVILIZATION_MER_CROWNLANDS_NAME" Language="fr_FR">
+			<Text>Mariage diplomatique</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_MER_CROWNLANDS_DESCRIPTION" Language="fr_FR">
+			<Text>À la complétion d'un bâtiment de la Place de la gouvernance, vous recevez un [ICON_GREATPERSON] Diplomate illustre, qui peut absorber une Cité-état vassale.</Text>
+		</Replace>
+        <!-- = Leader - Dirigeant = --> <!-- BBG expanded -->
+        <Replace Tag="LOC_TRAIT_LEADER_MER_THERESIAN_REFORM_NAME" Language="fr_FR">
+			<Text>Theresian Reforms</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_MER_THERESIAN_REFORM_DESCRIPTION" Language="fr_FR">
+			<Text>Points [ICON_INFLUENCEPERTURN] d'influence par tour +1, [ICON_PRODUCTION] Production +20% pour les quartiers et les unités civiles dans les villes possédant un [ICON_GOVERNOR] gouverneur.[NEWLINE][NEWLINE]Les quartiers spécialisés fournissent +1 [ICON_HOUSING] d'Habitations si un exemplaire est construit dans la [ICON_CAPITAL] Capitale.</Text>
+		</Replace>
+        <!-- = Unique unit - Unité unique = --> <!-- BBG expanded -->
+        <Replace Tag="LOC_UNIT_MER_GRENZER_NAME" Language="fr_FR">
+			<Text>Garde-frontière</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_MER_GRENZER_DESCRIPTION" Language="fr_FR">
+			<Text>Unité de reconnaissance de l'ère industrielle exclusive à l'Autriche, remplaçant le Ranger.[NEWLINE][NEWLINE][ICON_STRENGTH] Puissance de combat à distance de base +5. [ICON_STRENGTH] Puissance de combat +5 dans un rayon de 3 cases autour d'un territoire allié. Exerce une zone de contrôle.</Text>
+		</Replace>
+        <!-- = Unique unit - Unité unique = --> <!-- BBG expanded -->
+        <Replace Tag="LOC_UNIT_GREAT_DIPLOMAT_NAME" Language="fr_FR">
+			<Text>Diplomate illustre</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_GREAT_DIPLOMAT_DESCRIPTION" Language="fr_FR">
+			<Text>Personnage illustre unique à l'Autriche. Peut absorber une Cité-état vassale.</Text>
+		</Replace>
+        <!-- = Unique building - Bâtiment unique = --> <!-- BBG expanded -->
+        <Replace Tag="LOC_BUILDING_MER_COFFEE_HOUSE_NAME" Language="fr_FR">
+			<Text>Café</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_MER_COFFEE_HOUSE_DESCRIPTION" Language="fr_FR">
+			<Text>Bâtiment exclusif à l'Autriche, remplaçant le Zoo, débloqué aux [COLOR:212,115,212,255]Lumières[ENDCOLOR]. [ICON_SCIENCE] Science +1 et [ICON_CULTURE] Culture +1 pour chaque [ICON_DISTRICT] quartier spécialisé de la ville. [ICON_AMENITIES] Activités +2 pour les villes dans un rayon de 6 cases. Bonus [ICON_THEMEBONUS_ACTIVE] thématique quand les chefs-d'œuvre proviennent de [ICON_GREATPERSON] Personnages illustres différents.</Text>
+		</Replace>
+
 		<!-- == AZTECS - AZTÈQUES == -->
 		<!-- = Civilization - Civilisation = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_LEGEND_FIVE_SUNS_DESCRIPTION" Language="fr_FR">
@@ -171,7 +208,7 @@
 		<Replace Tag="LOC_BUILDING_TLACHTLI_XP1_DESCRIPTION" Language="fr_FR">
 			<Text>Bâtiment exclusif aux Aztèques, remplaçant l'arena.[NEWLINE][NEWLINE][ICON_CULTURE] Culture +1 et [ICON_AMENITIES] Activités +1 pour les Centres-villes dans un rayon de 6 cases ne profitant pas déjà d'un terrain de Tlachtli. [ICON_TOURISM] Tourisme +3.</Text>
 		</Replace>
-		
+
 		<!-- == BABYLON - BABYLONE == -->
 		<!-- = Civilization - Civilisation = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_BABYLON_DESCRIPTION" Language="fr_FR">
@@ -220,13 +257,13 @@
 		<!-- == BYZANTIUM - BYZANCE == -->
 		<!-- = Civilization - Civilisation = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_BYZANTIUM_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_STRENGTH] Puissance de combat ou [ICON_RELIGION] Puissance religieuse +2 pour les unités pour chaque ville sainte convertie à votre [ICON_RELIGION] religion (y compris la vôtre).[NEWLINE][NEWLINE]Tuer une unité (d'une civilisation ou d'une Cité-état) propage votre [ICON_RELIGION] religion aux villes proches.[NEWLINE][NEWLINE]Les Lieux saints octroient +1 point de [ICON_GREATPROPHET] Prophète illustre.</Text>
+			<Text>[ICON_STRENGTH] Puissance de combat +2 et [ICON_RELIGION] Puissance religieuse +3 pour les unités pour chaque ville sainte convertie à votre [ICON_RELIGION] religion (y compris la vôtre).[NEWLINE][NEWLINE]Tuer une unité (d'une civilisation ou d'une Cité-état) propage votre [ICON_RELIGION] religion aux villes proches.[NEWLINE][NEWLINE]Les Lieux saints octroient +1 point de [ICON_GREATPROPHET] Prophète illustre.</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_BYZANTIUM_COMBAT_UNITS_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_STRENGTH] Puissance de combat +2 pour chaque ville sainte convertie à votre religion, et la [ICON_RELIGION] religion byzantine se propage aux villes voisines quand une unité d'une civilisation majeure est vaincue (Taxis).</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_BYZANTIUM_RELIGIOUS_UNITS_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_RELIGION] Puissance religieuse +2 pour chaque ville sainte convertie à votre [ICON_RELIGION] religion (Taxis).</Text>
+			<Text>[ICON_RELIGION] Puissance religieuse +3 pour chaque ville sainte convertie à votre [ICON_RELIGION] religion (Taxis).</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_HIPPODROME_CULTURE" Language="fr_FR">
 			<Text>Cases d'Hippodrome adjacentes : [ICON_CULTURE] Culture +{1_num}.</Text>
@@ -345,7 +382,7 @@
 		<!-- == GRAN COLOMBIA - GRANDE COLOMBIE == -->
 		<!-- = Civilization - Civilisation = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_EJERCITO_PATRIOTA_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_MOVEMENT] PM +1 pour les unités militaires à la [COLOR:212,115,212,255]Philosophie Politique[ENDCOLOR].[NEWLINE]La promotion des unités aériennes, de cavalerie, ou d'un Espion ne met pas fin à son tour.[NEWLINE][NEWLINE]Bias : T5 Ressources à plantation.</Text>
+			<Text>[ICON_MOVEMENT] PM +1 pour les unités militaires à la [COLOR:212,115,212,255]Philosophie Politique[ENDCOLOR].[NEWLINE]La promotion des unités aériennes, de cavalerie, ou d'un Espion ne met pas fin à leur tour.[NEWLINE][NEWLINE]Bias : T5 Ressources à plantation.</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_EJERCITO_PATRIOTA_EXTRA_MOVEMENT_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_MOVEMENT] PM +1 pour les unités militaires (Ejército Patriota).</Text>
@@ -461,7 +498,7 @@
 		</Replace>
 		<!-- = Leader (Age of Empire) - Dirigeant (Empire) = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_PAX_BRITANNICA_EXPANSION2_DESCRIPTION" Language="fr_FR">
-			<Text>Les unités navales de combat rapproché font profiter de leur vitesse de déplacement aux Colons.[NEWLINE][NEWLINE]Achever un Port de la Royal Navy octroie l'unité navale la plus puissante débloquée.[NEWLINE]Fonder ou annexer une ville à 10 cases ou plus de votre [ICON_CAPITAL] Capitale octroie l'unité de combat rapproché la plus puissante débloquée.[NEWLINE][NEWLINE]Points [ICON_GREATADMIRAL] d'Amiral illustre +1 pour les phares.</Text>
+			<Text>Les unités navales de combat rapproché font profiter de leur vitesse de déplacement à leur escorte.[NEWLINE][NEWLINE]Achever un Port de la Royal Navy octroie l'unité navale la plus puissante débloquée.[NEWLINE]Fonder ou annexer une ville à 10 cases ou plus de votre [ICON_CAPITAL] Capitale octroie l'unité de combat rapproché la plus puissante débloquée.[NEWLINE][NEWLINE]Points [ICON_GREATADMIRAL] d'Amiral illustre +1 pour les phares.</Text>
 		</Replace>
 		<Replace Tag="LOC_BBG_ABILITY_AOE_MELEE_NAVAL_ESCORT_CIVILIANS_DESC" Language="fr_FR">
 			<Text>Fait profiter les Colons de sa vitesse de déplacement.</Text>
@@ -475,7 +512,7 @@
 		</Replace>
 		<!-- = Leader (Elizabeth) - Dirigeant (Élisabeth) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_ELIZABETH_DESCRIPTION" Language="fr_FR">
-			<Text>Capacité de [ICON_TRADEROUTE] routes commerciales +1 à la Construction Navale, à l'Exploration et le Mercantilisme. Vos [ICON_TRADEROUTE] routes commerciales menant à une Cité-état fournissent +3 [ICON_GOLD] Or pour chaque [ICON_DISTRICT] quartier spécialisé dans la ville d'origine.[NEWLINE][NEWLINE][ICON_GOLD] Or +100% pour le pillage de [ICON_TRADEROUTE] routes commerciales avec les unités navales.[NEWLINE][ICON_MOVEMENT] PM +1 et Vision +1 pour les unités navales d'assaut en mer. La [ICON_PROMOTION] promotion d'une unité navale d'assaut en mer ne met pas fin à son tour.</Text>
+			<Text>Capacité de [ICON_TRADEROUTE] routes commerciales +1 à la [COLOR_FLOAT_SCIENCE]Construction Navale[ENDCOLOR], à l'[COLOR:212,115,212,255]Exploration[ENDCOLOR] et le [COLOR:212,115,212,255]Mercantilisme[ENDCOLOR]. Vos [ICON_TRADEROUTE] routes commerciales menant à une Cité-état fournissent +3 [ICON_GOLD] Or pour chaque [ICON_DISTRICT] quartier spécialisé dans la ville d'origine.[NEWLINE][NEWLINE][ICON_GOLD] Or +100% pour le pillage de [ICON_TRADEROUTE] routes commerciales avec les unités navales.[NEWLINE][ICON_MOVEMENT] PM +1 et Vision +1 pour les unités navales d'assaut en mer. La [ICON_PROMOTION] promotion d'une unité navale d'assaut en mer ne met pas fin à son tour.</Text>
 		</Replace>
 		<Replace Tag="LOC_BBG_ABILITY_ELISABETH_RAIDER_MOVE_PROMOTE_ATTACK_DESC" Language="fr_FR">
 			<Text>La [ICON_PROMOTION] promotion ne met pas fin au tour.</Text>
@@ -486,7 +523,7 @@
 		</Replace>
 		<!-- = Unique unit - Unité unique = -->
 		<Replace Tag="LOC_UNIT_ENGLISH_REDCOAT_DESCRIPTION" Language="fr_FR">
-			<Text>Unité de combat rapproché de l'ère industrielle exclusive à Victoria (ère impériale), remplaçant l'Infanterie de ligne.[NEWLINE][NEWLINE][ICON_STRENGTH] Puissance de base +5. [ICON_STRENGTH] Puissance de combat +5 sur un continent autre que celui de votre [ICON_CAPITAL] Capitale.[NEWLINE]Coût de débarquement nul.</Text>
+			<Text>Unité de combat rapproché de l'ère industrielle exclusive à Victoria (ère impériale), remplaçant l'Infanterie de ligne.[NEWLINE][NEWLINE][ICON_STRENGTH] Puissance de base +5. [ICON_STRENGTH] Puissance de combat +5 sur un continent autre que celui de votre [ICON_CAPITAL] Capitale.[NEWLINE]Pas de pénalité de [ICON_MOVEMENT] PM et de [ICON_STRENGTH] Puissance de combat lors d'un débarquement.</Text>
 		</Replace>
 		<!-- = Unique district - Quartier unique = -->
 		<Replace Tag="LOC_DISTRICT_ROYAL_NAVY_DOCKYARD_EXPANSION2_DESCRIPTION" Language="fr_FR">
@@ -528,7 +565,7 @@
 			<Text>Les cases de ressource aménagées fournissent des rendements supplémentaires :[NEWLINE] • [ICON_CULTURE] Culture +1 à l'[COLOR:212,115,212,255]Artisanat[ENDCOLOR].[NEWLINE] • [ICON_CULTURE] Culture +1 si adjacentes à une Place de théâtre.[NEWLINE] •  [ICON_AMENITIES] Activités +1 si adjacentes à un castel (ressource de luxe uniquement).[NEWLINE][NEWLINE]Pour les villes heureuses :[NEWLINE] • [ICON_CULTURE] Culture +5%.[NEWLINE] • Points [ICON_GREATWRITER] d'Écrivain illustre +1 pour les Places du théâtre.[NEWLINE]Pour les villes en liesse :[NEWLINE] • [ICON_CULTURE] Culture +10%.[NEWLINE] • +1 points [ICON_GREATWRITER] d'Écrivain illustre et [ICON_GREATARTIST] d'Artiste illustre pour les Places du théâtre.[NEWLINE]Pour les villes euphoriques :[NEWLINE] • [ICON_CULTURE] Culture +15%.[NEWLINE] • +1 points [ICON_GREATWRITER] d'Écrivain illustre, [ICON_GREATARTIST] d'Artiste illustre et de [ICON_GREATMUSICIAN] Musicien illustre pour les Places du théâtre.[NEWLINE][NEWLINE]La Place du théâtre permet de lancer un projet unique.</Text>
 		</Replace>
 		<Replace Tag="LOC_PROJECT_ECOURT_FESTIVAL_DESCRIPTION" Language="fr_FR">
-			<Text>Projet unique à Catherine (Splendeur), disponible dans chaque ville possédant une Place du théâtre, après la découverte des Foires Médiévales.[NEWLINE][NEWLINE]Une fois terminé, ce projet rapporte +40 [ICON_CULTURE] Culture et +3% de [ICON_TOURISM] Tourisme (cumulable) (vitesse en ligne) en fonction du nombre de copies en surplus que la France possède de ses ressources de luxe.</Text>
+			<Text>Projet unique à Catherine (Splendeur), disponible dans chaque ville possédant une Place du théâtre, après la découverte des [COLOR:212,115,212,255]Foires Médiévales[ENDCOLOR].[NEWLINE][NEWLINE]Une fois terminé, ce projet rapporte +40 [ICON_CULTURE] Culture et +3% de [ICON_TOURISM] Tourisme (cumulable) (vitesse en ligne) en fonction du nombre de copies en surplus que la France possède de ses ressources de luxe.</Text>
 		</Replace>
 		<!-- = Unique unit - Unité unique = -->
 		<Replace Tag="LOC_UNIT_FRENCH_GARDE_IMPERIALE_DESCRIPTION" Language="fr_FR">
@@ -545,7 +582,7 @@
 		<!-- == GAUL - GAULE == -->
 		<!-- = Civilization - Civilisation = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_GAUL_DESCRIPTION" Language="fr_FR">
-			<Text>Pour les [ICON_DISTRICT] quartiers spécialisés :[NEWLINE] • Bonus de proximité +1 des cases de carrière.[NEWLINE] • Bonus de proximité +0.5 des mines.[NEWLINE] • Pas de bonus de proximité habituel des autres quartiers.[NEWLINE] • Ne peuvent pas être adjacents à un Centre-ville.[NEWLINE][NEWLINE]Bias : T3 Fer / T5 Ressources bonus et de luxe à mine et à carrière.</Text>
+			<Text>Pour les [ICON_DISTRICT] quartiers spécialisés :[NEWLINE] • Bonus de proximité +1 des cases de carrière.[NEWLINE] • Bonus de proximité +0.5 des mines.[NEWLINE] • Pas de bonus de proximité habituel des autres quartiers.[NEWLINE] • Ne peuvent pas être placés adjacents à un Centre-ville.[NEWLINE][NEWLINE]Bias : T3 Fer / T5 Ressources bonus et de luxe à mine et à carrière.</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_QUARRY_1_GOLD" Language="fr_FR">
 			<Text>Cases de carrière adjacentes : [ICON_GOLD] Or +{1_num}.</Text>
@@ -693,6 +730,43 @@
 			<Text>Proximité : Bonus de [ICON_CULTURE] Culture standard pour chaque [ICON_DISTRICT] quartier et Centre-ville adjacent et bonus de [ICON_CULTURE] Culture majeur pour chaque merveille adjacente. Ne peut être construite que sur une colline.</Text>
 		</Replace>
 
+		<!-- == GOTHS - GOTHS == --> <!-- BBG expanded -->
+		<!-- = Civilization - Civilisation = --> <!-- BBG expanded -->
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_MER_GOTHIC_MIGRATION_NAME" Language="fr_FR">
+			<Text>Migration des Goths</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_MER_GOTHIC_MIGRATION_DESCRIPTION" Language="fr_FR">
+			<Text>Fonder ou conquérir une ville pour la première fois octroie +1 [ICON_CITIZEN] Citoyens dans toutes vos villes dans un rayon de 6 cases avec au moins 1 [ICON_HOUSING] Habitation libre.</Text>
+		</Replace>
+		<!-- = Leader - Dirigeant = --> <!-- BBG expanded -->
+		<Replace Tag="LOC_TRAIT_LEADER_MER_THEODORIC_GOTHORUM_ROMANORUMQUE" Language="fr_FR">
+			<Text>Gothorum Romanorumque</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_MER_THEODORIC_GOTHORUM_ROMANORUMQUE_DESCRIPTION" Language="fr_FR">
+			<Text>[ICON_MOVEMENT] PM +1 pour les unités militaire terrestre hors cavalerie dans un rayon de 6 cases d'un Hlaiw.</Text>
+		</Replace>
+		<!-- = Unique unit - Unité unique = --> <!-- BBG expanded -->
+		<Replace Tag="LOC_UNIT_MER_MILITOND_NAME" Language="fr_FR">
+			<Text>Militōnd</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_MER_MILITOND_DESCRIPTION" Language="fr_FR">
+			<Text>Unité de combat rapproché de l'ère classique exclusive à Théodoric le Grand, remplaçant le Spadassin.[NEWLINE][NEWLINE][ICON_STRENGTH] Puissance de combat +5 contre les quartiers et les unités dans un quartiers. Gagne une [ICON_PROMOTION] promotion gratuite.</Text>
+		</Replace>
+		<!-- = Unique unit - Unité unique = --> <!-- BBG expanded -->
+		<Replace Tag="LOC_UNIT_MER_GADRAUHT_NAME" Language="fr_FR">
+			<Text>Gadrauht</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_MER_GADRAUHT_DESCRIPTION" Language="fr_FR">
+			<Text>Unité d'anti-cavalerie de l'ère médiévale excluvie aux Goths, remplaçant le Piquier.[NEWLINE][NEWLINE][ICON_STRENGTH] Puissance de combat de base +5. Tuer une unité rapporte 50% de sa [ICON_STRENGTH] Puissance de combat de base en [ICON_CULTURE] Culture (vitesse en ligne). Pour former un Gadrauht, une ville doit avoir au moins 2 [ICON_CITIZEN] Citoyens. Former un Gadrauht fait perdre 1 [ICON_CITIZEN] Citoyen si la ville ne possède pas de Temple.[NEWLINE]Gagne une [ICON_PROMOTION] promotion gratuite.</Text>
+		</Replace>
+		<!-- = Unique building - Bâtiment unique = --> <!-- BBG expanded -->
+		<Replace Tag="LOC_BUILDING_MER_HLAIW_NAME" Language="fr_FR">
+			<Text>Hlaiw</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_MER_HLAIW_DESCRIPTION" Language="fr_FR">
+			<Text>Bâtiment exclusif aux Goths, remplaçant l'autel.[NEWLINE][NEWLINE][ICON_CULTURE] Culture +1 et [ICON_FAITH] Foi +1. [ICON_CULTURE] Culture +0.25 et [ICON_FAITH] Foi +0.25 par [ICON_CITIZEN] Citoyen dans la ville.</Text>
+		</Replace>
+
 		<!-- == HUNGARY - HONGRIE == -->
 		<!-- = Civilization - Civilisation = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_PEARL_DANUBE_DESCRIPTION" Language="fr_FR">
@@ -723,7 +797,7 @@
 		<Replace Tag="LOC_BUILDING_THERMAL_BATH_DESCRIPTION" Language="fr_FR">
 			<Text>Bâtiment exclusif à la Hongrie, remplaçant le zoo.[NEWLINE][NEWLINE][ICON_AMENITIES] Activités +2 et [ICON_TOURISM] Tourisme +3 si la ville possède une case de fissure géothermique.[NEWLINE][NEWLINE][ICON_PRODUCTION] Production +2 et [ICON_AMENITIES] Activités +2 pour les Centres-villes dans un rayon de 6 cases ne profitant pas déjà d'une station thermale.</Text>
 		</Replace>
-		
+
 		<!-- == INCA == -->
 		<!-- = Civilization - Civilisation = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_GREAT_MOUNTAINS_DESCRIPTION" Language="fr_FR">
@@ -731,7 +805,7 @@
 		</Replace>
 		<!-- = Leader - Dirigeant = -->
 		<Replace Tag="LOC_TRAIT_LEADER_PACHACUTI_QHAPAQ_NAN_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_FOOD] Nourriture +1 pour les [ICON_TRADEROUTE] routes commerciales intérieures pour chaque case de montagne de la ville d'origine.[NEWLINE][ICON_GOLD] Or +1 pour les [ICON_TRADEROUTE] routes commerciales internationales pour chaque case de montagne de la ville d'origine.[NEWLINE][NEWLINE]Vous débloquez le Qhapaq Ñan au Commerce avec l'Étranger.</Text>
+			<Text>[ICON_FOOD] Nourriture +1 pour les [ICON_TRADEROUTE] routes commerciales intérieures pour chaque case de montagne de la ville d'origine.[NEWLINE][ICON_GOLD] Or +1 pour les [ICON_TRADEROUTE] routes commerciales internationales pour chaque case de montagne de la ville d'origine.[NEWLINE][NEWLINE]Vous débloquez le Qhapaq Ñan au [COLOR:212,115,212,255]Commerce avec l'Étranger[ENDCOLOR].</Text>
 		</Replace>
 		<!-- = Unique unit - Unité unique = -->
 		<Replace Tag="LOC_UNIT_INCA_WARAKAQ_DESCRIPTION" Language="fr_FR">
@@ -865,7 +939,7 @@
 		</Replace>
 		<!-- = Unique building - Bâtiment unique = -->
 		<Replace Tag="LOC_BUILDING_PRASAT_EXPANSION2_DESCRIPTION" Language="fr_FR">
-			<Text>Bâtiment exclusif aux Khmers, remplaçant le temple.[NEWLINE][NEWLINE][ICON_FAITH] Foi +6.[NEWLINE][ICON_CULTURE] Culture +0.3 pour chaque [ICON_CITIZEN] Citoyen dans la ville. À l'Aviation, [ICON_TOURISM] Tourisme +10 dans la ville si elle possède au moins 10 [ICON_CITIZEN] Citoyens et [ICON_TOURISM] Tourisme +20 dans la ville si elle possède au moins 20 [ICON_CITIZEN] Citoyens.</Text>
+			<Text>Bâtiment exclusif aux Khmers, remplaçant le temple.[NEWLINE][NEWLINE][ICON_FAITH] Foi +6.[NEWLINE][ICON_CULTURE] Culture +0.3 pour chaque [ICON_CITIZEN] Citoyen dans la ville. À l'[COLOR_FLOAT_SCIENCE]Aviation[ENDCOLOR], [ICON_TOURISM] Tourisme +10 dans la ville si elle possède au moins 10 [ICON_CITIZEN] Citoyens et [ICON_TOURISM] Tourisme +20 dans la ville si elle possède au moins 20 [ICON_CITIZEN] Citoyens.</Text>
 		</Replace>
 
 		<!-- == KONGO == -->
@@ -1044,7 +1118,7 @@
 		</Replace>
 		<!-- = Unique building - Bâtiment unique = -->
 		<Replace Tag="LOC_BUILDING_MARAE_DESCRIPTION" Language="fr_FR">
-			<Text>Bâtiment exclusif aux Maoris, remplaçant l'amphithéâtre.[NEWLINE][NEWLINE][ICON_CULTURE] Culture +1 et [ICON_FAITH] Foi +1 pour les cases de bois, forêt tropicale, marais, oasis, récif, faille géothermique, plaines inondables et merveille naturelle, ainsi que [ICON_TOURISM] Tourisme +1 à l'Aviation pour ces mêmes cases.[NEWLINE][NEWLINE]Aucun coût d'entretien.[NEWLINE]Aucun emplacement de chef-d'œuvre.[NEWLINE]Ne produit pas de points [ICON_GREATWRITER] d'Écrivain illustre.</Text>
+			<Text>Bâtiment exclusif aux Maoris, remplaçant l'amphithéâtre.[NEWLINE][NEWLINE][ICON_CULTURE] Culture +1 et [ICON_FAITH] Foi +1 pour les cases de bois, forêt tropicale, marais, oasis, récif, faille géothermique, plaines inondables et merveille naturelle, ainsi que [ICON_TOURISM] Tourisme +1 à l'[COLOR_FLOAT_SCIENCE]Aviation[ENDCOLOR] pour ces mêmes cases.[NEWLINE][NEWLINE]Aucun coût d'entretien.[NEWLINE]Aucun emplacement de chef-d'œuvre.[NEWLINE]Ne produit pas de points [ICON_GREATWRITER] d'Écrivain illustre.</Text>
 		</Replace>
 		<!-- = Unique improvement - Aménagement unique = -->
 		<Replace Tag="LOC_IMPROVEMENT_MAORI_PA_DESCRIPTION" Language="fr_FR">
@@ -1229,7 +1303,7 @@
 		</Replace>
 		<!-- = Leader (Kanuni) - Dirigeant (Kanuni) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_SULEIMAN_GOVERNOR_DESCRIPTION" Language="fr_FR">
-			<Text>Vous avez la possibilité de recruter un [ICON_GOVERNOR] gouverneur supplémentaire exclusif disposant de capacités militaires et diplomatiques.[NEWLINE][NEWLINE]Titre de [ICON_GOVERNOR] gouverneur +1 à la Poudre à Canon.</Text>
+			<Text>Vous avez la possibilité de recruter un [ICON_GOVERNOR] gouverneur supplémentaire exclusif disposant de capacités militaires et diplomatiques.[NEWLINE][NEWLINE]Titre de [ICON_GOVERNOR] gouverneur +1 à la [COLOR_FLOAT_SCIENCE]Poudre à Canon[ENDCOLOR].</Text>
 		</Replace>
 		<!-- = Leader (Muhtesem) - Dirigeant (Muhtesem) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_SULEIMAN_ALT_DESCRIPTION" Language="fr_FR">
@@ -1253,7 +1327,7 @@
 		</Replace>
 		<!-- = Unique unit - Unité unique = -->
 		<Replace Tag="LOC_UNIT_OTTOMAN_BARBARY_CORSAIR_DESCRIPTION" Language="fr_FR">
-			<Text>Unité navale d'assaut en mer de l'ère médiévale exclusive aux Ottomans, remplaçant le Corsaire.[NEWLINE][NEWLINE]Les assauts côtiers ne coûtent pas de [ICON_MOVEMENT] PM.[NEWLINE][NEWLINE]Peut naviguer sur les cases d'océan sans avoir recherché la Cartographie.[NEWLINE]Ne peut être vu que par d'autres unités navales d'assaut en mer à moins de lui être adjacent. Révèle les unités d'assaut en mer dans le champ de vision.</Text>
+			<Text>Unité navale d'assaut en mer de l'ère médiévale exclusive aux Ottomans, remplaçant le Corsaire.[NEWLINE][NEWLINE]Les assauts côtiers ne coûtent pas de [ICON_MOVEMENT] PM.[NEWLINE][NEWLINE]Peut naviguer sur les cases d'océan sans avoir recherché la [COLOR_FLOAT_SCIENCE]Cartographie[ENDCOLOR].[NEWLINE]Ne peut être vu que par d'autres unités navales d'assaut en mer à moins de lui être adjacent. Révèle les unités d'assaut en mer dans le champ de vision.</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_CORSAIR_DESCRIPTION" Language="fr_FR">
 			<Text>Les assauts côtiers ne coûtent pas de [ICON_MOVEMENT] PM et peut naviguer sur les cases d'océan sans avoir recherché la Cartographie.</Text>
@@ -1266,7 +1340,7 @@
 		<!-- == PERSIA - PERSE == -->
 		<!-- = Civilization - Civilisation = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_SATRAPIES_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_GOLD] Or +2 pour vos [ICON_TRADEROUTE] routes commerciales intérieures (passe à +4 à [COLOR_FLOAT_SCIENCE]Banque[ENDCOLOR] et à +6 aux [COLOR_FLOAT_SCIENCE]Sciences Économiques[ENDCOLOR]).[NEWLINE]Capacité de [ICON_TRADEROUTE] routes commerciales +1 à la Philosophie Politique.[NEWLINE][NEWLINE]Les routes construites sur votre territoire sont d'un niveau supérieur.</Text>
+			<Text>[ICON_GOLD] Or +2 pour vos [ICON_TRADEROUTE] routes commerciales intérieures (passe à +4 à [COLOR_FLOAT_SCIENCE]Banque[ENDCOLOR] et à +6 aux [COLOR_FLOAT_SCIENCE]Sciences Économiques[ENDCOLOR]).[NEWLINE]Capacité de [ICON_TRADEROUTE] routes commerciales +1 à la [COLOR:212,115,212,255]Philosophie Politique[ENDCOLOR].[NEWLINE][NEWLINE]Les routes construites sur votre territoire sont d'un niveau supérieur.</Text>
 		</Replace>
 		<!-- = Leader (Cyrus - Dirigeant (Cyrus) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_FALL_BABYLON_EXPANSION2_DESCRIPTION" Language="fr_FR">
@@ -1277,7 +1351,7 @@
 		</Replace>
 		<!-- = Leader (Nader Shah) - Dirigeant (Nader Shah) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_NADER_SHAH_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_SCIENCE] Science +1 pour vos [ICON_TRADEROUTE] routes commerciales intérieures (passe à +3 à [COLOR:212,115,212,255]Éducation[ENDCOLOR] et à +5 à [COLOR:212,115,212,255]Théorie Scientifique[ENDCOLOR]).[NEWLINE][NEWLINE][ICON_STRENGTH] Puissance de combat +5 en attaque contre les unités non blessées et les quartiers défendables.</Text>
+			<Text>[ICON_SCIENCE] Science +1 pour vos [ICON_TRADEROUTE] routes commerciales intérieures (passe à +3 à [COLOR_FLOAT_SCIENCE]Éducation[ENDCOLOR] et à +5 à [COLOR_FLOAT_SCIENCE]Théorie Scientifique[ENDCOLOR]).[NEWLINE][NEWLINE][ICON_STRENGTH] Puissance de combat +5 en attaque contre les unités non blessées et les quartiers défendables.</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_NADER_SHAH_COMBAT_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_STRENGTH] Puissance de combat +5 (Épée de Perse)</Text>
@@ -1332,15 +1406,29 @@
 		<!-- == POLAND - POLOGNE == -->
 		<!-- = Civilization - Civilisation = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_GOLDEN_LIBERTY_DESCRIPTION" Language="fr_FR">
-			<Text>Un emplacement de doctrine Militaire est converti en emplacement de doctrine Joker.[NEWLINE][NEWLINE]Les Campements et les Forts provoquent une bombe culturelle.</Text>	
+			<Text>Un emplacement de doctrine Militaire est converti en emplacement de doctrine Joker.[NEWLINE][NEWLINE]Les Campements et les Forts provoquent une bombe culturelle.</Text>
 		</Replace>
-		<!-- = Leader - Dirigeant = -->
+		<!-- = Leader (Jadwiga) - Dirigeant (Hedwige Ière) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_LITHUANIAN_UNION_DESCRIPTION" Language="fr_FR">
 			<Text>Créer et achever votre [ICON_RELIGION] religion vous octroie une [ICON_GREATWORK_RELIC] relique.[NEWLINE][ICON_GOLD] Or +4, [ICON_CULTURE] Culture +2 et [ICON_FAITH] Foi +2 pour les [ICON_GREATWORK_RELIC] reliques.[NEWLINE][NEWLINE]Les Lieux saints bénéficient d'un bonus de proximité standard, plutôt que mineur, de la part des autres quartiers.[NEWLINE][NEWLINE]Votre [ICON_RELIGION] religion devient majoritaire dans les villes qui perdent une case suite à une bombe culturelle.</Text>
 		</Replace>
-		<!-- = Unique unit - Unité unique = -->
+		<!-- = Leader (Stanisław) - Dirigeant (Stanislas II) = --> <!-- BBG expanded -->
+		<Replace Tag="LOC_TRAIT_LEADER_JFD_NATIONAL_EDUCATION_NAME" Language="fr_FR">
+			<Text>Commission de l'éducation nationale</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_JFD_NATIONAL_EDUCATION_DESCRIPTION" Language="fr_FR">
+			<Text>Les cases de ressources et/ou aménagées reçoivent des rendements supplémentaires si elles sont adjacentes à un Campement et ses bâtiments :[NEWLINE] • Campement : [ICON_FOOD] nourriture +1.[NEWLINE] • Caserne/Écurie : [ICON_CULTURE] Culture +1.[NEWLINE] • Armurerie : [ICON_SCIENCE] Science +1.[NEWLINE] • École militaire : [ICON_PRODUCTION] Production +1.</Text>
+		</Replace>
+		<!-- = Unique unit (Winged hussar) - Unité unique (Hussard ailé) = -->
 		<Replace Tag="LOC_UNIT_POLISH_HUSSAR_EXPANSION2_DESCRIPTION" Language="fr_FR">
 			<Text>Unité de cavalerie lourde de la Renaissance exclusive à la Pologne, remplaçant le Cuirassier.[NEWLINE][NEWLINE][ICON_STRENGTH] Puissance de base -2.[NEWLINE][NEWLINE]Elle repousse les unités ennemies en défense dans les combats où elle a l'avantage. Les défenseurs ne pouvant pas battre en retraite subissent des dégâts supplémentaires.</Text>
+		</Replace>
+		<!-- = Unique unit (Uhlan) - Unité unique (Uhlan) = --> <!-- BBG expanded -->
+		<Replace Tag="LOC_UNIT_JFD_UHLAN_NAME" Language="fr_FR">
+			<Text>Uhlan</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_JFD_UHLAN_DESCRIPTION" Language="fr_FR">
+			<Text>Unité de cavalerie légère de la Renaissance exclusive à Stanislas II, remplaçant la Cavalerie.[NEWLINE][NEWLINE]Bonus de contournement doublé.</Text>
 		</Replace>
 		<!-- = Unique building - Bâtiment unique = -->
 		<Replace Tag="LOC_BUILDING_SUKIENNICE_EXPANSION1_DESCRIPTION" Language="fr_FR">
@@ -1376,7 +1464,7 @@
 		</Replace>
 		<!-- = Leader (Trajan) - Dirigeant (Trajan) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_TRAJANS_COLUMN_DESCRIPTION" Language="fr_FR">
-			<Text>Au [COLOR:212,115,212,255]Premier Empire[ENDCOLOR], toutes vos villes existantes et à venir sont dotées d'un monument gratuit.</Text>
+			<Text>Au [COLOR:212,115,212,255]Premier Empire[ENDCOLOR], toutes vos villes existantes et à venir sont dotées du bâtiment au coût de [ICON_PRODUCTION] Production le plus bas.</Text>
 		</Replace>
 		<!-- = Leader (Julius Caesar) - Dirigeant (Jules César) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_CAESAR_DESCRIPTION" Language="fr_FR">
@@ -1617,7 +1705,56 @@
 		<Replace Tag="LOC_IMPROVEMENT_OPEN_AIR_MUSEUM_DESCRIPTION" Language="fr_FR">
 			<Text>Aménagement exclusif à la Suède, débloqué au [COLOR:212,115,212,255]Service Diplomatique[ENDCOLOR].[NEWLINE][NEWLINE]Loyauté +2 par tour dans la ville.[NEWLINE][ICON_CULTURE] Culture +2 et [ICON_TOURISM] Tourisme +2 pour chaque type de terrain (prairie/plaine/désert/toundra/neige) sur lequel une ville suédoise est construite.[NEWLINE][NEWLINE]Limité à un par ville. Les cases contenant un musée en plein air ne peuvent pas être attribuées à une autre ville.</Text>
 		</Replace>
-		
+
+		<!-- == TAÍNO - TAÏNOS == --> <!-- BBG expanded -->
+		<!-- = Civilization - Civilisation = --> <!-- BBG expanded -->
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_CVS_TAINO_UA_NAME" Language="fr_FR">
+			<Text>Guatiao</Text>
+		</Replace>
+        <Replace Tag="LOC_TRAIT_CIVILIZATION_CVS_TAINO_UA_DESCRIPTION" Language="fr_FR">
+			<Text>Les doctrines qui octroient des points de [ICON_GREATPERSON] Personnage illustre fournissent +3 [ICON_FOOD] Nourriture aux villes possédant le quartier correspondant.[NEWLINE][NEWLINE]Les doctrines diplomatiques fournissent +1 [ICON_AMENITIES] Activités aux villes possédant un batey.</Text>
+		</Replace>
+		<!-- = Leader - Dirigeant = --> <!-- BBG expanded -->
+		<Replace Tag="LOC_TRAIT_LEADER_CVS_ANACAONA_NAME" Language="fr_FR">
+			<Text>Fleur dorée</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_CVS_ANACAONA_UA_DESCRIPTION" Language="fr_FR">
+			<Text>À la [COLOR:212,115,212,255]Philosophie Politique[ENDCOLOR], chaque engagement d'ère octroie un emplacement de doctrine différent.[NEWLINE][NEWLINE][ICON_GOLD] Or +5% pour les villes heureuses (passe à +10% pour les villes en liesse et +15% pour les villes euphoriques).</Text>
+		</Replace>
+		<!-- = Unique unit - Unité unique = --> <!-- BBG expanded -->
+		<Replace Tag="LOC_UNIT_CVS_TAINO_UU_NAME" Language="fr_FR">
+			<Text>Macana</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_CVS_TAINO_UU_DESCRIPTION" Language="fr_FR">
+			<Text>Unité unique de reconnaissance de l'ère antique exclusive aux Taïnos, remplaçant le Guerrier.[NEWLINE][NEWLINE][ICON_MOVEMENT] PM +1 et Vision +1.[NEWLINE][NEWLINE]Garde ses [ICON_PROMOTION] promotions de reconnaissance à l'amélioration.[NEWLINE][NEWLINE]Tuer une unité rapporte 50% de sa [ICON_STRENGTH] Puissance de combat de base en [ICON_FAITH] Foi (vitesse en ligne).</Text>
+		</Replace>
+		<!-- = Unique district - Quartier unique = --> <!-- BBG expanded -->
+		<Replace Tag="LOC_DISTRICT_CVS_TAINO_UI_NAME" Language="fr_FR">
+			<Text>Batey</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_CVS_TAINO_UI_DESCRIPTION" Language="fr_FR">
+			<Text>Quartier exclusif aux Taïnos, remplaçant le Complexe de loisirs.[NEWLINE][NEWLINE]Les bâtiments de ce quartier fournissent +1 [ICON_AMENITIES] Activités.[NEWLINE]Fournit +2 [ICON_PRODUCTION] Production pour chaque Plateforme commerciale et Port adjacent.[NEWLINE][NEWLINE]Permet de lancer un projet unique, qui produit de la [ICON_FAITH] Foi et qui octroie des points [ICON_GREATWRITER] d'Écrivain illustre, [ICON_GREATARTIST] d'Artiste illustre et de [ICON_GREATMUSICIAN] Musicien illustre.</Text>
+		</Replace>
+		<Replace Tag="LOC_BBG_PRODUCTION_TAINO_HARBOR" Language="fr_FR">
+			<Text>Ports adjacents : [ICON_PRODUCTION] Production +{1_num}.</Text>
+		</Replace>
+		<Replace Tag="LOC_BBG_PRODUCTION_TAINO_COMMERCIAL_HUB" Language="fr_FR">
+			<Text>Plateformes commerciales adjacentes : [ICON_PRODUCTION] Production +{1_num}.</Text>
+		</Replace>
+		<Replace Tag="LOC_BBG_TAINO_THEATRE_CULTURE" Language="fr_FR">
+			<Text>Bateys adjacents : [ICON_CULTURE] Culture +{1_num}.</Text>
+		</Replace>
+		<Replace Tag="LOC_PROJECT_CVS_TAINO_UP_NAME" Language="fr_FR">
+			<Text>Areyto</Text>
+		</Replace>
+		<Replace Tag="LOC_PROJECT_CVS_TAINO_UP_DESCRIPTION" Language="fr_FR">
+			<Text>Projet unique aux Taïnos, disponible dans le Batey. Convertir 15% de la [ICON_PRODUCTION] en [ICON_FAITH] Foi. Octroie des points [ICON_GREATWRITER] d'Écrivain illustre, [ICON_GREATARTIST] d'Artiste illustre et de [ICON_GREATMUSICIAN] Musicien illustre à sa complétion..</Text>
+		</Replace>
+		<!-- = Unique improvement - Aménagement unique = -->
+		<Replace Tag="LOC_IMPROVEMENT_CVS_ANACAONA_UI_DESCRIPTION" Language="fr_FR">
+			<Text>Aménagement exclusif aux Taïnos.[NEWLINE][NEWLINE]Rendements de base de la case (hors ressources et caractéristiques de terrain) doublés.[NEWLINE][NEWLINE][ICON_CULTURE] Culture +1.[NEWLINE][ICON_CULTURE] Culture +1 aux [COLOR:212,115,212,255]Foires Médiévales[ENDCOLOR].[NEWLINE][ICON_CULTURE] Culture +1 à l'[COLOR:212,115,212,255]Histoire Naturelle[ENDCOLOR].[NEWLINE][NEWLINE]Doit être placé sur une case adjacente à une ressource bonus ou de luxe. Ne peut pas être placé sur une case de collines, de désert ou de neige.</Text>
+		</Replace>
+
 		<!-- = TEOTIHUACAN = --> <!-- BBG expanded -->
 		<!-- = Civilization - Civilisation = --> <!-- BBG expanded -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_LIME_TEO_MEN_BECOME_GODS_NAME" Language="fr_FR">
@@ -1684,7 +1821,7 @@
 			<Text>Cabane de chasse</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_LIME_THULE_WBH_DESCRIPTION" Language="fr_FR">
-			<Text>Aménagement exclusif au Thulé.[NEWLINE][NEWLINE][ICON_HOUSING] Habitations +1.[NEWLINE][ICON_FOOD] Nourriture +1 si construit sur une case de Toundra.[NEWLINE][ICON_FOOD] Nourriture +2 si construit sur une case de Neige.[NEWLINE][ICON_CULTURE] Culture +1 et [ICON_FAITH] Foi +1 pour chaque case de ressource maritime et de camp adjacente au [COLOR:212,115,212,255]Commerce avec l'Étranger[ENDCOLOR].[NEWLINE]Génère du [ICON_TOURISM] Tourisme par le biais de la [ICON_FAITH] Foi à l'[COLOR_FLOAT_SCIENCE]Aviation[ENDCOLOR].[NEWLINE][NEWLINE]Doit être construit adjacent à une case de ressource. Peut être aménagé dans une case de bois. Ne peut pas être aménagé adjacent à une case de cabane de chasse.</Text>
+			<Text>Aménagement exclusif au Thulé.[NEWLINE][NEWLINE][ICON_HOUSING] Habitations +1.[NEWLINE][ICON_FOOD] Nourriture +1 si construit sur une case de Toundra.[NEWLINE][ICON_FOOD] Nourriture +2 si construit sur une case de Neige.[NEWLINE][ICON_CULTURE] Culture +1 et [ICON_FAITH] Foi +1 pour chaque case de ressource maritime et de camp adjacente au [COLOR:212,115,212,255]Commerce avec l'Étranger[ENDCOLOR].[NEWLINE]Génère du [ICON_TOURISM] Tourisme par le biais de la [ICON_FAITH] Foi à l'[COLOR_FLOAT_SCIENCE]Aviation[ENDCOLOR].[NEWLINE][NEWLINE]Doit être construit adjacent à une case de ressource bonus ou de luxe. Peut être aménagé dans une case de bois. Ne peut pas être aménagé adjacent à une case de cabane de chasse.</Text>
 		</Replace>
 
 		<!-- = TIBET = --> <!-- BBG expanded -->
@@ -1719,7 +1856,7 @@
 		<Replace Tag="LOC_DISTRICT_SUK_DZONG_DESCRIPTION_XP2" Language="fr_FR">
 			<Text>Quartier exclusif au Tibet, remplaçant le Lieu saint.[NEWLINE][NEWLINE]En plus des bonus du Lieu saint, [ICON_STRENGTH] Puissance de combat défensive +5 pour les unités se trouvant dans le quartier.[NEWLINE]Les bâtiments du Dzong sont 10% moins chers à acheter en [ICON_GOLD] Or et en [ICON_FAITH] Foi.</Text>
 		</Replace>
-		
+
 		<!-- == VIETNAM == -->
 		<!-- = Civilization - Civilisation = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_VIETNAM_DESCRIPTION" Language="fr_FR">
@@ -1990,7 +2127,7 @@
 
 		<!-- == CIVILIAN UNITS - UNITÉS CIVILES == -->
 		<Replace Tag="LOC_UNIT_TRADER_DESCRIPTION" Language="fr_FR"> <!-- embarkation tip -->
-			<Text>Crée une route commerciale entre 2 villes. Crée automatiquement une route sur son passage. Peut embarquer une fois la Navigation Astronomique ou la Construction Navale découverte.</Text>
+			<Text>Crée une route commerciale entre 2 villes. Crée automatiquement une route sur son passage. Peut embarquer une fois la [COLOR_FLOAT_SCIENCE]Navigation Astronomique[ENDCOLOR] ou la [COLOR_FLOAT_SCIENCE]Construction Navale[ENDCOLOR] découverte.</Text>
 		</Replace>
 
 		<!-- == SUPPORT UNITS - UNITÉS DE SOUTIEN == -->
@@ -2284,7 +2421,7 @@
 		<Replace Tag="LOC_PROMOTION_SUPER_CARRIER_DESCRIPTION" Language="fr_FR">
 			<Text>Peut se soigner en dehors des territoires alliés.</Text>
 		</Replace>
-	
+
 		<!-- == AIR FIGHTER - CHASSEUR == -->
 		<Replace Tag="LOC_PROMOTION_DOGFIGHTING_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_STRENGTH] Puissance de combat +7 contre les chasseurs.</Text>
@@ -2307,7 +2444,7 @@
 		<Replace Tag="LOC_PROMOTION_DROP_TANKS_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_RANGE] Portée +2.</Text>
 		</Replace>
-	
+
 		<!-- == AIR BOMBER - BOMBARDIER == -->
 		<Replace Tag="LOC_PROMOTION_BOX_FORMATION_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_STRENGTH] Puissance de combat en défense +7 contre les chasseurs.</Text>
@@ -2420,7 +2557,7 @@
 		<Replace Tag="LOC_PROMOTION_SURF_ROCK_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_DISTRICT_WATER_ENTERTAINMENT_COMPLEX] [ICON_DISTRICT_HARBOR] Gagne virtuellement 1 niveau de plus sur les Parcs aquatiques ou les Ports. [ICON_TOURISM] Tourisme +500 sur ces cases (passe à +1000 si le Port possède un chantier naval).</Text>
 		</Replace>
-	
+
 		<!-- == SPY - ESPION == -->
 		<!-- removed
 		<Replace Tag="LOC_PROMOTION_SPY_SATCHEL_CHARGES_DESCRIPTION" Language="fr_FR">
@@ -2495,7 +2632,7 @@
 		<Replace Tag="LOC_PROMOTION_GDR_ARMOR_UPGRADE_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_STRENGTH] Puissance de combat en défense +10 contre les unités terrestres et navales.</Text>
 		</Replace>
-		
+
 		<!-- == don't know what it is == -->
 		<Replace Tag="LOC_ABILITY_ANTI_SPEAR_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_STRENGTH] Puissance de combat +10 contre les unités de classe anti-cavalerie.</Text>
@@ -2549,7 +2686,7 @@
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_AIR_DEFENSE_INITIATIVE_DESCRIPTION" Language="fr_FR"> <!-- M3 -->
 			<Text>[ICON_ANTIAIR_LARGE] Puissance de combat +25 pour les unités anti-aériennes qui se trouvent dans le territoire de la ville.</Text>
-		</Replace>		
+		</Replace>
 
 		<!-- == AMANI == -->
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_AMBASSADOR_MESSENGER_DESCRIPTION" Language="fr_FR"> <!-- M0 -->
@@ -2572,7 +2709,7 @@
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_AMBASSADOR_PUPPETEER_DESCRIPTION" Language="fr_FR"> <!-- M3 -->
 			<Text>Si en poste dans une Cité-état, double le nombre [ICON_ENVOY] d'émissaires que vous y possédez.</Text>
-		</Replace>		
+		</Replace>
 
 		<!-- == MOKSHA == -->
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_CARDINAL_BISHOP_DESCRIPTION" Language="fr_FR"> <!-- M0 -->
@@ -2628,7 +2765,7 @@
 			<Text>[ICON_FOOD] Nourriture +1 sur toutes les ressources révélées dans la ville.</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_PARKS_RECREATION_DESCRIPTION" Language="fr_FR"> <!-- L2 -->
-			<Text>Peut construire un parc urbain sur un terrain plat de cette ville une fois les Loisirs découverts. [ICON_SCIENCE] Science +3, [ICON_CULTURE] Culture +2, [ICON_HOUSING] Habitations +2 et [ICON_AMENITIES] Activités +1. Attrait +2 pour les cases adjacentes. Un par ville.</Text>
+			<Text>Peut construire un parc urbain sur un terrain plat de cette ville aux [COLOR:212,115,212,255]Loisirs[ENDCOLOR]. [ICON_SCIENCE] Science +3, [ICON_CULTURE] Culture +2, [ICON_HOUSING] Habitations +2 et [ICON_AMENITIES] Activités +1. Attrait +2 pour les cases adjacentes. Un par ville.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_CITY_PARK_DESCRIPTION" Language="fr_FR"> <!-- L2 -->
 			<Text>Aménagement unique à [ICON_GOVERNOR] Liang. [ICON_SCIENCE] Science +3, [ICON_CULTURE] Culture +2, [ICON_HOUSING] Habitations +2 et [ICON_AMENITIES] Activités +1. Attrait +2 pour les cases adjacentes.</Text>
@@ -2714,7 +2851,7 @@
 		<Replace Tag="LOC_GOVERNOR_PROMOTION_GRAND_VISIER_DESCRIPTION" Language="fr_FR"> <!-- M3 -->
 			<Text>[ICON_HOUSING] Habitations +5 et [ICON_AMENITIES] Activités +5.</Text>
 		</Replace>
-		
+
 		<!-- == FIRE IS BORN == --> <!-- BBG expanded -->
 		<Replace Tag="LOC_GOVERNOR_LIME_TEO_OWL_EMISSARY_NAME" Language="fr_FR">
 			<Text>Fire is Born</Text>
@@ -2723,13 +2860,13 @@
 		<Replace Tag="LOC_GOVERNOR_LIME_TEO_OWL_EMISSARY_DESC" Language="fr_FR">
 			<Text></Text>
 		</Replace>
-		--> 
+		-->
 		<Replace Tag="LOC_GOVERNOR_LIME_TEO_OWL_EMISSARY_TITLE" Language="fr_FR">
 			<Text>L'Émissaire</Text>
 		</Replace>
 		<Replace Tag="LOC_GOVERNOR_LIME_TEO_OWL_EMISSARY_SHORT_TITLE" Language="fr_FR">
 			<Text>L'Émissaire</Text>
-		</Replace>		
+		</Replace>
 		<Replace Tag="LOC_GOV_PROMO_LIME_TEO_OWL_EMISSARY_ARRIVAL_NAME" Language="fr_FR"> <!-- M0 -->
 			<Text>Arrivée de l'Émissaire</Text>
 		</Replace>
@@ -2900,7 +3037,7 @@
 			<Text>[ICON_SCIENCE] Science +1 tous les 3 fidèles de cette [ICON_RELIGION] religion dans d'autres civilisations.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_TITHE_EXPANSION2_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_GOLD] Or +2 pour chaque ville convertie à cette [ICON_RELIGION] religion (passe à +3 à Théologie).</Text>
+			<Text>[ICON_GOLD] Or +2 pour chaque ville convertie à cette [ICON_RELIGION] religion (passe à +3 à [COLOR:212,115,212,255]Théologie[ENDCOLOR]).</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_WORLD_CHURCH_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_CULTURE] Culture +1 tous les 3 fidèles de cette [ICON_RELIGION] religion dans d'autres civilisations.</Text>
@@ -2910,12 +3047,12 @@
 		</Replace>
 		<Replace Tag="LOC_BELIEF_LAY_MINISTRY_DESCRIPTION" Language="fr_FR">
 			<Text>Les Places du théâtre et les Lieux saints d'une ville convertie à cette [ICON_RELIGION] religion fournissent respectivement +2 [ICON_CULTURE] Culture ou +2 [ICON_FAITH] Foi.</Text>
-		</Replace>	
+		</Replace>
 		<Replace Tag="LOC_BELIEF_SACRED_PLACES_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_GOLD] Or +2, [ICON_SCIENCE] Science +2, [ICON_CULTURE] Culture +2 et [ICON_FAITH] Foi +2 pour chaque ville convertie à cette [ICON_RELIGION] religion et dotée d'une merveille mondiale.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_PILGRIMAGE_EXPANSION2_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_FAITH] Foi +2 pour chaque ville convertie à cette [ICON_RELIGION] religion (passe à +3 à Théologie).</Text>
+			<Text>[ICON_FAITH] Foi +2 pour chaque ville convertie à cette [ICON_RELIGION] religion (passe à +3 à [COLOR:212,115,212,255]Théologie[ENDCOLOR]).</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_PAPAL_PRIMACY_DESCRIPTION" Language="fr_FR">
 			<Text>Lorsque vous envoyez un [ICON_ENVOY] émissaire dans une Cité-état, celle-ci subit 200 points de [ICON_RELIGION] pression religieuse.</Text>
@@ -2947,7 +3084,7 @@
 			<Text>La [ICON_RELIGION] religion se propage aux villes 30% plus éloignées.</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_SCRIPTURE_DESCRIPTION" Language="fr_FR">
-			<Text>Propagation de la [ICON_RELIGION] religion due à la pression d'une ville adjacente +25%. Monte à 50% à l'Imprimerie.</Text>
+			<Text>Propagation de la [ICON_RELIGION] religion due à la pression d'une ville adjacente +25%. Monte à 50% à l'[COLOR_FLOAT_SCIENCE]Imprimerie[ENDCOLOR].</Text>
 		</Replace>
 		<Replace Tag="LOC_BELIEF_MISSIONARY_ZEAL_DESCRIPTION" Language="fr_FR">
 			<Text>Les unités religieuses ignorent les pénalités de [ICON_MOVEMENT] mouvement du terrain.</Text>
@@ -2996,35 +3133,35 @@
 		<!-- === IMPROVEMENTS - AMÉNAGEMENTS === -->
 
 		<Replace Tag="LOC_IMPROVEMENT_FARM_DESCRIPTION" Language="fr_FR">
-			<Text>Débloque la compétence de Bâtisseur permettant de construire une ferme.[NEWLINE][NEWLINE][ICON_FOOD] Nourriture +1 et [ICON_HOUSING] Habitations +0.5. [ICON_FOOD] Nourriture +1 toutes les 2 fermes adjacentes à la Féodalité (+1 toutes les fermes adjacentes Pièces de Rechange). Ne peut être construite que sur une prairie ou une plaine.</Text>
+			<Text>Débloque la compétence de Bâtisseur permettant de construire une ferme.[NEWLINE][NEWLINE][ICON_FOOD] Nourriture +1 et [ICON_HOUSING] Habitations +0.5. [ICON_FOOD] Nourriture +1 toutes les 2 fermes adjacentes à la [COLOR:212,115,212,255]Féodalité[ENDCOLOR] (+1 toutes les fermes adjacentes aux [COLOR_FLOAT_SCIENCE]Pièces de Rechange[ENDCOLOR]). Ne peut être construite que sur une prairie ou une plaine.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_MINE_DESCRIPTION" Language="fr_FR">
-			<Text>Débloque la compétence de Bâtisseur permettant de construire une mine.[NEWLINE][NEWLINE][ICON_PRODUCTION] Production +1. [ICON_PRODUCTION] Production +1 à Apprentissage, Industrialisation et Matériaux Intelligents. Attrait -1 pour les cases adjacentes. Ne peut être construite que sur une colline ou une ressource valide.[NEWLINE][NEWLINE]Permet d'utiliser la ressource stratégique ou de luxe sur laquelle l'aménagement est construit.</Text>
+			<Text>Débloque la compétence de Bâtisseur permettant de construire une mine.[NEWLINE][NEWLINE][ICON_PRODUCTION] Production +1. [ICON_PRODUCTION] Production +1 à [COLOR_FLOAT_SCIENCE]Apprentissage[ENDCOLOR], [COLOR_FLOAT_SCIENCE]Industrialisation[ENDCOLOR] et [COLOR_FLOAT_SCIENCE]Matériaux Intelligents[ENDCOLOR]. Attrait -1 pour les cases adjacentes. Ne peut être construite que sur une colline ou une ressource valide.[NEWLINE][NEWLINE]Permet d'utiliser la ressource stratégique ou de luxe sur laquelle l'aménagement est construit.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_LUMBER_MILL_DESCRIPTION" Language="fr_FR">
-			<Text>Débloque la compétence de Bâtisseur permettant de construire une scierie.[NEWLINE][NEWLINE][ICON_PRODUCTION] Production +2. [ICON_PRODUCTION] Production +1 à Ballistiques et à Matériaux Synthétiques. Ne peut être construite que sur une case de bois, ou une case de forêt tropicale une fois le Mercantilisme découvert.</Text>
+			<Text>Débloque la compétence de Bâtisseur permettant de construire une scierie.[NEWLINE][NEWLINE][ICON_PRODUCTION] Production +2. [ICON_PRODUCTION] Production +1 à la [COLOR_FLOAT_SCIENCE]Ballistique[ENDCOLOR] et aux [COLOR_FLOAT_SCIENCE]Matériaux Synthétiques[ENDCOLOR]. Ne peut être construite que sur une case de bois, ou une case de forêt tropicale au [COLOR:212,115,212,255]Mercantilisme[ENDCOLOR].</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_FISHING_BOATS_DESCRIPTION" Language="fr_FR">
-			<Text>Débloque la compétence de Bâtisseur permettant de construire un bateau de pêche.[NEWLINE][NEWLINE][ICON_FOOD] Nourriture +1, [ICON_PRODUCTION] Production +1 et [ICON_HOUSING] Habitations +0.5. [ICON_FOOD] Nourriture +1 à Matières Plastiques. [ICON_PRODUCTION] Production +1 à Colonialisme. [ICON_GOLD] Or +2 à la Cartographie. Ne peut être construit que sur une ressource valide.[NEWLINE][NEWLINE]Permet d'utiliser la ressource de luxe sur laquelle l'aménagement est construit.</Text>
+			<Text>Débloque la compétence de Bâtisseur permettant de construire un bateau de pêche.[NEWLINE][NEWLINE][ICON_FOOD] Nourriture +1, [ICON_PRODUCTION] Production +1 et [ICON_HOUSING] Habitations +0.5. [ICON_FOOD] Nourriture +1 aux [COLOR_FLOAT_SCIENCE]Matières Plastiques[ENDCOLOR]. [ICON_PRODUCTION] Production +1 à [COLOR:212,115,212,255]Colonialisme[ENDCOLOR]. [ICON_GOLD] Or +2 à la [COLOR_FLOAT_SCIENCE]Cartographie[ENDCOLOR]. Ne peut être construit que sur une ressource valide.[NEWLINE][NEWLINE]Permet d'utiliser la ressource de luxe sur laquelle l'aménagement est construit.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_PASTURE_DESCRIPTION" Language="fr_FR">
-			<Text>Débloque la compétence de Bâtisseur permettant de construire un pâturage.[NEWLINE][NEWLINE][ICON_PRODUCTION] Production +1 et [ICON_HOUSING] Habitations +0.5. [ICON_FOOD] Nourriture +1 à Étriers et à Robotique. [ICON_PRODUCTION] Production +1 à Pièces de Rechange. Ne peut être construit que sur une ressource valide.[NEWLINE][NEWLINE]Permet d'utiliser la ressource stratégique sur laquelle l'aménagement est construit.</Text>
+			<Text>Débloque la compétence de Bâtisseur permettant de construire un pâturage.[NEWLINE][NEWLINE][ICON_PRODUCTION] Production +1 et [ICON_HOUSING] Habitations +0.5. [ICON_FOOD] Nourriture +1 aux [COLOR_FLOAT_SCIENCE]Étriers[ENDCOLOR] et à la [COLOR_FLOAT_SCIENCE]Robotique[ENDCOLOR]. [ICON_PRODUCTION] Production +1 aux [COLOR_FLOAT_SCIENCE]Pièces de Rechange[ENDCOLOR]. Ne peut être construit que sur une ressource valide.[NEWLINE][NEWLINE]Permet d'utiliser la ressource stratégique sur laquelle l'aménagement est construit.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_QUARRY_DESCRIPTION" Language="fr_FR">
-			<Text>Débloque la compétence de Bâtisseur permettant de construire une carrière.[NEWLINE][NEWLINE][ICON_PRODUCTION] Production +1. [ICON_PRODUCTION] Production +1 à Ingénierie Militaire, +2 à Fusées. Attrait pour les cases adjacentes -1. Ne peut être construite que sur une ressource valide.[NEWLINE][NEWLINE]Permet d'utiliser la ressource de luxe sur laquelle l'aménagement est construit.</Text>
+			<Text>Débloque la compétence de Bâtisseur permettant de construire une carrière.[NEWLINE][NEWLINE][ICON_PRODUCTION] Production +1. [ICON_PRODUCTION] Production +1 à l'[COLOR_FLOAT_SCIENCE]Ingénierie Militaire[ENDCOLOR], +2 aux [COLOR_FLOAT_SCIENCE]Fusées[ENDCOLOR]. Attrait pour les cases adjacentes -1. Ne peut être construite que sur une ressource valide.[NEWLINE][NEWLINE]Permet d'utiliser la ressource de luxe sur laquelle l'aménagement est construit.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_PLANTATION_DESCRIPTION" Language="fr_FR">
-			<Text>Débloque la compétence de Bâtisseur permettant de construire une plantation.[NEWLINE][NEWLINE][ICON_GOLD] Or +2. [ICON_FOOD] Nourriture +1 à Féodalité et à Théorie Scientifique. [ICON_GOLD] Or +2 à Mondialisation.[NEWLINE][ICON_PRODUCTION] Production +1 si construite sur une case plate. Ne peut être construite que sur une ressource valide.[NEWLINE][NEWLINE]Permet d'utiliser la ressource de luxe sur laquelle l'aménagement est construit.</Text>
+			<Text>Débloque la compétence de Bâtisseur permettant de construire une plantation.[NEWLINE][NEWLINE][ICON_GOLD] Or +2. [ICON_FOOD] Nourriture +1 à la [COLOR:212,115,212,255]Féodalité[ENDCOLOR] et à la [COLOR_FLOAT_SCIENCE]Théorie Scientifique[ENDCOLOR]. [ICON_GOLD] Or +2 à la [COLOR:212,115,212,255]Mondialisation[ENDCOLOR].[NEWLINE][ICON_PRODUCTION] Production +1 si construite sur une case plate. Ne peut être construite que sur une ressource valide.[NEWLINE][NEWLINE]Permet d'utiliser la ressource de luxe sur laquelle l'aménagement est construit.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_CAMP_DESCRIPTION" Language="fr_FR">
-			<Text>Débloque la compétence de Bâtisseur permettant de construire un camp.[NEWLINE][NEWLINE][ICON_GOLD] Or +2. [ICON_FOOD] Nourriture +1 et [ICON_PRODUCTION] Production +1 à Mercantilisme. [ICON_GOLD] Or +2 à Matériaux Synthétiques. Ne peut être construit que sur une ressource valide.[NEWLINE][NEWLINE]Permet d'utiliser la ressource sur laquelle l'aménagement est construit.</Text>
+			<Text>Débloque la compétence de Bâtisseur permettant de construire un camp.[NEWLINE][NEWLINE][ICON_GOLD] Or +2. [ICON_FOOD] Nourriture +1 et [ICON_PRODUCTION] Production +1 au [COLOR:212,115,212,255]Mercantilisme[ENDCOLOR]. [ICON_GOLD] Or +2 aux [COLOR_FLOAT_SCIENCE]Matériaux Synthétiques[ENDCOLOR]. Ne peut être construit que sur une ressource valide.[NEWLINE][NEWLINE]Permet d'utiliser la ressource sur laquelle l'aménagement est construit.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_OIL_WELL_DESCRIPTION" Language="fr_FR">
-			<Text>Débloque la compétence de Bâtisseur permettant de construire un puits de pétrole. [ICON_PRODUCTION] Production +2. [ICON_PRODUCTION] +1 à Systèmes Prédictifs. Attrait -1 pour les cases adjacentes. Ne peut être construit que sur une case terrestre contenant du [ICON_RESOURCE_OIL] pétrole, et permet ainsi de l'utiliser.</Text>
+			<Text>Débloque la compétence de Bâtisseur permettant de construire un puits de pétrole. [ICON_PRODUCTION] Production +2. [ICON_PRODUCTION] +1 [COLOR_FLOAT_SCIENCE]Systèmes Prédictifs[ENDCOLOR]. Attrait -1 pour les cases adjacentes. Ne peut être construit que sur une case terrestre contenant du [ICON_RESOURCE_OIL] Pétrole, et permet ainsi de l'utiliser.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_OFFSHORE_OIL_RIG_DESCRIPTION" Language="fr_FR">
-			<Text>Débloque la compétence de Bâtisseur permettant de construire une plateforme pétrolière. [ICON_PRODUCTION] Production +2. [ICON_PRODUCTION] Production +1 à Systèmes Prédictifs. Attrait pour les cases adjacentes -1. Ne peut être construite que sur une case côtière ou lacustre contenant du [ICON_RESOURCE_OIL] pétrole, et permet ainsi de l'utiliser.</Text>
-		</Replace>		
+			<Text>Débloque la compétence de Bâtisseur permettant de construire une plateforme pétrolière. [ICON_PRODUCTION] Production +2. [ICON_PRODUCTION] Production +1 [COLOR_FLOAT_SCIENCE]Systèmes Prédictifs[ENDCOLOR]. Attrait -1 pour les cases adjacentes. Ne peut être construite que sur une case côtière ou lacustre contenant du [ICON_RESOURCE_OIL] Pétrole, et permet ainsi de l'utiliser.</Text>
+		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_FISHERY_DESCRIPTION" Language="fr_FR">
 			<Text>Débloque la compétence de Bâtisseur permettant de construire une aquaculture. [ICON_FOOD] Nourriture +1 et [ICON_HOUSING] Habitations +1. [ICON_FOOD] Nourriture +1 par ressource maritime adjacente. Doit être construite sur une case de côte ou lacustre.</Text>
 		</Replace>
@@ -3037,7 +3174,7 @@
 		</Replace>
 		-->
 		<Replace Tag="LOC_IMPROVEMENT_GEOTHERMAL_PLANT_DESCRIPTION" Language="fr_FR">
-			<Text>Débloque la compétence de Bâtisseur permettant de construire une centrale géothermique.[NEWLINE][NEWLINE][ICON_PRODUCTION] Production +2, [ICON_SCIENCE] Science +1 et [ICON_POWER] Électricité +3. [ICON_PRODUCTION] Production +1, [ICON_SCIENCE] Science +1 et [ICON_POWER] Électricité +3 à Matériaux Synthétiques. Doit être construit sur une fissure géothermique.</Text>
+			<Text>Débloque la compétence de Bâtisseur permettant de construire une centrale géothermique.[NEWLINE][NEWLINE][ICON_PRODUCTION] Production +2, [ICON_SCIENCE] Science +1 et [ICON_POWER] Électricité +3. [ICON_PRODUCTION] Production +1, [ICON_SCIENCE] Science +1 et [ICON_POWER] Électricité +3 aux [COLOR_FLOAT_SCIENCE]Matériaux Synthétiques[ENDCOLOR]. Doit être construit sur une fissure géothermique.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_FORT_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_STRENGTH] Puissance de combat en défense +4, Vision +1 et [ICON_FORTIFIED] retranchement instantané.</Text>
@@ -3357,13 +3494,13 @@
 			<Text>Loyauté +1 par tour dans cette ville. Si la loyauté y est déjà maximale, [ICON_CULTURE] Culture +1.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_WALLS_DESCRIPTION" Language="fr_FR">
-			<Text>Érige des remparts autour des [ICON_DISTRICT] quartiers défendables. Les remparts permettent d'attaquer [ICON_RANGED] à distance et doivent être abattus avant de pouvoir attaquer une ville.[NEWLINE][NEWLINE][ICON_TOURISM] Tourisme +1 à la Conservation.</Text>
+			<Text>Érige des remparts autour des [ICON_DISTRICT] quartiers défendables. Les remparts permettent d'attaquer [ICON_RANGED] à distance et doivent être abattus avant de pouvoir attaquer une ville.[NEWLINE][NEWLINE][ICON_TOURISM] Tourisme +1 à la [COLOR:212,115,212,255]Conservation[ENDCOLOR].</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_CASTLE_DESCRIPTION" Language="fr_FR">
-			<Text>Augmente la puissance de vos défenses extérieures.[NEWLINE][NEWLINE][ICON_TOURISM] Tourisme +2 à la Conservation.</Text>
+			<Text>Augmente la puissance de vos défenses extérieures.[NEWLINE][NEWLINE][ICON_TOURISM] Tourisme +2 à la [COLOR:212,115,212,255]Conservation[ENDCOLOR].</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_STAR_FORT_DESCRIPTION" Language="fr_FR">
-			<Text>Augmente la puissance de vos défenses extérieures au maximum.[NEWLINE][NEWLINE][ICON_TOURISM] Tourisme +3 à la Conservation.</Text>
+			<Text>Augmente la puissance de vos défenses extérieures au maximum.[NEWLINE][NEWLINE][ICON_TOURISM] Tourisme +3 à la [COLOR:212,115,212,255]Conservation[ENDCOLOR].</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_WATER_MILL_DESCRIPTION" Language="fr_FR">
       		<Text>[ICON_PRODUCTION] Production +1 pour toutes les fermes de la ville.</Text>
@@ -3423,7 +3560,7 @@
 
 		<!-- == CAMPUS == -->
 		<Replace Tag="LOC_BUILDING_RESEARCH_LAB_EXPANSION2_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_SCIENCE] Science +3 au Programme Nucléaire.</Text>
+			<Text>[ICON_SCIENCE] Science +3 au [COLOR_FLOAT_SCIENCE]Programme Nucléaire[ENDCOLOR].</Text>
 		</Replace>
 
 		<!-- == THEATER SQUARE - PLACE DU THÉÂTRE == -->
@@ -3461,7 +3598,7 @@
 			<Text>Expérience de combat +25% pour les unités aériennes formées dans cette ville. Emplacements d'unité aérienne +1 dans l'Aérodrome. [ICON_RESOURCE_ALUMINUM] Aluminium +1 par tour quand il est découvert.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_AIRPORT_DESCRIPTION" Language="fr_FR">
-			<Text>Expérience au combat +50% pour toutes les unités aériennes formées dans cette ville. Emplacements pour unité aérienne +2 dans l'Aérodrome. [ICON_RESOURCE_ALUMINUM] Aluminium +1. [ICON_RESOURCE_URANIUM] Uranium +1 par tour quand il est découvert. Permet le transport aérien des unités entre les Aérodromes équipés d'un aéroport au Déploiement Rapide.</Text>
+			<Text>Expérience au combat +50% pour toutes les unités aériennes formées dans cette ville. Emplacements pour unité aérienne +2 dans l'Aérodrome. [ICON_RESOURCE_ALUMINUM] Aluminium +1. [ICON_RESOURCE_URANIUM] Uranium +1 par tour quand il est découvert. Permet le transport aérien des unités entre les Aérodromes équipés d'un aéroport au [COLOR:212,115,212,255]Déploiement Rapide[ENDCOLOR].</Text>
 		</Replace>
 
 		<!-- == PRESERVE - RÉSERVE == -->
@@ -3492,7 +3629,7 @@
 		</Replace>
 		<Replace Tag="LOC_BUILDING_AQUATICS_CENTER_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_AMENITIES] L'Activité bonus s'étend à chaque Centre-ville dans un rayon de 9 cases. Ce bonus s'applique une seule fois dans une ville. [ICON_TOURISM] Tourisme +6 pour chaque merveille de cette ville adjacente à/sur une case de côte.</Text>
-		</Replace> 
+		</Replace>
 
 		<!-- == GOVERNMENT PLAZA - PLACE DE LA GOUVERNANCE == -->
 		<Replace Tag="LOC_BUILDING_GOV_TALL_DESCRIPTION" Language="fr_FR">
@@ -3544,7 +3681,7 @@
 			<Text>Merveille naturelle infranchissable de 3 cases. [ICON_GOLD] Or +1 et [ICON_CULTURE] Culture +1 sur les cases adjacentes. [ICON_GOLD] Or +4 pour les [ICON_TRADEROUTE] routes commerciales internationales si la ville d'origine possède au moins une case.</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_GIANTS_CAUSEWAY_DESCRIPTION" Language="fr_FR">
-      		<Text>Les unités militaires terrestres qui pénètrent sur une case adjacente reçoivent la compétence "Lance de Fionn" ([ICON_STRENGTH] Puissance de combat +3). [ICON_CULTURE] Culture +1 pour les cases adjacentes.</Text>
+      		<Text>Les unités militaires terrestres qui pénètrent sur une case adjacente reçoivent la compétence "Lance de Fionn" ([ICON_STRENGTH] Puissance de combat en attaque +3). [ICON_CULTURE] Culture +1 pour les cases adjacentes.</Text>
     	</Replace>
 		<Replace Tag="LOC_ABILITY_SPEAR_OF_FIONN_DESCRIPTION" Language="fr_FR">
       		<Text>Lance de Fionn : [ICON_STRENGTH] Puissance de combat en attaque +3.</Text>
@@ -3558,7 +3695,7 @@
 		<Replace Tag="LOC_ABILITY_ALPINE_TRAINING_COMBAT_HILLS_MODIFIER_DESCRIPTION" Language="fr_FR">
       		<Text>[ICON_STRENGTH] Puissance de combat +0 dans les collines.</Text>
     	</Replace>
-		<Replace Tag="LOC_FEATURE_PANTANAL_DESCRIPTION" Language="fr_FR"> 
+		<Replace Tag="LOC_FEATURE_PANTANAL_DESCRIPTION" Language="fr_FR">
 			<Text>Merveille naturelle de 4 cases, considérées comme un marais. [ICON_FOOD] Nourriture +2, [ICON_PRODUCTION] Production +1, [ICON_SCIENCE] Science +2 et [ICON_CULTURE] Culture +2.</Text>
 		</Replace>
 		<Replace Tag="LOC_FEATURE_EYE_OF_THE_SAHARA_DESCRIPTION" Language="fr_FR">
@@ -3651,6 +3788,9 @@
 		<Replace Tag="LOC_FEATURE_PAMUKKALE_DESCRIPTION" Language="fr_FR">
       		<Text>Merveille naturelle infranchissable de 2 cases. [ICON_AMENITIES] Activités +1 dans les villes qui en possèdent au moins une case. Octroie une [ICON_AMENITIES] Activités supplémentaire si un Complexe de loisirs en est adjacent. Bonus de proximité important pour les Plateformes commerciales, les Campus et les Places du théâtre. Bonus de proximité standard supplémentaire pour les Lieux saints. Fournit de l'eau douce.</Text>
     	</Replace>
+		<Replace Tag="LOC_FEATURE_PIOPIOTAHI_DESCRIPTION" Language="fr_FR">
+			<Text>Merveille naturelle infranchissable de trois cases. [ICON_GOLD] Or +1 et [ICON_CULTURE] Culture +1 pour les cases adjacentes.</Text>
+		</Replace>
 
 
 
@@ -3720,6 +3860,12 @@
 		<Replace Tag="LOC_BUILDING_GREAT_ZIMBABWE_DESCRIPTION" Language="fr_FR">
       		<Text>Merveille de la Renaissance.[NEWLINE][NEWLINE]Capacité de [ICON_TRADEROUTE] routes commerciales +2.[NEWLINE]Octroie 2 [ICON_TRADEROUTE] Négociants.[NEWLINE][NEWLINE][ICON_GOLD] Or +2 pour vos [ICON_TRADEROUTE] routes commerciales depuis cette ville pour chaque ressource bonus se trouvant dans un rayon de trois cases autour de la ville et dans son territoire.[NEWLINE][NEWLINE]Doit être construite sur une case adjacente à une Plateforme commerciale dotée d'un marché et adjacente à une ressource de [ICON_RESOURCE_CATTLE] Bétail.</Text>
     	</Replace>
+		<Replace Tag="LOC_BUILDING_PORCELAIN_TOWER_NAME" Language="fr_FR"> <!-- BBG expanded -->
+            <Text>Tour de Porcelaine</Text>
+        </Replace>
+        <Replace Tag="LOC_BUILDING_PORCELAIN_TOWER_DESCRIPTION" Language="fr_FR"> <!-- BBG expanded -->
+            <Text>Merveille de la Renaissance.[NEWLINE][NEWLINE]Vous recevez 3 copies de [ICON_RESOURCE_PORCELAIN] Porcelaine, une ressource de luxe exclusive qui offre 6 [ICON_AMENITIES] Activités.[NEWLINE][NEWLINE]Doit être construit sur une case plate de plaine, de prairie ou de toundra adjacente au Centre-ville.</Text>
+        </Replace>
 		<Replace Tag="LOC_BUILDING_FORBIDDEN_CITY_DESCRIPTION" Language="fr_FR">
 			<Text>Merveille de la Renaissance.[NEWLINE][NEWLINE]Emplacement pour Doctrine joker +1.[NEWLINE][NEWLINE]Doit être construite sur une case plate adjacente au Centre-ville.</Text>
 		</Replace>
@@ -3755,7 +3901,7 @@
 		</Replace>
 		<Replace Tag="LOC_BUILDING_COLOSSEUM_DESCRIPTION" Language="fr_FR">
       		<Text>Merveille de l'ère classique.[NEWLINE][NEWLINE][ICON_CULTURE] Culture +1, [ICON_AMENITIES] Activités +2 et loyauté +2 par tour pour chaque Centre-ville dans un rayon de six cases.[NEWLINE][NEWLINE]Doit être construite sur une case plate adjacente à un Complexe de loisirs doté d'une arena.</Text>
-    	</Replace>	
+    	</Replace>
 		<Replace Tag="LOC_BUILDING_APADANA_DESCRIPTION" Language="fr_FR">
 			<Text>Merveille de l'ère classique.[NEWLINE][NEWLINE][ICON_ENVOY] Émissaires +1 lorsque vous construisez une merveille dans cette ville, dont l'Apadana.[NEWLINE][NEWLINE]Doit être construite adjacente à votre [ICON_CAPITAL] Capitale.</Text>
 		</Replace>
@@ -3811,7 +3957,7 @@
 			<Text>Merveille de l'ère moderne.[NEWLINE][NEWLINE][ICON_CULTURE] Culture +20% dans cette ville.[NEWLINE]Octroie une [ICON_CIVICBOOSTED] Inspiration d'un dogme de l'ère atomique choisi au hasard.[NEWLINE][NEWLINE]Doit être construite sur une case plate adjacente à une Place du théâtre.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_CRISTO_REDENTOR_DESCRIPTION" Language="fr_FR">
-			<Text>Merveille de l'ère moderne.[NEWLINE][NEWLINE]Octroie 1 [ICON_GREATWORK_RELIC] relique.[NEWLINE]Le [ICON_TOURISM] Tourisme généré par les [ICON_GREATWORK_RELIC] reliques et les villes saintes n'est pas handicapé par les civilisations ayant adopté le dogme des Lumières.[NEWLINE][NEWLINE][ICON_TOURISM] Tourisme +100% pour les stations balnéaires de votre Empire.[NEWLINE][NEWLINE]Doit être construite sur une colline.</Text>
+			<Text>Merveille de l'ère moderne.[NEWLINE][NEWLINE]Octroie 1 [ICON_GREATWORK_RELIC] relique.[NEWLINE]Le [ICON_TOURISM] Tourisme généré par les [ICON_GREATWORK_RELIC] reliques et les villes saintes n'est pas handicapé par les civilisations ayant adopté le dogme des [COLOR:212,115,212,255]Lumières[ENDCOLOR].[NEWLINE][NEWLINE][ICON_TOURISM] Tourisme +100% pour les stations balnéaires de votre Empire.[NEWLINE][NEWLINE]Doit être construite sur une colline.</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_SYDNEY_OPERA_HOUSE_DESCRIPTION" Language="fr_FR">
 			<Text>Merveille de l'ère atomique.[NEWLINE][NEWLINE]Octroie 2 Groupes de rock.[NEWLINE][NEWLINE]Doit être construite sur une case de côte adjacente à la terre et à un Port.</Text>
@@ -3821,6 +3967,15 @@
 		</Replace>
 		<Replace Tag="LOC_BUILDING_AMUNDSEN_SCOTT_RESEARCH_STATION_DESCRIPTION" Language="fr_FR">
 			<Text>Merveille de l'ère atomique.[NEWLINE][NEWLINE][ICON_PRODUCTION] Production +10% et [ICON_SCIENCE] Science +20% dans toutes vos villes. Ces rendements sont doublés dans les villes possédant au moins 5 cases exploitables de Toundra.[NEWLINE][NEWLINE]Doit être construite sur une case de Neige ou de Toundra adjacente à un Campus doté d'un laboratoire de recherche.</Text>
+		</Replace>
+		<Replace Tag="LOC_WON_CL_BUILDING_ARECIBO_NAME" Language="fr_FR"> <!-- BBG expanded -->
+			<Text>Radiotélescope d'Arecibo</Text>
+		</Replace>
+		<Replace Tag="LOC_WON_CL_BUILDING_ARECIBO_DESCRIPTION" Language="fr_FR"> <!-- BBG expanded -->
+			<Text>Merveille de l'ère atomique.[NEWLINE][NEWLINE]Les Campus reçoivent un bonus de proximité majeur, plutôt que standard, de la part des cases de montagnes.[NEWLINE]Octroie un [ICON_TECHBOOSTED] Eurêka pour chaque projet de course à l'espace complété.[NEWLINE]Octroie 1 technologie gratuite choisies au hasard à sa complétion.[NEWLINE][NEWLINE]Doit être construit sur une case de forêt tropicale.</Text>
+		</Replace>	
+		<Replace Tag="LOC_ARECIBO_MOUNTAINS_SCIENCE" Language="fr_FR"> <!-- BBG expanded -->
+			<Text>Case de montagnes adjacentes : [ICON_SCIENCE] Science +{1_num} (Radiotélescope d'Arecibo).</Text>
 		</Replace>
 
 
@@ -3839,16 +3994,16 @@
 		</Replace>
 		<!-- = Grenade - Granada = -->
 		<Replace Tag="LOC_CIVILIZATION_GRANADA_BONUS_XP2" Language="fr_FR">
-			<Text>Débloque la compétence de Bâtisseur permettant de construire un alcázar.[NEWLINE][NEWLINE][ICON_PRODUCTION] Production +1 et [ICON_CULTURE] Culture +2. [ICON_CULTURE] Culture +1 par Campement adjacent. Octroie une quantité de [ICON_SCIENCE] Science égale à 50% de l'Attrait de la case. [ICON_STRENGTH] Puissance de combat en défense +4 et [ICON_FORTIFIED] retranchement instantané. Génère du [ICON_TOURISM] Tourisme par le biais de la [ICON_CULTURE] Culture une fois l'Aviation découverte. Deux alcázars ne peuvent pas être adjacents.</Text>
+			<Text>Débloque la compétence de Bâtisseur permettant de construire un alcázar.[NEWLINE][NEWLINE][ICON_PRODUCTION] Production +1 et [ICON_CULTURE] Culture +2. [ICON_CULTURE] Culture +1 par Campement adjacent. Octroie une quantité de [ICON_SCIENCE] Science égale à 50% de l'Attrait de la case. [ICON_STRENGTH] Puissance de combat en défense +4 et [ICON_FORTIFIED] retranchement instantané. Génère du [ICON_TOURISM] Tourisme par le biais de la [ICON_CULTURE] Culture une fois l'[COLOR_FLOAT_SCIENCE]Aviation[ENDCOLOR] découverte. Deux alcázars ne peuvent pas être adjacents.</Text>
 		</Replace>
 		<Replace Tag="LOC_LEADER_TRAIT_GRANADA_EXPANSION2_DESCRIPTION" Language="fr_FR">
-			<Text>Débloque la compétence de Bâtisseur permettant de construire un alcázar.[NEWLINE][NEWLINE][ICON_PRODUCTION] Production +1 et [ICON_CULTURE] Culture +2. [ICON_CULTURE] Culture +1 par Campement adjacent. Octroie une quantité de [ICON_SCIENCE] Science égale à 50% de l'Attrait de la case. [ICON_STRENGTH] Puissance de combat en défense +4, Vision +1 et [ICON_FORTIFIED] retranchement instantané. Génère du [ICON_TOURISM] Tourisme par le biais de la [ICON_CULTURE] Culture une fois l'Aviation découverte. Deux alcázars ne peuvent pas être adjacents.</Text>
+			<Text>Débloque la compétence de Bâtisseur permettant de construire un alcázar.[NEWLINE][NEWLINE][ICON_PRODUCTION] Production +1 et [ICON_CULTURE] Culture +2. [ICON_CULTURE] Culture +1 par Campement adjacent. Octroie une quantité de [ICON_SCIENCE] Science égale à 50% de l'Attrait de la case. [ICON_STRENGTH] Puissance de combat en défense +4, Vision +1 et [ICON_FORTIFIED] retranchement instantané. Génère du [ICON_TOURISM] Tourisme par le biais de la [ICON_CULTURE] Culture une fois l'[COLOR_FLOAT_SCIENCE]Aviation[ENDCOLOR] découverte. Deux alcázars ne peuvent pas être adjacents.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_ALCAZAR_EXPANSION2_DESCRIPTION" Language="fr_FR">
-			<Text>Débloque la compétence de Bâtisseur permettant de construire un alcázar.[NEWLINE][NEWLINE][ICON_PRODUCTION] Production +1 et [ICON_CULTURE] Culture +2. [ICON_CULTURE] Culture +1 par Campement adjacent. Octroie une quantité de [ICON_SCIENCE] Science égale à 50% de l'Attrait de la case. [ICON_STRENGTH] Puissance de combat en défense +4, Vision +1 et [ICON_FORTIFIED] retranchement instantané. Génère du [ICON_TOURISM] Tourisme par le biais de la [ICON_CULTURE] Culture une fois l'Aviation découverte. Deux alcázars ne peuvent pas être adjacents.</Text>
+			<Text>Débloque la compétence de Bâtisseur permettant de construire un alcázar.[NEWLINE][NEWLINE][ICON_PRODUCTION] Production +1 et [ICON_CULTURE] Culture +2. [ICON_CULTURE] Culture +1 par Campement adjacent. Octroie une quantité de [ICON_SCIENCE] Science égale à 50% de l'Attrait de la case. [ICON_STRENGTH] Puissance de combat en défense +4, Vision +1 et [ICON_FORTIFIED] retranchement instantané. Génère du [ICON_TOURISM] Tourisme par le biais de la [ICON_CULTURE] Culture une fois l'[COLOR_FLOAT_SCIENCE]Aviation[ENDCOLOR] découverte. Deux alcázars ne peuvent pas être adjacents.</Text>
 		</Replace>
 		<Replace Tag="LOC_BBG_ALCAZAR_CULTURE_ENCAMPMENT" Language="fr_FR">
-			<Text>[ICON_CULTURE] Culture +{1_num} de la part des Campements adjacents.</Text>
+			<Text>Campements adjacents : [ICON_CULTURE] Culture +{1_num}.</Text>
 		</Replace>
 		<!-- = Kaboul - Kabul = -->
 		<Replace Tag="LOC_CIVILIZATION_KABUL_BONUS" Language="fr_FR">
@@ -3934,10 +4089,10 @@
 		</Replace>
 		<!-- = Johannesbourg - Johannesburg = -->
 		<Replace Tag="LOC_CIVILIZATION_JOHANNESBURG_BONUS" Language="fr_FR">
-			<Text>[ICON_PRODUCTION] Production +1 dans vos villes pour chaque type de ressource aménagé (bonus/luxe/stratégique) (+1 à Ballistiques et +1 à Industrialisation).</Text>
+			<Text>[ICON_PRODUCTION] Production +1 dans vos villes pour chaque type de ressource aménagé (bonus/luxe/stratégique) (+1 à [COLOR_FLOAT_SCIENCE]Ballistiques[ENDCOLOR] et +1 à [COLOR_FLOAT_SCIENCE]Industrialisation[ENDCOLOR]).</Text>
 		</Replace>
 		<Replace Tag="LOC_LEADER_TRAIT_JOHANNESBURG_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_PRODUCTION] Production +1 dans vos villes pour chaque type de ressource aménagé (bonus/luxe/stratégique) (+1 à Ballistiques et +1 à Industrialisation).</Text>
+			<Text>[ICON_PRODUCTION] Production +1 dans vos villes pour chaque type de ressource aménagé (bonus/luxe/stratégique) (+1 à [COLOR_FLOAT_SCIENCE]Ballistiques[ENDCOLOR] et +1 à [COLOR_FLOAT_SCIENCE]Industrialisation[ENDCOLOR]).</Text>
 		</Replace>
 		<!-- = Mexico = -->
 		<Replace Tag="LOC_CIVILIZATION_MEXICO_CITY_BONUS" Language="fr_FR">
@@ -3964,13 +4119,13 @@
 		</Replace>
 		<!-- = Cahokia = -->
 		<Replace Tag="LOC_CIVILIZATION_CAHOKIA_BONUS" Language="fr_FR">
-			<Text>Débloque la compétence de Bâtisseur permettant de construire un mont de Cahokia.[NEWLINE][NEWLINE][ICON_GOLD] Or +3 et [ICON_AMENITIES] Activités +1 ([ICON_AMENITIES] l'Activité est limitée à 1 par ville, puis 2 à la découverte de l'Histoire Naturelle). [ICON_FOOD] Nourriture +1 toutes les 2 cases de [ICON_DISTRICT] quartiers adjacentes à la Féodalité (pour chaque [ICON_DISTRICT] quartier adjacent à Pièces de Rechange). [ICON_HOUSING] Habitations +1 (passe à +2 à Patrimoine Culturel découvert). Deux monts de Cahokia ne peuvent pas être adjacents.</Text>
+			<Text>Débloque la compétence de Bâtisseur permettant de construire un mont de Cahokia.[NEWLINE][NEWLINE][ICON_GOLD] Or +3 et [ICON_AMENITIES] Activités +1 ([ICON_AMENITIES] l'Activité est limitée à 1 par ville, puis 2 à l'[COLOR:212,115,212,255]Histoire Naturelle[ENDCOLOR]). [ICON_FOOD] Nourriture +1 toutes les 2 cases de [ICON_DISTRICT] quartiers adjacentes à la [COLOR:212,115,212,255]Féodalité[ENDCOLOR] (pour chaque [ICON_DISTRICT] quartier adjacent à [COLOR_FLOAT_SCIENCE]Pièces de Rechange[ENDCOLOR]). [ICON_HOUSING] Habitations +1 (passe à +2 au [COLOR:212,115,212,255]Patrimoine Culturel[ENDCOLOR] découvert). Deux monts de Cahokia ne peuvent pas être adjacents.</Text>
 		</Replace>
 		<Replace Tag="LOC_LEADER_TRAIT_CAHOKIA_DESCRIPTION" Language="fr_FR">
-			<Text>Débloque la compétence de Bâtisseur permettant de construire un mont de Cahokia.[NEWLINE][NEWLINE][ICON_GOLD] Or +3 et [ICON_AMENITIES] Activités +1 ([ICON_AMENITIES] l'Activité est limitée à 1 par ville, puis 2 à la découverte de l'Histoire Naturelle). [ICON_FOOD] Nourriture +1 toutes les 2 cases de [ICON_DISTRICT] quartiers adjacentes à la Féodalité (pour chaque [ICON_DISTRICT] quartier adjacent à Pièces de Rechange). [ICON_HOUSING] Habitations +1 (passe à +2 à Patrimoine Culturel découvert). Deux monts de Cahokia ne peuvent pas être adjacents.</Text>
+			<Text>Débloque la compétence de Bâtisseur permettant de construire un mont de Cahokia.[NEWLINE][NEWLINE][ICON_GOLD] Or +3 et [ICON_AMENITIES] Activités +1 ([ICON_AMENITIES] l'Activité est limitée à 1 par ville, puis 2 à l'[COLOR:212,115,212,255]Histoire Naturelle[ENDCOLOR]). [ICON_FOOD] Nourriture +1 toutes les 2 cases de [ICON_DISTRICT] quartiers adjacentes à la [COLOR:212,115,212,255]Féodalité[ENDCOLOR] (pour chaque [ICON_DISTRICT] quartier adjacent à [COLOR_FLOAT_SCIENCE]Pièces de Rechange[ENDCOLOR]). [ICON_HOUSING] Habitations +1 (passe à +2 au [COLOR:212,115,212,255]Patrimoine Culturel[ENDCOLOR] découvert). Deux monts de Cahokia ne peuvent pas être adjacents.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_MOUND_DESCRIPTION" Language="fr_FR">
-			<Text>Débloque la compétence de Bâtisseur permettant de construire un mont de Cahokia.[NEWLINE][NEWLINE][ICON_GOLD] Or +3 et [ICON_AMENITIES] Activités +1 ([ICON_AMENITIES] l'Activité est limitée à 1 par ville, puis 2 à la découverte de l'Histoire Naturelle). [ICON_FOOD] Nourriture +1 toutes les 2 cases de [ICON_DISTRICT] quartiers adjacentes à la Féodalité (pour chaque [ICON_DISTRICT] quartier adjacent à Pièces de Rechange). [ICON_HOUSING] Habitations +1 (passe à +2 à Patrimoine Culturel découvert). Deux monts de Cahokia ne peuvent pas être adjacents.</Text>
+			<Text>Débloque la compétence de Bâtisseur permettant de construire un mont de Cahokia.[NEWLINE][NEWLINE][ICON_GOLD] Or +3 et [ICON_AMENITIES] Activités +1 ([ICON_AMENITIES] l'Activité est limitée à 1 par ville, puis 2 à l'[COLOR:212,115,212,255]Histoire Naturelle[ENDCOLOR]). [ICON_FOOD] Nourriture +1 toutes les 2 cases de [ICON_DISTRICT] quartiers adjacentes à la [COLOR:212,115,212,255]Féodalité[ENDCOLOR] (pour chaque [ICON_DISTRICT] quartier adjacent à [COLOR_FLOAT_SCIENCE]Pièces de Rechange[ENDCOLOR]). [ICON_HOUSING] Habitations +1 (passe à +2 au [COLOR:212,115,212,255]Patrimoine Culturel[ENDCOLOR] découvert). Deux monts de Cahokia ne peuvent pas être adjacents.</Text>
 		</Replace>
 		<!-- = Hunza = -->
 		<Replace Tag="LOC_CIVILIZATION_HUNZA_BONUS" Language="fr_FR">
@@ -4012,10 +4167,10 @@
 		</Replace>
 		<!-- = Zanzibar = -->
 		<Replace Tag="LOC_CIVILIZATION_ZANZIBAR_BONUS" Language="fr_FR">
-			<Text>Vous recevez de la [ICON_RESOURCE_CINNAMON] Cannelle (et des [ICON_RESOURCE_CLOVES] Clous de girofle à Banques), deux ressources de luxe exclusives à Zanzibar qui offrent 6 [ICON_AMENITIES] Activités chacune.</Text>
+			<Text>Vous recevez de la [ICON_RESOURCE_CINNAMON] Cannelle (et des [ICON_RESOURCE_CLOVES] Clous de girofle à [COLOR_FLOAT_SCIENCE]Banques[ENDCOLOR]), deux ressources de luxe exclusives à Zanzibar qui offrent 6 [ICON_AMENITIES] Activités chacune.</Text>
 		</Replace>
 		<Replace Tag="LOC_LEADER_TRAIT_ZANZIBAR_DESCRIPTION" Language="fr_FR">
-			<Text>Vous recevez de la [ICON_RESOURCE_CINNAMON] Cannelle (et des [ICON_RESOURCE_CLOVES] Clous de girofle à Banques), deux ressources de luxe exclusives à Zanzibar qui offrent 6 [ICON_AMENITIES] Activités chacune.</Text>
+			<Text>Vous recevez de la [ICON_RESOURCE_CINNAMON] Cannelle (et des [ICON_RESOURCE_CLOVES] Clous de girofle à [COLOR_FLOAT_SCIENCE]Banques[ENDCOLOR]), deux ressources de luxe exclusives à Zanzibar qui offrent 6 [ICON_AMENITIES] Activités chacune.</Text>
 		</Replace>
 
 		<!-- == SCIENTIFIC - SCIENTIFIQUES == -->
@@ -4063,15 +4218,15 @@
 		</Replace>
 		<!-- = Nalanda = -->
 		<Replace Tag="LOC_CIVILIZATION_NALANDA_BONUS" Language="fr_FR">
-			<Text>Débloque la compétence de Bâtisseur permettant de construire un mahavihara.[NEWLINE][NEWLINE][ICON_SCIENCE] Science +2 et [ICON_HOUSING] Habitations +1. [ICON_SCIENCE] Science +1 pour chaque Campus adjacent (passe à +2 à Théorie Scientifique). [ICON_FAITH] Foi +1 pour chaque Lieu saint adjacent. À la construction de son premier mahavihara, le joueur reçoit une technologie aléatoire. Doit être construit sur un terrain plat. Deux mahaviharas ne peuvent pas être adjacents.</Text>
+			<Text>Débloque la compétence de Bâtisseur permettant de construire un mahavihara.[NEWLINE][NEWLINE][ICON_SCIENCE] Science +2 et [ICON_HOUSING] Habitations +1. [ICON_SCIENCE] Science +1 pour chaque Campus adjacent (passe à +2 à la [COLOR_FLOAT_SCIENCE]Théorie Scientifique[ENDCOLOR]). [ICON_FAITH] Foi +1 pour chaque Lieu saint adjacent. À la construction de son premier mahavihara, le joueur reçoit une technologie aléatoire. Doit être construit sur un terrain plat. Deux mahaviharas ne peuvent pas être adjacents.</Text>
 		</Replace>
 		<Replace Tag="LOC_LEADER_TRAIT_NALANDA_DESCRIPTION" Language="fr_FR">
-			<Text>Débloque la compétence de Bâtisseur permettant de construire un mahavihara.[NEWLINE][NEWLINE][ICON_SCIENCE] Science +2 et [ICON_HOUSING] Habitations +1. [ICON_SCIENCE] Science +1 pour chaque Campus adjacent (passe à +2 à Théorie Scientifique). [ICON_FAITH] Foi +1 pour chaque Lieu saint adjacent. À la construction de son premier mahavihara, le joueur reçoit une technologie aléatoire. Doit être construit sur un terrain plat. Deux mahaviharas ne peuvent pas être adjacents.</Text>
+			<Text>Débloque la compétence de Bâtisseur permettant de construire un mahavihara.[NEWLINE][NEWLINE][ICON_SCIENCE] Science +2 et [ICON_HOUSING] Habitations +1. [ICON_SCIENCE] Science +1 pour chaque Campus adjacent (passe à +2 à la [COLOR_FLOAT_SCIENCE]Théorie Scientifique[ENDCOLOR]). [ICON_FAITH] Foi +1 pour chaque Lieu saint adjacent. À la construction de son premier mahavihara, le joueur reçoit une technologie aléatoire. Doit être construit sur un terrain plat. Deux mahaviharas ne peuvent pas être adjacents.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_MAHAVIHARA_DESCRIPTION" Language="fr_FR">
-			<Text>Débloque la compétence de Bâtisseur permettant de construire un mahavihara.[NEWLINE][NEWLINE][ICON_SCIENCE] Science +2 et [ICON_HOUSING] Habitations +1. [ICON_SCIENCE] Science +1 pour chaque Campus adjacent (passe à +2 à Théorie Scientifique). [ICON_FAITH] Foi +1 pour chaque Lieu saint adjacent. À la construction de son premier mahavihara, le joueur reçoit une technologie aléatoire. Doit être construit sur un terrain plat. Deux mahaviharas ne peuvent pas être adjacents.</Text>
+			<Text>Débloque la compétence de Bâtisseur permettant de construire un mahavihara.[NEWLINE][NEWLINE][ICON_SCIENCE] Science +2 et [ICON_HOUSING] Habitations +1. [ICON_SCIENCE] Science +1 pour chaque Campus adjacent (passe à +2 à la [COLOR_FLOAT_SCIENCE]Théorie Scientifique[ENDCOLOR]). [ICON_FAITH] Foi +1 pour chaque Lieu saint adjacent. À la construction de son premier mahavihara, le joueur reçoit une technologie aléatoire. Doit être construit sur un terrain plat. Deux mahaviharas ne peuvent pas être adjacents.</Text>
 		</Replace>
-		<!-- = Taruga = -->		
+		<!-- = Taruga = -->
 		<Replace Tag="LOC_CIVILIZATION_TARUGA_BONUS" Language="fr_FR">
 			<Text>[ICON_SCIENCE] Science +5% dans toutes les villes pour chaque ressource stratégique aménagée différente qu'elles possèdent.</Text>
 		</Replace>
@@ -4096,13 +4251,13 @@
 		</Replace>
 		<!-- = Caguana = -->
 		<Replace Tag="LOC_CIVILIZATION_CAGUANA_BONUS" Language="fr_FR">
-			<Text>Débloque la compétence de Bâtisseur permettant de construire un batey.[NEWLINE][NEWLINE][ICON_CULTURE] Culture +1. [ICON_PRODUCTION] Production +1 pour chaque ressource stratégique adjacente, [ICON_GOLD] Or +1 pour chaque ressource de luxe adjacente et [ICON_CULTURE] Culture +1 pour chaque ressource bonus et Complexe de loisirs adjacents (passe à +2 à l'Exploration). Génère du [ICON_TOURISM] Tourisme par le biais de la [ICON_CULTURE] Culture une fois l'Aviation découverte. Ne peut pas être construit à côté d'un autre batey.</Text>
+			<Text>Débloque la compétence de Bâtisseur permettant de construire un batey.[NEWLINE][NEWLINE][ICON_CULTURE] Culture +1. [ICON_PRODUCTION] Production +1 pour chaque ressource stratégique adjacente, [ICON_GOLD] Or +1 pour chaque ressource de luxe adjacente et [ICON_CULTURE] Culture +1 pour chaque ressource bonus et Complexe de loisirs adjacents (passe à +2 à l'[COLOR:212,115,212,255]Exploration[ENDCOLOR]). Génère du [ICON_TOURISM] Tourisme par le biais de la [ICON_CULTURE] Culture une fois l'[COLOR_FLOAT_SCIENCE]Aviation[ENDCOLOR] découverte. Ne peut pas être construit à côté d'un autre batey.</Text>
 		</Replace>
 		<Replace Tag="LOC_LEADER_TRAIT_CAGUANA_DESCRIPTION" Language="fr_FR">
-			<Text>Débloque la compétence de Bâtisseur permettant de construire un batey.[NEWLINE][NEWLINE][ICON_CULTURE] Culture +1. [ICON_PRODUCTION] Production +1 pour chaque ressource stratégique adjacente, [ICON_GOLD] Or +1 pour chaque ressource de luxe adjacente et [ICON_CULTURE] Culture +1 pour chaque ressource bonus et Complexe de loisirs adjacents (passe à +2 à l'Exploration). Génère du [ICON_TOURISM] Tourisme par le biais de la [ICON_CULTURE] Culture une fois l'Aviation découverte. Ne peut pas être construit à côté d'un autre batey.</Text>
+			<Text>Débloque la compétence de Bâtisseur permettant de construire un batey.[NEWLINE][NEWLINE][ICON_CULTURE] Culture +1. [ICON_PRODUCTION] Production +1 pour chaque ressource stratégique adjacente, [ICON_GOLD] Or +1 pour chaque ressource de luxe adjacente et [ICON_CULTURE] Culture +1 pour chaque ressource bonus et Complexe de loisirs adjacents (passe à +2 à l'[COLOR:212,115,212,255]Exploration[ENDCOLOR]). Génère du [ICON_TOURISM] Tourisme par le biais de la [ICON_CULTURE] Culture une fois l'[COLOR_FLOAT_SCIENCE]Aviation[ENDCOLOR] découverte. Ne peut pas être construit à côté d'un autre batey.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_BATEY_DESCRIPTION" Language="fr_FR">
-			<Text>Débloque la compétence de Bâtisseur permettant de construire un batey.[NEWLINE][NEWLINE][ICON_CULTURE] Culture +1. [ICON_PRODUCTION] Production +1 pour chaque ressource stratégique adjacente, [ICON_GOLD] Or +1 pour chaque ressource de luxe adjacente et [ICON_CULTURE] Culture +1 pour chaque ressource bonus et Complexe de loisirs adjacents (passe à +2 à l'Exploration). Génère du [ICON_TOURISM] Tourisme par le biais de la [ICON_CULTURE] Culture une fois l'Aviation découverte. Ne peut pas être construit à côté d'un autre batey.</Text>
+			<Text>Débloque la compétence de Bâtisseur permettant de construire un batey.[NEWLINE][NEWLINE][ICON_CULTURE] Culture +1. [ICON_PRODUCTION] Production +1 pour chaque ressource stratégique adjacente, [ICON_GOLD] Or +1 pour chaque ressource de luxe adjacente et [ICON_CULTURE] Culture +1 pour chaque ressource bonus et Complexe de loisirs adjacents (passe à +2 à l'[COLOR:212,115,212,255]Exploration[ENDCOLOR]). Génère du [ICON_TOURISM] Tourisme par le biais de la [ICON_CULTURE] Culture une fois l'[COLOR_FLOAT_SCIENCE]Aviation[ENDCOLOR] découverte. Ne peut pas être construit à côté d'un autre batey.</Text>
 		</Replace>
 		<!-- = Kumasi = -->
 		<Replace Tag="LOC_CIVILIZATION_KUMASI_BONUS" Language="fr_FR">
@@ -4120,20 +4275,20 @@
 		</Replace>
 		<!-- = Nan Madol = -->
 		<Replace Tag="LOC_CIVILIZATION_NAN_MADOL_BONUS" Language="fr_FR">
-			<Text>[ICON_CULTURE] Culture +1 pour vos [ICON_DISTRICT] quartiers construits sur ou adjacents à une case de côte ou de lac (passe à +2 à l'Exploration).</Text>
+			<Text>[ICON_CULTURE] Culture +1 pour vos [ICON_DISTRICT] quartiers construits sur ou adjacents à une case de côte ou de lac (passe à +2 à l'[COLOR:212,115,212,255]Exploration[ENDCOLOR]).</Text>
 		</Replace>
 		<Replace Tag="LOC_LEADER_TRAIT_NAN_MADOL_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_CULTURE] Culture +1 pour vos [ICON_DISTRICT] quartiers sur ou près des cases de côte ou de lac (passe à +2 à l'Exploration).</Text>
+			<Text>[ICON_CULTURE] Culture +1 pour vos [ICON_DISTRICT] quartiers construits sur ou adjacents à une case de côte ou de lac (passe à +2 à l'[COLOR:212,115,212,255]Exploration[ENDCOLOR]).</Text>
 		</Replace>
 		<!-- = Rapa Nui = -->
 		<Replace Tag="LOC_CIVILIZATION_RAPA_NUI_BONUS" Language="fr_FR">
-			<Text>Débloque la compétence de Bâtisseur permettant de construire un moaï.[NEWLINE][NEWLINE][ICON_CULTURE] Culture +1. [ICON_CULTURE] Culture +1 tous les 2 moaïs adjacents (pour chaque moaï adjacent à Foires Médiévales). [ICON_CULTURE] Culture +2 si construit sur une case de sol volcanique ou sur une case adjacente. [ICON_CULTURE] Culture +1 si adjacent à une case de côte ou de lac. Génère du [ICON_TOURISM] Tourisme par le biais de la [ICON_CULTURE] Culture une fois l'Aviation découverte.</Text>
+			<Text>Débloque la compétence de Bâtisseur permettant de construire un moaï.[NEWLINE][NEWLINE][ICON_CULTURE] Culture +1. [ICON_CULTURE] Culture +1 tous les 2 moaïs adjacents (pour chaque moaï adjacent à [COLOR:212,115,212,255]Foires Médiévales[ENDCOLOR]). [ICON_CULTURE] Culture +2 si construit sur une case de sol volcanique ou sur une case adjacente. [ICON_CULTURE] Culture +1 si adjacent à une case de côte ou de lac. Génère du [ICON_TOURISM] Tourisme par le biais de la [ICON_CULTURE] Culture une fois l'[COLOR_FLOAT_SCIENCE]Aviation[ENDCOLOR] découverte.</Text>
 		</Replace>
 		<Replace Tag="LOC_LEADER_TRAIT_RAPA_NUI_DESCRIPTION" Language="fr_FR">
-			<Text>Débloque la compétence de Bâtisseur permettant de construire un moaï.[NEWLINE][NEWLINE][ICON_CULTURE] Culture +1. [ICON_CULTURE] Culture +1 tous les 2 moaïs adjacents (pour chaque moaï adjacent à Foires Médiévales). [ICON_CULTURE] Culture +2 si construit sur une case de sol volcanique ou sur une case adjacente. [ICON_CULTURE] Culture +1 si adjacent à une case de côte ou de lac. Génère du [ICON_TOURISM] Tourisme par le biais de la [ICON_CULTURE] Culture une fois l'Aviation découverte.</Text>
+			<Text>Débloque la compétence de Bâtisseur permettant de construire un moaï.[NEWLINE][NEWLINE][ICON_CULTURE] Culture +1. [ICON_CULTURE] Culture +1 tous les 2 moaïs adjacents (pour chaque moaï adjacent à [COLOR:212,115,212,255]Foires Médiévales[ENDCOLOR]). [ICON_CULTURE] Culture +2 si construit sur une case de sol volcanique ou sur une case adjacente. [ICON_CULTURE] Culture +1 si adjacent à une case de côte ou de lac. Génère du [ICON_TOURISM] Tourisme par le biais de la [ICON_CULTURE] Culture une fois l'[COLOR_FLOAT_SCIENCE]Aviation[ENDCOLOR] découverte.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_MOAI_DESCRIPTION" Language="fr_FR">
-			<Text>Débloque la compétence de Bâtisseur permettant de construire un moaï.[NEWLINE][NEWLINE][ICON_CULTURE] Culture +1. [ICON_CULTURE] Culture +1 tous les 2 moaïs adjacents (pour chaque moaï adjacent à Foires Médiévales). [ICON_CULTURE] Culture +2 si construit sur une case de sol volcanique ou sur une case adjacente. [ICON_CULTURE] Culture +1 si adjacent à une case de côte ou de lac. Génère du [ICON_TOURISM] Tourisme par le biais de la [ICON_CULTURE] Culture une fois l'Aviation découverte.</Text>
+			<Text>Débloque la compétence de Bâtisseur permettant de construire un moaï.[NEWLINE][NEWLINE][ICON_CULTURE] Culture +1. [ICON_CULTURE] Culture +1 tous les 2 moaïs adjacents (pour chaque moaï adjacent à [COLOR:212,115,212,255]Foires Médiévales[ENDCOLOR]). [ICON_CULTURE] Culture +2 si construit sur une case de sol volcanique ou sur une case adjacente. [ICON_CULTURE] Culture +1 si adjacent à une case de côte ou de lac. Génère du [ICON_TOURISM] Tourisme par le biais de la [ICON_CULTURE] Culture une fois l'[COLOR_FLOAT_SCIENCE]Aviation[ENDCOLOR] découverte.</Text>
 		</Replace>
 		<!-- = Vilnius = -->
 		<Replace Tag="LOC_CIVILIZATION_VILNIUS_BONUS_XP1" Language="fr_FR">
@@ -4146,13 +4301,13 @@
 		<!-- == RELIGIOUS - RELIGIEUSES == -->
 		<!-- = Armagh = -->
 		<Replace Tag="LOC_CIVILIZATION_ARMAGH_BONUS_XP2" Language="fr_FR">
-			<Text>Débloque la compétence de Bâtisseur permettant de construire un monastère.[NEWLINE][NEWLINE][ICON_FOOD] Nourriture +1, [ICON_FAITH] Foi +3 et [ICON_HOUSING] Habitations +1. [ICON_FAITH] Foi +1 par [ICON_DISTRICT] quartier adjacent à l'Église Réformée. [ICON_HOUSING] Habitations +1 à Colonialisme. Régénération +15 pour les unités qui n'ont pas attaqué ce tour. Génère du [ICON_TOURISM] Tourisme par le biais de la [ICON_FAITH] Foi après la découverte de l'Aviation. Ne peut pas être construit à côté d'un autre monastère.</Text>
+			<Text>Débloque la compétence de Bâtisseur permettant de construire un monastère.[NEWLINE][NEWLINE][ICON_FOOD] Nourriture +1, [ICON_FAITH] Foi +3 et [ICON_HOUSING] Habitations +1. [ICON_FAITH] Foi +1 par [ICON_DISTRICT] quartier adjacent à l'[COLOR:212,115,212,255]Église Réformée[ENDCOLOR]. [ICON_HOUSING] Habitations +1 à [COLOR:212,115,212,255]Colonialisme[ENDCOLOR]. Régénération +15 pour les unités qui n'ont pas attaqué ce tour. Génère du [ICON_TOURISM] Tourisme par le biais de la [ICON_FAITH] Foi après la découverte de l'[COLOR_FLOAT_SCIENCE]Aviation[ENDCOLOR]. Ne peut pas être construit à côté d'un autre monastère.</Text>
 		</Replace>
 		<Replace Tag="LOC_LEADER_TRAIT_ARMAGH_EXPANSION2_DESCRIPTION" Language="fr_FR">
-			<Text>Débloque la compétence de Bâtisseur permettant de construire un monastère.[NEWLINE][NEWLINE][ICON_FOOD] Nourriture +1, [ICON_FAITH] Foi +3 et [ICON_HOUSING] Habitations +1. [ICON_FAITH] Foi +1 par [ICON_DISTRICT] quartier adjacent à l'Église Réformée. [ICON_HOUSING] Habitations +1 à Colonialisme. Régénération +15 pour les unités qui n'ont pas attaqué ce tour. Génère du [ICON_TOURISM] Tourisme par le biais de la [ICON_FAITH] Foi après la découverte de l'Aviation. Ne peut pas être construit à côté d'un autre monastère.</Text>
+			<Text>Débloque la compétence de Bâtisseur permettant de construire un monastère.[NEWLINE][NEWLINE][ICON_FOOD] Nourriture +1, [ICON_FAITH] Foi +3 et [ICON_HOUSING] Habitations +1. [ICON_FAITH] Foi +1 par [ICON_DISTRICT] quartier adjacent à l'[COLOR:212,115,212,255]Église Réformée[ENDCOLOR]. [ICON_HOUSING] Habitations +1 à [COLOR:212,115,212,255]Colonialisme[ENDCOLOR]. Régénération +15 pour les unités qui n'ont pas attaqué ce tour. Génère du [ICON_TOURISM] Tourisme par le biais de la [ICON_FAITH] Foi après la découverte de l'[COLOR_FLOAT_SCIENCE]Aviation[ENDCOLOR]. Ne peut pas être construit à côté d'un autre monastère.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_MONASTERY_EXPANSION2_DESCRIPTION" Language="fr_FR">
-			<Text>Débloque la compétence de Bâtisseur permettant de construire un monastère.[NEWLINE][NEWLINE][ICON_FOOD] Nourriture +1, [ICON_FAITH] Foi +3 et [ICON_HOUSING] Habitations +1. [ICON_FAITH] Foi +1 par [ICON_DISTRICT] quartier adjacent à l'Église Réformée. [ICON_HOUSING] Habitations +1 à Colonialisme. Régénération +15 pour les unités qui n'ont pas attaqué ce tour. Génère du [ICON_TOURISM] Tourisme par le biais de la [ICON_FAITH] Foi après la découverte de l'Aviation. Ne peut pas être construit à côté d'un autre monastère.</Text>
+			<Text>Débloque la compétence de Bâtisseur permettant de construire un monastère.[NEWLINE][NEWLINE][ICON_FOOD] Nourriture +1, [ICON_FAITH] Foi +3 et [ICON_HOUSING] Habitations +1. [ICON_FAITH] Foi +1 par [ICON_DISTRICT] quartier adjacent à l'[COLOR:212,115,212,255]Église Réformée[ENDCOLOR]. [ICON_HOUSING] Habitations +1 à [COLOR:212,115,212,255]Colonialisme[ENDCOLOR]. Régénération +15 pour les unités qui n'ont pas attaqué ce tour. Génère du [ICON_TOURISM] Tourisme par le biais de la [ICON_FAITH] Foi après la découverte de l'[COLOR_FLOAT_SCIENCE]Aviation[ENDCOLOR]. Ne peut pas être construit à côté d'un autre monastère.</Text>
 		</Replace>
 		<!-- = Chinguetti = -->
 		<Replace Tag="LOC_CIVILIZATION_CHINGUETTI_BONUS" Language="fr_FR">
@@ -4177,23 +4332,23 @@
 		</Replace>
 		<!-- = La Venta = -->
 		<Replace Tag="LOC_CIVILIZATION_LA_VENTA_BONUS_XP2" Language="fr_FR">
-			<Text>Débloque la compétence de Bâtisseur permettant de construire une tête colossale.[NEWLINE][NEWLINE][ICON_FOOD] Nourriture +1, [ICON_FAITH] Foi +2 et [ICON_HOUSING] Habitations +1. [ICON_FAITH] Foi +1 toutes les 2 cases de forêt tropicale adjacentes (par case de forêt tropicale à Humanisme). [ICON_FAITH] Foi +1 toutes les 2 cases de bois adjacentes (par case de bois à Humanisme). Génère du [ICON_TOURISM] Tourisme par le biais de la [ICON_FAITH] Foi une fois l'Aviation découverte. Construction impossible sur la neige ou une colline enneigée.</Text>
+			<Text>Débloque la compétence de Bâtisseur permettant de construire une tête colossale.[NEWLINE][NEWLINE][ICON_FOOD] Nourriture +1, [ICON_FAITH] Foi +2 et [ICON_HOUSING] Habitations +1. [ICON_FAITH] Foi +1 toutes les 2 cases de forêt tropicale adjacentes (par case de forêt tropicale à l'[COLOR:212,115,212,255]Humanisme[ENDCOLOR]). [ICON_FAITH] Foi +1 toutes les 2 cases de bois adjacentes (par case de bois à l'[COLOR:212,115,212,255]Humanisme[ENDCOLOR]). Génère du [ICON_TOURISM] Tourisme par le biais de la [ICON_FAITH] Foi une fois l'[COLOR_FLOAT_SCIENCE]Aviation[ENDCOLOR] découverte. Construction impossible sur la neige ou une colline enneigée.</Text>
 		</Replace>
 		<Replace Tag="LOC_LEADER_TRAIT_LA_VENTA_EXPANSION2_DESCRIPTION" Language="fr_FR">
-			<Text>Débloque la compétence de Bâtisseur permettant de construire une tête colossale.[NEWLINE][NEWLINE][ICON_FOOD] Nourriture +1, [ICON_FAITH] Foi +2 et [ICON_HOUSING] Habitations +1. [ICON_FAITH] Foi +1 toutes les 2 cases de forêt tropicale adjacentes (par case de forêt tropicale à Humanisme). [ICON_FAITH] Foi +1 toutes les 2 cases de bois adjacentes (par case de bois à Humanisme). Génère du [ICON_TOURISM] Tourisme par le biais de la [ICON_FAITH] Foi une fois l'Aviation découverte. Construction impossible sur la neige ou une colline enneigée.</Text>
+			<Text>Débloque la compétence de Bâtisseur permettant de construire une tête colossale.[NEWLINE][NEWLINE][ICON_FOOD] Nourriture +1, [ICON_FAITH] Foi +2 et [ICON_HOUSING] Habitations +1. [ICON_FAITH] Foi +1 toutes les 2 cases de forêt tropicale adjacentes (par case de forêt tropicale à l'[COLOR:212,115,212,255]Humanisme[ENDCOLOR]). [ICON_FAITH] Foi +1 toutes les 2 cases de bois adjacentes (par case de bois à l'[COLOR:212,115,212,255]Humanisme[ENDCOLOR]). Génère du [ICON_TOURISM] Tourisme par le biais de la [ICON_FAITH] Foi une fois l'[COLOR_FLOAT_SCIENCE]Aviation[ENDCOLOR] découverte. Construction impossible sur la neige ou une colline enneigée.</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_COLOSSAL_HEAD_EXPANSION2_DESCRIPTION" Language="fr_FR">
-			<Text>Débloque la compétence de Bâtisseur permettant de construire une tête colossale.[NEWLINE][NEWLINE][ICON_FOOD] Nourriture +1, [ICON_FAITH] Foi +2 et [ICON_HOUSING] Habitations +1. [ICON_FAITH] Foi +1 toutes les 2 cases de forêt tropicale adjacentes (par case de forêt tropicale à Humanisme). [ICON_FAITH] Foi +1 toutes les 2 cases de bois adjacentes (par case de bois à Humanisme). Génère du [ICON_TOURISM] Tourisme par le biais de la [ICON_FAITH] Foi une fois l'Aviation découverte. Construction impossible sur la neige ou une colline enneigée.</Text>
+			<Text>Débloque la compétence de Bâtisseur permettant de construire une tête colossale.[NEWLINE][NEWLINE][ICON_FOOD] Nourriture +1, [ICON_FAITH] Foi +2 et [ICON_HOUSING] Habitations +1. [ICON_FAITH] Foi +1 toutes les 2 cases de forêt tropicale adjacentes (par case de forêt tropicale à l'[COLOR:212,115,212,255]Humanisme[ENDCOLOR]). [ICON_FAITH] Foi +1 toutes les 2 cases de bois adjacentes (par case de bois à l'[COLOR:212,115,212,255]Humanisme[ENDCOLOR]). Génère du [ICON_TOURISM] Tourisme par le biais de la [ICON_FAITH] Foi une fois l'[COLOR_FLOAT_SCIENCE]Aviation[ENDCOLOR] découverte. Construction impossible sur la neige ou une colline enneigée.</Text>
 		</Replace>
 		<!-- = Nazca = -->
 		<Replace Tag="LOC_CIVILIZATION_NAZCA_BONUS" Language="fr_FR">
-			<Text>Débloque la compétence de Bâtisseur permettant de construire une ligne de Nazca.[NEWLINE][NEWLINE][ICON_FAITH] Foi +1 pour les cases adjacentes. [ICON_FAITH] Foi +1 pour les cases adjacentes disposant d'une ressource. [ICON_FOOD] Nourriture +1 pour les cases de désert et de colline désertique adjacentes à Fonction Publique. [ICON_PRODUCTION] Production +1 pour les cases plates adjacentes à Production en Série. Attrait +1 pour les cases adjacentes. Ne peut être construit que sur une case de désert plat. Cette case ne peut pas être exploitée.</Text>
+			<Text>Débloque la compétence de Bâtisseur permettant de construire une ligne de Nazca.[NEWLINE][NEWLINE][ICON_FAITH] Foi +1 pour les cases adjacentes. [ICON_FAITH] Foi +1 pour les cases adjacentes disposant d'une ressource. [ICON_FOOD] Nourriture +1 pour les cases de désert et de colline désertique adjacentes à la [COLOR:212,115,212,255]Fonction Publique[ENDCOLOR]. [ICON_PRODUCTION] Production +1 pour les cases plates adjacentes à la [COLOR_FLOAT_SCIENCE]Production en Série[ENDCOLOR]. Attrait +1 pour les cases adjacentes. Ne peut être construit que sur une case de désert plat. Cette case ne peut pas être exploitée.</Text>
 		</Replace>
 		<Replace Tag="LOC_LEADER_TRAIT_NAZCA_DESCRIPTION" Language="fr_FR">
-			<Text>Débloque la compétence de Bâtisseur permettant de construire une ligne de Nazca.[NEWLINE][NEWLINE][ICON_FAITH] Foi +1 pour les cases adjacentes. [ICON_FAITH] Foi +1 pour les cases adjacentes disposant d'une ressource. [ICON_FOOD] Nourriture +1 pour les cases de désert et de colline désertique adjacentes à Fonction Publique. [ICON_PRODUCTION] Production +1 pour les cases plates adjacentes à Production en Série. Attrait +1 pour les cases adjacentes. Ne peut être construit que sur une case de désert plat. Cette case ne peut pas être exploitée.</Text>
+			<Text>Débloque la compétence de Bâtisseur permettant de construire une ligne de Nazca.[NEWLINE][NEWLINE][ICON_FAITH] Foi +1 pour les cases adjacentes. [ICON_FAITH] Foi +1 pour les cases adjacentes disposant d'une ressource. [ICON_FOOD] Nourriture +1 pour les cases de désert et de colline désertique adjacentes à la [COLOR:212,115,212,255]Fonction Publique[ENDCOLOR]. [ICON_PRODUCTION] Production +1 pour les cases plates adjacentes à la [COLOR_FLOAT_SCIENCE]Production en Série[ENDCOLOR]. Attrait +1 pour les cases adjacentes. Ne peut être construit que sur une case de désert plat. Cette case ne peut pas être exploitée..</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_NAZCA_LINE_DESCRIPTION" Language="fr_FR">
-			<Text>Débloque la compétence de Bâtisseur permettant de construire une ligne de Nazca.[NEWLINE][NEWLINE][ICON_FAITH] Foi +1 pour les cases adjacentes. [ICON_FAITH] Foi +1 pour les cases adjacentes disposant d'une ressource. [ICON_FOOD] Nourriture +1 pour les cases de désert et de colline désertique adjacentes à Fonction Publique. [ICON_PRODUCTION] Production +1 pour les cases plates adjacentes à Production en Série. Attrait +1 pour les cases adjacentes. Ne peut être construit que sur une case de désert plat. Cette case ne peut pas être exploitée.</Text>
+			<Text>Débloque la compétence de Bâtisseur permettant de construire une ligne de Nazca.[NEWLINE][NEWLINE][ICON_FAITH] Foi +1 pour les cases adjacentes. [ICON_FAITH] Foi +1 pour les cases adjacentes disposant d'une ressource. [ICON_FOOD] Nourriture +1 pour les cases de désert et de colline désertique adjacentes à la [COLOR:212,115,212,255]Fonction Publique[ENDCOLOR]. [ICON_PRODUCTION] Production +1 pour les cases plates adjacentes à la [COLOR_FLOAT_SCIENCE]Production en Série[ENDCOLOR]. Attrait +1 pour les cases adjacentes. Ne peut être construit que sur une case de désert plat. Cette case ne peut pas être exploitée.</Text>
 		</Replace>
 		<!-- = Vatican = -->
 		<Replace Tag="LOC_CIVILIZATION_VATICAN_CITY_BONUS" Language="fr_FR">
@@ -4240,7 +4395,7 @@
 		</Replace>
 		<Replace Tag="LOC_MOMENT_CATEGORY_CULTURAL_BONUS_DARK_AGE" Language="fr_FR">
 			<Text>Bonus d'engagement "Le stylo, le pinceau et la voix" :[NEWLINE]Score d'ère +1 chaque fois que vous déclenchez une [ICON_CIVICBOOSTED] Inspiration, et +1 pour chaque bâtiment construit possédant un emplacement de chef-d'œuvre.</Text>
-		</Replace>	
+		</Replace>
 		<Replace Tag="LOC_PEDIA_CONCEPTS_PAGE_DEDICATIONS_CHAPTER_CONTENT_PARA_3" Language="fr_FR">
 			<Text>"Le stylo, le pinceau et la voix" : score d'ère +1 chaque fois que vous déclenchez une [ICON_CIVICBOOSTED] Inspiration, et +1 pour chaque bâtiment construit possédant un emplacement de chef-d'œuvre. Choisi au début d'un âge d'or, les [ICON_CIVICBOOSTED] Inspirations fournissent 10% supplémentaires vers l'obtention des dogmes. [ICON_GOLD] Or +1 et [ICON_CULTURE] Culture +2 pour chaque [ICON_DISTRICT] quartier spécialisé.</Text>
 		</Replace>
@@ -4383,7 +4538,7 @@
 			<Text>Le ciel et les étoiles</Text>
 		</Replace>
 		<Replace Tag="LOC_MOMENT_CATEGORY_AERONAUTICAL_BONUS_EXPANSION2_GOLDEN_AGE" Language="fr_FR">
-			<Text>Âge d'or "Le ciel et les étoiles" :[NEWLINE]Débloque les [ICON_TECHBOOSTED] Eurêka ! des Matériaux Intelligents et de Mission Extraterrestre. Expérience +100% pour toutes les unités aériennes. [ICON_RESOURCE_ALUMINUM] Aluminium +2 par mine [ICON_RESOURCE_ALUMINUM] d'Aluminium aménagée.</Text>
+			<Text>Âge d'or "Le ciel et les étoiles" :[NEWLINE]Débloque les [ICON_TECHBOOSTED] Eurêka ! des [COLOR_FLOAT_SCIENCE]Matériaux Intelligents[ENDCOLOR] et de [COLOR_FLOAT_SCIENCE]Mission Extraterrestre[ENDCOLOR]. Expérience +100% pour toutes les unités aériennes. [ICON_RESOURCE_ALUMINUM] Aluminium +2 par mine [ICON_RESOURCE_ALUMINUM] d'Aluminium aménagée.</Text>
 		</Replace>
 		<Replace Tag="LOC_MOMENT_CATEGORY_AERONAUTICAL_BONUS_NORMAL_AGE" Language="fr_FR">
 			<Text>Bonus d'engagement "Le ciel et les étoiles" :[NEWLINE]Score d'ère +1 pour chaque Aérodrome construit et pour chaque [ICON_GREATPERSON] Personnage illustre recruté ou acheté.</Text>
@@ -4392,14 +4547,14 @@
 			<Text>Bonus d'engagement "Le ciel et les étoiles" :[NEWLINE]Score d'ère +1 pour chaque Aérodrome construit et pour chaque [ICON_GREATPERSON] Personnage illustre recruté ou acheté.</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_CONCEPTS_PAGE_DEDICATIONS_CHAPTER_CONTENT_PARA_12" Language="fr_FR">
-			<Text>"Le ciel et les étoiles" : score d'ère +1 pour chaque Aérodrome construit et +1 pour chaque [ICON_GREATPERSON] Personnage illustre recruté ou acheté. Choisi au début d'un âge d'or, débloque les [ICON_TECHBOOSTED] Eurêka ! des Matériaux Intelligents et de Mission Extraterrestre. Expérience +100% pour toutes les unités aériennes. [ICON_RESOURCE_ALUMINUM] Aluminium +2 par mine [ICON_RESOURCE_ALUMINUM] d'Aluminium aménagée.</Text>
+			<Text>"Le ciel et les étoiles" : score d'ère +1 pour chaque Aérodrome construit et +1 pour chaque [ICON_GREATPERSON] Personnage illustre recruté ou acheté. Choisi au début d'un âge d'or, débloque les [ICON_TECHBOOSTED] Eurêka ! des [COLOR_FLOAT_SCIENCE]Matériaux Intelligents[ENDCOLOR] et de [COLOR_FLOAT_SCIENCE]Mission Extraterrestre[ENDCOLOR]. Expérience +100% pour toutes les unités aériennes. [ICON_RESOURCE_ALUMINUM] Aluminium +2 par mine [ICON_RESOURCE_ALUMINUM] d'Aluminium aménagée.</Text>
 		</Replace>
 		<!-- == AUTOMATON WARFARE - GUERRE AUTOMATISÉE == -->
 		<Replace Tag="LOC_MOMENT_CATEGORY_AUTOMATON" Language="fr_FR">
 			<Text>Guerre automatisée</Text>
 		</Replace>
 		<Replace Tag="LOC_MOMENT_CATEGORY_AUTOMATON_BONUS_GOLDEN_AGE" Language="fr_FR">
-			<Text>Âge d'or "Guerre automatisée" :[NEWLINE]Octroie un Robot géant de la mort dans votre [ICON_CAPITAL] Capitale (nécessite Robotique). [ICON_PRODUCTION] Production +25% pour les Robots géants de la mort. [ICON_RESOURCE_URANIUM] Uranium +5 par tour ainsi que +1 par tour par mine [ICON_RESOURCE_URANIUM] d'Uranium aménagée.</Text>
+			<Text>Âge d'or "Guerre automatisée" :[NEWLINE]Octroie un Robot géant de la mort dans votre [ICON_CAPITAL] Capitale (nécessite [COLOR_FLOAT_SCIENCE]Robotique[ENDCOLOR]). [ICON_PRODUCTION] Production +25% pour les Robots géants de la mort. [ICON_RESOURCE_URANIUM] Uranium +5 par tour ainsi que +1 par tour par mine [ICON_RESOURCE_URANIUM] d'Uranium aménagée.</Text>
 		</Replace>
 		<Replace Tag="LOC_MOMENT_CATEGORY_AUTOMATON_BONUS_NORMAL_AGE" Language="fr_FR">
 			<Text>Bonus d'engagement "Guerre automatisée" :[NEWLINE]Score d'ère +1 pour chaque unité non barbare tuée avec un Robot géant de la mort.</Text>
@@ -4408,13 +4563,13 @@
 			<Text>Bonus d'engagement "Guerre automatisée" :[NEWLINE]Score d'ère +1 pour chaque unité non barbare tuée avec un Robot géant de la mort.</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_CONCEPTS_PAGE_DEDICATIONS_CHAPTER_CONTENT_PARA_13" Language="fr_FR">
-			<Text>"Guerre automatisée" : score d'ère +1 pour chaque unité non barbare détruite avec un Robot géant de la mort. Choisi au début d'un âge d'or, Octroie un Robot géant de la mort dans votre [ICON_CAPITAL] Capitale (nécessite Robotique). [ICON_PRODUCTION] Production +25% pour les Robots géants de la mort. [ICON_RESOURCE_URANIUM] Uranium +5 par tour ainsi que +1 par tour par mine [ICON_RESOURCE_URANIUM] d'Uranium aménagée.</Text>
+			<Text>"Guerre automatisée" : score d'ère +1 pour chaque unité non barbare détruite avec un Robot géant de la mort. Choisi au début d'un âge d'or, Octroie un Robot géant de la mort dans votre [ICON_CAPITAL] Capitale (nécessite [COLOR_FLOAT_SCIENCE]Robotique[ENDCOLOR]). [ICON_PRODUCTION] Production +25% pour les Robots géants de la mort. [ICON_RESOURCE_URANIUM] Uranium +5 par tour ainsi que +1 par tour par mine [ICON_RESOURCE_URANIUM] d'Uranium aménagée.</Text>
 		</Replace>
 
 
 
 		<!-- === SCIENCE TREE - ARBRE DE TECHNOLOGIE === -->
-		
+
 		<!-- == TECHNOLOGIES == -->
 		<Replace Tag="LOC_TECH_CASTLES_DESCRIPTION" Language="fr_FR">
 			<Text>Octroie un espion gratuit si vous jouez la France. Bonus de [ICON_CULTURE] Culture pour la Grande Muraille quand plusieurs segments sont adjacents.</Text>
@@ -4459,8 +4614,8 @@
 			<Text>[ICON_PRODUCTION] Production +1 pour les puits de pétrole et les plateformes pétrolières.</Text>
 		</Replace>
 		<Replace Tag="LOC_TECH_SYNTHETIC_MATERIALS_DESCRIPTION" Language="fr_FR">
-			<Text>[ICON_PRODUCTION] Production +1 pour les scieries. [ICON_GOLD] Or +2 pour les camps. [ICON_PRODUCTION] Production +1 et [ICON_SCIENCE] Science +1 pour les failles géothermiques.</Text>
-		</Replace>	
+			<Text>[ICON_PRODUCTION] Production +1 pour les scieries. [ICON_GOLD] Or +2 pour les camps. [ICON_PRODUCTION] Production +1 et [ICON_SCIENCE] Science +1 pour les centrales géothermiques.</Text>
+		</Replace>
 		<Replace Tag="LOC_TECH_ADVANCED_AI_DESCRIPTION" Language="fr_FR">
 			<Text>Débloque la promotion de Robot Géant de la Mort, "Défense aérienne par drones" : [ICON_ANTIAIR_LARGE] Puissance anti-aérienne +100.</Text>
 		</Replace>
@@ -4660,7 +4815,7 @@
 			<Text>Possédez une centrale nucléaire.</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_NANOTECHNOLOGY" Language="fr_FR">
-			<Text>Possédez une mine [ICON_RESOURCE_ALUMINUM] d'aluminium.</Text>
+			<Text>Possédez une mine [ICON_RESOURCE_ALUMINUM] d'Aluminium.</Text>
 		</Replace>
 		<Replace Tag="LOC_BOOST_TRIGGER_MUST_STEAL" Language="fr_FR">
 			<Text>Obtenez une optimisation via un [ICON_GREATSCIENTIST] Savant illustre ou un espion.</Text>
@@ -4684,7 +4839,7 @@
 			<Text>[ICON_TOURISM] Tourisme +100% pour les chefs-d'oeuvre [ICON_GREATWORK_WRITING] littéraires.</Text>
 		</Replace>
 		<Replace Tag="LOC_CIVIC_IDEOLOGY_DESCRIPTION" Language="fr_FR">
-			<Text>Permet de former un espion supplémentaire. Libre passage avec toutes les Cités-états. Si vous avez débloqué l'Église Réformée, [ICON_STRENGTH] Puissance de combat +4 pour les unités militaires affrontant une civilisation d'une autre religion.</Text>
+			<Text>Permet de former un espion supplémentaire. Libre passage avec toutes les Cités-états. Si vous avez débloqué l'[COLOR:212,115,212,255]Église Réformée[ENDCOLOR], [ICON_STRENGTH] Puissance de combat +4 pour les unités militaires affrontant une civilisation d'une autre religion.</Text>
 		</Replace>
 		<Replace Tag="LOC_CIVIC_NUCLEAR_PROGRAM_DESCRIPTION" Language="fr_FR">
 			<Text>[ICON_SCIENCE] Science +3 pour les laboratoires de recherche.</Text>
@@ -5335,7 +5490,7 @@
 			<Text>Pacte de prospérité</Text>
 		</Replace>
 		<Replace Tag="LOC_POLICY_PROSPERITY_PACT_DESCRIPTION" Language="fr_FR">
-			<Text>Points d'alliance +5 avec tous les alliés.</Text>
+			<Text>Points [ICON_ALLIANCE] d'alliance +5 avec tous les alliés.</Text>
 		</Replace>
 		<Replace Tag="LOC_POLICY_CRYPTOGRAPHY_DESCRIPTION" Language="fr_FR">
 			<Text>Niveau de l'espion ennemi réduit de 2 sur vos terres. Celui de votre espion augmente de 1 pour les opérations offensives.</Text>
@@ -5828,7 +5983,7 @@
 		<!-- === CIVILOPEDIA & BBG EXPANDED & IA === -->
 
 		<Replace Tag="LOC_PEDIA_CONCEPTS_PAGE_WORLD_CONGRESS_CHAPTER_FAVOR_PARA_3" Language="fr_FR">
-			<Text>D'autres actions réduiront la quantité de [ICON_Favor] faveurs diplomatiques que vous recevez : [NEWLINE][ICON_BULLET]Vous perdez des [ICON_Favor] faveurs diplomatiques à chaque tour en fonction de votre production de CO2 par rapport aux autres nations. [NEWLINE][ICON_BULLET]Vous perdez des [ICON_Favor] faveurs diplomatiques à chaque tour en fonction des [ICON_Grievance] griefs que les autres nations ont contre vous.[NEWLINE][ICON_BULLET]Vous perdez des [ICON_Favor] faveurs diplomatiques à chaque tour en fonction du nombre de Cités-états que vous occupez.</Text>
+			<Text>D'autres actions réduiront la quantité de [ICON_FAVOR] faveurs diplomatiques que vous recevez : [NEWLINE][ICON_BULLET]Vous perdez des [ICON_FAVOR] faveurs diplomatiques à chaque tour en fonction de votre production de CO2 par rapport aux autres nations. [NEWLINE][ICON_BULLET]Vous perdez des [ICON_FAVOR] faveurs diplomatiques à chaque tour en fonction des [ICON_GRIEVANCE] griefs que les autres nations ont contre vous.[NEWLINE][ICON_BULLET]Vous perdez des [ICON_FAVOR] faveurs diplomatiques à chaque tour en fonction du nombre de Cités-états que vous occupez.</Text>
 		</Replace>
 
 		<!-- == Gilgamesh == -->
@@ -5901,15 +6056,12 @@
 		<!-- == BBG EXPANDED == -->
 
 		<!-- = Ahiram - Phénicie = -->
-		<!-- Dirigeant -->
 		<Replace Tag="LOC_LEADER_LIME_PHOE_AHIRAM_NAME" Language="fr_FR">
 			<Text>Ahiram</Text>
 		</Replace>
 		<Replace Tag="LOC_LOADING_INFO_LEADER_LIME_PHOE_AHIRAM" Language="fr_FR">
 			<Text>Melqart te comble de richesses, Ahiram, car rares sont ceux qui sont aussi riches que toi. Utilise ta domination sur les mers pour accroître ta propre richesse, mais ne la thésaurise pas. Ordonne la construction de bâtiments magnifiques dans tous tes domaines et encourage le commerce et l'industrie dans tes colonies, car la richesse engendre la richesse. Dans un monde rempli de mendiants, utilise l'or et l'argent de Byblos et d'ailleurs pour construire de grandes villes, oui, une civilisation, qui résisteront à l'épreuve du temps.</Text>
 		</Replace>
-
-		<!-- Agenda -->
 		<Replace Tag="LOC_AGENDA_LIME_PHOE_AHIRAM_BE_HUMBLED_NAME" Language="fr_FR">
 			<Text>Sois ici et sois humble</Text>
 		</Replace>
@@ -5922,8 +6074,6 @@
 		<Replace Tag="LOC_DIPLO_MODIFIER_LEADER_LIME_PHOE_AHIRAM_BE_HUMBLED_KUDO" Language="fr_FR">
 			<Text>Ahiram est heureux d'avoir quelqu'un avec vos forces dans son équipe.</Text>
 		</Replace>
-
-		<!-- Diplomatie -->
 		<Replace Tag="LOC_DIPLO_FIRST_MEET_LEADER_LIME_PHOE_AHIRAM_ANY" Language="fr_FR">
 			<Text>Bonjour, que puis-je faire pour vous ? Parlez clairement : je ferai consigner cette journée par un scribe !</Text>
 		</Replace>
@@ -6017,8 +6167,6 @@
 		<Replace Tag="LOC_DIPLO_DEFEAT_FROM_AI_LEADER_LIME_PHOE_AHIRAM_ANY" Language="fr_FR">
 			<Text>Notre affaire est conclue. J’espère que vous n’avez pas de plaintes, mais honnêtement, je m’en fiche pas mal.</Text>
 		</Replace>
-
-		<!-- Civilopédia -->
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_LIME_PHOE_AHIRAM_QUOTE" Language="fr_FR">
 			<Text>Si un roi, un gouverneur ou un commandant avance contre cette ville, que son sceptre judiciaire soit brisé, que son trône royal soit renversé et que toute paix et tranquillité soient chassées de Byblos.</Text>
 		</Replace>
@@ -6049,8 +6197,6 @@
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_LIME_PHOE_AHIRAM_CHAPTER_HISTORY_PARA_5" Language="fr_FR">
 			<Text>Ahiram a probablement utilisé son incroyable richesse pour financer des projets de construction à l’intérieur de la ville. Sa richesse est probablement aussi la raison pour laquelle son fils Ithobaal a ensuite été nommé roi de Byblos. Elle lui a probablement aussi permis d’obtenir un bon poste au conseil des anciens de Byblos, s’il n’avait pas lui-même été roi de Byblos.</Text>
 		</Replace>
-
-		<!-- Bâtiment unique -->
 		<Replace Tag="LOC_PEDIA_BUILDINGS_PAGE_LEADER_BUILDING_LIME_PHOE_AHIRAM_TOMB_CHAPTER_HISTORY_PARA_1" Language="fr_FR">
 			<Text>Il ne reste que très peu de l’architecture phénicienne. Il en reste encore moins de cette Civilopédie.</Text>
 		</Replace>
@@ -6064,13 +6210,11 @@
 			<Text>On suppose que les Phéniciens, qui étaient à l’origine des colonies d’Égypte, ont développé ces types d’enterrements comme une alternative moins coûteuse aux enterrements pharaoniques en Égypte (car qui peut se permettre de construire des pyramides géantes partout ?). Il semble que les Phéniciens aient à leur tour influencé les Égyptiens, car les tombes égyptiennes ultérieures présentaient également des puits et des tombes souterraines.</Text>
 		</Replace>
 
+
 		<!-- = Al-Hasan ibn Sulaiman - Swahili = -->
-		<!-- Dirigeant -->
 		<Replace Tag="LOC_LOADING_INFO_LEADER_SUK_AL_HASAN" Language="fr_FR">
 			<Text>Sultan al-Hassan ibn Sulaiman, votre royaume est composé d’humbles pêcheurs et de fiers marchands, et grâce à leurs efforts, vos côtes seront grouillantes de ports animés et de villes prospères. Guidez-les vers la grandeur depuis votre palais de Husuni Kubwa, et bientôt les plus grands hommes de leur temps viendront admirer les villes de corail brillantes des Swahilis et vous rendre hommage, vous, leur grand sultan.</Text>
 		</Replace>
-
-		<!-- Diplomatie -->
 		<Replace Tag="LOC_DIPLO_FIRST_MEET_LEADER_SUK_AL_HASAN_ANY" Language="fr_FR">
 			<Text>Je vous souhaite la bienvenue à Kilwa, voyageur fatigué. Je suis leur sultan al-Hasan, père des cadeaux. Êtes-vous également venu pour un cadeau ?</Text>
 		</Replace>
@@ -6161,8 +6305,6 @@
 		<Replace Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_LEADER_SUK_AL_HASAN_ANY" Language="fr_FR">
 			<Text>J’espère que vos soldats apprécient le paysage. Ou avez-vous des intentions plus sinistres ?</Text>
 		</Replace>
-
-		<!-- Civilopédia -->
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_SUK_AL_HASAN_QUOTE" Language="fr_FR">
 			<Text>Lorsque je suis arrivé au pouvoir, j’ai vengé mon père en combattant et en finissant par vaincre les chefs mafieux.</Text>
 		</Replace>
@@ -6190,13 +6332,9 @@
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_SUK_AL_HASAN_CHAPTER_HISTORY_PARA_4" Language="fr_FR">
 			<Text>Pendant son règne, le sultan a également fait agrandir considérablement la Grande Mosquée de Kilwa, qui a été construite en pierre de corail et est la plus grande mosquée de ce type. Il a construit une annexe au mur est de la salle de prière nord, qui s’étendait autour de celle-ci pour former une grande cour ouverte. Un couloir voûté en berceau très étroit, composé de 30 travées avec des dalles de corail taillées et soutenu par des piliers de corail, s’étendait directement vers le sud. Cette annexe fait légèrement saillie vers l’est, formant une aile qui s’écarte du plan orthogonal par ailleurs. Dans l’espace où le mur s’élargit, il y avait deux petites pièces irrégulières, précédées d’une petite antichambre avec un bassin rempli de galets de quartz lisses, une pierre de massage des pieds en grès et un banc. Derrière ce petit groupe de pièces se trouve une pièce légèrement plus grande, simplement voûtée. Cette longue pièce mène à une pièce carrée de quatre mètres de diamètre qui soutient le grand dôme. Ce dôme, mentionné dans la chronique de Kilwa, est considéré comme le premier véritable dôme de la côte est de l’Afrique. Il était soutenu par des écoinçons et décoré de dalles de corail taillées. Après sa visite en 1331, Ibn Battuta a loué la splendeur du dôme, qui est resté le plus grand dôme de la côte est-africaine jusqu’au XIXe siècle.</Text>
 		</Replace>
-
-		<!--  Cities  -->
 		<Replace Tag="LOC_CITY_NAME_SUK_SWAHILI_KILWA_KISIWANI" Language="fr_FR">
 			<Text>Kilwa</Text>
 		</Replace>
-
-		<!-- Rivières -->
 		<Replace Tag="LOC_NAMED_RIVER_RUVUMA_NAME" Language="fr_FR">
 			<Text>Ruvuma</Text>
 		</Replace>
@@ -6212,8 +6350,6 @@
 		<Replace Tag="LOC_NAMED_RIVER_SHEBELLE_NAME" Language="fr_FR">
 			<Text>Chébéli</Text>
 		</Replace>
-
-		<!-- Montagnes -->
 		<Replace Tag="LOC_NAMED_MOUNTAIN_USAMBARA_NAME" Language="fr_FR">
 			<Text>Monts Usambara</Text>
 		</Replace>
@@ -6226,13 +6362,9 @@
 		<Replace Tag="LOC_NAMED_VOLCANO_KARTHALA_NAME" Language="fr_FR">
 			<Text>Mont Karthala</Text>
 		</Replace>
-
-		<!-- Lacs -->
 		<Replace Tag="LOC_NAMED_LAKE_MALAWI_NAME" Language="fr_FR">
 			<Text>Lac Malawi</Text>
 		</Replace>
-
-		<!-- Mers -->
 		<Replace Tag="LOC_NAMED_SEA_SOMALI_NAME" Language="fr_FR">
 			<Text>Mer de Somalie</Text>
 		</Replace>
@@ -6254,8 +6386,6 @@
 		<Replace Tag="LOC_NAMED_SEA_WINAM_GULF_NAME" Language="fr_FR">
 			<Text>Golfe de Winam</Text>
 		</Replace>
-
-		<!-- Civilopédia -->
 		<Replace Tag="LOC_CIVINFO_SUK_SWAHILI_LOCATION" Language="fr_FR">
 			<Text>Afrique</Text>
 		</Replace>
@@ -6301,23 +6431,15 @@
 		<Replace Tag="LOC_CIVILIZATION_SUK_SWAHILI_DESCRIPTION_JFD_CIVILIZATION" Language="fr_FR">
 			<Text>Civilisation swahilie</Text>
 		</Replace>
-
-		<!-- Unité unique -->
 		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SUK_JAHAZI_CHAPTER_HISTORY_PARA_1" Language="fr_FR">
 			<Text>Le plus grand voilier traditionnel largement utilisé au large des côtes d’Afrique de l’Est est le jahazi, qui mesure jusqu’à 20 mètres de long et dont les grandes voiles gonflées sont un spectacle caractéristique au large de Zanzibar et d’autres ports traditionnels. D’une capacité d’environ 100 passagers, le jahazi est principalement utilisé pour le transport de marchandises et de passagers sur des distances relativement longues ou en haute mer, par exemple entre Dar es-Salaam et Zanzibar. Hormis des modifications mineures à l’époque portugaise et omanaise, la conception du jahazi moderne est largement identique à celle des navires similaires utilisés au Moyen Âge et avant. Le nom jahazi est généralement utilisé pour les bateaux avec une proue tronquée et une poupe carrée qui sont construits à Zanzibar et dans les parties continentales voisines.</Text>
-		</Replace>	
-
-		<!-- Améngement unique -->
+		</Replace>
 		<Replace Tag="LOC_PEDIA_BUILDINGS_PAGE_BUILDING_SUK_PILLAR_TOMB_CHAPTER_HISTORY_PARA_1" Language="fr_FR">
 			<Text>L’une des formes architecturales les plus frappantes et les plus énigmatiques associées aux Swahilis était les tombes. Les vestiges de tombes monumentales se trouvent encore dans les régions côtières et marquent de nombreux centres de la vie swahilie disparus depuis longtemps. Les tombes les plus simples étaient des enceintes rectangulaires délimitées par quatre murs bas, qui variaient en taille et en étendue. La caractéristique la plus frappante et la plus inhabituelle de nombreuses tombes médiévales des Swahilis était l’ajout d’une haute structure en forme de colonne, qui formait un type de bâtiment caractéristique le long de la côte est-africaine, appelé tombes à piliers. Ces piliers existent dans de nombreuses tailles et formes, de rondes, carrées, polyvalentes ou cannelées à différentes hauteurs. Ces piliers, et parfois aussi des parties des murs d’enceinte environnants, étaient souvent décorés de bols en porcelaine ou en céramique émaillée encastrés, importés d’Arabie du Sud, de Perse et même de Chine, qui formaient une touche de couleur qui contrastait avec les surfaces de plâtre d’un blanc éclatant et créaient une tradition décorative distinctive unique à la côte est-africaine médiévale.</Text>
 		</Replace>
-
-		<!-- Dirigeant -->
 		<Replace Tag="LOC_LEADER_SUK_AL_HASAN_NAME" Language="fr_FR">
 			<Text>Al-Hasan ibn Sulaiman</Text>
 		</Replace>
-
-		<!--  Agenda  -->
 		<Replace Tag="LOC_AGENDA_SUK_FATHER_OF_GIFTS_NAME" Language="fr_FR">
 			<Text>Père des cadeaux</Text>
 		</Replace>
@@ -6337,8 +6459,8 @@
 			<Text>Al Hasan s'agace que vous entassiez vos grands hommes dans des villes sous-développées.</Text>
 		</Replace>
 
+
 		<!-- = Kiviuq - Thulé = -->
-		<!-- Leader -->
 		<Replace Tag="LOC_LEADER_LIME_THULE_DAVE_NAME" Language="fr_FR">
 			<Text>Kiviuq</Text>
 		</Replace>
@@ -6348,8 +6470,6 @@
 		<Replace Tag="LOC_LOADING_INFO_LEADER_LIME_THULE_DAVE" Language="fr_FR">
 			<Text>Un vaste paysage s'étend devant vous, héroïque Kiviuq, éternel vagabond. Votre peuple est pieux et cultivé, avec des reliques inégalées et des légendes incroyables. Envoyez vos chasseurs à la chasse à la baleine et laissez vos Angakkuit se battre en duel avec Sedna, afin que la chance vous soit accordée. Mais n'oubliez pas d'explorer et de guider vos éclaireurs jusqu'au bord de l'horizon. Battez-vous avec acharnement et surmontez toutes les adversités, et surtout, ne laissez pas votre cœur se transformer en pierre.</Text>
 		</Replace>
-
-		<!-- Agenda -->
 		<Replace Tag="LOC_AGENDA_LIME_THULE_DAVE_ALWAYS_ROAMING_NAME" Language="fr_FR">
 			<Text>Toujours en vadrouille</Text>
 		</Replace>
@@ -6368,8 +6488,6 @@
 		<Replace Tag="LOC_DIPLO_MODIFIER_LEADER_LIME_THULE_DAVE_ALWAYS_ROAMING_EXPLORERPHILE_NEGATIVE" Language="fr_FR">
 			<Text>Kiviuq vous considère comme étroit d'esprit et hostile à l'aventure.</Text>
 		</Replace>
-
-		<!-- Civilopédia -->
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_LIME_THULE_DAVE_TITLE" Language="fr_FR">
 			<Text>Kiviuq</Text>
 		</Replace>
@@ -6397,8 +6515,6 @@
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_LIME_THULE_DAVE_CHAPTER_DETAILED_BODY" Language="fr_FR">
 			<Text>Les capacités de Kiviuq encouragent les grandes découvertes, tandis que la base Thulé est capable de construire rapidement une base culturelle et religieuse solide dans un paysage autrement inhabitable.</Text>
 		</Replace>
-
-		<!-- Diplomatie -->
 		<Replace Tag="LOC_DIPLO_FIRST_MEET_LEADER_LIME_THULE_DAVE_ANY" Language="fr_FR">
 			<Text>Salutations, compagnon d'aventure ! Je suis Kiviuq et je viens de la tribu des Thulé. Avez-vous aussi un cœur de vagabond ?</Text>
 		</Replace>
@@ -6495,8 +6611,6 @@
 		<Replace Tag="LOC_DIPLO_DEFEAT_FROM_HUMAN_LEADER_LIME_THULE_DAVE_ANY" Language="fr_FR">
 			<Text>Vous n'aviez pas besoin d'être mon ennemi ; je voulais juste partir en exploration. En fait, je vous envie d'une certaine manière : vous entreprenez maintenant ce voyage vers Adlivun, un voyage que je n'ai jamais eu l'occasion de faire.</Text>
 		</Replace>
-
-		<!-- Titres -->
 		<Replace Tag="LOC_GOVERNMENT_JFD_CHIEFDOM_LEADER_TITLE_LIME_THULE_DAVE" Language="fr_FR">
 			<Text>Chef</Text>
 		</Replace>
@@ -6536,8 +6650,6 @@
 		<Replace Tag="LOC_GOVERNMENT_JFD_EMPIRE_LEADER_TITLE_LIME_THULE_DAVE" Language="fr_FR">
 			<Text>Kingudlerk</Text>
 		</Replace>
-
-		<!-- Civilisation -->
 		<Replace Tag="LOC_CIVILIZATION_LIME_THULE_NAME" Language="fr_FR">
 			<Text>Thulé</Text>
 		</Replace>
@@ -6550,8 +6662,6 @@
 		<Replace Tag="LOC_CIVILIZATION_LIME_THULE_DESCRIPTION_JFD_CIVILIZATION" Language="fr_FR">
 			<Text>Civilisation de Thulé</Text>
 		</Replace>
-		
-		<!-- Civilopédia -->
 		<Replace Tag="LOC_CIVINFO_LIME_THULE_LOCATION" Language="fr_FR">
 			<Text>Nord du Canada, nord de l'Alaska, archipel arctique, Groenland</Text>
 		</Replace>
@@ -6591,8 +6701,6 @@
 		<Replace Tag="LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_LIME_THULE_CHAPTER_HISTORY_PARA_9" Language="fr_FR">
 			<Text>La culture de Thulé est entrée en contact avec la société européenne avant son déclin. Bien qu’ils aient déjà eu des contacts avec les Nordiques, qu’ils appelaient « Skrælingr », ils ont également rencontré des baleiniers basques, puis des explorateurs français et anglais. Les épidémies ont tué les Thulé en masse, et la richesse matérielle a perturbé leur mode de vie alors qu’ils commençaient à se transformer en société inuite. À une époque où leur principale source de nourriture diminuait rapidement, les effets de la colonisation européenne ont été dévastateurs et finalement mortels pour leur culture. Les derniers vestiges de la culture de Thulé se sont éteints en 1850 et ont été complètement remplacés par les Inuits modernes dans les colonies britannico-canadiennes.</Text>
 		</Replace>
-
-		<!-- Unité unique -->
 		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_LIME_THULE_DOGSLED_CHAPTER_HISTORY_PARA_1" Language="fr_FR">
 			<Text>Chiens... Traîneaux... Depuis toujours, les hommes ont essayé de combiner ces deux concepts. Le chien de traîneau, qui s’est perdu au fil du temps, n’a jamais eu un grand avenir. Bien que la tentative de croiser des traîneaux avec des chiens ait été une entreprise vaine, l’homme est tenace et fait preuve de créativité. Finalement, Iqualiq le Mordant, tel était son nom redouté, a eu l’idée révolutionnaire d’un traîneau... tiré par des chiens.</Text>
 		</Replace>
@@ -6623,13 +6731,9 @@
 		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_LIME_THULE_DOGSLED_CHAPTER_HISTORY_PARA_10" Language="fr_FR">
 			<Text>De plus, je ne savais pas comment construire un modèle de traîneau, alors je suis désolé.</Text>
 		</Replace>
-
-		<!-- Aménagement unique -->
 		<Replace Tag="LOC_PEDIA_IMPROVEMENTS_PAGE_IMPROVEMENT_LIME_THULE_WBH_CHAPTER_HISTORY_PARA_1" Language="fr_FR">
 			<Text>Les peuples de Thulé ont construit de grandes maisons semi-souterraines, appelées maisons en os de baleine. Ces maisons étaient généralement assez grandes pour abriter huit à dix personnes et servaient d’abri pendant les hivers polaires brutaux. Elles variaient considérablement dans leur conception, mais toutes étaient construites à moitié sous terre et avaient une structure en bois et en ivoire de baleine (choquant, je sais). Toutes avaient un foyer, probablement parce que les peuples de Thulé n’aimaient pas geler.</Text>
 		</Replace>
-
-		<!-- Montagnes -->
 		<Replace Tag="LOC_NAMED_MOUNTAIN_AUYUITTUQ_PEAKS_NAME" Language="fr_FR">
 			<Text>Pics Auyuittuq</Text>
 		</Replace>
@@ -6645,8 +6749,6 @@
 		<Replace Tag="LOC_NAMED_MOUNTAIN_LEMON_RANGE_NAME" Language="fr_FR">
 			<Text>Lemon Range</Text>
 		</Replace>
-
-		<!-- Rivières -->
 		<Replace Tag="LOC_NAMED_RIVER_KITLINERMIUT_RIVER_NAME" Language="fr_FR">
 			<Text>Kitlinermiut</Text>
 		</Replace>
@@ -6663,20 +6765,17 @@
 			<Text>Qinnguata Kuussua</Text>
 		</Replace>
 
+
 		<!-- = Olympias - Macédoine = -->	
 		<Replace Tag="LOC_MOD_JFD_MACEDON_OLYMPIAS_DESCRIPTION" Language="fr_FR">
 			<Text>------------------------------------[NEWLINE]DIRIGEANT : OLYMPIAS[NEWLINE][NEWLINE]CARACTÉRISTIQUE : MYSTÈRES DES CABIRES[NEWLINE]Reçoit un [ICON_ENVOY] émissaire en fondant un panthéon. L’envoi d’[ICON_ENVOY] émissaires dans les cités-états rapporte des points de [ICON_GREATGENERAL] grand général et de [ICON_GREATPROPHET] grand prophète, qui doublent dans les cités-états militaristes et religieuses.[NEWLINE][NEWLINE]ORDRE DU JOUR : ORACLE DES CHTONIENS[NEWLINE] S’assure qu’elle a des valeurs élevées en [ICON_FAITH] Foi et en points de [ICON_GREATPROPHET] grand prophète tout en rivalisant avec les cités-états, et préfère que les autres civilisations aient de faibles valeurs en [ICON_FAITH] Foi lorsqu’elles rivalisent avec les mêmes cités-états. Elle méprise les civilisations qui ont des valeurs élevées en [ICON_FAITH] Foi et qui rivalisent avec les mêmes cités-états.</Text>
 		</Replace>
-
-		<!-- Dirigeant -->
 		<Replace Tag="LOC_LEADER_JFD_OLYMPIAS_NAME" Language="fr_FR">
 			<Text>Olympias</Text>
 		</Replace>
 		<Replace Tag="LOC_LOADING_INFO_LEADER_JFD_OLYMPIAS" Language="fr_FR">
 			<Text>Vous avez eu une vision, reine Olympias : un éclair qui est tombé sur vos genoux et les feux de Zeus qui se répandent dans votre corps. Vous avez été bénie. Un fils naîtra pour prendre le trône du monde et tout ce qui va avec. Et vous devez être son héraut.</Text>
 		</Replace>
-
-		<!-- Agenda -->
 		<Replace Tag="LOC_AGENDA_JFD_ORACLE_CHTONICS_NAME" Language="fr_FR">
 			<Text>Oracle des Chthoniens</Text>
 		</Replace>
@@ -6695,8 +6794,6 @@
 		<Replace Tag="LOC_DIPLO_MODIFIER_AGENDA_JFD_ORACLE_CHTONICS_LEADS_FAITH_AND_COMPETING_MINORS" Language="fr_FR">
 			<Text>Olympias se sent menacée par votre concurrence pour les cités-états.</Text>
 		</Replace>
-
-		<!-- Civilopédia -->
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_JFD_OLYMPIAS_TITLE" Language="fr_FR">
 			<Text>Olympias</Text>
 		</Replace>
@@ -6745,8 +6842,6 @@
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_JFD_OLYMPIAS_CHAPTER_DETAILED_BODY" Language="fr_FR">
 			<Text>La diplomatie d'Olympias est impressionnante. En envoyant des émissaires macédoniens à ceux qui croient en son destin, elle peut rapidement rassembler de grands généraux et des prophètes autour d'elle, avec lesquels elle peut soit partir en guerre, soit fonder une religion. Lorsque ses unités sont formées dans les Basilikoi Paides, la Macédoine fait des progrès technologiques sans avoir à consacrer du temps à la construction d'un campus. Avec une foi forte, Olympia peut s'assurer la loyauté des cités-états voisines, qui à leur tour peuvent renforcer ses armées et sa foi, de sorte que la Macédoine peut viser une victoire de domination ou une victoire religieuse à volonté.</Text>
 		</Replace>
-
-		<!-- Diplomatie -->
 		<Replace Tag="LOC_DIPLO_FIRST_MEET_LEADER_JFD_OLYMPIAS_ANY" Language="fr_FR">
 			<Text>Avec vue sur le grand Olympe, je te salue. Je suis Olympias, fille de Néoptolème.</Text>
 		</Replace>
@@ -6843,17 +6938,15 @@
 		<Replace Tag="LOC_DIPLO_DEFEAT_FROM_HUMAN_LEADER_JFD_OLYMPIAS_ANY" Language="fr_FR">
 			<Text>[LOC_DIPLO_DEFEAT_FROM_AI_LEADER_JFD_OLYMPIAS_ANY]</Text>
 		</Replace>
-		
+
+
 		<!-- = Spearthrower Owl - Teotihuacan = -->
-		<!-- Dirigeant -->
 		<Replace Tag="LOC_LEADER_LIME_TEO_OWL_NAME" Language="fr_FR">
 			<Text>Spearthrower Owl</Text>
 		</Replace>
 		<Replace Tag="LOC_LOADING_INFO_LEADER_LIME_TEO_OWL" Language="fr_FR">
 			<Text>Teotihuacan est affamé. Vos armées sont prêtes à soumettre le monde à votre volonté. Laissez le feu engloutir tous les rois ambitieux et rebelles, afin que vous puissiez prendre ce dont Teotihuacan a besoin : la richesse, le pouvoir, le sang. Projetez votre ombre divine sur le monde. Ne laissez personne en dehors.</Text>
 		</Replace>
-
-		<!-- Civilopédia -->
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_LIME_TEO_OWL_QUOTE" Language="fr_FR">
 			<Text>Ici repose un dieu déchu – [NEWLINE]Sa chute fut profonde.</Text>
 		</Replace>
@@ -6887,8 +6980,6 @@
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_LIME_TEO_OWL_CHAPTER_HISTORY_PARA_6" Language="fr_FR">
 			<Text>Cependant, il n'est pas improbable que cette histoire ait un fond de vérité. La politique de Teotihuacan et de toute la Mésoamérique devait être complexe, et tout comme Rome et la Chine avaient de grands hommes d'État, Teotihuacan pourrait aussi en avoir eu. Peut-être que le Spearthrower Owl était à l'origine un noble de la ville doté d'une grande perspicacité politique et d'un grand pouvoir, dont le nom est ensuite devenu une fonction, puis un dieu. Quoi qu'il en soit, et qu'il ait réellement existé ou non, le Spearthrower Owl a jeté une longue ombre sur la région, et son nom et ses actes résonnent à travers le temps, même aujourd'hui, bien que faiblement.</Text>
 		</Replace>
-
-		<!-- Gouverneur unique -->
 		<Replace Tag="LOC_GOVERNOR_LIME_TEO_OWL_EMISSARY_NAME" Language="fr_FR">
 			<Text>Fire Is Born</Text>
 		</Replace>
@@ -6904,28 +6995,21 @@
 		<Replace Tag="LOC_PEDIA_PAGE_GOV_PROMO_LIME_TEO_OWL_EMISSARY_ARRIVAL_CHAPTER_HISTORY_PARA_1" Language="fr_FR">
 			<Text>Le premier contact entre Teotihuacan et les Mayas a eu lieu le 8 janvier 378 à Waka', un endroit aujourd'hui connu sous le nom d'El Perú. Ce moment a été appelé « La Entrada » ou « l'arrivée des étrangers » et a peut-être été le deuxième jour le plus important de l'histoire des Mayas, juste après le premier contact avec les Espagnols. Le général teotihuacan Fire Is Born est arrivé en ville sans prévenir avec environ cinq cents guerriers teotihuacan lourdement blindés. Le roi de l'époque, Sun-faced Jaguar, a apparemment accueilli les Teotihuacanos... mais il semble qu'il n'ait pas eu beaucoup de choix. Fire Is Born était en mission pour ses bienfaiteurs teotihuacanos : il devait apprivoiser les Mayas par tous les moyens.</Text>
 		</Replace>
-		<!-- L1 -->
 		<Replace Tag="LOC_PEDIA_PAGE_GOV_PROMO_LIME_TEO_OWL_EMISSARY_OUTPOST_CHAPTER_HISTORY_PARA_1" Language="fr_FR">
 			<Text>À Waka', « Fire Is Born » a été « accueilli » (Sun-faced Jaguar était probablement très conscient de ce qui se passerait s'il n'accueillait pas les Teotihuacanos), et il a rapidement travaillé à sécuriser Waka' comme avant-poste pour le commerce des Teotihuacanos. C'était probablement la principale raison pour laquelle il a été envoyé en mission : s'assurer que la ville en plein essor avait un accès abondant à tous les produits de luxe et à toutes les ressources qu'elle pouvait obtenir. Les Teotihuacanos étaient intéressés à s'assurer le maïs, les haricots, les piments, les avocats, le chicle (une résine d'arbre naturelle) et le latex (attendez, quoi ?) de Waka. Il était également important que Waka' ait accès au jade et aux plumes de quetzal en raison de son port sur la rivière San Pedro et de son emplacement sur la route commerciale nord-sud qui reliait le sud de Campeche et le bassin de Petén, les deux régions mayas les plus importantes du Yucatan. C'étaient des produits de luxe très prisés à Teotihuacan.</Text>
 		</Replace>
-		<!-- R1 -->
 		<Replace Tag="LOC_PEDIA_PAGE_GOV_PROMO_LIME_TEO_OWL_EMISSARY_EXPEDITION_CHAPTER_HISTORY_PARA_1" Language="fr_FR">
 			<Text>Le port de Waka a également offert à Fire Is Born une opportunité stratégique importante : un moyen d'attaquer rapidement et efficacement le véritable butin, Tikal. La rivière San Pedro a permis aux soldats de Fire Is Born de se rendre directement à la ville en canoë, ce qui a réduit le temps de trajet pour la conquête de Tikal. Il semble que Fire Is Born était un partisan précoce de la stratégie « Shock and Awe » : la puissance militaire écrasante des soldats de Teotihuacan ne s'est manifestée qu'une semaine plus tard aux portes de Tikal.</Text>
 		</Replace>
-		<!-- L2 -->
 		<Replace Tag="LOC_PEDIA_PAGE_GOV_PROMO_LIME_TEO_OWL_EMISSARY_FALL_CHAPTER_HISTORY_PARA_1" Language="fr_FR">
 			<Text>La façon dont le feu a attaqué Tikal est perdue dans l'histoire, mais il n'a certainement pas joué franc jeu. Une théorie veut que l'élite de Tikal ait organisé un coup d'État le jour de l'arrivée de l'armée, renversant le roi Great Jaguar Paw et l'offrant en sacrifice. Un autre récit raconte qu'une bataille rituelle a eu lieu, mais que le feu a enfreint les règles prédéfinies en laissant ses hommes assassiner les troupes ennemies et en capturant Great Jaguar Paw, pour ainsi dire, à la mi-temps. Quoi qu'il en soit, le règne de dix-huit ans de Great Jaguar Paw, un chef glorieux et respecté, a pris fin brusquement et indignement le 14 janvier 378 sur la place de Tikal par la hache sacrificielle de Fire Is Born.</Text>
 		</Replace>
-		<!-- R2 -->
 		<Replace Tag="LOC_PEDIA_PAGE_GOV_PROMO_LIME_TEO_OWL_EMISSARY_OVERSEER_CHAPTER_HISTORY_PARA_1" Language="fr_FR">
 			<Text>La mort de Great Jaguar Paw n'était que le premier d'une série de bouleversements dans la campagne de Fire Is Born. Apparemment, il a fait de Tikal sa base d'opérations en raison de son emplacement central sur la péninsule du Yucatan. Après avoir installé Curl Snout, peut-être le fils de Spearthrower Owl, bien que cela soit très controversé, comme nouveau roi de Tikal, Fire Is Born s'est mis en route pour devenir le faiseur de rois de la péninsule du Yucatan. Uaxactun a été le prochain à tomber, suivi peu après, entre autres, des sites mayas de Río Azul, Bejucal, El Zotz et Zapote Bobal. Tous ces sites avaient une importance économique pour les Teotihuacanos.</Text>
 		</Replace>
-		<!-- M3 -->
 		<Replace Tag="LOC_PEDIA_PAGE_GOV_PROMO_LIME_TEO_OWL_EMISSARY_HEGEMONY_CHAPTER_HISTORY_PARA_1" Language="fr_FR">
 			<Text>Toute la campagne de Fire Is Born n'a duré que deux ans et s'est terminée par l'établissement d'un nouvel ordre mondial dans le monde des Mayas. Toute résistance était inutile. Tous les rois mayas ont été soumis. Les rituels, l'iconographie et, surtout, la soumission économique de Teotihuacán ont été étendus à tous. Au cours des décennies suivantes, les sites mayas de Copán et de Quiriguá se sont soumis volontairement, démontrant ainsi l'impressionnant succès de la campagne de Fire Is Born. Ce qu'il est devenu après 380 apr. J.-C. est inconnu, mais il ne semble pas qu'il soit devenu lui-même roi. Au lieu de cela, il semble être resté dans le monde maya jusqu'à sa mort au début du Ve siècle apr. J.-C. en tant qu'émissaire de Teotihuacanos, en quelque sorte un intermédiaire.</Text>
 		</Replace>
-
-		<!-- Civilopédia -->
 		<Replace Tag="LOC_PEDIA_PAGE_GOVERNOR_LIME_TEO_OWL_EMISSARY_CHAPTER_HISTORY_PARA_1" Language="fr_FR">
 			<Text>Alors que Spearthrower Owl reste un mystère, nous savons que Fire Is Born (également appelé Siyah K'ak', anciennement appelé « Smoking Frog » en raison de son glyphe maya) a définitivement existé. Fire Is Born semble avoir été un chef de guerre étroitement allié à Teotihuacan, ou un général de la ville. Sa mission : mettre les Mayas sous contrôle. Teotihuacan avait besoin de nourriture et de produits de luxe, et ce le plus rapidement possible, pour suivre le rythme de sa croissance. De plus, il voulait étendre son influence économique, religieuse et culturelle. Et Siyah K'ak' a été autorisé à le faire par tous les moyens disponibles.</Text>
 		</Replace>
@@ -6941,8 +7025,6 @@
 		<Replace Tag="LOC_PEDIA_PAGE_GOVERNOR_LIME_TEO_OWL_EMISSARY_CHAPTER_HISTORY_PARA_5" Language="fr_FR">
 			<Text>Après l'apparition de Fire Is Born, la phase la plus connue du monde maya a commencé : la période maya classique. L'invasion de Teotihuacano a apporté avec elle certaines des caractéristiques les plus connues de la culture maya... probablement. Il est impossible de savoir à quoi ressemblaient les Mayas avant de souffrir sous le règne de Fire Is Born. Il est également rare qu'une seule personne puisse changer la direction de toute une culture de cette façon, mais l'exploit de Fire Is Born ne devait être réalisé que 1 200 ans plus tard avec l'arrivée d'un autre envahisseur extraterrestre technologiquement supérieur : Pedro de Alvarado, le conquérant du Guatemala.</Text>
 		</Replace>
-
-		<!-- Diplomatie -->
 		<Replace Tag="LOC_AGENDA_LIME_TEO_OWL_LORD_OF_WEST_NAME" Language="fr_FR">
 			<Text>Hégémonie du Feu Sacré</Text>
 		</Replace>
@@ -7219,8 +7301,6 @@
 		<Replace Tag="LOC_DIPLO_DEFEAT_FROM_AI_LEADER_LIME_TEO_OWL_ANY" Language="fr_FR">
 			<Text>Les dieux ont décidé. Que nos sacrifices de sang ne soient pas vains.</Text>
 		</Replace>
-
-		<!-- Civilisation -->
 		<Replace Tag="LOC_CIVILIZATION_LIME_TEOTIHUACAN_NAME" Language="fr_FR">
 			<Text>Teotihuacan</Text>
 		</Replace>
@@ -7278,16 +7358,12 @@
 		<Replace Tag="LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_LIME_TEOTIHUACAN_CHAPTER_HISTORY_PARA_11" Language="fr_FR">
 			<Text>Plus récemment, Teotihuacan est menacée par le développement de Mexico. Heureusement, des descentes de police ont pu y mettre fin, et les fouilles se poursuivent pour percer les secrets insondables du lieu de naissance des dieux.</Text>
 		</Replace>
-
-		<!-- Lacs -->
 		<Replace Tag="LOC_LIME_NAMED_LAKE_LAKE_ILOPANGO" Language="fr_FR">
 			<Text>Lac Ilopango</Text>
 		</Replace>
 		<Replace Tag="LOC_LIME_NAMED_LAKE_LAKE_XALTOCAN" Language="fr_FR">
 			<Text>Lac Xaltocan</Text>
 		</Replace>
-
-		<!-- Montagnes -->
 		<Replace Tag="LOC_LIME_NAMED_MOUNTAIN_CERRO_PATLACHIQUE" Language="fr_FR">
 			<Text>Cerro Patlachique</Text>
 		</Replace>
@@ -7303,21 +7379,15 @@
 		<Replace Tag="LOC_LIME_NAMED_MOUNTAIN_CERRO_MALINALCO" Language="fr_FR">
 			<Text>Cerro de Malinalco</Text>
 		</Replace>
-
-		<!-- Volcans -->
 		<Replace Tag="LOC_LIME_NAMED_VOLCANO_XITLE_NAME" Language="fr_FR">
 			<Text>Xitle</Text>
 		</Replace>
 		<Replace Tag="LOC_LIME_NAMED_VOLCANO_TAJUMULCO_NAME" Language="fr_FR">
 			<Text>Tajumulco</Text>
 		</Replace>
-
-		<!-- Rivières -->
 		<Replace Tag="NAMED_RIVER_LIME_TEO_SAN_PEDRO_RIVER" Language="fr_FR">
 			<Text>San Pedro</Text>
 		</Replace>
-
-		<!-- Villes  -->
 		<Replace Tag="LOC_CITY_NAME_LIME_TEO_MONTANA" Language="fr_FR">
 			<Text>Cuauhtemallan</Text>
 		</Replace>
@@ -7402,8 +7472,6 @@
 		<Replace Tag="LOC_CITY_NAME_TLACOCHCALCO" Language="fr_FR">
 			<Text>Tlacochcalco</Text>
 		</Replace>
-
-		<!-- Unité unique -->
 		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_LIME_TEO_OWL_WARRIOR_CHAPTER_HISTORY_PARA_1" Language="fr_FR">
 			<Text>Le soldat de Teotihuacan était, en bref, incroyablement bien armé. L'équipement très élaboré comprenait entre autres :</Text>
 		</Replace>
@@ -7449,8 +7517,6 @@
 		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_LIME_TEO_OWL_WARRIOR_CHAPTER_HISTORY_PARA_15" Language="fr_FR">
 			<Text>Leur armure semble avoir fait impression, car après l'époque de « Fire is Born » et du « Spearthrower Owl », certains chefs de guerre mayas aléatoires semblent avoir adopté l'uniforme de combat de Teotihuacano. Le plus frappant (dans tous les sens du terme – veuillez regarder une photo de lui) était K’inich Yax K’uk’ Mo’ de Copán, un homme qui n'avait absolument rien à voir avec Teotihuacán, mais qui voulait absolument ressembler à un guerrier Teotihuacano, de sorte que les historiens modernes n'ont découvert qu'après une analyse isotopique de ses os qu'il n'était pas un Teotihuacano. Cela s'est apparemment produit pour étayer sa revendication dynastique sur Copán – un soldat Teotihuacano était aussi noble qu'intimidant et invincible.</Text>
 		</Replace>
-
-		<!-- Quartier unique -->
 		<Replace Tag="LOC_PEDIA_DISTRICTS_PAGE_DISTRICT_LIME_TEO_TOLLAN_CHAPTER_HISTORY_PARA_1" Language="fr_FR">
 			<Text>Techniquement, un Pochtecatl se réfère explicitement à un commerçant professionnel à distance dans l'empire aztèque, qui a été créé près de mille ans après la chute de Teotihuacán, mais Pochteca peut également être utilisé plus généralement pour tout commerçant mésoaméricain. Et Teotihuacán avait un lien étroit avec ses commerçants ! Tout un quartier (Calpulli en nahuatl ou Barrio en espagnol – c'était un thème important dans le développement du mod) était dédié à ces commerçants étrangers, qui étaient essentiels au succès de Teotihuacán.</Text>
 		</Replace>
@@ -7464,16 +7530,14 @@
 			<Text>Teotihuacán a utilisé son importance religieuse et son architecture impressionnante pour attirer les routes commerciales. Toutes les routes commerciales et les cités-États qui tentaient d'éviter la ville recevaient bientôt une visite amicale de soldats extrêmement bien armés situés à proximité. Parallèlement, Teotihuacán a utilisé ces mêmes routes commerciales pour consolider son importance religieuse. Nombre des dieux de Teotihuacán ont été exportés de cette manière vers d'autres ethnies et sont devenus les Quetzalcoatl et Tlaloc que nous connaissons et aimons tous. Il semble cependant qu'au milieu du Ve siècle apr. J.-C., Teotihuacán ait perdu son contrôle militaire sur les routes commerciales de la région et il n'a pas fallu longtemps avant que la ville ne tombe.</Text>
 		</Replace>
 
+
 		<!-- = Te' K'inich II - Mayas -->
-		<!-- Dirigeant -->
 		<Replace Tag="LOC_LEADER_LL_TEKINICH_II_NAME" Language="fr_FR">
 			<Text>Te' K'inich II</Text>
 		</Replace>
 		<Replace Tag="LOC_LOADING_INFO_LEADER_LL_TEKINICH_II" Language="fr_FR">
 			<Text>Les étoiles sont favorables, Te' K'inich II., parfait pour ton règne. Profite des occasions qui se présentent et frappe les cités rivales au bon moment. Réclame le butin de guerre de tes conquêtes afin que ton royaume devienne plus fort et plus grand. Vois comment les dieux eux-mêmes te récompensent pour avoir fait prospérer ton royaume ! Savoure la gloire des dieux, Yajaw, car ton heure est venue.</Text>
 		</Replace>
-		
-		<!-- Civilopédia -->	
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_LL_TEKINICH_II_QUOTE" Language="fr_FR">
 			<Text>PUIS vint aussi la destruction des peuples. Ils furent ainsi emmenés.</Text>
 		</Replace>
@@ -7501,8 +7565,6 @@
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_LL_TEKINICH_II_CHAPTER_HISTORY_PARA_4" Language="fr_FR">
 			<Text>Cette guerre stellaire particulière causa la pause archéologique et épigraphique observée à Tikal durant la période classique moyenne, où la population de Tikal diminua, la construction de monuments cessa et certains monuments sur la Grande Place furent détruits. Cette pause de 120 ans coïncida avec une augmentation de la population et des constructions monumentales à Caracol, rendant cette ville plus prospère et unifiée. Tikal adopta alors des traits culturels de Caracol, même dans la reprise de la construction de monuments qui imitait le style de Caracol. Te' K'inich II céda son trône à son fils aîné, Knot Ajaw.</Text>
 		</Replace>
-
-		<!-- Agenda -->
 		<Replace Tag="LOC_DIPLO_MODIFIER_LEADER_LL_TEKINICH_II_MOD_AGENDA_LIME_TE_KINICH_LIKES" Language="fr_FR">
 			<Text>Te' K'inich II considère que votre empire est assez grand pour mériter le respect.</Text>
 		</Replace>
@@ -7593,8 +7655,6 @@
 		<Replace Tag="LOC_AGENDA_LIME_MAYA_TE_KINICH_LORD_WATER_DESC" Language="fr_FR">
 			<Text>Il respectera votre civilisation tant qu'elle aura plus d'habitants que la sienne, mais sinon, il vous envahira sans pitié.</Text>
 		</Replace>
-
-		<!-- Dirigeant -->
 		<Replace Tag="LOC_LEADER_LL_TEKINICH_II_NAME" Language="fr_FR">
 			<Text>Te' K'inich II</Text>
 		</Replace>
@@ -7604,8 +7664,6 @@
 		<Replace Tag="LOC_CITY_NAME_LIME_TE_KINICH_CARACOL" Language="fr_FR">
 			<Text>Oxhuitzá</Text>
 		</Replace>
-
-		<!-- Civilopédia -->
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_LL_TEKINICH_II_QUOTE" Language="fr_FR">
 			<Text>PUIS vint aussi la destruction des peuples. Ils ont été emmenés de cette façon.</Text>
 		</Replace>
@@ -7633,8 +7691,6 @@
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_LL_TEKINICH_II_CHAPTER_HISTORY_PARA_4" Language="fr_FR">
 			<Text>Cette guerre des étoiles particulière a été la cause de la pause archéologiquement et épigraphiquement prouvée à Tikal pendant la période classique moyenne, au cours de laquelle la population de Tikal a diminué, la construction de monuments a cessé et certains monuments de la Grande Place ont été détruits. Cette pause de 120 ans à Tikal a coïncidé avec une augmentation de la population et de la construction monumentale à Caracol, ce qui a rendu cette ville plus prospère et plus fermée. Tikal a adopté des caractéristiques culturelles de Caracol pendant cette période, car même les bâtiments monumentaux repris à Tikal imitaient le style de Caracol. Te' K'inich II a transmis son trône à l'aîné de ses deux fils, Knot Ajaw.</Text>
 		</Replace>
-
-		<!-- Diplomatie -->
 		<Replace Tag="LOC_DIPLO_MODIFIER_LEADER_LL_TEKINICH_II_MOD_AGENDA_LIME_TE_KINICH_LIKES" Language="fr_FR">
 			<Text>Te' K'inich II considère votre empire comme assez grand pour mériter le respect.</Text>
 		</Replace>
@@ -7795,8 +7851,8 @@
 			<Text>Il semble que j'aie mal évalué les étoiles et que je vous aie mal évalué. C'est simplement le prix à payer.</Text>
 		</Replace>
 
+
 		<!-- = Trisong Detsen - Tibet = -->
-		<!-- Civilisation -->
 		<Replace Tag="LOC_CIVILIZATION_SUK_TIBET_NAME" Language="fr_FR">
 			<Text>Tibet</Text>
 		</Replace>
@@ -7809,8 +7865,6 @@
 		<Replace Tag="LOC_CIVILIZATION_SUK_TIBET_DESCRIPTION_JFD_CIVILIZATION" Language="fr_FR">
 			<Text>Civilisation tibétaine</Text>
 		</Replace>
-
-		<!-- Rivières -->
 		<Replace Tag="LOC_NAMED_RIVER_YARLUNG_TSANGPO_NAME" Language="fr_FR">
 			<Text>Yarlung Tsangpo</Text>
 		</Replace>
@@ -7823,8 +7877,6 @@
 		<Replace Tag="LOC_NAMED_RIVER_NYANG_NAME" Language="fr_FR">
 			<Text>Nyang</Text>
 		</Replace>
-
-		<!-- Montagnes -->
 		<Replace Tag="LOC_NAMED_MOUNTAIN_DANGLA_NAME" Language="fr_FR">
 			<Text>Monts Dangla</Text>
 		</Replace>
@@ -7852,8 +7904,6 @@
 		<Replace Tag="LOC_NAMED_MOUNTAIN_KANGRI_GARPO_NAME" Language="fr_FR">
 			<Text>Kangri Garpo</Text>
 		</Replace>
-
-		<!-- Volcans -->
 		<Replace Tag="LOC_NAMED_VOLCANO_ASHIKULE_VOLCANIC_FIELD_NAME" Language="fr_FR">
 			<Text>Champ volcanique d'Ashikule</Text>
 		</Replace>
@@ -7866,8 +7916,6 @@
 		<Replace Tag="LOC_NAMED_VOLCANO_QIANGBAQIAN_NAME" Language="fr_FR">
 			<Text>Qiangbaqian</Text>
 		</Replace>
-
-		<!-- Civilopédia -->
 		<Replace Tag="LOC_CIVINFO_SUK_TIBET_LOCATION" Language="fr_FR">
 			<Text>Asie</Text>
 		</Replace>
@@ -7919,26 +7967,18 @@
 		<Replace Tag="LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_SUK_TIBET_CHAPTER_HISTORY_PARA_13" Language="fr_FR">
 			<Text>Le 1er mars 1959, le dalaï-lama a reçu une étrange invitation à une représentation théâtrale au quartier général de l’Armée populaire de libération (APL) près de Lhassa. Des officiers de l’APL ont informé les gardes du corps du dalaï-lama qu’ils ne seraient pas autorisés à accompagner le chef tibétain à la représentation et qu’ils ne devraient pas non plus informer le peuple tibétain qu’il quitterait le palais. (Normalement, les habitants de Lhassa bordaient les rues à chaque fois que le dalaï-lama s’aventurait à l’extérieur pour l’accueillir.) Les gardes du corps ont immédiatement rendu publique cette tentative d’enlèvement maladroite, et le lendemain, une foule estimée à 300 000 Tibétains a encerclé le palais du Potala pour protéger leur chef. L’APL a placé l’artillerie à portée des principaux monastères et du palais d’été du dalaï-lama, Norbulingka. Les deux camps ont commencé à se retrancher, bien que l’armée tibétaine soit beaucoup plus petite que son adversaire et mal armée. Les troupes tibétaines ont réussi à sécuriser une voie de fuite vers l’Inde pour le dalaï-lama le 17 mars. Les combats proprement dits ont commencé le 19 mars et n’ont duré que deux jours avant que les troupes tibétaines ne soient vaincues.</Text>
 		</Replace>
-
-		<!-- Unité unique -->
 		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_SUK_TIBET_RTA_PA_CHAPTER_HISTORY_PARA_1" Language="fr_FR">
 			<Text>Rta Pa est le mot tibétain pour cavalier. Les chevaux et l’équitation étaient très importants au Tibet, tout comme chez les autres peuples nomades d’Asie centrale. Comme chez les autres peuples de la steppe, le Tibet a une longue tradition de tir à l’arc à cheval, qui a cependant évolué vers le tir à cheval avec l’introduction de la poudre à canon au XVIe siècle. En Europe, l’arme à mèche était avant tout une arme d’infanterie, mais au Tibet et en Asie centrale, elle était également utilisée à cheval, de la même manière que l’arc. En tant qu’élément essentiel de la formation militaire et dans le cadre de diverses cérémonies et fêtes, les cavaliers tiraient au galop sur des cibles en les dépassant. Jusqu’au milieu du XXe siècle, les fonctionnaires du gouvernement tibétain devaient régulièrement prouver leurs compétences dans le maniement des mousquets, des arcs et des flèches, ainsi que des lances à cheval.</Text>
 		</Replace>
-
-		<!-- Quartier unique -->
 		<Replace Tag="LOC_PEDIA_DISTRICTS_PAGE_DISTRICT_SUK_DZONG_CHAPTER_HISTORY_PARA_1" Language="fr_FR">
 			<Text>Les dzongs sont un type de forteresse que l’on trouve au Tibet et au Bhoutan. Ces structures imposantes se caractérisent par leur taille énorme, avec des murs extérieurs imposants qui entourent un complexe de cours intérieures, de temples, de bureaux administratifs et de logements pour les moines. Les dzongs sont souvent situés sur une colline ou une crête et sont construits sans plans architecturaux. Au lieu de cela, la construction se fait sous la direction d’un grand lama, qui détermine chaque dimension par inspiration spirituelle.</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_DISTRICTS_PAGE_DISTRICT_SUK_DZONG_CHAPTER_HISTORY_PARA_2" Language="fr_FR">
 			<Text>Au Tibet, les dzongs ont été intégrés à l’administration du pays. Selon certaines sources, c’est Jangchub Gyaltsen (1302-1373) qui a introduit le système tibétain de division des vastes propriétés foncières en districts, chacun étant administré depuis un dzong. Lorsque Jangchub Gyaltsen a remplacé les « treize myriarchies », il a divisé le pays en de nombreux districts (également appelés dzongs). Il a nommé ceux de ses partisans dont la loyauté était incontestable seigneurs (Dzongpon) des districts. Dans le Tibet moderne, la plupart des dzongs ont disparu ou sont en ruines, seuls quelques-uns ont été restaurés en tant que musées. Ce n’est qu’au Bhoutan que l’on trouve encore aujourd’hui les dzongs en tant que centres administratifs et monastères.</Text>
 		</Replace>
-
-		<!-- Dirigeant -->
 		<Replace Tag="LOC_LEADER_SUK_TRISONG_DETSEN_NAME" Language="fr_FR">
 			<Text>Trisong Detsen</Text>
 		</Replace>
-
-		<!-- Agenda -->
 		<Replace Tag="LOC_AGENDA_SUK_ENLIGHTENED_LORD_NAME" Language="fr_FR">
 			<Text>Grand seigneur illuminé, merveilleux, divin</Text>
 		</Replace>
@@ -7951,8 +7991,6 @@
 		<Replace Tag="LOC_DIPLO_MODIFIER_SUK_ENLIGHTENED_LORD_WARNING" Language="fr_FR">
 			<Text>Trisong Detsen est dégoûté par votre manque de foi et d’ambition.</Text>
 		</Replace>
-
-		<!-- Diplomatie -->
 		<Replace Tag="LOC_LOADING_INFO_LEADER_SUK_TRISONG_DETSEN" Language="fr_FR">
 			<Text>Tu règnes sur les steppes balayées par le vent, Trisong Detsen. Tu règnes sur les montagnes imposantes. Laisse les cloches sonner dans les monastères sublimes pendant que les moines prient pour ta gloire. Laisse la terre trembler lorsque tes puissants cavaliers partent en guerre. Seigneur illuminé, puisses-tu trouver la sagesse dans le Dharma et la force dans l’arc, afin que le Tibet puisse s’élever vers l’éternité.</Text>
 		</Replace>
@@ -8049,8 +8087,6 @@
 		<Replace Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_LEADER_SUK_TRISONG_DETSEN_ANY" Language="fr_FR">
 			<Text>Nous avons observé vos soldats depuis nos dzongs. Voulez-vous me dire quelque chose ?</Text>
 		</Replace>
-
-		<!-- Civilopédia -->
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_SUK_TRISONG_DETSEN_QUOTE" Language="fr_FR">
 			<Text>Un berger bienveillant est le père du troupeau, un bon cheval est la confiance du seigneur.</Text>
 		</Replace>
@@ -8085,8 +8121,8 @@
 			<Text>Trisong Detsen s’est retiré dans le palais de Zungkar et a transmis le pouvoir à son deuxième fils, Muné Tsenpo, en 797. À partir de ce moment, il y a une grande ambiguïté dans les différentes sources historiques. Il semble qu’il y ait eu une lutte pour la succession au trône après la mort de Trisong Detsen. On ne sait pas quand Trisong Detsen est mort ni combien de temps Muné Tsenpo a régné. Le testament de Ba, un texte historique tibétain qui date peut-être du IXe siècle, affirme que Muné Tsenpo a insisté pour que les funérailles de son père soient célébrées selon des rites bouddhistes plutôt que selon des rites traditionnels.</Text>
 		</Replace>
 
+
 		<!-- = Vercingétorix - Gaule = -->
-		<!-- Dirigeant -->
 		<Replace Tag="LOC_LEADER_SUK_VERCINGETORIX_NAME" Language="fr_FR">
 			<Text>Vercingétorix</Text>
 		</Replace>
@@ -8096,8 +8132,6 @@
 		<Replace Tag="LOC_LOADING_INFO_LEADER_SUK_VERCINGETORIX_DLC" Language="fr_FR">
 			<Text>Fier Vercingétorix, soyez toujours vigilant envers ceux qui menacent la Gaule. Unissez votre peuple divisé et rassemblez vos fidèles autour de vous. Fortifiez vos villes et colonies et laissez vos murs se dresser solidement. Assurez la sécurité et la prospérité de votre peuple, alors votre nom survivra dans la légende.</Text>
 		</Replace>
-
-		<!-- Agenda -->
 		<Replace Tag="LOC_AGENDA_SUK_KING_OVER_WARRIORS_NAME" Language="fr_FR">
 			<Text>Roi des guerriers</Text>
 		</Replace>
@@ -8110,8 +8144,6 @@
 		<Replace Tag="LOC_DIPLO_MODIFIER_SUK_KING_OVER_WARRIORS_WARNING" Language="fr_FR">
 			<Text>Vercingétorix considère votre armée comme une menace pour sa civilisation.</Text>
 		</Replace>
-
-		<!-- Diplomatie -->
 		<Replace Tag="LOC_DIPLO_FIRST_MEET_LEADER_SUK_VERCINGETORIX_DLC_ANY" Language="fr_FR">
 			<Text>Salut ! Je suis Vercingétorix. J'ai été choisi pour diriger le peuple gaulois et le défendre contre ses ennemis.</Text>
 		</Replace>
@@ -8205,8 +8237,6 @@
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_SUK_VERCINGETORIX_DLC_QUOTE" Language="fr_FR">
 			<Text>Vous voulez vous battre ? Vous voulez vivre éternellement ? Alors je vous guiderai.</Text>
 		</Replace>
-
-		<!-- Civilopédia -->
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_SUK_VERCINGETORIX_DLC_TITLE" Language="fr_FR">
 			<Text>Vercingétorix</Text>
 		</Replace>

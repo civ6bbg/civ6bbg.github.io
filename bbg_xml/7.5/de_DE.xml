@@ -160,6 +160,43 @@
 		<Replace Tag="LOC_IMPROVEMENT_OUTBACK_STATION_DESCRIPTION" Language="de_DE">
 			<Text>Diese Verbesserung ist einzigartig für Australien und deine Handwerker können sie durch den Verbrauch einer [ICON_CHARGES] Ladung, nach Erforschung der Ausrichtung "Gilden" bauen:[NEWLINE][NEWLINE]• +1 [ICON_FOOD] Nahrung, +1 [ICON_PRODUCTION] Produktion, +0.5 [ICON_HOUSING] Wohnraum.[NEWLINE]• +1 [ICON_FOOD] Nahrung durch jede angrenzende "Weide".[NEWLINE]• +1 [ICON_FOOD] Nahrung durch jede angrenzende "Outback-Station", nach Erforschung der Ausrichtung "Schnelle Einsatzkräfte".[NEWLINE]• +1 [ICON_PRODUCTION] Produktion durch je 2 angrenzende "Outback-Station", nach Erforschung der Technologie "Industrialisierung".[NEWLINE]• +1 Anziehungskraft für angrenzende Felder.[NEWLINE][NEWLINE]Kann nur auf Wüsten-, Grasland- oder Flachlandfeldern gebaut werden.</Text>
 		</Replace>
+		
+		<!-- == AUSTRIA - ÖSTERREICH == -->
+		<!-- = Civilization ability - Zivilisationsfähigkeit (Politische Hochzeit) (BBG-EXP)= -->
+        <Replace Tag="LOC_TRAIT_CIVILIZATION_MER_CROWNLANDS_NAME" Language="de_DE">
+			<Text>Politische Hochzeit</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_MER_CROWNLANDS_DESCRIPTION" Language="de_DE">
+			<Text>Erhalte jedesmal einen "Großen Diplomaten", wenn ein [ICON_BUILDINGS] Gebäude im [ICON_DISTRICT_GOVERNMENT] Regierungsplatz-Bezirk gebaut wurde.</Text>
+		</Replace>
+        <!-- = Leader ability - Führerfähigkeit (Maria Theresa - Die Theresianischen Reformen) (BBG-EXP)= -->
+        <Replace Tag="LOC_TRAIT_LEADER_MER_THERESIAN_REFORM_NAME" Language="de_DE">
+			<Text>Die Theresianischen Reformen</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_MER_THERESIAN_REFORM_DESCRIPTION" Language="de_DE">
+			<Text>+1 [ICON_INFLUENCEPERTURN] Einfluss-Punkte pro [ICON_TURN] Runde und +20% [ICON_PRODUCTION] Produktion für den Bau von [ICON_DISTRICT] Bezirken in [ICON_DISTRICT_CITY_CENTER] Städten mit einem etablierten [ICON_GOVERNOR] Gouverneur.[NEWLINE][NEWLINE]+1 [ICON_HOUSING] Wohnraum für [ICON_DISTRICT] jene Spezial-Bezirke in deinen Städten, die bereits in deiner [ICON_CAPITAL] Hauptstadt gebaut wurden.</Text>
+		</Replace>
+        <!-- = Unique unit - Einzigartige Einheit (Grenzer) (BBG-EXP)= --> 
+        <Replace Tag="LOC_UNIT_MER_GRENZER_NAME" Language="de_DE">
+			<Text>Grenzer</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_MER_GRENZER_DESCRIPTION" Language="de_DE">
+			<Text>Diese Aufklärungs-[ICON_UNIT] Einheit des Industriezeitalters ist einzigartig für Österreich, wird nach Erforschung der Technologie "Drall" freigeschaltet, ersetzt den "Ranger", gewährt dessen Boni und zusätzlich:[NEWLINE][NEWLINE]• +5 Grund-[ICON_STRENGTH] Fernkampfstärke.[NEWLINE]• +5 [ICON_STRENGTH] Kampfstärke in einem Umkreis von 3 Feldern um ein verbündetes Gebiet.[NEWLINE]• Erzeugt eine Kontrollzone.</Text>
+		</Replace>
+        <!-- = Unique unit - Einzigartige Einheit (Großer Diplomat) (BBG-EXP)= --> 
+        <Replace Tag="LOC_UNIT_GREAT_DIPLOMAT_NAME" Language="de_DE">
+			<Text>Großer Diplomat</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_GREAT_DIPLOMAT_DESCRIPTION" Language="de_DE">
+			<Text>Diese [ICON_GREATPERSON] Große Persönlichkeit ist einzigartig für Österreich und kann einmalig einen deiner Vasallen-Stadtstaaten annektieren.</Text>
+		</Replace>
+        <!-- = Unique building - Einzigartiges Gebäude (Kaffeehaus) (BBG-EXP)= -->
+        <Replace Tag="LOC_BUILDING_MER_COFFEE_HOUSE_NAME" Language="de_DE">
+			<Text>Kaffeehaus</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_MER_COFFEE_HOUSE_DESCRIPTION" Language="de_DE">
+			<Text>Dieses [ICON_BUILDINGS] Gebäude des Industriezeitalters ist einzigartig für Österreich, wird nach Erforschung der Ausrichtung "Naturgeschichte" freigeschaltet und ersetzt den "Zoo":[NEWLINE][NEWLINE]• +1 [ICON_SCIENCE] Wissenschaft und +1 [ICON_CULTURE] Kultur für jedes [ICON_DISTRICT] Spezial-Bezirk.[NEWLINE]• +2 [ICON_AMENITIES] Annehmlichkeit für jedes [ICON_DISTRICT_CITY_CENTER] Stadtzentrum innerhalb von 6 Feldern (gilt nur einmal pro [ICON_DISTRICT_CITY_CENTER] Stadt und ist nicht stapelbar mit weiteren "Kaffeehäusern").[NEWLINE]• Erhalte einen aktiven [ICON_THEMEBONUS_ACTIVE] Themen-Bonus, wenn die Großen Werk-Plätze mit Großen Werken von verschiedenen [ICON_GREATPERSON] Großen Persöhnlichkeiten stammen.</Text>
+		</Replace>
 
 		<!-- == AZTECS - AZTEKENLAND == -->
 		<!-- = Civilization ability - Zivilisationsfähigkeit (Legende der Fünf Sonnen) = -->
@@ -366,7 +403,7 @@
 		</Replace>
 		<!-- = Leader ability - Führerfähigkeit (Simón Bolívar - Campaña Admirable) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_CAMPANA_ADMIRABLE_DESCRIPTION_XP1" Language="de_DE">
-			<Text>Erhalte einen "Comandante General", wenn das Spiel in ein neues Zeitalter eintritt.[NEWLINE][NEWLINE]Kann keine [ICON_GreatGeneral] Großen Generäle rekrutieren.</Text>
+			<Text>Erhalte jedesmal einen "Comandante General", wenn das Spiel in ein neues Zeitalter eintritt.[NEWLINE][NEWLINE]Kann keine [ICON_GreatGeneral] Großen Generäle rekrutieren.</Text>
 		</Replace>
 		<!-- = Unique unit - Einzigartige Einheit (Llanero) = -->
 		<Replace Tag="LOC_UNIT_COLOMBIAN_LLANERO_DESCRIPTION" Language="de_DE">
@@ -698,7 +735,44 @@
 		<Replace Tag="LOC_DISTRICT_ACROPOLIS_DESCRIPTION_ADJACENCY" Language="de_DE">
 			<Text>Nachbarschaftsbonus:[NEWLINE]•[ICON_CULTURE] Kultur Standard-Nachbarschaftsbonus in [ICON_CULTURE] Kultur (+1) durch jeden angrenzenden [ICON_DISTRICT] Bezirk (auch [ICON_DISTRICT_CITY_CENTER] Stadtzentrum).[NEWLINE]• Großer-Nachbarschaftsbonus (+2) in [ICON_CULTURE] Kultur durch jedes angrenzende [ICON_DISTRICT_WONDER] Weltwunder, [ICON_DISTRICT_ENTERTAINMENT] Unterhaltungskomplex-Bezirk, [ICON_DISTRICT_WATER_ENTERTAINMENT_COMPLEX] Wasserpark-Bezirk oder "Pamukkale"-Naturwunder-Feld.[NEWLINE]• Kann nur auf Hügelfeldern gebaut werden.</Text>
 		</Replace>
-
+		
+		<!-- == GOTHS - GOTEN == -->
+		<!-- = Civilization ability - Zivilisationsfähigkeit (Völkerwanderung der Goten) (BBG-EXP)= -->
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_MER_GOTHIC_MIGRATION_NAME" Language="de_DE">
+			<Text>Völkerwanderung der Goten</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_MER_GOTHIC_MIGRATION_DESCRIPTION" Language="de_DE">
+			<Text>Wenn du eine [ICON_DISTRICT_CITY_CENTER] Stadt gründest oder zum ersten Mal eroberst, erhältst du +1 [ICON_CITIZEN] Bürger in allen deinen [ICON_DISTRICT_CITY_CENTER] Städten im Umkreis von 6 Feldern, in denen mindestens ein freier [ICON_HOUSING] Wohnraum vorhanden ist.</Text>
+		</Replace>
+		<!-- = Leader ability - Führerfähigkeit (Theodoric - Gothorum Romanorumque) (BBG-EXP)= -->
+		<Replace Tag="LOC_TRAIT_LEADER_MER_THEODORIC_GOTHORUM_ROMANORUMQUE" Language="de_DE">
+			<Text>Gothorum Romanorumque</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_MER_THEODORIC_GOTHORUM_ROMANORUMQUE_DESCRIPTION" Language="de_DE">
+			<Text>+50% [ICON_PRODUCTION] Produktion für [ICON_DISTRICT] Bezirke in eroberten [ICON_DISTRICT_CITY_CENTER] Städten (-10% pro erbautem [ICON_DISTRICT] Spezial-Bezirk).</Text>
+		</Replace>
+		<!-- = Unique unit - Einzigartige Einheit (Militōnd) (BBG-EXP)= -->
+		<Replace Tag="LOC_UNIT_MER_MILITOND_NAME" Language="de_DE">
+			<Text>Militōnd</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_MER_MILITOND_DESCRIPTION" Language="de_DE">
+			<Text>Diese Nahkampf-[ICON_UNIT] Einheit der Klassik ist einzigartig für die Goten, wird nach Erforschung der Technologie "Eisenverarbeitung" freigeschaltet, ersetzt den "Schwertkämpfer", gewährt dessen Boni und zusätzlich:[NEWLINE][NEWLINE]• +5 [ICON_STRENGTH] Kampfstärke gegen verteidigungsfähige [ICON_DISTRICT] Bezirke (die [ICON_STRENGTH] Kampfstärke besitzen) und [ICON_UNIT] Einheiten in [ICON_DISTRICT] Bezirken.[NEWLINE]• Erhält eine kostenlose [ICON_PROMOTION] Beförderung nach der Rekrutierung.</Text>
+		</Replace>
+		<!-- = Unique unit - Einzigartige Einheit (Gadrauht) (BBG-EXP)= -->
+		<Replace Tag="LOC_UNIT_MER_GADRAUHT_NAME" Language="de_DE">
+			<Text>Gadrauht</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_MER_GADRAUHT_DESCRIPTION" Language="de_DE">
+			<Text>Diese Kavallerie-Abwehr-[ICON_UNIT] Einheit des Mittelalters ist einzigartig für die Goten, wird nach Erforschung der Technologie "MilitärTaktik" freigeschaltet, ersetzt den "Pikenier", gewährt dessen Boni und zusätzlich:[NEWLINE][NEWLINE]• +3 Grund-[ICON_STRENGTH] Kampfstärke.[NEWLINE]• Das Vernichten von [ICON_UNIT] Einheiten gewährt [ICON_CULTURE] Kultur entsprechend 50% der Grund-[ICON_STRENGTH] Kampfstärke der besiegten [ICON_UNIT] Einheit (Online-Geschwindigkeit).[NEWLINE]• Um einen "Gadrauht" rekrutieren zu können, muss eine [ICON_DISTRICT_CITY_CENTER] Stadt mindestens 2 [ICON_CITIZEN] Bürger haben.[NEWLINE]• Wenn eine [ICON_DISTRICT_CITY_CENTER] Stadt einen "Gadrauht" rekrutiert, verliert sie einen [ICON_CITIZEN] Bürger.</Text>
+		</Replace>
+		<!-- = Unique building - Einzigartiges Gebäude (Hlaiw) (BBG-EXP)= -->
+		<Replace Tag="LOC_BUILDING_MER_HLAIW_NAME" Language="de_DE">
+			<Text>Hlaiw</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_MER_HLAIW_DESCRIPTION" Language="de_DE">
+			<Text>Dieses [ICON_BUILDINGS] Gebäude der Antike ist einzigartig für die Goten, wird nach Erforschung der Technologie "Astrologie" freigeschaltet und ersetzt den "Schrein":[NEWLINE][NEWLINE]• +1 [ICON_CULTURE] Kultur und +1 [ICON_FAITH] Glauben.[NEWLINE]• +0.25 [ICON_CULTURE] Kultur und +0.25 [ICON_FAITH] Glauben pro [ICON_CITIZEN] Bürger in der [ICON_DISTRICT_CITY_CENTER] Stadt.</Text>
+		</Replace>
+		
 		<!-- == HUNGARY - UNGARN == -->
 		<!-- = Civilization ability - Zivilisationsfähigkeit (Donauperle) = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_PEARL_DANUBE_DESCRIPTION" Language="de_DE">
@@ -954,7 +1028,7 @@
 		<!-- == KUBLAI KHAN (FÜHRER) == -->
 		<!-- = Leader ability - Führerfähigkeit (Gerege) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_KUBLAI_DESCRIPTION" Language="de_DE">
-			<Text>Ein zusätzlicher Wirtschaftspolitik-Platz in jeder [ICON_GOVERNMENT] Regierung.[NEWLINE][NEWLINE]+1 [ICON_SCIENCE] Wissenschaft und +1 [ICON_CULTURE] Kultur pro ausgehenden internationalen [ICON_TradeRoute] Handelsweg (zusätzlich +1 [ICON_SCIENCE] Wissenschaft und +1 [ICON_CULTURE] Kultur durch je 25 bereiste Felder).[NEWLINE][NEWLINE]Erhalte ein zufälliges [ICON_TechBoosted] Heureka und eine zufällige [ICON_CivicBoosted] Eingebung, wenn du zum ersten Mal einen [ICON_TradingPost] Handelsposten in der [ICON_DISTRICT_CITY_CENTER] Stadt einer anderen Zivilisation errichtest.[NEWLINE][NEWLINE]+1 [ICON_CULTURE] Kultur für jede "Große Mauer", wenn sie an eine andere "Große Mauer" angrenzt.</Text>
+			<Text>Ein zusätzlicher Wirtschaftspolitik-Platz in jeder [ICON_GOVERNMENT] Regierung.[NEWLINE][NEWLINE]+1 [ICON_SCIENCE] Wissenschaft und +1 [ICON_CULTURE] Kultur von jedem ausgehenden internationalen [ICON_TradeRoute] Handelsweg (zusätzlich +1 [ICON_SCIENCE] Wissenschaft und +1 [ICON_CULTURE] Kultur durch je 25 bereiste Felder).[NEWLINE][NEWLINE]Erhalte ein zufälliges [ICON_TechBoosted] Heureka und eine zufällige [ICON_CivicBoosted] Eingebung, wenn du zum ersten Mal einen [ICON_TradingPost] Handelsposten in der [ICON_DISTRICT_CITY_CENTER] Stadt einer anderen Zivilisation errichtest.[NEWLINE][NEWLINE]+1 [ICON_CULTURE] Kultur für jede "Große Mauer", wenn sie an eine andere "Große Mauer" angrenzt.</Text>
 		</Replace>
 
 		<!-- == MACEDON - MAKEDONIEN == -->
@@ -1353,9 +1427,23 @@
 		<Replace Tag="LOC_TRAIT_LEADER_LITHUANIAN_UNION_DESCRIPTION" Language="de_DE">
 			<Text>Erhalte eine [ICON_GreatWork_Relic] Reliquie bei der Gründung und der Vollendung (alle 4 Glaubenssätze) einer [ICON_RELIGION] Religion.[NEWLINE][NEWLINE][ICON_GreatWork_Relic] Reliquien erzeugen zusätzlich:[NEWLINE][NEWLINE]• +2 [ICON_FAITH] Glauben.[NEWLINE]• +2 [ICON_CULTURE] Kultur.[NEWLINE]• +4 [ICON_GOLD] Gold.[NEWLINE][NEWLINE]+1 [ICON_FAITH] Glauben für [ICON_DISTRICT_HOLYSITE] Heilige Stätte-Bezirke, durch jeden angrenzenden [ICON_DISTRICT] Bezirk.[NEWLINE][NEWLINE]Die von Polen gegründete [ICON_RELIGION] Religion wird in [ICON_DISTRICT_CITY_CENTER] Städten, die ein Feld durch einen polnischen Kulturschock verloren haben, zur Mehrheits-[ICON_RELIGION] Religion.</Text>
 		</Replace>
+		<!-- = Leader ability (Stanisław) - Führerfähigkeit (Stanislas II - Kommission für nationale Bildung) (BBG-EXP)= -->
+		<Replace Tag="LOC_TRAIT_LEADER_JFD_NATIONAL_EDUCATION_NAME" Language="de_DE">
+			<Text>Kommission für nationale Bildung</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_JFD_NATIONAL_EDUCATION_DESCRIPTION" Language="de_DE">
+			<Text>Ressourcen-Felder und verbesserte Felder erhalten zusätzliche Erträge bei Angrenzung an folgende Felder:[NEWLINE]• +1 [ICON_FOOD] Nahrung durch das [ICON_DISTRICT_ENCAMPMENT] Lager-Bezirk.[NEWLINE]• +1 [ICON_CULTURE] Kultur durch die "Kaserne" oder den "Stall".[NEWLINE]• +1 [ICON_SCIENCE] Wissenschaft durch die "Waffenkammer".[NEWLINE]• +1 [ICON_PRODUCTION] Produktion durch die "Militärakademie".[NEWLINE][NEWLINE]Kann die einzigartige [ICON_UNIT] Einheit "Ulan", nach Erforschung der Technologie "Militärwissenschaft" rekrutieren.</Text>
+		</Replace>
 		<!-- = Unique unit - Einzigartige Einheit (Flügelhusar) = -->
 		<Replace Tag="LOC_UNIT_POLISH_HUSSAR_EXPANSION2_DESCRIPTION" Language="de_DE">
 			<Text>Diese Schwere-Kavallerie-[ICON_UNIT] Einheit der Renaissance ist einzigartig für Polen, wird nach Erforschung der Ausrichtung "Reformkirche" freigeschaltet, ersetzt den "Kürassier", gewährt dessen Boni und zusätzlich:[NEWLINE][NEWLINE]• -2 Grund-[ICON_STRENGTH] Kampfstärke.[NEWLINE]• Wenn beim Angriff mehr Schaden verursacht, als erlitten wurde, wird der Gegner auf eines der 3 Felder hinter ihm zufällig zurückgedrängt, sollte das nicht möglich sein, erleidet die [ICON_UNIT] Einheit zusätzlichen Schaden.[NEWLINE]• Ignoriert die gegnerische Kontrollzone.[NEWLINE][NEWLINE]Verringerte [ICON_RESOURCE_IRON] Ressourcen-Grundkosten.</Text>
+		</Replace>
+		<!-- = Unique unit - Einzigartige Einheit (Ulan) (BBG-EXP)= --> 
+		<Replace Tag="LOC_UNIT_JFD_UHLAN_NAME" Language="de_DE">
+			<Text>Ulan</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_JFD_UHLAN_DESCRIPTION" Language="de_DE">
+			<Text>Diese Leichte-Kavallerie-[ICON_UNIT] Einheit der Renaissance ist einzigartig für Stanislas II von Polen, wird nach Erforschung der Technologie "Militärwissenschaft" freigeschaltet, ersetzt die "Kavallerie", gewährt deren Boni und zusätzlich:[NEWLINE][NEWLINE]• +1 [ICON_MOVEMENT] Bewegung.[NEWLINE]• Doppelter Flankierbonus.</Text>
 		</Replace>
 		<!-- = Unique building - Einzigartiges Gebäude (Sukiennice) = -->
 		<Replace Tag="LOC_BUILDING_SUKIENNICE_EXPANSION1_DESCRIPTION" Language="de_DE">
@@ -1498,7 +1586,7 @@
 		</Replace>
 		<!-- = Leader ability - Führerfähigkeit (Philipp II. - El Escorial) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_EL_ESCORIAL_EXPANSION2_DESCRIPTION" Language="de_DE">
-			<Text>+3 [ICON_STRENGTH] Kampfstärke für Militär-[ICON_UNIT] Einheiten gegen [ICON_UNIT] Einheiten von Zivilisationen, die einer anderen [ICON_RELIGION] Religion folgen als ihr.[NEWLINE][NEWLINE]Inquisitoren beseitigen 100% der Anwesenheit anderer [ICON_RELIGION] Religionen.[NEWLINE][NEWLINE]+1 [ICON_RELIGION] Streuladung für Inquisitoren.[NEWLINE][NEWLINE]-25% [ICON_FAITH] Glaubens-Kosten für Missionare.</Text>
+			<Text>+3 [ICON_STRENGTH] Kampfstärke für Militär-[ICON_UNIT] Einheiten gegen [ICON_UNIT] Einheiten von Zivilisationen, die einer anderen [ICON_RELIGION] Religion folgen als du.[NEWLINE][NEWLINE]Inquisitoren beseitigen 100% der Anwesenheit anderer [ICON_RELIGION] Religionen.[NEWLINE][NEWLINE]+1 [ICON_RELIGION] Streuladung für Inquisitoren.[NEWLINE][NEWLINE]-25% [ICON_FAITH] Glaubens-Kosten für Missionare.</Text>
 		</Replace>
 		<Replace Tag="LOC_ABILITY_PHILIP_II_COMBAT_BONUS_OTHER_RELIGION_DESCRIPTION" Language="de_DE">
 			<Text>+3 [ICON_STRENGTH] Kampfstärke gegen [ICON_UNIT] Einheiten anderer [ICON_RELIGION] Religionen.(Philipp II)</Text>
@@ -1639,6 +1727,58 @@
 			<Text>Diese Verbesserung ist einzigartig für Schweden und deine Handwerker können sie durch den Verbrauch einer [ICON_CHARGES] Ladung, nach Erforschung der Ausrichtung „Diplomatischer Dienst“ bauen:[NEWLINE][NEWLINE]• +2 [ICON_PRESSUREUP] Loyalität pro [ICON_TURN] Runde in dieser [ICON_DISTRICT_CITY_CENTER] Stadt.[NEWLINE]• +2 [ICON_CULTURE] Kultur und +2 [ICON_TOURISM] Tourismus durch jede verschiedene Feld-Art (Schnee, Tundra, Wüste, Ebenen oder Grasland) auf der mindestens eine schwedische [ICON_DISTRICT_CITY_CENTER] Stadt gegründet wurde.[NEWLINE]• Gewährt [ICON_TOURISM] Tourismus entsprechend 100% der erzeugten [ICON_CULTURE] Kultur, nach Erforschung der Technologie "Luftfahrt".[NEWLINE][NEWLINE]Kann nur einmal pro [ICON_DISTRICT_CITY_CENTER] Stadt gebaut werden.[NEWLINE]Felder mit einem "Freilichtmuseum" können nicht mit anderen [ICON_DISTRICT_CITY_CENTER] Städten getauscht werden.</Text>
 		</Replace>
 		
+		<!-- == TAÍNO - TAÍNO == --> 
+		<!-- = Civilization ability - Zivilisationsfähigkeit (Guatiao) (BBG-EXP) = -->
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_CVS_TAINO_UA_NAME" Language="de_DE">
+			<Text>Guatiao</Text>
+		</Replace>
+        <Replace Tag="LOC_TRAIT_CIVILIZATION_CVS_TAINO_UA_DESCRIPTION" Language="de_DE">
+			<Text>Politik-Karten für [ICON_GreatPerson] Große Persönlichkeiten sorgen in [ICON_DISTRICT_CITY_CENTER] Städten mit einem [ICON_DISTRICT] Bezirk, der dem jeweiligen Typ der [ICON_GreatPerson] Großen Persönlichkeit entspricht, für +3 [ICON_FOOD] Nahrung pro (ICON_TURN] Runde. Diplomatische Politik-Karten sorgen in [ICON_DISTRICT_CITY_CENTER] Städten mit einem [ICON_DISTRICT_ENTERTAINMENT] "Batéy"-Bezirk für +1 [ICON_AMENITIES] Annehmlichkeit.</Text>
+		</Replace>
+		<!-- = Leader ability - Führerfähigkeit (Anacaona - Goldene Blume) (BBG-EXP) = -->
+		<Replace Tag="LOC_TRAIT_LEADER_CVS_ANACAONA_NAME" Language="de_DE">
+			<Text>Goldene Blume</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_CVS_ANACAONA_UA_DESCRIPTION" Language="de_DE">
+			<Text>Nach Erforschung der Ausrichtung "Politische Philosophie" gewährt jede Widmung einen zusätzlichen Politikplatz eines anderen Typs.[NEWLINE][NEWLINE]+5% [ICON_GOLD] Gold in glücklichen [ICON_DISTRICT_CITY_CENTER] Städten (steigt auf +10% bei begeistert und +15% bei euphorisch).</Text>
+		</Replace>
+		<!-- = Unique unit - Einzigartige Einheit (Macana) (BBG-EXP) = -->
+		<Replace Tag="LOC_UNIT_CVS_TAINO_UU_NAME" Language="de_DE">
+			<Text>Macana</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_CVS_TAINO_UU_DESCRIPTION" Language="de_DE">
+			<Text>Diese Aufklärungs-[ICON_UNIT] Einheit der Antike ist einzigartig für Taíno, ab der ersten [ICON_TURN] Runde rekrutierbar, ersetzt den "Krieger", gewährt dessen Boni und zusätzlich:[NEWLINE][NEWLINE]• +1 [ICON_MOVEMENT] Bewegung.[NEWLINE]• +1 [ICON_VisSecret] Sicht.[NEWLINE]• Behält nach der Verbesserung seine Aufklärungs-[ICON_PROMOTION] Beförderungen.[NEWLINE]• Das Vernichten von [ICON_UNIT] Einheiten gewährt [ICON_FAITH] Glauben entsprechend 50% der Grund-[ICON_STRENGTH] Kampfstärke der besiegten [ICON_UNIT] Einheit (Online-Geschwindigkeit).</Text>
+		</Replace>
+		<!-- = Unique district - Einzigartiger Bezirk (Batey) (BBG-EXP) = -->
+		<Replace Tag="LOC_DISTRICT_CVS_TAINO_UI_NAME" Language="de_DE">
+			<Text>Batey</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_CVS_TAINO_UI_DESCRIPTION" Language="de_DE">
+			<Text>Dieser [ICON_DISTRICT_ENTERTAINMENT] "Batey"-Bezirk der Klassik ist einzigartig für Taíno, wird nach Erforschung der Ausrichtung "Spiele und Erholung" freigeschaltet, ersetzt den [ICON_DISTRICT_ENTERTAINMENT] Unterhaltungskomplex-Bezirk, gewährt dessen Boni und zusätzlich:[NEWLINE][NEWLINE]• +1 [ICON_AMENITIES] Annehmlichkeit für jedes [ICON_BUILDINGS] Gebäude im [ICON_DISTRICT_ENTERTAINMENT] "Batey"-Bezirk.[NEWLINE]• +2 [ICON_PRODUCTION] Produktion für angrenzende [ICON_DISTRICT_COMMERCIAL_HUB] Handelszentrum-Bezirke und [ICON_DISTRICT_HARBOR] Hafen-Bezirke.[NEWLINE]• Schaltet das "Areyto"-Projekt frei, das während der Durchführung 15% der [ICON_PRODUCTION] Produktion in [ICON_FAITH] Glauben umwandelt, sowie [ICON_GreatPerson] Große Persönlichkeits-Punkte von [ICON_GREATWRITER] Großer Schriftsteller, [ICON_GREATARTIST] Großer Künstler und [ICON_GREATMUSICIAN] Großer Musiker nach Abschluss des Projekts gewährt.</Text>
+		</Replace>
+		<Replace Tag="LOC_BBG_PRODUCTION_TAINO_HARBOR" Language="de_DE">
+			<Text>Angrenzende [ICON_DISTRICT_HARBOR] Hafen-Bezirke: +{1_num} [ICON_PRODUCTION] Produktion.</Text>
+		</Replace>
+		<Replace Tag="LOC_BBG_PRODUCTION_TAINO_COMMERCIAL_HUB" Language="de_DE">
+			<Text>Angrenzende [ICON_DISTRICT_COMMERCIAL_HUB] Handelszentrum-Bezirke: +{1_num} [ICON_PRODUCTION] Produktion.</Text>
+		</Replace>
+		<Replace Tag="LOC_BBG_TAINO_THEATRE_CULTURE" Language="de_DE">
+			<Text>Angrenzende [ICON_DISTRICT_ENTERTAINMENT] "Batey"-Bezirke: +{1_num} [ICON_CULTURE] Kultur.</Text>
+		</Replace>
+		<Replace Tag="LOC_PROJECT_CVS_TAINO_UP_NAME" Language="de_DE">
+			<Text>Areyto</Text>
+		</Replace>
+		<Replace Tag="LOC_PROJECT_CVS_TAINO_UP_DESCRIPTION" Language="de_DE">
+			<Text>Das einzigartiges "Areyto"-Projekt der Taíno, ist nur im [ICON_DISTRICT_ENTERTAINMENT] "Batey"-Bezirk verfügbar und wandelt während der Durchführung 15% der [ICON_PRODUCTION] Produktion in [ICON_FAITH] Glauben um und gewährt [ICON_GreatPerson] Große Persönlichkeits-Punkte von [ICON_GREATWRITER] Großer Schriftsteller, [ICON_GREATARTIST] Großer Künstler und [ICON_GREATMUSICIAN] Großer Musiker nach Abschluss des Projekts.</Text>
+		</Replace>
+		<!-- = Unique improvement - Einzigartige Verbesserung (Conuco) (BBG-EXP) = -->
+		<Replace Tag="LOC_IMPROVEMENT_CVS_ANACAONA_UI_NAME" Language="de_DE">
+			<Text>Conuco</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_CVS_ANACAONA_UI_DESCRIPTION" Language="de_DE">
+			<Text>Diese Verbesserung ist einzigartig für Taíno und deine Handwerker können sie durch den Verbrauch einer [ICON_CHARGES] Ladung bauen:[NEWLINE][NEWLINE]• Die Grunderträge des "Conuco" (ohne Ressourcen und Geländeeigenschaften) werden verdoppelt.[NEWLINE]• +1 [ICON_FAITH] Glauben und +1 [ICON_CULTURE] Kultur für jede angrenzende Ressource auf einem Küstenfeld (nach Erforschung der Ausrichtung "Außenhandel").[NEWLINE]• +1 [ICON_CULTURE] Kultur.[NEWLINE]• +1 [ICON_CULTURE] Kultur, nach Erforschung der Ausrichtung "Mittelaltermärkte".[NEWLINE]• +1 [ICON_CULTURE] Kultur, nach Erforschung der Ausrichtung "Naturgeschichte".[NEWLINE][NEWLINE]Muss auf einem Feld angrenzend an einer Bonus- oder Luxusressource platziert werden.[NEWLINE] Kann nicht auf einem Feld mit Hügeln, Wüste oder Schnee platziert werden.</Text>
+		</Replace>
+		
 		<!-- == TEOTIHUACANAS - TEOTIHUACÁN == -->
 		<!-- = Civilization ability - Zivilisationsfähigkeit (Wo Menschen zu Göttern werden) (BBG-EXP) = -->
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_LIME_TEO_MEN_BECOME_GODS_NAME" Language="de_DE">
@@ -1705,7 +1845,7 @@
 			<Text>Jägerhaus</Text>
 		</Replace>
 		<Replace Tag="LOC_IMPROVEMENT_LIME_THULE_WBH_DESCRIPTION" Language="de_DE">
-			<Text>Diese Verbesserung ist einzigartig für Thule und deine Handwerker können sie durch den Verbrauch einer [ICON_CHARGES] Ladung, nach Erforschung der Technologie "Astronomische Navigation" bauen:[NEWLINE][NEWLINE]• +1 [ICON_HOUSING] Wohnraum.[NEWLINE]• +1 [ICON_FOOD] Nahrung auf Tundrafeldern und +2 [ICON_FOOD] Nahrung auf Schneefeldern.[NEWLINE]• +1 [ICON_FAITH] Glauben und +1 [ICON_CULTURE] Kultur für jede angrenzende Ressource auf einem Küstenfeld (nach Erforschung der Ausrichtung "Außenhandel").[NEWLINE]• +1 [ICON_FAITH] Glauben und +1 [ICON_CULTURE] Kultur für jedes angrenzende "Jagdlager" (nach Erforschung der Ausrichtung "Außenhandel").[NEWLINE]• Gewährt [ICON_TOURISM] Tourismus entsprechend 100% des erzeugten [ICON_FAITH] Glaubens, nach Erforschung der Technologie "Luftfahrt".[NEWLINE][NEWLINE]Kann nur angrenzend an ein Ressourcen-Feld gebaut werden.[NEWLINE]Kann auf ein Waldfeld gebaut werden ohne es zu entfernen.[NEWLINE]Kann nicht angrenzend an ein "Jägerhaus" gebaut werden.</Text>
+			<Text>Diese Verbesserung ist einzigartig für Thule und deine Handwerker können sie durch den Verbrauch einer [ICON_CHARGES] Ladung, sofort nach dem Spielstart bauen:[NEWLINE][NEWLINE]• +1 [ICON_HOUSING] Wohnraum.[NEWLINE]• +1 [ICON_FOOD] Nahrung auf Tundrafeldern und +2 [ICON_FOOD] Nahrung auf Schneefeldern.[NEWLINE]• +1 [ICON_FAITH] Glauben und +1 [ICON_CULTURE] Kultur für jede angrenzende Ressource auf einem Küstenfeld (nach Erforschung der Ausrichtung "Außenhandel").[NEWLINE]• +1 [ICON_FAITH] Glauben und +1 [ICON_CULTURE] Kultur für jedes angrenzende "Jagdlager" (nach Erforschung der Ausrichtung "Außenhandel").[NEWLINE]• Gewährt [ICON_TOURISM] Tourismus entsprechend 100% des erzeugten [ICON_FAITH] Glaubens, nach Erforschung der Technologie "Luftfahrt".[NEWLINE][NEWLINE]Kann nur angrenzend an ein Bonus- oder Luxusressourcen-Feld gebaut werden.[NEWLINE]Kann auf ein Waldfeld gebaut werden ohne es zu entfernen.[NEWLINE]Kann nicht angrenzend an ein "Jägerhaus" gebaut werden.</Text>
 		</Replace>
 		
 		<!-- == TIBET - TIBET == -->
@@ -3931,6 +4071,13 @@
 		<Replace Tag="LOC_BUILDING_GREAT_ZIMBABWE_DESCRIPTION" Language="de_DE">
 			<Text>Dieses [ICON_DISTRICT_WONDER] Weltwunder der Renaissance wird nach Erforschung der Technologie "Bankwesen" freigeschaltet:[NEWLINE][NEWLINE]• +5 [ICON_GOLD] Gold.[NEWLINE]• +2 [ICON_GREATMERCHANT] Großer Händler-Punkte pro [ICON_TURN] Runde.[NEWLINE]• Gewährt sofort 2 [ICON_TradeRoute] Händler-[ICON_UNIT] Einheiten.[NEWLINE]• +2 [ICON_TradeRoute] Handelswege-Kapazität.[NEWLINE]• Deine ausgehenden [ICON_TradeRoute] Handelswege von dieser [ICON_DISTRICT_CITY_CENTER] Stadt erhalten +2 [ICON_GOLD] Gold, für jede Bonusressource im Besitz und im Umkreis von 3 Feldern dieser [ICON_DISTRICT_CITY_CENTER] Stadt.[NEWLINE]• +1000 [ICON_TOURISM] Tourismus durch Rockkonzerte.[NEWLINE][NEWLINE]Muss angrenzend an ein [ICON_RESOURCE_CATTLE] Vieh-Feld und an einen [ICON_DISTRICT_COMMERCIAL_HUB] Handelszentrum-Bezirk mit einem "Markt" gebaut werden.[NEWLINE][NEWLINE]Grundkosten:[NEWLINE]460 [ICON_PRODUCTION] Produktion (Online-Geschwindigkeit).</Text>
 		</Replace>
+		<!-- = Porzellanturm (BBG-EXP)= -->
+		<Replace Tag="LOC_BUILDING_PORCELAIN_TOWER_NAME" Language="de_DE">
+            <Text>Porzellanturm</Text>
+        </Replace>
+        <Replace Tag="LOC_BUILDING_PORCELAIN_TOWER_DESCRIPTION" Language="de_DE">
+            <Text>Ein [ICON_DISTRICT_WONDER] Weltwunder der Renaissance:[NEWLINE][NEWLINE]• Du erhältst 3 Einheiten [ICON_RESOURCE_PORCELAIN] Porzellan, eine exklusive Luxusressource, die 6 [ICON_AMENITIES] Annehmlichkeit bietet.[NEWLINE][NEWLINE]Muss auf einem flachen Ebenen-,Grasland, oder Tundrafeld, angrenzend an ein [ICON_DISTRICT_CITY_CENTER] Stadtzentrum errichtet werden.</Text>
+        </Replace>
 		<!-- = Verbotene Stadt = -->
 		<Replace Tag="LOC_BUILDING_FORBIDDEN_CITY_DESCRIPTION" Language="de_DE">
 			<Text>Dieses [ICON_DISTRICT_WONDER] Weltwunder der Renaissance wird nach Erforschung der Technologie "Druck" freigeschaltet:[NEWLINE][NEWLINE]• +5 [ICON_CULTURE] Kultur.[NEWLINE]• +1 Joker-Politikplatz.[NEWLINE]• +1000 [ICON_TOURISM] Tourismus durch Rockkonzerte.[NEWLINE][NEWLINE]Muss auf einem flachen Landfeld, angrenzend an ein [ICON_DISTRICT_CITY_CENTER] Stadtzentrum gebaut werden.[NEWLINE][NEWLINE]Grundkosten:[NEWLINE]530 [ICON_PRODUCTION] Produktion (Online-Geschwindigkeit).</Text>
@@ -4064,6 +4211,16 @@
 		<!-- = Amundsen-Scott-Südpolstation = -->
 		<Replace Tag="LOC_BUILDING_AMUNDSEN_SCOTT_RESEARCH_STATION_DESCRIPTION" Language="de_DE">
 			<Text>Dieses [ICON_DISTRICT_WONDER] Weltwunder des Atomzeitalters wird nach Erforschung der Ausrichtung "Schneller Einsatz" freigeschaltet:[NEWLINE][NEWLINE]• +5 [ICON_GREATSCIENTIST] Großer Wissenschaftler-Punkte pro [ICON_TURN] Runde.[NEWLINE]• +10% [ICON_PRODUCTION] Produktion und +20% [ICON_SCIENCE] Wissenschaft in allen [ICON_DISTRICT_CITY_CENTER] Städten deines Reiches.[NEWLINE]• Wird erhöht auf +20% [ICON_PRODUCTION] Produktion und +40% [ICON_SCIENCE] Wissenschaft in jenen [ICON_DISTRICT_CITY_CENTER] Städten erhöht, in denen es 5 Tundra- oder Tundrahügelfelder im Besitz und im Umkreis von 3 Feldern dieser [ICON_DISTRICT_CITY_CENTER] Städte gibt.[NEWLINE]• +1000 [ICON_TOURISM] Tourismus durch Rockkonzerte.[NEWLINE][NEWLINE]Muss auf einem Tundra-, Tundrahügel-, Schnee- oder Schneehügelfeld, angrenzend an einen [ICON_DISTRICT_CAMPUS] Campus-Bezirk mit einem "Forschungslabor" gebaut werden.[NEWLINE][NEWLINE]Grundkosten:[NEWLINE]870 [ICON_PRODUCTION] Produktion (Online-Geschwindigkeit).</Text>
+		</Replace>
+		<!-- = Radioteleskop von Arecibo (BBG-EXP)= -->
+		<Replace Tag="LOC_WON_CL_BUILDING_ARECIBO_NAME" Language="de_DE">
+			<Text>Radioteleskop von Arecibo</Text>
+		</Replace>
+		<Replace Tag="LOC_WON_CL_BUILDING_ARECIBO_DESCRIPTION" Language="de_DE">
+			<Text>Ein [ICON_DISTRICT_WONDER] Weltwunder des Atomzeitalters:[NEWLINE][NEWLINE]• [ICON_DISTRICT_CAMPUS] Campus-Bezirke erhalten von Bergfeldern einen großen statt eines normalen Nachbarschaftsbonus.[NEWLINE]• Gewährt für jedes abgeschlossene Weltraumrennen-Projekt einen [ICON_TECHBOOSTED] Heureka.[NEWLINE][NEWLINE]Muss auf einem Regenwaldfeld errichtet werden.</Text>
+		</Replace>	
+		<Replace Tag="LOC_ARECIBO_MOUNTAINS_SCIENCE" Language="de_DE">
+			<Text>Angrenzende Bergfelder: +{1_num} [ICON_SCIENCE] Wissenschaft (Radioteleskop von Arecibo).</Text>
 		</Replace>
 		
 		

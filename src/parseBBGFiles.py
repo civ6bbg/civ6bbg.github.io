@@ -52,8 +52,7 @@ def get_locs_data(bbg_version, lang):
     for r in rows:
         locs[r[1]] = r[2]
 
-    if lang == 'en_US' or lang == 'fr_FR':
-        add_xml_file_to_locs(locs, f'sqlFiles/expandedBase_{lang}.xml')
+    add_xml_file_to_locs(locs, f'sqlFiles/expandedBase_{lang}.xml')
 
     add_xml_file_to_locs(locs, f'lang/steelThunder/MoarUniqueUnits_LocalisationText_{lang}.xml')
 
@@ -151,14 +150,18 @@ def get_expanded_civs_tables(db_path):
     connection = sqlite3.connect(db_path)
 
     expanded_bbg_leaders = [
+        'LEADER_CVS_ANACAONA',
+        'LEADER_JFD_STANISLAW',
+        'LEADER_MER_MARIA_THERESA',
+        'LEADER_MER_THEODORIC',
+        'LEADER_SUK_VERCINGETORIX_DLC',
         'LEADER_JFD_OLYMPIAS',
-        'LEADER_LIME_TEO_OWL',
         'LEADER_LL_TEKINICH_II',
         'LEADER_LIME_PHOE_AHIRAM',
-        'LEADER_SUK_VERCINGETORIX_DLC',
-        'LEADER_SUK_TRISONG_DETSEN',
         'LEADER_SUK_AL_HASAN',
-        'LEADER_LIME_THULE_DAVE'
+        'LEADER_LIME_TEO_OWL',
+        'LEADER_LIME_THULE_DAVE',
+        'LEADER_SUK_TRISONG_DETSEN'
     ]
     expanded_bbg_condition = " OR ".join([f"LeaderType = '{leader}'" for leader in expanded_bbg_leaders])
     crsr = connection.cursor()
@@ -168,9 +171,14 @@ def get_expanded_civs_tables(db_path):
          AND ({expanded_bbg_condition})
          """
     )
-    rows = crsr.fetchall()
+    unsorted_rows = crsr.fetchall()
 
-    rows = sorted(rows, key=lambda civ: get_civ_name(civ[0]))
+    rows = []
+    for l in expanded_bbg_leaders:
+        for r in unsorted_rows:
+            if r[1] == l:
+                rows.append(r)
+                break
     civLeaders = []
     civLeaderItems = dict()
     uniques = []
@@ -336,11 +344,17 @@ def get_natural_wonders_list(db_path):
     return rows
 
 
-def get_world_wonders_list(db_path):
+def get_world_wonders_list(db_path, only_expanded_bbg = False):
     connection = sqlite3.connect(db_path)
 
+    bbg_expanded_world_wonders = []
+    bbg_expanded_world_wonders = [
+        'WON_CL_BUILDING_ARECIBO',
+        'BUILDING_PORCELAIN_TOWER'
+    ]
+    bbg_expanded_world_wonders_condition = " OR ".join([f"BuildingType = '{wonder}'" for wonder in bbg_expanded_world_wonders])
     crsr = connection.cursor()
-    crsr.execute('''SELECT
+    query = f'''SELECT
             b.BuildingType,
             b.Name,
             b.Cost,
@@ -376,9 +390,10 @@ def get_world_wonders_list(db_path):
         LEFT JOIN Building_YieldChangesBonusWithPower bycbwp Using(BuildingType)
         LEFT JOIN Buildings_XP2 bxp2 Using(BuildingType)
         LEFT JOIN Districts ds On b.PrereqDistrict = ds.DistrictType
-        WHERE b.IsWonder = 1
+        WHERE b.IsWonder = 1 {f"AND ({bbg_expanded_world_wonders_condition})" if only_expanded_bbg else ""}
         Order BY b.Name
-    ''')
+    '''
+    crsr.execute(query)
     wonder_rows = crsr.fetchall()
     crsr.execute("SELECT TechnologyType, EraType FROM Technologies")
     tech_rows = crsr.fetchall()

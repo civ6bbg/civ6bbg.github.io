@@ -160,6 +160,7 @@ replacements = [
     '[ICON_RESOURCE_RICE]',
     '[ICON_RESOURCE_TOYS]',
     '[ICON_RESOURCE_WHEAT]',
+    '[ICON_RESOURCE_PORCELAIN]',
     '[ICON_SCIENCE]',
     '[ICON_SIGHT]',
     '[ICON_SPREAD_CHARGES]',
