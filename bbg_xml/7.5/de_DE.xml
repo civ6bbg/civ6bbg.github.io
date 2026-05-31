@@ -167,35 +167,44 @@
 			<Text>Politische Hochzeit</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_MER_CROWNLANDS_DESCRIPTION" Language="de_DE">
-			<Text>Erhalte jedesmal einen "Großen Diplomaten", wenn ein [ICON_BUILDINGS] Gebäude im [ICON_DISTRICT_GOVERNMENT] Regierungsplatz-Bezirk gebaut wurde.</Text>
+			<Text>Erhalte jedesmal einen "Großen Diplomaten", wenn ein [ICON_BUILDINGS] Gebäude im [ICON_DISTRICT_GOVERNMENT] Regierungsplatz-Bezirk gebaut wurde.[NEWLINE][NEWLINE][ICON_BULLETGLOW] Startbedingungen: Keine.</Text>
 		</Replace>
-        <!-- = Leader ability - Führerfähigkeit (Maria Theresa - Die Theresianischen Reformen) (BBG-EXP)= -->
+        <!-- = Leader ability - Führerfähigkeit (Maria Theresia - Die Theresianischen Reformen) (BBG-EXP)= -->
         <Replace Tag="LOC_TRAIT_LEADER_MER_THERESIAN_REFORM_NAME" Language="de_DE">
 			<Text>Die Theresianischen Reformen</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_MER_THERESIAN_REFORM_DESCRIPTION" Language="de_DE">
-			<Text>+1 [ICON_INFLUENCEPERTURN] Einfluss-Punkte pro [ICON_TURN] Runde und +20% [ICON_PRODUCTION] Produktion für den Bau von [ICON_DISTRICT] Bezirken in [ICON_DISTRICT_CITY_CENTER] Städten mit einem etablierten [ICON_GOVERNOR] Gouverneur.[NEWLINE][NEWLINE]+1 [ICON_HOUSING] Wohnraum für [ICON_DISTRICT] jene Spezial-Bezirke in deinen Städten, die bereits in deiner [ICON_CAPITAL] Hauptstadt gebaut wurden.</Text>
+			<Text>[ICON_DISTRICT_CITY_CENTER] Städte mit einem etablierten [ICON_GOVERNOR] Gouverneur erhalten:[NEWLINE][NEWLINE]• +1 [ICON_INFLUENCEPERTURN] Einfluss-Punkte pro [ICON_TURN] Runde.[NEWLINE]• +20% [ICON_PRODUCTION] Produktion für den Bau von [ICON_DISTRICT] Bezirken.[NEWLINE]• +20% [ICON_PRODUCTION] Produktion für die Rekrutierung von Miltär- und Zivil-[ICON_UNIT] Einheiten.</Text>
 		</Replace>
         <!-- = Unique unit - Einzigartige Einheit (Grenzer) (BBG-EXP)= --> 
         <Replace Tag="LOC_UNIT_MER_GRENZER_NAME" Language="de_DE">
 			<Text>Grenzer</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_MER_GRENZER_DESCRIPTION" Language="de_DE">
-			<Text>Diese Aufklärungs-[ICON_UNIT] Einheit des Industriezeitalters ist einzigartig für Österreich, wird nach Erforschung der Technologie "Drall" freigeschaltet, ersetzt den "Ranger", gewährt dessen Boni und zusätzlich:[NEWLINE][NEWLINE]• +5 Grund-[ICON_STRENGTH] Fernkampfstärke.[NEWLINE]• +5 [ICON_STRENGTH] Kampfstärke in einem Umkreis von 3 Feldern um ein verbündetes Gebiet.[NEWLINE]• Erzeugt eine Kontrollzone.</Text>
+			<Text>Diese Aufklärungs-[ICON_UNIT] Einheit des Industriezeitalters ist einzigartig für Österreich, wird nach Erforschung der Technologie "Drall" freigeschaltet, ersetzt den "Ranger", gewährt dessen Boni und zusätzlich:[NEWLINE][NEWLINE]• +5 Grund-[ICON_RANGED] Fernkampfstärke.[NEWLINE]• +5 [ICON_STRENGTH] Kampfstärke im Umkreis von 3 Feldern an den Grenzen deines Reiches.[NEWLINE]• Erzeugt eine Kontrollzone.</Text>
+		</Replace>
+		<Replace Tag="LOC_MODIFIER_MER_GRENZER_NEAR_TERRITORY_DESC" Language="de_DE">
+			<Text>+5 [ICON_STRENGTH] Kampfstärke im Umkreis von 3 Feldern an den Grenzen deines Reiches.</Text>
 		</Replace>
         <!-- = Unique unit - Einzigartige Einheit (Großer Diplomat) (BBG-EXP)= --> 
+		<Replace Tag="LOC_GREAT_PERSON_CLASS_AUSTRIAN_DIPLOMAT_NAME" Language="de_DE">
+			<Text>Großer Diplomat</Text>
+		</Replace>
         <Replace Tag="LOC_UNIT_GREAT_DIPLOMAT_NAME" Language="de_DE">
 			<Text>Großer Diplomat</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_GREAT_DIPLOMAT_DESCRIPTION" Language="de_DE">
-			<Text>Diese [ICON_GREATPERSON] Große Persönlichkeit ist einzigartig für Österreich und kann einmalig einen deiner Vasallen-Stadtstaaten annektieren.</Text>
+			<Text>Diese [ICON_GREATPERSON] Große Persönlichkeit ist einzigartig für Österreich und kann einmalig einen deiner Vasallen-Stadtstaaten annektieren.[NEWLINE]Erhalte jedesmal einen "Großen Diplomaten", wenn ein [ICON_BUILDINGS] Gebäude im [ICON_DISTRICT_GOVERNMENT] Regierungsplatz-Bezirk gebaut wurde.</Text>
 		</Replace>
         <!-- = Unique building - Einzigartiges Gebäude (Kaffeehaus) (BBG-EXP)= -->
         <Replace Tag="LOC_BUILDING_MER_COFFEE_HOUSE_NAME" Language="de_DE">
 			<Text>Kaffeehaus</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_MER_COFFEE_HOUSE_DESCRIPTION" Language="de_DE">
-			<Text>Dieses [ICON_BUILDINGS] Gebäude des Industriezeitalters ist einzigartig für Österreich, wird nach Erforschung der Ausrichtung "Naturgeschichte" freigeschaltet und ersetzt den "Zoo":[NEWLINE][NEWLINE]• +1 [ICON_SCIENCE] Wissenschaft und +1 [ICON_CULTURE] Kultur für jedes [ICON_DISTRICT] Spezial-Bezirk.[NEWLINE]• +2 [ICON_AMENITIES] Annehmlichkeit für jedes [ICON_DISTRICT_CITY_CENTER] Stadtzentrum innerhalb von 6 Feldern (gilt nur einmal pro [ICON_DISTRICT_CITY_CENTER] Stadt und ist nicht stapelbar mit weiteren "Kaffeehäusern").[NEWLINE]• Erhalte einen aktiven [ICON_THEMEBONUS_ACTIVE] Themen-Bonus, wenn die Großen Werk-Plätze mit Großen Werken von verschiedenen [ICON_GREATPERSON] Großen Persöhnlichkeiten stammen.</Text>
+			<Text>Dieses [ICON_BUILDINGS] Gebäude des Industriezeitalters ist einzigartig für Österreich, wird nach Erforschung der Ausrichtung "Aufklärung" freigeschaltet und ersetzt den "Zoo":[NEWLINE][NEWLINE]• +2 [ICON_AMENITIES] Annehmlichkeit.[NEWLINE]• 3 Große Werk-Plätze.[NEWLINE]• +1 [ICON_SCIENCE] Wissenschaft und +1 [ICON_CULTURE] Kultur für jedes [ICON_DISTRICT] Spezial-Bezirk.[NEWLINE]• +2 [ICON_AMENITIES] Annehmlichkeit für jedes [ICON_DISTRICT_CITY_CENTER] Stadtzentrum innerhalb von 6 Feldern (gilt nur einmal pro [ICON_DISTRICT_CITY_CENTER] Stadt und ist nicht stapelbar mit weiteren "Kaffeehäusern").[NEWLINE]• Erhalte einen aktiven [ICON_THEMEBONUS_ACTIVE] Themen-Bonus, wenn die Großen Werk-Plätze mit Großen Werken von verschiedenen [ICON_GREATPERSON] Großen Persöhnlichkeiten stammen.[NEWLINE][NEWLINE]Verringerte [ICON_PRODUCTION] [ICON_GOLD] Grundkosten.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_THEMINGBONUS_COFFEEHOUSE" Language="de_DE">
+			<Text>Erhalte einen aktiven [ICON_THEMEBONUS_ACTIVE] Themen-Bonus, wenn die Großen Werk-Plätze mit Großen Werken von verschiedenen [ICON_GREATPERSON] Großen Persöhnlichkeiten stammen.</Text>
 		</Replace>
 
 		<!-- == AZTECS - AZTEKENLAND == -->
@@ -742,35 +751,56 @@
 			<Text>Völkerwanderung der Goten</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_MER_GOTHIC_MIGRATION_DESCRIPTION" Language="de_DE">
-			<Text>Wenn du eine [ICON_DISTRICT_CITY_CENTER] Stadt gründest oder zum ersten Mal eroberst, erhältst du +1 [ICON_CITIZEN] Bürger in allen deinen [ICON_DISTRICT_CITY_CENTER] Städten im Umkreis von 6 Feldern, in denen mindestens ein freier [ICON_HOUSING] Wohnraum vorhanden ist.</Text>
+			<Text>Wenn du eine [ICON_DISTRICT_CITY_CENTER] Stadt gründest oder zum ersten Mal eroberst, erhältst du +1 [ICON_CITIZEN] Bürger in allen deinen [ICON_DISTRICT_CITY_CENTER] Städten im Umkreis von 6 Feldern, in denen mindestens 2 freie [ICON_HOUSING] Wohnräume vorhanden sind.[NEWLINE][NEWLINE][ICON_BULLETGLOW] Startbedingungen: Keine.</Text>
+		</Replace>
+		<Replace Tag="LOC_GOTHIC_MIGRATION_POP_GAIN" Language="de_DE">
+			<Text>[ICON_DISTRICT_CITY_CENTER] Stadt erhält: +{1: number #,###.#} [ICON_CITIZEN] Bürger!</Text>
 		</Replace>
 		<!-- = Leader ability - Führerfähigkeit (Theodoric - Gothorum Romanorumque) (BBG-EXP)= -->
 		<Replace Tag="LOC_TRAIT_LEADER_MER_THEODORIC_GOTHORUM_ROMANORUMQUE" Language="de_DE">
 			<Text>Gothorum Romanorumque</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_MER_THEODORIC_GOTHORUM_ROMANORUMQUE_DESCRIPTION" Language="de_DE">
-			<Text>+50% [ICON_PRODUCTION] Produktion für [ICON_DISTRICT] Bezirke in eroberten [ICON_DISTRICT_CITY_CENTER] Städten (-10% pro erbautem [ICON_DISTRICT] Spezial-Bezirk).</Text>
+			<Text>+1 [ICON_MOVEMENT] Bewegung für alle Land-[ICON_UNIT] Einheiten, außer Kavallerie-[ICON_UNIT] Einheiten, im Umkreis von 6 Feldern um einen "Hlaiw".</Text>
 		</Replace>
 		<!-- = Unique unit - Einzigartige Einheit (Militōnd) (BBG-EXP)= -->
 		<Replace Tag="LOC_UNIT_MER_MILITOND_NAME" Language="de_DE">
 			<Text>Militōnd</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_MER_MILITOND_DESCRIPTION" Language="de_DE">
-			<Text>Diese Nahkampf-[ICON_UNIT] Einheit der Klassik ist einzigartig für die Goten, wird nach Erforschung der Technologie "Eisenverarbeitung" freigeschaltet, ersetzt den "Schwertkämpfer", gewährt dessen Boni und zusätzlich:[NEWLINE][NEWLINE]• +5 [ICON_STRENGTH] Kampfstärke gegen verteidigungsfähige [ICON_DISTRICT] Bezirke (die [ICON_STRENGTH] Kampfstärke besitzen) und [ICON_UNIT] Einheiten in [ICON_DISTRICT] Bezirken.[NEWLINE]• Erhält eine kostenlose [ICON_PROMOTION] Beförderung nach der Rekrutierung.</Text>
+			<Text>Diese Nahkampf-[ICON_UNIT] Einheit der Klassik ist einzigartig für die Goten, wird nach Erforschung der Technologie "Eisenverarbeitung" freigeschaltet, ersetzt den "Schwertkämpfer", gewährt dessen Boni und zusätzlich:[NEWLINE][NEWLINE]• +2 Grund-[ICON_STRENGTH] Kampfstärke.[NEWLINE]• +5 [ICON_STRENGTH] Kampfstärke gegen verteidigungsfähige [ICON_DISTRICT] Bezirke (die [ICON_STRENGTH] Kampfstärke besitzen) und [ICON_UNIT] Einheiten in [ICON_DISTRICT] Bezirken.[NEWLINE]• Erhält eine kostenlose [ICON_PROMOTION] Beförderung nach der Rekrutierung, dem Kauf oder der Verbesserung einer früheren [ICON_UNIT] Einheit.[NEWLINE][NEWLINE]Verringerte [ICON_RESOURCE_IRON] Ressourcen-Grundkosten.</Text>
+		</Replace>
+		<Replace Tag="LOC_MODIFIER_MER_MILITOND_PROMOTION_NAME" Language="de_DE">
+			<Text>Das römische Erbe</Text>
+		</Replace>
+		<Replace Tag="LOC_MODIFIER_MER_MILITOND_PROMOTION_DESC" Language="de_DE">
+			<Text>Kostenlose Beförderung</Text>
+		</Replace>
+		<Replace Tag="LOC_MODIFIER_MER_MILITOND_DISTRICT_NAME" Language="de_DE">
+			<Text>Hundertschaft</Text>
+		</Replace>
+		<Replace Tag="LOC_MODIFIER_MER_MILITOND_DISTRICT_DESC" Language="de_DE">
+			<Text>+5 [ICON_STRENGTH] Kampfstärke gegen verteidigungsfähige [ICON_DISTRICT] Bezirke (die [ICON_STRENGTH] Kampfstärke besitzen) und [ICON_UNIT] Einheiten in [ICON_DISTRICT] Bezirken.</Text>
 		</Replace>
 		<!-- = Unique unit - Einzigartige Einheit (Gadrauht) (BBG-EXP)= -->
 		<Replace Tag="LOC_UNIT_MER_GADRAUHT_NAME" Language="de_DE">
 			<Text>Gadrauht</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_MER_GADRAUHT_DESCRIPTION" Language="de_DE">
-			<Text>Diese Kavallerie-Abwehr-[ICON_UNIT] Einheit des Mittelalters ist einzigartig für die Goten, wird nach Erforschung der Technologie "MilitärTaktik" freigeschaltet, ersetzt den "Pikenier", gewährt dessen Boni und zusätzlich:[NEWLINE][NEWLINE]• +3 Grund-[ICON_STRENGTH] Kampfstärke.[NEWLINE]• Das Vernichten von [ICON_UNIT] Einheiten gewährt [ICON_CULTURE] Kultur entsprechend 50% der Grund-[ICON_STRENGTH] Kampfstärke der besiegten [ICON_UNIT] Einheit (Online-Geschwindigkeit).[NEWLINE]• Um einen "Gadrauht" rekrutieren zu können, muss eine [ICON_DISTRICT_CITY_CENTER] Stadt mindestens 2 [ICON_CITIZEN] Bürger haben.[NEWLINE]• Wenn eine [ICON_DISTRICT_CITY_CENTER] Stadt einen "Gadrauht" rekrutiert, verliert sie einen [ICON_CITIZEN] Bürger.</Text>
+			<Text>Diese Kavallerie-Abwehr-[ICON_UNIT] Einheit des Mittelalters ist einzigartig für die Goten, wird nach Erforschung der Technologie "Militärtaktik" freigeschaltet, ersetzt den "Pikenier", gewährt dessen Boni und zusätzlich:[NEWLINE][NEWLINE]• +5 Grund-[ICON_STRENGTH] Kampfstärke.[NEWLINE]• Das Vernichten von [ICON_UNIT] Einheiten gewährt [ICON_CULTURE] Kultur entsprechend 50% der Grund-[ICON_STRENGTH] Kampfstärke der besiegten [ICON_UNIT] Einheit (Online-Geschwindigkeit).[NEWLINE]• Um einen "Gadrauht" rekrutieren zu können, muss eine [ICON_DISTRICT_CITY_CENTER] Stadt mindestens 2 [ICON_CITIZEN] Bürger haben.[NEWLINE]• Wenn eine [ICON_DISTRICT_CITY_CENTER] Stadt einen "Gadrauht" rekrutiert, verliert sie einen [ICON_CITIZEN] Bürger, wenn sie keinen "Tempel" hat.[NEWLINE][NEWLINE]Verringerte [ICON_PRODUCTION] [ICON_GOLD] Grundkosten.</Text>
+		</Replace>
+		<Replace Tag="LOC_MODIFIER_MER_GADRAUHT_CULTURE_VICTORY_NAME" Language="de_DE">
+			<Text>Drauhtinon</Text>
+		</Replace>
+		<Replace Tag="LOC_MODIFIER_MER_GADRAUHT_CULTURE_VICTORY_DESC" Language="de_DE">
+			<Text>Das Vernichten von [ICON_UNIT] Einheiten gewährt [ICON_CULTURE] Kultur entsprechend 50% der Grund-[ICON_STRENGTH] Kampfstärke der besiegten [ICON_UNIT] Einheit (Online-Geschwindigkeit)</Text>
 		</Replace>
 		<!-- = Unique building - Einzigartiges Gebäude (Hlaiw) (BBG-EXP)= -->
 		<Replace Tag="LOC_BUILDING_MER_HLAIW_NAME" Language="de_DE">
 			<Text>Hlaiw</Text>
 		</Replace>
 		<Replace Tag="LOC_BUILDING_MER_HLAIW_DESCRIPTION" Language="de_DE">
-			<Text>Dieses [ICON_BUILDINGS] Gebäude der Antike ist einzigartig für die Goten, wird nach Erforschung der Technologie "Astrologie" freigeschaltet und ersetzt den "Schrein":[NEWLINE][NEWLINE]• +1 [ICON_CULTURE] Kultur und +1 [ICON_FAITH] Glauben.[NEWLINE]• +0.25 [ICON_CULTURE] Kultur und +0.25 [ICON_FAITH] Glauben pro [ICON_CITIZEN] Bürger in der [ICON_DISTRICT_CITY_CENTER] Stadt.</Text>
+			<Text>Dieses [ICON_BUILDINGS] Gebäude der Antike ist einzigartig für die Goten, wird nach Erforschung der Technologie "Astrologie" freigeschaltet und ersetzt den "Schrein":[NEWLINE][NEWLINE]• +1 [ICON_CULTURE] Kultur.[NEWLINE]• +1 [ICON_FAITH] Glauben.[NEWLINE]• +1 [ICON_CITIZEN] Bürger-Platz.[NEWLINE]• +1 [ICON_GREATPROPHET] Großer Prophet-Punkte pro [ICON_TURN] Runde.[NEWLINE]• +0.25 [ICON_CULTURE] Kultur und +0.25 [ICON_FAITH] Glauben pro [ICON_CITIZEN] Bürger in der [ICON_DISTRICT_CITY_CENTER] Stadt.</Text>
 		</Replace>
 		
 		<!-- == HUNGARY - UNGARN == -->
@@ -1432,7 +1462,7 @@
 			<Text>Kommission für nationale Bildung</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_JFD_NATIONAL_EDUCATION_DESCRIPTION" Language="de_DE">
-			<Text>Ressourcen-Felder und verbesserte Felder erhalten zusätzliche Erträge bei Angrenzung an folgende Felder:[NEWLINE]• +1 [ICON_FOOD] Nahrung durch das [ICON_DISTRICT_ENCAMPMENT] Lager-Bezirk.[NEWLINE]• +1 [ICON_CULTURE] Kultur durch die "Kaserne" oder den "Stall".[NEWLINE]• +1 [ICON_SCIENCE] Wissenschaft durch die "Waffenkammer".[NEWLINE]• +1 [ICON_PRODUCTION] Produktion durch die "Militärakademie".[NEWLINE][NEWLINE]Kann die einzigartige [ICON_UNIT] Einheit "Ulan", nach Erforschung der Technologie "Militärwissenschaft" rekrutieren.</Text>
+			<Text>Ressourcen-Felder und verbesserte Felder erhalten zusätzliche Erträge bei Angrenzung an folgende Felder:[NEWLINE]• +1 [ICON_FOOD] Nahrung durch das [ICON_DISTRICT_ENCAMPMENT] Lager-Bezirk.[NEWLINE]• +1 [ICON_CULTURE] Kultur durch die "Kaserne" oder den "Stall".[NEWLINE]• +1 [ICON_SCIENCE] Wissenschaft durch die "Waffenkammer".[NEWLINE]• +1 [ICON_PRODUCTION] Produktion durch die "Militärakademie".[NEWLINE][NEWLINE]Kann die einzigartige [ICON_UNIT] Einheit "Ulan", nach Erforschung der Technologie "Metallguss" rekrutieren.</Text>
 		</Replace>
 		<!-- = Unique unit - Einzigartige Einheit (Flügelhusar) = -->
 		<Replace Tag="LOC_UNIT_POLISH_HUSSAR_EXPANSION2_DESCRIPTION" Language="de_DE">
@@ -1443,7 +1473,10 @@
 			<Text>Ulan</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_JFD_UHLAN_DESCRIPTION" Language="de_DE">
-			<Text>Diese Leichte-Kavallerie-[ICON_UNIT] Einheit der Renaissance ist einzigartig für Stanislas II von Polen, wird nach Erforschung der Technologie "Militärwissenschaft" freigeschaltet, ersetzt die "Kavallerie", gewährt deren Boni und zusätzlich:[NEWLINE][NEWLINE]• +1 [ICON_MOVEMENT] Bewegung.[NEWLINE]• Doppelter Flankierbonus.</Text>
+			<Text>Diese Leichte-Kavallerie-[ICON_UNIT] Einheit der Renaissance ist einzigartig für Stanislas II von Polen, wird nach Erforschung der Technologie "Metallguss" freigeschaltet, ersetzt die "Kavallerie", gewährt deren Boni und zusätzlich:[NEWLINE][NEWLINE]• +1 [ICON_MOVEMENT] Bewegung.[NEWLINE]• Doppelter Flankierbonus.[NEWLINE][NEWLINE]Verringerte [ICON_RESOURCE_HORSES] Ressourcen-Grundkosten.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_JFD_UHLAN_FLANKING_BONUS_DESCRIPTION" Language="de_DE">
+			<Text>Doppelter Flankierbonus</Text>
 		</Replace>
 		<!-- = Unique building - Einzigartiges Gebäude (Sukiennice) = -->
 		<Replace Tag="LOC_BUILDING_SUKIENNICE_EXPANSION1_DESCRIPTION" Language="de_DE">
@@ -1733,10 +1766,10 @@
 			<Text>Guatiao</Text>
 		</Replace>
         <Replace Tag="LOC_TRAIT_CIVILIZATION_CVS_TAINO_UA_DESCRIPTION" Language="de_DE">
-			<Text>Politik-Karten für [ICON_GreatPerson] Große Persönlichkeiten sorgen in [ICON_DISTRICT_CITY_CENTER] Städten mit einem [ICON_DISTRICT] Bezirk, der dem jeweiligen Typ der [ICON_GreatPerson] Großen Persönlichkeit entspricht, für +3 [ICON_FOOD] Nahrung pro (ICON_TURN] Runde. Diplomatische Politik-Karten sorgen in [ICON_DISTRICT_CITY_CENTER] Städten mit einem [ICON_DISTRICT_ENTERTAINMENT] "Batéy"-Bezirk für +1 [ICON_AMENITIES] Annehmlichkeit.</Text>
+			<Text>Politik-Karten für [ICON_GreatPerson] Große Persönlichkeiten sorgen in [ICON_DISTRICT_CITY_CENTER] Städten mit einem [ICON_DISTRICT] Bezirk, der dem jeweiligen Typ der [ICON_GreatPerson] Großen Persönlichkeit entspricht, für +3 [ICON_FOOD] Nahrung pro [ICON_TURN] Runde.[NEWLINE][NEWLINE]Diplomatische Politik-Karten sorgen in [ICON_DISTRICT_CITY_CENTER] Städten mit einem [ICON_DISTRICT_ENTERTAINMENT] "Batéy"-Bezirk für +1 [ICON_AMENITIES] Annehmlichkeit.[NEWLINE][NEWLINE][ICON_BULLETGLOW] Startbedingungen: Keine.</Text>
 		</Replace>
 		<!-- = Leader ability - Führerfähigkeit (Anacaona - Goldene Blume) (BBG-EXP) = -->
-		<Replace Tag="LOC_TRAIT_LEADER_CVS_ANACAONA_NAME" Language="de_DE">
+		<Replace Tag="LOC_TRAIT_LEADER_CVS_ANACAONA_UA_NAME" Language="de_DE">
 			<Text>Goldene Blume</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_CVS_ANACAONA_UA_DESCRIPTION" Language="de_DE">
@@ -1747,14 +1780,14 @@
 			<Text>Macana</Text>
 		</Replace>
 		<Replace Tag="LOC_UNIT_CVS_TAINO_UU_DESCRIPTION" Language="de_DE">
-			<Text>Diese Aufklärungs-[ICON_UNIT] Einheit der Antike ist einzigartig für Taíno, ab der ersten [ICON_TURN] Runde rekrutierbar, ersetzt den "Krieger", gewährt dessen Boni und zusätzlich:[NEWLINE][NEWLINE]• +1 [ICON_MOVEMENT] Bewegung.[NEWLINE]• +1 [ICON_VisSecret] Sicht.[NEWLINE]• Behält nach der Verbesserung seine Aufklärungs-[ICON_PROMOTION] Beförderungen.[NEWLINE]• Das Vernichten von [ICON_UNIT] Einheiten gewährt [ICON_FAITH] Glauben entsprechend 50% der Grund-[ICON_STRENGTH] Kampfstärke der besiegten [ICON_UNIT] Einheit (Online-Geschwindigkeit).</Text>
+			<Text>Diese Aufklärungs-[ICON_UNIT] Einheit der Antike ist einzigartig für Taíno, ab der ersten [ICON_TURN] Runde rekrutierbar, ersetzt den "Krieger", gewährt dessen Boni und zusätzlich:[NEWLINE][NEWLINE]• -5 Grund-[ICON_STRENGTH] Kampfstärke.[NEWLINE]• +1 [ICON_MOVEMENT] Bewegung.[NEWLINE]• +1 [ICON_VisSecret] Sicht.[NEWLINE]• +5 [ICON_STRENGTH] Kampfstärke beim Kampf gegen [ICON_UNIT] Einheiten mit höherer [ICON_STRENGTH] Kampfstärke.[NEWLINE]• Behält nach der Verbesserung seine Aufklärungs-[ICON_PROMOTION] Beförderungen.[NEWLINE]• Das Vernichten von [ICON_UNIT] Einheiten gewährt [ICON_FAITH] Glauben entsprechend 50% der Grund-[ICON_STRENGTH] Kampfstärke der besiegten [ICON_UNIT] Einheit (Online-Geschwindigkeit).</Text>
 		</Replace>
-		<!-- = Unique district - Einzigartiger Bezirk (Batey) (BBG-EXP) = -->
+		<!-- = Unique district - Einzigartiger Bezirk (Batéy) (BBG-EXP) = -->
 		<Replace Tag="LOC_DISTRICT_CVS_TAINO_UI_NAME" Language="de_DE">
-			<Text>Batey</Text>
+			<Text>Batéy</Text>
 		</Replace>
 		<Replace Tag="LOC_DISTRICT_CVS_TAINO_UI_DESCRIPTION" Language="de_DE">
-			<Text>Dieser [ICON_DISTRICT_ENTERTAINMENT] "Batey"-Bezirk der Klassik ist einzigartig für Taíno, wird nach Erforschung der Ausrichtung "Spiele und Erholung" freigeschaltet, ersetzt den [ICON_DISTRICT_ENTERTAINMENT] Unterhaltungskomplex-Bezirk, gewährt dessen Boni und zusätzlich:[NEWLINE][NEWLINE]• +1 [ICON_AMENITIES] Annehmlichkeit für jedes [ICON_BUILDINGS] Gebäude im [ICON_DISTRICT_ENTERTAINMENT] "Batey"-Bezirk.[NEWLINE]• +2 [ICON_PRODUCTION] Produktion für angrenzende [ICON_DISTRICT_COMMERCIAL_HUB] Handelszentrum-Bezirke und [ICON_DISTRICT_HARBOR] Hafen-Bezirke.[NEWLINE]• Schaltet das "Areyto"-Projekt frei, das während der Durchführung 15% der [ICON_PRODUCTION] Produktion in [ICON_FAITH] Glauben umwandelt, sowie [ICON_GreatPerson] Große Persönlichkeits-Punkte von [ICON_GREATWRITER] Großer Schriftsteller, [ICON_GREATARTIST] Großer Künstler und [ICON_GREATMUSICIAN] Großer Musiker nach Abschluss des Projekts gewährt.</Text>
+			<Text>Dieser [ICON_DISTRICT_ENTERTAINMENT] "Batéy"-Bezirk der Klassik ist einzigartig für Taíno, wird nach Erforschung der Ausrichtung "Spiele und Erholung" freigeschaltet, ersetzt den [ICON_DISTRICT_ENTERTAINMENT] Unterhaltungskomplex-Bezirk, gewährt dessen Boni und zusätzlich:[NEWLINE][NEWLINE]• +1 [ICON_AMENITIES] Annehmlichkeit für jedes [ICON_BUILDINGS] Gebäude im [ICON_DISTRICT_ENTERTAINMENT] "Batéy"-Bezirk.[NEWLINE]• +2 [ICON_PRODUCTION] Produktion für angrenzende [ICON_DISTRICT_COMMERCIAL_HUB] Handelszentrum-Bezirke und [ICON_DISTRICT_HARBOR] Hafen-Bezirke.[NEWLINE]• Schaltet das "Areyto-Zeremonie"-Projekt frei, das während der Durchführung 15% der [ICON_PRODUCTION] Produktion in [ICON_FAITH] Glauben umwandelt, sowie [ICON_GreatPerson] Große Persönlichkeits-Punkte von [ICON_GREATWRITER] Großer Schriftsteller, [ICON_GREATARTIST] Großer Künstler und [ICON_GREATMUSICIAN] Großer Musiker nach Abschluss des Projekts gewährt.[NEWLINE][NEWLINE]Verringerte [ICON_PRODUCTION] [ICON_GOLD] Grundkosten.</Text>
 		</Replace>
 		<Replace Tag="LOC_BBG_PRODUCTION_TAINO_HARBOR" Language="de_DE">
 			<Text>Angrenzende [ICON_DISTRICT_HARBOR] Hafen-Bezirke: +{1_num} [ICON_PRODUCTION] Produktion.</Text>
@@ -1763,13 +1796,13 @@
 			<Text>Angrenzende [ICON_DISTRICT_COMMERCIAL_HUB] Handelszentrum-Bezirke: +{1_num} [ICON_PRODUCTION] Produktion.</Text>
 		</Replace>
 		<Replace Tag="LOC_BBG_TAINO_THEATRE_CULTURE" Language="de_DE">
-			<Text>Angrenzende [ICON_DISTRICT_ENTERTAINMENT] "Batey"-Bezirke: +{1_num} [ICON_CULTURE] Kultur.</Text>
+			<Text>Angrenzende [ICON_DISTRICT_ENTERTAINMENT] "Batéy"-Bezirke: +{1_num} [ICON_CULTURE] Kultur.</Text>
 		</Replace>
 		<Replace Tag="LOC_PROJECT_CVS_TAINO_UP_NAME" Language="de_DE">
-			<Text>Areyto</Text>
+			<Text>Areyto-Zeremonie</Text>
 		</Replace>
 		<Replace Tag="LOC_PROJECT_CVS_TAINO_UP_DESCRIPTION" Language="de_DE">
-			<Text>Das einzigartiges "Areyto"-Projekt der Taíno, ist nur im [ICON_DISTRICT_ENTERTAINMENT] "Batey"-Bezirk verfügbar und wandelt während der Durchführung 15% der [ICON_PRODUCTION] Produktion in [ICON_FAITH] Glauben um und gewährt [ICON_GreatPerson] Große Persönlichkeits-Punkte von [ICON_GREATWRITER] Großer Schriftsteller, [ICON_GREATARTIST] Großer Künstler und [ICON_GREATMUSICIAN] Großer Musiker nach Abschluss des Projekts.</Text>
+			<Text>Das einzigartiges "Areyto-Zeremonie"-Projekt der Taíno, ist nur im [ICON_DISTRICT_ENTERTAINMENT] "Batéy"-Bezirk verfügbar und wandelt während der Durchführung 15% der [ICON_PRODUCTION] Produktion in [ICON_FAITH] Glauben um und gewährt [ICON_GreatPerson] Große Persönlichkeits-Punkte von [ICON_GREATWRITER] Großer Schriftsteller, [ICON_GREATARTIST] Großer Künstler und [ICON_GREATMUSICIAN] Großer Musiker nach Abschluss des Projekts.</Text>
 		</Replace>
 		<!-- = Unique improvement - Einzigartige Verbesserung (Conuco) (BBG-EXP) = -->
 		<Replace Tag="LOC_IMPROVEMENT_CVS_ANACAONA_UI_NAME" Language="de_DE">
@@ -1785,7 +1818,7 @@
 			<Text>Wo Menschen zu Göttern werden</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_CIVILIZATION_LIME_TEO_MEN_BECOME_GODS_DESC" Language="de_DE">
-			<Text>[ICON_TRADEROUTE] Handelswege erhalten zusätzliche Erträge, entsprechend des Stadtstaat-Typs dessen Suzerän du bist (Erträge werden verdreifacht bei 2 oder mehr Stadtstaaten des gleichen Typs):[NEWLINE][NEWLINE]• +1 [ICON_SCIENCE] Wissenschaft (Wissenschafts-Stadtstaat).[NEWLINE]• +1 [ICON_CULTURE] Kultur (Kultur-Stadtstaat).[NEWLINE]• +1 [ICON_FOOD] Nahrung (Religions-Stadtstaat).[NEWLINE]• +3 [ICON_GOLD] Gold (Handels-Stadtstaat).[NEWLINE]• +1 [ICON_PRODUCTION] Produktion (Militär-Stadtstaat).[NEWLINE]• +1 [ICON_PRODUCTION] Produktion (Industrie-Stadtstaat).</Text>
+			<Text>[ICON_TRADEROUTE] Handelswege erhalten zusätzliche Erträge, entsprechend des Stadtstaat-Typs dessen Suzerän du bist (Erträge werden verdreifacht bei 2 oder mehr Stadtstaaten des gleichen Typs):[NEWLINE][NEWLINE]• +1 [ICON_SCIENCE] Wissenschaft (Wissenschafts-Stadtstaat).[NEWLINE]• +1 [ICON_CULTURE] Kultur (Kultur-Stadtstaat).[NEWLINE]• +1 [ICON_FOOD] Nahrung (Religions-Stadtstaat).[NEWLINE]• +3 [ICON_GOLD] Gold (Handels-Stadtstaat).[NEWLINE]• +1 [ICON_PRODUCTION] Produktion (Militär-Stadtstaat).[NEWLINE]• +1 [ICON_PRODUCTION] Produktion (Industrie-Stadtstaat).[NEWLINE][NEWLINE][ICON_BULLETGLOW] Startbedingungen: Keine.</Text>
 		</Replace>
 		<!-- = Leader ability - Führerfähigkeit (Spearthrower Owl / "Jatz'om Kuy" - Herr des Westens) (BBG-EXP) = -->
 		<Replace Tag="LOC_TRAIT_LEADER_LIME_TEO_OWL_FIRE_IS_BORN_NAME" Language="de_DE">
@@ -2000,7 +2033,7 @@
 		<!-- == RAIDER - MARINE-RÄUBER == -->
 		
 		<!-- == CARRIER - MARINE-TRÄGER == -->
-				<Replace Tag="LOC_UNIT_AIRCRAFT_CARRIER_DESCRIPTION" Language="de_DE">
+		<Replace Tag="LOC_UNIT_AIRCRAFT_CARRIER_DESCRIPTION" Language="de_DE">
 			<Text>Nahkampf-Marineeinheit der Atomzeitalters, die Luft-[ICON_UNIT] Einheiten transportieren kann. Erhält +25 [ICON_AntiAir_Large] Luftabwehrstärke, wenn sie neben einer [ICON_UNIT] Einheit mit [ICON_AntiAir_Large] Luftabwehrstärke steht.</Text>
 		</Replace>
 		<Replace Tag="LOC_BBG_ABILITY_STRENGTH_NEXT_TO_ANTI_AIR_NAME" Language="de_DE">
@@ -4075,9 +4108,9 @@
 		<Replace Tag="LOC_BUILDING_PORCELAIN_TOWER_NAME" Language="de_DE">
             <Text>Porzellanturm</Text>
         </Replace>
-        <Replace Tag="LOC_BUILDING_PORCELAIN_TOWER_DESCRIPTION" Language="de_DE">
-            <Text>Ein [ICON_DISTRICT_WONDER] Weltwunder der Renaissance:[NEWLINE][NEWLINE]• Du erhältst 3 Einheiten [ICON_RESOURCE_PORCELAIN] Porzellan, eine exklusive Luxusressource, die 6 [ICON_AMENITIES] Annehmlichkeit bietet.[NEWLINE][NEWLINE]Muss auf einem flachen Ebenen-,Grasland, oder Tundrafeld, angrenzend an ein [ICON_DISTRICT_CITY_CENTER] Stadtzentrum errichtet werden.</Text>
-        </Replace>
+		<Replace Tag="LOC_BUILDING_PORCELAIN_TOWER_DESCRIPTION" Language="de_DE">
+			<Text>Dieses [ICON_DISTRICT_WONDER] Weltwunder der Renaissance wird nach Erforschung der Technologie "Schießpulver" freigeschaltet:[NEWLINE][NEWLINE]• +3 [ICON_SCIENCE] Wissenschaft.[NEWLINE]• +3 [ICON_HOUSING] Wohnraum.[NEWLINE]• +2 [ICON_GREATSCIENTIST] Großer Wissenschaftler-Punkte pro [ICON_TURN] Runde.[NEWLINE]• Gewährt 3 Exemplare [ICON_RESOURCE_PORCELAIN] Porzellan, eine exklusive Luxusressource, die +6 [ICON_AMENITIES] Annehmlichkeit bietet.[NEWLINE]• +1000 [ICON_TOURISM] Tourismus durch Rockkonzerte.[NEWLINE][NEWLINE]Muss auf einem flachen Ebenen-,Grasland, oder Tundrafeld, angrenzend an ein [ICON_DISTRICT_CITY_CENTER] Stadtzentrum errichtet werden.[NEWLINE][NEWLINE]Grundkosten:[NEWLINE]460 [ICON_PRODUCTION] Produktion (Online-Geschwindigkeit).</Text>
+		</Replace>
 		<!-- = Verbotene Stadt = -->
 		<Replace Tag="LOC_BUILDING_FORBIDDEN_CITY_DESCRIPTION" Language="de_DE">
 			<Text>Dieses [ICON_DISTRICT_WONDER] Weltwunder der Renaissance wird nach Erforschung der Technologie "Druck" freigeschaltet:[NEWLINE][NEWLINE]• +5 [ICON_CULTURE] Kultur.[NEWLINE]• +1 Joker-Politikplatz.[NEWLINE]• +1000 [ICON_TOURISM] Tourismus durch Rockkonzerte.[NEWLINE][NEWLINE]Muss auf einem flachen Landfeld, angrenzend an ein [ICON_DISTRICT_CITY_CENTER] Stadtzentrum gebaut werden.[NEWLINE][NEWLINE]Grundkosten:[NEWLINE]530 [ICON_PRODUCTION] Produktion (Online-Geschwindigkeit).</Text>
@@ -4210,14 +4243,14 @@
 		</Replace>
 		<!-- = Amundsen-Scott-Südpolstation = -->
 		<Replace Tag="LOC_BUILDING_AMUNDSEN_SCOTT_RESEARCH_STATION_DESCRIPTION" Language="de_DE">
-			<Text>Dieses [ICON_DISTRICT_WONDER] Weltwunder des Atomzeitalters wird nach Erforschung der Ausrichtung "Schneller Einsatz" freigeschaltet:[NEWLINE][NEWLINE]• +5 [ICON_GREATSCIENTIST] Großer Wissenschaftler-Punkte pro [ICON_TURN] Runde.[NEWLINE]• +10% [ICON_PRODUCTION] Produktion und +20% [ICON_SCIENCE] Wissenschaft in allen [ICON_DISTRICT_CITY_CENTER] Städten deines Reiches.[NEWLINE]• Wird erhöht auf +20% [ICON_PRODUCTION] Produktion und +40% [ICON_SCIENCE] Wissenschaft in jenen [ICON_DISTRICT_CITY_CENTER] Städten erhöht, in denen es 5 Tundra- oder Tundrahügelfelder im Besitz und im Umkreis von 3 Feldern dieser [ICON_DISTRICT_CITY_CENTER] Städte gibt.[NEWLINE]• +1000 [ICON_TOURISM] Tourismus durch Rockkonzerte.[NEWLINE][NEWLINE]Muss auf einem Tundra-, Tundrahügel-, Schnee- oder Schneehügelfeld, angrenzend an einen [ICON_DISTRICT_CAMPUS] Campus-Bezirk mit einem "Forschungslabor" gebaut werden.[NEWLINE][NEWLINE]Grundkosten:[NEWLINE]870 [ICON_PRODUCTION] Produktion (Online-Geschwindigkeit).</Text>
+			<Text>Dieses [ICON_DISTRICT_WONDER] Weltwunder des Atomzeitalters wird nach Erforschung der Ausrichtung "Schneller Einsatz" freigeschaltet:[NEWLINE][NEWLINE]• +5 [ICON_GREATSCIENTIST] Großer Wissenschaftler-Punkte pro [ICON_TURN] Runde.[NEWLINE]• +10% [ICON_PRODUCTION] Produktion und +20% [ICON_SCIENCE] Wissenschaft in allen [ICON_DISTRICT_CITY_CENTER] Städten deines Reiches.[NEWLINE]• Wird erhöht auf +20% [ICON_PRODUCTION] Produktion und +40% [ICON_SCIENCE] Wissenschaft in jenen [ICON_DISTRICT_CITY_CENTER] Städten erhöht, in denen es 5 Tundra- oder Tundrahügelfelder im Besitz und im Umkreis von 3 Feldern dieser [ICON_DISTRICT_CITY_CENTER] Städte gibt.[NEWLINE]• +1000 [ICON_TOURISM] Tourismus durch Rockkonzerte.[NEWLINE][NEWLINE]Muss auf einem Tundra-, Tundrahügel-, Schnee- oder Schneehügelfeld, angrenzend an einen [ICON_DISTRICT_CAMPUS] Campus-Bezirk mit einem "Forschungslabor" gebaut werden.[NEWLINE][NEWLINE]Grundkosten:[NEWLINE]810 [ICON_PRODUCTION] Produktion (Online-Geschwindigkeit).</Text>
 		</Replace>
 		<!-- = Radioteleskop von Arecibo (BBG-EXP)= -->
 		<Replace Tag="LOC_WON_CL_BUILDING_ARECIBO_NAME" Language="de_DE">
 			<Text>Radioteleskop von Arecibo</Text>
 		</Replace>
 		<Replace Tag="LOC_WON_CL_BUILDING_ARECIBO_DESCRIPTION" Language="de_DE">
-			<Text>Ein [ICON_DISTRICT_WONDER] Weltwunder des Atomzeitalters:[NEWLINE][NEWLINE]• [ICON_DISTRICT_CAMPUS] Campus-Bezirke erhalten von Bergfeldern einen großen statt eines normalen Nachbarschaftsbonus.[NEWLINE]• Gewährt für jedes abgeschlossene Weltraumrennen-Projekt einen [ICON_TECHBOOSTED] Heureka.[NEWLINE][NEWLINE]Muss auf einem Regenwaldfeld errichtet werden.</Text>
+			<Text>Dieses [ICON_DISTRICT_WONDER] Weltwunder des Atomzeitalters wird nach Erforschung der Ausrichtung "Weltraumrennen" freigeschaltet:[NEWLINE][NEWLINE]• +4 [ICON_SCIENCE] Wissenschaft.[NEWLINE]• +2 [ICON_GREATSCIENTIST] Großer Wissenschaftler-Punkte pro [ICON_TURN] Runde.[NEWLINE]• [ICON_DISTRICT_CAMPUS] Campus-Bezirke erhalten von Bergfeldern einen Großer-Nachbarschaftsbonus statt eines Standart-Nachbarschaftsbonus.[NEWLINE]• Gewährt für jedes abgeschlossene "Weltraumrennen-Projekt" ein [ICON_TECHBOOSTED] Heureka.[NEWLINE]• +1000 [ICON_TOURISM] Tourismus durch Rockkonzerte.[NEWLINE][NEWLINE]Muss auf einem Regenwaldfeld errichtet werden.[NEWLINE][NEWLINE]Grundkosten:[NEWLINE]810 [ICON_PRODUCTION] Produktion (Online-Geschwindigkeit).</Text>
 		</Replace>	
 		<Replace Tag="LOC_ARECIBO_MOUNTAINS_SCIENCE" Language="de_DE">
 			<Text>Angrenzende Bergfelder: +{1_num} [ICON_SCIENCE] Wissenschaft (Radioteleskop von Arecibo).</Text>
@@ -5144,9 +5177,9 @@
 		<Replace Tag="LOC_CIVIC_OPERA_BALLET_DESCRIPTION" Language="de_DE">
 			<Text>+100% [ICON_TOURISM] Tourismus für [ICON_GreatWork_Writing] Große Werke der Literatur.</Text>
 		</Replace>
-   		<Replace Tag="LOC_CIVIC_IDEOLOGY_DESCRIPTION" Language="de_DE">
-    		<Text>+1 Spion-Kapazität. Offene Grenzen mit allen Stadtstaaten. +4 [ICON_STRENGTH] Kampfstärke für Militär-[ICON_UNIT] Einheiten, die gegen Zivilisationen mit einer anderen [ICON_RELIGION] Religion kämpfen, nach Erforschung der Ausrichtung "Reformkirche".</Text>
-   		</Replace>
+		<Replace Tag="LOC_CIVIC_IDEOLOGY_DESCRIPTION" Language="de_DE">
+			<Text>+1 Spion-Kapazität. Offene Grenzen mit allen Stadtstaaten. +4 [ICON_STRENGTH] Kampfstärke für Militär-[ICON_UNIT] Einheiten, die gegen Zivilisationen mit einer anderen [ICON_RELIGION] Religion kämpfen, nach Erforschung der Ausrichtung "Reformkirche".</Text>
+		</Replace>
 		<Replace Tag="LOC_CIVIC_NUCLEAR_PROGRAM_DESCRIPTION" Language="de_DE">
 			<Text>+3 [ICON_SCIENCE] Wissenschaft für "Forschungslabore".</Text>
 		</Replace>
@@ -5403,12 +5436,12 @@
 		<Replace Tag="LOC_GOVT_ACCUMULATED_BONUS_BRIEF_COMMUNISM_XP2" Language="de_DE">
 			<Text>[NEWLINE]Intoleranz gegenüber anderen Regierungen: -30% [ICON_TOURISM] Tourismus.</Text>
 		</Replace>
-		<!-- <Replace Tag="LOC_BBG_COMMUNISM_COMBAT_STRENGTH_ABILITY_DESC" Language="de_DE">
+		<!--<Replace Tag="LOC_BBG_COMMUNISM_COMBAT_STRENGTH_ABILITY_DESC" Language="de_DE">
 			<Text>+4 [ICON_STRENGTH] Kampfstärke für alle [ICON_UNIT] Einheiten in deinem Reich. (Kommunismus).</Text>
-		</Replace> -->
-		<!-- <Replace Tag="LOC_BBG_COMMUNISM_LEGACY_COMBAT_STRENGTH_ABILITY_DESC" Language="de_DE">
+		</Replace>-->
+		<!--<Replace Tag="LOC_BBG_COMMUNISM_LEGACY_COMBAT_STRENGTH_ABILITY_DESC" Language="de_DE">
 			<Text>+4 [ICON_STRENGTH] Kampfstärke für alle [ICON_UNIT] Einheiten in deinem Reich. (Kommunistisches Erbe).</Text>
-		</Replace> -->
+		</Replace>-->
 		
 		<!-- = Demokratie = -->
 		<Replace Tag="LOC_GOVT_INHERENT_BONUS_DEMOCRACY_XP2" Language="de_DE">
@@ -6186,9 +6219,9 @@
 		
 		<!-- == Souveränität == -->
 		<!-- = Vote A = -->
-		<!-- <Replace Tag="LOC_WORLD_CONGRESS_FAVOR_FROM_TRADE_AND_ENVOYS_WITH_MINORS_DESC" Language="de_DE">
+		<!--<Replace Tag="LOC_WORLD_CONGRESS_FAVOR_FROM_TRADE_AND_ENVOYS_WITH_MINORS_DESC" Language="de_DE">
 			<Text>+6 [ICON_GOLD] Gold, +2 [ICON_FOOD] Nahrung, +2 [ICON_PRODUCTION] Produktion für [ICON_TradeRoute] Handelswege zu Stadtstaaten des ausgewählten Stadtstaat-Typs.</Text>
-		</Replace> -->
+		</Replace>-->
 		<!-- = Vote B = -->
 		<Replace Tag="LOC_WORLD_CONGRESS_NO_SUZERAIN_BONUS_DESC" Language="de_DE">
 			<Text>Der ausgewählte Stadtstaat-Typ gewährt nicht mehr seinen einzigartigen Suzären-Bonus.</Text>
@@ -6248,7 +6281,7 @@
 		</Replace>
 		<Replace Tag="LOC_HAPPINESS_UNHAPPY_NAME" Language="de_DE">
 			<Text>[COLOR_GREEN]Euphorisch[ENDCOLOR]</Text>
-        </Replace>
+		</Replace>
 
 		<!-- === CIVILOPEDIA === -->
 		<Replace Tag="LOC_PEDIA_CONCEPTS_PAGE_CITIES_16_CHAPTER_CONTENT_PARA_1" Language="de_DE">
@@ -6325,7 +6358,7 @@
 		<!-- === BBG EXPANDED === -->
 		
 		
-		<!-- == RESOURCE - RESSOURCEN == -->
+		<!-- == RESOURCE - RESSOURCEN  (CIVITASResources)== -->
 		
 		<!-- = Penguins - Pinguine = -->
 		<Replace Tag="LOC_RESOURCE_P0K_PENGUINS_NAME" Language="de_DE">
@@ -6371,10 +6404,19 @@
 		</Replace>
 		
 		
-		<!-- == NEW UNIQUE UNITS (Steel and Thunder) == -->
+		<!-- == NEW UNIQUE UNITS - NEUE EINZIGARTIGE EINHEITEN (Steel and Thunder) == -->
 		
 		<!-- = Tiger I - Barbarossa - Deutschland = -->
 		
+		<!--<Replace Tag="LOC_UNIT_GERMAN_PANZER_NAME" Language="de_DE">
+			<Text>Tiger I</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_GERMAN_PANZER_DESCRIPTION" Language="de_DE">
+			<Text>Diese Schwere-Kavallerie-[ICON_UNIT] Einheit der Moderne ist einzigartig für Friedrich Barbarossa von Deutschland, wird nach Erforschung der Technologie "Verbrennungsmotor" freigeschaltet, ersetzt den "Panzer", gewährt dessen Boni und zusätzlich:[NEWLINE][NEWLINE]• +3 Grund-[ICON_STRENGTH] Kampfstärke.[NEWLINE]• +3 Grund-[ICON_STRENGTH] Kampfstärke, wenn kein anderer "Tiger I" angrenzt. [NEWLINE]• Ignoriert die gegnerische Kontrollzone.[NEWLINE][NEWLINE]Erhöhte [ICON_GOLD] Unterhaltskosten.</Text>
+		</Replace>
+		<Replace Tag="LOC_BBG_PANZER_CS_NOT_ADJACENT_PANZER_DESC" Language="de_DE">
+			<Text>+3 Grund-[ICON_STRENGTH] Kampfstärke, wenn kein anderer "Tiger I" angrenzt.</Text>
+		</Replace>-->
 		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GERMAN_PANZER_CHAPTER_HISTORY_PARA_1" Language="de_DE">
 			<Text>Der Tiger I war ein deutscher schwerer Panzer des Zweiten Weltkriegs, der ab 1942 in Afrika und Europa meist in unabhängigen schweren Panzerbataillonen eingesetzt wurde. Seine endgültige Bezeichnung lautete Panzerkampfwagen VI Tiger Ausf. E, oft abgekürzt zu Tiger. Der Tiger I war das erste gepanzerte Kampffahrzeug der Wehrmacht, das mit der 8,8-cm-KwK-36-Kanone (nicht zu verwechseln mit der 8,8-cm-Flak 36) ausgerüstet war. Zwischen August 1942 und August 1944 wurden 1.347 Stück gebaut. Der Panzer erhielt seinen Spitznamen „Tiger” von Ferdinand Porsche, und die römische Ziffer wurde hinzugefügt, nachdem der spätere Tiger II in Produktion ging.</Text>
 		</Replace>
@@ -6393,6 +6435,15 @@
 		
 		<!-- = Onager - Julius Cäsar - Rom = -->
 		
+		<!--<Replace Tag="LOC_UNIT_ROMAN_ONAGER_NAME" Language="de_DE">
+			<Text>Onager</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_ROMAN_ONAGER_DESCRIPTION" Language="de_DE">
+			<Text>Diese Belagerungs-[ICON_UNIT] Einheit der Klassik ist einzigartig für Julius Cäsar von Rom, wird nach Erforschung der Technologie "Maschinenbau" freigeschaltet, ersetzt das "Katapult", gewährt dessen Boni und zusätzlich:[NEWLINE][NEWLINE]• Beginnt mit einer kostenlosen [ICON_PROMOTION] Beförderung.</Text>
+		</Replace>
+		<Replace Tag="LOC_BBG_ONAGER_FREE_PROMOTION_ABILITY_DESC" Language="de_DE">
+			<Text>Beginnt mit einer kostenlosen [ICON_PROMOTION] Beförderung</Text>
+		</Replace>-->
 		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_ROMAN_ONAGER_CHAPTER_HISTORY_PARA_1" Language="de_DE">
 			<Text>Der Onager war eine römische Belagerungsmaschine, eine Art Katapult, das eine Torsionskraft, in der Regel aus verdrehten Seilen, nutzte, um Energie für den Schuss zu speichern. Der Onager bestand aus einem großen, auf dem Boden platzierten Rahmen, an dessen vorderem Ende ein vertikaler Rahmen aus massivem Holz fest angebracht war. An einer vertikalen Speiche, die durch ein am Rahmen befestigtes Seilbündel verlief, war eine Schleuder befestigt, die ein Projektil enthielt. Um ihn abzufeuern, wurde die Speiche oder der Arm mit einer Winde gegen die Spannung der verdrehten Seile oder anderer Federn nach unten gedrückt und dann plötzlich losgelassen. Wenn die Schleuder nach außen schwang, löste sich ein Ende, wie bei einer Stabschleuder, und das Projektil wurde nach vorne geschleudert. Der Arm wurde dann von einem gepolsterten Balken oder Bett aufgefangen, woraufhin er wieder zurückgezogen werden konnte.</Text>
 		</Replace>
@@ -6409,6 +6460,55 @@
 			<Text></Text>
 		</Replace>
 		
+		<!-- == NEW WORLDWONDERS - NEUE WELTWUNDER == -->
+		
+		<!-- = Radioteleskop von Arecibo = -->
+		
+		<!--<Replace Tag="LOC_WON_CL_BUILDING_ARECIBO_NAME" Language="de_DE">
+			<Text>Radioteleskop von Arecibo</Text>
+		</Replace>
+		<Replace Tag="LOC_WON_CL_BUILDING_ARECIBO_DESCRIPTION" Language="de_DE">
+			<Text>Ein [ICON_DISTRICT_WONDER] Weltwunder des Atomzeitalters:[NEWLINE][NEWLINE]• [ICON_DISTRICT_CAMPUS] Campus-Bezirke erhalten von Bergfeldern einen großen statt eines normalen Nachbarschaftsbonus.[NEWLINE]• Gewährt für jedes abgeschlossene Weltraumrennen-Projekt einen [ICON_TECHBOOSTED] Heureka.[NEWLINE][NEWLINE]Muss auf einem Regenwaldfeld errichtet werden.</Text>
+		</Replace>-->	
+		<Replace Tag="LOC_WON_CL_BUILDING_ARECIBO_QUOTE" Language="de_DE">
+			<Text>„Wenn Arecibo nichts anderem lauscht, hört es die Stimme der Schöpfung.“[NEWLINE]–Ted Chiang</Text>
+		</Replace>
+		<!--<Replace Tag="LOC_ARECIBO_MOUNTAINS_SCIENCE" Language="de_DE">
+			<Text>Angrenzende Bergfelder: +{1_num} [ICON_SCIENCE] Wissenschaft (Radioteleskop von Arecibo).</Text>
+		</Replace>-->
+		
+		<!-- = Porzellanturm = -->
+		
+		<!--<Replace Tag="LOC_BUILDING_PORCELAIN_TOWER_NAME" Language="de_DE">
+            <Text>Porzellanturm</Text>
+        </Replace>
+        <Replace Tag="LOC_BUILDING_PORCELAIN_TOWER_DESCRIPTION" Language="de_DE">
+            <Text>Ein [ICON_DISTRICT_WONDER] Weltwunder der Renaissance:[NEWLINE][NEWLINE]• Du erhältst 3 Exemplare [ICON_RESOURCE_PORCELAIN] Porzellan, eine exklusive Luxusressource, die 6 [ICON_AMENITIES] Annehmlichkeit bietet.[NEWLINE][NEWLINE]Muss auf einem flachen Ebenen-,Grasland, oder Tundrafeld, angrenzend an ein [ICON_DISTRICT_CITY_CENTER] Stadtzentrum errichtet werden.</Text>
+        </Replace>-->
+		<Replace Tag="LOC_BUILDING_PORCELAIN_TOWER_QUOTE" Language="de_DE">
+			<Text>„Inmitten der Ebene erhebt sich ein hoher Turm aus Porzellan, der alle anderen Werke der Chinesen an Kosten und Kunstfertigkeit bei weitem übertrifft; damit haben die Chinesen der Welt den seltenen Einfallsreichtum ihrer Künstler aus früheren Zeiten vor Augen geführt.“ – Johannes Nieuhof</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_WONDERS_PAGE_BUILDING_PORCELAIN_TOWER_CHAPTER_HISTORY_PARA_1" Language="de_DE">
+			<Text>Der im 15. Jahrhundert unter der Ming-Dynastie erbaute Porzellanturm von Nanjing war eine der außergewöhnlichsten architektonischen Errungenschaften der chinesischen Geschichte. Der Turm hatte einen Durchmesser von etwa 30 Metern (97 Fuß) und eine Höhe von 79 Metern (260 Fuß).</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_WONDERS_PAGE_BUILDING_PORCELAIN_TOWER_CHAPTER_HISTORY_PARA_2" Language="de_DE">
+			<Text>Die Fassade des Gebäudes bestand aus weißen Porzellansteinen, die im Sonnenlicht wie Spiegel glänzten. Nachts war der Turm von oben bis unten mit über 100 Lampen geschmückt. Der Turm stand bis 1854 im Zentrum von Nanjing, bis er während des Taiping-Aufstands zerstört wurde.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_WONDERS_PAGE_BUILDING_PORCELAIN_TOWER_CHAPTER_HISTORY_PARA_3" Language="de_DE">
+			<Text></Text>
+		</Replace>
+		<Replace Tag="LOC_RESOURCE_PORCELAIN_NAME" Language="de_DE">
+			<Text>Porzellan</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_RESOURCES_PAGE_RESOURCE_PORCELAIN_CHAPTER_HISTORY_PARA_1" Language="de_DE">
+			<Text>Porzellan ist ein keramisches Material, das durch das Erhitzen von Materialien, zu denen in der Regel Kaolin gehört, in einem Brennofen auf Temperaturen zwischen 1.200 und 1.400 °C (2.200 und 2.600 °F) hergestellt wird. Die Zähigkeit, Festigkeit und Transluzenz von Porzellan im Vergleich zu anderen Keramikarten resultieren hauptsächlich aus der Verglasung und der Bildung des Minerals Mullit im Scherben bei diesen hohen Temperaturen. Obwohl die Definitionen variieren, lässt sich Porzellan in drei Hauptkategorien einteilen: Hartporzellan, Weichporzellan und Bone China. Zu welcher Kategorie ein Objekt gehört, hängt von der Zusammensetzung der Masse ab, aus der der Scherben des Porzellanobjekts hergestellt wurde, sowie von den Brennbedingungen.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_RESOURCES_PAGE_RESOURCE_PORCELAIN_CHAPTER_HISTORY_PARA_2" Language="de_DE">
+			<Text>Porzellan entwickelte sich in China allmählich und wurde (je nach Definition) schließlich vor etwa 2.000 bis 1.200 Jahren perfektioniert; von dort aus verbreitete es sich langsam in andere ostasiatische Länder und schließlich nach Europa und in den Rest der Welt. Sein Herstellungsprozess ist anspruchsvoller als der von Steingut und Ton, den beiden anderen Hauptarten von Keramik, und es gilt aufgrund seiner Zartheit, Festigkeit und seiner weißen Farbe seit jeher als die prestigeträchtigste Art von Keramik. Es lässt sich gut mit Glasuren und Farben kombinieren und sehr gut formen, was eine große Bandbreite an dekorativen Gestaltungsmöglichkeiten bei Geschirr, Gefäßen und Figuren ermöglicht. Auch in Technik und Industrie findet es vielfältige Verwendung.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_RESOURCES_PAGE_RESOURCE_PORCELAIN_CHAPTER_HISTORY_PARA_3" Language="de_DE">
+			<Text>Der europäische Name „Porzellan“ (engl. porcelain) leitet sich vom altitalienischen Wort „porcellana“ (Kaurimuschel) ab, da es der Oberfläche der Muschel ähnelt. In einigen englischsprachigen Ländern wird Porzellan auch als „China“ oder „Fine China“ bezeichnet, da es erstmals in Importwaren aus China auftauchte. Zu den Eigenschaften von Porzellan zählen geringe Durchlässigkeit und Elastizität, beträchtliche Festigkeit, Härte, Zähigkeit, Weißgrad, Transluzenz und Resonanz sowie eine hohe Beständigkeit gegen chemische Einflüsse und Temperaturschocks.</Text>
+		</Replace>
 		
 		<!-- == NEW CIVILIZATIONS AND LEADERS == -->
 		
@@ -7877,7 +7977,7 @@
 			<Text>Es ist jedoch nicht unwahrscheinlich, dass diese Geschichte einen wahren Kern hat. Die Politik von Teotihuacan und ganz Mesoamerika muss komplex gewesen sein, und genau wie Rom und China große Staatsmänner hatten, könnte auch Teotihuacan solche gehabt haben. Vielleicht war der Spearthrower Owl ursprünglich ein Adliger in der Stadt mit großem politischen Scharfsinn und Macht, dessen Name dann zu einem Amt und schließlich zu einem Gott wurde. Wie auch immer, und ob er nun wirklich existiert hat oder nicht, der Spearthrower Owl warf einen langen Schatten über die Region, und sein Name und seine Taten hallen durch die Zeit wider – selbst heute noch, wenn auch nur schwach.</Text>
 		</Replace>
 		
-		<!--  uNIQUE gOVERNOR STUFF  -->
+		<!--  UNIQUE GOVERNOR STUFF  -->
 		
 		<Replace Tag="LOC_GOVERNOR_LIME_TEO_OWL_EMISSARY_NAME" Language="de_DE">
 			<Text>Fire Is Born</Text>
@@ -9863,6 +9963,2014 @@
 		</Replace>
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_SUK_VERCINGETORIX_DLC_CHAPTER_HISTORY_PARA_7" Language="de_DE">
 			<Text>Die Römer, die ebenfalls tiefe Gräben ausgehoben hatten, warteten einfach darauf, dass Vercingetorix und die keltische Armee keine Vorräte mehr hatten. Vercingetorix schickte Vorstöße aus, um gegen die römischen Soldaten zu kämpfen, aber schlechte Kommunikation und Koordination plagten die schlecht organisierten Kelten, und sie erlitten zahlreiche Rückschläge. Vercingetorix' Cousin Vercassivellaunus kämpfte in einem koordinierten Angriff von hinten, konnte jedoch die römische Linie nicht durchbrechen. Die keltischen Truppen, die den Römern von außen gegenüberstanden, erkannten die Sinnlosigkeit ihrer Bemühungen und gaben Alesia auf. Als Alesia kapitulierte, forderte Caesar nicht nur alle Waffen der Kelten, sondern auch ihren Anführer. Vercingetorix sagte seinen Kollegen, dass sie ihn den Römern entweder tot oder lebendig ausliefern könnten, ganz nach deren Wunsch. Es wurde beschlossen, ihn lebend auszuliefern. Plutarch zufolge bereitete sich Vercingetorix vor, indem er „seine beste Rüstung anzog, sein Pferd schmückte, [dann] aus dem Tor ritt, eine Runde um Caesar drehte, während dieser saß, dann von seinem Pferd stieg, seine Rüstung abwarf und ruhig zu Caesars Füßen sitzen blieb, bis er weggeführt wurde, um für den Triumph aufbewahrt zu werden“. Es war seine letzte Handlung als freier Mann, denn dann wurde er in Gewahrsam genommen und mit Caesar nach Rom zurückgebracht, wo eine 20-tägige öffentliche Danksagung für die nicht unbedeutende Eroberung Galliens abgehalten wurde. Vercingetorix wurde angeblich bei der offiziellen Siegesparade hinter Caesars Streitwagen hergeschleift. Er starb um 46 v. Chr. in Rom.</Text>
+		</Replace>
+		
+		<!-- = Maria Theresia - Östereich = -->
+		
+		<!-- = BBGExpanded\Europe\Austria\core = -->
+		
+		<!-- = Austria_GameText = -->
+		
+		<Replace Tag="LOC_LEADER_MER_MARIA_THERESA_NAME" Language="de_DE">
+			<Text>Maria Theresia</Text>
+		</Replace>
+		
+		<!--Traits-->
+		
+		<!--<Replace Tag="LOC_TRAIT_LEADER_MER_THERESIAN_REFORM_NAME" Language="de_DE">
+			<Text>Die Theresianischen Reformen</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_MER_THERESIAN_REFORM_DESCRIPTION" Language="de_DE">
+			<Text>Established [ICON_Governor] Governors provide +1 [ICON_Favor] Favor, +1 [ICON_InfluencePerTurn] Influence point per turn and +20% [ICON_Production] Production towards districts in their city. Specialty districts provide +1 [ICON_Housing] Housing when a District of that type already exists in the [ICON_Capital] Capital. Receive a free Melee unit when any [ICON_Governor] Governor is first established in each city. </Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_MER_CROWNLANDS_NAME" Language="de_DE">
+			<Text>Politische Hochzeit</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_MER_CROWNLANDS_DESCRIPTION" Language="de_DE">
+			<Text>Erhalte jedesmal einen "Großen Diplomaten", wenn ein [ICON_BUILDINGS] Gebäude im [ICON_DISTRICT_GOVERNMENT] Regierungsplatz-Bezirk gebaut wurde.[NEWLINE][NEWLINE][ICON_BULLETGLOW] Startbedingungen: Keine.</Text>
+		</Replace>-->
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_UNIT_MER_GRENZER_NAME" Language="de_DE">
+			<Text>Grenzer</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_UNIT_MER_GRENZER_DESCRIPTION" Language="de_DE">
+			<Text>Eine einzigartige Aufklärungs-[ICON_UNIT] Einheit</Text>
+		</Replace>
+		<!--<Replace Tag="LOC_UNIT_MER_GRENZER_NAME" Language="de_DE">
+			<Text>Grenzer</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_MER_GRENZER_DESCRIPTION" Language="de_DE">
+			<Text>Diese Aufklärungs-[ICON_UNIT] Einheit des Industriezeitalters ist einzigartig für Österreich, wird nach Erforschung der Technologie "Drall" freigeschaltet, ersetzt den "Ranger", gewährt dessen Boni und zusätzlich:[NEWLINE][NEWLINE]• +5 Grund-[ICON_Ranged] Fernkampfstärke.[NEWLINE]• +5 [ICON_STRENGTH] Kampfstärke im Umkreis von 3 Feldern an den Grenzen deines Reiches.[NEWLINE]• Erzeugt eine Kontrollzone.</Text>
+		</Replace>
+		<Replace Tag="LOC_MODIFIER_MER_GRENZER_NEAR_TERRITORY_DESC" Language="de_DE">
+			<Text>+5 [ICON_STRENGTH] Kampfstärke im Umkreis von 3 Feldern an den Grenzen deines Reiches.</Text>
+		</Replace>-->
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_BUILDING_MER_COFFEE_HOUSE_NAME" Language="de_DE">
+			<Text>Kaffeehaus</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_BUILDING_MER_COFFEE_HOUSE_DESCRIPTION" Language="de_DE">
+			<Text>Ein einzigartiges [ICON_BUILDINGS] Gebäude</Text>
+		</Replace>
+		<!--<Replace Tag="LOC_BUILDING_MER_COFFEE_HOUSE_NAME" Language="de_DE">
+			<Text>Kaffeehaus</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_MER_COFFEE_HOUSE_DESCRIPTION" Language="de_DE">
+			<Text>Dieses [ICON_BUILDINGS] Gebäude des Industriezeitalters ist einzigartig für Österreich, wird nach Erforschung der Ausrichtung "Naturgeschichte" freigeschaltet und ersetzt den "Zoo":[NEWLINE][NEWLINE]• +1 [ICON_SCIENCE] Wissenschaft und +1 [ICON_CULTURE] Kultur für jedes [ICON_DISTRICT] Spezial-Bezirk.[NEWLINE]• +2 [ICON_AMENITIES] Annehmlichkeit für jedes [ICON_DISTRICT_CITY_CENTER] Stadtzentrum innerhalb von 6 Feldern (gilt nur einmal pro [ICON_DISTRICT_CITY_CENTER] Stadt und ist nicht stapelbar mit weiteren "Kaffeehäusern").[NEWLINE]• Erhalte einen aktiven [ICON_THEMEBONUS_ACTIVE] Themen-Bonus, wenn die Großen Werk-Plätze mit Großen Werken von verschiedenen [ICON_GREATPERSON] Großen Persöhnlichkeiten stammen.</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_THEMINGBONUS_COFFEEHOUSE" Language="de_DE">
+			<Text>Erhalte einen aktiven [ICON_THEMEBONUS_ACTIVE] Themen-Bonus, wenn die Großen Werk-Plätze mit Großen Werken von verschiedenen [ICON_GREATPERSON] Großen Persöhnlichkeiten stammen.</Text>
+		</Replace>-->
+		<Replace Tag="LOC_CIVILIZATION_MER_AUSTRIA_NAME" Language="de_DE">
+			<Text>Österreich</Text>
+		</Replace>
+		<Replace Tag="LOC_CIVILIZATION_MER_AUSTRIA_DESCRIPTION" Language="de_DE">
+			<Text>Österreich</Text>
+		</Replace>
+		<Replace Tag="LOC_CIVILIZATION_MER_AUSTRIA_DESCRIPTION_JFD_CIVILIZATION" Language="de_DE">
+			<Text>Österreichische Zivilisation</Text>
+		</Replace>
+		<Replace Tag="LOC_CIVILIZATION_MER_AUSTRIA_ADJECTIVE"	  Language="de_DE">
+			<Text>österreichisch</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_AUSTRIA_1" Language="de_DE">
+			<Text>Wien</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_AUSTRIA_2" Language="de_DE">
+			<Text>Graz</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_AUSTRIA_3" Language="de_DE">
+			<Text>Salzburg</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_AUSTRIA_4" Language="de_DE">
+			<Text>Innsbruck</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_AUSTRIA_5" Language="de_DE">
+			<Text>Linz</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_AUSTRIA_6" Language="de_DE">
+			<Text>Klagenfurt</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_AUSTRIA_7" Language="de_DE">
+			<Text>Sankt Pölten</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_AUSTRIA_8" Language="de_DE">
+			<Text>Krems</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_AUSTRIA_9" Language="de_DE">
+			<Text>Lienz</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_AUSTRIA_10" Language="de_DE">
+			<Text>Wiener Neustadt</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_AUSTRIA_11" Language="de_DE">
+			<Text>Melk</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_AUSTRIA_12" Language="de_DE">
+			<Text>Feldkirch</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_AUSTRIA_13" Language="de_DE">
+			<Text>Villach</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_AUSTRIA_14" Language="de_DE">
+			<Text>Bregenz</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_AUSTRIA_15" Language="de_DE">
+			<Text>Steyr</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_AUSTRIA_16" Language="de_DE">
+			<Text>Schwaz</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_AUSTRIA_17" Language="de_DE">
+			<Text>Eisenstadt</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_AUSTRIA_18" Language="de_DE">
+			<Text>Wels</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_AUSTRIA_19" Language="de_DE">
+			<Text>Sankt Veit an der Glan</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_AUSTRIA_20" Language="de_DE">
+			<Text>Judenburg</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_AUSTRIA_21" Language="de_DE">
+			<Text>Gurk</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_AUSTRIA_22" Language="de_DE">
+			<Text>Klosterneuburg</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_AUSTRIA_23" Language="de_DE">
+			<Text>Gmunden</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_AUSTRIA_24" Language="de_DE">
+			<Text>Leoben</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_AUSTRIA_25" Language="de_DE">
+			<Text>Kitzbühel</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_AUSTRIA_26" Language="de_DE">
+			<Text>Enns</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_AUSTRIA_27" Language="de_DE">
+			<Text>Dornbirn</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_AUSTRIA_28" Language="de_DE">
+			<Text>Friesach</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_AUSTRIA_29" Language="de_DE">
+			<Text>Gloggnitz</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_AUSTRIA_30" Language="de_DE">
+			<Text>Bruck an der Leitha</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_AUSTRIA_31" Language="de_DE">
+			<Text>Laxenburg</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_AUSTRIA_32" Language="de_DE">
+			<Text>Spittal an der Drau</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_AUSTRIA_33" Language="de_DE">
+			<Text>Seckau</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_AUSTRIA_34" Language="de_DE">
+			<Text>Mattersburg</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_AUSTRIA_35" Language="de_DE">
+			<Text>Wolfsberg</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_AUSTRIA_36" Language="de_DE">
+			<Text>Freistadt</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_AUSTRIA_37" Language="de_DE">
+			<Text>Bad Gastein</Text>
+		</Replace>
+		
+		<!--Citizens-->
+		
+		<Replace Tag="LOC_CITIZEN_MER_AUSTRIA_MALE_1" Language="de_DE">
+			<Text>Lukas</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_AUSTRIA_MALE_2" Language="de_DE">
+			<Text>Tobias</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_AUSTRIA_MALE_3" Language="de_DE">
+			<Text>Moritz</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_AUSTRIA_MALE_4" Language="de_DE">
+			<Text>Jäger</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_AUSTRIA_MALE_5" Language="de_DE">
+			<Text>Erwin</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_AUSTRIA_MALE_6" Language="de_DE">
+			<Text>Sigmund</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_AUSTRIA_MALE_7" Language="de_DE">
+			<Text>Sebastian</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_AUSTRIA_MALE_8" Language="de_DE">
+			<Text>Ludwig</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_AUSTRIA_MALE_9" Language="de_DE">
+			<Text>Wolfgang</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_AUSTRIA_MALE_10" Language="de_DE">
+			<Text>Aberle</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_AUSTRIA_FEMALE_1" Language="de_DE">
+			<Text>Anna</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_AUSTRIA_FEMALE_2" Language="de_DE">
+			<Text>Carli</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_AUSTRIA_FEMALE_3" Language="de_DE">
+			<Text>Janica</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_AUSTRIA_FEMALE_4" Language="de_DE">
+			<Text>Laura</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_AUSTRIA_FEMALE_5" Language="de_DE">
+			<Text>Karla</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_AUSTRIA_FEMALE_6" Language="de_DE">
+			<Text>Therese</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_AUSTRIA_FEMALE_7" Language="de_DE">
+			<Text>Viveka</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_AUSTRIA_FEMALE_8" Language="de_DE">
+			<Text>Sophie</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_AUSTRIA_FEMALE_9" Language="de_DE">
+			<Text>Lisa</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_AUSTRIA_FEMALE_10" Language="de_DE">
+			<Text>Farahilde</Text>
+		</Replace>
+		
+		<!--Citizens Modern-->
+		
+		<Replace Tag="LOC_CITIZEN_MER_AUSTRIA_MODERN_MALE_1" Language="de_DE">
+			<Text>Lukas</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_AUSTRIA_MODERN_MALE_2" Language="de_DE">
+			<Text>Tobias</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_AUSTRIA_MODERN_MALE_3" Language="de_DE">
+			<Text>Moritz</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_AUSTRIA_MODERN_MALE_4" Language="de_DE">
+			<Text>Jäger</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_AUSTRIA_MODERN_MALE_5" Language="de_DE">
+			<Text>Erwin</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_AUSTRIA_MODERN_MALE_6" Language="de_DE">
+			<Text>Sigmund</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_AUSTRIA_MODERN_MALE_7" Language="de_DE">
+			<Text>Sebastian</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_AUSTRIA_MODERN_MALE_8" Language="de_DE">
+			<Text>Ludwig</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_AUSTRIA_MODERN_MALE_9" Language="de_DE">
+			<Text>Wolfgang</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_AUSTRIA_MODERN_MALE_10" Language="de_DE">
+			<Text>Aberle</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_AUSTRIA_MODERN_FEMALE_1" Language="de_DE">
+			<Text>Anna</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_AUSTRIA_MODERN_FEMALE_2" Language="de_DE">
+			<Text>Carli</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_AUSTRIA_MODERN_FEMALE_3" Language="de_DE">
+			<Text>Janica</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_AUSTRIA_MODERN_FEMALE_4" Language="de_DE">
+			<Text>Laura</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_AUSTRIA_MODERN_FEMALE_5" Language="de_DE">
+			<Text>Karla</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_AUSTRIA_MODERN_FEMALE_6" Language="de_DE">
+			<Text>Therese</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_AUSTRIA_MODERN_FEMALE_7" Language="de_DE">
+			<Text>Viveka</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_AUSTRIA_MODERN_FEMALE_8" Language="de_DE">
+			<Text>Sophie</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_AUSTRIA_MODERN_FEMALE_9" Language="de_DE">
+			<Text>Lisa</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_AUSTRIA_MODERN_FEMALE_10" Language="de_DE">
+			<Text>Farahilde</Text>
+		</Replace>
+		
+		<!--Terrain Names-->
+		
+		<Replace Tag="LOC_NAMED_VOLCANO_AUSTRIA_NAME"	Language="de_DE">
+			<Text>Riegersburg</Text>
+		</Replace>
+		<Replace Tag="LOC_NAMED_MOUNTAIN_AUSTRIA_1_NAME"	Language="de_DE">
+			<Text>Zillertaler Alpen</Text>
+		</Replace>
+		<Replace Tag="LOC_NAMED_MOUNTAIN_AUSTRIA_2_NAME"	Language="de_DE">
+			<Text>Hohe Tauern</Text>
+		</Replace>
+		<Replace Tag="LOC_NAMED_MOUNTAIN_AUSTRIA_3_NAME"	Language="de_DE">
+			<Text>Ötztaler Alpen</Text>
+		</Replace>
+		
+		<!-- = Diplo Text = -->
+		
+		<!--Pedia-->
+		<Replace Tag="LOC_CIVINFO_MER_AUSTRIA_LOCATION" Language="de_DE">
+			<Text>Österreich</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_MER_AUSTRIA_CHAPTER_HISTORY_PARA_1" Language="de_DE">
+			<Text>Österreich ist ein deutschsprachiges Land in Mitteleuropa, das sich durch Bergdörfer, barocke Architektur, kaiserliche Geschichte und raue Alpenlandschaft auszeichnet. In Wien, der an der Donau gelegenen Hauptstadt, befinden sich die Schlösser Schönbrunn und Hofburg. Zu den berühmten Einwohnern des Landes zählen Mozart, Strauss und Freud. Zu den weiteren sehenswerten Regionen des Landes zählen der nördliche Böhmerwald, der Traunsee und die Weinberge an den Hängen im Osten.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_MER_AUSTRIA_CHAPTER_HISTORY_PARA_2" Language="de_DE">
+			<Text>Österreich stand von 1273 bis 1918 unter der Herrschaft des Hauses Habsburg und des Hauses Habsburg-Lothringen (Haus Österreich). Als Kaiser Franz II. von Österreich 1808 das Heilige Römische Reich auflöste, wurde Österreich zum Österreichischen Kaiserreich und gehörte bis zum Deutsch-Preußischen Krieg von 1866 auch dem Deutschen Bund an. Im Jahr 1867 bildete Österreich mit Ungarn eine Doppelmonarchie: das Österreichisch-Ungarische Reich (1867–1918). Als dieses Reich nach dem Ende des Ersten Weltkriegs 1918 zusammenbrach, schrumpfte Österreich auf die wichtigsten, überwiegend deutschsprachigen Gebiete des Reiches (seine heutigen Grenzen) und nahm den Namen Republik Deutsch-Österreich an. Die Union und der Name wurden jedoch von den Alliierten im Vertrag von Versailles verboten. Dies führte zur Gründung der Ersten Österreichischen Republik (1918–1933). </Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_MER_AUSTRIA_CHAPTER_HISTORY_PARA_3" Language="de_DE">
+			<Text>Nach der Ersten Republik versuchte der Austrofaschismus, Österreich vom Deutschen Reich unabhängig zu halten. Engelbert Dollfuss akzeptierte, dass die meisten Österreicher sowohl Deutsche als auch Österreicher waren, wollte aber, dass Österreich unabhängig von Deutschland blieb. 1938 annektierte der in Österreich geborene Adolf Hitler Österreich im Rahmen des Anschlusses an das Deutsche Reich, was von einer großen Mehrheit der österreichischen Bevölkerung unterstützt wurde. Zehn Jahre nach dem Zweiten Weltkrieg wurde Österreich 1955 als Zweite Republik wieder eine unabhängige Republik. </Text>
+		</Replace>
+		
+		<!--DOM-->
+		
+		<Replace Tag="LOC_LOADING_INFO_LEADER_MER_MARIA_THERESA" Language="de_DE">
+			<Text>Möge Gott dich segnen und beschützen, Maria Theresia, Herrin der Wendenmark und Kaiserin von Österreich. Es war Eure Pflicht und Eure Hoffnung, die weiten Gebiete der Kronländer zu einer einzigen Nation zu vereinen, mit einer gemeinsamen Vision und einem gemeinsamen Glauben an sich selbst und ihre Majestät. Durch Diplomatie, gute Regierungsführung und die Förderung der hohen Künste wird Eure Nation gedeihen, doch das Schwert muss Österreich ebenso dienen wie die Feder. Euer Kampf um die Hoffnung beginnt, meine Dame. Und er beginnt heute.</Text>
+		</Replace>
+		
+		<!--Agenda-->
+		
+		<Replace Tag="LOC_AGENDA_MER_THERESA_AGENDA_NAME" Language="de_DE">
+			<Text>Staatskirche</Text>
+		</Replace>
+		<Replace Tag="LOC_AGENDA_MER_THERESA_AGENDA_DESCRIPTION" Language="de_DE">
+			<Text>Sie mag Zivilisationen, die dieselbe Regierungsform und Religion haben wie sie, und hasst diejenigen, die eine andere Regierungsform und Religion haben.</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_KUDOS_LEADER_MER_MARIA_THERESA_REASON_RELIGION" Language="de_DE">
+			<Text>(Ihr habt dieselbe Regierung und dieselbe Religion)</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_MODIFIER_MER_MARIA_THERESA_THERESA_AGENDA_SAME_REL_GOV" Language="de_DE">
+			<Text>Maria Theresia lobt eure gemeinsame Regierung und Religion.</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_WARNING_LEADER_MER_MARIA_THERESA_REASON_NO_RELIGION" Language="de_DE">
+			<Text>(Ihr habt keine gemeinsame Regierung und Religion)</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_MODIFIER_MER_MARIA_THERESA_THERESA_AGENDA_DIFF_REL_GOV" Language="de_DE">
+			<Text>Maria Theresia hasst eure Regierung und eure Religion.</Text>
+		</Replace>
+		
+		<!--Civilopedia-->
+		
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_MER_MARIA_THERESA_TITLE" Language="de_DE">
+			<Text>Maria Theresia</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_MER_MARIA_THERESA_SUBTITLE" Language="de_DE">
+			<Text>Römisch-deutsche Kaiserin, Erzherzogin von Österreich, Königin von Ungarn und Kroatien</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_MER_MARIA_THERESA_QUOTE" Language="de_DE">
+			<Text>Ich allein war es, der in all diesen Prüfungen noch den größten Mut hatte, in kindlichem Vertrauen und durch häufiges Gebet Gottes Beistand zu erbitten.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_MER_MARIA_THERESA_CHAPTER_HISTORY_PARA_1" Language="de_DE">
+			<Text>Maria Theresia Walburga Amalia Christina war die einzige weibliche Herrscherin der Habsburger Reiche und die letzte Vertreterin des Hauses Habsburg. Sie war Herrscherin über Österreich, Ungarn, Kroatien, Böhmen, Siebenbürgen, Mantua, Mailand, Lodomerien und Galizien, die Österreichischen Niederlande sowie Parma. Durch Heirat war sie Herzogin von Lothringen, Großherzogin der Toskana und Kaiserin des Heiligen Römischen Reiches.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_MER_MARIA_THERESA_CHAPTER_HISTORY_PARA_2" Language="de_DE">
+			<Text>Sie trat ihre 40-jährige Regierungszeit an, als ihr Vater, Kaiser Karl VI., im Oktober 1740 starb. Karl VI. hatte mit der Pragmatischen Sanktion von 1713 den Weg für ihre Thronbesteigung geebnet und seine gesamte Regierungszeit damit verbracht, diese zu sichern. Nach dem Tod ihres Vaters lehnten Sachsen, Preußen, Bayern und Frankreich die Sanktion ab, die sie zu seinen Lebzeiten anerkannt hatten. Friedrich II. von Preußen (der während des größten Teils ihrer Regierungszeit Maria Theresias größter Rivale wurde) fiel umgehend ein und eroberte die wohlhabende Habsburger Provinz Schlesien in dem siebenjährigen Konflikt, der als Österreichischer Erbfolgekrieg bekannt ist. Im Laufe des Krieges gelang es Maria Theresia trotz des Verlusts Schlesiens und einiger kleinerer Gebiete in Italien, ihre Herrschaft über den größten Teil des Habsburgerreichs erfolgreich zu verteidigen. Später versuchte Maria Theresia während des Siebenjährigen Krieges erfolglos, Schlesien zurückzuerobern.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_MER_MARIA_THERESA_CHAPTER_HISTORY_PARA_3" Language="de_DE">
+			<Text>Maria Theresia und ihr Ehemann, Franz I., Kaiser des Heiligen Römischen Reiches, hatten elf Töchter, darunter die Königin von Frankreich, die Königin von Neapel und Sizilien sowie die Herzogin von Parma, und fünf Söhne, darunter zwei Kaiser des Heiligen Römischen Reiches, Joseph II. und Leopold II. Von den sechzehn Kindern erreichten zehn das Erwachsenenalter. Obwohl von ihr erwartet wurde, die Macht an Franz und Joseph abzugeben, die beide offiziell ihre Mitregenten in Österreich und Böhmen waren, war Maria Theresia die absolute Herrscherin, die auf den Rat ihrer Berater hin regierte. Sie kritisierte viele von Josephs Handlungen und missbilligte sie. Maria Theresia war sich der Bedeutung ihrer öffentlichen Rolle bewusst und vermochte bei ihren Untertanen gleichzeitig sowohl Hochachtung als auch Zuneigung zu wecken.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_MER_MARIA_THERESA_CHAPTER_CAPSULE_BODY" Language="de_DE">
+			<Text>Österreich konzentriert sich auf Stadtentwicklung und Stadt-Staat-Diplomatie. </Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_MER_MARIA_THERESA_CHAPTER_DETAILED_BODY" Language="de_DE">
+			<Text>Maria Theresias Österreich konzentriert sich darauf, ihre Städte und die Hauptstadt auszubauen, um ihnen Boni zu verschaffen.</Text>
+		</Replace>
+		
+		<!--Diplomacy-->
+		
+		<!--FIRST MEET-->
+		<!--First AI line-->
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_LEADER_MER_MARIA_THERESA_ANY" Language="de_DE">
+			<Text>Die Erzherzogin von Österreich heißt Eure Eminenz willkommen in… Ach, bringen wir es hinter uns! Ich habe um vier Uhr eine Mittagessenverabredung.</Text>
+		</Replace>
+		<!--AI invitation to visit nearby City-->
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_VISIT_RECIPIENT_LEADER_MER_MARIA_THERESA_ANY" Language="de_DE">
+			<Text>Besuchen Sie unsere schöne Stadt, es gibt viel zu sehen.</Text>
+		</Replace>
+		<!--AI accepts Human invitation-->
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_NEAR_INITIATOR_POSITIVE_LEADER_MER_MARIA_THERESA_ANY" Language="de_DE">
+			<Text>Ich würde sehr gerne vorbeikommen. Ich habe meinen Palast schon viel zu lange nicht mehr verlassen.</Text>
+		</Replace>
+		<!--AI invitation to exchange Capital Information-->
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_NO_MANS_INFO_EXCHANGE_LEADER_MER_MARIA_THERESA_ANY" Language="de_DE">
+			<Text>Wir sollten Informationen austauschen.</Text>
+		</Replace>
+		
+		<!--GREETINGS-->
+		<Replace Tag="LOC_DIPLO_GREETING_LEADER_MER_MARIA_THERESA_ANY" Language="de_DE">
+			<Text>Ich höre zu. </Text>
+		</Replace>
+		
+		<!--DELEGATION-->
+		<!--AI Accepts-->
+		<Replace Tag="LOC_DIPLO_ACCEPT_DELEGATION_FROM_HUMAN_LEADER_MER_MARIA_THERESA_ANY" Language="de_DE">
+			<Text>Ich danke Ihnen, das wird sicher sehr unterhaltsam.</Text>
+		</Replace>
+		<!--AI Rejects-->
+		<Replace Tag="LOC_DIPLO_REJECT_DELEGATION_FROM_HUMAN_LEADER_MER_MARIA_THERESA_ANY" Language="de_DE">
+			<Text>Ich möchte im Moment keinen Besuch.</Text>
+		</Replace>
+		<!--AI Requests-->
+		<Replace Tag="LOC_DIPLO_DELEGATION_FROM_AI_LEADER_MER_MARIA_THERESA_ANY" Language="de_DE">
+			<Text>Ich habe eine Delegation mit bestem Kaffee und Strudel geschickt. Ich hoffe, es schmeckt Ihnen; das ist eine hervorragende Vorspeise.</Text>
+		</Replace>
+		
+		<!--OPEN BORDERS-->
+		<!--AI accepts from human-->
+		<Replace Tag="LOC_DIPLO_ACCEPT_OPEN_BORDERS_FROM_HUMAN_LEADER_MER_MARIA_THERESA_ANY" Language="de_DE">
+			<Text>Das ist in Ordnung.</Text>
+		</Replace>
+		<!--AI rejects from human-->
+		<Replace Tag="LOC_DIPLO_REJECT_OPEN_BORDERS_FROM_HUMAN_LEADER_MER_MARIA_THERESA_ANY" Language="de_DE">
+			<Text>Dem kann ich nicht zustimmen.</Text>
+		</Replace>
+		<!--AI requests from human-->
+		<Replace Tag="LOC_DIPLO_OPEN_BORDERS_FROM_AI_LEADER_MER_MARIA_THERESA_ANY" Language="de_DE">
+			<Text>Gemeinsame Grenzen werden es unseren Völkern ermöglichen, zusammenzuwachsen, und werden nur dazu beitragen, unsere Kulturen zu bereichern.</Text>
+		</Replace>
+		
+		<!--DECLARE FRIENDSHIP-->
+		<!--AI accepts from human-->
+		<Replace Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_HUMAN_LEADER_MER_MARIA_THERESA_ANY" Language="de_DE">
+			<Text>Das nehme ich gerne an! Unsere Freundschaft wird unseren Königreichen zugutekommen.</Text>
+		</Replace>
+		<!--AI Rejects from human-->
+		<Replace Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_HUMAN_LEADER_MER_MARIA_THERESA_ANY" Language="de_DE">
+			<Text>Ich kann mich nicht mit jemandem wie dir anfreunden.</Text>
+		</Replace>
+		<!--AI Requests friendship from human-->
+		<Replace Tag="LOC_DIPLO_DECLARE_FRIEND_FROM_AI_LEADER_MER_MARIA_THERESA_ANY" Language="de_DE">
+			<Text>Eine Freundschaft zwischen uns wäre für unser gesamtes Volk von Vorteil.</Text>
+		</Replace>
+		<!--Human accepts AI requests, AI responds-->
+		<Replace Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_AI_LEADER_MER_MARIA_THERESA_ANY" Language="de_DE">
+			<Text>Ich denke, das ist wohl das Beste.</Text>
+		</Replace>
+		<!--Human rejects AI requests, AI responds-->
+		<Replace Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_AI_LEADER_MER_MARIA_THERESA_ANY" Language="de_DE">
+			<Text>Wie bitte?!</Text>
+		</Replace>
+		
+		<!--ALLIANCE-->
+		<!--AI Requests an alliance from human-->
+		<Replace Tag="LOC_DIPLO_MAKE_ALLIANCE_FROM_AI_LEADER_MER_MARIA_THERESA_ANY" Language="de_DE">
+			<Text>Niemand soll behaupten, ich sei eine ungerechte Frau. Lass uns eine Einigung erzielen! </Text>
+		</Replace>
+		
+		<!--KUDOS & WARNINGS-->
+		<!--AI Kudos-->
+		<Replace Tag="LOC_DIPLO_KUDO_EXIT_LEADER_MER_MARIA_THERESA_ANY" Language="de_DE">
+			<Text>Ich gratuliere dir zu deinen klugen Entscheidungen. Du weißt am besten, wie man regiert.</Text>
+		</Replace>
+		<!--AI Warnings-->
+		<Replace Tag="LOC_DIPLO_WARNING_EXIT_LEADER_MER_MARIA_THERESA_ANY" Language="de_DE">
+			<Text>Dein Glaube und deine Art zu regieren sind töricht, und dein Volk ist blind, weil es dir folgt.</Text>
+		</Replace>
+		<!--AI warns player for border troops-->
+		<Replace Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_LEADER_MER_MARIA_THERESA_ANY" Language="de_DE">
+			<Text>Willst du Krieg? Nein? Dann zieh deine Truppen ab!</Text>
+		</Replace>
+		
+		<!--TRADE-->
+		<!--AI Accepts Deal-->
+		<Replace Tag="LOC_DIPLO_ACCEPT_MAKE_DEAL_FROM_AI_LEADER_MER_MARIA_THERESA_ANY" Language="de_DE">
+			<Text>Ich stimme zu.</Text>
+		</Replace>
+		<!-- AI Rejects Deal -->
+		<Replace Tag="LOC_DIPLO_REJECT_MAKE_DEAL_FROM_AI_LEADER_MER_MARIA_THERESA_ANY" Language="de_DE">
+			<Text>Mach keine Dummheiten.</Text>
+		</Replace>
+		
+		<!--DENOUNCE-->
+		<!--From Human-->
+		<Replace Tag="LOC_DIPLO_DENOUNCE_FROM_HUMAN_LEADER_MER_MARIA_THERESA_ANY" Language="de_DE">
+			<Text>Wie bitte? Das kann doch nicht dein Ernst sein?!</Text>
+		</Replace>
+		<!--From AI-->
+		<Replace Tag="LOC_DIPLO_DENOUNCE_FROM_AI_LEADER_MER_MARIA_THERESA_ANY" Language="de_DE">
+			<Text>Dein Reich braucht einen Herrscher, der im Namen des Volkes viel entschlossener handeln kann. Du bist nicht solch ein Herrscher. (Denunziert dich).</Text>
+		</Replace>
+		<!--Rationale-->
+		<Replace Tag="LOC_DIPLO_DENOUNCE_REASON_FROM_AI_LEADER_ANY_REASON_MER_MARIA_THERESA_THERESA_AGENDA_DIFF_REL_GOV" Language="de_DE">
+			<Text>(Ihr habt keine andere Religion und/oder Regierung)</Text>
+		</Replace>
+		
+		<!--DECLARE WAR-->
+		<!--Human Declares War-->
+		<Replace Tag="LOC_DIPLO_DECLARE_WAR_FROM_HUMAN_LEADER_MER_MARIA_THERESA_ANY" Language="de_DE">
+			<Text>Was bist du doch für ein Dummkopf! Dein Ende wird schnell und elend sein.</Text>
+		</Replace>
+		<!--AI Declares War-->
+		<Replace Tag="LOC_DIPLO_DECLARE_WAR_FROM_AI_LEADER_MER_MARIA_THERESA_ANY" Language="de_DE">
+			<Text>Schade, dass es so weit gekommen ist. Aber du hast es so gewollt. Sei so lieb und wähle deine Worte das nächste Mal mit mehr Bedacht. </Text>
+		</Replace>
+		
+		<!--MAKE PEACE-->
+		<!--AI accepts from human-->
+		<Replace Tag="LOC_DIPLO_MAKE_PEACE_AI_ACCEPT_DEAL_LEADER_MER_MARIA_THERESA_ANY" Language="de_DE">
+			<Text>Ich hoffe, du bist jetzt zufrieden mit dir selbst. All diese alberne Prahlerei, und doch scheint es nichts zu geben, was das untermauern könnte.</Text>
+		</Replace>
+		<!--AI refuses human-->
+		<Replace Tag="LOC_DIPLO_MAKE_PEACE_AI_REFUSE_DEAL_LEADER_MER_MARIA_THERESA_ANY" Language="de_DE">
+			<Text>Auf keinen Fall!</Text>
+		</Replace>
+		<!--AI requests from human-->
+		<Replace Tag="LOC_DIPLO_MAKE_PEACE_FROM_AI_LEADER_MER_MARIA_THERESA_ANY" Language="de_DE">
+			<Text>Das ist furchtbar langweilig.</Text>
+		</Replace>
+		
+		<!--DEFEAT-->
+		<!--AI is Defeated-->
+		<Replace Tag="LOC_DIPLO_DEFEAT_FROM_AI_LEADER_MER_MARIA_THERESA_ANY" Language="de_DE">
+			<Text>Die Welt ist erbärmlich! Es gibt keine Schönheit darin, keine Weisheit. Ich bin fast froh, zu gehen. </Text>
+		</Replace>
+		<!--Human is Defeated (will see this in hotseat)-->
+		<Replace Tag="LOC_DIPLO_DEFEAT_FROM_HUMAN_LEADER_MER_MARIA_THERESA_ANY" Language="de_DE">
+			<Text>Die Welt wird ohne dich weiterbestehen – und ein besserer Ort sein.</Text>
+		</Replace>
+		
+		
+		<!-- = Theoderich - Goten = -->
+		
+		<!-- = BBGExpanded\Europe\Goths\Core = -->
+		
+		<!-- = Goth_GameText = -->
+		
+		<Replace Tag="LOC_LEADER_MER_THEODORIC_NAME" Language="de_DE">
+			<Text>Theoderich</Text>
+		</Replace>
+		
+		<!--Traits-->
+		
+		<!--<Replace Tag="LOC_TRAIT_LEADER_MER_THEODORIC_GOTHORUM_ROMANORUMQUE" Language="de_DE">
+			<Text>Gothorum Romanorumque</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_MER_THEODORIC_GOTHORUM_ROMANORUMQUE_DESCRIPTION" Language="de_DE">
+			<Text>+1 [ICON_MOVEMENT] Bewegung für alle Land-[ICON_UNIT] Einheiten, außer Kavallerie-[ICON_UNIT] Einheiten, im Umkreis von 6 Feldern um einen "Hlaiw".</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_UNIT_MER_MILITOND_NAME" Language="de_DE">
+			<Text>Militōnd</Text>
+		</Replace>-->
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_UNIT_MER_MILITOND_DESCRIPTION" Language="de_DE">
+			<Text>Eine einzigartige Nahkampf-[ICON_UNIT] Einheit.</Text>
+		</Replace>
+		<!--<Replace Tag="LOC_UNIT_MER_MILITOND_NAME" Language="de_DE">
+			<Text>Militōnd</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_MER_MILITOND_DESCRIPTION" Language="de_DE">
+			<Text>Diese Nahkampf-[ICON_UNIT] Einheit der Klassik ist einzigartig für die Goten, wird nach Erforschung der Technologie "Eisenverarbeitung" freigeschaltet, ersetzt den "Schwertkämpfer", gewährt dessen Boni und zusätzlich:[NEWLINE][NEWLINE]• +5 [ICON_STRENGTH] Kampfstärke gegen verteidigungsfähige [ICON_DISTRICT] Bezirke (die [ICON_STRENGTH] Kampfstärke besitzen) und [ICON_UNIT] Einheiten in [ICON_DISTRICT] Bezirken.[NEWLINE]• Erhält eine kostenlose [ICON_PROMOTION] Beförderung nach der Rekrutierung, dem Kauf oder der Verbesserung einer früheren [ICON_UNIT] Einheit.</Text>
+		</Replace>-->
+		<!--<Replace Tag="LOC_MODIFIER_MER_MILITOND_PROMOTION_NAME" Language="de_DE">
+			<Text>Das römische Erbe</Text>
+		</Replace>
+		<Replace Tag="LOC_MODIFIER_MER_MILITOND_PROMOTION_DESC" Language="de_DE">
+			<Text>Kostenlose Beförderung</Text>
+		</Replace>
+		<Replace Tag="LOC_MODIFIER_MER_MILITOND_DISTRICT_NAME" Language="de_DE">
+			<Text>Hundertschaft</Text>
+		</Replace>
+		<Replace Tag="LOC_MODIFIER_MER_MILITOND_DISTRICT_DESC" Language="de_DE">
+			<Text>+5 [ICON_STRENGTH] Kampfstärke gegen verteidigungsfähige [ICON_DISTRICT] Bezirke (die [ICON_STRENGTH] Kampfstärke besitzen) und [ICON_UNIT] Einheiten in [ICON_DISTRICT] Bezirken.</Text>
+		</Replace>-->
+		<!--<Replace Tag="LOC_TRAIT_CIVILIZATION_MER_GOTHIC_MIGRATION_NAME" Language="de_DE">
+			<Text>Völkerwanderung der Goten</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_MER_GOTHIC_MIGRATION_DESCRIPTION" Language="de_DE">
+			<Text>Wenn du eine [ICON_DISTRICT_CITY_CENTER] Stadt gründest oder zum ersten Mal eroberst, erhältst du +1 [ICON_CITIZEN] Bürger in allen deinen [ICON_DISTRICT_CITY_CENTER] Städten im Umkreis von 6 Feldern, in denen mindestens ein freier [ICON_HOUSING] Wohnraum vorhanden ist.[NEWLINE][NEWLINE][ICON_BULLETGLOW] Startbedingungen: Keine.</Text>
+		</Replace>
+		<Replace Tag="LOC_GOTHIC_MIGRATION_POP_GAIN" Language="de_DE">
+			<Text>[ICON_DISTRICT_CITY_CENTER] Stadt erhält: +{1: number #,###.#} [ICON_CITIZEN] Bürger!</Text>
+		</Replace>-->
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_UNIT_MER_GADRAUHT_NAME" Language="de_DE">
+			<Text>Gadrauht</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_UNIT_MER_GADRAUHT_DESCRIPTION" Language="de_DE">
+			<Text>Eine einzigartige Kavallerie-Abwehr-[ICON_UNIT] Einheit.</Text>
+		</Replace>
+		<!--<Replace Tag="LOC_UNIT_MER_GADRAUHT_NAME" Language="de_DE">
+			<Text>Gadrauht</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_MER_GADRAUHT_DESCRIPTION" Language="de_DE">
+			<Text>Diese Kavallerie-Abwehr-[ICON_UNIT] Einheit des Mittelalters ist einzigartig für die Goten, wird nach Erforschung der Technologie "MilitärTaktik" freigeschaltet, ersetzt den "Pikenier", gewährt dessen Boni und zusätzlich:[NEWLINE][NEWLINE]• +5 Grund-[ICON_STRENGTH] Kampfstärke.[NEWLINE]• Das Vernichten von [ICON_UNIT] Einheiten gewährt [ICON_CULTURE] Kultur entsprechend 50% der Grund-[ICON_STRENGTH] Kampfstärke der besiegten [ICON_UNIT] Einheit (Online-Geschwindigkeit).[NEWLINE]• Um einen "Gadrauht" rekrutieren zu können, muss eine [ICON_DISTRICT_CITY_CENTER] Stadt mindestens 2 [ICON_CITIZEN] Bürger haben.[NEWLINE]• Wenn eine [ICON_DISTRICT_CITY_CENTER] Stadt einen "Gadrauht" rekrutiert, verliert sie einen [ICON_CITIZEN] Bürger, wenn sie keinen "Tempel" hat.[NEWLINE][NEWLINE]Verringerte [ICON_PRODUCTION] [ICON_GOLD] Grundkosten.</Text>
+		</Replace>
+		<Replace Tag="LOC_MODIFIER_MER_GADRAUHT_CULTURE_VICTORY_NAME" Language="de_DE">
+			<Text>Drauhtinon</Text>
+		</Replace>
+		<Replace Tag="LOC_MODIFIER_MER_GADRAUHT_CULTURE_VICTORY_DESC" Language="de_DE">
+			<Text>Das Vernichten von [ICON_UNIT] Einheiten gewährt [ICON_CULTURE] Kultur entsprechend 50% der Grund-[ICON_STRENGTH] Kampfstärke der besiegten [ICON_UNIT] Einheit (Online-Geschwindigkeit)</Text>
+		</Replace>-->
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_BUILDING_MER_HLAIW_NAME" Language="de_DE">
+			<Text>Hlaiw</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_BUILDING_MER_HLAIW_DESCRIPTION" Language="de_DE">
+			<Text>Ein einzigartiges [ICON_BUILDINGS] Gebäude</Text>
+		</Replace>
+		<!--<Replace Tag="LOC_BUILDING_MER_HLAIW_NAME" Language="de_DE">
+			<Text>Hlaiw</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_MER_HLAIW_DESCRIPTION" Language="de_DE">
+			<Text>Dieses [ICON_BUILDINGS] Gebäude der Antike ist einzigartig für die Goten, wird nach Erforschung der Technologie "Astrologie" freigeschaltet und ersetzt den "Schrein":[NEWLINE][NEWLINE]• +1 [ICON_CULTURE] Kultur und +1 [ICON_FAITH] Glauben.[NEWLINE]• +0.25 [ICON_CULTURE] Kultur und +0.25 [ICON_FAITH] Glauben pro [ICON_CITIZEN] Bürger in der [ICON_DISTRICT_CITY_CENTER] Stadt.</Text>
+		</Replace>-->
+		<Replace Tag="LOC_CIVILIZATION_MER_GOTHS_NAME" Language="de_DE">
+			<Text>Goten</Text>
+		</Replace>
+		<Replace Tag="LOC_CIVILIZATION_MER_GOTHS_DESCRIPTION" Language="de_DE">
+			<Text>Goten</Text>
+		</Replace>
+		<Replace Tag="LOC_CIVILIZATION_MER_GOTHS_DESCRIPTION_JFD_CIVILIZATION" Language="de_DE">
+			<Text>Die gotische Zivilisation</Text>
+		</Replace>
+		<Replace Tag="LOC_CIVILIZATION_MER_GOTHS_ADJECTIVE"	  Language="de_DE">
+			<Text>gotisch</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_GOTHS_1" Language="de_DE">
+			<Text>Gothiscandza</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_GOTHS_2" Language="de_DE">
+			<Text>Arheimar</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_GOTHS_3" Language="de_DE">
+			<Text>Reccopolis</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_GOTHS_4" Language="de_DE">
+			<Text>Victoriacum</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_GOTHS_5" Language="de_DE">
+			<Text>Lugo</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_GOTHS_6" Language="de_DE">
+			<Text>Ologicus</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_GOTHS_7" Language="de_DE">
+			<Text>Baiyara</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_GOTHS_8" Language="de_DE">
+			<Text>Novae</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_GOTHS_9" Language="de_DE">
+			<Text>Narbo</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_GOTHS_10" Language="de_DE">
+			<Text>Tyras</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_GOTHS_11" Language="de_DE">
+			<Text>Olbia</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_GOTHS_12" Language="de_DE">
+			<Text>Turda</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_GOTHS_13" Language="de_DE">
+			<Text>Apulon</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_GOTHS_14" Language="de_DE">
+			<Text>Oium</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_GOTHS_15" Language="de_DE">
+			<Text>Tyrin</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_GOTHS_16" Language="de_DE">
+			<Text>Skupi</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_GOTHS_17" Language="de_DE">
+			<Text>Oescus</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_GOTHS_18" Language="de_DE">
+			<Text>Sirmum</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_GOTHS_19" Language="de_DE">
+			<Text>Singidunum</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_GOTHS_20" Language="de_DE">
+			<Text>Pavia</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_GOTHS_21" Language="de_DE">
+			<Text>Tarragona</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_GOTHS_22" Language="de_DE">
+			<Text>Saragossa</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_GOTHS_23" Language="de_DE">
+			<Text>Malaga</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_GOTHS_24" Language="de_DE">
+			<Text>Palencia</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_GOTHS_25" Language="de_DE">
+			<Text>Nursia</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_GOTHS_26" Language="de_DE">
+			<Text>Fervir</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_GOTHS_27" Language="de_DE">
+			<Text>Hallin</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_GOTHS_28" Language="de_DE">
+			<Text>Heruler</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_GOTHS_29" Language="de_DE">
+			<Text>Bergio</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MER_GOTHS_30" Language="de_DE">
+			<Text>Theustes</Text>
+		</Replace>
+		
+		<!--Citizens-->
+		
+		<Replace Tag="LOC_CITIZEN_MER_GOTHS_MALE_1" Language="de_DE">
+			<Text>Ariaricus</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_GOTHS_MALE_2" Language="de_DE">
+			<Text>Aoricus</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_GOTHS_MALE_3" Language="de_DE">
+			<Text>Athalaricus</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_GOTHS_MALE_4" Language="de_DE">
+			<Text>Athanaricus</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_GOTHS_MALE_5" Language="de_DE">
+			<Text>Ermanaricus</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_GOTHS_MALE_6" Language="de_DE">
+			<Text>Alatheus</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_GOTHS_MALE_7" Language="de_DE">
+			<Text>Odotheus</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_GOTHS_MALE_8" Language="de_DE">
+			<Text>Alaricus</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_GOTHS_MALE_9" Language="de_DE">
+			<Text>Fritigernus</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_GOTHS_MALE_10" Language="de_DE">
+			<Text>Wingourichos</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_GOTHS_MODERN_MALE_1" Language="de_DE">
+			<Text>Jungericus</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_GOTHS_MODERN_MALE_2" Language="de_DE">
+			<Text>Gainas</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_GOTHS_MODERN_MALE_3" Language="de_DE">
+			<Text>Sigericus</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_GOTHS_MODERN_MALE_4" Language="de_DE">
+			<Text>Athaulphus</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_GOTHS_MODERN_MALE_5" Language="de_DE">
+			<Text>Theodericus</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_GOTHS_MODERN_MALE_6" Language="de_DE">
+			<Text>Ragnaris</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_GOTHS_MODERN_MALE_7" Language="de_DE">
+			<Text>Alfonsus</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_GOTHS_MODERN_MALE_8" Language="de_DE">
+			<Text>Amalric</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_GOTHS_MODERN_MALE_9" Language="de_DE">
+			<Text>Ulfilas</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_GOTHS_MODERN_MALE_10" Language="de_DE">
+			<Text>Marcomir</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_GOTHS_FEMALE_1" Language="de_DE">
+			<Text>Talida</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_GOTHS_FEMALE_2" Language="de_DE">
+			<Text>Bjarka</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_GOTHS_FEMALE_3" Language="de_DE">
+			<Text>Amalda</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_GOTHS_FEMALE_4" Language="de_DE">
+			<Text>Geloyra</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_GOTHS_FEMALE_5" Language="de_DE">
+			<Text>Hunila</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_GOTHS_FEMALE_6" Language="de_DE">
+			<Text>Rasha</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_GOTHS_FEMALE_7" Language="de_DE">
+			<Text>Alisa-Sophie</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_GOTHS_FEMALE_8" Language="de_DE">
+			<Text>Avagisa</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_GOTHS_FEMALE_9" Language="de_DE">
+			<Text>Liuva</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_GOTHS_FEMALE_10" Language="de_DE">
+			<Text>Rautgundis</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_GOTHS_MODERN_FEMALE_1" Language="de_DE">
+			<Text>Rasha</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_GOTHS_MODERN_FEMALE_2" Language="de_DE">
+			<Text>Goisvintha</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_GOTHS_MODERN_FEMALE_3" Language="de_DE">
+			<Text>Mira</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_GOTHS_MODERN_FEMALE_4" Language="de_DE">
+			<Text>Seda</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_GOTHS_MODERN_FEMALE_5" Language="de_DE">
+			<Text>Amalasuintha</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_GOTHS_MODERN_FEMALE_6" Language="de_DE">
+			<Text>Jeanne-Alice</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_GOTHS_MODERN_FEMALE_7" Language="de_DE">
+			<Text>Garsendis</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_GOTHS_MODERN_FEMALE_8" Language="de_DE">
+			<Text>Sunilda</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_GOTHS_MODERN_FEMALE_9" Language="de_DE">
+			<Text>Brunhilda</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_MER_GOTHS_MODERN_FEMALE_10" Language="de_DE">
+			<Text>Elisaweta</Text>
+		</Replace>
+		
+		
+		<!-- = Goth_Diplotexts = -->
+		
+		<!-- LEADER DIPLO TEXT -->
+		
+		<!-- Historical Agenda -->
+		<!-- Agenda -->
+		<Replace Tag="LOC_AGENDA_MER_ROMAN_GOTH_NAME" Language="de_DE">
+			<Text>Romanitas</Text>
+		</Replace>
+		<Replace Tag="LOC_AGENDA_MER_ROMAN_GOTH_DESCRIPTION" Language="de_DE">
+			<Text>Schätzt Zivilisationen, die Stadtviertel errichten und über große stehende Heere verfügen. Mag keine Zivilisationen, die den Bau von Stadtvierteln und die Aufstellung von Heeren vernachlässigen.</Text>
+		</Replace>
+		<!-- Kudos -->
+		<Replace Tag="LOC_DIPLO_MODIFIER_LEADER_MER_THEODORIC_AGENDA_VERY_ROMAN" Language="de_DE">
+			<Text>Theoderich ist von deinem Städtebau und deinen Streitkräften beeindruckt.</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_KUDOS_LEADER_MER_THEODORIC_AGENDA_VERY_ROMAN" Language="de_DE">
+			<Text>(Du hast Bezirke errichtet und unterhältst eine große stehende Armee.)</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_KUDO_EXIT_LEADER_MER_THEODORIC_ANY" Language="de_DE">
+			<Text>Ihre Bauprojekte und Ihre gut ausgebildeten Soldaten sind bewundernswert; sie stehen denen von Rom und Ravenna in nichts nach.</Text>
+		</Replace>
+		<!-- Warnings -->
+		<Replace Tag="LOC_DIPLO_MODIFIER_LEADER_MER_THEODORIC_AGENDA_NOT_VERY_ROMAN" Language="de_DE">
+			<Text>Theoderich ist von der Größe eurer Städte und eurer Streitkräfte enttäuscht.</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_KUDOS_LEADER_MER_THEODORIC_AGENDA_NOT_VERY_ROMAN" Language="de_DE">
+			<Text>(Es fehlen dir Bezirke und Militäreinheiten.)</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_WARNING_EXIT_LEADER_MER_THEODORIC_ANY" Language="de_DE">
+			<Text>In euren Städten muss es nur so von untätigen Menschen wimmeln. Eure Leute haben nichts zu tun! Sie sollten zu Hammer oder Schwert greifen.</Text>
+		</Replace>
+		
+		<!-- Early Meetings -->
+		<!-- First AI Line -->
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_LEADER_MER_THEODORIC_ANY" Language="de_DE">
+			<Text>Seid gegrüßt, ich bin Theoderich, König der Ostgoten.</Text>
+		</Replace>
+		<!-- AI invitation to visit nearby City -->
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_VISIT_RECIPIENT_LEADER_MER_THEODORIC_ANY" Language="de_DE">
+			<Text>Komm doch mal in meine Nachbarstadt vorbei, dort sind gerade viele tolle Projekte im Gange.</Text>
+		</Replace>
+		<!-- AI accepts Human invitation -->
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_NEAR_INITIATOR_POSITIVE_LEADER_MER_THEODORIC_ANY" Language="de_DE">
+			<Text>Ich nehme Ihre Einladung an und werde umgehend eine Delegation dorthin entsenden.</Text>
+		</Replace>
+		<!-- AI invitation to exchange Capital Information -->
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_NO_MANS_INFO_EXCHANGE_LEADER_MER_THEODORIC_ANY" Language="de_DE">
+			<Text>Markiere deine Hauptstadt auf meiner Karte, und ich werde dasselbe für dich tun.</Text>
+		</Replace>
+		<!-- AI sends a Delegation -->
+		<Replace Tag="LOC_DIPLO_DELEGATION_FROM_AI_LEADER_MER_THEODORIC_ANY" Language="de_DE">
+			<Text>Ich habe eine Delegation mit Geschenken in Form von edlem Schmuck entsandt, der von den besten gotischen Handwerkern angefertigt wurde.</Text>
+		</Replace>
+		<!-- AI accepts the Player's Delegation -->
+		<Replace Tag="LOC_DIPLO_ACCEPT_DELEGATION_FROM_HUMAN_LEADER_MER_THEODORIC_ANY" Language="de_DE">
+			<Text>Danke.</Text>
+		</Replace>
+		<!-- AI rejects the Player's Delegation -->
+		<Replace Tag="LOC_DIPLO_REJECT_DELEGATION_FROM_HUMAN_LEADER_MER_THEODORIC_ANY" Language="de_DE">
+			<Text>Derzeit nicht.</Text>
+		</Replace>
+		
+		<!-- Open Borders -->
+		<!-- AI Proposes Open Borders -->
+		<Replace Tag="LOC_DIPLO_OPEN_BORDERS_FROM_AI_LEADER_MER_THEODORIC_ANY" Language="de_DE">
+			<Text>Ich schlage offene Grenzen vor.</Text>
+		</Replace>
+		<!-- AI Accepts Open Borders -->
+		<Replace Tag="LOC_DIPLO_ACCEPT_OPEN_BORDERS_FROM_HUMAN_LEADER_MER_THEODORIC_ANY" Language="de_DE">
+			<Text>Da stimme ich zu.</Text>
+		</Replace>
+		<!-- AI Rejects Open Borders -->
+		<Replace Tag="LOC_DIPLO_REJECT_OPEN_BORDERS_FROM_HUMAN_LEADER_MER_THEODORIC_ANY" Language="de_DE">
+			<Text>Derzeit nicht.</Text>
+		</Replace>
+		
+		<!-- Friendship -->
+		<!-- AI Proposes Friendship -->
+		<Replace Tag="LOC_DIPLO_DECLARE_FRIEND_FROM_AI_LEADER_MER_THEODORIC_ANY" Language="de_DE">
+			<Text>Wir sollten über eine formelle Freundschaftserklärung sprechen.</Text>
+		</Replace>
+		<!-- AI Accepts Friendship -->
+		<Replace Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_HUMAN_LEADER_MER_THEODORIC_ANY" Language="de_DE">
+			<Text>I agree, let the world know we stand as friends.</Text>
+		</Replace>
+		<!-- AI Rejects Friendship -->
+		<Replace Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_HUMAN_LEADER_MER_THEODORIC_ANY" Language="de_DE">
+			<Text>I don't see you that way.</Text>
+		</Replace>
+		
+		<!-- Denounce -->
+		<!-- AI Denounced by Human -->
+		<Replace Tag="LOC_DIPLO_DENOUNCE_FROM_HUMAN_LEADER_MER_THEODORIC_ANY" Language="de_DE">
+			<Text>Da hast du aber ganz schön Nerven, du ungebildeter Trottel.</Text>
+		</Replace>
+		<!-- AI Denounces -->
+		<Replace Tag="LOC_DIPLO_DENOUNCE_FROM_AI_LEADER_MER_THEODORIC_ANY" Language="de_DE">
+			<Text>Dir fehlt offensichtlich jegliche formale Bildung, du bist ein Idiot und deine Leute sind Idioten, weil sie dir folgen. (Denunziert dich)</Text>
+		</Replace>
+		
+		<!-- Trade Agreement with Goths -->
+		<!-- AI Accepts Deal -->
+		<Replace Tag="LOC_DIPLO_ACCEPT_MAKE_DEAL_FROM_AI_LEADER_MER_THEODORIC_AN" Language="de_DE">
+			<Text>Ich stimme diesen Bedingungen zu.</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_REJECT_MAKE_DEAL_FROM_AI_LEADER_MER_THEODORIC_ANY" Language="de_DE">
+			<Text>Nicht das.</Text>
+		</Replace>
+		
+		<!-- Other Diplo -->
+		<!-- AI Proposes Alliance -->
+		<Replace Tag="LOC_DIPLO_MAKE_ALLIANCE_FROM_AI_LEADER_MER_THEODORIC_ANY" Language="de_DE">
+			<Text>Lasst unsere Nachbarn wissen, dass wir zusammenhalten.</Text>
+		</Replace>
+		<!-- AI warns player for border troops -->
+		<Replace Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_LEADER_MER_THEODORIC_ANY" Language="de_DE">
+			<Text>Unsere Mauern halten euren Machtdemonstrationen stand.</Text>
+		</Replace>
+		
+		<!-- War and Peace -->
+		<!-- Human declares war to the AI -->
+		<Replace Tag="LOC_DIPLO_DECLARE_WAR_FROM_HUMAN_LEADER_MER_THEODORIC_ANY" Language="de_DE">
+			<Text>Mein Volk hat schon früher im Krieg gekämpft, du bedeutest mir nichts.</Text>
+		</Replace>
+		<!-- AI declares war to Human -->
+		<Replace Tag="LOC_DIPLO_DECLARE_WAR_FROM_AI_LEADER_MER_THEODORIC_ANYY" Language="de_DE">
+			<Text>Die Diskussion ist beendet, wir ziehen in den Krieg.</Text>
+		</Replace>
+		<!-- AI accepts peace from Human -->
+		<Replace Tag="LOC_DIPLO_MAKE_PEACE_AI_ACCEPT_DEAL_LEADER_MER_THEODORIC_ANY" Language="de_DE">
+			<Text>Na gut, das reicht fürs Erste.</Text>
+		</Replace>
+		<!-- AI rejects peace from Human -->
+		<Replace Tag="LOC_DIPLO_MAKE_PEACE_AI_REFUSE_DEAL_LEADER_MER_THEODORIC_ANY" Language="de_DE">
+			<Text>Das wäre ein Fehler.</Text>
+		</Replace>
+		<!-- AI asks for peace -->
+		<Replace Tag="LOC_DIPLO_MAKE_PEACE_FROM_AI_LEADER_MER_THEODORIC_ANY" Language="de_DE">
+			<Text>Lassen Sie uns über die Friedensbedingungen sprechen.</Text>
+		</Replace>
+		<!-- AI defeats human (hotseat) -->
+		<Replace Tag="LOC_DIPLO_DEFEAT_FROM_HUMAN_LEADER_MER_THEODORIC_ANY" Language="de_DE">
+			<Text>So wie ich auf den Schultern eines untergegangenen Reiches stand, so sollst auch du auf meinen stehen.</Text>
+		</Replace>
+		<!-- AI is defeated -->
+		<Replace Tag="LOC_DIPLO_DEFEAT_FROM_AI_LEADER_MER_THEODORIC_ANY" Language="de_DE">
+			<Text>So wie ich auf den Schultern eines untergegangenen Reiches stand, so sollst auch du auf meinen stehen.</Text>
+		</Replace>
+		
+		
+		<!-- = Stanislaus II - Polen = -->
+		
+		<!-- = BBGExpanded\Europe\PolandStanislaw\Core = -->
+		
+		<!-- = PolandStanislawII_GameText = -->
+		
+		<!-- MOD -->
+		
+		<Replace Tag="LOC_MOD_JFD_POLAND_STANISLAW_II_DESCRIPTION" Language="de_DE">
+			<Text>[NEWLINE]ANFÜHRER – STANISLAUS II[NEWLINE][NEWLINE]EIGENSCHAFT – KOMMISSION FÜR NATIONALE BILDUNG[NEWLINE][NEWLINE]EINHEIT – ULAN[NEWLINE][NEWLINE]AGENDA – DONNERSTÄGLICHES BANKETT</Text>
+		</Replace>
+		
+		<!--LEADER-->
+		<Replace Tag="LOC_LEADER_JFD_STANISLAW_NAME" Language="de_DE">
+			<Text>Stanislaus II</Text>
+		</Replace>
+		
+		<!--Agenda-->
+		<Replace Tag="LOC_AGENDA_JFD_THURSDAY_DINNERS_NAME" Language="de_DE">
+			<Text>Donnerstägliches Bankett</Text>
+		</Replace>
+		<Replace Tag="LOC_AGENDA_JFD_THURSDAY_DINNERS_DESCRIPTION" Language="de_DE">
+			<Text>Mag Zivilisationen mit einer hohen Ertrag an [ICON_CULTURE] Kultur. Versucht, so viele Große Persönlichkeiten wie möglich zu fördern, und respektiert diejenigen, die dasselbe machen. Ist abgeneigt von Zivilisationen, die es versäumen, Große Persönlichkeiten zu fördern.</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_KUDO_LEADER_JFD_STANISLAW_REASON_LEADS_PATRONAGE" Language="de_DE">
+			<Text>(Ihr habt viele Große Persönlichkeiten gefördert.)</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_MODIFIER_AGENDA_JFD_THURSDAY_DINNERS_LEADS_PATRONAGE" Language="de_DE">
+			<Text>Stanislaus II ist beeindruckt von Ihrem vorbildlichen Engagement für Kunst und Wissenschaft</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_KUDO_LEADER_JFD_STANISLAW_REASON_LEADS_CULTURE" Language="de_DE">
+			<Text>(Du hast ein gutes Gespür für Kultur.)</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_MODIFIER_AGENDA_JFD_THURSDAY_DINNERS_LEADS_CULTURE" Language="de_DE">
+			<Text>Stanislaus II ist begeistert von deinem raschen kulturellen Fortschritt</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_WARNING_LEADER_JFD_STANISLAW_REASON_LAGS_PATRONAGE" Language="de_DE">
+			<Text>(Ihr habt nur wenige Große Persönlichkeiten gefördert.)</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_MODIFIER_AGENDA_JFD_THURSDAY_DINNERS_LAGS_PATRONAGE" Language="de_DE">
+			<Text>Stanislaus II ist unzufrieden mit Eurem mangelnden Interesse, Große Persönlichkeiten zu fördern.</Text>
+		</Replace>
+		
+		<!--DOM-->
+		<Replace Tag="LOC_LOADING_INFO_LEADER_JFD_STANISLAW" Language="de_DE">
+			<Text>Der Adel der Königlichen Republik hat Euch, Stanislaus aus dem Haus Poniatowski, als neuen König erwählt. Es ist nun Eure Aufgabe die Balance zu finden zwischen den güldenen Vorrechten von einst und der zukünftigen Notwendigkeit der allgemeinen Aufklärung. Umgebt Euch mit Menschen von Kultur und Gelehrtheit und die Nachwelt wird sich Eurer mit Sicherheit als Augustus erinnern.</Text>
+		</Replace>
+		<!--Traits-->
+		<!--<Replace Tag="LOC_TRAIT_LEADER_JFD_NATIONAL_EDUCATION_NAME" Language="de_DE">
+			<Text>Kommission für nationale Bildung</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_JFD_NATIONAL_EDUCATION_DESCRIPTION" Language="de_DE">
+			<Text>Ressourcen-Felder und verbesserte Felder erhalten zusätzliche Erträge bei Angrenzung an folgende Felder:[NEWLINE]• +1 [ICON_FOOD] Nahrung durch das [ICON_DISTRICT_ENCAMPMENT] Lager-Bezirk.[NEWLINE]• +1 [ICON_CULTURE] Kultur durch die "Kaserne" oder den "Stall".[NEWLINE]• +1 [ICON_SCIENCE] Wissenschaft durch die "Waffenkammer".[NEWLINE]• +1 [ICON_PRODUCTION] Produktion durch die "Militärakademie".[NEWLINE][NEWLINE]Kann die einzigartige [ICON_UNIT] Einheit "Ulan", nach Erforschung der Technologie "Metallguss" rekrutieren.</Text>
+		</Replace>-->
+		
+		<!--Civilopedia-->
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_JFD_STANISLAW_TITLE" Language="de_DE">
+			<Text>Stanislaus II</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_JFD_STANISLAW_SUBTITLE" Language="de_DE">
+			<Text>König von Polen und Großfürst von Litauen</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_JFD_STANISLAW_QUOTE" Language="de_DE">
+			<Text>Um sich einer Sache sicher zu werden, muss man zuerst mit dem Zweifeln beginnen.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_JFD_STANISLAW_CHAPTER_HISTORY_PARA_1" Language="de_DE">
+			<Text>Stanisław Antoni Poniatowski, der spätere Stanislaus II. August Poniatowski, wurde am 17 Januar 1732 als Sohn des polnischen Landadligen Stanisław Poniatowski und seiner Ehefrau Prinzessin Konstancja Czartoryska geboren. Die Familie der Poniatowski zählte zu den höchst-angesehensten des polnischen Adels. Er wurde von seiner Mutter unterrichtet, später von Privatlehrern, darunter der russischen Botschafter Hermann Carl von Keyserlingk. In seinen Jugendjahren hatte er nicht viele Freunde, stattdessen entwickelte er eine Vorliebe für Bücher, welche sein ganzes Leben lang anhielt. Seine erste Auslandsreise führte ihn 1748 nach Westeuropa, da er die Russische Armee bei ihrem Vormarsch nach Deutschland begleitete.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_JFD_STANISLAW_CHAPTER_HISTORY_PARA_2" Language="de_DE">
+			<Text>Stanislaus verdankte seine Karriere den Verbindungen seiner Familie zur mächtigen Familie Czartoryska und deren gemeinsamer politischen Partei, welche als Familia bekannt war. Die Familia sandte ihn im Jahr 1755 im Dienste Charles Hanbury Williams, welcher gerade als Britscher Botschafter in Russland berufen worden war, nach Sankt Petersburg. In Sankt Petersburg traf Stanislaus auf Jekaterina Alexejewna (die spätere Zarin Katharina die Große). Die zwei wurden Liebhaber. Wegen Hofintrigen musste Stanislaus zweimal, im Juli 1756 und im August 1758, Sankt Petersburg verlassen.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_JFD_STANISLAW_CHAPTER_HISTORY_PARA_3" Language="de_DE">
+			<Text>Mit dem Tod des polnischen Königs August III im Oktober 1763 begannen die Verhandlungen für die Wahl eines neuen Königs. Katharina stellte sich dabei mit ihrer Unterstützung hinter Stanislaus. Russland gab etwa 2,5 Millionen Rubel für die Zustimmung zu seiner Wahl aus, während sich Stanislaus Unterstützer und Gegner in militärischen Drohgebärden ergingen und sich sogar kleinere Zusammenstöße ereigneten, was zum Ende hin dazu führte, dass die Russische Armee nur wenige Kilometer vom Sejm entfernt, wo die Wahl stattfand, Stellung bezog. Schließlich gab es keine ernstzunehmenden Gegenkandidaten mehr und der 32 Jahre alte Stanislaus wurde während der Zusammenkunft des Sejm am 7 September 1764 mit 5.584 Stimmen zum König gewählt.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_JFD_STANISLAW_CHAPTER_HISTORY_PARA_4" Language="de_DE">
+			<Text>Während des Sejm (Polnisch für Parlament oder Versammlung) im Oktober 1766 versuchte Stanislaus eine radikale Reform durchzusetzen, welche die Beschränkungen durch das Einspruchsrecht (liberum veto) aufheben wollte. Ihm entgegen standen konservative Kräfte, die vom Preußischen und vom Russischen Botschafter unterstützt wurden. Ohne die Unterstützung der Familia scheiterte die Reform Stanislaus schließlich. Mittlerweile hatten sich einige Parteien zur Konförderation von Bar zusammengeschlossen, die sich gegen Reformer, Stanislaus und Russland richtete. Nach erfolglosen Versuchen Verbündete in Westeuropa zu finden, hatten Stanislaus und die Familia keine andere Wahl als sich enger an das Russische Reich zu binden, welches Polen als sein Protektorat ansah. Als ihnen die Schwäche Polens und das fortwährende Chaos for Augen geführt wurde, beschlossen Österreich, Russland und Preußen im Austausch gegen territoriale Zugeständnisse seitens der Königlichen Republik militärisch einzugreifen. Auch wenn Stanislaus gegen diese Erste Teilung Polens im Jahr 1772 protestierte, war er am Ende machtlos dagegen.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_JFD_STANISLAW_CHAPTER_HISTORY_PARA_5" Language="de_DE">
+			<Text>Schlußendlich mussten Stanislaus und der Sejm dem Teilungsvertrag zustimmen, gleichzeitig wurden weitere unterschiedliche Reformen beschlossen. Die königliche Macht wurde beschränkt. Der Sejm schuf in dieser Phase zwei bemerkenswerte Einrichtungen: den Ständigen Rat, die höchste administrative Autorität, welche dauerhaft tagte, sowie die Kommission für nationale Bildung. Die Polen teilenden Mächte glaubten, der Rat wäre einfacher zu kontrollieren als der widerspenstige Sejm, und tatsächlich verblieb dieser unter dem andauernden Einfluss des Russischen Reiches. Nichtsdestotrotz stellte er eine bedeutende Verbesserung der Regierungsführung in der Königlichen Republik dar. Für die neuen Gesetze gab das Russische Reich eine Garantie ab, was gleichzeitig als weiterer Vorwand für Interventionen in Polens Politik dienen konnte, für den Fall, dass sich eine Änderung der befürworteten Gesetzgebung andeuten sollte.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_JFD_STANISLAW_CHAPTER_HISTORY_PARA_6" Language="de_DE">
+			<Text>Im Umfeld der von Österreich und Russland gegen das Osmanische Reich geführten Kriege versuchte Stanislaus Polen in die Österreichisch-Russische Allianz einzubinden. Letztendlich kam ein Polnisch-Russisches Bündnis aber nicht zustande. Im nachfolgenden Vierjährigen Sejm von 1788-1792, auch bekannt als Großer Sejm, orientierte sich sich Stanislaus dann auch an den Reformern und beteiligte sich an der Verfassung vom 3 Mai 1791. Die neu Verfassung führte weitgehende Reformen ein. Nach einem Zeitzeugen beschrieb Stanislaus sie als "im Prinzip auf der Verfassung von England und der Verfassung der Vereinigten Staaten basierend, aber ohne die Fehler und Fallstricke von beiden und so viel wie möglich an die örtlichen und speziellen Begebenheiten des Landes angepasst.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_JFD_STANISLAW_CHAPTER_HISTORY_PARA_7" Language="de_DE">
+			<Text>Kurz darauf bildete der konservative Polnische Adel die Konföderation von Targowica, um die Verfassung, welche sie als Bedrohung für ihre traditionellen Vorrechte und Privilegien ansahen, rückgängig zu machen. Die Konförderation verbündete sich mit Katharina der Großen und die Russische Armee drang auf polnisches Gebiet vor, was den Eintritt in den Polnisch-Russischen Krieg von 1792 markierte, auch bekannt als "Krieg zur Verteidung der Verfassung vom 3. Mai" (wojna w obronie Konstytucji 3 maja). Der Sejm hatte in der Verfassung die Sollstärke der Polnischen Armee auf 100.000 Mann festgelegt, aber in der Kürze der Zeit und ohne ausreichende Geldmittel wurde diese Zahl niemals erreicht. Stanislaus Versuche mit der Russischen Seite zu verhandeln waren zwecklos. Am 24 Juli 1792 trat Stanislaus schließlich der Konföderation von Targowica bei. Obwohl oder gerade wegen des Seitenwechsels konnte Stanislaus die Königliche Republik nicht sichern. Er und die Reformer hatten viel von ihrem Einfluss sowohl im Land als auch bei Katharina eingebüßt. Aber auch die Konföderation von Targowica war nicht siegreich. Denn zu aller Überraschung folgte nun die Zweite Teilung Polens. Angesichts seiner Machtlosigkeit zog Stanislaus die Abdankung in Erwägung, während er versuchte so viele Reformen wie möglich zu retten.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_JFD_STANISLAW_CHAPTER_HISTORY_PARA_8" Language="de_DE">
+			<Text>Stanislaus Pläne wurden durch den anti-russischen Kościuszko-Aufstand durchkreuzt. Der König förderte ihn nicht, unterstützte diesen aber als er einmal begonne hatte, da er keine andere ehrenvolle Alternative sah. Die Niederschlagung des Aufstands markierte gleichzeitig das Ende der Königlichen Republik. Stanislaus versuchte zwar, das Land kurz nach der Niederschlagung weiter zu regieren, bekam aber am 2 Dezember 1794 von Katharina die Weisung Warschau zu verlassen. Er folgte der Aufforderung am 7 Januar 1795 und verließ die Hauptstadt begleitet von einer russischen Militäreskorte und ließ sich kurz darauf in Grodno nieder. Am 24 Oktober 1795 wurde die finale Dritte Teilung Polens besiegelt, einen Monat und einen Tag später am 25 November unterzeichnete Stanislaus seine Abdankung. Er starb nach einem Schlaganfall am 12 Februar 1798.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_JFD_STANISLAW_CHAPTER_CAPSULE_BODY" Language="de_DE">
+			<Text>Das Polen unter Stanislaus II kombiniert behutsam Kultur, Wissenschaft und Militär miteinander, während es sich für den wissenschaftlichen und kulturellen Fortschritt auf seine Bürger verlässt, was zuverlässig, wenn auch nicht unbedingt vorhersagbar zu Ergebnissen führt.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_JFD_STANISLAW_CHAPTER_DETAILED_BODY" Language="de_DE">
+			<Text>Ähnlich wie Hedwigs persönliche Befähigung, kann auch Stanislaus vom Bau eines Lagerbezirkes in jeder Stadt profitieren: zusätzlich zur Vereinnahmung der umgebenden Geländefelder verschafft die Fertigstellung eines Lagers ein zufälliges Heureka. Entsprechend löst das Erbauen eines Theaterplatz-Bezirkes eine Inspiration aus. Der Schwerpunkt auf Kultur und Militär sollte nicht vom wissenschaftlichen Fortschritt abhalten, da die kulturelle Gebäude von Stanislaus jeweils einen kleine Menge wissenschaftlichen Ertrages verschaffen. Sollten sie schwächeln, können Produktion und Gold vergleichsweise einfach durch Polens einzigartiges Markt-Gebäude und internationale Handelswege angekurbelt werden. Sicherheit im mittleren Spielabschnitt verschafft die einzigartige Ulan Landeinheit, eine hoch-mobile, leichte Kavallerieeinheit, welche umso härter zuschlägt, wenn sie den Gegner flankieren kann. Insgesamt sollte sich der Spielstil auf umsichtige Stadt- und Bezirk-Entwicklung konzentrieren, idealerweise durch Handelszentren, Theaterplätze und Lager in jeder Stadt. Eine solche Grundlage gewährt eine solide Basis für ausgeglichenes Wachstum durch das gesamte Spiel und führt zu einem Sieg nach der Sieg-Bedingung Eurer Wahl.</Text>
+		</Replace>
+		
+		<!--Diplomacy-->
+		
+		<!--FIRST MEET-->
+		<!--First AI line-->		
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_LEADER_JFD_STANISLAW_ANY" Language="de_DE">
+			<Text>Willkommen, willkommen, wehrter Gast! Die Tafel wurde gerade eingedeckt. Ich bin Stanislaus, der Mäzen dieses Reiches.</Text>
+		</Replace>
+		<!--AI invitation to visit nearby City-->
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_VISIT_RECIPIENT_LEADER_JFD_STANISLAW_ANY" Language="de_DE">
+			<Text>Würdet Ihr mich in die Gärten meines Palastes begleiten? Ich versichere Euch, es ist ein den weltlichen Belangen entrückter Ort.</Text>
+		</Replace>
+		<!--AI accepts Human invitation-->
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_NEAR_INITIATOR_POSITIVE_LEADER_JFD_STANISLAW_ANY" Language="de_DE">
+			<Text>Ausgezeichnet! Meine Gesandten sollten in Kürze eintreffen und Notizen über Euer Gebiet machen.</Text>
+		</Replace>
+		<!--AI invitation to exchange Capital Information-->
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_NO_MANS_INFO_EXCHANGE_LEADER_JFD_STANISLAW_ANY" Language="de_DE">
+			<Text>Ich schlage vor, dass wir Informationen über unsere Hauptstädte austauschen. Wir müssen noch viel über einander lernen.</Text>
+		</Replace>
+		
+		<!--GREETINGS-->
+		<Replace Tag="LOC_DIPLO_GREETING_LEADER_JFD_STANISLAW_ANY" Language="de_DE">
+			<Text>Hallo, wehrter Gast.</Text>
+		</Replace>
+		
+		<!--DELEGATION-->
+		<!--AI Accepts-->
+		<Replace Tag="LOC_DIPLO_ACCEPT_DELEGATION_FROM_HUMAN_LEADER_JFD_STANISLAW_ANY" Language="de_DE">
+			<Text>Ich habe Eure Delegation persönlich Willkommen geheißen. Sie wird in den besten verfügbaren Gemächern untergebracht.</Text>
+		</Replace>
+		<!--AI Rejects-->
+		<Replace Tag="LOC_DIPLO_REJECT_DELEGATION_FROM_HUMAN_LEADER_JFD_STANISLAW_ANY" Language="de_DE">
+			<Text>Mein Volk wünscht keine Einflußnahme von außen. Eure Delegation wurde fortgeschickt.</Text>
+		</Replace>
+		<!--AI Requests-->
+		<Replace Tag="LOC_DIPLO_DELEGATION_FROM_AI_LEADER_JFD_STANISLAW_ANY" Language="de_DE">
+			<Text>Ich habe einen Gesandten in Ihre Hauptstadt entsandt, der Ihnen unseren besten gebratenen Fasan und aromatisierten Likör mitbringt. Ich bin überzeugt, dass sie Ihnen schmecken werden.</Text>
+		</Replace>
+		
+		<!--OPEN BORDERS-->
+		<!--AI accepts from human-->
+		<Replace Tag="LOC_DIPLO_ACCEPT_OPEN_BORDERS_FROM_HUMAN_LEADER_JFD_STANISLAW_ANY" Language="de_DE">
+			<Text>Der Sejm und ich stimmen zu.</Text>
+		</Replace>
+		<!--AI rejects from human-->
+		<Replace Tag="LOC_DIPLO_REJECT_OPEN_BORDERS_FROM_HUMAN_LEADER_JFD_STANISLAW_ANY" Language="de_DE">
+			<Text>Ich habe vom Sejm keine Zustimmung erhalten, diese Vereinbarung zu unterzeichnen.</Text>
+		</Replace>
+		<!--AI requests from human-->
+		<Replace Tag="LOC_DIPLO_OPEN_BORDERS_FROM_AI_LEADER_JFD_STANISLAW_ANY" Language="de_DE">
+			<Text>Meine Landsleute haben Interesse an einem Abkommen über offene Grenzen bekundet. Sie möchten reisen und die weite Welt erkunden.</Text>
+		</Replace>
+		
+		<!--DECLARE FRIENDSHIP-->
+		<!--AI accepts from human-->
+		<Replace Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_HUMAN_LEADER_JFD_STANISLAW_ANY" Language="de_DE">
+			<Text>Ich stimme aus vollem Herzen zu. Um ehrlich zu sein, hatte ich bereits überlegt, Euch dies selbst vorzuschlagen.</Text>
+		</Replace>
+		<!--AI Rejects from human-->
+		<Replace Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_HUMAN_LEADER_JFD_STANISLAW_ANY" Language="de_DE">
+			<Text>Nicht jetzt, nein.</Text>
+		</Replace>
+		<!--AI Requests friendship from human-->
+		<Replace Tag="LOC_DIPLO_DECLARE_FRIEND_FROM_AI_LEADER_JFD_STANISLAW_ANY" Language="de_DE">
+			<Text>Ihr seid mir seit einiger Zeit ein guter Begleiter. Sollen wir vor der Welt unsere Freundschaft erklären?</Text>
+		</Replace>
+		<!--Human accepts AI requests, AI responds-->
+		<Replace Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_AI_LEADER_JFD_STANISLAW_ANY" Language="de_DE">
+			<Text>Danke, Danke fürwahr!</Text>
+		</Replace>
+		<!--Human rejects AI requests, AI responds-->
+		<Replace Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_AI_LEADER_JFD_STANISLAW_ANY" Language="de_DE">
+			<Text>Ich verstehe, aber es betrübt mich.</Text>
+		</Replace>
+		
+		<!--ALLIANCE-->
+		<!--AI Requests an alliance from human-->
+		<Replace Tag="LOC_DIPLO_MAKE_ALLIANCE_FROM_AI_LEADER_JFD_STANISLAW_ANY" Language="de_DE">
+			<Text>Die Königliche Republik drückt Ihren Wunsch nach einem beständigen und vertrauenswürdigen Alliierten in dieser trügerischen Welt aus. Seid Ihr gewillt, ein solcher zu werden?</Text>
+		</Replace>
+		
+		<!--KUDOS & WARNINGS-->	
+		<!--AI Kudos-->
+		<Replace Tag="LOC_DIPLO_KUDO_EXIT_LEADER_JFD_STANISLAW_ANY" Language="de_DE">
+			<Text>Die Türen meines Palastes stehen Euch jederzeit offen.</Text>
+		</Replace>
+		<!--AI Warnings-->
+		<Replace Tag="LOC_DIPLO_WARNING_EXIT_LEADER_JFD_STANISLAW_ANY" Language="de_DE">
+			<Text>Du verscheuchst meine Pfauen, du ungebildeter Flegel. Verschwinde von meinem Rasen.</Text>
+		</Replace>
+		<!--AI warns player for border troops-->
+		<Replace Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_LEADER_JFD_STANISLAW_ANY" Language="de_DE">
+			<Text>Wenn Sie glauben, Sie könnten mit dem Säbel rasseln, ohne dass mein Volk sich erhebt und darauf reagiert, irren Sie sich gewaltig.</Text>
+		</Replace>
+		
+		<!--TRADE-->
+		<!--AI Accepts Deal-->
+		<Replace Tag="LOC_DIPLO_ACCEPT_MAKE_DEAL_FROM_AI_LEADER_JFD_STANISLAW_ANY" Language="de_DE">
+			<Text>{LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_AI_LEADER_JFD_FREDERICK_ANY}</Text>
+		</Replace>
+		<!-- AI Rejects Deal -->
+		<Replace Tag="LOC_DIPLO_REJECT_MAKE_DEAL_FROM_AI_LEADER_JFD_STANISLAW_ANY" Language="de_DE">
+			<Text>{LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_AI_LEADER_JFD_FREDERICK_ANY}</Text>
+		</Replace>
+		
+		<!--DENOUNCE-->
+		<!--From Human-->
+		<Replace Tag="LOC_DIPLO_DENOUNCE_FROM_HUMAN_LEADER_JFD_STANISLAW_ANY" Language="de_DE">
+			<Text>Das wird nicht funktionieren. Die Neuigkeiten über Euer verräterisches Verhalten werden sich schon bald durch Flugblätter in Nah und Fern ausbreiten.</Text>
+		</Replace>
+		<!--From AI-->
+		<Replace Tag="LOC_DIPLO_DENOUNCE_FROM_AI_LEADER_JFD_STANISLAW_ANY" Language="de_DE">
+			<Text>Ich kann Euer abscheuliches Verhalten nicht länger aushalten. Meine Geduld ist am Ende. (Denunziert dich).</Text>
+		</Replace>
+		<!--Rationale-->
+		<Replace Tag="LOC_DIPLO_DENOUNCE_REASON_FROM_AI_LEADER_ANY_REASON_JFD_THURSDAY_DINNERS_LAGS_PATRONAGE" Language="de_DE">
+			<Text>(Ihr habt wenige Große Persönlichkeiten gefördert.)</Text>
+		</Replace>
+		
+		<!--DECLARE WAR-->
+		<!--Human Declares War-->
+		<Replace Tag="LOC_DIPLO_DECLARE_WAR_FROM_HUMAN_LEADER_JFD_STANISLAW_ANY" Language="de_DE">
+			<Text>So sei es. Ich werde sofort im Sejm eine Antrag stellen, unverzüglich Kriegssteuern zu erheben.</Text>
+		</Replace>
+		<!--AI Declares War-->
+		<Replace Tag="LOC_DIPLO_DECLARE_WAR_FROM_AI_LEADER_JFD_STANISLAW_ANY" Language="de_DE">
+			<Text>Der Sejm hat in einer Abstimmung beschlossen, dass sich unsere Nationen absofort im Kriegszustand befinden. Wappnet Euch.</Text>
+		</Replace>
+		
+		<!--MAKE PEACE-->
+		<!--AI accepts from human-->
+		<Replace Tag="LOC_DIPLO_MAKE_PEACE_AI_ACCEPT_DEAL_LEADER_JFD_STANISLAW_ANY" Language="de_DE">
+			<Text>Der Sejm hat der Ratifizierung des Friedensvertrages zwischen unseren Nationen zugestimmt.</Text>
+		</Replace>
+		<!--AI refuses human-->
+		<Replace Tag="LOC_DIPLO_MAKE_PEACE_AI_REFUSE_DEAL_LEADER_JFD_STANISLAW_ANY" Language="de_DE">
+			<Text>Der Sejm wird solch demütigende Bedingungen niemals akzeptieren. Die Feindseligkeiten sollen weiter gehen.</Text>
+		</Replace>
+		<!--AI requests from human-->
+		<Replace Tag="LOC_DIPLO_MAKE_PEACE_FROM_AI_LEADER_JFD_STANISLAW_ANY" Language="de_DE">
+			<Text>Unsere Nationen sind kriegsmüde. Lasst uns die Waffen niederlegen und mit dem Wiederaufbau beginnen.</Text>
+		</Replace>
+		
+		<!--DEFEAT-->
+		<!--AI is Defeated-->
+		<Replace Tag="LOC_DIPLO_DEFEAT_FROM_AI_LEADER_JFD_STANISLAW_ANY" Language="de_DE">
+			<Text>Im Angesicht einer solchen Niederlage, sollte ich wohl abdanken. Nun denn, die Krone ist Euer.</Text>
+		</Replace>
+		<!--Human is Defeated (will see this in hotseat)-->
+		<Replace Tag="LOC_DIPLO_DEFEAT_FROM_HUMAN_LEADER_JFD_STANISLAW_ANY" Language="de_DE">
+			<Text>Im Angesicht einer solchen Niederlage, sollte ich wohl abdanken. Nun denn, die Krone ist Euer.</Text>
+		</Replace>
+		
+		<!--UHLAN-->
+		<!--<Replace Tag="LOC_UNIT_JFD_UHLAN_NAME" Language="de_DE">
+			<Text>Ulan</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_JFD_UHLAN_DESCRIPTION" Language="de_DE">
+			<Text>Diese Leichte-Kavallerie-[ICON_UNIT] Einheit der Renaissance ist einzigartig für Stanislas II von Polen, wird nach Erforschung der Technologie "Metallguss" freigeschaltet, ersetzt die "Kavallerie", gewährt deren Boni und zusätzlich:[NEWLINE][NEWLINE]• +1 [ICON_MOVEMENT] Bewegung.[NEWLINE]• Doppelter Flankierbonus.</Text>
+		</Replace>-->
+		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_JFD_UHLAN_CHAPTER_HISTORY_PARA_1" Language="de_DE">
+			<Text>Der Ulan war eine polnische, leichte Kavallerieeinheit, die mit Lanzen, Säbeln und Pistolen bewaffnet war. Sie kam im 18. und 19. Jahrhundert häufig in den Armeen von Russland, Preußen und Österreich zum Einsatz. Aus der Tradition der tartarischen Siedler in Litauen entstanden, wurde das erste Ulan Regiment durch die Königliche Republik Polen-Litauen in den ersten Jahren des 18. Jarhunderts aufgestellt. Schnell und unbehindert durch sperrige Rüstungen, welche früher den berittenen Kampf dominiert hatten, wurde der Einsatz der Ulanen schnell beliebt durch ihre Vielseitigkeit und Geschwindigkeit; fähig Aufklärung, Gefechte und Frontalangriffe durchzuführen. Gegenwärtig wird vom Polnischen Heer ein Ulan Regiment für zeremonielle Zwecke unterhalten.</Text>
+		</Replace>
+		<!--<Replace Tag="LOC_ABILITY_JFD_UHLAN_FLANKING_BONUS_DESCRIPTION" Language="de_DE">
+			<Text>Doppelter Flankierbonus</Text>
+		</Replace>-->
+		
+		
+		<!-- = Anacaona - Taíno = -->
+		
+		<!-- = BBGExpanded\Meso\Taino\Core = -->
+		
+		<!-- = Taino_Localisation = -->
+		
+		<!-- Civilization -->
+		
+		<Replace Tag="LOC_CIVILIZATION_CVS_TAINO_NAME" Language="de_DE">
+			<Text>Taíno</Text>
+		</Replace>
+		<Replace Tag="LOC_CIVILIZATION_CVS_TAINO_DESCRIPTION" Language="de_DE">
+			<Text>Die Taíno-Zivilisation</Text>
+		</Replace>
+		<Replace Tag="LOC_CIVILIZATION_CVS_TAINO_ADJECTIVE" Language="de_DE">
+			<Text>Taíno</Text>
+		</Replace>
+		
+		<!-- UA -->
+		
+		<!--<Replace Tag="LOC_TRAIT_CIVILIZATION_CVS_TAINO_UA_NAME" Language="de_DE">
+			<Text>Guatiao</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_CIVILIZATION_CVS_TAINO_UA_DESCRIPTION" Language="de_DE">
+			<Text>Politik-Karten für [ICON_GreatPerson] Große Persönlichkeiten sorgen in [ICON_DISTRICT_CITY_CENTER] Städten mit einem [ICON_DISTRICT] Bezirk, der dem jeweiligen Typ der [ICON_GreatPerson] Großen Persönlichkeit entspricht, für +3 [ICON_FOOD] Nahrung pro [ICON_TURN] Runde.[NEWLINE][NEWLINE]Diplomatische Politik-Karten sorgen in [ICON_DISTRICT_CITY_CENTER] Städten mit einem [ICON_DISTRICT_ENTERTAINMENT] "Batéy"-Bezirk für +1 [ICON_AMENITIES] Annehmlichkeit.[NEWLINE][NEWLINE][ICON_BULLETGLOW] Startbedingungen: Keine.</Text>
+		</Replace>-->
+		
+		<!-- UU -->
+		
+		<!--<Replace Tag="LOC_UNIT_CVS_TAINO_UU_NAME" Language="de_DE">
+			<Text>Macana</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_CVS_TAINO_UU_DESCRIPTION" Language="de_DE">
+			<Text>Diese Aufklärungs-[ICON_UNIT] Einheit der Antike ist einzigartig für Taíno, ab der ersten [ICON_TURN] Runde rekrutierbar, ersetzt den "Krieger", gewährt dessen Boni und zusätzlich:[NEWLINE][NEWLINE]• +1 [ICON_MOVEMENT] Bewegung.[NEWLINE]• +1 [ICON_VisSecret] Sicht.[NEWLINE]• Behält nach der Verbesserung seine Aufklärungs-[ICON_PROMOTION] Beförderungen.[NEWLINE]• Das Vernichten von [ICON_UNIT] Einheiten gewährt [ICON_FAITH] Glauben entsprechend 50% der Grund-[ICON_STRENGTH] Kampfstärke der besiegten [ICON_UNIT] Einheit (Online-Geschwindigkeit).</Text>
+		</Replace>-->
+		
+		<!-- = UI = -->
+		
+		<!--<Replace Tag="LOC_DISTRICT_CVS_TAINO_UI_NAME" Language="de_DE">
+			<Text>Batéy</Text>
+		</Replace>
+		<Replace Tag="LOC_DISTRICT_CVS_TAINO_UI_DESCRIPTION" Language="de_DE">
+			<Text>Dieser [ICON_DISTRICT_ENTERTAINMENT] "Batéy"-Bezirk der Klassik ist einzigartig für Taíno, wird nach Erforschung der Ausrichtung "Spiele und Erholung" freigeschaltet, ersetzt den [ICON_DISTRICT_ENTERTAINMENT] Unterhaltungskomplex-Bezirk, gewährt dessen Boni und zusätzlich:[NEWLINE][NEWLINE]• +1 [ICON_AMENITIES] Annehmlichkeit für jedes [ICON_BUILDINGS] Gebäude im [ICON_DISTRICT_ENTERTAINMENT] "Batéy"-Bezirk.[NEWLINE]• +2 [ICON_PRODUCTION] Produktion für angrenzende [ICON_DISTRICT_COMMERCIAL_HUB] Handelszentrum-Bezirke und [ICON_DISTRICT_HARBOR] Hafen-Bezirke.[NEWLINE]• Schaltet das "Areyto-Zeremonie"-Projekt frei, das während der Durchführung 15% der [ICON_PRODUCTION] Produktion in [ICON_FAITH] Glauben umwandelt, sowie [ICON_GreatPerson] Große Persönlichkeits-Punkte von [ICON_GREATWRITER] Großer Schriftsteller, [ICON_GREATARTIST] Großer Künstler und [ICON_GREATMUSICIAN] Großer Musiker nach Abschluss des Projekts gewährt.</Text>
+		</Replace>-->
+		
+		<!-- = UP = -->
+		
+		<!--<Replace Tag="LOC_PROJECT_CVS_TAINO_UP_NAME" Language="de_DE">
+			<Text>Areyto-Zeremonie</Text>
+		</Replace>-->
+		<Replace Tag="LOC_PROJECT_CVS_TAINO_UP_SHORTNAME" Language="de_DE">
+			<Text>Areyto-Zeremonie</Text>
+		</Replace>
+		<!--<Replace Tag="LOC_PROJECT_CVS_TAINO_UP_DESCRIPTION" Language="de_DE">
+			<Text>Das einzigartiges "Areyto-Zeremonie"-Projekt der Taíno, ist nur im [ICON_DISTRICT_ENTERTAINMENT] "Batéy"-Bezirk verfügbar und wandelt während der Durchführung 15% der [ICON_PRODUCTION] Produktion in [ICON_FAITH] Glauben um und gewährt [ICON_GreatPerson] Große Persönlichkeits-Punkte von [ICON_GREATWRITER] Großer Schriftsteller, [ICON_GREATARTIST] Großer Künstler und [ICON_GREATMUSICIAN] Großer Musiker nach Abschluss des Projekts.</Text>
+		</Replace>-->
+		<Replace Tag="LOC_BUILDING_CVS_TAINO_UP_DUMMY_NAME" Language="de_DE">
+			<Text>Areyto-Zeremonie</Text>
+		</Replace>
+		<Replace Tag="LOC_BUILDING_CVS_TAINO_UP_DUMMY_DESCRIPTION" Language="de_DE">
+			<Text>In dieser [ICON_DISTRICT_CITY_CENTER] Stadt hat eine Areyto-Zeremonie begonnen.</Text>
+		</Replace>
+		
+		<!-- = Mountains = -->
+		
+		<Replace Tag="LOC_NAMED_MOUNTAIN_GUANIGUANICO" Language="de_DE">
+			<Text>Guaniguanico</Text>
+		</Replace>
+		<Replace Tag="LOC_NAMED_MOUNTAIN_BAORUCO" Language="de_DE">
+			<Text>Baoruco</Text>
+		</Replace>
+		
+		<!-- = Rivers = -->
+		
+		<Replace Tag="LOC_NAMED_RIVER_ARTIBONITE" Language="de_DE">
+			<Text>Artibonite</Text>
+		</Replace>
+		<Replace Tag="LOC_NAMED_RIVER_THOA" Language="de_DE">
+			<Text>Thoa</Text>
+		</Replace>
+		<Replace Tag="LOC_NAMED_RIVER_YAQUE" Language="de_DE">
+			<Text>Yaque</Text>
+		</Replace>
+		<Replace Tag="LOC_NAMED_RIVER_YUNA" Language="de_DE">
+			<Text>Yuna</Text>
+		</Replace>
+		<Replace Tag="LOC_NAMED_RIVER_OZAMA" Language="de_DE">
+			<Text>Ozama</Text>
+		</Replace>
+		
+		<!-- = Cities = -->
+		
+		<Replace Tag="LOC_CITY_NAME_YAGUANA" Language="de_DE">
+			<Text>Yaguana</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_GUARICO" Language="de_DE">
+			<Text>Guárico</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MAGUA" Language="de_DE">
+			<Text>Maguá</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MAGUANA" Language="de_DE">
+			<Text>Maguana</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_HIGUEY" Language="de_DE">
+			<Text>Higüey</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_YAUCO" Language="de_DE">
+			<Text>Yauco</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_GUAYNIA" Language="de_DE">
+			<Text>Guaynía</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_TOA" Language="de_DE">
+			<Text>Toa</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_ARASIBO" Language="de_DE">
+			<Text>Arasibo</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_AYMAMON" Language="de_DE">
+			<Text>Aymamón</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_CAYNIABON" Language="de_DE">
+			<Text>Cayniabón</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_TURABO" Language="de_DE">
+			<Text>Turabo</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_SEBUCO" Language="de_DE">
+			<Text>Sebuco</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_GUAYANEY" Language="de_DE">
+			<Text>Guayaney</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_GUAYAMA" Language="de_DE">
+			<Text>Guayama</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_OTOAO" Language="de_DE">
+			<Text>Otoao</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MACAO" Language="de_DE">
+			<Text>Macao</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_GUAJATACA" Language="de_DE">
+			<Text>Guajataca</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_BAYAMON" Language="de_DE">
+			<Text>Bayamón</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_GUAYNABO" Language="de_DE">
+			<Text>Guaynabo</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_YAGUECAS" Language="de_DE">
+			<Text>Yagüecas</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_DAGUAO" Language="de_DE">
+			<Text>Daguao</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_JAYMANIO" Language="de_DE">
+			<Text>Jaymanío</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_COABEY" Language="de_DE">
+			<Text>Coabey</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_CAYEY" Language="de_DE">
+			<Text>Cayey</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_JATIBONICU" Language="de_DE">
+			<Text>Jatibonicu</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_BIEKE" Language="de_DE">
+			<Text>Bieke</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_ABEYNO" Language="de_DE">
+			<Text>Abeyno</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_HOROMICO" Language="de_DE">
+			<Text>Horomico</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_MAYGUEZ" Language="de_DE">
+			<Text>Maygüez</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_BARACOA" Language="de_DE">
+			<Text>Baracoa</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_CAMAGUEY" Language="de_DE">
+			<Text>Camagüey</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_YABUCOA" Language="de_DE">
+			<Text>Yabucoa</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_HAYUYA" Language="de_DE">
+			<Text>Hayuya</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_CAMUY" Language="de_DE">
+			<Text>Camuy</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_BAYAMO" Language="de_DE">
+			<Text>Bayamo</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_AMONA" Language="de_DE">
+			<Text>Ámona</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_GONAIBO" Language="de_DE">
+			<Text>Gonaibo</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_GUANTANAMO" Language="de_DE">
+			<Text>Guantánamo</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_ABAWANA" Language="de_DE">
+			<Text>Abawana</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_GUANABO" Language="de_DE">
+			<Text>Guanabo</Text>
+		</Replace>
+		<Replace Tag="LOC_CITY_NAME_YAQUIMEL" Language="de_DE">
+			<Text>Yaquimel</Text>
+		</Replace>
+		
+		<!-- = Citizens = -->
+		
+		<Replace Tag="LOC_CITIZEN_CVS_TAINO_MALE_1" Language="de_DE">
+			<Text>Ameyro</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_CVS_TAINO_MALE_2" Language="de_DE">
+			<Text>Aymaco</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_CVS_TAINO_MALE_3" Language="de_DE">
+			<Text>Comerio</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_CVS_TAINO_MALE_4" Language="de_DE">
+			<Text></Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_CVS_TAINO_MALE_5" Language="de_DE">
+			<Text>Kaiman</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_CVS_TAINO_MALE_6" Language="de_DE">
+			<Text>Kakata</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_CVS_TAINO_MALE_7" Language="de_DE">
+			<Text>Guey</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_CVS_TAINO_MALE_8" Language="de_DE">
+			<Text>Karaya</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_CVS_TAINO_MALE_9" Language="de_DE">
+			<Text>Acanorex</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_CVS_TAINO_MALE_10" Language="de_DE">
+			<Text>Majagua</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_CVS_TAINO_FEMALE_1" Language="de_DE">
+			<Text>Anani</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_CVS_TAINO_FEMALE_2" Language="de_DE">
+			<Text>Guama</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_CVS_TAINO_FEMALE_3" Language="de_DE">
+			<Text>Liren</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_CVS_TAINO_FEMALE_4" Language="de_DE">
+			<Text>Yabisi</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_CVS_TAINO_FEMALE_5" Language="de_DE">
+			<Text>Colibri</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_CVS_TAINO_FEMALE_6" Language="de_DE">
+			<Text>Tonina</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_CVS_TAINO_FEMALE_7" Language="de_DE">
+			<Text>Nimita</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_CVS_TAINO_FEMALE_8" Language="de_DE">
+			<Text>Tinima</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_CVS_TAINO_FEMALE_9" Language="de_DE">
+			<Text>Casiguaya</Text>
+		</Replace>
+		<Replace Tag="LOC_CITIZEN_CVS_TAINO_FEMALE_10" Language="de_DE">
+			<Text>Yuisa</Text>
+		</Replace>
+		
+		<!-- = Info = -->
+		
+		<Replace Tag="LOC_CIVINFO_CVS_TAINO_LOCATION" Language="de_DE">
+			<Text>Karibik</Text>
+		</Replace>
+		<Replace Tag="LOC_CIVINFO_CVS_TAINO_SIZE" Language="de_DE">
+			<Text>ca. 200.000 km²</Text>
+		</Replace>
+		<Replace Tag="LOC_CIVINFO_CVS_TAINO_POPULATION" Language="de_DE">
+			<Text>600.000 – 1 Million (geschätzt)</Text>
+		</Replace>
+		<Replace Tag="LOC_CIVINFO_CVS_TAINO_CAPITAL" Language="de_DE">
+			<Text>Verschiedene Stammeshauptstädte</Text>
+		</Replace>
+		
+		<!-- = Pedia = -->
+		
+		<Replace Tag="LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_CVS_TAINO_CHAPTER_HISTORY_PARA_1" Language="de_DE">
+			<Text>Das Volk der Taíno gehörte zu den Ureinwohnern der Karibik. Zum Zeitpunkt des ersten Kontakts mit den Europäern im späten 15. Jahrhundert waren sie die Hauptbewohner des größten Teils von Kuba, Trinidad, Jamaika, Hispaniola (Haiti und die Dominikanische Republik) sowie Puerto Rico. Auf den Großen Antillen, den nördlichen Kleinen Antillen und den Bahamas waren sie als Lucayaner bekannt. Sie sprachen die Taíno-Sprache (eine der Arawak-Sprachen).</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_CVS_TAINO_CHAPTER_HISTORY_PARA_2" Language="de_DE">
+			<Text>Die Vorfahren der Taíno kamen aus Südamerika in die Karibik, und ihre Kultur ist eng mit der der Mesoamerikaner verbunden. Zum Zeitpunkt des ersten Kontakts waren die Taíno in drei große Gruppen unterteilt, die als westliche Taíno (Jamaika, der größte Teil Kubas und die Bahamas), klassische Taíno (Hispaniola und Puerto Rico) und östliche Taíno (nördliche Kleine Antillen) bekannt waren. Die Taíno-Gruppen standen im Konflikt mit den Kariben der südlichen Kleinen Antillen.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_CVS_TAINO_CHAPTER_HISTORY_PARA_3" Language="de_DE">
+			<Text>Als Kolumbus 1492 eintraf, gab es auf Hispaniola fünf Häuptlingstümer und Gebiete der Taíno, die jeweils von einem obersten Cacique (Häuptling) angeführt wurden, an den Tribut gezahlt wurde. Ayiti („Land der hohen Berge“) war der indigene Name der Taíno für die Insel Hispaniola, die (auf der westlichen Seite) ihren Namen als Haïti im Französischen beibehalten hat.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_CVS_TAINO_CHAPTER_HISTORY_PARA_4" Language="de_DE">
+			<Text>Kuba, die größte Insel der Antillen, war ursprünglich in 29 Stammesgebiete unterteilt. Die meisten der ursprünglichen Siedlungen der Ureinwohner wurden später zu spanischen Kolonialstädten, die ihre ursprünglichen Taíno-Namen beibehielten, darunter Havanna, Batabanó, Camagüey, Baracoa und Bayamo. Der Name Kuba stammt aus der Taíno-Sprache, obwohl die genaue Bedeutung des Namens unklar ist. Er kann mit ‚wo fruchtbares Land im Überfluss vorhanden ist‘ (cubao) oder ‚ein großartiger Ort‘ (coabana) übersetzt werden. Auch Puerto Rico war in Stammesgebiete unterteilt. Als erblicher Oberhaupt der Taíno-Nation erhielt der Cacique beträchtliche Tributzahlungen. Zur Zeit der spanischen Eroberung hatten die größten Siedlungszentren der Taíno möglicherweise jeweils mehr als 3.000 Einwohner.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_CVS_TAINO_CHAPTER_HISTORY_PARA_5" Language="de_DE">
+			<Text>Die Taíno waren historisch gesehen Feinde der benachbarten Kariben, einer anderen Volksgruppe, die ebenfalls ihren Ursprung in Südamerika hatte und hauptsächlich auf den Kleinen Antillen lebte. Die Beziehung zwischen den rivalisierenden Gruppen war Gegenstand zahlreicher Studien. Während eines Großteils des 15. Jahrhunderts wurde der Stamm der Taíno aufgrund von Überfällen der Kariben in den Nordosten der Karibik vertrieben. Frauen wurden gefangen genommen, was dazu führte, dass viele karibische Frauen Taíno sprachen.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_CVS_TAINO_CHAPTER_HISTORY_PARA_6" Language="de_DE">
+			<Text>Die Spanier, die 1492 auf den Bahamas, in Kuba und auf Hispaniola sowie später in Puerto Rico eintrafen, nahmen auf ihren ersten Expeditionen keine Frauen mit. Seit der Ankunft der Konquistadoren wurden Taino-Frauen entführt, und einige wurden zu Handelsware für die Spanier. Die Vergewaltigung von Taino-Frauen auf Hispaniola durch die Spanier war weit verbreitet und führte zur Geburt von Mestizen. Wissenschaftler vermuten, dass es auch in Kuba zu einer erheblichen Mestizaje (rassischer und kultureller Vermischung) kam und dass mehrere indianische Pueblos bis ins 19. Jahrhundert überlebten.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_CVS_TAINO_CHAPTER_HISTORY_PARA_7" Language="de_DE">
+			<Text>Die Taíno starben als Kultur nach der Besiedlung durch spanische Kolonisten fast vollständig aus, vor allem aufgrund von Infektionskrankheiten, gegen die sie keine Immunität besaßen. Der erste dokumentierte Pockenausbruch auf Hispaniola ereignete sich entweder im Dezember 1518 oder im Januar 1519. Diese Pockenepidemie tötete fast 90 % der Ureinwohner, die nicht bereits zuvor umgekommen waren. Auch Kriege und die harte Versklavung durch die Kolonisten forderten viele Todesopfer. Bis 1548 war die Bevölkerung der Taíno auf weniger als 500 Personen geschrumpft. Seit etwa 1840 gab es Versuche, in ländlichen Gebieten Kubas, der Dominikanischen Republik und Puerto Ricos eine quasi-indigene Taíno-Identität zu schaffen. Dieser Trend beschleunigte sich in den 1960er Jahren in der puertoricanischen Gemeinschaft auf dem amerikanischen Festland. Bei der US-Volkszählung 2010 bezeichneten sich 1.098 Menschen in Puerto Rico als „puerto-ricanische Indianer“, 1.410 als „spanisch-amerikanische Indianer“ und 9.399 als Taíno. Insgesamt betrachteten sich 35.856 Puertoricaner als amerikanische Ureinwohner.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_CVS_TAINO_CHAPTER_HISTORY_PARA_8" Language="de_DE">
+			<Text>Die Gesellschaft der Taíno war in zwei Klassen unterteilt: die Naborias (das einfache Volk) und die Nitaínos (der Adel). Diese wurden von männlichen Häuptlingen, den sogenannten Caciques, regiert, die von Priestern und Heilern, den sogenannten Bohiques, beraten wurden. Caciques genossen das Privileg, goldene Anhänger namens guanín zu tragen, in quadratischen Bohíos zu wohnen – anstelle der runden Hütten der gewöhnlichen Dorfbewohner – und auf Holzhockern zu sitzen, um über den Gästen zu thronen, die sie empfingen. Bohiques wurden für ihre Heilkräfte und ihre Fähigkeit, mit den Göttern zu sprechen, gepriesen. Man konsultierte sie, und sie erteilten den Taíno die Erlaubnis, wichtige Aufgaben zu übernehmen.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_CVS_TAINO_CHAPTER_HISTORY_PARA_9" Language="de_DE">
+			<Text>Die Taíno kannten ein matrilineares System der Verwandtschaft, Abstammung und Erbfolge. Gab es keinen männlichen Erben, ging das Erbe oder die Nachfolge auf den ältesten Sohn der Schwester des Verstorbenen über. Bei den Taíno galt die avunculokale Wohnform nach der Heirat, was bedeutete, dass ein frisch verheiratetes Paar im Haushalt des Onkels mütterlicherseits lebte. Dieser spielte im Leben der Kinder seiner Nichte eine wichtigere Rolle als deren leiblicher Vater; der Onkel führte die Jungen in die Männergemeinschaften ein. Einige Taíno praktizierten Polygamie. Männer und manchmal auch Frauen konnten zwei oder drei Ehepartner haben. Einige Caciques hatten bis zu 30 Ehefrauen.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_CVS_TAINO_CHAPTER_HISTORY_PARA_10" Language="de_DE">
+			<Text>Die Taíno-Frauen waren sehr geschickt in der Landwirtschaft. Das Volk war davon abhängig, aber die Männer fischten und jagten auch. Sie stellten Fischernetze und Seile aus Baumwolle und Palmfasern her. Ihre Einbaumkanus (kanoa) wurden in verschiedenen Größen gefertigt und konnten 2 bis 150 Personen befördern. Ein Kanu durchschnittlicher Größe bot Platz für etwa 15 bis 20 Personen. Zur Jagd benutzten sie Pfeil und Bogen und entwickelten die Verwendung von Gift an ihren Pfeilspitzen.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_CVS_TAINO_CHAPTER_HISTORY_PARA_11" Language="de_DE">
+			<Text>Eine bei Frauen häufig getragene Frisur bestand aus einem Pony vorne und längerem Haar hinten. Manchmal trugen sie Goldschmuck, Körperbemalung und/oder Muscheln. Taíno-Männer und unverheiratete Frauen waren in der Regel nackt, obwohl Frauen nach der Heirat eine kleine Baumwollschürze trugen, die als Nagua bezeichnet wurde. Die Taíno lebten in Siedlungen, die Yucayeques genannt wurden und deren Größe je nach Standort variierte. Die Siedlungen in Puerto Rico und Hispaniola waren die größten, während die auf den Bahamas die kleinsten waren. Im Zentrum eines typischen Dorfes befand sich ein zentraler Platz, der für verschiedene gesellschaftliche Aktivitäten wie Spiele, Feste, religiöse Rituale und öffentliche Zeremonien genutzt wurde. Diese Plätze hatten viele Formen, darunter ovale, rechteckige sowie schmale und langgestreckte. Hier fanden Zeremonien statt, bei denen die Taten der Vorfahren gefeiert wurden; diese wurden Areitos genannt.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_CVS_TAINO_CHAPTER_HISTORY_PARA_12" Language="de_DE">
+			<Text>Die Bevölkerung lebte meist in großen, runden Gebäuden (Bohios), die aus Holzpfählen, geflochtenem Stroh und Palmblättern errichtet wurden. Diese Häuser, die den zentralen Platz umgaben, boten jeweils Platz für 10 bis 15 Familien. Der Häuptling und seine Familie wohnten in rechteckigen Gebäuden (caney) ähnlicher Bauart mit Holzveranden. Zur Einrichtung der Taíno-Behausungen gehörten Baumwollhängematten (hamaca), Schlaf- und Sitzmatten aus Palmblättern, Holzstühle (dujo oder duho) mit geflochtenen Sitzflächen, Podeste und Wiegen für Kinder.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_CVS_TAINO_CHAPTER_HISTORY_PARA_13" Language="de_DE">
+			<Text>Die Taíno spielten ein zeremonielles Ballspiel namens Batey. Die gegnerischen Mannschaften bestanden aus jeweils 10 bis 30 Spielern und verwendeten einen Ball aus Vollgummi. Normalerweise setzten sich die Mannschaften aus Männern zusammen, doch gelegentlich nahmen auch Frauen an dem Spiel teil. Die Taíno der klassischen Periode spielten auf dem zentralen Platz des Dorfes oder auf eigens dafür angelegten rechteckigen Ballspielplätzen, den sogenannten Bateys. Es wird angenommen, dass die Spiele auf dem Batey zur Konfliktlösung zwischen den Gemeinschaften dienten. Die aufwendigsten Ballspielplätze befinden sich an den Grenzen der Stammesgebiete. Oft schlossen die Häuptlinge Wetten über den möglichen Ausgang eines Spiels ab.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_CIVILIZATIONS_PAGE_CIVILIZATION_CVS_TAINO_CHAPTER_HISTORY_PARA_14" Language="de_DE">
+			<Text>Die Taíno sprachen eine Arawak-Sprache und verwendeten eine frühe Form der Schrift, die sogenannte Proto-Schrift, in Form von Felszeichnungen. Einige der von ihnen verwendeten Wörter, wie barbacoa („Barbecue“), hamaca („Hängematte“), kanoa („Kanu“), tabaco („Tabak“), yuca, batata („Süßkartoffel“) und juracán („Hurrikan“), wurden in das Spanische und Englische übernommen. Für den Krieg stellten die Männer hölzerne Kriegskeulen her, die sie Macana nannten. Sie war etwa einen Zoll dick und ähnelte der Coco-Macaque.</Text>
+		</Replace>
+		
+		
+		<Replace Tag="LOC_PEDIA_DISTRICTS_PAGE_DISTRICT_CVS_TAINO_UI_CHAPTER_HISTORY_PARA_1" Language="de_DE">
+			<Text>Batéy war die Bezeichnung für einen besonderen Platz, um den herum die einheimischen karibischen Taíno-Indianer ihre Siedlungen errichteten. Es handelte sich in der Regel um einen rechteckigen Bereich, der von Steinen mit eingravierten Symbolen (Petroglyphen) umgeben war.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_DISTRICTS_PAGE_DISTRICT_CVS_TAINO_UI_CHAPTER_HISTORY_PARA_2" Language="de_DE">
+			<Text>Der Batey war der Bereich, in dem Batey-Veranstaltungen (z. B. Zeremonien, das Ballspiel usw.) stattfanden. Die Batey-Zeremonie (auch als Batu bekannt) lässt sich nach einigen historischen Berichten eher als gerichtlicher Wettstreit denn als Spiel betrachten. Da die historischen Berichte über das Spiel und den Spielplatz von (überwiegend spanischen) europäischen Entdeckern stammen, sind die wahre Natur, die Geschichte und die Funktion des Batey nach wie vor umstritten. Nachbarstämme könnten Batey-Wettkämpfe genutzt haben, um Differenzen ohne Krieg beizulegen.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_DISTRICTS_PAGE_DISTRICT_CVS_TAINO_UI_CHAPTER_HISTORY_PARA_3" Language="de_DE">
+			<Text>Es besteht kein Konsens darüber, ob das Batey-Ballspiel in der Karibik in verschiedenen Regionen der Neuen Welt unabhängig voneinander entstanden ist oder ob es sich von einem oder mehreren Orten aus verbreitet hat. Die großen, zentral gelegenen Friedhöfe in den Saladoid-Dörfern dienten als Plätze, ähnlich wie man sie in den Tieflandgemeinden Südamerikas findet.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_DISTRICTS_PAGE_DISTRICT_CVS_TAINO_UI_CHAPTER_HISTORY_PARA_4" Language="de_DE">
+			<Text>Die zeremonielle und religiöse Bedeutung des später entwickelten Ballspiels scheint auf eine Verbindung zum mesoamerikanischen Ballspiel hinzudeuten, und es wurde argumentiert, dass das Batey-Ballspiel der Karibik eine vereinfachte Version des Maya-Pok-Ta-Pok sei, die auf die Kultur und Religion der Taíno zugeschnitten war. Es ist möglich, dass die Verbreitungsroute des Pok-Ta-Pok-Spiels und anderer Elemente der Maya-Kultur nicht direkt von Yucatán in die Karibik verlief, sondern indirekt über Südamerika, da auch die Otomacos in Südamerika ein ähnliches Spiel spielten.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_DISTRICTS_PAGE_DISTRICT_CVS_TAINO_UI_CHAPTER_HISTORY_PARA_5" Language="de_DE">
+			<Text>Der Großteil der dokumentierten Informationen über das auf den Karibikinseln gespielte Ballspiel stammt aus den historischen Berichten von Gonzalo Fernández de Oviedo y Valdez und Bartolomé de Las Casas. Der einheimische Name für den Ballplatz und das Spiel lautete „batey“. Oviedos Beschreibung der Bälle lässt an Gummi oder eine Art Harz mit gummiartigen Eigenschaften denken; in allen Quellen wird in irgendeiner Form auf die ungewohnte Sprungkraft der Bälle hingewiesen.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_DISTRICTS_PAGE_DISTRICT_CVS_TAINO_UI_CHAPTER_HISTORY_PARA_6" Language="de_DE">
+			<Text>Das Spiel wurde von zwei Mannschaften ausgetragen, wobei jede Mannschaft aus zehn bis dreißig Spielern bestand. Normalerweise setzten sich die Mannschaften ausschließlich aus Männern zusammen, doch gelegentlich spielten auch Frauen mit. Oviedo hielt fest, dass Männer und Frauen manchmal in gemischten Mannschaften spielten, Männer und Frauen gegeneinander antraten und die verheirateten Frauen gegen unverheiratete Jungfrauen antraten. Verheiratete Frauen trugen einen um den Körper gewickelten Umhang, während die Männer und Jungfrauen unbekleidet blieben. Archäologen haben einen Zusammenhang zwischen den Ballspielplätzen und den in Puerto Rico rund um die Ballspielstätten häufig anzutreffenden Stein-Ellbogen- und Halskragen festgestellt. Die Funktion dieser Kragen ist nicht eindeutig oder in historischen Berichten ausdrücklich beschrieben. Es ist jedoch interessant, die Ähnlichkeit zwischen den karibischen Stein-Kragen und den mexikanischen Stein-Jochs zu bemerken, die von mesoamerikanischen Ballspielern als zeremonielle Gürtel getragen wurden.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_DISTRICTS_PAGE_DISTRICT_CVS_TAINO_UI_CHAPTER_HISTORY_PARA_7" Language="de_DE">
+			<Text>Faltas (Fehler oder Vergehen) wurden verhängt, wenn der Ball auf dem Boden zum Stillstand kam oder wenn er ins Aus (außerhalb der steinernen Begrenzungsmarkierungen) geworfen wurde. Der Ball durfte nur mit der Schulter, dem Ellbogen, dem Kopf, den Hüften, dem Gesäß oder den Knien geschlagen werden, niemals jedoch mit den Händen. Las Casas bemerkte, dass Frauen beim Spielen weder ihre Hüften noch ihre Schultern einsetzten, sondern ihre Knie. Punkte wurden erzielt, wenn der Ball nach einem fehlerfreien Spielzug nicht zurückgeschlagen werden konnte (ähnlich wie beim heutigen Volleyball). Das Spiel wurde fortgesetzt, bis eine Mannschaft die festgelegte Punktzahl erreicht hatte. Oft schlossen Spieler und Häuptlinge Wetten oder Wetteinsätze auf den möglichen Ausgang eines Spiels ab. Diese Wetteinsätze wurden nach Spielende ausgezahlt.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_DISTRICTS_PAGE_DISTRICT_CVS_TAINO_UI_CHAPTER_HISTORY_PARA_8" Language="de_DE">
+			<Text>Felszeichnungen wurden auf Flussfelsen, an den Wänden von Höhlen und Felsunterkünften sowie auf aufrecht stehenden Steinplatten gefunden, die die Plätze von Ballspielplätzen umrahmen. Leider wurden viele dieser Artefakte von Sammlern oder Plünderern gestohlen. Es gibt zwei Hauptarten von Petroglyphen: geometrische Muster und Darstellungen von Menschen oder Tieren. Rouse hat die Petroglyphen als „menschenähnliche Körper und Köpfe, Gesichter sowie geometrische Muster, von denen einige an Sonne und Mond erinnern“ beschrieben.</Text>
+		</Replace>
+		
+		
+		<Replace Tag="LOC_PEDIA_PROJECTS_PAGE_PROJECT_CVS_TAINO_UP_CHAPTER_HISTORY_PARA_1" Language="de_DE">
+			<Text>Die indianischen Taínos feierten ihre Lebensumstände im Rahmen einer religiösen Zeremonie namens Areyto. Musik spielte eine entscheidende Rolle in der Geschichte und Kultur von Borikén, dem Namen, den die Taínos Puerto Rico gaben und der in ihrer Sprache ‚Land Gottes‘ bedeutet.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_PROJECTS_PAGE_PROJECT_CVS_TAINO_UP_CHAPTER_HISTORY_PARA_2" Language="de_DE">
+			<Text>Im Laufe von Jahrtausenden hat sich der Areyto zu anderen Musikgenres weiterentwickelt, und selbst wenn unglückliche Umstände verheerende Auswirkungen auf die Insel haben konnten, ist diese Kunstform, die man Musik nennt, das magische Element, das Traurigkeit in Glückseligkeit verwandelt. Sie erinnert die Puertoricaner daran, dass sie durch Singen und Tanzen Lösungen für ihre Probleme finden können.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_PROJECTS_PAGE_PROJECT_CVS_TAINO_UP_CHAPTER_HISTORY_PARA_3" Language="de_DE">
+			<Text>Angefangen bei der Nationalhymne von Puerto Rico, die ‚La Borinqueña‘ heißt, haben uns die Taíno-Indianer ein Vermächtnis ihrer Bräuche und Kultur hinterlassen. Die Areyto-Zeremonie spielte eine bedeutende Rolle in ihrem sozialen, politischen und religiösen Leben, und ihr Zweck bestand darin, ihre Vorfahren zu verehren und spirituelle Führung aus der Geisterwelt zu erbitten.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_PROJECTS_PAGE_PROJECT_CVS_TAINO_UP_CHAPTER_HISTORY_PARA_4" Language="de_DE">
+			<Text>Mit Tänzen und Musik nahm die Gemeinschaft am Areyto teil, und die Feierlichkeiten konnten sich über mehrere Tage hinziehen. Der Areyto fand gewöhnlich auf dem zentralen Platz eines Dorfes statt, dem sogenannten Batey. Dieser rechteckige, weitläufige Platz, der auch als Tanzplatz bezeichnet wurde, war von Steinplatten umgeben und mit Schnitzereien von Zemís verziert, die die Geister von Yocahú und Atabey beherbergen sollten.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_PROJECTS_PAGE_PROJECT_CVS_TAINO_UP_CHAPTER_HISTORY_PARA_5" Language="de_DE">
+			<Text>Die Taínos glaubten, dass Zemís Kräfte besaßen, die ihre physische Umgebung beeinflussten, wie zum Beispiel das Wetter, die Gesundheit, den Tod und die Geburt. Die aus Stein oder Holz geschnitzten Zemís wurden in allen Formen und Größen hergestellt und mit Gold und Halbedelsteinen verziert.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_PROJECTS_PAGE_PROJECT_CVS_TAINO_UP_CHAPTER_HISTORY_PARA_6" Language="de_DE">
+			<Text>Unter der Leitung des Cacique, des Häuptlings des Stammes, war der Areyto eine religiöse Zeremonie, bei der ihm der Bohique, ein Schamane mit übernatürlichen Kräften, zur Seite stand. Vor der Zeremonie bemalte oder tätowierte er seinen Körper mit Zemís. Neben Heilkräutern, Gesängen, Tabak und Maracas, mit denen er einen unvergesslichen Klang erzeugte, war Magie das mächtigste Mittel, das er zur Heilung einsetzte.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_PROJECTS_PAGE_PROJECT_CVS_TAINO_UP_CHAPTER_HISTORY_PARA_7" Language="de_DE">
+			<Text>Sowohl der Bohíque als auch der Cacique inhalierten Cohoba-Samen. Der Zweck dieser halluzinogenen Droge bestand darin, einen Bewusstseinszustand zu erreichen, der sie in die Geisterwelt entführen würde. Manchmal mischten sie das Cohoba mit Tabak und gemahlenen Muscheln, um dessen Wirksamkeit zu verstärken.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_PROJECTS_PAGE_PROJECT_CVS_TAINO_UP_CHAPTER_HISTORY_PARA_8" Language="de_DE">
+			<Text>Vor Beginn der Areyto-Zeremonie unterzogen sie sich einem Reinigungsritual, indem sie fasteten oder sich einen Stock in den Hals steckten, um Erbrechen auszulösen. Indem sie das Cohoba mit Hilfe von Röhrchen aus Knochen oder Holz, den sogenannten Bohíques, durch die Nase einatmeten, versetzten sich der Bohíque und der Cacique in einen halluzinogenen Zustand, um mit ihren Göttern zu kommunizieren, in der Hoffnung, Führung und Antworten zu erhalten.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_PROJECTS_PAGE_PROJECT_CVS_TAINO_UP_CHAPTER_HISTORY_PARA_9" Language="de_DE">
+			<Text>Zur Vorbereitung auf diese Zeremonien bemalten die Taínos ihre Körper gerne mit pflanzlichen Farbstoffen und schmückten sich mit Papageienfedern und Schmuck aus Muscheln. Die Caciques und Bohíques trugen mit Federn verzierte Umhänge. Der Areyto begann mit einem Umzug der Taínos, die Körbe mit Maniokbrot trugen und Lieder über die Zemís sangen. Außerdem unterzogen sie sich einem Reinigungsritual, bei dem sie sich einen Stock in den Hals drückten und erbrachen.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_PROJECTS_PAGE_PROJECT_CVS_TAINO_UP_CHAPTER_HISTORY_PARA_10" Language="de_DE">
+			<Text>Die Frau brachte den Bohíques Maniokbrot, die es den Zemís darbrachten. Es folgten Tänze, Gesänge und Sprechgesänge, mit denen die Gottheiten verherrlicht und um Wohlstand und Gesundheit gebetet wurde. Sie machten Musik mit einer hölzernen Trommel, die aus einem Baum gefertigt war und Atambor genannt wurde. Dieses Instrument wurde von Maracas, Guiro, Muscheltrompeten und Flöten begleitet, die aus Knochen gefertigt waren. Wenn die Indigenen nicht auftraten, saßen sie auf Steinen, während die Caciques und Bohíques auf ihren Hockern saßen.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_PROJECTS_PAGE_PROJECT_CVS_TAINO_UP_CHAPTER_HISTORY_PARA_11" Language="de_DE">
+			<Text>Zu den verschiedenen Anlässen, zu denen Areitos gefeiert wurden, gehörte auch der Besuch prominenter Gäste. Fray Bartolomé de las Casas, ein spanischer Priester, der während der spanischen Kolonialzeit in Puerto Rico lebte, beschrieb eine Areito-Zeremonie als ein wunderschönes und magisches Ritual, bei dem die Taínos ihr Wesen zum Ausdruck brachten, indem sie ihren Kindern Geschichten über ihre vergangenen Lebensumstände und ihre Vorfahren erzählten, während sie tanzten und sangen.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_PROJECTS_PAGE_PROJECT_CVS_TAINO_UP_CHAPTER_HISTORY_PARA_12" Language="de_DE">
+			<Text>Der Zeremonienplatz von Caguana, der als eine der größten Taíno-Siedlungen in Puerto Rico gilt, war einer der bevorzugten Orte der Taínos für die Feier des Areyto. Dieser in Ponce gelegene Platz ist einer der größten und ältesten Plätze der Karibik und bietet Archäologen damit einen idealen Rahmen, um die Entwicklung der Taíno-Kultur zu erforschen.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_PROJECTS_PAGE_PROJECT_CVS_TAINO_UP_CHAPTER_HISTORY_PARA_13" Language="de_DE">
+			<Text>Historiker gehen davon aus, dass der Areyto ein Mittel war, um dieser Welt zu entfliehen und höhere Dimensionen zu erreichen. Auch wenn nur der Cacique und der Bohique die Verbindung zu höheren spirituellen Sphären herstellten, kam der reinigende Zustand, den sie alle durch die Areyto-Zeremonie erreichen konnten, jedem Einzelnen von ihnen zugute und ermöglichte es ihnen, Gnade, Weisheit und Freude zu empfangen.</Text>
+		</Replace>
+		
+		
+		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_CVS_TAINO_UU_CHAPTER_HISTORY_PARA_1" Language="de_DE">
+			<Text>Der Begriff ‚Macana‘, der aus der Sprache der Taíno stammt, bezeichnet Holzwaffen, die von den verschiedenen indigenen Kulturen Mittel- und Südamerikas verwendet wurden. Die früheste Bedeutung, die dem Begriff „Macana“ zugeschrieben wird, ist eine schwertähnliche Waffe aus Holz, die jedoch scharf genug ist, um gefährlich zu sein. Der Begriff wird manchmal auch auf die ähnliche aztekische Waffe angewendet, die mit Obsidianstücken besetzt ist, um eine Klinge zu bilden, obwohl einige Experten diesen Gegenstand durch die Verwendung des Nahuatl-Namens „Macuahuitl“ unterscheiden.</Text>
+		</Replace>
+		
+		<!-- = Mod Support (Rule with Faith) = -->
+		
+		<Replace Tag="LOC_CIVILIZATION_CVS_ROMANIA_DESCRIPTION_JFD_CIVILIZATION" Language="de_DE">
+			<Text>Die Taino-Zivilisation</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNMENT_JFD_EMPIRE_LEADER_TITLE_CVS_ROMANIA" Language="de_DE">
+			<Text>Cacique</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNMENT_JFD_EMPIRE_LEADER_TITLE_CVS_ROMANIA_FEMININE" Language="de_DE">
+			<Text>Cacica</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNMENT_JFD_CHIEFDOM_LEADER_TITLE_CVS_ROMANIA" Language="de_DE">
+			<Text>Cacique</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNMENT_JFD_CHIEFDOM_LEADER_TITLE_CVS_ROMANIA_FEMININE" Language="de_DE">
+			<Text>Cacica</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNMENT_JFD_HORDE_LEADER_TITLE_CVS_ROMANIA" Language="de_DE">
+			<Text>Tlacochcalctl</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNMENT_JFD_HORDE_LEADER_TITLE_CVS_ROMANIA_FEMININE" Language="de_DE">
+			<Text>Tlacochcalctl</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNMENT_JFD_POLIS_LEADER_TITLE_CVS_ROMANIA" Language="de_DE">
+			<Text>Cacique</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNMENT_JFD_POLIS_LEADER_TITLE_CVS_ROMANIA_FEMININE" Language="de_DE">
+			<Text>Cacica</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNMENT_JFD_AUTOCRACY_LEADER_TITLE_CVS_ROMANIA" Language="de_DE">
+			<Text>Cacique</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNMENT_JFD_AUTOCRACY_LEADER_TITLE_CVS_ROMANIA_FEMININE" Language="de_DE">
+			<Text>Cacica</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNMENT_JFD_OLIGARCHY_LEADER_TITLE_CVS_ROMANIA" Language="de_DE">
+			<Text>Cacica</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNMENT_JFD_OLIGARCHY_LEADER_TITLE_CVS_ROMANIA_FEMININE" Language="de_DE">
+			<Text>Cacica</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNMENT_JFD_CLASSICAL_DEMOCRACY_LEADER_TITLE_CVS_ROMANIA" Language="de_DE">
+			<Text>Cacica</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNMENT_JFD_CLASSICAL_DEMOCRACY_LEADER_TITLE_CVS_ROMANIA_FEMININE" Language="de_DE">
+			<Text>Cacica</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNMENT_JFD_REPUBLIC_LEADER_TITLE_CVS_ROMANIA" Language="de_DE">
+			<Text>Cacique</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNMENT_JFD_REPUBLIC_LEADER_TITLE_CVS_ROMANIA_FEMININE" Language="de_DE">
+			<Text>Cacica</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNMENT_JFD_MONARCHY_LEADER_TITLE_CVS_ROMANIA" Language="de_DE">
+			<Text>Huetlatoani</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNMENT_JFD_MONARCHY_LEADER_TITLE_CVS_ROMANIA_FEMININE" Language="de_DE">
+			<Text>Huetlatoani</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNMENT_JFD_LIBERAL_DEMOCRACY_LEADER_TITLE_CVS_ROMANIA" Language="de_DE">
+			<Text>Cacique</Text>
+		</Replace>
+		<Replace Tag="LOC_GOVERNMENT_JFD_LIBERAL_DEMOCRACY_LEADER_TITLE_CVS_ROMANIA_FEMININE" Language="de_DE">
+			<Text>Cacica</Text>
+		</Replace>
+		
+		
+		<!-- = BBGExpanded\Meso\TainoAnacaona\Core = -->
+		
+		<!-- = Anacaona_Localisation = -->
+		
+		<!-- Leader -->
+		
+		<Replace Tag="LOC_LEADER_CVS_ANACAONA_NAME" Language="de_DE">
+			<Text>Anacaona</Text>
+		</Replace>
+		
+		<!-- UA -->
+		
+		<!--<Replace Tag="LOC_TRAIT_LEADER_CVS_ANACAONA_UA_NAME" Language="de_DE">
+			<Text>Goldene Blume</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_CVS_ANACAONA_UA_DESCRIPTION" Language="de_DE">
+			<Text>Nach Erforschung der Ausrichtung "Politische Philosophie" gewährt jede Widmung einen zusätzlichen Politikplatz eines anderen Typs.[NEWLINE][NEWLINE]+5% [ICON_GOLD] Gold in glücklichen [ICON_DISTRICT_CITY_CENTER] Städten (steigt auf +10% bei begeistert und +15% bei euphorisch).</Text>
+		</Replace>-->
+		
+		<!-- UI -->
+		
+		<!--<Replace Tag="LOC_IMPROVEMENT_CVS_ANACAONA_UI_NAME" Language="de_DE">
+			<Text>Conuco</Text>
+		</Replace>
+		<Replace Tag="LOC_IMPROVEMENT_CVS_ANACAONA_UI_DESCRIPTION" Language="de_DE">
+			<Text>Diese Verbesserung ist einzigartig für Taíno und deine Handwerker können sie durch den Verbrauch einer [ICON_CHARGES] Ladung bauen:[NEWLINE][NEWLINE]• Die Grunderträge des "Conuco" (ohne Ressourcen und Geländeeigenschaften) werden verdoppelt.[NEWLINE]• +1 [ICON_FAITH] Glauben und +1 [ICON_CULTURE] Kultur für jede angrenzende Ressource auf einem Küstenfeld (nach Erforschung der Ausrichtung "Außenhandel").[NEWLINE]• +1 [ICON_CULTURE] Kultur.[NEWLINE]• +1 [ICON_CULTURE] Kultur, nach Erforschung der Ausrichtung "Mittelaltermärkte".[NEWLINE]• +1 [ICON_CULTURE] Kultur, nach Erforschung der Ausrichtung "Naturgeschichte".[NEWLINE][NEWLINE]Muss auf einem Feld angrenzend an einer Bonus- oder Luxusressource platziert werden.[NEWLINE] Kann nicht auf einem Feld mit Hügeln, Wüste oder Schnee platziert werden.</Text>
+		</Replace>
+		<Replace Tag="LOC_ADJ_CVS_ANACAONA_UI_GOLD_RESOURCES" Language="de_DE">
+			<Text>+{1_num} [ICON_GOLD] Gold aus der benachbarten Luxus-{1_Num : Plural 1?Ressource; andere?Ressourcen;}.</Text>
+		</Replace>
+		<Replace Tag="LOC_ADJ_CVS_ANACAONA_UI_CULTURE_RESOURCES" Language="de_DE">
+			<Text>+{1_num} [ICON_CULTURE] Kultur aus dem angrenzenden Bonus {1_Num : Plural 1?Ressource; andere?Ressourcen;}.</Text>
+		</Replace> -->
+		
+		<!-- Agenda -->
+		<Replace Tag="LOC_AGENDA_CVS_ANACAONA_NAME" Language="de_DE">
+			<Text>Datiao</Text>
+		</Replace>
+		<Replace Tag="LOC_AGENDA_CVS_ANACAONA_DESCRIPTION" Language="de_DE">
+			<Text>Versucht, den Frieden zu wahren, und respektiert Zivilisationen, die dies ebenfalls tun. Hegt eine starke Abneigung gegen Zivilisationen, die Stadtstaaten angreifen.</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_KUDO_LEADER_CVS_ANACAONA_REASON_ANY" Language="de_DE">
+			<Text>(Du sorgst für Frieden.)</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_MODIFIER_CVS_ANACAONA_HAPPY" Language="de_DE">
+			<Text>Anacaona freut sich, dass du den Frieden bewahrst.</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_WARNING_LEADER_CVS_ANACAONA_REASON_ANY" Language="de_DE">
+			<Text>(Du hast auf ihrem Heimatkontinent Krieg geführt oder einen Stadtstaat angegriffen.)</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_MODIFIER_CVS_ANACAONA_UNHAPPY" Language="de_DE">
+			<Text>Anacaona ist verärgert über deine Aggression gegenüber den Stadtstaaten.</Text>
+		</Replace>
+		
+		<!-- Diplos -->
+		<!-- DOM -->
+		<Replace Tag="LOC_LOADING_INFO_LEADER_CVS_ANACAONA" Language="de_DE">
+			<Text>Die weisesten Herrscher wissen, dass Krieg nichts anderes ist als das Versagen der Diplomatie, Anacaona, edle Häuptlingin der Taino. Es ist die Kenntnis eures Volkes vom Land, die es ihm ermöglicht, von den Früchten der Mutter Erde zu zehren, doch noch größer sind die Vorteile, die Bündnisse mit kleineren Mächten mit sich bringen. Gewinnt ihre Aufmerksamkeit durch die Gastfreundschaft von Areyto. Bewahrt sie durch Freundlichkeit.</Text>
+		</Replace>
+		
+		<!-- FIRST MEET -->
+		<!-- First AI Line -->
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_LEADER_CVS_ANACAONA_ANY" Language="de_DE">
+			<Text>Sei gegrüßt, Reisender. Ich bin Anacaona, Häuptlingin des Volkes der Taino. Aus welchen Ländern kommst du?</Text>
+		</Replace>
+		<!-- AI invitation to visit nearby City -->
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_VISIT_RECIPIENT_LEADER_CVS_ANACAONA_ANY" Language="de_DE">
+			<Text>Es ist bei den Taino Brauch, für Besucher ein großes Festmahl zu veranstalten und Areyto aufzuführen. Ich möchte Sie herzlich einladen, mit uns zu speisen.</Text>
+		</Replace>
+		<!-- AI accepts human invitation -->
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_NEAR_INITIATOR_POSITIVE_LEADER_CVS_ANACAONA_ANY" Language="de_DE">
+			<Text>Das wäre mir eine Ehre. Vielen Dank.</Text>
+		</Replace>
+		<!-- AI invitation to exchange Capital Information -->
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_NO_MANS_INFO_EXCHANGE_LEADER_CVS_ANACAONA_ANY" Language="de_DE">
+			<Text>Lasst uns die Gastfreundschaft des anderen genießen und uns über unsere Hauptstädte austauschen. Was meint ihr dazu?</Text>
+		</Replace>
+		
+		<!-- GREETINGS -->
+		<Replace Tag="LOC_DIPLO_GREETING_LEADER_CVS_ANACAONA_ANY" Language="de_DE">
+			<Text>Hallo, mein Freund. Was kann ich für dich tun?</Text>
+		</Replace>
+		
+		<!-- DELEGATION -->
+		<!-- AI Accepts -->
+		<Replace Tag="LOC_DIPLO_ACCEPT_DELEGATION_FROM_HUMAN_LEADER_CVS_ANACAONA_ANY" Language="de_DE">
+			<Text>Es wäre mir eine Freude, Ihre Delegierten willkommen zu heißen. Ich werde dafür sorgen, dass ihr Aufenthalt bei uns ein herzlicher Empfang wird und ihnen in guter Erinnerung bleibt.</Text>
+		</Replace>
+		<!-- AI Accepts -->
+		<Replace Tag="LOC_DIPLO_ACCEPT_DELEGATION_FROM_HUMAN_LEADER_CVS_ANACAONA_ANY" Language="de_DE">
+			<Text>Es wäre mir eine Freude, Ihre Delegierten willkommen zu heißen. Ich werde dafür sorgen, dass ihr Aufenthalt bei uns ein herzlicher Empfang wird und ihnen in guter Erinnerung bleibt.</Text>
+		</Replace>
+		<!-- AI Rejects -->
+		<Replace Tag="LOC_DIPLO_REJECT_DELEGATION_FROM_HUMAN_LEADER_CVS_ANACAONA_ANY" Language="de_DE">
+			<Text>Nein, tut mir leid. Lass uns erst mal ein bisschen besser kennenlernen.</Text>
+		</Replace>
+		<!-- AI Requests -->
+		<Replace Tag="LOC_DIPLO_DELEGATION_FROM_AI_LEADER_CVS_ANACAONA_ANY" Language="de_DE">
+			<Text>Ich habe Ihnen Casabi und Tabacú als Geschenk geschickt, damit Sie sich daran erfreuen können. Ich vertraue darauf, dass meine Gesandten mit demselben Respekt behandelt werden, den Sie mir entgegengebracht haben.</Text>
+		</Replace>
+		
+		<!-- OPEN BORDERS -->
+		<!-- AI accepts from human -->
+		<Replace Tag="LOC_DIPLO_ACCEPT_OPEN_BORDERS_FROM_HUMAN_LEADER_CVS_ANACAONA_ANY" Language="de_DE">
+			<Text>Aber natürlich, kommen Sie doch jederzeit vorbei.</Text>
+		</Replace>
+		<!-- AI rejects from human -->
+		<Replace Tag="LOC_DIPLO_REJECT_OPEN_BORDERS_FROM_HUMAN_LEADER_CVS_ANACAONA_ANY" Language="de_DE">
+			<Text>Zum Wohle meines Volkes muss ich ablehnen.</Text>
+		</Replace>
+		<!-- AI requests from human -->
+		<Replace Tag="LOC_DIPLO_OPEN_BORDERS_FROM_AI_LEADER_CVS_ANACAONA_ANY" Language="de_DE">
+			<Text>Wie können wir voneinander lernen, wenn wir uns gegenseitig Grenzen setzen? Lasst uns offene Grenzen miteinander teilen.</Text>
+		</Replace>
+		
+		<!-- DECLARE FRIENDSHIP -->
+		<!-- AI accepts from human -->
+		<Replace Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_HUMAN_LEADER_CVS_ANACAONA_ANY" Language="de_DE">
+			<Text>Natürlich. Ein Freund von mir ist ein Freund meiner Leute.</Text>
+		</Replace>
+		<!-- AI rejects from human -->
+		<Replace Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_HUMAN_LEADER_CVS_ANACAONA_ANY" Language="de_DE">
+			<Text>Für eine offizielle Freundschaftserklärung ist es vielleicht noch zu früh. Lass der Sache etwas Zeit.</Text>
+		</Replace>
+		<!-- AI Requests friendship from human -->
+		<Replace Tag="LOC_DIPLO_DECLARE_FRIEND_FROM_AI_LEADER_CVS_ANACAONA_ANY" Language="de_DE">
+			<Text>Ich bewundere die Art und Weise, wie Sie Ihr Volk regieren. Erlauben Sie mir, Ihnen meine Hand in Freundschaft zu reichen.</Text>
+		</Replace>
+		<!-- Human accepts AI requests, AI responds -->
+		<Replace Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_AI_LEADER_CVS_ANACAONA_ANY" Language="de_DE">
+			<Text>Danke, mein Freund.</Text>
+		</Replace>
+		<!-- Human rejects AI requests, AI responds -->
+		<Replace Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_AI_LEADER_CVS_ANACAONA_ANY" Language="de_DE">
+			<Text>Na gut. Nichts für ungut.</Text>
+		</Replace>
+		
+		<!-- ALLIANCE -->
+		<!-- AI Requests an alliance from human -->
+		<Replace Tag="LOC_DIPLO_MAKE_ALLIANCE_FROM_AI_LEADER_CVS_ANACAONA_ANY" Language="de_DE">
+			<Text>Du bist zu einem der Menschen geworden, denen ich auf dieser Welt am meisten vertraue. Was würdest du zu einem Bündnis zwischen unseren Nationen sagen?</Text>
+		</Replace>
+		
+		<!-- KUDOS & WARNINGS -->
+		<!-- AI Kudos -->
+		<Replace Tag="LOC_DIPLO_KUDO_EXIT_LEADER_CVS_ANACAONA_ANY" Language="de_DE">
+			<Text>Du solltest stolz auf deine Leistungen sein. Ich sehe Großes für dich und dein Volk.</Text>
+		</Replace>
+		<!-- AI Warnings -->
+		<Replace Tag="LOC_DIPLO_WARNING_EXIT_LEADER_CVS_ANACAONA_ANY" Language="de_DE">
+			<Text>Wie lange muss man dein rücksichtsloses Verhalten noch ertragen? Bitte überdenke den Weg, den du eingeschlagen hast.</Text>
+		</Replace>
+		<!-- AI warns player for border troops -->
+		<Replace Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_LEADER_CVS_ANACAONA_ANY" Language="de_DE">
+			<Text>Wir sind ein Volk, das für Gastfreundschaft und Freundlichkeit bekannt ist, aber wir lassen uns keine leeren Drohungen gefallen. Bitte ziehen Sie Ihre Truppen von unseren Grenzen ab.</Text>
+		</Replace>
+		
+		<!-- TRADE -->
+		<!-- AI Accepts Deal -->
+		<Replace Tag="LOC_DIPLO_ACCEPT_MAKE_DEAL_FROM_AI_LEADER_CVS_ANACAONA_ANY" Language="de_DE">
+			<Text>Ich glaube, darin sind wir uns einig.</Text>
+		</Replace>
+		<!-- AI Rejects Deal -->
+		<Replace Tag="LOC_DIPLO_REJECT_MAKE_DEAL_FROM_AI_LEADER_CVS_ANACAONA_ANY" Language="de_DE">
+			<Text>Das ist schade.</Text>
+		</Replace>
+		
+		<!-- DENOUNCE -->
+		<!-- From Human -->
+		<Replace Tag="LOC_DIPLO_DENOUNCE_FROM_HUMAN_LEADER_CVS_ANACAONA_ANY" Language="de_DE">
+			<Text>Ich weiß nicht, woran das liegt, aber ich weiß, dass es mir nicht immer etwas ausmachen muss.</Text>
+		</Replace>
+		<!-- From AI -->
+		<Replace Tag="LOC_DIPLO_DENOUNCE_FROM_AI_LEADER_CVS_ANACAONA_ANY" Language="de_DE">
+			<Text>Wenn du deine Dummheiten nur für einen Moment unterlassen würdest, würdest du vielleicht mehr an dieser Welt schätzen. (Denunziert dich)</Text>
+		</Replace>
+		
+		<!-- DOW -->
+		<!-- Human Declares War-->
+		<Replace Tag="LOC_DIPLO_DECLARE_WAR_FROM_HUMAN_LEADER_CVS_ANACAONA_ANY" Language="de_DE">
+			<Text>Es ist schade, dass es so weit gekommen ist. Seid versichert, ich werde mich nicht kampflos geschlagen geben.</Text>
+		</Replace>
+		<!-- AI Declares War -->
+		<Replace Tag="LOC_DIPLO_DECLARE_WAR_FROM_AI_LEADER_CVS_ANACAONA_ANY" Language="de_DE">
+			<Text>Überlege dir einmal, wie erbärmlich du sein musst, dass das Volk der Taino den Krieg fordert. Es ist ein seltener Moment, aber ein notwendiger.</Text>
+		</Replace>
+		
+		<!-- MAKE PEACE -->
+		<!-- AI accepts from human -->
+		<Replace Tag="LOC_DIPLO_MAKE_PEACE_AI_ACCEPT_DEAL_LEADER_CVS_ANACAONA_ANY" Language="de_DE">
+			<Text>Ja, ich denke, das wäre in unser beider Interesse.</Text>
+		</Replace>
+		<!-- AI refuses human -->
+		<Replace Tag="LOC_DIPLO_MAKE_PEACE_AI_REFUSE_DEAL_LEADER_CVS_ANACAONA_ANY" Language="de_DE">
+			<Text>Nein. Die Welt kann dein Handeln nicht länger hinnehmen, und du musst gestoppt werden.</Text>
+		</Replace>
+		<!-- AI requests from human -->
+		<Replace Tag="LOC_DIPLO_MAKE_PEACE_FROM_AI_LEADER_CVS_ANACAONA_ANY" Language="de_DE">
+			<Text>Siehst du denn nicht, dass das Leben mehr zu bieten hat als Schmerz und Leid? Um unserer Völker willen sollten wir einen Waffenstillstand vereinbaren.</Text>
+		</Replace>
+		
+		<!-- DEFEAT -->
+		<!-- AI is Defeated -->
+		<Replace Tag="LOC_DIPLO_DEFEAT_FROM_AI_LEADER_CVS_ANACAONA_ANY" Language="de_DE">
+			<Text>Leider haben die Götter meinen Ruf nicht erhört. Du magst wie ein Hurrikan viele Leben fordern, doch sei gewarnt: Manchmal kann schon ein Schmetterling die Richtung des Windes ändern. Du wirst deine gerechte Strafe erhalten.</Text>
+		</Replace>
+		<!-- Human is Defeated (will see this in hotseat -->
+		<Replace Tag="LOC_DIPLO_DEFEAT_FROM_HUMAN_LEADER_CVS_ANACAONA_ANY" Language="de_DE">
+			<Text>Leider haben die Götter meinen Ruf nicht erhört. Du magst wie ein Hurrikan viele Leben fordern, doch sei gewarnt: Manchmal kann schon ein Schmetterling die Richtung des Windes ändern. Du wirst deine gerechte Strafe erhalten.</Text>
+		</Replace>
+		
+		<!-- Quote and Pedia -->
+		
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_CVS_ANACAONA_QUOTE" Language="de_DE">
+			<Text>Strebe nicht nach dem, was ins Auge fällt, sondern nach dem, was das Herz erobert.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_CVS_ANACAONA_TITLE" Language="de_DE">
+			<Text>Anacaona</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_CVS_ANACAONA_SUBTITLE" Language="de_DE">
+			<Text>Cacica der Taino</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_CVS_ANACAONA_CHAPTER_CAPSULE_BODY" Language="de_DE">
+			<Text>Vielseitigkeit im Sieg – die Diplomatie mit den Stadtstaaten ist der Schlüssel zu Anacaonas Erfolg.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_CVS_ANACAONA_CHAPTER_DETAILED_BODY" Language="de_DE">
+			<Text>Die anfängliche Strategie der Taino besteht darin, ihre schnellen Macana-Krieger einzusetzen, um so viele Stadtstaaten wie möglich zu besuchen. Durch den Einsatz des Batéy und seines einzigartigen Projekts „Areyto-Zeremonie“ können sie Gesandte [ICON_Envoy] entsenden, um so viele Stadtstaaten wie möglich zu besuchen und so die Vorteile doppelter Typboni zu nutzen. Unter der Führung von Anacaona haben die Taino die einzigartige Möglichkeit, die Erträge aus dem Gelände mit ihrer einzigartigen Conuco-Verbesserung zu verdoppeln, wodurch sie ihre Städte schneller wachsen lassen kann. Dank der Fähigkeit, [ICON_GreatPerson] Große Persönlichkeiten mit 25 % weniger [ICON_Faith] Glauben zu kaufen, wird Anacaona diese Vielseitigkeit für jede Siegbedingung als geeignet empfinden.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_CVS_ANACAONA_CHAPTER_HISTORY_PARA_1" Language="de_DE">
+			<Text>Anacaona war eine Taino-Cacica (Häuptlingin), die in eine Häuptlingsfamilie hineingeboren wurde, und die Schwester von Bohechío, dem Häuptling von Jaragua. Ihr Ehemann war Caonabo, Häuptling des benachbarten Gebiets Maguana. Ihr Bruder und ihr Ehemann gehörten zu den fünf höchsten Caciques, die die Insel Kiskeya (heute Haiti und die Dominikanische Republik) regierten, als sich die Spanier dort 1492 niederließen. Sie wurde als Verfasserin von Balladen und erzählenden Gedichten, sogenannten Areítos, gefeiert. Sie ist in der miteinander verflochtenen Geschichte von Haiti und der Dominikanischen Republik verewigt, wobei viele Menschen in Haiti sie als bedeutende Ikone der frühen haitianischen Geschichte und als eine der ursprünglichen Gründerinnen ihres Landes betrachten.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_CVS_ANACAONA_CHAPTER_HISTORY_PARA_2" Language="de_DE">
+			<Text>Anacaona wurde in Maguana (in der Nähe des heutigen Léogâne) geboren, wo ihr Bruder 1474 Häuptling war. Während des Besuchs von Christoph Kolumbus Ende 1496 traten Anacaona und ihr Bruder Bohechío als gleichberechtigte Verhandlungspartner auf. Bei dieser Gelegenheit, die Bartolomé de las Casas in seiner Historia de las Indias beschreibt, handelte Kolumbus erfolgreich einen Tribut aus Lebensmitteln und Baumwolle aus, den die Ureinwohner an die Spanier unter seinem Kommando zu entrichten hatten.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_CVS_ANACAONA_CHAPTER_HISTORY_PARA_3" Language="de_DE">
+			<Text>Der Besuch soll in einer freundlichen Atmosphäre stattgefunden haben. Einige Monate später traf Kolumbus mit einer Karavelle ein, um einen Teil des Tributs einzutreiben. Anacaona und Bohechío waren als seine Gäste für kurze Zeit an Bord der Karavelle gesegelt, in der Nähe des heutigen Léogâne im Golf von Gonâve. Zunächst waren die Beziehungen zwischen den Einheimischen und den Konquistadoren herzlich, doch die Einheimischen erkannten zu spät, dass ihnen ihr Land tatsächlich geraubt und ihre Untertanen versklavt wurden.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_CVS_ANACAONA_CHAPTER_HISTORY_PARA_4" Language="de_DE">
+			<Text>Anacaonas hoher Status wurde wahrscheinlich durch Elemente der matrilinearen Abstammung in der Gesellschaft der Taíno gestärkt. Taíno-Häuptlinge vererbten ihre Nachfolge in der Regel an die ältesten Kinder ihrer Schwestern. Hatten ihre Schwestern keine Kinder, wählten sie unter den Kindern ihrer Brüder aus, und wenn es keine gab, griffen sie auf eines ihrer eigenen Kinder zurück.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_CVS_ANACAONA_CHAPTER_HISTORY_PARA_5" Language="de_DE">
+			<Text>Anacaona wurde nach dem Tod ihres Bruders Häuptlingin von Jaragua. Ihr Ehemann Caonabo, der verdächtigt wurde, den Angriff auf La Navidad (eine spanische Siedlung im Nordwesten von Hispaniola) organisiert zu haben, wurde von Alonso de Ojeda gefangen genommen und nach Spanien verschifft; er kam während der Reise bei einem Schiffbruch ums Leben, so wie viele andere Taino-Führer auf spanischen Schiffen fern ihrer Heimat starben. Die Tainos, die von den Eroberern misshandelt wurden, lehnten sich auf und führten einen langen Krieg gegen sie.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_CVS_ANACAONA_CHAPTER_HISTORY_PARA_6" Language="de_DE">
+			<Text>Im Jahr 1503, während einer Versammlung von 80 Kaziken, darunter auch Anacaona, befahl der spanische Gouverneur Nicolás de Ovando, das Versammlungshaus in Brand zu setzen, um sie lebendig verbrennen zu lassen. Kazikin Anacaona und ihre Taino-Adligen wurden verhaftet – alle wurden der Verschwörung wegen Widerstands gegen die Besatzung beschuldigt und hingerichtet.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_CVS_ANACAONA_CHAPTER_HISTORY_PARA_7" Language="de_DE">
+			<Text>Vor ihrer Hinrichtung wurde Anacaona Gnade angeboten, falls sie sich einem der Spanier als Konkubine hingeben würde, was zu jener Zeit üblich war. Aus Solidarität mit ihren Taino-Gefährten entschied sich die karibische Indianerhäuptlingin für die Hinrichtung, anstatt sich mit ihrem spanischen Feind zu verbünden, und ihre Weigerung festigte ihren legendären Ruf. Anacaona blieb bis zu ihrem gewaltsamen öffentlichen Tod rebellisch und unabhängig. Da Anacaona das sexuelle Angebot der spanischen Eindringlinge ablehnte, während andere erschossen wurden, wurde Anacaona durch den Strang hingerichtet. Sie war erst 29 Jahre alt.</Text>
+		</Replace>
+		
+		
+		<Replace Tag="LOC_PEDIA_IMPROVEMENTS_PAGE_IMPROVEMENT_CVS_ANACAONA_UI_CHAPTER_HISTORY_PARA_1" Language="de_DE">
+			<Text>Die Taino-Gruppen auf den weiter entwickelten Inseln wie Puerto Rico, Hispaniola und Jamaika stützten sich stärker auf die Landwirtschaft (Ackerbau und andere Tätigkeiten). Felder für wichtige Wurzelgemüsearten, wie zum Beispiel die Grundnahrungsmittelpflanze Yuca, wurden angelegt, indem man Erdhügel aufschüttete, die als ‚Conucos‘ bezeichnet wurden.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_IMPROVEMENTS_PAGE_IMPROVEMENT_CVS_ANACAONA_UI_CHAPTER_HISTORY_PARA_2" Language="de_DE">
+			<Text>Dies verbesserte die Entwässerung und Fruchtbarkeit des Bodens und verlangsamte zudem die Erosion, wodurch die Ernte länger im Boden gelagert werden konnte. Weniger wichtige Kulturen wie Mais wurden auf einfachen Lichtungen angebaut, die durch Brandrodung entstanden waren.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_IMPROVEMENTS_PAGE_IMPROVEMENT_CVS_ANACAONA_UI_CHAPTER_HISTORY_PARA_3" Language="de_DE">
+			<Text>In der Regel waren die Conucos etwa einen Meter hoch und hatten einen Umfang von etwa drei Metern; sie waren in Reihen angeordnet. Die wichtigste Wurzelpflanze war Yuca/Maniok, ein holziger Strauch, der wegen seiner essbaren und stärkehaltigen Knollenwurzel angebaut wurde. Er wurde mit einer Coa gepflanzt, einer Art Hacke, die vollständig aus Holz gefertigt war. Frauen verarbeiteten die giftige Manioksorte, indem sie sie auspressten, um den giftigen Saft zu entfernen. Anschließend mahlten sie die Wurzeln zu Mehl, um Brot zu backen. Batata (Süßkartoffel) war die zweitwichtigste Wurzelpflanze.</Text>
 		</Replace>
 		
 		

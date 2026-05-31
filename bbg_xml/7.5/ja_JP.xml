@@ -4784,7 +4784,7 @@
       <Text>テレジア改革</Text>
     </Row>
     <Replace Tag="LOC_TRAIT_LEADER_MER_THERESIAN_REFORM_DESCRIPTION" Language="ja_JP">
-      <Text>配置済みの総督 [ICON_Governor] は、ターンごとに影響力ポイント [ICON_InfluencePerTurn] +1 をもたらし、その都市の区域に対する生産力 [ICON_Production] を+20%する。首都 [ICON_Capital] にすでに同じタイプの区域が存在する場合、専門区域は住宅 [ICON_Housing] +1 をもたらす。</Text>
+      <Text>配置済みの総督 [ICON_Governor] は、ターンごとに影響力ポイント [ICON_InfluencePerTurn] +1 をもたらし、その都市の区域と文民ユニットに対する生産力 [ICON_Production] を+20%する。首都 [ICON_Capital] にすでに同じタイプの区域が存在する場合、専門区域は住宅 [ICON_Housing] +1 をもたらす。</Text>
     </Replace>
     
     <Row Tag="LOC_TRAIT_CIVILIZATION_UNIT_MER_GRENZER_NAME" Language="ja_JP">
