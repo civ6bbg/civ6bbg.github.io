@@ -260,17 +260,7 @@
             </div>
           </div>
         </div>
-        <div class="aether-kingdom-ad" id="aether-kingdom-ad">
-          <a href="https://www.aetherkingdoms.com/" target="_blank">
-            <img alt="Aether Kingdom" class="aether-kingdom-ad-img" src="/images/ak_village_animation.gif">
-          </a>
-          <h2 class="aether-kingdom-ad-title">Try Aether Kingdoms!</h2>
-          <p class="aether-kingdom-ad-text">If you like my website here, please check out Aether Kingdoms, a free-to-play strategy game inspired by Civilization and developed by my friend and I. Click the button below to learn more!</p>
-          <a href="https://www.aetherkingdoms.com/" target="_blank">
-            <button class="ad-btn" title="Aether Kingdoms" type="submit">Aether Kingdoms</button>
-          </a>
-          <button class="ad-btn" onclick="aetherKingdomAdClose()" title="Close ad" type="submit">Close</button>
-        </div>
+        <div class="aether-kingdom" id="aether-kingdom"></div>
         <div class="">
           <div class="fixed left-0 right-auto h-screen bg-white border-r border-neutral-300 overflow-scroll" style="z-index: 5;">
             <aside class="sidebar">
@@ -2558,11 +2548,11 @@
                       <!--LOC_TRAIT_LEADER_CVS_ANACAONA_UA_NAME-->
                       <h3 class="civ-ability-name" style="text-align:left">Золотой цветок</h3><br>
                       <!--LOC_TRAIT_LEADER_CVS_ANACAONA_UA_DESCRIPTION-->
-                      <p class="civ-ability-desc actual-text" style="text-align:left">После открытия политической философии получает слот правительства в зависимости от выбранного устремления века (в Героическом веке получает 3 слота):<br><span>&#8226;</span> [COLOR:217,67,67,255]Слот военной политики[ENDCOLOR], если выбрано устремление: Барабаны войны, К оружию или Война роботов.<br><span>&#8226;</span> [COLOR:235,184,35,255]Экономический слот[ENDCOLOR], если выбрано устремление: Вольнодумство, Реформа денежного обращения, или Небо и звезды.<br><span>&#8226;</span> [COLOR:103,204,4,255]Дипломатический слот[ENDCOLOR], если выбрано устремление: Перо, кисть и голос, Здесь живут драконы, Под охраной лжи. <br><span>&#8226;</span> [COLOR:149,0,232,255]Уникальный политический слот[ENDCOLOR], если выбрано устремление: Монументальность, Пульс паровой машины, Жаль что тебя здесь нет.<br>Счастливые города получают +5% <img src="/images/ICON_GOLD.webp" style="height:1em"/> золота. Бонус удваивается для городов в состоянии экстаза. Бонус утраивается для городов в состоянии эйфории.</p>
+                      <p class="civ-ability-desc actual-text" style="text-align:left">После открытия политической философии получает слот правительства в зависимости от выбранного устремления века (в Героическом веке получает 3 слота):<br><span>&#8226;</span> <span style="color:rgba(217,67,67,1.000);">Слот военной политики</span>, если выбрано устремление: Барабаны войны, К оружию или Война роботов.<br><span>&#8226;</span> <span style="color:rgba(235,184,35,1.000);">Экономический слот</span>, если выбрано устремление: Вольнодумство, Реформа денежного обращения, или Небо и звезды.<br><span>&#8226;</span> <span style="color:rgba(103,204,4,1.000);">Дипломатический слот</span>, если выбрано устремление: Перо, кисть и голос, Здесь живут драконы, Под охраной лжи. <br><span>&#8226;</span> <span style="color:rgba(149,0,232,1.000);">Уникальный политический слот</span>, если выбрано устремление: Монументальность, Пульс паровой машины, Жаль что тебя здесь нет.<br>Счастливые города получают +5% <img src="/images/ICON_GOLD.webp" style="height:1em"/> золота. Бонус удваивается для городов в состоянии экстаза. Бонус утраивается для городов в состоянии эйфории.</p>
                       <div class="base-game-text row">
                         <div class="col-lg-6 col-md-6">
                           <div class="chart" style="box-shadow:none">
-                            <p class="civ-ability-desc" style="text-align:left">После открытия политической философии получает слот правительства в зависимости от выбранного устремления века (в Героическом веке получает 3 слота):<br><span>&#8226;</span> [COLOR:217,67,67,255]Слот военной политики[ENDCOLOR], если выбрано устремление: Барабаны войны, К оружию или Война роботов.<br><span>&#8226;</span> [COLOR:235,184,35,255]Экономический слот[ENDCOLOR], если выбрано устремление: Вольнодумство, Реформа денежного обращения, или Небо и звезды.<br><span>&#8226;</span> [COLOR:103,204,4,255]Дипломатический слот[ENDCOLOR], если выбрано устремление: Перо, кисть и голос, Здесь живут драконы, Под охраной лжи. <br><span>&#8226;</span> [COLOR:149,0,232,255]Уникальный политический слот[ENDCOLOR], если выбрано устремление: Монументальность, Пульс паровой машины, Жаль что тебя здесь нет.<br>Счастливые города получают +5% <img src="/images/ICON_GOLD.webp" style="height:1em"/> золота. Бонус удваивается для городов в состоянии экстаза. Бонус утраивается для городов в состоянии эйфории.</p>
+                            <p class="civ-ability-desc" style="text-align:left">После открытия политической философии получает слот правительства в зависимости от выбранного устремления века (в Героическом веке получает 3 слота):<br><span>&#8226;</span> <span style="color:rgba(217,67,67,1.000);">Слот военной политики</span>, если выбрано устремление: Барабаны войны, К оружию или Война роботов.<br><span>&#8226;</span> <span style="color:rgba(235,184,35,1.000);">Экономический слот</span>, если выбрано устремление: Вольнодумство, Реформа денежного обращения, или Небо и звезды.<br><span>&#8226;</span> <span style="color:rgba(103,204,4,1.000);">Дипломатический слот</span>, если выбрано устремление: Перо, кисть и голос, Здесь живут драконы, Под охраной лжи. <br><span>&#8226;</span> <span style="color:rgba(149,0,232,1.000);">Уникальный политический слот</span>, если выбрано устремление: Монументальность, Пульс паровой машины, Жаль что тебя здесь нет.<br>Счастливые города получают +5% <img src="/images/ICON_GOLD.webp" style="height:1em"/> золота. Бонус удваивается для городов в состоянии экстаза. Бонус утраивается для городов в состоянии эйфории.</p>
                           </div>
                         </div>
                         <div class="col-lg-6 col-md-6">

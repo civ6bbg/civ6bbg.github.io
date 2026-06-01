@@ -212,6 +212,25 @@ def refactorCivSpecialSyntax(bbg_version, lang, docStr):
     reg = re.compile(r'\[/t\]', re.IGNORECASE)
     docStr = reg.sub(r'&nbsp;&nbsp;&nbsp;&nbsp;', docStr)
 
+    def replace_color(match):
+        r = int(match.group(1))
+        g = int(match.group(2))
+        b = int(match.group(3))
+        alpha = match.group(4)
+        text = match.group(5)
+        if alpha is not None:
+            alpha_val = float(alpha)
+            if alpha_val > 1:
+                alpha_val = alpha_val / 255.0
+            alpha_val = max(0.0, min(1.0, alpha_val))
+            color_value = f'rgba({r},{g},{b},{alpha_val:.3f})'
+        else:
+            color_value = f'rgb({r},{g},{b})'
+        return f'<span style="color:{color_value};">{text}</span>'
+
+    reg = re.compile(r'\[color\:([0-9]{1,3}),([0-9]{1,3}),([0-9]{1,3})(?:,([0-9]{1,3}))?\](.*?)\[endcolor\]', re.IGNORECASE | re.DOTALL)
+    docStr = reg.sub(replace_color, docStr)
+
     for replace in replacements:
         reg = re.compile(re.escape(replace), re.IGNORECASE)
         docStr = reg.sub(f'<img src="/images/{replace[1:-1]}.webp" style="height:1em"/>', docStr)
@@ -219,6 +238,9 @@ def refactorCivSpecialSyntax(bbg_version, lang, docStr):
     docStr = reg.sub(f'<span>&#8226;</span> ', docStr)
     reg = re.compile(re.escape('[ICON_BULLETGLOW]'), re.IGNORECASE)
     docStr = reg.sub(f'<span>&#8226;</span> ', docStr)
+    reg = re.compile(re.escape('[color:.*]'), re.IGNORECASE)
+    docStr = reg.sub(f' ', docStr)
+    reg = re.compile(re.escape('[endcolor]'), re.IGNORECASE)
     for icon in notSupportedIcons:
         reg = re.compile(re.escape(icon), re.IGNORECASE)
         docStr = reg.sub(f' ', docStr)
@@ -244,17 +266,6 @@ def add_lang(text_name, link_name, bbg_version, flag, page_type):
         with a(href=f"/{link_name}/{page_type}_{get_version_name(bbg_version)}.html", style="align-content: center;"):
             img(src=f"/assets/flags/4x3/{flag}.svg", style="height:20px")
 
-def add_aether_kingdom_ad():
-    with div(cls="aether-kingdom-ad", id="aether-kingdom-ad"):
-        with a(href="https://www.aetherkingdoms.com/", target="_blank"):
-            img(src="/images/ak_village_animation.gif", alt="Aether Kingdom", cls="aether-kingdom-ad-img")
-        h2("Try Aether Kingdoms!", cls="aether-kingdom-ad-title")
-        p("If you like my website here, please check out Aether Kingdoms, a free-to-play strategy game inspired by Civilization and developed by my friend and I. Click the button below to learn more!", cls="aether-kingdom-ad-text")
-        with a(href="https://www.aetherkingdoms.com/", target="_blank"):
-            button('Aether Kingdoms', cls="ad-btn", type="submit", title="Aether Kingdoms")
-            # p("Aether Kingdoms", cls="sr-only")
-            # i(cls="fa-solid fa-xmark", aria_hidden="true")
-        button('Close', cls="ad-btn", type="submit", title="Close ad", onclick="aetherKingdomAdClose()")
 
 def add_header(bbg_version, lang, page_type, pages_list, locs_data, en_US_locs_data):
     with nav(cls="main-nav--bg"), div(cls="main-nav"):
@@ -308,7 +319,7 @@ def add_header(bbg_version, lang, page_type, pages_list, locs_data, en_US_locs_d
                             i(cls="sun-icon", data_feather="sun", aria_hidden="true")
                             i(cls="moon-icon", data_feather="moon", aria_hidden="true")
     add_footer()
-    add_aether_kingdom_ad()
+    div(cls="aether-kingdom", id="aether-kingdom")
 
 def add_sidebar(menu_items, menu_icons, images_dir):
     with aside(cls="sidebar"), div(cls="sidebar-start"), div(cls="sidebar-body"), ul(cls="sidebar-body-menu"):

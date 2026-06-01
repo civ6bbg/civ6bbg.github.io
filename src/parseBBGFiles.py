@@ -6,7 +6,7 @@ import os
 
 bbg_versions = [None, '7.5', '7.4', '7.3', '7.2', '7.1', '6.5', '6.4', '6.3', '6.2', '6.1', '6.0', '5.8', '5.7', '5.6']
 
-def add_xml_file_to_locs(locs, xml_file):
+def add_xml_file_to_locs(locs, xml_file, lang):
     if not os.path.exists(xml_file):
         return
     with open(xml_file, "r") as f:
@@ -16,6 +16,9 @@ def add_xml_file_to_locs(locs, xml_file):
 
     b_unique = Bs_data.find_all("Replace")
     for x in b_unique:
+        if "Language" in x and x["Language"].lower() != lang.lower():
+            print(f"Language mismatch in xml file: {xml_file}!! Expected {lang}, found {x['Language']}")
+            continue
         if hasattr(x, "Text") and hasattr(x.Text, "contents"):
             if len(x.Text.contents) > 0:
                 locs[x["Tag"]] = x.Text.contents[0]
@@ -52,9 +55,9 @@ def get_locs_data(bbg_version, lang):
     for r in rows:
         locs[r[1]] = r[2]
 
-    add_xml_file_to_locs(locs, f'sqlFiles/expandedBase_{lang}.xml')
+    add_xml_file_to_locs(locs, f'sqlFiles/expandedBase_{lang}.xml', lang)
 
-    add_xml_file_to_locs(locs, f'lang/steelThunder/MoarUniqueUnits_LocalisationText_{lang}.xml')
+    add_xml_file_to_locs(locs, f'lang/steelThunder/MoarUniqueUnits_LocalisationText_{lang}.xml', lang)
 
     connection.close()
 
@@ -70,17 +73,17 @@ def get_locs_data(bbg_version, lang):
 
     connection.close()
 
-    add_xml_file_to_locs(locs, f"lang/general/{lang}.xml")
+    add_xml_file_to_locs(locs, f"lang/general/{lang}.xml", lang)
     if bbg_version == None:
         return locs
 
     # Reading BBM XML files
-    add_xml_file_to_locs(locs, f"bbm_xml/{lang}.xml")
+    add_xml_file_to_locs(locs, f"bbm_xml/{lang}.xml", lang)
 
-    add_xml_file_to_locs(locs, f"bbg_xml/{bbg_version}/{lang}.xml")
+    add_xml_file_to_locs(locs, f"bbg_xml/{bbg_version}/{lang}.xml", lang)
 
     for bbg_ver in reversed(bbg_versions):
-        add_xml_file_to_locs(locs, f"lang/{bbg_ver}/{lang}.xml")
+        add_xml_file_to_locs(locs, f"lang/{bbg_ver}/{lang}.xml", lang)
         if bbg_ver == bbg_version:
             break
 
