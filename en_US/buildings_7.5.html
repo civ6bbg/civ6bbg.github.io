@@ -372,19 +372,19 @@
                       </a>
                     </li>
                     <li>
-                      <a href="#Aerodrome" onclick="civClicked(&quot;Aerodrome&quot;)">
-                        <span aria-hidden="true" class="icon">
-                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Aerodrome.webp">
-                        </span>
-                        <p>Aerodrome</p>
-                      </a>
-                    </li>
-                    <li>
                       <a href="#Neighborhood" onclick="civClicked(&quot;Neighborhood&quot;)">
                         <span aria-hidden="true" class="icon">
                           <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Neighborhood.webp">
                         </span>
                         <p>Neighborhood</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Aerodrome" onclick="civClicked(&quot;Aerodrome&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Aerodrome.webp">
+                        </span>
+                        <p>Aerodrome</p>
                       </a>
                     </li>
                     <li>
@@ -525,6 +525,7 @@
                       </h2><br>
                       <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture</p>
                       <p class="civ-ability-desc" style="text-align:left">+4 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Faith</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 <img src="/images/ICON_GREATPROPHET.webp" style="height:1em"/> Great Prophet point per turn.</p>
                       <p class="civ-ability-desc" style="text-align:left">A building unique to Georgia which replaces and is stronger than Ancient Walls.<br><br>+4 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Faith and +1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture.<br>+1 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourism with Conservation.<br>+1 <img src="/images/ICON_GREATPROPHET.webp" style="height:1em"/> Great Prophet points.<br>+3 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Faith and +100% <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourism when in a <img src="/images/ICON_GLORY_GOLDEN_AGE.webp" style="height:1em"/> Golden or <img src="/images/ICON_GLORY_SUPER_GOLDEN_AGE.webp" style="height:1em"/> Heroic Age.</p>
                       <p class="civ-ability-desc" style="text-align:left">Production Cost = 50
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/ICON_PRODUCTION.webp" style="vertical-align: middle">
@@ -1316,7 +1317,7 @@
                       <h2 class="civ-name">Archaeological Museum
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Archaeological Museum.webp" style="vertical-align: middle; width:5em">
                       </h2><br>
-                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture</p>
+                      <p class="civ-ability-desc" style="text-align:left">+4 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Culture</p>
                       <p class="civ-ability-desc" style="text-align:left">1 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> Citizen slot</p>
                       <p class="civ-ability-desc" style="text-align:left">2 <img src="/images/ICON_GREATARTIST.webp" style="height:1em"/> Great Artist points per turn.</p>
                       <p class="civ-ability-desc" style="text-align:left">3 <img src="/images/ICON_GREATWORK_ARTIFACT.webp" style="height:1em"/> Artifact slots</p>
@@ -1591,7 +1592,7 @@
                       <h2 class="civ-name">Workshop
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Workshop.webp" style="vertical-align: middle; width:5em">
                       </h2><br>
-                      <p class="civ-ability-desc" style="text-align:left">+4 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production</p>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Production</p>
                       <p class="civ-ability-desc" style="text-align:left">1 <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> Citizen slot</p>
                       <p class="civ-ability-desc" style="text-align:left">1 <img src="/images/ICON_GREATENGINEER.webp" style="height:1em"/> Great Engineer point per turn.</p>
                       <p class="civ-ability-desc" style="text-align:left">Production Cost = 80
@@ -1740,6 +1741,46 @@
                     </div>
                   </div>
                 </div>
+                <div class="col-lg-12" id="Neighborhood">
+                  <div class="chart">
+                    <!--LOC_DISTRICT_NEIGHBORHOOD_NAME-->
+                    <h2 class="civ-name">Neighborhood</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <!--LOC_BUILDING_FOOD_MARKET_NAME-->
+                      <h2 class="civ-name">Food Market
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Food Market.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+5 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Food</p>
+                      <p class="civ-ability-desc" style="text-align:left">5 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Food additionally when <img src="/images/ICON_POWER.webp" style="height:1em"/> Powered</p>
+                      <p class="civ-ability-desc" style="text-align:left">Can only be built once in a city, even if the city has multiple Neighborhoods.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Production Cost = 145
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/ICON_PRODUCTION.webp" style="vertical-align: middle">
+                      </p>
+                      <p class="civ-ability-desc" style="text-align:left">Maintenance: 1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <!--LOC_BUILDING_SHOPPING_MALL_NAME-->
+                      <h2 class="civ-name">Shopping Mall
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Shopping Mall.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+10 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> Amenities</p>
+                      <p class="civ-ability-desc" style="text-align:left">10 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold additionally when <img src="/images/ICON_POWER.webp" style="height:1em"/> Powered</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> Amenity from entertainment additionally when <img src="/images/ICON_POWER.webp" style="height:1em"/> Powered</p>
+                      <p class="civ-ability-desc" style="text-align:left">+10 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourism. Can only be built once in a city, even if the city has multiple Neighborhoods.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Production Cost = 220
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/ICON_PRODUCTION.webp" style="vertical-align: middle">
+                      </p>
+                      <p class="civ-ability-desc" style="text-align:left">Maintenance: 1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold</p>
+                    </div>
+                  </div>
+                </div>
                 <div class="col-lg-12" id="Aerodrome">
                   <div class="chart">
                     <!--LOC_DISTRICT_AERODROME_NAME-->
@@ -1774,46 +1815,6 @@
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/ICON_PRODUCTION.webp" style="vertical-align: middle">
                       </p>
                       <p class="civ-ability-desc" style="text-align:left">Maintenance: 2 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-12" id="Neighborhood">
-                  <div class="chart">
-                    <!--LOC_DISTRICT_NEIGHBORHOOD_NAME-->
-                    <h2 class="civ-name">Neighborhood</h2>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-lg-6 col-md-12">
-                    <div class="chart">
-                      <!--LOC_BUILDING_FOOD_MARKET_NAME-->
-                      <h2 class="civ-name">Food Market
-                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Food Market.webp" style="vertical-align: middle; width:5em">
-                      </h2><br>
-                      <p class="civ-ability-desc" style="text-align:left">+4 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Food</p>
-                      <p class="civ-ability-desc" style="text-align:left">2 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Food additionally when <img src="/images/ICON_POWER.webp" style="height:1em"/> Powered</p>
-                      <p class="civ-ability-desc" style="text-align:left">Can only be built once in a city, even if the city has multiple Neighborhoods.</p>
-                      <p class="civ-ability-desc" style="text-align:left">Production Cost = 190
-                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/ICON_PRODUCTION.webp" style="vertical-align: middle">
-                      </p>
-                      <p class="civ-ability-desc" style="text-align:left">Maintenance: 1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold</p>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="chart">
-                      <!--LOC_BUILDING_SHOPPING_MALL_NAME-->
-                      <h2 class="civ-name">Shopping Mall
-                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Shopping Mall.webp" style="vertical-align: middle; width:5em">
-                      </h2><br>
-                      <p class="civ-ability-desc" style="text-align:left">+10 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold</p>
-                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> Amenities</p>
-                      <p class="civ-ability-desc" style="text-align:left">10 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold additionally when <img src="/images/ICON_POWER.webp" style="height:1em"/> Powered</p>
-                      <p class="civ-ability-desc" style="text-align:left">1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> Amenity from entertainment additionally when <img src="/images/ICON_POWER.webp" style="height:1em"/> Powered</p>
-                      <p class="civ-ability-desc" style="text-align:left">+10 <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Tourism. Can only be built once in a city, even if the city has multiple Neighborhoods.</p>
-                      <p class="civ-ability-desc" style="text-align:left">Production Cost = 220
-                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/ICON_PRODUCTION.webp" style="vertical-align: middle">
-                      </p>
-                      <p class="civ-ability-desc" style="text-align:left">Maintenance: 1 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Gold</p>
                     </div>
                   </div>
                 </div>

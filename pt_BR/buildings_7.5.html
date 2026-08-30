@@ -372,19 +372,19 @@
                       </a>
                     </li>
                     <li>
-                      <a href="#Aeródromo" onclick="civClicked(&quot;Aeródromo&quot;)">
-                        <span aria-hidden="true" class="icon">
-                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Aerodrome.webp">
-                        </span>
-                        <p>Aeródromo</p>
-                      </a>
-                    </li>
-                    <li>
                       <a href="#Bairro Residencial" onclick="civClicked(&quot;Bairro Residencial&quot;)">
                         <span aria-hidden="true" class="icon">
                           <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Neighborhood.webp">
                         </span>
                         <p>Bairro Residencial</p>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#Aeródromo" onclick="civClicked(&quot;Aeródromo&quot;)">
+                        <span aria-hidden="true" class="icon">
+                          <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Aerodrome.webp">
+                        </span>
+                        <p>Aeródromo</p>
                       </a>
                     </li>
                     <li>
@@ -525,6 +525,7 @@
                       </h2><br>
                       <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura</p>
                       <p class="civ-ability-desc" style="text-align:left">+4 <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fé</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 ponto de <img src="/images/ICON_GREATPROPHET.webp" style="height:1em"/> Grande Profeta por turno.</p>
                       <p class="civ-ability-desc" style="text-align:left">Edifício exclusivo da Geórgia, substituindo as muralhas antigas.<br><br>Defesas externas +25.<br><br><img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura +1 e <img src="/images/ICON_FAITH.webp" style="height:1em"/> Fé +4.<br><img src="/images/ICON_FAITH.webp" style="height:1em"/> Fé +3 e <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo +1 durante uma era dourada.<br><img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo +1 na Conservação.</p>
                       <p class="civ-ability-desc" style="text-align:left">Custo de produção = 50
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/ICON_PRODUCTION.webp" style="vertical-align: middle">
@@ -1316,7 +1317,7 @@
                       <h2 class="civ-name">Museu Arqueológico
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Archaeological Museum.webp" style="vertical-align: middle; width:5em">
                       </h2><br>
-                      <p class="civ-ability-desc" style="text-align:left">+2 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura</p>
+                      <p class="civ-ability-desc" style="text-align:left">+4 <img src="/images/ICON_CULTURE.webp" style="height:1em"/> Cultura</p>
                       <p class="civ-ability-desc" style="text-align:left">1 espaço para <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> cidadãos.</p>
                       <p class="civ-ability-desc" style="text-align:left">2 pontos de <img src="/images/ICON_GREATARTIST.webp" style="height:1em"/> Grande Artista por turno.</p>
                       <p class="civ-ability-desc" style="text-align:left">3 espaços para <img src="/images/ICON_GREATWORK_ARTIFACT.webp" style="height:1em"/> artefatos.</p>
@@ -1591,7 +1592,7 @@
                       <h2 class="civ-name">Oficina
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Workshop.webp" style="vertical-align: middle; width:5em">
                       </h2><br>
-                      <p class="civ-ability-desc" style="text-align:left">+4 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção</p>
+                      <p class="civ-ability-desc" style="text-align:left">+3 <img src="/images/ICON_PRODUCTION.webp" style="height:1em"/> Produção</p>
                       <p class="civ-ability-desc" style="text-align:left">1 espaço para <img src="/images/ICON_CITIZEN.webp" style="height:1em"/> cidadãos.</p>
                       <p class="civ-ability-desc" style="text-align:left">1 ponto de <img src="/images/ICON_GREATENGINEER.webp" style="height:1em"/> Grande Engenheiro por turno.</p>
                       <p class="civ-ability-desc" style="text-align:left">Custo de produção = 80
@@ -1740,6 +1741,46 @@
                     </div>
                   </div>
                 </div>
+                <div class="col-lg-12" id="Bairro Residencial">
+                  <div class="chart">
+                    <!--LOC_DISTRICT_NEIGHBORHOOD_NAME-->
+                    <h2 class="civ-name">Bairro Residencial</h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <!--LOC_BUILDING_FOOD_MARKET_NAME-->
+                      <h2 class="civ-name">Mercadão
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Food Market.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+5 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Alimento</p>
+                      <p class="civ-ability-desc" style="text-align:left">5 de <img src="/images/ICON_FOOD.webp" style="height:1em"/> Alimento adicional quando <img src="/images/ICON_POWER.webp" style="height:1em"/> energizado</p>
+                      <p class="civ-ability-desc" style="text-align:left">Construção impossível em uma cidade que já possua um mercado de alimentos.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Custo de produção = 145
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/ICON_PRODUCTION.webp" style="vertical-align: middle">
+                      </p>
+                      <p class="civ-ability-desc" style="text-align:left">Manutenção: 1 de <img src="/images/ICON_GOLD.webp" style="height:1em"/> Ouro</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <div class="chart">
+                      <!--LOC_BUILDING_SHOPPING_MALL_NAME-->
+                      <h2 class="civ-name">Shopping
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Shopping Mall.webp" style="vertical-align: middle; width:5em">
+                      </h2><br>
+                      <p class="civ-ability-desc" style="text-align:left">+10 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Ouro</p>
+                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> Serviços</p>
+                      <p class="civ-ability-desc" style="text-align:left">10 de <img src="/images/ICON_GOLD.webp" style="height:1em"/> Ouro adicional quando <img src="/images/ICON_POWER.webp" style="height:1em"/> energizado</p>
+                      <p class="civ-ability-desc" style="text-align:left">1 de <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> serviço do entretenimento adicional quando <img src="/images/ICON_POWER.webp" style="height:1em"/> energizado</p>
+                      <p class="civ-ability-desc" style="text-align:left">+20 de <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo.<br><br> Construção impossível em uma cidade que já possui um shopping center.</p>
+                      <p class="civ-ability-desc" style="text-align:left">Custo de produção = 220
+                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/ICON_PRODUCTION.webp" style="vertical-align: middle">
+                      </p>
+                      <p class="civ-ability-desc" style="text-align:left">Manutenção: 1 de <img src="/images/ICON_GOLD.webp" style="height:1em"/> Ouro</p>
+                    </div>
+                  </div>
+                </div>
                 <div class="col-lg-12" id="Aeródromo">
                   <div class="chart">
                     <!--LOC_DISTRICT_AERODROME_NAME-->
@@ -1774,46 +1815,6 @@
                         <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/ICON_PRODUCTION.webp" style="vertical-align: middle">
                       </p>
                       <p class="civ-ability-desc" style="text-align:left">Manutenção: 2 de <img src="/images/ICON_GOLD.webp" style="height:1em"/> Ouro</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-12" id="Bairro Residencial">
-                  <div class="chart">
-                    <!--LOC_DISTRICT_NEIGHBORHOOD_NAME-->
-                    <h2 class="civ-name">Bairro Residencial</h2>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-lg-6 col-md-12">
-                    <div class="chart">
-                      <!--LOC_BUILDING_FOOD_MARKET_NAME-->
-                      <h2 class="civ-name">Mercadão
-                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Food Market.webp" style="vertical-align: middle; width:5em">
-                      </h2><br>
-                      <p class="civ-ability-desc" style="text-align:left">+4 <img src="/images/ICON_FOOD.webp" style="height:1em"/> Alimento</p>
-                      <p class="civ-ability-desc" style="text-align:left">2 de <img src="/images/ICON_FOOD.webp" style="height:1em"/> Alimento adicional quando <img src="/images/ICON_POWER.webp" style="height:1em"/> energizado</p>
-                      <p class="civ-ability-desc" style="text-align:left">Construção impossível em uma cidade que já possua um mercado de alimentos.</p>
-                      <p class="civ-ability-desc" style="text-align:left">Custo de produção = 190
-                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/ICON_PRODUCTION.webp" style="vertical-align: middle">
-                      </p>
-                      <p class="civ-ability-desc" style="text-align:left">Manutenção: 1 de <img src="/images/ICON_GOLD.webp" style="height:1em"/> Ouro</p>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="chart">
-                      <!--LOC_BUILDING_SHOPPING_MALL_NAME-->
-                      <h2 class="civ-name">Shopping
-                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/buildings/Shopping Mall.webp" style="vertical-align: middle; width:5em">
-                      </h2><br>
-                      <p class="civ-ability-desc" style="text-align:left">+10 <img src="/images/ICON_GOLD.webp" style="height:1em"/> Ouro</p>
-                      <p class="civ-ability-desc" style="text-align:left">+1 <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> Serviços</p>
-                      <p class="civ-ability-desc" style="text-align:left">10 de <img src="/images/ICON_GOLD.webp" style="height:1em"/> Ouro adicional quando <img src="/images/ICON_POWER.webp" style="height:1em"/> energizado</p>
-                      <p class="civ-ability-desc" style="text-align:left">1 de <img src="/images/ICON_AMENITIES.webp" style="height:1em"/> serviço do entretenimento adicional quando <img src="/images/ICON_POWER.webp" style="height:1em"/> energizado</p>
-                      <p class="civ-ability-desc" style="text-align:left">+20 de <img src="/images/ICON_TOURISM.webp" style="height:1em"/> Turismo.<br><br> Construção impossível em uma cidade que já possui um shopping center.</p>
-                      <p class="civ-ability-desc" style="text-align:left">Custo de produção = 220
-                        <img onerror="this.onerror=null; this.src='/images/civVI.webp';" src="/images/ICON_PRODUCTION.webp" style="vertical-align: middle">
-                      </p>
-                      <p class="civ-ability-desc" style="text-align:left">Manutenção: 1 de <img src="/images/ICON_GOLD.webp" style="height:1em"/> Ouro</p>
                     </div>
                   </div>
                 </div>
